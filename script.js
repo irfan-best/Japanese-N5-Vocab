@@ -337,7 +337,7 @@ function playNextCardInPlayAll() {
     speakText(word.english, 'en', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
-        speakText(word.romaji, 'ja', () => {
+        speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
           if (!isPlayingAll) return;
           playAllTimeout = setTimeout(() => {
             playAllIndex++;
@@ -347,7 +347,7 @@ function playNextCardInPlayAll() {
       }, gapMs);
     });
   } else if (mode === 'big-japanese') {
-    speakText(word.romaji, 'ja', () => {
+    speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
         speakText(word.english, 'en', () => {
@@ -369,7 +369,7 @@ function playNextCardInPlayAll() {
     });
   } else {
     // Japanese only or Romaji only
-    speakText(word.romaji, 'ja', () => {
+    speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
         playAllIndex++;
@@ -444,6 +444,38 @@ function getShowAllWords() {
   return merged;
 }
 
+function getCopiedCategoriesList(word) {
+  const list = [];
+  if (!word || !word.japanese || !word.english) return list;
+
+  const wordJp = word.japanese.trim();
+  const wordEng = word.english.trim();
+
+  // 1. Check custom categories
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      const normalList = currentWordsDb[cat] || [];
+      const hardList = currentWordsDb[cat + " - Hard"] || [];
+      
+      const inNormal = normalList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+      const inHard = hardList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+      
+      if (inNormal || inHard) {
+        list.push(cat);
+      }
+    });
+  }
+
+  // 2. Check Similar Words groups
+  const groups = currentSettings.similarWordGroups || [];
+  const inSimilar = groups.some(g => (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng));
+  if (inSimilar) {
+    list.push("Similar Words");
+  }
+
+  return list;
+}
+
 // Redraw vocabulary grid from memory state
 function renderCards() {
   const container = document.getElementById('vocab-grid');
@@ -516,6 +548,12 @@ function renderCards() {
     card.setAttribute('role', 'option');
     card.setAttribute('tabindex', '0');
     card.setAttribute('data-index', idx);
+
+    // Set categories tooltip on hover
+    const copiedCats = getCopiedCategoriesList(word);
+    if (copiedCats.length > 0) {
+      card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+    }
     
     // Focused State
     if (idx === currentSettings.focusedWordIndex) {
@@ -645,7 +683,7 @@ function handleCardClick(index, event) {
   renderCards();
 
   // Speak Japanese of selected card
-  speakText(words[index].romaji, 'ja');
+  speakText(cleanJapaneseSpeakText(words[index].japanese), 'ja');
 }
 
 // Enable/Disable reordering and list modification buttons
@@ -695,7 +733,7 @@ function navigateFocus(direction) {
     card.focus();
   }
 
-  speakText(words[nextIdx].romaji, 'ja');
+  speakText(cleanJapaneseSpeakText(words[nextIdx].japanese), 'ja');
 }
 
 // Move selected items to Hard list
@@ -1059,12 +1097,12 @@ function showQuizQuestion() {
     } else if (mode === 'quiz6') {
       // Romaji -> English
       qTextEl.textContent = word.romaji;
-      speakText(word.romaji, 'ja');
+      speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
     } else {
       // Japanese -> English/Romaji (Review / Writing)
       qTextEl.textContent = word.japanese;
       qTextEl.classList.add('text-japanese');
-      speakText(word.romaji, 'ja');
+      speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
     }
 
     if (isWritingQuiz) {
@@ -1094,9 +1132,9 @@ function speakCurrentQuizWord() {
   if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz7') {
     speakText(word.english, 'en');
   } else if (mode === 'quiz6') {
-    speakText(word.romaji, 'ja');
+    speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
   } else {
-    speakText(word.romaji, 'ja');
+    speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
   }
 }
 
@@ -1136,7 +1174,7 @@ function checkQuizAnswer() {
   // If flashcard modes, speak the revealed word
   if (!isWritingQuiz) {
     if (mode === 'quiz1') {
-      speakText(word.romaji, 'ja');
+      speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
     } else if (mode === 'quiz2' || mode === 'quiz6') {
       speakText(word.english, 'en');
     }
@@ -1155,6 +1193,17 @@ function nextQuizQuestion() {
 function prevQuizQuestion() {
   if (quizCurrentIndex > 0) {
     quizCurrentIndex--;
+    const state = quizStates[quizCurrentIndex];
+    const mode = currentSettings.quizMode;
+    const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
+    
+    if (state.answered) {
+      if (isWritingQuiz && state.isCorrect) {
+        quizScore = Math.max(0, quizScore - 1);
+      }
+      state.answered = false;
+    }
+    
     showQuizQuestion();
   }
 }
@@ -1865,6 +1914,11 @@ function renderSimilarWordsGroups() {
         card.className = "similar-word-card";
         card.setAttribute('draggable', 'true');
         
+        const copiedCats = getCopiedCategoriesList(w);
+        if (copiedCats.length > 0) {
+          card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+        }
+        
         card.addEventListener('dragstart', (e) => {
           e.dataTransfer.setData('text/plain', JSON.stringify({
             groupIdx: gIdx,
@@ -1878,7 +1932,7 @@ function renderSimilarWordsGroups() {
         });
 
         card.addEventListener('click', () => {
-          speakText(w.romaji, 'ja');
+          speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
         });
 
         card.innerHTML = `
@@ -1922,8 +1976,17 @@ function createSimilarWordGroup() {
   showToast("Created similar word group.", "success");
 }
 
-function openCategorySelectorModal() {
-  if (currentSettings.selectedWordIndices.length === 0) {
+let wordsToCopy = [];
+
+function openCategorySelectorModal(customWordsList = null) {
+  if (customWordsList) {
+    wordsToCopy = customWordsList;
+  } else {
+    const words = getActiveWords();
+    wordsToCopy = currentSettings.selectedWordIndices.map(idx => words[idx]);
+  }
+
+  if (wordsToCopy.length === 0) {
     showToast("Please select words to copy first.", "info");
     return;
   }
@@ -1959,6 +2022,12 @@ function openCategorySelectorModal() {
     showToast("No other destination categories exist.", "danger");
     return;
   }
+
+  // Set default selection to "Similar Words" if available
+  const hasSimilar = Array.from(selectDest.options).some(opt => opt.value === "Similar Words");
+  if (hasSimilar) {
+    selectDest.value = "Similar Words";
+  }
   
   openModal('modal-category-selector');
   setTimeout(() => {
@@ -1974,15 +2043,12 @@ function executeCategoryWordCopy() {
   if (!selectDest) return;
   
   const destCategory = selectDest.value;
-  const words = getActiveWords();
-  
-  const selectedWords = currentSettings.selectedWordIndices.map(idx => words[idx]);
-  if (selectedWords.length === 0) return;
+  if (wordsToCopy.length === 0) return;
 
   if (destCategory === "Similar Words") {
     closeActiveModal();
     setTimeout(() => {
-      openSimilarGroupSelectorModal();
+      openSimilarGroupSelectorModal(wordsToCopy);
     }, 150);
     return;
   }
@@ -1993,7 +2059,7 @@ function executeCategoryWordCopy() {
   if (!currentWordsDb[targetKey]) currentWordsDb[targetKey] = [];
   
   // Copy words (clone objects to prevent reference conflicts)
-  selectedWords.forEach(w => {
+  wordsToCopy.forEach(w => {
     currentWordsDb[targetKey].push({
       japanese: w.japanese,
       english: w.english,
@@ -2010,18 +2076,24 @@ function executeCategoryWordCopy() {
   
   closeActiveModal();
   renderCards();
-  showToast(`Copied ${selectedWords.length} words to ${destCategory} (Normal)`, 'success');
+  showToast(`Copied ${wordsToCopy.length} words to ${destCategory} (Normal)`, 'success');
 }
 
-function openSimilarGroupSelectorModal() {
-  if (currentSettings.selectedWordIndices.length === 0) {
+function openSimilarGroupSelectorModal(customWordsList = null) {
+  if (customWordsList) {
+    wordsToCopy = customWordsList;
+  } else {
+    const words = getActiveWords();
+    wordsToCopy = currentSettings.selectedWordIndices.map(idx => words[idx]);
+  }
+
+  if (wordsToCopy.length === 0) {
     showToast("Please select words to copy first.", "info");
     return;
   }
   
   const groups = currentSettings.similarWordGroups || [];
   if (groups.length === 0) {
-    // Automatically create a group if none exist
     createSimilarWordGroup();
   }
   
@@ -2035,8 +2107,16 @@ function openSimilarGroupSelectorModal() {
     opt.textContent = `Group ${gIdx + 1}`;
     selectDest.appendChild(opt);
   });
+
+  // Automatically select the last group
+  if (currentSettings.similarWordGroups.length > 0) {
+    selectDest.value = currentSettings.similarWordGroups.length - 1;
+  }
   
   openModal('modal-group-selector');
+  setTimeout(() => {
+    selectDest.focus();
+  }, 100);
 }
 
 function executeSimilarGroupWordCopy() {
@@ -2044,14 +2124,11 @@ function executeSimilarGroupWordCopy() {
   if (!selectDest) return;
   
   const targetGroupIdx = parseInt(selectDest.value, 10);
-  const words = getActiveWords();
-  
-  const selectedWords = currentSettings.selectedWordIndices.map(idx => words[idx]);
-  if (selectedWords.length === 0) return;
+  if (wordsToCopy.length === 0) return;
   
   const targetGroup = currentSettings.similarWordGroups[targetGroupIdx];
   if (targetGroup) {
-    selectedWords.forEach(w => {
+    wordsToCopy.forEach(w => {
       targetGroup.words.push({
         japanese: w.japanese,
         english: w.english,
@@ -2068,7 +2145,7 @@ function executeSimilarGroupWordCopy() {
   
   closeActiveModal();
   renderCards();
-  showToast(`Copied ${selectedWords.length} words to Group ${targetGroupIdx + 1}`, 'success');
+  showToast(`Copied ${wordsToCopy.length} words to Group ${targetGroupIdx + 1}`, 'success');
 }
 
 // --------------------------------------------------------------------------
@@ -2177,7 +2254,7 @@ function initGlobalSearch() {
                   card.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   card.focus();
                 }
-                speakText(res.word.romaji, 'ja');
+                speakText(cleanJapaneseSpeakText(res.word.japanese), 'ja');
               }, 100);
             }
             
@@ -2614,6 +2691,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const isInputFocused = (document.activeElement && document.activeElement.id === 'quiz-typed-answer');
 
+          if (e.key === 'c' || e.key === 'C') {
+            if (!isInputFocused && !isCompletionVisible) {
+              e.preventDefault();
+              openCategorySelectorModal([quizWords[quizCurrentIndex]]);
+              return;
+            }
+          }
+
           if (e.key === 'Enter') {
             e.preventDefault();
             const state = quizStates[quizCurrentIndex];
@@ -2635,7 +2720,7 @@ document.addEventListener('DOMContentLoaded', () => {
           } else if (e.key === ' ') {
             if (!isInputFocused) {
               e.preventDefault();
-              speakText(quizWords[quizCurrentIndex].romaji, 'ja');
+              speakText(cleanJapaneseSpeakText(quizWords[quizCurrentIndex].japanese), 'ja');
             }
           }
         } else {
@@ -2756,7 +2841,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const words = getActiveWords();
         if (words.length > 0 && currentSettings.focusedWordIndex >= 0) {
-          speakText(words[currentSettings.focusedWordIndex].romaji, 'ja');
+          speakText(cleanJapaneseSpeakText(words[currentSettings.focusedWordIndex].japanese), 'ja');
         }
         break;
       case 'Delete':
@@ -2827,6 +2912,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentSettings.isSelectionModeActive) {
           e.preventDefault();
           openSimilarGroupSelectorModal();
+        }
+        break;
+      case 'Enter':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        if (currentSettings.currentLesson === 'Similar Words') {
+          e.preventDefault();
+          createSimilarWordGroup();
         }
         break;
       case '+':

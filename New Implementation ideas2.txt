@@ -34,3 +34,23 @@ in copy to category:
      also when i click on "Enter" then it should click on "copy Words"
 
 when i'm coping an words to an category, then it should almost move nrml words, never to hard words.
+
+------------------------------
+read japanese instead of romanji
+in quiz when goto previous show question always
+for the words that are copied to an category when i hover my mouse ove then show added categories
+
+------
+
+when i'm in quiz mode clicking on c -> it should call the copy to category functionality
+when i'm copying to similar words category -> then "Add to Similar Words Group" pop is getting opened
+and i want focus to be gone to Select Group automatically, and click on enter should click on "Add Words" button.
+also by default last group to be selected for "Select Group" dropdown.
+
+---
+
+also when i click on copy words, then by default it should select the -> "Similar Words" Category
+
+---
+
+when i'm in similar words page, when i click  on Enter button, then click on "Create New Group" button

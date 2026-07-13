@@ -1819,7 +1819,7 @@ and (used to connect sentences)
 soshite
 
 やさしい
-easy
+easy, kind
 yasashii
 
 ゆうめい（な）
@@ -4575,7 +4575,8 @@ allWords["Lesson 25 - Hard"] = ``;
 
 const appSettings = {
   "flagCounts": {
-    "そうですか::I see. / Is that so?": 1
+    "そうですか::I see. / Is that so?": 1,
+    "なんですか::Yes?": 1
   },
   "currentLesson": "Lesson 01",
   "isHard": false,
@@ -4590,5 +4591,65 @@ const appSettings = {
   "customCategories": [
     "Phrases"
   ],
-  "similarWordGroups": []
+  "similarWordGroups": [
+    {
+      "words": [
+        {
+          "japanese": "それから",
+          "english": "after than, and then",
+          "romaji": "sorekara"
+        },
+        {
+          "japanese": "これから",
+          "english": "from now on, soon",
+          "romaji": "korekara"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "ちいさい",
+          "english": "small, little",
+          "romaji": "chiisai"
+        },
+        {
+          "japanese": "すこし",
+          "english": "a little, a few",
+          "romaji": "sukoshi"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "しゅくだい",
+          "english": "homework",
+          "romaji": "shukudai"
+        },
+        {
+          "japanese": "しょくどう",
+          "english": "dining hall, canteen",
+          "romaji": "shokudou"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "しんせつ（な）",
+          "english": "kind",
+          "romaji": "shinsetsu na"
+        },
+        {
+          "japanese": "やさしい",
+          "english": "easy, kind",
+          "romaji": "yasashii"
+        }
+      ]
+    },
+    {
+      "words": []
+    }
+  ]
 };
