@@ -1,0 +1,61 @@
+New implementation ideas:
+when i search for the word, and click on down arrow select first word, and again clicking should
+select 2nd word and so on, also up arrow arrow function also should work
+allow way to do quiz of multiple lessons, allow user to select the lessons.
+
+Give feature to create new category, we already have lesson 1 to 25, but i still want to create new categories.
+Move part should only for hard to normal (or) normal to hard.
+So give feature to copy the words to other category (it should never move to new category, only copy)
+-> this feature should only when selection mode is on.
+
+when selection mode is on "c' click -> should copy the words to selected category.
+when selection mode is off "c" click -> should click on "copy to clipboard" button
+
+-> current implementation is reading japanese words, but use romanji to read instead,
+words like はいしゃ -> is read out as waisha, but actual reading is haisha
+
+in quiz add 2 new modes:
+    romanji to english mode
+    english to romanji mode writting
+
+allow feature to show all words, they should be shown in sorted order of romanji,
+so duplicate words -> 2 words having same japanese, english meaning and romanji should be added only once 
+
+Some how i want to be able to make words into groups, so that similar words i can make them into groups,
+my idea is:
+create new Category -> similar words -> in the category
+-> from other category i will be selecting words and clicking on "S" key or "Move Similar Words" button should copy the 
+words to "Similar Words" category and here there will be initially only one empty box. All moved words would be in 
+on that single box. and we can create new empty boxes - give an button for it, also give "+" key press to call this button click,
+button should be available only in this category page, and 
+allow feature to drag and drop words into box, and i will be move words one by one to that box. Give a button to create new empty box. 
+
+Give a feature to edit the words, i should be able to edit any thing like japanese, english, romanji
+-> while editing make sure that arrow functions wont be colliding with this.
+
+Also give feature that if i click Shift + 0 and then Shift + 1, then open first lesson
+when i click Shift + 1 and then shift + 4, then open 14th lesson like that please give an feature.
+
+also when i click on the screen anywhere out side the word box, then all selected boxes should become not selected.
+if i were to click on word box then no unselected all boxes, when i dont click on anyof the words then only do this.
+
+when i'm in search box, and if i click esc then i should come out of focus of the search box.
+For Play All button -> once all words are played, then again continue from the start automatically, it should
+continously looped until i click stop button on "p" key press.
+
+in japanese to romanji writting (or) english to romanji writting modes, ignore space check
+if answer = hai wakarimasu and if i enter hai waka rimasu -> then also answer is right, also ignore ~'s
+(or brakets)
+
+make the quiz mode into flashcards
+-> when question is being shown then only question will be shown,
+when i click enter or touch the question then it will swipe and show only answer, that is
+the answer section.
+
+when quiz finishes, we are showing "Restart Same Quiz", "Start Hard/Normal QUiz", "Start Next Lesson"
+so instead of showing "Start next Lesson" we need to show "Start Next Lesson - Normal" and 
+"Start Next Lesson - Hard" buttons, also when we click on 3 when we are quiz finish screen it will be clicking
+on "start next lesson" button, now it needs to click "Start Next Lesson - Normal" also when i click on 
+4 button it should click "Start Next Lesson - Hard" button.
+
+

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese N5 Vocabulary Learner</title>
+  <!-- Google Fonts: Inter and Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <h1>N5 Vocab</h1>
+        <span id="selection-mode-badge" class="selection-badge hidden">Selection Mode</span>
+      </div>
+      <div class="search-area">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="global-search-input" placeholder="Search Romaji or English...">
+          <button id="btn-clear-search" class="btn-clear-search hidden" aria-label="Clear Search">&times;</button>
+        </div>
+        <div id="search-results-dropdown" class="search-results-dropdown hidden"></div>
+      </div>
+      <div class="global-controls">
+        <button id="theme-toggle" class="btn btn-icon" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="19.78"></line><line x1="18.36" y1="5.64" x2="19.78" y2="5.64"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button id="btn-flagged" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+          Flags
+        </button>
+        <button id="btn-help" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Help
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Grid / Page Content -->
+  <main class="app-main">
+    <div class="control-panel">
+      <!-- Lesson and Sub-list Selectors -->
+      <div class="panel-section selection-controls">
+        <div class="input-group">
+          <label for="select-lesson">Lesson</label>
+          <select id="select-lesson" class="custom-select">
+            <!-- Programmatically populated: Lesson 01 - Lesson 25 -->
+          </select>
+        </div>
+
+        <div class="input-group toggle-group">
+          <span class="toggle-label">Category</span>
+          <div class="segmented-control">
+            <input type="radio" id="mode-normal" name="lesson-type" value="normal" checked>
+            <label for="mode-normal">Normal</label>
+            
+            <input type="radio" id="mode-hard" name="lesson-type" value="hard">
+            <label for="mode-hard">Hard</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Display Options -->
+      <div class="panel-section display-controls">
+        <div class="input-group">
+          <label for="select-display-mode">Display Mode</label>
+          <select id="select-display-mode" class="custom-select">
+            <option value="big-english">Big English</option>
+            <option value="big-japanese">Big Japanese</option>
+            <option value="english-only">English Only</option>
+            <option value="japanese-only">Japanese Only</option>
+            <option value="romaji-only">Romaji Only</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="select-gap">Reading Gap</label>
+          <select id="select-gap" class="custom-select">
+            <option value="0">0 sec</option>
+            <option value="0.5">0.5 sec</option>
+            <option value="1">1 sec</option>
+            <option value="1.5">1.5 sec</option>
+            <option value="2">2 sec</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Actions Panel -->
+      <div class="panel-section action-controls">
+        <div class="action-buttons-grid">
+          <button id="btn-play-all" class="btn btn-primary btn-play">
+            <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <svg class="pause-icon hidden" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            <span>Play All</span>
+          </button>
+          <button id="btn-quiz" class="btn btn-accent">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Quiz
+          </button>
+          <button id="btn-import" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            Import
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics Bar -->
+    <div id="stats-panel" class="stats-panel">
+      <div class="stat-item">
+        <span class="stat-label">Lesson:</span>
+        <span id="stat-current-lesson" class="stat-value">-</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Total Words:</span>
+        <span id="stat-total-words" class="stat-value">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Normal:</span>
+        <span id="stat-normal-count" class="stat-value">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Hard:</span>
+        <span id="stat-hard-count" class="stat-value">0</span>
+      </div>
+      <div id="stat-selected-item" class="stat-item hidden">
+        <span class="stat-label">Selected:</span>
+        <span id="stat-selected-count" class="stat-value">0</span>
+      </div>
+    </div>
+
+    <!-- Quick Keyboard Selection Instructions (Visual cue only on desktop, hidden on mobile) -->
+    <div class="kbd-info">
+      <span>Use <strong>&larr;</strong> and <strong>&rarr;</strong> to select cards and speak. Click cards to focus. <strong>Ctrl+Click</strong> to toggle selection, <strong>Shift+Click</strong> to select ranges.</span>
+    </div>
+
+    <!-- Cards Layout / Vocabulary Cards Grid -->
+    <div id="vocab-grid-container" class="vocab-grid-container">
+      <div id="vocab-grid" class="vocab-grid" role="listbox" aria-label="Vocabulary Cards">
+        <!-- Rendered programmatically -->
+      </div>
+      <!-- Empty state placeholder -->
+      <div id="empty-state" class="empty-state hidden">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        <p>No vocabulary words in this lesson folder yet.</p>
+        <button id="btn-empty-import" class="btn btn-primary">Import Vocabulary</button>
+      </div>
+    </div>
+
+    <!-- Bottom Management Panel -->
+    <div class="management-panel">
+      <div class="manage-left">
+        <button id="btn-move-to-hard" class="btn btn-secondary" disabled>Move to Hard</button>
+        <button id="btn-move-to-normal" class="btn btn-secondary" disabled>Move to Normal</button>
+        <button id="btn-move-up" class="btn btn-secondary btn-small" disabled title="Move Up (U)" aria-label="Move Up">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+        <button id="btn-move-down" class="btn btn-secondary btn-small" disabled title="Move Down (D)" aria-label="Move Down">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <button id="btn-delete" class="btn btn-danger" disabled>Delete Selected</button>
+      </div>
+      <div class="manage-right">
+        <button id="btn-toggle-selection-mode" class="btn btn-outline" title="Toggle Selection Mode">Enable Selection Mode</button>
+        <button id="btn-clipboard" class="btn btn-outline" title="Copy N5 configuration to clipboard">Copy to Clipboard</button>
+        <button id="btn-reset-cache" class="btn btn-outline-danger" title="Clear all local settings and word overrides">Reset Cache</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- Backdrop -->
+  <div id="modal-backdrop" class="modal-backdrop hidden"></div>
+
+  <!-- Quiz Modal -->
+  <div id="modal-quiz" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+    <div class="modal-header">
+      <h2 id="quiz-title">Vocabulary Quiz</h2>
+      <button class="btn-close-modal" aria-label="Close Quiz">&times;</button>
+    </div>
+    <div class="modal-body">
+      <!-- Quiz Setup View -->
+      <div id="quiz-setup-view">
+        <div class="quiz-option-group">
+          <label for="quiz-mode-select">Quiz Mode</label>
+          <select id="quiz-mode-select" class="custom-select">
+            <option value="quiz1">Quiz 1: English &rarr; Japanese (Review)</option>
+            <option value="quiz2">Quiz 2: Japanese &rarr; English (Review)</option>
+            <option value="quiz3">Quiz 3: English &rarr; Japanese Writing</option>
+            <option value="quiz4">Quiz 4: Japanese &rarr; English Writing</option>
+            <option value="quiz5">Quiz 5: Japanese &rarr; Romaji Writing</option>
+          </select>
+        </div>
+
+        <div class="quiz-option-group">
+          <label>Question Order</label>
+          <div class="segmented-control">
+            <input type="radio" id="order-random" name="quiz-order" value="random" checked>
+            <label for="order-random">Random</label>
+            <input type="radio" id="order-original" name="quiz-order" value="original">
+            <label for="order-original">Original</label>
+          </div>
+        </div>
+
+        <div class="quiz-setup-actions">
+          <button id="btn-start-quiz" class="btn btn-primary btn-large">Start Quiz</button>
+        </div>
+      </div>
+
+      <!-- Quiz Active View -->
+      <div id="quiz-active-view" class="hidden">
+        <!-- Progress & Score -->
+        <div class="quiz-stats">
+          <span id="quiz-progress-text">Question 1 of 10</span>
+          <span id="quiz-score-text" class="hidden">Score: 0 / 0</span>
+        </div>
+        
+        <div class="quiz-progress-bar-container">
+          <div id="quiz-progress-bar" class="quiz-progress-bar" style="width: 0%"></div>
+        </div>
+
+        <!-- Question Box -->
+        <div class="quiz-question-box">
+          <div id="quiz-question-text" class="quiz-question-text">Question Word</div>
+          <button id="quiz-speak-btn" class="btn btn-icon btn-speak" title="Speak Word" aria-label="Speak Word">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          </button>
+        </div>
+
+        <!-- Answer / Input Area -->
+        <div class="quiz-answer-area">
+          <!-- Text input for writing modes -->
+          <div id="quiz-input-container" class="quiz-input-container hidden">
+            <input type="text" id="quiz-typed-answer" class="quiz-text-input" placeholder="Type your answer here..." autocomplete="off" spellcheck="false">
+            <button id="btn-quiz-submit" class="btn btn-primary">Check</button>
+          </div>
+
+          <!-- Reveal display for flashcard modes -->
+          <button id="btn-quiz-reveal" class="btn btn-primary btn-large">Reveal Answer</button>
+        </div>
+
+        <!-- Feedback & Reveal Box -->
+        <div id="quiz-feedback-box" class="quiz-feedback-box hidden">
+          <div id="quiz-feedback-title" class="feedback-title">Correct!</div>
+          <div class="feedback-details">
+            <div class="feedback-item">
+              <span class="label">Japanese:</span>
+              <span id="quiz-reveal-japanese" class="value text-japanese">--</span>
+            </div>
+            <div class="feedback-item">
+              <span class="label">English:</span>
+              <span id="quiz-reveal-english" class="value">--</span>
+            </div>
+            <div class="feedback-item reveal-romaji-section">
+              <span class="label">Romaji:</span>
+              <span id="quiz-reveal-romaji" class="value">--</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls below question -->
+        <div class="quiz-navigation-controls">
+          <button id="btn-quiz-prev" class="btn btn-secondary" title="Previous Word">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            Prev
+          </button>
+
+          <button id="btn-quiz-flag" class="btn btn-secondary" title="Flag current word">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+            Flag
+          </button>
+
+          <button id="btn-quiz-next" class="btn btn-accent" title="Next Word">
+            Next
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Completion Controls -->
+        <div id="quiz-completion-controls" class="quiz-completion-controls hidden">
+          <button id="btn-quiz-restart" class="btn btn-primary">Restart Same Quiz</button>
+          <button id="btn-quiz-toggle-difficulty" class="btn btn-secondary">Start Hard Quiz</button>
+          <button id="btn-quiz-next-lesson" class="btn btn-accent">Start Next Lesson</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flagged Words Modal -->
+  <div id="modal-flagged" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="flagged-title">
+    <div class="modal-header">
+      <h2 id="flagged-title">Flagged Vocabulary</h2>
+      <button class="btn-close-modal" aria-label="Close Flags Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div id="flagged-list-container" class="flagged-list-container">
+        <!-- Rendered programmatically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Help / Keyboard Shortcuts Modal -->
+  <div id="modal-help" class="modal modal-large hidden" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <div class="modal-header">
+      <h2 id="help-title">Keyboard Shortcuts & Help Guide</h2>
+      <button class="btn-close-modal" aria-label="Close Help Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <!-- Desktop Help Content -->
+      <div class="desktop-help-content">
+        <div class="help-section">
+          <h3>Keyboard Shortcuts</h3>
+          <p>Efficiently navigate and manage your learning sessions using these dedicated shortcuts.</p>
+          
+          <table class="help-table">
+            <thead>
+              <tr>
+                <th>Shortcut</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>M</kbd></td>
+                <td>Toggle Selection Mode (needed to use selection commands).</td>
+              </tr>
+              <tr>
+                <td><kbd>M</kbd> (in Selection Mode)</td>
+                <td>Move selected words to Hard (Normal list) / Move to Normal (Hard list).</td>
+              </tr>
+              <tr>
+                <td><kbd>D</kbd> (in Selection Mode)</td>
+                <td>Delete all selected words.</td>
+              </tr>
+              <tr>
+                <td><kbd>&rarr;</kbd> (Right Arrow) (in Normal Mode)</td>
+                <td>Move focus to next card and play Japanese audio.</td>
+              </tr>
+              <tr>
+                <td><kbd>&larr;</kbd> (Left Arrow) (in Normal Mode)</td>
+                <td>Move focus to previous card and play Japanese audio.</td>
+              </tr>
+              <tr>
+                <td><kbd>Space</kbd></td>
+                <td>Repeat speaking current card's Japanese audio (or Quiz word).</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + Click</td>
+                <td>Select only the clicked word (only in Selection Mode).</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + Click</td>
+                <td>Select range of cards (only in Selection Mode).</td>
+              </tr>
+              <tr>
+                <td><kbd>Esc</kbd></td>
+                <td>Close active modal dialog or clear card selection.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> (Left Arrow)</td>
+                <td>Go to the previous lesson (only when Selection Mode is inactive).</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> (Right Arrow)</td>
+                <td>Go to the next lesson (only when Selection Mode is inactive).</td>
+              </tr>
+              <tr>
+                <td><kbd>&larr;</kbd> / <kbd>&uarr;</kbd> (Left/Up Arrow) (in Selection Mode)</td>
+                <td>Move selected card(s) Up (left).</td>
+              </tr>
+              <tr>
+                <td><kbd>&rarr;</kbd> / <kbd>&darr;</kbd> (Right/Down Arrow) (in Selection Mode)</td>
+                <td>Move selected card(s) Down (right).</td>
+              </tr>
+              <tr>
+                <td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td>
+                <td>Delete selected card(s).</td>
+              </tr>
+              <tr>
+                <td><kbd>Q</kbd></td>
+                <td>Trigger / Close the Quiz modal.</td>
+              </tr>
+              <tr>
+                <td><kbd>I</kbd></td>
+                <td>Open Import vocabulary modal and focus the text box.</td>
+              </tr>
+              <tr>
+                <td><kbd>C</kbd></td>
+                <td>Copy N5 configuration/backup to clipboard.</td>
+              </tr>
+              <tr>
+                <td><kbd>T</kbd></td>
+                <td>Toggle between Light and Dark themes.</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>1</kbd> .. <kbd>5</kbd></td>
+                <td>Change display modes (1: Big English, 2: Big Jap, 3: Eng, 4: Jap, 5: Romaji).</td>
+              </tr>
+              <tr>
+                <td><kbd>Enter</kbd> (in Quiz Setup)</td>
+                <td>Start Quiz.</td>
+              </tr>
+              <tr>
+                <td><kbd>Enter</kbd> (in Quiz Active)</td>
+                <td>Reveal answer, submit text input, or go to next question.</td>
+              </tr>
+              <tr>
+                <td><kbd>&larr;</kbd> (Left Arrow) (in Quiz Active)</td>
+                <td>Go to previous question (when text input is not focused).</td>
+              </tr>
+              <tr>
+                <td><kbd>&rarr;</kbd> (Right Arrow) (in Quiz Active)</td>
+                <td>Go to next question (when text input is not focused).</td>
+              </tr>
+              <tr>
+                <td><kbd>Space</kbd> (in Quiz Active)</td>
+                <td>Read current word in Japanese (when text input is not focused).</td>
+              </tr>
+              <tr>
+                <td><kbd>&uarr;</kbd> (Up Arrow) (in Quiz Setup)</td>
+                <td>Select previous Quiz Mode.</td>
+              </tr>
+              <tr>
+                <td><kbd>&darr;</kbd> (Down Arrow) (in Quiz Setup)</td>
+                <td>Select next Quiz Mode.</td>
+              </tr>
+              <tr>
+                <td><kbd>O</kbd> (in Quiz Setup)</td>
+                <td>Select Original question order.</td>
+              </tr>
+              <tr>
+                <td><kbd>R</kbd> (in Quiz Setup)</td>
+                <td>Select Random question order.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd> (in Quiz Setup)</td>
+                <td>Toggle between Normal and Hard mode.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="help-section">
+          <h3>Application Guidelines</h3>
+          <h4>Vocabulary Storage & Import</h4>
+          <p>Words are organized inside <code>words.js</code> within an <code>allWords</code> dictionary. You can import new words by tapping the <strong>Import</strong> button. Use three-line blocks:</p>
+          <pre class="code-block">けんきゅうしゃ
+researcher, scholar
+kenkyuusha</pre>
+          
+          <h4>Backup Workflow</h4>
+          <ol>
+            <li>Configure your lessons, flag counts, and preferences.</li>
+            <li>Click <strong>Copy to Clipboard</strong> to copy the output representation.</li>
+            <li>Paste the output into <code>words.js</code> on your machine.</li>
+            <li>Click <strong>Reset Cache</strong> to clean up local overrides; your past states are preserved in the code file.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Mobile Help Content -->
+      <div class="mobile-help-content">
+        <div class="help-section">
+          <h3>Mobile Touch Controls</h3>
+          <p>Learn how to navigate and manage your vocabulary using simple gestures on your mobile device:</p>
+          
+          <table class="help-table">
+            <thead>
+              <tr>
+                <th>Control</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tap Card (in Grid)</strong></td>
+                <td>Focus on a card and play its Japanese pronunciation.</td>
+              </tr>
+              <tr>
+                <td><strong>Tap Card (in Quiz)</strong></td>
+                <td>Acts exactly like the Enter key (Reveal Answer or Next Question).</td>
+              </tr>
+              <tr>
+                <td><strong>Selection Mode Toggle</strong></td>
+                <td>Toggle Selection Mode via the button next to "Copy to Clipboard" at the bottom of the page.</td>
+              </tr>
+              <tr>
+                <td><strong>Tap Card (in Selection Mode)</strong></td>
+                <td>Directly toggles the word's selection (no Ctrl key required on mobile).</td>
+              </tr>
+              <tr>
+                <td><strong>Search Bar</strong></td>
+                <td>Type in the search bar at the top of the page to find words across all lessons. Tap a result to jump and focus.</td>
+              </tr>
+              <tr>
+                <td><strong>Import / Copy / Theme</strong></td>
+                <td>Tap Import, Copy to Clipboard, or the Sun/Moon icons in the header to run these actions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="help-section">
+          <h3>Application Guidelines</h3>
+          <p>Words are organized inside <code>words.js</code> within an <code>allWords</code> dictionary. You can import new words by tapping the <strong>Import</strong> button. Use three-line blocks:</p>
+          <pre class="code-block">けんきゅうしゃ
+researcher, scholar
+kenkyuusha</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Import Modal -->
+  <div id="modal-import" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="import-title">
+    <div class="modal-header">
+      <h2 id="import-title">Import Vocabulary</h2>
+      <button class="btn-close-modal" aria-label="Close Import Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-instruction">Paste vocabulary entries below. Each entry must consist of exactly three consecutive lines (1. Japanese, 2. English, 3. Romaji). Multiple entries should be separated by empty lines.</p>
+      
+      <div class="import-textarea-wrapper">
+        <textarea id="import-text" class="custom-textarea" placeholder="けんきゅうしゃ&#10;researcher, scholar&#10;kenkyuusha&#10;&#10;しつれいですが (or) しつれいですな&#10;excuse me, but&#10;shitsurei desu ga"></textarea>
+      </div>
+
+      <div class="modal-actions">
+        <button id="btn-submit-import" class="btn btn-primary btn-large">Import to Selected List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
