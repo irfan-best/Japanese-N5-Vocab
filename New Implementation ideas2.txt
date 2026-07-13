@@ -1,0 +1,36 @@
+when i'm in quiz, when i touch on answer box, then also it should behave as enter button click
+when i'm in edit box, when i click enter button it should click on "Save Changes" button
+    when i click on esc button then close the box. 
+when doing sort by romanji for all words part - ignore ~, "(" for considering sorting logic.
+when i'm doing ctrl + right arrow after lesson 25 -> it should goto next category in our case it is "Show All words"
+basically it should go by all categories for first is should always be lessons,
+in future i might add new lesson also so it should work in that case too.
+
+Copy words to -> button should be available when we are in selection mode,
+and copy words should only be copied to categories that are not lessons, so when i'm doing copy to then 
+give option to select only categories that are not lesson in an dropdown form.
+Copy should work even to the "Similar Words" category
+also Ctrl + right/left arrow -> should not navigate to lesson categories, since we are implementing it 
+using shift + number combo, so only not lesson categories to be navigated using ctrl + right/left arrow clicks
+
+Quiz for multiple lessons feature is also not working.
+i'm not getting option to select lessons.
+
+------------------------------
+
+Actually "Next Lesson - Hard" / "Next Lesson - Normal" is playing current lesson only on quiz finish page.
+page is changing correctly but quiz is playing current one only
+-> i think selection of multiple lesson feature might be having impact here.
+when we are showing answer box then make .quiz-answer-area-> margin-bottom : 0px;
+we basically want to see question box and answer box in same dimensions and same positions
+when i click on edit for an word, then it should automatically make japanese box as focus
+
+when doing sort by romanji for all words part - ignore ~, "(" for considering sorting logic.
+also ignore "-"
+
+
+in copy to category:
+    automatically make dorpdown box as focus
+     also when i click on "Enter" then it should click on "copy Words"
+
+when i'm coping an words to an category, then it should almost move nrml words, never to hard words.

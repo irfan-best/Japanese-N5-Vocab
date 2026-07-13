@@ -4577,16 +4577,18 @@ const appSettings = {
   "flagCounts": {
     "そうですか::I see. / Is that so?": 1
   },
-  "currentLesson": "Lesson 04",
+  "currentLesson": "Lesson 01",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz1",
-  "quizOrder": "random",
+  "quizOrder": "original",
   "revealRomaji": false,
-  "focusedWordIndex": 45,
-  "selectedWordIndices": [
-    45
+  "focusedWordIndex": -1,
+  "selectedWordIndices": [],
+  "isSelectionModeActive": false,
+  "customCategories": [
+    "Phrases"
   ],
-  "isSelectionModeActive": false
+  "similarWordGroups": []
 };

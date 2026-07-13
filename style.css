@@ -1534,3 +1534,203 @@ html[data-theme="light"] .moon-icon { display: block; }
     display: none !important;
   }
 }
+
+/* ==========================================================================
+   FEATURE UPDATES STYLES
+   ========================================================================== */
+
+/* Search Result Selection */
+.search-result-row.selected {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+.search-result-row.selected .search-result-meta,
+.search-result-row.selected .search-result-text,
+.search-result-row.selected .search-result-text .jp,
+.search-result-row.selected .search-result-text .romaji {
+  color: #ffffff !important;
+}
+
+/* Card Edit Overlay Button */
+.btn-card-edit {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vocab-card:hover .btn-card-edit,
+.vocab-card:focus-within .btn-card-edit {
+  opacity: 1;
+}
+.btn-card-edit:hover {
+  color: var(--accent);
+  background-color: var(--border-color);
+}
+
+/* Similar Words category layouts */
+.similar-groups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.similar-action-bar {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.similar-groups-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  width: 100%;
+}
+
+.similar-group-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  width: 100%;
+}
+
+.similar-group-box.drag-over {
+  border-color: var(--accent);
+  background-color: var(--accent-light);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+}
+
+.similar-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.similar-group-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.similar-group-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  min-height: 80px;
+}
+
+.group-empty-placeholder {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 1.5rem;
+  pointer-events: none;
+}
+
+.similar-word-card {
+  position: relative;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  cursor: grab;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.similar-word-card:active {
+  cursor: grabbing;
+}
+
+.similar-word-card.dragging {
+  opacity: 0.4;
+}
+
+.similar-word-card .card-jp {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.similar-word-card .card-romaji {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.similar-word-card .card-eng {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.btn-remove-from-group {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px;
+}
+
+.btn-remove-from-group:hover {
+  color: var(--danger);
+}
+
+/* Flashcard revealed back side premium sizing styling */
+.quiz-feedback-box.flashcard-back-active {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Copy Words To visibility toggle */
+body:not(.selection-mode-active) #btn-copy-to {
+  display: none !important;
+}
+
+@media (max-width: 400px) {
+  #select-lesson{
+    min-width: 120px;
+  }
+
+  .lesson-select-wrapper{
+    gap: 0.2rem !important;;
+  }
+}

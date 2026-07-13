@@ -13,7 +13,9 @@ const DEFAULT_SETTINGS = {
   revealRomaji: false,
   focusedWordIndex: -1,
   selectedWordIndices: [],
-  isSelectionModeActive: false
+  isSelectionModeActive: false,
+  customCategories: [],
+  similarWordGroups: []
 };
 
 // Main Runtime State Variables
@@ -162,6 +164,13 @@ function loadState() {
     settingsInitializedFromJs = true;
   }
 
+  if (!currentSettings.customCategories) {
+    currentSettings.customCategories = [];
+  }
+  if (!currentSettings.similarWordGroups) {
+    currentSettings.similarWordGroups = [];
+  }
+
   // 2. Load Words
   const savedWords = localStorage.getItem('n5_words');
   if (savedWords) {
@@ -182,6 +191,12 @@ function loadState() {
     if (!currentWordsDb[lStr]) currentWordsDb[lStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
+
+  // Ensure all custom categories exist
+  currentSettings.customCategories.forEach(cat => {
+    if (!currentWordsDb[cat]) currentWordsDb[cat] = [];
+    if (!currentWordsDb[cat + " - Hard"]) currentWordsDb[cat + " - Hard"] = [];
+  });
 
   // If we loaded defaults from words.js, serialize them back to initialize the local storage cache
   if (settingsInitializedFromJs) {
@@ -293,10 +308,12 @@ function updatePlayAllButtonState() {
 function playNextCardInPlayAll() {
   if (!isPlayingAll) return;
   const words = getActiveWords();
-  if (words.length === 0 || playAllIndex >= words.length) {
+  if (words.length === 0) {
     stopSpeech();
-    showToast("Completed Play All session.", "success");
     return;
+  }
+  if (playAllIndex >= words.length) {
+    playAllIndex = 0;
   }
 
   // Set focused word index
@@ -320,7 +337,7 @@ function playNextCardInPlayAll() {
     speakText(word.english, 'en', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
-        speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
+        speakText(word.romaji, 'ja', () => {
           if (!isPlayingAll) return;
           playAllTimeout = setTimeout(() => {
             playAllIndex++;
@@ -330,7 +347,7 @@ function playNextCardInPlayAll() {
       }, gapMs);
     });
   } else if (mode === 'big-japanese') {
-    speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
+    speakText(word.romaji, 'ja', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
         speakText(word.english, 'en', () => {
@@ -352,7 +369,7 @@ function playNextCardInPlayAll() {
     });
   } else {
     // Japanese only or Romaji only
-    speakText(cleanJapaneseSpeakText(word.japanese), 'ja', () => {
+    speakText(word.romaji, 'ja', () => {
       if (!isPlayingAll) return;
       playAllTimeout = setTimeout(() => {
         playAllIndex++;
@@ -394,8 +411,37 @@ function getActiveLessonKey() {
 
 // Get array of word objects currently shown
 function getActiveWords() {
+  if (currentSettings.currentLesson === 'Show All Words') {
+    return getShowAllWords();
+  }
   const key = getActiveLessonKey();
   return currentWordsDb[key] || [];
+}
+
+function getShowAllWords() {
+  const uniqueMap = new Map();
+  for (const key in currentWordsDb) {
+    const list = currentWordsDb[key] || [];
+    list.forEach(w => {
+      const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
+      if (!uniqueMap.has(dupKey)) {
+        uniqueMap.set(dupKey, w);
+      }
+    });
+  }
+  const merged = Array.from(uniqueMap.values());
+  
+  const cleanRomajiForSorting = (str) => {
+    if (!str) return "";
+    return str.replace(/[~()\-]/g, '').trim().toLowerCase();
+  };
+
+  merged.sort((a, b) => {
+    const romajiA = cleanRomajiForSorting(a.romaji);
+    const romajiB = cleanRomajiForSorting(b.romaji);
+    return romajiA.localeCompare(romajiB);
+  });
+  return merged;
 }
 
 // Redraw vocabulary grid from memory state
@@ -403,6 +449,9 @@ function renderCards() {
   const container = document.getElementById('vocab-grid');
   const emptyState = document.getElementById('empty-state');
   if (!container) return;
+
+  // Reset grid class name
+  container.className = "vocab-grid";
 
   // Update Statistics UI
   const lessonKey = currentSettings.currentLesson;
@@ -430,6 +479,22 @@ function renderCards() {
     } else {
       statSelectedItem.classList.add('hidden');
     }
+  }
+
+  const isShowAll = (lessonKey === 'Show All Words');
+  const isSimilar = (lessonKey === 'Similar Words');
+
+  // Toggle controls display
+  const toggleGroup = document.querySelector('.toggle-group');
+  const managementPanel = document.querySelector('.management-panel');
+  if (toggleGroup) toggleGroup.style.display = (isShowAll || isSimilar) ? 'none' : 'flex';
+  if (managementPanel) managementPanel.style.display = (isShowAll || isSimilar) ? 'none' : 'flex';
+
+  if (isSimilar) {
+    if (emptyState) emptyState.classList.add('hidden');
+    container.classList.remove('hidden');
+    renderSimilarWordsGroups();
+    return;
   }
 
   const words = getActiveWords();
@@ -490,6 +555,19 @@ function renderCards() {
     card.appendChild(jpDiv);
     card.appendChild(enDiv);
     card.appendChild(romajiDiv);
+
+    // Edit Pen Button Overlay
+    const btnEdit = document.createElement('button');
+    btnEdit.className = 'btn-card-edit';
+    btnEdit.title = 'Edit Word';
+    btnEdit.innerHTML = `
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+    `;
+    btnEdit.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openWordEditModal(currentSettings.currentLesson, idx);
+    });
+    card.appendChild(btnEdit);
 
     // Card Event Listeners
     card.addEventListener('click', (e) => {
@@ -567,7 +645,7 @@ function handleCardClick(index, event) {
   renderCards();
 
   // Speak Japanese of selected card
-  speakText(cleanJapaneseSpeakText(words[index].japanese), 'ja');
+  speakText(words[index].romaji, 'ja');
 }
 
 // Enable/Disable reordering and list modification buttons
@@ -580,6 +658,11 @@ function updateManagementButtons() {
   document.getElementById('btn-move-up').disabled = !hasSelection;
   document.getElementById('btn-move-down').disabled = !hasSelection;
   document.getElementById('btn-delete').disabled = !hasSelection;
+  
+  const btnCopyTo = document.getElementById('btn-copy-to');
+  if (btnCopyTo) {
+    btnCopyTo.disabled = !hasSelection;
+  }
 }
 
 // ==========================================================================
@@ -612,7 +695,7 @@ function navigateFocus(direction) {
     card.focus();
   }
 
-  speakText(cleanJapaneseSpeakText(words[nextIdx].japanese), 'ja');
+  speakText(words[nextIdx].romaji, 'ja');
 }
 
 // Move selected items to Hard list
@@ -624,7 +707,13 @@ function moveSelectedToHard() {
   const targetKey = currentSettings.currentLesson + " - Hard";
 
   const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
-  currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+  
+  // Custom categories: copy instead of move
+  const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
+  if (!isCustomCategory) {
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+  }
+  
   currentWordsDb[targetKey].push(...itemsToMove);
 
   currentSettings.selectedWordIndices = [];
@@ -632,7 +721,7 @@ function moveSelectedToHard() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`Moved ${selectedIdxs.length} word(s) to Hard list.`, 'success');
+  showToast(`${isCustomCategory ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Hard list.`, 'success');
 }
 
 // Move selected items to Normal list
@@ -644,7 +733,13 @@ function moveSelectedToNormal() {
   const targetKey = currentSettings.currentLesson;
 
   const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
-  currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+  
+  // Custom categories: copy instead of move
+  const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
+  if (!isCustomCategory) {
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+  }
+  
   currentWordsDb[targetKey].push(...itemsToMove);
 
   currentSettings.selectedWordIndices = [];
@@ -652,7 +747,7 @@ function moveSelectedToNormal() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`Moved ${selectedIdxs.length} word(s) to Normal list.`, 'success');
+  showToast(`${isCustomCategory ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Normal list.`, 'success');
 }
 
 // Move selected items UP in position
@@ -793,9 +888,30 @@ function triggerImport() {
 let quizStates = [];
 
 function startQuiz() {
-  const words = getActiveWords();
+  let words = [];
+  const container = document.getElementById('quiz-lessons-container');
+  const checkedBoxes = container ? container.querySelectorAll('input[type="checkbox"]:checked') : [];
+  
+  if (checkedBoxes.length > 0) {
+    const isHardActive = currentSettings.isHard;
+    checkedBoxes.forEach(cb => {
+      const val = cb.value;
+      const key = isHardActive ? `${val} - Hard` : val;
+      const list = currentWordsDb[key] || [];
+      list.forEach(w => {
+        words.push({
+          japanese: w.japanese,
+          english: w.english,
+          romaji: w.romaji
+        });
+      });
+    });
+  } else {
+    words = getActiveWords();
+  }
+
   if (words.length === 0) {
-    showToast("Cannot start quiz: current lesson has no words.", "danger");
+    showToast("Cannot start quiz: selected lesson(s) have no words.", "danger");
     return;
   }
 
@@ -854,6 +970,15 @@ function updateQuizNavigationButtons() {
   }
 }
 
+function cleanRomajiForMatch(str) {
+  if (!str) return "";
+  return str.toLowerCase().replace(/[\s\-~()]/g, '');
+}
+
+function checkRomajiMatch(typed, correct) {
+  return cleanRomajiForMatch(typed) === cleanRomajiForMatch(correct);
+}
+
 function showQuizQuestion() {
   if (quizCurrentIndex >= quizWords.length) {
     finishQuiz();
@@ -866,13 +991,21 @@ function showQuizQuestion() {
 
   // Reset inputs & feedback DOM
   document.getElementById('quiz-typed-answer').value = state.userTyped || "";
-  document.getElementById('quiz-feedback-box').className = "quiz-feedback-box hidden";
-  document.getElementById('btn-quiz-reveal').classList.add('hidden');
-  document.getElementById('quiz-input-container').classList.add('hidden');
+  
+  const qBox = document.querySelector('.quiz-question-box');
+  const feedbackBox = document.getElementById('quiz-feedback-box');
+  const inputContainer = document.getElementById('quiz-input-container');
+  const btnReveal = document.getElementById('btn-quiz-reveal');
+  const scoreText = document.getElementById('quiz-score-text');
+
+  qBox.classList.add('hidden');
+  feedbackBox.classList.add('hidden');
+  feedbackBox.className = "quiz-feedback-box hidden";
+  inputContainer.classList.add('hidden');
+  btnReveal.classList.add('hidden');
 
   // Set Score displays
-  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5'].includes(mode);
-  const scoreText = document.getElementById('quiz-score-text');
+  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
   if (isWritingQuiz) {
     scoreText.classList.remove('hidden');
     scoreText.textContent = `Score: ${quizScore} / ${quizWords.length}`;
@@ -889,51 +1022,64 @@ function showQuizQuestion() {
   const qTextEl = document.getElementById('quiz-question-text');
   qTextEl.className = "quiz-question-text";
 
-  if (mode === 'quiz1' || mode === 'quiz3') {
-    // English -> Japanese
-    qTextEl.textContent = word.english;
-    speakText(word.english, 'en');
-  } else {
-    // Japanese -> English/Romaji
-    qTextEl.textContent = word.japanese;
-    qTextEl.classList.add('text-japanese');
-    speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
-  }
-
   // Setup based on answered state
   if (state.answered) {
+    // Answer Side (Only Answer is visible, Question box is hidden)
     document.getElementById('quiz-reveal-japanese').textContent = word.japanese;
     document.getElementById('quiz-reveal-english').textContent = word.english;
     document.getElementById('quiz-reveal-romaji').textContent = word.romaji;
 
-    const feedbackBox = document.getElementById('quiz-feedback-box');
     const feedbackTitle = document.getElementById('quiz-feedback-title');
     feedbackBox.classList.remove('hidden');
+    feedbackBox.classList.add('flashcard-back-active');
 
     if (isWritingQuiz) {
       if (state.isCorrect) {
-        feedbackBox.className = "quiz-feedback-box correct";
+        feedbackBox.className = "quiz-feedback-box correct flashcard-back-active";
         feedbackTitle.textContent = "Correct!";
       } else {
-        feedbackBox.className = "quiz-feedback-box incorrect";
+        feedbackBox.className = "quiz-feedback-box incorrect flashcard-back-active";
         feedbackTitle.textContent = `Incorrect! You typed: "${state.userTyped}"`;
       }
     } else {
-      feedbackBox.className = "quiz-feedback-box";
+      feedbackBox.className = "quiz-feedback-box flashcard-back-active";
       feedbackTitle.textContent = "Answer:";
     }
 
     const revealRomajiSection = feedbackBox.querySelector('.reveal-romaji-section');
-    revealRomajiSection.style.display = "flex";
+    if (revealRomajiSection) revealRomajiSection.style.display = "flex";
   } else {
+    // Question Side (Only Question is visible, Feedback box is hidden)
+    qBox.classList.remove('hidden');
+    
+    if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz7') {
+      // English -> Japanese/Romaji
+      qTextEl.textContent = word.english;
+      speakText(word.english, 'en');
+    } else if (mode === 'quiz6') {
+      // Romaji -> English
+      qTextEl.textContent = word.romaji;
+      speakText(word.romaji, 'ja');
+    } else {
+      // Japanese -> English/Romaji (Review / Writing)
+      qTextEl.textContent = word.japanese;
+      qTextEl.classList.add('text-japanese');
+      speakText(word.romaji, 'ja');
+    }
+
     if (isWritingQuiz) {
-      document.getElementById('quiz-input-container').classList.remove('hidden');
+      inputContainer.classList.remove('hidden');
       const input = document.getElementById('quiz-typed-answer');
       input.focus();
     } else {
-      document.getElementById('btn-quiz-reveal').classList.remove('hidden');
-      document.getElementById('btn-quiz-reveal').focus();
+      btnReveal.classList.remove('hidden');
+      btnReveal.focus();
     }
+  }
+
+  const answerArea = document.querySelector('.quiz-answer-area');
+  if (answerArea) {
+    answerArea.style.marginBottom = state.answered ? "0px" : "";
   }
 
   updateQuizNavigationButtons();
@@ -945,10 +1091,12 @@ function speakCurrentQuizWord() {
   const word = quizWords[quizCurrentIndex];
   const mode = currentSettings.quizMode;
 
-  if (mode === 'quiz1' || mode === 'quiz3') {
+  if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz7') {
     speakText(word.english, 'en');
+  } else if (mode === 'quiz6') {
+    speakText(word.romaji, 'ja');
   } else {
-    speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
+    speakText(word.romaji, 'ja');
   }
 }
 
@@ -959,7 +1107,7 @@ function checkQuizAnswer() {
 
   const word = quizWords[quizCurrentIndex];
   const mode = currentSettings.quizMode;
-  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5'].includes(mode);
+  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
 
   let isCorrect = false;
   let userTyped = "";
@@ -972,8 +1120,8 @@ function checkQuizAnswer() {
       isCorrect = checkJapaneseMatch(userTyped, word.japanese);
     } else if (mode === 'quiz4') {
       isCorrect = checkEnglishMatch(userTyped, word.english);
-    } else if (mode === 'quiz5') {
-      isCorrect = (userTyped.trim().toLowerCase() === word.romaji.trim().toLowerCase());
+    } else if (mode === 'quiz5' || mode === 'quiz7') {
+      isCorrect = checkRomajiMatch(userTyped, word.romaji);
     }
 
     state.isCorrect = isCorrect;
@@ -988,8 +1136,8 @@ function checkQuizAnswer() {
   // If flashcard modes, speak the revealed word
   if (!isWritingQuiz) {
     if (mode === 'quiz1') {
-      speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
-    } else if (mode === 'quiz2') {
+      speakText(word.romaji, 'ja');
+    } else if (mode === 'quiz2' || mode === 'quiz6') {
       speakText(word.english, 'en');
     }
   }
@@ -1014,7 +1162,7 @@ function prevQuizQuestion() {
 function finishQuiz() {
   document.getElementById('quiz-progress-bar').style.width = '100%';
   const mode = currentSettings.quizMode;
-  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5'].includes(mode);
+  const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
 
   const qTextEl = document.getElementById('quiz-question-text');
   qTextEl.className = "quiz-question-text";
@@ -1025,6 +1173,9 @@ function finishQuiz() {
   } else {
     qTextEl.textContent = "Quiz Complete!";
   }
+
+  // Ensure the main question box is visible for completion text
+  document.querySelector('.quiz-question-box').classList.remove('hidden');
 
   document.getElementById('quiz-feedback-box').className = "quiz-feedback-box hidden";
   document.getElementById('btn-quiz-reveal').classList.add('hidden');
@@ -1074,7 +1225,7 @@ function toggleDifficultyAndQuiz() {
   showToast(`Switched category to: ${currentSettings.isHard ? 'Hard' : 'Normal'} and restarted quiz!`, 'info');
 }
 
-function startNextLessonQuiz() {
+function startNextLessonQuiz(isNextHardMode = false) {
   let match = currentSettings.currentLesson.match(/\d+/);
   if (!match) return;
   let num = parseInt(match[0], 10);
@@ -1082,17 +1233,29 @@ function startNextLessonQuiz() {
   if (num > 25) num = 1;
   
   currentSettings.currentLesson = "Lesson " + String(num).padStart(2, '0');
+  currentSettings.isHard = isNextHardMode;
   
   const selectLesson = document.getElementById('select-lesson');
   if (selectLesson) selectLesson.value = currentSettings.currentLesson;
+  
+  const normalRadio = document.getElementById('mode-normal');
+  const hardRadio = document.getElementById('mode-hard');
+  if (isNextHardMode) {
+    if (hardRadio) hardRadio.checked = true;
+  } else {
+    if (normalRadio) normalRadio.checked = true;
+  }
   
   currentSettings.focusedWordIndex = -1;
   currentSettings.selectedWordIndices = [];
   saveSettings();
   renderCards();
   
+  // Re-populate the quiz checklist with the new next lesson active check
+  populateQuizSetupLessons();
+
   startQuiz();
-  showToast(`Moved to ${currentSettings.currentLesson} and started quiz!`, 'info');
+  showToast(`Moved to ${currentSettings.currentLesson} (${isNextHardMode ? 'Hard' : 'Normal'}) and started quiz!`, 'info');
 }
 
 function flagCurrentQuizWord() {
@@ -1260,30 +1423,84 @@ function renderFlaggedWordsList() {
 // KEYBOARD SHORTCUT HELPER FUNCTIONS
 // ==========================================================================
 
-function changeLesson(direction) {
-  let match = currentSettings.currentLesson.match(/\d+/);
-  if (!match) return;
-  let num = parseInt(match[0], 10);
+function navigateNonLessonCategories(direction) {
+  const selectLesson = document.getElementById('select-lesson');
+  if (!selectLesson) return;
   
-  if (direction === 'next') {
-    num = num + 1;
-    if (num > 25) num = 1;
+  const options = Array.from(selectLesson.options);
+  const nonLessons = options.filter(opt => {
+    const val = opt.value;
+    return val !== "Show All Words" && val !== "Similar Words" && !val.match(/^Lesson\s+\d+/i);
+  });
+  
+  // Wait, let's include all non-lessons!
+  // "Category navigation: Ctrl + Left Arrow / Ctrl + Right Arrow should navigate only through non-lesson categories.
+  // Example order: Show All Words -> Similar Words -> JLPT Revision -> Anime Words
+  // Lessons must NOT appear in this navigation anymore."
+  // So we filter out only standard lessons!
+  const finalNonLessons = options.filter(opt => !opt.value.match(/^Lesson\s+\d+/i));
+  if (finalNonLessons.length === 0) return;
+  
+  let currentVal = currentSettings.currentLesson;
+  let idx = finalNonLessons.findIndex(opt => opt.value === currentVal);
+  
+  if (idx === -1) {
+    idx = 0;
   } else {
-    num = num - 1;
-    if (num < 1) num = 25;
+    if (direction === 'next') {
+      idx = (idx + 1) % finalNonLessons.length;
+    } else {
+      idx = (idx - 1 + finalNonLessons.length) % finalNonLessons.length;
+    }
   }
   
+  const targetVal = finalNonLessons[idx].value;
+  
   stopSpeech();
-  currentSettings.currentLesson = "Lesson " + String(num).padStart(2, '0');
+  currentSettings.currentLesson = targetVal;
   currentSettings.focusedWordIndex = -1;
   currentSettings.selectedWordIndices = [];
   
-  const selectLesson = document.getElementById('select-lesson');
-  if (selectLesson) selectLesson.value = currentSettings.currentLesson;
-  
+  selectLesson.value = targetVal;
   saveSettings();
   renderCards();
-  showToast(`Changed to ${currentSettings.currentLesson}`, 'info');
+  showToast(`Switched to category: ${targetVal}`, 'info');
+}
+
+function populateQuizSetupLessons() {
+  const container = document.getElementById('quiz-lessons-container');
+  if (!container) return;
+  
+  container.innerHTML = "";
+  
+  // Scan currentWordsDb keys (filter out Hard version names to avoid duplication)
+  const keys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+  
+  // Natural sorting to ensure order is logical (e.g. Lesson 01 before Lesson 10)
+  keys.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  
+  keys.forEach(val => {
+    if (val === "Show All Words" || val === "Similar Words") return;
+    
+    const div = document.createElement('div');
+    div.style.display = "flex";
+    div.style.gap = "0.25rem";
+    div.style.alignItems = "center";
+    
+    const isChecked = currentSettings.currentLesson === val;
+    const cleanId = val.replace(/[^a-zA-Z0-9]/g, '');
+    
+    div.innerHTML = `
+      <input type="checkbox" id="quiz-cb-${cleanId}" value="${val}" ${isChecked ? 'checked' : ''}>
+      <label for="quiz-cb-${cleanId}" style="cursor:pointer; font-size: 0.9rem; color: var(--text-primary);">${val}</label>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function openQuizModal() {
+  populateQuizSetupLessons();
+  openModal('modal-quiz');
 }
 
 function navigateQuizMode(direction) {
@@ -1363,6 +1580,504 @@ function isMobileDevice() {
   return window.innerWidth <= 768;
 }
 
+// --------------------------------------------------------------------------
+// CUSTOM CATEGORIES, SIMILAR WORDS, & EDITING MANAGEMENT
+// --------------------------------------------------------------------------
+
+function populateLessonsDropdown() {
+  const selectLesson = document.getElementById('select-lesson');
+  if (!selectLesson) return;
+  
+  selectLesson.innerHTML = "";
+
+  // 1. Standard Lessons 01 - 25
+  for (let i = 1; i <= 25; i++) {
+    const opt = document.createElement('option');
+    const val = `Lesson ${String(i).padStart(2, '0')}`;
+    opt.value = val;
+    opt.textContent = val;
+    selectLesson.appendChild(opt);
+  }
+
+  // 2. Custom Categories
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      selectLesson.appendChild(opt);
+    });
+  }
+
+  // 3. Special Categories
+  const showAllOpt = document.createElement('option');
+  showAllOpt.value = "Show All Words";
+  showAllOpt.textContent = "Show All Words";
+  selectLesson.appendChild(showAllOpt);
+
+  const similarWordsOpt = document.createElement('option');
+  similarWordsOpt.value = "Similar Words";
+  similarWordsOpt.textContent = "Similar Words";
+  selectLesson.appendChild(similarWordsOpt);
+}
+
+function createCustomCategory() {
+  const catName = prompt("Enter new custom category name:");
+  if (catName === null) return;
+  
+  const trimmed = catName.trim();
+  if (!trimmed) {
+    showToast("Category name cannot be empty.", "danger");
+    return;
+  }
+  
+  const reserved = ["Show All Words", "Similar Words"];
+  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ")) {
+    showToast("This name is reserved or invalid.", "danger");
+    return;
+  }
+  
+  if (currentSettings.customCategories.includes(trimmed)) {
+    showToast("This category already exists.", "danger");
+    return;
+  }
+
+  currentSettings.customCategories.push(trimmed);
+  currentWordsDb[trimmed] = [];
+  currentWordsDb[trimmed + " - Hard"] = [];
+  
+  saveSettings();
+  saveWords();
+  
+  populateLessonsDropdown();
+  
+  // Switch to new category
+  currentSettings.currentLesson = trimmed;
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) selectLesson.value = trimmed;
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+  saveSettings();
+  renderCards();
+  
+  showToast(`Created category "${trimmed}"`, 'success');
+}
+
+function openWordEditModal(lesson, index) {
+  let targetWord = null;
+  let sourceLesson = lesson;
+  let sourceIndex = index;
+  
+  if (lesson === 'Show All Words') {
+    const all = getShowAllWords();
+    const wordToFind = all[index];
+    if (!wordToFind) return;
+    
+    // Find in database
+    for (const key in currentWordsDb) {
+      const idx = currentWordsDb[key].findIndex(w => w.japanese === wordToFind.japanese && w.english === wordToFind.english);
+      if (idx >= 0) {
+        sourceLesson = key;
+        sourceIndex = idx;
+        targetWord = currentWordsDb[key][idx];
+        break;
+      }
+    }
+  } else if (lesson === 'Similar Words') {
+    // Similar Words can be edited too, but they live in currentSettings.similarWordGroups
+    // Find group index and word index from the caller
+    // E.g. index is {groupIdx: g, wordIdx: w}
+    const groupIdx = index.groupIdx;
+    const wordIdx = index.wordIdx;
+    const group = currentSettings.similarWordGroups[groupIdx];
+    if (group) {
+      targetWord = group.words[wordIdx];
+      sourceLesson = 'Similar Words';
+      sourceIndex = JSON.stringify({ groupIdx, wordIdx });
+    }
+  } else {
+    const listKey = getActiveLessonKey();
+    targetWord = currentWordsDb[listKey] ? currentWordsDb[listKey][index] : null;
+    sourceLesson = listKey;
+  }
+  
+  if (!targetWord) return;
+  
+  const modal = document.getElementById('modal-edit-word');
+  modal.setAttribute('data-source-lesson', sourceLesson);
+  modal.setAttribute('data-source-index', String(sourceIndex));
+  
+  document.getElementById('edit-word-japanese').value = targetWord.japanese;
+  document.getElementById('edit-word-romaji').value = targetWord.romaji;
+  document.getElementById('edit-word-english').value = targetWord.english;
+  
+  openModal('modal-edit-word');
+  setTimeout(() => {
+    const jpInput = document.getElementById('edit-word-japanese');
+    if (jpInput) {
+      jpInput.focus();
+      jpInput.select();
+    }
+  }, 100);
+}
+
+function saveWordEditChanges() {
+  const modal = document.getElementById('modal-edit-word');
+  const sourceLesson = modal.getAttribute('data-source-lesson');
+  const sourceIndexStr = modal.getAttribute('data-source-index');
+  
+  const newJp = document.getElementById('edit-word-japanese').value.trim();
+  const newRomaji = document.getElementById('edit-word-romaji').value.trim();
+  const newEng = document.getElementById('edit-word-english').value.trim();
+  
+  if (!newJp || !newRomaji || !newEng) {
+    showToast("All fields must be filled.", "danger");
+    return;
+  }
+
+  if (sourceLesson === 'Similar Words') {
+    const coords = JSON.parse(sourceIndexStr);
+    const groupIdx = coords.groupIdx;
+    const wordIdx = coords.wordIdx;
+    const word = currentSettings.similarWordGroups[groupIdx].words[wordIdx];
+    if (word) {
+      word.japanese = newJp;
+      word.romaji = newRomaji;
+      word.english = newEng;
+      saveSettings();
+    }
+  } else {
+    const word = currentWordsDb[sourceLesson][parseInt(sourceIndexStr, 10)];
+    if (word) {
+      word.japanese = newJp;
+      word.romaji = newRomaji;
+      word.english = newEng;
+      saveWords();
+    }
+  }
+  
+  closeActiveModal();
+  renderCards();
+  showToast("Saved word changes.", "success");
+}
+
+function renderSimilarWordsGroups() {
+  const container = document.getElementById('vocab-grid');
+  if (!container) return;
+  
+  container.className = "vocab-grid similar-groups-container";
+  container.innerHTML = "";
+
+  // 1. Create New Group button
+  const actionBar = document.createElement('div');
+  actionBar.className = "similar-action-bar";
+  actionBar.innerHTML = `
+    <button id="btn-create-similar-group" class="btn btn-primary">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      Create New Group
+    </button>
+  `;
+  container.appendChild(actionBar);
+  
+  document.getElementById('btn-create-similar-group').addEventListener('click', createSimilarWordGroup);
+
+  const groups = currentSettings.similarWordGroups || [];
+
+  if (groups.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = "similar-groups-empty";
+    empty.textContent = "No similar word groups yet. Click 'Create New Group' or press '+' to start.";
+    container.appendChild(empty);
+    return;
+  }
+
+  groups.forEach((group, gIdx) => {
+    const groupBlock = document.createElement('div');
+    groupBlock.className = "similar-group-box";
+    groupBlock.setAttribute('data-group-index', gIdx);
+    
+    // Drag & Drop Droppable Zone
+    groupBlock.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      groupBlock.classList.add('drag-over');
+    });
+    
+    groupBlock.addEventListener('dragleave', () => {
+      groupBlock.classList.remove('drag-over');
+    });
+    
+    groupBlock.addEventListener('drop', (e) => {
+      e.preventDefault();
+      groupBlock.classList.remove('drag-over');
+      const dataStr = e.dataTransfer.getData('text/plain');
+      if (dataStr) {
+        try {
+          const dragData = JSON.parse(dataStr);
+          const fromGroupIdx = dragData.groupIdx;
+          const fromWordIdx = dragData.wordIdx;
+          
+          if (fromGroupIdx !== undefined && fromWordIdx !== undefined) {
+            if (fromGroupIdx === gIdx) return; // same group
+            
+            const word = currentSettings.similarWordGroups[fromGroupIdx].words[fromWordIdx];
+            currentSettings.similarWordGroups[fromGroupIdx].words.splice(fromWordIdx, 1);
+            currentSettings.similarWordGroups[gIdx].words.push(word);
+            
+            saveSettings();
+            renderCards();
+          }
+        } catch(err) {
+          console.error("Drop error", err);
+        }
+      }
+    });
+
+    // Group Header
+    const header = document.createElement('div');
+    header.className = "similar-group-header";
+    header.innerHTML = `
+      <h3>Group ${gIdx + 1}</h3>
+      <button class="btn-delete-group btn btn-danger btn-small" title="Delete Group">&times;</button>
+    `;
+    
+    header.querySelector('.btn-delete-group').addEventListener('click', () => {
+      if (confirm(`Are you sure you want to delete Group ${gIdx + 1}?`)) {
+        currentSettings.similarWordGroups.splice(gIdx, 1);
+        saveSettings();
+        renderCards();
+      }
+    });
+    
+    groupBlock.appendChild(header);
+
+    // Group Cards Container
+    const cardsContainer = document.createElement('div');
+    cardsContainer.className = "similar-group-cards";
+    
+    if (group.words.length === 0) {
+      const p = document.createElement('p');
+      p.className = "group-empty-placeholder";
+      p.textContent = "Drag words here or select words and press 'S' to add.";
+      cardsContainer.appendChild(p);
+    } else {
+      group.words.forEach((w, wIdx) => {
+        const card = document.createElement('div');
+        card.className = "similar-word-card";
+        card.setAttribute('draggable', 'true');
+        
+        card.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', JSON.stringify({
+            groupIdx: gIdx,
+            wordIdx: wIdx
+          }));
+          card.classList.add('dragging');
+        });
+        
+        card.addEventListener('dragend', () => {
+          card.classList.remove('dragging');
+        });
+
+        card.addEventListener('click', () => {
+          speakText(w.romaji, 'ja');
+        });
+
+        card.innerHTML = `
+          <div class="card-jp text-japanese">${w.japanese}</div>
+          <div class="card-romaji">${w.romaji}</div>
+          <div class="card-eng">${w.english}</div>
+          <button class="btn-card-edit" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          </button>
+          <button class="btn-remove-from-group" title="Remove Word">&times;</button>
+        `;
+        
+        card.querySelector('.btn-card-edit').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openWordEditModal('Similar Words', { groupIdx: gIdx, wordIdx: wIdx });
+        });
+
+        card.querySelector('.btn-remove-from-group').addEventListener('click', (e) => {
+          e.stopPropagation();
+          group.words.splice(wIdx, 1);
+          saveSettings();
+          renderCards();
+        });
+        
+        cardsContainer.appendChild(card);
+      });
+    }
+    
+    groupBlock.appendChild(cardsContainer);
+    container.appendChild(groupBlock);
+  });
+}
+
+function createSimilarWordGroup() {
+  if (!currentSettings.similarWordGroups) currentSettings.similarWordGroups = [];
+  currentSettings.similarWordGroups.push({
+    words: []
+  });
+  saveSettings();
+  renderCards();
+  showToast("Created similar word group.", "success");
+}
+
+function openCategorySelectorModal() {
+  if (currentSettings.selectedWordIndices.length === 0) {
+    showToast("Please select words to copy first.", "info");
+    return;
+  }
+  
+  const selectDest = document.getElementById('select-copy-destination');
+  if (!selectDest) return;
+  
+  selectDest.innerHTML = "";
+  
+  const currentL = currentSettings.currentLesson;
+  
+  // Custom categories (non-lessons)
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      if (cat !== currentL) {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        selectDest.appendChild(opt);
+      }
+    });
+  }
+  
+  // Similar Words (if not currently on Similar Words)
+  if (currentL !== "Similar Words") {
+    const opt = document.createElement('option');
+    opt.value = "Similar Words";
+    opt.textContent = "Similar Words";
+    selectDest.appendChild(opt);
+  }
+  
+  if (selectDest.options.length === 0) {
+    showToast("No other destination categories exist.", "danger");
+    return;
+  }
+  
+  openModal('modal-category-selector');
+  setTimeout(() => {
+    const dropdown = document.getElementById('select-copy-destination');
+    if (dropdown) {
+      dropdown.focus();
+    }
+  }, 100);
+}
+
+function executeCategoryWordCopy() {
+  const selectDest = document.getElementById('select-copy-destination');
+  if (!selectDest) return;
+  
+  const destCategory = selectDest.value;
+  const words = getActiveWords();
+  
+  const selectedWords = currentSettings.selectedWordIndices.map(idx => words[idx]);
+  if (selectedWords.length === 0) return;
+
+  if (destCategory === "Similar Words") {
+    closeActiveModal();
+    setTimeout(() => {
+      openSimilarGroupSelectorModal();
+    }, 150);
+    return;
+  }
+  
+  // Always copy the Normal version of the word (never the Hard version)
+  const targetKey = destCategory;
+  
+  if (!currentWordsDb[targetKey]) currentWordsDb[targetKey] = [];
+  
+  // Copy words (clone objects to prevent reference conflicts)
+  selectedWords.forEach(w => {
+    currentWordsDb[targetKey].push({
+      japanese: w.japanese,
+      english: w.english,
+      romaji: w.romaji
+    });
+  });
+  
+  saveWords();
+  
+  // Clean selections
+  currentSettings.selectedWordIndices = [];
+  currentSettings.focusedWordIndex = -1;
+  saveSettings();
+  
+  closeActiveModal();
+  renderCards();
+  showToast(`Copied ${selectedWords.length} words to ${destCategory} (Normal)`, 'success');
+}
+
+function openSimilarGroupSelectorModal() {
+  if (currentSettings.selectedWordIndices.length === 0) {
+    showToast("Please select words to copy first.", "info");
+    return;
+  }
+  
+  const groups = currentSettings.similarWordGroups || [];
+  if (groups.length === 0) {
+    // Automatically create a group if none exist
+    createSimilarWordGroup();
+  }
+  
+  const selectDest = document.getElementById('select-similar-group-dest');
+  if (!selectDest) return;
+  
+  selectDest.innerHTML = "";
+  currentSettings.similarWordGroups.forEach((g, gIdx) => {
+    const opt = document.createElement('option');
+    opt.value = gIdx;
+    opt.textContent = `Group ${gIdx + 1}`;
+    selectDest.appendChild(opt);
+  });
+  
+  openModal('modal-group-selector');
+}
+
+function executeSimilarGroupWordCopy() {
+  const selectDest = document.getElementById('select-similar-group-dest');
+  if (!selectDest) return;
+  
+  const targetGroupIdx = parseInt(selectDest.value, 10);
+  const words = getActiveWords();
+  
+  const selectedWords = currentSettings.selectedWordIndices.map(idx => words[idx]);
+  if (selectedWords.length === 0) return;
+  
+  const targetGroup = currentSettings.similarWordGroups[targetGroupIdx];
+  if (targetGroup) {
+    selectedWords.forEach(w => {
+      targetGroup.words.push({
+        japanese: w.japanese,
+        english: w.english,
+        romaji: w.romaji
+      });
+    });
+    
+    saveSettings();
+  }
+  
+  currentSettings.selectedWordIndices = [];
+  currentSettings.focusedWordIndex = -1;
+  saveSettings();
+  
+  closeActiveModal();
+  renderCards();
+  showToast(`Copied ${selectedWords.length} words to Group ${targetGroupIdx + 1}`, 'success');
+}
+
+// --------------------------------------------------------------------------
+// GLOBAL SEARCH KEYBOARD NAVIGATION & IMPROVEMENTS
+// --------------------------------------------------------------------------
+
+let activeSearchResultIndex = -1;
+
+
 function initGlobalSearch() {
   const searchInput = document.getElementById('global-search-input');
   const searchResults = document.getElementById('search-results-dropdown');
@@ -1371,6 +2086,7 @@ function initGlobalSearch() {
 
   searchInput.addEventListener('input', (e) => {
     const query = e.target.value.trim().toLowerCase();
+    activeSearchResultIndex = -1;
     
     if (query.length > 0) {
       if (btnClear) btnClear.classList.remove('hidden');
@@ -1461,7 +2177,7 @@ function initGlobalSearch() {
                   card.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   card.focus();
                 }
-                speakText(cleanJapaneseSpeakText(res.word.japanese), 'ja');
+                speakText(res.word.romaji, 'ja');
               }, 100);
             }
             
@@ -1480,6 +2196,54 @@ function initGlobalSearch() {
       searchResults.innerHTML = "";
     }
   });
+
+  searchInput.addEventListener('keydown', (e) => {
+    const rows = searchResults.querySelectorAll('.search-result-row');
+    
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      searchInput.value = "";
+      if (btnClear) btnClear.classList.add('hidden');
+      searchResults.classList.add('hidden');
+      searchResults.innerHTML = "";
+      searchInput.blur();
+      return;
+    }
+
+    if (rows.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeSearchResultIndex++;
+      if (activeSearchResultIndex >= rows.length) {
+        activeSearchResultIndex = rows.length - 1;
+      }
+      updateActiveSearchResultHighlight(rows);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeSearchResultIndex--;
+      if (activeSearchResultIndex < 0) {
+        activeSearchResultIndex = -1;
+      }
+      updateActiveSearchResultHighlight(rows);
+    } else if (e.key === 'Enter') {
+      if (activeSearchResultIndex >= 0 && activeSearchResultIndex < rows.length) {
+        e.preventDefault();
+        rows[activeSearchResultIndex].click();
+      }
+    }
+  });
+
+  function updateActiveSearchResultHighlight(rows) {
+    rows.forEach((r, idx) => {
+      if (idx === activeSearchResultIndex) {
+        r.classList.add('selected');
+        r.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        r.classList.remove('selected');
+      }
+    });
+  }
 
   if (btnClear) {
     btnClear.addEventListener('click', () => {
@@ -1507,18 +2271,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Restore local storage configuration
   loadState();
 
-  // Populate lessons dropdown (Lesson 01 to Lesson 25)
-  const selectLesson = document.getElementById('select-lesson');
-  for (let i = 1; i <= 25; i++) {
-    const opt = document.createElement('option');
-    const val = `Lesson ${String(i).padStart(2, '0')}`;
-    opt.value = val;
-    opt.textContent = val;
-    selectLesson.appendChild(opt);
-  }
+  // Populate lessons and custom categories dropdown
+  populateLessonsDropdown();
 
   // Set selectors match loaded state
-  selectLesson.value = currentSettings.currentLesson;
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) selectLesson.value = currentSettings.currentLesson;
   document.getElementById(currentSettings.isHard ? 'mode-hard' : 'mode-normal').checked = true;
   document.getElementById('select-display-mode').value = currentSettings.displayMode;
   document.getElementById('select-gap').value = currentSettings.readingGap;
@@ -1533,17 +2291,53 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCards();
   updateSelectionModeUI();
 
-  // ================= EVENT DELEGATION LISTNERS =================
+  // ================= EVENT DELEGATION LISTENERS =================
+
+  // Category creation click
+  const btnAddCategory = document.getElementById('btn-add-category');
+  if (btnAddCategory) {
+    btnAddCategory.addEventListener('click', createCustomCategory);
+  }
+
+  // Modal actions confirmations
+  const btnConfirmCopy = document.getElementById('btn-confirm-copy');
+  if (btnConfirmCopy) {
+    btnConfirmCopy.addEventListener('click', executeCategoryWordCopy);
+  }
+  const btnConfirmAddSimilar = document.getElementById('btn-confirm-add-similar');
+  if (btnConfirmAddSimilar) {
+    btnConfirmAddSimilar.addEventListener('click', executeSimilarGroupWordCopy);
+  }
+  const btnSaveWord = document.getElementById('btn-save-word');
+  if (btnSaveWord) {
+    btnSaveWord.addEventListener('click', saveWordEditChanges);
+  }
+
+  // Quiz lessons checkbox multi-select buttons
+  const btnQuizSelectAll = document.getElementById('btn-quiz-select-all');
+  if (btnQuizSelectAll) {
+    btnQuizSelectAll.addEventListener('click', () => {
+      document.querySelectorAll('#quiz-lessons-container input[type="checkbox"]').forEach(cb => cb.checked = true);
+    });
+  }
+  const btnQuizSelectNone = document.getElementById('btn-quiz-select-none');
+  if (btnQuizSelectNone) {
+    btnQuizSelectNone.addEventListener('click', () => {
+      document.querySelectorAll('#quiz-lessons-container input[type="checkbox"]').forEach(cb => cb.checked = false);
+    });
+  }
 
   // Selectors changed updates
-  selectLesson.addEventListener('change', (e) => {
-    stopSpeech();
-    currentSettings.currentLesson = e.target.value;
-    currentSettings.focusedWordIndex = -1;
-    currentSettings.selectedWordIndices = [];
-    saveSettings();
-    renderCards();
-  });
+  if (selectLesson) {
+    selectLesson.addEventListener('change', (e) => {
+      stopSpeech();
+      currentSettings.currentLesson = e.target.value;
+      currentSettings.focusedWordIndex = -1;
+      currentSettings.selectedWordIndices = [];
+      saveSettings();
+      renderCards();
+    });
+  }
 
   document.querySelectorAll('input[name="lesson-type"]').forEach(radio => {
     radio.addEventListener('change', (e) => {
@@ -1570,7 +2364,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Action Buttons
   document.getElementById('btn-play-all').addEventListener('click', togglePlayAll);
-  document.getElementById('btn-quiz').addEventListener('click', () => openModal('modal-quiz'));
+  document.getElementById('btn-quiz').addEventListener('click', openQuizModal);
   document.getElementById('btn-flagged').addEventListener('click', () => openModal('modal-flagged'));
   document.getElementById('btn-help').addEventListener('click', () => openModal('modal-help'));
   
@@ -1583,6 +2377,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-move-up').addEventListener('click', moveSelectedUp);
   document.getElementById('btn-move-down').addEventListener('click', moveSelectedDown);
   document.getElementById('btn-delete').addEventListener('click', deleteSelected);
+  
+  const btnCopyTo = document.getElementById('btn-copy-to');
+  if (btnCopyTo) {
+    btnCopyTo.addEventListener('click', openCategorySelectorModal);
+  }
 
   document.getElementById('btn-clipboard').addEventListener('click', copySettingsToClipboard);
   document.getElementById('btn-reset-cache').addEventListener('click', resetCache);
@@ -1611,7 +2410,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Quiz Completion buttons listeners
   document.getElementById('btn-quiz-restart').addEventListener('click', restartCurrentQuiz);
   document.getElementById('btn-quiz-toggle-difficulty').addEventListener('click', toggleDifficultyAndQuiz);
-  document.getElementById('btn-quiz-next-lesson').addEventListener('click', startNextLessonQuiz);
+  document.getElementById('btn-quiz-next-lesson-normal').addEventListener('click', () => startNextLessonQuiz(false));
+  document.getElementById('btn-quiz-next-lesson-hard').addEventListener('click', () => startNextLessonQuiz(true));
 
   // Click on Quiz Card emulates Enter key behavior
   document.querySelector('.quiz-question-box').addEventListener('click', (e) => {
@@ -1626,8 +2426,6 @@ document.addEventListener('DOMContentLoaded', () => {
           const state = quizStates[quizCurrentIndex];
           if (!state.answered) {
             checkQuizAnswer();
-          } else {
-            nextQuizQuestion();
           }
         }
       }
@@ -1635,29 +2433,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.querySelector('.quiz-feedback-box').addEventListener('click', (e) => {
-    if (e.target.closest('#quiz-speak-btn')) return; // ignore click on speak audio button
+    if (e.target.closest('button') || e.target.closest('.toast') || e.target.closest('.toast-close')) return;
     
     const activeModalVisible = !document.getElementById('modal-backdrop').classList.contains('hidden');
     if (activeModalVisible) {
-      // Find the feedback item that was clicked (or fallback to first)
-      const feedbackBox = document.querySelector('.quiz-feedback-box');
-      const feedbackItem = e.target.closest('.feedback-item') || feedbackBox.querySelector('.feedback-item');
-
-      let japaneseWord = '';
-      if (feedbackItem) {
-        // prefer element with class text-japanese, then data attribute, then textContent
-        const jpEl = feedbackItem.querySelector('.text-japanese');
-        if (jpEl && jpEl.textContent.trim()) {
-          japaneseWord = jpEl.textContent.trim();
-        } else if (feedbackItem.dataset && feedbackItem.dataset.japanese) {
-          japaneseWord = feedbackItem.dataset.japanese.trim();
-        } else {
-          japaneseWord = feedbackItem.textContent.trim();
+      const quizActive = !document.getElementById('modal-quiz').classList.contains('hidden');
+      if (quizActive) {
+        const isQuizPlaying = !document.getElementById('quiz-active-view').classList.contains('hidden');
+        if (isQuizPlaying) {
+          const state = quizStates[quizCurrentIndex];
+          if (state.answered) {
+            nextQuizQuestion();
+          }
         }
-      }
-
-      if (japaneseWord) {
-        speakText(cleanJapaneseSpeakText(japaneseWord), 'ja');
       }
     }
   });
@@ -1665,12 +2453,80 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Global Search popover
   initGlobalSearch();
 
+  // Word Edit Modal keyboard shortcuts (Enter to save, Esc to cancel)
+  const editModal = document.getElementById('modal-edit-word');
+  if (editModal) {
+    editModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        saveWordEditChanges();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeActiveModal();
+      }
+    });
+  }
+
+  // Copy to Category Modal keyboard shortcuts (Enter to copy, Esc to cancel)
+  const copyModal = document.getElementById('modal-category-selector');
+  if (copyModal) {
+    copyModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        executeCategoryWordCopy();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeActiveModal();
+      }
+    });
+  }
+
+  // Similar Words Group Selector keyboard shortcuts (Enter to copy, Esc to cancel)
+  const groupModal = document.getElementById('modal-group-selector');
+  if (groupModal) {
+    groupModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        executeSimilarGroupWordCopy();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeActiveModal();
+      }
+    });
+  }
+
   // Theme Toggle Button
   document.getElementById('theme-toggle').addEventListener('click', () => {
     const curTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = curTheme === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('n5_theme', newTheme);
+  });
+
+  // Deselect All when clicking outside card/controls
+  document.addEventListener('click', (e) => {
+    if (currentSettings.selectedWordIndices.length === 0) return;
+
+    // Do NOT deselect if clicking a word card, controls, buttons, theme switcher, modal dialogs, etc.
+    if (e.target.closest('.vocab-card')) return;
+    if (e.target.closest('.similar-word-card')) return;
+    if (e.target.closest('.management-panel')) return;
+    if (e.target.closest('.control-panel')) return;
+    if (e.target.closest('.app-header')) return;
+    if (e.target.closest('.modal')) return;
+    if (e.target.closest('.btn')) return;
+
+    currentSettings.selectedWordIndices = [];
+    currentSettings.focusedWordIndex = -1;
+    saveSettings();
+    renderCards();
+    showToast("Cleared selections", "info");
   });
 
   // Import submits
@@ -1704,8 +2560,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
     const tag = e.target.tagName.toLowerCase();
-    if (tag === 'input' && e.target.id !== 'quiz-typed-answer') return;
-    if (tag === 'textarea' || e.target.isContentEditable) return;
+    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {
+      if (e.target.id === 'quiz-typed-answer') {
+        if (e.key !== 'Enter') return;
+      } else {
+        return;
+      }
+    }
 
     // ESC to close modals/deselect
     if (e.key === 'Escape') {
@@ -1720,8 +2581,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return;
     }
-
-    // if(e.key === '')
 
     // Modal is currently visible: limit shortcut overrides
     const modalBackdropVisible = !document.getElementById('modal-backdrop').classList.contains('hidden');
@@ -1744,7 +2603,11 @@ document.addEventListener('DOMContentLoaded', () => {
               return;
             } else if (e.key === '3') {
               e.preventDefault();
-              startNextLessonQuiz();
+              startNextLessonQuiz(false); // Normal
+              return;
+            } else if (e.key === '4') {
+              e.preventDefault();
+              startNextLessonQuiz(true); // Hard
               return;
             }
           }
@@ -1772,7 +2635,7 @@ document.addEventListener('DOMContentLoaded', () => {
           } else if (e.key === ' ') {
             if (!isInputFocused) {
               e.preventDefault();
-              speakText(cleanJapaneseSpeakText(quizWords[quizCurrentIndex].japanese), 'ja');
+              speakText(quizWords[quizCurrentIndex].romaji, 'ja');
             }
           }
         } else {
@@ -1826,13 +2689,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
         if (!currentSettings.isSelectionModeActive) {
-          changeLesson('prev');
+          navigateNonLessonCategories('prev');
         }
         return;
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
         if (!currentSettings.isSelectionModeActive) {
-          changeLesson('next');
+          navigateNonLessonCategories('next');
         }
         return;
       } else if (e.key === 'Enter') {
@@ -1877,19 +2740,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Shift + 1..5 for Display Mode
+    // Shift + 0..9 multi-digit lesson shortcuts
     if (e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
-      const displayModes = ['big-english', 'big-japanese', 'english-only', 'japanese-only', 'romaji-only'];
-      if (['Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5'].includes(e.code)) {
+      if (['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9'].includes(e.code)) {
         e.preventDefault();
-        const modeIndex = parseInt(e.code.replace('Digit', ''), 10) - 1;
-        const selectMode = document.getElementById('select-display-mode');
-        if (selectMode && modeIndex >= 0 && modeIndex < displayModes.length) {
-          selectMode.value = displayModes[modeIndex];
-          // Dispatch change to update settings & redraw
-          selectMode.dispatchEvent(new Event('change'));
-          showToast(`Display Mode: ${selectMode.options[selectMode.selectedIndex].text}`, 'info');
-        }
+        const digit = e.code.replace('Digit', '');
+        handleShiftDigit(digit);
         return;
       }
     }
@@ -1900,7 +2756,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const words = getActiveWords();
         if (words.length > 0 && currentSettings.focusedWordIndex >= 0) {
-          speakText(cleanJapaneseSpeakText(words[currentSettings.focusedWordIndex].japanese), 'ja');
+          speakText(words[currentSettings.focusedWordIndex].romaji, 'ja');
         }
         break;
       case 'Delete':
@@ -1913,7 +2769,13 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'Q':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
-        openModal('modal-quiz');
+        openQuizModal();
+        break;
+      case 'p':
+      case 'P':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        togglePlayAll();
         break;
       case 'm':
       case 'M':
@@ -1952,8 +2814,27 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'C':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
-        const btnClip = document.getElementById('btn-clipboard');
-        if (btnClip) btnClip.click();
+        if (currentSettings.isSelectionModeActive) {
+          openCategorySelectorModal();
+        } else {
+          const btnClip = document.getElementById('btn-clipboard');
+          if (btnClip) btnClip.click();
+        }
+        break;
+      case 's':
+      case 'S':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        if (currentSettings.isSelectionModeActive) {
+          e.preventDefault();
+          openSimilarGroupSelectorModal();
+        }
+        break;
+      case '+':
+      case '=':
+        if (currentSettings.currentLesson === 'Similar Words') {
+          e.preventDefault();
+          createSimilarWordGroup();
+        }
         break;
       case 't':
       case 'T':
@@ -1978,3 +2859,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+let shiftDigitBuffer = "";
+let shiftDigitTimeout = null;
+
+function handleShiftDigit(digit) {
+  if (shiftDigitTimeout) {
+    clearTimeout(shiftDigitTimeout);
+    shiftDigitTimeout = null;
+  }
+  
+  shiftDigitBuffer += digit;
+  
+  if (shiftDigitBuffer.length === 2) {
+    let lessonNum = parseInt(shiftDigitBuffer, 10);
+    if (lessonNum < 1) lessonNum = 1;
+    if (lessonNum > 25) lessonNum = 25;
+    
+    switchLessonDirectly(lessonNum);
+    shiftDigitBuffer = "";
+  } else {
+    // Wait 450ms for a second digit
+    shiftDigitTimeout = setTimeout(() => {
+      let lessonNum = parseInt(shiftDigitBuffer, 10);
+      if (lessonNum < 1) lessonNum = 1;
+      if (lessonNum > 25) lessonNum = 25;
+      
+      switchLessonDirectly(lessonNum);
+      shiftDigitBuffer = "";
+      shiftDigitTimeout = null;
+    }, 450);
+  }
+}
+
+function switchLessonDirectly(num) {
+  const lessonName = "Lesson " + String(num).padStart(2, '0');
+  stopSpeech();
+  currentSettings.currentLesson = lessonName;
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+  
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) selectLesson.value = lessonName;
+  
+  saveSettings();
+  renderCards();
+  showToast(`Switched to ${lessonName}`, 'info');
+}
