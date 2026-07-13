@@ -58,3 +58,8 @@ so instead of showing "Start next Lesson" we need to show "Start Next Lesson - N
 on "start next lesson" button, now it needs to click "Start Next Lesson - Normal" also when i click on 
 4 button it should click "Start Next Lesson - Hard" button.
 
+// dont do this feature:
+also for words.js file, for each lesson, for each word include order -> an number,
+so for first difficult words would be getting 01, 02 .. and after all difficult words are done,
+continue numbering for normal words, for each lesson numbers starts newly.
+also while doing import of the vocab

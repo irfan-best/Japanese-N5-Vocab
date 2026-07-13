@@ -15,8 +15,7 @@ const DEFAULT_SETTINGS = {
   selectedWordIndices: [],
   isSelectionModeActive: false,
   customCategories: [],
-  similarWordGroups: [],
-  sortByOrder: true
+  similarWordGroups: []
 };
 
 // Main Runtime State Variables
@@ -180,17 +179,7 @@ function loadState() {
     currentWordsDb = {};
     // Load from words.js allWords object
     for (const key in allWords) {
-      if (typeof allWords[key] === 'string') {
-        currentWordsDb[key] = parseWords(allWords[key]);
-      } else {
-        currentWordsDb[key] = allWords[key].map(w => ({
-          japanese: w.japanese,
-          english: w.english,
-          romaji: w.romaji,
-          hard: !!w.hard,
-          order: parseInt(w.order, 10) || 1
-        }));
-      }
+      currentWordsDb[key] = parseWords(allWords[key]);
     }
     wordsInitializedFromJs = true;
   }
@@ -208,54 +197,6 @@ function loadState() {
     if (!currentWordsDb[cat]) currentWordsDb[cat] = [];
     if (!currentWordsDb[cat + " - Hard"]) currentWordsDb[cat + " - Hard"] = [];
   });
-
-  // Migrate local storage database if order properties are missing
-  let needsMigration = false;
-  for (const key in currentWordsDb) {
-    const list = currentWordsDb[key] || [];
-    if (list.length > 0 && typeof list[0].order === 'undefined') {
-      needsMigration = true;
-      break;
-    }
-  }
-  
-  if (needsMigration) {
-    for (let i = 1; i <= 25; i++) {
-      const normalKey = `Lesson ${String(i).padStart(2, '0')}`;
-      const hardKey = `${normalKey} - Hard`;
-      
-      const normalList = currentWordsDb[normalKey] || [];
-      const hardList = currentWordsDb[hardKey] || [];
-      const H = hardList.length;
-      
-      hardList.forEach((w, idx) => {
-        w.hard = true;
-        w.order = idx + 1;
-      });
-      normalList.forEach((w, idx) => {
-        w.hard = false;
-        w.order = H + idx + 1;
-      });
-    }
-    
-    if (currentSettings.customCategories) {
-      currentSettings.customCategories.forEach(cat => {
-        const normalList = currentWordsDb[cat] || [];
-        const hardList = currentWordsDb[cat + " - Hard"] || [];
-        const H = hardList.length;
-        
-        hardList.forEach((w, idx) => {
-          w.hard = true;
-          w.order = idx + 1;
-        });
-        normalList.forEach((w, idx) => {
-          w.hard = false;
-          w.order = H + idx + 1;
-        });
-      });
-    }
-    saveWords();
-  }
 
   // If we loaded defaults from words.js, serialize them back to initialize the local storage cache
   if (settingsInitializedFromJs) {
@@ -470,44 +411,11 @@ function getActiveLessonKey() {
 
 // Get array of word objects currently shown
 function getActiveWords() {
-  const lessonKey = currentSettings.currentLesson;
-  let list = [];
-  
-  if (lessonKey === 'Show All Words') {
-    list = getShowAllWords();
-  } else if (lessonKey === 'Similar Words') {
-    const groups = currentSettings.similarWordGroups || [];
-    groups.forEach(g => {
-      if (g.words) {
-        g.words.forEach(w => {
-          list.push(w);
-        });
-      }
-    });
-  } else {
-    const normalList = currentWordsDb[lessonKey] || [];
-    const hardList = currentWordsDb[lessonKey + " - Hard"] || [];
-    
-    normalList.forEach(w => w.hard = false);
-    hardList.forEach(w => w.hard = true);
-    
-    if (currentSettings.sortByOrder) {
-      list = [...normalList, ...hardList];
-    } else {
-      list = currentSettings.isHard ? [...hardList] : [...normalList];
-    }
+  if (currentSettings.currentLesson === 'Show All Words') {
+    return getShowAllWords();
   }
-  
-  // Sort the final list based on Sort By Order setting
-  if (currentSettings.sortByOrder) {
-    list.sort((a, b) => (parseInt(a.order, 10) || 0) - (parseInt(b.order, 10) || 0));
-  } else {
-    // Revert to old behavior: sort by Romaji alphabetically (ignoring ~ and ())
-    const clean = (str) => (str || "").replace(/[~()\-]/g, '').trim().toLowerCase();
-    list.sort((a, b) => clean(a.romaji).localeCompare(clean(b.romaji)));
-  }
-  
-  return list;
+  const key = getActiveLessonKey();
+  return currentWordsDb[key] || [];
 }
 
 function getShowAllWords() {
@@ -515,16 +423,25 @@ function getShowAllWords() {
   for (const key in currentWordsDb) {
     const list = currentWordsDb[key] || [];
     list.forEach(w => {
-      const isHardKey = key.endsWith(" - Hard");
-      w.hard = isHardKey;
-      
       const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
       if (!uniqueMap.has(dupKey)) {
         uniqueMap.set(dupKey, w);
       }
     });
   }
-  return Array.from(uniqueMap.values());
+  const merged = Array.from(uniqueMap.values());
+  
+  const cleanRomajiForSorting = (str) => {
+    if (!str) return "";
+    return str.replace(/[~()\-]/g, '').trim().toLowerCase();
+  };
+
+  merged.sort((a, b) => {
+    const romajiA = cleanRomajiForSorting(a.romaji);
+    const romajiB = cleanRomajiForSorting(b.romaji);
+    return romajiA.localeCompare(romajiB);
+  });
+  return merged;
 }
 
 function getCopiedCategoriesList(word) {
@@ -628,9 +545,6 @@ function renderCards() {
   words.forEach((word, idx) => {
     const card = document.createElement('div');
     card.className = `vocab-card mode-${currentSettings.displayMode}`;
-    if (word.hard) {
-      card.classList.add('is-hard');
-    }
     card.setAttribute('role', 'option');
     card.setAttribute('tabindex', '0');
     card.setAttribute('data-index', idx);
@@ -831,7 +745,6 @@ function moveSelectedToHard() {
   const targetKey = currentSettings.currentLesson + " - Hard";
 
   const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
-  itemsToMove.forEach(w => w.hard = true);
   
   // Custom categories: copy instead of move
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
@@ -858,7 +771,6 @@ function moveSelectedToNormal() {
   const targetKey = currentSettings.currentLesson;
 
   const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
-  itemsToMove.forEach(w => w.hard = false);
   
   // Custom categories: copy instead of move
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
@@ -977,23 +889,6 @@ function deleteSelected() {
   }
 }
 
-function getHighestOrderForLesson(key) {
-  const baseKey = key.replace(" - Hard", "");
-  const normalList = currentWordsDb[baseKey] || [];
-  const hardList = currentWordsDb[baseKey + " - Hard"] || [];
-  
-  let maxOrder = 0;
-  normalList.forEach(w => {
-    const o = parseInt(w.order, 10);
-    if (o > maxOrder) maxOrder = o;
-  });
-  hardList.forEach(w => {
-    const o = parseInt(w.order, 10);
-    if (o > maxOrder) maxOrder = o;
-  });
-  return maxOrder;
-}
-
 // ==========================================================================
 // IMPORT SYSTEM
 // ==========================================================================
@@ -1015,14 +910,6 @@ function triggerImport() {
   }
 
   const currentKey = getActiveLessonKey();
-  let nextOrder = getHighestOrderForLesson(currentKey) + 1;
-  const isHardKey = currentKey.endsWith(" - Hard");
-  
-  parsed.forEach(w => {
-    w.hard = isHardKey;
-    w.order = nextOrder++;
-  });
-
   currentWordsDb[currentKey] = currentWordsDb[currentKey].concat(parsed);
 
   saveWords();
@@ -1463,8 +1350,8 @@ function copySettingsToClipboard() {
     const normalKey = `Lesson ${pad}`;
     const hardKey = `${normalKey} - Hard`;
 
-    clipContent += `allWords["${normalKey}"] = ${JSON.stringify(currentWordsDb[normalKey] || [], null, 2)};\n\n`;
-    clipContent += `allWords["${hardKey}"] = ${JSON.stringify(currentWordsDb[hardKey] || [], null, 2)};\n\n`;
+    clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
+    clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
   }
 
   // 2. Serialize current settings & stats
@@ -1873,10 +1760,6 @@ function openWordEditModal(lesson, index) {
   document.getElementById('edit-word-romaji').value = targetWord.romaji;
   document.getElementById('edit-word-english').value = targetWord.english;
   
-  // Populate difficulty and order
-  document.getElementById('edit-word-difficulty').value = targetWord.hard ? "hard" : "normal";
-  document.getElementById('edit-word-order').value = targetWord.order || 1;
-  
   openModal('modal-edit-word');
   setTimeout(() => {
     const jpInput = document.getElementById('edit-word-japanese');
@@ -1896,16 +1779,8 @@ function saveWordEditChanges() {
   const newRomaji = document.getElementById('edit-word-romaji').value.trim();
   const newEng = document.getElementById('edit-word-english').value.trim();
   
-  const newDiff = document.getElementById('edit-word-difficulty').value;
-  const newOrderVal = parseInt(document.getElementById('edit-word-order').value, 10);
-  
   if (!newJp || !newRomaji || !newEng) {
     showToast("All fields must be filled.", "danger");
-    return;
-  }
-
-  if (isNaN(newOrderVal) || newOrderVal < 1) {
-    showToast("Order must be a positive integer.", "danger");
     return;
   }
 
@@ -1918,34 +1793,14 @@ function saveWordEditChanges() {
       word.japanese = newJp;
       word.romaji = newRomaji;
       word.english = newEng;
-      word.order = newOrderVal;
       saveSettings();
     }
   } else {
-    const oldIdx = parseInt(sourceIndexStr, 10);
-    const word = currentWordsDb[sourceLesson] ? currentWordsDb[sourceLesson][oldIdx] : null;
+    const word = currentWordsDb[sourceLesson][parseInt(sourceIndexStr, 10)];
     if (word) {
       word.japanese = newJp;
       word.romaji = newRomaji;
       word.english = newEng;
-      word.order = newOrderVal;
-      
-      const wasHard = !!word.hard;
-      const isHardNow = (newDiff === 'hard');
-      word.hard = isHardNow;
-      
-      if (wasHard !== isHardNow) {
-        // Remove from old list
-        currentWordsDb[sourceLesson].splice(oldIdx, 1);
-        
-        // Add to new list
-        const baseLesson = sourceLesson.replace(" - Hard", "");
-        const targetKey = isHardNow ? `${baseLesson} - Hard` : baseLesson;
-        
-        if (!currentWordsDb[targetKey]) currentWordsDb[targetKey] = [];
-        currentWordsDb[targetKey].push(word);
-      }
-      
       saveWords();
     }
   }
@@ -2504,9 +2359,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('select-gap').value = currentSettings.readingGap;
   document.getElementById('quiz-mode-select').value = currentSettings.quizMode;
   document.getElementById(currentSettings.quizOrder === 'random' ? 'order-random' : 'order-original').checked = true;
-  
-  const toggleSortOrder = document.getElementById('toggle-sort-order');
-  if (toggleSortOrder) toggleSortOrder.checked = !!currentSettings.sortByOrder;
 
   // Set Light/Dark theme configuration
   const savedTheme = localStorage.getItem('n5_theme') || 'dark';
@@ -2586,16 +2438,6 @@ document.addEventListener('DOMContentLoaded', () => {
     currentSettings.readingGap = e.target.value;
     saveSettings();
   });
-
-  const toggleSortOrderEl = document.getElementById('toggle-sort-order');
-  if (toggleSortOrderEl) {
-    toggleSortOrderEl.addEventListener('change', (e) => {
-      stopSpeech();
-      currentSettings.sortByOrder = e.target.checked;
-      saveSettings();
-      renderCards();
-    });
-  }
 
   // Action Buttons
   document.getElementById('btn-play-all').addEventListener('click', togglePlayAll);
@@ -2795,7 +2637,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
     const tag = e.target.tagName.toLowerCase();
-    if (tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable) {
+    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {
       if (e.target.id === 'quiz-typed-answer') {
         if (e.key !== 'Enter') return;
       } else {
