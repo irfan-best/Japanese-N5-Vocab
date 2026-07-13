@@ -1735,6 +1735,29 @@ body:not(.selection-mode-active) #btn-copy-to {
   }
 }
 
-.atleast-one-cateogry{
-  border-left: 1px solid green;
+.atleast-one-category{
+  border-left: 1px solid green !important;
+}
+
+.vocab-card.dragging {
+  opacity: 0.4;
+}
+
+.vocab-card.drag-over {
+  border: 2px dashed var(--accent) !important;
+  transform: scale(0.98);
+}
+
+.similar-group-box.auto-generated-group {
+  background-color: var(--bg-primary);
+  border-left: 4px solid var(--accent);
+}
+
+.similar-word-card.read-only-word-card {
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+}
+
+.green-border-left{
+  border-left: 1px solid green !important;
 }

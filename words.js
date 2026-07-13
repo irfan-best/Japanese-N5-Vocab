@@ -1692,8 +1692,8 @@ handsome
 hansamu na
 
 どれ
-dore
 which one(of 3 or more)
+dore
 
 きれい（な）
 beautiful, clean
@@ -4573,12 +4573,30 @@ douzo ogenki de
 
 allWords["Lesson 25 - Hard"] = ``;
 
+allWords["Phrases"] = `
+はじめまして
+How do you do? (introducing oneself for the first time)
+hajimemashite
+
+どうぞよろしくおねがいします
+Pleased to meet you. (Please be nice to me)
+douzo yoroshiku onegaishimasu
+
+こちらは～さんです。
+This is (someone).
+kochira wa ~-san desu
+
+`;
+
+allWords["Phrases - Hard"] = ``;
+
 const appSettings = {
   "flagCounts": {
     "そうですか::I see. / Is that so?": 1,
-    "なんですか::Yes?": 1
+    "なんですか::Yes?": 1,
+    "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "Similar Words",
+  "currentLesson": "Lesson 08",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
@@ -4591,13 +4609,7 @@ const appSettings = {
   "customCategories": [
     "Phrases"
   ],
-  "similarWordGroups": [   
-    {
-      "words": []
-    },
-    {
-      "words": []
-    },
+  "similarWordGroups": [
     {
       "words": [
         {
@@ -4655,7 +4667,7 @@ const appSettings = {
           "romaji": "nan"
         }
       ]
-    }, 
+    },
     {
       "words": [
         {

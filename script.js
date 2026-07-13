@@ -418,6 +418,21 @@ function getActiveWords() {
   return currentWordsDb[key] || [];
 }
 
+function reorderWords(fromIdx, toIdx) {
+  const key = getActiveLessonKey();
+  if (key === 'Show All Words' || key === 'Similar Words') return;
+
+  const list = currentWordsDb[key];
+  if (!list || fromIdx < 0 || fromIdx >= list.length || toIdx < 0 || toIdx >= list.length) return;
+
+  // Move the item
+  const [movedWord] = list.splice(fromIdx, 1);
+  list.splice(toIdx, 0, movedWord);
+
+  saveWords();
+  renderCards();
+}
+
 function getShowAllWords() {
   const uniqueMap = new Map();
   for (const key in currentWordsDb) {
@@ -442,6 +457,30 @@ function getShowAllWords() {
     return romajiA.localeCompare(romajiB);
   });
   return merged;
+}
+
+function belongsToAnyCustomCategory(word) {
+  if (!word || !word.japanese || !word.english) return false;
+  const wordJp = word.japanese.trim();
+  const wordEng = word.english.trim();
+  
+  if (currentSettings.customCategories) {
+    for (const cat of currentSettings.customCategories) {
+      const normalList = currentWordsDb[cat] || [];
+      const hardList = currentWordsDb[cat + " - Hard"] || [];
+      
+      const inNormal = normalList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+      const inHard = hardList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+      
+      if (inNormal || inHard) {
+        return true;
+      }
+    }
+  }
+
+  // even if word is present in similar words then also it is true
+  
+  return false;
 }
 
 function getCopiedCategoriesList(word) {
@@ -478,6 +517,7 @@ function getCopiedCategoriesList(word) {
 
 // Redraw vocabulary grid from memory state
 function renderCards() {
+  console.log('render cards caleld');
   const container = document.getElementById('vocab-grid');
   const emptyState = document.getElementById('empty-state');
   if (!container) return;
@@ -549,12 +589,57 @@ function renderCards() {
     card.setAttribute('tabindex', '0');
     card.setAttribute('data-index', idx);
 
+    if (lessonKey !== 'Show All Words' && lessonKey !== 'Similar Words') {
+      card.setAttribute('draggable', 'true');
+      
+      card.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', idx);
+        card.classList.add('dragging');
+      });
+      
+      card.addEventListener('dragend', () => {
+        card.classList.remove('dragging');
+        document.querySelectorAll('.vocab-card').forEach(c => c.classList.remove('drag-over'));
+      });
+      
+      card.addEventListener('dragover', (e) => {
+        e.preventDefault();
+      });
+      
+      card.addEventListener('dragenter', (e) => {
+        e.preventDefault();
+        card.classList.add('drag-over');
+      });
+      
+      card.addEventListener('dragleave', () => {
+        card.classList.remove('drag-over');
+      });
+      
+      card.addEventListener('drop', (e) => {
+        e.preventDefault();
+        card.classList.remove('drag-over');
+        const fromIdx = parseInt(e.dataTransfer.getData('text/plain'), 10);
+        const toIdx = idx;
+        if (!isNaN(fromIdx) && fromIdx !== toIdx) {
+          reorderWords(fromIdx, toIdx);
+        }
+      });
+    }
+
     // Set categories tooltip on hover
     const copiedCats = getCopiedCategoriesList(word);
     if (copiedCats.length > 0) {
       card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
-      card.classList.add('atleast-one-cateogry');
+      card.classList.add('atleast-one-category');
+      var getEnglishWord = card.querySelector('.card-english');
+      console.log('card classlist idx',idx,card.classList);
+      // console.log('render cards atleast added',getEnglishWord.innerHTML);
     }
+    // if (belongsToAnyCustomCategory(word)) {
+    //   card.classList.add('atleast-one-category');
+    // } else {
+    //   card.classList.remove('atleast-one-category');
+    // }
     
     // Focused State
     if (idx === currentSettings.focusedWordIndex) {
@@ -1043,6 +1128,17 @@ function showQuizQuestion() {
   inputContainer.classList.add('hidden');
   btnReveal.classList.add('hidden');
 
+  console.log('word peak:',word);
+
+  var dataTem = getCopiedCategoriesList(word);
+  console.log('data bro',dataTem);
+  if(dataTem.length>0){
+      qBox.classList.add('green-border-left');
+  }
+  else{
+    qBox.classList.remove('green-border-left');
+  }
+
   // Set Score displays
   const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
   if (isWritingQuiz) {
@@ -1122,6 +1218,15 @@ function showQuizQuestion() {
   }
 
   updateQuizNavigationButtons();
+
+  const belongs = belongsToAnyCustomCategory(word);
+  if (belongs) {
+    qBox.classList.add('atleast-one-category');
+    feedbackBox.classList.add('atleast-one-category');
+  } else {
+    qBox.classList.remove('atleast-one-category');
+    feedbackBox.classList.remove('atleast-one-category');
+  }
 }
 
 // Speak the current quiz question audio manually
@@ -1353,6 +1458,17 @@ function copySettingsToClipboard() {
 
     clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
     clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
+  }
+
+  // 1.5. Serialize Custom Categories
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      const normalKey = cat;
+      const hardKey = `${cat} - Hard`;
+
+      clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
+      clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
+    });
   }
 
   // 2. Serialize current settings & stats
@@ -1811,6 +1927,70 @@ function saveWordEditChanges() {
   showToast("Saved word changes.", "success");
 }
 
+function getAutoGroup1Words() {
+  const allWords = getShowAllWords();
+  const meaningMap = new Map();
+  
+  allWords.forEach(w => {
+    if (!w.english) return;
+    const meanings = w.english.split(',').map(m => m.trim().toLowerCase()).filter(m => m.length > 0);
+    const uniqueMeanings = [...new Set(meanings)];
+    uniqueMeanings.forEach(m => {
+      if (!meaningMap.has(m)) {
+        meaningMap.set(m, []);
+      }
+      meaningMap.get(m).push(w);
+    });
+  });
+  
+  const matchedWordKeys = new Set();
+  const matchedWords = [];
+  
+  for (const [meaning, list] of meaningMap.entries()) {
+    if (list.length >= 2) {
+      list.forEach(w => {
+        const key = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
+        if (!matchedWordKeys.has(key)) {
+          matchedWordKeys.add(key);
+          matchedWords.push(w);
+        }
+      });
+    }
+  }
+  return matchedWords;
+}
+
+function getAutoGroup2Words() {
+  const allWords = getShowAllWords();
+  const romajiMap = new Map();
+  
+  allWords.forEach(w => {
+    if (!w.romaji) return;
+    const r = w.romaji.trim().toLowerCase();
+    if (r.length === 0) return;
+    if (!romajiMap.has(r)) {
+      romajiMap.set(r, []);
+    }
+    romajiMap.get(r).push(w);
+  });
+  
+  const matchedWordKeys = new Set();
+  const matchedWords = [];
+  
+  for (const [romaji, list] of romajiMap.entries()) {
+    if (list.length >= 2) {
+      list.forEach(w => {
+        const key = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
+        if (!matchedWordKeys.has(key)) {
+          matchedWordKeys.add(key);
+          matchedWords.push(w);
+        }
+      });
+    }
+  }
+  return matchedWords;
+}
+
 function renderSimilarWordsGroups() {
   const container = document.getElementById('vocab-grid');
   if (!container) return;
@@ -1831,22 +2011,110 @@ function renderSimilarWordsGroups() {
   
   document.getElementById('btn-create-similar-group').addEventListener('click', createSimilarWordGroup);
 
-  const groups = currentSettings.similarWordGroups || [];
-
-  if (groups.length === 0) {
-    const empty = document.createElement('div');
-    empty.className = "similar-groups-empty";
-    empty.textContent = "No similar word groups yet. Click 'Create New Group' or press '+' to start.";
-    container.appendChild(empty);
-    return;
+  // 2. Render Auto Group 1
+  const group1Words = getAutoGroup1Words();
+  const g1Block = document.createElement('div');
+  g1Block.className = "similar-group-box auto-generated-group";
+  
+  const g1Header = document.createElement('div');
+  g1Header.className = "similar-group-header";
+  g1Header.innerHTML = `
+    <h3>Group 1 - Common English Meaning <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-secondary); background: var(--border-color); padding: 0.2rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; display: inline-block;">Read Only</span></h3>
+  `;
+  g1Block.appendChild(g1Header);
+  
+  const g1CardsContainer = document.createElement('div');
+  g1CardsContainer.className = "similar-group-cards";
+  if (group1Words.length === 0) {
+    const p = document.createElement('p');
+    p.className = "group-empty-placeholder";
+    p.textContent = "No words share English meanings.";
+    g1CardsContainer.appendChild(p);
+  } else {
+    group1Words.forEach(w => {
+      const card = document.createElement('div');
+      card.className = "similar-word-card read-only-word-card";
+      
+      const copiedCats = getCopiedCategoriesList(w);
+      if (copiedCats.length > 0) {
+        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+        card.classList.add("atleast-one-category");
+      }
+      if (belongsToAnyCustomCategory(w)) {
+        card.classList.add('atleast-one-category');
+      }
+      
+      card.addEventListener('click', () => {
+        speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
+      });
+      
+      card.innerHTML = `
+        <div class="card-jp text-japanese">${w.japanese}</div>
+        <div class="card-romaji">${w.romaji}</div>
+        <div class="card-eng">${w.english}</div>
+      `;
+      g1CardsContainer.appendChild(card);
+    });
   }
+  g1Block.appendChild(g1CardsContainer);
+  container.appendChild(g1Block);
 
+  // 3. Render Auto Group 2
+  const group2Words = getAutoGroup2Words();
+  const g2Block = document.createElement('div');
+  g2Block.className = "similar-group-box auto-generated-group";
+  
+  const g2Header = document.createElement('div');
+  g2Header.className = "similar-group-header";
+  g2Header.innerHTML = `
+    <h3>Group 2 - Same Romanji <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-secondary); background: var(--border-color); padding: 0.2rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; display: inline-block;">Read Only</span></h3>
+  `;
+  g2Block.appendChild(g2Header);
+  
+  const g2CardsContainer = document.createElement('div');
+  g2CardsContainer.className = "similar-group-cards";
+  if (group2Words.length === 0) {
+    const p = document.createElement('p');
+    p.className = "group-empty-placeholder";
+    p.textContent = "No words share exactly the same Romanji.";
+    g2CardsContainer.appendChild(p);
+  } else {
+    group2Words.forEach(w => {
+      const card = document.createElement('div');
+      card.className = "similar-word-card read-only-word-card";
+      
+      const copiedCats = getCopiedCategoriesList(w);
+      if (copiedCats.length > 0) {
+        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+        card.classList.add('atleast-one-category');
+      }
+      if (belongsToAnyCustomCategory(w)) {
+        card.classList.add('atleast-one-category');
+      }
+      
+      card.addEventListener('click', () => {
+        speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
+      });
+      
+      card.innerHTML = `
+        <div class="card-jp text-japanese">${w.japanese}</div>
+        <div class="card-romaji">${w.romaji}</div>
+        <div class="card-eng">${w.english}</div>
+      `;
+      g2CardsContainer.appendChild(card);
+    });
+  }
+  g2Block.appendChild(g2CardsContainer);
+  container.appendChild(g2Block);
+
+  // 4. Render User Groups (from Group 3 onward)
+  const groups = currentSettings.similarWordGroups || [];
   groups.forEach((group, gIdx) => {
     const groupBlock = document.createElement('div');
     groupBlock.className = "similar-group-box";
     groupBlock.setAttribute('data-group-index', gIdx);
     
-    // Drag & Drop Droppable Zone
+    // Drag & Drop Zone for User Groups
     groupBlock.addEventListener('dragover', (e) => {
       e.preventDefault();
       groupBlock.classList.add('drag-over');
@@ -1867,7 +2135,7 @@ function renderSimilarWordsGroups() {
           const fromWordIdx = dragData.wordIdx;
           
           if (fromGroupIdx !== undefined && fromWordIdx !== undefined) {
-            if (fromGroupIdx === gIdx) return; // same group
+            if (fromGroupIdx === gIdx) return;
             
             const word = currentSettings.similarWordGroups[fromGroupIdx].words[fromWordIdx];
             currentSettings.similarWordGroups[fromGroupIdx].words.splice(fromWordIdx, 1);
@@ -1882,16 +2150,16 @@ function renderSimilarWordsGroups() {
       }
     });
 
-    // Group Header
+    // Group Header (Starts at Group 3)
     const header = document.createElement('div');
     header.className = "similar-group-header";
     header.innerHTML = `
-      <h3>Group ${gIdx + 1}</h3>
+      <h3>Group ${gIdx + 3}</h3>
       <button class="btn-delete-group btn btn-danger btn-small" title="Delete Group">&times;</button>
     `;
     
     header.querySelector('.btn-delete-group').addEventListener('click', () => {
-      if (confirm(`Are you sure you want to delete Group ${gIdx + 1}?`)) {
+      if (confirm(`Are you sure you want to delete Group ${gIdx + 3}?`)) {
         currentSettings.similarWordGroups.splice(gIdx, 1);
         saveSettings();
         renderCards();
@@ -1918,6 +2186,10 @@ function renderSimilarWordsGroups() {
         const copiedCats = getCopiedCategoriesList(w);
         if (copiedCats.length > 0) {
           card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+          card.classList.add('atleast-one-category');
+        }
+        if (belongsToAnyCustomCategory(w)) {
+          card.classList.add('atleast-one-category');
         }
         
         card.addEventListener('dragstart', (e) => {
@@ -1940,7 +2212,7 @@ function renderSimilarWordsGroups() {
           <div class="card-jp text-japanese">${w.japanese}</div>
           <div class="card-romaji">${w.romaji}</div>
           <div class="card-eng">${w.english}</div>
-          <button class="btn-card-edit" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
+          <button class="btn-card-edit atleast-one-category" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
             <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
           </button>
           <button class="btn-remove-from-group" title="Remove Word">&times;</button>
@@ -2047,10 +2319,34 @@ function executeCategoryWordCopy() {
   if (wordsToCopy.length === 0) return;
 
   if (destCategory === "Similar Words") {
+    if (!currentSettings.similarWordGroups) {
+      currentSettings.similarWordGroups = [];
+    }
+    if (currentSettings.similarWordGroups.length === 0) {
+      currentSettings.similarWordGroups.push({
+        words: []
+      });
+    }
+    const lastGroupIdx = currentSettings.similarWordGroups.length - 1;
+    const targetGroup = currentSettings.similarWordGroups[lastGroupIdx];
+    
+    wordsToCopy.forEach(w => {
+      targetGroup.words.push({
+        japanese: w.japanese,
+        english: w.english,
+        romaji: w.romaji
+      });
+    });
+    
+    saveSettings();
+    
+    currentSettings.selectedWordIndices = [];
+    currentSettings.focusedWordIndex = -1;
+    saveSettings();
+    
     closeActiveModal();
-    setTimeout(() => {
-      openSimilarGroupSelectorModal(wordsToCopy);
-    }, 150);
+    renderCards();
+    showToast(`Copied ${wordsToCopy.length} words to Group ${lastGroupIdx + 3}`, 'success');
     return;
   }
   
@@ -2105,7 +2401,7 @@ function openSimilarGroupSelectorModal(customWordsList = null) {
   currentSettings.similarWordGroups.forEach((g, gIdx) => {
     const opt = document.createElement('option');
     opt.value = gIdx;
-    opt.textContent = `Group ${gIdx + 1}`;
+    opt.textContent = `Group ${gIdx + 3}`;
     selectDest.appendChild(opt);
   });
 
@@ -2146,7 +2442,7 @@ function executeSimilarGroupWordCopy() {
   
   closeActiveModal();
   renderCards();
-  showToast(`Copied ${wordsToCopy.length} words to Group ${targetGroupIdx + 1}`, 'success');
+  showToast(`Copied ${wordsToCopy.length} words to Group ${targetGroupIdx + 3}`, 'success');
 }
 
 // --------------------------------------------------------------------------
