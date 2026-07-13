@@ -4578,7 +4578,7 @@ const appSettings = {
     "そうですか::I see. / Is that so?": 1,
     "なんですか::Yes?": 1
   },
-  "currentLesson": "Lesson 01",
+  "currentLesson": "Similar Words",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
@@ -4591,7 +4591,71 @@ const appSettings = {
   "customCategories": [
     "Phrases"
   ],
-  "similarWordGroups": [
+  "similarWordGroups": [   
+    {
+      "words": []
+    },
+    {
+      "words": []
+    },
+    {
+      "words": [
+        {
+          "japanese": "あの〜",
+          "english": "that (noun) over there",
+          "romaji": "ano~"
+        },
+        {
+          "japanese": "これ",
+          "english": "this",
+          "romaji": "kore"
+        },
+        {
+          "japanese": "それ",
+          "english": "that (thing near you)",
+          "romaji": "sore"
+        },
+        {
+          "japanese": "あれ",
+          "english": "that (thing over there)",
+          "romaji": "are"
+        },
+        {
+          "japanese": "この〜",
+          "english": "this (noun) here",
+          "romaji": "kono~"
+        },
+        {
+          "japanese": "その〜",
+          "english": "that (noun) near you",
+          "romaji": "sono~"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "だれ",
+          "english": "who",
+          "romaji": "dare"
+        },
+        {
+          "japanese": "どなた",
+          "english": "who (polite)",
+          "romaji": "donata"
+        },
+        {
+          "japanese": "なんさい",
+          "english": "how old",
+          "romaji": "nansai"
+        },
+        {
+          "japanese": "なん~",
+          "english": "what~, how many~",
+          "romaji": "nan"
+        }
+      ]
+    }, 
     {
       "words": [
         {
@@ -4603,11 +4667,7 @@ const appSettings = {
           "japanese": "これから",
           "english": "from now on, soon",
           "romaji": "korekara"
-        }
-      ]
-    },
-    {
-      "words": [
+        },
         {
           "japanese": "ちいさい",
           "english": "small, little",
@@ -4617,11 +4677,7 @@ const appSettings = {
           "japanese": "すこし",
           "english": "a little, a few",
           "romaji": "sukoshi"
-        }
-      ]
-    },
-    {
-      "words": [
+        },
         {
           "japanese": "しゅくだい",
           "english": "homework",
@@ -4631,11 +4687,7 @@ const appSettings = {
           "japanese": "しょくどう",
           "english": "dining hall, canteen",
           "romaji": "shokudou"
-        }
-      ]
-    },
-    {
-      "words": [
+        },
         {
           "japanese": "しんせつ（な）",
           "english": "kind",
@@ -4645,11 +4697,48 @@ const appSettings = {
           "japanese": "やさしい",
           "english": "easy, kind",
           "romaji": "yasashii"
+        },
+        {
+          "japanese": "とけい",
+          "english": "watch, clock",
+          "romaji": "tokei"
+        },
+        {
+          "japanese": "てちょう",
+          "english": "pocket notebook",
+          "romaji": "techou"
+        },
+        {
+          "japanese": "どうも",
+          "english": "Well thanks.",
+          "romaji": "doumo"
+        },
+        {
+          "japanese": "どうぞ",
+          "english": "Please. / Here you are.",
+          "romaji": "douzo"
+        },
+        {
+          "japanese": "じどうしゃ",
+          "english": "automobile, car",
+          "romaji": "jidousha"
+        },
+        {
+          "japanese": "くるま",
+          "english": "car, vehicle",
+          "romaji": "kuruma"
+        },
+        {
+          "japanese": "あのう",
+          "english": "well, err",
+          "romaji": "anou"
+        },
+        {
+          "japanese": "えーと",
+          "english": "well, let me see...",
+          "romaji": "eeto"
         }
       ]
-    },
-    {
-      "words": []
     }
   ]
 };

@@ -553,6 +553,7 @@ function renderCards() {
     const copiedCats = getCopiedCategoriesList(word);
     if (copiedCats.length > 0) {
       card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+      card.classList.add('atleast-one-cateogry');
     }
     
     // Focused State

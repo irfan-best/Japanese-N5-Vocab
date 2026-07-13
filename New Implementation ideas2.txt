@@ -54,3 +54,23 @@ also when i click on copy words, then by default it should select the -> "Simila
 ---
 
 when i'm in similar words page, when i click  on Enter button, then click on "Create New Group" button
+
+---
+i'm not maintaining order of vocab in my code
+
+words that are added to atleast one cateogry should have some unique distinction on UI.
+--------------------
+phrases category(basically custom category) selected words data is not getting copied to clipboard for words.js
+also if possible add features to change order of words by drap and drop in select category page, 
+also by default it is selecting last category right, instead of allowing user to select, can you by default 
+directly copy to last category, no need to give option for the user.
+also we need to distinguise the words that are added to atleast one category even for quiz words, 
+you can simply show left border with green color with 1px width.
+
+if any of the comma seperated meaning of english of one word and another word have common english meaning
+then show by default add them to Group 1
+
+if romanji is same then also Group them to Group 2
+
+From Group 3 onwards my groupings
+

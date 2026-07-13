@@ -1734,3 +1734,7 @@ body:not(.selection-mode-active) #btn-copy-to {
     gap: 0.2rem !important;;
   }
 }
+
+.atleast-one-cateogry{
+  border-left: 1px solid green;
+}
