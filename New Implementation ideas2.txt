@@ -54,3 +54,18 @@ also when i click on copy words, then by default it should select the -> "Simila
 ---
 
 when i'm in similar words page, when i click  on Enter button, then click on "Create New Group" button
+
+--------------------------
+also for words.js file, for each lesson, for each word include order -> an number,
+so for first difficult words would be getting 01, 02 .. and after all difficult words are done,
+continue numbering for normal words, for each lesson numbers starts newly.
+also while doing import of the vocab then we will be importing just a nmrl way i.e japnaese, english, romanji
+but the number will be added by our code and append to the last, when appending words, continue number from last number of the word.
+
+we have option to see hard/normal words right, i want option to be able to all hard/normal words for an lesson
+when i select sort by "order".
+
+
+------------------
+clicking o -> will toogle the sort by order toogler
+clicking h -> should open help
