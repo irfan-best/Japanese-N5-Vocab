@@ -478,9 +478,51 @@ function belongsToAnyCustomCategory(word) {
     }
   }
 
-  // even if word is present in similar words then also it is true
-  
+  const groups = currentSettings.similarWordGroups || [];
+  const inSimilar = groups.some(g => (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng));
+  if (inSimilar) {
+    return true;
+  }
+
   return false;
+}
+
+let showCategoryModeActive = false;
+
+function getAllCategoriesForWord(word) {
+  const categories = [];
+  if (!word || !word.japanese || !word.english) return categories;
+  const wordJp = word.japanese.trim();
+  const wordEng = word.english.trim();
+
+  // Check all lessons and custom categories in currentWordsDb
+  for (const key in currentWordsDb) {
+    const isHardKey = key.endsWith(" - Hard");
+    const baseKey = isHardKey ? key.slice(0, -9) : key;
+    
+    if (categories.includes(baseKey)) continue;
+
+    const list = currentWordsDb[key] || [];
+    const found = list.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+    if (found) {
+      categories.push(baseKey);
+    }
+  }
+
+  // Check Similar Words groups
+  const groups = currentSettings.similarWordGroups || [];
+  let inSimilar = false;
+  groups.forEach((g, gIdx) => {
+    const found = (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+    if (found) {
+      inSimilar = true;
+    }
+  });
+  if (inSimilar) {
+    categories.push("Similar Words");
+  }
+
+  return categories;
 }
 
 function getCopiedCategoriesList(word) {
@@ -679,6 +721,16 @@ function renderCards() {
     card.appendChild(jpDiv);
     card.appendChild(enDiv);
     card.appendChild(romajiDiv);
+
+    if (showCategoryModeActive && !isMobileDevice()) {
+      const cats = getAllCategoriesForWord(word);
+      if (cats.length > 0) {
+        const catsDiv = document.createElement('div');
+        catsDiv.className = 'card-categories-list';
+        catsDiv.innerHTML = cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ');
+        card.appendChild(catsDiv);
+      }
+    }
 
     // Edit Pen Button Overlay
     const btnEdit = document.createElement('button');
@@ -2048,10 +2100,19 @@ function renderSimilarWordsGroups() {
         speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
       });
       
+      let catsHtml = "";
+      if (showCategoryModeActive && !isMobileDevice()) {
+        const cats = getAllCategoriesForWord(w);
+        if (cats.length > 0) {
+          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
+        }
+      }
+
       card.innerHTML = `
         <div class="card-jp text-japanese">${w.japanese}</div>
         <div class="card-romaji">${w.romaji}</div>
         <div class="card-eng">${w.english}</div>
+        ${catsHtml}
       `;
       g1CardsContainer.appendChild(card);
     });
@@ -2096,10 +2157,19 @@ function renderSimilarWordsGroups() {
         speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
       });
       
+      let catsHtml = "";
+      if (showCategoryModeActive && !isMobileDevice()) {
+        const cats = getAllCategoriesForWord(w);
+        if (cats.length > 0) {
+          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
+        }
+      }
+
       card.innerHTML = `
         <div class="card-jp text-japanese">${w.japanese}</div>
         <div class="card-romaji">${w.romaji}</div>
         <div class="card-eng">${w.english}</div>
+        ${catsHtml}
       `;
       g2CardsContainer.appendChild(card);
     });
@@ -2208,15 +2278,24 @@ function renderSimilarWordsGroups() {
           speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
         });
 
-        card.innerHTML = `
-          <div class="card-jp text-japanese">${w.japanese}</div>
-          <div class="card-romaji">${w.romaji}</div>
-          <div class="card-eng">${w.english}</div>
-          <button class="btn-card-edit atleast-one-category" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-          </button>
-          <button class="btn-remove-from-group" title="Remove Word">&times;</button>
-        `;
+      let catsHtml = "";
+      if (showCategoryModeActive && !isMobileDevice()) {
+        const cats = getAllCategoriesForWord(w);
+        if (cats.length > 0) {
+          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
+        }
+      }
+
+      card.innerHTML = `
+        <div class="card-jp text-japanese">${w.japanese}</div>
+        <div class="card-romaji">${w.romaji}</div>
+        <div class="card-eng">${w.english}</div>
+        ${catsHtml}
+        <button class="btn-card-edit atleast-one-category" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+        </button>
+        <button class="btn-remove-from-group" title="Remove Word">&times;</button>
+      `;
         
         card.querySelector('.btn-card-edit').addEventListener('click', (e) => {
           e.stopPropagation();
@@ -2354,6 +2433,8 @@ function executeCategoryWordCopy() {
   const targetKey = destCategory;
   
   if (!currentWordsDb[targetKey]) currentWordsDb[targetKey] = [];
+
+  console.log('wrodstOCopy:',wordsToCopy);
   
   // Copy words (clone objects to prevent reference conflicts)
   wordsToCopy.forEach(w => {
@@ -2932,6 +3013,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // ================= GLOBAL KEYBOARD SHORTCUTS =================
 
   document.addEventListener('keydown', (e) => {
+    // Ctrl + P toggle category mode
+    if (e.ctrlKey && (e.key === 'p' || e.key === 'P')) {
+      if (!isMobileDevice()) {
+        e.preventDefault();
+        showCategoryModeActive = !showCategoryModeActive;
+        renderCards();
+        showToast(showCategoryModeActive ? "Show Category Mode: ON" : "Show Category Mode: OFF", "info");
+        return;
+      }
+    }
+
     // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
     const tag = e.target.tagName.toLowerCase();
     if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {

@@ -74,3 +74,32 @@ if romanji is same then also Group them to Group 2
 
 From Group 3 onwards my groupings
 
+-----------------------
+when i click ctrl + p -> then below the words in all the categories that word is present.
+basically show category mode gets on, no need to give this feature for tab or mobile devices.
+ctrl + p -> again clicking will off the mode and hide the categories part.
+
+---
+edit an work should update it in all it's categories.
+
+on phone not able to move to an category fix it.
+
+Restart quiz in middle of quiz, r key press should also restart the quiz ( when we are in quiz ), 
+c button to copy only current category only, 
+
+hidden specific category words, useful when making all words are being selected nothing is missing
+-> there can be multiple category so allow option to be able to deselect multiple category.
+-> if an word is present in multiple categories then unselecting one category should not hide the word.
+-> also when doing shift + select of the words -> the hidden words should not be selected.
+
+also lastly moved to category should be comings as default category next time.
+
+in quiz mode for an answer word give option of speaker at the bottom right
+
+in quiz mode being on 2nd questions and revealing answer and then going to previosu and now clicking on
+next is showing answer but here also we need to see quesiton on clicking it then answer to be revealed.
+
+when we are doing search for an words, and if i press enter being in the search box then create a new category 
+with Search Results and show all the words that are matching the search result -> note we need to see all words
+matching the search result there should not be any restriction, also here also we should be able to selection words
+and be able to copy to categories, search results is temperory so dont save it to local storage.

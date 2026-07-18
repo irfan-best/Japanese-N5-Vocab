@@ -394,7 +394,7 @@ allWords["Lesson 03"] = `
 -kai / -gai / -kkai
 
 すみません
-Excuse me.
+Excuse me
 sumimasen
 
 じゃ
@@ -589,41 +589,41 @@ happyaku
 900
 kyūhyaku
 
-ひゃく
-100
-hyaku
+せん
+1000
+sen
 
-にひゃく
-200
-nihyaku
+にせん
+2000
+ni sen
 
-さんびゃく
-300
-sanbyaku
+さんぜん
+3000
+sanzen
 
-よんひゃく
-400
-yonhyaku
+よんせん
+4000
+yon sen
 
-ごひゃく
-500
-gohyaku
+ごせん
+5000
+go sen
 
-ろっぴゃく
-600
-roppyaku
+ろくせん
+6000
+roku sen
 
-ななひゃく
-700
-nanahyaku
+ななせん
+7000
+nana sen
 
-はっぴゃく
-800
-happyaku
+はっせん
+8000
+hassen
 
-きゅうひゃく
-900
-kyūhyaku
+きゅうせん
+9000
+kyuu sen
 
 `;
 
@@ -982,29 +982,29 @@ kinou
 Sunday
 nichiyoubi
 
-どようび
-Saturday
-doyoubi
-
-きんようび
-Friday
-kinyoubi
-
-もくようび
-Thursday
-mokuyoubi
-
-すいようび
-Wednesday
-suiyoubi
+げつようび
+Monday
+getsuyoubi
 
 かようび
 Tuesday
 kayoubi
 
-げつようび
-Monday
-getsuyoubi
+すいようび
+Wednesday
+suiyoubi
+
+もくようび
+Thursday
+mokuyoubi
+
+きんようび
+Friday
+kinyoubi
+
+どようび
+Saturday
+doyoubi
 
 `;
 
@@ -1621,7 +1621,7 @@ Won't you have ~? , Would you like to have ~?
 ~ wa ikaga desu ka
 
 いただきます
-Thank you. , I accept.
+Thank you, I accept
 itadakimasu
 
 りょこう
@@ -2311,7 +2311,7 @@ prefecture
 ken
 
 どうもすみません
-Thank you.
+Thank you
 doumo sumimasen
 
 ポスト
@@ -2333,9 +2333,9 @@ oosutoraria
 have (a child)
 (kodomo ga) imasu
 
-（にほんに）います
+（にほん）に  います
 stay, be (in Japan)
-(nihon ni) imasu
+(nihon) ni imasu
 
 りんご
 apple
@@ -2349,9 +2349,9 @@ mikan
 take a day off (work)
 (kaisha o) yasumimasu
 
-カレーライス
+カレー[ライス]
 curry (and rice)
-karee raisu
+karee [raisu]
 
 ぜんぶで
 in total
@@ -2430,7 +2430,7 @@ kakitome
 
 エアメール・こうくうびん
 airmail
-eameeru / koukuubin
+eameeru
 
 ふなびん
 sea mail
@@ -2445,11 +2445,11 @@ foreign country
 gaikoku
 
 〜だけ
-only ~
+only ~, just
 ~dake
 
 いってまいります
-I'm off, see you later.
+I'm off, see you later. (lit. I'm going and coming back)
 itte mairimasu
 
 〜だい
@@ -2457,35 +2457,35 @@ counter for machines cars etc.
 ~dai
 
 〜まい
-counter for paper stamps etc.
+counter for thin and flat objects such as paper stamps etc.
 ~mai
 
 〜かい
-~ times
+counter for frequency
 ~kai
 
 かかります
-take (time; money)
+take (referring to time or money)
 kakarimasu
 
 〜じかん
-~hours
+(number) of hours
 ~jikan
 
 〜しゅうかん
-~weeks
+(number) of weeks
 ~shuukan
 
 〜かげつ
-~months
+(number) of months
 ~kagetsu
 
 〜ねん
-~years
+(number) of years
 ~nen
 
 〜ぐらい
-about ~
+about (period of time)
 ~gurai
 
 どのぐらい
@@ -2493,7 +2493,7 @@ how long
 donokurai
 
 いらっしゃいませ
-Welcome. / May I help you?
+Welcome. / May I help you? (greeting a customer or a guest entering a shop)
 irasshaimase
 
 いいてんきですね
@@ -2517,43 +2517,43 @@ and then, after that
 sorekara
 
 ひとつ
-one
+one (for counting, means one item)
 hitotsu
 
 ふたつ
-two
+two (for counting)
 futatsu
 
 みっつ
-three
+three (for counting)
 mittsu
 
 よっつ
-four
+four (for counting)
 yottsu
 
 いつつ
-five
+five (for counting)
 itsutsu
 
 むっつ
-six
+six (for counting)
 muttsu
 
 ななつ
-seven
+seven (for counting)
 nanatsu
 
 やっつ
-eight
+eight (for counting)
 yattsu
 
 ここのつ
-nine
+nine (for counting)
 kokonotsu
 
 とお
-ten
+ten (for counting)
 too
 
 いくつ
@@ -2565,7 +2565,7 @@ one person
 hitori
 
 ふたり
-two people
+two persons
 futari
 
 〜にん
@@ -2707,7 +2707,7 @@ maple, red leaves of autumn
 momiji
 
 ちかい
-near
+near (noun or adverb)
 chikai
 
 おそい
@@ -2715,7 +2715,7 @@ slow, late
 osoi
 
 からい
-spicy
+hot (taste), spicy
 karai
 
 おもい
@@ -2738,12 +2738,12 @@ tenki
 airport
 kuukou
 
-まつり
+[お] まつり
 festival
-matsuri
+[o] matsuri
 
 どちら
-which one
+which one (between two things)
 dochira
 
 どちらも
@@ -2751,7 +2751,7 @@ both
 dochiramo
 
 ずっと
-by far
+by far, the whole time
 zutto
 
 おかえりなさい
@@ -2861,7 +2861,7 @@ roshia
 
 allWords["Lesson 13 - Hard"] = `
 しやくしょ
-city hall
+city hall, municipal office
 shiyakusho
 
 けいざい
@@ -2904,9 +2904,9 @@ gyuudon
 go to meet, to welcome
 mukaemasu
 
-だします
-take out
-dashimasu
+[~お] だします
+take out, to submit, to send
+[~o] dashimasu
 
 （みせに）はいります
 enter (a shop)
@@ -2921,7 +2921,7 @@ have a meal, dine
 shokujishimasu
 
 （こうえんを）さんぽします
-take a walk (in a park)
+take a walk, stroll (in a park)
 (kouen o) samposhimasu
 
 かわ
@@ -2937,7 +2937,7 @@ somewhere, some place
 dokoka
 
 べつべつに
-separately
+separately, individually
 betsubetsu ni
 
 あそびます
@@ -2988,11 +2988,11 @@ Sure. Certainly.
 ii desu yo
 
 さあ
-all right, well now
+all right, okay, come on
 saa
 
 あれ
-Oh!
+Oh! Wait What?
 are
 
 まっすぐ
@@ -3071,15 +3071,15 @@ Turn to the right at the signal.
 shingou o migi e magatte kudasai
 
 もちます
-hold
+hold, carry
 mochimasu
 
 よびます
-call
+call (out)
 yobimasu
 
 （あめが）ふります
-rain
+to fall (rain)
 (ame ga) furimasu
 
 じゅうしょ
@@ -3157,11 +3157,11 @@ koukou
 
 allWords["Lesson 15 - Hard"] = `
 せいひん
-products
+products, manufactured goods
 seihin
 
 じこくひょう
-timetable
+timetable, chart
 jikokuhyou
 
 プレイガイド
@@ -3232,7 +3232,7 @@ irasshaimasu
 
 allWords["Lesson 16"] = `
 （シャワーを）あびます
-take (a shower)
+bathe, take, (a shower)
 (shawaa o) abimasu
 
 だします
@@ -3403,12 +3403,12 @@ get off (a train)
 (densha o) orimasu
 
 （でんしゃに）のりかえます
-change (trains)
+change (or) transfer (trains)
 (densha ni) norikaemasu
 
-（かいしゃを）やめます
-quit, retire, stop, give up (from a company)
-(kaisha o) yamemasu
+やめます
+quit, retire, stop, give up
+yamemasu
 
 くらい
 dark
@@ -3417,6 +3417,10 @@ kurai
 せがたかい
 tall (person)
 se ga takai
+
+はいります
+enter, enroll
+hairimasu
 
 からだ
 body
@@ -3461,6 +3465,121 @@ jei aaru
 `;
 
 allWords["Lesson 17"] = `
+ねつ
+fever
+netsu
+
+わすれます
+forget
+wasuremasu
+
+こたえ
+answer
+kotae
+
+おだいじに
+Take care of yourself. Get well soon.
+odaijini
+
+〜までに
+before ~, by ~
+~ made ni
+
+どうしましたか
+What's the matter?
+doushimashita ka
+
+びょうき
+illness, disease
+byouki
+
+たいせつ（な）
+important, precious
+taisetsu na
+
+もんだい
+question, problem, trouble
+mondai
+
+（レポートを）だします
+hand in (a report)
+(repooto o) dashimasu
+
+でかけます
+go out
+dekakemasu
+
+しんぱいします
+worry
+shinpaishimasu
+
+（おふろに）はいります
+take (a bath)
+(ofuro ni) hairimasu
+
+だいじょうぶ（です）
+it's all right, it's okay
+daijoubu desu
+
+あぶない
+dangerous
+abunai
+
+かぜ
+cold, flu
+kaze
+
+ですから
+therefore, so
+desu kara
+
+せんせい
+doctor (used to address medical doctor)
+sensei
+
+（くすりを）のみます
+take (medicine)
+(kusuri o) nomimasu
+
+くすり
+medicine
+kusuri
+
+〜が いたいです
+~ hurts, I have a pain in my ~.
+~ ga itai desu
+
+に さんにち
+a few days (lit. 2-3 days)
+ni san nichi
+
+に さん〜
+a few ~ (lit. 2-3)
+ni san ~
+
+おふろ
+bath
+ofuro
+
+のど
+throat
+nodo
+
+`;
+
+allWords["Lesson 17 - Hard"] = `
+（けんこう）ほけんしょう
+(health) insurance card
+(kenkou) hokenshou
+
+しゅっちょうします
+go on a business trip
+shucchoushimasu
+
+ざんぎょうします
+work overtime
+zangyoushimasu
+
 おぼえます
 memorize
 oboemasu
@@ -3485,21 +3604,13 @@ motteikimasu
 bring (something) along
 mottekimasu
 
-ざんぎょうします
-work overtime
-zangyoushimasu
-
-しゅっちょうします
-go on a business trip
-shucchoushimasu
-
 きんえん
 no smoking
 kinen
 
-（けんこう）ほけんしょう
-(health) insurance card
-(kenkou) hokenshou
+はらいます
+pay
+haraimasu
 
 うわぎ
 jacket, outerwear
@@ -3509,113 +3620,7 @@ uwagi
 underwear
 shitagi
 
-に、さんにち
-a few days
-ni, san nichi
-
-に、さん〜
-a few ~
-ni, san ~
-
-ねつ
-fever
-netsu
-
-わすれます
-forget
-wasuremasu
-
-はらいます
-pay
-haraimasu
-
-こたえ
-answer
-kotae
-
-おだいじに
-Take care of yourself. Get well soon.
-odaijini
-
-〜までに
-before ~, by ~
-~ made ni
-
-びょうき
-illness, disease
-byouki
-
-たいせつ（な）
-important, precious
-taisetsu na
-
-もんだい
-question, problem, trouble
-mondai
-
-せんせい
-doctor
-sensei
-
-（レポートを）だします
-hand in (a report)
-(repooto o) dashimasu
-
-でかけます
-go out
-dekakemasu
-
-しんぱいします
-worry
-shinpaishimasu
-
-（くすりを）のみます
-take (medicine)
-(kusuri o) nomimasu
-
-（おふろに）はいります
-take (a bath)
-(ofuro ni) hairimasu
-
-だいじょうぶ（です）
-all right, it's okay
-daijoubu desu
-
-あぶない
-dangerous
-abunai
-
-かぜ
-cold, flu
-kaze
-
-くすり
-medicine
-kusuri
-
-おふろ
-bath
-ofuro
-
-ですから
-therefore, so
-desu kara
-
-どうしましたか
-What's the matter?
-doushimashita ka
-
-（〜が）いたいです
-I have a pain (in my ~).
-(~ ga) itai desu
-
-のど
-throat
-nodo
-
 `;
-
-allWords["Lesson 17 - Hard"] = ``;
 
 allWords["Lesson 18"] = `
 できます
@@ -3627,7 +3632,7 @@ wash
 araimasu
 
 ひきます
-play (stringed instrument or piano)
+play (a string instrument or the piano)
 hikimasu
 
 うたいます
@@ -3639,7 +3644,7 @@ collect, gather
 atsumemasu
 
 すてます
-throw away
+throw away, discard
 sutemasu
 
 かえます
@@ -3655,7 +3660,7 @@ reserve, book
 yoyaku shimasu
 
 けんがくします
-visit some place to study
+visit some place to study, field trip
 kengaku shimasu
 
 ピアノ
@@ -3666,8 +3671,8 @@ piano
 ~meter
 ~meetoru
 
-こくさい
-international
+こくさい~
+international~
 kokusai
 
 げんきん
@@ -3679,12 +3684,12 @@ hobby
 shumi
 
 にっき
-diary
+diary, journal
 nikki
 
-おいのり
+[お] いのり
 prayer
-oinori
+[o] inori
 
 おいのりをします
 pray
@@ -3719,11 +3724,11 @@ That must be interesting.
 sore wa omoshiroi desu ne
 
 なかなか
-not easily, not very
+not easily
 nakanaka
 
 ぼくじょう
-ranch, stock farm
+ranch, farm
 bokujou
 
 ほんとうですか
@@ -3731,7 +3736,7 @@ Really?
 hontou desu ka
 
 ぜひ
-by all means
+by all means, please
 zehi
 
 `;
@@ -3856,7 +3861,7 @@ very soon
 mou sugu
 
 おかげさまで
-thank you (thanks to you I'm doing well)
+Thank you. All thanks to you. (express gratitude for help received)
 okagesama de
 
 かんぱい
@@ -3864,16 +3869,16 @@ bottoms up / cheers
 kanpai
 
 じつは
-actually, the truth is
+actually.., the truth is..
 jitsu wa
 
 ダイエット
 diet
 daietto
 
-ダイエットします
+ダイエッ を トします
 go on a diet
-daietto shimasu
+daietto o shimasu
 
 なんかいも
 many times
@@ -3909,7 +3914,7 @@ check, investigate
 shirabemasu
 
 なおします
-repair, correct
+correct, fix, repair
 naoshimasu
 
 しゅうりします
@@ -3925,11 +3930,11 @@ I (informal used by men)
 boku
 
 きみ
-you (informal used by men)
+you (informal)
 kimi
 
 〜くん
-Mr. (informal suffix used for men)
+Mr. (informal of ~san)
 ~kun
 
 うん
@@ -3977,11 +3982,11 @@ that way, that place (informal)
 socchi
 
 あっち
-that way over there, that place over there (informal)
+that way (place) over there (informal)
 acchi
 
 どっち
-which one, which way, where (informal)
+which one(way), where (informal)
 docchi
 
 このあいだ
@@ -4009,7 +4014,7 @@ What shall I do?
 dou shiyou kana
 
 よかったら…
-if you like...
+if you like..., if it's okay
 yokattara...
 
 いろいろ
@@ -4041,16 +4046,16 @@ kachimasu
 lose, be defeated
 makemasu
 
-（おまつりが）あります
-(a festival) be held, take place
-(omatsuri ga) arimasu
+あります
+be held, take place
+arimasu
 
 やくにたちます
 be useful
 yakunitachimasu
 
 むだ（な）
-wasteful
+wasteful, useless
 muda na
 
 ふべん（な）
@@ -4086,7 +4091,7 @@ speech
 supiichi
 
 スピーチをします
-make a speech, deliver a speech
+make/deliver a speech
 supiichi o shimasu
 
 しあい
@@ -4094,7 +4099,7 @@ game, match
 shiai
 
 アルバイト
-part-time job
+side job, part-time job
 arubaito
 
 アルバイトをします
@@ -4102,12 +4107,12 @@ work a part-time job
 arubaito o shimasu
 
 いけん
-opinion
+opinion, comment
 iken
 
-おはなし
-talk, speech, what one's say, story
-ohanashi
+[お]はなし
+talk, speech, story, what one's say
+[o]hanashi
 
 おはなしをします
 talk, tell a story
@@ -4129,9 +4134,9 @@ dezain
 transportation, traffic
 koutsuu
 
-ラッシュ
+ラッシュ [じ]
 rush hour
-rasshu
+rasshu [ji]
 
 さいきん
 recently, these days
@@ -4142,7 +4147,7 @@ probably, perhaps, maybe
 tabun
 
 きっと
-surely
+surely, no doubt
 kitto
 
 ほんとうに
@@ -4150,7 +4155,7 @@ really
 hontou ni
 
 そんなに
-not so much
+not so much (used with negatives)
 sonnani
 
 〜について
@@ -4186,21 +4191,21 @@ kangaruu
 allWords["Lesson 21 - Hard"] = ``;
 
 allWords["Lesson 22"] = `
-（シャツを）きます
-wear, put on (a shirt dress etc.)
-(shatsu o) kimasu
+きます
+wear, put on (a shirt, dress, jacket etc)
+kimasu
 
-（くつを）はきます
-wear, put on (shoes trousers etc.)
-(kutsu o) hakimasu
+はきます
+wear, put on (shoes, pants, skirt etc)
+hakimasu
 
-（ぼうしを）かぶります
-put on (a hat cap)
-(boushi o) kaburimasu
+かぶります
+wear, put on (a hat cap) lit. cover
+kaburimasu
 
-（めがねを）かけます
-wear, put on, hang (glasses)
-(megane o) kakemasu
+かけます
+wear, put on(glasses) lit. hang
+kakemasu
 
 うまれます
 be born
@@ -4227,7 +4232,7 @@ glasses
 megane
 
 よく
-often
+often, nicely
 yoku
 
 おめでとうございます
@@ -4243,7 +4248,7 @@ house rent
 yachin
 
 うーん
-Let me see.
+ummm...
 uun
 
 ダイニングキッチン
@@ -4274,25 +4279,25 @@ pari
 the Great Wall of China
 banri no choujou
 
-（イヤリングを）つけます
-wear, attach (earrings perfume ring necklace)
-(iyaringu o) tsukemasu
+つけます
+wear (earrings perfume, ring, necklace etc) lit. attach
+tsukemasu
 
-（けしょうを）します
-wear (general items: makeup necklace necktie belt scarf)
-(keshou o) shimasu
+します
+wear, put on general items (makeup, necklace, necktie, belt, scarf)
+shimasu
 
-（ゆびわを）はめます
-wear, insert (a ring gloves)
-(yubiwa o) hamemasu
+はめます
+wear (a ring, gloves) lit. insert
+hamemasu
 
-（スカーフを）まきます
-wear around the neck (scarf muffler)
-(sukaafu o) makimasu
+まきます
+wear around the neck (scarf, muffler)
+makimasu
 
-（ベルトを）しめます
-wear, tie (necktie belt)
-(beruto o) shimemasu
+しめます
+wear (belt, neckie) lit. tie, fasten
+shimemasu
 
 `;
 
@@ -4574,21 +4579,342 @@ douzo ogenki de
 allWords["Lesson 25 - Hard"] = ``;
 
 allWords["Phrases"] = `
-はじめまして
-How do you do? (introducing oneself for the first time)
-hajimemashite
+どういたしまして
+You're welcome. / Don't mention it.
+dou itashimashite
+
+ごめんください
+Excuse me, Anybody home?, May I come in?
+gomenkudasai
+
+どうぞおあがりください
+Do come in.
+douzo oagari kudasai
+
+いらっしゃい
+Welcome. / How nice of you to come.
+irasshai
+
+いらっしゃいませ
+Welcome. / May I help you?
+irasshaimase
+
+またいらっしゃってください
+Please come again.
+mata irasshatte kudasai
+
+いってまいります
+I'm off, see you later. (lit. I'm going and coming back)
+itte mairimasu
+
+いってらっしゃい
+Have a good day, see you later. (lit. Go and come back)
+itte rasshai
+
+おかえりなさい
+Welcome home.
+okaerinasai
+
+いらっしゃいます
+be (honorific equivalent of imasu)
+irasshaimasu
+
+いただきます
+Thank you, I accept
+itadakimasu
+
+さあ
+all right, well now
+saa
+
+そうですか
+I see. / Is that so?
+sou desu ka
+
+そうしましょう
+Let's do that
+sou shimashou
+
+そうですね
+I agree with you
+sou desu ne
+
+いいですね
+that's good
+ii desu ne
+
+いいですよ
+Sure. Certainly.
+ii desu yo
 
 どうぞよろしくおねがいします
 Pleased to meet you. (Please be nice to me)
 douzo yoroshiku onegaishimasu
 
-こちらは～さんです。
-This is (someone).
-kochira wa ~-san desu
+なんですか
+Yes?
+nan desu ka
+
+おでかけですか
+Are you going out?
+odekake desu ka
+
+おひきだしですか
+Are you making a withdrawal?
+ohikidashi desu ka
+
+にほんのせいかつになれましたか
+Have you got used to the life in Japan?
+nihon no seikatsu ni naremashita ka
+
+〜はいかがですか
+Won't you have ~? , Would you like to have ~?
+~ wa ikaga desu ka
+
+〜もういっぱいいかがですか
+Won't you have another cup of ~?
+~ mou ippai ikaga desu ka
+
+いっしょにいかがですか
+Won't you join me (us)?
+isshoni ikaga desu ka
+
+そろそろしつれいします
+It's almost time to leave now.
+sorosoro shitsurei shimasu
+
+またこんどおねがいします
+Please ask me again some other time.
+mata kondo onegaishimasu
+
+（しょうしょう）おまちください
+Please wait (for a moment)
+(shoushou) omachi kudasai
+
+ごちゅうもんは
+May I take your order?
+gochuumon wa
+
+これでおねがいします
+I'd like to pay with this.
+kore de onegaishimasu
+
+（みぎへ）まがります
+turn (to the right)
+(migi e) magarimasu
+
+しんごうをみぎへまがってください
+Turn to the right at the signal.
+shingou o migi e magatte kudasai
+
+おなかがすきました
+(I'm) hungry
+onaka ga sukimashita
+
+おなかがいっぱいです
+(I'm) full
+onaka ga ippai desu
+
+のどがかわきました
+(I'm) thirsty
+nodo ga kawakimashita
+
+しつれいします
+Excuse me. (to be rude)
+shitsurei shimasu
+
+ほんのきもちです
+It's nothing. / It's a token of my gratitude.
+honno kimochi desu
+
+ざんねんですね
+I'm sorry (to hear that).
+zannen desu ne
+
+だめですか
+So you cannot (come)?
+dame desu ka
+
+〜はちょっと…
+~ is a bit difficult.
+~ wa chotto...
+
+ちょっと〜まで
+I'm just going to (place) for a short while.
+chotto ~ made
+
+〜をください
+Give me ~ please.
+-o kudasai
+
+〜をみせてください
+Please show me ~.
+-o misete kudasai
+
+〜すてきですね
+What a nice ~!
+~ suteki desu ne
+
+いいてんきですね
+Nice weather isn't it?
+ii tenki desu ne
+
+いいえ、まだまだです
+No I still have a long way to go.
+iie mada mada desu
+
+いいえ、けっこうです。
+No, thank you. / No, that's okay.
+iie, kekkō desu.
+
+ちがいます
+No it isn't. / You are wrong.
+chigaimasu
+
+～からきました
+I'm from (country).
+~ kara kimashita
+
+はじめまして
+How do you do? (introducing oneself for the first time)
+hajimemashite
+
+こちらこそよろしく
+I am pleased to meet you too.
+kochirakoso yoroshiku
+
+これからおせわになります
+I hope for your kind assistance hereafter.
+korekara osewa ni narimasu
+
+おげんきですか
+How are you?
+ogenki desu ka
+
+じこしょうかいをおねがいします。
+Please introduce yourself. / Self-introduction please.
+jiko shoukai o onegaishimasu
+
+もう〜ですね
+It's already ~ isn't it?
+mou ~ desu ne
 
 `;
 
 allWords["Phrases - Hard"] = ``;
+
+allWords["Questions"] = `
+どなた
+who (polite)
+donata
+
+なんさい
+how old
+nansai
+
+だれ
+who
+dare
+
+おなまえは
+May i have your name?
+onamae wa
+
+おいくつ
+how old (formal)
+oikutsu
+
+なん~
+what~, how many~
+nan
+
+なんかい
+what floor
+nankai
+
+どこ
+where, what place
+doko
+
+どちら
+which way, where (polite)
+dochira
+
+いくら
+how much
+ikura
+
+なんようび
+what day of the week
+nanyoubi
+
+なんがつ
+what month
+nangatsu
+
+なに
+what
+nani
+
+どれ
+which one(of 3 or more)
+dore
+
+どんな〜
+what kind of ~
+donna~
+
+どうして
+why
+doushite
+
+どのぐらい
+how long
+donokurai
+
+いくつ
+how many
+ikutsu
+
+どちら
+which one
+dochira
+
+どこか
+somewhere, some place
+dokoka
+
+なにか
+something
+nanika
+
+どの〜
+which ~
+dono~
+
+どうやって
+how, in what way
+douyatte
+
+どうしましたか
+What's the matter?
+doushimashita ka
+
+せんせい
+doctor (used to address medical doctor)
+sensei
+
+`;
+
+allWords["Questions - Hard"] = ``;
+
+allWords["Counters"] = ``;
+
+allWords["Counters - Hard"] = ``;
+
+allWords["Food Names"] = ``;
+
+allWords["Food Names - Hard"] = ``;
 
 const appSettings = {
   "flagCounts": {
@@ -4596,7 +4922,7 @@ const appSettings = {
     "なんですか::Yes?": 1,
     "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "Lesson 08",
+  "currentLesson": "Lesson 01",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
@@ -4607,79 +4933,14 @@ const appSettings = {
   "selectedWordIndices": [],
   "isSelectionModeActive": false,
   "customCategories": [
-    "Phrases"
+    "Phrases",
+    "Questions",
+    "Counters",
+    "Food Names"
   ],
   "similarWordGroups": [
     {
       "words": [
-        {
-          "japanese": "あの〜",
-          "english": "that (noun) over there",
-          "romaji": "ano~"
-        },
-        {
-          "japanese": "これ",
-          "english": "this",
-          "romaji": "kore"
-        },
-        {
-          "japanese": "それ",
-          "english": "that (thing near you)",
-          "romaji": "sore"
-        },
-        {
-          "japanese": "あれ",
-          "english": "that (thing over there)",
-          "romaji": "are"
-        },
-        {
-          "japanese": "この〜",
-          "english": "this (noun) here",
-          "romaji": "kono~"
-        },
-        {
-          "japanese": "その〜",
-          "english": "that (noun) near you",
-          "romaji": "sono~"
-        }
-      ]
-    },
-    {
-      "words": [
-        {
-          "japanese": "だれ",
-          "english": "who",
-          "romaji": "dare"
-        },
-        {
-          "japanese": "どなた",
-          "english": "who (polite)",
-          "romaji": "donata"
-        },
-        {
-          "japanese": "なんさい",
-          "english": "how old",
-          "romaji": "nansai"
-        },
-        {
-          "japanese": "なん~",
-          "english": "what~, how many~",
-          "romaji": "nan"
-        }
-      ]
-    },
-    {
-      "words": [
-        {
-          "japanese": "それから",
-          "english": "after than, and then",
-          "romaji": "sorekara"
-        },
-        {
-          "japanese": "これから",
-          "english": "from now on, soon",
-          "romaji": "korekara"
-        },
         {
           "japanese": "ちいさい",
           "english": "small, little",
@@ -4749,8 +5010,135 @@ const appSettings = {
           "japanese": "えーと",
           "english": "well, let me see...",
           "romaji": "eeto"
+        },
+        {
+          "japanese": "ビル",
+          "english": "building",
+          "romaji": "biru"
+        },
+        {
+          "japanese": "ビール",
+          "english": "beer",
+          "romaji": "biiru"
+        },
+        {
+          "japanese": "おく",
+          "english": "the back",
+          "romaji": "oku"
+        },
+        {
+          "japanese": "うしろ",
+          "english": "back, behind",
+          "romaji": "ushiro"
+        },
+        {
+          "japanese": "〜ごろ",
+          "english": "about (time)",
+          "romaji": "~goro"
+        },
+        {
+          "japanese": "〜ぐらい",
+          "english": "about ~",
+          "romaji": "~gurai"
         }
       ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "（どうも）ありがとうございます",
+          "english": "Thank you (very much).",
+          "romaji": "(doumo) arigatou gozaimasu"
+        },
+        {
+          "japanese": "どうも",
+          "english": "Well thanks.",
+          "romaji": "doumo"
+        },
+        {
+          "japanese": "いただきます",
+          "english": "Thank you, I accept",
+          "romaji": "itadakimasu"
+        },
+        {
+          "japanese": "どうもすみません",
+          "english": "Thank you",
+          "romaji": "doumo sumimasen"
+        },
+        {
+          "japanese": "おかげさまで",
+          "english": "thank you (thanks to you I'm doing well)",
+          "romaji": "okagesama de"
+        },
+        {
+          "japanese": "みんな",
+          "english": "everybody, everything",
+          "romaji": "minna"
+        },
+        {
+          "japanese": "みなさん",
+          "english": "everyone, all of you",
+          "romaji": "minasan"
+        },
+        {
+          "japanese": "きせつ",
+          "english": "season",
+          "romaji": "kisetsu"
+        },
+        {
+          "japanese": "きっさてん",
+          "english": "coffee shop",
+          "romaji": "kissaten"
+        },
+        {
+          "japanese": "ちかい",
+          "english": "near",
+          "romaji": "chikai"
+        },
+        {
+          "japanese": "ちかく",
+          "english": "near, vicinity",
+          "romaji": "chikaku"
+        },
+        {
+          "japanese": "はやく",
+          "english": "early, quickly, fast",
+          "romaji": "hayaku"
+        },
+        {
+          "japanese": "はやい",
+          "english": "fast, early",
+          "romaji": "hayai"
+        },
+        {
+          "japanese": "らいげつ",
+          "english": "next month",
+          "romaji": "raigetsu"
+        },
+        {
+          "japanese": "こんげつ",
+          "english": "this month",
+          "romaji": "kongetsu"
+        },
+        {
+          "japanese": "〜かげつ",
+          "english": "(number) of months",
+          "romaji": "~kagetsu"
+        },
+        {
+          "japanese": "なんがつ",
+          "english": "what month",
+          "romaji": "nangatsu"
+        },
+        {
+          "japanese": "〜がつ",
+          "english": "~th month of the year",
+          "romaji": "~gatsu"
+        }
+      ]
+    },
+    {
+      "words": []
     }
   ]
 };
