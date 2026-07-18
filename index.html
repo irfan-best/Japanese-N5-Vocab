@@ -98,6 +98,16 @@
         </div>
       </div>
 
+      <!-- Hidden Categories -->
+      <div class="panel-section hidden-categories-controls" style="display: flex; flex-direction: column; gap: 0.5rem; min-width: 180px;">
+        <div class="input-group" style="width: 100%;">
+          <label style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">Hidden Categories</label>
+          <div id="hidden-categories-container" style="max-height: 100px; overflow-y: auto; border: 1px solid var(--border-color); padding: 0.5rem; border-radius: var(--radius-sm); display: flex; flex-direction: column; gap: 0.35rem; background-color: var(--bg-primary); width: 100%; box-sizing: border-box;">
+            <!-- Programmatically populated checkboxes -->
+          </div>
+        </div>
+      </div>
+
       <!-- Actions Panel -->
       <div class="panel-section action-controls">
         <div class="action-buttons-grid">
@@ -176,6 +186,7 @@
       </div>
       <div class="manage-right">
         <button id="btn-toggle-selection-mode" class="btn btn-outline" title="Toggle Selection Mode">Enable Selection Mode</button>
+        <button id="btn-copy-c-format" class="btn btn-outline" title="Copy current category in plain text format">C</button>
         <button id="btn-clipboard" class="btn btn-outline" title="Copy N5 configuration to clipboard">Copy to Clipboard</button>
         <button id="btn-reset-cache" class="btn btn-outline-danger" title="Clear all local settings and word overrides">Reset Cache</button>
       </div>
@@ -189,8 +200,16 @@
 
   <!-- Quiz Modal -->
   <div id="modal-quiz" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
-    <div class="modal-header">
-      <h2 id="quiz-title">Vocabulary Quiz</h2>
+    <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <h2 id="quiz-title" style="margin: 0;">Vocabulary Quiz</h2>
+        <button id="btn-quiz-reload" class="btn btn-icon btn-small" title="Restart Quiz" aria-label="Restart Quiz" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; padding: 0.25rem; color: var(--text-secondary); transition: color var(--transition-fast);">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 4v6h-6"></path>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+        </button>
+      </div>
       <button class="btn-close-modal" aria-label="Close Quiz">&times;</button>
     </div>
     <div class="modal-body">
@@ -236,7 +255,7 @@
       </div>
 
       <!-- Quiz Active View -->
-      <div id="quiz-active-view" class="hidden">
+      <div id="quiz-active-view" class="hidden" style="position: relative;">
         <!-- Progress & Score -->
         <div class="quiz-stats">
           <span id="quiz-progress-text">Question 1 of 10</span>
@@ -268,7 +287,7 @@
         </div>
 
         <!-- Feedback & Reveal Box -->
-        <div id="quiz-feedback-box" class="quiz-feedback-box hidden">
+        <div id="quiz-feedback-box" class="quiz-feedback-box hidden" style="position: relative;">
           <div id="quiz-feedback-title" class="feedback-title">Correct!</div>
           <div class="feedback-details">
             <div class="feedback-item">
@@ -284,6 +303,12 @@
               <span id="quiz-reveal-romaji" class="value">--</span>
             </div>
           </div>
+          <button id="quiz-answer-speak-btn" class="btn btn-icon btn-speak" title="Speak Answer" aria-label="Speak Answer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
         </div>
 
         <!-- Controls below question -->

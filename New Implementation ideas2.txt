@@ -91,7 +91,7 @@ hidden specific category words, useful when making all words are being selected 
 -> there can be multiple category so allow option to be able to deselect multiple category.
 -> if an word is present in multiple categories then unselecting one category should not hide the word.
 -> also when doing shift + select of the words -> the hidden words should not be selected.
-
+    
 also lastly moved to category should be comings as default category next time.
 
 in quiz mode for an answer word give option of speaker at the bottom right

@@ -15,7 +15,9 @@ const DEFAULT_SETTINGS = {
   selectedWordIndices: [],
   isSelectionModeActive: false,
   customCategories: [],
-  similarWordGroups: []
+  similarWordGroups: [],
+  hiddenCategories: [],
+  lastDestCategory: ""
 };
 
 // Main Runtime State Variables
@@ -137,13 +139,31 @@ function getWordKey(word) {
 // PERSISTENCE & CACHE MANAGEMENT
 // ==========================================================================
 
+// Same Meaning and Same Romaji calculation cache to prevent performance bottlenecks
+let sameMeaningWordsCache = null;
+let sameMeaningWordsKeysCache = null;
+let sameRomajiWordsCache = null;
+let sameRomajiWordsKeysCache = null;
+
+function clearSameMeaningCache() {
+  sameMeaningWordsCache = null;
+  sameMeaningWordsKeysCache = null;
+  sameRomajiWordsCache = null;
+  sameRomajiWordsKeysCache = null;
+}
+
 // Save application state to local storage
 function saveSettings() {
   localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
+  clearSameMeaningCache();
 }
 
 function saveWords() {
-  localStorage.setItem('n5_words', JSON.stringify(currentWordsDb));
+  const dbCopy = { ...currentWordsDb };
+  delete dbCopy["Search Results"];
+  delete dbCopy["Search Results - Hard"];
+  localStorage.setItem('n5_words', JSON.stringify(dbCopy));
+  clearSameMeaningCache();
 }
 
 // Load application state (restoring settings and parsed words)
@@ -169,6 +189,12 @@ function loadState() {
   }
   if (!currentSettings.similarWordGroups) {
     currentSettings.similarWordGroups = [];
+  }
+  if (!currentSettings.hiddenCategories) {
+    currentSettings.hiddenCategories = [];
+  }
+  if (currentSettings.lastDestCategory === undefined) {
+    currentSettings.lastDestCategory = "";
   }
 
   // 2. Load Words
@@ -412,15 +438,22 @@ function getActiveLessonKey() {
 // Get array of word objects currently shown
 function getActiveWords() {
   if (currentSettings.currentLesson === 'Show All Words') {
-    return getShowAllWords();
+    return getShowAllWords().filter(isWordVisible);
+  }
+  if (currentSettings.currentLesson === 'Same Meaning') {
+    return getSameMeaningWords().filter(isWordVisible);
+  }
+  if (currentSettings.currentLesson === 'Same Romaji') {
+    return getSameRomajiWords().filter(isWordVisible);
   }
   const key = getActiveLessonKey();
-  return currentWordsDb[key] || [];
+  const list = currentWordsDb[key] || [];
+  return list.filter(isWordVisible);
 }
 
 function reorderWords(fromIdx, toIdx) {
   const key = getActiveLessonKey();
-  if (key === 'Show All Words' || key === 'Similar Words') return;
+  if (key === 'Show All Words' || key === 'Similar Words' || key === 'Same Meaning' || key === 'Same Romaji') return;
 
   const list = currentWordsDb[key];
   if (!list || fromIdx < 0 || fromIdx >= list.length || toIdx < 0 || toIdx >= list.length) return;
@@ -522,7 +555,113 @@ function getAllCategoriesForWord(word) {
     categories.push("Similar Words");
   }
 
+  // Check Same Meaning words (O(1) cached Set lookup)
+  if (!sameMeaningWordsKeysCache) {
+    getSameMeaningWords();
+  }
+  if (sameMeaningWordsKeysCache && sameMeaningWordsKeysCache.has(`${wordJp}::${wordEng}`)) {
+    categories.push("Same Meaning");
+  }
+
+  // Check Same Romaji words (O(1) cached Set lookup)
+  if (!sameRomajiWordsKeysCache) {
+    getSameRomajiWords();
+  }
+  if (sameRomajiWordsKeysCache && sameRomajiWordsKeysCache.has(`${wordJp}::${wordEng}`)) {
+    categories.push("Same Romaji");
+  }
+
   return categories;
+}
+
+function isWordVisible(word) {
+  const cats = getAllCategoriesForWord(word);
+  if (cats.length === 0) return true;
+
+  // Filter categories to only check custom categories, Similar Words, and explicitly hidden standard lessons
+  const filteredCats = cats.filter(c => {
+    const isStandardLesson = c.match(/^Lesson\s+\d+/i);
+    if (isStandardLesson) {
+      return (currentSettings.hiddenCategories || []).includes(c);
+    }
+    return true;
+  });
+
+  if (filteredCats.length === 0) return true;
+
+  const allHidden = filteredCats.every(c => (currentSettings.hiddenCategories || []).includes(c));
+  return !allHidden;
+}
+
+function populateHiddenCategoriesUI() {
+  const container = document.getElementById('hidden-categories-container');
+  if (!container) return;
+  container.innerHTML = "";
+
+  if (!currentSettings.hiddenCategories) {
+    currentSettings.hiddenCategories = [];
+  }
+
+  const allCats = [];
+  const isShowAll = (currentSettings.currentLesson === 'Show All Words');
+
+  if (isShowAll) {
+    for (let i = 1; i <= 25; i++) {
+      allCats.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  }
+
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      if (!allCats.includes(cat)) {
+        allCats.push(cat);
+      }
+    });
+  }
+  if (!allCats.includes("Similar Words")) {
+    allCats.push("Similar Words");
+  }
+  if (!allCats.includes("Same Meaning")) {
+    allCats.push("Same Meaning");
+  }
+  if (!allCats.includes("Same Romaji")) {
+    allCats.push("Same Romaji");
+  }
+
+  allCats.forEach(cat => {
+    const div = document.createElement('div');
+    div.style.display = "flex";
+    div.style.alignItems = "center";
+    div.style.gap = "0.5rem";
+
+    const cb = document.createElement('input');
+    cb.type = "checkbox";
+    cb.value = cat;
+    cb.id = `hide-cat-${cat.replace(/\s+/g, '-')}`;
+    cb.checked = currentSettings.hiddenCategories.includes(cat);
+
+    cb.addEventListener('change', () => {
+      if (cb.checked) {
+        if (!currentSettings.hiddenCategories.includes(cat)) {
+          currentSettings.hiddenCategories.push(cat);
+        }
+      } else {
+        currentSettings.hiddenCategories = currentSettings.hiddenCategories.filter(c => c !== cat);
+      }
+      saveSettings();
+      renderCards();
+    });
+
+    const lbl = document.createElement('label');
+    lbl.htmlFor = cb.id;
+    lbl.textContent = cat;
+    lbl.style.fontSize = "0.85rem";
+    lbl.style.cursor = "pointer";
+
+    div.appendChild(cb);
+    div.appendChild(lbl);
+    container.appendChild(div);
+  });
 }
 
 function getCopiedCategoriesList(word) {
@@ -559,6 +698,20 @@ function getCopiedCategoriesList(word) {
 
 // Redraw vocabulary grid from memory state
 function renderCards() {
+  if (currentSettings.currentLesson !== "Search Results") {
+    const selectLesson = document.getElementById('select-lesson');
+    if (selectLesson) {
+      for (let i = 0; i < selectLesson.options.length; i++) {
+        if (selectLesson.options[i].value === "Search Results") {
+          selectLesson.remove(i);
+          delete currentWordsDb["Search Results"];
+          delete currentWordsDb["Search Results - Hard"];
+          break;
+        }
+      }
+    }
+  }
+
   console.log('render cards caleld');
   const container = document.getElementById('vocab-grid');
   const emptyState = document.getElementById('empty-state');
@@ -597,12 +750,14 @@ function renderCards() {
 
   const isShowAll = (lessonKey === 'Show All Words');
   const isSimilar = (lessonKey === 'Similar Words');
+  const isSameMeaning = (lessonKey === 'Same Meaning');
+  const isSameRomaji = (lessonKey === 'Same Romaji');
 
   // Toggle controls display
   const toggleGroup = document.querySelector('.toggle-group');
   const managementPanel = document.querySelector('.management-panel');
-  if (toggleGroup) toggleGroup.style.display = (isShowAll || isSimilar) ? 'none' : 'flex';
-  if (managementPanel) managementPanel.style.display = (isShowAll || isSimilar) ? 'none' : 'flex';
+  if (toggleGroup) toggleGroup.style.display = (isShowAll || isSimilar || isSameMeaning || isSameRomaji) ? 'none' : 'flex';
+  if (managementPanel) managementPanel.style.display = (isShowAll || isSimilar || isSameMeaning || isSameRomaji) ? 'none' : 'flex';
 
   if (isSimilar) {
     if (emptyState) emptyState.classList.add('hidden');
@@ -610,6 +765,8 @@ function renderCards() {
     renderSimilarWordsGroups();
     return;
   }
+
+
 
   const words = getActiveWords();
   container.innerHTML = "";
@@ -631,7 +788,7 @@ function renderCards() {
     card.setAttribute('tabindex', '0');
     card.setAttribute('data-index', idx);
 
-    if (lessonKey !== 'Show All Words' && lessonKey !== 'Similar Words') {
+    if (lessonKey !== 'Show All Words' && lessonKey !== 'Similar Words' && lessonKey !== 'Same Meaning' && lessonKey !== 'Same Romaji') {
       card.setAttribute('draggable', 'true');
       
       card.addEventListener('dragstart', (e) => {
@@ -1075,11 +1232,13 @@ function startQuiz() {
       const key = isHardActive ? `${val} - Hard` : val;
       const list = currentWordsDb[key] || [];
       list.forEach(w => {
-        words.push({
-          japanese: w.japanese,
-          english: w.english,
-          romaji: w.romaji
-        });
+        if (isWordVisible(w)) {
+          words.push({
+            japanese: w.japanese,
+            english: w.english,
+            romaji: w.romaji
+          });
+        }
       });
     });
   } else {
@@ -1296,6 +1455,20 @@ function speakCurrentQuizWord() {
   }
 }
 
+function speakQuizAnswer() {
+  if (quizCurrentIndex >= quizWords.length) return;
+  const word = quizWords[quizCurrentIndex];
+  const mode = currentSettings.quizMode;
+  
+  stopSpeech();
+  
+  if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz5' || mode === 'quiz7') {
+    speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
+  } else {
+    speakText(word.english, 'en');
+  }
+}
+
 // Reveal Answer and Validate User Entry
 function checkQuizAnswer() {
   const state = quizStates[quizCurrentIndex];
@@ -1342,6 +1515,17 @@ function checkQuizAnswer() {
 function nextQuizQuestion() {
   if (quizCurrentIndex < quizWords.length - 1) {
     quizCurrentIndex++;
+    const state = quizStates[quizCurrentIndex];
+    const mode = currentSettings.quizMode;
+    const isWritingQuiz = ['quiz3', 'quiz4', 'quiz5', 'quiz7'].includes(mode);
+    
+    if (state.answered) {
+      if (isWritingQuiz && state.isCorrect) {
+        quizScore = Math.max(0, quizScore - 1);
+      }
+      state.answered = false;
+    }
+    
     showQuizQuestion();
   } else {
     finishQuiz();
@@ -1501,26 +1685,15 @@ function copySettingsToClipboard() {
   stopSpeech();
   
   let clipContent = "const allWords = {};\n\n";
+  const cat = currentSettings.currentLesson;
+  const normalKey = cat;
+  const hardKey = `${cat} - Hard`;
 
-  // 1. Serialize Lessons
-  for (let i = 1; i <= 25; i++) {
-    const pad = String(i).padStart(2, '0');
-    const normalKey = `Lesson ${pad}`;
-    const hardKey = `${normalKey} - Hard`;
-
+  if (currentWordsDb[normalKey]) {
     clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
-    clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
   }
-
-  // 1.5. Serialize Custom Categories
-  if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
-      const normalKey = cat;
-      const hardKey = `${cat} - Hard`;
-
-      clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
-      clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
-    });
+  if (currentWordsDb[hardKey]) {
+    clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
   }
 
   // 2. Serialize current settings & stats
@@ -1529,11 +1702,46 @@ function copySettingsToClipboard() {
   // 3. Write copy
   navigator.clipboard.writeText(clipContent)
     .then(() => {
-      showToast("Configuration copied to clipboard successfully!", "success");
+      showToast(`Category "${cat}" copied to clipboard successfully!`, "success");
     })
     .catch(err => {
       console.error("Failed to copy clipboard data:", err);
       showToast("Error writing configuration copy to clipboard.", "danger");
+    });
+}
+
+function copyCurrentCategoryToClipboardNewFormat() {
+  stopSpeech();
+  
+  const cat = currentSettings.currentLesson;
+  const normalKey = cat;
+  const hardKey = `${cat} - Hard`;
+
+  let text = "";
+  const normalWords = currentWordsDb[normalKey] || [];
+  normalWords.forEach(w => {
+    text += `${w.japanese}\n${w.english}\n${w.romaji}\n\n`;
+  });
+
+  const hardWords = currentWordsDb[hardKey] || [];
+  hardWords.forEach(w => {
+    text += `${w.japanese}\n${w.english}\n${w.romaji}\n\n`;
+  });
+
+  text = text.trim();
+
+  if (!text) {
+    showToast("No words in this category to copy.", "warning");
+    return;
+  }
+
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      showToast(`Copied words of "${cat}" to clipboard!`, "success");
+    })
+    .catch(err => {
+      console.error("Failed to copy words:", err);
+      showToast("Error writing to clipboard.", "danger");
     });
 }
 
@@ -1817,26 +2025,32 @@ function populateLessonsDropdown() {
     selectLesson.appendChild(opt);
   }
 
-  // 2. Custom Categories
+  // 2. Custom Categories & Special Categories sorted alphabetically
+  const nonLessons = [];
   if (currentSettings.customCategories) {
     currentSettings.customCategories.forEach(cat => {
-      const opt = document.createElement('option');
-      opt.value = cat;
-      opt.textContent = cat;
-      selectLesson.appendChild(opt);
+      if (!nonLessons.includes(cat)) {
+        nonLessons.push(cat);
+      }
     });
   }
+  if (!nonLessons.includes("Show All Words")) nonLessons.push("Show All Words");
+  if (!nonLessons.includes("Similar Words")) nonLessons.push("Similar Words");
+  if (!nonLessons.includes("Same Meaning")) nonLessons.push("Same Meaning");
+  if (!nonLessons.includes("Same Romaji")) nonLessons.push("Same Romaji");
 
-  // 3. Special Categories
-  const showAllOpt = document.createElement('option');
-  showAllOpt.value = "Show All Words";
-  showAllOpt.textContent = "Show All Words";
-  selectLesson.appendChild(showAllOpt);
+  // Case-insensitive alphabetical sort
+  nonLessons.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-  const similarWordsOpt = document.createElement('option');
-  similarWordsOpt.value = "Similar Words";
-  similarWordsOpt.textContent = "Similar Words";
-  selectLesson.appendChild(similarWordsOpt);
+  nonLessons.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    selectLesson.appendChild(opt);
+  });
+
+  // Sync hidden categories checklist UI
+  populateHiddenCategoriesUI();
 }
 
 function createCustomCategory() {
@@ -1849,7 +2063,7 @@ function createCustomCategory() {
     return;
   }
   
-  const reserved = ["Show All Words", "Similar Words"];
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji"];
   if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ")) {
     showToast("This name is reserved or invalid.", "danger");
     return;
@@ -1886,7 +2100,22 @@ function openWordEditModal(lesson, index) {
   let sourceLesson = lesson;
   let sourceIndex = index;
   
-  if (lesson === 'Show All Words') {
+  if (lesson === 'Same Meaning') {
+    const all = getActiveWords();
+    const wordToFind = all[index];
+    if (!wordToFind) return;
+    
+    // Find in database
+    for (const key in currentWordsDb) {
+      const idx = currentWordsDb[key].findIndex(w => w.japanese === wordToFind.japanese && w.english === wordToFind.english);
+      if (idx >= 0) {
+        sourceLesson = key;
+        sourceIndex = idx;
+        targetWord = currentWordsDb[key][idx];
+        break;
+      }
+    }
+  } else if (lesson === 'Show All Words') {
     const all = getShowAllWords();
     const wordToFind = all[index];
     if (!wordToFind) return;
@@ -1924,6 +2153,8 @@ function openWordEditModal(lesson, index) {
   const modal = document.getElementById('modal-edit-word');
   modal.setAttribute('data-source-lesson', sourceLesson);
   modal.setAttribute('data-source-index', String(sourceIndex));
+  modal.setAttribute('data-orig-japanese', targetWord.japanese);
+  modal.setAttribute('data-orig-english', targetWord.english);
   
   document.getElementById('edit-word-japanese').value = targetWord.japanese;
   document.getElementById('edit-word-romaji').value = targetWord.romaji;
@@ -1941,8 +2172,8 @@ function openWordEditModal(lesson, index) {
 
 function saveWordEditChanges() {
   const modal = document.getElementById('modal-edit-word');
-  const sourceLesson = modal.getAttribute('data-source-lesson');
-  const sourceIndexStr = modal.getAttribute('data-source-index');
+  const origJp = modal.getAttribute('data-orig-japanese');
+  const origEng = modal.getAttribute('data-orig-english');
   
   const newJp = document.getElementById('edit-word-japanese').value.trim();
   const newRomaji = document.getElementById('edit-word-romaji').value.trim();
@@ -1953,26 +2184,43 @@ function saveWordEditChanges() {
     return;
   }
 
-  if (sourceLesson === 'Similar Words') {
-    const coords = JSON.parse(sourceIndexStr);
-    const groupIdx = coords.groupIdx;
-    const wordIdx = coords.wordIdx;
-    const word = currentSettings.similarWordGroups[groupIdx].words[wordIdx];
-    if (word) {
-      word.japanese = newJp;
-      word.romaji = newRomaji;
-      word.english = newEng;
-      saveSettings();
-    }
-  } else {
-    const word = currentWordsDb[sourceLesson][parseInt(sourceIndexStr, 10)];
-    if (word) {
-      word.japanese = newJp;
-      word.romaji = newRomaji;
-      word.english = newEng;
-      saveWords();
-    }
+  // Update in all categories of currentWordsDb
+  for (const key in currentWordsDb) {
+    const list = currentWordsDb[key] || [];
+    list.forEach(w => {
+      if (w.japanese === origJp && w.english === origEng) {
+        w.japanese = newJp;
+        w.romaji = newRomaji;
+        w.english = newEng;
+      }
+    });
   }
+
+  // Update in Similar Words groups
+  if (currentSettings.similarWordGroups) {
+    currentSettings.similarWordGroups.forEach(group => {
+      if (group.words) {
+        group.words.forEach(w => {
+          if (w.japanese === origJp && w.english === origEng) {
+            w.japanese = newJp;
+            w.romaji = newRomaji;
+            w.english = newEng;
+          }
+        });
+      }
+    });
+  }
+
+  // Update flag counts key if changed
+  const oldKey = `${origJp}::${origEng}`;
+  const newKey = `${newJp}::${newEng}`;
+  if (currentSettings.flagCounts && currentSettings.flagCounts[oldKey] !== undefined) {
+    currentSettings.flagCounts[newKey] = currentSettings.flagCounts[oldKey];
+    delete currentSettings.flagCounts[oldKey];
+  }
+  
+  saveWords();
+  saveSettings();
   
   closeActiveModal();
   renderCards();
@@ -2318,6 +2566,91 @@ function renderSimilarWordsGroups() {
   });
 }
 
+function getSameMeaningWords() {
+  if (sameMeaningWordsCache) {
+    return sameMeaningWordsCache;
+  }
+  const allWords = getShowAllWords();
+  
+  // 1. Gather all unique english meanings, split by comma, trimmed
+  const meaningsSet = new Set();
+  allWords.forEach(w => {
+    if (!w.english) return;
+    const parts = w.english.split(',').map(m => m.trim()).filter(m => m.length > 0);
+    parts.forEach(p => {
+      meaningsSet.add(p.toLowerCase());
+    });
+  });
+
+  // 2. Sort meanings alphabetically (case-insensitive)
+  const sortedMeanings = Array.from(meaningsSet).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+  // 3. For each meaning, find all matching words
+  const resultWords = [];
+  sortedMeanings.forEach(meaningLower => {
+    const matches = [];
+    allWords.forEach(w => {
+      if (!w.english) return;
+      const parts = w.english.split(',').map(m => m.trim().toLowerCase());
+      if (parts.includes(meaningLower)) {
+        matches.push(w);
+      }
+    });
+
+    if (matches.length > 1) {
+      matches.forEach(w => {
+        resultWords.push(w);
+      });
+    }
+  });
+
+  sameMeaningWordsCache = resultWords;
+  sameMeaningWordsKeysCache = new Set(resultWords.map(w => `${w.japanese.trim()}::${w.english.trim()}`));
+  return resultWords;
+}
+
+function getSameRomajiWords() {
+  if (sameRomajiWordsCache) {
+    return sameRomajiWordsCache;
+  }
+  const allWords = getShowAllWords();
+  
+  // 1. Gather all unique romaji values, trimmed
+  const romajiSet = new Set();
+  allWords.forEach(w => {
+    if (!w.romaji) return;
+    const r = w.romaji.trim().toLowerCase();
+    if (r.length > 0) {
+      romajiSet.add(r);
+    }
+  });
+
+  // 2. Sort romaji alphabetically (case-insensitive)
+  const sortedRomaji = Array.from(romajiSet).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+  // 3. For each romaji, find all matching words
+  const resultWords = [];
+  sortedRomaji.forEach(rLower => {
+    const matches = [];
+    allWords.forEach(w => {
+      if (!w.romaji) return;
+      if (w.romaji.trim().toLowerCase() === rLower) {
+        matches.push(w);
+      }
+    });
+
+    if (matches.length > 1) {
+      matches.forEach(w => {
+        resultWords.push(w);
+      });
+    }
+  });
+
+  sameRomajiWordsCache = resultWords;
+  sameRomajiWordsKeysCache = new Set(resultWords.map(w => `${w.japanese.trim()}::${w.english.trim()}`));
+  return resultWords;
+}
+
 function createSimilarWordGroup() {
   if (!currentSettings.similarWordGroups) currentSettings.similarWordGroups = [];
   currentSettings.similarWordGroups.push({
@@ -2331,7 +2664,7 @@ function createSimilarWordGroup() {
 let wordsToCopy = [];
 
 function openCategorySelectorModal(customWordsList = null) {
-  if (customWordsList) {
+  if (customWordsList && Array.isArray(customWordsList)) {
     wordsToCopy = customWordsList;
   } else {
     const words = getActiveWords();
@@ -2350,9 +2683,10 @@ function openCategorySelectorModal(customWordsList = null) {
   
   const currentL = currentSettings.currentLesson;
   
-  // Custom categories (non-lessons)
+  // Custom categories (non-lessons) sorted alphabetically
   if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
+    const sortedCats = [...currentSettings.customCategories].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+    sortedCats.forEach(cat => {
       if (cat !== currentL) {
         const opt = document.createElement('option');
         opt.value = cat;
@@ -2375,10 +2709,16 @@ function openCategorySelectorModal(customWordsList = null) {
     return;
   }
 
-  // Set default selection to "Similar Words" if available
-  const hasSimilar = Array.from(selectDest.options).some(opt => opt.value === "Similar Words");
-  if (hasSimilar) {
-    selectDest.value = "Similar Words";
+  // Set default selection to last used destination category, otherwise "Similar Words"
+  const lastDest = currentSettings.lastDestCategory;
+  if (lastDest && Array.from(selectDest.options).some(opt => opt.value === lastDest)) {
+    selectDest.value = lastDest;
+  } else {
+    // Set default selection to "Similar Words" if available
+    const hasSimilar = Array.from(selectDest.options).some(opt => opt.value === "Similar Words");
+    if (hasSimilar) {
+      selectDest.value = "Similar Words";
+    }
   }
   
   openModal('modal-category-selector');
@@ -2395,6 +2735,8 @@ function executeCategoryWordCopy() {
   if (!selectDest) return;
   
   const destCategory = selectDest.value;
+  currentSettings.lastDestCategory = destCategory;
+  saveSettings();
   if (wordsToCopy.length === 0) return;
 
   if (destCategory === "Similar Words") {
@@ -2458,7 +2800,7 @@ function executeCategoryWordCopy() {
 }
 
 function openSimilarGroupSelectorModal(customWordsList = null) {
-  if (customWordsList) {
+  if (customWordsList && Array.isArray(customWordsList)) {
     wordsToCopy = customWordsList;
   } else {
     const words = getActiveWords();
@@ -2682,9 +3024,11 @@ function initGlobalSearch() {
       }
       updateActiveSearchResultHighlight(rows);
     } else if (e.key === 'Enter') {
+      e.preventDefault();
       if (activeSearchResultIndex >= 0 && activeSearchResultIndex < rows.length) {
-        e.preventDefault();
         rows[activeSearchResultIndex].click();
+      } else {
+        triggerSearchResultsCategory();
       }
     }
   });
@@ -2716,6 +3060,77 @@ function initGlobalSearch() {
       searchResults.classList.add('hidden');
     }
   });
+}
+
+function triggerSearchResultsCategory() {
+  const searchInput = document.getElementById('global-search-input');
+  if (!searchInput) return;
+  const query = searchInput.value.trim().toLowerCase();
+  if (!query) return;
+
+  const results = [];
+  const uniqueKeys = new Set();
+
+  for (const key in currentWordsDb) {
+    if (key === "Search Results" || key === "Search Results - Hard") continue;
+    const list = currentWordsDb[key] || [];
+    list.forEach(w => {
+      const engMatch = w.english.toLowerCase().includes(query);
+      const romajiMatch = w.romaji.toLowerCase().includes(query);
+      if (engMatch || romajiMatch) {
+        const dupKey = `${w.japanese.trim()}::${w.english.trim()}::${w.romaji.trim()}`;
+        if (!uniqueKeys.has(dupKey)) {
+          uniqueKeys.add(dupKey);
+          results.push(w);
+        }
+      }
+    });
+  }
+
+  currentWordsDb["Search Results"] = results;
+  currentWordsDb["Search Results - Hard"] = results;
+
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) {
+    let exists = false;
+    for (let i = 0; i < selectLesson.options.length; i++) {
+      if (selectLesson.options[i].value === "Search Results") {
+        exists = true;
+        break;
+      }
+    }
+    if (!exists) {
+      const opt = document.createElement('option');
+      opt.value = "Search Results";
+      opt.textContent = "Search Results";
+      let showAllIdx = -1;
+      for (let i = 0; i < selectLesson.options.length; i++) {
+        if (selectLesson.options[i].value === "Show All Words") {
+          showAllIdx = i;
+          break;
+        }
+      }
+      if (showAllIdx >= 0) {
+        selectLesson.add(opt, selectLesson.options[showAllIdx]);
+      } else {
+        selectLesson.appendChild(opt);
+      }
+    }
+    selectLesson.value = "Search Results";
+  }
+
+  currentSettings.currentLesson = "Search Results";
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+  saveSettings();
+  renderCards();
+
+  const searchResults = document.getElementById('search-results-dropdown');
+  if (searchResults) {
+    searchResults.classList.add('hidden');
+    searchResults.innerHTML = "";
+  }
+  searchInput.blur();
 }
 
 // ==========================================================================
@@ -2838,6 +3253,10 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCopyTo.addEventListener('click', openCategorySelectorModal);
   }
 
+  const btnCopyC = document.getElementById('btn-copy-c-format');
+  if (btnCopyC) {
+    btnCopyC.addEventListener('click', copyCurrentCategoryToClipboardNewFormat);
+  }
   document.getElementById('btn-clipboard').addEventListener('click', copySettingsToClipboard);
   document.getElementById('btn-reset-cache').addEventListener('click', resetCache);
 
@@ -2966,6 +3385,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Deselect All when clicking outside card/controls
   document.addEventListener('click', (e) => {
+    const isModalOpen = !document.getElementById('modal-backdrop').classList.contains('hidden');
+    if (isModalOpen) return;
+
     if (currentSettings.selectedWordIndices.length === 0) return;
 
     // Do NOT deselect if clicking a word card, controls, buttons, theme switcher, modal dialogs, etc.
@@ -2990,6 +3412,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Quiz interactive elements
   document.getElementById('btn-start-quiz').addEventListener('click', startQuiz);
   document.getElementById('quiz-speak-btn').addEventListener('click', speakCurrentQuizWord);
+  const quizAnswerSpeakBtn = document.getElementById('quiz-answer-speak-btn');
+  if (quizAnswerSpeakBtn) {
+    quizAnswerSpeakBtn.addEventListener('click', speakQuizAnswer);
+  }
+  const btnQuizReload = document.getElementById('btn-quiz-reload');
+  if (btnQuizReload) {
+    btnQuizReload.addEventListener('click', restartCurrentQuiz);
+  }
   
   document.getElementById('btn-quiz-reveal').addEventListener('click', checkQuizAnswer);
   document.getElementById('btn-quiz-submit').addEventListener('click', checkQuizAnswer);
@@ -3024,20 +3454,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
-    const tag = e.target.tagName.toLowerCase();
-    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {
-      if (e.target.id === 'quiz-typed-answer') {
-        if (e.key !== 'Enter') return;
-      } else {
-        return;
-      }
-    }
-
-    // ESC to close modals/deselect
+    // ESC to close modals/deselect (handled before standard inputs bypass so it works when inputs are focused)
     if (e.key === 'Escape') {
       const activeModalVisible = !document.getElementById('modal-backdrop').classList.contains('hidden');
       if (activeModalVisible) {
+        e.preventDefault();
         closeActiveModal();
       } else {
         currentSettings.selectedWordIndices = [];
@@ -3046,6 +3467,16 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCards();
       }
       return;
+    }
+
+    // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
+    const tag = e.target.tagName.toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {
+      if (e.target.id === 'quiz-typed-answer') {
+        if (e.key !== 'Enter') return;
+      } else {
+        return;
+      }
     }
 
     // Modal is currently visible: limit shortcut overrides
@@ -3084,6 +3515,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isInputFocused && !isCompletionVisible) {
               e.preventDefault();
               openCategorySelectorModal([quizWords[quizCurrentIndex]]);
+              return;
+            }
+          }
+
+          if (e.key === 'r' || e.key === 'R') {
+            if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+            if (!isInputFocused) {
+              e.preventDefault();
+              restartCurrentQuiz();
               return;
             }
           }
@@ -3131,6 +3571,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             setQuizOrder('original');
           } else if (e.key === 'r' || e.key === 'R') {
+            if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
             e.preventDefault();
             setQuizOrder('random');
           }
@@ -3289,10 +3730,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
         if (currentSettings.isSelectionModeActive) {
-          openCategorySelectorModal();
+          const btnCopyTo = document.getElementById('btn-copy-to');
+          if (btnCopyTo) btnCopyTo.click();
         } else {
-          const btnClip = document.getElementById('btn-clipboard');
-          if (btnClip) btnClip.click();
+          copyCurrentCategoryToClipboardNewFormat();
         }
         break;
       case 's':
