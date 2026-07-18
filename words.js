@@ -4304,12 +4304,91 @@ shimemasu
 allWords["Lesson 22 - Hard"] = ``;
 
 allWords["Lesson 23"] = `
+さわります
+touch, feel
+sawarimasu
+
+でんきや
+electrician, electronics/appliance store
+denkiya
+
+しんごう
+traffic light
+shingou
+
+でます
+come out
+demasu
+
+〜や
+person of ~ shop, ~shop
+~ya
+
+サイズ
+size
+saizu
+
+こしょうします
+koshou shimasu
+fail, be out of order
+
+はし
+bridge
+hashi
+
+`;
+
+allWords["Lesson 23 - Hard"] = `
+こしょう
+break down, malfunction
+koshou
+
+こうさてん
+crossroad, intersection
+kousaten
+
+ちゅうしゃじょう
+parking lot, car park
+chuushajou
+
+たてもの
+building
+tatemono
+
+がいこくじんとうろくしょう
+alien registration card
+gaikokujin tourokushou
+
+ごちそうさまでした
+That was delicious.
+gochisousama deshita
+
+うごきます
+move, work
+ugokimasu
+
+あるきます
+walk
+arukimasu
+
+ひっこしします
+move, relocate
+hikkoshi shimasu
+
+つまみ
+knob, handle
+tsumami
+
+おしょうがつ
+New Year's Day
+oshougatsu
+
 （せんせいに）ききます
 ask (the teacher)
 (sensei ni) kikimasu
 
 まわします
-turn
+turn, turn around
 mawashimasu
 
 ひきます
@@ -4320,109 +4399,35 @@ hikimasu
 change
 kaemasu
 
-（ドアに）さわります
-touch (a door)
-(doa ni) sawarimasu
+わたります
+cross
+watarimasu
 
-（おつりが）でます
-(change) come out
-(otsuri ga) demasu
-
-（とけいが）うごきます
-move, work (watch)
-(tokei ga) ugokimasu
-
-（みちを）あるきます
-walk (along a road)
-(michi o) arukimasu
-
-（はしを）わたります
-cross (a bridge)
-(hashi o) watarimasu
-
-（くるまに）きをつけて
-pay attention (to cars), take care
-(kuruma ni) ki o tsukete
-
-ひっこしします
-move (house)
-hikkoshi shimasu
-
-でんきや
-electrician
-denkiya
-
-〜や
-~ shop
-~ya
-
-サイズ
-size
-saizu
-
-おと
-sound
-oto
+きをつけて
+pay attention, take care
+ki o tsukete
 
 きかい
 machine
 kikai
 
-つまみ
-knob
-tsumami
-
-こしょう（します）
-break down
-koshou (shimasu)
-
 みち
 road, way
 michi
-
-こうさてん
-crossroad
-kousaten
-
-しんごう
-traffic light
-shingou
-
-かど
-corner
-kado
-
-はし
-bridge
-hashi
-
-ちゅうしゃじょう
-parking lot, car park
-chuushajou
 
 〜め
 the ~nth (ordinal)
 ~me
 
-おしょうがつ
-New Year's Day
-oshougatsu
+おと
+sound
+oto
 
-ごちそうさまでした
-That was delicious.
-gochisousama deshita
-
-たてもの
-building
-tatemono
-
-がいこくじんとうろくしょう
-alien registration card
-gaikokujin tourokushou
+かど
+corner
+kado
 
 `;
-
-allWords["Lesson 23 - Hard"] = ``;
 
 allWords["Lesson 24"] = `
 くれます
@@ -4437,25 +4442,25 @@ tsurete ikimasu
 bring (someone)
 tsurete kimasu
 
-（ひとを）おくります
-escort (someone), go with
-(hito o) okurimasu
+おくります
+escort / see (someone) off
+okurimasu
 
 しょうかいします
 introduce
 shoukai shimasu
 
 あんないします
-show around, show the way
+show around, show(lead) the way
 annai shimasu
 
 せつめいします
 explain
 setsumei shimasu
 
-（コーヒーを）いれます
-make (coffee)
-(koohii o) iremasu
+いれます
+make (coffee tea), brew
+iremasu
 
 おじいさん・おじいちゃん
 grandfather, old man
@@ -4465,9 +4470,9 @@ ojiisan / ojiichan
 grandmother, old woman
 obaasan / obaachan
 
-じゅんび（します）
-preparation (prepare)
-junbi (shimasu)
+じゅんびします
+prepare
+junbi shimau
 
 いみ
 meaning
@@ -4486,20 +4491,24 @@ by oneself
 jibun de
 
 ほかに
-besides
+besides, else
 hokani
 
 ワゴンしゃ
-station wagon
+station wagon, wagon car/vehicle
 wagon sha
 
 おべんとう
-box lunch
-obentou
+box lunch, packed lunch
+[o]bentou
 
 ははのひ
 Mother's Day
 haha no hi
+
+じゅんびします
+prepare
+junbi shimau
 
 `;
 
@@ -4510,16 +4519,16 @@ allWords["Lesson 25"] = `
 think, consider
 kangaemasu
 
-（えきに）つきます
-arrive (at the station)
-(eki ni) tsukimasu
+つきます
+arrive, reach
+tsukimasu
 
 りゅうがくします
 study abroad
 ryuugaku shimasu
 
 としをとります
-grow old
+grow old, get older
 toshi o torimasu
 
 いなか
@@ -4535,7 +4544,7 @@ group
 guruupu
 
 チャンス
-chance
+chance, opportunity
 chansu
 
 おく
@@ -4550,16 +4559,20 @@ moshi ~tara
 no matter how, even if
 ikura ~ demo / temo
 
-てんきん（をします）
-transfer (be transferred to another office)
-tenkin (o shimasu)
+てんきん
+job transfer / relocation
+tenkin
+
+てんきん  します
+be transferred to another office
+tenkin shimasu
 
 こと（〜のこと）
-thing, matter (thing about ~)
+thing, matter (intangible)
 koto (~ no koto)
 
 いっぱいのみましょう
-Let's have a drink together.
+Let's have a drink.
 ippai nomimashou
 
 いろいろおせわになりました
@@ -4567,11 +4580,11 @@ Thank you for everything you have done for me.
 iroiro osewa ni narimashita
 
 がんばります
-do one's best
+do one's best, work hard
 ganbarimasu
 
 どうぞおげんきで
-Best of luck.
+Best of luck, take care of yourself
 douzo ogenki de
 
 `;
@@ -4922,8 +4935,8 @@ const appSettings = {
     "なんですか::Yes?": 1,
     "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "Lesson 01",
-  "isHard": false,
+  "currentLesson": "Lesson 23",
+  "isHard": true,
   "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz1",
@@ -5140,5 +5153,7 @@ const appSettings = {
     {
       "words": []
     }
-  ]
+  ],
+  "hiddenCategories": [],
+  "lastDestCategory": ""
 };

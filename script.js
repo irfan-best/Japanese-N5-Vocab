@@ -722,9 +722,17 @@ function renderCards() {
 
   // Update Statistics UI
   const lessonKey = currentSettings.currentLesson;
-  const normalCount = currentWordsDb[lessonKey] ? currentWordsDb[lessonKey].length : 0;
-  const hardKey = lessonKey + " - Hard";
-  const hardCount = currentWordsDb[hardKey] ? currentWordsDb[hardKey].length : 0;
+  let normalCount = 0;
+  let hardCount = 0;
+
+  if (lessonKey === 'Show All Words' || lessonKey === 'Same Meaning' || lessonKey === 'Same Romaji') {
+    normalCount = getActiveWords().length;
+    hardCount = 0;
+  } else {
+    normalCount = currentWordsDb[lessonKey] ? currentWordsDb[lessonKey].length : 0;
+    const hardKey = lessonKey + " - Hard";
+    hardCount = currentWordsDb[hardKey] ? currentWordsDb[hardKey].length : 0;
+  }
   const selectedCount = currentSettings.selectedWordIndices.length;
 
   const statLesson = document.getElementById('stat-current-lesson');
@@ -734,7 +742,27 @@ function renderCards() {
   const statSelected = document.getElementById('stat-selected-count');
   const statSelectedItem = document.getElementById('stat-selected-item');
 
-  if (statLesson) statLesson.textContent = lessonKey;
+  const statLabelLesson = document.getElementById('stat-label-lesson');
+  const isLesson = lessonKey.match(/^Lesson\s+\d+/i);
+
+  if (statLabelLesson) {
+    statLabelLesson.textContent = isLesson ? "Total Count:" : "Category:";
+  }
+
+  if (statLesson) {
+    if (isLesson) {
+      let totalLessonsWords = 0;
+      for (let i = 1; i <= 25; i++) {
+        const keyN = `Lesson ${String(i).padStart(2, '0')}`;
+        const keyH = `${keyN} - Hard`;
+        totalLessonsWords += (currentWordsDb[keyN] ? currentWordsDb[keyN].length : 0);
+        totalLessonsWords += (currentWordsDb[keyH] ? currentWordsDb[keyH].length : 0);
+      }
+      statLesson.textContent = totalLessonsWords;
+    } else {
+      statLesson.textContent = lessonKey;
+    }
+  }
   if (statTotal) statTotal.textContent = normalCount + hardCount;
   if (statNormal) statNormal.textContent = normalCount;
   if (statHard) statHard.textContent = hardCount;
@@ -1685,15 +1713,9 @@ function copySettingsToClipboard() {
   stopSpeech();
   
   let clipContent = "const allWords = {};\n\n";
-  const cat = currentSettings.currentLesson;
-  const normalKey = cat;
-  const hardKey = `${cat} - Hard`;
-
-  if (currentWordsDb[normalKey]) {
-    clipContent += `allWords["${normalKey}"] = \`${serializeWords(currentWordsDb[normalKey])}\`;\n\n`;
-  }
-  if (currentWordsDb[hardKey]) {
-    clipContent += `allWords["${hardKey}"] = \`${serializeWords(currentWordsDb[hardKey])}\`;\n\n`;
+  for (const key in currentWordsDb) {
+    if (key === 'Search Results' || key === 'Search Results - Hard') continue;
+    clipContent += `allWords["${key}"] = \`${serializeWords(currentWordsDb[key])}\`;\n\n`;
   }
 
   // 2. Serialize current settings & stats
@@ -1702,7 +1724,7 @@ function copySettingsToClipboard() {
   // 3. Write copy
   navigator.clipboard.writeText(clipContent)
     .then(() => {
-      showToast(`Category "${cat}" copied to clipboard successfully!`, "success");
+      showToast("Configuration copied to clipboard successfully!", "success");
     })
     .catch(err => {
       console.error("Failed to copy clipboard data:", err);
@@ -1714,17 +1736,10 @@ function copyCurrentCategoryToClipboardNewFormat() {
   stopSpeech();
   
   const cat = currentSettings.currentLesson;
-  const normalKey = cat;
-  const hardKey = `${cat} - Hard`;
+  const words = getActiveWords();
 
   let text = "";
-  const normalWords = currentWordsDb[normalKey] || [];
-  normalWords.forEach(w => {
-    text += `${w.japanese}\n${w.english}\n${w.romaji}\n\n`;
-  });
-
-  const hardWords = currentWordsDb[hardKey] || [];
-  hardWords.forEach(w => {
+  words.forEach(w => {
     text += `${w.japanese}\n${w.english}\n${w.romaji}\n\n`;
   });
 
@@ -2572,27 +2587,33 @@ function getSameMeaningWords() {
   }
   const allWords = getShowAllWords();
   
-  // 1. Gather all unique english meanings, split by comma, trimmed
-  const meaningsSet = new Set();
+  const meaningsMap = new Map(); // key: sanitized meaning, value: original meaning string
   allWords.forEach(w => {
     if (!w.english) return;
     const parts = w.english.split(',').map(m => m.trim()).filter(m => m.length > 0);
     parts.forEach(p => {
-      meaningsSet.add(p.toLowerCase());
+      const sanitized = p.toLowerCase().replace(/[^a-z0-9\-]/g, '');
+      if (sanitized.length > 0) {
+        if (!meaningsMap.has(sanitized)) {
+          meaningsMap.set(sanitized, p);
+        }
+      }
     });
   });
 
-  // 2. Sort meanings alphabetically (case-insensitive)
-  const sortedMeanings = Array.from(meaningsSet).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  const sortedSanitizedKeys = Array.from(meaningsMap.keys()).sort((a, b) => {
+    const origA = meaningsMap.get(a);
+    const origB = meaningsMap.get(b);
+    return origA.localeCompare(origB, undefined, { sensitivity: 'base' });
+  });
 
-  // 3. For each meaning, find all matching words
   const resultWords = [];
-  sortedMeanings.forEach(meaningLower => {
+  sortedSanitizedKeys.forEach(sanitizedKey => {
     const matches = [];
     allWords.forEach(w => {
       if (!w.english) return;
-      const parts = w.english.split(',').map(m => m.trim().toLowerCase());
-      if (parts.includes(meaningLower)) {
+      const parts = w.english.split(',').map(m => m.trim().toLowerCase().replace(/[^a-z0-9\-]/g, ''));
+      if (parts.includes(sanitizedKey)) {
         matches.push(w);
       }
     });
@@ -2615,26 +2636,31 @@ function getSameRomajiWords() {
   }
   const allWords = getShowAllWords();
   
-  // 1. Gather all unique romaji values, trimmed
-  const romajiSet = new Set();
+  const romajiMap = new Map(); // key: sanitized romaji, value: original romaji string
   allWords.forEach(w => {
     if (!w.romaji) return;
-    const r = w.romaji.trim().toLowerCase();
-    if (r.length > 0) {
-      romajiSet.add(r);
+    const r = w.romaji.trim();
+    const sanitized = r.toLowerCase().replace(/[^a-z0-9\-]/g, '');
+    if (sanitized.length > 0) {
+      if (!romajiMap.has(sanitized)) {
+        romajiMap.set(sanitized, r);
+      }
     }
   });
 
-  // 2. Sort romaji alphabetically (case-insensitive)
-  const sortedRomaji = Array.from(romajiSet).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  const sortedSanitizedKeys = Array.from(romajiMap.keys()).sort((a, b) => {
+    const origA = romajiMap.get(a);
+    const origB = romajiMap.get(b);
+    return origA.localeCompare(origB, undefined, { sensitivity: 'base' });
+  });
 
-  // 3. For each romaji, find all matching words
   const resultWords = [];
-  sortedRomaji.forEach(rLower => {
+  sortedSanitizedKeys.forEach(sanitizedKey => {
     const matches = [];
     allWords.forEach(w => {
       if (!w.romaji) return;
-      if (w.romaji.trim().toLowerCase() === rLower) {
+      const sanitized = w.romaji.trim().toLowerCase().replace(/[^a-z0-9\-]/g, '');
+      if (sanitized === sanitizedKey) {
         matches.push(w);
       }
     });
@@ -3733,7 +3759,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const btnCopyTo = document.getElementById('btn-copy-to');
           if (btnCopyTo) btnCopyTo.click();
         } else {
-          copyCurrentCategoryToClipboardNewFormat();
+          const btnClipboard = document.getElementById('btn-clipboard');
+          if (btnClipboard) btnClipboard.click();
         }
         break;
       case 's':
