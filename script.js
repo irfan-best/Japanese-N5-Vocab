@@ -139,23 +139,27 @@ function getWordKey(word) {
 // PERSISTENCE & CACHE MANAGEMENT
 // ==========================================================================
 
-// Same Meaning and Same Romaji calculation cache to prevent performance bottlenecks
+// Same Meaning, Same Romaji, Show All, and word categories calculation caches to prevent performance bottlenecks
 let sameMeaningWordsCache = null;
 let sameMeaningWordsKeysCache = null;
 let sameRomajiWordsCache = null;
 let sameRomajiWordsKeysCache = null;
+let showAllWordsCache = null;
+let wordCategoriesCache = null;
 
-function clearSameMeaningCache() {
+function clearAllStateCaches() {
   sameMeaningWordsCache = null;
   sameMeaningWordsKeysCache = null;
   sameRomajiWordsCache = null;
   sameRomajiWordsKeysCache = null;
+  showAllWordsCache = null;
+  wordCategoriesCache = null;
 }
 
 // Save application state to local storage
 function saveSettings() {
   localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
-  clearSameMeaningCache();
+  clearAllStateCaches();
 }
 
 function saveWords() {
@@ -163,7 +167,7 @@ function saveWords() {
   delete dbCopy["Search Results"];
   delete dbCopy["Search Results - Hard"];
   localStorage.setItem('n5_words', JSON.stringify(dbCopy));
-  clearSameMeaningCache();
+  clearAllStateCaches();
 }
 
 // Load application state (restoring settings and parsed words)
@@ -467,6 +471,9 @@ function reorderWords(fromIdx, toIdx) {
 }
 
 function getShowAllWords() {
+  if (showAllWordsCache) {
+    return showAllWordsCache;
+  }
   const uniqueMap = new Map();
   for (const key in currentWordsDb) {
     const list = currentWordsDb[key] || [];
@@ -489,44 +496,33 @@ function getShowAllWords() {
     const romajiB = cleanRomajiForSorting(b.romaji);
     return romajiA.localeCompare(romajiB);
   });
+  showAllWordsCache = merged;
   return merged;
 }
 
 function belongsToAnyCustomCategory(word) {
-  if (!word || !word.japanese || !word.english) return false;
-  const wordJp = word.japanese.trim();
-  const wordEng = word.english.trim();
-  
-  if (currentSettings.customCategories) {
-    for (const cat of currentSettings.customCategories) {
-      const normalList = currentWordsDb[cat] || [];
-      const hardList = currentWordsDb[cat + " - Hard"] || [];
-      
-      const inNormal = normalList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
-      const inHard = hardList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
-      
-      if (inNormal || inHard) {
-        return true;
-      }
-    }
-  }
-
-  const groups = currentSettings.similarWordGroups || [];
-  const inSimilar = groups.some(g => (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng));
-  if (inSimilar) {
-    return true;
-  }
-
-  return false;
+  if (!word) return false;
+  const cats = getAllCategoriesForWord(word);
+  const customCats = currentSettings.customCategories || [];
+  return cats.some(c => customCats.includes(c) || c === "Similar Words");
 }
 
 let showCategoryModeActive = false;
 
 function getAllCategoriesForWord(word) {
-  const categories = [];
-  if (!word || !word.japanese || !word.english) return categories;
+  if (!word || !word.japanese || !word.english) return [];
   const wordJp = word.japanese.trim();
   const wordEng = word.english.trim();
+  const cacheKey = `${wordJp}::${wordEng}`;
+
+  if (!wordCategoriesCache) {
+    wordCategoriesCache = new Map();
+  }
+  if (wordCategoriesCache.has(cacheKey)) {
+    return wordCategoriesCache.get(cacheKey);
+  }
+
+  const categories = [];
 
   // Check all lessons and custom categories in currentWordsDb
   for (const key in currentWordsDb) {
@@ -559,7 +555,7 @@ function getAllCategoriesForWord(word) {
   if (!sameMeaningWordsKeysCache) {
     getSameMeaningWords();
   }
-  if (sameMeaningWordsKeysCache && sameMeaningWordsKeysCache.has(`${wordJp}::${wordEng}`)) {
+  if (sameMeaningWordsKeysCache && sameMeaningWordsKeysCache.has(cacheKey)) {
     categories.push("Same Meaning");
   }
 
@@ -567,10 +563,11 @@ function getAllCategoriesForWord(word) {
   if (!sameRomajiWordsKeysCache) {
     getSameRomajiWords();
   }
-  if (sameRomajiWordsKeysCache && sameRomajiWordsKeysCache.has(`${wordJp}::${wordEng}`)) {
+  if (sameRomajiWordsKeysCache && sameRomajiWordsKeysCache.has(cacheKey)) {
     categories.push("Same Romaji");
   }
 
+  wordCategoriesCache.set(cacheKey, categories);
   return categories;
 }
 
@@ -2587,42 +2584,43 @@ function getSameMeaningWords() {
   }
   const allWords = getShowAllWords();
   
-  const meaningsMap = new Map(); // key: sanitized meaning, value: original meaning string
+  const meaningMap = new Map();
+  const origMeaningMap = new Map();
+
   allWords.forEach(w => {
     if (!w.english) return;
     const parts = w.english.split(',').map(m => m.trim()).filter(m => m.length > 0);
     parts.forEach(p => {
       const sanitized = p.toLowerCase().replace(/[^a-z0-9\-]/g, '');
       if (sanitized.length > 0) {
-        if (!meaningsMap.has(sanitized)) {
-          meaningsMap.set(sanitized, p);
+        if (!meaningMap.has(sanitized)) {
+          meaningMap.set(sanitized, []);
+          origMeaningMap.set(sanitized, p);
         }
+        meaningMap.get(sanitized).push(w);
       }
     });
   });
 
-  const sortedSanitizedKeys = Array.from(meaningsMap.keys()).sort((a, b) => {
-    const origA = meaningsMap.get(a);
-    const origB = meaningsMap.get(b);
+  const validSanitizedKeys = [];
+  for (const [sanitized, wordsList] of meaningMap.entries()) {
+    if (wordsList.length > 1) {
+      validSanitizedKeys.push(sanitized);
+    }
+  }
+
+  validSanitizedKeys.sort((a, b) => {
+    const origA = origMeaningMap.get(a);
+    const origB = origMeaningMap.get(b);
     return origA.localeCompare(origB, undefined, { sensitivity: 'base' });
   });
 
   const resultWords = [];
-  sortedSanitizedKeys.forEach(sanitizedKey => {
-    const matches = [];
-    allWords.forEach(w => {
-      if (!w.english) return;
-      const parts = w.english.split(',').map(m => m.trim().toLowerCase().replace(/[^a-z0-9\-]/g, ''));
-      if (parts.includes(sanitizedKey)) {
-        matches.push(w);
-      }
+  validSanitizedKeys.forEach(sanitized => {
+    const wordsList = meaningMap.get(sanitized);
+    wordsList.forEach(w => {
+      resultWords.push(w);
     });
-
-    if (matches.length > 1) {
-      matches.forEach(w => {
-        resultWords.push(w);
-      });
-    }
   });
 
   sameMeaningWordsCache = resultWords;
@@ -2636,40 +2634,41 @@ function getSameRomajiWords() {
   }
   const allWords = getShowAllWords();
   
-  const romajiMap = new Map(); // key: sanitized romaji, value: original romaji string
+  const romajiMap = new Map();
+  const origRomajiMap = new Map();
+
   allWords.forEach(w => {
     if (!w.romaji) return;
     const r = w.romaji.trim();
     const sanitized = r.toLowerCase().replace(/[^a-z0-9\-]/g, '');
     if (sanitized.length > 0) {
       if (!romajiMap.has(sanitized)) {
-        romajiMap.set(sanitized, r);
+        romajiMap.set(sanitized, []);
+        origRomajiMap.set(sanitized, r);
       }
+      romajiMap.get(sanitized).push(w);
     }
   });
 
-  const sortedSanitizedKeys = Array.from(romajiMap.keys()).sort((a, b) => {
-    const origA = romajiMap.get(a);
-    const origB = romajiMap.get(b);
+  const validSanitizedKeys = [];
+  for (const [sanitized, wordsList] of romajiMap.entries()) {
+    if (wordsList.length > 1) {
+      validSanitizedKeys.push(sanitized);
+    }
+  }
+
+  validSanitizedKeys.sort((a, b) => {
+    const origA = origRomajiMap.get(a);
+    const origB = origRomajiMap.get(b);
     return origA.localeCompare(origB, undefined, { sensitivity: 'base' });
   });
 
   const resultWords = [];
-  sortedSanitizedKeys.forEach(sanitizedKey => {
-    const matches = [];
-    allWords.forEach(w => {
-      if (!w.romaji) return;
-      const sanitized = w.romaji.trim().toLowerCase().replace(/[^a-z0-9\-]/g, '');
-      if (sanitized === sanitizedKey) {
-        matches.push(w);
-      }
+  validSanitizedKeys.forEach(sanitized => {
+    const wordsList = romajiMap.get(sanitized);
+    wordsList.forEach(w => {
+      resultWords.push(w);
     });
-
-    if (matches.length > 1) {
-      matches.forEach(w => {
-        resultWords.push(w);
-      });
-    }
   });
 
   sameRomajiWordsCache = resultWords;

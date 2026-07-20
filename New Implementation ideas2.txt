@@ -103,3 +103,66 @@ when we are doing search for an words, and if i press enter being in the search 
 with Search Results and show all the words that are matching the search result -> note we need to see all words
 matching the search result there should not be any restriction, also here also we should be able to selection words
 and be able to copy to categories, search results is temperory so dont save it to local storage.
+
+---
+
+4. Add Setting icon left to the them icon clicking on it should show these options, 
+    N5 Lessons = (it will show only Lesson 01 to Lesson 25) categories
+    N5 Kanji   = (it will show only Kanji 01 to Kanji 20) categories
+    N5 Others  = (it will show only categories ending with format as (abcde1) i.e Questions1, Counters1, Phrases1)
+
+    when we are in N5 Others - SameMeaning logic will run only for N5 Lessons
+    when we are in N5 Others - SameRomaji logic will run only for N5 Lessons
+    when we are in N5 Others - Show All Words logic will run only for N5 Lessons
+
+    When we are N5 Lessons copy to should goto only N5 Others -> categories
+
+    Create N4 Lessons and N4 Kanji and N4 Others options
+    with N4 Lessons should be -> Lesson 26 to Lesson 50 -> for now have it as blank
+    N4 Kanji -> for now make it as only Kanji 21
+    N4 Others -> for N4 Others it will have categories be like Questions2, Counter2, Phrases2 ...
+
+    lly for N3
+
+    Show all words will be showing all worsd for only Lesson Categories, only of that lesson only.
+
+    When we are N5 Lesson -> shift + 03 = goto Lesson 03, Shift + 23 = Goto Lesson 23
+    when we are N5 Kanji  -> shift + 01 = goto Kanji 01
+    when we are N4 Lesson -> shift + 27 = goto Lesson 27
+    when we are in N5 Lesson -> and click shift + 27 => then change setting and also goto to the Lesson 27 of N4
+    all settings data will be saved into -> local storage and words.js and also will be copied to clipboard.
+
+    clicking s = should option settings, clicking esc should close settings, when we click s automatically make
+    the picklist as focus -> this picklist values = N5 Lessons, N5 Kanji, N5 Others, N4 Lessons, ...
+
+    all these details also update in help.
+    
+    Kanji categories also should be treated as lesson categories that is -> they should not be coming in
+    Copy to category option dropdown also in "Hideen Categories" checkboxes
+
+0. issue bug -> when i selecting "phrases" check box on "Hidden Categories" even then it is still showing "Phrases"
+1. when in import -> ctrl + enter -> should click on submit button
+2. shortcut for changing display mode - big japanese/big english.. atl + 1 select first one, alt + 2 select 2nd option.. 
+udpate all shortcut keys in the help
+3. in search mode save the search string in local storage in js file even refresh the page should not lose search result
+only save search term.
+4.shift + qu = goto question category, left and right arrow should be going to prev and next lessons
+5. q = goto first non lesson category and non-kanji category, generally categories to be sorted as first all lessons and then
+all kanji categories and then other categories, q = first non lesson and non kanji category, being here and doing left arrow = last kanji(our case 20),
+goto last non lesson and non kanji category and doing right arrow = goest to first lesson.
+
+6. ctrl + a = select all words in current category when we are in selectinon mode
+7. If an word is in Lesson 01 -> hard then it is showing "Lesson" for categories (when we are clicking on ctrl + p),
+    it should show Lesson 01 -> fix this bug, also ctrl + p mode data also please save to localstorage, 
+    even in copy to clipboard also this data to be copied and also in word.js
+8. for the quiz mode -> add 8th mode that is japanese reading practice it will only show word it will not read the word,
+    when we click on enter then it will show all of it's details that is english, japanese and romanji now it will
+    read out japnaese reading.
+
+-> if possible do these:
+login into website, for each user have seperate change ordered data to be saved to google drive's text file.
+ users can be able to stats of other users like => number of days opened and what are those days, also
+ number of words they have practised in quiz mode, i.e when you start quiz and goto some words then it will be 
+ counting those words if we stop in b/w the quiz it will only till now words count.
+
+show leaderboard of number of days and number of words practised in quiz mode.

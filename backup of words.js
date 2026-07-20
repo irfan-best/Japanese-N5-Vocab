@@ -1,3 +1,4 @@
+backup
 const allWords = {};
 
 allWords["Lesson 01"] = `
@@ -4649,17 +4650,205 @@ douzo ogenki de
 allWords["Lesson 25 - Hard"] = ``;
 
 allWords["Phrases"] = `
-はじめまして
-How do you do? (introducing oneself for the first time) (lit. for the first time)
-hajimemashite
+どういたしまして
+You're welcome. / Don't mention it.
+dou itashimashite
+
+ごめんください
+Excuse me, Anybody home?, May I come in?
+gomenkudasai
+
+どうぞおあがりください
+Do come in.
+douzo oagari kudasai
+
+いらっしゃい
+Welcome. / How nice of you to come.
+irasshai
+
+いらっしゃいませ
+Welcome. / May I help you?
+irasshaimase
+
+またいらっしゃってください
+Please come again.
+mata irasshatte kudasai
+
+いってまいります
+I'm off, see you later. (lit. I'm going and coming back)
+itte mairimasu
+
+いってらっしゃい
+Have a good day, see you later. (lit. Go and come back)
+itte rasshai
+
+おかえりなさい
+Welcome home.
+okaerinasai
+
+いらっしゃいます
+be (honorific equivalent of imasu)
+irasshaimasu
+
+いただきます
+Thank you, I accept
+itadakimasu
+
+さあ
+all right, well now
+saa
+
+そうですか
+I see. / Is that so?
+sou desu ka
+
+そうしましょう
+Let's do that
+sou shimashou
+
+そうですね
+I agree with you
+sou desu ne
+
+いいですね
+that's good
+ii desu ne
+
+いいですよ
+Sure. Certainly.
+ii desu yo
 
 どうぞよろしくおねがいします
 Pleased to meet you. (lit. Please be nice to me)
 douzo yoroshiku onegaishimasu
 
-じこしょうかいをおねがいします。
-Please introduce yourself. / Self-introduction please.
-jiko shoukai o onegaishimasu
+なんですか
+Yes?
+nan desu ka
+
+おでかけですか
+Are you going out?
+odekake desu ka
+
+おひきだしですか
+Are you making a withdrawal?
+ohikidashi desu ka
+
+にほんのせいかつになれましたか
+Have you got used to the life in Japan?
+nihon no seikatsu ni naremashita ka
+
+〜はいかがですか
+Won't you have ~? , Would you like to have ~?
+~ wa ikaga desu ka
+
+〜もういっぱいいかがですか
+Won't you have another cup of ~?
+~ mou ippai ikaga desu ka
+
+いっしょにいかがですか
+Won't you join me (us)?
+isshoni ikaga desu ka
+
+そろそろしつれいします
+It's almost time to leave now.
+sorosoro shitsurei shimasu
+
+またこんどおねがいします
+Please ask me again some other time.
+mata kondo onegaishimasu
+
+（しょうしょう）おまちください
+Please wait (for a moment)
+(shoushou) omachi kudasai
+
+ごちゅうもんは
+May I take your order?
+gochuumon wa
+
+これでおねがいします
+I'd like to pay with this.
+kore de onegaishimasu
+
+（みぎへ）まがります
+turn (to the right)
+(migi e) magarimasu
+
+しんごうをみぎへまがってください
+Turn to the right at the signal.
+shingou o migi e magatte kudasai
+
+おなかがすきました
+(I'm) hungry
+onaka ga sukimashita
+
+おなかがいっぱいです
+(I'm) full
+onaka ga ippai desu
+
+のどがかわきました
+(I'm) thirsty
+nodo ga kawakimashita
+
+しつれいします
+Excuse me. (to be rude)
+shitsurei shimasu
+
+ほんのきもちです
+It's nothing. / It's a token of my gratitude.
+honno kimochi desu
+
+ざんねんですね
+I'm sorry (to hear that).
+zannen desu ne
+
+だめですか
+So you cannot (come)?
+dame desu ka
+
+〜はちょっと…
+~ is a bit difficult.
+~ wa chotto...
+
+ちょっと〜まで
+I'm just going to (place) for a short while.
+chotto ~ made
+
+〜をください
+Give me ~ please.
+-o kudasai
+
+〜をみせてください
+Please show me ~.
+-o misete kudasai
+
+〜すてきですね
+What a nice ~!
+~ suteki desu ne
+
+いいてんきですね
+Nice weather isn't it?
+ii tenki desu ne
+
+いいえ、まだまだです
+No I still have a long way to go.
+iie mada mada desu
+
+いいえ、けっこうです。
+No, thank you. / No, that's okay.
+iie, kekkō desu.
+
+ちがいます
+No it isn't. / You are wrong.
+chigaimasu
+
+～からきました
+I'm from (country).
+~ kara kimashita
+
+はじめまして
+How do you do? (introducing oneself for the first time) (lit. for the first time)
+hajimemashite
 
 こちらこそよろしく
 I am pleased to meet you too.
@@ -4669,19 +4858,128 @@ kochirakoso yoroshiku
 I hope for your kind assistance hereafter.
 korekara osewa ni narimasu
 
+おげんきですか
+How are you?
+ogenki desu ka
+
+じこしょうかいをおねがいします。
+Please introduce yourself. / Self-introduction please.
+jiko shoukai o onegaishimasu
+
+もう〜ですね
+It's already ~ isn't it?
+mou ~ desu ne
+
 （どうも）ありがとうございます
 Thank you (very much).
 (doumo) arigatou gozaimasu
-
-ほんのきもちです
-It's nothing. / It's a token of my gratitude.
-honno kimochi desu
 
 `;
 
 allWords["Phrases - Hard"] = ``;
 
-allWords["Questions"] = ``;
+allWords["Questions"] = `
+どなた
+who (polite)
+donata
+
+なんさい
+how old
+nansai
+
+だれ
+who
+dare
+
+おなまえは
+May i have your name?
+onamae wa
+
+おいくつ
+how old (formal)
+oikutsu
+
+なん~
+what~, how many~
+nan
+
+なんかい
+what floor
+nankai
+
+どこ
+where, what place
+doko
+
+どちら
+which way, where (polite)
+dochira
+
+いくら
+how much
+ikura
+
+なんようび
+what day of the week
+nanyoubi
+
+なんがつ
+what month
+nangatsu
+
+なに
+what
+nani
+
+どれ
+which one(of 3 or more)
+dore
+
+どんな〜
+what kind of ~
+donna~
+
+どうして
+why
+doushite
+
+どのぐらい
+how long
+donokurai
+
+いくつ
+how many
+ikutsu
+
+どちら
+which one
+dochira
+
+どこか
+somewhere, some place
+dokoka
+
+なにか
+something
+nanika
+
+どの〜
+which ~ (3 or more)
+dono~
+
+どうやって
+how, in what way
+douyatte
+
+どうしましたか
+What's the matter?
+doushimashita ka
+
+せんせい
+doctor (used to address medical doctor)
+sensei
+
+`;
 
 allWords["Questions - Hard"] = ``;
 
@@ -8047,8 +8345,8 @@ const appSettings = {
     "なんですか::Yes?": 1,
     "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "Lesson 02",
-  "isHard": true,
+  "currentLesson": "Kanji 20",
+  "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz1",
@@ -8084,6 +8382,204 @@ const appSettings = {
     "Kanji 20"
   ],
   "similarWordGroups": [
+    {
+      "words": [
+        {
+          "japanese": "ちいさい",
+          "english": "small, little",
+          "romaji": "chiisai"
+        },
+        {
+          "japanese": "すこし",
+          "english": "a little, a few",
+          "romaji": "sukoshi"
+        },
+        {
+          "japanese": "しゅくだい",
+          "english": "homework",
+          "romaji": "shukudai"
+        },
+        {
+          "japanese": "しょくどう",
+          "english": "dining hall, canteen",
+          "romaji": "shokudou"
+        },
+        {
+          "japanese": "しんせつ（な）",
+          "english": "kind",
+          "romaji": "shinsetsu na"
+        },
+        {
+          "japanese": "やさしい",
+          "english": "easy, kind",
+          "romaji": "yasashii"
+        },
+        {
+          "japanese": "とけい",
+          "english": "watch, clock",
+          "romaji": "tokei"
+        },
+        {
+          "japanese": "てちょう",
+          "english": "pocket notebook, dairy",
+          "romaji": "techou"
+        },
+        {
+          "japanese": "どうも",
+          "english": "Well, thanks",
+          "romaji": "doumo"
+        },
+        {
+          "japanese": "どうぞ",
+          "english": "Please. / Here you are.",
+          "romaji": "douzo"
+        },
+        {
+          "japanese": "じどうしゃ",
+          "english": "automobile, car",
+          "romaji": "jidousha"
+        },
+        {
+          "japanese": "くるま",
+          "english": "car, vehicle",
+          "romaji": "kuruma"
+        },
+        {
+          "japanese": "あのう",
+          "english": "well, err",
+          "romaji": "anou"
+        },
+        {
+          "japanese": "えーと",
+          "english": "well, let me see...",
+          "romaji": "eeto"
+        },
+        {
+          "japanese": "ビル",
+          "english": "building",
+          "romaji": "biru"
+        },
+        {
+          "japanese": "ビール",
+          "english": "beer",
+          "romaji": "biiru"
+        },
+        {
+          "japanese": "おく",
+          "english": "the back",
+          "romaji": "oku"
+        },
+        {
+          "japanese": "うしろ",
+          "english": "back, behind",
+          "romaji": "ushiro"
+        },
+        {
+          "japanese": "〜ごろ",
+          "english": "about (time)",
+          "romaji": "~goro"
+        },
+        {
+          "japanese": "〜ぐらい",
+          "english": "about ~",
+          "romaji": "~gurai"
+        }
+      ]
+    },
+    {
+      "words": [
+        {
+          "japanese": "（どうも）ありがとうございます",
+          "english": "Thank you (very much).",
+          "romaji": "(doumo) arigatou gozaimasu"
+        },
+        {
+          "japanese": "どうも",
+          "english": "Well, thanks",
+          "romaji": "doumo"
+        },
+        {
+          "japanese": "いただきます",
+          "english": "Thank you, I accept",
+          "romaji": "itadakimasu"
+        },
+        {
+          "japanese": "どうもすみません",
+          "english": "Thank you",
+          "romaji": "doumo sumimasen"
+        },
+        {
+          "japanese": "おかげさまで",
+          "english": "thank you (thanks to you I'm doing well)",
+          "romaji": "okagesama de"
+        },
+        {
+          "japanese": "みんな",
+          "english": "everybody, everything",
+          "romaji": "minna"
+        },
+        {
+          "japanese": "みなさん",
+          "english": "everyone, all of you",
+          "romaji": "minasan"
+        },
+        {
+          "japanese": "きせつ",
+          "english": "season",
+          "romaji": "kisetsu"
+        },
+        {
+          "japanese": "きっさてん",
+          "english": "coffee shop",
+          "romaji": "kissaten"
+        },
+        {
+          "japanese": "ちかい",
+          "english": "near",
+          "romaji": "chikai"
+        },
+        {
+          "japanese": "ちかく",
+          "english": "near, vicinity",
+          "romaji": "chikaku"
+        },
+        {
+          "japanese": "はやく",
+          "english": "early, quickly, fast",
+          "romaji": "hayaku"
+        },
+        {
+          "japanese": "はやい",
+          "english": "fast, early",
+          "romaji": "hayai"
+        },
+        {
+          "japanese": "らいげつ",
+          "english": "next month",
+          "romaji": "raigetsu"
+        },
+        {
+          "japanese": "こんげつ",
+          "english": "this month",
+          "romaji": "kongetsu"
+        },
+        {
+          "japanese": "〜かげつ",
+          "english": "(number) of months",
+          "romaji": "~kagetsu"
+        },
+        {
+          "japanese": "なんがつ",
+          "english": "what month",
+          "romaji": "nangatsu"
+        },
+        {
+          "japanese": "〜がつ",
+          "english": "~th month of the year",
+          "romaji": "~gatsu"
+        }
+      ]
+    },
     {
       "words": []
     }
