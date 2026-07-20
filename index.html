@@ -30,6 +30,12 @@
         <div id="search-results-dropdown" class="search-results-dropdown hidden"></div>
       </div>
       <div class="global-controls">
+        <button id="settings-toggle" class="btn btn-icon" title="Settings (S)" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
         <button id="theme-toggle" class="btn btn-icon" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
           <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="19.78"></line><line x1="18.36" y1="5.64" x2="19.78" y2="5.64"></line></svg>
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -225,6 +231,7 @@
             <option value="quiz5">Quiz 5: Japanese &rarr; Romaji Writing</option>
             <option value="quiz6">Quiz 6: Romaji &rarr; English (Review)</option>
             <option value="quiz7">Quiz 7: English &rarr; Romaji Writing</option>
+            <option value="quiz8">Quiz 8: Japanese Reading Practice</option>
           </select>
         </div>
 
@@ -391,8 +398,12 @@
                 <td>Move focus to next card and play Japanese audio.</td>
               </tr>
               <tr>
-                <td><kbd>&larr;</kbd> (Left Arrow) (in Normal Mode)</td>
-                <td>Move focus to previous card and play Japanese audio.</td>
+                <td><kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (Left/Right Arrow)</td>
+                <td>Move focus to previous/next card and play Japanese audio.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (Left/Right Arrow)</td>
+                <td>Cycle to previous/next lesson category.</td>
               </tr>
               <tr>
                 <td><kbd>Space</kbd></td>
@@ -411,12 +422,16 @@
                 <td>Close active modal dialog or clear card selection.</td>
               </tr>
               <tr>
-                <td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> (Left Arrow)</td>
-                <td>Go to the previous lesson (only when Selection Mode is inactive).</td>
+                <td><kbd>S</kbd> (in Normal Mode)</td>
+                <td>Toggle Database Settings picklist modal.</td>
               </tr>
               <tr>
-                <td><kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> (Right Arrow)</td>
-                <td>Go to the next lesson (only when Selection Mode is inactive).</td>
+                <td><kbd>E</kbd> (in Normal Mode)</td>
+                <td>Open Edit modal for the currently selected/focused word.</td>
+              </tr>
+              <tr>
+                <td><kbd>S</kbd> (in Selection Mode)</td>
+                <td>Open similar group selector modal.</td>
               </tr>
               <tr>
                 <td><kbd>&larr;</kbd> / <kbd>&uarr;</kbd> (Left/Up Arrow) (in Selection Mode)</td>
@@ -427,28 +442,72 @@
                 <td>Move selected card(s) Down (right).</td>
               </tr>
               <tr>
-                <td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td>
+                <td><kbd>Delete</kbd> / <kbd>Backspace</kbd> / <kbd>D</kbd> (in Selection Mode)</td>
                 <td>Delete selected card(s).</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>A</kbd> (in Selection Mode)</td>
+                <td>Select all words in the current category.</td>
               </tr>
               <tr>
                 <td><kbd>Q</kbd></td>
                 <td>Trigger / Close the Quiz modal.</td>
               </tr>
               <tr>
+                <td><kbd>H</kbd></td>
+                <td>Open Help modal (this dialog).</td>
+              </tr>
+              <tr>
+                <td><kbd>P</kbd></td>
+                <td>Toggle play all audio.</td>
+              </tr>
+              <tr>
+                <td><kbd>M</kbd> (in Selection Mode)</td>
+                <td>Toggle selected card(s) Normal / Hard status.</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>Q</kbd> then <kbd>U</kbd></td>
+                <td>Jump to the Questions category (only in groups ending in "Others").</td>
+              </tr>
+              <tr>
                 <td><kbd>I</kbd></td>
                 <td>Open Import vocabulary modal and focus the text box.</td>
               </tr>
               <tr>
-                <td><kbd>C</kbd></td>
-                <td>Copy N5 configuration/backup to clipboard.</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd> (in Import Modal)</td>
+                <td>Submit the import entries.</td>
+              </tr>
+              <tr>
+                <td><kbd>C</kbd> (in Normal Mode)</td>
+                <td>Copy full database JSON backup copy to clipboard.</td>
+              </tr>
+              <tr>
+                <td><kbd>C</kbd> (in Selection Mode)</td>
+                <td>Copy selected words to another category.</td>
               </tr>
               <tr>
                 <td><kbd>T</kbd></td>
                 <td>Toggle between Light and Dark themes.</td>
               </tr>
               <tr>
-                <td><kbd>Shift</kbd> + <kbd>1</kbd> .. <kbd>5</kbd></td>
+                <td><kbd>Alt</kbd> + <kbd>1</kbd> .. <kbd>5</kbd></td>
                 <td>Change display modes (1: Big English, 2: Big Jap, 3: Eng, 4: Jap, 5: Romaji).</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + two digits (e.g. <kbd>03</kbd>, <kbd>27</kbd>)</td>
+                <td>Navigate directly to that Lesson (or Kanji if in Kanji group) across N5/N4/N3.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>P</kbd></td>
+                <td>Toggle show category mode.</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>F</kbd></td>
+                <td>Focus global search input.</td>
+              </tr>
+              <tr>
+                <td><kbd>R</kbd></td>
+                <td>Reset storage cache.</td>
               </tr>
               <tr>
                 <td><kbd>Enter</kbd> (in Quiz Setup)</td>
@@ -561,6 +620,33 @@ kenkyuusha</pre>
 researcher, scholar
 kenkyuusha</pre>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div id="modal-settings" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <div class="modal-header">
+      <h2 id="settings-title">Database Settings</h2>
+      <button class="btn-close-modal" aria-label="Close Settings Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="quiz-option-group" style="margin-bottom: 1.5rem;">
+        <label for="select-db-group" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">Active Database / Group</label>
+        <select id="select-db-group" class="custom-select" style="width: 100%;">
+          <option value="N5 Lessons">N5 Lessons</option>
+          <option value="N5 Kanji">N5 Kanji</option>
+          <option value="N5 Others">N5 Others</option>
+          <option value="N4 Lessons">N4 Lessons</option>
+          <option value="N4 Kanji">N4 Kanji</option>
+          <option value="N4 Others">N4 Others</option>
+          <option value="N3 Lessons">N3 Lessons</option>
+          <option value="N3 Kanji">N3 Kanji</option>
+          <option value="N3 Others">N3 Others</option>
+        </select>
+      </div>
+      <div class="modal-actions" style="margin-top: 1.5rem;">
+        <button onclick="closeActiveModal()" class="btn btn-primary btn-large" style="width: 100%;">Close Settings</button>
       </div>
     </div>
   </div>

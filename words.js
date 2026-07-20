@@ -453,22 +453,6 @@ erebeetaa
 escalator
 esukareetaa
 
-くに
-country
-kuni
-
-かいしゃ
-company
-kaisha
-
-うち
-house, home
-uchi
-
-くつ
-shoes
-kutsu
-
 ネクタイ
 necktie
 nekutai
@@ -492,14 +476,6 @@ chika
 いくら
 how much
 ikura
-
-ひゃく
-hundred
-hyaku
-
-せん
-thousand
-sen
 
 〜まん
 ten thousand
@@ -760,7 +736,7 @@ sleep, go to bed
 nemasu
 
 やすみます
-rest, a holiday, a day off
+take a rest, take a holiday
 yasumimasu
 
 べんきょうします
@@ -951,9 +927,9 @@ gofun
 6 minutes
 roppun
 
-ななふん
+ななふん (or) しちふん
 7 minutes
-nanafun
+nanafun / shichifun
 
 はっぷん
 8 minutes
@@ -961,11 +937,11 @@ happun
 
 きゅうふん
 9 minutes
-kyūfun
+kyuufun
 
-じゅっぷん
+じゅっぷん (or) じゅうっぷん
 10 minutes
-juppun
+juppun / juuppun
 
 じゅういっぷん
 11 minutes
@@ -1015,7 +991,7 @@ work (verb)
 hatarakimasu
 
 かしこまりました
-Certainly
+Certainly (sir, madam)
 kashikomarimashita
 
 なんばん
@@ -1142,7 +1118,7 @@ next week
 raishuu
 
 〜にち
-~th day of the month, (number of) days
+~th day of the month, # of days
 ~nichi
 
 なんにち
@@ -1160,6 +1136,58 @@ tsugi
 つぎの でんしゃ
 next train
 tsugino densha
+
+スーパー
+super market
+suupaa
+
+いちがつ
+January
+ichigatsu
+
+にがつ
+February
+nigatsu
+
+さんがつ
+March
+sangatsu
+
+しがつ
+April
+shigatsu
+
+ごがつ
+May
+gogatsu
+
+ろくがつ
+June
+rokugatsu
+
+しちがつ
+July
+shichigatsu
+
+はちがつ
+August
+hachigatsu
+
+くがつ
+September
+kugatsu
+
+じゅうがつ
+October
+juugatsu
+
+じゅういちがつ
+November
+juuichigatsu
+
+じゅうにがつ
+December
+juunigatsu
 
 `;
 
@@ -1193,11 +1221,11 @@ on foot
 aruite
 
 〜ばんせん
-platform (number), ~th platform
+platform ~, ~th platform
 ~bansen
 
 どういたしまして
-You're welcome. / Don't mention it.
+You're welcome. Don't mention it.
 dou itashimashite
 
 らいねん
@@ -1554,7 +1582,7 @@ shirt
 shatsu
 
 プレゼント
-present, gift
+present
 purezento
 
 おかね
@@ -1661,19 +1689,19 @@ from now on, soon
 korekara
 
 ごめんください
-Excuse me, Anybody home?, May I come in?
+Anybody home?, May I come in?
 gomenkudasai
 
 いらっしゃい
-Welcome. / How nice of you to come.
+Welcome
 irasshai
 
 しつれいします
-Excuse me. (to be rude)
+Excuse me. (lit. to be rude)
 shitsurei shimasu
 
 〜はいかがですか
-Won't you have ~? , Would you like to have ~?
+Would you like to have ~?
 ~ wa ikaga desu ka
 
 いただきます
@@ -1720,8 +1748,8 @@ difficult
 muzukashii
 
 いいえ、けっこうです。
-No, thank you. / No, that's okay.
-iie, kekkō desu.
+No, thank you.
+iie, kekkoo desu.
 
 たかい
 expensive, tall, high
@@ -1741,7 +1769,7 @@ sakura
 
 おげんきですか
 How are you?
-ogenki desu ka
+[o] genki desu ka
 
 ハンサム（な）
 handsome
@@ -1915,7 +1943,7 @@ work, business
 (o)shigoto
 
 そうですね
-Well, let me see...
+Well let me see...
 sou desu ne
 
 にほんのせいかつになれましたか
@@ -2018,7 +2046,7 @@ a little, a few
 sukoshi
 
 ぜんぜん
-not at all
+not at all (used with negatives)
 zenzen
 
 もしもし
@@ -2105,7 +2133,7 @@ small change
 komakai okane
 
 ざんねんですね
-I'm sorry (to hear that).
+I'm sorry (to hear that), That's a pity
 zannen desu ne
 
 じょうず（な）
@@ -2137,7 +2165,7 @@ my wife
 tsuma / kanai
 
 りょうり
-dish, cooking
+dish (cooked food), cooking
 ryouri
 
 よく
@@ -2157,7 +2185,7 @@ Please ask me again some other time.
 mata kondo onegaishimasu
 
 〜はちょっと…
-~ is a bit difficult.
+~ is a bit difficult. (used to decline an invitation)
 ~ wa chotto...
 
 〜から
@@ -2188,7 +2216,7 @@ exist, be (people/animals)
 imasu
 
 あります
-exist, be (things)
+exist, be (things/place)
 arimasu
 
 いろいろ（な）
@@ -2196,7 +2224,7 @@ various
 iroiro na
 
 き
-tree
+tree, wood
 ki
 
 はこ
@@ -2212,11 +2240,11 @@ in, inside
 naka
 
 となり
-next, next door
+next, next door, beside
 tonari
 
 いちばん〜
-the most ~
+the number one, the most ~
 ichiban~
 
 おとこのひと
@@ -2268,7 +2296,7 @@ park
 kouen
 
 〜や
-~store
+~store, ~shop
 ~ya
 
 スパイスコーナー
@@ -2315,7 +2343,7 @@ the nth shelf
 ~danme
 
 たな
-shelf
+shelf, rack
 tana
 
 ほんや
@@ -2346,12 +2374,12 @@ migi
 left (side)
 hidari
 
-〜や〜など
+〜や〜[など]
 ~ ~ and so on
-~ ya ~ nado
+~ ya ~ [nado]
 
 おく
-the back
+the back, inner part
 oku
 
 そと
@@ -3679,9 +3707,52 @@ shitagi
 `;
 
 allWords["Lesson 18"] = `
+それはおもしろいですね
+That must be interesting.
+sore wa omoshiroi desu ne
+
+へえ
+Oh really! (used when surprised)
+hee
+
+ほんとうですか
+Really?
+hontou desu ka
+
 できます
 be able to, can
 dekimasu
+
+うたいます
+sing
+utaimasu
+
+ピアノ
+piano
+piano
+
+〜メートル
+~meter
+~meetoru
+
+おいのりをします
+pray
+oinori o shimasu
+
+`;
+
+allWords["Lesson 18 - Hard"] = `
+かちょう
+section chief
+kachou
+
+ぶちょう
+department chief
+buchou
+
+しゃちょう
+president of a company
+shachou
 
 あらいます
 wash
@@ -3690,10 +3761,6 @@ araimasu
 ひきます
 play (a string instrument or the piano)
 hikimasu
-
-うたいます
-sing
-utaimasu
 
 あつめます
 collect, gather
@@ -3719,14 +3786,6 @@ yoyaku shimasu
 visit some place to study, field trip
 kengaku shimasu
 
-ピアノ
-piano
-piano
-
-〜メートル
-~meter
-~meetoru
-
 こくさい~
 international~
 kokusai
@@ -3734,10 +3793,6 @@ kokusai
 げんきん
 cash
 genkin
-
-しゅみ
-hobby
-shumi
 
 にっき
 diary, journal
@@ -3747,21 +3802,13 @@ nikki
 prayer
 [o] inori
 
-おいのりをします
-pray
-oinori o shimasu
+ぼくじょう
+ranch, farm
+bokujou
 
-かちょう
-section chief
-kachou
-
-ぶちょう
-department chief
-buchou
-
-しゃちょう
-president of a company
-shachou
+しゅみ
+hobby
+shumi
 
 どうぶつ
 animal
@@ -3771,25 +3818,9 @@ doubutsu
 horse
 uma
 
-へえ
-Oh really! (used when surprised)
-hee
-
-それはおもしろいですね
-That must be interesting.
-sore wa omoshiroi desu ne
-
 なかなか
 not easily
 nakanaka
-
-ぼくじょう
-ranch, farm
-bokujou
-
-ほんとうですか
-Really?
-hontou desu ka
 
 ぜひ
 by all means, please
@@ -3797,57 +3828,7 @@ zehi
 
 `;
 
-allWords["Lesson 18 - Hard"] = ``;
-
 allWords["Lesson 19"] = `
-のぼります
-climb
-noborimasu
-
-やまをのぼります
-climb a mountain
-yama o noborimasu
-
-とまります
-stay
-tomarimasu
-
-ホテルにとまります
-stay in a hotel
-hoteru ni tomarimasu
-
-そうじします
-clean
-souji shimasu
-
-せんたくします
-do the laundry, wash
-sentaku shimasu
-
-ふくをせんたくします
-wash the clothes
-fuku o sentaku shimasu
-
-れんしゅう
-practice
-renshuu
-
-れんしゅうします
-to practice
-renshuu shimasu
-
-ダンスをれんしゅうします
-practice the dance
-dansu o renshuu shimasu
-
-なります
-become
-narimasu
-
-あしたにじゅうさんさいになります
-turn 23 years old tomorrow
-ashita nijuusan sai ni narimasu
-
 ねむい
 sleepy
 nemui
@@ -3860,17 +3841,25 @@ tsuyoi
 weak
 yowai
 
-ちょうし
-condition, state of health
-choushi
+おかげさまで
+Thank you. All thanks to you. (express gratitude for help received)
+okagesama de
 
-ちょうしがいい
-be in a good condition
-choushi ga ii
+ひ
+day, date
+hi
 
-ちょうしがわるい
-be in a bad condition
-choushi ga warui
+もうすぐ
+very soon
+mou sugu
+
+むり（な）
+impossible, excessive
+muri na
+
+からだにいい
+good for one's body
+karada ni ii
 
 ゴルフ
 golf
@@ -3884,49 +3873,17 @@ gorufu o shimasu
 Japanese-style wrestling
 sumou
 
-パチンコ
-Japanese pinball game
-pachinko
-
-さどう
-tea ceremony
-sadou
-
-ひ
-day, date
-hi
-
 こどものひ
 Children's Day
 Kodomo no Hi
 
-いちど
-once, one time
-ichido
+ちょうしがいい
+be in a good condition
+choushi ga ii
 
-いちども
-not even once, never
-ichidomo
-
-だんだん
-gradually
-dandan
-
-もうすぐ
-very soon
-mou sugu
-
-おかげさまで
-Thank you. All thanks to you. (express gratitude for help received)
-okagesama de
-
-かんぱい
-bottoms up / cheers
-kanpai
-
-じつは
-actually.., the truth is..
-jitsu wa
+ちょうしがわるい
+be in a bad condition
+choushi ga warui
 
 ダイエット
 diet
@@ -3936,62 +3893,123 @@ daietto
 go on a diet
 daietto o shimasu
 
-なんかいも
-many times
-nankai mo
+ケーキ
+cake
+keeki
+
+やまをのぼります
+climb a mountain
+yama o noborimasu
+
+ホテルにとまります
+stay in a hotel
+hoteru ni tomarimasu
+
+ふくをせんたくします
+wash the clothes
+fuku o sentaku shimasu
+
+れんしゅうします
+to practice
+renshuu shimasu
+
+ダンスをれんしゅうします
+practice the dance
+dansu o renshuu shimasu
+
+あしたにじゅうさんさいになります
+turn 23 years old tomorrow
+ashita nijuusan sai ni narimasu
+
+`;
+
+allWords["Lesson 19 - Hard"] = `
+さどう
+tea ceremony
+sadou
+
+のぼります
+climb
+noborimasu
+
+とまります
+stay
+tomarimasu
+
+そうじします
+clean
+souji shimasu
+
+せんたくします
+do the laundry, wash
+sentaku shimasu
+
+れんしゅう
+practice
+renshuu
+
+ちょうし
+condition, state of health
+choushi
+
+パチンコ
+Japanese pinball game
+pachinko
+
+だんだん
+gradually
+dandan
+
+かんぱい
+bottoms up / cheers
+kanpai
 
 しかし
 but, however
 shikashi
 
-むり（な）
-impossible, excessive
-muri na
+いちど
+once, one time
+ichido
 
-からだにいい
-good for one's body
-karada ni ii
+いちども
+not even once, never
+ichidomo
 
-ケーキ
-cake
-keeki
+じつは
+actually.., the truth is..
+jitsu wa
+
+なんかいも
+many times
+nankai mo
+
+なります
+become
+narimasu
 
 `;
 
-allWords["Lesson 19 - Hard"] = ``;
-
 allWords["Lesson 20"] = `
-（ビザが）いります
-need, require (a visa)
-(biza ga) irimasu
-
-しらべます
-check, investigate
-shirabemasu
-
-なおします
-correct, fix, repair
-naoshimasu
-
-しゅうりします
-repair
-shuuri shimasu
-
 でんわします
 phone, call
 denwa shimasu
 
-ぼく
-I (informal used by men)
-boku
+どうするの
+What will you do?
+dou suru no
 
-きみ
-you (informal)
-kimi
+いろいろ
+various
+iroiro
 
-〜くん
-Mr. (informal of ~san)
-~kun
+おわり
+the end
+owari
+
+みんなで
+all together
+minna de
 
 うん
 yes (informal)
@@ -4001,21 +4019,13 @@ un
 no (informal)
 uun
 
-サラリーマン
-office worker
-sarariiman
-
-ことば
-word, language
-kotoba
-
-ぶっか
-commodity prices
-bukka
-
 きもの
 traditional Japanese attire
 kimono
+
+サラリーマン
+office worker
+sarariiman
 
 ビザ
 visa
@@ -4024,10 +4034,6 @@ biza
 はじめ
 the beginning
 hajime
-
-おわり
-the end
-owari
 
 こっち
 this way, this place (informal)
@@ -4045,13 +4051,48 @@ acchi
 which one(way), where (informal)
 docchi
 
+ぼく
+I (informal used by men)
+boku
+
+きみ
+you (informal)
+kimi
+
+〜くん
+Mr. (informal of ~san)
+~kun
+
+`;
+
+allWords["Lesson 20 - Hard"] = `
+（ビザが）いります
+need, require (a visa)
+(biza ga) irimasu
+
+しらべます
+check, investigate
+shirabemasu
+
+なおします
+correct, fix, repair
+naoshimasu
+
+しゅうりします
+repair
+shuuri shimasu
+
+ことば
+word, language
+kotoba
+
+ぶっか
+commodity prices
+bukka
+
 このあいだ
 the other day
 kono aida
-
-みんなで
-all together
-minna de
 
 けど
 ~but (informal)
@@ -4061,10 +4102,6 @@ kedo
 Are you going back to your country?
 kuni e kaeru no
 
-どうするの
-What will you do?
-dou suru no
-
 どうしようかな
 What shall I do?
 dou shiyou kana
@@ -4073,70 +4110,60 @@ dou shiyou kana
 if you like..., if it's okay
 yokattara...
 
-いろいろ
-various
-iroiro
-
 `;
 
-allWords["Lesson 20 - Hard"] = ``;
-
 allWords["Lesson 21"] = `
-おもいます
-think
-omoimasu
+ラッシュ [じ]
+rush hour
+rasshu [ji]
 
-いいます
-say
-iimasu
-
-たります
-be enough, be sufficient
-tarimasu
-
-かちます
-win
-kachimasu
+ユーモア
+humor
+yuumoa
 
 まけます
 lose, be defeated
 makemasu
 
-あります
-be held, take place
-arimasu
-
-やくにたちます
-be useful
-yakunitachimasu
-
-むだ（な）
-wasteful, useless
-muda na
-
-ふべん（な）
-inconvenient
-fuben na
+おはなしをします
+talk, tell a story
+ohanashi o shimasu
 
 おなじ
 the same
 onaji
 
+きっと
+surely, no doubt
+kitto
+
+もちろん
+of course
+mochiron
+
 すごい
 awful, great
 sugoi
 
-しゅしょう
-prime minister
-shushou
+むだ（な）
+wasteful, useless
+muda na
 
-だいとうりょう
-president
-daitouryou
+むだ
+waste
+muda
 
-せいじ
-politics
-seiji
+たぶん
+probably, perhaps, maybe
+tabun
+
+ほんとうに
+really
+hontou ni
+
+アルバイトをします
+work a part-time job
+arubaito o shimasu
 
 ニュース
 news
@@ -4150,69 +4177,32 @@ supiichi
 make/deliver a speech
 supiichi o shimasu
 
-しあい
-game, match
-shiai
+デザイン
+design
+dezain
 
-アルバイト
-side job, part-time job
-arubaito
+カンガルー
+kangaroo
+kangaruu
 
-アルバイトをします
-work a part-time job
-arubaito o shimasu
+`;
+
+allWords["Lesson 21 - Hard"] = `
+しゅしょう
+prime minister
+shushou
+
+だいとうりょう
+president
+daitouryou
 
 いけん
 opinion, comment
 iken
 
-[お]はなし
-talk, speech, story, what one's say
-[o]hanashi
-
-おはなしをします
-talk, tell a story
-ohanashi o shimasu
-
-ユーモア
-humor
-yuumoa
-
-むだ
-waste
-muda
-
-デザイン
-design
-dezain
-
 こうつう
 transportation, traffic
 koutsuu
-
-ラッシュ [じ]
-rush hour
-rasshu [ji]
-
-さいきん
-recently, these days
-saikin
-
-たぶん
-probably, perhaps, maybe
-tabun
-
-きっと
-surely, no doubt
-kitto
-
-ほんとうに
-really
-hontou ni
-
-そんなに
-not so much (used with negatives)
-sonnani
 
 〜について
 about ~, concerning ~
@@ -4230,23 +4220,116 @@ shibaraku desu ne
 How about drinking ~ or something?
 ~ demo nomimasen ka
 
+やくにたちます
+be useful
+yakunitachimasu
+
+ふべん（な）
+inconvenient
+fuben na
+
+せいじ
+politics
+seiji
+
+しあい
+game, match
+shiai
+
+アルバイト
+side job, part-time job
+arubaito
+
+さいきん
+recently, these days
+saikin
+
+おもいます
+think
+omoimasu
+
+いいます
+say
+iimasu
+
+たります
+be enough, be sufficient
+tarimasu
+
+かちます
+win
+kachimasu
+
+あります
+be held, take place
+arimasu
+
+[お]はなし
+talk, speech, story, what one's say
+[o]hanashi
+
+そんなに
+not so much (used with negatives)
+sonnani
+
 みないと…
 I've got to watch it.
 minaito...
 
-もちろん
-of course
-mochiron
+`;
 
-カンガルー
-kangaroo
-kangaruu
+allWords["Lesson 22"] = `
+めがね
+glasses
+megane
+
+ダイニングキッチン
+kitchen with a dining area
+dainingu kicchin
+
+ふとん
+Japanese-style mattress and quilt
+futon
+
+よく
+often, nicely
+yoku
+
+こちら
+this (polite form of kore)
+kochira
+
+うーん
+ummm...
+uun
+
+パリ
+Paris
+pari
+
+コート
+coat
+kooto
+
+スーツ
+suit
+suutsu
+
+セーター
+sweater
+seetaa
+
+ぼうし
+hat, cap
+boushi
+
+アパート
+apartment
+apaato
 
 `;
 
-allWords["Lesson 21 - Hard"] = ``;
-
-allWords["Lesson 22"] = `
+allWords["Lesson 22 - Hard"] = `
 きます
 wear, put on (a shirt, dress, jacket etc)
 kimasu
@@ -4266,74 +4349,6 @@ kakemasu
 うまれます
 be born
 umaremasu
-
-コート
-coat
-kooto
-
-スーツ
-suit
-suutsu
-
-セーター
-sweater
-seetaa
-
-ぼうし
-hat, cap
-boushi
-
-めがね
-glasses
-megane
-
-よく
-often, nicely
-yoku
-
-おめでとうございます
-Congratulations.
-omedetou gozaimasu
-
-こちら
-this (polite form of kore)
-kochira
-
-やちん
-house rent
-yachin
-
-うーん
-ummm...
-uun
-
-ダイニングキッチン
-kitchen with a dining area
-dainingu kicchin
-
-わしつ
-Japanese-style room
-washitsu
-
-おしいれ
-Japanese-style closet
-oshiire
-
-ふとん
-Japanese-style mattress and quilt
-futon
-
-アパート
-apartment
-apaato
-
-パリ
-Paris
-pari
-
-ばんりのちょうじょう
-the Great Wall of China
-banri no choujou
 
 つけます
 wear (earrings perfume, ring, necklace etc) lit. attach
@@ -4355,9 +4370,27 @@ makimasu
 wear (belt, neckie) lit. tie, fasten
 shimemasu
 
-`;
+ばんりのちょうじょう
+the Great Wall of China
+banri no choujou
 
-allWords["Lesson 22 - Hard"] = ``;
+やちん
+house rent
+yachin
+
+わしつ
+Japanese-style room
+washitsu
+
+おしいれ
+Japanese-style closet
+oshiire
+
+おめでとうございます
+Congratulations.
+omedetou gozaimasu
+
+`;
 
 allWords["Lesson 23"] = `
 さわります
@@ -4385,8 +4418,8 @@ size
 saizu
 
 こしょうします
-koshou shimasu
 fail, be out of order
+koshou shimasu
 
 はし
 bridge
@@ -4572,29 +4605,21 @@ wagon sha
 `;
 
 allWords["Lesson 25"] = `
-かんがえます
-think, consider
-kangaemasu
-
-つきます
-arrive, reach
-tsukimasu
-
 りゅうがくします
 study abroad
 ryuugaku shimasu
-
-としをとります
-grow old, get older
-toshi o torimasu
 
 いなか
 countryside, rural area
 inaka
 
-たいしかん
-embassy
-taishikan
+いっぱいのみましょう
+Let's have a drink.
+ippai nomimashou
+
+いろいろおせわになりました
+Thank you for everything you have done for me.
+iroiro osewa ni narimashita
 
 グループ
 group
@@ -4603,6 +4628,37 @@ guruupu
 チャンス
 chance, opportunity
 chansu
+
+がんばります
+do one's best, work hard
+ganbarimasu
+
+てんきん  します
+be transferred to another office
+tenkin shimasu
+
+`;
+
+allWords["Lesson 25 - Hard"] = `
+たいしかん
+embassy
+taishikan
+
+てんきん
+job transfer / relocation
+tenkin
+
+かんがえます
+think, consider
+kangaemasu
+
+つきます
+arrive, reach
+tsukimasu
+
+としをとります
+grow old, get older
+toshi o torimasu
 
 おく
 hundred million
@@ -4616,29 +4672,9 @@ moshi ~tara
 no matter how, even if
 ikura ~ demo / temo
 
-てんきん
-job transfer / relocation
-tenkin
-
-てんきん  します
-be transferred to another office
-tenkin shimasu
-
 こと
 thing, matter (intangible)
 koto
-
-いっぱいのみましょう
-Let's have a drink.
-ippai nomimashou
-
-いろいろおせわになりました
-Thank you for everything you have done for me.
-iroiro osewa ni narimashita
-
-がんばります
-do one's best, work hard
-ganbarimasu
 
 どうぞおげんきで
 Best of luck, take care of yourself
@@ -4646,9 +4682,7 @@ douzo ogenki de
 
 `;
 
-allWords["Lesson 25 - Hard"] = ``;
-
-allWords["Phrases"] = `
+allWords["Phrases1"] = `
 はじめまして
 How do you do? (introducing oneself for the first time) (lit. for the first time)
 hajimemashite
@@ -4677,21 +4711,46 @@ Thank you (very much).
 It's nothing. / It's a token of my gratitude.
 honno kimochi desu
 
+しつれいですが
+excuse me but
+shitsurei desu ga
+
+～からきました
+I'm from (country).
+~ kara kimashita
+
 `;
 
-allWords["Phrases - Hard"] = ``;
+allWords["Phrases1 - Hard"] = ``;
 
-allWords["Questions"] = ``;
+allWords["Questions1"] = `
+だれ
+who
+dare
+
+どなた
+who (polite)
+donata
+
+なんさい
+how old
+nansai
+
+おいくつ
+how old (formal)
+oikutsu
+
+`;
 
 allWords["Questions - Hard"] = ``;
 
-allWords["Counters"] = ``;
+allWords["Counters1"] = ``;
 
-allWords["Counters - Hard"] = ``;
+allWords["Counters1 - Hard"] = ``;
 
-allWords["Food Names"] = ``;
+allWords["Food Names1"] = ``;
 
-allWords["Food Names - Hard"] = ``;
+allWords["Food Names1 - Hard"] = ``;
 
 allWords["Kanji 01"] = `
 日
@@ -8041,14 +8100,901 @@ koukogaku
 
 allWords["Kanji 20 - Hard"] = ``;
 
+allWords["Lesson 26"] = ``;
+
+allWords["Lesson 26 - Hard"] = ``;
+
+allWords["Lesson 27"] = ``;
+
+allWords["Lesson 27 - Hard"] = ``;
+
+allWords["Lesson 28"] = ``;
+
+allWords["Lesson 28 - Hard"] = ``;
+
+allWords["Lesson 29"] = ``;
+
+allWords["Lesson 29 - Hard"] = ``;
+
+allWords["Lesson 30"] = ``;
+
+allWords["Lesson 30 - Hard"] = ``;
+
+allWords["Lesson 31"] = ``;
+
+allWords["Lesson 31 - Hard"] = ``;
+
+allWords["Lesson 32"] = ``;
+
+allWords["Lesson 32 - Hard"] = ``;
+
+allWords["Lesson 33"] = ``;
+
+allWords["Lesson 33 - Hard"] = ``;
+
+allWords["Lesson 34"] = ``;
+
+allWords["Lesson 34 - Hard"] = ``;
+
+allWords["Lesson 35"] = ``;
+
+allWords["Lesson 35 - Hard"] = ``;
+
+allWords["Lesson 36"] = ``;
+
+allWords["Lesson 36 - Hard"] = ``;
+
+allWords["Lesson 37"] = ``;
+
+allWords["Lesson 37 - Hard"] = ``;
+
+allWords["Lesson 38"] = ``;
+
+allWords["Lesson 38 - Hard"] = ``;
+
+allWords["Lesson 39"] = ``;
+
+allWords["Lesson 39 - Hard"] = ``;
+
+allWords["Lesson 40"] = ``;
+
+allWords["Lesson 40 - Hard"] = ``;
+
+allWords["Lesson 41"] = ``;
+
+allWords["Lesson 41 - Hard"] = ``;
+
+allWords["Lesson 42"] = ``;
+
+allWords["Lesson 42 - Hard"] = ``;
+
+allWords["Lesson 43"] = ``;
+
+allWords["Lesson 43 - Hard"] = ``;
+
+allWords["Lesson 44"] = ``;
+
+allWords["Lesson 44 - Hard"] = ``;
+
+allWords["Lesson 45"] = ``;
+
+allWords["Lesson 45 - Hard"] = ``;
+
+allWords["Lesson 46"] = ``;
+
+allWords["Lesson 46 - Hard"] = ``;
+
+allWords["Lesson 47"] = ``;
+
+allWords["Lesson 47 - Hard"] = ``;
+
+allWords["Lesson 48"] = ``;
+
+allWords["Lesson 48 - Hard"] = ``;
+
+allWords["Lesson 49"] = ``;
+
+allWords["Lesson 49 - Hard"] = ``;
+
+allWords["Lesson 50"] = ``;
+
+allWords["Lesson 50 - Hard"] = ``;
+
+allWords["Lesson 51"] = ``;
+
+allWords["Lesson 51 - Hard"] = ``;
+
+allWords["Lesson 52"] = ``;
+
+allWords["Lesson 52 - Hard"] = ``;
+
+allWords["Lesson 53"] = ``;
+
+allWords["Lesson 53 - Hard"] = ``;
+
+allWords["Lesson 54"] = ``;
+
+allWords["Lesson 54 - Hard"] = ``;
+
+allWords["Lesson 55"] = ``;
+
+allWords["Lesson 55 - Hard"] = ``;
+
+allWords["Lesson 56"] = ``;
+
+allWords["Lesson 56 - Hard"] = ``;
+
+allWords["Lesson 57"] = ``;
+
+allWords["Lesson 57 - Hard"] = ``;
+
+allWords["Lesson 58"] = ``;
+
+allWords["Lesson 58 - Hard"] = ``;
+
+allWords["Lesson 59"] = ``;
+
+allWords["Lesson 59 - Hard"] = ``;
+
+allWords["Lesson 60"] = ``;
+
+allWords["Lesson 60 - Hard"] = ``;
+
+allWords["Lesson 61"] = ``;
+
+allWords["Lesson 61 - Hard"] = ``;
+
+allWords["Lesson 62"] = ``;
+
+allWords["Lesson 62 - Hard"] = ``;
+
+allWords["Lesson 63"] = ``;
+
+allWords["Lesson 63 - Hard"] = ``;
+
+allWords["Lesson 64"] = ``;
+
+allWords["Lesson 64 - Hard"] = ``;
+
+allWords["Lesson 65"] = ``;
+
+allWords["Lesson 65 - Hard"] = ``;
+
+allWords["Lesson 66"] = ``;
+
+allWords["Lesson 66 - Hard"] = ``;
+
+allWords["Lesson 67"] = ``;
+
+allWords["Lesson 67 - Hard"] = ``;
+
+allWords["Lesson 68"] = ``;
+
+allWords["Lesson 68 - Hard"] = ``;
+
+allWords["Lesson 69"] = ``;
+
+allWords["Lesson 69 - Hard"] = ``;
+
+allWords["Lesson 70"] = ``;
+
+allWords["Lesson 70 - Hard"] = ``;
+
+allWords["Lesson 71"] = ``;
+
+allWords["Lesson 71 - Hard"] = ``;
+
+allWords["Lesson 72"] = ``;
+
+allWords["Lesson 72 - Hard"] = ``;
+
+allWords["Lesson 73"] = ``;
+
+allWords["Lesson 73 - Hard"] = ``;
+
+allWords["Lesson 74"] = ``;
+
+allWords["Lesson 74 - Hard"] = ``;
+
+allWords["Lesson 75"] = ``;
+
+allWords["Lesson 75 - Hard"] = ``;
+
+allWords["Kanji 21"] = ``;
+
+allWords["Kanji 21 - Hard"] = ``;
+
+allWords["Kanji 22"] = ``;
+
+allWords["Kanji 22 - Hard"] = ``;
+
+allWords["Kanji 23"] = ``;
+
+allWords["Kanji 23 - Hard"] = ``;
+
+allWords["Kanji 24"] = ``;
+
+allWords["Kanji 24 - Hard"] = ``;
+
+allWords["Kanji 25"] = ``;
+
+allWords["Kanji 25 - Hard"] = ``;
+
+allWords["Kanji 26"] = ``;
+
+allWords["Kanji 26 - Hard"] = ``;
+
+allWords["Kanji 27"] = ``;
+
+allWords["Kanji 27 - Hard"] = ``;
+
+allWords["Kanji 28"] = ``;
+
+allWords["Kanji 28 - Hard"] = ``;
+
+allWords["Kanji 29"] = ``;
+
+allWords["Kanji 29 - Hard"] = ``;
+
+allWords["Kanji 30"] = ``;
+
+allWords["Kanji 30 - Hard"] = ``;
+
+allWords["Kanji 31"] = ``;
+
+allWords["Kanji 31 - Hard"] = ``;
+
+allWords["Kanji 32"] = ``;
+
+allWords["Kanji 32 - Hard"] = ``;
+
+allWords["Kanji 33"] = ``;
+
+allWords["Kanji 33 - Hard"] = ``;
+
+allWords["Kanji 34"] = ``;
+
+allWords["Kanji 34 - Hard"] = ``;
+
+allWords["Kanji 35"] = ``;
+
+allWords["Kanji 35 - Hard"] = ``;
+
+allWords["Kanji 36"] = ``;
+
+allWords["Kanji 36 - Hard"] = ``;
+
+allWords["Kanji 37"] = ``;
+
+allWords["Kanji 37 - Hard"] = ``;
+
+allWords["Kanji 38"] = ``;
+
+allWords["Kanji 38 - Hard"] = ``;
+
+allWords["Kanji 39"] = ``;
+
+allWords["Kanji 39 - Hard"] = ``;
+
+allWords["Kanji 40"] = ``;
+
+allWords["Kanji 40 - Hard"] = ``;
+
+allWords["Kanji 41"] = ``;
+
+allWords["Kanji 41 - Hard"] = ``;
+
+allWords["Kanji 42"] = ``;
+
+allWords["Kanji 42 - Hard"] = ``;
+
+allWords["Kanji 43"] = ``;
+
+allWords["Kanji 43 - Hard"] = ``;
+
+allWords["Kanji 44"] = ``;
+
+allWords["Kanji 44 - Hard"] = ``;
+
+allWords["Kanji 45"] = ``;
+
+allWords["Kanji 45 - Hard"] = ``;
+
+allWords["Kanji 46"] = ``;
+
+allWords["Kanji 46 - Hard"] = ``;
+
+allWords["Kanji 47"] = ``;
+
+allWords["Kanji 47 - Hard"] = ``;
+
+allWords["Kanji 48"] = ``;
+
+allWords["Kanji 48 - Hard"] = ``;
+
+allWords["Kanji 49"] = ``;
+
+allWords["Kanji 49 - Hard"] = ``;
+
+allWords["Kanji 50"] = ``;
+
+allWords["Kanji 50 - Hard"] = ``;
+
+allWords["Kanji 51"] = ``;
+
+allWords["Kanji 51 - Hard"] = ``;
+
+allWords["Kanji 52"] = ``;
+
+allWords["Kanji 52 - Hard"] = ``;
+
+allWords["Kanji 53"] = ``;
+
+allWords["Kanji 53 - Hard"] = ``;
+
+allWords["Kanji 54"] = ``;
+
+allWords["Kanji 54 - Hard"] = ``;
+
+allWords["Kanji 55"] = ``;
+
+allWords["Kanji 55 - Hard"] = ``;
+
+allWords["Kanji 56"] = ``;
+
+allWords["Kanji 56 - Hard"] = ``;
+
+allWords["Kanji 57"] = ``;
+
+allWords["Kanji 57 - Hard"] = ``;
+
+allWords["Kanji 58"] = ``;
+
+allWords["Kanji 58 - Hard"] = ``;
+
+allWords["Kanji 59"] = ``;
+
+allWords["Kanji 59 - Hard"] = ``;
+
+allWords["Kanji 60"] = ``;
+
+allWords["Kanji 60 - Hard"] = ``;
+
+allWords["Questions"] = ``;
+
+allWords["Counters"] = ``;
+
+allWords["Counters - Hard"] = ``;
+
+allWords["Food Names"] = ``;
+
+allWords["Food Names - Hard"] = ``;
+
+allWords["Romaji1"] = `
+アメリカ
+America
+amerika
+
+インドネシア
+Indonesia
+indoneshia
+
+フランス
+France
+furansu
+
+コーヒー
+coffee
+koohii
+
+テレビ
+television
+terebi
+
+ラジオ
+radio
+rajio
+
+カメラ
+camera
+kamera
+
+コンピューター
+computer
+konpyuutaa
+
+チョコレート
+chocolate
+chokoreeto
+
+カード
+card
+kaado
+
+ノート
+notebook
+nooto
+
+テレホンカード
+telephone card
+terehon kaado
+
+ボールペン
+ballpoint pen
+boorupen
+
+（カセット）テープ
+(cassette) tape
+(kasetto) teepu
+
+テープレコーダー
+tape recorder
+teepu rekoodaa
+
+ロビー
+lobby
+robii
+
+エレベーター
+elevator, lift
+erebeetaa
+
+トイレ
+toilet, rest room
+toire
+
+エスカレーター
+escalator
+esukareetaa
+
+ネクタイ
+necktie
+nekutai
+
+ワイン
+wine
+wain
+
+タバコ
+tobacco, cigarette
+tabako
+
+〜えん
+-yen
+-en
+
+タイ
+Thailand
+tai
+
+ブラジル
+Brazil
+burajiru
+
+フィリピン
+Philippines
+firipin
+
+インド
+India
+indo
+
+エンジニア
+engineer
+enjinia
+
+バンコク
+Bangkok
+bankoku
+
+ニューヨーク
+New York
+nyuuyooku
+
+ロンドン
+London
+rondon
+
+デパート
+department store
+depaato
+
+バス
+bus
+basu
+
+タクシー
+taxi
+takushii
+
+スーパー
+super market
+suupaa
+
+ジュース
+juice
+juusu
+
+ビール
+beer
+biiru
+
+ビデオ
+video
+bideo
+
+CD
+CD
+shii dii
+
+レポート
+report
+repooto
+
+レストラン
+restaurant
+resutoran
+
+テニス
+tennis
+tenisu
+
+サッカー
+soccer
+sakkaa
+
+ファックス
+fax
+fakkusu
+
+ヨーロッパ
+Europe
+yooroppa
+
+ワープロ
+word processor
+waapuro
+
+セロテープ
+scotch tape, adhesive tape
+seroteepu
+
+スペイン
+Spain
+supein
+
+シャツ
+shirt
+shatsu
+
+スプーン
+spoon
+supuun
+
+ナイフ
+knife
+naifu
+
+フォーク
+fork
+fooku
+
+プレゼント
+present
+purezento
+
+ふじさん
+Mt. Fuji
+fuji-san
+
+きんかくじ
+Kinkakuji Temple, Golden Pavilion
+kinkakuji
+
+シャンハイ
+Shanghai
+shanhai
+
+びわこ
+Lake Biwa
+biwa-ko
+
+コンサート
+concert
+konsaato
+
+チケット
+ticket
+chiketto
+
+カラオケ
+karaoke
+karaoke
+
+カタカナ
+katakana script
+katakana
+
+ローマじ
+Roman alphabet
+roomaji
+
+かんじ
+Chinese characters
+kanji
+
+ひらがな
+hiragana script
+hiragana
+
+ジャズ
+jazz
+jazu
+
+クラシック
+classical music
+kurashikku
+
+ダンス
+dance
+dansu
+
+ダンスをします
+to dance
+dansu o shimasu
+
+スポーツをします
+play sports
+supootsu o shimasu
+
+スポーツ
+sport
+supootsu
+
+ビル
+building
+biru
+
+ポスト
+mailbox, postbox
+posuto
+
+スイッチ
+switch
+suicchi
+
+テーブル
+table
+teeburu
+
+ベッド
+bed
+beddo
+
+ドア
+door
+doa
+
+スパイスコーナー
+spice corner
+supaisu koonaa
+
+チリソース
+chili sauce
+chiri soosu
+
+とうきょうディズニーランド
+Tokyo Disneyland
+toukyou dizuniirando
+
+フィルム
+film
+firumu
+
+オーストラリア
+Australia
+oosutoraria
+
+カレー[ライス]
+curry (and rice)
+karee [raisu]
+
+サンドイッチ
+sandwich
+sandoicchi
+
+アイスクリーム
+ice cream
+aisukuriimu
+
+シンガポール
+Singapore
+shingapooru
+
+ホテル
+hotel
+hoteru
+
+パーティー
+party
+paatii
+
+ホンコン
+Hong Kong
+honkon
+
+ロシア
+Russia
+roshia
+
+パスポート
+passport
+pasupooto
+
+コピーします
+copy
+kopii shimasu
+
+エアコン
+air conditioner
+eakon
+
+カタログ
+catalog
+katarogu
+
+ソフト
+software
+sofuto
+
+ボタン
+button
+botan
+
+アジア
+Asia
+ajia
+
+バンドン
+Bandung
+bandon
+
+ベラクルス
+Veracruz
+berakurusu
+
+フランケン
+Franken
+furanken
+
+ベトナム
+Vietnam
+betonamu
+
+フエ
+Hue
+fue
+
+ジョギング
+jogging
+jogingu
+
+ジョギングをします
+jog
+jogingu o shimasu
+
+ジェイアール
+Japan Railway
+jei aaru
+
+ゴルフ
+golf
+gorufu
+
+ゴルフをします
+play golf
+gorufu o shimasu
+
+ケーキ
+cake
+keeki
+
+ダイエット
+diet
+daietto
+
+ビザ
+visa
+biza
+
+ニュース
+news
+nyuusu
+
+スピーチ
+speech
+supiichi
+
+スピーチをします
+make/deliver a speech
+supiichi o shimasu
+
+ユーモア
+humor
+yuumoa
+
+デザイン
+design
+dezain
+
+カンガルー
+kangaroo
+kangaruu
+
+パリ
+Paris
+pari
+
+アパート
+apartment
+apaato
+
+コート
+coat
+kooto
+
+スーツ
+suit
+suutsu
+
+セーター
+sweater
+seetaa
+
+サイズ
+size
+saizu
+
+グループ
+group
+guruupu
+
+チャンス
+chance, opportunity
+chansu
+
+ダイニングキッチン
+kitchen with a dining area
+dainingu kicchin
+
+ダイエッ を トします
+go on a diet
+daietto o shimasu
+
+ピアノ
+piano
+piano
+
+〜メートル
+~meter
+~meetoru
+
+`;
+
+allWords["Romaji1 - Hard"] = ``;
+
+allWords["Number1"] = ``;
+
+allWords["Number1 - Hard"] = ``;
+
 const appSettings = {
   "flagCounts": {
     "そうですか::I see. / Is that so?": 1,
     "なんですか::Yes?": 1,
     "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "Lesson 02",
-  "isHard": true,
+  "currentLesson": "Lesson 03",
+  "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz1",
@@ -8058,7 +9004,7 @@ const appSettings = {
   "selectedWordIndices": [],
   "isSelectionModeActive": false,
   "customCategories": [
-    "Phrases",
+    "Phrases1",
     "Questions",
     "Counters",
     "Food Names",
@@ -8081,13 +9027,21 @@ const appSettings = {
     "Kanji 17",
     "Kanji 18",
     "Kanji 19",
-    "Kanji 20"
+    "Kanji 20",
+    "Romaji1",
+    "Number1"
   ],
   "similarWordGroups": [
     {
       "words": []
     }
   ],
-  "hiddenCategories": [],
-  "lastDestCategory": "Phrases"
+  "hiddenCategories": [
+    "Romaji1",
+    "Phrases1",
+    "Questions1"
+  ],
+  "lastDestCategory": "Romaji1",
+  "activeDbGroup": "N5 Lessons",
+  "showCategoryModeActive": true
 };

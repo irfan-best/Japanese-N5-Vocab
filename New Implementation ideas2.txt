@@ -166,3 +166,6 @@ login into website, for each user have seperate change ordered data to be saved 
  counting those words if we stop in b/w the quiz it will only till now words count.
 
 show leaderboard of number of days and number of words practised in quiz mode.
+
+----------
+e -> click should open edit for current selected word

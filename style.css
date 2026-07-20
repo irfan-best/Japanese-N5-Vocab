@@ -291,7 +291,7 @@ input, select, textarea, button {
 }
 
 /* Theme Icons Toggle */
-#theme-toggle {
+#theme-toggle, #settings-toggle {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
@@ -299,12 +299,12 @@ input, select, textarea, button {
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
-#theme-toggle:hover {
+#theme-toggle:hover, #settings-toggle:hover {
   background-color: var(--border-color);
   border-color: var(--text-secondary);
 }
 
-#theme-toggle svg {
+#theme-toggle svg, #settings-toggle svg {
   width: 20px;
   height: 20px;
   stroke: currentColor;

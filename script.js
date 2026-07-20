@@ -17,7 +17,9 @@ const DEFAULT_SETTINGS = {
   customCategories: [],
   similarWordGroups: [],
   hiddenCategories: [],
-  lastDestCategory: ""
+  lastDestCategory: "",
+  activeDbGroup: "N5 Lessons",
+  showCategoryModeActive: false
 };
 
 // Main Runtime State Variables
@@ -178,10 +180,10 @@ function loadState() {
   // 1. Load Settings
   const savedSettings = localStorage.getItem('n5_app_settings');
   if (savedSettings) {
-    currentSettings = JSON.parse(savedSettings);
+    currentSettings = { ...DEFAULT_SETTINGS, ...JSON.parse(savedSettings) };
   } else {
     if (typeof appSettings !== 'undefined') {
-      currentSettings = { ...appSettings };
+      currentSettings = { ...DEFAULT_SETTINGS, ...appSettings };
     } else {
       currentSettings = { ...DEFAULT_SETTINGS };
     }
@@ -214,11 +216,19 @@ function loadState() {
     wordsInitializedFromJs = true;
   }
 
-  // Ensure all 25 lessons and hard versions exist
-  for (let i = 1; i <= 25; i++) {
+  // Ensure all 75 lessons and hard versions exist
+  for (let i = 1; i <= 75; i++) {
     const lStr = `Lesson ${String(i).padStart(2, '0')}`;
     const hStr = `${lStr} - Hard`;
     if (!currentWordsDb[lStr]) currentWordsDb[lStr] = [];
+    if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
+  }
+
+  // Ensure all 60 kanji categories and hard versions exist
+  for (let i = 1; i <= 60; i++) {
+    const kStr = `Kanji ${String(i).padStart(2, '0')}`;
+    const hStr = `${kStr} - Hard`;
+    if (!currentWordsDb[kStr]) currentWordsDb[kStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
@@ -430,6 +440,95 @@ function togglePlayAll() {
 // CORE LAYOUT RENDERING & CARD LOGIC
 // ==========================================================================
 
+function getLessonsForActiveGroup() {
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  const lessons = [];
+  let start = 1, end = 25;
+  if (group.startsWith("N4")) {
+    start = 26;
+    end = 50;
+  } else if (group.startsWith("N3")) {
+    start = 51;
+    end = 75;
+  }
+  for (let i = start; i <= end; i++) {
+    lessons.push(`Lesson ${String(i).padStart(2, '0')}`);
+  }
+  return lessons;
+}
+
+function getCategoriesForActiveGroup() {
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  const list = [];
+  
+  if (group === "N5 Lessons") {
+    for (let i = 1; i <= 25; i++) {
+      list.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N5 Kanji") {
+    for (let i = 1; i <= 20; i++) {
+      list.push(`Kanji ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N5 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!list.includes(k)) list.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!list.includes(cat)) list.push(cat);
+        }
+      });
+    }
+  } else if (group === "N4 Lessons") {
+    for (let i = 26; i <= 50; i++) {
+      list.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N4 Kanji") {
+    list.push("Kanji 21");
+  } else if (group === "N4 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!list.includes(k)) list.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!list.includes(cat)) list.push(cat);
+        }
+      });
+    }
+  } else if (group === "N3 Lessons") {
+    for (let i = 51; i <= 75; i++) {
+      list.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N3 Kanji") {
+    for (let i = 41; i <= 60; i++) {
+      list.push(`Kanji ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N3 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!list.includes(k)) list.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!list.includes(cat)) list.push(cat);
+        }
+      });
+    }
+  }
+  return list;
+}
+
 // Get key for currently selected lesson list
 function getActiveLessonKey() {
   let key = currentSettings.currentLesson;
@@ -475,15 +574,26 @@ function getShowAllWords() {
     return showAllWordsCache;
   }
   const uniqueMap = new Map();
-  for (const key in currentWordsDb) {
-    const list = currentWordsDb[key] || [];
-    list.forEach(w => {
+  const lessons = getLessonsForActiveGroup();
+  
+  lessons.forEach(lKey => {
+    // Normal list
+    const listN = currentWordsDb[lKey] || [];
+    listN.forEach(w => {
       const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
       if (!uniqueMap.has(dupKey)) {
         uniqueMap.set(dupKey, w);
       }
     });
-  }
+    // Hard list
+    const listH = currentWordsDb[lKey + " - Hard"] || [];
+    listH.forEach(w => {
+      const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
+      if (!uniqueMap.has(dupKey)) {
+        uniqueMap.set(dupKey, w);
+      }
+    });
+  });
   const merged = Array.from(uniqueMap.values());
   
   const cleanRomajiForSorting = (str) => {
@@ -507,7 +617,7 @@ function belongsToAnyCustomCategory(word) {
   return cats.some(c => customCats.includes(c) || c === "Similar Words");
 }
 
-let showCategoryModeActive = false;
+
 
 function getAllCategoriesForWord(word) {
   if (!word || !word.japanese || !word.english) return [];
@@ -527,7 +637,7 @@ function getAllCategoriesForWord(word) {
   // Check all lessons and custom categories in currentWordsDb
   for (const key in currentWordsDb) {
     const isHardKey = key.endsWith(" - Hard");
-    const baseKey = isHardKey ? key.slice(0, -9) : key;
+    const baseKey = isHardKey ? key.replace(" - Hard", "") : key;
     
     if (categories.includes(baseKey)) continue;
 
@@ -551,27 +661,16 @@ function getAllCategoriesForWord(word) {
     categories.push("Similar Words");
   }
 
-  // Check Same Meaning words (O(1) cached Set lookup)
-  if (!sameMeaningWordsKeysCache) {
-    getSameMeaningWords();
-  }
-  if (sameMeaningWordsKeysCache && sameMeaningWordsKeysCache.has(cacheKey)) {
-    categories.push("Same Meaning");
-  }
 
-  // Check Same Romaji words (O(1) cached Set lookup)
-  if (!sameRomajiWordsKeysCache) {
-    getSameRomajiWords();
-  }
-  if (sameRomajiWordsKeysCache && sameRomajiWordsKeysCache.has(cacheKey)) {
-    categories.push("Same Romaji");
-  }
 
   wordCategoriesCache.set(cacheKey, categories);
   return categories;
 }
 
 function isWordVisible(word) {
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  if (!group.endsWith("Lessons")) return true;
+
   const cats = getAllCategoriesForWord(word);
   if (cats.length === 0) return true;
 
@@ -595,6 +694,11 @@ function populateHiddenCategoriesUI() {
   if (!container) return;
   container.innerHTML = "";
 
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  if (!group.endsWith("Lessons")) {
+    return;
+  }
+
   if (!currentSettings.hiddenCategories) {
     currentSettings.hiddenCategories = [];
   }
@@ -603,27 +707,47 @@ function populateHiddenCategoriesUI() {
   const isShowAll = (currentSettings.currentLesson === 'Show All Words');
 
   if (isShowAll) {
-    for (let i = 1; i <= 25; i++) {
+    let start = 1, end = 25;
+    if (group.startsWith("N4")) {
+      start = 26;
+      end = 50;
+    } else if (group.startsWith("N3")) {
+      start = 51;
+      end = 75;
+    }
+    for (let i = start; i <= end; i++) {
       allCats.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
   }
 
+  let targetSuffix = "1";
+  if (group.startsWith("N4")) {
+    targetSuffix = "2";
+  } else if (group.startsWith("N3")) {
+    targetSuffix = "3";
+  }
+
+  const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+  allKeys.forEach(k => {
+    if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+      if (!allCats.includes(k)) allCats.push(k);
+    }
+  });
+
   if (currentSettings.customCategories) {
     currentSettings.customCategories.forEach(cat => {
-      if (!allCats.includes(cat)) {
-        allCats.push(cat);
+      if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+        if (!allCats.includes(cat)) {
+          allCats.push(cat);
+        }
       }
     });
   }
+
   if (!allCats.includes("Similar Words")) {
     allCats.push("Similar Words");
   }
-  if (!allCats.includes("Same Meaning")) {
-    allCats.push("Same Meaning");
-  }
-  if (!allCats.includes("Same Romaji")) {
-    allCats.push("Same Romaji");
-  }
+
 
   allCats.forEach(cat => {
     const div = document.createElement('div');
@@ -904,7 +1028,7 @@ function renderCards() {
     card.appendChild(enDiv);
     card.appendChild(romajiDiv);
 
-    if (showCategoryModeActive && !isMobileDevice()) {
+    if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
       const cats = getAllCategoriesForWord(word);
       if (cats.length > 0) {
         const catsDiv = document.createElement('div');
@@ -1108,7 +1232,7 @@ function moveSelectedToNormal() {
   showToast(`${isCustomCategory ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Normal list.`, 'success');
 }
 
-// Move selected items UP in position
+// Move selected items UP in position (left)
 function moveSelectedUp() {
   const currentKey = getActiveLessonKey();
   const list = currentWordsDb[currentKey];
@@ -1117,29 +1241,22 @@ function moveSelectedUp() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
   if (selectedIdxs.length === 0) return;
 
-  const firstSelected = selectedIdxs[0];
-  if (firstSelected === 0) return; // Already at top, do nothing
+  if (selectedIdxs[0] === 0) return; // Already at top, do nothing
 
-  const selectedElements = selectedIdxs.map(idx => list[idx]);
-  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
+  const newList = [...list];
+  selectedIdxs.forEach(idx => {
+    const temp = newList[idx];
+    newList[idx] = newList[idx - 1];
+    newList[idx - 1] = temp;
+  });
 
-  const insertIdx = firstSelected - 1;
-  unselectedElements.splice(insertIdx, 0, ...selectedElements);
-  currentWordsDb[currentKey] = unselectedElements;
+  currentWordsDb[currentKey] = newList;
 
-  // Calculate new contiguous indices for selection
-  const newSelectedIdxs = [];
-  for (let i = 0; i < selectedElements.length; i++) {
-    newSelectedIdxs.push(insertIdx + i);
-  }
-
-  // Update selection and focus
+  const newSelectedIdxs = selectedIdxs.map(idx => idx - 1);
   currentSettings.selectedWordIndices = newSelectedIdxs;
-  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
-  if (focusInSelected !== -1) {
-    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
-  } else {
-    currentSettings.focusedWordIndex = newSelectedIdxs[0];
+
+  if (currentSettings.focusedWordIndex >= 0) {
+    currentSettings.focusedWordIndex = Math.max(0, currentSettings.focusedWordIndex - 1);
   }
 
   saveWords();
@@ -1147,7 +1264,7 @@ function moveSelectedUp() {
   renderCards();
 }
 
-// Move selected items DOWN in position
+// Move selected items DOWN in position (right)
 function moveSelectedDown() {
   const currentKey = getActiveLessonKey();
   const list = currentWordsDb[currentKey];
@@ -1156,29 +1273,23 @@ function moveSelectedDown() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
   if (selectedIdxs.length === 0) return;
 
-  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
-  if (lastSelected === list.length - 1) return; // Already at bottom, do nothing
+  if (selectedIdxs[selectedIdxs.length - 1] === list.length - 1) return; // Already at bottom, do nothing
 
-  const selectedElements = selectedIdxs.map(idx => list[idx]);
-  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
-
-  const insertIdx = (lastSelected + 2) - selectedIdxs.length;
-  unselectedElements.splice(insertIdx, 0, ...selectedElements);
-  currentWordsDb[currentKey] = unselectedElements;
-
-  // Calculate new contiguous indices for selection
-  const newSelectedIdxs = [];
-  for (let i = 0; i < selectedElements.length; i++) {
-    newSelectedIdxs.push(insertIdx + i);
+  const newList = [...list];
+  for (let i = selectedIdxs.length - 1; i >= 0; i--) {
+    const idx = selectedIdxs[i];
+    const temp = newList[idx];
+    newList[idx] = newList[idx + 1];
+    newList[idx + 1] = temp;
   }
 
-  // Update selection and focus
+  currentWordsDb[currentKey] = newList;
+
+  const newSelectedIdxs = selectedIdxs.map(idx => idx + 1);
   currentSettings.selectedWordIndices = newSelectedIdxs;
-  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
-  if (focusInSelected !== -1) {
-    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
-  } else {
-    currentSettings.focusedWordIndex = newSelectedIdxs[0];
+
+  if (currentSettings.focusedWordIndex >= 0) {
+    currentSettings.focusedWordIndex = Math.min(list.length - 1, currentSettings.focusedWordIndex + 1);
   }
 
   saveWords();
@@ -1435,7 +1546,9 @@ function showQuizQuestion() {
       // Japanese -> English/Romaji (Review / Writing)
       qTextEl.textContent = word.japanese;
       qTextEl.classList.add('text-japanese');
-      speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
+      if (mode !== 'quiz8') {
+        speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
+      }
     }
 
     if (isWritingQuiz) {
@@ -1487,7 +1600,7 @@ function speakQuizAnswer() {
   
   stopSpeech();
   
-  if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz5' || mode === 'quiz7') {
+  if (mode === 'quiz1' || mode === 'quiz3' || mode === 'quiz5' || mode === 'quiz7' || mode === 'quiz8') {
     speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
   } else {
     speakText(word.english, 'en');
@@ -1529,7 +1642,7 @@ function checkQuizAnswer() {
 
   // If flashcard modes, speak the revealed word
   if (!isWritingQuiz) {
-    if (mode === 'quiz1') {
+    if (mode === 'quiz1' || mode === 'quiz8') {
       speakText(cleanJapaneseSpeakText(word.japanese), 'ja');
     } else if (mode === 'quiz2' || mode === 'quiz6') {
       speakText(word.english, 'en');
@@ -1768,6 +1881,14 @@ function openModal(modalId) {
   
   if (modalId === 'modal-flagged') {
     renderFlaggedWordsList();
+  } else if (modalId === 'modal-settings') {
+    const selectDbGroup = document.getElementById('select-db-group');
+    if (selectDbGroup) {
+      selectDbGroup.value = currentSettings.activeDbGroup || "N5 Lessons";
+      setTimeout(() => {
+        selectDbGroup.focus();
+      }, 100);
+    }
   }
 }
 
@@ -1861,48 +1982,91 @@ function renderFlaggedWordsList() {
 // KEYBOARD SHORTCUT HELPER FUNCTIONS
 // ==========================================================================
 
-function navigateNonLessonCategories(direction) {
+function navigateLessonCategory(direction) {
+  const selectLesson = document.getElementById('select-lesson');
+  if (!selectLesson || selectLesson.options.length === 0) return;
+  
+  let index = selectLesson.selectedIndex;
+  if (direction === 'next') {
+    index = (index + 1) % selectLesson.options.length;
+  } else if (direction === 'prev') {
+    index = (index - 1 + selectLesson.options.length) % selectLesson.options.length;
+  }
+  
+  const targetCategory = selectLesson.options[index].value;
+  stopSpeech();
+  
+  currentSettings.currentLesson = targetCategory;
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+  selectLesson.value = targetCategory;
+  
+  saveSettings();
+  renderCards();
+  showToast(`Category: ${targetCategory}`, 'info');
+}
+
+function selectFirstNonLessonNonKanjiCategory() {
   const selectLesson = document.getElementById('select-lesson');
   if (!selectLesson) return;
+  for (let i = 0; i < selectLesson.options.length; i++) {
+    const val = selectLesson.options[i].value;
+    const isLesson = val.match(/^Lesson\s+\d+/i);
+    const isKanji = val.match(/^Kanji\s+\d+/i);
+    if (!isLesson && !isKanji) {
+      stopSpeech();
+      currentSettings.currentLesson = val;
+      currentSettings.focusedWordIndex = -1;
+      currentSettings.selectedWordIndices = [];
+      selectLesson.value = val;
+      saveSettings();
+      renderCards();
+      showToast(`Category: ${val}`, 'info');
+      break;
+    }
+  }
+}
+
+function gotoQuestionsCategory() {
+  const selectLesson = document.getElementById('select-lesson');
+  if (!selectLesson) return;
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  let targetSuffix = "1";
+  if (group.startsWith("N4")) {
+    targetSuffix = "2";
+  } else if (group.startsWith("N3")) {
+    targetSuffix = "3";
+  }
+  const targetCategory = `Questions${targetSuffix}`;
   
-  const options = Array.from(selectLesson.options);
-  const nonLessons = options.filter(opt => {
-    const val = opt.value;
-    return val !== "Show All Words" && val !== "Similar Words" && !val.match(/^Lesson\s+\d+/i);
-  });
-  
-  // Wait, let's include all non-lessons!
-  // "Category navigation: Ctrl + Left Arrow / Ctrl + Right Arrow should navigate only through non-lesson categories.
-  // Example order: Show All Words -> Similar Words -> JLPT Revision -> Anime Words
-  // Lessons must NOT appear in this navigation anymore."
-  // So we filter out only standard lessons!
-  const finalNonLessons = options.filter(opt => !opt.value.match(/^Lesson\s+\d+/i));
-  if (finalNonLessons.length === 0) return;
-  
-  let currentVal = currentSettings.currentLesson;
-  let idx = finalNonLessons.findIndex(opt => opt.value === currentVal);
-  
-  if (idx === -1) {
-    idx = 0;
-  } else {
-    if (direction === 'next') {
-      idx = (idx + 1) % finalNonLessons.length;
-    } else {
-      idx = (idx - 1 + finalNonLessons.length) % finalNonLessons.length;
+  let found = false;
+  for (let i = 0; i < selectLesson.options.length; i++) {
+    if (selectLesson.options[i].value === targetCategory) {
+      found = true;
+      break;
     }
   }
   
-  const targetVal = finalNonLessons[idx].value;
-  
-  stopSpeech();
-  currentSettings.currentLesson = targetVal;
-  currentSettings.focusedWordIndex = -1;
-  currentSettings.selectedWordIndices = [];
-  
-  selectLesson.value = targetVal;
+  if (found) {
+    stopSpeech();
+    currentSettings.currentLesson = targetCategory;
+    currentSettings.focusedWordIndex = -1;
+    currentSettings.selectedWordIndices = [];
+    selectLesson.value = targetCategory;
+    saveSettings();
+    renderCards();
+    showToast(`Category: ${targetCategory}`, 'info');
+  } else {
+    showToast(`Category "${targetCategory}" not found in active group.`, 'warning');
+  }
+}
+
+function selectAllWordsInSelectionMode() {
+  const activeWords = getActiveWords();
+  currentSettings.selectedWordIndices = activeWords.map((_, idx) => idx);
   saveSettings();
   renderCards();
-  showToast(`Switched to category: ${targetVal}`, 'info');
+  showToast(`Selected all ${activeWords.length} words`, 'info');
 }
 
 function populateQuizSetupLessons() {
@@ -1911,11 +2075,7 @@ function populateQuizSetupLessons() {
   
   container.innerHTML = "";
   
-  // Scan currentWordsDb keys (filter out Hard version names to avoid duplication)
-  const keys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
-  
-  // Natural sorting to ensure order is logical (e.g. Lesson 01 before Lesson 10)
-  keys.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  const keys = getCategoriesForActiveGroup();
   
   keys.forEach(val => {
     if (val === "Show All Words" || val === "Similar Words") return;
@@ -2028,40 +2188,104 @@ function populateLessonsDropdown() {
   
   selectLesson.innerHTML = "";
 
-  // 1. Standard Lessons 01 - 25
-  for (let i = 1; i <= 25; i++) {
-    const opt = document.createElement('option');
-    const val = `Lesson ${String(i).padStart(2, '0')}`;
-    opt.value = val;
-    opt.textContent = val;
-    selectLesson.appendChild(opt);
-  }
-
-  // 2. Custom Categories & Special Categories sorted alphabetically
-  const nonLessons = [];
-  if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
-      if (!nonLessons.includes(cat)) {
-        nonLessons.push(cat);
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  
+  const lessonsList = [];
+  const kanjiList = [];
+  const othersList = [];
+  
+  if (group === "N5 Lessons") {
+    for (let i = 1; i <= 25; i++) {
+      lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N5 Kanji") {
+    for (let i = 1; i <= 20; i++) {
+      kanjiList.push(`Kanji ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N5 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!othersList.includes(k)) othersList.push(k);
       }
     });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!othersList.includes(cat)) othersList.push(cat);
+        }
+      });
+    }
+  } else if (group === "N4 Lessons") {
+    for (let i = 26; i <= 50; i++) {
+      lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N4 Kanji") {
+    kanjiList.push("Kanji 21");
+  } else if (group === "N4 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!othersList.includes(k)) othersList.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!othersList.includes(cat)) othersList.push(cat);
+        }
+      });
+    }
+  } else if (group === "N3 Lessons") {
+    for (let i = 51; i <= 75; i++) {
+      lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N3 Kanji") {
+    for (let i = 41; i <= 60; i++) {
+      kanjiList.push(`Kanji ${String(i).padStart(2, '0')}`);
+    }
+  } else if (group === "N3 Others") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+        if (!othersList.includes(k)) othersList.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+          if (!othersList.includes(cat)) othersList.push(cat);
+        }
+      });
+    }
   }
-  if (!nonLessons.includes("Show All Words")) nonLessons.push("Show All Words");
-  if (!nonLessons.includes("Similar Words")) nonLessons.push("Similar Words");
-  if (!nonLessons.includes("Same Meaning")) nonLessons.push("Same Meaning");
-  if (!nonLessons.includes("Same Romaji")) nonLessons.push("Same Romaji");
 
-  // Case-insensitive alphabetical sort
-  nonLessons.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  // Sort lists
+  lessonsList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  kanjiList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  othersList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-  nonLessons.forEach(cat => {
+  const specialList = ["Similar Words"];
+  if (group.endsWith("Others")) {
+    specialList.push("Show All Words", "Same Meaning", "Same Romaji");
+  }
+  const finalCategories = [...lessonsList, ...kanjiList, ...othersList, ...specialList];
+
+  finalCategories.forEach(cat => {
     const opt = document.createElement('option');
     opt.value = cat;
     opt.textContent = cat;
     selectLesson.appendChild(opt);
   });
 
-  // Sync hidden categories checklist UI
+  if (currentSettings.currentLesson) {
+    if (!finalCategories.includes(currentSettings.currentLesson)) {
+      currentSettings.currentLesson = finalCategories[0] || "Show All Words";
+      saveSettings();
+    }
+    selectLesson.value = currentSettings.currentLesson;
+  }
+
   populateHiddenCategoriesUI();
 }
 
@@ -2361,7 +2585,7 @@ function renderSimilarWordsGroups() {
       });
       
       let catsHtml = "";
-      if (showCategoryModeActive && !isMobileDevice()) {
+      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
         const cats = getAllCategoriesForWord(w);
         if (cats.length > 0) {
           catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
@@ -2418,7 +2642,7 @@ function renderSimilarWordsGroups() {
       });
       
       let catsHtml = "";
-      if (showCategoryModeActive && !isMobileDevice()) {
+      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
         const cats = getAllCategoriesForWord(w);
         if (cats.length > 0) {
           catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
@@ -2539,7 +2763,7 @@ function renderSimilarWordsGroups() {
         });
 
       let catsHtml = "";
-      if (showCategoryModeActive && !isMobileDevice()) {
+      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
         const cats = getAllCategoriesForWord(w);
         if (cats.length > 0) {
           catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
@@ -2708,18 +2932,43 @@ function openCategorySelectorModal(customWordsList = null) {
   
   const currentL = currentSettings.currentLesson;
   
-  // Custom categories (non-lessons) sorted alphabetically
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  let targetSuffix = "1";
+  if (group.startsWith("N4")) {
+    targetSuffix = "2";
+  } else if (group.startsWith("N3")) {
+    targetSuffix = "3";
+  }
+
+  const targetCats = [];
+
+  const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+  allKeys.forEach(k => {
+    if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+      if (k !== "Same Meaning" && k !== "Same Romaji" && k !== "Show All Words" && k !== currentL) {
+        if (!targetCats.includes(k)) targetCats.push(k);
+      }
+    }
+  });
+
   if (currentSettings.customCategories) {
-    const sortedCats = [...currentSettings.customCategories].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
-    sortedCats.forEach(cat => {
-      if (cat !== currentL) {
-        const opt = document.createElement('option');
-        opt.value = cat;
-        opt.textContent = cat;
-        selectDest.appendChild(opt);
+    currentSettings.customCategories.forEach(cat => {
+      if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+        if (cat !== "Same Meaning" && cat !== "Same Romaji" && cat !== "Show All Words" && cat !== currentL) {
+          if (!targetCats.includes(cat)) targetCats.push(cat);
+        }
       }
     });
   }
+
+  targetCats.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+
+  targetCats.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = cat;
+    selectDest.appendChild(opt);
+  });
   
   // Similar Words (if not currently on Similar Words)
   if (currentL !== "Similar Words") {
@@ -2907,7 +3156,9 @@ function initGlobalSearch() {
   if (!searchInput || !searchResults) return;
 
   searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.trim().toLowerCase();
+    const rawVal = e.target.value;
+    localStorage.setItem('n5_search_term', rawVal);
+    const query = rawVal.trim().toLowerCase();
     activeSearchResultIndex = -1;
     
     if (query.length > 0) {
@@ -3072,6 +3323,7 @@ function initGlobalSearch() {
   if (btnClear) {
     btnClear.addEventListener('click', () => {
       searchInput.value = "";
+      localStorage.removeItem('n5_search_term');
       btnClear.classList.add('hidden');
       searchResults.classList.add('hidden');
       searchResults.innerHTML = "";
@@ -3085,6 +3337,14 @@ function initGlobalSearch() {
       searchResults.classList.add('hidden');
     }
   });
+
+  // Restore saved search query
+  const savedSearch = localStorage.getItem('n5_search_term');
+  if (savedSearch) {
+    searchInput.value = savedSearch;
+    // Dispatch input event to trigger search results
+    searchInput.dispatchEvent(new Event('input'));
+  }
 }
 
 function triggerSearchResultsCategory() {
@@ -3285,6 +3545,55 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-clipboard').addEventListener('click', copySettingsToClipboard);
   document.getElementById('btn-reset-cache').addEventListener('click', resetCache);
 
+  // Settings Toggle
+  const settingsToggle = document.getElementById('settings-toggle');
+  if (settingsToggle) {
+    settingsToggle.addEventListener('click', () => {
+      const modal = document.getElementById('modal-settings');
+      if (modal && modal.classList.contains('hidden')) {
+        openModal('modal-settings');
+      } else {
+        closeActiveModal();
+      }
+    });
+  }
+
+  // Active DB Group selection
+  const selectDbGroup = document.getElementById('select-db-group');
+  if (selectDbGroup) {
+    selectDbGroup.addEventListener('change', (e) => {
+      currentSettings.activeDbGroup = e.target.value;
+      saveSettings();
+      populateLessonsDropdown();
+      renderCards();
+      populateQuizSetupLessons();
+    });
+  }
+
+  // Settings modal enter/escape close
+  const settingsModal = document.getElementById('modal-settings');
+  if (settingsModal) {
+    settingsModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeActiveModal();
+      }
+    });
+  }
+
+  // Import Modal Ctrl + Enter submit
+  const importText = document.getElementById('import-text');
+  if (importText) {
+    importText.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 'Enter') {
+        e.preventDefault();
+        const btnSubmit = document.getElementById('btn-submit-import');
+        if (btnSubmit) btnSubmit.click();
+      }
+    });
+  }
+
   // Modals close triggers
   document.getElementById('modal-backdrop').addEventListener('click', closeActiveModal);
   document.querySelectorAll('.btn-close-modal').forEach(btn => {
@@ -3472,9 +3781,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.ctrlKey && (e.key === 'p' || e.key === 'P')) {
       if (!isMobileDevice()) {
         e.preventDefault();
-        showCategoryModeActive = !showCategoryModeActive;
+        currentSettings.showCategoryModeActive = !currentSettings.showCategoryModeActive;
+        saveSettings();
         renderCards();
-        showToast(showCategoryModeActive ? "Show Category Mode: ON" : "Show Category Mode: OFF", "info");
+        showToast(currentSettings.showCategoryModeActive ? "Show Category Mode: ON" : "Show Category Mode: OFF", "info");
         return;
       }
     }
@@ -3502,6 +3812,37 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         return;
       }
+    }
+
+    // Alt + 1-5 for Display Mode selection
+    if (e.altKey && e.key >= '1' && e.key <= '5') {
+      e.preventDefault();
+      const selectDisplayMode = document.getElementById('select-display-mode');
+      if (selectDisplayMode) {
+        const index = parseInt(e.key, 10) - 1;
+        selectDisplayMode.selectedIndex = index;
+        selectDisplayMode.dispatchEvent(new Event('change'));
+        showToast(`Display Mode: ${selectDisplayMode.options[index].text}`, 'info');
+      }
+      return;
+    }
+
+    // Shift + Q / U Questions sequence detection
+    if (e.shiftKey && (e.key === 'q' || e.key === 'Q')) {
+      e.preventDefault();
+      shiftQActive = true;
+      if (shiftQTimeout) clearTimeout(shiftQTimeout);
+      shiftQTimeout = setTimeout(() => {
+        shiftQActive = false;
+      }, 1000);
+      return;
+    }
+    if (shiftQActive && (e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+      shiftQActive = false;
+      if (shiftQTimeout) clearTimeout(shiftQTimeout);
+      gotoQuestionsCategory();
+      return;
     }
 
     // Modal is currently visible: limit shortcut overrides
@@ -3628,15 +3969,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.ctrlKey) {
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
-        if (!currentSettings.isSelectionModeActive) {
-          navigateNonLessonCategories('prev');
-        }
+        navigateLessonCategory('prev');
         return;
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
-        if (!currentSettings.isSelectionModeActive) {
-          navigateNonLessonCategories('next');
-        }
+        navigateLessonCategory('next');
         return;
       } else if (e.key === 'Enter') {
         e.preventDefault();
@@ -3705,11 +4042,27 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         deleteSelected();
         break;
+      case 'e':
+      case 'E':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        if (!currentSettings.isSelectionModeActive) {
+          if (currentSettings.focusedWordIndex >= 0) {
+            e.preventDefault();
+            openWordEditModal(currentSettings.currentLesson, currentSettings.focusedWordIndex);
+          }
+        }
+        break;
       case 'q':
       case 'Q':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
         openQuizModal();
+        break;
+      case 'h':
+      case 'H':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        openModal('modal-help');
         break;
       case 'p':
       case 'P':
@@ -3735,6 +4088,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentSettings.isSelectionModeActive) {
           e.preventDefault();
           deleteSelected();
+        }
+        break;
+      case 'a':
+      case 'A':
+        if (e.ctrlKey) {
+          if (currentSettings.isSelectionModeActive) {
+            e.preventDefault();
+            selectAllWordsInSelectionMode();
+          }
+          return;
         }
         break;
       case 'i':
@@ -3765,9 +4128,16 @@ document.addEventListener('DOMContentLoaded', () => {
       case 's':
       case 'S':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
         if (currentSettings.isSelectionModeActive) {
-          e.preventDefault();
           openSimilarGroupSelectorModal();
+        } else {
+          const modal = document.getElementById('modal-settings');
+          if (modal && modal.classList.contains('hidden')) {
+            openModal('modal-settings');
+          } else {
+            closeActiveModal();
+          }
         }
         break;
       case 'Enter':
@@ -3810,6 +4180,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let shiftDigitBuffer = "";
 let shiftDigitTimeout = null;
+let shiftQActive = false;
+let shiftQTimeout = null;
 
 function handleShiftDigit(digit) {
   if (shiftDigitTimeout) {
@@ -3819,38 +4191,71 @@ function handleShiftDigit(digit) {
   
   shiftDigitBuffer += digit;
   
+  const isKanjiMode = (currentSettings.activeDbGroup || "N5 Lessons").includes("Kanji");
+  
   if (shiftDigitBuffer.length === 2) {
-    let lessonNum = parseInt(shiftDigitBuffer, 10);
-    if (lessonNum < 1) lessonNum = 1;
-    if (lessonNum > 25) lessonNum = 25;
+    let num = parseInt(shiftDigitBuffer, 10);
+    if (num < 1) num = 1;
     
-    switchLessonDirectly(lessonNum);
+    switchLessonOrKanjiDirectly(num, isKanjiMode);
     shiftDigitBuffer = "";
   } else {
     // Wait 450ms for a second digit
     shiftDigitTimeout = setTimeout(() => {
-      let lessonNum = parseInt(shiftDigitBuffer, 10);
-      if (lessonNum < 1) lessonNum = 1;
-      if (lessonNum > 25) lessonNum = 25;
+      let num = parseInt(shiftDigitBuffer, 10);
+      if (num < 1) num = 1;
       
-      switchLessonDirectly(lessonNum);
+      switchLessonOrKanjiDirectly(num, isKanjiMode);
       shiftDigitBuffer = "";
       shiftDigitTimeout = null;
     }, 450);
   }
 }
 
-function switchLessonDirectly(num) {
-  const lessonName = "Lesson " + String(num).padStart(2, '0');
+function switchLessonOrKanjiDirectly(num, isKanjiMode) {
   stopSpeech();
-  currentSettings.currentLesson = lessonName;
+  
+  let targetGroup = "";
+  let categoryName = "";
+  
+  if (isKanjiMode) {
+    if (num > 60) num = 60;
+    if (num <= 20) {
+      targetGroup = "N5 Kanji";
+    } else if (num <= 40) {
+      targetGroup = "N4 Kanji";
+    } else {
+      targetGroup = "N3 Kanji";
+    }
+    categoryName = "Kanji " + String(num).padStart(2, '0');
+  } else {
+    if (num > 75) num = 75;
+    if (num <= 25) {
+      targetGroup = "N5 Lessons";
+    } else if (num <= 50) {
+      targetGroup = "N4 Lessons";
+    } else {
+      targetGroup = "N3 Lessons";
+    }
+    categoryName = "Lesson " + String(num).padStart(2, '0');
+  }
+  
+  currentSettings.activeDbGroup = targetGroup;
+  currentSettings.currentLesson = categoryName;
   currentSettings.focusedWordIndex = -1;
   currentSettings.selectedWordIndices = [];
   
-  const selectLesson = document.getElementById('select-lesson');
-  if (selectLesson) selectLesson.value = lessonName;
+  const selectDbGroup = document.getElementById('select-db-group');
+  if (selectDbGroup) selectDbGroup.value = targetGroup;
   
   saveSettings();
+  populateLessonsDropdown();
+  
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) selectLesson.value = categoryName;
+  
   renderCards();
-  showToast(`Switched to ${lessonName}`, 'info');
+  populateQuizSetupLessons();
+  
+  showToast(`Group set to ${targetGroup}, navigated to ${categoryName}`, 'info');
 }
