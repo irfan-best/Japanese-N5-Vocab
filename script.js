@@ -166,6 +166,7 @@ function saveSettings() {
 
 function saveWords() {
   const dbCopy = { ...currentWordsDb };
+  console.log('dbCOpy:',dbCopy);
   delete dbCopy["Search Results"];
   delete dbCopy["Search Results - Hard"];
   localStorage.setItem('n5_words', JSON.stringify(dbCopy));
@@ -1239,26 +1240,34 @@ function moveSelectedUp() {
   if (!list || list.length === 0) return;
 
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  if (selectedIdxs.length === 0) return;
+  const firstSelected = selectedIdxs[0];
+  if (firstSelected === 0) return; // Already at top, do nothing
 
   if (selectedIdxs[0] === 0) return; // Already at top, do nothing
 
-  const newList = [...list];
-  selectedIdxs.forEach(idx => {
-    const temp = newList[idx];
-    newList[idx] = newList[idx - 1];
-    newList[idx - 1] = temp;
-  });
+  const selectedElements = selectedIdxs.map(idx => list[idx]);
+  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
 
-  currentWordsDb[currentKey] = newList;
+  const insertIdx = firstSelected - 1;
+  unselectedElements.splice(insertIdx, 0, ...selectedElements);
+  currentWordsDb[currentKey] = unselectedElements;
 
-  const newSelectedIdxs = selectedIdxs.map(idx => idx - 1);
-  currentSettings.selectedWordIndices = newSelectedIdxs;
-
-  if (currentSettings.focusedWordIndex >= 0) {
-    currentSettings.focusedWordIndex = Math.max(0, currentSettings.focusedWordIndex - 1);
+  // Calculate new contiguous indices for selection
+  const newSelectedIdxs = [];
+  for (let i = 0; i < selectedElements.length; i++) {
+    newSelectedIdxs.push(insertIdx + i);
   }
 
+  currentSettings.selectedWordIndices = newSelectedIdxs;
+
+  // Update selection and focus
+  currentSettings.selectedWordIndices = newSelectedIdxs;
+  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
+  if (focusInSelected !== -1) {
+    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
+  } else {
+    currentSettings.focusedWordIndex = newSelectedIdxs[0];
+  }
   saveWords();
   saveSettings();
   renderCards();
@@ -1273,23 +1282,29 @@ function moveSelectedDown() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
   if (selectedIdxs.length === 0) return;
 
-  if (selectedIdxs[selectedIdxs.length - 1] === list.length - 1) return; // Already at bottom, do nothing
+  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
+  if (lastSelected === list.length - 1) return; // Already at bottom, do nothing
 
-  const newList = [...list];
-  for (let i = selectedIdxs.length - 1; i >= 0; i--) {
-    const idx = selectedIdxs[i];
-    const temp = newList[idx];
-    newList[idx] = newList[idx + 1];
-    newList[idx + 1] = temp;
+  const selectedElements = selectedIdxs.map(idx => list[idx]);
+  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
+
+  const insertIdx = (lastSelected + 2) - selectedIdxs.length;
+  unselectedElements.splice(insertIdx, 0, ...selectedElements);
+  currentWordsDb[currentKey] = unselectedElements;
+
+  // Calculate new contiguous indices for selection
+  const newSelectedIdxs = [];
+  for (let i = 0; i < selectedElements.length; i++) {
+    newSelectedIdxs.push(insertIdx + i);
   }
 
-  currentWordsDb[currentKey] = newList;
-
-  const newSelectedIdxs = selectedIdxs.map(idx => idx + 1);
+  // Update selection and focus
   currentSettings.selectedWordIndices = newSelectedIdxs;
-
-  if (currentSettings.focusedWordIndex >= 0) {
-    currentSettings.focusedWordIndex = Math.min(list.length - 1, currentSettings.focusedWordIndex + 1);
+  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
+  if (focusInSelected !== -1) {
+    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
+  } else {
+    currentSettings.focusedWordIndex = newSelectedIdxs[0];
   }
 
   saveWords();
@@ -4113,6 +4128,10 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 100);
         }
         break;
+      case 'l':
+      case 'L':
+          var selectLesson = document.querySelector('#select-lesson');
+          selectLesson.focus();
       case 'c':
       case 'C':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;

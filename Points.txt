@@ -5,8 +5,8 @@ irashai -> friendly welcome, friends welcome to their home
 irashaimase -> polite used by workers when we are entering the shop.
 
 goro vs gurai: (chatgpt)
-    goro -> for around time
-    gurai -> about, approximately for quantities, amount, durations, distances, frequencies
+    goro -> is for a point in time (a specific time on the clock, a date, a age, a season).
+    gurai -> is for a duration or quantity (an amount of time, a period, or a general measure).
 
 yasumimasu vs yasumi o shimasu:
     yasumi o shimasu -> to take a rest
@@ -21,3 +21,165 @@ N wa arimasu ka vs N wa arimasen ka:
     N wa arimasen ka:
         This is a negative question, and it is more polite and considerate when making a request. By asking "don't you have it?", you are making it easier for the other person to say "no" without feeling guilty. It can also imply you hope or expect it might be there.
 
+as per chatgpt these are also na-adjectives:
+    hoshii
+    daijoubu
+    abunai
+
+Okurigana (送り仮名): chatgpt
+    are the Kana characters (usually Hiragana) that follow a Kanji to complete the spelling of a Japanese word — most commonly verbs and adjectives.
+    食べる and 食べた -> ru and ta are okurigana.
+
+    Using Okurigana we can express:
+        Tense (past, present, future)
+        Politeness (plain vs. masu form)
+        Negation (not doing something)
+        Part of Speech (distinguishing verbs from nouns or adjectives)
+
+Points:
+   Kanji   Reading	   Meaning	                        Dictionary      Form	Masu Form
+    切る	kiru	    to cut / slice / sever	        切る (kiru) 	切ります (kirimasu)
+    斬る	kiru	    to kill with a sword / slash	斬る (kiru) 	斬ります (kirimasu)
+    鑽る	kiru	    to strike fire (with flint)	    鑽る (kiru) 	鑽ります (kirimasu)
+
+Okimasu -> 2 meanings = get up, wake up     -> okiru
+    -> put                                  -> oku
+
+https://www.youtube.com/watch?v=B8CCwTGsnQY
+agaru -> to go up -> agarimasu -> group i
+
+Aku and Akeru -> both mean -> to open
+Aku -> Intransitive (Intransitive is said as Jidoushi in japanese)
+    Something opens / opens by itself
+Akeru -> Transitive (Tadoushi)
+    Someone opens something
+
+dashimasu -> means take out something -> Use this when physically moving an item out of a container, pocket, or bag.
+
+demasu -> is Intransitive as per chatgpt
+
+chatgpt:
+    Yobimasu (呼びます)	To call out to, summon, or invite	
+        Calling someone by shouting/speaking, calling a taxi/doctor, or inviting someone over.
+
+    Denwa shimasu(denwa o kakemasu):
+        calling to phone.
+
+sumimasu and sundeimasu -> both are same verb -> difference is only verb forms
+
+
+doubts -> why some verbs have " o shimasu" while some have "shimasu"
+all verbs to be classified to transitive and Intransitive
+
+ofuro ni hairimasu vs shawaa o abimasu: chatgpt
+    ofuro ni hairimasu:
+        Enter the bath / hot water (to enter)
+        Soaking in a deep tub of hot water
+    
+    Shawaa o abimasu
+        Douse / pour a shower over oneself (to pour/douse liquid over oneself)
+        Standing under running water to quickly wash
+
+makemasu vs nakushimasu (chatgpt):
+    nakushimasu
+        To lose an item, misplace, drop
+
+    makemasu:
+        To lose a game/match, get defeated
+
+hitori de vs jibun de:
+    一人で (hitori de) focuses on social presence → Without other people around / Physically alone.
+
+    自分で (jibun de) focuses on responsibility or effort → Without someone else's help / Doing it yourself.
+
+    (hitori de) — Physical Solitude
+        Use this when talking about physical presence or doing activities without companions.
+
+    (jibun de) — Personal Effort / Self-Reliance
+        Use this when you are doing a task on your own, making your own decision, or taking responsibility without relying on someone else.
+
+    hitori de ->
+        I cooked alone.	
+        No one else was in the kitchen with me.
+
+    Jibun de ->
+        I cooked it myself.	
+        I cooked it from scratch instead of eating out or having someone cook for me.
+    
+Otsuri:
+    is noun -> 
+    here is your change.
+
+Kaemasu:
+    verb -> to change
+    I will exchange dollars to yen.
+    I will change the schedule.
+
+hito vs (otoko no hito):
+    hito -> means gender neutral -> it means "person"/"people"
+    otoko no hito -> specifically means "man" or "male person."
+
+araimasu vs sentaku shimasu
+    (araimasu) is a general verb meaning to wash almost anything (hands, dishes, car, hair, clothes).
+    
+    (sentaku shimasu) specifically means to do laundry (washing clothes/fabrics using a machine or hand-washing setup).
+
+chikaku vs chikai:
+    (chikai) — Adjective ("is near")
+        Eki wa chikai desu.
+        The station is near.
+
+        Chikai mise
+        A close/nearby shop.
+
+    (chikaku) — Noun / Adverb ("vicinity / nearby")
+        Eki no chikaku ni hon'ya ga arimasu.
+        There is a bookstore in the vicinity of (near) the station.
+
+        Chikaku ni sunde imasu.
+        I live nearby.
+
+        (chikai)	Near / Close	        Describing something directly	
+                    (The house is near.)
+
+        (chikaku)	Nearness / Nearby	    Location marker
+                    (There is a park near my house.)
+
+nyuuyooku wa nanji desu ka
+vs
+nyuuyooku de nanji desu ka
+    The correct choice is nyuuyooku wa nanji desu ka (にゅーよーくは なんじですか).
+
+    Here is why は (wa) works and で (de) does not in this specific sentence structure:
+
+    1. にゅーよーくは なんじですか (Correct)
+    Topic Marker (は): Sets "New York" as the main topic you are asking about.
+
+    Literal meaning: "As for New York, what time is it?"
+
+    When to use: Whenever you want to ask the current time in a specific city or region.
+
+    2. にゅーよーくで なんじですか (Incorrect)
+    Action Location Marker (で): Marks the place where an action takes place (e.g., "I ate lunch at the restaurant").
+
+    Why it doesn't work: "Is" / "What time is it?" is a state of being, not an active event or action, so で cannot attach directly to なんじですか.
+
+Words like kesa(this morning), kinou no yoru(yesterday night), 毎日 (mainichi), 明日 (ashita), 今日 (kyou), 昨日 (kinou), 毎朝 (maiasa), etc. are time expressions. In Japanese, time expressions do not need the particle に (for these common words), and they are usually placed near the beginning of the sentence, before the topic.
+    The most common sentence order is:
+    Time + Topic (は) + Place (で/へ/に) + Object (を) + Verb
+
+    event Topic (wa) + Time + ... -> is also correct.
+
+Donna vs nanno:
+    Asks for qualities, descriptions, characteristics, or opinions (e.g., genre, personality, atmosphere). Think "What kind of [noun] is it?"
+    Donna machi desu ka?
+    What kind of town is it?
+    Nigiyaka na machi desu. — It's a lively town.
+
+    Asks for specific categories, topics, purpose, or identity (e.g., subject matter, brand, function). Think "What topic/type of [noun] is it?"
+    Nanno zasshi desu ka?
+    What kind of magazine is it? / What is the magazine about?
+    Kuruma no zasshi desu. — It's a car magazine
+
+    If the answer can be an adjective (kind, fast, quiet, difficult), use どんな.
+    If the answer is a specific noun or genre (sports, science, comedy, wood), use 何の.

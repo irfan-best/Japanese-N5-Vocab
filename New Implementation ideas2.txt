@@ -169,3 +169,56 @@ show leaderboard of number of days and number of words practised in quiz mode.
 
 ----------
 e -> click should open edit for current selected word
+----------------
+l-> should take focus to -> Lesson / category selector
+-------------------------
+(do these feature on 26th sunday)
+when i'm in "N5 Lessons" category if i goto some category hear lets say "lesson 20" save this information,
+so that if i open this "N5 Lessons" i should be going to the "Lesson 20" same for all groups(N5 Kanji, N5 Others, N4...)
+
+search results can you first show result of current catetogory and then exactly matched ones, 
+and then show other words
+
+on quiz page -> Move flag button right to cross button(the closing button), 
+    in the flag button position move the speaker buttons for both question and answer and make the speaker 
+    button width same as that of flag button, for Flag button we are current showing Flag icon + Flag text, but only
+    show Flag Icon
+
+Hidden Categories -> allow options of select all and deselect all
+
+When i select Quiz -> we have options to select lesson, there if i have selected lesson 7, and by holding
+if i select 4, then 4,5,6,7 -> all lesssons to be selected
+
+(Note: below feature only when Quiz Words order is "Origina")
+1.when an word is selected and if we are starting quiz then start the quiz from that words, 
+lets says i have selected 20th words, then quiz be acting as if move have already completed first 19 words
+and 20th words would be being shown in quiz
+2.when multiple words are selected in that case based on the first word.
+3.when multiple lessons -> lets says 4(20 words),6(20 words),7(20 words),10(20 words) -> are selected lesson and i'm in 6th lesson and if i have selected
+    and word lets say -> 10th words, then starting the quiz should be as if the first 29 words(20 words of 4th lesson, 9 words of 6th lesson) are completed and we 
+    are in 30th words
+
+lets not maintain search term instead when user search for and word and goes to search page if he refreshes the page
+then he should goto last opened category, since we previously had bug that is when we are in search page and then
+result the page we are getting 0 words on the page.
+
+when focus is on "Lesson / Category" dropdown -> all key shortcuts should not work
+
+when i'm search for an word and select and word then it will be going to that specific lesson right, 
+then it should switch the settings -> "Acitve Database / Group" if we are changing
+i.e if i'm in kanji Group and search for Lesson 22 word then Group should become Kanji group.
+
+when i'm in search box and clicking on esc is clearing search box but not clearing search term in local storgage
+same with when we select and word among the search results it is going to correct word and clearing search term,
+but it's not getting updated in the local storage.
+
+Clciking on shift + enter -> should give me an -> category search box on the middle of the screen,
+    and focus should automatically goto this search box
+    this will have matching results as dropdown values
+    clicking on down arrow should be 
+    higlightning first result, and then 2nd result and so on. 
+    -> once i select the category clicking on enter should take me to that category
+    when i select an category that is not in this group, i should still be going to that category and group a 
+    group should also be change if we are going to different category group
+    
+for hidden categories check boxes -> can you show checkbox options in sorted order
