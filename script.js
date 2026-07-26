@@ -171,6 +171,13 @@ function clearAllStateCaches() {
 
 // Save application state to local storage
 function saveSettings() {
+  const cat = currentSettings.currentLesson;
+  if (cat && cat !== 'Search Results' && cat !== 'Search Results - Hard') {
+    if (!currentSettings.lastGroupCategories) {
+      currentSettings.lastGroupCategories = {};
+    }
+    currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = cat;
+  }
   localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
   clearAllStateCaches();
 }
