@@ -1779,3 +1779,41 @@ body:not(.selection-mode-active) #btn-copy-to {
   font-weight: 500;
   transition: background-color var(--transition-fast);
 }
+
+/* Category Jump Modal Styling */
+.category-jump-row {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-fast);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-jump-row:last-child {
+  border-bottom: none;
+}
+.category-jump-row:hover, .category-jump-row.selected {
+  background-color: var(--border-color);
+}
+.category-jump-row .group-tag {
+  font-size: 0.75rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Quiz Speaker Navigation Buttons */
+.btn-quiz-speaker {
+  min-width: 95px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+#btn-quiz-flag:hover {
+  color: var(--accent) !important;
+}

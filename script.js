@@ -19,7 +19,18 @@ const DEFAULT_SETTINGS = {
   hiddenCategories: [],
   lastDestCategory: "",
   activeDbGroup: "N5 Lessons",
-  showCategoryModeActive: false
+  showCategoryModeActive: false,
+  lastGroupCategories: {
+    "N5 Lessons": "Lesson 01",
+    "N5 Kanji": "Kanji 01",
+    "N5 Others": "Questions1",
+    "N4 Lessons": "Lesson 26",
+    "N4 Kanji": "Kanji 21",
+    "N4 Others": "Questions2",
+    "N3 Lessons": "Lesson 51",
+    "N3 Kanji": "Kanji 41",
+    "N3 Others": "Questions3"
+  }
 };
 
 // Main Runtime State Variables
@@ -178,10 +189,16 @@ function loadState() {
   let settingsInitializedFromJs = false;
   let wordsInitializedFromJs = false;
 
+  // Clear search query on load so it's not maintained/restored on refresh
+  localStorage.removeItem('n5_search_term');
+
   // 1. Load Settings
   const savedSettings = localStorage.getItem('n5_app_settings');
   if (savedSettings) {
     currentSettings = { ...DEFAULT_SETTINGS, ...JSON.parse(savedSettings) };
+    if (currentSettings.currentLesson === 'Search Results') {
+      currentSettings.currentLesson = (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[currentSettings.activeDbGroup]) || "Lesson 01";
+    }
   } else {
     if (typeof appSettings !== 'undefined') {
       currentSettings = { ...DEFAULT_SETTINGS, ...appSettings };
@@ -202,6 +219,9 @@ function loadState() {
   }
   if (currentSettings.lastDestCategory === undefined) {
     currentSettings.lastDestCategory = "";
+  }
+  if (!currentSettings.lastGroupCategories) {
+    currentSettings.lastGroupCategories = { ...DEFAULT_SETTINGS.lastGroupCategories };
   }
 
   // 2. Load Words
@@ -692,13 +712,16 @@ function isWordVisible(word) {
 
 function populateHiddenCategoriesUI() {
   const container = document.getElementById('hidden-categories-container');
+  const actions = document.getElementById('hidden-categories-actions');
   if (!container) return;
   container.innerHTML = "";
 
   const group = currentSettings.activeDbGroup || "N5 Lessons";
   if (!group.endsWith("Lessons")) {
+    if (actions) actions.style.display = "none";
     return;
   }
+  if (actions) actions.style.display = "flex";
 
   if (!currentSettings.hiddenCategories) {
     currentSettings.hiddenCategories = [];
@@ -749,6 +772,40 @@ function populateHiddenCategoriesUI() {
     allCats.push("Similar Words");
   }
 
+  // Sort categories numerically / alphabetically
+  allCats.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+
+  // Dynamic bindings for Hidden Categories Select All / Clear All
+  const btnSelectAll = document.getElementById('btn-hide-select-all');
+  const btnSelectNone = document.getElementById('btn-hide-select-none');
+
+  if (btnSelectAll && !btnSelectAll.dataset.listenerBound) {
+    btnSelectAll.dataset.listenerBound = "true";
+    btnSelectAll.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Re-collect categories matching current suffix and lesson constraints to select all for current list
+      allCats.forEach(cat => {
+        if (!currentSettings.hiddenCategories.includes(cat)) {
+          currentSettings.hiddenCategories.push(cat);
+        }
+      });
+      saveSettings();
+      renderCards();
+      populateHiddenCategoriesUI();
+    });
+  }
+
+  if (btnSelectNone && !btnSelectNone.dataset.listenerBound) {
+    btnSelectNone.dataset.listenerBound = "true";
+    btnSelectNone.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Clear only the categories present in current list to prevent unchecking other groups' hidden settings
+      currentSettings.hiddenCategories = currentSettings.hiddenCategories.filter(cat => !allCats.includes(cat));
+      saveSettings();
+      renderCards();
+      populateHiddenCategoriesUI();
+    });
+  }
 
   allCats.forEach(cat => {
     const div = document.createElement('div');
@@ -1419,6 +1476,27 @@ function startQuiz() {
     userTyped: "",
     isCorrect: false
   }));
+
+  // Handle selected card starting point if quizOrder is "original"
+  if (orderVal === 'original' && currentSettings.selectedWordIndices.length > 0) {
+    const activeWords = getActiveWords();
+    const sortedSelIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
+    const selectedWord = activeWords[sortedSelIdxs[0]];
+    if (selectedWord) {
+      const targetIndex = quizWords.findIndex(qw => qw.japanese === selectedWord.japanese && qw.english === selectedWord.english);
+      if (targetIndex >= 0) {
+        quizCurrentIndex = targetIndex;
+        quizScore = targetIndex;
+        for (let i = 0; i < targetIndex; i++) {
+          quizStates[i] = {
+            answered: true,
+            userTyped: quizWords[i].japanese || "",
+            isCorrect: true
+          };
+        }
+      }
+    }
+  }
 
   // Toggle Quiz Views and Reset Navigation Controls
   document.getElementById('quiz-setup-view').classList.add('hidden');
@@ -3157,12 +3235,223 @@ function executeSimilarGroupWordCopy() {
   showToast(`Copied ${wordsToCopy.length} words to Group ${targetGroupIdx + 3}`, 'success');
 }
 
+let activeCategoryJumpIndex = -1;
+let categoryJumpMatches = [];
+
+function getAllAppCategories() {
+  const cats = [];
+  const added = new Set();
+  
+  for (const key in currentWordsDb) {
+    if (key === "Search Results" || key === "Search Results - Hard") continue;
+    const baseKey = key.endsWith(" - Hard") ? key.replace(" - Hard", "") : key;
+    if (!added.has(baseKey)) {
+      added.add(baseKey);
+      cats.push({
+        name: baseKey,
+        group: determineGroupForCategory(baseKey)
+      });
+    }
+  }
+
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      if (!added.has(cat)) {
+        added.add(cat);
+        cats.push({
+          name: cat,
+          group: determineGroupForCategory(cat)
+        });
+      }
+    });
+  }
+
+  cats.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
+  return cats;
+}
+
+function initCategoryJump() {
+  const jumpInput = document.getElementById('category-jump-input');
+  const jumpResults = document.getElementById('category-jump-results');
+  if (!jumpInput || !jumpResults) return;
+
+  jumpInput.addEventListener('input', () => {
+    const query = jumpInput.value.trim().toLowerCase();
+    const allCats = getAllAppCategories();
+    activeCategoryJumpIndex = -1;
+
+    if (query.length > 0) {
+      categoryJumpMatches = allCats.filter(c => c.name.toLowerCase().includes(query));
+    } else {
+      categoryJumpMatches = allCats;
+    }
+    
+    renderCategoryJumpResults();
+  });
+
+  jumpInput.addEventListener('keydown', (e) => {
+    const rows = jumpResults.querySelectorAll('.category-jump-row');
+    
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeActiveModal();
+      return;
+    }
+
+    if (rows.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeCategoryJumpIndex++;
+      if (activeCategoryJumpIndex >= rows.length) {
+        activeCategoryJumpIndex = rows.length - 1;
+      }
+      updateCategoryJumpHighlight(rows);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeCategoryJumpIndex--;
+      if (activeCategoryJumpIndex < 0) {
+        activeCategoryJumpIndex = -1;
+      }
+      updateCategoryJumpHighlight(rows);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      let selectedCat = null;
+      if (activeCategoryJumpIndex >= 0 && activeCategoryJumpIndex < categoryJumpMatches.length) {
+        selectedCat = categoryJumpMatches[activeCategoryJumpIndex];
+      } else if (categoryJumpMatches.length > 0) {
+        selectedCat = categoryJumpMatches[0];
+      }
+      if (selectedCat) {
+        jumpToCategory(selectedCat.name);
+        closeActiveModal();
+      }
+    }
+  });
+
+  function updateCategoryJumpHighlight(rows) {
+    rows.forEach((r, idx) => {
+      if (idx === activeCategoryJumpIndex) {
+        r.classList.add('selected');
+        r.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        r.classList.remove('selected');
+      }
+    });
+  }
+}
+
+function renderCategoryJumpResults() {
+  const jumpResults = document.getElementById('category-jump-results');
+  if (!jumpResults) return;
+  jumpResults.innerHTML = "";
+
+  if (categoryJumpMatches.length === 0) {
+    jumpResults.innerHTML = '<div style="padding: 0.6rem 0.8rem; font-size: 0.9rem; color: var(--text-secondary); text-align: center;">No matches found.</div>';
+    return;
+  }
+
+  const sliced = categoryJumpMatches.slice(0, 30);
+  sliced.forEach((item, idx) => {
+    const row = document.createElement('div');
+    row.className = 'category-jump-row';
+    if (idx === activeCategoryJumpIndex) {
+      row.classList.add('selected');
+    }
+    row.innerHTML = `
+      <span>${item.name}</span>
+      <span class="group-tag">${item.group}</span>
+    `;
+
+    row.addEventListener('click', () => {
+      jumpToCategory(item.name);
+      closeActiveModal();
+    });
+
+    jumpResults.appendChild(row);
+  });
+}
+
+function openCategoryJumpModal() {
+  const jumpInput = document.getElementById('category-jump-input');
+  if (jumpInput) {
+    jumpInput.value = "";
+  }
+  activeCategoryJumpIndex = -1;
+  categoryJumpMatches = getAllAppCategories();
+  renderCategoryJumpResults();
+  
+  openModal('modal-category-jump');
+  setTimeout(() => {
+    if (jumpInput) {
+      jumpInput.focus();
+      jumpInput.select();
+    }
+  }, 100);
+}
+
+function jumpToCategory(categoryName) {
+  stopSpeech();
+  
+  const targetGroup = determineGroupForCategory(categoryName);
+  
+  if (targetGroup !== currentSettings.activeDbGroup) {
+    currentSettings.activeDbGroup = targetGroup;
+    const selectDbGroup = document.getElementById('select-db-group');
+    if (selectDbGroup) {
+      selectDbGroup.value = targetGroup;
+    }
+    populateLessonsDropdown();
+    populateQuizSetupLessons();
+  }
+
+  currentSettings.currentLesson = categoryName;
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+  
+  if (!currentSettings.lastGroupCategories) {
+    currentSettings.lastGroupCategories = {};
+  }
+  currentSettings.lastGroupCategories[targetGroup] = categoryName;
+
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) {
+    selectLesson.value = categoryName;
+  }
+
+  saveSettings();
+  renderCards();
+  
+  showToast(`Jumped to: ${categoryName} (${targetGroup})`, 'info');
+}
+
 // --------------------------------------------------------------------------
 // GLOBAL SEARCH KEYBOARD NAVIGATION & IMPROVEMENTS
 // --------------------------------------------------------------------------
 
-let activeSearchResultIndex = -1;
+function determineGroupForCategory(lessonKey) {
+  const isHardWord = lessonKey.endsWith(" - Hard");
+  const baseKey = isHardWord ? lessonKey.replace(" - Hard", "") : lessonKey;
+  
+  if (baseKey.match(/^Lesson\s+(\d+)/i)) {
+    const num = parseInt(baseKey.match(/^Lesson\s+(\d+)/i)[1], 10);
+    if (num >= 1 && num <= 25) return "N5 Lessons";
+    if (num >= 26 && num <= 50) return "N4 Lessons";
+    if (num >= 51 && num <= 75) return "N3 Lessons";
+  } else if (baseKey.match(/^Kanji\s+(\d+)/i)) {
+    const num = parseInt(baseKey.match(/^Kanji\s+(\d+)/i)[1], 10);
+    if (num >= 1 && num <= 20) return "N5 Kanji";
+    if (num === 21) return "N4 Kanji";
+    if (num >= 41 && num <= 60) return "N3 Kanji";
+  } else {
+    if (baseKey.endsWith("1")) return "N5 Others";
+    if (baseKey.endsWith("2")) return "N4 Others";
+    if (baseKey.endsWith("3")) return "N3 Others";
+  }
+  return "N5 Lessons";
+}
 
+let activeSearchResultIndex = -1;
 
 function initGlobalSearch() {
   const searchInput = document.getElementById('global-search-input');
@@ -3180,22 +3469,45 @@ function initGlobalSearch() {
       if (btnClear) btnClear.classList.remove('hidden');
       searchResults.classList.remove('hidden');
       
-      // Perform search across all lessons
-      const results = [];
+      const currentL = currentSettings.currentLesson;
+      const currentLHard = currentL + " - Hard";
+
+      const group1 = []; // current category
+      const group2 = []; // exact match
+      const group3 = []; // partial match
       
       for (const lessonKey in currentWordsDb) {
+        if (lessonKey === "Search Results" || lessonKey === "Search Results - Hard") continue;
         const list = currentWordsDb[lessonKey];
+        const isCurrentCat = (lessonKey === currentL || lessonKey === currentLHard);
+
         list.forEach(w => {
-          const engMatch = w.english.toLowerCase().includes(query);
-          const romajiMatch = w.romaji.toLowerCase().includes(query);
-          if (engMatch || romajiMatch) {
-            results.push({
+          const engLower = w.english.toLowerCase();
+          const romajiLower = w.romaji.toLowerCase();
+          const jpLower = w.japanese.toLowerCase();
+
+          const engMatch = engLower.includes(query);
+          const romajiMatch = romajiLower.includes(query);
+          const jpMatch = jpLower.includes(query);
+
+          if (engMatch || romajiMatch || jpMatch) {
+            const isExact = (engLower === query || romajiLower === query || jpLower === query);
+            const item = {
               word: w,
               lessonKey: lessonKey
-            });
+            };
+            if (isCurrentCat) {
+              group1.push(item);
+            } else if (isExact) {
+              group2.push(item);
+            } else {
+              group3.push(item);
+            }
           }
         });
       }
+
+      const results = [...group1, ...group2, ...group3];
       
       // Render results
       searchResults.innerHTML = "";
@@ -3229,10 +3541,26 @@ function initGlobalSearch() {
             // Click handler
             stopSpeech();
             
+            // Switch DB Group if it has changed
+            const targetGroup = determineGroupForCategory(res.lessonKey);
+            if (targetGroup !== currentSettings.activeDbGroup) {
+              currentSettings.activeDbGroup = targetGroup;
+              const selectDbGroup = document.getElementById('select-db-group');
+              if (selectDbGroup) selectDbGroup.value = targetGroup;
+              populateLessonsDropdown();
+              populateQuizSetupLessons();
+            }
+
             // Switch lesson and difficulty
             currentSettings.currentLesson = lessonBase;
             currentSettings.isHard = isHardWord;
             
+            // Update lastGroupCategories for that group
+            if (!currentSettings.lastGroupCategories) {
+              currentSettings.lastGroupCategories = {};
+            }
+            currentSettings.lastGroupCategories[targetGroup] = lessonBase;
+
             // Update dropdown and radios
             const selectLesson = document.getElementById('select-lesson');
             if (selectLesson) selectLesson.value = lessonBase;
@@ -3271,6 +3599,7 @@ function initGlobalSearch() {
             
             // Clear search
             searchInput.value = "";
+            localStorage.removeItem('n5_search_term');
             if (btnClear) btnClear.classList.add('hidden');
             searchResults.classList.add('hidden');
           });
@@ -3291,6 +3620,7 @@ function initGlobalSearch() {
     if (e.key === 'Escape') {
       e.preventDefault();
       searchInput.value = "";
+      localStorage.removeItem('n5_search_term');
       if (btnClear) btnClear.classList.add('hidden');
       searchResults.classList.add('hidden');
       searchResults.innerHTML = "";
@@ -3497,11 +3827,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  let lastQuizCheckbox = null;
+  const quizLessonsContainer = document.getElementById('quiz-lessons-container');
+  if (quizLessonsContainer) {
+    quizLessonsContainer.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target.type === 'checkbox') {
+        const checkboxes = Array.from(quizLessonsContainer.querySelectorAll('input[type="checkbox"]'));
+        if (e.shiftKey && lastQuizCheckbox) {
+          const start = checkboxes.indexOf(lastQuizCheckbox);
+          const end = checkboxes.indexOf(target);
+          const checkedState = target.checked;
+          if (start !== -1 && end !== -1) {
+            const min = Math.min(start, end);
+            const max = Math.max(start, end);
+            for (let i = min; i <= max; i++) {
+              checkboxes[i].checked = checkedState;
+            }
+          }
+        }
+        lastQuizCheckbox = target;
+      }
+    });
+  }
+
   // Selectors changed updates
   if (selectLesson) {
     selectLesson.addEventListener('change', (e) => {
       stopSpeech();
-      currentSettings.currentLesson = e.target.value;
+      const val = e.target.value;
+      currentSettings.currentLesson = val;
+      if (val !== 'Search Results' && val !== 'Search Results - Hard') {
+        if (!currentSettings.lastGroupCategories) {
+          currentSettings.lastGroupCategories = {};
+        }
+        currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = val;
+      }
       currentSettings.focusedWordIndex = -1;
       currentSettings.selectedWordIndices = [];
       saveSettings();
@@ -3577,7 +3938,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectDbGroup = document.getElementById('select-db-group');
   if (selectDbGroup) {
     selectDbGroup.addEventListener('change', (e) => {
-      currentSettings.activeDbGroup = e.target.value;
+      const targetGroup = e.target.value;
+      currentSettings.activeDbGroup = targetGroup;
+      if (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[targetGroup]) {
+        currentSettings.currentLesson = currentSettings.lastGroupCategories[targetGroup];
+      }
       saveSettings();
       populateLessonsDropdown();
       renderCards();
@@ -3675,6 +4040,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize Global Search popover
   initGlobalSearch();
+
+  // Initialize Category Jump modal
+  initCategoryJump();
 
   // Word Edit Modal keyboard shortcuts (Enter to save, Esc to cancel)
   const editModal = document.getElementById('modal-edit-word');
@@ -3792,6 +4160,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // ================= GLOBAL KEYBOARD SHORTCUTS =================
 
   document.addEventListener('keydown', (e) => {
+    // Shift + Enter for Quick Category Jump
+    if (e.shiftKey && e.key === 'Enter') {
+      e.preventDefault();
+      openCategoryJumpModal();
+      return;
+    }
+
     // Ctrl + P toggle category mode
     if (e.ctrlKey && (e.key === 'p' || e.key === 'P')) {
       if (!isMobileDevice()) {
@@ -3821,7 +4196,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // If typing in standard inputs, bypass keyboard shortcuts except enter for quiz
     const tag = e.target.tagName.toLowerCase();
-    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) {
+    if (tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable) {
       if (e.target.id === 'quiz-typed-answer') {
         if (e.key !== 'Enter') return;
       } else {

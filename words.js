@@ -15250,6 +15250,10 @@ nan desu ka
 See you [tomorrow].
 ja, mata [ashita]
 
+メキシコ
+Mekishiko
+Mexico
+
 きります
 cut, slice
 kirimasu
@@ -15429,6 +15433,10 @@ itadakimasu
 ごちそうさま ［でした］
 That was delicious. (said after eating or drinking)
 gochisousama [deshita]
+
+スペイン
+Spain
+supein
 
 ハンサム ［な］
 handsome
@@ -16041,6 +16049,10 @@ koonaa
 いちばん した
 the bottom
 ichiban shita
+
+とうきょうディズニーランド
+Tokyo Disneyland
+toukyou dizuniirando
 
 います ［こどもが～］
 have [a child]
@@ -18089,8 +18101,8 @@ const appSettings = {
     "なんですか::Yes?": 1,
     "しちにんのさむらい::The Seven Samurai": 1
   },
-  "currentLesson": "All N5 Vocab1",
-  "isHard": true,
+  "currentLesson": "Romaji1",
+  "isHard": false,
   "displayMode": "big-japanese",
   "readingGap": "0",
   "quizMode": "quiz1",
@@ -18172,5 +18184,16 @@ const appSettings = {
   ],
   "lastDestCategory": "Half Words1",
   "activeDbGroup": "N5 Others",
-  "showCategoryModeActive": true
+  "showCategoryModeActive": true,
+  "lastGroupCategories": {
+    "N5 Lessons": "Lesson 01",
+    "N5 Kanji": "Kanji 01",
+    "N5 Others": "Questions1",
+    "N4 Lessons": "Lesson 26",
+    "N4 Kanji": "Kanji 21",
+    "N4 Others": "Questions2",
+    "N3 Lessons": "Lesson 51",
+    "N3 Kanji": "Kanji 41",
+    "N3 Others": "Questions3"
+  }
 };

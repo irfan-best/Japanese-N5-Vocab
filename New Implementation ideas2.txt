@@ -222,3 +222,9 @@ Clciking on shift + enter -> should give me an -> category search box on the mid
     group should also be change if we are going to different category group
     
 for hidden categories check boxes -> can you show checkbox options in sorted order
+
+---
+
+when i'm in an group and being an category, and then changing category in the samegroup then it should maintain
+current selected category part, so that when i switch to someother group and then switch back to this group then
+it should directly open this category.
