@@ -1,0 +1,93 @@
+I have kanji data in one js file like this:
+var allKanji = [
+  {
+    "kanji": "上",
+    "name": "Radical Combination",
+    "url": "https://www.wanikani.com/kanji/%E4%B8%8A",
+    "radicals": [
+      "Toe",
+      "Ground"
+    ]
+  },
+  {
+    "kanji": "下",
+    "name": "Radical Combination",
+    "url": "https://www.wanikani.com/kanji/%E4%B8%8B",
+    "radicals": [
+      "Ground",
+      "Toe"
+    ]
+  },
+.....
+]
+
+and radicals data like this:
+{
+  "ability": "能",
+  "above": "上",
+  "accept": "受",
+  "again": "亦"
+  ...
+}
+
+so i want you to show all kanjis in "All Kanjis" category and allow me to selected kanjis to 
+categories like N5, N4, N3, N2, N1
+also give options to copy to categories options and create new categories.
+
+i want options to show kanjis from all categories dont show duplicates(if there are duplicates show only once).
+
+i should be able to delete selected kanjis.
+i should be able to move the selected kanjis
+
+selection logic should work like this clicking on 4th kanjis will select it, 
+and then clicking 8th kanji will select 8th kanji(4th kanji wont be unselected),
+when click on already selected kanji it should become unselected.
+when click on an kanji by holding shift in that lets say i selected 11th kanji then 9,10,11 kanjis should be selected
+since closed selected kanji is 8th kanji
+lets say i have selected 20th kanji, by holding shift if i click on 16th kanji then 16 to 19 kanjis to be selected
+since 16th kanji is closer to 20th kanji than that of 11th kanji.
+and then clicking on up arrow should move the kanjis to this order:
+    1,2,4,8,9,10,11,16,17,18,19,3,5,6....
+    lly for down arrow logic basically it based on last selected kanji.
+
+when clicking on N -> will toogle showing name(Kanji Name) below the kanji (or) not
+r -> will toogle showing radicals or not
+we need to show radicals that are linked to our kanji ( we need to show both radical symbol and below it radical name)
+
+ctrl + M = toogles selection mode, when im in selection mode only then selection will be possible,
+only then deletion/copy/move kanji options are available
+
+p -> clicking this key should allow me to create new category
+when i'm not in sleectoin mode clicking on left arrow should goto previous category, right arrow should take me 
+to the next category.
+
+clicking on any kanji (or) radical when not in selection mode should open it's wanikani link.
+
+when i click on q -> it should start quiz, should give me option to select orignal (or) random order
+also option to select Kanji to English (or) English to Kanji.
+show kanji and clicking on enter button will reveal the Kanji Name
+right arrow should goto next question, left arrow shoudl goto previous question.
+
+when i'm radical (or) name of kanji is not being shown then hovering on that kanji should show both radicals 
+and name of the kanji -> this rule apply for even for quiz mode.
+
+create radical for each category, when i'm in on category clicking ctrl + enter will toogle radical (Or) kanji
+for radicals also i should be able to change order of them but should not be able to move/copy/delete.
+radical category values will be based on the kanji's present in the current category,
+initial value for radical will be from kanji's category, and then if we remove some kanji from kanji category then 
+remove the radical of it if no other kanji of current kanji category has this radical, if new kanji got added to category
+and if any of this kanji's radical are not present in radical category then append the radical to last.
+
+all data of kanji order and radical and radical order and categories to be saved to local storage.
+also clicking on c i should be able to copy the entire local storage data to clipboard, 
+lets have one seperate js file that will have category, radical, radical order, kanji order, show radical or no
+show kanji name or now, currently open category, if it is radical mode (or) kanji mode, every single data to be present in 
+this js file.
+
+clicking on c will copy the data to the clipboard right, that data i will be using to replace this js file 
+so that even if i open the file in someother device i should be able to get the changes.
+
+when local storage is not set initialize the data from local storage, once it is done continue using form local storage,
+i will be changing the data of js fiel using c command.
+
+option to theme changer.

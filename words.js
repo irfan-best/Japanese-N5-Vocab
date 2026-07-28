@@ -2,12 +2,12 @@ const allWords = {};
 
 allWords["Lesson 01"] = `
 はじめまして
-How do you do? (introducing oneself for the first time) (lit. for the first time)
+How do you do? (lit. I am meeting you for the first time. Usually used as the first phrase when introducing oneself.)
 hajimemashite
 
-どうぞよろしくおねがいします
-Pleased to meet you. (lit. Please be nice to me)
-douzo yoroshiku onegaishimasu
+［どうぞ］ よろしく ［おねがいします］
+Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
+[douzo] yoroshiku [onegaishimasu]
 
 わたしたち
 we
@@ -70,11 +70,11 @@ student
 gakusei
 
 ~しゃいん
-employee of (company)
+employee of ～ company (used with a company's name, e.g. IMCの しゃいん)
 shain
 
 いしゃ
-doctor
+[medical] doctor
 isha
 
 なんさい
@@ -82,7 +82,7 @@ how old
 nansai
 
 みなさん
-everyone, all of you
+Ladies and Gentlemen, everybody
 minasan
 
 エンジニア
@@ -114,7 +114,7 @@ May i have your name?
 onamae wa
 
 アメリカ
-America
+U.S.A.
 amerika
 
 インドネシア
@@ -146,7 +146,7 @@ a nationality of-
 -jin
 
 せんせい
-teacher (referring to others)
+teacher, instructor (not used when referring to one's own job)
 sensei
 
 `;
@@ -157,11 +157,11 @@ researcher, scholar
 kenkyuusha
 
 しつれいですが
-excuse me but
+Excuse me, but (used when asking someone for personal information such as their name or address)
 shitsurei desu ga
 
 きょうし
-teacher (referring to one's own job)
+teacher, instructor
 kyoushi
 
 じこしょうかいをおねがいします。
@@ -185,30 +185,34 @@ Germany
 doitsu
 
 かんこく
-Korea
+South Korea
 kankoku
 
 イギリス
 U.K.
 igirisu
 
+ちゅうごく
+China
+chuugoku
+
 `;
 
 allWords["Lesson 02"] = `
 そうですか
-I see. / Is that so?
+I see.
 sou desu ka
 
 あのう
-well, err
+Er... (used to show hesitation)
 anou
 
 これ
-this
+this (thing here)
 kore
 
 それ
-that (thing near you)
+that (thing near the listener)
 sore
 
 あれ
@@ -216,15 +220,15 @@ that (thing over there)
 are
 
 この〜
-this (noun) here
+this ～, this ～ here
 kono~
 
 その〜
-that (noun) near you
+that ～, that ～ near the listener
 sono~
 
 あの〜
-that (noun) over there
+that ～, that ～ over there
 ano~
 
 ほん
@@ -237,10 +241,10 @@ zasshi
 
 ノート
 notebook
-nooto
+nouto
 
 カード
-card
+(credit) card
 kaado
 
 テレホンカード
@@ -293,7 +297,7 @@ chokoreeto
 
 コーヒー
 coffee
-koohii
+kouhii
 
 えいご
 the English language
@@ -319,6 +323,18 @@ sou
 No it isn't. / You are wrong.
 chigaimasu
 
+［お］みやげ
+souvenir, present
+[o]miyage
+
+えっ
+Oh? What! (used when hearing something unexpected)
+e?
+
+あ
+Oh! (used when becoming aware of something)
+a
+
 `;
 
 allWords["Lesson 02 - Hard"] = `
@@ -339,7 +355,7 @@ Well, thanks
 doumo
 
 どうぞ
-Please. / Here you are.
+Here you are. (used when offering someone something)
 douzo
 
 ほんのきもちです
@@ -375,7 +391,7 @@ business card
 meishi
 
 てちょう
-pocket notebook, dairy
+personal organiser, pocket notebook, dairy
 techou
 
 しんぶん
@@ -657,11 +673,27 @@ senman
 99 999 999
 kyuusen kyuuhyaku kyuujuu kyuuman kyuusen kyuuhyaku kyuujuu kyuu
 
+イタリア
+Italy
+itaria
+
+スイス
+Switzerland
+suisu
+
+ジャカルタ
+Jakarta
+jakaruta
+
+ベルリン
+Berlin
+berurin
+
 `;
 
 allWords["Lesson 03 - Hard"] = `
 かいぎしつ
-meeting/ conference room
+meeting room, conference room
 kaigishitsu
 
 かいだん
@@ -705,8 +737,12 @@ Please show me ~.
 -o misete kudasai
 
 でんわ
-telephone, telephone call
+telephone handset, telephone call
 denwa
+
+じどうはんばいき
+vending machine
+jidouhanbaiki
 
 `;
 
@@ -955,7 +991,7 @@ the number being inquired about
 otoiawase no bangou
 
 びじゅつかん
-art museum
+art museum, art gallery
 bijutsukan
 
 としょかん
@@ -1082,7 +1118,7 @@ taxi
 takushii
 
 ひと
-person, man
+person, people
 hito
 
 ともだち
@@ -1197,15 +1233,15 @@ airplane
 hikouki
 
 ふつう
-local train
+local (train)
 futsuu
 
 きゅうこう
-Express Train
+Rapid
 kyuukou
 
 とっきゅう
-Limited express train
+Express
 tokkyuu
 
 しんかんせん
@@ -1348,7 +1384,7 @@ that's good
 ii desu ne
 
 なんですか
-Yes?
+Yes? (lit: What is it?)
 nan desu ka
 
 じゃ、また [あした]
@@ -1376,7 +1412,7 @@ buy
 kaimasu
 
 します
-do
+do, play
 shimasu
 
 ごはん
@@ -1436,7 +1472,7 @@ alcohol, Japanese rice wine
 (o)sake
 
 ビデオ
-video
+video [tape], video deck
 bideo
 
 えいが
@@ -1471,6 +1507,10 @@ sakkaa
 what
 nani
 
+メキシコ
+Mekishiko
+Mexico
+
 `;
 
 allWords["Lesson 06 - Hard"] = `
@@ -1487,7 +1527,7 @@ write, draw, paint
 kakimasu
 
 みます
-see, look, watch
+see, look at, watch
 mimasu
 
 あいます
@@ -1530,6 +1570,10 @@ ohanami
 together
 isshoni
 
+おはなみ をします
+ohanami o shimasu
+view the cherry blossoms
+
 `;
 
 allWords["Lesson 07"] = `
@@ -1541,9 +1585,9 @@ make (a phone call)
 not yet
 mada
 
-パンチャ
-hole punch
-pancha
+パンチ
+punch
+panchi
 
 かみ
 paper
@@ -1594,19 +1638,19 @@ ticket
 kippu
 
 ちち
-my father
+(my) father
 chichi
 
 はは
-my mother
+(my) mother
 haha
 
 おとうさん
-someone else's father
+(someone else's) father (also used to address one's own father)
 otousan
 
 おかあさん
-someone else's mother
+(someone else's) mother (also used to address one's own mother)
 okaasan
 
 もう
@@ -1629,19 +1673,15 @@ stapler
 hocchikisu
 
 にもつ
-baggage, parcel
+luggage, baggage, parcel
 nimotsu
-
-おみやげ
-souvenir, present
-omiyage
 
 どうぞおあがりください
 Do come in.
 douzo oagari kudasai
 
 きります
-cut
+cut, slice
 kirimasu
 
 おくります
@@ -1681,7 +1721,7 @@ scissors
 hasami
 
 けしゴム
-eraser
+eraser, rubber
 keshigomu
 
 これから
@@ -1693,7 +1733,7 @@ Anybody home?, May I come in?
 gomenkudasai
 
 いらっしゃい
-Welcome
+How nice of you to come. (lit. Welcome.)
 irasshai
 
 しつれいします
@@ -1705,7 +1745,7 @@ Would you like to have ~?
 ~ wa ikaga desu ka
 
 いただきます
-Thank you, I accept
+Thank you./I accept. (said before starting to eat or drink)
 itadakimasu
 
 りょこう
@@ -1729,8 +1769,24 @@ word processor
 waapuro
 
 セロテープ
-scotch tape, adhesive tape
+Sellotape, Scotch tape, clear adhesive tape
 seroteepu
+
+ケータイ
+mobile phone, cell phone
+keetai
+
+ねんがじょう
+New Year's greeting card
+nengajou
+
+メール
+e-mail
+meeru
+
+かして ください
+Please lend (it to me).
+kashite kudasai
 
 `;
 
@@ -1800,7 +1856,7 @@ big, large
 ookii
 
 あたらしい
-new
+new, fresh
 atarashii
 
 ふるい
@@ -1883,7 +1939,7 @@ life
 seikatsu
 
 しんせつ（な）
-kind
+helpful, kind, considerate (not used about one's own family members)
 shinsetsu na
 
 いい・よい
@@ -2153,15 +2209,15 @@ someone else's husband
 goshujin
 
 おっと・しゅじん
-my husband
+(my) husband
 otto / shujin
 
 おくさん
-someone else's wife
+(someone else's) wife
 okusan
 
 つま・かない
-my wife
+(my) wife
 tsuma / kanai
 
 りょうり
@@ -2181,7 +2237,7 @@ So you cannot (come)?
 dame desu ka
 
 またこんどおねがいします
-Please ask me again some other time.
+Please ask me again some other time. (used when refusing an invitation indirectly, considering someone's feelings)
 mata kondo onegaishimasu
 
 〜はちょっと…
@@ -2189,7 +2245,7 @@ mata kondo onegaishimasu
 ~ wa chotto...
 
 〜から
-because
+because ~
 ~kara
 
 どうして
@@ -2323,11 +2379,11 @@ refrigerator
 reizouko
 
 きっさてん
-coffee shop
+coffee shop, cafe
 kissaten
 
 のりば
-taxi or bus stop
+a fixed place to catch taxis, trains, etc.
 noriba
 
 ちかく
@@ -2406,6 +2462,22 @@ posuto
 thing
 mono
 
+パンダ
+panda
+panda
+
+ぞう
+elephant
+zou
+
+ATM
+cash machine, ATM (Automatic Teller Machine)
+ee-tii-emu
+
+コンビニ
+convenience store
+konbini
+
 `;
 
 allWords["Lesson 11"] = `
@@ -2442,7 +2514,7 @@ in total
 zenbude
 
 みんな
-everybody, everything
+all, everything, everyone
 minna
 
 サンドイッチ
@@ -2729,6 +2801,14 @@ kujikan
 ten hours
 juujikan
 
+いってらっしゃい
+See you later./So long. (lit. Go and come back.)
+itterasshai
+
+いって きます
+See you later./So long. (lit. I'm going and coming back.)
+itte kimasu
+
 `;
 
 allWords["Lesson 11 - Hard"] = `
@@ -2884,6 +2964,22 @@ ikutsu
 ~ people
 ~nin
 
+なんねん
+what year
+nannen
+
+ナンプラー
+nam pla
+nanpuraa
+
+コーナー
+corner, section
+koonaa
+
+いちばん した
+the bottom
+ichiban shita
+
 `;
 
 allWords["Lesson 12"] = `
@@ -2967,6 +3063,10 @@ honkon
 Singapore
 shingapooru
 
+クラス
+class
+kurasu
+
 `;
 
 allWords["Lesson 12 - Hard"] = `
@@ -3011,7 +3111,7 @@ seafood and vegetables deep fried in batter
 tempura
 
 いけばな
-flower arrangement
+flower arrangement (～を します： practise flower arrangement)
 ikebana
 
 もみじ
@@ -3078,6 +3178,18 @@ demo
 I'm tired.
 tsukaremashita
 
+ぶたにく
+pork
+butaniku
+
+レモン
+lemon
+remon
+
+わあ、すごい ひとですね
+Wow! Look at all those people!
+waa, sugoi hito desu ne
+
 `;
 
 allWords["Lesson 13"] = `
@@ -3086,7 +3198,7 @@ Let's do that
 sou shimashou
 
 そうですね
-I agree with you
+Yes, it is, I agree with you
 sou desu ne
 
 さびしい
@@ -3110,7 +3222,7 @@ set meal
 teishoku
 
 つかれます
-get tired
+get tired (when expressing the condition of being tired, つかれました is used)
 tsukaremasu
 
 けっこんします
@@ -3130,7 +3242,7 @@ swimming pool
 puuru
 
 つりをします
-to fish
+to fish, angle
 tsuri o shimasu
 
 スキー
@@ -3253,12 +3365,16 @@ separately, individually
 betsubetsu ni
 
 あそびます
-to play, to have a good time
+enjoy oneself, play
 asobimasu
 
 かいものします
 do shopping
 kaimonoshimasu
+
+でんしじしょ
+electronic dictionary
+でんしじしょ
 
 `;
 
@@ -3300,11 +3416,11 @@ Sure. Certainly.
 ii desu yo
 
 さあ
-all right, okay, come on
+right (used when encouraging some course of action)
 saa
 
 あれ
-Oh! Wait What?
+Oh! Eh? (in surprise or wonder)
 are
 
 まっすぐ
@@ -3485,7 +3601,7 @@ materials, data
 shiryou
 
 しります
-to know
+get to know
 shirimasu
 
 しっています
@@ -3548,7 +3664,7 @@ bathe, take, (a shower)
 (shawaa o) abimasu
 
 だします
-take out, withdraw
+take out, hand in, send
 dashimasu
 
 あたまがいい
@@ -3556,7 +3672,7 @@ clever, smart
 atama ga ii
 
 あたま
-head
+head, brain
 atama
 
 かみ
@@ -3671,6 +3787,10 @@ shawaa
 number ~
 ~ban
 
+おろします ［おかねを～］
+withdraw
+oroshimasu [okane o ~]
+
 `;
 
 allWords["Lesson 16 - Hard"] = `
@@ -3683,7 +3803,7 @@ Buddhist temple
 otera
 
 あんしょうばんごう
-PIN
+personal identification number, PIN
 anshou bangou
 
 かくにん
@@ -3735,7 +3855,7 @@ enter, enroll
 hairimasu
 
 からだ
-body
+body, health
 karada
 
 め
@@ -3773,6 +3893,10 @@ mazu
 ジェイアール
 Japan Railway
 jei aaru
+
+せ
+height
+せ
 
 `;
 
@@ -4054,6 +4178,10 @@ nakanaka
 by all means, please
 zehi
 
+インターネット
+the Internet
+intaanetto
+
 `;
 
 allWords["Lesson 19"] = `
@@ -4096,10 +4224,6 @@ gorufu
 ゴルフをします
 play golf
 gorufu o shimasu
-
-すもう
-Japanese-style wrestling
-sumou
 
 こどものひ
 Children's Day
@@ -4149,6 +4273,10 @@ dansu o renshuu shimasu
 turn 23 years old tomorrow
 ashita nijuusan sai ni narimasu
 
+すもう
+sumo wrestling (～を します：wrestle)
+すもう
+
 `;
 
 allWords["Lesson 19 - Hard"] = `
@@ -4157,7 +4285,7 @@ tea ceremony
 sadou
 
 のぼります
-climb
+climb, go up
 noborimasu
 
 とまります
@@ -4406,12 +4534,24 @@ make/deliver a speech
 supiichi o shimasu
 
 デザイン
-design
+design, artwork
 dezain
 
 カンガルー
 kangaroo
 kangaruu
+
+ほうそう
+announcement, broadcast
+ほうそう
+
+ゆめ
+dream
+ゆめ
+
+てんさい
+genius
+てんさい
 
 `;
 
@@ -4555,6 +4695,10 @@ boushi
 apartment
 apaato
 
+おさがしですか
+Are you looking for ～?
+osagashi desu ka
+
 `;
 
 allWords["Lesson 22 - Hard"] = `
@@ -4653,6 +4797,18 @@ koshou shimasu
 bridge
 hashi
 
+さわります ［ドアに～］
+touch [a door]
+sawarimasu [doa ni ~]
+
+でます ［おつりが～］
+[change] come out
+demasu [otsuri ga ~]
+
+［お］ゆ
+hot water
+[o]yu
+
 `;
 
 allWords["Lesson 23 - Hard"] = `
@@ -4676,9 +4832,9 @@ tatemono
 alien registration card
 gaikokujin tourokushou
 
-ごちそうさまでした
-That was delicious.
-gochisousama deshita
+ごちそうさま ［でした］
+That was delicious. (said after eating or drinking)
+gochisousama [deshita]
 
 うごきます
 move, work
@@ -4782,6 +4938,10 @@ junbi shimau
 しょうかいします
 introduce
 shoukai shimasu
+
+ホームステイ
+homestay
+hoomusutei
 
 `;
 
@@ -4911,9 +5071,9 @@ douzo ogenki de
 `;
 
 allWords["Phrases1"] = `
-どうぞよろしくおねがいします
-Pleased to meet you. (lit. Please be nice to me)
-douzo yoroshiku onegaishimasu
+［どうぞ］ よろしく ［おねがいします］
+Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
+[douzo] yoroshiku [onegaishimasu]
 
 （どうも）ありがとうございます
 Thank you (very much).
@@ -4932,7 +5092,7 @@ Welcome. / May I help you? (greeting a customer or a guest entering a shop)
 irasshaimase
 
 いらっしゃい
-Welcome
+How nice of you to come. (lit. Welcome.)
 irasshai
 
 またいらっしゃってください
@@ -4960,7 +5120,7 @@ be (honorific equivalent of imasu)
 irasshaimasu
 
 そうですか
-I see. / Is that so?
+I see.
 sou desu ka
 
 そうですね
@@ -4968,7 +5128,7 @@ Well let me see...
 sou desu ne
 
 そうですね
-I agree with you
+Yes, it is, I agree with you
 sou desu ne
 
 いいですよ
@@ -5056,7 +5216,7 @@ This is (someone).
 kochira wa ~-san desu
 
 しつれいですが
-excuse me but
+Excuse me, but (used when asking someone for personal information such as their name or address)
 shitsurei desu ga
 
 しつれいします
@@ -5080,7 +5240,7 @@ So you cannot (come)?
 dame desu ka
 
 またこんどおねがいします
-Please ask me again some other time.
+Please ask me again some other time. (used when refusing an invitation indirectly, considering someone's feelings)
 mata kondo onegaishimasu
 
 〜はちょっと…
@@ -5147,9 +5307,9 @@ shibaraku desu ne
 Congratulations.
 omedetou gozaimasu
 
-ごちそうさまでした
-That was delicious.
-gochisousama deshita
+ごちそうさま ［でした］
+That was delicious. (said after eating or drinking)
+gochisousama [deshita]
 
 きをつけて
 pay attention, take care
@@ -5160,7 +5320,7 @@ Thank you for everything you have done for me.
 iroiro osewa ni narimashita
 
 はじめまして
-How do you do? (introducing oneself for the first time) (lit. for the first time)
+How do you do? (lit. I am meeting you for the first time. Usually used as the first phrase when introducing oneself.)
 hajimemashite
 
 〜をください
@@ -5184,7 +5344,7 @@ You're welcome. Don't mention it.
 dou itashimashite
 
 いただきます
-Thank you, I accept
+Thank you./I accept. (said before starting to eat or drink)
 itadakimasu
 
 にほんのせいかつになれましたか
@@ -5235,13 +5395,17 @@ onegaishimasu
 really
 hontou ni
 
+おさがしですか
+Are you looking for ～?
+osagashi desu ka
+
 `;
 
 allWords["Phrases1 - Hard"] = ``;
 
 allWords["Questions1"] = `
 なんですか
-Yes?
+Yes? (lit: What is it?)
 nan desu ka
 
 どうやって
@@ -5461,6 +5625,10 @@ tempura
 ぎゅうどん
 bowl of rice topped with beef
 gyuudon
+
+てんぷら
+seafood and vegetables deep fried in batter
+tempura
 
 `;
 
@@ -9525,7 +9693,7 @@ chocolate
 chokoreeto
 
 アメリカ
-America
+U.S.A.
 amerika
 
 インドネシア
@@ -9538,7 +9706,7 @@ furansu
 
 コーヒー
 coffee
-koohii
+kouhii
 
 テレビ
 television
@@ -9557,12 +9725,12 @@ computer
 konpyuutaa
 
 カード
-card
+(credit) card
 kaado
 
 ノート
 notebook
-nooto
+nouto
 
 テレホンカード
 telephone card
@@ -9645,7 +9813,7 @@ beer
 biiru
 
 ビデオ
-video
+video [tape], video deck
 bideo
 
 CD
@@ -9665,7 +9833,7 @@ soccer
 sakkaa
 
 セロテープ
-scotch tape, adhesive tape
+Sellotape, Scotch tape, clear adhesive tape
 seroteepu
 
 スペイン
@@ -9849,7 +10017,7 @@ speech
 supiichi
 
 デザイン
-design
+design, artwork
 dezain
 
 アパート
@@ -10608,12 +10776,12 @@ Thank you (very much).
 (doumo) arigatou gozaimasu
 
 どうぞ
-Please. / Here you are.
+Here you are. (used when offering someone something)
 douzo
 
-どうぞよろしくおねがいします
-Pleased to meet you. (lit. Please be nice to me)
-douzo yoroshiku onegaishimasu
+［どうぞ］ よろしく ［おねがいします］
+Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
+[douzo] yoroshiku [onegaishimasu]
 
 どうぞおあがりください
 Do come in.
@@ -10628,7 +10796,7 @@ department, counter (in a shop)
 uriba
 
 のりば
-taxi or bus stop
+a fixed place to catch taxis, trains, etc.
 noriba
 
 りょこう
@@ -10704,11 +10872,11 @@ from now on, soon
 korekara
 
 みなさん
-everyone, all of you
+Ladies and Gentlemen, everybody
 minasan
 
 みんな
-everybody, everything
+all, everything, everyone
 minna
 
 みんなで
@@ -10772,7 +10940,7 @@ crossroad, intersection
 kousaten
 
 きっさてん
-coffee shop
+coffee shop, cafe
 kissaten
 
 きせつ
@@ -10788,7 +10956,7 @@ the back, inner part
 oku
 
 おくさん
-someone else's wife
+(someone else's) wife
 okusan
 
 ちかく
@@ -10804,7 +10972,7 @@ materials, data
 shiryou
 
 しります
-to know
+get to know
 shirimasu
 
 しっています
@@ -10816,8 +10984,16 @@ corner
 kado
 
 カード
-card
+(credit) card
 kaado
+
+読書
+reading
+dokusho
+
+どくしん
+single, unmarried
+dokushin
 
 `;
 
@@ -10829,11 +11005,11 @@ your place
 sochira
 
 これ
-this
+this (thing here)
 kore
 
 それ
-that (thing near you)
+that (thing near the listener)
 sore
 
 あれ
@@ -10845,15 +11021,15 @@ which one(of 3 or more)
 dore
 
 この〜
-this (noun) here
+this ～, this ～ here
 kono~
 
 その〜
-that (noun) near you
+that ～, that ～ near the listener
 sono~
 
 あの〜
-that (noun) over there
+that ～, that ～ over there
 ano~
 
 どの〜
@@ -10926,7 +11102,7 @@ allWords["Ko So Aso1 - Hard"] = ``;
 
 allWords["Half Words1"] = `
 あのう
-well, err
+Er... (used to show hesitation)
 anou
 
 えーと
@@ -10934,11 +11110,11 @@ well, let me see...
 eeto
 
 さあ
-all right, okay, come on
+right (used when encouraging some course of action)
 saa
 
 あれ
-Oh! Wait What?
+Oh! Eh? (in surprise or wonder)
 are
 
 じゃ
@@ -11010,7 +11186,7 @@ therefore, so
 desu kara
 
 〜から
-because
+because ~
 ~kara
 
 〜から
@@ -11073,6 +11249,10 @@ up to~, till~
 before ~, by ~
 ~ made ni
 
+しかし
+but, however
+shikashi
+
 `;
 
 allWords["Half Words1 - Hard"] = ``;
@@ -11123,7 +11303,7 @@ free (time)
 hima na
 
 しんせつ（な）
-kind
+helpful, kind, considerate (not used about one's own family members)
 shinsetsu na
 
 ふべん（な）
@@ -12035,6 +12215,10 @@ hanashimasu
 go
 ikimasu
 
+生きます
+live
+ikimasu
+
 きます
 come
 kimasu
@@ -12120,7 +12304,7 @@ wear, put on general items (makeup necklace necktie belt scarf)
 shimasu
 
 します
-do
+do, play
 shimasu
 
 はめます
@@ -12143,6 +12327,10 @@ shimemasu
 to open, to become open
 akimasu
 
+空きます
+be vacant; be unoccupied
+akimasu
+
 あけます
 open
 akemasu
@@ -12150,6 +12338,14 @@ akemasu
 あげます
 give
 agemasu
+
+上げます
+raise
+agemasu
+
+上がります
+go up; rise
+agarimasu
 
 もらいます
 receive
@@ -12236,7 +12432,7 @@ think, consider
 kangaemasu
 
 だします
-take out, withdraw
+take out, hand in, send
 dashimasu
 
 [~お] だします
@@ -12246,6 +12442,10 @@ take out, to submit, to send
 （レポートを）だします
 hand in (a report)
 (repooto o) dashimasu
+
+おろします ［おかねを～］
+withdraw
+oroshimasu [okane o ~]
 
 はいります
 enter, enroll
@@ -12312,7 +12512,7 @@ stand up
 tachimasu
 
 しります
-to know
+get to know
 shirimasu
 
 しっています
@@ -12342,6 +12542,14 @@ kikimasu
 かきます
 write, draw, paint
 kakimasu
+
+下げます
+lower; get down
+sagemasu
+
+下がります
+go down
+sagarimasu
 
 うごきます
 move, work
@@ -12420,7 +12628,7 @@ collect, gather
 atsumemasu
 
 のぼります
-climb
+climb, go up
 noborimasu
 
 しらべます
@@ -12492,7 +12700,7 @@ I've got to watch it.
 minaito...
 
 みます
-see, look, watch
+see, look at, watch
 mimasu
 
 よみます
@@ -12503,8 +12711,16 @@ yomimasu
 swim
 oyogimasu
 
+学びます
+learn; study
+manabimasu
+
+べんきょうします
+study (verb)
+benkyoushimasu
+
 きります
-cut
+cut, slice
 kirimasu
 
 かかります
@@ -12540,7 +12756,7 @@ go to meet, to welcome
 mukaemasu
 
 あそびます
-to play, to have a good time
+enjoy oneself, play
 asobimasu
 
 ねます
@@ -12603,6 +12819,22 @@ umaremasu
 walk
 arukimasu
 
+入学します
+enter a school
+nyuugakushimasu
+
+出発します
+leave; depart
+shuppatsushimasu
+
+見えます
+be visible
+miemasu
+
+聞こえます
+be audible
+kikoemasu
+
 としをとります
 grow old, get older
 toshi o torimasu
@@ -12646,10 +12878,6 @@ take a walk, stroll (in a park)
 あしたにじゅうさんさいになります
 turn 23 years old tomorrow
 ashita nijuusan sai ni narimasu
-
-べんきょうします
-study (verb)
-benkyoushimasu
 
 かくにんします
 confirm
@@ -12703,6 +12931,14 @@ ryuugaku shimasu
 be transferred to another office
 tenkin shimasu
 
+じゅんびします
+prepare
+junbi shimau
+
+安心します
+feel relieved
+anshin-shimasu
+
 しごとをします
 do one's job, work
 shigoto o shimasu
@@ -12720,7 +12956,7 @@ to dance
 dansu o shimasu
 
 つりをします
-to fish
+to fish, angle
 tsuri o shimasu
 
 スキーをします
@@ -12771,9 +13007,9 @@ supiichi o shimasu
 pray
 oinori o shimasu
 
-じゅんびします
-prepare
-junbi shimau
+おはなみ をします
+ohanami o shimasu
+view the cherry blossoms
 
 がんばります
 do one's best, work hard
@@ -12788,7 +13024,7 @@ eat
 tabemasu
 
 つかれます
-get tired
+get tired (when expressing the condition of being tired, つかれました is used)
 tsukaremasu
 
 けっこんします
@@ -12800,29 +13036,13 @@ kekkonshimasu
 allWords["All Masu Form Verbs1 - Hard"] = ``;
 
 allWords["Connectors1"] = `
-じん
-a nationality of-
--jin
-
-〜ご
-~language
-~go
-
-さん
-Mr./Ms./Mrs.
--san
-
-ちゃん
-suffix added to a child's name
--chan
-
-くん
-suffix added to a boy's name
--kun
-
 けん
 prefecture
 ken
+
+じん
+a nationality of-
+-jin
 
 〜や
 ~store, ~shop
@@ -12839,6 +13059,22 @@ number ~
 〜や
 person of ~ shop, ~shop
 ~ya
+
+〜ご
+~language
+~go
+
+さん
+Mr./Ms./Mrs.
+-san
+
+ちゃん
+suffix added to a child's name
+-chan
+
+くん
+suffix added to a boy's name
+-kun
 
 〜くん
 Mr. (informal of ~san)
@@ -18095,18 +18331,1193 @@ onegaishimasu
 
 `;
 
+allWords["N5 Kanji from PDF NotebookLLM1"] = `
+人
+person
+hito
+
+カナダ人
+Canadian
+kanada-jin
+
+三人
+three people
+sannin
+
+その日
+that day
+sono hi
+
+三日
+the third day of the month
+mikka
+
+十五日
+the fifteenth day of the month
+juugo-nichi
+
+日曜日
+Sunday
+nichiyoubi
+
+一つ
+one
+hitotsu
+
+一人
+one person
+hitori
+
+一日
+one day
+ichinichi
+
+一日
+the first day of the month
+tsuitachi
+
+一分
+one minute
+ippun
+
+二つ
+two
+futatsu
+
+二日
+two days / the second day of the month
+futsuka
+
+休みます
+rest / have a day off / be absent
+yasumimasu
+
+休み
+holiday; vacation
+yasumi
+
+見ます
+see / look / watch
+mimasu
+
+見えます
+be visible
+miemasu
+
+見せます
+show
+misemasu
+
+意見
+opinion
+iken
+
+今
+now
+ima
+
+今月
+this month
+kongetsu
+
+今日
+today
+kyou
+
+大きい
+big
+ookii
+
+大学
+university
+daigaku
+
+大切
+important
+taisetsu
+
+大人
+adult
+otona
+
+小さい
+small
+chiisai
+
+小鳥
+small bird
+kotori
+
+小学校
+elementary school
+shougakkou
+
+上
+on / above
+ue
+
+上げます
+raise
+agemasu
+
+上がります
+go up; rise
+agarimasu
+
+上手
+good at; skillful
+jouzu
+
+下
+under
+shita
+
+くつ下
+socks
+kutsushita
+
+下げます
+lower; get down
+sagemasu
+
+下がります
+go down
+sagarimasu
+
+地下鉄
+subway; underground
+chikatetsu
+
+中
+inside
+naka
+
+中国
+China
+chuugoku
+
+電話中
+on the phone
+denwachuu
+
+一日中
+all day long
+ichinichijuu
+
+右
+right
+migi
+
+左
+left
+hidari
+
+山
+mountain
+yama
+
+富士山
+Mt. Fuji
+fujisan
+
+川
+river
+kawa
+
+白い
+white (adj.)
+shiroi
+
+白
+white (noun)
+shiro
+
+本
+book
+hon
+
+九本
+nine pieces (long object)
+kyuuhon
+
+日本
+Japan
+nihon
+
+本当
+true; real
+hontou
+
+本社
+head office
+honsha
+
+子ども
+child
+kodomo
+
+子どもたち
+children
+kodomotachi
+
+この子
+this child
+kono ko
+
+男
+man
+otoko
+
+男の子
+boy
+otokonoko
+
+男性
+man; male
+dansei
+
+女
+woman
+onna
+
+女の子
+girl
+onnanoko
+
+女性
+woman; female
+josei
+
+父
+(my) father
+chichi
+
+お父さん
+(someone's) father
+otousan
+
+祖父
+(my) grandfather
+sofu
+
+母
+(my) mother
+haha
+
+お母さん
+(someone's) mother
+okaasan
+
+祖母
+(my) grandmother
+sobo
+
+下着
+underwear
+shitagi
+
+友だち
+friend
+tomodachi
+
+先に
+earlier
+sakini
+
+先月
+last month
+sengetsu
+
+生きます
+live
+ikimasu
+
+生まれます
+be born
+umaremasu
+
+生
+raw
+nama
+
+生ビール
+draft beer
+nama biiru
+
+先生
+teacher
+sensei
+
+誕生日
+birthday
+tanjoubi
+
+学びます
+learn; study
+manabimasu
+
+学生
+student
+gakusei
+
+小学生
+elementary school children
+shougakusei
+
+中学生
+junior high school student
+chuugakusei
+
+大学
+university; college
+daigaku
+
+大学生
+university student
+daigakusei
+
+学校
+school
+gakkou
+
+小学校
+elementary school
+shougakkou
+
+中学校
+junior high school
+chuugakkou
+
+後で
+later
+atode
+
+一年後
+one year after
+ichinengo
+
+午後
+afternoon; p.m.
+gogo
+
+午前
+morning; a.m.
+gozen
+
+午後
+afternoon; p.m.
+gogo
+
+名前
+name
+namae
+
+有名
+famous
+yuumei
+
+車
+car
+kuruma
+
+電車
+train
+densha
+
+聞きます
+hear / listen / ask
+kikimasu
+
+聞こえます
+be audible
+kikoemasu
+
+新聞
+newspaper
+shinbun
+
+書きます
+write
+kakimasu
+
+図書館
+library
+toshokan
+
+読みます
+read
+yomimasu
+
+読書
+reading
+dokusho
+
+国
+country
+kuni
+
+中国
+China
+chuugoku
+
+国際電話
+international call
+kokusaidenwa
+
+外
+outside
+soto
+
+外国
+foreign country
+gaikoku
+
+外国人
+foreigner
+gaikokujin
+
+日本語
+Japanese (language)
+nihongo
+
+英語
+English (language)
+eigo
+
+入れます
+put in
+iremasu
+
+入ります
+enter / join
+hairimasu
+
+入学します
+enter a school
+nyuugakushimasu
+
+出します
+take out / send / hand in
+dashimasu
+
+出ます
+leave / attend
+demasu
+
+出かけます
+go out
+dekakemasu
+
+出発します
+leave; depart
+shuppatsushimasu
+
+雨
+rain
+ame
+
+東
+east
+higashi
+
+東京
+Tokyo
+toukyou
+
+西
+west
+nishi
+
+西洋
+the West; Western
+seiyou
+
+関西
+the Kansai region
+kansai
+
+南
+south
+minami
+
+東南アジア
+Southeast Asia
+tounan ajia
+
+北
+north
+kita
+
+東北
+Tohoku region
+touhoku
+
+長い
+long
+nagai
+
+校長
+principal
+kouchou
+
+高い
+high / expensive
+takai
+
+高校
+high school
+koukou
+
+高校生
+high school student
+koukousei
+
+口
+mouth
+kuchi
+
+入口
+entrance
+iriguchi
+
+出口
+exit
+deguchi
+
+人口
+population
+jinkou
+
+目
+eye
+me
+
+手
+hand / arm
+te
+
+お手洗い
+lavatory; rest room
+otearai
+
+運転手
+driver
+untenshu
+
+上手
+skillful
+jouzu
+
+下手
+poor; unskillful
+heta
+
+足
+foot / leg
+ashi
+
+足ります
+enough
+tarimasu
+
+近い
+close
+chikai
+
+近く
+neighborhood
+chikaku
+
+近所
+neighborhood
+kinjo
+
+最近
+recently
+saikin
+
+有ります
+exist
+arimasu
+
+有名
+famous
+yuumei
+
+花
+flower
+hana
+
+花屋
+flower shop
+hanaya
+
+花火
+fireworks
+hanabi
+
+花びん
+vase
+kabin
+
+赤い
+red (adj.)
+akai
+
+赤
+red (noun)
+aka
+
+赤ちゃん
+baby
+akachan
+
+紙
+paper
+kami
+
+手紙
+letter
+tegami
+
+買います
+buy
+kaimasu
+
+買い物
+shopping
+kaimono
+
+朝
+morning
+asa
+
+毎朝
+every morning
+maiasa
+
+今朝
+this morning
+kesa
+
+昼
+noon
+hiru
+
+昼ごはん
+lunch
+hirugohan
+
+昼間
+daytime
+hiruma
+
+夕方
+evening
+yuugata
+
+夕飯
+dinner; supper
+yuuhan
+
+夜
+night
+yoru
+
+今夜
+tonight
+konya
+
+私
+I
+watashi
+
+わたくし
+I (formal)
+watakushi
+
+家
+house
+ie
+
+家族
+family
+kazoku
+
+会います
+see (a person)
+aimasu
+
+会話
+conversation
+kaiwa
+
+会議
+meeting
+kaigi
+
+会社
+company
+kaisha
+
+社会
+society
+shakai
+
+社長
+company president
+shachou
+
+店
+store; shop
+mise
+
+店員
+salesclerk; shop assistant
+ten-in
+
+飲みます
+drink
+nomimasu
+
+飲み物
+drink; beverage
+nomimono
+
+多い
+a lot of
+ooi
+
+少ない
+few; little
+sukunai
+
+少し
+a little
+sukoshi
+
+古い
+old
+furui
+
+新しい
+new
+atarashii
+
+広い
+wide; spacious
+hiroi
+
+安い
+inexpensive
+yasui
+
+安心します
+feel relieved
+anshin-shimasu
+
+立ちます
+stand
+tachimasu
+
+知ります
+know
+shirimasu
+
+言います
+say; tell
+iimasu
+
+言葉
+word; language
+kotoba
+
+伝言
+message
+dengon
+
+思います
+think
+omoimasu
+
+思い出します
+recall; remember
+omoidashimasu
+
+歩きます
+walk
+arukimasu
+
+散歩します
+take a walk
+sanpo-shimasu
+
+走ります
+run
+hashirimasu
+
+住みます
+live; inhabit
+sumimasu
+
+住所
+address
+juusho
+
+空
+sky
+sora
+
+空きます
+be vacant; be unoccupied
+akimasu
+
+空気
+air
+kuuki
+
+空港
+airport
+kuukou
+
+週
+week
+shuu
+
+来週
+next week
+raishuu
+
+今週
+this week
+konshuu
+
+二週間
+two weeks
+nishuukan
+
+魚
+fish
+sakana
+
+魚屋
+fish store
+sakanaya
+
+耳
+ear
+mimi
+
+銀
+silver
+gin
+
+銀行
+bank
+ginkou
+
+道
+road; street
+michi
+
+水道
+waterworks; tap water
+suidou
+
+駅
+station
+eki
+
+`;
+
+allWords["N5 Kanji from PDF NotebookLLM1 - Hard"] = `
+東南アジア
+Southeast Asia
+tounan ajia
+
+店員
+salesclerk; shop assistant
+ten-in
+
+西洋
+the West; Western
+seiyou
+
+出発します
+leave; depart
+shuppatsushimasu
+
+花びん
+vase
+kabin
+
+伝言
+message
+dengon
+
+東
+east
+higashi
+
+西
+west
+nishi
+
+南
+south
+minami
+
+北
+north
+kita
+
+学びます
+learn; study
+manabimasu
+
+読書
+reading
+dokusho
+
+国際電話
+international call
+kokusaidenwa
+
+入学します
+enter a school
+nyuugakushimasu
+
+人口
+population
+jinkou
+
+近所
+neighborhood
+kinjo
+
+空きます
+be vacant; be unoccupied
+akimasu
+
+昼間
+daytime
+hiruma
+
+夕方
+evening
+yuugata
+
+夕飯
+dinner; supper
+yuuhan
+
+今夜
+tonight
+konya
+
+小鳥
+small bird
+kotori
+
+本社
+head office
+honsha
+
+上げます
+raise
+agemasu
+
+上がります
+go up; rise
+agarimasu
+
+下げます
+lower; get down
+sagemasu
+
+下がります
+go down
+sagarimasu
+
+九本
+nine pieces (long object)
+kyuuhon
+
+祖父
+(my) grandfather
+sofu
+
+祖母
+(my) grandmother
+sobo
+
+銀
+silver
+gin
+
+入口
+entrance
+iriguchi
+
+出口
+exit
+deguchi
+
+大人
+adult
+otona
+
+くつ下
+socks
+kutsushita
+
+安心します
+feel relieved
+anshin-shimasu
+
+電話中
+on the phone
+denwachuu
+
+この子
+this child
+kono ko
+
+男性
+man; male
+dansei
+
+先に
+earlier
+sakini
+
+生
+raw
+nama
+
+生ビール
+draft beer
+nama biiru
+
+運転手
+driver
+untenshu
+
+会話
+conversation
+kaiwa
+
+社会
+society
+shakai
+
+空気
+air
+kuuki
+
+水道
+waterworks; tap water
+suidou
+
+見えます
+be visible
+miemasu
+
+聞こえます
+be audible
+kikoemasu
+
+その日
+that day
+sono hi
+
+一日
+one day
+ichinichi
+
+一日中
+all day long
+ichinichijuu
+
+一年後
+one year after
+ichinengo
+
+小学校
+elementary school
+shougakkou
+
+子どもたち
+children
+kodomotachi
+
+男
+man
+otoko
+
+女
+woman
+onna
+
+女性
+woman; female
+josei
+
+小学生
+elementary school children
+shougakusei
+
+中学生
+junior high school student
+chuugakusei
+
+大学
+university; college
+daigaku
+
+大学生
+university student
+daigakusei
+
+小学校
+elementary school
+shougakkou
+
+中学校
+junior high school
+chuugakkou
+
+走ります
+run
+hashirimasu
+
+空
+sky
+sora
+
+魚屋
+fish store
+sakanaya
+
+生きます
+live
+ikimasu
+
+`;
+
 const appSettings = {
   "flagCounts": {
-    "そうですか::I see. / Is that so?": 1,
-    "なんですか::Yes?": 1,
-    "しちにんのさむらい::The Seven Samurai": 1
+    "しちにんのさむらい::The Seven Samurai": 1,
+    "しちじ::7 o'clock": 1,
+    "そうですか::I see.": 1,
+    "なんですか::Yes? (lit: What is it?)": 1
   },
-  "currentLesson": "Romaji1",
-  "isHard": false,
+  "currentLesson": "N5 Kanji from PDF NotebookLLM1",
+  "isHard": true,
   "displayMode": "big-japanese",
   "readingGap": "0",
   "quizMode": "quiz1",
-  "quizOrder": "random",
+  "quizOrder": "original",
   "revealRomaji": false,
   "focusedWordIndex": -1,
   "selectedWordIndices": [],
@@ -18151,7 +19562,8 @@ const appSettings = {
     "Connectors1",
     "Expressions1",
     "Pod101 Kanji1",
-    "All N5 Vocab1"
+    "All N5 Vocab1",
+    "N5 Kanji from PDF NotebookLLM1"
   ],
   "similarWordGroups": [
     {
@@ -18159,36 +19571,39 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [
-    "Phrases1",
-    "Questions1",
-    "Counters1",
-    "Food Names1",
-    "Romaji1",
-    "Number1",
-    "Similar Ones1",
-    "Ko So Aso1",
-    "Half Words1",
-    "Na Adjectives1",
     "Adverbs1",
-    "Group3 Verbs1",
-    "Group2 Verbs1",
-    "Group1 Verbs1",
-    "Group1 Dicitionary Form1",
-    "Group2 Dicitionary Form1",
-    "Group3 Dicitionary Form1",
-    "All Verbs1",
     "All Masu Form Verbs1",
+    "All N5 Vocab1",
+    "All Verbs1",
     "Connectors1",
+    "Counters1",
     "Expressions1",
+    "Food Names1",
+    "Group1 Dicitionary Form1",
+    "Group1 Verbs1",
+    "Group2 Dicitionary Form1",
+    "Group2 Verbs1",
+    "Group3 Dicitionary Form1",
+    "Group3 Verbs1",
+    "Half Words1",
+    "Ko So Aso1",
+    "N5 Kanji from PDF NotebookLLM1",
+    "Na Adjectives1",
+    "Number1",
+    "Phrases1",
+    "Pod101 Kanji1",
+    "Questions1",
+    "Romaji1",
+    "Similar Ones1",
     "Similar Words"
   ],
   "lastDestCategory": "Half Words1",
   "activeDbGroup": "N5 Others",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 01",
+    "N5 Lessons": "Lesson 25",
     "N5 Kanji": "Kanji 01",
-    "N5 Others": "Questions1",
+    "N5 Others": "N5 Kanji from PDF NotebookLLM1",
     "N4 Lessons": "Lesson 26",
     "N4 Kanji": "Kanji 21",
     "N4 Others": "Questions2",

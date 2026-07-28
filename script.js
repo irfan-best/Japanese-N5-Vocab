@@ -2106,6 +2106,49 @@ function navigateLessonCategory(direction) {
   showToast(`Category: ${targetCategory}`, 'info');
 }
 
+function navigateActiveGroup(direction) {
+  const groups = [
+    "N5 Lessons",
+    "N5 Kanji",
+    "N5 Others",
+    "N4 Lessons",
+    "N4 Kanji",
+    "N4 Others",
+    "N3 Lessons",
+    "N3 Kanji",
+    "N3 Others"
+  ];
+  
+  const currentGroup = currentSettings.activeDbGroup || "N5 Lessons";
+  let idx = groups.indexOf(currentGroup);
+  if (idx === -1) idx = 0;
+  
+  if (direction === 'next') {
+    idx = (idx + 1) % groups.length;
+  } else if (direction === 'prev') {
+    idx = (idx - 1 + groups.length) % groups.length;
+  }
+  
+  const targetGroup = groups[idx];
+  currentSettings.activeDbGroup = targetGroup;
+  
+  if (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[targetGroup]) {
+    currentSettings.currentLesson = currentSettings.lastGroupCategories[targetGroup];
+  }
+  
+  const selectDbGroup = document.getElementById('select-db-group');
+  if (selectDbGroup) {
+    selectDbGroup.value = targetGroup;
+  }
+  
+  saveSettings();
+  populateLessonsDropdown();
+  renderCards();
+  populateQuizSetupLessons();
+  
+  showToast(`Database Group: ${targetGroup}`, 'info');
+}
+
 function selectFirstNonLessonNonKanjiCategory() {
   const selectLesson = document.getElementById('select-lesson');
   if (!selectLesson) return;
@@ -4392,7 +4435,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       // Normal Mode Card Navigation
-      if (e.key === 'ArrowRight') {
+      if (e.shiftKey && e.key === 'ArrowRight') {
+        e.preventDefault();
+        navigateActiveGroup('next');
+        return;
+      } else if (e.shiftKey && e.key === 'ArrowLeft') {
+        e.preventDefault();
+        navigateActiveGroup('prev');
+        return;
+      } else if (e.key === 'ArrowRight') {
         e.preventDefault();
         navigateFocus('next');
         return;
