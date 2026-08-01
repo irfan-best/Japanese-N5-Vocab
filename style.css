@@ -984,8 +984,16 @@ html[data-theme="light"] .moon-icon { display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  width: 100%;
+}
+.quiz-navigation-controls .btn {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  white-space: nowrap;
 }
 
 .reveal-romaji-option {
@@ -1228,6 +1236,19 @@ html[data-theme="light"] .moon-icon { display: block; }
   .action-buttons-grid .btn svg {
     width: 14px;
     height: 14px;
+  }
+  .quiz-navigation-controls {
+    gap: 0.5rem !important;
+  }
+  .quiz-navigation-controls .btn {
+    font-size: 0.8rem !important;
+    padding: 0.6rem 0.35rem !important;
+    gap: 0.2rem !important;
+  }
+  .quiz-navigation-controls .btn svg {
+    width: 13px !important;
+    height: 13px !important;
+    margin-right: 1px !important;
   }
 }
 

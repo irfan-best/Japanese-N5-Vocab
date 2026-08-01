@@ -145,6 +145,15 @@ chikaku vs chikai:
         (chikaku)	Nearness / Nearby	    Location marker
                     (There is a park near my house.)
 
+chikaku vs kinjo:
+    (chikaku) – "Nearby / Near / Close to" -> could also mean - neighborhood
+        General physical proximity or time. It is relative to a specific reference point (e.g., near a station, near a specific building, near a time/date).
+        Points to a specific location or reference point.
+    
+    kinjo - "Neighborhood / Immediate Vicinity" -> 
+        Refers to the entire neighborhood or local community, usually surrounding where someone lives.
+        Refers to an area as a region/zone, or the local neighborhood context (e.g., neighbors, local shops in the neighborhood).
+
 nyuuyooku wa nanji desu ka
 vs
 nyuuyooku de nanji desu ka
@@ -183,3 +192,28 @@ Donna vs nanno:
 
     If the answer can be an adjective (kind, fast, quiet, difficult), use どんな.
     If the answer is a specific noun or genre (sports, science, comedy, wood), use 何の.
+
+dokusho vs yomimasu:
+    dokusho -> noun
+    yomimasu -> verb
+    
+yuuhan vs bangohan:
+    Bangohan -> polite -> "Night rice/meal"
+    Yuuhan   -> casual -> "Evening meal"
+
+samposhimasu vs arukimasu:
+    samposhimasu: To take a walk / To stroll
+        Leisurely activity. The main purpose is the walk itself—for relaxation, exercise, fresh air, or sightseeing
+        Usually doesn't have a fixed point-A to point-B destination. You are strolling around an area.
+
+    arukimasu: To walk
+        Physical action / Means of transport. Refers strictly to the physical act of moving your legs to walk, often to get from one location to another
+        Focuses on how you travel or get somewhere (walking vs. driving/taking the train).
+
+manabimasu vs benkyoushimasu:
+    Benkyoushimasu: To study (effort-based/academic)
+    Focus: Desk work, drill practice, exams, textbooks
+
+    manabimasu: To learn / to acquire wisdom or skills
+    Focus: Deep understanding, real-world application, life skills
+    
