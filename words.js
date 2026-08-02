@@ -188,13 +188,13 @@ doitsu
 South Korea
 kankoku
 
-イギリス
-U.K.
-igirisu
-
 ちゅうごく
 China
 chuugoku
+
+イギリス
+U.K.
+igirisu
 
 `;
 
@@ -370,13 +370,17 @@ isu
 desk
 tsukue
 
-じどうしゃ
-automobile, car
-jidousha
-
 とけい
 watch, clock
 tokei
+
+てちょう
+personal organiser, pocket notebook, dairy
+techou
+
+じどうしゃ
+automobile, car
+jidousha
 
 シャープペンシル
 mechanical pencil
@@ -389,10 +393,6 @@ enpitsu
 めいし
 business card
 meishi
-
-てちょう
-personal organiser, pocket notebook, dairy
-techou
 
 しんぶん
 newspaper
@@ -673,14 +673,6 @@ senman
 99 999 999
 kyuusen kyuuhyaku kyuujuu kyuuman kyuusen kyuuhyaku kyuujuu kyuu
 
-イタリア
-Italy
-itaria
-
-スイス
-Switzerland
-suisu
-
 ジャカルタ
 Jakarta
 jakaruta
@@ -692,6 +684,10 @@ berurin
 `;
 
 allWords["Lesson 03 - Hard"] = `
+じどうはんばいき
+vending machine
+jidouhanbaiki
+
 かいぎしつ
 meeting room, conference room
 kaigishitsu
@@ -740,9 +736,13 @@ Please show me ~.
 telephone handset, telephone call
 denwa
 
-じどうはんばいき
-vending machine
-jidouhanbaiki
+イタリア
+Italy
+itaria
+
+スイス
+Switzerland
+suisu
 
 `;
 
@@ -3296,6 +3296,10 @@ keizai
 fishing
 tsuri
 
+でんしじしょ
+electronic dictionary
+でんしじしょ
+
 とうろく
 registration
 touroku
@@ -3371,10 +3375,6 @@ asobimasu
 かいものします
 do shopping
 kaimonoshimasu
-
-でんしじしょ
-electronic dictionary
-でんしじしょ
 
 `;
 
@@ -4541,10 +4541,6 @@ dezain
 kangaroo
 kangaruu
 
-ほうそう
-announcement, broadcast
-ほうそう
-
 ゆめ
 dream
 ゆめ
@@ -4563,6 +4559,10 @@ shushou
 だいとうりょう
 president
 daitouryou
+
+ほうそう
+announcement, broadcast
+ほうそう
 
 いけん
 opinion, comment
@@ -4805,10 +4805,6 @@ sawarimasu [doa ni ~]
 [change] come out
 demasu [otsuri ga ~]
 
-［お］ゆ
-hot water
-[o]yu
-
 `;
 
 allWords["Lesson 23 - Hard"] = `
@@ -4883,6 +4879,10 @@ ki o tsukete
 きかい
 machine
 kikai
+
+［お］ゆ
+hot water
+[o]yu
 
 みち
 road, way
@@ -5399,6 +5399,10 @@ hontou ni
 Are you looking for ～?
 osagashi desu ka
 
+わあ、すごい ひとですね
+Wow! Look at all those people!
+waa, sugoi hito desu ne
+
 `;
 
 allWords["Phrases1 - Hard"] = ``;
@@ -5523,6 +5527,10 @@ nannichi
 おなまえは
 May i have your name?
 onamae wa
+
+なんねん
+what year
+nannen
 
 `;
 
@@ -6504,6 +6512,66 @@ puuru
 スキー
 skiing
 skii
+
+スイス
+Switzerland
+suisu
+
+イタリア
+Italy
+itaria
+
+ベルリン
+Berlin
+berurin
+
+ジャカルタ
+Jakarta
+jakaruta
+
+メキシコ
+Mekishiko
+Mexico
+
+パンチ
+punch
+panchi
+
+コンビニ
+convenience store
+konbini
+
+ATM
+cash machine, ATM (Automatic Teller Machine)
+ee-tii-emu
+
+パンダ
+panda
+panda
+
+クラス
+class
+kurasu
+
+なまえ
+name
+namae
+
+サービス
+service
+saabisu
+
+シャワー
+shower
+shawaa
+
+インターネット
+the Internet
+intaanetto
+
+ホームステイ
+homestay
+hoomusutei
 
 `;
 
@@ -7689,6 +7757,14 @@ before ~, by ~
 しかし
 but, however
 shikashi
+
+あ
+Oh! (used when becoming aware of something)
+a
+
+えっ
+Oh? What! (used when hearing something unexpected)
+e?
 
 `;
 
@@ -9022,10 +9098,6 @@ daigakusei
 school
 gakkou
 
-小学校
-elementary school
-shougakkou
-
 中学校
 junior high school
 chuugakkou
@@ -9045,10 +9117,6 @@ gogo
 午前
 morning; a.m.
 gozen
-
-午後
-afternoon; p.m.
-gogo
 
 名前
 name
@@ -9097,10 +9165,6 @@ dokusho
 国
 country
 kuni
-
-中国
-China
-chuugoku
 
 国際電話
 international call
@@ -9281,10 +9345,6 @@ saikin
 有ります
 exist
 arimasu
-
-有名
-famous
-yuumei
 
 花
 flower
@@ -9572,280 +9632,7 @@ eki
 
 `;
 
-allWords["N5 Kanji - Hard"] = `
-東南アジア
-Southeast Asia
-tounan ajia
-
-店員
-salesclerk; shop assistant
-ten-in
-
-西洋
-the West; Western
-seiyou
-
-出発します
-leave; depart
-shuppatsushimasu
-
-花びん
-vase
-kabin
-
-伝言
-message
-dengon
-
-東
-east
-higashi
-
-西
-west
-nishi
-
-南
-south
-minami
-
-北
-north
-kita
-
-学びます
-learn; study
-manabimasu
-
-読書
-reading
-dokusho
-
-国際電話
-international call
-kokusaidenwa
-
-入学します
-enter a school
-nyuugakushimasu
-
-人口
-population
-jinkou
-
-近所
-neighborhood
-kinjo
-
-空きます
-be vacant; be unoccupied
-akimasu
-
-昼間
-daytime
-hiruma
-
-夕方
-evening
-yuugata
-
-夕飯
-dinner; supper
-yuuhan
-
-今夜
-tonight
-konya
-
-小鳥
-small bird
-kotori
-
-本社
-head office
-honsha
-
-上げます
-raise
-agemasu
-
-上がります
-go up; rise
-agarimasu
-
-下げます
-lower; get down
-sagemasu
-
-下がります
-go down
-sagarimasu
-
-九本
-nine pieces (long object)
-kyuuhon
-
-祖父
-(my) grandfather
-sofu
-
-祖母
-(my) grandmother
-sobo
-
-銀
-silver
-gin
-
-入口
-entrance
-iriguchi
-
-出口
-exit
-deguchi
-
-大人
-adult
-otona
-
-くつ下
-socks
-kutsushita
-
-安心します
-feel relieved
-anshin-shimasu
-
-電話中
-on the phone
-denwachuu
-
-この子
-this child
-kono ko
-
-男性
-man; male
-dansei
-
-先に
-earlier
-sakini
-
-生
-raw
-nama
-
-生ビール
-draft beer
-nama biiru
-
-運転手
-driver
-untenshu
-
-会話
-conversation
-kaiwa
-
-社会
-society
-shakai
-
-空気
-air
-kuuki
-
-水道
-waterworks; tap water
-suidou
-
-見えます
-be visible
-miemasu
-
-聞こえます
-be audible
-kikoemasu
-
-その日
-that day
-sono hi
-
-一日
-one day
-ichinichi
-
-一日中
-all day long
-ichinichijuu
-
-一年後
-one year after
-ichinengo
-
-小学校
-elementary school
-shougakkou
-
-子どもたち
-children
-kodomotachi
-
-男
-man
-otoko
-
-女
-woman
-onna
-
-女性
-woman; female
-josei
-
-小学生
-elementary school children
-shougakusei
-
-中学生
-junior high school student
-chuugakusei
-
-大学
-university; college
-daigaku
-
-大学生
-university student
-daigakusei
-
-小学校
-elementary school
-shougakkou
-
-中学校
-junior high school
-chuugakkou
-
-走ります
-run
-hashirimasu
-
-空
-sky
-sora
-
-魚屋
-fish store
-sakanaya
-
-生きます
-live
-ikimasu
-
-`;
+allWords["N5 Kanji - Hard"] = ``;
 
 allWords["Grammer 01"] = `
 わたしは マイク・ミラーです。
@@ -11504,6 +11291,432 @@ allWords["Grammer 50"] = ``;
 
 allWords["Grammer 50 - Hard"] = ``;
 
+allWords["Kanji 01"] = ``;
+
+allWords["Kanji 01 - Hard"] = ``;
+
+allWords["Kanji 02"] = ``;
+
+allWords["Kanji 02 - Hard"] = ``;
+
+allWords["Kanji 03"] = ``;
+
+allWords["Kanji 03 - Hard"] = ``;
+
+allWords["Kanji 04"] = ``;
+
+allWords["Kanji 04 - Hard"] = ``;
+
+allWords["Kanji 05"] = ``;
+
+allWords["Kanji 05 - Hard"] = ``;
+
+allWords["Kanji 06"] = ``;
+
+allWords["Kanji 06 - Hard"] = ``;
+
+allWords["Kanji 07"] = ``;
+
+allWords["Kanji 07 - Hard"] = ``;
+
+allWords["Kanji 08"] = ``;
+
+allWords["Kanji 08 - Hard"] = ``;
+
+allWords["Kanji 09"] = ``;
+
+allWords["Kanji 09 - Hard"] = ``;
+
+allWords["Kanji 10"] = ``;
+
+allWords["Kanji 10 - Hard"] = ``;
+
+allWords["Kanji 11"] = ``;
+
+allWords["Kanji 11 - Hard"] = ``;
+
+allWords["Kanji 12"] = ``;
+
+allWords["Kanji 12 - Hard"] = ``;
+
+allWords["Kanji 13"] = ``;
+
+allWords["Kanji 13 - Hard"] = ``;
+
+allWords["Kanji 14"] = ``;
+
+allWords["Kanji 14 - Hard"] = ``;
+
+allWords["Kanji 15"] = ``;
+
+allWords["Kanji 15 - Hard"] = ``;
+
+allWords["Kanji 16"] = ``;
+
+allWords["Kanji 16 - Hard"] = ``;
+
+allWords["Kanji 17"] = ``;
+
+allWords["Kanji 17 - Hard"] = ``;
+
+allWords["Kanji 18"] = ``;
+
+allWords["Kanji 18 - Hard"] = ``;
+
+allWords["Kanji 19"] = ``;
+
+allWords["Kanji 19 - Hard"] = ``;
+
+allWords["Kanji 20"] = ``;
+
+allWords["Kanji 20 - Hard"] = ``;
+
+allWords["N5 Kanji New Vocab"] = `
+東南アジア
+Southeast Asia
+tounan ajia
+
+店員
+salesclerk; shop assistant
+ten-in
+
+西洋
+the West; Western
+seiyou
+
+出発します
+leave; depart
+shuppatsushimasu
+
+花びん
+vase
+kabin
+
+伝言
+message
+dengon
+
+東
+east
+higashi
+
+西
+west
+nishi
+
+南
+south
+minami
+
+北
+north
+kita
+
+学びます
+learn; study
+manabimasu
+
+読書
+reading
+dokusho
+
+入学します
+enter a school
+nyuugakushimasu
+
+人口
+population
+jinkou
+
+近所
+neighborhood
+kinjo
+
+空きます
+be vacant; be unoccupied
+akimasu
+
+昼間
+daytime
+hiruma
+
+夕方
+evening
+yuugata
+
+夕飯
+dinner; supper
+yuuhan
+
+今夜
+tonight
+konya
+
+小鳥
+small bird
+kotori
+
+本社
+head office
+honsha
+
+上げます
+raise
+agemasu
+
+上がります
+go up; rise
+agarimasu
+
+下げます
+lower; get down
+sagemasu
+
+下がります
+go down
+sagarimasu
+
+九本
+nine pieces (long object)
+kyuuhon
+
+祖父
+(my) grandfather
+sofu
+
+祖母
+(my) grandmother
+sobo
+
+銀
+silver
+gin
+
+入口
+entrance
+iriguchi
+
+出口
+exit
+deguchi
+
+大人
+adult
+otona
+
+くつ下
+socks
+kutsushita
+
+安心します
+feel relieved
+anshin-shimasu
+
+電話中
+on the phone
+denwachuu
+
+この子
+this child
+kono ko
+
+男性
+man; male
+dansei
+
+先に
+earlier
+sakini
+
+生
+raw
+nama
+
+生ビール
+draft beer
+nama biiru
+
+運転手
+driver
+untenshu
+
+会話
+conversation
+kaiwa
+
+社会
+society
+shakai
+
+空気
+air
+kuuki
+
+水道
+waterworks; tap water
+suidou
+
+見えます
+be visible
+miemasu
+
+聞こえます
+be audible
+kikoemasu
+
+その日
+that day
+sono hi
+
+一日
+one day
+ichinichi
+
+一日中
+all day long
+ichinichijuu
+
+一年後
+one year after
+ichinengo
+
+子どもたち
+children
+kodomotachi
+
+男
+man
+otoko
+
+女
+woman
+onna
+
+女性
+woman; female
+josei
+
+小学生
+elementary school children
+shougakusei
+
+中学校
+junior high school
+chuugakkou
+
+中学生
+junior high school student
+chuugakusei
+
+大学
+university; college
+daigaku
+
+大学生
+university student
+daigakusei
+
+走ります
+run
+hashirimasu
+
+空
+sky
+sora
+
+生きます
+live
+ikimasu
+
+`;
+
+allWords["N5 Kanji New Vocab - Hard"] = ``;
+
+allWords["N5 Kanji Hard"] = `
+関西
+the Kansai region
+kansai
+
+西洋
+the West; Western
+seiyou
+
+東南アジア
+Southeast Asia
+tounan ajia
+
+東北
+Tohoku region
+touhoku
+
+入口
+entrance
+iriguchi
+
+出口
+exit
+deguchi
+
+人口
+population
+jinkou
+
+昼間
+daytime
+hiruma
+
+`;
+
+allWords["N5 Kanji Hard - Hard"] = ``;
+
+allWords["N4 Kanji"] = ``;
+
+allWords["N4 Kanji - Hard"] = ``;
+
+allWords["N4 Kanji New Vocab"] = ``;
+
+allWords["N4 Kanji New Vocab - Hard"] = ``;
+
+allWords["N4 Kanji Hard"] = ``;
+
+allWords["N4 Kanji Hard - Hard"] = ``;
+
+allWords["N3 Kanji"] = ``;
+
+allWords["N3 Kanji - Hard"] = ``;
+
+allWords["N3 Kanji New Vocab"] = ``;
+
+allWords["N3 Kanji New Vocab - Hard"] = ``;
+
+allWords["N3 Kanji Hard"] = ``;
+
+allWords["N3 Kanji Hard - Hard"] = ``;
+
+allWords["N2 Kanji"] = ``;
+
+allWords["N2 Kanji - Hard"] = ``;
+
+allWords["N2 Kanji New Vocab"] = ``;
+
+allWords["N2 Kanji New Vocab - Hard"] = ``;
+
+allWords["N2 Kanji Hard"] = ``;
+
+allWords["N2 Kanji Hard - Hard"] = ``;
+
+allWords["N1 Kanji"] = ``;
+
+allWords["N1 Kanji - Hard"] = ``;
+
+allWords["N1 Kanji New Vocab"] = ``;
+
+allWords["N1 Kanji New Vocab - Hard"] = ``;
+
+allWords["N1 Kanji Hard"] = ``;
+
+allWords["N1 Kanji Hard - Hard"] = ``;
+
 const appSettings = {
   "flagCounts": {
     "しちにんのさむらい::The Seven Samurai": 1,
@@ -11511,9 +11724,9 @@ const appSettings = {
     "そうですか::I see.": 1,
     "なんですか::Yes? (lit: What is it?)": 1
   },
-  "currentLesson": "All Masu Form Verbs1",
-  "isHard": false,
-  "displayMode": "big-japanese",
+  "currentLesson": "Lesson 01",
+  "isHard": true,
+  "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz2",
   "quizOrder": "original",
@@ -11539,20 +11752,18 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [],
-  "lastDestCategory": "Half Words1",
-  "activeDbGroup": "N5 Others",
+  "lastDestCategory": "Romaji1",
+  "activeDbGroup": "N5 Lessons",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 06",
-    "N5 Kanji": "Kanji 04",
+    "N5 Lessons": "Lesson 01",
     "N5 Others": "All Masu Form Verbs1",
     "N4 Lessons": "Lesson 26",
-    "N4 Kanji": "Kanji 21",
     "N4 Others": "Questions2",
     "N3 Lessons": "Lesson 51",
-    "N3 Kanji": "Kanji 41",
-    "N3 Others": "Questions3",
+    "N3 Others": "Same Romaji",
     "N5 Grammer": "Grammer 05",
-    "N4 Grammer": "Grammer 26"
+    "N4 Grammer": "Grammer 26",
+    "Kanji": "N5 Kanji"
   }
 };

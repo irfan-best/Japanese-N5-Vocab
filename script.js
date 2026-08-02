@@ -23,15 +23,13 @@ const DEFAULT_SETTINGS = {
   lastGroupCategories: {
     "N5 Lessons": "Lesson 01",
     "N5 Others": "Questions1",
-    "N5 Kanji": "Kanji 01",
     "N5 Grammer": "Grammer 01",
     "N4 Lessons": "Lesson 26",
     "N4 Others": "Questions2",
-    "N4 Kanji": "Kanji 21",
     "N4 Grammer": "Grammer 26",
     "N3 Lessons": "Lesson 51",
-    "N3 Kanji": "Kanji 41",
-    "N3 Others": "Questions3"
+    "N3 Others": "Questions3",
+    "Kanji": "N5 Kanji"
   }
 };
 
@@ -237,6 +235,9 @@ function loadState() {
         currentSettings.lastGroupCategories[key] = DEFAULT_SETTINGS.lastGroupCategories[key];
       }
     }
+    delete currentSettings.lastGroupCategories["N5 Kanji"];
+    delete currentSettings.lastGroupCategories["N4 Kanji"];
+    delete currentSettings.lastGroupCategories["N3 Kanji"];
   }
 
   // 2. Load Words
@@ -260,13 +261,24 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 60 kanji categories and hard versions exist
+  // Ensure all 60 legacy kanji categories and hard versions exist (for backward compatibility)
   for (let i = 1; i <= 60; i++) {
     const kStr = `Kanji ${String(i).padStart(2, '0')}`;
     const hStr = `${kStr} - Hard`;
     if (!currentWordsDb[kStr]) currentWordsDb[kStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
+
+  // Ensure all 15 new Kanji categories (N5 to N1) and their hard versions exist
+  const levels = ["N5", "N4", "N3", "N2", "N1"];
+  levels.forEach(lv => {
+    const cats = [`${lv} Kanji`, `${lv} Kanji New Vocab`, `${lv} Kanji Hard`];
+    cats.forEach(cStr => {
+      const hStr = `${cStr} - Hard`;
+      if (!currentWordsDb[cStr]) currentWordsDb[cStr] = [];
+      if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
+    });
+  });
 
   // Ensure all 50 Grammer categories and hard versions exist
   for (let i = 1; i <= 50; i++) {
@@ -509,10 +521,6 @@ function getCategoriesForActiveGroup() {
     for (let i = 1; i <= 25; i++) {
       list.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N5 Kanji") {
-    for (let i = 1; i <= 20; i++) {
-      list.push(`Kanji ${String(i).padStart(2, '0')}`);
-    }
   } else if (group === "N5 Grammer") {
     for (let i = 1; i <= 25; i++) {
       list.push(`Grammer ${String(i).padStart(2, '0')}`);
@@ -520,13 +528,13 @@ function getCategoriesForActiveGroup() {
   } else if (group === "N5 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!list.includes(k)) list.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!list.includes(cat)) list.push(cat);
         }
       });
@@ -535,8 +543,6 @@ function getCategoriesForActiveGroup() {
     for (let i = 26; i <= 50; i++) {
       list.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N4 Kanji") {
-    list.push("Kanji 21");
   } else if (group === "N4 Grammer") {
     for (let i = 26; i <= 50; i++) {
       list.push(`Grammer ${String(i).padStart(2, '0')}`);
@@ -544,13 +550,13 @@ function getCategoriesForActiveGroup() {
   } else if (group === "N4 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!list.includes(k)) list.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!list.includes(cat)) list.push(cat);
         }
       });
@@ -559,24 +565,27 @@ function getCategoriesForActiveGroup() {
     for (let i = 51; i <= 75; i++) {
       list.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N3 Kanji") {
-    for (let i = 41; i <= 60; i++) {
-      list.push(`Kanji ${String(i).padStart(2, '0')}`);
-    }
   } else if (group === "N3 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!list.includes(k)) list.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!list.includes(cat)) list.push(cat);
         }
       });
     }
+  } else if (group === "Kanji") {
+    const levels = ["N5", "N4", "N3", "N2", "N1"];
+    levels.forEach(lv => {
+      list.push(`${lv} Kanji`);
+      list.push(`${lv} Kanji New Vocab`);
+      list.push(`${lv} Kanji Hard`);
+    });
   }
   return list;
 }
@@ -666,7 +675,7 @@ function belongsToAnyCustomCategory(word) {
   if (!word) return false;
   const cats = getAllCategoriesForWord(word);
   const customCats = currentSettings.customCategories || [];
-  return cats.some(c => customCats.includes(c) || c === "Similar Words");
+  return cats.some(c => customCats.includes(c));
 }
 
 
@@ -699,21 +708,6 @@ function getAllCategoriesForWord(word) {
       categories.push(baseKey);
     }
   }
-
-  // Check Similar Words groups
-  const groups = currentSettings.similarWordGroups || [];
-  let inSimilar = false;
-  groups.forEach((g, gIdx) => {
-    const found = (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
-    if (found) {
-      inSimilar = true;
-    }
-  });
-  if (inSimilar) {
-    categories.push("Similar Words");
-  }
-
-
 
   wordCategoriesCache.set(cacheKey, categories);
   return categories;
@@ -784,14 +778,14 @@ function populateHiddenCategoriesUI() {
 
   const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
   allKeys.forEach(k => {
-    if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i)) {
+    if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
       if (!allCats.includes(k)) allCats.push(k);
     }
   });
 
   if (currentSettings.customCategories) {
     currentSettings.customCategories.forEach(cat => {
-      if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i)) {
+      if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
         if (!allCats.includes(cat)) {
           allCats.push(cat);
         }
@@ -799,9 +793,7 @@ function populateHiddenCategoriesUI() {
     });
   }
 
-  if (!allCats.includes("Similar Words")) {
-    allCats.push("Similar Words");
-  }
+
 
   // Sort categories numerically / alphabetically
   allCats.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
@@ -894,13 +886,6 @@ function getCopiedCategoriesList(word) {
         list.push(cat);
       }
     });
-  }
-
-  // 2. Check Similar Words groups
-  const groups = currentSettings.similarWordGroups || [];
-  const inSimilar = groups.some(g => (g.words || []).some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng));
-  if (inSimilar) {
-    list.push("Similar Words");
   }
 
   return list;
@@ -2127,15 +2112,13 @@ function navigateActiveGroup(direction) {
   const groups = [
     "N5 Lessons",
     "N5 Others",
-    "N5 Kanji",
     "N5 Grammer",
     "N4 Lessons",
     "N4 Others",
-    "N4 Kanji",
     "N4 Grammer",
     "N3 Lessons",
-    "N3 Kanji",
-    "N3 Others"
+    "N3 Others",
+    "Kanji"
   ];
   
   const currentGroup = currentSettings.activeDbGroup || "N5 Lessons";
@@ -2174,7 +2157,7 @@ function selectFirstNonLessonNonKanjiCategory() {
   for (let i = 0; i < selectLesson.options.length; i++) {
     const val = selectLesson.options[i].value;
     const isLesson = val.match(/^Lesson\s+\d+/i);
-    const isKanji = val.match(/^Kanji\s+\d+/i);
+    const isKanji = val.match(/^Kanji\s+\d+/i) || val.match(/Kanji/i);
     if (!isLesson && !isKanji) {
       stopSpeech();
       currentSettings.currentLesson = val;
@@ -2361,10 +2344,6 @@ function populateLessonsDropdown() {
     for (let i = 1; i <= 25; i++) {
       lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N5 Kanji") {
-    for (let i = 1; i <= 20; i++) {
-      kanjiList.push(`Kanji ${String(i).padStart(2, '0')}`);
-    }
   } else if (group === "N5 Grammer") {
     for (let i = 1; i <= 25; i++) {
       grammerList.push(`Grammer ${String(i).padStart(2, '0')}`);
@@ -2372,13 +2351,13 @@ function populateLessonsDropdown() {
   } else if (group === "N5 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("1") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!othersList.includes(k)) othersList.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("1") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!othersList.includes(cat)) othersList.push(cat);
         }
       });
@@ -2387,8 +2366,6 @@ function populateLessonsDropdown() {
     for (let i = 26; i <= 50; i++) {
       lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N4 Kanji") {
-    kanjiList.push("Kanji 21");
   } else if (group === "N4 Grammer") {
     for (let i = 26; i <= 50; i++) {
       grammerList.push(`Grammer ${String(i).padStart(2, '0')}`);
@@ -2396,13 +2373,13 @@ function populateLessonsDropdown() {
   } else if (group === "N4 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("2") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!othersList.includes(k)) othersList.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("2") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!othersList.includes(cat)) othersList.push(cat);
         }
       });
@@ -2411,33 +2388,38 @@ function populateLessonsDropdown() {
     for (let i = 51; i <= 75; i++) {
       lessonsList.push(`Lesson ${String(i).padStart(2, '0')}`);
     }
-  } else if (group === "N3 Kanji") {
-    for (let i = 41; i <= 60; i++) {
-      kanjiList.push(`Kanji ${String(i).padStart(2, '0')}`);
-    }
   } else if (group === "N3 Others") {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
+      if (k.endsWith("3") && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
         if (!othersList.includes(k)) othersList.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
+        if (cat.endsWith("3") && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
           if (!othersList.includes(cat)) othersList.push(cat);
         }
       });
     }
+  } else if (group === "Kanji") {
+    const levels = ["N5", "N4", "N3", "N2", "N1"];
+    levels.forEach(lv => {
+      kanjiList.push(`${lv} Kanji`);
+      kanjiList.push(`${lv} Kanji New Vocab`);
+      kanjiList.push(`${lv} Kanji Hard`);
+    });
   }
 
   // Sort lists
   lessonsList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
-  kanjiList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  if (group !== "Kanji") {
+    kanjiList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  }
   grammerList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   othersList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
-  const specialList = ["Similar Words"];
+  const specialList = [];
   if (group.endsWith("Others")) {
     specialList.push("Show All Words", "Same Meaning", "Same Romaji");
   }
@@ -3114,23 +3096,50 @@ function openCategorySelectorModal(customWordsList = null) {
 
   const targetCats = [];
 
-  const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
-  allKeys.forEach(k => {
-    if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i)) {
-      if (k !== "Same Meaning" && k !== "Same Romaji" && k !== "Show All Words" && k !== currentL) {
-        if (!targetCats.includes(k)) targetCats.push(k);
-      }
-    }
-  });
-
-  if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
-      if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i)) {
-        if (cat !== "Same Meaning" && cat !== "Same Romaji" && cat !== "Show All Words" && cat !== currentL) {
-          if (!targetCats.includes(cat)) targetCats.push(cat);
+  if (group === "Kanji") {
+    const levels = ["N5", "N4", "N3", "N2", "N1"];
+    levels.forEach(lv => {
+      const cats = [`${lv} Kanji`, `${lv} Kanji New Vocab`, `${lv} Kanji Hard`];
+      cats.forEach(c => {
+        if (c !== currentL && !targetCats.includes(c)) {
+          targetCats.push(c);
+        }
+      });
+    });
+  } else {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith(targetSuffix) && !k.match(/^Lesson\s+\d+/i) && !k.match(/^Kanji\s+\d+/i) && !k.match(/^Grammer\s+\d+/i) && !k.match(/^N[1-5]\s+Kanji/i)) {
+        if (k !== "Same Meaning" && k !== "Same Romaji" && k !== "Show All Words" && k !== currentL) {
+          if (!targetCats.includes(k)) targetCats.push(k);
         }
       }
     });
+
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith(targetSuffix) && !cat.match(/^Lesson\s+\d+/i) && !cat.match(/^Kanji\s+\d+/i) && !cat.match(/^Grammer\s+\d+/i) && !cat.match(/^N[1-5]\s+Kanji/i)) {
+          if (cat !== "Same Meaning" && cat !== "Same Romaji" && cat !== "Show All Words" && cat !== currentL) {
+            if (!targetCats.includes(cat)) targetCats.push(cat);
+          }
+        }
+      });
+    }
+
+    // Add matching N-level Kanji categories for non-Kanji groups
+    let currentLevel = "";
+    if (group.startsWith("N5")) currentLevel = "N5";
+    else if (group.startsWith("N4")) currentLevel = "N4";
+    else if (group.startsWith("N3")) currentLevel = "N3";
+    
+    if (currentLevel) {
+      const cats = [`${currentLevel} Kanji`, `${currentLevel} Kanji New Vocab`, `${currentLevel} Kanji Hard`];
+      cats.forEach(c => {
+        if (c !== currentL && !targetCats.includes(c)) {
+          targetCats.push(c);
+        }
+      });
+    }
   }
 
 
@@ -3144,29 +3153,12 @@ function openCategorySelectorModal(customWordsList = null) {
     selectDest.appendChild(opt);
   });
   
-  // Similar Words (if not currently on Similar Words)
-  if (currentL !== "Similar Words") {
-    const opt = document.createElement('option');
-    opt.value = "Similar Words";
-    opt.textContent = "Similar Words";
-    selectDest.appendChild(opt);
-  }
-  
-  if (selectDest.options.length === 0) {
-    showToast("No other destination categories exist.", "danger");
-    return;
-  }
-
-  // Set default selection to last used destination category, otherwise "Similar Words"
+  // Set default selection to last used destination category, otherwise first available
   const lastDest = currentSettings.lastDestCategory;
   if (lastDest && Array.from(selectDest.options).some(opt => opt.value === lastDest)) {
     selectDest.value = lastDest;
-  } else {
-    // Set default selection to "Similar Words" if available
-    const hasSimilar = Array.from(selectDest.options).some(opt => opt.value === "Similar Words");
-    if (hasSimilar) {
-      selectDest.value = "Similar Words";
-    }
+  } else if (selectDest.options.length > 0) {
+    selectDest.value = selectDest.options[0].value;
   }
   
   openModal('modal-category-selector');
@@ -3186,38 +3178,6 @@ function executeCategoryWordCopy() {
   currentSettings.lastDestCategory = destCategory;
   saveSettings();
   if (wordsToCopy.length === 0) return;
-
-  if (destCategory === "Similar Words") {
-    if (!currentSettings.similarWordGroups) {
-      currentSettings.similarWordGroups = [];
-    }
-    if (currentSettings.similarWordGroups.length === 0) {
-      currentSettings.similarWordGroups.push({
-        words: []
-      });
-    }
-    const lastGroupIdx = currentSettings.similarWordGroups.length - 1;
-    const targetGroup = currentSettings.similarWordGroups[lastGroupIdx];
-    
-    wordsToCopy.forEach(w => {
-      targetGroup.words.push({
-        japanese: w.japanese,
-        english: w.english,
-        romaji: w.romaji
-      });
-    });
-    
-    saveSettings();
-    
-    currentSettings.selectedWordIndices = [];
-    currentSettings.focusedWordIndex = -1;
-    saveSettings();
-    
-    closeActiveModal();
-    renderCards();
-    showToast(`Copied ${wordsToCopy.length} words to Group ${lastGroupIdx + 3}`, 'success');
-    return;
-  }
   
   // Always copy the Normal version of the word (never the Hard version)
   const targetKey = destCategory;
@@ -3528,6 +3488,8 @@ function determineGroupForCategory(lessonKey) {
     const num = parseInt(baseKey.match(/^Grammer\s+(\d+)/i)[1], 10);
     if (num >= 1 && num <= 25) return "N5 Grammer";
     if (num >= 26 && num <= 50) return "N4 Grammer";
+  } else if (baseKey.match(/^(N[1-5])\s+Kanji/i)) {
+    return "Kanji";
   } else {
     if (baseKey.endsWith("1")) return "N5 Others";
     if (baseKey.endsWith("2")) return "N4 Others";
@@ -4706,15 +4668,10 @@ function switchLessonOrKanjiDirectly(num, isKanjiMode) {
   let categoryName = "";
   
   if (isKanjiMode) {
-    if (num > 60) num = 60;
-    if (num <= 20) {
-      targetGroup = "N5 Kanji";
-    } else if (num <= 40) {
-      targetGroup = "N4 Kanji";
-    } else {
-      targetGroup = "N3 Kanji";
-    }
-    categoryName = "Kanji " + String(num).padStart(2, '0');
+    if (num < 1) num = 1;
+    if (num > 5) num = 5;
+    targetGroup = "Kanji";
+    categoryName = `N${num} Kanji`;
   } else {
     if (num > 75) num = 75;
     if (num <= 25) {
