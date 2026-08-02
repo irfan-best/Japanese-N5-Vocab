@@ -10040,23 +10040,59 @@ allWords["Grammer 06"] = `
 I drink juice.
 Juusu o nomimasu.
 
+サッカーを します。
+Play soccer.
+Sakkaa o shimasu.
+
+トランプを します。
+Play cards.
+Toranpu o shimasu.
+
+パーティーを します。
+Give a party.
+Paatii o shimasu.
+
+会議を します。
+Hold a meeting.
+Kaigi o shimasu.
+
+宿題を します。
+Do homework.
+Shukudai o shimasu.
+
+仕事を します。
+Work.
+Shigoto o shimasu.
+
+電話を します。
+Call, phone.
+Denwa o shimasu.
+
 月曜日に 何を しますか。
 What are you doing on Monday?
 Getsuyoubi ni nani o shimasu ka.
+
+京都へ 行きます。
+I'm going to Kyoto.
+Kyouto e ikimasu.
 
 きのう 何を しましたか。
 What did you do yesterday?
 Kinou nani o shimashita ka.
 
+サッカーを しました。
+I played soccer.
+Sakkaa o shimashita.
+
 それは 何ですか。
-What's that?
+What’s that?
 Sore wa nan desu ka.
 
-何の 本ですか。
-What's that book about?
+何の本ですか。
+What’s that book about?
 Nan no hon desu ka.
 
-寝る まえに、何と 言いますか。
+寝るまえに、何と言いますか。
 What do you say before going to bed?
 Neru mae ni, nan to iimasu ka.
 
@@ -10064,34 +10100,59 @@ Neru mae ni, nan to iimasu ka.
 How are you getting to Tokyo?
 Nan de Toukyou e ikimasu ka.
 
+何で 東京へ 行きますか。
+How are you getting to Tokyo?
+Nani de Toukyou e ikimasu ka. (nani de makes it more clear)
+
+新幹線で 行きます。
+I’m going on the Shinkansen.
+Shinkansen de ikimasu.
+
 テレーザちゃんは 何歳ですか。
 How old is Teresa?
 Tereeza-chan wa nansai desu ka.
 
-何を 買いますか。
+何を買いますか。
 What are you going to buy?
 Nani o kaimasu ka.
 
 駅で 新聞を 買います。
-I'm going to buy a paper at the station.
+I’m going to buy a paper at the station.
 Eki de shinbun o kaimasu.
 
 いっしょに 京都へ 行きませんか。
 Would you like to come to Kyoto with us?
-Isshoni Kyouto e ikimasen ka.
+Issho ni Kyouto e ikimasen ka.
+
+ええ、いいですね。
+Yes, that’s a nice idea.
+Ee, ii desu ne.
 
 ちょっと 休みましょう。
-Let's take a break.
+Let’s take a break.
 Chotto yasumimashou.
 
 いっしょに 昼ごはんを 食べませんか。
 Shall we have lunch together?
-Isshoni hirugohan o tabemasen ka.
+Issho ni hirugohan o tabemasen ka.
+
+ええ、食べましょう。
+Yes, let’s do that.
+Ee, tabemashou.
 
 日曜日に 京都へ 行きました。
 I went to Kyoto on Sunday.
 Nichiyoubi ni Kyouto e ikimashita.
 
+京都ですか。いいですね。
+Kyoto, eh? Great!
+Kyouto desu ka. Ii desu ne.
+
+`;
+
+allWords["Grammer 06 - Hard"] = ``;
+
+allWords["Grammer 07"] = `
 はしで 食べます。
 I eat with chopsticks.
 Hashi de tabemasu.
@@ -10101,36 +10162,48 @@ I'm going to write the report in Japanese.
 Nihongo de repooto o kakimasu.
 
 「ありがとう」は 英語で 何ですか。
-What's "Arigatou" in English?
+What's 'Arigato' in English?
 "Arigatou" wa Eigo de nan desu ka.
 
+「Thank you」です。
+It's 'thank you'.
+"Thank you" desu.
+
 「Thank you」は 日本語で 何ですか。
-What's "thank you" in Japanese?
+What's 'thank you' in Japanese?
 "Thank you" wa Nihongo de nan desu ka.
 
-木村さんに 花を あげました。
+「ありがとう」です。
+It's 'Arigato'.
+"Arigatou" desu.
+
+［わたしは］ 木村さんに 花を あげました。
 I gave Ms. Kimura some flowers.
-Kimura-san ni hana o agemashita.
+[Watashi wa] Kimura-san ni hana o agemashita.
 
-イーさんに 本を 貸しました。
+［わたしは］ イーさんに 本を 貸しました。
 I lent Ms. Lee a book.
-Ii-san ni hon o kashimashita.
+[Watashi wa] Ii-san ni hon o kashimashita.
 
-山田さんに 英語を 教えます。
+［わたしは］ 山田さんに 英語を 教えます。
 I teach Mr. Yamada English.
-Yamada-san ni Eigo o oshiemasu.
+[Watashi wa] Yamada-san ni Eigo o oshiemasu.
 
-山田さんに 花を もらいました。
+［わたしは］ 山田さんに 花を もらいました。
 I received some flowers from Mr. Yamada.
-Yamada-san ni hana o moraimashita.
+[Watashi wa] Yamada-san ni hana o moraimashita.
 
-カリナさんに CDを 借りました。
+［わたしは］ カリナさんに CDを 借りました。
 I borrowed a CD from Karina.
-Karina-san ni shiidii o karimashita.
+[Watashi wa] Karina-san ni CD o karimashita.
 
-ワンさんに 中国語を 習います。
+［わたしは］ ワンさんに 中国語を 習います。
 I'm learning Chinese from Mr. Wang.
-Wan-san ni Chuugokugo o naraimasu.
+[Watashi wa] Wan-san ni Chuugokugo o naraimasu.
+
+［わたしは］ 山田さんから 花を もらいました。
+I received some flowers from Mr. Yamada.
+[Watashi wa] Yamada-san kara hana o moraimashita.
 
 銀行から お金を 借りました。
 I borrowed some money from the bank.
@@ -10140,14 +10213,32 @@ Ginkou kara okane o karimashita.
 Have you sent the baggage yet?
 Mou nimotsu o okurimashita ka.
 
-この スプーン、すてきですね。
+はい、［もう］ 送りました。
+Yes, I have [sent it].
+Hai, [mou] okurimashita.
+
+いいえ、まだ 送って いません。
+No, I haven't sent it yet.
+Iie, mada okutte imasen.
+
+いいえ、まだです。
+No, not yet.
+Iie, mada desu.
+
+この スプーン［は］、すてきですね。
 This is a lovely spoon, isn't it?
-Kono supuun, suteki desu ne.
+Kono supuun [wa], suteki desu ne.
 
-コーヒー、もう 一杯 いかがですか。
+コーヒー［を］、もう 一杯 いかがですか。
 Would you like another cup of coffee?
-Koohii, mou ippai ikaga desu ka.
+Koohii [o], mou ippai ikaga desu ka.
 
+
+`;
+
+allWords["Grammer 07 - Hard"] = ``;
+
+allWords["Grammer 08"] = `
 ワット先生は 親切です。
 Mr. Watt is kind.
 Watto-sensei wa shinsetsu desu.
@@ -10156,9 +10247,9 @@ Watto-sensei wa shinsetsu desu.
 Mt. Fuji is high.
 Fujisan wa takai desu.
 
-あそこは 静かじゃ ありません。
+あそこは 静かじゃ（では） ありません。
 It's not quiet there.
-Asoko wa shizuka ja arimasen.
+Asoko wa shizuka ja (dewa) arimasen.
 
 この 本は おもしろくないです。
 This book is not interesting.
@@ -10168,9 +10259,17 @@ Kono hon wa omoshirokunai desu.
 Is it cold in Beijing?
 Pekin wa samui desu ka.
 
+はい、寒いです。
+Yes, it is [cold].
+Hai, samui desu.
+
 奈良公園は にぎやかですか。
 Is Nara Park busy?
 Nara-kouen wa nigiyaka desu ka.
+
+いいえ、にぎやかじゃ ありません。
+No, it isn't [busy].
+Iie, nigiyaka ja arimasen.
 
 ワット先生は 親切な 先生です。
 Mr. Watt is a considerate teacher.
@@ -10198,20 +10297,37 @@ Shanhai wa amari samukunai desu.
 
 さくら大学は あまり 有名な 大学じゃ ありません。
 Sakura University is not a very well-known university.
-Sakura daigaku wa amari yuumei na daigaku ja arimasen.
+Sakura-daigaku wa amari yuumei na daigaku ja arimasen.
 
 日本の 生活は どうですか。
 How do you find life in Japan?
 Nihon no seikatsu wa dou desu ka.
 
+楽しいです。
+It's fun.
+Tanoshii desu.
+
 奈良は どんな 町ですか。
 What sort of town is Nara?
 Nara wa donna machi desu ka.
+
+古い 町です。
+It's an old town.
+Furui machi desu.
 
 お仕事は どうですか。
 How's your work going?
 Oshigoto wa dou desu ka.
 
+そうですね。 忙しいですが、おもしろいです。
+Well, it's busy, but it's interesting.
+Sou desu ne. Isogashii desu ga, omoshiroi desu.
+
+`;
+
+allWords["Grammer 08 - Hard"] = ``;
+
+allWords["Grammer 09"] = `
 わたしは イタリア料理が 好きです。
 I like Italian food.
 Watashi wa Itaria ryouri ga suki desu.
@@ -10268,6 +10384,11 @@ Doushite asa shinbun o yomimasen ka.
 I'm going home early today.
 Kyou wa hayaku kaerimasu.
 
+`;
+
+allWords["Grammer 09 - Hard"] = ``;
+
+allWords["Grammer 10"] = `
 コンピューターが あります。
 There's a computer.
 Konpyuutaa ga arimasu.
@@ -10341,22 +10462,6 @@ Excuse me. Where's Asia Store?
 Sumimasen. Ajia sutoa wa doko desu ka.
 
 `;
-
-allWords["Grammer 06 - Hard"] = ``;
-
-allWords["Grammer 07"] = ``;
-
-allWords["Grammer 07 - Hard"] = ``;
-
-allWords["Grammer 08"] = ``;
-
-allWords["Grammer 08 - Hard"] = ``;
-
-allWords["Grammer 09"] = ``;
-
-allWords["Grammer 09 - Hard"] = ``;
-
-allWords["Grammer 10"] = ``;
 
 allWords["Grammer 10 - Hard"] = ``;
 
@@ -11724,8 +11829,8 @@ const appSettings = {
     "そうですか::I see.": 1,
     "なんですか::Yes? (lit: What is it?)": 1
   },
-  "currentLesson": "Lesson 01",
-  "isHard": true,
+  "currentLesson": "Grammer 07",
+  "isHard": false,
   "displayMode": "big-english",
   "readingGap": "0",
   "quizMode": "quiz2",
@@ -11752,17 +11857,17 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [],
-  "lastDestCategory": "Romaji1",
-  "activeDbGroup": "N5 Lessons",
+  "lastDestCategory": "Grammer 10",
+  "activeDbGroup": "N5 Grammer",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
     "N5 Lessons": "Lesson 01",
-    "N5 Others": "All Masu Form Verbs1",
+    "N5 Others": "Ko So Aso1",
     "N4 Lessons": "Lesson 26",
-    "N4 Others": "Questions2",
+    "N4 Others": "Show All Words",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
-    "N5 Grammer": "Grammer 05",
+    "N5 Grammer": "Grammer 07",
     "N4 Grammer": "Grammer 26",
     "Kanji": "N5 Kanji"
   }

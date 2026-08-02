@@ -3106,6 +3106,20 @@ function openCategorySelectorModal(customWordsList = null) {
         }
       });
     });
+  } else if (group === "N5 Grammer") {
+    for (let i = 1; i <= 25; i++) {
+      const gName = `Grammer ${String(i).padStart(2, '0')}`;
+      if (gName !== currentL) {
+        targetCats.push(gName);
+      }
+    }
+  } else if (group === "N4 Grammer") {
+    for (let i = 26; i <= 50; i++) {
+      const gName = `Grammer ${String(i).padStart(2, '0')}`;
+      if (gName !== currentL) {
+        targetCats.push(gName);
+      }
+    }
   } else {
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
@@ -3186,13 +3200,22 @@ function executeCategoryWordCopy() {
 
   console.log('wrodstOCopy:',wordsToCopy);
   
-  // Copy words (clone objects to prevent reference conflicts)
+  let copiedCount = 0;
+  // Copy words (clone objects to prevent reference conflicts, ensuring no duplicates)
   wordsToCopy.forEach(w => {
-    currentWordsDb[targetKey].push({
-      japanese: w.japanese,
-      english: w.english,
-      romaji: w.romaji
-    });
+    if (!w) return;
+    const isDuplicate = currentWordsDb[targetKey].some(destWord => 
+      destWord.japanese.trim() === w.japanese.trim() && 
+      destWord.english.trim() === w.english.trim()
+    );
+    if (!isDuplicate) {
+      currentWordsDb[targetKey].push({
+        japanese: w.japanese,
+        english: w.english,
+        romaji: w.romaji
+      });
+      copiedCount++;
+    }
   });
   
   saveWords();
@@ -3204,7 +3227,11 @@ function executeCategoryWordCopy() {
   
   closeActiveModal();
   renderCards();
-  showToast(`Copied ${wordsToCopy.length} words to ${destCategory} (Normal)`, 'success');
+  if (copiedCount > 0) {
+    showToast(`Copied ${copiedCount} words to ${destCategory} (Normal)`, 'success');
+  } else {
+    showToast(`All words already exist in ${destCategory}.`, 'info');
+  }
 }
 
 function openSimilarGroupSelectorModal(customWordsList = null) {
@@ -3255,13 +3282,21 @@ function executeSimilarGroupWordCopy() {
   if (wordsToCopy.length === 0) return;
   
   const targetGroup = currentSettings.similarWordGroups[targetGroupIdx];
+  let copiedCount = 0;
   if (targetGroup) {
     wordsToCopy.forEach(w => {
-      targetGroup.words.push({
-        japanese: w.japanese,
-        english: w.english,
-        romaji: w.romaji
-      });
+      const isDuplicate = (targetGroup.words || []).some(destWord => 
+        destWord.japanese.trim() === w.japanese.trim() && 
+        destWord.english.trim() === w.english.trim()
+      );
+      if (!isDuplicate) {
+        targetGroup.words.push({
+          japanese: w.japanese,
+          english: w.english,
+          romaji: w.romaji
+        });
+        copiedCount++;
+      }
     });
     
     saveSettings();
@@ -3273,7 +3308,11 @@ function executeSimilarGroupWordCopy() {
   
   closeActiveModal();
   renderCards();
-  showToast(`Copied ${wordsToCopy.length} words to Group ${targetGroupIdx + 3}`, 'success');
+  if (copiedCount > 0) {
+    showToast(`Copied ${copiedCount} words to Group ${targetGroupIdx + 3}`, 'success');
+  } else {
+    showToast(`All words already exist in Group ${targetGroupIdx + 3}.`, 'info');
+  }
 }
 
 let activeCategoryJumpIndex = -1;
