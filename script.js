@@ -4679,13 +4679,19 @@ function handleShiftDigit(digit) {
   
   shiftDigitBuffer += digit;
   
-  const isKanjiMode = (currentSettings.activeDbGroup || "N5 Lessons").includes("Kanji");
+  const currentGroup = currentSettings.activeDbGroup || "N5 Lessons";
+  let mode = "Lesson";
+  if (currentGroup.includes("Kanji")) {
+    mode = "Kanji";
+  } else if (currentGroup.includes("Grammer")) {
+    mode = "Grammer";
+  }
   
   if (shiftDigitBuffer.length === 2) {
     let num = parseInt(shiftDigitBuffer, 10);
     if (num < 1) num = 1;
     
-    switchLessonOrKanjiDirectly(num, isKanjiMode);
+    switchLessonOrKanjiDirectly(num, mode);
     shiftDigitBuffer = "";
   } else {
     // Wait 450ms for a second digit
@@ -4693,24 +4699,32 @@ function handleShiftDigit(digit) {
       let num = parseInt(shiftDigitBuffer, 10);
       if (num < 1) num = 1;
       
-      switchLessonOrKanjiDirectly(num, isKanjiMode);
+      switchLessonOrKanjiDirectly(num, mode);
       shiftDigitBuffer = "";
       shiftDigitTimeout = null;
     }, 450);
   }
 }
 
-function switchLessonOrKanjiDirectly(num, isKanjiMode) {
+function switchLessonOrKanjiDirectly(num, mode) {
   stopSpeech();
   
   let targetGroup = "";
   let categoryName = "";
   
-  if (isKanjiMode) {
+  if (mode === "Kanji") {
     if (num < 1) num = 1;
     if (num > 5) num = 5;
     targetGroup = "Kanji";
     categoryName = `N${num} Kanji`;
+  } else if (mode === "Grammer") {
+    if (num > 50) num = 50;
+    if (num <= 25) {
+      targetGroup = "N5 Grammer";
+    } else {
+      targetGroup = "N4 Grammer";
+    }
+    categoryName = "Grammer " + String(num).padStart(2, '0');
   } else {
     if (num > 75) num = 75;
     if (num <= 25) {

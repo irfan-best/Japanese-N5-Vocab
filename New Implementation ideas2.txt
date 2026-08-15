@@ -228,3 +228,13 @@ for hidden categories check boxes -> can you show checkbox options in sorted ord
 when i'm in an group and being an category, and then changing category in the samegroup then it should maintain
 current selected category part, so that when i switch to someother group and then switch back to this group then
 it should directly open this category.
+
+---------------------------------
+selecting database should automatically close the close settings
+Kanji's for each words also to be added, if no kanji for the word, kanji should be same as japanese part
+and make this words display as red outline, also display mode add feature to see kanji, when this option is 
+selected only kanji is shown, in quiz mode give option kanji to japanese, question will be in kanji dont read it
+out, when we click on answer reveal then read out answer in japanese.
+
+For each category now if we have 4 lines the 4th line will be kanji, if there are only 3 lines then 
+it doesn't have kanji, so kanji is same as japanese.

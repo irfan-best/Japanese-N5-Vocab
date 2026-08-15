@@ -54,9 +54,19 @@ Aku -> Intransitive (Intransitive is said as Jidoushi in japanese)
 Akeru -> Transitive (Tadoushi)
     Someone opens something
 
-dashimasu -> means take out something -> Use this when physically moving an item out of a container, pocket, or bag.
+demasu vs dashimasu: (chatgpt)
+    出ます (demasu) and 出します (dashimasu) form an intransitive / transitive pair 
+    sharing the same root idea of "coming out" or "putting out."
+    
+    dashimasu -> means take out something -> Use this when physically moving an item out of a container, pocket, or bag.
 
-demasu -> is Intransitive as per chatgpt
+    demasu      -> Intransitive -> uses ga or ni 
+    dashimasu   -> transitive   -> uses o
+    The main difference is whether the action happens on its own (or naturally) versus 
+    someone actively making it happen.
+
+    Someone actively takes out, sends, or submits something -> Dashimasu
+
 
 chatgpt:
     Yobimasu (呼びます)	To call out to, summon, or invite	
@@ -217,3 +227,6 @@ manabimasu vs benkyoushimasu:
     manabimasu: To learn / to acquire wisdom or skills
     Focus: Deep understanding, real-world application, life skills
     
+yoku: well, much
+    yoku wakarimasu -> i understand well.
+    yoku eiga o mimasu -> i often watch movies (much)

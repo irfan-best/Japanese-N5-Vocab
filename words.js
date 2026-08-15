@@ -681,6 +681,10 @@ jakaruta
 Berlin
 berurin
 
+しんおおさか
+Shin-Osaka
+shin-oosaka
+新大阪
 `;
 
 allWords["Lesson 03 - Hard"] = `
@@ -1077,6 +1081,16 @@ doyoubi
 `;
 
 allWords["Lesson 05"] = `
+こうしえん
+Koshien (town near Osaka)
+koushien
+甲子園。
+
+おおさかじょう
+Osaka Castle (a famous castle in Osaka)
+oosakajou
+大阪城。
+
 いつ
 when
 itsu
@@ -4150,7 +4164,7 @@ genkin
 diary, journal
 nikki
 
-[お] いのり
+おいのり
 prayer
 [o] inori
 
@@ -4543,7 +4557,7 @@ kangaruu
 
 ゆめ
 dream
-ゆめ
+yume
 
 てんさい
 genius
@@ -4632,7 +4646,7 @@ kachimasu
 be held, take place
 arimasu
 
-[お]はなし
+おはなし
 talk, speech, story, what one's say
 [o]hanashi
 
@@ -4850,7 +4864,7 @@ tsumami
 
 おしょうがつ
 New Year's Day
-oshougatsu
+[o]shougatsu
 
 （せんせいに）ききます
 ask (the teacher)
@@ -4880,7 +4894,7 @@ ki o tsukete
 machine
 kikai
 
-［お］ゆ
+おゆ
 hot water
 [o]yu
 
@@ -5106,6 +5120,14 @@ itte mairimasu
 いってらっしゃい
 Have a good day, see you later.
 itte rasshai
+
+いってらっしゃい
+See you later./So long. (lit. Go and come back.)
+itterasshai
+
+いって きます
+See you later./So long. (lit. I'm going and coming back.)
+itte kimasu
 
 ただいま
 I'm home.
@@ -7500,6 +7522,26 @@ dokusho
 single, unmarried
 dokushin
 
+かちょう
+section chief
+kachou
+
+ぶちょう
+department chief
+buchou
+
+しゃちょう
+president of a company
+shachou
+
+しゅしょう
+prime minister
+shushou
+
+だいとうりょう
+president
+daitouryou
+
 `;
 
 allWords["Similar Ones1 - Hard"] = ``;
@@ -7787,17 +7829,17 @@ suki na
 dislike
 kirai na
 
-べんり（な）
-convenient
-benri na
+ゆうめい（な）
+famous
+yuumei na
 
 げんき（な）
 healthy, sound, cheerful
 genki na
 
-ゆうめい（な）
-famous
-yuumei na
+べんり（な）
+convenient
+benri na
 
 むり（な）
 impossible, excessive
@@ -8040,6 +8082,10 @@ oshiemasu
 push, press
 oshimasu
 
+おろします ［おかねを～］
+withdraw
+oroshimasu [okane o ~]
+
 おきます
 put
 okimasu
@@ -8108,9 +8154,17 @@ take out, to submit, to send
 hand in (a report)
 (repooto o) dashimasu
 
-おろします ［おかねを～］
-withdraw
-oroshimasu [okane o ~]
+（みせを）でます
+go out (of a shop)
+(mise o) demasu
+
+でます
+come out
+demasu
+
+でます ［おつりが～］
+[change] come out
+demasu [otsuri ga ~]
 
 はいります
 enter, enroll
@@ -8119,14 +8173,6 @@ hairimasu
 （みせに）はいります
 enter (a shop)
 (mise ni) hairimasu
-
-（みせを）でます
-go out (of a shop)
-(mise o) demasu
-
-でます
-come out
-demasu
 
 でかけます
 go out
@@ -8267,6 +8313,10 @@ suwarimasu
 さわります
 touch, feel
 sawarimasu
+
+さわります ［ドアに～］
+touch [a door]
+sawarimasu [doa ni ~]
 
 やすみます
 take a rest, take a holiday
@@ -8675,6 +8725,10 @@ oinori o shimasu
 おはなみ をします
 ohanami o shimasu
 view the cherry blossoms
+
+すもう
+sumo wrestling (～を します：wrestle)
+すもう
 
 がんばります
 do one's best, work hard
@@ -9649,43 +9703,47 @@ Santosu-san wa gakusei ja arimasen.
 
 ミラーさんは アメリカ人ですか。
 Is Mr. Miller an American?
-Miraa-san wa Amerikajin desu ka.
+Miraa-san wa amerika-jin desu ka.
 
-はい、アメリカ人です。
-Yes, he is [an American].
-Hai, Amerikajin desu.
+……はい、アメリカ人です。
+…Yes, he is [an American].
+Hai, amerika-jin desu.
 
 ミラーさんは 先生ですか。
 Is Mr. Miller a teacher?
 Miraa-san wa sensei desu ka.
 
-いいえ、先生じゃ ありません。
-No, he isn't [a teacher].
+……いいえ、先生じゃ ありません。
+…No, he isn't [a teacher].
 Iie, sensei ja arimasen.
 
 あの 方は どなたですか。
 Who's that [person]?
 Ano kata wa donata desu ka.
 
-あの 方は ミラーさんです。
-That's Mr. Miller.
-Ano kata wa Miraa-san desu.
+……［あの 方は］ ミラーさんです。
+…That's Mr. Miller.
+[Ano kata wa] Miraa-san desu.
 
 ミラーさんは 会社員です。グプタさんも 会社員です。
-Mr. Miller is a company employee. Mr. Gupta is also a company employee.
+Mr. Miller is a company employee. Mr Gupta is also a company employee.
 Miraa-san wa kaishain desu. Guputa-san mo kaishain desu.
 
 ミラーさんは IMCの 社員です。
 Mr. Miller is an IMC employee.
 Miraa-san wa IMC no shain desu.
 
-鈴木：ミラーさんは 学生ですか。
-Suzuki: Are you a student, Mr. Miller?
-Suzuki: Miraa-san wa gakusei desu ka.
+あの 方は ミラーさんです。
+That's Mr. Miller.
+Ano kata wa Miraa-san desu.
 
-ミラー：いいえ、会社員です。
-Miller: No, I work for a company.
-Miraa: Iie, kaishain desu.
+ミラーさんは 学生ですか。
+Are you a student, Mr. Miller?
+Miraa-san wa gakusei desu ka.
+
+……いいえ、会社員です。
+…No, I work for a company.
+Iie, kaishain desu.
 
 `;
 
@@ -9716,29 +9774,29 @@ Hai, sou desu.
 Is that Mr. Miller's?
 Sore wa Miraa-san no desu ka.
 
-いいえ、違います。
-No, it isn't.
+……いいえ、違います。
+…No, it isn't.
 Iie, chigaimasu.
 
 それは シャープペンシルですか。
 Is that a mechanical pencil?
-Sore wa shaapupenshiru desu ka.
+Sore wa shaapu penshiru desu ka.
 
-いいえ、ボールペンです。
-It's a ballpoint pen.
+……いいえ、ボールペンです。
+…No, it's a ballpoint pen.
 Iie, boorupen desu.
 
 これは 「９」ですか、「７」ですか。
 Is this a 9 or a 7?
 Kore wa "kyuu" desu ka, "nana" desu ka.
 
-「９」です。
-It's a 9.
+……「９」です。
+…It's a 9.
 "Kyuu" desu.
 
 これは コンピューターの 本です。
 This is a book on computers.
-Kore wa konpyuataa no hon desu.
+Kore wa konpyuutaa no hon desu.
 
 これは わたしの 本です。
 This is my book.
@@ -9748,32 +9806,32 @@ Kore wa watashi no hon desu.
 Whose bag is that?
 Are wa dare no kaban desu ka.
 
-佐藤さんのです。
-It's Ms. Sato's.
+……佐藤さんのです。
+…It's Ms. Sato's.
 Satou-san no desu.
 
 この かばんは あなたのですか。
 Is this bag yours?
 Kono kaban wa anata no desu ka.
 
-いいえ、わたしのじゃ ありません。
-No, it isn't [mine].
+……いいえ、わたしのじゃ ありません。
+…No, it isn't [mine].
 Iie, watashi no ja arimasen.
 
 ミラーさんは IMCの 社員ですか。
 Does Mr. Miller work at IMC?
 Miraa-san wa IMC no shain desu ka.
 
-はい、IMCの 社員です。
-Yes, he does.
+……はい、IMCの 社員です。
+…Yes, he does.
 Hai, IMC no shain desu.
 
 この 傘は あなたのですか。
 Is this umbrella yours?
 Kono kasa wa anata no desu ka.
 
-いいえ、違います。シュミットさんのです。
-No, it isn't. It's Mr. Schmidt's.
+……いいえ、違います。シュミットさんのです。
+…No, it isn't. It's Mr Schmidt's.
 Iie, chigaimasu. Shumitto-san no desu.
 
 そうですか。
@@ -9801,16 +9859,16 @@ Yamada-san wa jimusho desu.
 Where's the toilet?
 Otearai wa doko desu ka.
 
-あそこです。
-It's over there.
-asoko desu.
+……あそこです。
+…It's over there.
+Asoko desu.
 
 エレベーターは どちらですか。
 Where's the lift?
 Erebeetaa wa dochira desu ka.
 
-あちらです。
-It's in that direction.
+……あちらです。
+…It's in that direction. (It's over there.)
 Achira desu.
 
 学校は どこですか。
@@ -9822,16 +9880,16 @@ What company do you work for?
 Kaisha wa dochira desu ka.
 
 これは どこの コンピューターですか。
-Where is this computer made?
-Kore wa doko no konpyuataa desu ka.
+Where is this computer made? / What company is this computer made by?
+Kore wa doko no konpyuutaa desu ka.
 
-日本の コンピューターです。
-It's made in Japan.
-Nihon no konpyuataa desu.
+……日本の コンピューターです。
+…It's made in Japan.
+Nihon no konpyuutaa desu.
 
-パワー電気の コンピューターです。
-It's made by Power Electric Company.
-Pawaa Denki no konpyuataa desu.
+……パワー電気の コンピューターです。
+…It's made by Power Electric Company.
+Pawaa denki no konpyuutaa desu.
 
 ［お］国は どちらですか。
 What country are you from?
@@ -9846,9 +9904,9 @@ allWords["Grammer 04"] = `
 What time is it now?
 Ima nanji desu ka.
 
-7時 10分です。
-It's 7:10.
-Shichiji juppun desu.
+……7時 10分 です。
+…It's 7:10.
+Nanaji juuppun desu.
 
 わたしは 毎日 勉強します。
 I study every day.
@@ -9870,20 +9928,20 @@ Kesa rokuji ni okimashita.
 Did you study yesterday?
 Kinou benkyou shimashita ka.
 
-はい、勉強しました。
-Yes, I did [study].
+……はい、勉強しました。
+…Yes, I did [study].
 Hai, benkyou shimashita.
 
-いいえ、勉強しませんでした。
-No, I didn't [study].
-Iie, benkyou shimasen deshita.
+……いいえ、勉強しませんでした。
+…No, I didn't [study].
+Iie, benkyou shimasendeshita.
 
 毎朝 何時に 起きますか。
 What time do you get up in the mornings?
 Maiasa nanji ni okimasu ka.
 
-6時に 起きます。
-[I get up at] six o'clock.
+……6時に 起きます。
+…[I get up at] six o'clock.
 Rokuji ni okimasu.
 
 6時半に 起きます。
@@ -9898,7 +9956,7 @@ Shichigatsu futsuka ni Nihon e kimashita.
 I studied yesterday.
 Kinou benkyou shimashita.
 
-日曜日 ［に］奈良へ 行きます。
+日曜日［に］奈良へ 行きます。
 I'm going to Nara on Sunday.
 Nichiyoubi [ni] Nara e ikimasu.
 
@@ -9906,7 +9964,7 @@ Nichiyoubi [ni] Nara e ikimasu.
 I study from 9 to 5.
 Kuji kara goji made benkyou shimasu.
 
-大阪から 東京まで 3時間かかります。
+大阪から 東京まで 3時間 かかります。
 It takes three hours from Osaka to Tokyo.
 Oosaka kara Toukyou made sanjikan kakarimasu.
 
@@ -9930,17 +9988,17 @@ Ginkou no yasumi wa doyoubi to nichiyoubi desu.
 I study till ten every day.
 Mainichi juuji made benkyou shimasu.
 
-大変ですね。
-That's tough, isn't it?
+……大変ですね。
+…That's tough, isn't it?
 Taihen desu ne.
 
 山田さんの 電話番号は 871の 6813です。
 Mr. Yamada's telephone number is 871-6813.
-Yamada-san no denwa bangou wa 871 no 6813 desu.
+Yamada-san no denwa bangou wa happyaku nanajuu ichi no roppyaku happyaku juusan desu.
 
-871の 6813ですね。
-871-6813, right?
-871 no 6813 desu ne.
+……871の 6813ですね。
+…871-6813, right?
+Happyaku nanajuu ichi no roppyaku happyaku juusan desu ne.
 
 `;
 
@@ -9969,7 +10027,7 @@ Nani mo tabemasen.
 
 だれも 来ませんでした。
 Nobody came.
-Dare mo kimasen deshita.
+Dare mo kimasendeshita.
 
 電車で 行きます。
 I'm going by train.
@@ -9995,29 +10053,29 @@ Hitori de Toukyou e ikimasu.
 When did you come to Japan?
 Itsu Nihon e kimashita ka.
 
-3月 25日に 来ました。
-[I came] on 25th March.
+……3月 25日に 来ました。
+…[I came] on 25th March.
 Sangatsu nijuugonichi ni kimashita.
 
 いつ 広島へ 行きますか。
 When are you going to Hiroshima?
 Itsu Hiroshima e ikimasu ka.
 
-来週 行きます。
-[I'm going] next week.
+……来週 行きます。
+…[I'm going] next week.
 Raishuu ikimasu.
 
 この 電車は 甲子園へ 行きますか。
 Does this train go to Koshien?
 Kono densha wa Koushien e ikimasu ka.
 
-いいえ、行きません。次の 「普通」 ですよ。
-No, it doesn't. You need the next local train.
+……いいえ、行きません。次の 「普通」 ですよ。
+…No, it doesn't. You need the next local train.
 Iie, ikimasen. Tsugi no "futsuu" desu yo.
 
 北海道に 馬が たくさん いますよ。
 There are a lot of horses in Hokkaido, you know.
-Hokkaidou ni uma ga takusan imasu yo.
+Hokkaidoo ni uma ga takusan imasu yo.
 
 マリアさん、この アイスクリーム、おいしいですよ。
 Maria, this ice cream is very nice, you know.
@@ -10027,8 +10085,8 @@ Maria-san, kono aisukuriimu, oishii desu yo.
 It's Sunday tomorrow, isn't it?
 Ashita wa nichiyoubi desu ne.
 
-あ、そうですね。
-Oh, yes, so it is.
+……あ、そうですね。
+…Oh, yes, so it is.
 A, sou desu ne.
 
 `;
@@ -10233,7 +10291,6 @@ Kono supuun [wa], suteki desu ne.
 Would you like another cup of coffee?
 Koohii [o], mou ippai ikaga desu ka.
 
-
 `;
 
 allWords["Grammer 07 - Hard"] = ``;
@@ -10344,6 +10401,10 @@ Watashi wa kuruma ga arimasu.
 What sports do you like?
 Donna supootsu ga suki desu ka.
 
+サッカーが 好きです。
+I like soccer.
+Sakkaa ga suki desu.
+
 英語が よく わかります。
 I understand English well.
 Eigo ga yoku wakarimasu.
@@ -10376,13 +10437,33 @@ Ano eiga wa zenzen omoshirokunai desu.
 I don't read newspapers because I don't have time.
 Jikan ga arimasen kara, shinbun o yomimasen.
 
+毎朝 新聞を 読みますか。
+Do you read a newspaper every morning?
+Maiasa shinbun o yomimasu ka.
+
+いいえ、読みません。時間が ありませんから。
+No, I don't. I don't have time.
+Iie, yomimasen. Jikan ga arimasen kara.
+
 どうして 朝 新聞を 読みませんか。
 Why don't you read a newspaper in the mornings?
 Doushite asa shinbun o yomimasen ka.
 
+時間が ありませんから。
+Because I don't have time.
+Jikan ga arimasen kara.
+
 きょうは 早く 帰ります。
 I'm going home early today.
 Kyou wa hayaku kaerimasu.
+
+どうしてですか。
+Why?
+Doushite desu ka.
+
+子どもの 誕生日ですから。
+Because it's my son's (daughter's) birthday.
+Kodomo no tanjoubi desu kara.
 
 `;
 
@@ -10391,7 +10472,7 @@ allWords["Grammer 09 - Hard"] = ``;
 allWords["Grammer 10"] = `
 コンピューターが あります。
 There's a computer.
-Konpyuutaa ga arimasu.
+Konpyūta ga arimasu.
 
 桜が あります。
 There are cherry trees.
@@ -10399,9 +10480,9 @@ Sakura ga arimasu.
 
 公園が あります。
 There's a park.
-Kouen ga arimasu.
+Kōen ga arimasu.
 
-男の 人が います。
+男の人が います。
 There's a man.
 Otoko no hito ga imasu.
 
@@ -10409,57 +10490,97 @@ Otoko no hito ga imasu.
 There's a dog.
 Inu ga imasu.
 
-わたしの 部屋に 机が あります。
+わたしの部屋に 机があります。
 There's a desk in my room.
 Watashi no heya ni tsukue ga arimasu.
 
 事務所に ミラーさんが います。
 Mr. Miller is in the office.
-Jimusho ni Miraa-san ga imasu.
+Jimusho ni Mirā-san ga imasu.
 
-地下に 何が ありますか。
+地下に 何がありますか。
 What's in the basement?
 Chika ni nani ga arimasu ka.
+
+レストランが あります。
+There's a restaurant.
+Resutoran ga arimasu.
 
 受付に だれが いますか。
 Who's at the reception desk?
 Uketsuke ni dare ga imasu ka.
 
+木村さんが います。
+Ms. Kimura is.
+Kimura-san ga imasu.
+
 東京ディズニーランドは 千葉県に あります。
 Tokyo Disneyland is in Chiba prefecture.
-Toukyou Dizuniirando wa Chiba-ken ni arimasu.
+Tōkyō Dizunīrando wa Chiba-ken ni arimasu.
+
+ミラーさんは 事務所に います。
+Mr. Miller is in the office.
+Mirā-san wa jimusho ni imasu.
 
 東京ディズニーランドは どこに ありますか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko ni arimasu ka.
+Tōkyō Dizunīrando wa doko ni arimasu ka.
+
+千葉県に あります。
+It's in Chiba prefecture.
+Chiba-ken ni arimasu.
+
+ミラーさんは どこに いますか。
+Where's Mr. Miller?
+Mirā-san wa doko ni imasu ka.
+
+事務所に います。
+He's in the office.
+Jimusho ni imasu.
 
 東京ディズニーランドは どこですか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko desu ka.
+Tōkyō Dizunīrando wa doko desu ka.
 
-机の 上に 写真が あります。
+千葉県です。
+It's in Chiba prefecture.
+Chiba-ken desu.
+
+机の上に 写真があります。
 There's a photograph on the desk.
 Tsukue no ue ni shashin ga arimasu.
 
-郵便局は 銀行の 隣に あります。
+郵便局は 銀行の隣に あります。
 The post office is next to the bank.
-Yuubinkyoku wa ginkou no tonari ni arimasu.
+Yūbinkyoku wa ginkō no tonari ni arimasu.
 
 本屋は 花屋と スーパーの 間に あります。
 The bookshop is between the florist and the supermarket.
-Honya wa hanaya to suupaa no aida ni arimasu.
+Honya wa hanaya to sūpā no aida ni arimasu.
 
-駅の 近くで 友達に 会いました。
+駅の近くで 友達に 会いました。
 I met a friend near the station.
 Eki no chikaku de tomodachi ni aimashita.
 
-箱の 中に 手紙や 写真が あります。
+箱の中に 手紙や 写真が あります。
 There are some letters, photographs and other things in the box.
 Hako no naka ni tegami ya shashin ga arimasu.
 
+箱の中に 手紙や 写真などが あります。
+There are some letters, photographs and other things in the box.
+Hako no naka ni tegami ya shashin nado ga arimasu.
+
 すみません。アジアストアは どこですか。
-Excuse me. Where's Asia Store?
+Excuse me, where is Asia Store?
 Sumimasen. Ajia sutoa wa doko desu ka.
+
+アジアストアですか。
+Asia Store?
+Ajia sutoa desu ka.
+
+あの ビルの 中です。
+It's in that building.
+Ano biru no naka desu.
 
 `;
 
@@ -10476,35 +10597,55 @@ Gaikokujin no gakusei ga futari imasu.
 
 国で 2か月 日本語を 勉強しました。
 I studied Japanese for two months in my home country.
-Kuni de nikagetsu Nihongo o benkyou shimashita.
+Kuni de nikagetsu nihongo o benkyō shimashita.
 
 みかんを いくつ 買いましたか。
 How many mandarin oranges did you buy?
 Mikan o ikutsu kaimashita ka.
 
+8つ 買いました。
+[I bought] eight.
+Yattsu kaimashita.
+
 この 会社に 外国人が 何人 いますか。
 How many foreign people are there in this company?
 Kono kaisha ni gaikokujin ga nannin imasu ka.
 
+5人 います。
+[There are] five.
+Gonin imasu.
+
 毎晩 何時間 日本語を 勉強しますか。
 How many hours do you study Japanese every night?
-Maiban nanjikan Nihongo o benkyou shimasu ka.
+Maiban nanjikan nihongo o benkyō shimasu ka.
+
+2時間 勉強します。
+[I study for] two hours.
+Nijikan benkyō shimasu.
 
 どのくらい 日本語を 勉強しましたか。
 How long did you study Japanese for?
-Donokurai Nihongo o benkyou shimashita ka.
+Donokurai nihongo o benkyō shimashita ka.
+
+3年 勉強しました。
+[I studied it for] three years.
+Sannen benkyō shimashita.
 
 大阪から 東京まで どのくらい かかりますか。
 How long does it take from Osaka to Tokyo?
-Oosaka kara Toukyou made donokurai kakarimasu ka.
+Ōsaka kara Tōkyō made donokurai kakarimasu ka.
 
-学校に 先生が 30人 ぐらい います。
+新幹線で 2時間半 かかります。
+[It takes] two and a half hours by Shinkansen.
+Shinkansen de nijikanhan kakarimasu.
+
+学校に 先生が 30人ぐらい います。
 There are about thirty teachers at our school.
-Gakkou ni sensei ga sanjuunin gurai imasu.
+Gakkō ni sensei ga sanjū-nin gurai imasu.
 
-15分 ぐらい かかります。
+15分ぐらい かかります。
 It takes about fifteen minutes.
-Juugofun gurai kakarimasu.
+Jūgofun gurai kakarimasu.
 
 1か月に 2回 映画を 見ます。
 I go to see a film about twice a month.
@@ -10512,470 +10653,694 @@ Ikkagetsu ni nikai eiga o mimasu.
 
 パワー電気に 外国人の 社員が 1人だけ います。
 There is only one foreign employee at Power Electric.
-Pawaa Denki ni gaikokujin no shain ga hitori dake imasu.
+Pawā-denki ni gaikokujin no shain ga hitori dake imasu.
 
 休みは 日曜日だけです。
 Sunday is my only day off.
-Yasumi wa nichiyoubi dake desu.
-
-きのうは 雨でした。
-It was rainy yesterday.
-Kinou wa ame deshita.
-
-きのうの 試験は 簡単じゃ ありませんでした。
-Yesterday's exam wasn't easy.
-Kinou no shiken wa kantan ja arimasen deshita.
-
-きのうは 暑かったです。
-It was hot yesterday.
-Kinou wa atsukatta desu.
-
-きのうの パーティーは あまり 楽しくなかったです。
-I didn't enjoy yesterday's party very much.
-Kinou no paatii wa amari tanoshikunakatta desu.
-
-この 車は あの 車より 大きいです。
-This car's bigger than that one.
-Kono kuruma wa ano kuruma yori ookii desu.
-
-サッカーと 野球と どちらが おもしろいですか。
-Which [do you think] is more interesting, soccer or baseball?
-Sakkaa to yakyuu to dochira ga omoshiroi desu ka.
-
-ミラーさんと サントスさんと どちらが テニスが 上手ですか。
-Who's better at tennis, Mr. Miller or Mr. Santos?
-Miraa-san to Santosu-san to dochira ga tenisu ga jouzu desu ka.
-
-北海道と 大阪と どちらが 涼しいですか。
-Which is cooler, Hokkaido or Osaka?
-Hokkaidou to Oosaka to dochira ga suzushii desu ka.
-
-春と 秋と どちらが 好きですか。
-Which do you prefer, spring or autumn?
-Haru to aki to dochira ga suki desu ka.
-
-日本料理［の中で］ 何が いちばん おいしいですか。
-Which of all the Japanese dishes is the most delicious?
-Nihon ryouri [no naka de] nani ga ichiban oishii desu ka.
-
-ヨーロッパで どこが いちばん よかったですか。
-What was your favorite place in Europe?
-Yooroppa de doko ga ichiban yokatta desu ka.
-
-家族で だれが いちばん 背が 高いですか。
-Who is the tallest in your family?
-Kazoku de dare ga ichiban se ga takai desu ka.
-
-1年で いつが いちばん 寒いですか。
-What's the coldest time of the year?
-Ichinen de itsu ga ichiban samui desu ka.
-
-カリナさんの かばんは どれですか。
-Which is Karina's bag?
-Karina-san no kaban wa dore desu ka.
-
-わたしは 友達が 欲しいです。
-I want some friends.
-Watashi wa tomodachi ga hoshii desu.
-
-今 何が いちばん 欲しいですか。
-What do you want most right now?
-Ima nani ga ichiban hoshii desu ka.
-
-子供が 欲しいですか。
-Do you want to have children?
-Kodomo ga hoshii desu ka.
-
-わたしは 沖縄へ 行きたいです。
-I want to go to Okinawa.
-Watashi wa Okinawa e ikitai desu.
-
-わたしは てんぷらを 食べたいです。
-I'd like to eat some tempura.
-Watashi wa tenpura o tabetai desu.
-
-神戸で 何を 買いたいですか。
-What do you want to buy in Kobe?
-Koube de nani o kaitai desu ka.
-
-おなかが 痛いですから、何も 食べたくないです。
-My stomach hurts, so I don't want to eat anything.
-Onaka ga itai desu kara, nani mo tabetakunai desu.
-
-神戸へ インド料理を 食べに 行きます。
-I'm going to Kobe to have some Indian food.
-Koube e Indo ryouri o tabe ni ikimasu.
-
-神戸へ 買い物に 行きます。
-I'm going shopping in Kobe.
-Koube e kaimono ni ikimasu.
-
-日本へ 美術の 勉強に 来ました。
-I came to Japan to study art.
-Nihon e bijutsu no benkyou ni kimashita.
-
-あした 京都の お祭りに 行きます。
-I'm going to see a festival in Kyoto tomorrow.
-Ashita Kyouto no omatsuri ni ikimasu.
-
-冬休みは どこか［へ］ 行きましたか。
-Did you go anywhere for your winter holiday?
-Fuyuyasumi wa dokoka [e] ikimashita ka.
-
-のどが かわきましたから、何か［を］ 飲みたいです。
-I'm thirsty; I'd like something to drink.
-Nodo ga kawakimashita kara, nani ka [o] nomitai desu.
-
-すみませんが、この 漢字の 読み方を 教えて ください。
-Excuse me, could you tell me how to read this kanji, please?
-Sumimasen ga, kono kanji no yomikata o oshiete kudasai.
-
-ボールペンで 名前を 書いて ください。
-Please write your name with a ballpoint pen.
-Boorupen de namae o kaite kudasai.
-
-どうぞ たくさん 食べて ください。
-Please eat as much as you want.
-Douzo takusan tabete kudasai.
-
-ミラーさんは 今 電話を かけて います。
-Mr. Miller is making a phone call now.
-Miraa-san wa ima denwa o kakete imasu.
-
-今 雨が 降って いますか。
-Is it raining now?
-Ima ame ga futte imasu ka.
-
-あしたも 来ましょうか。
-Shall I come tomorrow, too?
-Ashita mo kimashou ka.
-
-傘を 貸しましょうか。
-Shall I lend you my umbrella?
-Kasa o kashimashou ka.
-
-荷物を 持ちましょうか。
-Shall I carry your bag?
-Nimotsu o mochimashou ka.
-
-雨が 降って います。
-It's raining.
-Ame ga futte imasu.
-
-ミラーさんが いませんね。
-Mr. Miller isn't here, is he?
-Miraa-san ga imasen ne.
-
-すみませんが、塩を 取って ください。
-Excuse me, could you pass the salt, please?
-Sumimasen ga, shio o totte kudasai.
-
-写真を 撮っても いいですか。
-May I take a photo?
-Shashin o tottemo ii desu ka.
-
-ここで たばこを 吸っても いいですか。
-May I smoke here?
-Koko de tabako o suttemo ii desu ka.
-
-ここで たばこを 吸っては いけません。
-You can't smoke here.
-Koko de tabako o sutte wa ikemasen.
-
-わたしは 結婚して います。
-I'm married.
-Watashi wa kekkon shite imasu.
-
-わたしは 田中さんを 知って います。
-I know Mr. Tanaka.
-Watashi wa Tanaka-san o shitte imasu.
-
-わたしは カメラを 持って います。
-I have a camera.
-Watashi wa kamera o motte imasu.
-
-わたしは 大阪に 住んで います。
-I live in Osaka.
-Watashi wa Oosaka ni sunde imasu.
-
-市役所の 電話番号を 知って いますか。
-Do you know the number of City Hall?
-Shiyakusho no denwa bangou o shitte imasu ka.
-
-IMC は コンピューターソフトを 作って います。
-IMC produces computer software.
-IMC wa konpyuutaa sofuto o tsukutte imasu.
-
-スーパーで ナンプラーを 売って います。
-Supermarkets sell nam pla.
-Suupaa de nanpuraa o utte imasu.
-
-ミラーさんは IMC で 働いて います。
-Mr. Miller works at IMC.
-Miraa-san wa IMC de hataraite imasu.
-
-妹は 大学で 勉強して います。
-My younger sister is studying at university.
-Imouto wa daigaku de benkyou shite imasu.
-
-ここに 入っては いけません。
-You can't come in here.
-Koko ni haitte wa ikemasen.
-
-ここに 座っても いいですか。
-May I sit here?
-Koko ni suwatte mo ii desu ka.
-
-京都駅から 16番の バスに 乗って ください。
-Take the Number 16 bus from Kyoto Station.
-Kyouto-eki kara juurokuban no basu ni notte kudasai.
-
-ここに 車を 止めて ください。
-Stop the car here, please.
-Koko ni kuruma o tomete kudasai.
-
-ここに 住所を 書いて ください。
-Write your address here, please.
-Koko ni juusho o kaite kudasai.
+Yasumi wa nichiyōbi dake desu.
 
 `;
 
 allWords["Grammer 11 - Hard"] = ``;
 
-allWords["Grammer 12"] = ``;
+allWords["Grammer 12"] = `
+きのうは 雨でした。
+It was rainy yesterday.
+Kinō wa ame deshita.
+
+きのうの 試験は 簡単じゃ ありませんでした。
+Yesterday's exam wasn't easy.
+Kinō no shiken wa kantan ja arimasendeshita.
+
+きのうは 暑かったです。
+It was hot yesterday.
+Kinō wa atsukatta desu.
+
+きのうの パーティーは あまり 楽しくなかったです。
+I didn't enjoy yesterday's party very much.
+Kinō no pātī wa amari tanoshikunakatta desu.
+
+この 車は あの 車より 大きいです。
+This car's bigger than that one.
+Kono kuruma wa ano kuruma yori ōkii desu.
+
+サッカーと 野球と どちらが おもしろいですか。
+Which [do you think] is more interesting, soccer or baseball?
+Sakkā to yakyū to dochira ga omoshiroi desu ka.
+
+……サッカーの ほうが おもしろいです。
+……[I think] soccer's more interesting.
+...Sakkā no hō ga omoshiroi desu.
+
+ミラーさんと サントスさんと どちらが テニスが 上手ですか。
+Who's better at tennis, Mr. Miller or Mr. Santos?
+Mirā-san to Santosu-san to dochira ga tenisu ga jōzu desu ka.
+
+北海道と 大阪と どちらが 涼しいですか。
+Which is cooler, Hokkaido or Osaka?
+Hokkaidō to Ōsaka to dochira ga suzushii desu ka.
+
+春と 秋と どちらが 好きですか。
+Which do you prefer, spring or autumn?
+Haru to aki to dochira ga suki desu ka.
+
+日本料理［の中で］何が いちばん おいしいですか。
+Which of all the Japanese dishes is the most delicious?
+Nihon-ryōri [no naka de] nani ga ichiban oishii desu ka.
+
+……てんぷらが いちばん おいしいです。
+……Tempura is [the most delicious].
+...Tenpura ga ichiban oishii desu.
+
+ヨーロッパで どこが いちばん よかったですか。
+What was your favorite place in Europe?
+Yōroppa de doko ga ichiban yokatta desu ka.
+
+……スイスが いちばん よかったです。
+……Switzerland was [the best].
+...Suisu ga ichiban yokatta desu.
+
+家族で だれが いちばん 背が 高いですか。
+Who is the tallest in your family?
+Kazoku de dare ga ichiban se ga takai desu ka.
+
+……弟が いちばん 背が 高いです。
+……My younger brother is [the tallest].
+...Otōto ga ichiban se ga takai desu.
+
+1年で いつが いちばん 寒いですか。
+What's the coldest time of the year?
+Ichinen de itsu ga ichiban samui desu ka.
+
+……2月が いちばん 寒いです。
+……February is [the coldest].
+...Nigatsu ga ichiban samui desu.
+
+カリナさんの かばんは どれですか。
+Which is Karina's bag?
+Karina-san no kaban wa dore desu ka.
+
+……あの 赤くて、大きいのです。
+……That big red one.
+...Ano akakute, ōkii no desu.
+
+`;
 
 allWords["Grammer 12 - Hard"] = ``;
 
-allWords["Grammer 13"] = ``;
+allWords["Grammer 13"] = `
+わたしは 友 達 が 欲 しいです。
+I want some friends.
+Watashi wa tomodachi ga hoshii desu.
+
+今 何 が いちばん 欲 しいですか。
+What do you want most right now?
+Ima nani ga ichiban hoshii desu ka.
+
+車 が 欲 しいです。
+I want a car.
+Kuruma ga hoshii desu.
+
+子 どもが 欲 しいですか。
+Do you want to have children?
+Kodomo ga hoshii desu ka.
+
+いいえ、欲 しくないです。
+No, I don't.
+Iie, hoshikunai desu.
+
+わたしは 沖 縄 へ 行 きたいです。
+I want to go to Okinawa.
+Watashi wa Okinawa e ikitai desu.
+
+わたしは てんぷらを 食 べたいです。
+I'd like to eat some tempura.
+Watashi wa tenpura o tabetai desu.
+
+神 戸で 何 を 買 いたいですか。
+What do you want to buy in Kobe?
+Kōbe de nani o kaitai desu ka.
+
+靴 を 買 いたいです。
+I want to buy some shoes.
+Kutsu o kaitai desu.
+
+おなかが 痛 いですから、何 も 食 べたくないです。
+My stomach hurts, so I don't want to eat anything.
+Onaka ga itai desu kara, nani mo tabetakunai desu.
+
+神 戸へ インド 料 理 を 食 べに 行 きます。
+I'm going to Kobe to have some Indian food.
+Kōbe e Indo ryōri o tabe ni ikimasu.
+
+神 戸へ 買 い物 に 行 きます。
+I'm going shopping in Kobe.
+Kōbe e kaimono ni ikimasu.
+
+日 本 へ 美 術 の 勉 強 に 来 ました。
+I came to Japan to study art.
+Nihon e bijutsu no benkyō ni kimashita.
+
+あした 京 都 の お祭 りに 行 きます。
+I'm going to see a festival in Kyoto tomorrow.
+Ashita Kyōto no omatsuri ni ikimasu.
+
+冬 休 みは どこか［へ］ 行 きましたか。
+Did you go anywhere for your winter holiday?
+Fuyuyasumi wa dokoka [e] ikimashita ka.
+
+はい。北 海 道 へ スキーに 行 きました。
+Yes, I went skiing in Hokkaido.
+Hai. Hokkaidō e sukī ni ikimashita.
+
+のどが かわきましたから、何 か［を］ 飲 みたいです。
+I'm thirsty; I'd like something to drink.
+Nodo ga kawakimashita kara, nanika [o] nomitai desu.
+
+ご 注 文 は？
+May I take your order?
+Go-chūmon wa?
+
+`;
 
 allWords["Grammer 13 - Hard"] = ``;
 
-allWords["Grammer 14"] = ``;
+allWords["Grammer 14"] = `
+すみませんが、この 漢 字 の 読 み方 を 教 えて ください。
+Excuse me, could you tell me how to read this kanji, please?
+Sumimasen ga, kono kanji no yomikata o oshiete kudasai.
+
+ボールペンで 名 前 を 書 いて ください。
+Please write your name with a ballpoint pen.
+Bōrupen de namae o kaite kudasai.
+
+どうぞ たくさん 食 べて ください。
+Please eat as much as you want.
+Dōzo takusan tabete kudasai.
+
+ミラーさんは 今 電 話 を かけて います。
+Mr. Miller is making a phone call now.
+Mirā-san wa ima denwa o kakete imasu.
+
+今 雨 が 降 って いますか。
+Is it raining now?
+Ima ame ga futte imasu ka.
+
+はい、降 って います。
+Yes, it is [raining].
+Hai, futte imasu.
+
+いいえ、降 って いません。
+No, it isn't [raining].
+Iie, futte imasen.
+
+あしたも 来 ましょうか。
+Shall I come tomorrow, too?
+Ashita mo kimashō ka.
+
+ええ、10 時に 来 て ください。
+Yes, please come at ten.
+Ee, jū-ji ni kite kudasai.
+
+傘 を 貸 しましょうか。
+Shall I lend you my umbrella?
+Kasa o kashimashō ka.
+
+すみません。お願 いします。
+Yes, please.
+Sumimasen. Onegaishimasu.
+
+荷 物 を 持 ちましょうか。
+Shall I carry your bag?
+Nimotsu o mochimashō ka.
+
+いいえ、けっこうです。
+No, thank you.
+Iie, kekkō desu.
+
+雨 が 降 って います。
+It's raining.
+Ame ga futte imasu.
+
+ミラーさんが いませんね。
+Mr. Miller isn't here, is he?
+Mirā-san ga imasen ne.
+
+すみませんが、塩 を 取 って ください。
+Excuse me, could you pass the salt, please?
+Sumimasen ga, shio o totte kudasai.
+
+失 礼 ですが、お名 前 は？
+Excuse me, but what is your name?
+Shitsurei desu ga, onamae wa?
+
+`;
 
 allWords["Grammer 14 - Hard"] = ``;
 
-allWords["Grammer 15"] = ``;
+allWords["Grammer 15"] = `
+写 真 を 撮 っても いいですか。
+May I take a photo?
+Shashin o tottemo ii desu ka.
+
+ここで たばこを 吸 っても いいですか。
+May I smoke here?
+Koko de tabako o suttemo ii desu ka.
+
+ええ、［吸 っても］ いいですよ。
+Yes, you may [smoke].
+Ee, [suttemo] ii desu yo.
+
+すみません、ちょっと……。
+Sorry, I'd prefer it if you didn't.
+Sumimasen, chotto...
+
+のどが 痛 いですから。
+I've got a sore throat.
+Nodo ga itai desu kara.
+
+いいえ、［吸 っては］いけません。
+No, it isn't [all right to smoke].
+Iie, [sutte wa] ikemasen.
+
+禁 煙 ですから。
+It's a No Smoking area.
+Kin'en desu kara.
+
+ここで たばこを 吸 っては いけません。
+You can't smoke here.
+Koko de tabako o sutte wa ikemasen.
+
+わたしは 結 婚 して います。
+I'm married.
+Watashi wa kekkon shite imasu.
+
+わたしは 田 中 さんを 知 って います。
+I know Mr. Tanaka.
+Watashi wa Tanaka-san o shitte imasu.
+
+わたしは カメラを 持 って います。
+I have a camera.
+Watashi wa kamera o motte imasu.
+
+わたしは 大 阪 に 住 んで います。
+I live in Osaka.
+Watashi wa Ōsaka ni sunde imasu.
+
+市 役 所 の 電 話 番 号 を 知 って いますか。
+Do you know the number of City Hall?
+Shiyakusho no denwa bangō o shitte imasu ka.
+
+はい、知 って います。
+Yes, I do.
+Hai, shitte imasu.
+
+いいえ、知 りません。
+No, I don't.
+Iie, shirimasen.
+
+IMC は コンピューターソフトを 作 って います。
+IMC produces computer software.
+IMC wa konpyūtā sofuto o tsukutte imasu.
+
+スーパーで ナンプラーを 売 って います。
+Supermarkets sell nam pla.
+Sūpā de nanpurā o utte imasu.
+
+ミラーさんは IMC で 働 いて います。
+Mr. Miller works at IMC.
+Mirā-san wa IMC de hataraite imasu.
+
+妹 は 大 学 で 勉 強 して います。
+My younger sister is studying at university.
+Imōto wa daigaku de benkyō shite imasu.
+
+ここに 入 っては いけません。
+You can't come in here.
+Koko ni haitte wa ikemasen.
+
+ここに 座 っても いいですか。
+May I sit here?
+Koko ni suwattemo ii desu ka.
+
+京 都 駅 から 16 番 の バスに 乗 って ください。
+Take the Number 16 bus from Kyoto Station.
+Kyōto-eki kara jū-roku-ban no basu ni notte kudasai.
+
+ここに 車 を 止 めて ください。
+Stop the car here, please.
+Koko ni kuruma o tomete kudasai.
+
+ここに 住 所 を 書 いて ください。
+Write your address here, please.
+Koko ni jūsho o kaite kudasai.
+
+`;
 
 allWords["Grammer 15 - Hard"] = ``;
 
 allWords["Grammer 16"] = `
-朝 ジョギングを して、シャワーを 浴びて、会社へ 行きます。
+朝ジョギングをして、シャワーを浴びて、会社へ行きます。
 In the mornings, I go jogging, take a shower, and then go to work.
 Asa jogingu o shite, shawaa o abite, kaisha e ikimasu.
 
-神戸へ 行って、映画を 見て、お茶を 飲みました。
+神戸へ行って、映画を見て、お茶を飲みました。
 I went to Kobe, where I saw a movie and drank some tea.
 Koube e itte, eiga o mite, ocha o nomimashita.
 
-ミラーさんは 若くて、元気です。
+ミラーさんは若くて、元気です。
 Mr. Miller is young and energetic.
 Miraa-san wa wakakute, genki desu.
 
-きのうは 天気が よくて、暑かったです。
+きのうは天気がよくて、暑かったです。
 It was fine and hot yesterday.
 Kinou wa tenki ga yokute, atsukatta desu.
 
-ミラーさんは ハンサムで、親切です。
+ミラーさんはハンサムで、親切です。
 Mr. Miller is handsome and kind.
 Miraa-san wa hansamu de, shinsetsu desu.
 
-奈良は 静かで、きれいな 町です。
+奈良は静かで、きれいな町です。
 Nara is a quiet, beautiful city.
 Nara wa shizuka de, kirei na machi desu.
 
-カリナさんは インドネシア人で、富士大学の 留学生です。
-Karina is Indonesian; she's a student at Fuji University.
-Karina-san wa Indoneshia-jin de, Fuji Daigaku no ryuugakusei desu.
+この部屋は狭いですが、きれいです。
+This room is small but clean.
+Kono heya wa semai desu ga, kirei desu.
 
-カリナさんは 学生で、マリアさんは 主婦です。
+カリナさんはインドネシア人で、富士大学の留学生です。
+Karina is Indonesian; she's a student at Fuji University.
+Karina-san wa indoneshia-jin de, Fuji daigaku no ryuugakusei desu.
+
+カリナさんは学生で、マリアさんは主婦です。
 Karina is a student, and Maria is a housewife.
 Karina-san wa gakusei de, Maria-san wa shufu desu.
 
-お金を 入れてから、ボタンを 押して ください。
+お金を入れてから、ボタンを押してください。
 Put the money in, please, and then press the button.
 Okane o irete kara, botan o oshite kudasai.
 
-大阪は 食べ物が おいしいです。
+もう昼ごはんを食べましたか。
+Have you already had your lunch?
+Mou hirugohan o tabemashita ka.
+
+……この仕事が終わってから、食べます。
+…No, I'm going to have it when I've finished this job.
+Kono shigoto ga owatte kara, tabemasu.
+
+大阪は食べ物がおいしいです。
 The food in Osaka is very good.
 Oosaka wa tabemono ga oishii desu.
 
-ドイツの フランケンは ワインが 有名です。
+ドイツのフランケンはワインが有名です。
 Franken in Germany is famous for its wine.
 Doitsu no Furanken wa wain ga yuumei desu.
 
-マリアさんは 髪が 長いです。
+マリアさんは髪が長いです。
 Maria has long hair.
 Maria-san wa kami ga nagai desu.
 
-7時に うちを 出ます。
+7時にうちを出ます。
 I leave home at seven.
 Shichiji ni uchi o demasu.
 
-梅田で 電車を 降りました。
+梅田で電車を降りました。
 I got off the train at Umeda.
 Umeda de densha o orimashita.
 
-ミラーさんの 傘は どれですか。
+大学までどうやって行きますか。
+How do you get to the University?
+Daigaku made dou yatte ikimasu ka.
+
+……京都駅から16番のバスに乗って、大学前で降ります。
+…I take the Number 16 bus from Kyoto Station and get off at Daigakumae.
+Kyouto-eki kara juurokuban no basu ni notte, daigakumae de orimasu.
+
+ミラーさんの傘はどれですか。
 Which is Mr. Miller's umbrella?
 Miraa-san no kasa wa dore desu ka.
 
-ここで 写真を 撮らないで ください。
-Please don't take photographs here.
-Koko de shashin o toranaide kudasai.
+……あの青い傘です。
+…It's that blue one.
+Ano aoi kasa desu.
 
-わたしは 元気ですから、心配しないで ください。
-I'm fine, so please don't worry about me.
-Watashi wa genki desu kara, shinpai shinaide kudasai.
+サントスさんはどの人ですか。
+Which is Mr. Santos?
+Santosu-san wa dono hito desu ka.
 
-薬を 飲まなければ なりません。
-I must take some medicine.
-Kusuri o nomanakereba narimasen.
-
-あした 来なくても いいです。
-You don't have to come tomorrow.
-Ashita konakutemo ii desu.
-
-荷物は ここに 置かないで ください。
-Don't put your bags here, please.
-Nimotsu wa koko ni okanaide kudasai.
-
-昼ごはんは 会社の 食堂で 食べます。
-I have lunch in the company cafeteria.
-Hirugohan wa kaisha no shokudou de tabemasu.
-
-会議は 5時までに 終わります。
-The meeting will end by five.
-Kaigi wa goji made ni owarimasu.
-
-土曜日までに 本を 返さなければ なりません。
-I have to return the book by Saturday.
-Doyoubi made ni hon o kaesanakereba narimasen.
-
-ミラーさんは 日本語が できます。
-Mr. Miller can speak Japanese.
-Miraa-san wa Nihongo ga dekimasu.
-
-雪が たくさん 降りましたから、ことしは スキーが できます。
-A lot of snow has fallen, so we can ski this year.
-Yuki ga takusan furimashita kara, kotoshi wa sukii ga dekimasu.
-
-ミラーさんは 漢字を 読む ことが できます。
-Mr. Miller can read kanji.
-Miraa-san wa kanji o yomu koto ga dekimasu.
-
-カードで 払う ことが できます。
-You can pay by card.
-Kaado de harau koto ga dekimasu.
-
-わたしの 趣味は 音楽です。
-My interest is music.
-Watashi no shumi wa ongaku desu.
-
-わたしの 趣味は 音楽を 聞く ことです。
-I like listening to music.
-Watashi no shumi wa ongaku o kiku koto desu.
-
-日本へ 来る まえに、日本語を 勉強しました。
-I studied Japanese before coming to Japan.
-Nihon e kuru mae ni, Nihongo o benkyou shimashita.
-
-寝る まえに、本を 読みます。
-I read a book before going to bed.
-Neru mae ni, hon o yomimasu.
-
-食事の まえに、手を 洗います。
-I wash my hands before eating.
-Shokuji no mae ni, te o araimasu.
-
-田中さんは 1時間 まえに、出かけました。
-Mr. Tanaka went out one hour ago.
-Tanaka-san wa ichijikan mae ni, dekakemashita.
-
-ぜひ 北海道へ 行きたいです。
-I really want to go to Hokkaido.
-Zehi Hokkaidou e ikitai desu.
-
-ぜひ 遊びに 来て ください。
-Do please come and visit me.
-Zehi asobi ni kite kudasai.
-
-馬に 乗った ことが あります。
-I've ridden a horse.
-Uma ni notta koto ga arimasu.
-
-去年 北海道で 馬に 乗りました。
-I rode a horse last year in Hokkaido.
-Kyonen Hokkaidou de uma ni norimashita.
-
-日曜日は テニスを したり、映画を 見たり します。
-On Sundays, I play tennis, watch a film, and so on.
-Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.
-
-日曜日は テニスを したり、映画を 見たり しました。
-Last Sunday, I played tennis, watched a film and did some other stuff.
-Nichiyoubi wa tenisu o shitari, eiga o mitari shimashita.
-
-寒く なります。
-Get cold.
-Samuku narimasu.
-
-元気 に なります。
-Get better.
-Genki ni narimasu.
-
-25歳に なります。
-Turn 25 [years old].
-Nijuugosai ni narimasu.
-
-コーヒーを 飲む？
-Want some coffee?
-Koohii o nomu?
-
-今晩 暇？
-You free tonight?
-Konban hima?
-
-ごはん 食べる？
-Would you like something to eat?
-Gohan taberu?
-
-あした 京都 行かない？
-How about going to Kyoto tomorrow?
-Ashita Kyouto ikanai?
-
-この りんご おいしいね。
-These apples are nice, aren't they?
-Kono ringo oishii ne.
-
-そこに はさみ ある？
-Are there any scissors there?
-Soko ni hasami aru?
-
-辞書、持って［い］る？
-Have you got a dictionary?
-Jisho, motteru?
-
-その カレー おいしい？
-Is that curry good?
-Sono karee oishii?
+……あの背が高くて、髪が黒い人です。
+…That tall, black-haired man.
+Ano se ga takakute, kami ga kuroi hito desu.
 
 `;
 
 allWords["Grammer 16 - Hard"] = ``;
 
-allWords["Grammer 17"] = ``;
+allWords["Grammer 17"] = `
+ここで写真を撮らないでください。
+Please don't take photographs here.
+Koko de shashin o toranaide kudasai.
+
+わたしは元気ですから、心配しないでください。
+I'm fine, so please don't worry about me.
+Watashi wa genki desu kara, shinpai shinaide kudasai.
+
+薬を飲まなければなりません。
+I must take some medicine.
+Kusuri o nomanakereba narimasen.
+
+あした来なくてもいいです。
+You don't have to come tomorrow.
+Ashita konakute mo ii desu.
+
+荷物はここに置かないでください。
+Don't put your bags here, please.
+Nimotsu wa koko ni okanaide kudasai.
+
+昼ごはんは会社の食堂で食べます。
+I have lunch in the company cafeteria.
+Hirugohan wa kaisha no shokudou de tabemasu.
+
+会議は5時までに終わります。
+The meeting will end by five.
+Kaigi wa goji made ni owarimasu.
+
+土曜日までに本を返さなければなりません。
+I have to return the book by Saturday.
+Doyoubi made ni hon o kaesanakereba narimasen.
+
+5時まで働きます。
+I work until five o'clock.
+Goji made hatarakimasu.
+
+`;
 
 allWords["Grammer 17 - Hard"] = ``;
 
-allWords["Grammer 18"] = ``;
+allWords["Grammer 18"] = `
+ミラーさんは日本語ができます。
+Mr. Miller can speak Japanese.
+Miraa-san wa nihongo ga dekimasu.
+
+雪がたくさん降りましたから、ことしはスキーができます。
+A lot of snow has fallen, so we can ski this year.
+Yuki ga takusan furimashita kara, kotoshi wa sukii ga dekimasu.
+
+ミラーさんは漢字を読むことができます。
+Mr. Miller can read kanji.
+Miraa-san wa kanji o yomu koto ga dekimasu.
+
+カードで払うことができます。
+You can pay by card.
+Kaado de harau koto ga dekimasu.
+
+わたしの趣味は音楽です。
+I'm interested in music.
+Watashi no shumi wa ongaku desu.
+
+わたしの趣味は音楽を聞くことです。
+I like listening to music.
+Watashi no shumi wa ongaku o kiku koto desu.
+
+日本へ来るまえに、日本語を勉強しました。
+I studied Japanese before coming to Japan.
+Nihon e kuru mae ni, nihongo o benkyou shimashita.
+
+寝るまえに、本を読みます。
+I read a book before going to bed.
+Neru mae ni, hon o yomimasu.
+
+食事のまえに、手を洗います。
+I wash my hands before eating.
+Shokuji no mae ni, te o araimasu.
+
+田中さんは1時間まえに、出かけました。
+Mr. Tanaka went out one hour ago.
+Tanaka-san wa ichijikan mae ni, dekakemashita.
+
+日本ではなかなか馬を見ることができません。
+You don't see many horses in Japan.
+Nihon de wa naka naka uma o miru koto ga dekimasen.
+
+ぜひ北海道へ行きたいです。
+I really want to go to Hokkaido.
+Zehi Hokkaidoo e ikitai desu.
+
+ぜひ遊びに来てください。
+Do please come and visit me.
+Zehi asobi ni kite kudasai.
+
+`;
 
 allWords["Grammer 18 - Hard"] = ``;
 
-allWords["Grammer 19"] = ``;
+allWords["Grammer 19"] = `
+馬に乗ったことがあります。
+I've ridden a horse.
+Uma ni notta koto ga arimasu.
+
+去年北海道で馬に乗りました。
+I rode a horse last year in Hokkaido.
+Kyonen Hokkaidoo de uma ni norimashita.
+
+日曜日はテニスをしたり、映画を見たりします。
+On Sundays, I play tennis, watch a film, and so on.
+Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.
+
+日曜日はテニスをしたり、映画を見たりしました。
+Last Sunday, I played tennis, watched a film and did some other stuff.
+Nichiyoubi wa tenisu o shitari, eiga o mitari shimashita.
+
+日曜日はテニスをして、映画を見ました。
+On Sunday, I played tennis and then watched a film.
+Nichiyoubi wa tenisu o shite, eiga o mimashita.
+
+寒くなります。
+Get cold.
+Samuku narimasu.
+
+元気になります。
+Get better.
+Genki ni narimasu.
+
+25歳になります。
+Turn 25 [years old].
+Nijuugosai ni narimasu.
+
+`;
 
 allWords["Grammer 19 - Hard"] = ``;
 
-allWords["Grammer 20"] = ``;
+allWords["Grammer 20"] = `
+あした東京へ行きます。
+I shall be going to Tokyo tomorrow.
+Ashita Toukyou e ikimasu.
+
+あした東京へ行く。
+I'm off to Tokyo tomorrow.
+Ashita Toukyou e iku.
+
+毎日忙しいです。
+I'm busy every day.
+Mainichi isogashii desu.
+
+毎日忙しい。
+I'm busy every day.
+Mainichi isogashii.
+
+相撲が好きです。
+I like sumo.
+Sumou ga suki desu.
+
+相撲が好きだ。
+I like sumo.
+Sumou ga suki da.
+
+富士山に登りたいです。
+I'd like to climb Mt Fuji.
+Fujisan ni noboritai desu.
+
+富士山に登りたい。
+I want to climb Mt Fuji.
+Fujisan ni noboritai.
+
+ドイツへ行ったことがありません。
+I've never been to Germany.
+Doitsu e itta koto ga arimasen.
+
+ドイツへ行ったことがない。
+I've never been to Germany.
+Doitsu e itta koto ga nai.
+
+コーヒーを飲む？
+Want some coffee?
+Koohii o nomu?
+
+……うん、飲む。
+…Yeah, sure.
+Un, nomu.
+
+今晩暇？
+You free tonight?
+Konban hima?
+
+……うん、暇／暇だ／暇だよ。
+…Yes, I am. (used by men)
+Un, hima / hima da / hima da yo.
+
+……うん、暇／暇よ／暇だよ。
+…Yes, I am. (used by women)
+Un, hima / hima yo / hima da yo.
+
+……ううん、暇じゃない。
+…No, I'm not.
+Uun, hima ja nai.
+
+ごはん［を］食べる？
+Would you like something to eat?
+Gohan [o] taberu?
+
+あした京都［へ］行かない？
+How about going to Kyoto tomorrow?
+Ashita Kyouto [e] ikanai?
+
+このりんご［は］おいしいね。
+These apples are nice, aren't they?
+Kono ringo [wa] oishii ne.
+
+そこにはさみ［が］ある？
+Are there any scissors there?
+Soko ni hasami [ga] aru?
+
+辞書、持って［い］る？
+Have you got a dictionary?
+Jisho, motte [i]ru?
+
+……うん、持って［い］る。
+…Yes, I have.
+Un, motte [i]ru.
+
+……ううん、持って［い］ない。
+…No, I haven't.
+Uun, motte [i]nai.
+
+そのカレー［は］おいしい？
+Is that curry good?
+Sono karee [wa] oishii?
+
+……うん、辛いけど、おいしい。
+Yes, it's spicy, but it's nice.
+Un, karai kedo, oishii.
+
+相撲のチケット［が］あるけど、いっしょに行かない？
+I've got some tickets for the sumo. Would you like to go with me?
+Sumou no chiketto [ga] aru kedo, issho ni ikanai?
+
+……いいね。
+That'd be great.
+Ii ne.
+
+`;
 
 allWords["Grammer 20 - Hard"] = ``;
 
@@ -10992,8 +11357,8 @@ Tereeza-chan wa mou neta to omoimasu.
 Has Mr. Miller heard that news?
 Miraa-san wa kono nyuusu o shitte imasu ka.
 
-いいえ、知らないと 思います。
-No, I don't think he has.
+……いいえ、知らないと 思います。
+…No, I don't think he has.
 Iie, shiranai to omoimasu.
 
 日本は 物価が 高いと 思います。
@@ -11004,16 +11369,16 @@ Nihon wa bukka ga takai to omoimasu.
 What do you think of the new airport?
 Atarashii kuukou ni tsuite dou omoimasu ka.
 
-きれいですが、ちょっと 交通が 不便だと 思います。
-I think it's lovely, but it's a bit hard to get to.
+……きれいですが、ちょっと 交通が 不便だと 思います。
+…I think it's lovely, but it's a bit hard to get to.
 Kirei desu ga, chotto koutsuu ga fuben da to omoimasu.
 
 ケータイは 便利ですね。
 Mobile phones are handy, aren't they?
 Keetai wa benri desu ne.
 
-わたしも そう 思います。
-Yes, I think so, too.
+……わたしも そう 思います。
+…Yes, I think so, too.
 Watashi mo sou omoimasu.
 
 寝る まえに、「おやすみなさい」と 言います。
@@ -11022,11 +11387,11 @@ Neru mae ni, "oyasuminasai" to iimasu.
 
 ミラーさんは 「来週 東京へ 出張します」と 言いました。
 Mr. Miller said, "I'm going to Tokyo on business next week."
-Miraa-san wa "raishuu Toukyou e shuutchou shimasu" to iimashita.
+Miraa-san wa "Raishuu Toukyou e shucchou shimasu" to iimashita.
 
 ミラーさんは 東京へ 出張すると 言いました。
 Mr. Miller said that he would be going to Tokyo on business.
-Miraa-san wa Toukyou e shuutchou suru to iimashita.
+Miraa-san wa Toukyou e shucchou suru to iimashita.
 
 父に 留学したいと 言いました。
 I told my father that I wanted to study abroad.
@@ -11036,16 +11401,16 @@ Chichi ni ryuugaku shitai to iimashita.
 You're going to the party tomorrow, right?
 Ashita paatii ni iku deshou?
 
-ええ、行きます。
-Yes, I am.
+……ええ、行きます。
+…Yes, I am.
 Ee, ikimasu.
 
 北海道は 寒かったでしょう？
 I bet it was cold in Hokkaido, wasn't it?
-Hokkaidou wa samukatta deshou?
+Hokkaidoo wa samukatta deshou?
 
-いいえ、そんなに 寒くなかったです。
-No, it wasn't so cold.
+……いいえ、そんなに 寒くなかったです。
+…No, it wasn't so cold.
 Iie, sonna ni samukunakatta desu.
 
 東京で 日本と ブラジルの サッカーの 試合が あります。
@@ -11054,7 +11419,7 @@ Toukyou de Nihon to Burajiru no sakkaa no shiai ga arimasu.
 
 会議で 何か 意見を 言いましたか。
 Did you say anything at the meeting?
-Kaigi de nanika iken o iimashita ka.
+Kaigi de nani ka iken o iimashita ka.
 
 ちょっと ビールでも 飲みませんか。
 How about drinking a beer or something?
@@ -11063,6 +11428,39 @@ Chotto biiru demo nomimasen ka.
 もう 帰らないと……。
 I have to be getting home...
 Mou kaeranai to...
+
+`;
+
+allWords["Grammer 21 - Hard"] = ``;
+
+allWords["Grammer 22"] = `
+京都へ 行く 人
+A person who goes to Kyoto.
+Kyouto e iku hito.
+
+京都へ 行かない 人
+A person who does not go to Kyoto.
+Kyouto e ikanai hito.
+
+京都へ 行った 人
+A person who went to Kyoto.
+Kyouto e itta hito.
+
+京都へ 行かなかった 人
+A person who did not go to Kyoto.
+Kyouto e ikanakatta hito.
+
+背が 高くて、髪が 黒い 人
+A tall, black-haired person.
+Se ga takakute, kami ga kuroi hito.
+
+親切で、きれいな 人
+A beautiful, kind person.
+Shinsetsu de, kirei na hito.
+
+65歳の 人
+A 65-year-old person.
+Rokujuugosai no hito.
 
 これは ミラーさんが 住んで いた うちです。
 This is the house where Mr. Miller used to live.
@@ -11096,9 +11494,9 @@ Kore wa Miraa-san ga tsukutta keeki desu.
 I like the picture that Karina painted.
 Watashi wa Karina-san ga kaita e ga suki desu.
 
-あなたは 彼が 生まれた 所を 知って いますか。
+［あなたは］ 彼が 生まれた 所を 知って いますか。
 Do you know the place where he was born?
-Anata wa kare ga umareta tokoro o shitte imasu ka.
+[Anata wa] kare ga umareta tokoro o shitte imasu ka.
 
 わたしは 朝ごはんを 食べる 時間が ありません。
 I don't have time to eat breakfast.
@@ -11112,10 +11510,19 @@ Watashi wa tomodachi to eiga o miru yakusoku ga arimasu.
 I have to do something at City Hall today.
 Kyou wa shiyakusho e iku youji ga arimasu.
 
-今から 行きましょうか。
-Shall we go now?
-Ima kara ikimashou ka.
+この 部屋、きょう 見る ことが できますか。
+Can I see this flat today?
+Kono heya, kyou miru koto ga dekimasu ka.
 
+……ええ。今から 行きましょうか。
+…Yes. Shall we go now?
+Ee. Ima kara ikimashou ka.
+
+`;
+
+allWords["Grammer 22 - Hard"] = ``;
+
+allWords["Grammer 23"] = `
 図書館で 本を 借りる とき、カードが 要ります。
 You need your card when you borrow a book from the library.
 Toshokan de hon o kariru toki, kaado ga irimasu.
@@ -11136,11 +11543,11 @@ Hima na toki, uchi e asobi ni kimasen ka.
 I take time off when my wife is ill.
 Tsuma ga byouki no toki, kaisha o yasumimasu.
 
-若い とき、あまり 勉強しませんでした。
+若い とき、 あまり 勉強しませんでした。
 I didn't study very much when I was young.
-Wakai toki, amari benkyou shimasen deshita.
+Wakai toki, amari benkyou shimasendeshita.
 
-子どもの とき、よく 川で 泳ぎました。
+子どもの とき、 よく 川で 泳ぎました。
 I often swam in the river when I was a child.
 Kodomo no toki, yoku kawa de oyogimashita.
 
@@ -11180,6 +11587,11 @@ Michi o watarimasu.
 I turn right at the intersection.
 Kousaten o migi e magarimasu.
 
+`;
+
+allWords["Grammer 23 - Hard"] = ``;
+
+allWords["Grammer 24"] = `
 わたしは 佐藤さんに 花を あげました。
 I gave some flowers to Ms. Sato.
 Watashi wa Satou-san ni hana o agemashita.
@@ -11208,14 +11620,47 @@ Tetsudaimashou ka.
 Mr. Yamada told me the telephone number of the library.
 Watashi wa Yamada-san ni toshokan no denwa bangou o oshiete moraimashita.
 
-母は セーターを 送って くれました。
+母は ［わたしに］ セーターを 送って くれました。
 My mother sent me a sweater.
-Haha wa seetaa o okutte kuremashita.
+Haha wa [watashi ni] seetaa o okutte kuremashita.
 
-佐藤さんが くれました。
-Ms. Sato gave it to me.
-Satou-san ga kuremashita.
+わたしに 旅行の 写真を 見せます。
+He shows me the photos taken during the travel.
+Watashi ni ryokou no shashin o misemasu.
 
+わたしに 旅行の 写真を 見せて くれます。
+He shows me the photos taken during the travel.
+Watashi ni ryokou no shashin o misete kuremasu.
+
+わたしを 大阪城へ 連れて 行きます
+He takes me to Osaka Castle.
+Watashi o Oosakajou e tsurete ikimasu
+
+わたしを 大阪城へ 連れて 行って くれます。
+He takes me to Osaka Castle.
+Watashi o Oosakajou e tsurete itte kuremasu.
+
+わたしの 引っ越しを てつだいます
+He helps me move.
+Watashi no hikkoshi o tetsudaimasu
+
+わたしの 引っ越しを 手伝って くれます。
+He helps me move.
+Watashi no hikkoshi o tetsudatte kuremasu.
+
+おいしい ワインですね。
+This wine is very nice, isn't it?
+Oishii wain desu ne.
+
+……ええ、［この ワインは］ 佐藤さんが くれました。
+…Yes, Ms. Sato gave it to me.
+Ee, [kono wain wa] Satou-san ga kuremashita.
+
+`;
+
+allWords["Grammer 24 - Hard"] = ``;
+
+allWords["Grammer 25"] = `
 お金が あったら、旅行します。
 If I had some money, I'd go travelling.
 Okane ga attara, ryokou shimasu.
@@ -11236,7 +11681,7 @@ Hima dattara, tetsudatte kudasai.
 Shall we go for a walk if the weather's nice?
 Ii tenki dattara, sanpo shimasen ka.
 
-10時に なったら、出かけましょう。
+10時になったら、出かけましょう。
 Shall we go out once it gets to 10 o'clock?
 Juuji ni nattara, dekakemashou.
 
@@ -11246,17 +11691,17 @@ Uchi e kaettara, sugu shawaa o abimasu.
 
 雨が 降っても、洗濯します。
 I'll do the laundry even if it rains.
-Ame ga futtemo, sentaku shimasu.
+Ame ga futte mo, sentaku shimasu.
 
 安くても、わたしは グループ旅行が 嫌いです。
 I hate package holidays, even if they are cheap.
-Yasukutemo, watashi wa guruupu ryokou ga kirai desu.
+Yasukute mo, watashi wa guruupu ryokou ga kirai desu.
 
 便利でも、パソコンを 使いません。
 I'm not going to use a PC, even if it is convenient.
 Benri demo, pasokon o tsukaimasen.
 
-日曜日でも、働きます。
+日曜日でも、 働きます。
 I'm going to work, even if it is Sunday.
 Nichiyoubi demo, hatarakimasu.
 
@@ -11268,31 +11713,11 @@ Moshi ichiokuen attara, iroirona kuni o ryokou shitai desu.
 I'm going to clean up my room before my friends arrive.
 Tomodachi ga kuru mae ni, heya o souji shimasu.
 
-妻が 病気の とき、会社を 休みます。
-I take time off when my wife is ill.
-Tsuma ga byouki no toki, kaisha o yasumimasu.
-
 友達が 約束の 時間に 来なかったら、どう しますか。
 What will you do if your friends don't arrive at the agreed time?
 Tomodachi ga yakusoku no jikan ni konakattara, dou shimasu ka.
 
 `;
-
-allWords["Grammer 21 - Hard"] = ``;
-
-allWords["Grammer 22"] = ``;
-
-allWords["Grammer 22 - Hard"] = ``;
-
-allWords["Grammer 23"] = ``;
-
-allWords["Grammer 23 - Hard"] = ``;
-
-allWords["Grammer 24"] = ``;
-
-allWords["Grammer 24 - Hard"] = ``;
-
-allWords["Grammer 25"] = ``;
 
 allWords["Grammer 25 - Hard"] = ``;
 
@@ -11822,18 +12247,1816 @@ allWords["N1 Kanji Hard"] = ``;
 
 allWords["N1 Kanji Hard - Hard"] = ``;
 
+allWords["Group I - 1"] = `
+会います
+meet [a friend]
+aimasu
+
+あう
+meet [a friend]
+au
+
+遊びます
+enjoy oneself, play
+asobimasu
+
+あそぶ
+enjoy oneself, play
+asobu
+
+洗います
+wash
+araimasu
+
+あらう
+wash
+arau
+
+あります
+have
+arimasu
+
+ある
+have
+aru
+
+あります
+exist, be (referring to inanimate things)
+arimasu
+
+ある
+exist, be (referring to inanimate things)
+aru
+
+あります
+[a festival] be held, take place
+arimasu
+
+ある
+[a festival] be held, take place
+aru
+
+歩きます
+walk
+arukimasu
+
+あるく
+walk
+aruku
+
+言います
+say
+iimasu
+
+いう
+say
+iu
+
+行きます
+go
+ikimasu
+
+いく
+go
+iku
+
+急ぎます
+hurry
+isogimasu
+
+いそぐ
+hurry
+isogu
+
+要ります
+need, require [a visa]
+irimasu
+
+いる
+need, require [a visa]
+iru
+
+動きます
+move, work
+ugokimasu
+
+うごく
+move, work
+ugoku
+
+歌います
+sing
+utaimasu
+
+うたう
+sing
+utau
+
+売ります
+sell
+urimasu
+
+うる
+sell
+uru
+
+置きます
+put
+okimasu
+
+おいて
+put
+okiru
+
+送ります
+send
+okurimasu
+
+おくる
+send
+okuru
+
+送ります
+escort [someone], go with
+okurimasu
+
+おくる
+escort [someone], go with
+okuru
+
+押します
+push, press
+oshimasu
+
+おす
+push, press
+osu
+
+思い出します
+remember, recollect
+omoidashimasu
+
+おもいだす
+remember, recollect
+omoidasu
+
+思います
+think
+omoimasu
+
+おもう
+think
+omou
+
+泳ぎます
+swim
+oyogimasu
+
+およぐ
+swim
+oyogu
+
+下ろします
+withdraw [money]
+oroshimasu
+
+おろす
+withdraw [money]
+orosu
+
+終わります
+finish
+owarimasu
+
+おわる
+finish
+owaru
+
+買います
+buy
+kaimasu
+
+かう
+buy
+kau
+
+返します
+give back, return
+kaeshimasu
+
+かえす
+give back, return
+kaesu
+
+帰ります
+go home, return
+kaerimasu
+
+かえる
+go home, return
+kaeru
+
+かかります
+take, cost (referring to time or money)
+kakarimasu
+
+かかる
+take, cost (referring to time or money)
+kakaru
+
+書きます
+write, draw, paint
+kakimasu
+
+かく
+write, draw, paint
+kakaru
+
+貸します
+lend
+kashimasu
+
+かす
+lend
+kasu
+
+勝ちます
+win
+kachimasu
+
+かつ
+win
+katsu
+
+かぶります
+put on (a hat, etc.)
+kaburimasu
+
+かぶる
+put on (a hat, etc.)
+kaburu
+
+頑張ります
+do one's best
+ganbarimasu
+
+がんばる
+do one's best
+ganbaru
+
+聞きます
+hear, listen
+kikimasu
+
+きく
+hear, listen
+kiku
+
+聞きます
+ask [the teacher]
+kikimasu
+
+きく
+ask [the teacher]
+kiku
+
+切ります
+cut, slice
+kirimasu
+
+きる
+cut, slice
+kiru
+
+消します
+turn off
+keshimasu
+
+けす
+turn off
+kesu
+
+触ります
+touch [a door]
+sawarimasu
+
+さわる
+touch [a door]
+sawaru
+
+知ります
+get to know
+shirimasu
+
+しる
+get to know
+shiru
+
+吸います
+smoke [a cigarette]
+suimasu
+
+すう
+smoke [a cigarette]
+suu
+
+住みます
+be going to live
+sumimasu
+
+すむ
+be going to live
+sumu
+
+座ります
+sit down
+suwarimasu
+
+すわる
+sit down
+suwaru
+
+出します
+take out, hand in, send
+dashimasu
+
+だす
+take out, hand in, send
+dasu
+
+立ちます
+stand up
+tachimasu
+
+たつ
+stand up
+tatsu
+
+使います
+use
+tsukaimasu
+
+つかう
+use
+tsukau
+
+着きます
+arrive
+tsukimasu
+
+つく
+arrive
+tsuku
+
+作ります、造ります
+make, produce
+tsukurimasu
+
+つくる
+make, produce
+tsukuru
+
+連れて 行きます
+take (someone)
+tsurete ikimasu
+
+つれて いく
+take (someone)
+tsurete iku
+
+手伝います
+help (with a task)
+tetsudaimasu
+
+てつだう
+help (with a task)
+tetsudau
+
+泊まります
+stay [at a hotel]
+tomarimasu
+
+とまる
+stay [at a hotel]
+tomaru
+
+取ります
+take, pass
+torimasu
+
+とる
+take, pass
+toru
+
+撮ります
+take [a photograph]
+torimasu
+
+とる
+take [a photograph]
+toru
+
+取ります
+grow old
+torimasu
+
+とる
+grow old
+toru
+
+直します
+repair, correct
+naoshimasu
+
+なおす
+repair, correct
+naosu
+
+なくします
+lose
+nakushimasu
+
+なくす
+lose
+nakusu
+
+習います
+learn
+naraimasu
+
+ならう
+learn
+narau
+
+なります
+become
+narimasu
+
+なる
+become
+naru
+
+脱ぎます
+take off (clothes, shoes, etc.)
+nugimasu
+
+ぬぐ
+take off (clothes, shoes, etc.)
+nugu
+
+登ります、上ります
+climb, go up
+noborimasu
+
+のぼる
+climb, go up
+noboru
+
+飲みます
+drink
+nomimasu
+
+のむ
+drink
+nomu
+
+飲みます
+drink alcohol
+nomimasu
+
+のむ
+drink alcohol
+nomu
+
+飲みます
+take [medicine]
+nomimasu
+
+のむ
+take [medicine]
+nomu
+
+乗ります
+ride, get on [a train]
+norimasu
+
+のる
+ride, get on [a train]
+noru
+
+入ります
+enter [a café]
+hairimasu
+
+はいる
+enter [a café]
+hairu
+
+入ります
+enter [university]
+hairimasu
+
+はいる
+enter [university]
+hairu
+
+入ります
+take [a bath]
+hairimasu
+
+はいる
+take [a bath]
+hairu
+
+はきます
+put on (shoes, trousers, etc.)
+hakimasu
+
+はく
+put on (shoes, trousers, etc.)
+haku
+
+働きます
+work
+hatarakimasu
+
+はたらく
+work
+hataraku
+
+話します
+speak, talk
+hanashimasu
+
+はなす
+speak, talk
+hanasu
+
+払います
+pay
+haraimasu
+
+はらう
+pay
+harau
+
+弾きます
+play (stringed instrument, piano, etc.)
+hikimasu
+
+ひく
+play (stringed instrument, piano, etc.)
+hiku
+
+引きます
+pull
+hikimasu
+
+ひく
+pull
+hiku
+
+降ります
+rain
+furimasu
+
+ふる
+rain
+furu
+
+曲がります
+turn [to the right]
+magarimasu
+
+まがる
+turn [to the right]
+magaru
+
+待ちます
+wait
+machimasu
+
+まつ
+wait
+matsu
+
+回します
+turn
+mawashimasu
+
+まわす
+turn
+mawasu
+
+持ちます
+hold
+mochimasu
+
+もつ
+hold
+motsu
+
+持って 行きます
+take (something)
+motte ikimasu
+
+もって いく
+take (something)
+motte iku
+
+もらいます
+receive
+moraimasu
+
+もらう
+receive
+morau
+
+役に 立ちます
+be useful
+yaku ni tachimasu
+
+やくに たつ
+be useful
+yaku ni tatsu
+
+休みます
+take a rest, take a holiday
+yasumimasu
+
+やすむ
+take a rest, take a holiday
+yasumu
+
+休みます
+take a day off [work]
+yasumimasu
+
+やすむ
+take a day off [work]
+yasumu
+
+呼びます
+call
+yobimasu
+
+よぶ
+call
+yobu
+
+読みます
+read
+yomimasu
+
+よむ
+read
+yomu
+
+わかります
+understand
+wakarimasu
+
+わかる
+understand
+wakaru
+
+渡ります
+cross [a bridge]
+watarimasu
+
+わたる
+cross [a bridge]
+wataru
+
+`;
+
+allWords["Group I - 1 - Hard"] = ``;
+
+allWords["Group II - 1"] = `
+浴びます［シャワーを ～］
+take [a shower]
+abimasu
+
+あびる
+take [a shower]
+abiru
+
+います
+exist, be (referring to animate things)
+imasu
+
+いる
+exist, be (referring to animate things)
+iru
+
+います［こどもが ～］
+have [a child]
+imasu
+
+いる
+have [a child]
+iru
+
+います［にほんに ～］
+stay, be [in Japan]
+imasu
+
+いる
+stay, be [in Japan]
+iru
+
+起きます
+get up, wake up
+okimasu
+
+おきる
+get up, wake up
+okiru
+
+降ります［でんしゃを ～］
+get off [a train]
+orimasu
+
+おりる
+get off [a train]
+oriru
+
+借ります
+borrow
+karimasu
+
+かりる
+borrow
+kariru
+
+着ます
+put on (a shirt, etc.)
+kimasu
+
+きる
+put on (a shirt, etc.)
+kiru
+
+足ります
+be enough, be sufficient
+tarimasu
+
+たりる
+be enough, be sufficient
+tariru
+
+できます
+be able to, can
+dekimasu
+
+できる
+be able to, can
+dekiru
+
+見ます
+see, look at, watch
+mimasu
+
+みる
+see, look at, watch
+miru
+
+開けます
+open
+akemasu
+
+あける
+open
+akeru
+
+あげます
+give
+agemasu
+
+あげる
+give
+ageru
+
+集めます
+collect, gather
+atsumemasu
+
+あつめる
+collect, gather
+atsumeru
+
+入れます
+put in, insert
+iremasu
+
+いれる
+put in, insert
+ireru
+
+生まれます
+be born
+umaremasu
+
+うまれる
+be born
+umareru
+
+教えます
+teach
+oshiemasu
+
+おしえる
+teach
+oshieru
+
+教えます［じゅうしょを ～］
+tell [an address]
+oshiemasu
+
+おしえる
+tell [an address]
+oshieru
+
+覚えます
+memorise
+oboemasu
+
+おぼえる
+memorise
+oboeru
+
+換えます
+exchange, change
+kaemasu
+
+かえる
+exchange, change
+kaeru
+
+変えます
+change
+kaemasu
+
+かえる
+change
+kaeru
+
+かけます［でんわを ～］
+make [a telephone call]
+kakemasu
+
+かける
+make [a telephone call]
+kakeru
+
+かけます［めがねを ～］
+put on [glasses]
+kakemasu
+
+かける
+put on [glasses]
+kakeru
+
+考えます
+think, consider
+kangaemasu
+
+かんがえる
+think, consider
+kangaeru
+
+気を つけます
+pay attention, take care
+ki o tsukemasu
+
+きを つける
+pay attention, take care
+ki o tsukeru
+
+くれます
+give (me)
+kuremasu
+
+くれる
+give (me)
+kureru
+
+閉めます
+close, shut
+shimemasu
+
+しめる
+close, shut
+shimeru
+
+調べます
+check, investigate
+shirabemasu
+
+しらべる
+check, investigate
+shiraberu
+
+捨てます
+throw away
+sutemasu
+
+すてる
+throw away
+suteru
+
+食べます
+eat
+tabemasu
+
+たべる
+eat
+taberu
+
+疲れます
+get tired
+tsukaremasu
+
+つかれる
+get tired
+tsukareru
+
+つけます
+turn on
+tsukemasu
+
+つける
+turn on
+tsukeru
+
+出かけます
+go out
+dekakemasu
+
+でかける
+go out
+dekakeru
+
+出ます［おつりが～］
+[change] come out
+demasu
+
+でる
+[change] come out
+deru
+
+出ます［きっさてんを ～］
+go out [of a café]
+demasu
+
+でる
+go out [of a café]
+deru
+
+出ます［だいがくを ～］
+graduate from [university]
+demasu
+
+でる
+graduate from [university]
+deru
+
+止めます
+stop, park
+tomemasu
+
+とめる
+stop, park
+tomeru
+
+寝ます
+sleep, go to bed
+nemasu
+
+ねる
+sleep, go to bed
+neru
+
+乗り換えます
+change (train, etc.)
+norikaemasu
+
+のりかえる
+change (train, etc.)
+norikaeru
+
+始めます
+start, begin
+hajimemasu
+
+はじめる
+start, begin
+hajimeru
+
+負けます
+lose, be beaten
+makemasu
+
+まける
+lose, be beaten
+makeru
+
+見せます
+show
+misemasu
+
+みせる
+show
+miseru
+
+迎えます
+go to meet, welcome
+mukaemasu
+
+むかえる
+go to meet, welcome
+mukaeru
+
+やめます［かいしゃを ～］
+quit or retire from [a company], stop, give up
+yamemasu
+
+やめる
+quit or retire from [a company], stop, give up
+yameru
+
+忘れます
+forget
+wasuremasu
+
+わすれる
+forget
+wasureru
+
+`;
+
+allWords["Group II - 1 - Hard"] = ``;
+
+allWords["Group III - 1"] = `
+来ます
+come
+kimasu
+
+くる
+come
+kuru
+
+連れて 来ます
+bring (someone)
+tsuretekimasu
+
+つれて くる
+bring (someone)
+tsuretekuru
+
+持って 来ます
+bring (something)
+mottekimasu
+
+もって くる
+bring (something)
+mottekuru
+
+します
+do, play
+shimasu
+
+する
+do, play
+suru
+
+します［ネクタイを～］
+put on [tie]
+shimasu
+
+する
+put on [tie]
+suru
+
+案内します
+show around, show the way
+annaishimasu
+
+あんないする
+show around, show the way
+annaisuru
+
+運転します
+drive
+untenshimasu
+
+うんてんする
+drive
+untensuru
+
+買い物します
+do shopping
+kaimonoshimasu
+
+かいものする
+do shopping
+kaimonosuru
+
+結婚します
+marry, get married
+kekkonshimasu
+
+けっこんする
+marry, get married
+kekkonsuru
+
+見学します
+tour, visit a place to study it
+kengakushimasu
+
+けんがくする
+tour, visit a place to study it
+kengakusuru
+
+研究します
+do research
+kenkyuushimasu
+
+けんきゅうする
+do research
+kenkyuusuru
+
+コピーします
+copy
+kopiishimasu
+
+コピーする
+copy
+kopiisuru
+
+散歩します［こうえんを ～］
+take a walk [in a park]
+sanposhimasu
+
+さんぽする
+take a walk [in a park]
+sanposuru
+
+残業します
+work overtime
+zangyoushimasu
+
+ざんぎょうする
+work overtime
+zangyousuru
+
+修理します
+repair
+shuurishimasu
+
+しゅうりする
+repair
+shuurisuru
+
+出張します
+go on a business trip
+shutchoushimasu
+
+しゅっちょうする
+go on a business trip
+shutchousuru
+
+紹介します
+introduce
+shoukaishimasu
+
+しょうかいする
+introduce
+shoukaisuru
+
+食事します
+have a meal, dine
+shokujishimasu
+
+しょくじする
+have a meal, dine
+shokujisuru
+
+心配します
+worry
+shinpaishimasu
+
+しんぱいする
+worry
+shinpaisuru
+
+説明します
+explain
+setsumeishimasu
+
+せつめいする
+explain
+setsumeisuru
+
+洗濯します
+wash (clothes)
+sentakushimasu
+
+せんたくする
+wash (clothes)
+sentakusuru
+
+掃除します
+clean (a room)
+soujishimasu
+
+そうじする
+clean (a room)
+soujisuru
+
+電話します
+phone
+denwashimasu
+
+でんわする
+phone
+denwasuru
+
+勉強します
+study
+benkyoushimasu
+
+べんきょうする
+study
+benkyousuru
+
+予約します
+reserve, book
+yoyakushimasu
+
+よやくする
+reserve, book
+yoyakusuru
+
+留学します
+study abroad
+ryuugakushimasu
+
+りゅうがくする
+study abroad
+ryuugakusuru
+
+`;
+
+allWords["Group III - 1 - Hard"] = ``;
+
+allWords["Honorifics1"] = `
+おべんとう
+box lunch, packed lunch
+[o]bentou
+
+おはなし
+talk, speech, story, what one's say
+[o]hanashi
+
+おしょうがつ
+New Year's Day
+[o]shougatsu
+
+おゆ
+hot water
+[o]yu
+
+おいのり
+prayer
+[o] inori
+
+`;
+
+allWords["Honorifics1 - Hard"] = ``;
+
+allWords["All Patterns1"] = `
+わたしは マイク・ミラーです。
+I'm Mike Miller.
+Watashi wa Maiku Miraa desu.
+
+サントスさんは 学生じゃ ありません。
+Mr. Santos isn't a student.
+Santosu-san wa gakusei ja arimasen.
+
+ミラーさんは アメリカ人ですか。
+Is Mr. Miller an American?
+Miraa-san wa Amerikajin desu ka.
+
+グプタさんも 会社員です。
+Mr. Gupta is also a company employee.
+Guputa-san mo kaishain desu.
+
+ミラーさんは IMCの 社員です。
+Mr. Miller is an IMC employee.
+Miraa-san wa IMC no shain desu.
+
+あの 方は ミラーさんです。
+That's Mr. Miller.
+Ano kata wa Miraa-san desu.
+
+それは 辞書ですか。
+Is that a dictionary?
+Sore wa jisho desu ka.
+
+この 本は わたしのです。
+This book is mine.
+Kono hon wa watashi no desu.
+
+はい、そうです。
+Yes, it is.
+Hai, sou desu.
+
+これは 「９」ですか、「７」ですか。
+Is this a 9 or a 7?
+Kore wa kyuu desu ka, nana desu ka.
+
+これは コンピューターの 本です。
+This is a book on computers.
+Kore wa konpyuutaa no hon desu.
+
+この かばんは あなたのですか。
+Is this bag yours?
+Kono kaban wa anata no desu ka.
+
+お国は どちらですか。
+What country are you from?
+Okuni wa dochira desu ka.
+
+そうですか。
+Oh, I see.
+Sou desu ka.
+
+お手洗いは あそこです。
+The toilet is over there.
+Otearai wa asoko desu.
+
+電話は 2階です。
+The telephone is on the second floor.
+Denwa wa nikai desu.
+
+お手洗いは どこですか。
+Where's the toilet?
+Otearai wa doko desu ka.
+
+これは どこの コンピューターですか。
+Where is this computer made?
+Kore wa doko no konpyuutaa desu ka.
+
+今 7時10分です。
+It's 7:10 now.
+Ima shichiji jippun desu.
+
+わたしは 毎日 勉強します。
+I study every day.
+Watashi wa mainichi benkyou shimasu.
+
+6時半に 起きます。
+I get up at six-thirty.
+Rokujihan ni okimasu.
+
+9時から 5時まで 勉強します。
+I study from 9 to 5.
+Kuji kara goji made benkyou shimasu.
+
+銀行の 休みは 土曜日と 日曜日です。
+The bank is closed on Saturdays and Sundays.
+Ginkou no yasumi wa doyoubi to nichiyoubi desu.
+
+大変ですね。
+That's tough, isn't it?
+Taihen desu ne.
+
+京都へ 行きます。
+I'm going to Kyoto.
+Kyouto e ikimasu.
+
+どこへも 行きません。
+I'm not going anywhere.
+Doko e mo ikimasen.
+
+電車で 行きます。
+I'm going by train.
+Densha de ikimasu.
+
+家族と 日本へ 来ました。
+I came to Japan with my family.
+Kazoku to Nihon e kimashita.
+
+いつ 日本へ 来ましたか。
+When did you come to Japan?
+Itsu Nihon e kimashita ka.
+
+この アイスクリーム、おいしいですよ。
+This ice cream is very nice, you know.
+Kono aisukuriimu, oishii desu yo.
+
+あ、そうですね。
+Oh, yes, so it is.
+A, sou desu ne.
+
+ジュースを 飲みます。
+I drink juice.
+Juusu o nomimasu.
+
+サッカーを します。
+I play soccer.
+Sakkaa o shimasu.
+
+月曜日 何を しますか。
+What are you doing on Monday?
+Getsuyoubi nani o shimasu ka.
+
+それは 何ですか。
+What's that?
+Sore wa nan desu ka.
+
+駅で 新聞を 買います。
+I'm going to buy a paper at the station.
+Eki de shinbun o kaimasu.
+
+いっしょに 京都へ 行きませんか。
+Would you like to come to Kyoto with us?
+Issho ni Kyouto e ikimasen ka.
+
+ちょっと 休みましょう。
+Let's take a break.
+Chotto yasumimashou.
+
+はしで 食べます。
+I eat with chopsticks.
+Hashi de tabemasu.
+
+「ありがとう」は 英語で 何ですか。
+What's 'Arigato' in English?
+"Arigatou" wa Eigo de nan desu ka.
+
+木村さんに 花を あげました。
+I gave Ms. Kimura some flowers.
+Kimura-san ni hana o agemashita.
+
+山田さんに 花を もらいました。
+I received some flowers from Mr. Yamada.
+Yamada-san ni hana o moraimashita.
+
+もう 荷物を 送りましたか。
+Have you sent the baggage yet?
+Mou nimotsu o okurimashita ka.
+
+ワット先生は 親切です。
+Mr. Watt is kind.
+Watto-sensei wa shinsetsu desu.
+
+富士山は 高いです。
+Mt. Fuji is high.
+Fujisan wa takai desu.
+
+ワット先生は 親切な 先生です。
+Mr. Watt is a considerate teacher.
+Watto-sensei wa shinsetsu na sensei desu.
+
+富士山は 高い 山です。
+Mt. Fuji is a high mountain.
+Fujisan wa takai yama desu.
+
+日本の 食べ物は おいしいですが、高いです。
+Japanese food is delicious, but it is expensive.
+Nihon no tabemono wa oishii desu ga, takai desu.
+
+北京は とても 寒いです。
+Beijing is very cold.
+Pekin wa totemo samui desu.
+
+日本の 生活は どうですか。
+How do you find life in Japan?
+Nihon no seikatsu wa dou desu ka.
+
+奈良は どんな 町ですか。
+What sort of town is Nara?
+Nara wa donna machi desu ka.
+
+わたしは 車が あります。
+I have a car.
+Watashi wa kuruma ga arimasu.
+
+わたしは イタリア料理が 好きです。
+I like Italian food.
+Watashi wa Itaria ryouri ga suki desu.
+
+英語が よく わかります。
+I understand English well.
+Eigo ga yoku wakarimasu.
+
+時間が ありませんから、新聞を 読みません。
+I don't read newspapers because I don't have time.
+Jikan ga arimasen kara, shinbun o yomimasen.
+
+どうして 朝 新聞を 読みませんか。
+Why don't you read a newspaper in the mornings?
+Doushite asa shinbun o yomimasen ka.
+
+コンピューターが あります。
+There's a computer.
+Konpyuutaa ga arimasu.
+
+わたしの 部屋に 机が あります。
+There's a desk in my room.
+Watashi no heya ni tsukue ga arimasu.
+
+ミラーさんは 事務所に います。
+Mr. Miller is in the office.
+Miraa-san wa jimusho ni imasu.
+
+机の 上に 写真が あります。
+There's a photograph on the desk.
+Tsukue no ue ni shashin ga arimasu.
+
+箱の 中に 手紙や 写真が あります。
+There are some letters, photographs and other things in the box.
+Hako no naka ni tegami ya shashin ga arimasu.
+
+りんごを 4つ 買いました。
+I bought four apples.
+Ringo o yotsu kaimashita.
+
+どのくらい 日本語を 勉強しましたか。
+How long did you study Japanese for?
+Dono kurai Nihongo o benkyou shimashita ka.
+
+15分ぐらい かかります。
+It takes about fifteen minutes.
+Juugofun gurai kakarimasu.
+
+1か月に 2回 映画を 見ます。
+I go to see a film about twice a month.
+Ikkagetsu ni nikai eiga o mimasu.
+
+休みは 日曜日だけです。
+Sunday is my only day off.
+Yasumi wa nichiyoubi dake desu.
+
+この 車は あの 車より 大きいです。
+This car's bigger than that one.
+Kono kuruma wa ano kuruma yori ookii desu.
+
+サッカーと 野球と どちらが おもしろいですか。
+Which is more interesting, soccer or baseball?
+Sakkaa to yakyuu to dochira ga omoshiroi desu ka.
+
+日本料理［の 中］で 何が いちばん おいしいですか。
+Which of all the Japanese dishes is the most delicious?
+Nihon ryouri [no naka] de nani ga ichiban oishii desu ka.
+
+あの 赤くて、大きいのです。
+That big red one.
+Ano akakute, ookii no desu.
+
+わたしは 友達が 欲しいです。
+I want some friends.
+Watashi wa tomodachi ga hoshii desu.
+
+わたしは 沖縄へ 行きたいです。
+I want to go to Okinawa.
+Watashi wa Okinawa e ikitai desu.
+
+神戸へ インド料理を 食べに 行きます。
+I'm going to Kobe to have some Indian food.
+Koube e Indo ryouri o tabe ni ikimasu.
+
+のどが かわきましたから、何か 飲みたいです。
+I'm thirsty; I'd like something to drink.
+Nodo ga kawakimashita kara, nani ka nomitai desu.
+
+ボールペンで 名前を 書いて ください。
+Please write your name with a ballpoint pen.
+Boorupen de namae o kaite kudasai.
+
+ミラーさんは 今 電話を かけて います。
+Mr. Miller is making a phone call now.
+Miraa-san wa ima denwa o kakete imasu.
+
+傘を 貸しましょうか。
+Shall I lend you my umbrella?
+Kasa o kashimashou ka.
+
+雨が 降って います。
+It's raining.
+Ame ga futte imasu.
+
+写真を 撮っても いいですか。
+May I take a photo?
+Shashin o totte mo ii desu ka.
+
+ここで たばこを 吸っては いけません。
+You can't smoke here.
+Koko de tabako o sutte wa ikemasen.
+
+わたしは 大阪に 住んで います。
+I live in Osaka.
+Watashi wa Oosaka ni sunde imasu.
+
+ここに 座っても いいですか。
+May I sit here?
+Koko ni suwatte mo ii desu ka.
+
+ここに 住所を 書いて ください。
+Write your address here, please.
+Koko ni juusho o kaite kudasai.
+
+朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。
+In the mornings, I go jogging, take a shower, and then go to work.
+Asa jogingu o shite, shawaa o abite, kaisha e ikimasu.
+
+ミラーさんは 若くて、元気です。
+Mr. Miller is young and energetic.
+Miraa-san wa wakakute, genki desu.
+
+お金を 入れてから、ボタンを 押して ください。
+Put the money in, please, and then press the button.
+Okane o irete kara, botan o oshite kudasai.
+
+大阪は 食べ物が おいしいです。
+The food in Osaka is very good.
+Oosaka wa tabemono ga oishii desu.
+
+7時に うちを 出ます。
+I leave home at seven.
+Shichiji ni uchi o demasu.
+
+大学まで どうやって 行きますか。
+How do you get to the University?
+Daigaku made douyatte ikimasu ka.
+
+ミラーさんの 傘は どれですか。
+Which is Mr. Miller's umbrella?
+Miraa-san no kasa wa dore desu ka.
+
+ここで 写真を 撮らないで ください。
+Please don't take photographs here.
+Koko de shashin o toranaide kudasai.
+
+薬を 飲まなければ なりません。
+I must take some medicine.
+Kusuri o nomanakereba narimasen.
+
+あした 来なくても いいです。
+You don't have to come tomorrow.
+Ashita konakute mo ii desu.
+
+荷物は ここに 置かないで ください。
+Don't put your bags here, please.
+Nimotsu wa koko ni okanaide kudasai.
+
+会議は 5時までに 終わります。
+The meeting will end by five.
+Kaigi wa goji made ni owarimasu.
+
+ミラーさんは 漢字を 読む ことが できます。
+Mr. Miller can read kanji.
+Miraa-san wa kanji o yomu koto ga dekimasu.
+
+わたしの 趣味は 音楽を 聞く ことです。
+My interest is listening to music.
+Watashi no shuumi wa ongaku o kiku koto desu.
+
+寝る まえに、本を 読みます。
+I read a book before going to bed.
+Neru mae ni, hon o yomimasu.
+
+日本では なかなか 馬を 見る ことが できません。
+You don't see many horses in Japan.
+Nihon de wa naka-naka uma o miru koto ga dekimasen.
+
+ぜひ 北海道へ 行きたいです。
+I really want to go to Hokkaido.
+Zehi Hokkaidou e ikitai desu.
+
+馬に 乗った ことが あります。
+I've ridden a horse.
+Uma ni notta koto ga arimasu.
+
+日曜日は テニスを したり、映画を 見たり します。
+On Sundays, I play tennis, watch a film, and so on.
+Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.
+
+寒くなります。
+Get cold.
+Samuku narimasu.
+
+コーヒーを 飲む？
+Want some coffee?
+Koohii o nomu?
+
+今晩 暇？
+You free tonight?
+Konban hima?
+
+辞書、持って る？
+Have you got a dictionary?
+Jisho, motte ru?
+
+その カレーは おいしい？ ……うん、辛いけど、おいしい。
+Is that curry good? ... Yes, it's spicy, but it's nice.
+Sono karee wa oishii? ... Un, karai kedo, oishii.
+
+あした 雨が 降ると 思います。
+I think it's going to rain tomorrow.
+Ashita ame ga furu to omoimasu.
+
+ミラーさんは 東京へ 出張すると 言いました。
+Mr. Miller said that he would be going to Tokyo on business.
+Miraa-san wa Toukyou e shuuchou suru to iimashita.
+
+あした パーティーに 行くでしょう？
+You're going to the party tomorrow, right?
+Ashita paatii ni iku deshou?
+
+東京で 日本と ブラジルの サッカーの 試合が あります。
+There's a soccer match between Japan and Brazil in Tokyo.
+Toukyou de Nihon to Burajiru no sakkaa no shiai ga arimasu.
+
+ちょっと ビールでも 飲みませんか。
+How about drinking a beer or something?
+Chotto biiru demo nomimasen ka.
+
+もう 帰らないと……。
+I have to be getting home......
+Mou kaeranaito...
+
+これは ミラーさんが 住んで いた うちです。
+This is the house where Mr. Miller used to live.
+Kore wa Miraa-san ga sunde ita uchi desu.
+
+わたしは 朝ごはんを 食べる 時間が ありません。
+I don't have time to eat breakfast.
+Watashi wa asagohan o taberu jikan ga arimasen.
+
+図書館で 本を 借りる とき、カードが 要ります。
+You need your card when you borrow a book from the library.
+Toshokan de hon o kariru toki, kaado ga irimasu.
+
+パリへ 行った とき、かばんを 買いました。
+I bought a bag when I went to Paris.
+Pari e itta toki, kaban o kaimashita.
+
+この ボタンを 押すと、お釣りが出ます。
+If you press this button, you'll get your change.
+Kono botan o osu to, otsuri ga demasu.
+
+公園を 散歩します。
+I go for a walk in the park.
+Kouen o sanpo shimasu.
+
+佐藤さんは わたしに クリスマスカードを くれました。
+Ms. Sato gave me a Christmas card.
+Satou-san wa watashi ni Kurisumasu kaado o kuremashita.
+
+わたしは 木村さんに 本を 貸して あげました。
+I lent Ms. Kimura a book.
+Watashi wa Kimura-san ni hon o kashite agemashita.
+
+わたしは 山田さんに 図書館の 電話番号を 教えて もらいました。
+Mr. Yamada told me the telephone number of the library.
+Watashi wa Yamada-san ni toshokan no denwa bangou o oshiete moraimashita.
+
+母は セーターを 送って くれました。
+My mother sent me a sweater.
+Haha wa seetaa o okutte kuremashita.
+
+お金が あたら、旅行します。
+If I had some money, I'd go travelling.
+Okane ga attara, ryokou shimasu.
+
+10時になったら、出かけましょう。
+Shall we go out once it gets to 10 o'clock?
+Juuji ni nattara, dekakemashou.
+
+雨が 降っても、洗濯します。
+I'll do the laundry even if it rains.
+Ame ga futte mo, sentaku shimasu.
+
+もし 1億円あったら、いろいろな 国を 旅行したいです。
+If I had a hundred million yen, I'd like to travel round the world.
+Moshi ichiokuyen attara, iroiro na kuni o ryokou shitai desu.
+
+`;
+
+allWords["All Patterns1 - Hard"] = ``;
+
 const appSettings = {
   "flagCounts": {
-    "しちにんのさむらい::The Seven Samurai": 1,
-    "しちじ::7 o'clock": 1,
-    "そうですか::I see.": 1,
-    "なんですか::Yes? (lit: What is it?)": 1
+    "ほうそう::announcement, broadcast": 1
   },
-  "currentLesson": "Grammer 07",
+  "currentLesson": "Grammer 24",
   "isHard": false,
   "displayMode": "big-english",
-  "readingGap": "0",
-  "quizMode": "quiz2",
+  "readingGap": "2",
+  "quizMode": "quiz1",
   "quizOrder": "original",
   "revealRomaji": false,
   "focusedWordIndex": -1,
@@ -11849,7 +14072,12 @@ const appSettings = {
     "Na Adjectives1",
     "All Masu Form Verbs1",
     "Connectors1",
-    "N5 Kanji"
+    "N5 Kanji",
+    "Group I - 1",
+    "Group II - 1",
+    "Group III - 1",
+    "Honorifics1",
+    "All Patterns1"
   ],
   "similarWordGroups": [
     {
@@ -11857,17 +14085,17 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [],
-  "lastDestCategory": "Grammer 10",
+  "lastDestCategory": "Phrases1",
   "activeDbGroup": "N5 Grammer",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 01",
-    "N5 Others": "Ko So Aso1",
+    "N5 Lessons": "Lesson 24",
+    "N5 Others": "Group I - 1",
     "N4 Lessons": "Lesson 26",
     "N4 Others": "Show All Words",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
-    "N5 Grammer": "Grammer 07",
+    "N5 Grammer": "Grammer 24",
     "N4 Grammer": "Grammer 26",
     "Kanji": "N5 Kanji"
   }
