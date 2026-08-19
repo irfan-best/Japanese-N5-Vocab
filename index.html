@@ -89,6 +89,7 @@
             <option value="english-only">English Only</option>
             <option value="japanese-only">Japanese Only</option>
             <option value="romaji-only">Romaji Only</option>
+            <option value="kanji-only">Kanji Only</option>
           </select>
         </div>
 
@@ -244,6 +245,7 @@
             <option value="quiz6">Quiz 6: Romaji &rarr; English (Review)</option>
             <option value="quiz7">Quiz 7: English &rarr; Romaji Writing</option>
             <option value="quiz8">Quiz 8: Japanese Reading Practice</option>
+            <option value="quiz9">Quiz 9: Kanji &rarr; Japanese</option>
           </select>
         </div>
 
@@ -664,11 +666,16 @@ kenkyuusha</pre>
           <option value="N5 Lessons">N5 Lessons</option>
           <option value="N5 Others">N5 Others</option>
           <option value="N5 Grammer">N5 Grammer</option>
+          <option value="N5 Grammer Others">N5 Grammer Others</option>
+          <option value="N5 Extra">N5 Extra</option>
           <option value="N4 Lessons">N4 Lessons</option>
           <option value="N4 Others">N4 Others</option>
           <option value="N4 Grammer">N4 Grammer</option>
+          <option value="N4 Grammer Others">N4 Grammer Others</option>
+          <option value="N4 Extra">N4 Extra</option>
           <option value="N3 Lessons">N3 Lessons</option>
           <option value="N3 Others">N3 Others</option>
+          <option value="N3 Extra">N3 Extra</option>
           <option value="Kanji">Kanji</option>
         </select>
       </div>
@@ -685,10 +692,10 @@ kenkyuusha</pre>
       <button class="btn-close-modal" aria-label="Close Import Modal">&times;</button>
     </div>
     <div class="modal-body">
-      <p class="modal-instruction">Paste vocabulary entries below. Each entry must consist of exactly three consecutive lines (1. Japanese, 2. English, 3. Romaji). Multiple entries should be separated by empty lines.</p>
+      <p class="modal-instruction">Paste vocabulary entries below. Each entry must consist of 3 or 4 lines (1. Japanese, 2. English, 3. Romaji, and optional 4. Kanji). Multiple entries should be separated by empty lines.</p>
       
       <div class="import-textarea-wrapper">
-        <textarea id="import-text" class="custom-textarea" placeholder="けんきゅうしゃ&#10;researcher, scholar&#10;kenkyuusha&#10;&#10;しつれいですが (or) しつれいですな&#10;excuse me, but&#10;shitsurei desu ga"></textarea>
+        <textarea id="import-text" class="custom-textarea" placeholder="けんきゅうしゃ&#10;researcher, scholar&#10;kenkyuusha&#10;研究者&#10;&#10;しつれいですが&#10;excuse me, but&#10;shitsurei desu ga"></textarea>
       </div>
 
       <div class="modal-actions">
@@ -747,12 +754,16 @@ kenkyuusha</pre>
         <input type="text" id="edit-word-japanese" class="quiz-text-input">
       </div>
       <div class="quiz-option-group">
+        <label for="edit-word-english">English</label>
+        <input type="text" id="edit-word-english" class="quiz-text-input">
+      </div>
+      <div class="quiz-option-group">
         <label for="edit-word-romaji">Romaji</label>
         <input type="text" id="edit-word-romaji" class="quiz-text-input">
       </div>
       <div class="quiz-option-group">
-        <label for="edit-word-english">English</label>
-        <input type="text" id="edit-word-english" class="quiz-text-input">
+        <label for="edit-word-kanji">Kanji</label>
+        <input type="text" id="edit-word-kanji" class="quiz-text-input">
       </div>
       <div class="quiz-setup-actions" style="margin-top: 1.5rem;">
         <button id="btn-save-word" class="btn btn-primary btn-large">Save Changes</button>

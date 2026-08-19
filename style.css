@@ -637,6 +637,26 @@ html[data-theme="light"] .moon-icon { display: block; }
   display: none !important;
 }
 
+.vocab-card.mode-kanji-only .card-kanji {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block !important;
+}
+.vocab-card.mode-kanji-only .card-japanese,
+.vocab-card.mode-kanji-only .card-english,
+.vocab-card.mode-kanji-only .card-romaji {
+  display: none !important;
+}
+
+.vocab-card:not(.mode-kanji-only) .card-kanji {
+  display: none !important;
+}
+
+.vocab-card.no-kanji {
+  /* border-color: var(--danger) !important;
+  box-shadow: 0 0 0 2px var(--danger-light) !important; */
+}
+
 /* Card Mini-badge (e.g. Flag indicator) */
 .card-badge {
   position: absolute;

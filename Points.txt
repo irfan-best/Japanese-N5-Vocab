@@ -230,3 +230,10 @@ manabimasu vs benkyoushimasu:
 yoku: well, much
     yoku wakarimasu -> i understand well.
     yoku eiga o mimasu -> i often watch movies (much)
+
+Tsukemasu (つける) literally means "to attach, apply, or stick on." Use it when an item is physically attached or applied directly onto your skin, body, or clothing.
+
+Shimasu (する) literally means "to do." In the context of items, it means "to wear/adorn" small accessories or style choices that complete your look or serve a decorative purpose.
+
+agemasu -> transitive
+agarimasu -> non-transitive
