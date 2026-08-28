@@ -20446,7 +20446,51 @@ allWords["Adjective G5"] = ``;
 
 allWords["Adjective G5 - Hard"] = ``;
 
-allWords["0 General E5"] = `
+allWords["0 General E5"] = ``;
+
+allWords["0 General E5 - Hard"] = ``;
+
+allWords["V - Ra G5"] = `
+おかねが ったら、りょこうします。
+If I had some money, I'd go travelling.
+Okane ga attara, ryokou shimasu.
+お金が あったら、旅行します。
+
+じかんが なかったら、てれびを みません。
+If I don't have time, I won't watch TV.
+Jikan ga nakattara, terebi o mimasen.
+時間が なかったら、テレビを 見ません。
+
+やすかったら、ぱそこんを かいたいです。
+I'd like to buy a PC if I can find a cheap one.
+Yasukattara, pasokon o kaitai desu.
+安かったら、パソコンを 買いたいです。
+
+ひまだったら、てつだって ください。
+Please lend me a hand if you're free.
+Hima dattara, tetsudatte kudasai.
+暇だったら、手伝って ください。
+
+いい てんきだたら、さんぽしませんか。
+Shall we go for a walk if the weather's nice?
+Ii tenki dattara, sanpo shimasen ka.
+いい 天気だったら、散歩しませんか。
+
+じゅうじに なったら、でかけましょう。
+Shall we go out once it gets to 10 o'clock?
+Juuji ni nattara, dekakemashou.
+10時になったら、出かけましょう。
+
+うちへ かえったら、すぐ しゃわーを あびます。
+I take a shower as soon as I get home.
+Uchi e kaettara, sugu shawaa o abimasu.
+うちへ 帰ったら、すぐ シャワーを 浴びます。
+
+`;
+
+allWords["V - Ra G5 - Hard"] = ``;
+
+allWords["Extra 00 E5"] = `
 はじめましょう
 Let's begin.
 hajimemashou
@@ -20507,11 +20551,6 @@ homework
 shukudai
 宿題
 
-しつもん
-question
-shitsumon
-質問
-
 こたえ
 answer
 kotae
@@ -20537,11 +20576,6 @@ Good evening.
 konbanwa
 こんばんは。
 
-おやすみなさい
-Good night.
-oyasuminasai
-お休みなさい。
-
 さようなら
 Goodbye.
 sayounara
@@ -20562,6 +20596,663 @@ Please.
 onegaishimasu
 お願いします。
 
+`;
+
+allWords["Extra 00 E5 - Hard"] = `
+ぎもんし
+interrogative
+gimonshi
+疑問詞
+
+こうてい
+affirmative
+koutei
+肯定
+
+ひてい
+negative
+hitei
+否定
+
+かんりょう
+perfective
+kanryou
+完了
+
+みかんりょう
+imperfective
+mikanryou
+未完了
+
+ふくしゅう
+review
+fukushuu
+復習
+
+ふくし
+adverb
+fukushi
+副詞
+
+かつよう
+inflection, conjugation
+katsuyou
+活用
+
+しゅうしょく
+modification
+shuushoku
+修飾
+
+せつ
+clause
+setsu
+節
+
+せつぞくし
+conjunction
+setsuzokushi
+接続詞
+
+じょし
+particle
+joshi
+助詞
+
+すうし
+numeral
+suushi
+数詞
+
+じょすうし
+counter suffix
+josuushi
+助数詞
+
+しゅご
+subject
+shugo
+主語
+
+じゅつご
+predicate
+jutsugo
+述語
+
+もくてきご
+object
+mokutekigo
+目的語
+
+しゅだい
+topic
+shudai
+主題
+
+もくじ
+contents
+mokuji
+目次
+
+さくいん
+index
+sakuin
+索引
+
+たんご（ご）
+word
+tango (go)
+単語（語）
+
+く
+phrase
+ku
+句
+
+はつおん
+pronunciation
+hatsuon
+発音
+
+ぼいん
+vowel
+boin
+母音
+
+しいん
+consonant
+shiin
+子音
+
+はく
+mora
+haku
+拍
+
+[か] ぎょう
+［か］row
+kagyou
+［か］行
+
+[い] れつ
+［い］column
+iretsu
+［い］列
+
+ていねいたい
+polite style of speech
+teineitai
+丁寧体
+
+ふつうたい
+plain style of speech
+futsuutai
+普通体
+
+れいがい
+exception
+reigai
+例外
+
+めいし
+noun
+meishi
+名詞
+
+どうし
+verb
+doushi
+動詞
+
+けいようし
+adjective
+keiyoushi
+形容詞
+
+かこ
+past
+kako
+過去
+
+ひかこ
+non-past
+hikako
+非過去
+
+しつもん
+question
+shitsumon
+質問
+
+だい  -か
+Lesson - (Ex: Lesson 1)
+dai...ka
+第...課
+
+ぶんけい
+sentence pattern
+bunkei
+文型
+
+～けい
+～ form
+～kei
+～形
+
+れいぶん
+example sentence
+reibun
+例文
+
+ぶんぽう
+grammar
+bunpou
+文法
+
+ぶん
+sentence
+bun
+文
+
+よみもの
+text
+yomimono
+読み物
+
+いけいようし
+い-adjective
+ikeiyoushi
+い形容詞
+
+なけいようし
+な-adjective
+nakeiyoushi
+な形容詞
+
+めいしぶん
+noun (predicate) sentence
+meishibun
+名詞文
+
+どうしぶん
+verb (predicate) sentence
+doushibun
+動詞文
+
+けいようしぶん
+adjective (predicate) sentence
+keiyoushibun
+形容詞文
+
+おやすみなさい
+Good night.
+oyasuminasai
+お休みなさい。
+
+かいわ
+conversation
+kaiwa
+会話
+
+れんしゅう
+exercise
+renshuu
+練習
+
+もんだい
+practice question
+mondai
+問題
+
+こたえ
+answer
+kotae
+答え
+
+フォーム
+form
+foomu
+フォーム
+
+アクセント
+accent
+akusento
+アクセント
+
+イントネーション
+intonation
+intoneeshon
+イントネーション
+
+`;
+
+allWords["Extra 01"] = `
+マレーシア
+Malaysia
+Mareeshia
+マレーシア
+
+マレーシアじん
+Malaysian
+Mareeshiajin
+マレーシア人
+
+マレーシアご
+Malaysian
+Mareeshiago
+マレーシア語
+
+ベトナム
+Vietnam
+Betonamu
+ベトナム
+
+ベトナムじん
+Vietnamese
+Betonamujin
+ベトナム人
+
+ベトナムご
+Vietnamese
+Betonamugo
+ベトナム語
+
+イタリア
+Italy
+Itaria
+イタリア
+
+イタリアじん
+Italian
+Itariajin
+イタリア人
+
+イタリアご
+Italian
+Itariago
+イタリア語
+
+スペイン
+Spain
+Supein
+スペイン
+
+スペインじん
+Spanish
+Supeinjin
+スペイン人
+
+スペインご
+Spanish
+Supeingo
+スペイン語
+
+アメリカ
+U.S.A.
+Amerika
+アメリカ
+
+アメリカじん
+American
+Amerikajin
+アメリカ人
+
+えいご
+English
+Eigo
+英語
+
+インドネシア
+Indonesia
+Indoneshia
+インドネシア
+
+インドネシアじん
+Indonesian
+Indoneshiajin
+インドネシア人
+
+インドネシアご
+Indonesian
+Indoneshiago
+インドネシア語
+
+かんこく
+South Korea
+Kankoku
+韓国
+
+かんこくじん
+South Korean
+Kankokujin
+韓国人
+
+かんこくご
+Korean
+Kankokugo
+韓国語
+
+タイ
+Thailand
+Tai
+タイ
+
+タイじん
+Thai
+Taijin
+タイ人
+
+タイご
+Thai
+Taigo
+タイ語
+
+ちゅうごく
+China
+Chuugoku
+中国
+
+ちゅうごくじん
+Chinese
+Chuugokujin
+中国人
+
+ちゅうごくご
+Chinese
+Chuugokugo
+中国語
+
+ドイツ
+Germany
+Doitsu
+ドイツ
+
+ドイツじん
+German
+Doitsujin
+ドイツ人
+
+ドイツご
+German
+Doitsugo
+ドイツ語
+
+にほん
+Japan
+Nihon
+日本
+
+にほんじん
+Japanese
+Nihonjin
+日本人
+
+にほんご
+Japanese
+Nihongo
+日本語
+
+フランス
+France
+Furansu
+フランス
+
+フランスじん
+French
+Furansujin
+フランス人
+
+フランスご
+French
+Furansugo
+フランス語
+
+`;
+
+allWords["Extra 01 - Hard"] = `
+ブラジル
+Brazil
+Burajiru
+ブラジル
+
+ブラジルじん
+Brazilian
+Burajirujin
+ブラジル人
+
+ポルトガルご
+Portuguese
+Porutogarugo
+ポルトガル語
+
+メキシコ
+Mexico
+Mekishiko
+メキシコ
+
+メキシコじん
+Mexican
+Mekishikojin
+メキシコ人
+
+スペインご
+Spanish
+Supeingo
+スペイン語
+
+イラン
+Iran
+Iran
+イラン
+
+イランじん
+Iranian
+Iranjin
+イラン人
+
+ペルシアご
+Persian
+Perushiago
+ペルシア語
+
+エジプト
+Egypt
+Ejiputo
+エジプト
+
+エジプトじん
+Egyptian
+Ejiputojin
+エジプト人
+
+アラビアご
+Arabic
+Arabiago
+アラビア語
+
+カナダ
+Canada
+Kanada
+カナダ
+
+カナダじん
+Canadian
+Kanadajin
+カナダ人
+
+えいご・フランスご
+English, French
+Eigo, Furansugo
+英語・フランス語
+
+イギリス
+U.K.
+Igirisu
+イギリス
+
+イギリスじん
+British
+Igirisujin
+イギリス人
+
+えいご
+English
+Eigo
+英語
+
+オーストラリア
+Australia
+Oosutoraria
+オーストラリア
+
+オーストラリアじん
+Australian
+Oosutorariajin
+オーストラリア人
+
+えいご
+English
+Eigo
+英語
+
+シンガポール
+Singapore
+Shingapooru
+シンガポール
+
+シンガポールじん
+Singaporean
+Shingapoorujin
+シンガポール人
+
+えいご
+English
+Eigo
+英語
+
+サウジアラビア
+Saudi Arabia
+Saujiarabia
+サウジアラビア
+
+サウジアラビアじん
+Saudi Arabian
+Saujiarabiajin
+サウジアラビア人
+
+アラビアご
+Arabic
+Arabiago
+アラビア語
+
+フィリピン
+Philippines
+Firipin
+フィリピン
+
+フィリピンじん
+Filipino
+Firipinjin
+フィリピン人
+
+フィリピノご
+Filipino
+Firipinogo
+フィリピノ語
+
+ロシア
+Russia
+Roshia
+ロシア
+
+ロシアじん
+Russian
+Roshiajin
+ロシア人
+
+ロシアご
+Russian
+Roshiago
+ロシア語
+
+インド
+India
+Indo
+インド
+
+インドじん
+Indian
+Indojin
+インド人
+
+ヒンディーご
+Hindi
+Hindiigo
+ヒンディー語
+
+`;
+
+allWords["Extra 02"] = `
 さとう
 Sato
 satou
@@ -20662,30 +21353,25 @@ Shimizu
 shimizu
 清水
 
-はじめまして
-How do you do? / Nice to meet you.
-hajimemashite
-初めまして
+`;
 
-どうぞ よろしく おねがいします
-Pleased to meet you.
-douzo yoroshiku onegaishimasu
-どうぞ よろしく お願いします
+allWords["Extra 02 - Hard"] = ``;
 
-おくじょう ゆうえんち
-amusement area
-okujou yuuenchi
-屋上遊園地
+allWords["Extra 03"] = `
+アクセサリー
+accessories
+akusesarii
+アクセサリー
+
+ちゅうしゃじょう
+car park / parking lot
+chuushajou
+駐車場
 
 レストラン
 restaurant
 resutoran
 レストラン
-
-もよおしもの かいじょう
-event hall
-moyooshimono kaijou
-催し物会場
 
 とけい
 watch, clock
@@ -20697,30 +21383,38 @@ spectacles, glasses
 megane
 眼鏡
 
-スポーツ ようひん
-sporting goods
-supootsu youhin
-スポーツ用品
+ほん
+book
+hon
+本
 
-りょこう ようひん
-leisure goods / travel goods
-ryokou youhin
-旅行用品
+くつ
+shoes
+kutsu
+靴
 
-こどもふく
-children's clothes
-kodomofuku
-子ども服
+かばん
+bag
+kaban
+かばん
+
+`;
+
+allWords["Extra 03 - Hard"] = `
+おくじょう ゆうえんち
+amusement area
+okujou yuuenchi
+屋上遊園地
+
+もよおしもの かいじょう
+event hall
+moyooshimono kaijou
+催し物会場
 
 おもちゃ
 toy
 omocha
 おもちゃ
-
-ほん
-book
-hon
-本
 
 ぶんぼうぐ
 stationery
@@ -20737,11 +21431,6 @@ tableware / kitchenware
 shokki
 食器
 
-でんかせいひん
-electrical appliances
-denka seihin
-電化製品
-
 しんしふく
 men's wear
 shinshifuku
@@ -20752,36 +21441,39 @@ ladies' wear
 fujinfuku
 婦人服
 
-くつ
-shoes
-kutsu
-靴
-
-かばん
-bag
-kaban
-かばん
-
-アクセサリー
-accessories
-akusesarii
-アクセサリー
-
 けしょうひん
 cosmetics
 keshouhin
 化粧品
+
+スポーツ ようひん
+sporting goods
+supootsu youhin
+スポーツ用品
+
+りょこう ようひん
+leisure goods / travel goods
+ryokou youhin
+旅行用品
+
+でんかせいひん
+electrical appliances
+denka seihin
+電化製品
 
 しょくひん
 food
 shokuhin
 食品
 
-ちゅうしゃじょう
-car park / parking lot
-chuushajou
-駐車場
+こどもふく
+children's clothes
+kodomofuku
+子ども服
 
+`;
+
+allWords["Extra 04"] = `
 けいさつしょ
 police station
 keisatsusho
@@ -20823,7 +21515,7 @@ chuuouku
 中央区
 
 さんのみや
-Sannomiya
+Sannomiya (town name)
 sannomiya
 三宮
 
@@ -20832,35 +21524,15 @@ apartment number
 gou
 号
 
-がんじつ
-New Year's Day
-ganjitsu
-元日
+`;
 
-せいじんのひ
-Coming-of-Age Day
-seijin no hi
-成人の日
+allWords["Extra 04 - Hard"] = ``;
 
-けんこくきねんのひ
-National Foundation Day
-kenkoku kinen no hi
-建国記念の日
-
-しゅんぶんのひ
-Vernal Equinox Day
-shunbun no hi
-春分の日
-
+allWords["Extra 05"] = `
 しょうわのひ
 Showa Day
 shouwa no hi
 昭和の日
-
-けんぽうきねんび
-Constitution Memorial Day
-kenpou kinenbi
-憲法記念日
 
 みどりのひ
 Greenery Day
@@ -20882,15 +21554,68 @@ Mountain Day
 yama no hi
 山の日
 
+ゴールデンウィーク
+Golden Week (29th april to 5th may)
+gooruden wiiku
+ゴールデンウィーク
+
+`;
+
+allWords["Extra 05 - Hard"] = `
+けんぽうきねんび
+Constitution Memorial Day
+kenpou kinenbi
+憲法記念日
+
+しゅくさいじつ
+national holiday
+shukusaijitsu
+祝祭日
+
+がんじつ
+New Year's Day
+ganjitsu
+元日
+
+けんこくきねんのひ
+National Foundation Day
+kenkoku kinen no hi
+建国記念の日
+
 けいろうのひ
 Respect-for-the-Aged Day
 keirou no hi
 敬老の日
 
+きんろうかんしゃのひ
+Labour Thanksgiving Day
+kinrou kansha no hi
+勤労感謝の日
+
+しゅんぶんのひ
+Vernal Equinox Day
+shunbun no hi
+春分の日
+
 しゅうぶんのひ
 Autumnal Equinox Day
 shuubun no hi
 秋分の日
+
+てんのうたんじょうび
+The Emperor's Birthday
+tennou tanjoubi
+天皇誕生日
+
+せいじんのひ
+Coming-of-Age Day
+seijin no hi
+成人の日
+
+いちがつのだいにげつようび
+2nd Monday of January
+ichigatsu no dai-ni getsuyōbi
+1月の第2月曜日
 
 たいいくのひ
 Health and Sports Day
@@ -20902,140 +21627,28 @@ Culture Day
 bunka no hi
 文化の日
 
-きんろうかんしゃのひ
-Labour Thanksgiving Day
-kinrou kansha no hi
-勤労感謝の日
+`;
 
-てんのうたんじょうび
-The Emperor's Birthday
-tennou tanjoubi
-天皇誕生日
-
-ゴールデンウィーク
-Golden Week
-gooruden wiiku
-ゴールデンウィーク
-
-やさい
-vegetables
-yasai
-野菜
-
-きゅうり
-cucumber
-kyuuri
-きゅうり
-
-トマト
-tomato
-tomato
-トマト
-
-なす
-egg plant / aubergine
-nasu
-なす
-
-まめ
-beans / peas
-mame
-まめ
-
+allWords["Extra 06"] = `
 キャベツ
 cabbage
 kyabetsu
 キャベツ
 
-ねぎ
-spring onion / scallion
-negi
-ねぎ
-
-はくさい
-Chinese cabbage
-hakusai
-白菜
-
-ほうれんそう
-spinach
-hourensou
-ほうれんそう
+さけ
+salmon
+sake
+さけ
 
 レタス
 lettuce
 retasu
 レタス
 
-じゃがいも
-potato
-jagaimo
-じゃがいも
-
-だいこん
-Japanese radish / mooli
-daikon
-大根
-
-たまねぎ
-onion
-tamanegi
-たまねぎ
-
-にんじん
-carrot
-ninjin
-にんじん
-
-くだもの
-fruit
-kudamono
-果物
-
-いちご
-strawberry
-ichigo
-いちご
-
 もも
 peach
 momo
 もも
-
-すいか
-watermelon
-suika
-すいか
-
-ぶどう
-grape
-budou
-ぶどう
-
-なし
-Japanese pear
-nashi
-なし
-
-かき
-persimmon
-kaki
-かき
-
-みかん
-mandarin orange
-mikan
-みかん
-
-りんご
-apple
-ringo
-りんご
-
-バナナ
-banana
-banana
-バナナ
 
 にく
 meat
@@ -21062,6 +21675,66 @@ sausage
 sooseeji
 ソーセージ
 
+たまねぎ
+onion
+tamanegi
+たまねぎ
+
+ねぎ
+spring onion / scallion
+negi
+ねぎ
+
+にんじん
+carrot
+ninjin
+にんじん
+
+いちご
+strawberry
+ichigo
+いちご
+
+すいか
+watermelon
+suika
+すいか
+
+たこ
+octopus
+tako
+たこ
+
+やさい
+vegetables
+yasai
+野菜
+
+トマト
+tomato
+tomato
+トマト
+
+くだもの
+fruit
+kudamono
+果物
+
+みかん
+mandarin orange
+mikan
+みかん
+
+りんご
+apple
+ringo
+りんご
+
+バナナ
+banana
+banana
+バナナ
+
 ハム
 ham
 hamu
@@ -21071,6 +21744,54 @@ hamu
 fish
 sakana
 魚
+
+たまご
+egg
+tamago
+たまご
+
+`;
+
+allWords["Extra 06 - Hard"] = `
+きゅうり
+cucumber
+kyuuri
+きゅうり
+
+はくさい
+Chinese cabbage
+hakusai
+白菜
+
+ほうれんそう
+spinach
+hourensou
+ほうれんそう
+
+じゃがいも
+potato
+jagaimo
+じゃがいも
+
+だいこん
+Japanese radish / mooli
+daikon
+大根
+
+ぶどう
+grape
+budou
+ぶどう
+
+なし
+Japanese pear
+nashi
+なし
+
+かき
+persimmon
+kaki
+かき
 
 あじ
 horse mackerel
@@ -21091,11 +21812,6 @@ saba
 mackerel pike
 sanma
 さんま
-
-さけ
-salmon
-sake
-さけ
 
 まぐろ
 tuna
@@ -21127,26 +21843,29 @@ cuttlefish / squid
 ika
 いか
 
-たこ
-octopus
-tako
-たこ
-
 こめ
 rice
 kome
 こめ
-
-たまご
-egg
-tamago
-たまご
 
 かい
 shellfish
 kai
 かい
 
+なす
+egg plant / aubergine
+nasu
+なす
+
+まめ
+beans / peas
+mame
+まめ
+
+`;
+
+allWords["Extra 07"] = `
 かぞく
 family
 kazoku
@@ -21218,7 +21937,7 @@ otto
 夫
 
 ふうふ
-husband and wife / married couple (my)
+husband and wife
 fuufu
 夫婦
 
@@ -21319,181 +22038,3315 @@ okosan
 
 `;
 
-allWords["0 General E5 - Hard"] = `
-はじめましょう
-Let's begin.
-hajimemashou
-始めましょう。
+allWords["Extra 07 - Hard"] = ``;
 
-おわりましょう
-Let's finish.
-owarimashou
-終わりましょう。
+allWords["Extra 08"] = `
+しろ
+white
+Shiro
+白
 
-やすみましょう
-Let's take a break.
-yasumimashou
-休みましょう。
+くろ
+black
+Kuro
+黒
 
-わかりますか
-Do you understand?
-wakarimasu ka
-わかりますか。
+あか
+red
+Aka
+赤
 
-はい、わかります
-Yes, I do.
-hai, wakarimasu
-はい、わかります。
+あお
+blue
+Ao
+青
 
-いいえ、わかりません
-No, I don't.
-iie, wakarimasen
-いいえ、わかりません。
+みどり
+green
+Midori
+緑
 
-もういちど［おねがいします］
-Once more [please].
-mou ichido [onegaishimasu]
-もう一度［お願いします］。
+むらさき
+purple
+Murasaki
+紫
 
-いいです
-That's fine.
-ii desu
-いいです。
+ピンク
+pink
+Pinku
+ピンク
 
-ちがいます
-No, that's wrong.
-chigaimasu
-違います。
+オレンジ
+orange
+Orenji
+オレンジ
 
-なまえ
-name
-namae
-名前
+グレー
+gray
+Guree
+グレー
 
-しけん
-test
-shiken
-試験
+ベージュ
+beige
+Beeju
+ベージュ
 
-しゅくだい
-homework
-shukudai
-宿題
+しろい
+white (adjective)
+Shiroi
+白い
 
-しつもん
-question
-shitsumon
-質問
+きいろい
+yellow (adjective)
+Kiiroi
+黄色い
 
-こたえ
-answer
-kotae
-答え
+くろい
+black (adjective)
+Kuroi
+黒い
 
-れい
-example
-rei
-例
+ちゃいろい
+brown (adjective)
+Chairoi
+茶色い
 
-おはようございます
-Good morning.
-ohayou gozaimasu
-おはようございます。
+あかい
+red (adjective)
+Akai
+赤い
 
-こんにちは
+あおい
+blue (adjective)
+Aoi
+青い
+
+あまい
+sweet
+Amai
+甘い
+
+からい
+hot (spicy)
+Karai
+辛い
+
+`;
+
+allWords["Extra 08 - Hard"] = `
+きいろ
+yellow
+Kiiro
+黄色
+
+ちゃいろ
+brown
+Chairo
+茶色
+
+にがい
+bitter
+Nigai
+苦い
+
+しおからい
+salty
+Shiokarai
+塩辛い
+
+すっぱい
+sour
+Suppai
+酸っぱい
+
+こい
+strong
+Koi
+濃い
+
+うすい
+weak
+Usui
+薄い
+
+`;
+
+allWords["Extra 09"] = `
+エスエフ
+science fiction
+Esuefu
+SF
+
+せんそう
+war
+Sensou
+戦争
+
+ラテン
+Latin-American
+Raten
+ラテン
+
+けんどう
+Japanese fencing
+Kendou
+剣道
+
+クラシック
+classical
+Kurashikku
+クラシック
+
+ミュージカル
+musical
+Myuujikaru
+ミュージカル
+
+ドキュメンタリー
+documentary
+Dokyumentarii
+ドキュメンタリー
+
+れんあい
+romance
+Ren'ai
+恋愛
+
+ポップス
+pop
+Poppusu
+ポップス
+
+ロック
+rock
+Rokku
+ロック
+
+ジャズ
+jazz
+Jazu
+ジャズ
+
+オペラ
+opera
+Opera
+オペラ
+
+ホラー
+horror
+Horaa
+ホラー
+
+アニメ
+cartoon
+Anime
+アニメ
+
+ミステリー
+mystery
+Misuterii
+ミステリー
+
+アクション
+action
+Akushon
+アクション
+
+ソフトボール
+softball
+Sofutobooru
+ソフトボール
+
+やきゅう
+baseball
+Yakyuu
+野球
+
+サッカー
+soccer
+Sakkaa
+サッカー
+
+ラグビー
+rugby
+Ragubii
+ラグビー
+
+すもう
+sumo
+Sumou
+相撲
+
+バレーボール
+volleyball
+Bareebooru
+バレーボール
+
+じゅうどう
+judo
+Juudou
+柔道
+
+バスケットボール
+basketball
+Basukettobooru
+バスケットボール
+
+テニス
+tennis
+Tenisu
+テニス
+
+ボウリング
+bowling
+Bouringu
+Bouringu
+
+スキー
+skiing
+Sukii
+スキー
+
+スケート
+skating
+Sukeeto
+スケート
+
+`;
+
+allWords["Extra 09 - Hard"] = `
+みんよう
+folk
+Minyou
+民謡
+
+ぶんげい
+film based on a classic work
+Bungei
+文芸
+
+きげき
+comedy
+Kigeki
+喜劇
+
+たっきゅう／ピンポン
+table tennis, ping-pong
+Takkyuu / Pinpon
+卓球／ピンポン
+
+すいえい
+swimming
+Suiei
+水泳
+
+えんか
+traditional Japanese popular songs
+Enka
+演歌
+
+`;
+
+allWords["Extra 10"] = `
+うちのなか
+Inside the house
+uchi no naka
+うちの中
+
+げんかん
+entrance hall
+Genkan
+玄関
+
+ふろば
+bathroom
+Furoba
+ふろ場
+
+せんめんじょ
+washroom
+Senmenjo
+洗面所
+
+だいどころ
+kitchen
+Daidokoro
+台所
+
+しょくどう
+dining room
+Shokudou
+食堂
+
+いま
+living room
+Ima
+居間
+
+しんしつ
+bedroom
+Shinshitsu
+寝室
+
+ろうか
+hall
+Rouka
+廊下
+
+ベランダ
+balcony
+Beranda
+ベランダ
+
+トイレ
+toilet
+Toire
+トイレ
+
+`;
+
+allWords["Extra 10 - Hard"] = ``;
+
+allWords["Extra 11"] = `
+やきにく
+grilled meat
+Yakiniku
+焼き肉
+
+ハンバーグ
+hamburg steak
+Hanbaagu
+ハンバーグ
+
+ハンバーガー
+hamburger
+Hanbaagaa
+ハンバーガー
+
+コロッケ
+croquette
+Korokke
+コロッケ
+
+えびフライ
+fried shrimp
+Ebi furai
+えびフライ
+
+スパゲッティ
+spaghetti
+Supagettii
+スパゲッティ
+
+ランチ
+western-style set meal
+Ranchi
+ランチ
+
+カレーライス
+curry with rice
+Kareeraisu
+カレーライス
+
+みそしる
+miso soup
+Misoshiru
+みそ汁
+
+うどん
+Japanese noodles made from wheat flour
+Udon
+うどん
+
+そば
+Japanese noodles made from buckwheat flour
+Soba
+そば
+
+ラーメン
+Chinese noodles in soup with meat and vegetables
+Raamen
+ラーメン
+
+フライドチキン
+fried chicken
+Furaido chikin
+フライドチキン
+
+サラダ
+salad
+Sarada
+サラダ
+
+スープ
+soup
+Suupu
+スープ
+
+ピザ
+pizza
+Piza
+ピザ
+
+サンドイッチ
+sandwich
+Sandoitchi
+サンドイッチ
+
+トースト
+toast
+Toosuto
+トースト
+
+コーヒー
+coffee
+Koohii
+コーヒー
+
+こうちゃ
+black tea
+Koucha
+紅茶
+
+ココア
+cocoa
+Kokoa
+ココア
+
+ジュース
+juice
+Juusu
+ジュース
+
+コーラ
+cola
+Koora
+コーラ
+
+ていしょく
+set meal
+Teishoku
+定食
+
+ぎゅうどん
+a bowl of rice with beef
+Gyudon
+牛どん
+
+おにぎり
+rice ball
+Onigiri
+おにぎり
+
+てんぷら
+fried seafood and vegetables
+Tenpura
+てんぷら
+
+すし
+vinegared rice with raw fish
+Sushi
+すし
+
+`;
+
+allWords["Extra 11 - Hard"] = `
+てんどん
+a bowl of rice with fried seafood and vegetables
+Tendon
+天どん
+
+おやこどん
+a bowl of rice with chicken and egg
+Oyakodon
+親子どん
+
+やさいいため
+sautéed vegetables
+Yasai itame
+野菜いため
+
+つけもの
+pickles
+Tsukemono
+漬物
+
+やきそば
+Chinese stir-fried noodles with pork and vegetables
+Yakisoba
+焼きそば
+
+おこのみやき
+a type of pancake grilled with meat, vegetables and egg
+Okonomiyaki
+お好み焼き
+
+`;
+
+allWords["Extra 12"] = `
+ろくおんじ（きんかくじ）きんかく
+Rokuon-ji Temple (Kinkaku-ji Temple)
+Rokuonji (Kinkakuji)
+鹿苑寺（金閣寺）
+
+ひろしま
+Hiroshima
+Hiroshima
+広島
+
+ひめじ
+Himeji
+Himeji
+姫路
+
+おおさか
+Osaka
+Oosaka
+大阪
+
+なら
+Nara
+Nara
+奈良
+
+きょうと
+Kyoto
+Kyouto
+京都
+
+とうきょう
+Tokyo
+Toukyou
+東京
+
+にっこう
+Nikko
+Nikkou
+日光
+
+ひめじじょう
+Himeji Castle
+Himejijou
+姫路城
+
+ふじさん
+Mt. Fuji
+Fujisan
+富士山
+
+かんだまつり
+Kanda Festival
+Kanda Matsuri
+神田祭
+
+てんじんまつり
+Tenjin Festival
+Tenjin Matsuri
+天神祭
+
+ぎおんまつり
+Gion Festival
+Gion Matsuri
+祇園祭
+
+`;
+
+allWords["Extra 12 - Hard"] = `
+こうきょ
+Imperial Palace
+Koukyo
+皇居
+
+まつりとめいしょ
+Festivals and places of note
+matsuri to meisho
+祭りと名所
+
+げんばくドーム
+Atomic Bomb Dome
+Genbaku Doomu
+原爆ドーム
+
+とうだいじ・だいぶつ
+Todai-ji Temple / Great Buddha
+Toudaiji / Daibutsu
+東大寺・大仏
+
+とうしょうぐう
+Toshogu Shrine
+Toushouguu
+東照宮
+
+`;
+
+allWords["Extra 13"] = `
+えいがかん
+cinema, movie theater
+Eigakan
+映画館
+
+どうぶつえん
+zoo
+Doubutsuen
+動物園
+
+にくや
+butcher's shop
+Nikuya
+肉屋
+
+さかや
+off-licence, liquor store
+Sakaya
+酒屋
+
+びじゅつかん
+art museum, art gallery
+Bijutsukan
+美術館
+
+としょかん
+library
+Toshokan
+図書館
+
+ゆうえんち
+amusement park
+Yuuenchi
+遊園地
+
+おてら
+Buddhist temple
+Otera
+お寺
+
+じんじゃ
+Shinto shrine
+Jinja
+神社
+
+モスク
+Mosque
+Mosuku
+モスク
+
+プール
+swimming pool
+Puuru
+プール
+
+こうえん
+park
+Kouen
+公園
+
+たいしかん
+embassy
+Taishikan
+大使館
+
+しやくしょ
+town hall, city hall
+Shiyakusho
+市役所
+
+けいさつしょ
+police station
+Keisatsusho
+警察署
+
+しょうぼうしょ
+fire station
+Shoubousho
+消防署
+
+ちゅうしゃじょう
+car park, parking lot
+Chuushajou
+駐車場
+
+だいがく
+university
+Daigaku
+大学
+
+こうこう
+senior high school
+Koukou
+高校
+
+ちゅうがっこう
+junior high school
+Chuugakkou
+中学校
+
+しょうがっこう
+elementary school
+Shougakkou
+小学校
+
+ようちえん
+kindergarten
+Youchien
+幼稚園
+
+パンや
+bakery
+Pan-ya
+パン屋
+
+さかなや
+fishmonger's, fish store
+Sakanaya
+魚屋
+
+きっさてん
+café, coffee shop
+Kissaten
+喫茶店
+
+コンビニ
+convenience store
+Konbini
+コンビニ
+
+スーパー
+supermarket
+Suupaa
+スーパー
+
+デパート
+department store
+Depaato
+デパート
+
+`;
+
+allWords["Extra 13 - Hard"] = `
+にゅうこくかんりきょく
+immigration bureau
+Nyuukokukanrikyoku
+入国管理局
+
+きょうかい
+Christian church
+Kyoukai
+教会
+
+こうばん
+police box
+Kouban
+交番
+
+はくぶつかん
+museum
+Hakubutsukan
+博物館
+
+たいいくかん
+gymnasium
+Taiikukan
+体育館
+
+しょくぶつえん
+botanical garden
+Shokubutsuen
+植物園
+
+やおや
+greengrocer's, fruit and vegetable store
+Yaoya
+八百屋
+
+`;
+
+allWords["Extra 14"] = `
+じどうけんばいき
+ticket machine
+Jidou kenbaiki
+自動券売機
+
+きっぷうりば
+ticket office, ticket area
+Kippu uriba
+切符売り場
+
+ちゅうおうぐち
+central exit
+Chuuouguchi
+中央口
+
+ホーム
+platform
+[Puratto]hoomu
+［プラット］ホーム
+
+タクシーのりば
+taxi rank
+Takushii noriba
+タクシー乗り場
+
+［とうきょう］いき
+for [TOKYO]
+[Toukyou] iki
+［東京］行き
+
+えき
+Station
+Eki
+駅
+
+でぐち
+exit
+Deguchi
+出口
+
+いりぐち
+entrance
+Iriguchi
+入り口
+
+ひがしぐち
+east exit
+Higashiguchi
+東口
+
+にしぐち
+west exit
+Nishiguchi
+西口
+
+みなみぐち
+south exit
+Minamiguchi
+南口
+
+きたぐち
+north exit
+Kitaguchi
+北口
+
+コインロッカー
+coin locker
+Koin rokkaa
+コインロッカー
+
+バスターミナル
+bus terminal
+Basu taaminaru
+バスターミナル
+
+バスてい
+bus stop
+Basutei
+バス停
+
+とっきゅう
+super-express train
+Tokkyuu
+特急
+
+きゅうこう
+express train
+Kyuukou
+急行
+
+ふつう
+local train
+Futsuu
+普通
+
+じこくひょう
+timetable
+Jikokuhyou
+時刻表
+
+`;
+
+allWords["Extra 14 - Hard"] = `
+かいさつぐち
+ticket barrier
+Kaisatsuguchi
+改札口
+
+かいすうけん
+coupon ticket
+Kaisuuken
+回数券
+
+ていきけん
+season ticket, commuter pass
+Teikiken
+定期券
+
+せいさんき
+fare adjustment machine
+Seisanki
+精算機
+
+ばいてん
+kiosk
+Baiten
+売店
+
+かいそく
+rapid service train
+Kaisoku
+快速
+
+じゅんきゅう
+semi-express train
+Junkyuu
+準急
+
+～はつ
+departing ～
+～hatsu
+～発
+
+～ちゃく
+arriving at ～
+～chaku
+～着
+
+かたみち
+one way
+Katamichi
+片道
+
+おうふく
+return/round trip
+Oufuku
+往復
+
+`;
+
+allWords["Extra 15"] = `
+スポーツせんしゅ
+athlete
+Supootsu senshu
+スポーツ選手
+
+せいじか
+politician
+Seijika
+政治家
+
+おんがくか
+musician
+Ongakuka
+音楽家
+
+えきいん
+station attendant
+Ekiin
+駅員
+
+うんてんしゅ
+driver
+Untenshu
+運転手
+
+けいさつかん
+policeman
+Keisatsukan
+警察官
+
+かいしゃいん
+company employee
+Kaishain
+会社員
+
+ぎんこういん
+bank employee
+Ginkouin
+銀行員
+
+ゆうびんきょくいん
+postman
+Yuubinkyokuin
+郵便局員
+
+てんいん
+shop assistant
+Tenin
+店員
+
+きょうし
+teacher
+Kyoushi
+教師
+
+べんごし
+solicitor, lawyer
+Bengoshi
+弁護士
+
+けんきゅうしゃ
+research worker
+Kenkyuusha
+研究者
+
+エンジニア
+engineer
+Enjinia
+エンジニア
+
+デザイナー
+designer
+Dezainaa
+デザイナー
+
+ジャーナリスト
+journalist
+Jaanarisuto
+ジャーナリスト
+
+`;
+
+allWords["Extra 15 - Hard"] = `
+しょくぎょう
+Occupations
+shokugyō
+職業
+
+こうむいん
+civil servant, public servant
+Koumuin
+公務員
+
+ちょうりし
+cook
+Chourishi
+調理師
+
+りようし
+barber
+Riyoushi
+理容師
+
+びようし
+beautician
+Biyoushi
+美容師
+
+かんごし
+nurse
+Kangoshi
+看護師
+
+がいこうかん
+diplomat
+Gaikoukan
+外交官
+
+がか
+painter
+Gaka
+画家
+
+さっか
+author
+Sakka
+作家
+
+けんちくか
+architect
+Kenchikuka
+建築家
+
+かしゅ
+singer
+Kashu
+歌手
+
+はいゆう
+actor
+Haiyuu
+俳優
+
+`;
+
+allWords["Extra 16"] = `
+かくにん
+CONFIRM
+Kakunin
+確認
+
+おひきだし
+withdrawal
+Ohikidashi
+お引き出し
+
+あんしょうばんごう
+personal identification number (PIN)
+Anshoubangou
+暗証番号
+
+えん
+YEN
+En
+円
+
+`;
+
+allWords["Extra 16 - Hard"] = `
+つうちょうきにゅう
+updating your passbook
+Tsuuchoukinyuu
+通帳記入
+
+ざんだかしょうかい
+balance inquiry
+Zandakashoukai
+残高照会
+
+おあずけいれ
+deposit
+Oazukeire
+お預け入れ
+
+おふりこみ
+payment
+Ofurikomi
+お振り込み
+
+おふりかえ
+transfer
+Ofurikae
+お振り替え
+
+`;
+
+allWords["Extra 17"] = `
+しょくよくが ありません
+have no appetite
+Shokuyoku ga arimasen
+食欲が ありません
+
+インフルエンザ
+flu, influenza
+Infuruenza
+インフルエンザ
+
+せなか
+back
+Senaka
+背中
+
+どう しましたか。
+What seems to be the problem?
+Dou shimashita ka.
+どう しましたか。
+
+あたまが いたい
+have a headache
+Atama ga itai
+頭が 痛い
+
+おなかが いたい
+have a stomachache
+Onaka ga itai
+おなかが 痛い
+
+はが いたい
+have a toothache
+Ha ga itai
+歯が 痛い
+
+ねつが あります
+have a temperature, fever
+Netsu ga arimasu
+熱が あります
+
+かぜ
+cold
+Kaze
+かぜ
+
+あたま
+head
+Atama
+頭
+
+かみ
+hair
+Kami
+髪
+
+みみ
+ear
+Mimi
+耳
+
+あし
+leg, foot
+Ashi
+足
+
+て
+hand
+Te
+手
+
+おなか
+stomach
+Onaka
+お腹
+
+のど
+throat
+Nodo
+喉
+
+くち
+mouth
+Kuchi
+口
+
+はな
+nose
+Hana
+鼻
+
+め
+eye
+Me
+目
+
+かお
+face
+Kao
+顔
+
+`;
+
+allWords["Extra 17 - Hard"] = `
+もうちょう
+appendicitis
+Mouchou
+盲腸
+
+ぎっくりごし
+slipped disc
+Gikkurigoshi
+ぎっくり腰
+
+はきけが します
+feel sick, nauseous
+Hakike ga shimasu
+吐き気が します
+
+さむけが します
+feel a chill
+Samuke ga shimasu
+寒気が します
+
+めまいが します
+feel dizzy
+Memai ga shimasu
+めまいが します
+
+げりを します
+have diarrhoea
+Geri wo shimasu
+下痢を します
+
+べんぴを します
+be constipated
+Benpi wo shimasu
+便秘を します
+
+けがを します
+get injured
+Kega wo shimasu
+けがを します
+
+やけどを します
+get burnt
+Yakedo wo shimasu
+やけどを します
+
+かたが こります
+feel stiff in one's shoulders
+Kata ga korimasu
+肩が こります
+
+からだが だるい
+feel weary
+Karada ga darui
+体が だるい
+
+かゆい
+itchy
+Kayui
+かゆい
+
+ねんざ
+sprain
+Nenza
+ねんざ
+
+こっせつ
+bone fracture
+Kossetsu
+骨折
+
+ふつかよい
+hangover
+Futsukayoi
+二日酔い
+
+こし
+waist, lower back
+Koshi
+腰
+
+しり
+bottom
+Shiri
+尻
+
+ほね
+bone
+Hone
+骨
+
+ゆび
+finger, toe
+Yubi
+指
+
+つめ
+nail
+Tsume
+爪
+
+ひざ
+knee
+Hiza
+膝
+
+ひじ
+elbow
+Hiji
+肘
+
+うで
+arm
+Ude
+腕
+
+むね
+chest
+Mune
+胸
+
+かた
+shoulder
+Kata
+肩
+
+くび
+neck
+Kubi
+首
+
+あご
+chin, jaw
+Ago
+顎
+
+せきが でます
+have a cough
+Seki ga demasu
+せきが 出ます
+
+はなみずが でます
+have a runny nose
+Hanamizu ga demasu
+鼻水が 出ます
+
+ちが でます
+bleed
+Chi ga demasu
+血が 出ます
+
+`;
+
+allWords["Extra 18"] = `
+うごき
+Actions
+ugoki
+動き
+
+のぼる
+climb
+Noboru
+登る
+
+はしる
+run
+Hashiru
+走る
+
+およぐ
+swim
+Oyogu
+泳ぐ
+
+ける
+kick
+Keru
+ける
+
+`;
+
+allWords["Extra 18 - Hard"] = `
+とぶ
+fly
+Tobu
+飛ぶ
+
+とぶ
+jump
+Tobu
+跳ぶ
+
+もぐる
+dive
+Moguru
+もぐる
+
+まげる
+bend
+Mageru
+曲げる
+
+とびこむ
+dive into
+Tobikomu
+飛び込む
+
+さかだちする
+do a handstand
+Sakadachisuru
+逆立ちする
+
+はう
+crawl
+Hau
+はう
+
+ふる
+wave
+Furu
+振る
+
+もちあげる
+lift
+Mochiageru
+持ち上げる
+
+なげる
+throw
+Nageru
+投げる
+
+たたく
+pat, tap
+Tataku
+たたく
+
+ひく
+pull
+Hiku
+引く
+
+おす
+push
+Osu
+押す
+
+のばす
+extend
+Nobasu
+伸ばす
+
+ころぶ
+fall down
+Korobu
+転ぶ
+
+ふりむく
+look back
+Furimuku
+振り向く
+
+`;
+
+allWords["Extra 19"] = `
+いご・しょうぎ
+go, shogi
+Igo, Shougi
+囲碁・将棋
+
+さどう
+tea ceremony
+Sadou
+茶道
+
+かぶき
+Kabuki
+Kabuki
+歌舞伎
+
+のう
+Noh
+Nou
+能
+
+ぶんらく
+Bunraku
+Bunraku
+文楽
+
+すもう
+sumo
+Sumou
+相撲
+
+じゅうどう
+judo
+Juudou
+柔道
+
+けんどう
+kendo
+Kendou
+剣道
+
+からて
+karate
+Karate
+空手
+
+まんざい・らくご
+manzai, rakugo
+Manzai, Rakugo
+漫才・落語
+
+パチンコ
+pachinko
+Pachinko
+パチンコ
+
+カラオケ
+karaoke
+Karaoke
+カラオケ
+
+`;
+
+allWords["Extra 19 - Hard"] = `
+でんとうぶんか・ごらく
+Traditional culture and entertainment
+dentō bunka / goraku
+伝統文化・娯楽
+
+かどう
+flower arranging
+Kadou
+華道
+
+しょどう
+calligraphy
+Shodou
+書道
+
+ぼんおどり
+Bon dance
+Bon odori
+盆踊り
+
+`;
+
+allWords["Extra 20"] = `
+ひとのよびかた
+How to address people
+hito no yobikata
+人の呼び方
+
+せんせい
+Doctor / Teacher / Professor
+Sensei
+先生
+
+ぶちょう
+department head
+Buchou
+部長
+
+`;
+
+allWords["Extra 20 - Hard"] = `
+おきゃくさま
+Mr./Ms. Customer
+Okyakusama
+お客様
+
+おにあいですよ
+It looks good on you / You two look great together
+oniai desu yo
+お似合いですよ
+
+いたいんです
+It hurts (explaining a situation)
+itai ndesu
+痛いんです
+
+`;
+
+allWords["Extra 21"] = `
+だいがく
+university
+Daigaku
+大学
+
+こうとうがっこう
+upper secondary (senior high) school
+Koutougakkou
+高等学校
+
+ちゅうがっこう
+lower secondary (junior high) school
+Chuugakkou
+中学校
+
+しょうがっこう
+primary (elementary) school
+Shougakkou
+小学校
+
+ようちえん
+kindergarten
+Youchien
+幼稚園
+
+ぎんこう
+bank
+Ginkou
+銀行
+
+えき
+station
+Eki
+駅
+
+びょういん
+hospital
+Byouin
+病院
+
+ぶちょう
+department head
+Buchou
+部長
+
+かいしゃ
+company
+Kaisha
+会社
+
+しゃちょう
+president
+Shachou
+社長
+
+かちょう
+section head
+Kachou
+課長
+
+くに
+nation
+Kuni
+国
+
+`;
+
+allWords["Extra 21 - Hard"] = `
+ないかく そうり だいじん
+prime minister
+Naikaku souri daijin
+内閣総理大臣
+
+やくしょくめい
+Positions in society
+yakushokumei
+役職名
+
+がくちょう
+[university] president
+Gakuchou
+学長
+
+こうちょう
+[school] head teacher, principal
+Kouchou
+校長
+
+えんちょう
+[kindergarten] head teacher, principal
+Enchou
+園長
+
+とうどり
+[bank] president
+Toudori
+頭取
+
+してんちょう
+branch manager
+Shitenchou
+支店長
+
+けいさつ
+police station
+Keisatsu
+警察
+
+しょちょう
+officer in charge
+Shochou
+署長
+
+えきちょう
+stationmaster
+Ekichou
+駅長
+
+いんちょう
+[hospital] director
+Inchou
+院長
+
+かんごしちょう
+head nurse
+Kangoshichou
+看護師長
+
+かいちょう
+chairman
+Kaichou
+会長
+
+じゅうやく
+director
+Juuyaku
+重役
+
+とどうふけん
+prefecture (all 47 prefectures)
+Todoufuken
+都道府県
+
+し
+city
+Shi
+市
+
+まち
+town
+Machi
+町
+
+むら
+village
+Mura
+村
+
+ちじ
+governor
+Chiji
+知事
+
+しちょう
+city mayor
+Shichou
+市長
+
+ちょうちょう
+town mayor
+Chouchou
+町長
+
+そんちょう
+village headman, chief of the village
+Sonchou
+村長
+
+`;
+
+allWords["Extra 22"] = `
+いふく
+Clothes
+ifuku
+衣服
+
+てぶくろ
+gloves
+Tebukuro
+手袋
+
+したぎ
+underwear
+Shitagi
+下着
+
+くつした
+socks
+Kutsushita
+くつした
+
+マフラー
+scarf, muffler
+Mafuraa
+マフラー
+
+おび
+obi (kimono belt)
+Obi
+帯
+
+ぞうり
+zori (one type slippers)
+Zouri
+ぞうり
+
+たび
+tabi (one type socks)
+Tabi
+たび
+
+うわぎ
+jacket
+Uwagi
+上着
+
+（オーバー）コート
+overcoat, coat
+(Oobaa) cooto
+（オーバー）コート
+
+ストッキング
+tights, panty hose
+Sutokkingu
+ストッキング
+
+スーツ
+suit
+Suutsu
+スーツ
+
+ワンピース
+one-piece dress
+Wanpiisu
+ワンピース
+
+ジーンズ
+jeans
+Jiinzu
+ジーンズ
+
+スカート
+skirt
+Sukaato
+スカート
+
+ブラウス
+blouse
+Burausu
+ブラウス
+
+セーター
+sweater
+Seetaa
+セーター
+
+パンティー
+panties
+Pantii
+パンティー
+
+きもの
+kimono
+Kimono
+着物
+
+レインコート
+raincoat
+Reinkooto
+レインコート
+
+ネクタイ
+tie, necktie
+Nekutai
+ネクタイ
+
+ベルト
+belt
+Beruto
+ベルト
+
+ハイヒール
+high heels
+Haihiiru
+ハイヒール
+
+ブーツ
+boots
+Buutsu
+ブーツ
+
+パンツ
+pants
+Pantsu
+パンツ
+
+`;
+
+allWords["Extra 22 - Hard"] = `
+ズボン
+trousers
+Zubon
+ズボン
+
+ワイシャツ
+[white] shirt
+Waishatsu
+ワイシャツ
+
+うんどうぐつ
+trainers, sneakers
+Undougutsu
+運動靴
+
+`;
+
+allWords["Extra 23"] = `
+ガソリンスタンド
+petrol station, gas station
+Gasorin sutando
+ガソリンスタンド
+
+かど
+corner
+Kado
+角
+
+しんごう
+traffic light
+Shingou
+信号
+
+とまれ
+Stop
+Tomare
+止まれ
+
+`;
+
+allWords["Extra 23 - Hard"] = `
+どうろ
+Roads / Streets
+dōro
+道路
+
+ほどう
+pavement, sidewalk
+Hodou
+歩道
+
+しゃどう
+road
+Shadou
+車道
+
+こうそくどうろ
+motorway, expressway
+Kousokudouro
+高速道路
+
+とおり
+street
+Toori
+通り
+
+こうさてん
+crossing
+Kousaten
+交差点
+
+おうだんほどう
+pedestrian crossing
+Oudanhodou
+横断歩道
+
+ほどうきょう
+pedestrian bridge
+Hodoukyou
+歩道橋
+
+さか
+slope
+Saka
+坂
+
+ふみきり
+railway crossing
+Fumikiri
+踏切
+
+しんにゅうきんし
+No Entry
+Shinnyuukinshi
+進入禁止
+
+いっぽうつうこう
+One Way
+Ippoutsuukou
+一方通行
+
+ちゅうしゃきんし
+No Parking
+Chuushakinshi
+駐車禁止
+
+うせつきんし
+No Right Turn
+Usetsukinshi
+右折禁止
+
+`;
+
+allWords["Extra 24"] = `
+にゅうがくいわい
+Gift celebrating admission to school (money, stationery, book, etc.)
+Nyuugakuiwai
+入学祝い
+
+そつぎょういわい
+Graduation gift (money, stationery, book, etc.)
+Sotsugyouiwai
+卒業祝い
+
+けっこんいわい
+Wedding gift (money, household goods, etc.)
+Kekkon'iwai
+結婚祝い
+
+`;
+
+allWords["Extra 24 - Hard"] = `
+ぞうとうのしゅうかん
+Exchanging gifts
+zōtō no shūkan
+贈答の習慣
+
+のしぶくろ
+Special decorated envelope for money gifts
+Noshibukuro
+熨斗袋
+
+としだま
+Small gift of money given by parents and relatives to children on New Year’s Day
+Toshidama
+お年玉
+
+しゅっさんいわい
+Gift celebrating a birth (baby clothes, toys, etc.)
+Shussaniwai
+出産祝い
+
+おちゅうげん
+Gift for a person whose care you are under (Jul. or Aug.)
+Ochugen
+お中元
+
+おせいぼ
+Gift for a person whose care you are under (Dec.)
+Oseibo
+お歳暮
+
+おこうでん
+Condolence money
+Okouden
+お香典
+
+おみまい
+Present given when visiting a sick or injured person (flowers, fruit, etc.)
+Omimai
+お見舞い
+
+`;
+
+allWords["Extra 25"] = `
+あかちゃん
+baby
+Akachan
+赤ちゃん
+
+うまれます
+be born
+Umaremasu
+生まれます
+
+こども
+child
+Kodomo
+子ども
+
+がっこうにはいります
+enter school
+Gakkou ni hairimasu
+学校に入ります
+
+しょうがっこう
+primary (elementary) school
+Shougakkou
+小学校
+
+ちゅうがっこう
+lower secondary (junior high) school
+Chuugakkou
+中学校
+
+だいがく
+university
+Daigaku
+大学
+
+がっこうをでます
+graduate from school
+Gakkou o demasu
+学校を出ます
+
+けっこんします
+get married
+Kekkonshimasu
+結婚します
+
+こどもがうまれます
+have a child
+Kodomo ga umaremasu
+子どもが生まれます
+
+しごとをやめます
+retire, stop working
+Shigoto o yamemasu
+仕事をやめます
+
+`;
+
+allWords["Extra 25 - Hard"] = `
+ほいくえん
+nursery school
+Hoikuen
+保育園
+
+ようちえん
+kindergarten
+Youchien
+幼稚園
+
+ひとのいっしょう
+Life / A person's lifetime
+hito no isshō
+人の一生
+
+せいねん
+youth
+Seinen
+青年
+
+ちゅうねん
+middle age
+Chuunen
+中年
+
+ろうじん
+old age, old person
+Roujin
+老人
+
+こうとうがっこう
+upper secondary (senior high) school
+Koutougakkou
+高等学校
+
+たんだい
+junior college
+Tandai
+短大
+
+しゅうしょくします
+get a job
+Shuushokushimasu
+就職します
+
+りこんします
+get divorced
+Rikonshimasu
+離婚します
+
+さいこんします
+remarry
+Saikonshimasu
+再婚します
+
+せんもんがっこう
+technical college, professional school
+Senmongakkou
+専門学校
+
+だいがくいん
+postgraduate course
+Daigakuin
+大学院
+
+しにます
+die
+Shinimasu
+死にます
+
+`;
+
+allWords["Extra 26"] = ``;
+
+allWords["Extra 26 - Hard"] = ``;
+
+allWords["Extra 27"] = ``;
+
+allWords["Extra 27 - Hard"] = ``;
+
+allWords["Extra 28"] = ``;
+
+allWords["Extra 28 - Hard"] = ``;
+
+allWords["Extra 29"] = ``;
+
+allWords["Extra 29 - Hard"] = ``;
+
+allWords["Extra 30"] = ``;
+
+allWords["Extra 30 - Hard"] = ``;
+
+allWords["Extra 31"] = ``;
+
+allWords["Extra 31 - Hard"] = ``;
+
+allWords["Extra 32"] = ``;
+
+allWords["Extra 32 - Hard"] = ``;
+
+allWords["Extra 33"] = ``;
+
+allWords["Extra 33 - Hard"] = ``;
+
+allWords["Extra 34"] = ``;
+
+allWords["Extra 34 - Hard"] = ``;
+
+allWords["Extra 35"] = ``;
+
+allWords["Extra 35 - Hard"] = ``;
+
+allWords["Extra 36"] = ``;
+
+allWords["Extra 36 - Hard"] = ``;
+
+allWords["Extra 37"] = ``;
+
+allWords["Extra 37 - Hard"] = ``;
+
+allWords["Extra 38"] = ``;
+
+allWords["Extra 38 - Hard"] = ``;
+
+allWords["Extra 39"] = ``;
+
+allWords["Extra 39 - Hard"] = ``;
+
+allWords["Extra 40"] = ``;
+
+allWords["Extra 40 - Hard"] = ``;
+
+allWords["Extra 41"] = ``;
+
+allWords["Extra 41 - Hard"] = ``;
+
+allWords["Extra 42"] = ``;
+
+allWords["Extra 42 - Hard"] = ``;
+
+allWords["Extra 43"] = ``;
+
+allWords["Extra 43 - Hard"] = ``;
+
+allWords["Extra 44"] = ``;
+
+allWords["Extra 44 - Hard"] = ``;
+
+allWords["Extra 45"] = ``;
+
+allWords["Extra 45 - Hard"] = ``;
+
+allWords["Extra 46"] = ``;
+
+allWords["Extra 46 - Hard"] = ``;
+
+allWords["Extra 47"] = ``;
+
+allWords["Extra 47 - Hard"] = ``;
+
+allWords["Extra 48"] = ``;
+
+allWords["Extra 48 - Hard"] = ``;
+
+allWords["Extra 49"] = ``;
+
+allWords["Extra 49 - Hard"] = ``;
+
+allWords["Extra 50"] = ``;
+
+allWords["Extra 50 - Hard"] = ``;
+
+allWords["Convo E5"] = `
+はい みなさん こんにちは。
+Hello everyone.
+Hai minasan konnichiwa.
+はい皆さんこんにちは。
+
+こんにちは。
 Hello.
-konnichiwa
+Konnichiwa.
 こんにちは。
 
-こんばんは
-Good evening.
-konbanwa
-こんばんは。
+はい おけさん こんにちは。
+Yes, hello Okkei-san.
+Hai Oke-san konnichiwa.
+はいオケさんこんにちは。
 
-おやすみなさい
-Good night.
-oyasuminasai
-お休みなさい。
+しさん こんにちは。
+Hello Shun-san.
+Shi-san konnichiwa.
+しさんこんにちは。
 
-さようなら
-Goodbye.
-sayounara
-さようなら。
+はい げんきですか。
+Yes, are you well?
+Hai genki desu ka.
+はい元気ですか。
 
-ありがとうございます
-Thank you.
-arigatou gozaimasu
-ありがとうございます。
+きょうも げんきです。げんきですか。
+I am fine today too. Are you well?
+Kyou mo genki desu. Genki desu ka.
+今日も元気です。元気ですか。
 
-すみません
-Excuse me./Sorry.
-sumimasen
-すみません。
+げんきですよ。きょうは いつもより げんきですね。
+I am well! You seem more energetic today than usual.
+Genki desu yo. Kyou wa itsumo yori genki desu ne.
+元気ですよ。今日はいつもより元気ですね。
 
-おねがいします
-Please.
-onegaishimasu
-お願いします。
+きょうは ちょっと はしってきました。
+I ran a little bit today.
+Kyou wa chotto hashitte kimashita.
+今日はちょっと走ってきました。
+
+はしってきました。はい。そうか。
+You ran! Yes, I see.
+Hashitte kimashita. Hai. Sou ka.
+走ってきました。はい。そうか。
+
+はい。きょう げんき？
+Yes. Are you energetic today?
+Hai. Kyou genki?
+はい。今日元気？
+
+げんきです、げんきです。わたしは いつもどおり げんきです。
+I am energetic, I am energetic. I am fine as usual.
+Genki desu, genki desu. Watashi wa itsumo doori genki desu.
+元気です、元気です。私はいつも通り元気です。
+
+きのうは なにを たべましたか。
+What did you eat yesterday?
+Kinou wa nani o tabemashita ka.
+昨日は何を食べましたか。
+
+きのうは、きのうは すてーきを たべましたよ。
+Yesterday, yesterday I ate steak!
+Kinou wa, kinou wa suteeki o tabemashita yo.
+昨日は、昨日はステーキを食べましたよ。
+
+ええ、いいな！
+Oh, nice!
+Ee, iina!
+ええ、いいな！
+
+はい、すてーき おいしかった。きのう なにを たべましたか。
+Yes, the steak was delicious. What did you eat yesterday?
+Hai, suteeki oishikatta. Kinou nani o tabemashita ka.
+はい、ステーキ美味しかった。昨日何を食べましたか。
+
+きのうは おすしを たべました。
+I ate sushi yesterday.
+Kinou wa osushi o tabemashita.
+昨日はお寿司を食べました。
+
+いいな。
+Nice.
+Iina.
+いいな。
+
+じゃあ、たぶん きょう わたしは おすしを たべます。
+Well then, maybe I will eat sushi today.
+Jaa, tabun kyou watashi wa osushi o tabemasu.
+じゃあ corporate/formal: じゃあ多分今日私はお寿司を食べます。
+
+あ、じゃあ ぼくは すてーきを たべます。
+Ah, then I will eat steak.
+A, jaa boku wa suteeki o tabemasu.
+あじゃあ僕はステーキを食べます。
+
+え、このあと いっしょに ごはんを たべに いきましょう。
+Eh, let's go eat together after this.
+E, kono ato issho ni gohan o tabe ni ikimashou.
+え、この後一緒にご飯を食べに行きましょう。
+
+あ、もちろんですよ。
+Ah, of course!
+A, mochiron desu yo.
+あ、もちろんですよ。
+
+え、なにが すきですか？なに？なにを たべたいですか。
+Eh, what do you like? What? What do you want to eat?
+E, nani ga suki desu ka? Nani? Nani o tabetai desu ka.
+え、何が好きですか？何？何を食べたいですか。
+
+いんどかれーを たべたいです。
+I want to eat Indian curry.
+Indo karee o tabetai desu.
+インドカレーを食べたいです。
+
+ああ、いいですね。
+Ah, that is good.
+Aa, ii desu ne.
+ああいいですね。
+
+あ、わたしも さいきん たべていないから、たべに いきましょう。
+Ah, I haven't eaten it recently either, so let's go eat.
+A, watashi mo saikin tabete inai kara, tabe ni ikimashou.
+あ、私も最近食べていないから、食べに行きましょう。
+
+ああ、いきましょう。たべに いきましょう。いいですね。
+Ah, let's go! Let's go eat, that's great.
+Aa, ikimashou. Tabe ni ikimashou. Ii desu ne.
+ああ行きましょう。食べに行きましょう。いいですね。
+
+そうですね。きょうの とぴっくですよ、きょうの とぴっく。
+Yes, it is today's topic, today's topic.
+Sou desu ne. Kyou no topikku desu yo, kyou no topikku.
+そうですね。今日のトピックですよ、今日のトピック。
+
+きょうの とぴっくは わたしが だいすきな とぴっくです。
+Today's topic is a topic that I love.
+Kyou no topikku wa watashi ga daisuki na topikku desu.
+今日のトピックは私が大好きなトピックです。
+
+おお！
+Oh!
+Oo!
+おお！
+
+はい、きょうの とぴっくは りょこうです。
+Yes, today's topic is travel.
+Hai, kyou no topikku wa ryokou desu.
+はい、今日のトピックは旅行です。
+
+りょこうですか。
+Travel?
+Ryokou desu ka.
+旅行ですか。
+
+はい。たぶん みなさん りょこうが すきですよね。
+Yes. Probably everyone likes travel, right?
+Hai. Tabun minasan ryokou ga suki desu yo ne.
+はい。多分皆さん旅行が好きですよね。
+
+うん、ね。
+Yeah, right.
+Un, ne.
+うん、ね。
+
+うん。どこに いきたいですか？どこに いきたいですか？
+Yeah. Where do you want to go? Where do you want to go?
+Un. Doko ni ikitai desu ka? Doko ni ikitai desu ka?
+うん。どこに行きたいですか？どこに行きたいですか？
+
+にほんに いきたいですか？にほんの どこに いきたいですか？にほんで なにを したいですか？
+Do you want to go to Japan? Where in Japan do you want to go? What do you want to do in Japan?
+Nihon ni ikitai desu ka? Nihon no doko ni ikitai desu ka? Nihon de nani o shitai desu ka?
+日本に行きたいですか？日本のどこに行きたいですか？日本で何をしたいですか？
+
+りょこうに いくまえに なにを しなきゃいけませんか。
+What do you have to do before you go on a trip?
+Ryokou ni iku mae ni nani o shinakya ikemasen ka.
+旅行に行く前に何をしなきゃいけませんか。
+
+うん、ねえ、そうですよね。
+Yeah, that's true.
+Un, nee, sou desu ne.
+うん、ねえ、そうですよね。
+
+うん。じゃあ、ちょっと りょこうについて はなしましょう。
+Yeah. So let's talk a little bit about travel.
+Un. Jaa, chotto ryokou ni tsuite hanashimashou.
+うん。じゃあちょっと旅行について話しましょう。
+
+はなしましょう！
+Let's talk!
+Hanashimashou!
+話しましょう！
+
+うん。はい、え、どうですか？りょこう、うーん、なんか りょこうしますか。
+Yeah. Yes, eh, how about you? Travel, hmm, do you travel much?
+Un. Hai, e, dou desu ka? Ryokou, uun, nanka ryokou shimasu ka.
+うん。はい、え、どうですか？旅行、うーん、なんか旅行しますか。
+
+りょこうします。だいすきです。
+I travel. I love it.
+Ryokou shimasu. Daisuki desu.
+旅行します。大好きです。
+
+ああ、え、さいきんは りょこうしましたか。
+Ah, eh, have you travelled recently?
+Aa, e, saikin wa ryokou shimashita ka.
+ああ、え、最近は旅行しましたか。
+
+すこしまえに、はい、すいすに いきました。
+A little while ago, yes, I went to Switzerland.
+Sukoshi mae ni, hai, Suisu ni ikimashita.
+少し前に、はい、スイスに行きました。
+
+ええ、すごい、いいな、すいす！
+Wow, great, Switzerland is nice!
+Ee, sugoi, iina, Suisu!
+ええ、すごい、いいな、スイス！
+
+はい、とっても きれいでした。
+Yes, it was very beautiful.
+Hai, tottemo kirei deshita.
+はい、とっても綺麗でした。
+
+いや、いきたいです。わたしは いったことがないので、そう、いつか すいすに いってみたいですよ。
+Wow, I want to go. Since I've never been, yes, I want to try going to Switzerland someday.
+Iya, ikitai desu. Watashi wa itta koto ga nai node, sou, itsuka Suisu ni itte mitai desu yo.
+いや、行きたいです。私は行ったことがないので、そう、いつかスイスに行ってみたいですよ。
+
+うーん、ぼくも ずっと いきたいと おもっていました。
+Hmm, I had also always wanted to go.
+Uun, boku mo zutto ikitai to omotte imashita.
+うーん、僕もずっと行きたいと思っていました。
+
+へえ、きれいでしたか？
+Oh, was it beautiful?
+Hee, kirei deshita ka?
+へえ、綺麗でしたか？
+
+しぜんが ほんとうに きれいでした。
+The nature was truly beautiful.
+Shizen ga hontou ni kirei deshita.
+自然が本当に綺麗でした。
+
+ええ、いいですね。すいすで なにを しましたか。
+Oh, nice. What did you do in Switzerland?
+Ee, ii desu ne. Suisu de nani o shimashita ka.
+ええいいですね。スイスで何をしましたか。
+
+あるぷすの やまに のぼったり、でんしゃで りょこうしたり しました。
+I climbed the Alps, traveled by train, and so on.
+Arupusu no yama ni nobottari, densha de ryokou shitari shimashita.
+アルプスの山に登ったり、電車で旅行したりしました。
+
+すごいね。たくさん いろいろな ことが できましたね。
+Great! You were able to do many different things.
+Sugoi ne. Takusan iroiro na koto ga dekimashita ne.
+すごいね。たくさん色々なことができました。
+
+いいですね、いいな。え、どのくらい すいすに いましたか。
+Nice, nice. Eh, how long were you in Switzerland?
+Ii desu ne, iina. E, dono kurai Suisu ni imashita ka.
+いいですね、いいな。え、どのくらいスイスにいましたか。
+
+いっかげつぐらい いました。
+I was there for about one month.
+Ikkagetsu gurai imashita.
+1ヶ月ぐらいました。
+
+ながいですね、ながいですね。
+That's long, that's long.
+Nagai desu ne, nagai desu ne.
+長いですね、長いですね。
+
+はい。じつは ともだちが すいすの ひと なので、はい、え、いえに とまりました。
+Yes. Actually, my friend is Swiss, so yes, I stayed at their house.
+Hai. Jitsu wa tomodachi ga Suisu no hito nano de, hai, e, ie ni tomarimashita.
+はい。実は友達がスイスの人なので、はい、え、家に泊まりました。
+
+あ、よかったですね！
+Ah, that was good!
+A, yokatta desu ne!
+あ、良かったですね！
+
+うん。だから おかねを あまり つかいませんでした。
+Yeah. So I didn't spend much money.
+Un. Dakara okane o amari tsukaimasen deshita.
+うん。だからお金をあまり使いませんでした。
+
+あ、いいですね。ま、すいすは ぶっかが たかいですよね。
+Ah, that's good. Well, Switzerland has high prices, doesn't it?
+A, ii desu ne. Ma, Suisu wa bukka ga takai desu ne.
+あ、いいですね。ま、スイスは物価が高いですよね。
+
+すごく たかいです。
+It is very expensive.
+Sugoku takai desu.
+すごく高いです。
+
+すごく たかいですね。にほんより たかいです。もう はい、そうですよね。
+Very expensive, isn't it? It's more expensive than Japan. Yes, that's right.
+Sugoku takai desu ne. Nihon yori takai desu. Mou hai, sou desu ne.
+すごく高いですね。日本より高いです。もうはい、そうですよね。
+
+え、じゃあ みずも やちんも、え、れすとらん こーひーも ぜんぶ はい、たかい、たかかったですか。
+Eh, then water, rent, restaurant, coffee, everything was expensive/was it expensive?
+E, jaa mizu mo yachin mo, e, resutoran koohii mo zenbu hai, takai, takakatta desu ka.
+え、じゃあ水も家賃も、え、レストランコーヒーも全部はい、高い、高かったですか。
+
+はい。だから せつやく しなければ いけませんでした。
+Yes. So I had to economise.
+Hai. Dakara setsuyaku shinakereba ikemasen deshita.
+はい。だから節約しなければいけませんでした。
+
+うん。あ、じゃあ すいすに りょこうしている ときも、うん、せつやくを しなければ いけませんでしたか。
+Yeah. Oh, then when you were traveling in Switzerland, did you also have to economise?
+Un. A, jaa Suisu ni ryokou shite iru toki mo, un, setsuyaku o shinakereba ikemasen deshita ka.
+うん。あ、じゃあスイスに旅行している時も、うん、節約をしなければいけませんでしたか。
+
+はい。いつも すーぱーに いって、うんうん、たべものを かいました。
+Yes. I always went to the supermarket and bought food.
+Hai. Itsumo suupaa ni itte, un un, tabemono o kaimashita.
+はい。いつもスーパーに行って、うんうん、食べ物を買いました。
+
+ああ、でも すーぱーも たかいですよね。
+Ah, but supermarkets are also expensive, aren't they?
+Aa, demo suupaa mo takai desu ne.
+ああ、でもスーパーも高いですよね。
+
+すーぱーも たかかったです。
+Supermarkets were also expensive.
+Suupaa mo takakatta desu.
+スーパーも高かったです。
+
+へえ、そうか、そっか。
+Oh, really, I see.
+Hee, sou ka, sokka.
+へえ、そうか、そっか。
+
+はい。すいすで れすとらんに いきましたか。
+Yes. Did you go to a restaurant in Switzerland?
+Hai. Suisu de resutoran ni ikimashita ka.
+はい。スイスでレストランに行きましたか。
+
+いちどだけ いきました。
+I went only once.
+Ichido dake ikimashita.
+1度だけ行きました。
+
+いちどだけ いきました。じゃあ、すいすの れすとらんで なにを たべましたか。
+Only once. Well then, what did you eat at the restaurant in Switzerland?
+Ichido dake ikimashita. Jaa, Suisu no resutoran de nani o tabemashita ka.
+1度だけ行きました。じゃあスイスのレストランで何を食べましたか。
+
+え？すいすの ゆうめいな りょうりを たべました。
+Eh? I ate a famous Swiss dish.
+E? Suisu no yuumeina ryouri o tabemashita.
+え？スイスの有名な料理を食べました。
+
+なにですか。
+What is it?
+Nani desu ka.
+何ですか。
+
+じゃがいもと、うん、ちーずの たべものです。
+It's a food made of potatoes and cheese.
+Jagaimo to, un, chiizu no tabemono desu.
+じゃがいもと、うん、チーズの食べ物です。
+
+へえ。なまえは わかりませんか。あ、あ、わすれましたか。
+Oh. You don't know the name? Ah, did you forget?
+Hee. Namae wa wakarimasen ka. A, a, wasuremashita ka.
+へえ。名前は分かりませんか。あ、あ、忘れましたか。
+
+はい。でも おいしかったですよ！
+Yes. But it was delicious!
+Hai. Demo oishikatta desu yo!
+はい。でも美味しかったですよ！
+
+すいすは ちーずが ゆうめいですよね。
+Switzerland is famous for cheese, isn't it?
+Suisu wa chiizu ga yuumei desu ne.
+スイスはチーズが有名ですよね。
+
+ねえ、すいすは ちーずが ゆうめいです。
+Yes, Switzerland is famous for cheese.
+Nee, Suisu wa chiizu ga yuumei desu.
+ねえ、スイスはチーズが有名です。
+
+うん、おいしかったですか。
+Yeah, was it delicious?
+Un, oishikatta desu ka.
+うん、美味しかったですか。
+
+ほんとうに おいしかったです。
+It was really delicious.
+Hontou ni oishikatta desu.
+本当に美味しかったです。
+
+いいなあ。そうなんだ。
+Nice. I see.
+Iinaa. Sou nanda.
+いいなあ。そうなんだ。
+
+え、すいすで なにが いちばん たのしかったですか。
+Eh, what was the most fun in Switzerland?
+E, Suisu de nani ga ichiban tanoshikatta desu ka.
+え、スイスで何が1番楽しかったですか。
+
+ひとのない はらっぱに いって、うん、おさんぽした ことです。
+Going to an empty field and taking a walk.
+Hito no nai harappa ni itte, un, osanpo shita koto desu.
+人のない原っぱに行って、うん、お散歩したことです。
+
+ええ。あ、そっか。それは かんこうちですか。
+Eh, oh, I see. Is that a tourist spot?
+Ee. A, sokka. Sore wa kankouchi desu ka.
+ええ。あ、そっか。それは観光地ですか。
+
+それは かんこうちでは ありませんね。
+That is not a tourist spot.
+Sore wa kankouchi de wa arimasen ne.
+それは観光地ではありませんね。
+
+ふつうの はらっぱですか。
+Is it just a normal field?
+Futsuu no harappa desu ka.
+普通の原っぱですか。
+
+はい。ふつうの はらっぱと ふつうの みちが ある ちいさな まちです。
+Yes, a small town with a normal field and a normal road.
+Hai. Futsuu no harappa to futsuu no michi ga aru chiisana machi desu.
+はい。普通の原っぱと普通の道がある小さな町です。
+
+あ、そうなんですね。
+Ah, is that so?
+A, sou nan desu ne.
+あ、そうなんですね。
+
+はい。とっても さむくって、はい、こーとを たくさん きて、ぼうしを かぶって、え、ともだちと はなして あるきました。
+Yes. It was very cold, and yes, I wore a lot of coats, put on a hat, and walked while talking with my friend.
+Hai. Tottemo samukutte, hai, kooto o takusan kite, boushi o kabutte, e, tomodachi to hanashite arukimashita.
+はい。とっても寒くって、はい、コートをたくさん着て、帽子をかぶって、え、友達と話して歩きました。
+
+いいね。ええ、すいすは たくさん やまが ありますけど、はいきんぐを しましたか。
+Nice. Switzerland has many mountains, but did you do hiking?
+Ii ne. Ee, Suisu wa takusan yama ga arimasu kedo, haikingu o shimashita ka.
+いいね。ええ、スイスはたくさん山がありますけど、ハイキングをしましたか。
+
+あ、はいきんぐは しませんでした。
+Ah, I didn't hike.
+A, haikingu wa shimasen deshita.
+あ、ハイキングはしませんでした。
+
+ええ、そうなんですね。
+Eh, is that so?
+Ee, sou nan desu ne.
+ええ、そうなんですね。
+
+うん。だけど やまの うえには ろーぷうぇいで いきました。
+Yeah. But we went to the top of the mountain by ropeway.
+Un. Dakedo yama no ue ni wa roopuwei de ikimashita.
+うん。だけど山の上にはロープウェイで行きました。
+
+ああ、そっか。え、ふゆに いきましたか？なつに いきましたか？
+Ah, I see. Did you go in winter? Or in summer?
+Aa, sokka. E, fuyu ni ikimashita ka? Natsu ni ikimashita ka?
+ああ、そっか。え、冬に行きましたか？夏に行きましたか？
+
+ふゆでした。
+It was winter.
+Fuyu deshita.
+冬でした。
+
+あ、そうか。
+Ah, I see.
+A, sou ka.
+あ、そうか。
+
+じゅうにがつから いちがつまで いきました。
+I went from December to January.
+Juunigatsu kara ichigatsu made ikimashita.
+12月から1月まで行きました。
+
+あ、じゃあ ゆきが たくさん ありましたか。
+Oh, then was there a lot of snow?
+A, jaa yuki ga takusan arimashita ka.
+あ、じゃあ雪がたくさんありましたか。
+
+はい。あるひ、うん、あさ おきて まどを あけたら ゆきが たくさん つもっていました。
+Yes. One day, waking up in the morning and opening the window, a lot of snow had accumulated.
+Hai. Aru hi, un, asa okite mado o aketara yuki ga takusan tsumotte imashita.
+はい。ある日、うん、朝起きて窓を開けたら雪がたくさん積もっていました。
+
+いいね。ゆきが すきですか。
+Nice. Do you like snow?
+Ii ne. Yuki ga suki desu ka.
+いいね。雪が好きですか。
+
+ゆきは きれいだと おもいます。でも、すきじゃない。
+I think snow is beautiful. But I don't like it.
+Yuki wa kirei da to omoimasu. Demo, suki janai.
+雪は綺麗だと思います。でも、好きじゃない。
+
+でも、すきじゃない？
+But you don't like it?
+Demo, suki janai?
+でも、好きじゃない？
+
+ふつうです、ふつう。
+It's normal, normal.
+Futsuu desu, futsuu.
+普通です、普通。
+
+まあ、たぶん さむすぎますよね。
+Well, probably it's too cold, right?
+Maa, tabun samusugimasu yo ne.
+まあ、たぶん寒すぎますよね。
+
+さむすぎますね。
+Too cold, indeed.
+Samusugimasu ne.
+寒すぎますね。
+
+そうですよね。
+That's true, isn't it?
+Sou desu ne.
+そうですよね。
+
+うん。しさんは さいきん どこに りょこうに いきましたか。
+Yeah. Where did you travel recently, Shun-san?
+Un. Shi-san wa saikin doko ni ryokou ni ikimashita ka.
+うん。しさんは最近どこに旅行に行きましたか。
+
+さいきんは そうですね、さいきんは よーろっぱに わたしも。
+Recently, let's see, recently I also went to Europe.
+Saikin wa sou desu ne, saikin wa Yooroppa ni watashi mo.
+最近はそうですね、最近はヨーロッパに私も。
+
+あ、そうですか！
+Oh, is that so!
+A, sou desu ka!
+あ、そうですか！
+
+よーろっぱと なんべいに いきました。
+I went to Europe and South America.
+Yooroppa to Nanbei ni ikimashita.
+ヨーロッパと南米に行きました。
+
+おお。いろいろな ところに いきましたね。
+Oh, you went to many different places, didn't you?
+Oo. Iroiro na tokoro ni ikimashita ne.
+おお。色々なところに行きましたね。
+
+はい、そう。あの、わたしの つまは ちりじん ですから、うん、ちりに かえりました。
+Yes, that's right. My wife is Chilean, so yes, we returned to Chile.
+Hai, sou. Ano, watashi no tsuma wa Chirijin desu kara, un, Chiri ni kaerimashita.
+はい、そう。あの、私の妻はチリ人ですから、うん、チリに帰りました。
+
+うーん。
+Hmm.
+Uun.
+うーん。
+
+でも、ちりは ほんとうに とおいです。
+But Chile is really far.
+Demo, Chiri wa hontou ni tooi desu.
+でも、チリは本当に遠いです。
+
+そうですよね。
+That's true, isn't it?
+Sou desu ne.
+そうですよね。
+
+そうで、にほんから ちりまで ほんとうに たくさん じかんが かかります。
+That's right, and it really takes a lot of time from Japan to Chile.
+Sou de, Nihon kara Chiri made hontou ni takusan jikan ga kakarimasu.
+そうで、日本からチリまで本当にたくさん時間がかかります。
+
+うん。
+Yeah.
+Un.
+うん。
+
+ときどき にほんから ちりに いくとき、にほんから あめりかに いって、あめりかから ちりに いきます。
+Sometimes when going from Japan to Chile, we go from Japan to America, and from America to Chile.
+Tokidoki Nihon kara Chiri ni iku toki, Nihon kara Amerika ni itte, Amerika kara Chiri ni ikimasu.
+ときどき日本からチリに行くとき、日本からアメリカに行って、アメリカからチリに行きます。
+
+おお。
+Oh.
+Oo.
+おお。
+
+でも、まえは にほんから よーろっぱに いって、よーろっぱから ちりに いきました。
+But before, we went from Japan to Europe, and from Europe to Chile.
+Demo, mae wa Nihon kara Yooroppa ni itte, Yooroppa kara Chiri ni ikimashita.
+でも、前は日本からヨーロッパに行って、ヨーロッパからチリに行きました。
+
+おお。どちらが よかったですか。
+Oh, which was better?
+Oo. Dochira ga yokatta desu ka.
+おお。どちらが良かったですか。
+
+うーん、むずかしいですね。そう、あめりかに いくときは あめりかの かんこうの えすたを とらなければ いけませんでしたから、ま、ちょっと めんどくさかったですね。
+Hmm, it's difficult. Yes, when going to America, we had to get the US tourist ESTA, so it was a little troublesome.
+Uun, muzukashii desu ne. Sou, Amerika ni iku toki wa Amerika no kankou no Esuta o toranakereba ikemasen deshita kara, ma, chotto mendokusatta desu ne.
+うーん、難しいですね。そう、アメリカに行くときはアメリカの観光のエスタを取らなければいけませんでしたから、ま、ちょっとめんどくさかったですね。
+
+ああ、そうですね。
+Ah, that's true.
+Aa, sou desu ne.
+ああ、そうですね。
+
+そう、よーろっぱは びざが ひつようじゃないです。
+Yes, Europe doesn't require a visa.
+Sou, Yooroppa wa biza ga hitsuyou janai desu.
+そう、ヨーロッパはビザが必要じゃないです。
+
+あ、ひつようが ないですか。
+Ah, there is no need?
+A, hitsuyou ga nai desu ka.
+あ、必要がないですか。
+
+そう、ひつようじゃないから、ま、もっと かんたんでしたね。
+Yes, because it's not required, it was much simpler.
+Sou, hitsuyou janai kara, ma, motto kantan deshita ne.
+そう、必要じゃないから、ま、もっと簡単でしたね。
+
+ああ。じゃあ かかる じかんは どれくらいですか。
+Ah. Then how much is the time it takes?
+Aa. Jaa kakaru jikan wa dore kurai desu ka.
+ああ。じゃあかかる時間はどれくらいですか。
+
+たぶん ほとんど おなじぐらいだと おもいます。でも、さんじゅうじかんから さんじゅうごじかんぐらい かかりますよ。
+Probably I think it's almost the same, but it takes about 30 to 35 hours.
+Tabun hotondo onaji gurai da to omoimasu. Demo, sanjuu-jikan kara sanjuugo-jikan gurai kakarimasu yo.
+たぶんほとんど同じぐらいだと思います。でも、30時間から35時間ぐらいかかりますよ。
+
+ながいですね！
+That is long!
+Nagai desu ne!
+長いですね！
+
+そうなんですよ。ちょっこうびんが ありません。
+That's right. There are no direct flights.
+Sou nan desu yo. Chokkoubin ga arisen.
+そうなんですよ。直行便がありません。
+
+ながい ふらいとの ときは、なにを じゅんびしますか。
+For long flights, what do you prepare?
+Nagai furaito no toki wa, nani o junbi shimasu ka.
+長いフライトの時は、何を準備しますか。
+
+ながい ふらいとの ときは、なんか えいがを だうんろーど したり、うん、かく しごとを ひこうきの なかで したりしますね。
+During long flights, I download movies or do some writing work inside the airplane.
+Nagai furaito no toki wa, nanka eiga o daunroodo shitari, un, kaku shigoto o hikouki no naka de shitari shimasu ne.
+長いフライトの時は、なんか映画をダウンロードしたり、うん、書く仕事を飛行機の中でしたりしますね。
+
+うーん。
+Hmm.
+Uun.
+うーん。
+
+はい、はい、はい、はい。そうで、ちりに いきました。にほんから よーろっぱに いって、よーろっぱを りょこうして、ちりに いきました。
+Yes, yes, yes, yes. And so we went to Chile. We went from Japan to Europe, traveled around Europe, and then went to Chile.
+Hai, hai, hai, hai. Sou de, Chiri ni ikimashita. Nihon kara Yooroppa ni itte, Yooroppa o ryokou shite, Chiri ni ikimashita.
+はい、はい、はい、はい。そうで、チリに行きました。日本からヨーロッパに行って、ヨーロッパを旅行して、チリに行きました。
+
+それは いいですね！
+That is nice!
+Sore wa ii desu ne!
+オススメ、それはいいですね！
+
+ねえ、そう。
+Right, yes.
+Nee, sou.
+ねえ、そう。
+
+え、どの くにに いきましたか。
+Eh, which countries did you go to?
+E, dono kuni ni ikimashita ka.
+え、どの国に行きましたか。
+
+そのときは おおさかに すんでいました。
+At that time, we were living in Osaka.
+Sono toki wa Oosaka ni sunde imashita.
+その時は大阪に住んでいました。
+
+うん。
+Yeah.
+Un.
+うん。
+
+だから、おおさかから ぎりしゃに いって、おお、ぎりしゃから まるた、まるたから いたりあ、いたりあから ふらんす、ふらんすから すぺいんで、すぺいんから ちりに いきましたね。
+So we went from Osaka to Greece, oh, from Greece to Malta, Malta to Italy, Italy to France, France to Spain, and from Spain to Chile.
+Dakara, Oosaka kara Girisha ni itte, oo, Girisha kara Maruta, Maruta kara Itaria, Itaria kara Furansu, Furansu kara Supein de, Supein kara Chiri ni ikimashita ne.
+だから、大阪からギリシャに行って、おお、ギリシャからマルタ、マルタからイタリア、イタリアからフランス、フランスからスペインで、スペインからチリに行きましたね。
+
+たくさん いきましたね！
+You went to many places!
+Takusan ikimashita ne!
+たくさん行きましたね！
+
+そうですね、たくさん りょこうして ちょっと つかれました。
+Yes, we traveled a lot and got a little tired.
+Sou desu ne, takusan ryokou shite chotto tsukaremashita.
+そうですね、たくさん旅行してちょっと疲れました。
+
+あ、そうですか。
+Oh, is that so?
+A, sou desu ka.
+あ、そうですか。
+
+はい。いや、でも たのしかったですよ。たのしかったです。
+Yes. But indeed it was fun. It was fun.
+Hai. Iya, demo tanoshikatta desu yo. Tanoshikatta desu.
+はい。いや、でも楽しかったですよ。楽しかったです。
+
+うん。え、りょこうするときは、はい、いろいろな ばしょに いくのが すきですか。
+Yeah. Eh, when traveling, yes, do you like going to various places?
+Un. E, ryokou suru toki wa, hai, iroiro na basho ni iku no ga suki desu ka.
+うん。え、旅行する時は、はい、色々な場所に行くのが好きですか。
+
+たいてい わたしは ひとつ の ばしょで のんびりするのが すきです。
+Usually, I like relaxing in one place.
+Taitei watashi wa hitotsu no basho de nonbiri suru no ga suki desu.
+大抵私は1つの場所でのんびりするのが好きです。
+
+ええ。じゃあ、今回は ちがったんですか。
+Eh, then this time was different?
+Ee. Jaa, konkai wa chigatta n desu ka.
+ええ。じゃあ、今回は違ったんですか。
+
+そうなんですよ。わたしの つまは よーろっぱに いったことが なかったので。
+That's right. My wife had never been to Europe before.
+Sou nan desu yo. Watashi no tsuma wa Yooroppa ni itta koto ga nakatta node.
+そうなんですよ。私の妻はヨーロッパに行ったことがなかったので。
+
+うん。
+Yeah.
+Un.
+うん。
+
+そう、たくさんの くに、たくさんの まちに いきたいと いっていました。
+So she said she wanted to go to many countries and many towns.
+Sou, takusan no kuni, takusan no machi ni ikitai to itte imashita.
+そう、たくさんの国、たくさんの町に行きたいと言ってました。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+そう、だから、だから、はい、たくさんの くにに いかなければ いけませんでした。
+Yes, so, yes, we had to go to many countries.
+Sou, dakara, dakara, hai, takusan no kuni ni ikanakereba ikemasen deshita.
+そう、だから、だから、はい、たくさんの国に行かなければいけませんでした。
+
+ああ、そうだったんですね。おくさんは よろこんでいましたか。
+Ah, I see. Was your wife happy?
+Aa, sou datta n desu ne. Okusan wa yorokonde imashita ka.
+ああ、そうだったんですね。奥さんは喜んでいましたか。
+
+はい、はい、はい、よろこんでましたよ。あの、よーろっぱに はじめて いって、うん、かんどうしていました。
+Yes, yes, yes, she was happy! Going to Europe for the first time, yes, she was deeply moved.
+Hai, hai, hai, yorokondemashita yo. Ano, Yooroppa ni hajimete itte, un, kandou shite imashita.
+はい、はい、はい、喜んでましたよ。あの、ヨーロッパに初めて行って、うん、感動していました。
+
+へえ、なにが いちばん たのしかったと いっていましたか。
+Oh, what did she say was the most fun?
+Hee, nani ga ichiban tanoshikatta to itte imashita ka.
+へえ、何が1番楽しかったと言っていましたか。
+
+あの、たてもの！ああ、ほんとうに きれいだと いっていましたね。
+The buildings! Ah, she said they were really beautiful.
+Ano, tatemono! Aa, hontou ni kirei da to itte imashita ne.
+あの、建物！ああ、本当に綺麗だと言っていましたね。
+
+ああ、そうですね。
+Ah, that's true.
+Aa, sou desu ne.
+ああ、そうですね。
+
+はい、うん。あとは そうです。うん、たてものが いちばん きれいですよね。
+Yes, and then, that's right. Buildings are the most beautiful, aren't they?
+Hai, un. Ato wa sou desu. Un, tatemono ga ichiban kirei desu yo ne.
+はい、うん。あとはそうです。うん、建物が1番綺麗ですよね。
+
+そうですね。よーろっぱは れきしが ふるい、れきしが ありますよね。むかしから ある くにですよね。
+That's true. Europe has a long, old history, doesn't it? They are countries that have existed since long ago, aren't they?
+Soo desu ne. Yooroppa wa rekishi ga furui, rekishi ga arimasu yo ne. Mukashi kara aru kuni desu yo ne.
+そうですね。ヨーロッパは歴史が古い、歴史がありますよね。昔からある国ですよね。
+
+ねえ、ぎりしゃとか いたりあとか ふるい れきしが あるから、うん、はい、きれいでしたよ、ほんとうに きれいでした。
+Right, Greece, Italy, etc. have old histories, so yes, it was beautiful, truly beautiful.
+Nee, Girisha toka Itaria toka furui rekishi ga aru kara, un, hai, kirei deshita yo, hontou ni kirei deshita.
+ねえ、ギリシャとかイタリアとか古い歴史があるから、うん、はい、綺麗でしたよ、本当に綺麗でした。
+
+はあ、いいですね。
+Ah, that's nice.
+Haa, ii desu ne.
+はあ、いいですね。
+
+はい、はい、はい、めちゃくちゃ たのしかったです。
+Yes, yes, yes, it was incredibly fun.
+Hai, hai, hai, mechakucha tanoshikatta desu.
+はい、はい、はい、めちゃくちゃ楽しかったです。
+
+ああ。あ、じゃあ、しさんは なにが いちばん たのしかったですか。
+Oh. Then Shun-san, what was the most fun for you?
+Aa. A, jaa, Shi-san wa nani ga ichiban tanoshikatta desu ka.
+ああ。あ、じゃあ、しさんは何が1番楽しかったですか。
+
+はい。わたしは たぶん ぎりしゃが いちばん たのしかったですね。
+Yes. I think Greece was probably the most fun.
+Hai. Watashi wa tabun Girisha ga ichiban tanoshikatta desu ne.
+はい。私は多分ギリシャが1番楽しかったですね。
+
+ああ、どうしてですか。
+Ah, why is that?
+Aa, doushite desu ka.
+ああ、どうしてですか。
+
+あの、ぎりしゃの たべものが すきです。
+I like Greek food.
+Ano, Girisha no tabemono ga suki desu.
+あの、ギリシャの食べ物が好きです。
+
+へえ、どんな たべものですか。
+Oh, what kind of food is it?
+Hee, donna tabemono desu ka.
+へえ、どんな食べ物ですか。
+
+えっと、なんか ぎりしゃの らっぷの、らっぷの たべものが あります。ぶりと みたいな。
+Well, there is a Greek wrap food, like a burrito.
+Etto, nanka Girisha no rappu no, rappu no tabemono ga arimasu. Burito mitai na.
+えっと、なんかギリシャのラップの、ラップの食べ物があります。ブリトみたいな。
+
+へえ！
+Oh!
+Hee!
+へえ！
+
+ちょっと、ちょっと なまえを わすれてしまいました。はい、でも おいしいんですよ。まいにち たべました。
+I forgot the name a little bit. Yes, but it is delicious! I ate it every day.
+Chotto, chotto namae o wasurete shimaimashita. Hai, demo oishii n desu yo. Mainichi tabemashita.
+ちょっと、ちょっと名前を忘れました。はい、でも美味しいんですよ。毎日食べました。
+
+ええ、まいにち たべましたか！ぶっかは にほんと ちがいますか。
+Eh, you ate it every day! Are prices different from Japan?
+Ee, mainichi tabemashita ka! Bukka wa Nihon to chigaimasu ka.
+ええ、毎日食べましたか！物価は日本と違いますか。
+
+そう、よーろっぱは ぶっかが たかいです。うん、でも ぎりしゃ、ぎりしゃと にほんは おなじぐらいだと おもいます。
+Yes, Europe has high prices, but Greece, Greece and Japan are about the same, I think.
+Sou, Yooroppa wa bukka ga takai desu. Un, demo Girisha, Girisha to Nihon wa onaji gurai da to omoimasu.
+そう、ヨーロッパは物価が高いです。うん、でもギリシャ、ギリシャと日本は同じぐらいだと思います。
+
+あ、そうなんですね。
+Ah, is that so.
+A, sou nan desu ne.
+あ、そうなんですね。
+
+うん、だから ま、にほんと おなじですね。
+Yeah, so it is about the same as Japan, isn't it?
+Un, dakara ma, Nihon to onaji desu ne.
+うん、だからま、日本と同じですね。
+
+ああ、それは いいですね。
+Ah, that is good.
+Aa, sore wa ii desu ne.
+ああ、それはいいですね。
+
+そう、てんきも いいですね。
+Yes, the weather is also good.
+Sou, tenki mo ii desu ne.
+そう、天気もいいですね。
+
+ああ、いいですね。いってみたいです。
+Ah, that's nice. I want to try going.
+Aa, ii desu ne. Itte mitai desu.
+ああ、いいですね。行ってみたいです。
+
+いってみたい、いってみたい。おすすめですよ。いつか いってみてください。
+Try going, try going! It is highly recommended. Please go visit someday.
+Itte mitai, itte mitai. Osusume desu yo. Itsuka itte mite kudasai.
+行ってみたい、行ってみたい。おすすめですよ。いつか行ってみてください。
+
+はい、いいですね。ええ、はい、いいですね。
+Yes, that's nice. Yeah, yes, that's nice.
+Hai, ii desu ne. Ee, hai, ii desu ne.
+はい、いいですね。ええ、はい、いいですね。
+
+はい。いや、みなさん ありがとうございました。あの、りょこうについて はなしてみました。どうでしたか？どのくらい わかりましたか？
+Yes. Well, thank you everyone. We talked about travel. How was it? How much did you understand?
+Hai. Iya, minasan arigatou gozaimashita. Ano, ryokou ni tsuite hanashite mimashita. Dou deshita ka? Dono kurai wakarimashita ka?
+はい。いや、皆さんありがとうございました。あの、旅行について話してみました。どうでしたか？どのくらい分かりましたか？
+
+りょこうは たぶん みなさんが だいすきな とぴっくだから、はいたくさん きいて はなせるように がんばりましょう！がんばりましょう！
+Travel is probably a topic everyone loves, so let's work hard to listen and speak a lot! Let's do our best!
+Ryokou wa tabun minasan ga daisuki na topikku dakara, hai takusan kiite hanaseru you ni gambarimashou! Gambarimashou!
+旅行は多分皆さんが大好きなトピックだから、はい沢山聞いて話せるように頑張りましょう！頑張りましょう！
 
 `;
 
-allWords["V - Ra G5"] = `
-おかねが ったら、りょこうします。
-If I had some money, I'd go travelling.
-Okane ga attara, ryokou shimasu.
-お金が あったら、旅行します。
-
-じかんが なかったら、てれびを みません。
-If I don't have time, I won't watch TV.
-Jikan ga nakattara, terebi o mimasen.
-時間が なかったら、テレビを 見ません。
-
-やすかったら、ぱそこんを かいたいです。
-I'd like to buy a PC if I can find a cheap one.
-Yasukattara, pasokon o kaitai desu.
-安かったら、パソコンを 買いたいです。
-
-ひまだったら、てつだって ください。
-Please lend me a hand if you're free.
-Hima dattara, tetsudatte kudasai.
-暇だったら、手伝って ください。
-
-いい てんきだたら、さんぽしませんか。
-Shall we go for a walk if the weather's nice?
-Ii tenki dattara, sanpo shimasen ka.
-いい 天気だったら、散歩しませんか。
-
-じゅうじに なったら、でかけましょう。
-Shall we go out once it gets to 10 o'clock?
-Juuji ni nattara, dekakemashou.
-10時になったら、出かけましょう。
-
-うちへ かえったら、すぐ しゃわーを あびます。
-I take a shower as soon as I get home.
-Uchi e kaettara, sugu shawaa o abimasu.
-うちへ 帰ったら、すぐ シャワーを 浴びます。
-
-`;
-
-allWords["V - Ra G5 - Hard"] = ``;
-
-allWords["Extra 00 E5"] = ``;
-
-allWords["Extra 00 E5 - Hard"] = ``;
+allWords["Convo E5 - Hard"] = ``;
 
 const appSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1
   },
-  "currentLesson": "0 General E5",
-  "isHard": true,
+  "currentLesson": "Convo E5",
+  "isHard": false,
   "displayMode": "big-english",
   "readingGap": "2",
-  "quizMode": "quiz2",
-  "quizOrder": "random",
+  "quizMode": "quiz1",
+  "quizOrder": "original",
   "revealRomaji": false,
-  "focusedWordIndex": -1,
-  "selectedWordIndices": [],
+  "focusedWordIndex": 6,
+  "selectedWordIndices": [
+    6
+  ],
   "isSelectionModeActive": false,
   "customCategories": [
     "Phrases1",
@@ -21526,7 +25379,8 @@ const appSettings = {
     "Adjective G5",
     "0 General E5",
     "V - Ra G5",
-    "Extra 00 E5"
+    "Extra 00 E5",
+    "Convo E5"
   ],
   "similarWordGroups": [
     {
@@ -21534,23 +25388,23 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [],
-  "lastDestCategory": "V - Ra G5",
+  "lastDestCategory": "Extra 07",
   "activeDbGroup": "N5 Extra",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 01",
+    "N5 Lessons": "Lesson 06",
     "N5 Others": "All Masu Form Verbs1",
-    "N4 Lessons": "Lesson 50",
-    "N4 Others": "Show All Words",
+    "N4 Lessons": "Lesson 26",
+    "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
-    "N5 Grammer": "Grammer 25",
+    "N5 Grammer": "Grammer 02",
     "N4 Grammer": "Grammer 26",
     "Kanji": "N5 Kanji",
-    "N5 Extra": "0 General E5",
-    "N4 Extra": "Show All Words",
+    "N5 Extra": "Convo E5",
+    "N4 Extra": "Extra 26",
     "N3 Extra": "Show All Words",
-    "N5 Grammer Others": "V - Te G5",
+    "N5 Grammer Others": "0 Others G5",
     "N4 Grammer Others": "Show All Words"
   }
 };

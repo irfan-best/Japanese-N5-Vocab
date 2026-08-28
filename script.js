@@ -25,12 +25,12 @@ const DEFAULT_SETTINGS = {
     "N5 Others": "Questions1",
     "N5 Grammer": "Grammer 01",
     "N5 Grammer Others": "Show All Words",
-    "N5 Extra": "Show All Words",
+    "N5 Extra": "Extra 01",
     "N4 Lessons": "Lesson 26",
     "N4 Others": "Questions2",
     "N4 Grammer": "Grammer 26",
     "N4 Grammer Others": "Show All Words",
-    "N4 Extra": "Show All Words",
+    "N4 Extra": "Extra 26",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Questions3",
     "N3 Extra": "Show All Words",
@@ -317,6 +317,12 @@ function migrateCustomCategorySuffixes() {
         if (cat.endsWith(" E2")) currentSettings.lastGroupCategories[g] = cat.replace(/ E2$/, " E4");
       }
     }
+    if (currentSettings.lastGroupCategories["N5 Extra"] === "Show All Words") {
+      currentSettings.lastGroupCategories["N5 Extra"] = "Extra 01";
+    }
+    if (currentSettings.lastGroupCategories["N4 Extra"] === "Show All Words") {
+      currentSettings.lastGroupCategories["N4 Extra"] = "Extra 26";
+    }
     if (JSON.stringify(currentSettings.lastGroupCategories) !== orig) {
       didModify = true;
     }
@@ -462,6 +468,14 @@ function loadState() {
     const gStr = `Grammer ${String(i).padStart(2, '0')}`;
     const hStr = `${gStr} - Hard`;
     if (!currentWordsDb[gStr]) currentWordsDb[gStr] = [];
+    if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
+  }
+
+  // Ensure all 50 Extra categories and hard versions exist
+  for (let i = 1; i <= 50; i++) {
+    const eStr = `Extra ${String(i).padStart(2, '0')}`;
+    const hStr = `${eStr} - Hard`;
+    if (!currentWordsDb[eStr]) currentWordsDb[eStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
@@ -733,6 +747,9 @@ function getLessonsForActiveGroup() {
       }
     });
   } else if (group === "N5 Extra") {
+    for (let i = 1; i <= 25; i++) {
+      lessons.push(`Extra ${String(i).padStart(2, '0')}`);
+    }
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
       if (k.endsWith(" E5")) {
@@ -740,6 +757,9 @@ function getLessonsForActiveGroup() {
       }
     });
   } else if (group === "N4 Extra") {
+    for (let i = 26; i <= 50; i++) {
+      lessons.push(`Extra ${String(i).padStart(2, '0')}`);
+    }
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
       if (k.endsWith(" E4")) {
@@ -2107,13 +2127,18 @@ function toggleDifficultyAndQuiz() {
 }
 
 function startNextLessonQuiz(isNextHardMode = false) {
-  let match = currentSettings.currentLesson.match(/\d+/);
-  if (!match) return;
-  let num = parseInt(match[0], 10);
-  num = num + 1;
-  if (num > 25) num = 1;
+  const cats = getCategoriesForActiveGroup();
+  const filteredCats = cats.filter(c => c !== "Show All Words" && c !== "Same Meaning" && c !== "Same Romaji" && c !== "Similar Words");
+  if (filteredCats.length === 0) return;
   
-  currentSettings.currentLesson = "Lesson " + String(num).padStart(2, '0');
+  let idx = filteredCats.indexOf(currentSettings.currentLesson);
+  if (idx === -1) {
+    currentSettings.currentLesson = filteredCats[0];
+  } else {
+    idx = (idx + 1) % filteredCats.length;
+    currentSettings.currentLesson = filteredCats[idx];
+  }
+  
   currentSettings.isHard = isNextHardMode;
   
   const selectLesson = document.getElementById('select-lesson');
@@ -2136,7 +2161,7 @@ function startNextLessonQuiz(isNextHardMode = false) {
   populateQuizSetupLessons();
 
   startQuiz();
-  showToast(`Moved to ${currentSettings.currentLesson} (${isNextHardMode ? 'Hard' : 'Normal'}) and started quiz!`, 'info');
+  showToast(`Moved to ${cleanCategoryNameForUI(currentSettings.currentLesson)} (${isNextHardMode ? 'Hard' : 'Normal'}) and started quiz!`, 'info');
 }
 
 function flagCurrentQuizWord() {
@@ -2632,6 +2657,9 @@ function populateLessonsDropdown() {
       });
     }
   } else if (group === "N5 Extra") {
+    for (let i = 1; i <= 25; i++) {
+      lessonsList.push(`Extra ${String(i).padStart(2, '0')}`);
+    }
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
       if (k.endsWith(" E5")) {
@@ -2682,6 +2710,9 @@ function populateLessonsDropdown() {
       });
     }
   } else if (group === "N4 Extra") {
+    for (let i = 26; i <= 50; i++) {
+      lessonsList.push(`Extra ${String(i).padStart(2, '0')}`);
+    }
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
       if (k.endsWith(" E4")) {
@@ -2799,7 +2830,7 @@ function createCustomCategory() {
   }
   
   const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji"];
-  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ")) {
+  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ")) {
     showToast("This name is reserved or invalid.", "danger");
     return;
   }
@@ -3495,20 +3526,56 @@ function openCategorySelectorModal(customWordsList = null) {
         }
       });
     }
-  } else if (group === "N5 Extra" || group === "N4 Extra" || group === "N3 Extra") {
-    let suffix = " E5";
-    if (group === "N4 Extra") suffix = " E4";
-    if (group === "N3 Extra") suffix = " E3";
-    
+  } else if (group === "N5 Extra") {
+    for (let i = 1; i <= 25; i++) {
+      const eName = `Extra ${String(i).padStart(2, '0')}`;
+      if (eName !== currentL) {
+        targetCats.push(eName);
+      }
+    }
     const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
     allKeys.forEach(k => {
-      if (k.endsWith(suffix) && k !== currentL && !targetCats.includes(k)) {
+      if (k.endsWith(" E5") && k !== currentL && !targetCats.includes(k)) {
         targetCats.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith(suffix) && cat !== currentL && !targetCats.includes(cat)) {
+        if (cat.endsWith(" E5") && cat !== currentL && !targetCats.includes(cat)) {
+          targetCats.push(cat);
+        }
+      });
+    }
+  } else if (group === "N4 Extra") {
+    for (let i = 26; i <= 50; i++) {
+      const eName = `Extra ${String(i).padStart(2, '0')}`;
+      if (eName !== currentL) {
+        targetCats.push(eName);
+      }
+    }
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith(" E4") && k !== currentL && !targetCats.includes(k)) {
+        targetCats.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith(" E4") && cat !== currentL && !targetCats.includes(cat)) {
+          targetCats.push(cat);
+        }
+      });
+    }
+  } else if (group === "N3 Extra") {
+    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    allKeys.forEach(k => {
+      if (k.endsWith(" E3") && k !== currentL && !targetCats.includes(k)) {
+        targetCats.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (cat.endsWith(" E3") && cat !== currentL && !targetCats.includes(cat)) {
           targetCats.push(cat);
         }
       });
@@ -3629,10 +3696,43 @@ function executeCategoryWordCopy() {
   currentSettings.focusedWordIndex = -1;
   saveSettings();
   
+  const sourceCategory = currentSettings.currentLesson;
+  const group = currentSettings.activeDbGroup || "N5 Lessons";
+  const isExtraGroup = group.endsWith("Extra");
+  
+  if (isExtraGroup) {
+    const sourceKeyNormal = sourceCategory;
+    const sourceKeyHard = sourceCategory + " - Hard";
+    
+    if (currentWordsDb[sourceKeyNormal]) {
+      currentWordsDb[sourceKeyNormal] = currentWordsDb[sourceKeyNormal].filter(srcWord => {
+        return !wordsToCopy.some(w => 
+          w.japanese.trim() === srcWord.japanese.trim() && 
+          w.english.trim() === srcWord.english.trim()
+        );
+      });
+    }
+    
+    if (currentWordsDb[sourceKeyHard]) {
+      currentWordsDb[sourceKeyHard] = currentWordsDb[sourceKeyHard].filter(srcWord => {
+        return !wordsToCopy.some(w => 
+          w.japanese.trim() === srcWord.japanese.trim() && 
+          w.english.trim() === srcWord.english.trim()
+        );
+      });
+    }
+    
+    saveWords();
+  }
+  
   closeActiveModal();
   renderCards();
   if (copiedCount > 0) {
-    showToast(`Copied ${copiedCount} words to ${destCategory} (Normal)`, 'success');
+    if (isExtraGroup) {
+      showToast(`Moved ${copiedCount} words to ${destCategory} (Normal)`, 'success');
+    } else {
+      showToast(`Copied ${copiedCount} words to ${destCategory} (Normal)`, 'success');
+    }
   } else {
     showToast(`All words already exist in ${destCategory}.`, 'info');
   }
@@ -3932,6 +4032,10 @@ function determineGroupForCategory(lessonKey) {
     const num = parseInt(baseKey.match(/^Grammer\s+(\d+)/i)[1], 10);
     if (num >= 1 && num <= 25) return "N5 Grammer";
     if (num >= 26 && num <= 50) return "N4 Grammer";
+  } else if (baseKey.match(/^Extra\s+(\d+)/i)) {
+    const num = parseInt(baseKey.match(/^Extra\s+(\d+)/i)[1], 10);
+    if (num >= 1 && num <= 25) return "N5 Extra";
+    if (num >= 26 && num <= 50) return "N4 Extra";
   } else if (baseKey.match(/^(N[1-5])\s+Kanji/i)) {
     return "Kanji";
   } else {
@@ -5096,6 +5200,8 @@ function handleShiftDigit(digit) {
     mode = "Kanji";
   } else if (currentGroup.includes("Grammer")) {
     mode = "Grammer";
+  } else if (currentGroup.includes("Extra")) {
+    mode = "Extra";
   }
   
   if (shiftDigitBuffer.length === 2) {
@@ -5136,6 +5242,14 @@ function switchLessonOrKanjiDirectly(num, mode) {
       targetGroup = "N4 Grammer";
     }
     categoryName = "Grammer " + String(num).padStart(2, '0');
+  } else if (mode === "Extra") {
+    if (num > 50) num = 50;
+    if (num <= 25) {
+      targetGroup = "N5 Extra";
+    } else {
+      targetGroup = "N4 Extra";
+    }
+    categoryName = "Extra " + String(num).padStart(2, '0');
   } else {
     if (num > 75) num = 75;
     if (num <= 25) {
