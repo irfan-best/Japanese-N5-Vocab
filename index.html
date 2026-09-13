@@ -660,22 +660,27 @@ kenkyuusha</pre>
       <button class="btn-close-modal" aria-label="Close Settings Modal">&times;</button>
     </div>
     <div class="modal-body">
+      <div class="quiz-option-group" style="margin-bottom: 1rem;">
+        <label for="select-db-level" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">JLPT Level</label>
+        <select id="select-db-level" class="custom-select" style="width: 100%;">
+          <option value="N5">N5</option>
+          <option value="N4">N4</option>
+          <option value="N3">N3</option>
+          <option value="N2">N2</option>
+          <option value="N1">N1</option>
+        </select>
+      </div>
       <div class="quiz-option-group" style="margin-bottom: 1.5rem;">
-        <label for="select-db-group" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">Active Database / Group</label>
+        <label for="select-db-group" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">Database Group</label>
         <select id="select-db-group" class="custom-select" style="width: 100%;">
-          <option value="N5 Lessons">N5 Lessons</option>
-          <option value="N5 Others">N5 Others</option>
-          <option value="N5 Grammer">N5 Grammer</option>
-          <option value="N5 Grammer Others">N5 Grammer Others</option>
-          <option value="N5 Extra">N5 Extra</option>
-          <option value="N4 Lessons">N4 Lessons</option>
-          <option value="N4 Others">N4 Others</option>
-          <option value="N4 Grammer">N4 Grammer</option>
-          <option value="N4 Grammer Others">N4 Grammer Others</option>
-          <option value="N4 Extra">N4 Extra</option>
-          <option value="N3 Lessons">N3 Lessons</option>
-          <option value="N3 Others">N3 Others</option>
-          <option value="N3 Extra">N3 Extra</option>
+          <option value="Lessons">Lessons</option>
+          <option value="Others">Others</option>
+          <option value="Grammer">Grammer</option>
+          <option value="Grammer Others">Grammer Others</option>
+          <option value="Extra">Extra</option>
+          <option value="Listening">Listening</option>
+          <option value="Dumps">Dumps</option>
+          <option value="Genki" id="opt-db-group-genki">Genki</option>
           <option value="Kanji">Kanji</option>
         </select>
       </div>

@@ -1,3 +1,6 @@
+https://x.com/imBISLY/status/2098863781329965405
+https://x.com/2007Kunalpro/status/2098819620635603306
+
 Sumimasu -> can be used for future tense
 sundeimasu -> present tense
 
@@ -258,3 +261,246 @@ and then junior high -> 3 years
 senior high -> 3 years
 university -> 4 years (or) (junior college + technical college = 2 + 2)
 post graduate -> 2 - 6 years
+
+
+mondai vs shitsumon:
+    (shitsumon)	A query asking for information/clarification	Question (you ask someone)
+    (mondai)	A test exercise, exam task, or a trouble/issue	Exam Problem or Trouble / Issue
+    
+ganjitsu vs oshougatsu:
+    +----------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+    | Feature        | Ganjitsu (元日)                                              | Oshōgatsu (お正月)                                                    |
+    +----------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+    | Meaning        | New Year's Day                                              | New Year Season / Holiday                                             |
+    | Timeframe      | January 1st only                                            | Jan 1–3 (or up to Jan 7/15)                                           |
+    | Legal Status   | Official National Holiday                                   | Seasonal celebration period                                           |
+    | Key Activities | Watching the first sunrise (Hatsuhinode), delivering Nengajō | Hatsumōde (shrine visits), eating Osechi-ryōri, giving Otoshidama     |
+    +----------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+
++-----------------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+| Feature               | Yoko (横)                                                   | Tonari (隣)                                                           |
++-----------------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+| Primary Meaning       | Beside, to the side of, horizontally aligned                | Next to, neighboring, adjacent                                        |
+| Category Constraint   | Used for any items, spaces, or people                       | Used primarily for items of the same category                         |
+| Physical Contact/Gap  | Works for objects separated by space or on a line           | Implies direct proximity with no middle object between them           |
+| Directional Focus     | Strictly physical side (horizontal vs. vertical)            | Relative position (next in line, neighbor)                            |
++-----------------------+-------------------------------------------------------------+-----------------------------------------------------------------------+
+
+Sakki vs sakini:
+    While both Sakini (先に) and Sakki (さっき) derive from the root word saki (先 - meaning "ahead" or "front"), they refer to completely different directions of time and usage.
+
+    1. Sakini (先に) — Ahead, First, Beforehand
+        Used to describe doing something first in sequence, before someone else or before another action. It points forward in priority or time.
+
+        O-saki ni douzo
+        Go ahead of me. / After you.
+
+    2. Sakki (さっき) — Just now, A moment ago
+        Used as a time adverb pointing to the very recent past (usually a few minutes to an hour ago).
+
+        Sakki dareka kita?
+        Did someone come just a moment ago?
+        
+| Feature                | 最近 (さいきん / saikin)                           | この頃 (このごろ / konogoro)                    |
+| ---------------------- | ----------------------------------------------    | ---------------------------------------------- |
+| Meaning                | Recently, lately, just now                        | These days, nowadays                           |
+| Time Focus             | Specific past point OR ongoing state              | Continuous state or habit (past to present)    |
+| Single Past Events     | YES ("I recently bought a car")                   | NO (cannot be used for single completed events)|
+| Repeated Habits/Trends | YES ("I've been sleeping early lately")           | YES ("These days I've been sleeping early")    |
+| Tone / Context         | Neutral / Standard (spoken & written)             | Casual / Conversational                        |
+| Example (Single Event) | 最近、車を買いました。(Saikin, kuruma o kaimashita.)| N/A (Incorrect)                                |
+| Example (Habit/State)  | 最近、忙しいです。(Saikin, isogashii desu.)         | この頃、忙しいです。(Konogoro, isogashii desu.)  |
+
+| Feature            | 将来 (しょうらい / shōrai)                       | 未来 (みらい / mirai)                          |
+| ------------------ | ---------------------------------------------- | ---------------------------------------------- |
+| Main Focus         | Personal future / Near-to-medium term          | Distant future / Society / Sci-Fi / World      |
+| Scope              | Individual (you, a company, a child)           | Humanity, technology, Earth, time period       |
+| Key Nuance         | Realization of current actions / career plans  | Grand, abstract, unreachable, or speculative   |
+| Common Collocations| 将来の夢 (dream for future), 将来の不安        | 未来の技術 (future tech), 未来の地球           |
+| Example (Romaji)   | Shōrai, isha ni naritai desu.                  | Mirai no kuruma wa sora o tobimasu.            |
+
+| Feature                | とても (totemo)                                | すごく (sugoku)                                |
+| ---------------------- | ---------------------------------------------- | ---------------------------------------------- |
+| Meaning                | Very, extremely                                | Extremely, super, really                       |
+| Formality              | Polite / Neutral (written & spoken)            | Casual / Conversational (mostly spoken)        |
+| Origin / Nuance        | Objective, standard degree modifier            | From すごい (amazing/intense); high emotion    |
+| Best Used In           | Essays, business, speeches, polite speech      | Casual chats with friends, informal contexts   |
+| Example (Romaji)       | Kyō wa totemo atsui desu.                      | Kyō wa sugoku atsui desu.                      |
+| English Equivalent     | "Very" / "Extremely"                           | "Really" / "Super"                             |
+
+
+生け花 (Ikebana) vs 華道 (Kadou)
+
+    1. 生け花 (Ikebana):
+        • Meaning: "Living flowers" / "Arranging flowers"
+        • Usage: Everyday, conversational term
+        • Focus: The actual act, hobby, or visual practice of flower arrangement
+
+        2. 華道 (Kadou):
+        • Meaning: "The Way of Flowers" (-dō / 道 = path/way)
+        • Usage: Formal, academic, or spiritual term
+        • Focus: The philosophical discipline, traditional art form, and formal study (similar to 茶道 Sadō, 書道 Shodō, 柔道 Judō)
+
+いたいです (Itai desu) vs いたいんです (Itai ndesu)
+
+    1. 痛いです (Itai desu):
+    • Meaning: "It hurts" / "It is painful"
+    • Nuance: Direct, objective statement of fact.
+    • Usage: Stating a simple physical status or responding directly when asked "How do you feel?"
+
+    2. 痛いんです (Itai ndesu):
+    • Meaning: "The thing is, it hurts" / "It's because it hurts"
+    • Nuance: Explanatory, seeking empathy, or giving context/a reason.
+    • Usage: Used at the hospital, doctor's office, or when explaining why you can't do something (e.g., missing work/class or refusing an activity).
+
+    Key Rule:
+    • 〜んです (~ndesu / ~n desu) adds an explanatory layer ("The reason is...").
+
+Douro refers to the entire road system (including sidewalks and vehicle lanes), whereas Shadou refers specifically to the roadway for motor vehicles.
+shadou vs kousokudouro -> kousokudouro is high speed path
+
+Transitive Verb Change: Use 燃やします (moyashimasu) instead of 燃えます (moemasu).
+    Moemasu (燃えます) means "something burns" on its own (e.g., Gomi ga moemasu = "Trash burns").
+    Moyashimasu (燃やします) means "someone burns something" (e.g., Gomi o moyashimasu = "I burn trash").
+
+    Yoku gomi o moyashimasu.
+    I often burn trash
+
+    Gomi ga yoku moemasu.
+    The trash burns well.
+
+Tonari vs Yoko:
+    1. 隣 (Tonari) — Next to (Same Category / Immediate Neighbor)
+        Use 隣 (tonari) when two items are side-by-side and belong to the same category or share a similar nature (e.g., person to person, house to house, chair to chair).
+
+        Strict Requirement: They must be immediately adjacent with nothing similar in between.
+
+        Key Concept: Same type of thing.
+
+        Examples:
+
+        Tanaka-san no tonari (田中さんの隣) = Next to Mr. Tanaka (person next to a person).
+
+        Gakkou no tonari (学校の隣) = Next to the school (a building/store right next to a school).
+
+        Tonari no seki (隣の席) = The seat next to mine.
+
+        2. 横 (Yoko) — Beside / Side (Position & Alignment)
+        Use 横 (yoko) to describe physical position along a horizontal axis (left or right). The items do not need to belong to the same category.
+
+        Flexibility: Works for completely different types of objects (e.g., a bag next to a chair, a trash can next to a vending machine).
+
+        Key Concept: Horizontal positioning (side / lateral area).
+
+        Examples:
+
+        Tsukue no yoko (机の横) = Beside the desk / at the side of the desk.
+
+        Teke-bu no yoko ni gomi-bako ga arimasu (テレビの横にごみ箱があります。) = There is a trash can beside the TV. (TV and trash can are different categories, so yoko is used).
+
+    Totemo vs Zuibun:
+        1. とても (Totemo) — Simple / Objective "Very"
+    とても (totemo) is a neutral, straightforward way to intensify an adjective or verb. It simply means "very," "really," or "extremely."
+
+    Key Nuance: Neutral, factual, and objective.
+
+    When to use: Anytime you want to say something is "very [adjective]" without adding emotional surprise.
+
+    Examples:
+
+    Kyou wa totemo atsukui desu. (今日はとても熱いです。)
+
+    Today is very hot. (Stating a plain fact)
+
+    Kono ramen wa totemo oishii desu. (このラーメンはとても美味しいです。)
+
+    This ramen is very delicious.
+
+    2. ずいぶん (Zuibun) — "Surprisingly / Remarkably / More Than Expected"
+    ずいぶん (zuibun) carries an element of surprise, unexpectedness, or personal impression. It implies that the degree of something exceeded your expectations or represents a noticeable change over time.
+
+    Key Nuance: "Surprisingly," "considerably," "quite a lot (more than I thought)."
+
+    When to use: When you are impressed, surprised, or pointing out a contrast/change.
+
+    Examples:
+
+    Kyou wa zuibun atsukui desu ne. (今日はずいぶん熱いですね。)
+
+    It's remarkably hot today, isn't it? (Implies it's much hotter than usual or hotter than expected)
+
+    Nihongo ga zuibun jouzu ni narimashita ne. (日本語がずいぶん上手になりましたね。)
+
+    Your Japanese has become surprisingly good! (Highlights noticeable progress over time)
+
+Kaisha vs Gaisha:
+    1. 会社 = Kaisha (Standalone)When the word stands alone as an independent noun, it is pronounced with an unvoiced k sound: kaisha.Kaisha ni ikimasu. (会社に行きます。)$\rightarrow$ I am going to the company / work.Kaisha no hito (会社の人)$\rightarrow$ A person from the company / co-worker.
+    
+    2. ～会社 = ~gaisha (Compound Word Suffix)When kaisha attaches to the end of another word or modifier to form a single compound noun, the initial k sound changes to a voiced g sound: gaisha.旅行 (ryokou / travel) + 会社 (kaisha) $\rightarrow$ 旅行会社 (ryokou-gaisha)$\rightarrow$ Travel agency / travel company保険 (hoken / insurance) + 会社 (kaisha) $\rightarrow$ 保険会社 (hoken-gaisha)$\rightarrow$ Insurance companyこんな (konna / like this) + 会社 (kaisha) $\rightarrow$ こんな会社 (konna kaisha)(Note: Since "konna" is a separate modifying adjective and not attached as a compound noun, it stays kaisha).
+
+Getsu・Sui・Kin         vs      Getsuyoubi to Suiyoubi to Kinyoubi
+    1. Getsu・Sui・Kin (月・水・金)
+    Usage Context: Schedules, timetables, and casual or concise speech.
+
+    Why it's used: It is a shorthand abbreviation. In Japanese, when listing multiple days of the week, speakers drop the repeating ~youbi (曜日 - day of the week) and the particle to (と - and).
+
+    Tone: Efficient, concise, and natural when discussing recurring routines, schedules, or calendars.
+
+    2. Getsuyoubi to Suiyoubi to Kinyoubi (月曜日と水曜日と金曜日)
+    Usage Context: Formal speech, precise announcements, or full structural sentences.
+
+    Why it's used: It uses the full name of each day (Getsuyoubi, Suiyoubi, Kinyoubi) connected explicitly by the list-connecting particle to ("and").
+
+    Tone: Clear and complete, but in fast everyday conversation, repeating ~youbi to three times can feel wordy or overly formal.
+
+sundeimashita -> past continous
+
+choushi ga warui        vs      kibun ga warui:
+    Core Difference
+    調子（ちょうし） (Choushi) refers to condition, state, tone, or operation. It can refer to physical health, mental state, or even machines and overall performance.
+
+    気分（きぶん） (Kibun) refers specifically to feelings, emotion, or temporary bodily sensations (like nausea or feeling sick to your stomach).
+
+    1. 調子が悪い (Choushi ga warui)
+    Primary Meaning: "To be out of shape," "to feel under the weather," "to not function well."
+
+    When to use it:
+
+    General Physical Health: You have a mild cold, fatigue, or feel generally off/under the weather.
+
+    Performance / Condition: You aren't playing sports well, or a machine/computer is glitching.
+
+    Longer-term or broad state: Overall health or routine isn't going smoothly.
+
+    Examples:
+
+    体調が悪い。 (Taichou ga warui.) — "My physical condition is bad." (Slightly more formal/specific to body).
+
+    パソコンの調子が悪い。 (Pasokon no choushi ga warui.) — "My computer isn't working right."
+
+    今日は調子が悪い。 (Kyou wa choushi ga warui.) — "I'm not feeling 100% today / I'm off my game today."
+
+    2. 気分が悪い (Kibun ga warui)
+    Primary Meaning: "To feel sick/nauseous" OR "to feel offended/upset."
+
+    When to use it:
+
+    Physical Sensation: You feel dizzy, nauseous, motion sick, or like you might throw up.
+
+    Emotional Reaction: Someone said something rude and it ruined your mood or made you angry/offended.
+
+    Examples:
+
+    吐き気がして、気分が悪い。 (Hakike ga shite, kibun ga warui.) — "I feel nauseous and sick."
+
+    車酔いで気分が悪い。 (Kuruma-yoi de kibun ga warui.) — "I feel sick from motion sickness."
+
+    彼の言葉を聞いて気分が悪くなった。 (Kare no kotoba o kiite kibun ga waruku natta.) — "Hearing his words made me feel upset / offended."
+    
+    
+youhin vs seihin
+    youhin:     supplies, items, goods          Things used for a purpose
+        Kitchen items / kitchenware, Sports equipment, Daily necessities(toothbrush, paste..)
+
+    seihin:     product, manufactured goods     Things made by a company/factory
+        Electrical products/appliances      Home electrical appliances

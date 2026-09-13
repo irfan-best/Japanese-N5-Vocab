@@ -7025,103 +7025,6039 @@ tempura
 
 allWords["Food Names1 - Hard"] = ``;
 
-allWords["Lesson 26"] = ``;
+allWords["Lesson 26"] = `
+うんどうかい
+athletic meeting
+Undoukai
+運動会
 
-allWords["Lesson 26 - Hard"] = ``;
+うちゅう
+space, universe
+Uchuu
+宇宙
 
-allWords["Lesson 27"] = ``;
+うちゅうせん
+spaceship
+Uchuusen
+宇宙船
+
+うちゅうひこうし
+astronaut
+Uchuuhikoushi
+宇宙飛行士
+
+つごうがいい
+convenient (concerning time)
+Tsugou ga ii
+都合がいい
+
+つごうがわるい
+inconvenient (concerning time)
+Tsugou ga warui
+都合が悪い
+
+きぶんがいい
+feel well
+Kibun ga ii
+気分がいい
+
+きぶんがわるい
+feel ill
+Kibun ga warui
+気分が悪い
+
+ばしょ
+place
+Basho
+場所
+
+ずいぶん
+pretty, very
+Zuibun
+ずいぶん
+
+～がいしゃ
+~ company
+~gaisha
+～会社
+
+でんしメール
+electronic mail
+Denshi meeru
+電子メール
+
+べつの
+another
+Betsu no
+別の
+
+しんぶんしゃ
+newspaper publishing company, newspaper
+Shinbunsha
+新聞社
+
+こんな～
+~ like this
+Konna~
+こんな～
+
+そんな～
+~ like that (near the listener)
+Sonna~
+そんな～
+
+あんな～
+~ like that (far from both the speaker and the listener)
+Anna~
+あんな～
+
+こんど
+next time, another time
+Kondo
+今度
+
+エヌエイチケー
+Nippon Hoso Kyokai (broadcasting company)
+NHK (Enueichikei)
+※NHK
+
+ごみ
+garbage, trash, dust
+Gomi
+ごみ
+
+だします [ごみを～]
+put out [the trash]
+Dashimasu [gomi o~]
+出します [ごみを～]
+
+げつ・すい・きん
+Monday, Wednesday and Friday
+Getsu・Sui・Kin
+月・水・金
+
+ボランティア
+volunteer
+Borantia
+ボランティア
+
+かん
+can
+Kan
+缶
+
+[お]ゆ
+hot water
+[O]yu
+[お]湯
+
+やります
+do
+Yarimasu
+やります
+
+こわい
+be afraid of
+Kowai
+怖い
+
+いつでも
+any time
+Itsudemo
+いつでも
+
+どこでも
+anywhere
+Dokodemo
+どこでも
+
+だれでも
+anybody
+Daredemo
+だれでも
+
+なんでも
+anything
+Nandemo
+なんでも
+
+ガス
+gas
+Gasu
+ガス
+
+じゅうどう
+judo
+Juudou
+柔道
+
+こどものひ
+Children's Day
+Kodomo no hi
+※こどもの日
+
+どい たかお
+Japanese astronaut (1955- )
+Doi Takao
+※土井 隆雄
+
+エドヤストア
+fictitious store
+Edoyasutora
+※エドヤストア
+
+`;
+
+allWords["Lesson 26 - Hard"] = `
+ちょくせつ
+directly
+Chokusetsu
+直接
+
+[にもつが] かたづきます
+[boxes] be put in order
+[nimotsu ga~] Katadukimasu (or) Katazukimasu
+[荷物が～] 片づきます
+
+れんらくします
+contact
+Renrakushimasu
+連絡します
+
+もうしこみます
+apply for, enter for
+Moushikomimasu
+申し込みます
+
+[じかんに～] おくれます
+be late [for an appointment, etc.]
+[jikan ni~] Okuremasu
+[時間に～] 遅れます
+
+[じかんに～] まにあいます
+be in time [for an appointment, etc.]
+[jikan ni~] Maniaimasu
+[時間に～] 間に合います
+
+[ごみが～] もえます
+burn [trash]
+[gomi ga~] Moemasu
+[ごみが～] 燃えます
+
+さがします
+look for, search
+Sagashimasu
+探します、捜します
+
+[パーティーに～] さんかします
+attend [a party]
+[paatii ni~] Sankashimasu
+[パーティーに～] 参加します
+
+[じかんを～] みます
+check [time]
+[jikan o~] Mimasu
+[時間を～] 見ます、診ます
+
+～べん
+~ dialect
+~ben
+～弁
+
+おきば
+place where something is put
+Okiba
+置き場
+
+よこ
+side
+Yoko
+横
+
+びん
+bottle
+Bin
+瓶
+
+こまったなぁ
+What shall I do?
+Komatta naa
+困ったなぁ。
+
+`;
+
+allWords["Lesson 27"] = `
+かいます
+keep (a pet), raise (an animal)
+Kaimasu
+飼います
+
+たてます
+build
+Tatemasu
+建てます
+
+はしります [みちを～]
+run, drive [along a road]
+Hashirimasu [michi o~]
+走ります [道を～]
+
+とります [やすみを～]
+take [a holiday]
+Torimasu [yasumi o~]
+取ります [休みを～]
+
+みえます [やまが～]
+[a mountain] can be seen
+Miemasu [yama ga~]
+見えます [山が～]
+
+きこえます [おとが～]
+[a sound] can be heard
+Kikoemasu [oto ga~]
+聞こえます [音が～]
+
+できます [くうこうが～]
+[an airport] be made, be completed, come into existence
+Dekimasu [kuukou ga~]
+できます [空港が～]
+
+ひらきます [きょうしつを～]
+set up [a class], open, hold
+Hirakimasu [kyoushitsu o~]
+開きます [教室を～]
+
+ペット
+pet
+Petto
+ペット
+
+とり
+bird
+Tori
+鳥
+
+こえ
+voice
+Koe
+声
+
+なみ
+wave
+Nami
+波
+
+はなび
+fireworks
+Hanabi
+花火
+
+けしき
+scenery, view
+Keshiki
+景色
+
+ひるま
+daytime
+Hiruma
+昼間
+
+むかし
+old days, ancient times
+Mukashi
+昔
+
+どうぐ
+tool, instrument, equipment
+Dougu
+道具
+
+じどうはんばいき
+vending machine
+Jidouhanbaiki
+自動販売機
+
+つうしんはんばい
+mail order, mail-order sales
+Tsuushinhanbai
+通信販売
+
+クリーニング
+[dry] cleaning, laundry
+Kuriiningu
+クリーニング
+
+マンション
+condominium, apartment house
+Manshon
+マンション
+
+だいどころ
+kitchen
+Daidokoro
+台所
+
+～きょうしつ
+~ class
+~kyoushitsu
+～教室
+
+パーティールーム
+party room
+Paatiiruumu
+パーティールーム
+
+～ご
+~ after (duration of time)
+~go
+～後
+
+～しか
+only ~ (used with negatives)
+~shika
+～しか
+
+ほかの
+other
+Hoka no
+ほかの
+
+はっきり
+clearly
+Hakkiri
+はっきり
+
+ほとんど
+almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
+Hotondo
+ほとんど
+
+かんさいくうこう
+Kansai International Airport
+Kansai Kuukou
+※関西空港
+
+あきはばら
+name of a shopping district in Tokyo with many electrical stores
+Akihabara
+※秋葉原
+
+いず
+peninsula in Shizuoka Prefecture
+Izu
+※伊豆
+
+にちようだいく
+Sunday carpenter
+Nichiyoudaiku
+日曜大工
+
+ほんだな
+bookshelf
+Hondana
+本棚
+
+ゆめ
+dream (～をみます：have a dream)
+Yume
+夢
+
+いつか
+someday, sometime
+Itsuka
+いつか
+
+すばらしい
+marvelous, wonderful
+Subarashii
+素晴らしい
+
+こどもたち
+children
+Kodomotachi
+子どもたち
+
+だいすき [な]
+like very much
+Daisuki [na]
+大好き [な]
+
+まんが
+cartoon, comic strip
+Manga
+漫画
+
+しゅじんこう
+hero, heroine
+Shujinkou
+主人公
+
+かたち
+shape
+Katachi
+形
+
+ロボット
+robot
+Robotto
+ロボット
+
+ふしぎ [な]
+fantastic, mysterious
+Fushigi [na]
+不思議 [な]
+
+ポケット
+pocket
+Poketto
+ポケット
+
+たとえば
+for example
+Tatoeba
+例えば
+
+つけます
+attach, put on
+Tsukemasu
+付けます
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+そら
+sky
+Sora
+空
+
+とびます
+fly
+Tobimasu
+飛びます
+
+じぶん
+oneself
+Jibun
+自分
+
+しょうらい
+future
+Shourai
+将来
+
+ドラえもん
+name of a cartoon character
+Doraemon
+※ドラえもん
+
+`;
 
 allWords["Lesson 27 - Hard"] = ``;
 
-allWords["Lesson 28"] = ``;
+allWords["Lesson 28"] = `
+うれます [パンが～]
+[bread] sell, be sold
+Uremasu [pan ga~]
+売れます [パンが～]
+
+おどります
+dance
+Odorimasu
+踊ります
+
+かみます
+chew, bite
+Kamimasu
+かみます
+
+えらびます
+choose
+Erabimasu
+選びます
+
+ちがいます
+be different
+Chigaimasu
+違います
+
+かよいます [だいがくに～]
+go to and from [university]
+Kayoimasu [daigaku ni~]
+通います [大学に～]
+
+メモします
+take a memo
+Memoshimasu
+メモします
+
+まじめ [な]
+serious
+Majime [na]
+まじめ [な]
+
+ねっしん [な]
+earnest
+Nesshin [na]
+熱心 [な]
+
+やさしい
+gentle, kind
+Yasashii
+優しい
+
+えらい
+great, admirable
+Erai
+偉い
+
+ちょうどいい
+proper, just right
+Choudo ii
+ちょうどいい
+
+しゅうかん
+custom
+Shuukan
+習慣
+
+けいけん
+experience
+Keiken
+経験
+
+ちから
+power
+Chikara
+力
+
+にんき
+popularity (be popular [with students])
+Ninki
+人気
+
+かたち
+form, shape
+Katachi
+形
+
+いろ
+color
+Iro
+色
+
+あじ
+taste
+Aji
+味
+
+ガム
+chewing gum
+Gamu
+ガム
+
+しなもの
+goods
+Shinamono
+品物
+
+ねだん
+price
+Nedan
+値段
+
+きゅうりょう
+salary
+Kyuuryou
+給料
+
+ボーナス
+bonus
+Boonasu
+ボーナス
+
+ばんぐみ
+program
+Bangumi
+番組
+
+ドラマ
+drama
+Dorama
+ドラマ
+
+しょうせつ
+novel
+Shousetsu
+小説
+
+しょうせつか
+novelist
+Shousetsuka
+小説家
+
+かしゅ
+singer
+Kashu
+歌手
+
+かんりにん
+janitor
+Kanrinin
+管理人
+
+むすこ
+(my) son
+Musuko
+息子
+
+むすこさん
+(someone else's) son
+Musukosan
+息子さん
+
+むすめ
+(my) daughter
+Musume
+娘
+
+むすめさん
+(someone else's) daughter
+Musumesan
+娘さん
+
+じぶん
+oneself
+Jibun
+自分
+
+しょうらい
+future
+Shourai
+将来
+
+しばらく
+a little while
+Shibaraku
+しばらく
+
+たいてい
+usually, mostly
+Taitei
+たいてい
+
+それに
+in addition
+Sore ni
+それに
+
+それで
+and so
+Sore de
+それで
+
+[ちょっと] おねがいが あるんですが。
+I have a favor to ask.
+[ちょっと] Onegai ga arun desu ga.
+[ちょっと] お願いが あるんですが。
+
+ホームステイ
+homestay
+Hoomusutei
+ホームステイ
+
+かいわ
+conversation
+Kaiwa
+会話
+
+おしゃべりします
+chat
+Oshaberishimasu
+おしゃべりします
+
+おしらせ
+notice
+Oshirase
+お知らせ
+
+ひにち
+date
+Hinichi
+日にち
+
+ど
+Saturday
+Do
+土
+
+たいいくかん
+gymnasium
+Taiikukan
+体育館
+
+むりょう
+free of charge
+Muryou
+無料
+
+`;
 
 allWords["Lesson 28 - Hard"] = ``;
 
-allWords["Lesson 29"] = ``;
+allWords["Lesson 29"] = `
+あきます [ドアが～]
+[a door] open
+Akimasu [doa ga~]
+開きます [ドアが～]
+
+しまります [ドアが～]
+[a door] close, shut
+Shimarimasu [doa ga~]
+閉まります [ドアが～]
+
+つきます [でんきが～]
+[a light] come on
+Tsukimasu [denki ga~]
+つきます [電気が～]
+
+きえます [でんきが～]
+[a light] go off, disappear
+Kiemasu [denki ga~]
+消えます [電気が～]
+
+こみます [みちが～]
+[a road] get crowded
+Komimasu [michi ga~]
+込みます [道が～]
+
+すきます [みちが～]
+[a road] get empty
+Sukimasu [michi ga~]
+すきます [道が～]
+
+こわれます [いすが～]
+[a chair] break
+Kowaremasu [isu ga~]
+壊れます [椅子が～]
+
+われます [コップが～]
+[a glass] break, smash
+Waremasu [koppu ga~]
+割れます [コップが～]
+
+おれます [きが～]
+[a tree] break, snap
+Oremasu [ki ga~]
+折れます [木が～]
+
+やぶれます [かみが～]
+[the paper] tear
+Yaburemasu [kami ga~]
+破れます [紙が～]
+
+よごれます [ふくが～]
+[the clothes] get dirty
+Yogoremasu [fuku ga~]
+汚れます [服が～]
+
+つきます [ポケットが～]
+[a pocket] be attached
+Tsukimasu [poketto ga~]
+付きます [ポケットが～]
+
+はずれます [ボタンが～]
+[a button] be undone
+Hazuremasu [botan ga~]
+外れます [ボタンが～]
+
+とまります [エレベーターが～]
+[an elevator] stop
+Tomarimasu [erebeetaa ga~]
+止まります [エレベーターが～]
+
+まちがえます
+make a mistake
+Machigaemasu
+まちがえます
+
+おとします
+drop, lose
+Otoshimasu
+落とします
+
+かかります [かぎが～]
+be locked
+Kakarimasu [kagi ga~]
+掛かります [鍵が～]
+
+[お]さら
+plate, dish
+[O]sara
+[お]皿
+
+[お]ちゃわん
+rice bowl
+[O]chawan
+[お]茶わん
+
+コップ
+glass (vessel)
+Koppu
+コップ
+
+ガラス
+glass (material)
+Garasu
+ガラス
+
+さいふ
+wallet, purse
+Saifu
+財布
+
+ふくろ
+bag
+Fukuro
+袋
+
+えだ
+branch, twig
+Eda
+枝
+
+えきいん
+station employee
+Ekiin
+駅員
+
+このへん
+this neighborhood, around here
+Kono hen
+この辺
+
+～へん
+the place around ~
+~hen
+～辺
+
+このくらい
+about this size
+Kono kurai
+このくらい
+
+おさきに どうぞ。
+After you./Go ahead, please.
+Osaki ni douzo.
+お先に どうぞ。
+
+[ああ、] よかった。
+Thank goodness! (used to express a feeling of relief)
+[Aa,] Yokatta.
+[ああ、] よかった。
+
+いまの でんしゃ
+the train which has just left
+Ima no densha
+今の電車
+
+わすれもの
+things left behind, lost property
+Wasuremono
+忘れ物
+
+～がわ
+~ side
+~gawa
+～側
+
+ポケット
+pocket
+Poketto
+ポケット
+
+おぼえて いません
+I don't remember.
+Oboete imasen
+覚えていません
+
+あみだな
+rack
+Amidana
+網棚
+
+たしか
+I suppose, if I am correct
+Tashika
+確か
+
+よつや
+name of a station in Tokyo
+Yotsuya
+※四ツ谷
+
+じしん
+earthquake
+Jishin
+地震
+
+かべ
+wall
+Kabe
+壁
+
+はり
+hands (of a clock)
+Hari
+針
+
+さします
+point
+Sashimasu
+指します
+
+えきまえ
+the area in front of a station
+Ekimae
+駅前
+
+たおれます
+fall down
+Taoremasu
+倒れます
+
+にし
+west
+Nishi
+西
+
+ほう
+direction
+Hou
+方
+
+さんのみや
+name of a place in Kobe
+Sannomiya
+※三宮
+
+`;
 
 allWords["Lesson 29 - Hard"] = ``;
 
-allWords["Lesson 30"] = ``;
+allWords["Lesson 30"] = `
+はります
+put up, post, paste
+Harimasu
+はります
+
+かけます
+hang
+Kakemasu
+掛けます
+
+かざります
+display, decorate
+Kazarimasu
+飾ります
+
+ならべます
+arrange, line up
+Narabemasu
+並べます
+
+うえます
+plant
+Uemasu
+植えます
+
+もどします
+return, put ~ back
+Modoshimasu
+戻します
+
+まとめます
+put ~ together, put ~ in shape, sum up
+Matomemasu
+まとめます
+
+かたづけます
+put things in order, tidy up
+Katadukemasu
+片づけます
+
+しまいます
+put things in their proper place
+Shimaimasu
+しまいます
+
+きめます
+decide
+Kimemasu
+決めます
+
+しらせます
+inform
+Shirasemasu
+知らせます
+
+そうだんします
+consult, discuss
+Soudanshimasu
+相談します
+
+よしゅうします
+prepare one's lesson
+Yoshuushimasu
+予習します
+
+ふくしゅうします
+review one's lesson
+Fukushuushimasu
+復習します
+
+そのままに します
+leave things as they are
+Sonomama ni shimasu
+そのままに します
+
+おこさん
+(someone else's) child
+Okosan
+お子さん
+
+じゅぎょう
+class
+Jugyou
+授業
+
+こうぎ
+lecture
+Kougi
+講義
+
+ミーティング
+meeting
+Miitingu
+ミーティング
+
+よてい
+plan, schedule
+Yotei
+予定
+
+おしらせ
+notice
+Oshirase
+お知らせ
+
+あんないしょ
+guide book
+Annaisho
+案内書
+
+カレンダー
+calendar
+Karendaa
+カレンダー
+
+ポスター
+poster
+Posutaa
+ポスター
+
+ごみばこ
+trash can, dustbin
+Gomibako
+ごみ箱
+
+にんぎょう
+doll
+Ningyou
+人形
+
+かびん
+vase
+Kabin
+花瓶
+
+かがみ
+mirror
+Kagami
+鏡
+
+ひきだし
+drawer
+Hikidashi
+引き出し
+
+げんかん
+front door, porch, entrance hall
+Genkan
+玄関
+
+ろうか
+corridor, hallway
+Rouka
+廊下
+
+かべ
+wall
+Kabe
+壁
+
+いけ
+pond
+Ike
+池
+
+こうばん
+police box
+Kouban
+交番
+
+もとの ところ
+original place
+Moto no tokoro
+元の所
+
+まわり
+round, around
+Mawari
+周り
+
+まんなか
+center
+Mannaka
+真ん中
+
+すみ
+corner
+Sumi
+隅
+
+まだ
+still
+Mada
+まだ
+
+～ほど
+about ~
+~hodo
+～ほど
+
+よていひょう
+schedule
+Yoteihyou
+予定表
+
+ごくろうさま。
+Thank you for your hard work. (used by a superior or older person to express appreciation for a subordinate's work)
+Gokurousama
+ご苦労さま。
+
+きぼう
+hope, request
+Kibou
+希望
+
+なんか ごきぼうが ありますか。
+Do you have any requests?
+Nanka gokibou ga arimasu ka.
+何かご希望がありますか。
+
+ミュージカル
+musical
+Myuujikaru
+ミュージカル
+
+それは いいですね。
+That's a good idea./That sounds nice.
+Sore wa ii desu ne.
+それは いいですね。
+
+ブロードウェイ
+Broadway
+Buroodowei
+※ブロードウェイ
+
+まるい
+round
+Marui
+丸い
+
+ある～
+one ~, a certain ~
+Aru~
+ある～
+
+ちきゅう
+earth
+Chikyuu
+地球
+
+うれしい
+glad, happy
+Ureshii
+うれしい
+
+いや [な]
+hateful, disagreeable
+Iya [na]
+嫌 [な]
+
+すると
+and, then
+Suruto
+すると
+
+めが さめます
+wake up
+Me ga samemasu
+目が覚めます
+
+`;
 
 allWords["Lesson 30 - Hard"] = ``;
 
-allWords["Lesson 31"] = ``;
+allWords["Lesson 31"] = `
+はじまります I [しきが～]
+[a ceremony] begin, start
+Hajimarimasu [shiki ga~]
+始まります [式が～]
+
+つづけます II
+continue
+Tsudukemasu
+続けます
+
+みつけます II
+find
+Mitsukemasu
+見つけます
+
+うけます II [しけんを～]
+take [an examination]
+Ukemasu [shiken o~]
+受けます [試験を～]
+
+にゅうがくします III [だいがくに～]
+enter [a university]
+Nyuugakushimasu [daigaku ni~]
+入学します [大学に～]
+
+そつぎょうします III [だいがくを～]
+graduate [from a university]
+Sotsugyoushimasu [daigaku o~]
+卒業します [大学を～]
+
+しゅっせきします III [かいぎに～]
+attend [a meeting]
+Shussekishimasu [kaigi ni~]
+出席します [会議に～]
+
+きゅうけいします III
+take a break, take a rest
+Kyuukeishimasu
+休憩します
+
+れんきゅう
+consecutive holidays
+Renkyuu
+連休
+
+さくぶん
+essay, composition
+Sakubun
+作文
+
+てんらんかい
+exhibition
+Tenrankai
+展覧会
+
+けっこんしき
+wedding ceremony
+Kekkonshiki
+結婚式
+
+[お]そうしき
+funeral
+[O]soushiki
+[お]葬式
+
+しき
+ceremony
+Shiki
+式
+
+ほんしゃ
+head office
+Honsha
+本社
+
+してん
+branch office
+Shiten
+支店
+
+きょうかい
+church
+Kyoukai
+教会
+
+だいがくいん
+graduate school
+Daigakuin
+大学院
+
+どうぶつえん
+zoo
+Doubutsuen
+動物園
+
+おんせん
+hot spring, spa
+Onsen
+温泉
+
+おきゃく[さん]
+visitor, guest, customer, client
+Okyaku[san]
+お客[さん]
+
+だれか
+somebody
+Dareka
+だれか
+
+～のほう
+place toward ~, direction of ~
+~no hou
+～の方
+
+--- Right Page ---
+ずっと
+all the time
+Zutto
+
+ピカソ
+Pablo Picasso, Spanish painter (1881-1973)
+Pikaso
+※ピカソ
+
+うえのこうえん
+Ueno Park (in Tokyo)
+Ueno kouen
+※上野公園
+
+のこります I
+remain, be left
+Nokorimasu
+残ります
+
+つきに
+per month
+Tsuki ni
+月に
+
+ふつうの
+ordinary, common, usual
+Futsuu no
+普通の
+
+インターネット
+Internet
+Intaanetto
+インターネット
+
+むら
+village
+Mura
+村
+
+えいがかん
+movie theater
+Eigakan
+映画館
+
+いや[な]
+hateful, disagreeable
+Iya[na]
+嫌[な]
+
+そら
+sky
+Sora
+空
+
+とじます II
+close
+Tojimasu
+閉じます
+
+とかい
+city
+Tokai
+都会
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+せかいじゅう
+all over the world
+Sekaijuu
+世界中
+
+あつまります I
+gather
+Atsumarimasu
+集まります
+
+うつくしい
+beautiful
+Utsukushii
+美しい
+
+しぜん
+nature
+Shizen
+自然
+
+すばらしさ
+goodness, virtue
+Subarashisa
+すばらしさ
+
+きがつきます I [ことに～]
+notice, become aware of
+Ki ga tsukimasu [koto ni~]
+気がつきます [ことに～]
+
+`;
 
 allWords["Lesson 31 - Hard"] = ``;
 
-allWords["Lesson 32"] = ``;
+allWords["Lesson 32"] = `
+うんどうします III
+take exercise
+Undoushimasu
+運動します
+
+せいこうします III
+succeed
+Seikoushimasu
+成功します
+
+しっぱいします III [しけんに～]
+fail [an examination]
+Shippaishimasu [shiken ni~]
+失敗します [試験に～]
+
+ごうかくします III [しけんに～]
+pass [an examination]
+Goukakushimasu [shiken ni~]
+合格します [試験に～]
+
+もどります I
+return
+Modorimasu
+戻ります
+
+やみます I [あめが～]
+[rain] stop
+Yamimasu [ame ga~]
+やみます [雨が～]
+
+はれます II
+clear up
+Haremasu
+晴れます
+
+くもります I
+get cloudy
+Kumorimasu
+曇ります
+
+ふきます I [かぜが～]
+[wind] blow
+Fukimasu [kaze ga~]
+吹きます [風が～]
+
+なおります I [びょうきが～]
+recover from [sickness], get well
+Naorimasu [byouki ga~]
+治ります、直ります [病気が～]
+
+なおります I [こしょうが～]
+be fixed, be repaired
+Naorimasu [koshou ga~]
+治ります、直ります [故障が～]
+
+つづきます I [ねつが～]
+[high temperature] continue
+Tsudukimasu [netsu ga~]
+続きます [熱が～]
+
+ひきます I [かぜを～]
+catch [a cold]
+Hikimasu [kaze o~]
+ひきます [風を～]
+
+ひやします I
+cool
+Hiyashimasu
+冷やします
+
+しんぱい[な]
+worried, anxious
+Shinpai[na]
+心配[な]
+
+じゅうぶん[な]
+enough, sufficient
+Juubun[na]
+十分[な]
+
+おかしい
+strange, funny
+Okashii
+おかしい
+
+うるさい
+noisy
+Urusai
+うるさい
+
+やけど
+burning (~ を します : get burned)
+Yakedo
+やけど
+
+けが
+injury (~ を します : get injured)
+Kega
+けが
+
+せき
+cough (~ が でます : have a cough)
+Seki
+せき
+
+インフルエンザ
+influenza
+Infuruenza
+インフルエンザ
+
+そら
+sky
+Sora
+空
+
+たいよう
+sun
+Taiyou
+太陽
+
+ほし
+star
+Hoshi
+星
+
+つき
+moon
+Tsuki
+月
+
+かぜ
+wind
+Kaze
+風
+
+--- Right Page ---
+きた
+north
+Kita
+
+みなみ
+south
+Minami
+南
+
+にし
+west
+Nishi
+西
+
+ひがし
+east
+Higashi
+東
+
+すいどう
+faucet, tap, water supply
+Suidou
+水道
+
+エンジン
+engine
+Enjin
+エンジン
+
+チーム
+team
+Chiimu
+チーム
+
+こんや
+this evening
+Konya
+今夜
+
+ゆうがた
+late afternoon
+Yuugata
+夕方
+
+まえ
+a time in the past, before
+Mae
+前
+
+おそく
+late (time)
+Osoku
+遅く
+
+こんなに
+like this
+Konnani
+こんなに
+
+そんなに
+like that (concerning a matter related to the listener)
+Sonnani
+そんなに
+
+あんなに
+like that (concerning a matter not related to the speaker or the listener), that much
+Annani
+あんなに
+
+もしかしたら
+possibly, perhaps
+Moshikashitara
+もしかしたら
+
+それはいけませんね
+That's too bad.
+Sore wa ikemasen ne
+それはいけませんね
+
+オリンピック
+Olympic Games
+Orinpikku
+※オリンピック
+
+げんき
+vigor
+Genki
+元気
+
+い
+stomach
+I
+胃
+
+はたらきすぎ
+working too much
+Hatarakisugi
+働きすぎ
+
+ストレス
+stress
+Sutoresu
+ストレス
+
+むりをする [むりをします III]
+work more than one's capacity
+Muri o suru [muri o shimasu III]
+無理をする [無理をします III]
+
+ゆっくりします III
+take one's time
+Yukkurishimasu
+ゆっくりします III
+
+ほしうらない
+horoscope
+Hoshiuranai
+星占い
+
+おうしざ
+Taurus
+Oushiza
+牡牛座
+
+こまります I
+be in trouble, have a problem
+Komarimasu
+困ります
+
+たからくじ
+lottery
+Takarakuji
+宝くじ
+
+あたります I [たからくじが～]
+win [a lottery]
+Atarimasu [takarakuji ga~]
+当たります [宝くじが～]
+
+けんこう
+health
+Kenkou
+健康
+
+れんあい
+romantic love
+Ren'ai
+恋愛
+
+こいびと
+sweetheart, boyfriend, girlfriend
+Koibito
+恋人
+
+[お]かねもち
+rich person
+[O]kanemochi
+[お]金持ち
+
+`;
 
 allWords["Lesson 32 - Hard"] = ``;
 
-allWords["Lesson 33"] = ``;
+allWords["Lesson 33"] = `
+にげます II
+run away
+Nigemasu
+逃げます
+
+さわぎます I
+make a noise
+Sawagimasu
+騒ぎます
+
+あきらめます II
+give up
+Akiramemasu
+あきらめます
+
+なげます II
+throw
+Nagemasu
+投げます
+
+まもります I
+keep, follow, obey
+Mamorimasu
+守ります
+
+あげます II
+raise, lift up
+Agemasu
+上げます
+
+さげます II
+lower, pull down
+Sagemasu
+下げます
+
+つたえます II
+convey (a message)
+Tsutaemasu
+伝えます
+
+ちゅういします III [くるまに～]
+be careful [of the cars]
+Chuuishimasu [kuruma ni~]
+注意します [車に～]
+
+はずします I [せきを～]
+be away [from one's desk]
+Hazushimasu [seki o~]
+外します [席を～]
+
+だめ[な]
+no good, not permitted, impossible
+Dame[na]
+だめ[な]
+
+せき
+seat
+Seki
+席
+
+ファイト
+fight
+Faito
+ファイト
+
+マーク
+mark
+Maaku
+マーク
+
+ボール
+ball
+Booru
+ボール
+
+せんたくき
+washing machine
+Sentakuki
+洗濯機
+
+～き
+~ machine
+~ki
+～機
+
+きそく
+regulation, rule
+Kisoku
+規則
+
+しようきんし
+Do not use.
+Shiyoukinshi
+使用禁止
+
+たちいりきんし
+Keep out.
+Tachiirikinshi
+立入禁止
+
+いりぐち
+entrance
+Iriguchi
+入口
+
+でぐち
+exit
+Deguchi
+出口
+
+ひじょうぐち
+emergency exit
+Hijouguchi
+非常口
+
+むりょう
+free of charge
+Muryou
+無料
+
+ほんじつきゅうぎょう
+closed today
+Honjitsu kyuugyou
+本日休業
+
+えいぎょうちゅう
+open for business
+Eigyouchuu
+営業中
+
+しようちゅう
+in use
+Shiyouchuu
+使用中
+
+～ちゅう
+~ing
+~chuu
+～中
+
+--- Right Page ---
+どういう～
+what kind of ~
+Dou iu ~
+
+もう
+(not) any longer (used with negatives)
+Mou
+もう
+
+あと～
+~ left
+Ato ~
+あと～
+
+ちゅうしゃいはん
+parking violation
+Chuushaihan
+駐車違反
+
+そりゃあ
+well
+Soryaa
+そりゃあ
+
+～いない
+within ~
+~inai
+～以内
+
+けいさつ
+police station
+Keisatsu
+警察
+
+ばっきん
+fine
+Bakkin
+罰金
+
+でんぽう
+telegram
+Denpou
+電報
+
+ひとびと
+people
+Hitobito
+人々
+
+きゅうよう
+urgent business
+Kyuuyou
+急用
+
+うちます I [でんぽうを～]
+send [a telegram]
+Uchimasu [denpou o~]
+打ちます [電報を～]
+
+でんぽうだい
+telegram charge
+Denpoudai
+電報代
+
+できるだけ
+as much as possible
+Dekirudake
+できるだけ
+
+みじかく
+shortly, briefly
+Mijikaku
+短く
+
+また
+and
+Mata
+また
+
+たとえば
+for example
+Tatoeba
+例えば
+
+キトク
+in a critical condition
+Kitoku
+キトク (危篤)
+
+おもいびょうき
+serious illness
+Omoi byouki
+重い病気
+
+あす
+tomorrow
+Asu
+明日
+
+るす
+absence
+Rusu
+留守
+
+るすばん
+looking after a house during the owner's absence
+Rusuban
+留守番
+
+[お]いわい
+celebration
+[O]iwai
+[お]祝い
+
+なくなります I
+pass away, die
+Nakunarimasu
+亡くなります
+
+かなしみ
+sorrow, sadness
+Kanashimi
+悲しみ
+
+りようします III
+use
+Riyoushimasu
+利用します
+
+`;
 
 allWords["Lesson 33 - Hard"] = ``;
 
-allWords["Lesson 34"] = ``;
+allWords["Lesson 34"] = `
+みがきます I [はを～]
+brush [one's teeth], polish
+Migakimasu [ha o~]
+磨きます [歯を～]
+
+くみたてます II
+assemble
+Kumitatemasu
+組み立てます
+
+おります I
+bend, fold, break, snap
+Orimasu
+折ります
+
+きがつきます I [わすれものに～]
+notice, become aware of [things left behind]
+Ki ga tsukimasu [wasuremono ni~]
+気がつきます [忘れ物に～]
+
+つけます II [しょうゆを～]
+put [in soy sauce]
+Tsukemasu [shouyu o~]
+つけます [しょうゆを～]
+
+みつかります I [かぎが～]
+[a key] be found
+Mitsukarimasu [kagi ga~]
+見つかります [かぎが～]
+
+します III [ネクタイを～]
+put on, wear [a tie]
+Shimasu [nekutai o~]
+します [ネクタイを～]
+
+しつもんします III
+ask a question
+Shitsumonshimasu
+質問します
+
+ほそい
+thin (of small diameter)
+Hosoi
+細い
+
+ふとい
+thick (of large diameter)
+Futoi
+太い
+
+ぼんおどり
+Bon Festival dance
+Bon-odori
+盆踊り
+
+スポーツクラブ
+sports club
+Supootsu kurabu
+スポーツクラブ
+
+かぐ
+furniture
+Kagu
+家具
+
+キー
+key
+Kii
+キー
+
+シートベルト
+seat belt
+Shiitoberuto
+シートベルト
+
+せつめいしょ
+explanatory pamphlet, instruction book
+Setsumeisho
+説明書
+
+ず
+figure, drawing
+Zu
+図
+
+せん
+line
+Sen
+線
+
+やじるし
+arrow (sign)
+Yajirushi
+矢印
+
+くろ
+black (noun)
+Kuro
+黒
+
+しろ
+white (noun)
+Shiro
+白
+
+あか
+red (noun)
+Aka
+赤
+
+あお
+blue (noun)
+Ao
+青
+
+こん
+navy blue, dark blue (noun)
+Kon
+紺
+
+きいろ
+yellow (noun)
+Kiiro
+黄色
+
+ちゃいろ
+brown (noun)
+Chairo
+茶色
+
+--- Right Page ---
+しょうゆ
+soy, soy sauce
+Shouyu
+
+ソース
+sauce, Worcestershire sauce
+Soosu
+ソース
+
+～か～
+~ or ~
+~ka~
+～か～
+
+ゆうべ
+last night
+Yuube
+ゆうべ
+
+さっき
+a short while ago
+Sakki
+さっき
+
+さどう
+tea ceremony
+Sadou
+茶道
+
+おちゃをたてます II
+make green tea
+Ocha o tatemasu
+お茶をたてます
+
+さきに
+first (when doing something before something else)
+Saki ni
+先に
+
+のせます II
+place on, load onto
+Nosemasu
+載せます
+
+これでいいですか。
+Is this all right?
+Kore de ii desu ka.
+これでいいですか。
+
+にがい
+bitter
+Nigai
+苦い
+
+おやこどんぶり
+a bowl of cooked rice with chicken and egg
+Oyakodonburi
+親子どんぶり
+
+ざいりょう
+material, ingredient
+Zairyou
+材料
+
+ーグラム
+ー gram
+-guramu
+ーグラム
+
+ーこ
+(counter for small objects)
+-ko
+ー個
+
+たまねぎ
+onion
+Tamanegi
+たまねぎ
+
+よんぶんのいち
+one fourth
+Yonbun no ichi
+4分の1
+
+ちょうみりょう
+seasoning, flavoring
+Choumiryou
+調味料
+
+なべ
+pan, pot
+Nabe
+なべ
+
+ひ
+fire, heating
+Hi
+火
+
+ひにかけます II
+put on the stove
+Hi ni kakemasu
+火にかけます
+
+にます II
+cook, boil
+Nimasu
+煮ます
+
+にえます II
+be cooked, be boiled
+Niemasu
+煮えます
+
+どんぶり
+ceramic bowl
+Donburi
+どんぶり
+
+`;
 
 allWords["Lesson 34 - Hard"] = ``;
 
-allWords["Lesson 35"] = ``;
+allWords["Lesson 35"] = `
+さきます I [はなが～]
+[flowers] bloom
+Sakimasu [hana ga~]
+咲きます [花が～]
+
+かわります I [いろが～]
+[the color] change
+Kawarimasu [iro ga~]
+変わります [色が～]
+
+こまります I
+be in trouble, have a problem
+Komarimasu
+困ります
+
+つけます II [まるを～]
+draw [a circle], mark [with a circle]
+Tsukemasu [maru o~]
+付けます [丸を～]
+
+ひろいます I
+pick up
+Hiroimasu
+拾います
+
+かかります I [でんわが～]
+get through [on the telephone], have [a phone call]
+Kakarimasu [denwa ga~]
+かかります [電話が～]
+
+らく[な]
+comfortable, easy
+Raku[na]
+楽[な]
+
+ただしい
+correct, right
+Tadashii
+正しい
+
+めずらしい
+rare, uncommon
+Mezurashii
+珍しい
+
+かた
+person (respectful equivalent of ひと)
+Kata
+方
+
+むこう
+over there, the other side
+Mukou
+向こう
+
+しま
+island
+Shima
+島
+
+むら
+village
+Mura
+村
+
+みなと
+port, harbor
+Minato
+港
+
+きんじょ
+neighborhood, vicinity
+Kinjo
+近所
+
+おくじょう
+rooftop
+Okujou
+屋上
+
+かいがい
+overseas
+Kaigai
+海外
+
+やまのぼり
+mountain climbing
+Yamanobori
+山登り
+
+ハイキング
+hiking
+Haikingu
+ハイキング
+
+きかい
+chance, opportunity
+Kikai
+機会
+
+きょか
+permission
+Kyoka
+許可
+
+まる
+circle
+Maru
+丸
+
+そうさ
+operation
+Sousa
+操作
+
+ほうほう
+method
+Houhou
+方法
+
+--- Right Page ---
+せつび
+equipment, facilities
+Setsubi
+
+カーテン
+curtain
+Kaaten
+カーテン
+
+ひも
+string
+Himo
+ひも
+
+ふた
+lid, cover, cap
+Futa
+ふた
+
+は
+leaf
+Ha
+葉
+
+きょく
+a piece of music
+Kyoku
+曲
+
+たのしみ
+pleasure, enjoyment, expectation
+Tanoshimi
+楽しみ
+
+もっと
+more
+Motto
+もっと
+
+はじめに
+first
+Hajime ni
+はじめに
+
+それなら
+in that case
+Sorenara
+それなら
+
+やこうバス
+night bus
+Yakou basu
+夜行バス
+
+りょこうしゃ
+travel agency
+Ryokousha
+旅行社
+
+くわしい
+detailed
+Kuwashii
+詳しい
+
+スキーじょう
+ski resort, ski ground
+Sukiijou
+スキー場
+
+くさつ
+Kusatsu (resort in Gunma Prefecture)
+Kusatsu
+※草津
+
+しがこうげん
+Shiga Kogen (national park in Nagano Prefecture)
+Shiga kougen
+※志賀高原
+
+はこね
+resort in Kanagawa Prefecture
+Hakone
+※箱根
+
+にっこう
+tourist spot in Tochigi Prefecture
+Nikkou
+※日光
+
+はくば
+resort in Nagano Prefecture
+Hakuba
+※白馬
+
+アフリカ
+Africa
+Afurika
+※アフリカ
+
+しゅ
+red
+Shu
+朱
+
+まじわります I
+keep company with
+Majiwarimasu
+交わります
+
+ことわざ
+proverb
+Kotowaza
+ことわざ
+
+なかよくします III
+be on good terms with
+Nakayokushimasu
+仲よくします
+
+ひつよう[な]
+necessary, essential
+Hitsuyou[na]
+必要[な]
+
+これで おわります
+We'll finish now.
+Kore de owarimasu
+これで終わります。
+
+`;
 
 allWords["Lesson 35 - Hard"] = ``;
 
-allWords["Lesson 36"] = ``;
+allWords["Lesson 36"] = `
+とどきます I [にもつが～]
+[parcels] be delivered
+Todokimasu [nimotsu ga~]
+届きます [荷物が～]
+
+でます I [しあいに～]
+participate [in the game]
+Demasu [shiai ni~]
+出ます [試合に～]
+
+うちます I [ワープロを～]
+type [on a word processor]
+Uchimasu [waapuro o~]
+打ちます [ワープロを～]
+
+ちょきんします III
+save money
+Chokinshimasu
+貯金します
+
+ふとります I
+get fat
+Futorimasu
+太ります
+
+やせます II
+get slim, lose weight
+Yasemasu
+やせます
+
+すぎます II [7じを～]
+pass [7 o'clock]
+Sugimasu [7-ji o~]
+過ぎます [7時を～]
+
+なれます II [しゅうかんに～]
+get accustomed to [the customs]
+Naremasu [shuukan ni~]
+慣れます [習慣に～]
+
+かたい
+hard, tough, solid
+Katai
+硬い、固い
+
+やわらかい
+soft, tender
+Yawarakai
+柔らかい
+
+でんし～
+electronic ~
+Denshi~
+電子～
+
+けいたい～
+portable ~
+Keitai~
+携帯～
+
+こうじょう
+factory
+Koujou
+工場
+
+けんこう
+health
+Kenkou
+健康
+
+けんどう
+kendo (Japanese style fencing)
+Kendou
+剣道
+
+まいしゅう
+every week
+Maishuu
+毎週
+
+まいつき
+every month
+Maitsuki
+毎月
+
+まいとし (まいねん)
+every year
+Maitoshi (mainen)
+毎年
+
+やっと
+finally
+Yatto
+やっと
+
+かなり
+fairly
+Kanari
+かなり
+
+かならず
+without fail, by all means
+Kanarazu
+必ず
+
+ぜったいに
+absolutely (used with negatives)
+Zettai ni
+絶対に
+
+じょうずに
+well, skillfully
+Jouzu ni
+上手に
+
+できるだけ
+as much as possible
+Dekiru dake
+できるだけ
+
+このごろ
+these days
+Kono goro
+このごろ
+
+～ずつ
+~ (some amount) per (some suit)
+~zutsu
+～ずつ
+
+その [ほう] が ～
+That is more ~
+Sono [hou] ga ~
+その [ほう] が ～
+
+※ショパン
+Chopin, Polish musician (1810-49)
+Shopan
+※ショパン
+
+おきゃくさま
+guest, customer
+Okyakusama
+お客様
+
+とくべつ [な]
+special
+Tokubetsu [na]
+特別 [な]
+
+していらっしゃいます
+be doing (respectful equivalent of しています)
+Shite irasshaimasu
+していらっしゃいます
+
+すいえい
+swimming
+Suiei
+水泳
+
+～とか、～とか
+~, ~, and so on
+~toka, ~toka
+～とか、～とか
+
+タンゴ
+tango
+Tango
+タンゴ
+
+チャレンジします III
+challenge
+Charenjishimasu
+チャレンジします
+
+きもち
+feeling, enthusiasm
+Kimochi
+気持ち
+
+のりもの
+vehicle, means of transportation
+Norimono
+乗り物
+
+れきし
+history
+Rekishi
+歴史
+
+ーーせいき
+-th century
+--seiki
+ーー世紀
+
+とおく
+far, remote place
+Tooku
+遠く
+
+きしゃ
+locomotive
+Kisha
+汽車
+
+きせん
+steam boat
+Kisen
+汽船
+
+おおぜいの ～
+many (people)
+Oozei no ~
+大勢の ～
+
+はこびます I
+carry, transport
+Hakobimasu
+運びます
+
+とびます I
+fly
+Tobimasu
+飛びます
+
+あんぜん [な]
+safe
+Anzen [na]
+安全 [な]
+
+うちゅう
+space, universe
+Uchuu
+宇宙
+
+ちきゅう
+earth
+Chikyuu
+地球
+
+※ライトきょうだい
+Wright brothers, American pioneers in aviation
+Raito kyoudai
+※ライト兄弟
+
+ウィルバー・ライト
+Wilbur Wright (1867-1912)
+Wirubaa Raito
+ウィルバー・ライト
+
+オーヴィル・ライト
+Orville Wright (1871-1948)
+Ooviru Raito
+オーヴィル・ライト
+
+`;
 
 allWords["Lesson 36 - Hard"] = ``;
 
-allWords["Lesson 37"] = ``;
+allWords["Lesson 37"] = `
+ほめます II
+praise
+Homemasu
+褒めます
+
+しかります I
+scold
+Shikarimasu
+叱ります
+
+さそいます I
+invite, ask someone to join
+Sasoimasu
+誘います
+
+おこします I
+wake [someone] up
+Okoshimasu
+起こします
+
+しょうたいします III
+invite
+Shoutaishimasu
+招待します
+
+たのみます I
+ask, request
+Tanomimasu
+頼みます
+
+ちゅういします III
+warn, advise
+Chuui shimasu
+注意します
+
+とります I
+rob, steal
+Torimasu
+とります
+
+ふみます I
+step on [someone's foot]
+Fumimasu
+踏みます
+
+こわします I
+break, destroy
+Kowashimasu
+壊します
+
+よごします I
+make ~ dirty
+Yogoshimasu
+汚します
+
+おこないます I
+hold, carry out, practice
+Okonaimasu
+行います
+
+ゆしゅつします III
+export
+Yushutsushimasu
+輸出します
+
+ゆにゅうします III
+import
+Yunyuushimasu
+輸入します
+
+ほんやくします III
+translate
+Honyakushimasu
+翻訳します
+
+はつめいします III
+invent
+Hatsumeishimasu
+発明します
+
+はっけんします III
+discover
+Hakkenshimasu
+発見します
+
+せっけいします III
+design, plan
+Sekkeishimasu
+設計します
+
+こめ
+rice
+Kome
+米
+
+むぎ
+barley, wheat
+Mugi
+麦
+
+せきゆ
+oil
+Sekiyu
+石油
+
+げんりょう
+raw material
+Genryou
+原料
+
+デート
+date
+Deeto
+デート
+
+どろぼう
+thief, robber
+Dorobou
+泥棒
+
+けいかん
+policeman
+Keikan
+警官
+
+けんちくか
+architect
+Kenchikuka
+建築家
+
+かがくしゃ
+scientist
+Kagakusha
+科学者
+
+まんが
+cartoon
+Manga
+漫画
+
+せかいちゅう
+all over the world
+Sekaichuu
+世界中
+
+～じゅう
+all over ~
+~juu
+～中
+
+～によって
+by ~
+~ni yotte
+～によって
+
+よかったですね。
+That's lucky, isn't it?
+Yokatta desu ne.
+よかったですね。
+
+※ドミニカ
+Dominica
+Dominika
+※ドミニカ
+
+※ライトきょうだい
+Wright brothers, American pioneers in aviation
+Raito kyoudai
+※ライト兄弟
+
+ウィルバー・ライト
+Wilbur Wright (1867-1912)
+Wirubaa Raito
+ウィルバー・ライト
+
+オーヴィル・ライト
+Orville Wright (1871-1948)
+Ooviru Raito
+オーヴィル・ライト
+
+※げんじものがたり
+"The Tale of Genji" (Japanese novel)
+Genji monogatari
+※源氏物語
+
+※むらさきしきぶ
+Heian Period (9th century) female novelist who wrote "The Tale of Genji" (973?-1014?)
+Murasaki Shikibu
+※紫式部
+
+※グラハム・ベル
+Alexander Graham Bell, American inventor (1847-1922)
+Gurahamu Beru
+※グラハム・ベル
+
+※とうしょうぐう
+shrine dedicated to Tokugawa Ieyasu in Nikko, Tochigi Prefecture
+Toushouguu
+※東照宮
+
+※えどじだい
+Edo Period (1603-1868)
+Edo jidai
+※江戸時代
+
+※サウジアラビア
+Saudi Arabia
+Saujiarabia
+※サウジアラビア
+
+うめたてます II
+reclaim
+Umetatemasu
+埋め立てます
+
+ぎじゅつ
+technology, technique
+Gijutsu
+技術
+
+とち
+land
+Tochi
+土地
+
+そうおん
+noise
+Souon
+騒音
+
+りようします III
+use
+Riyou shimasu
+利用します
+
+アクセス
+access
+Akusesu
+アクセス
+
+ーーせいき
+-th century
+--seiki
+ーー世紀
+
+ごうか [な]
+gorgeous
+Gouka [na]
+豪華 [な]
+
+ちょうこく
+engraving, carving, sculpture
+Choukoku
+彫刻
+
+ねむります I
+sleep
+Nemurimasu
+眠ります
+
+ほります I
+engrave, carve
+Horimasu
+彫ります
+
+なかま
+colleague, friend
+Nakama
+仲間
+
+その あと
+after that
+Sono ato
+そのあと
+
+いっしょうけんめい
+with all one's effort
+Isshoukenmei
+一生懸命
+
+ねずみ
+mouse
+Nezumi
+ねずみ
+
+いっぴきもいません。
+There is not a single (mouse).
+Ippiki mo imasen.
+一匹もいません。
+
+※ねむりねこ
+The Sleeping Cat
+Nemuri-neko
+※眠り猫
+
+※ひだりじんごろう
+famous Japanese sculptor of the Edo Period (1594-1651)
+Hidari Jingorou
+※左甚五郎
+
+`;
 
 allWords["Lesson 37 - Hard"] = ``;
 
-allWords["Lesson 38"] = ``;
+allWords["Lesson 38"] = `
+そだてます II
+breed, bring up
+Sodatemasu
+育てます
+
+はこびます I
+carry, transport
+Hakobimasu
+運びます
+
+なくなります I
+pass away (euphemistic expression for しにます (L. 39))
+Nakunarimasu
+亡くなります
+
+にゅういんします III
+enter hospital
+Nyuuinshimasu
+入院します
+
+たいいんします III
+leave hospital
+Taiinshimasu
+退院します
+
+いれます II [でんげんを～]
+turn on [the power switch]
+Iremasu [dengen o~]
+入れます [電源を～]
+
+きります I [でんげんを～]
+turn off [the power switch]
+Kirimasu [dengen o~]
+切ります [電源を～]
+
+かけます II [かぎを～]
+lock
+Kakemasu [kagi o~]
+掛けます [かぎを～]
+
+きもちがいい
+pleasant, agreeable
+Kimochi ga ii
+気持ちがいい
+
+きもちがわるい
+unpleasant, disgusting
+Kimochi ga warui
+気持ちが悪い
+
+おおきな～
+large ~
+Ookina~
+大きな～
+
+ちいさな～
+small ~
+Chiisana~
+小さな～
+
+あかちゃん
+baby
+Akachan
+赤ちゃん
+
+しょうがっこう
+elementary school
+Shougakkou
+小学校
+
+ちゅうがっこう
+junior high school
+Chuugakkou
+中学校
+
+えきまえ
+the area in front of the station
+Ekimae
+駅前
+
+かいがん
+seaside, seashore
+Kaigan
+海岸
+
+うそ
+lie, fib
+Uso
+うそ
+
+しょるい
+document, papers
+Shorui
+書類
+
+でんげん
+power switch
+Dengen
+電源
+
+～せい
+made in ~
+~sei
+～製
+
+[あ、] いけない。
+Oops!/ Oh, no! (used when one has made a mistake)
+[A,] ikenai.
+[あ、] いけない。
+
+おさきに [しつれいします]。
+Excuse me (for leaving before you).
+Osaki ni [shitsurei shimasu].
+お先に [失礼します]。
+
+※げんばくドーム
+dome commemorating the atomic bombing of Hiroshima
+Genbaku doomu
+※原爆ドーム
+
+かいらん
+circular, sending round
+Kairan
+回覧
+
+けんきゅうしつ
+study room, professor's office, laboratory
+Kenkyuushitsu
+研究室
+
+きちんと
+neatly, tidily
+Kichinto
+きちんと
+
+せいりします III
+put (things) in order, tidy up
+Seiri shimasu
+整理します
+
+～というほん
+the book titled ~
+~ to iu hon
+～という本
+
+ーーさつ
+(counter for books, etc.)
+--satsu
+ーー冊
+
+はこ
+box
+Hako
+はこ
+
+おします I [はんこを～]
+affix [a seal], stamp
+Oshimasu [hanko o~]
+押します [はんこを～]
+
+ふたご
+twins
+Futago
+双子
+
+しまい
+sisters
+Shimai
+姉妹
+
+5ねんせい
+fifth grade, fifth year
+5-nensei
+5年生
+
+にています II
+resemble, be like
+Nite imasu
+似ています
+
+せいかく
+character
+Seikaku
+性格
+
+おとなしい
+quiet
+Otonashii
+おとなしい
+
+せわをします III
+take care
+Sewa o shimasu
+世話をします
+
+じかんがたちます I
+time pass by
+Jikan ga tachimasu
+時間がたちます
+
+だいすき [な]
+like very much
+Daisuki [na]
+大好き [な]
+
+ーーてん
+-- points
+-- ten
+ーー点
+
+クラス
+class
+Kurasu
+クラス
+
+けんかします III
+quarrel, fight
+Kenka shimasu
+けんかします
+
+ふしぎ [な]
+mysterious, strange
+Fushigi [na]
+不思議 [な]
+
+`;
 
 allWords["Lesson 38 - Hard"] = ``;
 
-allWords["Lesson 39"] = ``;
+allWords["Lesson 39"] = `
+こたえます II [しつもんに～]
+answer [a question]
+Kotaemasu [shitsumon ni~]
+答えます [質問に～]
+
+たおれます II [ビルが～]
+[a building] fall down
+Taoremasu [biru ga~]
+倒れます [ビルが～]
+
+やけます II [うちが～]
+[a house] burn down
+Yakemasu [uchi ga~]
+焼けます [うちが～]
+
+やけます II [パンが～]
+[bread] be baked
+Yakemasu [pan ga~]
+焼けます [パンが～]
+
+やけます II [にくが～]
+[meat] be roasted, be grilled
+Yakemasu [niku ga~]
+焼けます [肉が～]
+
+とおります I [みちを～]
+pass [along a street]
+Toorimasu [michi o~]
+通ります [道を～]
+
+しにます I
+die
+Shinimasu
+死にます
+
+びっくりします III
+be surprised
+Bikkuri shimasu
+びっくりします
+
+がっかりします III
+be disappointed
+Gakkari shimasu
+がっかりします
+
+あんしんします III
+be relieved
+Anshin shimasu
+安心します
+
+ちこくします III
+be late, come late
+Chikoku shimasu
+遅刻します
+
+そうたいします III
+leave [work or school] earlier than usual
+Soutai shimasu
+早退します
+
+けんかします III
+quarrel, fight
+Kenka shimasu
+けんかします
+
+りこんします III
+divorce
+Rikon shimasu
+離婚します
+
+ふくざつ [な]
+complicated, complex
+Fukuzatsu [na]
+複雑 [な]
+
+じゃま [な]
+obstructive, in the way
+Jama [na]
+邪魔 [な]
+
+きたない
+dirty
+Kitanai
+汚い
+
+かなしい
+sad
+Kanashii
+悲しい
+
+うれしい
+glad, happy
+Ureshii
+うれしい
+
+はずかしい
+embarrassed, ashamed
+Hazukashii
+恥ずかしい
+
+じしん
+earthquake
+Jishin
+地震
+
+たいふう
+typhoon
+Taifuu
+台風
+
+かじ
+fire
+Kaji
+火事
+
+じこ
+accident
+Jiko
+事故
+
+[お] みあい
+interview with a view to marriage
+[O] miai
+[お]見合い
+
+でんわだい
+telephone charge
+Denwadai
+電話代
+
+～だい
+charge, fare, fee
+~dai
+～代
+
+フロント
+front desk, reception desk
+Furonto
+フロント
+
+ーーごうしつ
+room number --
+-- goushitsu
+ーー号室
+
+タオル
+towel
+Taoru
+タオル
+
+せっけん
+soap
+Sekken
+せっけん
+
+おおぜい
+a great number of people
+Oozei
+大勢
+
+おつかれさまでした。
+Thank you for your hard work (used to express appreciation for a colleague's or subordinate's work)
+Otsukaresama deshita.
+お疲れ様でした。
+
+うかがいます。
+I'm coming. (humble way of saying いきます)
+Ukagaimasu.
+伺います。
+
+とちゅうで
+on the way, in the midst of
+Tochuu de
+途中で
+
+トラック
+truck, lorry
+Torakku
+トラック
+
+ぶつかります I
+bump, collide
+Butsukarimasu
+ぶつかります
+
+ならびます I
+stand in a queue, line up
+Narabimasu
+並びます
+
+おとな
+adult
+Otona
+大人
+
+ようふく
+Western clothes
+Youfuku
+洋服
+
+せいようかします III
+be Westernized
+Seiyoukashimasu
+西洋化します
+
+あいます I
+fit, suit
+Aimasu
+合います
+
+いまでは
+now
+Ima de wa
+今では
+
+せいじんしき
+coming-of-age celebration
+Seijinshiki
+成人式
+
+`;
 
 allWords["Lesson 39 - Hard"] = ``;
 
-allWords["Lesson 40"] = ``;
+allWords["Lesson 40"] = `
+かぞえます II
+count
+Kazoemasu
+数えます
+
+はかります I
+measure, weigh
+Hakarimasu
+測ります、量ります
+
+たしかめます II
+confirm, make sure
+Tashikamemasu
+確かめます
+
+あいます I [サイズが～]
+[the size] fit
+Aimasu [saizu ga~]
+合います [サイズが～]
+
+しゅっぱつします III
+depart
+Shuppatsushimasu
+出発します
+
+とうちゃくします III
+arrive
+Touchakushimasu
+到着します
+
+よいます I
+get drunk
+Yoimasu
+酔います
+
+きけん [な]
+dangerous
+Kiken [na]
+危険 [な]
+
+ひつよう [な]
+necessary
+Hitsuyou [na]
+必要 [な]
+
+うちゅう
+space, universe
+Uchuu
+宇宙
+
+ちきゅう
+earth
+Chikyuu
+地球
+
+ぼうねんかい
+year-end party
+Bounenkai
+忘年会
+
+しんねんかい
+New Year's party
+Shinnenkai
+新年会
+
+にじかい
+second party
+Nijikai
+二次会
+
+たいかい
+mass meeting, convention
+Taikai
+大会
+
+マラソン
+marathon
+Marason
+マラソン
+
+コンテスト
+contest
+Kontest
+コンテスト
+
+おもて
+face, front
+Omote
+表
+
+うら
+back (side)
+Ura
+裏
+
+へんじ
+reply
+Henji
+返事
+
+もうしこみ
+Application
+Moushikomi
+申し込み
+
+ほんとう
+truth, fact
+Hontou
+ほんとう
+
+まちがい
+mistake
+Machigai
+まちがい
+
+きず
+defect, wound, scratch
+Kizu
+傷
+
+ズボン
+trousers
+Zubon
+ズボン
+
+ながさ
+length
+Nagasa
+長さ
+
+おもさ
+weight
+Omosa
+重さ
+
+たかさ
+height
+Takasa
+高さ
+
+おおきさ
+size, scale
+Ookisa
+大きさ
+
+[ーー] びん
+flight, flight number
+[--] bin
+[ーー]便
+
+ーーごう
+train number, typhoon number, etc.
+-- gou
+ーー号
+
+ーーこ
+(counter for small objects)
+-- ko
+ーー個
+
+ーーほん (ーーぽん、ーーぼん)
+(counter for long objects)
+-- hon (-- pon, -- bon)
+ーー本 (ーーぽん、ーーぼん)
+
+ーーはい (ーーぱい、ーーばい)
+(counter for full cups, glasses, etc.)
+-- hai (-- pai, -- bai)
+ーー杯 (ーーぱい、ーーばい)
+
+ーーキロ
+-- kilograms, -- kilometers
+-- kiro
+ーーキロ
+
+ーーグラム
+-- grams
+-- guramu
+ーーグラム
+
+ーーセンチ
+-- centimeters
+-- senchi
+ーーセンチ
+
+ーーミリ
+-- millimeters
+-- miri
+ーーミリ
+
+ーーいじょう
+not less than, ~ over
+-- ijou
+ーー以上
+
+ーーいか
+not more than, ~ under ~
+-- ika
+ーー以下
+
+さあ
+well, let me see (used when unsure of something)
+Saa
+さあ
+
+※ゴッホ
+Vincent van Gogh, Dutch painter (1853-90)
+Goho
+※ゴッホ
+
+※ゆきまつり
+Snow Festival in Sapporo
+Yuki-matsuri
+※雪祭り
+
+※のぞみ
+name of a Shinkansen train
+Nozomi
+※のぞみ
+
+※ＪＬ
+Japan Airlines
+Jeeru
+※ＪＬ
+
+どうでしょうか。
+How is ~? (polite way of saying どうですか)
+Dou deshou ka.
+どうでしょうか。
+
+クラス
+class
+Kurasu
+クラス
+
+テスト
+test, examination
+Tesuto
+テスト
+
+せいせき
+performance, score, result
+Seiseki
+成績
+
+ところで
+by the way
+Tokorode
+ところで
+
+いらっしゃいます I
+come (respectful equivalent of きます)
+Irasshaimasu
+いらっしゃいます
+
+ようす
+situation, condition, appearance
+Yousu
+様子
+
+じけん
+incident, case
+Jiken
+事件
+
+オートバイ
+motorcycle
+Ootobai
+オートバイ
+
+ばくだん
+bomb
+Bakudan
+爆弾
+
+つみます I
+load, pile up
+Tsumimasu
+積みます
+
+うんてんしゅ
+driver
+Untenshu
+運転手
+
+はなれた
+remote
+Hanareta
+離れた
+
+が
+but
+ga
+が
+
+きゅうに
+suddenly
+Kyuu ni
+急に
+
+うごかします I
+start, operate, move
+Ugokashimasu
+動かします
+
+いっしょうけんめい
+with all one's effort
+Isshoukenmei
+一生懸命
+
+はんにん
+suspect, criminal
+Hannin
+犯人
+
+てにいれます II
+obtain, get
+Te ni iremasu
+手に入れます
+
+いまでも
+even now
+Ima demo
+今でも
+
+うわさします III
+gossip
+Uwasa shimasu
+うわさします
+
+`;
 
 allWords["Lesson 40 - Hard"] = ``;
 
-allWords["Lesson 41"] = ``;
+allWords["Lesson 41"] = `
+いただきます I
+receive (humble equivalent of もらいます)
+Itadakimasu
+いただきます
+
+くださいます I
+give (respectful equivalent of くれます)
+Kudasaimasu
+くださいます
+
+やります I
+give (to a younger person or subordinate)
+Yarimasu
+やります
+
+よびます I
+invite
+Yobimasu
+呼びます
+
+とりかえます II
+exchange
+Torikaemasu
+取り替えます
+
+しんせつにします III
+be kind to
+Shinsetsu ni shimasu
+親切にします
+
+かわいい
+lovely, cute
+Kawaii
+かわいい
+
+おいわい
+celebration, gift (~を します: celebrate)
+Oiwai
+お祝い
+
+おとしだま
+money given as a New Year's gift
+Otoshidama
+お年玉
+
+[お]みまい
+[expression of] sympathy, consolatory gift to a sick person
+[O]mimai
+[お]見舞い
+
+きょうみ [[コンピューターに]～があります]
+interest ([コンピューターに] ~ があります: be interested [in computers])
+Kyoumi [[konpyuutaa ni]~ga arimasu]
+興味 [[コンピューターに]～があります]
+
+じょうほう
+information
+Jouhou
+情報
+
+ぶんぽう
+grammar
+Bunpou
+文法
+
+はつおん
+pronunciation
+Hatsuon
+発音
+
+さる
+ape, monkey
+Saru
+猿
+
+えさ
+feed, bait
+Esa
+えさ
+
+おもちゃ
+toy
+Omocha
+おもちゃ
+
+えほん
+picture book
+Ehon
+絵本
+
+えはがき
+picture postcard
+Ehagaki
+絵はがき
+
+ドライバー
+screwdriver
+Doraibaa
+ドライバー
+
+ハンカチ
+handkerchief
+Hankachi
+ハンカチ
+
+くつした
+socks, stockings
+Kutsushita
+靴下
+
+てぶくろ
+gloves
+Tebukuro
+手袋
+
+ゆびわ
+ring
+Yubiwa
+指輪
+
+バッグ
+bag
+Baggu
+バッグ
+
+そふ
+(my) grandfather
+Sofu
+祖父
+
+そぼ
+(my) grandmother
+Sobo
+祖母
+
+まご
+grandchild
+Mago
+孫
+
+おじ
+(my) uncle
+Oji
+おじ
+
+おじさん
+(someone else's) uncle
+Ojisan
+おじさん
+
+おば
+(my) aunt
+Oba
+おば
+
+おばさん
+(someone else's) aunt
+Obasan
+おばさん
+
+おととし
+the year before last
+Ototoshi
+おととし
+
+はあ
+yes, I see
+Haa
+はあ
+
+もうしわけありません
+I'm sorry/Excuse me.
+Moushiwake arimasen
+申し訳ありません
+
+あずかります I
+keep, receive (a thing) in trust
+Azukarimasu
+預かります
+
+せんじつ
+the other day
+Senjitsu
+先日
+
+たすかります I
+be of help
+Tasukimasu
+助かります
+
+むかしばなし
+old tale, folklore
+Mukashibarashi
+昔話
+
+ある～
+a certain ~, one ~
+Aru ~
+ある～
+
+おとこ
+man
+Otoko
+男
+
+こどもたち
+children
+Kodomotachi
+子どもたち
+
+いじめます II
+bully, abuse, ill-treat
+Ijimemasu
+いじめます
+
+かめ
+turtle, tortoise
+Kame
+かめ
+
+たすけます II
+save, help
+Tasukemasu
+助けます
+
+[お]しろ
+castle
+[O]shiro
+[お]城
+
+おひめさま
+princess
+Ohimesama
+お姫様
+
+たのしく
+happily, merrily
+Tanoshiku
+楽しく
+
+くらします I
+live, lead a life
+Kurashimasu
+暮らします
+
+りく
+land, shore
+Riku
+陸
+
+すると
+and, then
+Suruto
+すると
+
+けむり
+smoke
+Kemuri
+煙
+
+まっしろ [な]
+pure white
+Masshiro [na]
+真っ白 [な]
+
+なかみ
+content
+Nakami
+中身
+
+`;
 
 allWords["Lesson 41 - Hard"] = ``;
 
-allWords["Lesson 42"] = ``;
+allWords["Lesson 42"] = `
+つつみます I
+wrap
+Tsutsumimasu
+包みます
+
+わかします I
+boil
+Wakashimasu
+沸かします
+
+まぜます II
+mix
+Mazemasu
+混ぜます
+
+けいさんします III
+calculate
+Keisanshimasu
+計算します
+
+あつい
+thick
+Atsui
+厚い
+
+うすい
+thin
+Usui
+薄い
+
+べんごし
+lawyer, attorney
+Bengoshi
+弁護士
+
+おんがくか
+musician
+Ongakuka
+音楽家
+
+こどもたち
+children
+Kodomotachi
+子どもたち
+
+ふたり
+couple
+Futari
+二人
+
+きょういく
+education
+Kyouiku
+教育
+
+れきし
+history
+Rekishi
+歴史
+
+ぶんか
+culture
+Bunka
+文化
+
+しゃかい
+society
+Shakai
+社会
+
+ほうりつ
+law
+Houritsu
+法律
+
+せんそう
+war
+Sensou
+戦争
+
+へいわ
+peace
+Heiwa
+平和
+
+もくてき
+purpose
+Mokuteki
+目的
+
+あんぜん
+safety
+Anzen
+安全
+
+ろんぶん
+thesis, academic paper
+Ronbun
+論文
+
+かんけい
+relation, connection
+Kankei
+関係
+
+ミキサー
+mixer, blender
+Mikisaa
+ミキサー
+
+やかん
+kettle
+Yakan
+やかん
+
+せんぬき
+cap opener
+Sennuki
+せんぬき
+
+かんきり
+can opener
+Kankiri
+かんきり
+
+かんづめ
+canned food, tinned food
+Kanzume
+缶詰
+
+ふろしき
+wrapping cloth used to carry things
+Furoshiki
+ふろしき
+
+そろばん
+abacus
+Soroban
+そろばん
+
+たいおんけい
+(clinical) thermometer
+Taionkei
+体温計
+
+ざいりょう
+material, ingredient
+Zairyou
+材料
+
+いし
+stone
+Ishi
+石
+
+ピラミッド
+pyramid
+Piramiddo
+ピラミッド
+
+データ
+data
+Deeta
+データ
+
+ファイル
+file
+Fairu
+ファイル
+
+ある～
+a certain ~, one ~
+Aru ~
+ある～
+
+いっしょうけんめい
+with all one's effort
+Isshoukenmei
+一生懸命
+
+なぜ
+why
+Naze
+なぜ
+
+こくれん
+United Nations
+Kokuren
+※国連
+
+エリーゼのために
+Für Elise
+Eriize no tame ni
+※エリーゼのために
+
+ベートーベン
+Ludwig van Beethoven, German composer (1770-1827)
+Beetooben
+※ベートーベン
+
+ポーランド
+Poland
+Poorando
+※ポーランド
+
+ローン
+loan
+Roon
+ローン
+
+セット
+set
+Setto
+セット
+
+あと
+the amount left unused, the rest
+Ato
+あと
+
+カップラーメン
+instant Chinese noodles sold in a ready-to-use disposable container
+Kappu raamen
+カップラーメン
+
+インスタントラーメン
+instant Chinese noodles
+Insutanto raamen
+インスタントラーメン
+
+なべ
+pan, pot
+Nabe
+なべ
+
+どんぶり
+ceramic bowl
+Donburi
+どんぶり
+
+しょくひん
+food
+Shokuhin
+食品
+
+ちょうさ
+investigation, survey
+Chousa
+調査
+
+カップ
+cup
+Kappu
+カップ
+
+また
+and
+Mata
+また
+
+～のかわりに
+in place of ~, instead of ~
+~ no kawari ni
+～の代わりに
+
+どこででも
+in any place
+Doko de demo
+どこででも
+
+いまでは
+now
+Ima de wa
+今では
+
+`;
 
 allWords["Lesson 42 - Hard"] = ``;
 
-allWords["Lesson 43"] = ``;
+allWords["Lesson 43"] = `
+ふえます II [ゆしゅつが～]
+[exports] increase
+Fuemasu [yushutsu ga~]
+増えます [輸出が～]
+
+へります I [ゆしゅつが～]
+[exports] decrease
+Herimasu [yushutsu ga~]
+減ります [輸出が～]
+
+あがります I [ねだんが～]
+[the price] rise
+Agarimasu [nedan ga~]
+上がります [値段が～]
+
+さがります I [ねだんが～]
+[the price] fall
+Sagarimasu [nedan ga~]
+下がります [値段が～]
+
+きれます I [ひもが～]
+[a string] break, snap
+Kiremasu [himo ga~]
+切れます [ひもが～]
+
+とれます II [ボタンが～]
+[a button] come off
+Toremasu [botan ga~]
+とれます [ボタンが～]
+
+おちます II [にもつが～]
+[baggage] fall down
+Ochimasu [nimotsu ga~]
+落ちます [荷物が～]
+
+なくなります I [ガソリンが～]
+[petrol, gasoline] run out, be lost
+Nakunarimasu [gasorin ga~]
+なくなります [ガソリンが～]
+
+じょうぶ [な]
+strong, healthy
+Joubu [na]
+丈夫 [な]
+
+へん [な]
+strange, peculiar
+Hen [na]
+変 [な]
+
+しあわせ [な]
+happy
+Shiawase [na]
+幸せ [な]
+
+うまい
+tasty, good at
+Umai
+うまい
+
+まずい
+not tasty
+Mazui
+まずい
+
+つまらない
+boring, uninteresting
+Tsumaranai
+つまらない
+
+ガソリン
+petrol, gasoline
+Gasorin
+ガソリン
+
+ひ
+fire
+Hi
+火
+
+だんぼう
+heating
+Danbou
+暖房
+
+れいぼう
+air-conditioning
+Reibou
+冷房
+
+センス [[ふくの]～があります]
+taste, sense ([of clothing] ~ があります: have good taste [in clothing])
+Sensu [[fuku no]~ga arimasu]
+センス [[服の]～があります]
+
+いまにも
+at any moment (used to describe a situation just before it changes)
+Ima ni mo
+今にも
+
+わあ
+Oh!/Wow!
+Waa
+わあ
+
+かいいん
+member
+Kaiin
+会員
+
+てきとう [な]
+suitable, proper
+Tekitou [na]
+適当 [な]
+
+ねんれい
+age
+Nenrei
+年齢
+
+しゅうにゅう
+income
+Shuunyuu
+収入
+
+ぴったり
+exactly, just right
+Pittari
+ぴったり
+
+そのうえ
+in addition to that, moreover
+Sonoue
+そのうえ
+
+～といいます
+~ (one's name) is ~
+~ to iimasu
+～といいます
+
+ばら
+rose
+Bara
+ばら
+
+ドライブ
+driving
+Doraibu
+ドライブ
+
+`;
 
 allWords["Lesson 43 - Hard"] = ``;
 
-allWords["Lesson 44"] = ``;
+allWords["Lesson 44"] = `
+なきます I
+cry
+Nakimasu
+泣きます
+
+わらいます I
+laugh, smile
+Waraimasu
+笑います
+
+かわきます I
+dry
+Kawakimasu
+乾きます
+
+ぬれます II
+get wet
+Nuremasu
+濡れます
+
+すべります I
+slip
+Suberimasu
+滑ります
+
+おきます II [じこが～]
+[an accident] happen
+Okimasu [jiko ga~]
+起きます [事故が～]
+
+ちょうせつします III
+adjust
+Chousetsushimasu
+調節します
+
+あんぜん [な]
+safe
+Anzen [na]
+安全 [な]
+
+ていねい [な]
+polite, courteous, careful
+Teinei [na]
+丁寧 [な]
+
+こまかい
+small, fine
+Komakai
+細かい
+
+こい
+strong (taste), dark (color)
+Koi
+濃い
+
+うすい
+weak (taste), light (color)
+Usui
+薄い
+
+くうき
+air
+Kuuki
+空気
+
+なみだ
+tear
+Namida
+涙
+
+わしょく
+Japanese dish
+Washoku
+和食
+
+ようしょく
+Western dish
+Youshoku
+洋食
+
+おかず
+side dish
+Okazu
+おかず
+
+りょう
+quantity
+Ryou
+量
+
+―ばい
+― times
+―bai
+―倍
+
+はんぶん
+half
+Hanbun
+半分
+
+シングル
+single room
+Shinguru
+シングル
+
+ツイン
+twin-bedded room
+Tsuin
+ツイン
+
+たんす
+chest of drawers
+Tansu
+たんす
+
+せんたくもの
+washing, laundry
+Sentakumono
+洗濯物
+
+りゆう
+reason
+Riyuu
+理由
+
+どうなさいますか。
+What can I do for you?
+Dou nasaimasu ka.
+どうなさいますか。
+
+カット
+haircut
+Katto
+カット
+
+シャンプー
+shampoo
+Shanpuu
+シャンプー
+
+どういうふうに なさいますか。
+How would you like it done?
+Dou iu fuu ni nasaimasu ka.
+どういうふうに なさいますか。
+
+ショート
+short
+Shooto
+ショート
+
+～みたいに してください。
+Do it like ~.
+~ mitai ni shite kudasai.
+～みたいに してください。
+
+これで よろしいでしょうか。
+Would this be all right?
+Kore de yoroshii deshou ka.
+これで よろしいでしょうか。
+
+[どうも] おつかれさまでした。
+Thank you for being patient.
+[Doumo] otsukaresama deshita.
+[どうも] お疲れ様でした。
+
+いやがります I
+dislike
+Iyagarimasu
+嫌がります
+
+また
+and
+Mata
+また
+
+じゅんじょ
+order
+Junjo
+順序
+
+ひょうげん
+expression
+Hyougen
+表現
+
+たとえば
+for example
+Tatoeba
+例えば
+
+わかれます II
+part, separate
+Wakaremasu
+別れます
+
+これら
+these things
+Korera
+これら
+
+えんぎがわるい
+unlucky, ill-omened
+Engi ga warui
+縁起が悪い
+
+`;
 
 allWords["Lesson 44 - Hard"] = ``;
 
-allWords["Lesson 45"] = ``;
+allWords["Lesson 45"] = `
+あやまります I
+apologize
+Ayamarimasu
+謝ります
+
+あいます I [じこに～]
+encounter [an accident]
+Aimasu [jiko ni~]
+遭います [事故に～]
+
+しんじます II
+believe, trust
+Shinjimasu
+信じます
+
+よういします III
+prepare
+Youishimasu
+用意します
+
+キャンセルします III
+cancel
+Kyanserushimasu
+キャンセルします
+
+うまくいきます I
+go well
+Umaku ikimasu
+うまくいきます
+
+ほしょうしょ
+guarantee
+Hoshousho
+保証書
+
+りょうしゅうしょ
+receipt
+Ryoushuusho
+領収書
+
+おくりもの
+gift, present (~を します: give a present)
+Okurimono
+贈り物
+
+まちがいでんわ
+wrong (telephone) number
+Machigaidenwa
+間違い電話
+
+キャンプ
+camp
+Kyanpu
+キャンプ
+
+かかり
+person in charge
+Kakari
+係
+
+ちゅうし
+calling off, cancelling, suspension
+Chuushi
+中止
+
+てん
+point, score
+Ten
+点
+
+レバー
+lever
+Rebaa
+レバー
+
+[―えん]さつ
+[―yen] note, bill
+[―en]satsu
+[―円]札
+
+きゅうに
+suddenly
+Kyuuni
+急に
+
+ちゃんと
+regularly, properly
+Chanto
+ちゃんと
+
+たのしみに しています
+be looking forward to, be expecting
+Tanoshimi ni shite imasu
+楽しみに しています
+
+いじょうです
+That's all.
+Ijou desu
+以上です
+
+かかりいん
+person in charge, attendant
+Kakariin
+係員
+
+コース
+course
+Koosu
+コース
+
+スタート
+start
+Sutaato
+スタート
+
+―い
+-th (ranking)
+―i
+―位
+
+ゆうしょうします III
+win the championship
+Yuushoushimasu
+優勝します
+
+なやみ
+trouble, worry
+Nayami
+悩み
+
+めざまし [どけい]
+alarm clock
+Mezamashi [dokei]
+目覚まし [時計]
+
+ねむります I
+sleep
+Nemurimasu
+眠ります
+
+めがさめます II
+wake up
+Me ga samemasu
+目が覚めます
+
+だいがくせい
+university student
+Daigakusei
+大学生
+
+かいとう
+answer, reply
+Kaitou
+回答
+
+なります I
+ring
+Narimasu
+鳴ります
+
+セットします III
+set
+Settoshimasu
+セットします
+
+それでも
+nevertheless, for all that
+Soredemo
+それでも
+
+`;
 
 allWords["Lesson 45 - Hard"] = ``;
 
-allWords["Lesson 46"] = ``;
+allWords["Lesson 46"] = `
+やきます I
+bake, grill, roast
+Yakimasu
+焼きます
+
+わたします I
+hand over
+Watashimasu
+渡します
+
+かえって きます III
+come back
+Kaette kimasu
+帰って 来ます
+
+でます II [バスが～]
+[a bus] leave, depart
+Demasu [basu ga~]
+出ます [バスが～]
+
+るす
+absence
+Rusu
+留守
+
+たくはいびん
+delivery service
+Takuhaibin
+宅配便
+
+げんいん
+cause
+Gen'in
+原因
+
+ちゅうしゃ
+injection
+Chuusha
+注射
+
+しょくよく
+appetite
+Shokuyoku
+食欲
+
+パンフレット
+pamphlet
+Panfuretto
+パンフレット
+
+ステレオ
+stereo
+Sutereo
+ステレオ
+
+こちら
+my place, my side
+Kochira
+こちら
+
+～の ところ
+the place around ~
+~ no tokoro
+～の 所
+
+ちょうど
+just, exactly
+Choudo
+ちょうど
+
+たったいま
+just now (used with the past tense; indicates completion)
+Tatta ima
+たった今
+
+いま いいでしょうか。
+May I bother you now?
+Ima ii deshou ka。
+今 いいでしょうか。
+
+ガスサービスセンター
+gas service center
+Gasu saabisu sentaa
+ガスサービスセンター
+
+ガスレンジ
+gas range, gas cooker
+Gasu renji
+ガスレンジ
+
+ぐあい
+condition
+Guai
+具合
+
+どちら様でしょうか。
+Who is this, please?
+Dochira sama deshou ka。
+どちら様でしょうか。
+
+むかいます I [～へ]
+head for
+Mukaimasu [~ e]
+向かいます [～へ]
+
+おまたせしました。
+Sorry to have kept you waiting.
+Omatase shimashita。
+お待たせしました。
+
+ちしき
+knowledge
+Chishiki
+知識
+
+ほうこ
+treasury
+Houko
+宝庫
+
+てにはいります I [じょうほうが～]
+[information] come in, reach
+Te ni hairimasu [jouhou ga~]
+手に入ります [情報が～]
+
+システム
+system
+Shisutemu
+システム
+
+たとえば
+for example
+Tatoeba
+例えば
+
+キーワード
+key word
+Kiiwaado
+キーワード
+
+いちぶぶん
+one part
+Ichi bubun
+一部分
+
+にゅうりょくします III
+input
+Nyuuryoku shimasu
+入力します
+
+びょう
+second
+Byou
+秒
+
+でます II [ほんが～]
+[a book] be published
+Demasu [hon ga~]
+出ます [本が～]
+
+`;
 
 allWords["Lesson 46 - Hard"] = ``;
 
-allWords["Lesson 47"] = ``;
+allWords["Lesson 47"] = `
+あつまります I [ひとが～]
+[people] gather
+Atsumarimasu [hito ga~]
+集まります [人が～]
+
+わかれます II [ひとが～]
+[people] part, separate
+Wakaremasu [hito ga~]
+別れます [人が～]
+
+ながいきします III
+live long
+Nagaiki shimasu
+長生きします
+
+します III [おと/こえが～]
+[sound/voice] be heard
+Shimasu [oto/koe ga~]
+します [音/声が～]
+
+します III [あじが～]
+taste
+Shimasu [aji ga~]
+します [味が～]
+
+します III [においが～]
+smell
+Shimasu [nioi ga~]
+します [味が～]
+
+さします I [かさを～]
+put up [an umbrella]
+Sashimasu [kasa o~]
+さします [傘を～]
+
+ひどい
+terrible, severe
+Hidoi
+ひどい
+
+こわい
+frightening, horrible
+Kowai
+怖い
+
+てんきよほう
+weather forecast
+Tenki yohou
+天気予報
+
+はっぴょう
+announcement, presentation
+Happyou
+発表
+
+じっけん
+experiment
+Jikken
+実験
+
+じんこう
+population
+Jinkou
+人口
+
+におい
+smell
+Nioi
+におい
+
+かがく
+science
+Kagaku
+科学
+
+いがく
+medicine, medical science
+Igaku
+医学
+
+ぶんがく
+literature
+Bungaku
+文学
+
+パトカー
+patrol car
+Patokaa
+パトカー
+
+きゅうきゅうしゃ
+ambulance
+Kyuukyuusha
+救急車
+
+さんせい
+approval, agreement
+Sansei
+賛成
+
+はんたい
+objection, opposition
+Hantai
+反対
+
+だんせい
+male, man
+Dansei
+男性
+
+じょせい
+female, woman
+Josei
+女性
+
+～によると
+according to ~ (indicates the source of information)
+~ ni yoru to
+～によると
+
+バリ
+Bali (island) (in Indonesia)
+Bari
+※バリ
+
+イラン
+Iran
+Iran
+※イラン
+
+カリフォルニア
+California (in U.S.A.)
+Kariforunia
+※カリフォルニア
+
+グアム
+Guam
+Guamu
+※グアム
+
+こいびと
+sweetheart, boyfriend, girlfriend
+Koibito
+恋人
+
+あいいて
+sweetheart, boyfriend, girlfriend
+Koibito
+恋人
+
+あいて
+the other person
+Aite
+相手
+
+しりあいます I
+get acquainted
+Shiriaimasu
+知り合います
+
+へいきんじゅみょう
+average life span
+Heikin jumyou
+平均寿命
+
+くらべます II [だんせいと～]
+compare [with men]
+Kurabemasu [dansei to~]
+比べます [男性と～]
+
+はかせ
+doctor
+Hakase
+博士
+
+のう
+brain
+Nou
+脳
+
+ホルモン
+hormone
+ホルモン
+ホルモン
+
+けしょうひん
+cosmetics
+Keshouhin
+化粧品
+
+しらべます II
+survey, research
+Shirabemasu
+調べます
+
+けしょう
+makeup (~ o shimasu: put on makeup)
+Keshou
+化粧
+
+`;
 
 allWords["Lesson 47 - Hard"] = ``;
 
-allWords["Lesson 48"] = ``;
+allWords["Lesson 48"] = `
+おろします I
+put down, lower
+Oroshimasu
+下ろします、降ろします
+
+とどけます II
+deliver, report
+Todokemasu
+届けます
+
+せわを します III
+take care of ~
+Sewa o shimasu
+世話を します
+
+いや [な]
+unwilling, reluctant
+Iya [na]
+嫌 [な]
+
+きびしい
+strict, hard
+Kibishii
+厳しい
+
+じゅく
+cram school
+Juku
+塾
+
+スケジュール
+schedule
+Sukejuuru
+スケジュール
+
+せいと
+pupil
+Seito
+生徒
+
+もの
+person (referring to one's relatives or subordinates)
+Mono
+者
+
+にゅうかん
+Immigration Bureau
+Nyuukan
+入管
+
+さいにゅうこくビザ
+re-entry visa
+Sainyuukoku biza
+再入国ビザ
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+～かん
+for ~ (referring to duration)
+~ kan
+～間
+
+いいことですね。
+That's good.
+Ii koto desu ne。
+いいことですね。
+
+おいそがしいですか。
+Are you busy? (used when talking to someone senior or older)
+Oisogashii desu ka。
+お忙しいですか。
+
+ひさしぶり
+after a long time
+Hisashiburi
+久しぶり
+
+えいぎょう
+business, sales
+Eigyou
+営業
+
+それまでに
+by that time
+Sore made ni
+それまでに
+
+かまいません
+It's all right./It doesn't matter.
+Kamaimasen
+かまいません
+
+たのしめます I
+enjoy oneself
+Tanoshimemasu
+楽しめます I
+
+もともと
+originally
+Motomoto
+もともと
+
+～せいき
+-th century
+~ seiki
+～世紀
+
+かわりをします III
+be a substitute, be a replacement
+Kawari o shimasu
+代わりをします
+
+きょうそうします III
+race
+Kyousou shimasu
+競走します
+
+サーカス
+circus
+Saakasu
+サーカス
+
+げい
+performance, trick
+Gei
+芸
+
+うつくしい
+beautiful
+Utsukushii
+美しい
+
+すがた
+figure, appearance
+Sugata
+姿
+
+こころ
+heart, mind
+Kokoro
+心
+
+とらえます II
+catch
+Toraemasu
+とらえます
+
+～にとって
+for ~
+~ ni totte
+～にとって
+
+`;
 
 allWords["Lesson 48 - Hard"] = ``;
 
-allWords["Lesson 49"] = ``;
+allWords["Lesson 49"] = `
+つとめます II [かいしゃに～]
+work [for a company]
+Tsutomemasu [kaisha ni~]
+勤めます [会社に～]
+
+やすみます II [いすに～]
+sit on [a chair]
+Yasumimasu [isu ni~]
+休みます [椅子に～]
+
+すごします I
+spend [time], pass [time]
+Sugoshimasu
+過ごします
+
+よります I [ぎんこうに～]
+drop into [a bank]
+Yorimasu [ginkou ni~]
+寄ります [銀行に～]
+
+いらっしゃいます I
+be, go, come (respectful equivalent of います, いきます and きます)
+Irasshaimasu
+いらっしゃいます
+
+めしあがります I
+eat, drink (respectful equivalent of たべます and のみます)
+Meshiagarimasu
+召し上がります
+
+おっしゃいます I
+say (respectful equivalent of いいます)
+Osshaimasu
+おっしゃいます
+
+なさいます I
+do (respectful equivalent of します)
+Nasaimasu
+なさいます
+
+ごらんになります I
+see, look at (respectful equivalent of みます)
+Goran ni narimasu
+ご覧になります
+
+ごぞんじです
+know (respectful equivalent of しっています)
+Gozonji desu
+ご存じです
+
+あいさつ
+greeting, address (~ o shimasu: greet, give an address)
+Aisatsu
+挨拶
+
+はいざら
+ashtray
+Haizara
+灰皿
+
+りょかん
+Japanese-style hotel or inn
+Ryokan
+旅館
+
+かいじょう
+meeting place, hall
+Kaijou
+会場
+
+バスてい
+bus stop
+Basutei
+バス停
+
+ぼうえき
+trade
+Boueki
+貿易
+
+～さま
+respectful equivalent of ～さん
+~ sama
+～様
+
+かえりに
+on the way back
+Kaeri ni
+帰りに
+
+たまに
+once in a while
+Tama ni
+たまに
+
+ちっとも
+not at all (used with negatives)
+Chittomo
+ちっとも
+
+えんりょなく
+without reserve, without hesitation
+Enryo naku
+遠慮なく
+
+～ねん～くみ
+class ~ of -th grade
+~ nen ~ kumi
+～年～組
+
+では
+well, then (polite equivalent of じゃ)
+Deha
+では
+
+だします I [ねつを～]
+run [a fever]
+Dashimasu [netsu o~]
+出します [熱を～]
+
+よろしくおつたえください。
+Give my best regards./Please say hello.
+Yoroshiku otsutae kudasai。
+よろしくお伝えください。
+
+しつれいいたします。
+Good-bye. (humble equivalent of しつれいします)
+Shitsurei itashimasu。
+失礼いたします。
+
+ひまわりしょうがっこう
+fictitious elementary school
+Himawari shougakkou
+※ひまわり小学校
+
+こうし
+lecturer
+Koushi
+講師
+
+おおくの～
+many ~, much ~
+Ooku no ~
+多くの～
+
+さくひん
+work (of art, etc.)
+Sakuhin
+作品
+
+じゅしょうします III
+be awarded a prize
+Jushou shimasu
+受賞します
+
+せかいてきに
+world-wide
+Sekaiteki ni
+世界的に
+
+さっか
+novelist, writer
+Sakka
+作家
+
+でいらっしゃいます I
+be (respectful equivalent of です)
+De irasshaimasu
+でいらっしゃいます
+
+ちょうなん
+one's eldest son
+Chounan
+長男
+
+しょうがい
+handicap, defect
+Shougai
+障害
+
+おもちです
+have (respectful way of saying もっています)
+Omochi desu
+お持ちです
+
+さっきょく
+composition (music)
+Sakkyoku
+作曲
+
+かつどう
+activity
+Katsudou
+活動
+
+それでは
+well, so (indicating an end or beginning)
+Soredeha
+それでは
+
+おおえ けんざぶろう
+Japanese novelist (1935–2023)
+Ooe Kenzaburou
+※大江 健三郎
+
+とうきょうだいがく
+Tokyo University
+Toukyou daigaku
+※東京大学
+
+ノーベルぶんがくしょう
+Nobel Prize for literature
+Nooberu bungakushou
+※ノーベル文学賞
+
+`;
 
 allWords["Lesson 49 - Hard"] = ``;
 
-allWords["Lesson 50"] = ``;
+allWords["Lesson 50"] = `
+まいります I
+go, come (humble equivalent of いきます and きます)
+Mairimasu
+参ります
+
+おります I
+be (humble equivalent of います)
+Orimasu
+おります
+
+いただきます I
+eat, drink, receive (humble equivalent of たべます、のみます and もらいます)
+Itadakimasu
+いただきます
+
+もうします I
+say (humble equivalent of いいます)
+Moushimasu
+申します
+
+いたします I
+do (humble equivalent of します)
+Itashimasu
+いたします
+
+はいけんします III
+see (humble equivalent of みます)
+Haikenshimasu
+拝見します
+
+ぞんじます II
+know (humble equivalent of しっています)
+Zonjimasu
+存じます
+
+うかがいます I
+ask, hear, visit (humble equivalent of ききます and いきます)
+Ukagaimasu
+伺います
+
+おめにかかります I
+meet (humble equivalent of あいます)
+Ome ni kakarimasu
+お目にかかります
+
+ございます
+be (polite equivalent of あります)
+Gozaimasu
+ございます
+
+～でございます
+be (polite equivalent of です)
+~ de gozaimasu
+～でございます
+
+わたくし
+I (humble equivalent of わたし)
+Watakushi
+私
+
+ガイド
+guide
+Gaido
+ガイド
+
+おたく
+(someone else's) house
+Otaku
+お宅
+
+こうがい
+suburbs
+Kougai
+郊外
+
+アルバム
+album
+Arubamu
+アルバム
+
+さらいしゅう
+the week after next
+Saraishuu
+再来週
+
+さらいげつ
+the month after next
+Saraigetsu
+再来月
+
+さらいねん
+the year after next
+Sarainen
+再来年
+
+はんとし
+half a year
+Hantoshi
+半年
+
+さいしょに
+first of all
+Saisho ni
+最初に
+
+さいごに
+lastly
+Saigo ni
+最後に
+
+ただいま
+now
+Tadaima
+ただ今
+
+えどとうきょうはくぶつかん
+Edo-Tokyo Museum
+Edo Toukyou hakubutsukan
+※江戸東京博物館
+
+きんちょうします III
+become tense, be strained
+Kinchou shimasu
+緊張します
+
+ほうそうします III
+broadcast
+Housou shimasu
+放送します
+
+とります I [ビデオに～]
+record [on video], video
+Torimasu [bideo ni~]
+撮ります [ビデオに～]
+
+しょうきん
+prize money
+Shoukin
+賞金
+
+しぜん
+nature
+Shizen
+自然
+
+きりん
+giraffe
+Kirin
+きりん
+
+ぞう
+elephant
+Zou
+象
+
+ころ
+times, days
+Koro
+ころ
+
+かないます I [ゆめが～]
+[dream] be realized
+Kanaimasu [yume ga~]
+かないます [夢が～]
+
+ひとことよろしいでしょうか。
+May I say one word?
+Hitokoto yoroshii deshou ka。
+ひとこと よろしいでしょうか。
+
+きょうりょくします III
+cooperate
+Kyouryoku shimasu
+協力します
+
+こころから
+from my heart
+Kokoro kara
+心から
+
+かんしゃします III
+be grateful, be thankful
+Kansha shimasu
+感謝します
+
+おれい
+gratitude, thanks
+Orei
+[お] 礼
+
+はいけい
+Dear ~
+Haikei
+拝啓
+
+うつくしい
+beautiful
+Utsukushii
+美しい
+
+おげんきでいらっしゃいますか。
+How are you doing? (respectful equivalent of おげんきですか)
+Ogenki de irasshaimasu ka。
+お元気でいらっしゃいますか。
+
+めいわくをかけます II
+trouble, annoy, inconvenience
+Meiwaku o kakemasu
+迷惑をかけます
+
+いかします I
+make good use of
+Ikashimasu
+生かします
+
+おしろ
+castle
+Oshiro
+[お] 城
+
+けいぐ
+Sincerely yours
+Keigu
+敬具
+
+ミュンヘン
+Munich (in Germany)
+Myunhen
+※ミュンヘン
+
+`;
 
 allWords["Lesson 50 - Hard"] = ``;
 
@@ -9237,6 +15173,11 @@ corner
 kado
 かど
 
+かどう
+flower arranging
+Kadou
+華道
+
 カード
 (credit) card
 kaado
@@ -9276,6 +15217,101 @@ shushou
 president
 daitouryou
 だいとうりょう
+
+まぐろ
+tuna
+maguro
+まぐろ
+
+もぐる
+dive
+Moguru
+もぐる
+
+まげる
+bend
+Mageru
+曲げる
+
+うんどうぐつ
+trainers, sneakers
+Undougutsu
+運動靴
+
+うんどうする
+to do physical exercises
+Undoosuru
+運動する
+
+さか
+slope
+Saka
+坂
+
+さっか
+author
+Sakka
+作家
+
+サッカー
+soccer
+sakkaa
+サッカー
+
+しょくどう
+dining hall, canteen
+shokudou
+しょくどう
+
+しょくじします
+have a meal, dine
+shokujishimasu
+しょくじします
+
+しょくひん
+food
+shokuhin
+食品
+
+食事します
+have a meal, dine
+shokujishimasu
+食事します
+
+しょくどう
+dining room
+Shokudou
+食堂
+
+しょくぎょう
+Occupations
+shokugyō
+職業
+
+しょくよくが ありません
+have no appetite
+Shokuyoku ga arimasen
+食欲が ありません
+
+やくしょくめい
+Positions in society
+yakushokumei
+役職名
+
+しゅうしょくします
+get a job
+Shuushokushimasu
+就職します
+
+しゅうしょく
+modification
+shuushoku
+修飾
+
+ゆうしょく
+dinner
+Yuushoku
+夕食
 
 `;
 
@@ -10781,6 +16817,96 @@ tsukaremasu
 marry, get married
 kekkonshimasu
 けっこんします
+
+とぶ
+fly
+Tobu
+飛ぶ
+
+とぶ
+jump
+Tobu
+跳ぶ
+
+もぐる
+dive
+Moguru
+もぐる
+
+まげる
+bend
+Mageru
+曲げる
+
+とびこむ
+dive into
+Tobikomu
+飛び込む
+
+さかだちする
+do a handstand
+Sakadachisuru
+逆立ちする
+
+はう
+crawl
+Hau
+はう
+
+ふる
+wave
+Furu
+振る
+
+もちあげる
+lift
+Mochiageru
+持ち上げる
+
+なげる
+throw
+Nageru
+投げる
+
+たたく
+pat, tap
+Tataku
+たたく
+
+のばす
+extend
+Nobasu
+伸ばす
+
+ころぶ
+fall down
+Korobu
+転ぶ
+
+ふりむく
+look back
+Furimuku
+振り向く
+
+にんきがある
+to be popular
+Ninki Ga Aru
+人気がある
+
+でる
+(1) to appear; (2) to attend (2) to exit
+Deru
+出る
+
+うんどうする
+to do physical exercises
+Undoosuru
+運動する
+
+おどる
+to dance
+Odoru
+踊る
 
 `;
 
@@ -14471,7 +20597,133 @@ Tomodachi ga yakusoku no jikan ni konakattara, dou shimasu ka.
 
 allWords["Grammer 25 - Hard"] = ``;
 
-allWords["Grammer 26"] = ``;
+allWords["Grammer 26"] = `
+わたなべさんは ときどき おおさかべんを つかいますね。
+Ms. Watanabe, you sometimes speak Osaka dialect.
+Watanabe-san wa tokidoki Oosakaben wo tsukaimasu ne.
+渡辺さんは 時々 大阪弁を 使いますね。
+
+おおさかに すんでいたんですか。
+Have you lived in Osaka?
+Oosaka ni sunde itan desu ka.
+大阪に 住んでいたんですか。
+
+...ええ、15さいまで おおさかに すんでいました。
+...Yes, I lived in Osaka until I was fifteen.
+...Ee, 15-sai made Oosaka ni sunde imashita.
+...ええ、15歳まで 大阪に 住んでいました。
+
+おもしろい デザインの くつですね。
+The design of your shoes is interesting.
+Omoshiroi dezain no kutsu desu ne.
+おもしろい デザインの 靴ですね。
+
+どこで かったんですか。
+Where did you buy them?
+Dokode kattan desu ka.
+どこで 買ったんですか。
+
+...エドストアで かいました。
+...I bought this pair at Edoya Store.
+...Edosutoa de kaimashita.
+...エドストアで 買いました。
+
+どうして おくれたんですか。
+Why were you late?
+Doushite okuretan desu ka.
+どうして 遅れたんですか。
+
+...バスが こなかったんです。
+...Because the bus didn't come.
+...Basu ga konakattan desu.
+...バスが 来なかったんです。
+
+どうしたんですか。
+What's the matter?
+Doushita n desu ka.
+どうしたんですか。
+
+...ちょっと きぶんが わるいんです。
+...I don't feel well.
+...Chotto kibun ga warui n desu.
+...ちょっと 気分が 悪いんです。
+
+まいあさ しんぶんを よみますか。
+Do you read a newspaper every morning?
+Maiasa shinbun wo yomimasu ka.
+毎朝 新聞を 読みますか。
+
+...いいえ。じかんが ないんです。
+...No, I don't have the time.
+...Iie. Jikan ga nai n desu.
+...いいえ。時間が ないんです。
+
+わたしは マイク・ミラーです。
+I am Mike Miller.
+Watashi wa Maiku Miraa desu.
+わたしは マイク・ミラーです。
+
+わたしは マイク・ミラーなんです。
+I am Mike Miller (incorrect usage).
+Watashi wa Maiku Miraa nan desu.
+わたしは マイク・ミラーなんです。
+
+にほんごで てがみを かいたんですが、
+I've written a letter in Japanese,
+Nihongo de tegami wo kaitan desu ga,
+日本語で 手紙を 書いたんですが、
+
+ちょっと みて いただけませんか。
+Could you please check it for me?
+Chotto mite itadakemasen ka.
+ちょっと 見て いただけませんか。
+
+エヌエイチケーを けんがくしたいんですが、
+I want to tour NHK,
+NHK wo kengaku shitai n desu ga,
+NHKを 見学したいんですが、
+
+どう したら いいですか。
+How can I do that?
+Dou shitara ii desu ka.
+どう したら いいですか。
+
+おゆが でないんですが......
+There's no hot water...
+Oyu ga denai n desu ga...
+お湯が 出ないんですが......
+
+いい せんせいを しょうかいしていただけませんか。
+Would you please introduce a good teacher to me?
+Ii sensei wo shoukai shite itadakemasen ka.
+いい 先生を 紹介していただけませんか。
+
+どこで カメラを かったら いいですか。
+Where should I buy a camera?
+Dokode kamera wo kattara ii desu ka.
+どこで カメラを 買ったら いいですか。
+
+こまかい おかねが ないんですが、
+I don't have any small change,
+Komakai okane ga nai n desu ga,
+細かい お金が ないんですが、
+
+どう したら いいですか。
+What shall I do?
+Dou shitara ii desu ka.
+どう したら いいですか。
+
+うんどうかいに さんかしますか。
+Are you going to participate in the athletic meeting?
+Undoukai ni sankashimasu ka.
+運動会に 参加しますか。
+
+...いいえ。スポーツは あまり すきじゃないんです。
+...No, I don't like sports very much.
+...Iie. Supootsu wa amari suki janai n desu.
+...いいえ。スポーツは あまり 好きじゃないんです。
+
+`;
 
 allWords["Grammer 26 - Hard"] = ``;
 
@@ -20491,6 +26743,66 @@ Uchi e kaettara, sugu shawaa o abimasu.
 allWords["V - Ra G5 - Hard"] = ``;
 
 allWords["Extra 00 E5"] = `
+いけいようし
+い-adjective
+ikeiyoushi
+い形容詞
+
+なけいようし
+な-adjective
+nakeiyoushi
+な形容詞
+
+めいしぶん
+noun (predicate) sentence
+meishibun
+名詞文
+
+どうしぶん
+verb (predicate) sentence
+doushibun
+動詞文
+
+けいようしぶん
+adjective (predicate) sentence
+keiyoushibun
+形容詞文
+
+おやすみなさい
+Good night.
+oyasuminasai
+お休みなさい。
+
+かいわ
+conversation
+kaiwa
+会話
+
+れんしゅう
+exercise
+renshuu
+練習
+
+もんだい
+practice question
+mondai
+問題
+
+フォーム
+form
+foomu
+フォーム
+
+アクセント
+accent
+akusento
+アクセント
+
+イントネーション
+intonation
+intoneeshon
+イントネーション
+
 はじめましょう
 Let's begin.
 hajimemashou
@@ -20818,71 +27130,6 @@ bun
 text
 yomimono
 読み物
-
-いけいようし
-い-adjective
-ikeiyoushi
-い形容詞
-
-なけいようし
-な-adjective
-nakeiyoushi
-な形容詞
-
-めいしぶん
-noun (predicate) sentence
-meishibun
-名詞文
-
-どうしぶん
-verb (predicate) sentence
-doushibun
-動詞文
-
-けいようしぶん
-adjective (predicate) sentence
-keiyoushibun
-形容詞文
-
-おやすみなさい
-Good night.
-oyasuminasai
-お休みなさい。
-
-かいわ
-conversation
-kaiwa
-会話
-
-れんしゅう
-exercise
-renshuu
-練習
-
-もんだい
-practice question
-mondai
-問題
-
-こたえ
-answer
-kotae
-答え
-
-フォーム
-form
-foomu
-フォーム
-
-アクセント
-accent
-akusento
-アクセント
-
-イントネーション
-intonation
-intoneeshon
-イントネーション
 
 `;
 
@@ -21529,6 +27776,11 @@ gou
 allWords["Extra 04 - Hard"] = ``;
 
 allWords["Extra 05"] = `
+うみのひ
+Marine Day
+umi no hi
+海の日
+
 しょうわのひ
 Showa Day
 shouwa no hi
@@ -21543,11 +27795,6 @@ midori no hi
 Children's Day
 kodomo no hi
 こどもの日
-
-うみのひ
-Marine Day
-umi no hi
-海の日
 
 やまのひ
 Mountain Day
@@ -21812,11 +28059,6 @@ saba
 mackerel pike
 sanma
 さんま
-
-まぐろ
-tuna
-maguro
-まぐろ
 
 たい
 sea bream
@@ -22312,6 +28554,11 @@ skating
 Sukeeto
 スケート
 
+ピンポン
+ping-pong
+Pinpon
+ピンポン
+
 `;
 
 allWords["Extra 09 - Hard"] = `
@@ -22330,10 +28577,10 @@ comedy
 Kigeki
 喜劇
 
-たっきゅう／ピンポン
-table tennis, ping-pong
-Takkyuu / Pinpon
-卓球／ピンポン
+たっきゅう
+table tennis
+Takkyuu
+卓球
 
 すいえい
 swimming
@@ -22649,6 +28896,11 @@ Gion Festival
 Gion Matsuri
 祇園祭
 
+とうだいじ
+Todai-ji Temple
+Toudaiji
+東大寺
+
 `;
 
 allWords["Extra 12 - Hard"] = `
@@ -22667,10 +28919,10 @@ Atomic Bomb Dome
 Genbaku Doomu
 原爆ドーム
 
-とうだいじ・だいぶつ
-Todai-ji Temple / Great Buddha
-Toudaiji / Daibutsu
-東大寺・大仏
+だいぶつ
+Great Buddha
+Daibutsu
+大仏
 
 とうしょうぐう
 Toshogu Shrine
@@ -23500,6 +29752,16 @@ kick
 Keru
 ける
 
+ひく
+pull
+Hiku
+引く
+
+おす
+push
+Osu
+押す
+
 `;
 
 allWords["Extra 18 - Hard"] = `
@@ -23512,6 +29774,11 @@ Tobu
 jump
 Tobu
 跳ぶ
+
+まぐろ
+tuna
+maguro
+まぐろ
 
 もぐる
 dive
@@ -23557,16 +29824,6 @@ Nageru
 pat, tap
 Tataku
 たたく
-
-ひく
-pull
-Hiku
-引く
-
-おす
-push
-Osu
-押す
 
 のばす
 extend
@@ -23651,7 +29908,7 @@ Karaoke
 allWords["Extra 19 - Hard"] = `
 でんとうぶんか・ごらく
 Traditional culture and entertainment
-dentō bunka / goraku
+dentou bunka / goraku
 伝統文化・娯楽
 
 かどう
@@ -23733,6 +29990,21 @@ kindergarten
 Youchien
 幼稚園
 
+かちょう
+section head
+Kachou
+課長
+
+ぶちょう
+department head
+Buchou
+部長
+
+しゃちょう
+president
+Shachou
+社長
+
 ぎんこう
 bank
 Ginkou
@@ -23748,25 +30020,10 @@ hospital
 Byouin
 病院
 
-ぶちょう
-department head
-Buchou
-部長
-
 かいしゃ
 company
 Kaisha
 会社
-
-しゃちょう
-president
-Shachou
-社長
-
-かちょう
-section head
-Kachou
-課長
 
 くに
 nation
@@ -23889,6 +30146,11 @@ Sonchou
 `;
 
 allWords["Extra 22"] = `
+くつした
+socks
+Kutsushita
+くつした
+
 いふく
 Clothes
 ifuku
@@ -23903,11 +30165,6 @@ Tebukuro
 underwear
 Shitagi
 下着
-
-くつした
-socks
-Kutsushita
-くつした
 
 マフラー
 scarf, muffler
@@ -24060,7 +30317,7 @@ Tomare
 allWords["Extra 23 - Hard"] = `
 どうろ
 Roads / Streets
-dōro
+douro
 道路
 
 ほどう
@@ -24088,9 +30345,9 @@ crossing
 Kousaten
 交差点
 
-おうだんほどう
+おうだん  ほどう
 pedestrian crossing
-Oudanhodou
+Oudan hodou
 横断歩道
 
 ほどうきょう
@@ -24108,15 +30365,15 @@ railway crossing
 Fumikiri
 踏切
 
-しんにゅうきんし
-No Entry
-Shinnyuukinshi
-進入禁止
-
 いっぽうつうこう
 One Way
 Ippoutsuukou
 一方通行
+
+しんにゅうきんし
+No Entry
+Shinnyuukinshi
+進入禁止
 
 ちゅうしゃきんし
 No Parking
@@ -24151,7 +30408,7 @@ Kekkon'iwai
 allWords["Extra 24 - Hard"] = `
 ぞうとうのしゅうかん
 Exchanging gifts
-zōtō no shūkan
+zoutou no shuukan
 贈答の習慣
 
 のしぶくろ
@@ -24322,7 +30579,113 @@ Shinimasu
 
 `;
 
-allWords["Extra 26"] = ``;
+allWords["Extra 26"] = `
+きんぞくせい だいどころ ようひん
+Metal kitchen utensils
+Kinzokusei daidokoro yōhin
+金属製 台所 用品
+
+かてい でんき せいひん
+Household Electrical appliances
+Katei denki seihin
+家庭 電気 製品
+
+そだいごみ
+Bulky refuse
+Sodai gomi
+粗大ごみ
+
+しげんごみ
+Recyclable refuse
+Shigen gomi
+資源ごみ
+
+かねんごみ (もえるごみ)
+Combustible refuse
+Kanen gomi (Moeru gomi)
+可燃ごみ (燃えるごみ)
+
+ふねんごみ (もえないごみ)
+Non-combustible refuse
+Funen gomi (Moenai gomi)
+不燃ごみ (燃えないごみ)
+
+ごみの だしかた
+Refuse disposal
+Gomi no dashikata
+ごみの 出し方
+
+ごみ しゅうしゅうびの おしらせ
+Refuse collection day information
+Gomi shuushuubi no oshirase
+ごみ 収集日のお知らせ
+
+かみくず
+Paper / Wastepaper
+Kamikuzu
+紙くず
+
+なまごみ
+Garbage / Kitchen waste
+Namagomi
+生ごみ
+
+あきかん
+Cans / Empty cans
+Akikan
+空き缶
+
+あきびん
+Bottles / Empty bottles
+Akibin
+空きびん
+
+ふるしんぶん
+Newspaper / Old newspaper
+Furushinbun
+古新聞
+
+ガラス せいひん
+Glass products
+Garasu seihin
+ガラス 製品
+
+プラスチック せいひん
+Plastics / Plastic products
+Purasuchikku seihin
+プラスチック 製品
+
+かぐ
+Scrap furniture
+Kagu
+家具
+
+じてんしゃ
+Bicycles
+Jitensha
+自転車
+
+しゅうしゅうび：げつ・すい・きんようび
+Collection days: Mon., Wed. & Fri.
+Shuushuubi: Getsu, Sui, Kin'yōbi
+収集日：月・水・金曜日
+
+しゅうしゅうび：もくようび
+Collection day: Thursday
+Shūshūbi: Mokuyōbi
+収集日：木曜日
+
+しゅうしゅうび：だいさん かようび
+Collection day: the third Tuesday
+Shūshūbi: Dai-san kayōbi
+収集日：第３火曜日
+
+しゅうしゅうび：だいに、だいよん かようび
+Collection day: the second and fourth Tuesday
+Shūshūbi: Dai-ni, Dai-yon kayōbi
+収集日：第２、第４火曜日
+
+`;
 
 allWords["Extra 26 - Hard"] = ``;
 
@@ -25332,20 +31695,20487 @@ Ryokou wa tabun minasan ga daisuki na topikku dakara, hai takusan kiite hanaseru
 
 allWords["Convo E5 - Hard"] = ``;
 
+allWords["Lesson 76"] = ``;
+
+allWords["Lesson 76 - Hard"] = ``;
+
+allWords["Lesson 77"] = ``;
+
+allWords["Lesson 77 - Hard"] = ``;
+
+allWords["Lesson 78"] = ``;
+
+allWords["Lesson 78 - Hard"] = ``;
+
+allWords["Lesson 79"] = ``;
+
+allWords["Lesson 79 - Hard"] = ``;
+
+allWords["Lesson 80"] = ``;
+
+allWords["Lesson 80 - Hard"] = ``;
+
+allWords["Lesson 81"] = ``;
+
+allWords["Lesson 81 - Hard"] = ``;
+
+allWords["Lesson 82"] = ``;
+
+allWords["Lesson 82 - Hard"] = ``;
+
+allWords["Lesson 83"] = ``;
+
+allWords["Lesson 83 - Hard"] = ``;
+
+allWords["Lesson 84"] = ``;
+
+allWords["Lesson 84 - Hard"] = ``;
+
+allWords["Lesson 85"] = ``;
+
+allWords["Lesson 85 - Hard"] = ``;
+
+allWords["Lesson 86"] = ``;
+
+allWords["Lesson 86 - Hard"] = ``;
+
+allWords["Lesson 87"] = ``;
+
+allWords["Lesson 87 - Hard"] = ``;
+
+allWords["Lesson 88"] = ``;
+
+allWords["Lesson 88 - Hard"] = ``;
+
+allWords["Lesson 89"] = ``;
+
+allWords["Lesson 89 - Hard"] = ``;
+
+allWords["Lesson 90"] = ``;
+
+allWords["Lesson 90 - Hard"] = ``;
+
+allWords["Lesson 91"] = ``;
+
+allWords["Lesson 91 - Hard"] = ``;
+
+allWords["Lesson 92"] = ``;
+
+allWords["Lesson 92 - Hard"] = ``;
+
+allWords["Lesson 93"] = ``;
+
+allWords["Lesson 93 - Hard"] = ``;
+
+allWords["Lesson 94"] = ``;
+
+allWords["Lesson 94 - Hard"] = ``;
+
+allWords["Lesson 95"] = ``;
+
+allWords["Lesson 95 - Hard"] = ``;
+
+allWords["Lesson 96"] = ``;
+
+allWords["Lesson 96 - Hard"] = ``;
+
+allWords["Lesson 97"] = ``;
+
+allWords["Lesson 97 - Hard"] = ``;
+
+allWords["Lesson 98"] = ``;
+
+allWords["Lesson 98 - Hard"] = ``;
+
+allWords["Lesson 99"] = ``;
+
+allWords["Lesson 99 - Hard"] = ``;
+
+allWords["Lesson 100"] = ``;
+
+allWords["Lesson 100 - Hard"] = ``;
+
+allWords["Lesson 101"] = ``;
+
+allWords["Lesson 101 - Hard"] = ``;
+
+allWords["Lesson 102"] = ``;
+
+allWords["Lesson 102 - Hard"] = ``;
+
+allWords["Lesson 103"] = ``;
+
+allWords["Lesson 103 - Hard"] = ``;
+
+allWords["Lesson 104"] = ``;
+
+allWords["Lesson 104 - Hard"] = ``;
+
+allWords["Lesson 105"] = ``;
+
+allWords["Lesson 105 - Hard"] = ``;
+
+allWords["Lesson 106"] = ``;
+
+allWords["Lesson 106 - Hard"] = ``;
+
+allWords["Lesson 107"] = ``;
+
+allWords["Lesson 107 - Hard"] = ``;
+
+allWords["Lesson 108"] = ``;
+
+allWords["Lesson 108 - Hard"] = ``;
+
+allWords["Lesson 109"] = ``;
+
+allWords["Lesson 109 - Hard"] = ``;
+
+allWords["Lesson 110"] = ``;
+
+allWords["Lesson 110 - Hard"] = ``;
+
+allWords["Lesson 111"] = ``;
+
+allWords["Lesson 111 - Hard"] = ``;
+
+allWords["Lesson 112"] = ``;
+
+allWords["Lesson 112 - Hard"] = ``;
+
+allWords["Lesson 113"] = ``;
+
+allWords["Lesson 113 - Hard"] = ``;
+
+allWords["Lesson 114"] = ``;
+
+allWords["Lesson 114 - Hard"] = ``;
+
+allWords["Lesson 115"] = ``;
+
+allWords["Lesson 115 - Hard"] = ``;
+
+allWords["Lesson 116"] = ``;
+
+allWords["Lesson 116 - Hard"] = ``;
+
+allWords["Lesson 117"] = ``;
+
+allWords["Lesson 117 - Hard"] = ``;
+
+allWords["Lesson 118"] = ``;
+
+allWords["Lesson 118 - Hard"] = ``;
+
+allWords["Lesson 119"] = ``;
+
+allWords["Lesson 119 - Hard"] = ``;
+
+allWords["Lesson 120"] = ``;
+
+allWords["Lesson 120 - Hard"] = ``;
+
+allWords["Lesson 121"] = ``;
+
+allWords["Lesson 121 - Hard"] = ``;
+
+allWords["Lesson 122"] = ``;
+
+allWords["Lesson 122 - Hard"] = ``;
+
+allWords["Lesson 123"] = ``;
+
+allWords["Lesson 123 - Hard"] = ``;
+
+allWords["Lesson 124"] = ``;
+
+allWords["Lesson 124 - Hard"] = ``;
+
+allWords["Lesson 125"] = ``;
+
+allWords["Lesson 125 - Hard"] = ``;
+
+allWords["Grammer 51"] = ``;
+
+allWords["Grammer 51 - Hard"] = ``;
+
+allWords["Grammer 52"] = ``;
+
+allWords["Grammer 52 - Hard"] = ``;
+
+allWords["Grammer 53"] = ``;
+
+allWords["Grammer 53 - Hard"] = ``;
+
+allWords["Grammer 54"] = ``;
+
+allWords["Grammer 54 - Hard"] = ``;
+
+allWords["Grammer 55"] = ``;
+
+allWords["Grammer 55 - Hard"] = ``;
+
+allWords["Grammer 56"] = ``;
+
+allWords["Grammer 56 - Hard"] = ``;
+
+allWords["Grammer 57"] = ``;
+
+allWords["Grammer 57 - Hard"] = ``;
+
+allWords["Grammer 58"] = ``;
+
+allWords["Grammer 58 - Hard"] = ``;
+
+allWords["Grammer 59"] = ``;
+
+allWords["Grammer 59 - Hard"] = ``;
+
+allWords["Grammer 60"] = ``;
+
+allWords["Grammer 60 - Hard"] = ``;
+
+allWords["Grammer 61"] = ``;
+
+allWords["Grammer 61 - Hard"] = ``;
+
+allWords["Grammer 62"] = ``;
+
+allWords["Grammer 62 - Hard"] = ``;
+
+allWords["Grammer 63"] = ``;
+
+allWords["Grammer 63 - Hard"] = ``;
+
+allWords["Grammer 64"] = ``;
+
+allWords["Grammer 64 - Hard"] = ``;
+
+allWords["Grammer 65"] = ``;
+
+allWords["Grammer 65 - Hard"] = ``;
+
+allWords["Grammer 66"] = ``;
+
+allWords["Grammer 66 - Hard"] = ``;
+
+allWords["Grammer 67"] = ``;
+
+allWords["Grammer 67 - Hard"] = ``;
+
+allWords["Grammer 68"] = ``;
+
+allWords["Grammer 68 - Hard"] = ``;
+
+allWords["Grammer 69"] = ``;
+
+allWords["Grammer 69 - Hard"] = ``;
+
+allWords["Grammer 70"] = ``;
+
+allWords["Grammer 70 - Hard"] = ``;
+
+allWords["Grammer 71"] = ``;
+
+allWords["Grammer 71 - Hard"] = ``;
+
+allWords["Grammer 72"] = ``;
+
+allWords["Grammer 72 - Hard"] = ``;
+
+allWords["Grammer 73"] = ``;
+
+allWords["Grammer 73 - Hard"] = ``;
+
+allWords["Grammer 74"] = ``;
+
+allWords["Grammer 74 - Hard"] = ``;
+
+allWords["Grammer 75"] = ``;
+
+allWords["Grammer 75 - Hard"] = ``;
+
+allWords["Grammer 76"] = ``;
+
+allWords["Grammer 76 - Hard"] = ``;
+
+allWords["Grammer 77"] = ``;
+
+allWords["Grammer 77 - Hard"] = ``;
+
+allWords["Grammer 78"] = ``;
+
+allWords["Grammer 78 - Hard"] = ``;
+
+allWords["Grammer 79"] = ``;
+
+allWords["Grammer 79 - Hard"] = ``;
+
+allWords["Grammer 80"] = ``;
+
+allWords["Grammer 80 - Hard"] = ``;
+
+allWords["Grammer 81"] = ``;
+
+allWords["Grammer 81 - Hard"] = ``;
+
+allWords["Grammer 82"] = ``;
+
+allWords["Grammer 82 - Hard"] = ``;
+
+allWords["Grammer 83"] = ``;
+
+allWords["Grammer 83 - Hard"] = ``;
+
+allWords["Grammer 84"] = ``;
+
+allWords["Grammer 84 - Hard"] = ``;
+
+allWords["Grammer 85"] = ``;
+
+allWords["Grammer 85 - Hard"] = ``;
+
+allWords["Grammer 86"] = ``;
+
+allWords["Grammer 86 - Hard"] = ``;
+
+allWords["Grammer 87"] = ``;
+
+allWords["Grammer 87 - Hard"] = ``;
+
+allWords["Grammer 88"] = ``;
+
+allWords["Grammer 88 - Hard"] = ``;
+
+allWords["Grammer 89"] = ``;
+
+allWords["Grammer 89 - Hard"] = ``;
+
+allWords["Grammer 90"] = ``;
+
+allWords["Grammer 90 - Hard"] = ``;
+
+allWords["Grammer 91"] = ``;
+
+allWords["Grammer 91 - Hard"] = ``;
+
+allWords["Grammer 92"] = ``;
+
+allWords["Grammer 92 - Hard"] = ``;
+
+allWords["Grammer 93"] = ``;
+
+allWords["Grammer 93 - Hard"] = ``;
+
+allWords["Grammer 94"] = ``;
+
+allWords["Grammer 94 - Hard"] = ``;
+
+allWords["Grammer 95"] = ``;
+
+allWords["Grammer 95 - Hard"] = ``;
+
+allWords["Grammer 96"] = ``;
+
+allWords["Grammer 96 - Hard"] = ``;
+
+allWords["Grammer 97"] = ``;
+
+allWords["Grammer 97 - Hard"] = ``;
+
+allWords["Grammer 98"] = ``;
+
+allWords["Grammer 98 - Hard"] = ``;
+
+allWords["Grammer 99"] = ``;
+
+allWords["Grammer 99 - Hard"] = ``;
+
+allWords["Grammer 100"] = ``;
+
+allWords["Grammer 100 - Hard"] = ``;
+
+allWords["Grammer 101"] = ``;
+
+allWords["Grammer 101 - Hard"] = ``;
+
+allWords["Grammer 102"] = ``;
+
+allWords["Grammer 102 - Hard"] = ``;
+
+allWords["Grammer 103"] = ``;
+
+allWords["Grammer 103 - Hard"] = ``;
+
+allWords["Grammer 104"] = ``;
+
+allWords["Grammer 104 - Hard"] = ``;
+
+allWords["Grammer 105"] = ``;
+
+allWords["Grammer 105 - Hard"] = ``;
+
+allWords["Grammer 106"] = ``;
+
+allWords["Grammer 106 - Hard"] = ``;
+
+allWords["Grammer 107"] = ``;
+
+allWords["Grammer 107 - Hard"] = ``;
+
+allWords["Grammer 108"] = ``;
+
+allWords["Grammer 108 - Hard"] = ``;
+
+allWords["Grammer 109"] = ``;
+
+allWords["Grammer 109 - Hard"] = ``;
+
+allWords["Grammer 110"] = ``;
+
+allWords["Grammer 110 - Hard"] = ``;
+
+allWords["Grammer 111"] = ``;
+
+allWords["Grammer 111 - Hard"] = ``;
+
+allWords["Grammer 112"] = ``;
+
+allWords["Grammer 112 - Hard"] = ``;
+
+allWords["Grammer 113"] = ``;
+
+allWords["Grammer 113 - Hard"] = ``;
+
+allWords["Grammer 114"] = ``;
+
+allWords["Grammer 114 - Hard"] = ``;
+
+allWords["Grammer 115"] = ``;
+
+allWords["Grammer 115 - Hard"] = ``;
+
+allWords["Grammer 116"] = ``;
+
+allWords["Grammer 116 - Hard"] = ``;
+
+allWords["Grammer 117"] = ``;
+
+allWords["Grammer 117 - Hard"] = ``;
+
+allWords["Grammer 118"] = ``;
+
+allWords["Grammer 118 - Hard"] = ``;
+
+allWords["Grammer 119"] = ``;
+
+allWords["Grammer 119 - Hard"] = ``;
+
+allWords["Grammer 120"] = ``;
+
+allWords["Grammer 120 - Hard"] = ``;
+
+allWords["Grammer 121"] = ``;
+
+allWords["Grammer 121 - Hard"] = ``;
+
+allWords["Grammer 122"] = ``;
+
+allWords["Grammer 122 - Hard"] = ``;
+
+allWords["Grammer 123"] = ``;
+
+allWords["Grammer 123 - Hard"] = ``;
+
+allWords["Grammer 124"] = ``;
+
+allWords["Grammer 124 - Hard"] = ``;
+
+allWords["Grammer 125"] = ``;
+
+allWords["Grammer 125 - Hard"] = ``;
+
+allWords["Extra 51"] = ``;
+
+allWords["Extra 51 - Hard"] = ``;
+
+allWords["Extra 52"] = ``;
+
+allWords["Extra 52 - Hard"] = ``;
+
+allWords["Extra 53"] = ``;
+
+allWords["Extra 53 - Hard"] = ``;
+
+allWords["Extra 54"] = ``;
+
+allWords["Extra 54 - Hard"] = ``;
+
+allWords["Extra 55"] = ``;
+
+allWords["Extra 55 - Hard"] = ``;
+
+allWords["Extra 56"] = ``;
+
+allWords["Extra 56 - Hard"] = ``;
+
+allWords["Extra 57"] = ``;
+
+allWords["Extra 57 - Hard"] = ``;
+
+allWords["Extra 58"] = ``;
+
+allWords["Extra 58 - Hard"] = ``;
+
+allWords["Extra 59"] = ``;
+
+allWords["Extra 59 - Hard"] = ``;
+
+allWords["Extra 60"] = ``;
+
+allWords["Extra 60 - Hard"] = ``;
+
+allWords["Extra 61"] = ``;
+
+allWords["Extra 61 - Hard"] = ``;
+
+allWords["Extra 62"] = ``;
+
+allWords["Extra 62 - Hard"] = ``;
+
+allWords["Extra 63"] = ``;
+
+allWords["Extra 63 - Hard"] = ``;
+
+allWords["Extra 64"] = ``;
+
+allWords["Extra 64 - Hard"] = ``;
+
+allWords["Extra 65"] = ``;
+
+allWords["Extra 65 - Hard"] = ``;
+
+allWords["Extra 66"] = ``;
+
+allWords["Extra 66 - Hard"] = ``;
+
+allWords["Extra 67"] = ``;
+
+allWords["Extra 67 - Hard"] = ``;
+
+allWords["Extra 68"] = ``;
+
+allWords["Extra 68 - Hard"] = ``;
+
+allWords["Extra 69"] = ``;
+
+allWords["Extra 69 - Hard"] = ``;
+
+allWords["Extra 70"] = ``;
+
+allWords["Extra 70 - Hard"] = ``;
+
+allWords["Extra 71"] = ``;
+
+allWords["Extra 71 - Hard"] = ``;
+
+allWords["Extra 72"] = ``;
+
+allWords["Extra 72 - Hard"] = ``;
+
+allWords["Extra 73"] = ``;
+
+allWords["Extra 73 - Hard"] = ``;
+
+allWords["Extra 74"] = ``;
+
+allWords["Extra 74 - Hard"] = ``;
+
+allWords["Extra 75"] = ``;
+
+allWords["Extra 75 - Hard"] = ``;
+
+allWords["Extra 76"] = ``;
+
+allWords["Extra 76 - Hard"] = ``;
+
+allWords["Extra 77"] = ``;
+
+allWords["Extra 77 - Hard"] = ``;
+
+allWords["Extra 78"] = ``;
+
+allWords["Extra 78 - Hard"] = ``;
+
+allWords["Extra 79"] = ``;
+
+allWords["Extra 79 - Hard"] = ``;
+
+allWords["Extra 80"] = ``;
+
+allWords["Extra 80 - Hard"] = ``;
+
+allWords["Extra 81"] = ``;
+
+allWords["Extra 81 - Hard"] = ``;
+
+allWords["Extra 82"] = ``;
+
+allWords["Extra 82 - Hard"] = ``;
+
+allWords["Extra 83"] = ``;
+
+allWords["Extra 83 - Hard"] = ``;
+
+allWords["Extra 84"] = ``;
+
+allWords["Extra 84 - Hard"] = ``;
+
+allWords["Extra 85"] = ``;
+
+allWords["Extra 85 - Hard"] = ``;
+
+allWords["Extra 86"] = ``;
+
+allWords["Extra 86 - Hard"] = ``;
+
+allWords["Extra 87"] = ``;
+
+allWords["Extra 87 - Hard"] = ``;
+
+allWords["Extra 88"] = ``;
+
+allWords["Extra 88 - Hard"] = ``;
+
+allWords["Extra 89"] = ``;
+
+allWords["Extra 89 - Hard"] = ``;
+
+allWords["Extra 90"] = ``;
+
+allWords["Extra 90 - Hard"] = ``;
+
+allWords["Extra 91"] = ``;
+
+allWords["Extra 91 - Hard"] = ``;
+
+allWords["Extra 92"] = ``;
+
+allWords["Extra 92 - Hard"] = ``;
+
+allWords["Extra 93"] = ``;
+
+allWords["Extra 93 - Hard"] = ``;
+
+allWords["Extra 94"] = ``;
+
+allWords["Extra 94 - Hard"] = ``;
+
+allWords["Extra 95"] = ``;
+
+allWords["Extra 95 - Hard"] = ``;
+
+allWords["Extra 96"] = ``;
+
+allWords["Extra 96 - Hard"] = ``;
+
+allWords["Extra 97"] = ``;
+
+allWords["Extra 97 - Hard"] = ``;
+
+allWords["Extra 98"] = ``;
+
+allWords["Extra 98 - Hard"] = ``;
+
+allWords["Extra 99"] = ``;
+
+allWords["Extra 99 - Hard"] = ``;
+
+allWords["Extra 100"] = ``;
+
+allWords["Extra 100 - Hard"] = ``;
+
+allWords["Extra 101"] = ``;
+
+allWords["Extra 101 - Hard"] = ``;
+
+allWords["Extra 102"] = ``;
+
+allWords["Extra 102 - Hard"] = ``;
+
+allWords["Extra 103"] = ``;
+
+allWords["Extra 103 - Hard"] = ``;
+
+allWords["Extra 104"] = ``;
+
+allWords["Extra 104 - Hard"] = ``;
+
+allWords["Extra 105"] = ``;
+
+allWords["Extra 105 - Hard"] = ``;
+
+allWords["Extra 106"] = ``;
+
+allWords["Extra 106 - Hard"] = ``;
+
+allWords["Extra 107"] = ``;
+
+allWords["Extra 107 - Hard"] = ``;
+
+allWords["Extra 108"] = ``;
+
+allWords["Extra 108 - Hard"] = ``;
+
+allWords["Extra 109"] = ``;
+
+allWords["Extra 109 - Hard"] = ``;
+
+allWords["Extra 110"] = ``;
+
+allWords["Extra 110 - Hard"] = ``;
+
+allWords["Extra 111"] = ``;
+
+allWords["Extra 111 - Hard"] = ``;
+
+allWords["Extra 112"] = ``;
+
+allWords["Extra 112 - Hard"] = ``;
+
+allWords["Extra 113"] = ``;
+
+allWords["Extra 113 - Hard"] = ``;
+
+allWords["Extra 114"] = ``;
+
+allWords["Extra 114 - Hard"] = ``;
+
+allWords["Extra 115"] = ``;
+
+allWords["Extra 115 - Hard"] = ``;
+
+allWords["Extra 116"] = ``;
+
+allWords["Extra 116 - Hard"] = ``;
+
+allWords["Extra 117"] = ``;
+
+allWords["Extra 117 - Hard"] = ``;
+
+allWords["Extra 118"] = ``;
+
+allWords["Extra 118 - Hard"] = ``;
+
+allWords["Extra 119"] = ``;
+
+allWords["Extra 119 - Hard"] = ``;
+
+allWords["Extra 120"] = ``;
+
+allWords["Extra 120 - Hard"] = ``;
+
+allWords["Extra 121"] = ``;
+
+allWords["Extra 121 - Hard"] = ``;
+
+allWords["Extra 122"] = ``;
+
+allWords["Extra 122 - Hard"] = ``;
+
+allWords["Extra 123"] = ``;
+
+allWords["Extra 123 - Hard"] = ``;
+
+allWords["Extra 124"] = ``;
+
+allWords["Extra 124 - Hard"] = ``;
+
+allWords["Extra 125"] = ``;
+
+allWords["Extra 125 - Hard"] = ``;
+
+allWords["Listening 01"] = `
+にほんごのうりょくしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Listening N5.
+Nihongo nouryoku shiken choukai enu go.
+日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+はじめに しつもんを きいて ください。
+First, listen to the question.
+Hajime ni shitsumon o kiite kudasai.
+初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+ふたりは どのしゃしんを みていますか。
+Which photo are they looking at?
+Futari wa dono shashin o mite imasu ka.
+2人はどの写真を見ていますか。
+
+やまださん、この しゃしんは？
+Yamada-san, what about this photo?
+Yamada-san, kono shashin wa?
+山田さん、この写真は？
+
+ああ、これは きょねんの はるに うみへ いった ときの しゃしんです。
+Ah, this is a photo of when we went to the sea last spring.
+Aa, kore wa kyonen no haru ni umi e itta toki no shashin desu.
+ああ、これは去年の春に海へ行った時の写真です。
+
+へえ。
+Oh.
+Hee.
+へえ。
+
+よこに いるひとは だれですか。
+Who is the person next to you?
+Yoko ni iru hito wa dare desu ka.
+横にいる人は誰ですか。
+
+ああ、いもうとです。
+Ah, it's my younger sister.
+Aa, imouto desu.
+ああ、妹です。
+
+うみが とても きれいですね。
+The sea is very beautiful, isn't it?
+Umi ga tottemo kirei desu ne.
+海がとても綺麗ですね。
+
+ええ、でも このひは とても あつかったです。
+Yes, but it was very hot on this day.
+Ee, demo kono hi wa tottemo atsukatta desu.
+ええ、でもこの日はとても暑かったです。
+
+ぼうしを わすれて たいへんでした。
+It was tough because I forgot my hat.
+Boushi o wasurete taihen deshita.
+帽子を忘れて大変でした。
+
+ふたりは どのしゃしんを みていますか。
+Which photo are they looking at?
+Futari wa dono shashin o mite imasu ka.
+2人はどの写真を見ていますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+きょうしつで せんせいと おとこのひとが はなしています。
+A teacher and a man are talking in a classroom.
+Kyoushitsu de sensei to otoko no hito ga hanashite imasu.
+教室で先生と男の人が話しています。
+
+せんせいは なにを もっていきますか。
+What will the teacher bring?
+Sensei wa nani o motte ikimasu ka.
+先生は何を持っていきますか。
+
+せんせい、あした みんなで ちかくの こうえんで はなを みながら おひるを たべませんか。
+Teacher, tomorrow shall we all have lunch while viewing the flowers at a nearby park?
+Sensei, ashita minna de chikaku no kouen de hana o minagara ohiru o tabemasen ka.
+先生、明日みんなで近くの公園で花を見ながらお昼を食べませんか。
+
+いいですね。
+That sounds nice.
+Ii desu ne.
+いいですね。
+
+なにを もっていきましょうか。
+What shall we bring?
+Nani o motte ikimashou ka.
+何を持っていきましょうか。
+
+おべんとうは こうえんの ちかくの すーぱーで かいます。
+We will buy bento at a supermarket near the park.
+Obentou wa kouen no chikaku no suupaa de kaimasu.
+お弁当は公園の近くのスーパーで買います。
+
+のみものは もう かいました。
+We already bought drinks.
+Nomimono wa mou kaimashita.
+飲み物はもう買いました。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+じゃあ わたしは おかしを つくって もっていきますね。
+Then I will make and bring some sweets, okay?
+Jaa watashi wa okashi o tsukutte motte ikimasu ne.
+じゃあ私はお菓子を作って持っていきますね。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+せんせいは なにを もっていきますか。
+What will the teacher bring?
+Sensei wa nani o motte ikimasu ka.
+先生は何を持っていきますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは なにを しますか。
+What will the man do?
+Otoko no hito wa nani o shimasu ka.
+男の人は何をしますか。
+
+つかれましたね。
+We're tired, aren't we?
+Tsukaremashita ne.
+疲れましたね。
+
+すこし やすみませんか。
+Shall we rest a bit?
+Sukoshi yasumisen ka.
+少し休みませんか。
+
+そうしましょう。
+Let's do that.
+Sou shimashou.
+そうしましょう。
+
+あそこに すわりませんか。
+Shall we sit over there?
+Asoko ni suwarimasen ka.
+あそこに座りませんか。
+
+そうですね。
+That's right.
+Sou desu ne.
+そうですね。
+
+あ、ぼく のみものを かってきますよ。
+Ah, I will go buy some drinks.
+Ah, boku nomimono o katte kimasu yo.
+あ、僕飲み物を買ってきますよ。
+
+じゃあ おねがいします。
+Then, please do.
+Jaa onegai shimasu.
+じゃあお願いします。
+
+おとこのひとは なにを しますか。
+What will the man do?
+Otoko no hito wa nani o shimasu ka.
+男の人は何をしますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+つくえの うえに なにを おきますか。
+What will they place on the table?
+Tsukue no ue ni nani o okimasu ka.
+机の上に何を置きますか。
+
+じゃあ おさらと ぐらすを つくえの うえに ならべて ください。
+Then, please arrange the plates and glasses on the table.
+Jaa osara to gurasu o tsukue no ue ni narabete kudasai.
+じゃあお皿とグラスを机の上に並べてください。
+
+はい。
+Okay.
+Hai.
+はい。
+
+ないふと ふぉーくは いりますか。
+Do we need knives and forks?
+Naifu to fooku wa irimasu ka.
+ナイフとフォークはいりますか。
+
+いいえ、きょうは はしを つかいましょう。
+No, let's use chopsticks today.
+Iie, kyou wa hashi o tsukaimashou.
+いいえ、今日は箸を使いましょう。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+つくえの うえに なにを おきますか。
+What will they place on the table?
+Tsukue no ue ni nani o okimasu ka.
+机の上に何を置きますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おとこのひとは なにを かいますか。
+What will the man buy?
+Otoko no hito wa nani o kaimasu ka.
+男の人は何を買いますか。
+
+たいへん！
+Oh no!
+Taihen!
+大変！
+
+もうすぐ ぱーてぃーが はじまりますが、ぱんが ありません。
+The party is about to start, but we don't have bread.
+Mousugu paatii ga hajimarimasu ga, pan ga arimasen.
+もうすぐパーティーが始まりますが、パンがありません。
+
+じゃあ いまから かってきますよ。
+Then, I will go buy some now.
+Jaa ima kara katte kimasu yo.
+じゃあ今から買ってきますよ。
+
+ありがとうございます。
+Thank you.
+Arigatou gozaimasu.
+ありがとうございます。
+
+ばたーも すくないですから。
+Since we are also low on butter.
+Bataa mo sukunai desu kara.
+バターも少ないですから。
+
+じゅーすは もっと いりますか。
+Do we need more juice?
+Juusu wa motto irimasu ka.
+ジュースはもっと入りますか。
+
+いいえ、じゅーすは だいじょうぶです。
+No, juice is fine.
+Iie, juusu wa daijoubu desu.
+いいえ、ジュースは大丈夫です。
+
+おとこのひとは なにを かいますか。
+What will the man buy?
+Otoko no hito wa nani o kaimasu ka.
+男の人は何を買いますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+ゆうびんきょくで おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking at the post office.
+Yuubinkyoku de otoko no hito to onna no hito ga hanashite imasu.
+郵便局で男の人と女の人が話しています。
+
+おとこのひとは なにを かいますか。
+What will the man buy?
+Otoko no hito wa nani o kaimasu ka.
+男の人は何を買いますか。
+
+すみません、はちじゅうにえん きって ください。
+Excuse me, 82-yen stamps please.
+Sumimasen, hachijuu-ni-en kitte kudasai.
+すみません、82円切手ください。
+
+はい、なんまいですか。
+Yes, how many sheets?
+Hai, nan-mai desu ka.
+はい、何枚ですか。
+
+さんまいです。
+Three sheets.
+San-mai desu.
+3枚です。
+
+それから ごじゅういちえんの はがきを いちまい おねがいします。
+And one 51-yen postcard, please.
+Sore kara gojuu-ichi-en no hagaki o ichi-mai onegai shimasu.
+それから51円のはがきを1枚お願いします。
+
+はい、ぜんぶで にひゃくきゅうじゅうななえんです。
+Yes, 297 yen in total.
+Hai, zenbu de nihyaku-kyuujuu-nana-en desu.
+はい、全部で297円です。
+
+おとこのひとは なにを かいますか。
+What will the man buy?
+Otoko no hito wa nani o kaimasu ka.
+男の人は何を買いますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+でぱーとで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at a department store.
+Depaato de onna no hito to otoko no hito ga hanashite imasu.
+デパートで女の人と男の人が話しています。
+
+おんなのひとは どの おさらを かいますか。
+Which plate will the woman buy?
+Onna no hito wa dono osara o kaimasu ka.
+女の人はどのお皿を買いますか。
+
+この さかなの えの おさら、いいですね。
+This plate with a picture of a fish is nice, isn't it?
+Kono sakana no e no osara, ii desu ne.
+この魚の絵のお皿、いいですね。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+でも すこし ちいさくないですか。
+But isn't it a bit small?
+Demo sukoshi chiisakunai desu ka.
+でも少し小さくないですか。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+じゃあ この はなの えの おさらは どうですか。
+Then, how about this plate with a picture of flowers?
+Jaa kono hana no e no osara wa dou desu ka.
+じゃあこの花の絵のお皿はどうですか。
+
+あ、いいですね。
+Ah, that's nice.
+A, ii desu ne.
+あ、いいですね。
+
+えも きれいです。
+The picture is also beautiful.
+E mo kirei desu.
+絵も綺麗です。
+
+じゃあ これに しましょう。
+Then, let's choose this one.
+Jaa kore ni shimashou.
+じゃあこれにしましょう。
+
+おんなのひとは どの おさらを かいますか。
+Which plate will the woman buy?
+Onna no hito wa dono osara o kaimasu ka.
+女の人はどのお皿を買いますか。
+
+はちばん。
+No. 8.
+Hachiban.
+8番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おんなのひとは なにを かいますか。
+What will the woman buy?
+Onna no hito wa nani o kaimasu ka.
+女の人は何を買いますか。
+
+やまださんの たんじょうびに なにを あげますか。
+What will you give Yamada-san for his birthday?
+Yamada-san no tanjoubi ni nani o agemasu ka.
+山田さんの誕生日に何をあげますか。
+
+かのじょは おんがくが すきですから、しーでぃーを あげます。
+She likes music, so I will give her a CD.
+Kanojo wa ongaku ga suki desu kara, shiidii o agemasu.
+彼女は音楽が好きですから、CDをあげます。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+じゃあ わたしは こんさーとの ちけっとに します。
+Then I'll choose concert tickets.
+Jaa watashi wa konsaato no chiketto ni shimasu.
+じゃあ私はコンサートのチケットにします。
+
+でも こんさーとに ひとり で いきますか。
+But will she go to the concert alone?
+Demo konsaato ni hitori de ikimasu ka.
+でもコンサートに1人で行きますか。
+
+うーん、じゃあ はなか ほん に します。
+Hmm, then I'll choose flowers or a book.
+Uun, jaa hana ka hon ni shimasu.
+うーん、じゃあ花か本にします。
+
+どっちが いいと おもいますか。
+Which do you think is better?
+Dotchi ga ii to omoimasu ka.
+どっちがいいと思いますか。
+
+どっちも いいですが、ながく つかうものが いいと おもいますよ。
+Both are good, but I think something that can be used for a long time is better.
+Dotchi mo ii desu ga, nagaku tsukau mono ga ii to omoimasu yo.
+どっちもいいですが、長く使うものがいいと思いますよ。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+おんなのひとは なにを かいますか。
+What will the woman buy?
+Onna no hito wa nani o kaimasu ka.
+女の人は何を買いますか。
+
+はじめに しつもんを きいて ください。
+First, listen to the question.
+Hajime ni shitsumon o kiite kudasai.
+初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは なつやすみに なにを しますか。
+What will the man do during summer vacation?
+Otoko no hito wa natsu yasumi ni nani o shimasu ka.
+男の人は夏休みに何をしますか。
+
+なつやすみは どうしますか。
+What will you do during summer vacation?
+Natsu yasumi wa dou shimasu ka.
+夏休みはどうしますか。
+
+ずっと あるばいとです。
+I'm working part-time the whole time.
+Zutto arubaito desu.
+ずっとアルバイトです。
+
+でも りょこうにも いきたいです。
+But I want to go on a trip too.
+Demo ryokou ni mo ikitai desu.
+でも旅行にも行きたいです。
+
+たなかさんは？
+What about you, Tanaka-san?
+Tanaka-san wa?
+田中さんは？
+
+かぞく みんなで ふじさんに のぼります。
+My whole family is going to climb Mount Fuji.
+Kazoku minna de Fujisan ni noborimasu.
+家族みんなで富士山に登ります。
+
+いいですね。
+That's nice.
+Ii de su ne.
+いいですね。
+
+でも たかいですから きをつけて くださいね。
+But it's high, so please be careful.
+Demo takai desu kara ki o tsukete kudasai ne.
+でも高いですから気をつけてくださいね。
+
+ええ。
+Yes.
+Ee.
+ええ。
+
+いま ちちと ははが まいにち はしっていますよ。
+Now my father and mother are running every day.
+Ima chichi to haha ga mainichi hashitte imasu yo.
+今父と母が毎日走っていますよ。
+
+おとこのひとは なつやすみに なにを しますか。
+What will the man do during summer vacation?
+Otoko no hito wa natsu yasumi ni nani o shimasu ka.
+男の人は夏休みに何をしますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+ふたりは どこで あいますか。
+Where will they meet?
+Futari wa doko de aimasu ka.
+2人はどこで会いますか。
+
+あしたの えいがは いちじ からですね。
+Tomorrow's movie starts at 1:00, right?
+Ashita no eiga wa ichi-ji kara desu ne.
+明日の映画は1時からですね。
+
+じゃあ えいがの まえに ひるごはんを たべましょうか。
+Then, shall we eat lunch before the movie?
+Jaa eiga no mae ni hirugohan o tabemashou ka.
+じゃあ映画の前に昼ご飯を食べましょうか。
+
+そうですね。
+That's right.
+Sou desu ne.
+そうですね。
+
+じゃあ えきで あいましょう。
+Then let's meet at the station.
+Jaa eki de aimashou.
+じゃあ駅で会いましょう。
+
+えきの ちかくに いろいろ れすとらんが ありますから。
+There are various restaurants near the station.
+Eki no chikaku ni iroiro resutoran ga arimasu kara.
+駅の近くに色々レストランがありますから。
+
+ええ。
+Yes.
+Ee.
+ええ。
+
+でぱーとも ちかくに ありますから、そのなかで たべても いいですね。
+There is also a department store nearby, so we can eat inside there too.
+Depaarto mo chikaku ni arimasu kara, sono naka de tabete mo ii de su ne.
+デパートも近くにありますから、その中で食べてもいいですね。
+
+ああ、それが いいですね。
+Ah, that is good.
+Aa, sore ga ii desu ne.
+ああ、それがいいですね。
+
+そうしましょう。
+Let's do that.
+Sou shimashou.
+そうしましょう。
+
+ふたりは どこで あいますか。
+Where will they meet?
+Futari wa doko de aimasu ka.
+2人はどこで会いますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+ごちそうさまでした。
+Thank you for the meal.
+Gochisousama deshita.
+ごちそうさまでした。
+
+りょうり、とても おいしかったです。
+The food was very delicious.
+Ryouri, tottemo oishikatta desu.
+料理とても美味しかったです。
+
+それは よかったです。
+I'm glad to hear that.
+Sore wa yokatta desu.
+それは良かったです。
+
+のみものは なにが いいですか。
+What would you like to drink?
+Nomimono wa nani ga ii desu ka.
+飲み物は何がいいですか。
+
+こーひー、こうちゃ、おちゃが あります。
+We have coffee, black tea, and green tea.
+Koohii, koucha, ocha ga arimasu.
+コーヒー、紅茶、あとお茶があります。
+
+じゃあ、こうちゃで。
+Well then, black tea please.
+Jaa, koucha de.
+じゃあ、紅茶で。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+みるくは どうしますか。
+How about milk?
+Miruku wa dou shimasu ka.
+ミルクはどうしますか。
+
+みるくは けっこうです。
+No milk, thank you.
+Miruku wa kekkou desu.
+ミルクは結構です。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+すこし まってください。
+Please wait a moment.
+Sukoshi matte kudasai.
+少し待ってください。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+びょういんで おんなのひとが おとこのひとに はなしています。
+In a hospital, a woman is talking to a man.
+Byouin de onna no hito ga otoko no hito ni hanashite imasu.
+病院で女の人が男の人に話しています。
+
+びょういんの へやには なにが ありますか。
+What is inside the hospital room?
+Byouin no heya ni wa nani ga arimasu ka.
+病院の部屋には何がありますか。
+
+といれは へやには ありませんが、すぐ ちかくに あります。
+There is no toilet in the room, but it's very close by.
+Toire wa heya ni wa arimasen ga, sugu chikaku ni arimasu.
+トイレは部屋にはありませんが、すぐ近くにあります。
+
+しゃわーるーむは といれの となりです。
+The shower room is next to the toilet.
+Shawaaruumu wa toire no tonari desu.
+シャワールームはトイレの隣です。
+
+すきな ときに つかって ください。
+Please use it whenever you want.
+Sukina toki ni tsukatte kudasai.
+好きな時に使ってください。
+
+へやには ちいさい れいぞうこが ありますから、のみものなどを いれて ください。
+There is a small refrigerator in the room, so please put drinks and such inside.
+Heya ni wa chiisai reizouko ga arimasu kara, nomimono nado o irete kudasai.
+部屋には小さい冷蔵庫がありますから、飲み物などを入れてください。
+
+びょういんの へやには なにが ありますか。
+What is inside the hospital room?
+Byouin no heya ni wa nani ga arimasu ka.
+病院の部屋には何がありますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは このあと なにを しますか。
+What will the man do after this?
+Otoko no hito wa kono ato nani o shimasu ka.
+男の人はこの後何をしますか。
+
+きのうは たのしかったですね。
+Yesterday was fun, wasn't it?
+Kinou wa tanoshikatta desu ne.
+昨日は楽しかったですね。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+たなかさんも ぱーてぃーの あと からおけに いきましたか。
+Did you also go to karaoke after the party, Tanaka-san?
+Tanaka-san mo paatii no ato karaoke ni ikimashou ka.
+田中さんもパーティーの後カラオケに行きましたか。
+
+いいえ、わたしは いきませんでした。
+No, I didn't go.
+Iie, watashi wa ikimasen deshita.
+いいえ、私は行きませんでした。
+
+しゅくだいが たくさん ありましたから。
+Because I had a lot of homework.
+Shukudai ga takusan arimashita kara.
+宿題がたくさんありましたから。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+きょうも しゅくだいを しますか。
+Will you do homework today too?
+Kyou mo shukudai o shimasu ka.
+今日も宿題をしますか。
+
+いいえ、きょうは これから ぱーとで あるばいとです。
+No, I have a part-time job from now on.
+Iie, kyou wa kore kara paato de arubaito desu.
+いいえ、今日はこれからパートでアルバイトです。
+
+いそがしいですね。
+You are busy, aren't you?
+Isogashii desu ne.
+忙しいですね。
+
+じゃあ たべに いく じかんは ないですか。
+Then do you have no time to go eat?
+Jaa tabe ni iku jikan wa nai desu ka.
+じゃあ食べに行く時間はないですか。
+
+いや、だいじょうぶですよ。
+No, it's fine.
+Iya, daijoubu desu yo.
+いや、大丈夫ですよ。
+
+いきましょう。
+Let's go!
+Ikimashou.
+行きましょう。
+
+おとこのひとは このあと なにを しますか。
+What will the man do after this?
+Otoko no hito wa kono ato nani o shimasu ka.
+男の人はこの後何をしますか。
+
+えを みて、しつもんを きいて ください。
+Look at the picture and listen to the question.
+E o mite, shitsumon o kiite kudasai.
+絵を見て、質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the arrow person say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara ichiban ii mono o hitotsu erande kudasai.
+1から3の中から一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+きっさてんで こーひーを のみたいです。
+You want to drink coffee at a cafe.
+Kissaten de koohii o nomitai desu.
+喫茶店でコーヒーを飲みたいです。
+
+みせの ひとに なんと いいますか。
+What do you say to the shopkeeper?
+Mise no hito ni nan to iimasu ka.
+店の人に何と言いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+こーひーを おねがいします。
+Coffee please.
+Koohii o onegai shimasu.
+コーヒーをお願いします。
+
+に。
+2.
+Ni.
+に。
+
+こーひーは いかがですか。
+How about coffee?
+Koohii wa ikaga desu ka.
+コーヒーはいかがですか。
+
+さん。
+3.
+San.
+さん。
+
+こーひーを のみましょう。
+Let's drink coffee.
+Koohii o nomimashou.
+コーヒーを飲みましょう。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+でんわで ともだちと はなしています。
+You are talking with a friend on the phone.
+Denwa de tomodachi to hanashite imasu.
+電話で友達と話しています。
+
+もう ねます。
+You are going to bed.
+Mou nemasu.
+もう寝ます。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+おかえりなさい。
+Welcome back.
+Okaerinasai.
+お帰りなさい。
+
+に。
+2.
+Ni.
+に。
+
+おやすみなさい。
+Good night.
+Oyasuminasai.
+おやすみなさい。
+
+さん。
+3.
+San.
+さん。
+
+ごめんなさい。
+I am sorry.
+Gomennasai.
+ごめんなさい。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+きゃくに りょうりを だします。
+You serve food to a guest.
+Kyaku ni ryouri o dashimasu.
+客に料理を出します。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+ごちそうさまでした。
+Thank you for the meal.
+Gochisousama deshita.
+ご馳走様でした。
+
+に。
+2.
+Ni.
+に。
+
+はい、どうぞ。
+Here you go.
+Hai,どうぞ.
+はい、どうぞ。
+
+さん。
+3.
+San.
+さん。
+
+すみません。
+Excuse me.
+Sumimasen.
+すみません。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+くつを かいます。
+You are buying shoes.
+Kutsu o kaimasu.
+靴を買います。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+この くつを ください。
+Please give me these shoes.
+Kono kutsu o kudasai.
+この靴をください。
+
+に。
+2.
+Ni.
+に。
+
+この くつを かいたいです。
+I want to buy these shoes.
+Kono kutsu o kaitai desu.
+この靴を買いたいです。
+
+さん。
+3.
+San.
+さん。
+
+この くつは いいです。
+These shoes are fine (No, thanks).
+Kono kutsu wa ii desu.
+この靴はいいです。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+せんせいと しょくじを しました。
+You had a meal with a teacher.
+Sensei to shokuji o shimashita.
+先生と食事をしました。
+
+せんせいが おかねを はらいました。
+The teacher paid.
+Sensei ga okane o haraimashita.
+先生がお金を払いました。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+いただきます。
+Thank you for the food (humble before meal).
+Itadakimasu.
+いただきます。
+
+に。
+2.
+Ni.
+に。
+
+よろしく おねがいします。
+Please look after me.
+Yoroshiku onegai shimasu.
+よろしくお願いします。
+
+さん。
+3.
+San.
+さん。
+
+ごちそうさまでした。
+Thank you for the meal (after eating).
+Gochisousama deshita.
+ごちそうさまでした。
+
+もんだいよんは えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa e nado ga arimasen.
+問題4は絵などがありません。
+
+ぶんを きいて、いち から さん の なか から いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best one from 1 to 3.
+Bun o kiite, ichi kara san no naka kara ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から一番いいものを1つ選んでください。
+
+すみません、さくら ほてるは どこですか。
+Excuse me, where is the Sakura Hotel?
+Sumimasen, Sakura hoteru wa doko desu ka.
+すみません、桜ホテルはどこですか。
+
+いち。
+1.
+Ichi.
+いち。
+
+きれいです。
+It is beautiful.
+Kirei desu.
+綺麗です。
+
+に。
+2.
+Ni.
+に。
+
+よく いきます。
+I go there often.
+Yoku ikimasu.
+よく行きます。
+
+さん。
+3.
+San.
+さん。
+
+あの ちゃいろい びるです。
+It's that brown building.
+Anoちゃいろいびるです.
+あの茶色いビルです。
+
+きょうの よる、いっしょに ごはんを たべませんか。
+Would you like to have dinner together tonight?
+Kyou no yoru, issho ni gohan o tabemasen ka.
+今日の夜一緒にご飯を食べませんか。
+
+いち。
+1.
+Ichi.
+いち。
+
+ごちそうさまです。
+Thank you for the meal.
+Gochisousama desu.
+ごちそうさまです。
+
+に。
+2.
+Ni.
+に。
+
+いいですね。
+That sounds good.
+Ii desu ne.
+いいですね。
+
+さん。
+3.
+San.
+さん。
+
+どういたしまして。
+You are welcome.
+Douitashimashite.
+どういたしまして。
+
+はじめまして、たなかです。
+Nice to meet you, I am Tanaka.
+Hajimemashite, Tanaka desu.
+初めまして、田中です。
+
+どうぞ よろしく。
+Nice meeting you.
+Douzo yoroshiku.
+どうぞよろしく。
+
+いち。
+1.
+Ichi.
+いち。
+
+はい、どうも ありがとう。
+Yes, thank you very much.
+Hai, doumo arigatou.
+はい、どうもありがとう。
+
+に。
+2.
+Ni.
+に。
+
+いいえ、どういたしまして。
+No, you are welcome.
+Iie, douitashimashite.
+いいえ、どういたしまして。
+
+さん。
+3.
+San.
+さん。
+
+こちらこそ どうぞ よろしく。
+Likewise, nice meeting you.
+Kochira koso douzo yoroshiku.
+こちらこそどうぞよろしく。
+
+おとうさんは おいくつですか。
+How old is your father?
+Otou-san wa oikutsu desu ka.
+お父さんはおいくつですか。
+
+いち。
+1.
+Ichi.
+いち。
+
+ごじゅうごさいです。
+He is 55 years old.
+Gojuugo-sai desu.
+55歳です。
+
+に。
+2.
+Ni.
+に。
+
+ひとつで けっこうです。
+One is enough.
+Hitotsu de kekkou desu.
+1つで結構です。
+
+さん。
+3.
+San.
+さん。
+
+なのかか ようかです。
+The 7th or 8th.
+Nanoka ka youka desu.
+7日か8日です。
+
+ちょっと たべる ものを つくりましょうか。
+Shall I make something to eat?
+Chotto taberu mono o tsukurimashou ka.
+ちょっと食べるものを作りましょうか。
+
+いち。
+1.
+Ichi.
+いち。
+
+なにも たべません。
+I don't eat anything.
+Nani mo tabemasen.
+何も食べません。
+
+に。
+2.
+Ni.
+に。
+
+ぜんぶ たべました。
+I ate everything.
+Zenbu tabemashita.
+全部食べました。
+
+さん。
+3.
+San.
+さん。
+
+おねがいします。
+Yes, please.
+Onegai shimasu.
+お願いします。
+
+きょうだいは なんにん いますか。
+How many siblings do you have?
+Kyoudai wa nan-nin imasu ka.
+兄弟は何人いますか。
+
+いち。
+1.
+Ichi.
+いち。
+
+おとうとです。
+My younger brother.
+Otouto desu.
+弟です。
+
+に。
+2.
+Ni.
+に。
+
+ふたつです。
+Two items.
+Futatsu desu.
+2つです。
+
+さん。
+3.
+San.
+さん。
+
+ふたりです。
+Two people.
+Futari desu.
+2人です。
+
+きょうは なんにちですか。
+What day of the month is today?
+Kyou wa nan-nichi desu ka.
+今日は何日ですか。
+
+いち。
+1.
+Ichi.
+いち。
+
+はつかです。
+It is the 20th.
+Hatsuka desu.
+20日です。
+
+に。
+2.
+Ni.
+に。
+
+ふたりです。
+Two people.
+Futari desu.
+2人です。
+
+さん。
+3.
+San.
+さん。
+
+どようびです。
+It's Saturday.
+Doyoubi desu.
+土曜日です。
+
+あたらしい せんせいは どうですか。
+How is the new teacher?
+Atarashii sensei wa dou desu ka.
+新しい先生はどうですか。
+
+いち。
+1.
+Ichi.
+いち。
+
+ええ、そうです。
+Yes, that is right.
+Ee, sou desu.
+ええ、そうです。
+
+に。
+2.
+Ni.
+に。
+
+おもしろいです。
+They are interesting/funny.
+Omoishiroi desu.
+面白いです。
+
+さん。
+3.
+San.
+さん。
+
+きょうしつに います。
+They are in the classroom.
+Kyoushitsu ni imasu.
+教室にいます。
+
+ここで しゃしんを とっても いいですか。
+Is it okay to take a photo here?
+Koko de shashin o totte mo ii desu ka.
+ここで写真を撮ってもいいですか。
+
+いち。
+1.
+Ichi.
+いち。
+
+いや、とりません。
+No, I don't take it.
+Iya, torimasen.
+いや、撮りません。
+
+に。
+2.
+Ni.
+に。
+
+いえ、へたです。
+No, I am bad at it.
+Ie, heta desu.
+いえ、下手です。
+
+さん。
+3.
+San.
+さん。
+
+いえ、いけません。
+No, you must not.
+Iie, ikemasen.
+いえ、いけません。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 01 - Hard"] = `
+にほんごのうりょくしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Listening N5.
+Nihongo nouryoku shiken choukai enu go.
+日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+はじめに しつもんを きいて ください。
+First, listen to the question.
+Hajime ni shitsumon o kiite kudasai.
+初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から一番いいものを1つ選んでください。
+
+`;
+
+allWords["Listening 02"] = `
+にほんごのうりょくしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Listening N5.
+Nihongo nouryoku shiken choukai enu go.
+日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おんなのひとと おとこのひとが きっさてんで はなしています。
+A woman and a man are talking at a cafe.
+Onna no hito to otoko no hito ga kissaten de hanashite imasu.
+女の人と男の人が喫茶店で話しています。
+
+おんなのひとは なにを のみますか？
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka?
+女の人は何を飲みますか？
+
+おみせの なかは すずしいですね。
+It is cool inside the shop, isn't it?
+Omise no naka wa suzushii desu ne.
+お店の中は涼しいですね。
+
+ええ。
+Yes.
+Ee.
+ええ。
+
+じゃあ ぼくは おれんじじゅーすに します。
+Then I will have orange juice.
+Jaa boku wa orenji juusu ni shimasu.
+じゃあ僕はオレンジジュースにします。
+
+あ、いいですね。
+Ah, that's nice.
+A, ii desu ne.
+あ、いいですね。
+
+でも わたしは けさ のみましたから、ほかの のみものに します。
+But I drank it this morning, so I will have a different drink.
+Demo watashi wa kesa nomimashita kara, hoka no nomimono ni shimasu.
+でも私は今朝飲みましたから、他の飲み物にします。
+
+じゃあ、あいすこーひーは どうですか？
+Well then, how about iced coffee?
+Jaa, aisu koohii wa dou desu ka?
+じゃあ、アイスコーヒーはどうですか？
+
+ここのは おいしいですよ。
+The one here is delicious.
+Koko no wa oishii desu yo.
+ここのは美味しいですよ。
+
+ええ、しっています。
+Yes, I know.
+Ee, shitte imasu.
+ええ、知っています。
+
+でも ひるにも つめたい のみものを のみましたから、あたたかい ほうに します。
+But I also drank a cold drink at noon, so I will have a hot one.
+Demo hiru ni mo tsumetai nomimono o nomimashita kara, atatakai hou ni shimasu.
+でも昼にも冷たい飲み物を飲みましたから、温かい方にします。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+おんなのひとは なにを のみますか？
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka?
+女の人は何を飲みますか？
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女人と男の人が話しています。
+
+おんなのひとは ぜんぶで いくら はらいますか？
+How much will the woman pay in total?
+Onna no hito wa zenbu de ikura haraimasu ka?
+女の人は全部でいくら払いますか？
+
+すみません。
+Excuse me.
+Sumimasen.
+すみません。
+
+はちじゅうにえんの きってを ください。
+Please give me 82-yen stamps.
+Hachijuuni-en no kitte o kudasai.
+82円の切手をください。
+
+なんまいですか。
+How many sheets?
+Nan mai desu ka.
+何枚ですか。
+
+じゅうまい おねがいします。
+10 sheets, please.
+Juu mai onegai shimasu.
+10枚お願いします。
+
+それから はがきも いちまい ください。
+Also, please give me one postcard.
+Sore kara hagaki mo ichi mai kudasai.
+それからはがきも1枚ください。
+
+はい。
+Yes.
+Hai.
+はい。
+
+はがきは いくらですか。
+How much is the postcard?
+Hagaki wa ikura desu ka.
+はがきはいくらですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+はがきは いちまい ごじゅうにえん です。
+Postcards are 52 yen each.
+Hagaki wa ichi mai gojuuni-en desu.
+はがきは1枚52円です。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おんなのひとは ぜんぶで いくら はらいますか？
+How much will the woman pay in total?
+Onna no hito wa zenbu de ikura haraimasu ka?
+女の人は全部でいくら払いますか？
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おんなのひとは どの かばんを みたいですか？
+Which bag does the woman want to see?
+Onna no hito wa dono kaban o mitai desu ka?
+女の人はどのカバンを見たいですか？
+
+すみません。
+Excuse me.
+Sumimasen.
+すみません。
+
+あの かばんを みせて ください。
+Please show me that bag.
+Ano kaban o misete kudasai.
+あのカバンを見せてください。
+
+この しろい のですか。
+This white one?
+Kono shiroi no desu ka.
+この白いのですか。
+
+いいえ、その くろい のです。
+No, that black one.
+Iie, sono kuroi no desu.
+いいえ、その黒いのです。
+
+こちらでしょうか。
+This one?
+Kochira deshou ka.
+こちらでしょうか。
+
+いいえ、ちいさい ほうです。
+No, the smaller one.
+Iie, chiisai hou desu.
+いいえ、小さい方です。
+
+こちらですね。
+This one, right?
+Kochira desu ne.
+こちらですね。
+
+はい。
+Yes.
+Hai.
+はい。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おんなのひとは どの かばんを みたいですか？
+Which bag does the woman want to see?
+Onna no hito wa dono kaban o mitai desu ka?
+女の人はどのカバンを見たいですか？
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのひとと おとこのひとが しゃしんを みながら はなしています。
+A woman and a man are talking while looking at a photo.
+Onna no hito to otoko no hito ga shashin o minagara hanashite imasu.
+女の人と男の人が写真を見ながら話しています。
+
+おとこのひとの いもうとは どのひとですか？
+Which person is the man's younger sister?
+Otoko no hito no imouto wa dono hito desu ka?
+男の人の妹はどの人ですか？
+
+これは かぞくの しゃしんですか。
+Is this a family photo?
+Kore wa kazoku no shashin desu ka.
+これは家族の写真ですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+この かみの ながい ひとは いもうとさんですか。
+Is this long-haired person your younger sister?
+Kono kami no nagai hito wa imouto-san desu ka.
+この髪の長い人は妹さんですか。
+
+いいえ、それは あねです。
+No, that's my older sister.
+Iie, sore wa ane desu.
+いいえ、それは姉です。
+
+いもうとは こっちです。
+My younger sister is this one.
+Imouto wa kocchi desu.
+妹はこっちです。
+
+めがねを かけています。
+She is wearing glasses.
+Megane o kakete imasu.
+眼鏡をかけています。
+
+ああ、これが いもうとさんですか。
+Ah, is this your younger sister?
+Aa, kore ga imouto-san desu ka.
+ああ、これが妹さんですか。
+
+おとこのひとの いもうとは どのひとですか？
+Which person is the man's younger sister?
+Otoko no hito no imouto wa dono hito desu ka?
+男の人の妹はどの人ですか？
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが ぱーてぃーの じゅんびを しています。
+A man and a woman are preparing for a party.
+Otoko no hito to onna no hito ga paatii no junbi o shite imasu.
+男の人と女の人がパーティーの準備をしています。
+
+へやは いま どうなっていますか？
+How is the room now?
+Heya wa ima dou natte imasu ka?
+部屋は今どうなっていますか？
+
+このへんに てーぶるを ふたつ ならべましょう。
+Let's line up two tables around here.
+Kono hen ni teeburu o futatsu narabemashou.
+この辺にテーブルを2つ並べましょう。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+いすは どうしますか。
+What about the chairs?
+Isu wa dou shimasu ka.
+椅子はどうしますか。
+
+てーぶるの そばには おかないで、かべの ほうに ならべましょう。
+Don't place them near the table; let's line them up by the wall.
+Teeburu no soba ni wa okanaide, kabe no hou ni narabemashou.
+テーブルのそばには置かないで、壁の方に並べましょう。
+
+りょうりと のみものは どうしますか。
+What about the food and drinks?
+Ryouri to nomimono wa dou shimasu ka.
+料理と飲み物はどうしますか。
+
+さんどいっちは てーぶるの うえに おいて ください。
+Please put the sandwiches on the table.
+Sandoicchi wa teeburu no ue ni oite kudasai.
+サンドイッチはテーブルの上に置いてください。
+
+のみものは れいぞうこの なかに いれて ください。
+Please put the drinks inside the refrigerator.
+Nomimono wa reizouko no naka ni irete kudasai.
+飲み物は冷蔵庫の中に入れてください。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+へやは いま どうなっていますか？
+How is the room now?
+Heya wa ima dou natte imasu ka?
+部屋は今どうなっていますか？
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+ふたりは なんじに あいますか？
+What time will they meet?
+Futari wa nan-ji ni aimasu ka?
+2人は何時に会いますか？
+
+あしたは なんじに えきで あいましょうか。
+What time shall we meet at the station tomorrow?
+Ashita wa nan-ji ni eki de aimashou ka.
+明日は何時に駅で会いましょうか。
+
+えいがは よじに はじまりますから、さんじはんに しますか。
+Since the movie starts at 4:00, shall we make it 3:30?
+Eiga wa yo-ji ni hajimari masu kara, san-ji han ni shimasu ka.
+映画は4時に始まりますから、3時半にしますか。
+
+えいがかんまでは ごふん くらいでしょう。
+It takes about 5 minutes to get to the movie theatre, right?
+Eigakan made wa go-fun kurai deshou.
+映画館までは5分くらいでしょう。
+
+ええ。
+Yes.
+Ee.
+ええ。
+
+demo ちょっと おそいと おもいますよ。
+But I think that's a bit late.
+Demo chotto osoi to omoimasu yo.
+でもちょっと遅いと思いますよ。
+
+じゃあ、さんじ じゅうごふんに しますか。
+Then, shall we make it 3:15?
+Jaa, san-ji juugo-fun ni shimasu ka.
+じゃあ、3時15分にしますか。
+
+いちじかんまえに しましょうよ。
+Let's make it 1 hour before.
+Ichi-jikan mae ni shimashou yo.
+1時間前にしましょうよ。
+
+ちけっとも mada かっていませんから、ひとも おおいですよ。
+Since we haven't bought tickets yet, and there are many people too.
+Chiketto mo mada katte imasen kara, hito mo ooi desu yo.
+チケットもまだ買っていませんから、人も多いですよ。
+
+ああ、そうですね。
+Ah, that's right.
+Aa, sou desu ne.
+ああ、そうですね。
+
+じゃあ そうしましょう。
+Well, let's do that.
+Jaa sou shimashou.
+じゃあそうしましょう。
+
+ふたりは なんじに あいますか？
+What time will they meet?
+Futari wa nan-ji ni aimasu ka?
+2人は何時に会いますか？
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+びょういんで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at a hospital.
+Byouin de onna no hito to otoko no hito ga hanashite imasu.
+病院で女の人と男の人が話しています。
+
+おとこのひとは あさごはんの あと、どのくすりを のみますか？
+Which medicine will the man drink after breakfast?
+Otoko no hito wa asa gohan no ato, dono kusuri o nomimasu ka?
+男の人は朝ご飯の後、どの薬を飲みますか？
+
+この しろい くすりは、あさと よるの いちにち にかい、しょくじの あとに のんで ください。
+Please take this white medicine twice a day, in the morning and at night, after meals.
+Kono shiroi kusuri wa, asa to yoru no ichi-nichi ni-kai, shokuji no ato ni nonde kudasai.
+この白い薬は、朝と夜の1日2回、食事の後に飲んでください。
+
+はい。
+Yes.
+Hai.
+はい。
+
+それから、この あおい くすりは、あさごはんの あとだけ のんで ください。
+Also, please take this blue medicine only after breakfast.
+Sore kara, kono aoi kusuri wa, asa gohan no ato dake nonde kudasai.
+それから、この青い薬は、朝ご飯の後だけ飲んでください。
+
+ひとつですか。
+One pill?
+Hitotsu desu ka.
+1つですか。
+
+いいえ、ふたつ のんで ください。
+No, please take two.
+Iie, futatsu nonde kudasai.
+いいえ、2つ飲んでください。
+
+おとこのひとは あさごはんの あと、どのくすりを のみますか？
+Which medicine will the man drink after breakfast?
+Otoko no hito wa asa gohan no ato, dono kusuri o nomimasu ka?
+男の人は朝ご飯の後、どの薬を飲みますか？
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+びょういんで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at a hospital.
+Byouin de onna no hito to otoko no hito ga hanashite imasu.
+病院で女の人と男の人が話しています。
+
+おとこのひとは あさ どのくすりを のみますか？
+Which medicine will the man drink in the morning?
+Otoko no hito wa asa dono kusuri o nomimasu ka?
+男の人は朝どの薬を飲みますか？
+
+この しろい くすりは、いちにち さんかい、ひとつずつ ごはんを たべてから のんで ください。
+Please take this white medicine three times a day, one at a time, after eating a meal.
+Kono shiroi kusuri wa, ichi-nichi san-kai, hitotsu zutsu gohan o tabete kara nonde kudasai.
+この白い薬は、1日3回、1つずつご飯を食べてから飲んでください。
+
+はい。
+Yes.
+Hai.
+はい。
+
+この きいろい くすりは、いちにち にかい、あさと よるに ふたつずつ のんで ください。
+Please take this yellow medicine twice a day, two at a time, in the morning and at night.
+Kono kiiroi kusuri wa, ichi-nichi ni-kai, asa to yoru ni futatsu zutsu nonde kudasai.
+この黄色い薬は、1日2回、朝と夜に2つずつ飲んでください。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+それから、この あかい くすりは、ねつが たかい とき のんで ください。
+Also, please take this red medicine when you have a high fever.
+Sore kara, kono akai kusuri wa, netsu ga takai toki nonde kudasai.
+それから、この赤い薬は、熱が高い時飲んでください。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+ありがとうございました。
+Thank you very much.
+Arigatou gozaimashita.
+ありがとうございました。
+
+おだいじに。
+Take care.
+Odaiji ni.
+お大事に。
+
+おとこのひとは あさ どのくすりを のみますか？
+Which medicine will the man drink in the morning?
+Otoko no hito wa asa dono kusuri o nomimasu ka?
+男の人は朝どの薬を飲みますか？
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+せんせいと おとこの がくせいが はなしています。
+A teacher and a male student are talking.
+Sensei to otoko no gakusei ga hanashite imasu.
+先生と男の学生が話しています。
+
+おとこの がくせいは なんまい こぴーしますか？
+How many copies will the male student make?
+Otoko no gakusei wa nan mai kopii shimasu ka?
+男の学生は何枚コピーしますか？
+
+たなかさん、この かみを こぴーして ください。
+Tanaka-san, please make copies of this paper.
+Tanaka-san, kono kami o kopii shite kudasai.
+田中さん、この紙をコピーしてください。
+
+きょうの ぱーてぃーで つかいます。
+We will use it at today's party.
+Kyou no paatii de tsukaimasu.
+今日のパーティーで使います。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+なんまい こぴーしますか。
+How many copies shall I make?
+Nan mai kopii shimasu ka.
+何枚コピーしますか。
+
+がくせい みんなと せんせい ごにんに にまいずつです。
+Two copies each for all students and five teachers.
+Gakusei minna to sensei go-nin ni ni-mai zutsu desu.
+学生みんなと先生5人に2枚ずつです。
+
+がくせいは みっつの くらすの みんなですね。
+The students are everyone from three classes, right?
+Gakusei wa mittsu no kurasu no minna desu ne.
+学生は3つのクラスのみんなですね。
+
+なんにんか わかりますか。
+Do you know how many people there are?
+Nan-nin ka wakarimasu ka.
+何人か分かりますか。
+
+えっと、よんじゅうごにんです。
+Uh, there are 45 people.
+Etto, yonjuugo-nin desu.
+えっと、45人です。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+おとこの がくせいは なんまい こぴーしますか？
+How many copies will the male student make?
+Otoko no gakusei wa nan mai kopii shimasu ka?
+男の学生は何枚コピーしますか？
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おんなの がくせいと おとこの がくせいが はなしています。
+A female student and a male student are talking.
+Onna no gakusei to otoko no gakusei ga hanashite imasu.
+女の学生と男の学生が話しています。
+
+おとこの がくせいは きょう なんじに がっこうへ きましたか？
+What time did the male student come to school today?
+Otoko no gakusei wa kyou nan-ji ni gakkou e kimashita ka?
+男の学生は今日何時に学校へ来ましたか？
+
+あれ、たなかさん、きょうは はやいですね。
+Oh, Tanaka-san, you're early today, aren't you?
+Are, Tanaka-san, kyou wa hayai desu ne.
+あれ、田中さん今日は早いですね。
+
+はい、きょうは しけんですから、いつもより はやく きました。
+Yes, today is an exam, so I came earlier than usual.
+Hai, kyou wa shiken desu kara, itsumo yori hayaku kimashita.
+はい今日は試験ですからより早く来ました。
+
+いつもは はちじ よんじゅうごふん くらいでしょう。
+Usually it's around 8:45, right?
+Itsumo wa hachi-ji yonjuugo-fun kurai deshou.
+いつもは8時45分ぐらいでしょ。
+
+そうですね。
+That's right.
+Sou desu ne.
+そうですね。
+
+じゃあ、きょうは はちじはん くらいに きましたか。
+Then, did you come around 8:30 today?
+Jaa, kyou wa hachi-ji han kurai ni kimashita ka.
+じゃあ今日は8時半ぐらいに来ましたか。
+
+もっと はやかったですよ。
+It was much earlier.
+Motto hayakatta desu yo.
+もっと早かったですよ。
+
+いちじかんまえ くらいです。
+About one hour before.
+Ichi-jikan mae kurai desu.
+1時間前くらいです。
+
+へえ、はやいですね。
+Wow, that's early!
+Hee, hayai desu ne.
+へえ早いですね。
+
+おとこの がくせいは きょう なんじに がっこうへ きましたか？
+What time did the male student come to school today?
+Otoko no gakusei wa kyou nan-ji ni gakkou e kimashita ka?
+男の学生は今日何時に学校へ来ましたか？
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+ふたりは いつ えいがを みますか？
+When will the two watch the movie?
+Futari wa itsu eiga o mimasu ka?
+2人はいつ映画を見ますか？
+
+やまださん、こんしゅうの どようび、えいがを みに いきませんか。
+Yamada-san, would you like to go see a movie this Saturday?
+Yamada-san, konshuu no doyoubi, eiga o mi ni ikimasen ka.
+山田さん、今週の土曜日映画を見に行きませんか。
+
+いいですね。
+That sounds good.
+Ii desu ne.
+いいですね。
+
+なんじですか。
+What time?
+Nan-ji desu ka.
+何時ですか。
+
+ごご ろくじ からです。
+From 6:00 PM.
+Gogo roku-ji kara desu.
+午後6時からです。
+
+よるですか？
+At night?
+Yoru desu ka.
+夜ですか？
+
+よるは あるばいとが あります。
+I have a part-time job at night.
+Yoru wa arubaito ga arimasu.
+夜はアルバイトがあります。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+じゃあ、にちようびは どうですか？
+Then, how about Sunday?
+Jaa, nichiyoubi wa dou desu ka?
+じゃあ、日曜日はどうですか？
+
+おなじ じかん ですが。
+It is the same time though.
+Onaji jikan desu ga.
+同じ時間ですが。
+
+にちようびも あるばいとが ありますが、よじに おわります。
+I have a part-time job on Sunday too, but it finishes at 4:00.
+Nichiyoubi mo arubaito ga arimasu ga, yo-ji ni owarimasu.
+日曜日もアルバイトがありますが、4時に終わります。
+
+じゃあ、だいじょうぶですね。
+Then, that's fine.
+Jaa, daijoubu desu ne.
+じゃあ大丈夫ですね。
+
+よかったです。
+I'm glad.
+Yokatta desu.
+良かったです。
+
+ふたりは いつ えいがを みますか？
+When will the two watch the movie?
+Futari wa itsu eiga o mimasu ka?
+2人はいつ映画を見ますか？
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとの たんじょうびは いつですか？
+When is the man's birthday?
+Otoko no hito no tanjoubi wa itsu desu ka?
+男の人の誕生日はいつですか？
+
+たなかさんの たんじょうびは いつですか。
+Tanaka-san, when is your birthday?
+Tanaka-san no tanjoubi wa itsu desu ka.
+田中さんの誕生日はいつですか。
+
+にがつ ふつか です。
+February 2nd.
+Ni-gatsu futsuka desu.
+2月2日です。
+
+あ、わたしの たんじょうびと ちかいです。
+Oh, it's close to my birthday.
+A, watashi no tanjoubi to chikai desu.
+あ私の誕生日と近いです。
+
+そうですか。
+Is that so?
+Sou desu ka.
+ですか。
+
+いつか です。
+It's the 5th.
+Itsuka desu.
+5日です。
+
+へえ、みっか ちがう だけですね。
+Wow, only three days difference.
+Hee, mikka chigau dake desu ne.
+へえ、3日違うだけですね。
+
+おとこのひとの たんじょうびは いつですか？
+When is the man's birthday?
+Otoko no hito no tanjoubi wa itsu desu ka?
+男の人の誕生日はいつですか？
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+びょういんで いしゃと おんなのひとが はなしています。
+A doctor and a woman are talking at a hospital.
+Byouin de isha to onna no hito ga hanashite imasu.
+病院で医師と女の人が話しています。
+
+おんなのひとは このあと いつ びょういんへ きますか？
+When will the woman come to the hospital after this?
+Onna no hito wa kono ato itsu byouin e kimasu ka?
+女の人はこの後いつ病院へ来ますか？
+
+じゃあ、つぎは らいしゅう きて ください。
+Well then, please come next week.
+Jaa, tsugi wa raishuu kite kudasai.
+じゃあ、次は来週来てください。
+
+きょうと おなじ げつようびは どうですか。
+How about Monday, the same as today?
+Kyou to onaji getsuyoubi wa dou desu ka.
+今日と同じ月曜日はどうですか。
+
+ああ、そのひは しごとが ありまして、すいようびまで ずっと しごとです。
+Ah, I have work on that day, and I'm busy with work all the way until Wednesday.
+Aa, sono hi wa shigoto ga arimashite, suiyoubi made zutto shigoto desu.
+ああその日は仕事がありまして水曜日までずっと仕事です。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+つぎのひは だいじょうぶですか。
+Is the following day alright?
+Tsugi no hi wa daijoubu desu ka.
+次の日は大丈夫ですか。
+
+はい、だいじょうぶです。
+Yes, it's alright.
+Hai, daijoubu desu.
+はい大丈夫です。
+
+ごごの ほうが いいですが。
+The afternoon would be better though.
+Gogo no hou ga ii desu ga.
+午後の方がいいですが。
+
+いいですよ。
+That is fine.
+Ii desu yo.
+いいですよ。
+
+じゃあ、にじで いいですか。
+Well then, is 2:00 alright?
+Jaa, ni-ji de ii desu ka.
+じゃあ、2時でいいですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+おんなのひとは このあと いつ びょういんへ きますか？
+When will the woman come to the hospital after this?
+Onna no hito wa kono ato itsu byouin e kimasu ka?
+女の人はこの後いつ病院へ来ますか？
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら、しつもんを きいて ください。
+In Problem 3, look at the picture and listen to the question.
+Mondai san de wa, e o minagara, shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか？
+What does the person with the arrow say?
+Yajirushi no hito wa nan to iimasu ka?
+矢印の人は何と言いますか？
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1から3の中から一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+よる、となりの へやの ひとに あいました。
+At night, you met the person from the next room.
+Yoru, tonari no heya no hito ni aimashita.
+夜、隣の部屋の人に会いました。
+
+なんと いいますか？
+What do you say?
+Nan to iimasu ka?
+何と言いますか？
+
+いち。おやすみなさい。
+1. Good night.
+Ichi. Oyasuminasai.
+1. おやすみなさい。
+
+に。こんばんは。
+2. Good evening.
+Ni. Konbanwa.
+2. こんばんは。
+
+さん。おつかれさまでした。
+3. Thank you for your hard work.
+San. Otsukaresama deshita.
+3. お疲れ様でした。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+ともだちが にもつを たくさん もっています。
+Your friend is carrying many bags.
+Tomodachi ga nimotsu o takusan motte imasu.
+友達が荷物をたくさん持っています。
+
+ひとつ もちたいです。
+You want to carry one.
+Hitotsu mochitai desu.
+1つ持ちたいです。
+
+なんと いいますか？
+What do you say?
+Nan to iimasu ka?
+何と言いますか？
+
+いち。ひとつ もちませんか。
+1. Won't you carry one?
+Ichi. Hitotsu mochimasen ka.
+1. 1つ持ちませんか。
+
+に。ひとつ もちましょうか。
+2. Shall I carry one?
+Ni. Hitotsu mochimashou ka.
+2. 1つ持ちましょうか。
+
+さん。ひとつ もって ください。
+3. Please carry one.
+San. Hitotsu motte kudasai.
+3. 1つ持ってください。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+せんせいの へやに はいります。
+You enter the teacher's room.
+Sensei no heya ni hairimasu.
+先生の部屋に入ります。
+
+なんと いいますか？
+What do you say?
+Nan to iimasu ka?
+何と言いますか？
+
+いち。しつれいします。
+1. Excuse me.
+Ichi. Shitsurei shimasu.
+1. 失礼します。
+
+に。こんにちは。
+2. Hello.
+Ni. Konnichiwa.
+2. こんにちは。
+
+さん。おじゃまします。
+3. Excuse me for interrupting (entering someone's home).
+San. Ojama shimasu.
+3. お邪魔します。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+びょうきの ともだちの おみまいに いって かえります。
+You go to visit a sick friend and are leaving.
+Byouki no tomodachi no omimai ni itte kaerimasu.
+病気の友達のお見舞いに行って帰ります。
+
+なんと いいますか？
+What do you say?
+Nan to iimasu ka?
+何と言いますか？
+
+いち。さようなら。
+1. Goodbye.
+Ichi. Sayounara.
+1. さようなら。
+
+に。おだいじに。
+2. Take care of yourself.
+Ni. Odaiji ni.
+2. お大事に。
+
+さん。だいじょうぶですか。
+3. Are you alright?
+San. Daijoubu desu ka.
+3. 大丈夫ですか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+となりの ひとに ぺんを かりたいです。
+You want to borrow a pen from the person next to you.
+Tonari no hito ni pen o karitai desu.
+隣の人にペンを借りたいです。
+
+なんと いいますか？
+What do you say?
+Nan to iimasu ka?
+何と言いますか？
+
+いち。すみません、ぺんを かして ください。
+1. Excuse me, please lend me a pen.
+Ichi. Sumimasen, pen o kashite kudasai.
+1. すみません、ペンを貸してください。
+
+に。すみません、ぺんを かりましょうか。
+2. Excuse me, shall we borrow a pen?
+Ni. Sumimasen, pen o karimashou ka.
+2. すみません、ペンを借りましょうか。
+
+さん。すみません、ぺんを かしませんか。
+3. Excuse me, won't you lend me a pen?
+San. Sumimasen, pen o kashimasen ka.
+3. すみませんペンを貸しませんか。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは、えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa, e nado ga arimasen.
+問題 4 は、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best one from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+せんしゅうの りょこうは どうでしたか？
+How was your trip last week?
+Senshuu no ryokou wa dou deshita ka?
+先週の旅行はどうでしたか？
+
+いち。たのしいと おもいます。
+1. I think it is fun.
+Ichi. Tanoshii to omoimasu.
+1. 楽しいと思います。
+
+に。たのしかったです。
+2. It was fun.
+Ni. Tanoshikatta desu.
+2. 楽しかったです。
+
+さん。たのしくて いいです。
+3. It is fun and good.
+San. Tanoshikute ii desu.
+3. 楽しくていいです。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+たんじょうび おめでとう ございます。
+Happy birthday.
+Tanjoubi omedetou gozaimasu.
+誕生日おめでとうございます。
+
+いち。ありがとうございます。
+1. Thank you very much.
+Ichi. Arigatou gozaimasu.
+1. ありがとうございます。
+
+に。こちらこそ。
+2. Likewise.
+Ni. Kochira koso.
+2. こちらこそ。
+
+さん。どういたしまして。
+3. You are welcome.
+San. Douitashimashite.
+3. どういたしまして。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+かいしゃまで どのくらい かかりますか？
+How long does it take to get to the company?
+Kaisha made dono kurai kakarimasu ka?
+会社までどのくらいかかりますか？
+
+いち。ばすで いきます。
+1. I go by bus.
+Ichi. Basu de ikimasu.
+1. バスで行きます。
+
+に。さんじゅっぷん くらいです。
+2. It takes about 30 minutes.
+Ni. Sanjuppun kurai desu.
+2. 30分ぐらいです。
+
+さん。さんじはんです。
+3. It's 3:30.
+San. San-ji han desu.
+3. 3時半です。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+どんな すぽーつが すきですか？
+What kind of sports do you like?
+Donna supootsu ga suki desu ka?
+どんなスポーツが好きですか？
+
+いち。さっかーです。
+1. It is soccer.
+Ichi. Sakkaa desu.
+1. サッカーです。
+
+に。いいえ、すきじゃ ありません。
+2. No, I don't like it.
+Ni. Iie, suki ja arimasen.
+2. いいえ好きじゃありません。
+
+さん。てにすが できます。
+3. I can play tennis.
+San. Tenisu ga dekimasu.
+3. テニスができます。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+こんばん いっしょに えいがを みに いきませんか？
+Would you like to go see a movie together tonight?
+Konban issho ni eiga o mi ni ikimasen ka?
+今晩一緒に映画を見に行きませんか？
+
+いち。いかないと おmoいます。
+1. I think I won't go.
+Ichi. Ikanai to omoimasu.
+1. 行かないと思います。
+
+に。すみません、ちょっと。
+2. I'm sorry, I have plans (literally: a bit...).
+Ni. Sumimasen, chotto.
+2. すみませんちょっと。
+
+さん。ええ、いきますよ。
+3. Yes, I'm going.
+San. Ee, ikimasu yo.
+3. ええ行きますよ。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+この かさは いくらですか？
+How much is this umbrella?
+Kono kasa wa ikura desu ka?
+この傘はいくらですか？
+
+いち。せんごひゃくえんです。
+1. It is 1500 yen.
+Ichi. Sen gohyaku-en desu.
+1. 1500円です。
+
+に。すこし たかいです。
+2. It is a bit expensive.
+Ni. Sukoshi takai desu.
+2. 少し高いです。
+
+さん。たなかさんのです。
+3. It belongs to Tanaka-san.
+San. Tanaka-san no desu.
+3. 田中さんのです。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 02 - Hard"] = ``;
+
+allWords["Listening 03"] = `
+にほんごのうりょくしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Listening N5.
+Nihongo nouryoku shiken choukai enu go.
+日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では、れんしゅうしましょう。
+Now, let's practice.
+Dewa, renshuu shimashou.
+では、練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは あした まず どこへ いきますか。
+Where will the woman go first tomorrow?
+Onna no hito wa ashita mazu doko e ikimasu ka.
+女の人は明日まずどこへ行きますか。
+
+あした、えいがを みに いきませんか。
+Would you like to go to see a movie tomorrow?
+Ashita, eiga o mi ni ikimasen ka.
+明日、映画を見に行きませんか。
+
+すみません、あしたは あめりかから ともだちが きますから、ちょっと。
+I'm sorry, tomorrow a friend is coming from America, so...
+Sumimasen, ashita wa Amerika kara tomodachi ga kimasu kara, chotto.
+すみません、明日はアメリカから友達が来ますから、ちょっと。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+くうこうまで いきますか。
+Will you go to the airport?
+Kuukou made ikimasu ka.
+空港まで行きますか。
+
+いいえ、でんしゃの えきで あいます。
+No, we will meet at the train station.
+Iie, densha no eki de aimasu.
+いいえ、電車の駅で会います。
+
+それから、いっしょに どうぶつえんへ いきます。
+After that, we will go to the zoo together.
+Sore kara, issho ni doubutsuen e ikimasu.
+それから、一緒に動物園へ行きます。
+
+おんなのひとは あした まず どこへ いきますか。
+Where will the woman go first tomorrow?
+Onna no hito wa ashita mazu doko e ikimasu ka.
+女の人は明日まずどこへ行きますか。
+
+いちばん いい ものは よんばん です。
+The best answer is number 4.
+Ichiban ii mono wa yonban desu.
+一番いいものは4番です。
+
+かいとうようしの もんだいいちの れいの ところを みて ください。
+Please look at the example under Problem 1 on the answer sheet.
+Kaitouyoushi no mondai ichi no rei no tokoro o mite kudasai.
+解答用紙の問題1の例のところを見てください。
+
+いちばん いい ものは よんばん ですから、こたえは このように かきます。
+Since the best answer is number 4, write your answer like this.
+Ichiban ii mono wa yonban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは4番ですから、答えはこのように書きます。
+
+では、はじめます。
+Now, let's begin.
+Dewa, hajimemasu.
+では、始めます。
+
+いちばん。
+Number 1.
+Ichiban.
+1番。
+
+ぎんこうで ぎんこうの ひとと おとこのひとが はなしています。
+At a bank, a bank employee and a man are talking.
+Ginkou de ginkou no hito to otoko no hito ga hanashite imasu.
+銀行で銀行の人と男の人が話しています。
+
+おとこのひとは かみに どう かきますか。
+How will the man write on the paper?
+Otoko no hito wa kami ni dou kakimasu ka.
+男の人は紙にどう書きますか。
+
+このかみに なまえを かいて ください。
+Please write your name on this paper.
+Kono kami ni namae o kaite kudasai.
+この紙に名前を書いてください。
+
+なまえの したに じゅうしょを かいて ください。
+Please write your address below your name.
+Namae no shita ni juusho o kaite kudasai.
+名前の下に住所を書いてください。
+
+じゅうしょは かんじで かいて、うえに ひらがなを かいて くださいね。
+Please write your address in Kanji, and write Hiragana on top.
+Juusho wa Kanji de kaite, ue ni hiragana o kaite kudasai ne.
+住所は漢字で書いて、上にひらがなを書いてくださいね。
+
+いちばん したには でんわばんごうを かいて ください。
+Please write your phone number at the very bottom.
+Ichiban shita ni wa denwa bangou o kaite kudasai.
+一番下には電話番号を書いてください。
+
+あの、なまえは えいごで かきますか。
+Um, do I write my name in English?
+Ano, namae wa eigo de kakimasu ka.
+あの、名前は英語で書きますか。
+
+いいえ、かたかなで おねがいします。
+No, in Katakana, please.
+Iie, katakana de onegai shimasu.
+いいえ、カタカナでお願いします。
+
+はい、わかりました。
+Yes, I understand.
+Hai, wakarimashita.
+はい、わかりました。
+
+おtokoのひとは かみに どう かきますか。
+How will the man write on the paper?
+Otoko no hito wa kami ni dou kakimasu ka.
+男の人は紙にどう書きますか。
+
+にばん。
+Number 2.
+Niban.
+2番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おtokoのひとは なにを もっていきますか。
+What will the man bring?
+Otoko no hito wa nani o motte ikimasu ka.
+男の人は何を持っていきますか。
+
+らいしゅうは はなみですね。
+Next week is cherry blossom viewing, isn't it?
+Raishu wa hanami desu ne.
+来週は花見ですね。
+
+わたしは おかしを もっていきますね。
+I will bring sweets.
+Watashi wa okashi o motte ikimasu ne.
+私はお菓子を持っていきますね。
+
+じゃあ、わたしは のみものを もっていきます。
+Then, I will bring drinks.
+Jaa, watashi wa nomimono o motte ikimasu.
+じゃあ、私は飲み物を持っていきます。
+
+のみものは なにが いいですか。
+What would you like for drinks?
+Nomimono wa nani ga ii desu ka.
+飲み物は何が良いですか。
+
+そうですね。
+Let me see.
+Sou desu ne.
+そうですね。
+
+じゃあ、じゅーすと おちゃを にほんずつ おねがいします。
+Then, two bottles of juice and two bottles of tea, please.
+Jaa, juusu to ocha o nihon zutsu onegai shimasu.
+じゃあ、ジュースとお茶を2本ずつお願いします。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+にほんずつですね。
+Two bottles of each, right?
+Nihon zutsu desu ne.
+2本ずつですね。
+
+おtokoのひとは なにを もっていきますか。
+What will the man bring?
+Otoko no hito wa nani o motte ikimasu ka.
+男の人は何を持っていきますか。
+
+さんばん。
+Number 3.
+Sanban.
+3番。
+
+おtokoのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おtokoのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+すみません、ちかくに ゆうびんきょくは ありますか。
+Excuse me, is there a post office nearby?
+Sumimasen, chikaku ni yuubinkyoku wa arimasu ka.
+すみません、近くに郵便局はありますか。
+
+あの おおきい ぎんこう みえますか。
+Can you see that big bank over there?
+Ano ookii ginkou miemasu ka.
+あの大きい銀行見えますか。
+
+あそこの こうさてんを ひだりに まがって、すこし あるきます。
+Turn left at that intersection and walk a little.
+Asoko no kousaten o hidari ni magatte, sukoshi arukimasu.
+あそこの交差点を左に曲がって、少し歩きます。
+
+ゆうびんきょくは こんびにの となりですよ。
+The post office is next to the convenience store.
+Yuubinkyoku wa konbini no tonari desu yo.
+郵便局はコンビニの隣ですよ。
+
+あ、ありがとうございます。
+Ah, thank you very much.
+A, arigatou gozaimasu.
+あ、ありがとうございます。
+
+おtokoのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+よんばん。
+Number 4.
+Yonban.
+4番。
+
+びょういんで いしゃと おとこのひとが はなしています。
+At a hospital, a doctor and a man are talking.
+Byouin de isha to otoko no hito ga hanashite imasu.
+病院で医師と男の人が話しています。
+
+おtokoのひとは こんばん どのくすりを のみますか。
+Which medicine will the man take tonight?
+Otoko no hito wa konban dono kusuri o nomimasu ka.
+男の人は今晩どの薬を飲みますか。
+
+うーん、かぜですね。
+Hmm, it's a cold.
+Uun, kaze desu ne.
+うーん、風邪ですね。
+
+くすりを だしますから こんばんから のんでください。
+I will prescribe medicine, so please take it starting tonight.
+Kusuri o dashimasu kara konban kara nonde kudasai.
+薬を出しますから今晩から飲んでください。
+
+ごはんの あとに、この しろくて ちいさい くすりを ふたつ、しろくて おおきい くすりを ひとつ のんでください。
+After meals, please take two of these small white pills and one large white pill.
+Gohan no ato ni, kono shirokte chiisai kusuri o futatsu, shirokte ookii kusuri o hitotsu nonde kudasai.
+ご飯の後に、この白くて小さい薬を2つ、白くて大きい薬を1つ飲んでください。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+この くろい くすりも のみますか。
+Should I also take this black medicine?
+Kono kuroi kusuri mo nomimasu ka.
+この黒い薬も飲みますか。
+
+くろいくすりは あしたの あさ のんでください。
+Please take the black medicine tomorrow morning.
+Kuroi kusuri wa ashita no asa nonde kudasai.
+黒い薬は明日の朝飲んでください。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おtokoのひとは こんばん どのくすりを のみますか。
+Which medicine will the man take tonight?
+Otoko no hito wa konban dono kusuri o nomimasu ka.
+男の人は今晩どの薬を飲みますか。
+
+ごばん。
+Number 5.
+Goban.
+5番。
+
+でんわで おみせの ひとと おんなのひとが はなしています。
+On the phone, a shop employee and a woman are talking.
+Denwa de omise no hito to onna no hito ga hanashite imasu.
+電話でお店の人と女の人が話しています。
+
+おんなのひとは いつ おみせに いきますか。
+When will the woman go to the shop?
+Onna no hito wa itsu omise ni ikimasu ka.
+女の人はいつお店に行きますか。
+
+おでんわ ありがとうございます、あおばかふぇです。
+Thank you for calling, this is Aoba Cafe.
+Odenwa arigatou gozaimasu, Aoba Kafe desu.
+お電話ありがとうございます、青葉カフェです。
+
+すみません、きのう おみせで かさを わすれたと おもいます。
+Excuse me, I think I forgot my umbrella at the shop yesterday.
+Sumimasen, kinou omise de kasa o wasureta to omoimasu.
+すみません、昨日お店で傘を忘れたと思います。
+
+きいろい かさは ありませんでしたか。
+Was there a yellow umbrella?
+Kiiroi kasa wa arimasen deshita ka.
+黄色い傘ありませんでしたか。
+
+えっと、きいろい かさですね。
+Let me see, a yellow umbrella.
+Etto, kiiroi kasa desu ne.
+えっと、黄色い傘ですね。
+
+ああ、ありますよ。
+Ah, yes, we have it.
+Aa, ari masu yo.
+ああ、ありますよ。
+
+よかった、わたしの です。
+Thank goodness, it's mine.
+Yokatta, watashi no desu.
+よかった、私のです。
+
+あの、にちようびの よる とりに いっても いいですか。
+Um, may I go pick it up on Sunday evening?
+Ano, nichiyoubi no yoru tori ni itte mo ii desu ka.
+あの、日曜日の夜取りに行ってもいいですか。
+
+もうしわけありません、にちようびは おやすみです。
+I am sorry, we are closed on Sundays.
+Moushiwake arimasen, nichiyoubi wa oyasumi desu.
+申し訳ありません、日曜日はお休みです。
+
+どようびは どうですか。
+How about Saturday?
+Doyoubi wa dou desu ka.
+土曜日はどうですか。
+
+どようびですか。
+Saturday?
+Doyoubi desu ka.
+土曜日ですか。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+おひるでも いいですか。
+Is noon okay?
+Ohiru demo ii desu ka.
+お昼でもいいですか。
+
+はい、だいじょうぶですよ。
+Yes, that's fine.
+Hai, daijoubu desu yo.
+はい、大丈夫ですよ。
+
+おんなのひとは いつ おみせに いきますか。
+When will the woman go to the shop?
+Onna no hito wa itsu omise ni ikimasu ka.
+女の人はいつお店に行きますか。
+
+ろくばん。
+Number 6.
+Rokuban.
+6番。
+
+でんわで おtokoの がくせいと おんなの せんせいが はなしています。
+On the phone, a male student and a female teacher are talking.
+Denwa de otoko no gakusei to onna no sensei ga hanashite imasu.
+電話で男の学生と女の先生が話しています。
+
+がくせいは がっこうで はじめに なにを しますか。
+What will the student do first at school?
+Gakusei wa gakkou de hajime ni nani o shimasu ka.
+学生は学校で初めに何をしますか。
+
+せんせい、すみません、いま おきました。
+Teacher, I am sorry, I just woke up.
+Sensei, sumimansen, ima okimashita.
+先生、すみません、今起きました。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+じゃあ、はやく がっこうに きてください。
+Then, please come to school quickly.
+Jaa, hayaku gakkou ni kite kudasai.
+じゃあ、早く学校に来てください。
+
+はい、すみません。
+Yes, I am sorry.
+Hai, sumimansen.
+はい、すみません。
+
+わたしは これから ほかの くらすで じゅぎょうが ありますから、わたしの つくえの うえに しゅくだいを だしてください。
+Since I will have class in another room now, please submit your homework on my desk.
+Watashi wa kore kara hoka no kurasu de jugyou ga arimasu kara, watashi no tsukue no ue ni shukudai o dashite kudasai.
+私はこれから他のクラスで授業がありますから、私の机の上に宿題を出してください。
+
+それから、きょうしつに いってください。
+After that, please go to the classroom.
+Sore kara, kyoushitsu ni itte kudasai.
+それから、教室に行ってください。
+
+はい、わかりました。
+Yes, I understand.
+Hai, wakarimashita.
+はい、わかりました。
+
+すみませんでした。
+I am very sorry.
+Sumimasen deshita.
+すみませんでした。
+
+がくせいは がっこうで はじめに なにを しますか。
+What will the student do first at school?
+Gakusei wa gakkou de hajime ni nani o shimasu ka.
+学生は学校で初めに何をしますか。
+
+ななばん。
+Number 7.
+Nanaban.
+7番。
+
+がっこうで せんせいが がくせいに はなしています。
+At school, a teacher is speaking to students.
+Gakkou de sensei ga gakusei ni hanashite imasu.
+学校で先生が学生に話しています。
+
+がくせいは あしたの あさ どのばすに のりますか。
+Which bus will the students take tomorrow morning?
+Gakusei wa ashita no asa dono basu ni norimasu ka.
+学生は明日sの朝どのバスに乗りますか。
+
+あしたは はくぶつかんに いきます。
+Tomorrow we will go to the museum.
+Ashita wa hakubutsukan ni ikimasu.
+明日は博物館に行きます。
+
+はくぶつかんには ばすで きてください。
+Please come to the museum by bus.
+Hakubutsukan ni wa basu de kite kudasai.
+博物館にはバスで来てください。
+
+はくぶつかんへ いく ばすは にじゅうよんばんと にじゅうごばん ですが、あさは にじゅうごばんの しろい ばすに のってください。
+The buses to the museum are numbers 24 and 25, but in the morning, please ride the white number 25 bus.
+Hakubutsukan e iku basu wa nijuuyon ban to nijuugo ban desu ga, asa wa nijuugo ban no shiroi basu ni notte kudasai.
+博物館へ行くバスは24番と25番ですが、朝は25番の白いバスに乗ってください。
+
+にじゅうよんばんの ばすは ごごからで、あさは ありません。
+The number 24 bus starts in the afternoon, so there are none in the morning.
+Nijuuyon ban no basu wa gogo kara de, asa wa arimasen.
+24番のバスは午後からで、朝はありません。
+
+きをつけて ください。
+Please be careful.
+Ki o tsukete kudasai.
+気をつけてください。
+
+がくせいは あしたの あさ どのばすに のりますか。
+Which bus will the students take tomorrow morning?
+Gakusei wa ashita no asa dono basu ni norimasu ka.
+学生は明日の朝どのバスに乗りますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では、れんしゅうしましょう。
+Now, let's practice.
+Dewa, renshuu shimashou.
+では、練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+がっこうで おtokoの がくせいと おんなの せんせいが はなしています。
+At school, a male student and a female teacher are talking.
+Gakkou de otoko no gakusei to onna no sensei ga hanashite imasu.
+学校で男の学生と女の先生が話しています。
+
+おtokoの がくせいは いつ せんせいと はなしますか。
+When will the male student speak with the teacher?
+Otoko no gakusei wa itsu sensei to hanashimasu ka.
+男の学生はいつ先生と話しますか。
+
+せんせい、れぽーとの ことを はなしたいです。
+Teacher, I want to talk about the report.
+Sensei, repooto no koto o hanashitai desu.
+先生、レポートのことを話したいです。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+これから かいぎですから、さんじからは どうですか。
+I have a meeting now, so how about starting at 3:00?
+Kore kara kaigi desu kara, sanji kara wa dou desu ka.
+これから会議ですから、3時からはどうですか。
+
+すみません、さんじはんから あるばいとが あります。
+I am sorry, I have a part-time job starting at 3:30.
+Sumimasen, sanjihan kara arubaito ga arimasu.
+すみません、3時半からアルバイトがあります。
+
+じゃあ、あしたの くじからは どうですか。
+Then, how about from 9:00 tomorrow?
+Jaa, ashita no kuji kara wa dou desu ka.
+じゃあ、明日の9時からはどうですか。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おねがいします。
+Yes, please.
+Onegai shimasu.
+お願いします。
+
+じゅうじから じゅぎょうが ありますから、それまで はなしましょう。
+I have class starting at 10:00, so let's talk until then.
+Juuji kara jugyou ga arimasu kara, sore made hanashimashou.
+10時から授業がありますから、それまで話しましょう。
+
+おtokoの がくせいは いつ せんせいと はなしますか。
+When will the male student speak with the teacher?
+Otoko no gakusei wa itsu sensei to hanashimasu ka.
+男の学生はいつ先生と話しますか。
+
+いちばん いい ものは さんばん です。
+The best answer is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいにの れいの ところを みて ください。
+Please look at the example under Problem 2 on the answer sheet.
+Kaitouyoushi no mondai ni no rei no tokoro o mite kudasai.
+解答用紙の問題2の例のところを見てください。
+
+いちばん いい ものは さんばん ですから、こたえは このように かきます。
+Since the best answer is number 3, write your answer like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では、はじめます。
+Now, let's begin.
+Dewa, hajimemasu.
+では、始めます。
+
+いちばん。
+Number 1.
+Ichiban.
+1番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おtokoのひとの おとうとは なにが すきですか。
+What does the man's younger brother like?
+Otoko no hito no otouto wa nani ga suki desu ka.
+男の人の弟は何が好きですか。
+
+やまださんは きょうだいが いますか。
+Yamada-san, do you have siblings?
+Yamada-san wa kyoudai ga imasu ka.
+山田さんは兄弟がいますか。
+
+おとうとと いもうとが います。
+I have a younger brother and a younger sister.
+Otouto to imouto ga imasu.
+弟と妹がいます。
+
+わたしは すぽーつが すきですが、おとうとは いつも げーむを しています。
+I like sports, but my younger brother is always playing games.
+Watashi wa supootsu ga suki desu ga, otouto wa itsumo geemu o shite imasu.
+私はスポーツが好きですが、弟はいつもゲームをしています。
+
+いもうとは りょうりを つくることと、ほんを よむことが すきです。
+My younger sister likes cooking and reading books.
+Imouto wa ryouri o tsukuru koto to, hon o yomu koto ga suki desu.
+妹は料理を作ることと、本を読むことが好きです。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+きょうだい みんな ちがいますね。
+Siblings are all different, aren't they?
+Kyoudai minna chigaimasu ne.
+兄弟みんな違いますね。
+
+おtokoのひとの おとうとは なにが すきですか。
+What does the man's younger brother like?
+Otoko no hito no otouto wa nani ga suki desu ka.
+男の人の弟は何が好きですか。
+
+にばん。
+Number 2.
+Niban.
+2番。
+
+やおやで おtokoのひとと おみせの ひとが はなしています。
+At a vegetable shop, a man and a shopkeeper are talking.
+Yaoya de otoko no hito to omise no hito ga hanashite imasu.
+八百屋で男の人とお店の人が話しています。
+
+おtokoのひは いくら はらいますか。
+How much will the man pay?
+Otoko no hito wa ikura haraimasu ka.
+男の人はいくら払いますか。
+
+すみません、この はちじゅうえんの とまとを みっつ ください。
+Excuse me, please give me three of these 80 yen tomatoes.
+Sumimasen, kono hachijuu en no tomato o mittsu kudasai.
+すみません、この80円のトマトを3つください。
+
+はい、ありがとうございます。
+Yes, thank you very much.
+Hai, arigatou gozaimasu.
+はい、ありがとうございます。
+
+このとまと、ふたつで ひゃくごじゅうえん ですよ。
+These tomatoes are 150 yen for two, you know.
+Kono tomato, futatsu de hyakugojuu en desu yo.
+このトマト2つで150円ですよ。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+じゃあ、もうひとつ おねがいします。
+Then, one more, please.
+Jaa, mou hitotsu onegai shimasu.
+じゃあもう1つお願いします。
+
+はい、ありがとうございます。
+Yes, thank you very much.
+Hai, arigatou gozaimasu.
+はい、ありがとうございます。
+
+おtokoのひは いくら はらいますか。
+How much will the man pay?
+Otoko no hito wa ikura haraimasu ka.
+男の人はいくら払いますか。
+
+さんばん。
+Number 3.
+Sanban.
+3番。
+
+だいがくで おんなの ひとと おとこのひとが はなしています。
+At a university, a woman and a man are talking.
+Daigaku de onna no hito to otoko no hito ga hanashite imasu.
+大学で女の人と男の人が話しています。
+
+おtokoのひとは きのう どうやって がっこうに きましたか。
+How did the man come to school yesterday?
+Otoko no hito wa kinou dou yatte gakkou ni kimashita ka.
+男の人は昨日どうやって学校に来ましたか。
+
+やまださんの あぱーとから がっこうまで、どのぐらいですか。
+How long does it take from Yamada-san's apartment to school?
+Yamada-san no apaato kara gakkou made, dono gurai desu ka.
+山田さんのアパートから学校までどのぐらいですか。
+
+すこし とおいです。
+It's a little far.
+Sukoshi tooi desu.
+少し遠いです。
+
+じてんしゃで さんじゅっぷんぐらい かかります。
+It takes about 30 minutes by bicycle.
+Jitensha de sanjuppun gurai kakarimasu.
+自転車で30分ぐらいかかります。
+
+たいへんですね。
+That's tough.
+Taihen desu ne.
+大変ですね。
+
+ばすは ありませんか。
+Are there any buses?
+Basu wa arimasen ka.
+バスはありませんか。
+
+ありますが、あまり のりません。
+There are, but I don't ride them much.
+Arimasu ga, amari norimasen.
+ありますが、あまり乗りません。
+
+あめの ひだけ ばすに のります。
+I only ride the bus on rainy days.
+Ame no hi dake basu ni norimasu.
+雨の日だけバスに乗ります。
+
+きのうは あめでしたね。
+Yesterday was rainy, wasn't it?
+Kinou wa ame deshita ne.
+昨日は雨でしたね。
+
+ばすで きましたか。
+Did you come by bus?
+Basu de kimashita ka.
+バスで来ましたか。
+
+いいえ、たくしーで きました。
+No, I came by taxi.
+Iie, takushii de kimashita.
+いいえ、タクシーで来ました。
+
+あさ、つかれていましたから。
+Because I was tired in the morning.
+Asa, tsukarete imashita kara.
+朝、つかれていましたから。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+でも、かえる ときは あるきました。
+But I walked when I went home.
+Demo, kaeru toki wa arukimashita.
+でも、帰る時は歩きました。
+
+おtokoのひとは きのう どうやって がっこうに きましたか。
+How did the man come to school yesterday?
+Otoko no hito wa kinou dou yatte gakkou ni kimashita ka.
+男の人は昨日どうやって学校に来ましたか。
+
+よんばん。
+Number 4.
+Yonban.
+4番。
+
+おtokoのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+ふたりは あした まず どこで あいますか。
+Where will the two meet first tomorrow?
+Futari wa ashita mazu doko de aimasu ka.
+2人は明日まずどこで会いますか。
+
+あしたの えいが、なんじからですか。
+What time does tomorrow's movie start?
+Ashita no eiga, nanji kara desu ka.
+明日の映画何時からですか。
+
+ごご にじからですよ。
+It's from 2:00 PM.
+Gogo ni ji kara desu yo.
+午後2時からですよ。
+
+じゃあ、えいがの まえに でぱーとの れすとらんで ごはんを たべませんか。
+Then, shall we eat a meal at a department store restaurant before the movie?
+Jaa, eiga no mae ni depaato no resutoran de gohan o tabemasen ka.
+じゃあ、映画の前にデパートのレストランでご飯を食べませんか。
+
+いいですね。
+That's nice.
+Ii desu ne.
+いいですね。
+
+じゃあ、れすとらんの まえで あいましょうか。
+Then, shall we meet in front of the restaurant?
+Jaa, resutoran no mae de aimashou ka.
+じゃあ、レストランの前で会いましょうか。
+
+えっと、えきまえの ばすていから いっしょに いきましょう。
+Um, let's go together from the bus stop in front of the station.
+Etto, ekimae no basutei kara issho ni ikimashou.
+えっと、駅前のバス停から一緒に行きましょう。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+そうしましょう。
+Let's do that.
+Sou shimashou.
+そうしましょう。
+
+ふたりは あした まず どこで あいますか。
+Where will the two meet first tomorrow?
+Futari wa ashita mazu doko de aimasu ka.
+2人は明日まずどこで会いますか。
+
+ごばん。
+Number 5.
+Goban.
+5番。
+
+がっこうで せんせいが がくせいに はなしています。
+At school, a teacher is speaking to students.
+Gakkou de sensei ga gakusei ni hanashite imasu.
+学校で先生が学生に話しています。
+
+せんせいは いつ しゅくだいを かえしますか。
+When will the teacher return the homework?
+Sensei wa itsu shukudai o kaeshimasu ka.
+先生はいつ宿題を返しますか。
+
+みなさん、らいしゅうの すいようびは てすとです。
+Everyone, next Wednesday is a test.
+Minasan, raishuu no suiyoubi wa tesuto desu.
+皆さん来週の水曜日はテストです。
+
+きょう、しゅくだいが ありますから、らいしゅうの げつようびに だしてください。
+There is homework today, so please submit it next Monday.
+Kyou, shukudai ga arimasu kara, raishuu no getsuyoubi ni dashite kudasai.
+今日宿題がありますから、来週の月曜日に出してください。
+
+わたしが しゅくだいを みて、つぎの ひに かえします。
+I will look over the homework and return it the next day.
+Watashi ga shukudai o mite, tsugi no hi ni kaeshimasu.
+私が宿題を見て、次の日に返します。
+
+べんきょうして くださいね。
+Please study, okay?
+Benkyou shite kudasai ne.
+勉強してくださいね。
+
+せんせいは いつ しゅくだいを かえしますか。
+When will the teacher return the homework?
+Sensei wa itsu shukudai o kaeshimasu ka.
+先生はいつ宿題を返しますか。
+
+ろくばん。
+Number 6.
+Rokuban.
+6番。
+
+おんなのひとと おtokoのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おんなのひとは なんにんで りょこうに いきましたか。
+How many people did the woman travel with?
+Onna no hito wa nannin de ryokou ni ikimashita ka.
+女の人は何人で旅行に行きましたか。
+
+やまださん、これ、おみやげです。
+Yamada-san, this is a souvenir.
+Yamada-san, kore, omiyage desu.
+山田さんこれお土産です。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+どこの おみやげですか。
+Where is this souvenir from?
+Doko no omiyage desu ka.
+どこのお土産ですか。
+
+おきなわです。
+It's Okinawa.
+Okinawa desu.
+沖縄です。
+
+おっとと、おっとの りょうしんと いっしょに いきました。
+I went with my husband and his parents.
+Otto to, otto no ryoushin to issho ni ikimashita.
+夫と夫の両親と一緒に行きました。
+
+へえ、いいですね。
+Wow, that's nice.
+Hee, ii desu ne.
+へえ、いいですね。
+
+おんなのひとは なんにんで りょこうに いきましたか。
+How many people did the woman travel with?
+Onna no hito wa nannin de ryokou ni ikimashita ka.
+女の人は何人で旅行に行きましたか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, listen to the question while looking at the picture.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the person with the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best answer from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1から3の中から、一番いいものを1つ選んでください。
+
+では、れんしゅうしましょう。
+Now, let's practice.
+Dewa, renshuu shimashou.
+では、練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+あさ、がっこうで せんせいに あいました。
+In the morning, you met your teacher at school.
+Asa, gakkou de sensei ni aimashita.
+朝、学校で先生に会いました。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+おはようございます。
+Good morning.
+Ohayou gozaimasu.
+おはようございます。
+
+に。
+2.
+Ni.
+2。
+
+おやすみなさい。
+Good night.
+Oyasuminasai.
+おやすみなさい。
+
+さん。
+3.
+San.
+3。
+
+おつかれさまでした。
+Thank you for your hard work.
+Otsukaresama deshita.
+お疲れ様でした。
+
+いちばん いい ものは いちばん です。
+The best answer is number 1.
+Ichiban ii mono wa ichiban desu.
+一番いいものは1番です。
+
+かいとうようしの もんだいさんの れいの ところを みて ください。
+Please look at the example under Problem 3 on the answer sheet.
+Kaitouyoushi no mondai san no rei no tokoro o mite kudasai.
+解答用紙の問題3の例のところを見てください。
+
+いちばん いい ものは いちばん ですから、こたえは このように かきます。
+Since the best answer is number 1, write your answer like this.
+Ichiban ii mono wa ichiban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは1番ですから、答えはこのように書きます。
+
+では、はじめます。
+Now, let's begin.
+Dewa, hajimemasu.
+では、始めます。
+
+いちばん。
+Number 1.
+Ichiban.
+1番。
+
+よる、となり の へやの ひとに あいました。
+At night, you met the person from the room next door.
+Yoru, tonari no heya no hito ni aimashita.
+夜、隣の部屋の人に会いました。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+おやすみなさい。
+Good night.
+Oyasuminasai.
+おやすみなさい。
+
+に。
+2.
+Ni.
+2。
+
+こんばんは。
+Good evening.
+Konbanwa.
+こんばんは。
+
+さん。
+3.
+San.
+3。
+
+おつかれさまでした。
+Thank you for your hard work.
+Otsukaresama deshita.
+お疲れ様でした。
+
+にばん。
+Number 2.
+Niban.
+2番。
+
+ともだちが にもつを たくさん もっています。
+Your friend is carrying many bags.
+Tomodachi ga nimotsu o takusan motte imasu.
+友達が荷物をたくさん持っています。
+
+ひとつ もちたいです。
+You want to carry one for them.
+Hitotsu mochitai desu.
+1つ持ちたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+ひとつ もちませんか。
+Won't you carry one?
+Hitotsu mochimasen ka.
+1つ持ちませんか。
+
+に。
+2.
+Ni.
+2。
+
+ひとつ もちましょうか。
+Shall I carry one?
+Hitotsu mochimashou ka.
+1つ持ちましょうか。
+
+さん。
+3.
+San.
+3。
+
+ひとつ もってください。
+Please carry one.
+Hitotsu motte kudasai.
+1つ持ってください。
+
+さんばん。
+Number 3.
+Sanban.
+3番。
+
+せんせいの へやに はいります。
+You are entering the teacher's room.
+Sensei no heya ni hairimasu.
+先生の部屋に入ります。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+しつれいです。
+It is rude.
+Shitsurei desu.
+失礼です。
+
+に。
+2.
+Ni.
+2。
+
+しつれいでした。
+That was rude.
+Shitsurei deshita.
+失礼でした。
+
+さん。
+3.
+San.
+3。
+
+しつれいします。
+Excuse me (entering).
+Shitsurei shimasu.
+失礼します。
+
+よんばん。
+Number 4.
+Yonban.
+4番。
+
+びょうきの ともだちの おみまいに いって、かえります。
+You visited a sick friend and are leaving to go home.
+Byouki no tomodachi no omimai ni itte, kaerimasu.
+病気の友達のお見舞いに行って帰ります。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+さようなら。
+Goodbye.
+Sayounara.
+さようなら。
+
+に。
+2.
+Ni.
+2。
+
+おだいじに。
+Please take care.
+Odaiji ni.
+お大事に。
+
+さん。
+3.
+San.
+3。
+
+だいじょうぶですか。
+Are you okay?
+Daijoubu desu ka.
+大丈夫ですか。
+
+ごばん。
+Number 5.
+Goban.
+5番。
+
+となりの ひとに ぺんを かりたいです。
+You want to borrow a pen from the person next to you.
+Tonari no hito ni pen o karitai desu.
+隣の人にペンを借りたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+すみません、ぺんを かしてください。
+Excuse me, please lend me a pen.
+Sumimasen, pen o kashite kudasai.
+すみません、ペンを貸してください。
+
+に。
+2.
+Ni.
+2。
+
+すみません、ぺんを かりましょうか。
+Excuse me, shall we borrow a pen?
+Sumimasen, pen o karimashou ka.
+すみません、ペンを借りましょうか。
+
+さん。
+3.
+San.
+3。
+
+すみません、ぺんを かしませんか。
+Excuse me, won't you lend a pen?
+Sumimasen, pen o kashimasen ka.
+すみません、ペンを貸しませんか。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa e nado ga arimasen.
+問題 4 は、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best response from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から、一番いいものを1つ選んでください。
+
+では、れんしゅうしましょう。
+Now, let's practice.
+Dewa, renshuu shimashou.
+では、練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おなまえは？
+What is your name?
+Onamae wa?
+お名前は？
+
+いち。
+1.
+Ichi.
+1。
+
+じゅうはっさいです。
+I am 18 years old.
+Juuhassai desu.
+18歳です。
+
+に。
+2.
+Ni.
+2。
+
+たなかと もうします。
+My name is Tanaka.
+Tanaka to moushimasu.
+田中と申します。
+
+さん。
+3.
+San.
+3。
+
+いたりあじんです。
+I am Italian.
+Itariajin desu.
+イタリア人です。
+
+いちばん いい ものは にばん です。
+The best answer is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいよんの れいの ところを みて ください。
+Please look at the example under Problem 4 on the answer sheet.
+Kaitouyoushi no mondai yon no rei no tokoro o mite kudasai.
+解答用紙の問題4の例のところを見てください。
+
+いちばん いい ものは にばん ですから、こたえは このように かきます。
+Since the best answer is number 2, write your answer like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では、はじめます。
+Now, let's begin.
+Dewa, hajimemasu.
+では、始めます。
+
+いちばん。
+Number 1.
+Ichiban.
+1番。
+
+といれは どこですか。
+Where is the toilet?
+Toire wa doko desu ka.
+トイレはどこですか。
+
+いち。
+1.
+Ichi.
+1。
+
+さんがいですよ。
+It is on the 3rd floor.
+Sangai desu yo.
+3階ですよ。
+
+に。
+2.
+Ni.
+2。
+
+きれいですよ。
+It is clean.
+Kirei desu yo.
+綺麗ですよ。
+
+さん。
+3.
+San.
+3。
+
+ふたつありますよ。
+There are two of them.
+Futatsu arimasu yo.
+2つありますよ。
+
+にばん。
+Number 2.
+Niban.
+2番。
+
+ここから くうこうまで、どのぐらい かかりますか。
+How long does it take from here to the airport?
+Koko kara kuukou made, dono gurai kakarimasu ka.
+ここから空港まで、どのぐらいかかりますか。
+
+いち。
+1.
+Ichi.
+1。
+
+じゅうにじに でます。
+It leaves at 12:00.
+Juuniji ni demasu.
+12時に出ます。
+
+に。
+2.
+Ni.
+2。
+
+ばすで いきます。
+I will go by bus.
+Basu de ikimasu.
+バスで行きます。
+
+さん。
+3.
+San.
+3。
+
+いちじかんです。
+It takes one hour.
+Ichijikan desu.
+1時間です。
+
+さんばん。
+Number 3.
+Sanban.
+3番。
+
+てすとは どうでしたか。
+How was the test?
+Tesuto wa dou deshita ka.
+テストはどうでしたか。
+
+いち。
+1.
+Ichi.
+1。
+
+がんばってください。
+Please do your best.
+Ganbatte kudasai.
+頑張ってください。
+
+に。
+2.
+Ni.
+2。
+
+あまり わかりませんでした。
+I didn't understand it very well.
+Amari wakarimasen deshita.
+あまりわかりませんでした。
+
+さん。
+3.
+San.
+3。
+
+たくさん べんきょうしました。
+I studied a lot.
+Takusan benkyou shimashou.
+たくさん勉強しました。
+
+よんばん。
+Number 4.
+Yonban.
+4番。
+
+やまだせんせいの こと しっていますか。
+Do you know Teacher Yamada?
+Yamada sensei no koto shitte imasu ka.
+山田先生のこと知っていますか。
+
+いち。
+1.
+Ichi.
+1。
+
+いいえ、しません。
+No, I don't (incorrect verb form).
+Iie, shimasen.
+いいえ、しません。
+
+に。
+2.
+Ni.
+2。
+
+いいえ、しりません。
+No, I don't know him.
+Iie, shirimasen.
+いいえ、知りません。
+
+さん。
+3.
+San.
+3。
+
+いいえ、しっていません。
+No, I don't know (incorrect verb form).
+Iie, shitte imasen.
+いいえ、知っていません。
+
+ごばん。
+Number 5.
+Goban.
+5番。
+
+すこし やすみませんか。
+Shall we rest a little?
+Sukoshi yasumimasen ka.
+少し休みませんか。
+
+いち。
+1.
+Ichi.
+1。
+
+そうですね、やすみましょう。
+That's right, let's rest.
+Sou desu ne, yasumishou.
+そうですね、休みましょう。
+
+に。
+2.
+Ni.
+2。
+
+そうですね、やすみませんでした。
+That's right, we didn't rest.
+Sou desu ne, yasumimasen deshita.
+そうですね、休みませんでした。
+
+さん。
+3.
+San.
+3。
+
+そうですね、やすみです。
+That's right, it's a holiday.
+Sou desu ne, yasumi desu.
+そうですね、休みです。
+
+ろくばん。
+Number 6.
+Rokuban.
+6番。
+
+おこさんは なんさいですか。
+How old is your child?
+Okosan wa nansai desu ka.
+お子さんは何歳ですか。
+
+いち。
+1.
+Ichi.
+1。
+
+はっさいです。
+He is 8 years old.
+Hassai desu.
+8歳です。
+
+に。
+2.
+Ni.
+2。
+
+がっこうに います。
+He is at school.
+Gakkou ni imasu.
+学校にいます。
+
+さん。
+3.
+San.
+3。
+
+ふたり います。
+I have two children.
+Futari imasu.
+2人います。
+
+これで、ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de, choukai shiken o owarimasu.
+これで、聴解試験を終わります。
+
+`;
+
+allWords["Listening 03 - Hard"] = ``;
+
+allWords["Listening 04"] = `
+えぬご ちょうかい。
+N5 Listening Exam.
+Enu go choukai.
+N5 聴解。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは あした まず どこへ いきますか。
+Where will the woman go first tomorrow?
+Onna no hito wa ashita mazu doko e ikimasu ka.
+女の人は明日まずどこへ行きますか。
+
+あした えいがを みに いきませんか。
+Would you like to go to see a movie tomorrow?
+Ashita eiga o mi ni ikimasen ka.
+明日映画を見に行きませんか。
+
+すみません。
+I'm sorry.
+Sumimasen.
+すみません。
+
+あしたは あめりかから ともだちが きますから ちょっと。
+Tomorrow my friend is coming from America, so it's a bit...
+Ashita wa Amerika kara tomodachi ga kimasu kara chotto.
+明日はアメリカから友達が来ますからちょっと。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+くうこうまで いきますか。
+Will you go to the airport?
+Kuukou made ikimasu ka.
+空港まで行きますか。
+
+いいえ、でんしゃの えきで あいます。
+No, we will meet at the train station.
+Iie, densha no eki de aimasu.
+いいえ、電車の駅で会います。
+
+それから いっしょに どうぶつえんへ いきます。
+After that, we will go to the zoo together.
+Sore kara issho ni doubutsuen e ikimasu.
+それから一緒に動物園へ行きます。
+
+おんなのひとは あした まず どこへ いきますか。
+Where will the woman go first tomorrow?
+Onna no hito wa ashita mazu doko e ikimasu ka.
+女の人は明日まずどこへ行きますか。
+
+いちばん いい ものは よんばんです。
+The best choice is number 4.
+Ichiban ii mono wa yonban desu.
+一番いいものは4番です。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おんなのひとと おとこうのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おんなのひとは はじめに なにを しますか。
+What will the woman do first?
+Onna no hito wa hajime ni nani o shimasu ka.
+女の人は初めに何をしますか。
+
+すみません、ぱすぽーとを つくりたいんですが。
+Excuse me, I would like to make a passport.
+Sumimasen, pasupooto o tsukuritai n desu ga.
+すみません、パスポートを作りたいんですが。
+
+では、この かみに なまえと じゅうしょなどを かいて ください。
+Then, please write your name and address on this paper.
+Dewa, kono kami ni namae to juusho nado o kaite kudasai.
+では、この紙に名前と住所などを書いてください。
+
+それから さんがいの うけつけに いって ください。
+After that, please go to the reception on the 3rd floor.
+Sore kara sangai no uketsuke ni itte kudasai.
+それから3階の受付に行ってください。
+
+しゃしんを もって きましたか。
+Did you bring a photo?
+Shashin o motte kimashita ka.
+写真を持ってきましたか。
+
+あ、いえに わすれました。
+Ah, I forgot it at home.
+A, ie ni wasuremashita.
+あ、家に忘れました。
+
+では かくまえに にかいで しゃしんを とって ください。
+Well, before writing, please take a photo on the 2nd floor.
+Dewa kaku mae ni nikai de shashin o totte kudasai.
+では書く前に2階で写真をとってください。
+
+はい、わかりました。
+Yes, I understand.
+Hai, wakarimashita.
+はい、わかりました。
+
+おんなのひとは はじめに なにを しますか。
+What will the woman do first?
+Onna no hito wa hajime ni nani o shimasu ka.
+女の人は初めに何をしますか。
+
+にかい。
+No. 2.
+Niban.
+2番。
+
+かいしゃで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at the office.
+Kaisha de onna no hito to otoko no hito ga hanashite imasu.
+会社で女の人と男の人が話しています。
+
+おんなのひとは なにを かって きますか。
+What will the woman go to buy?
+Onna no hito wa nani o katte kimasu ka.
+女の人は何を買ってきますか。
+
+おなかが すきましたね。
+I'm hungry.
+Onaka ga sukimashita ne.
+お腹が空きましたね。
+
+みんなの ひるごはんを かって きましょうか。
+Shall I go buy everyone's lunch?
+Minna no hirugohan o katte kimashou ka.
+みんなの昼ごはんを買ってきましょうか。
+
+え、いいですか？
+Oh, is it okay?
+E, ii desu ka?
+え、いいですか？
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaisu.
+ありがとうございます。
+
+わたしは さんどいっちを たべます。
+I will eat a sandwich.
+Watashi wa sandoitchi o tabemasu.
+私はサンドイッチを食べます。
+
+なかむらさんも さんどいっちですか。
+Is Nakamura-san having a sandwich too?
+Nakamura-san mo sandoitchi desu ka.
+中村さんもサンドイッチですか。
+
+わたしは おにぎりが いいです。
+I would like an onigiri.
+Watashi wa onigiri ga ii desu.
+私はおにぎりがいいです。
+
+たなかさんと やましたさんは おべんとうが いいと おもいます。
+I think Tanaka-san and Yamashita-san would like bento boxes.
+Tanaka-san to Yamashita-san wa obentou ga ii to omoimasu.
+田中さんと山下さんはお弁当がいいと思います。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+じゃあ いって きます。
+Well, I'm off.
+Jaa itte kimasu.
+じゃあ行ってきます。
+
+おんなのひとは なにを かって きますか。
+What will the woman go to buy?
+Onna no hito wa nani o katte kimasu ka.
+女の人は何を買ってきますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+がっこうで おとこの がくせいと おんなの せんせいが はなしています。
+A male student and a female teacher are talking at school.
+Gakkou de otoko no gakusei to onna no sensei ga hanashite imasu.
+学校で男の学生と女の先生が話しています。
+
+おとこの がくせいは ほんを どこに おきますか。
+Where will the male student place the book?
+Otoko no gakusei wa hon o doko ni okimasu ka.
+男の学生は本をどこに置きますか。
+
+せんせい、にほんごの ほんを かえします。
+Teacher, I am returning the Japanese book.
+Sensei, nihongo no hon o kaeshimasu.
+先生、日本語の本を返します。
+
+どうも ありがとう ございました。
+Thank you very much.
+Doumo arigatou gozaimashita.
+どうもありがとうございました。
+
+いいえ、じゃあ たなの なかに もどして ください。
+You are welcome, then please return it to the shelf.
+Iie, jaa tana no naka ni modoshite kudasai.
+いいえ、じゃあ棚の中に戻してください。
+
+はい、とけいの したの たなで いいですか。
+Yes, is the shelf under the clock okay?
+Hai, tokei no shita no tana de ii desu ka.
+はい、時計の下の棚でいいですか。
+
+あ、すみません。
+Ah, sorry.
+A, sumimen.
+あ、すみません。
+
+つぎの じゅぎょうで りーさんに かしますから。
+Because I will lend it to Lee-san in the next class...
+Tsugi no jugyou de Rii-san ni kashimasu kara.
+次の授業でリーさんに貸しますから。
+
+わたしの つくえの うえに おいて ください。
+Please put it on my desk.
+Watashi no tsukue no ue ni oite kudasai.
+私の机の上に置いてください。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+おとこの がくせいは ほんを どこに おきますか。
+Where will the male student place the book?
+Otoko no gakusei wa hon o doko ni okimasu ka.
+男の学生は本をどこに置きますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+きょうしつで せんせいが がくせいに はなしています。
+A teacher is talking to students in a classroom.
+Kyoushitsu de sensei ga gakusei ni hanashite imasu.
+教室で先生が学生に話しています。
+
+がくせいは あした なんじに きょうしつへ いきますか。
+What time will the students go to the classroom tomorrow?
+Gakusei wa ashita nanji ni kyoushitsu e ikimasu ka.
+学生は明日何時に教室へ行きますか。
+
+あしたの てすとは いちばんの きょうしつで します。
+Tomorrow's test will be held in Classroom 1.
+Ashita no tesuto wa ichiban no kyoushitsu de shimasu.
+明日のテストは1番の教室でします。
+
+じゅうじはんまでは ほかの くらすが つかいます。
+Another class will use it until 10:30.
+Juujihan made wa hoka no kurasu ga tsukaimasu.
+10時半までは他のクラスが使います。
+
+この くらすは じゅういちじ からです。
+This class starts from 11:00.
+Kono kurasu wa juuichiji kara desu.
+このクラスは11からです。
+
+てすとの せつめいを します。
+I will explain about the test.
+Tesuto no setsumei o shimasu.
+テストの説明をします。
+
+てすとが はじまる じゅっぷんまえに きょうしつへ きて ください。
+Please come to the classroom 10 minutes before the test begins.
+Tesuto ga hajemaru juppun mae ni kyoushitsu e kite kudasai.
+テストが始まる10分前に教室へ来てください。
+
+がくせいは あした なんじに きょうしつへ いきますか。
+What time will the students go to the classroom tomorrow?
+Gakusei wa ashita nanji ni kyoushitsu e ikimasu ka.
+学生は明日何時に教室へ行きますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+すみません、ぎんこうに いきたいんですが。
+Excuse me, I would like to go to the bank.
+Sumimasen, ginkou ni ikitai n desu ga.
+すみません、銀行に行きたいんですが。
+
+ぎんこうですか。
+The bank?
+Ginkou desu ka.
+銀行ですか。
+
+まず この みちを まっすぐ いって ください。
+First, please go straight down this road.
+Mazu kono michi o massugu itte kudasai.
+まずこの道をまっすぐ行ってください。
+
+あそこに でぱーとが ありますね。
+There is a department store over there, right?
+Asoko ni depaarto ga arimasu ne.
+あそこにデパートがありますね。
+
+あの みちを みぎに まがって ください。
+Please turn right at that road.
+Ano michi o migi ni magatte kudasai.
+あの道を右に曲がってください。
+
+はなやの となりに ありますよ。
+It's next to the flower shop.
+Hanaya no tonari ni arimasu yo.
+花屋の隣にありますよ。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+でんわで れすとらんの ひとと おとこのひとが はなしています。
+A restaurant worker and a man are talking on the phone.
+Denwa de resutoran no hito to otoko no hito ga hanashite imasu.
+電話でレストランの人と男の人が話しています。
+
+おとこのひとは いつ れすとらんへ いきますか。
+When will the man go to the restaurant?
+Otoko no hito wa itsu resutoran e ikimasu ka.
+男の人はいつレストランへ行きますか。
+
+おでんわ ありがとうございます、さくら れすとらんです。
+Thank you for calling, this is Sakura Restaurant.
+Odenwa arigatou gozaimasu, Sakura Resutoran desu.
+お電話ありがとうございます、さくらレストランです。
+
+あの、あしたの しちじに さんにんで よやくを したいんですが。
+Um, I would like to make a reservation for three people tomorrow at 7:00.
+Ano, ashita no shichiji ni sannin de yoyaku o shitai n desu ga.
+あの、明日の7時に3人でお祝いをしたいんですが。
+
+申し訳ありません。
+We're very sorry.
+Moushiwake arimasen.
+申し訳ありません。
+
+まいしゅう げつようびは おやすみです。
+Every Monday is our day off.
+Maishuu getsuyoubi wa oyasumi desu.
+毎週月曜日はお休みです。
+
+かようびか すいようびは どうですか。
+How about Tuesday or Wednesday?
+Kayoubi ka suiyoubi wa dou desu ka.
+火曜日か水曜日はどうですか。
+
+うーん、すいようびは ちょっと。
+Hmm, Wednesday is a bit...
+Uun, suiyoubi wa chotto.
+うーん、水曜日はちょっと。
+
+あさっての しちじは どうですか。
+How about the day after tomorrow at 7:00?
+Asatte no shichiji wa dou desu ka.
+明後日の7時はどうですか。
+
+はい、だいじょうぶです。
+Yes, that is fine.
+Hai, daijoubu desu.
+はい、大丈夫です。
+
+あさっての しちじですね。
+The day after tomorrow at 7:00, right?
+Asatte no shichiji desu ne.
+明後日の7時ですね。
+
+はい、よろしく おねがいします。
+Yes, please look after me.
+Hai, yoroshiku onegai shimasu.
+はい、よろしくお願いします。
+
+おとこのひとは いつ れすとらんへ いきますか。
+When will the man go to the restaurant?
+Otoko no hito wa itsu resutoran e ikimasu ka.
+男の人はいつレストランへ行きますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+はなやで おみせのひとと おとこのひとが はなしています。
+A shop assistant and a man are talking at a flower shop.
+Hanaya de omise no hito to otoko no hito ga hanashite imasu.
+花屋でお店の人と男の人が話しています。
+
+おとこのひとは どれを かいますか。
+Which one will the man buy?
+Otoko no hito wa dore o kaimasu ka.
+男の人はどれを買いますか。
+
+いらっしゃいませ。
+Welcome.
+Irasshaimase.
+いらっしゃいませ。
+
+あの、はなを かいたいんですが。
+Um, I would like to buy some flowers.
+Ano, hana o kaitai n desu ga.
+あの、花を買いたいんですが。
+
+おたんじょうびの ぷれぜんとですか。
+Is it a birthday present?
+Otanjoubi no purezento desu ka.
+お誕生日のプレゼントですか。
+
+はい、ともだちの たんじょうびです。
+Yes, it's my friend's birthday.
+Hai, tomodachi no tanjoubi desu.
+はい、友達の誕生日です。
+
+では、この おおきい はなは どうですか。
+Then, how about this large flower?
+Dewa, kono ookii hana wa dou desu ka.
+では、この大きい花はどうですか。
+
+とても きれいですよ。
+It is very beautiful.
+Totemo kirei desu yo.
+とても綺麗ですよ。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+じゃあ、それを にほん ください。
+Well then, please give me two of those.
+Jaa, sore o nihon kudasai.
+じゃあ、それを2本ください。
+
+あ、こちらの ちいさい はなも いっしょに どうですか。
+Ah, how about this small flower as well?
+A, kochira no chiisai hana mo issho ni dou desu ka.
+あ、こちらの小さい花も一緒にどうですか。
+
+もっと きれいですよ。
+It is even more beautiful.
+Motto kirei desu yo.
+もっと綺麗ですよ。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+じゃあ、ちいさい はなも さんぼん ください。
+Well then, please give me three of the small flowers as well.
+Jaa, chiisai hana mo sanbon kudasai.
+じゃあ、小さい花も3本ください。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+おとこのひとは どれを かいますか。
+Which one will the man buy?
+Otoko no hito wa dore o kaimasu ka.
+男の人はどれを買いますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+がっこうで おとこの がくせいと おんなの せんせいが はなしています。
+A male student and a female teacher are talking at school.
+Gakkou de otoko no gakusei to onna no sensei ga hanashite imasu.
+学校で男の学生と女の先生が話しています。
+
+おとこの がくせいは いつ せんせいと はなしますか。
+When will the male student speak with the teacher?
+Otoko no gakusei wa itsu sensei to hanashimasu ka.
+男の学生はいつ先生と話しますか。
+
+せんせい、れぽーとの ことを はなしたいです。
+Teacher, I would like to speak about the report.
+Sensei, repooto no koto o hanashitai desu.
+先生、レポートのことを話したいです。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+これから かいぎですから、さんじ からは どうですか。
+Because there is a meeting from now, how about from 3:00?
+Korekara kaigi desu kara, sanji kara wa dou desu ka.
+これから会議ですから、3時からはどうですか。
+
+すみません、さんじはんから あるばいとが あります。
+I'm sorry, I have a part-time job from 3:30.
+Sumimasen, sanjihan kara arubaito ga arimasu.
+すみません、3時半からアルバイトがあります。
+
+じゃあ、あしたの くじ からは どうですか。
+Then, how about from 9:00 tomorrow?
+Jaa, ashita no kuji kara wa dou desu ka.
+じゃあ明日の9時からはどうですか。
+
+ありがとうございます、おねがいします。
+Thank you very much, please do.
+Arigatou gozaimasu, onegai shimasu.
+ありがとうございます、お願いします。
+
+じゅうじから くらすが ありますから、それまで はなしましょう。
+Since there is class from 10:00, let's talk until then.
+Juuji kara kurasu ga arimasu kara, sore made hanashimashou.
+10時からクラスがありますから、それまで話しましょう。
+
+おとこの がくせいは いつ せんせいと はなしますか。
+When will the male student speak with the teacher?
+Otoko no gakusei wa itsu sensei to hanashimasu ka.
+男の学生はいつ先生と話しますか。
+
+いちばん いい ものは さんばんです。
+The best choice is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+でぱーとで おとこのひとと おみせのひとが はなしています。
+A man and a shop assistant are talking at a department store.
+Depaarto de otoko no hito to omise no hito ga hanashite imasu.
+デパートで男の人お店の人が話しています。
+
+おとこのひとの かばんは どれですか。
+Which one is the man's bag?
+Otoko no hito no kaban wa dore desu ka.
+男の人のカバンはどれですか。
+
+すみません、この おみせに かばんを わすれましたが、しりませんか。
+Excuse me, I forgot my bag in this shop, do you happen to know where it is?
+Sumimasen, kono omise ni kaban o wasuremashita ga, shirimasen ka.
+すみません、このお店にカバンを忘れましたが、知りませんか。
+
+どんな かばんですか。
+What kind of bag is it?
+Donna kaban desu ka.
+どんなカバンですか。
+
+くろくて おおきい かばんです。
+It's a black, large bag.
+Kurokute ookii kaban desu.
+黒くて大きいカバンです。
+
+かばんの なかに なにが はいっていますか。
+What's inside the bag?
+Kaban no naka ni nani ga haitte imasu ka.
+カバンの中に何が入っていますか。
+
+かぎと てがみと ぺんが はいっています。
+A key, a letter, and a pen are inside.
+Kagi to tegami to pen ga haitte imasu.
+鍵と手紙とペンが入っています。
+
+あ、ぺんは ぽけっとに はいっていますから、かぎと てがみ だけです。
+Ah, the pen is in my pocket, so just the key and the letter.
+A, pen wa poketto ni haitte imasu kara, kagi to tegami dake desu.
+あ、ペンはポケットに入っていますから、鍵と手紙だけです。
+
+こちらの かばんですか。
+Is it this bag?
+Kochira no kaban desu ka.
+こちらのカバンですか。
+
+あ、はい、ありがとうございます。
+Ah, yes, thank you very much.
+A, hai, arigatou gozaimasu.
+あ、はい、ありがとうございます。
+
+おとこのひとの かばんは どれですか。
+Which one is the man's bag?
+Otoko no hito no kaban wa dore desu ka.
+男の人のカバンはどれですか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+ふたりは あした なにを しますか。
+What will the two do tomorrow?
+Futari wa ashita nani o shimasu ka.
+2人は明日何をしますか。
+
+みんくさん、あしたの ごご いっしょに ぷーるへ およぎに いきませんか。
+Mink-san, would you like to go to the pool to swim together tomorrow afternoon?
+Minku-san, ashita no gogo issho ni puuru e oyogi ni ikimasen ka.
+ミンクさん、明日の午後一緒にプールへ泳ぎに行きませんか。
+
+すみません、あしたは あさ たなかさんと てにすを してから れすとらんへ いきます。
+I am sorry, tomorrow morning I will play tennis with Tanaka-san and then go to a restaurant.
+Sumimasen, ashita wa asa Tanaka-san to tenisu o shite kara resutoran e ikimasu.
+すみません、明日は朝田中さんとテニスをしてからレストランへ行きます。
+
+ちょっと つかれますから、ぷーるじゃなくて こうえんを さんぽしませんか。
+Since I will be a bit tired, instead of the pool, shall we take a walk in the park?
+Chotto tsukaremasu kara, puuru janakute kouen o sanpo shimasen ka.
+ちょっと疲れますから、プールじゃなくて公園を散歩しませんか。
+
+いいですね、じゃあ あしたの ごご あいましょう。
+That's nice, then let's meet tomorrow afternoon.
+Ii desu ne, jaa ashita no gogo aimashou.
+いいですね、じゃあ明日の午後会いましょう。
+
+ふたりは あした なにを しますか。
+What will the two do tomorrow?
+Futari wa ashita nani o shimasu ka.
+2人は明日何をしますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+がっこうで せんせいが がくせいに はなしています。
+A teacher is talking to students at school.
+Gakkou de sensei ga gakusei ni hanashite imasu.
+学校で先生が学生に話しています。
+
+がくせいは あした なにを もっていきますか。
+What will the students bring tomorrow?
+Gakusei wa ashita nani o motte ikimasu ka.
+学生は明日何を持っていきますか。
+
+あしたは みんなで びじゅつかんへ いきます。
+Tomorrow we will all go to the art museum.
+Ashita wa minna de bijutsukan e ikimasu.
+明日はみんなで美術館に行きます。
+
+がっこうから ばすで いきますから。
+Since we will go by bus from the school...
+Gakkou kara basu de ikimasu kara.
+学校からバスで行きますから。
+
+ちけっとを かう おかねを もってきて ください。
+Please bring money to buy tickets.
+Chiketto o kau okane o motte kite kudasai.
+チケットを買うお金を持ってきてください。
+
+それから びじゅつかんの ひとの おはなしを ききますから。
+After that, because we will listen to the talk from the museum staff...
+Sore kara bijutsukan no hito no ohanashi o kikimasu kara.
+それから美術館の人の話を聞きますから。
+
+ぺんと のーとも いります。
+A pen and a notebook are also needed.
+Pen to nooto mo irimasu.
+ペンとノートもいります。
+
+しゃしんを とっては いけませんから。
+Since you must not take photos...
+Shashin o totte wa ikemasen kara.
+写真を撮ってはいけませんから。
+
+かめらは もってこないで くださいね。
+Please do not bring cameras.
+Kamera wa motte konaide kudasai ne.
+カメラは持ってこないでくださいね。
+
+たべものや のみものも だめです。
+Food and drinks are also not allowed.
+Tabemono ya nomimono mo dame desu.
+食べ物や飲み物もダメです。
+
+がくせいは あした なにを もっていきますか。
+What will the students bring tomorrow?
+Gakusei wa ashita nani o motte ikimasu ka.
+学生は明日何を持っていきますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女人と男の人が話しています。
+
+おんなのひとは おとうさんの たんじょうび ぷれぜんとに なにを かいますか。
+What will the woman buy for her father's birthday present?
+Onna no hito wa otousan no tanjoubi purezento ni nani o kaimasu ka.
+女の人はお父さんの誕生日プレゼントに何を買いますか。
+
+らいしゅう ちちの おたんじょうびです。
+Next week is my father's birthday.
+Raishuu chichi no otanjoubi desu.
+来週父のお誕生日です。
+
+たんじょうび ぷれぜんとは なにが いいと おもいますか。
+What do you think is a good birthday present?
+Tanjoubi purezento wa nani ga ii to omoimasu ka.
+誕生日プレゼントは何がいいと思いますか。
+
+とけいは どうですか。
+How about a watch?
+Tokei wa dou desu ka.
+時計はどうですか。
+
+いい おみせを しっていますよ。
+I know a good shop.
+Ii omise o shitte imasu yo.
+いいお店を知っていますよ。
+
+とけいですか、ちょっと たかいですね。
+A watch? That's a bit expensive.
+Tokei desu ka, chotto takai desu ne.
+時計ですか、ちょっと高いですね。
+
+じゃあ、おさけは どうですか。
+Then, how about alcohol?
+Jaa, osake wa dou desu ka.
+じゃあ、お酒はどうですか。
+
+おとうさんの すきな わいんは ありますか。
+Is there any wine your father likes?
+Otousan no sikina wain wa arimasu ka.
+お父さん好きなワインはありますか。
+
+ちちは おさけが あまり すきじゃないから。
+My father doesn't like alcohol very much.
+Chichi wa osake ga amari sukijanai kara.
+父はお酒があまり好きじゃないから。
+
+うーん、おさいふや ねくたい とかは？
+Hmm, how about a wallet or a necktie?
+Uun, osaifu ya nekutai toka wa?
+うーん、お財布やネクタイとかは？
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+このまえ あたらしい ねくたいが ほしいと いっていましたから、それに します。
+He mentioned wanting a new necktie a while ago, so I will go with that.
+Kono mae atarashii nekutai ga hoshii to itte imashita kara, sore ni shimasu.
+この前新しいネクタイが欲しいと言っていましたから、それにします。
+
+おんなのひとは おとうさんの たんじょうび ぷれぜんとに なにを かいますか。
+What will the woman buy for her father's birthday present?
+Onna no hito wa otousan no tanjoubi purezento ni nani o kaimasu ka.
+女の人はお父さんの誕生日プレゼントに何を買いますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとの いもうとは どんな しごとを していますか。
+What kind of job does the man's younger sister do?
+Otoko no hito no imouto wa donna shigoto o shite imasu ka.
+男の人の妹はどんな仕事をしていますか。
+
+きむらさんは なんにん かぞくですか。
+How many people are in your family, Kimura-san?
+Kimura-san wa nannin kazoku desu ka.
+木村さんは何人家族ですか。
+
+わたしは ちちと ははと あねの よにん かぞくです。
+I have a family of four: my father, mother, older sister, and myself.
+Watashi wa chichi to haha to ane no yonin kazoku desu.
+私は父と母と姉の4人家族です。
+
+たなかさんは？
+How about you, Tanaka-san?
+Tanaka-san wa?
+田中さんは？
+
+わたしは ろくにん かぞくで、あにと おとうとと いもうとが います。
+I have a family of six, with an older brother, younger brother, and younger sister.
+Watashi wa rokunin kazoku de, ani to otouto to imouto ga imasu.
+私は6人家族で、兄と弟と妹がいます。
+
+あには びょういんで はたらいています。
+My older brother works at a hospital.
+Ani wa byouin de hataraite imasu.
+兄は病院で働いています。
+
+おとうとは でんきの かいしゃで はたらいていて。
+My younger brother works at an electric company...
+Otouto wa denki no kaisha de hataraite ite.
+弟は電気の会社で働いていて。
+
+いもうとは がいこくじんに にほんごを おしえています。
+And my younger sister teaches Japanese to foreigners.
+Imouto wa gaikokujin ni nihongo o oshiete imasu.
+妹は外国人に日本語を教えています。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+わたしの あねは ぎんこうで はたらいていますよ。
+My older sister works at a bank, you know.
+Watashi no ane wa ginkou de hataraite imasu yo.
+私の姉は銀行で働いていますよ。
+
+おとこのひとの いもうとは どんな しごとを していますか。
+What kind of job does the man's younger sister do?
+Otoko no hito no imouto wa donna shigoto o shite imasu ka.
+男の人の妹はどんな仕事をしていますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+がっこうで おんなの せんせいと おとこの がくせいが はなしています。
+A female teacher and a male student are talking at school.
+Gakkou de onna no sensei to otoko no gakusei ga hanashite imasu.
+学校で女の先生と男の学生が話しています。
+
+がくせいは どうして じゅぎょうに おくれましたか。
+Why was the student late for class?
+Gakusei wa doushite jugyou ni okuremashita ka.
+学生はどうして授業に遅れましたか。
+
+りんさん、どうして じゅぎょうに おくれましたか。
+Lin-san, why were you late for class?
+Rin-san, doushite jugyou ni okuremashita ka.
+りんさん、どうして授業に遅れましたか。
+
+せんせい、すみません。
+Teacher, I am sorry.
+Sensei, sumimasen.
+先生、すみません。
+
+おなかが いたいですか。
+Does your stomach hurt?
+Onaka ga itai desu ka.
+お腹が痛いですか。
+
+いいえ、げんきです。
+No, I am healthy.
+Iie, genki desu.
+いいえ、元気です。
+
+では どうしてですか。
+Then, why is that?
+Dewa doushite desu ka.
+ではどうしてですか。
+
+きょうは あめですから じてんしゃに のりませんでした。
+Since it's rainy today, I didn't ride my bicycle.
+Kyou wa ame desu kara jitensha ni norimasen deshita.
+今日は雨ですから自転車に乗りませんでした。
+
+でんしゃに のりましたが、はじめてでしたから。
+I took the train, but because it was my first time...
+Densha ni norimashita ga, hajime te deshita kara.
+電車に乗りましたが、初めてでしたから。
+
+えきから がっこうまでの みちが わかりませんでした。
+I did not know the way from the station to the school.
+Eki kara gakkou made no michi ga wakarimasen deshita.
+駅から学校までの道が分かりませんでした。
+
+がくせいは どうして じゅぎょうに おくれましたか。
+Why was the student late for class?
+Gakusei wa doushite jugyou ni okuremashita ka.
+学生はどうして授業に遅れましたか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, look at the picture and listen to the question.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the person indicated by the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara ichiban ii mono o hitotsu erande kudasai.
+1から3の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+あさ がっこうで せんせいに あいました。
+You met your teacher at school in the morning.
+Asa gakkou de sensei ni aimashita.
+朝学校で先生に会いました。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、おはようございます。
+1. Good morning.
+Ichi, ohayou gozaimasu.
+1. おはようございます。
+
+に、おやすみなさい。
+2. Good night.
+Ni, oyasuminasai.
+2. おやすみなさい。
+
+さん、おつかれさまでした。
+3. Thank you for your hard work.
+San, otsukaresama deshita.
+3. お疲れ様でした。
+
+いちばん いい ものは いちばんです。
+The best choice is number 1.
+Ichiban ii mono wa ichiban desu.
+一番いいものは1番です。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+ともだちが いえに あそびに きました。
+A friend came to play at your house.
+Tomodachi ga ie ni asobi ni kimashita.
+友達が家に遊びに来ました。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、どうぞ はいって ください。
+1. Please come in.
+Ichi, douzo haitte kudasai.
+1. どうぞ入ってください。
+
+に、どうぞ きて ください。
+2. Please come.
+Ni, douzo kite kudasai.
+2. どうぞ来てください。
+
+さん、どうぞ いって ください。
+3. Please go.
+San, douzo itte kudasai.
+3. どうぞ行ってください。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+あさ がっこうに いきます。
+In the morning you go to school.
+Asa gakkou ni ikimasu.
+朝学校に行きます。
+
+いえの ひとに なんと いいますか。
+What do you say to the family?
+Ie no hito ni nan to iimasu ka.
+家の人に何と言いますか。
+
+いち、さようなら。
+1. Goodbye.
+Ichi, sayounara.
+1. さようなら。
+
+に、いってきます。
+2. I'm leaving.
+Ni, ittekimasu.
+2. 行ってきます。
+
+さん、おつかれさまです。
+3. Thank you for your hard work.
+San, otsukaresama desu.
+3. お疲れ様です。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+ともだちが げんきが ないです。
+A friend is not energetic.
+Tomodachi ga genki ga nai desu.
+友達が元気がないです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、どうしましょうか。
+1. What shall we do?
+Ichi, dou shimashou ka.
+1. どうしましょうか。
+
+に、どうしましたか。
+2. What happened?
+Ni, dou shimashita ka.
+2. どうしましたか。
+
+さん、どうしますか。
+3. What will you do?
+San, dou shimasu ka.
+3. どうしますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+ともだちに りょこうの しゃしんを みせたいです。
+You want to show a friend vacation photos.
+Tomodachi ni ryokou no shashin o misetai desu.
+友達に旅行の写真を見せたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、これ みないで ください。
+1. Please do not look at this.
+Ichi, kore minaide kudasai.
+1. これ見ないでください。
+
+に、これ みせて ください。
+2. Please show me this.
+Ni, kore misete kudasai.
+2. これ見せてください。
+
+さん、これ みて ください。
+3. Please look at this.
+San, kore mite kudasai.
+3. これ見てください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+がっこうから いえに かえりました。
+You returned home from school.
+Gakkou kara ie ni kaerimashita.
+学校から家に帰りました。
+
+いえの ひとに なんと いいますか。
+What do you say to the family?
+Ie no hito ni nan to iimasu ka.
+家の人に何と言いますか。
+
+いち、ただいま。
+1. I am home.
+Ichi, tadaima.
+1. ただいま。
+
+に、いらっしゃい。
+2. Welcome.
+Ni, irasshai.
+2. いらっしゃい。
+
+さん、おかえりなさい。
+3. Welcome home.
+San, okaerinasai.
+3. お帰りなさい。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa e nado ga arimasen.
+問題 4 は絵などがありません。
+
+ぶんを きいて、いち から さん の なか から いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best one from 1 to 3.
+Bun o kiite, ichi kara san no naka kara ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+おなまえは？
+What is your name?
+Onamae wa?
+お名前は？
+
+いち、じゅうはっさいです。
+1. I am 18 years old.
+Ichi, juuhassai desu.
+1. 18歳です。
+
+に、たなかと もうします。
+2. I am called Tanaka.
+Ni, Tanaka to moushimasu.
+2. 田中と申します。
+
+さん、いたりあじんです。
+3. I am Italian.
+San, Itariajin desu.
+3. イタリア人です。
+
+いちばん いい ものは にばんです。
+The best choice is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+もう ごはんを たべましたか。
+Have you already eaten your meal?
+Mou gohan o tabemashita ka.
+もうご飯を食べましたか。
+
+いち、いいえ もう たべません。
+1. No, I won't eat anymore.
+Ichi, iie mou tabemasen.
+1. いいえ、もう食べません。
+
+に、いいえ まだです。
+2. No, not yet.
+Ni, iie mada desu.
+2. いいえ、まだです。
+
+さん、はい たべます。
+3. Yes, I will eat.
+San, hai tabemasu.
+3. はい、食べます。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+てつだいましょうか。
+Shall I help you?
+Tetsudaimashou ka.
+手伝いましょうか。
+
+いち、いいえ けっこうです。
+1. No, thank you.
+Ichi, iie kekkou desu.
+1. いいえ、結構です。
+
+に、はい てつだっています。
+2. Yes, I am helping.
+Ni, hai tetsudatte imasu.
+2. はい、手伝っています。
+
+さん、どういたしまして。
+3. You are welcome.
+San, douitashimashite.
+3. どういたしまして。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+いま いそがしいですか。
+Are you busy now?
+Ima isogashii desu ka.
+今忙しいですか。
+
+いち、そうですね。すこし いそがしいです。
+1. Yes, I am a little busy.
+Ichi, sou desu ne. Sukoshi isogashii desu.
+1. そうですね、少し忙しいです。
+
+に、そうですね。いそがしかったです。
+2. Yes, I was busy.
+Ni, sou desu ne. Isogashikatta desu.
+2. そうですね、忙しかったです。
+
+さん、そうですね。いそがしくなかったです。
+3. Yes, I was not busy.
+San, sou desu ne. Isogashikunakatta desu.
+3. そうですね、忙しくなかったです。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+いつ あめりかへ いきましたか。
+When did you go to America?
+Itsu Amerika e ikimashita ka.
+いつアメリカへ行きましたか。
+
+いち、ともだちと いきました。
+1. I went with my friend.
+Ichi, tomodachi to ikimashita.
+1. 友達と行きました。
+
+に、きょねん いきました。
+2. I went last year.
+Ni, kyonen ikimashita.
+2. 去年行きました。
+
+さん、ひこうきで いきました。
+3. I went by airplane.
+San, hikouki de ikimashita.
+3. 飛行機で行きました。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+なにを かいたいですか。
+What do you want to buy?
+Nani o kaitai desu ka.
+何を買いたいですか。
+
+いち、じゅうまんえんです。
+1. It is 100,000 yen.
+Ichi, juuman'en desu.
+1. 10万円です。
+
+に、でぱーとで かいます。
+2. I buy it at a department store.
+Ni, depaarto de kaimasu.
+2. デパートで買います。
+
+さん、かめらが ほしいです。
+3. I want a camera.
+San, kamera ga hoshii desu.
+3. カメラが欲しいです。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+それ かりても いいですか。
+May I borrow that?
+Sore karite mo ii desu ka.
+それ借りてもいいですか？
+
+いち、いいえ かりません。
+1. No, I won't borrow it.
+Ichi, iie karimasen.
+1. いいえ、借りません。
+
+に、はい かりますよ。
+2. Yes, I will borrow it.
+Ni, hai karimasu yo.
+2. はい、借りますよ。
+
+さん、はい どうぞ。
+3. Yes, here you go.
+San, hai douzo.
+3. はい、どうぞ。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 04 - Hard"] = ``;
+
+allWords["Listening 05"] = `
+にほんごのうりょくしけん かんぜんもし えぬご だいにかい ちょうかい。
+Japanese Language Proficiency Test Complete Mock Exam N5, 2nd Exam, Listening.
+Nihongo nouryoku shiken kanzen moshi enu go dai ni kai choukai.
+日本語能力試験 完全模試 N5 第2回 聴解。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+いえで おんなのひとが おとこのひとと はなしています。
+At home, a woman is talking with a man.
+Ie de onna no hito ga otoko no hito to hanashite imasu.
+家で女の人が男の人と話しています。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+きょうは さむいですね。
+It is cold today, isn't it?
+Kyou wa samui desu ne.
+今日は寒いですね。
+
+あたたかい ものを のみませんか。
+Would you like to drink something warm?
+Atatakai mono o nomimasen ka.
+温かいものを飲みませんか。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+こーひー、こうちゃ、あと おちゃも ありますけど。
+There is coffee, black tea, and green tea too.
+Koohii, koucha, ato ocha mo arimasu kedo.
+コーヒー、紅茶、あとお茶もありますけど。
+
+じゃあ こうちゃを おねがいします。
+Well then, black tea please.
+Jaa koucha o onegai shimasu.
+じゃあ紅茶をお願いします。
+
+さとうや みるくは いれますか。
+Do you put in sugar or milk?
+Satou ya miruku wa iremasu ka.
+砂糖やミルクは入れますか。
+
+あ、はい。
+Ah, yes.
+A, hai.
+あ、はい。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+いちばん いい ものは さんばんです。
+The best one is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいいちの れいの ところを みてください。
+Please look at the example section of Problem 1 on the answer sheet.
+Kaitouyoushi no mondai ichi no rei no tokoro o mite kudasai.
+解答用紙の問題 1 の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best one is number 3, the answer is written like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+でぱーとで おとこのひとと みせのひとが はなしています。
+A man and a shop assistant are talking in a department store.
+Depaarto de otoko no hito to mise no hito ga hanashite imasu.
+デパートで男の人と店の人が話しています。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+あの、すみません、おてあらいは どこですか。
+Excuse me, where is the restroom?
+Ano, sumimasen, otearai wa doko desu ka.
+あの、すみません、お手洗いはどこですか。
+
+おてあらいは あちらの かいだんの よこに ございまーす。
+The restroom is next to those stairs over there.
+Otearai wa achira no kaidan no yoko ni gozaimasu.
+お手洗いはあちらの階段の横にございます。
+
+かばん うりばの むこうですね。
+It is beyond the bag section, right?
+Kaban uriba no mukou desu ne.
+カバン売り場の向こうですね。
+
+ええ、わかりました、どうも。
+Yes, I understand. Thank you.
+Ee, wakarimashita, doumo.
+ええ、わかりました、どうも。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+きょうしつで せんせいが はなしています。
+The teacher is talking in the classroom.
+Kyoushitsu de sensei ga hanashite imasu.
+教室で先生が話しています。
+
+がくせいは はじめに どのぺーじを あけますか。
+Which page will the students open first?
+Gakusei wa hajime ni dono peeji o akemasu ka.
+学生は初めにどのページを開けますか。
+
+いまから にほんごの てすとを します。
+We will now take the Japanese test.
+Ima kara nihongo no tesuto o shimasu.
+今から日本語のテストをします。
+
+てすとは ぜんぶで よんぺーじ あります。
+The test has 4 pages in total.
+Tesuto wa zenbu de yon peeji arimasu.
+テストは全部で4ページあります。
+
+いちぺーじは きくもんだいです。
+Page 1 is the listening section.
+Ichi peeji wa kiku mondai desu.
+1ページは聞く問題です。
+
+にぺーじから よんぺーじは かくもんだいで、よんぺーじには かんじの もんだいも あります。
+Pages 2 through 4 are writing problems, and on page 4 there are also kanji problems.
+Ni peeji kara yon peeji wa kaku mondai de, yon peeji ni wa kanji no mondai mo arimasu.
+2ページから4ページは書く問題で、4ページには漢字の問題もあります。
+
+はじめに きくもんだいを します。
+First, we will do the listening section.
+Hajime ni kiku mondai o shimasu.
+初めに聞く問題をします。
+
+じかんは じゅっぷんです。
+The time limit is 10 minutes.
+Jikan wa juppun desu.
+時間は10分です。
+
+では もんだいを あけて ください。
+Now, please open the question booklet.
+Dewa mondai o akete kudasai.
+では問題を開けてください。
+
+がくせいは はじめに どのぺーじを あけますか。
+Which page will the students open first?
+Gakusei wa hajime ni dono peeji o akemasu ka.
+学生は初めにどのページを開けますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+がっこうで おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking at school.
+Gakkou de onna no gakusei to otoko no gakusei ga hanashite imasu.
+学校で女の学生と男の学生が話しています。
+
+おんなのがくせいは どのせんせいの ところへ いきますか。
+Which teacher's office will the female student go to?
+Onna no gakusei wa dono sensei no tokoro e ikimasu ka.
+女の学生はどの先生のところへ行きますか。
+
+やまださん、この かみは かいたあと、どのせんせいに だしますか。
+Yamada-san, after writing on this paper, which teacher do I submit it to?
+Yamada-san, kono kami wa kaita ato, dono sensei ni dashimasu ka.
+山田さん、この紙は書いた後、どの先生に出しますか。
+
+たなかせんせいですよ。
+It is Tanaka-sensei.
+Tanaka sensei desu yo.
+田中先生ですよ。
+
+たなかせんせい？
+Tanaka-sensei?
+Tanaka sensei?
+田中先生？
+
+おとこのせんせいですか、おんなのせんせいですか。
+Is it a male teacher or a female teacher?
+Otoko no sensei desu ka, onna no sensei desu ka.
+男の先生ですか、女の先生ですか。
+
+おとこのせんせいです。
+It is a male teacher.
+Otoko no sensei desu.
+男の先生です。
+
+めがねを かけていて、せがたかい せんせいです。
+He wears glasses and is tall.
+Megane o kakete ite, se ga takai sensei desu.
+眼鏡をかけていて、背が高い先生です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+じゃあ あとで たなかせんせいの ところに もっていきます。
+Then, I will take it to Tanaka-sensei's place later.
+Jaa ato de Tanaka sensei no tokoro ni motte ikimasu.
+じゃあ後で田中先生のところに持って行きます。
+
+おんなのがくせいは どのせんせいの ところへ いきますか。
+Which teacher's office will the female student go to?
+Onna no gakusei wa dono sensei no tokoro e ikimasu ka.
+女の学生はどの先生のところへ行きますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+みせで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at a shop.
+Mise de onna no hito to otoko no hito ga hanashite imasu.
+店で女の人と男の人が話しています。
+
+おとこのひとは どの はんかちを かいますか。
+Which handkerchief will the man buy?
+Otoko no hito wa dono hankachi o kaimasu ka.
+男の人はどのハンカチを買いますか。
+
+やまださんの むすめさんの たんじょうびぷれぜんと、はんかちに しませんか。
+How about a handkerchief for Yamada-san's daughter's birthday present?
+Yamada-san no musumesan no tanjoubi purezento, hankachi ni shimasen ka.
+山田さんの娘さんの誕生日プレゼント、ハンカチにしませんか。
+
+ああ、いいですね。
+Ah, that sounds good.
+Aa, ii desu ne.
+ああ、いいですね。
+
+この ぴんくの はなのは どうですか。
+How about this pink flower one?
+Kono pinku no hana no wa dou desu ka.
+このピンクの花のはどうですか。
+
+おんなのこは すきだと おもいますよ。
+I think girls like it.
+Onnanoko wa suki da to omoimasu yo.
+女の子は好きだと思いますよ。
+
+ああ、こっちの くだものが いろいろ かいてあるのも かわいいですね。
+Ah, this one with various fruits written on it is also cute, isn't it?
+Aa, kocchi no kudamono ga iroiro kaite aru no mo kawaii desu ne.
+ああ、こっちの果物が色々書いてあるのも可愛いですね。
+
+どっちも いいですね。
+Both are very nice.
+Docchi mo ii desu ne.
+どっちもいいですね。
+
+あ、これは どうですか。
+Oh, how about this one?
+A, kore wa dou desu ka.
+あ、これはどうですか。
+
+やまださんの いえ、いぬが にひき いますよね。
+Yamada-san's house has two dogs, right?
+Yamada-san no ie, inu ga nihiki imasu yo ne.
+山田さんの家、犬が2匹いますよね。
+
+ええ、ちょうど これと おなじですよ。
+Yes, they look exactly like this.
+Ee, choudo kore to onaji desu yo.
+ええ、ちょうどこれと同じですよ。
+
+くろいのと しろいのです。
+A black one and a white one.
+Kuroi no to shiroi no desu.
+黒いのと白いのです。
+
+いいですね、これに しましょう。
+Great, let's go with this one.
+Ii desu ne, kore ni shimashou.
+いいですね、これにしましょう。
+
+じゃ、かってきますね。
+Alright, I'll go buy it.
+Ja, katte kimasu ne.
+じゃ、買ってきますね。
+
+おとこのひとは どの はんかちを かいますか。
+Which handkerchief will the man buy?
+Otoko no hito wa dono hankachi o kaimasu ka.
+男の人はどのハンカチを買いますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+がっこうで せんせいと がくせいが はなしています。
+A teacher and a student are talking at school.
+Gakkou de sensei to gakusei ga hanashite imasu.
+学校で先生と学生が話しています。
+
+がくせいは いすを どう ならべますか。
+How will the student arrange the chairs?
+Gakusei wa isu o dou narabemasu ka.
+学生は椅子をどう並べますか。
+
+あした この きょうしつで すぴーちこんてすとを しますから、いすを ならべて ください。
+We are having a speech contest in this classroom tomorrow, so please arrange the chairs.
+Ashita kono kyoushitsu de supiichi kontesuto o shimasu kara, isu o narabete kudasai.
+明日この教室でスピーチコンテストをしますから、椅子を並べてください。
+
+はい、どう ならべますか。
+Yes, how should I arrange them?
+Hai, dou narabemasu ka.
+はい、どう並べますか。
+
+よこに むっつ、たてに やっつ ならべて ください。
+Please arrange them 6 horizontally and 8 vertically.
+Yoko ni muttsu, tate ni yattsu narabete kudasai.
+横に6つ、縦に8つ並べてください。
+
+よこに むっつ、たてに やっつですね。
+6 horizontally and 8 vertically, right?
+Yoko ni muttsu, tate ni yattsu desu ne.
+横に6つ、縦に8つですね。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+がくせいは いすを どう ならべますか。
+How will the student arrange the chairs?
+Gakusei wa isu o dou narabemasu ka.
+学生は椅子をどう並べますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+びょういんで びょういんのひとと おんなのひとが はなしています。
+A hospital receptionist and a woman are talking at a hospital.
+Byouin de byouin no hito to onna no hito ga hanashite imasu.
+病院で病院の人と女の人が話しています。
+
+おんなのひとは どこに すわりますか。
+Where will the woman sit?
+Onna no hito wa doko ni suwarimasu ka.
+女の人はどこに座りますか。
+
+やまださん。
+Yamada-san.
+Yamada-san.
+山田さん。
+
+はい。
+Yes.
+Hai.
+はい。
+
+じゃあ、なまえを よびますから、それまで あそこの いすで ちょっと まっていて ください。
+Well, we will call your name soon, so please wait over there on those chairs until then.
+Jaa, namae o yobimasu kara, sore made asoko no isu de chotto matte ite kudasai.
+じゃあ、名前を呼びますから、それまであそこの椅子でちょっと待っていてください。
+
+あの まどの そばの そふぁーですか。
+Do you mean that sofa next to the window?
+Ano mado no soba no sofaa desu ka.
+あの窓のそばのソファーですか。
+
+ええ、そうです。
+Yes, that's right.
+Ee, sou desu.
+ええ、そうです。
+
+おんなのひとは どこに すわりますか。
+Where will the woman sit?
+Onna no hito wa doko ni suwarimasu ka.
+女の人はどこに座りますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+がっこうで おとこのがくせいと がっこうのひとが はなしています。
+A male student and a school staff member are talking at school.
+Gakkou de otoko no gakusei to gakkou no hito ga hanashite imasu.
+学校で男の学生と学校の人が話しています。
+
+おとこのがくせいは なんじごろに もういちど きますか。
+About what time will the male student come back again?
+Otoko no gakusei wa nan ji goro ni mou ichido kimasu ka.
+男の学生は何時頃にもう一度来ますか。
+
+すみません、せんせいは いますか。
+Excuse me, is the teacher here?
+Sumimasen, sensei wa imasu ka.
+すみません、先生はいますか。
+
+いいえ、まだ きていませんが。
+No, he hasn't come yet.
+Iie, mada kite imasen ga.
+いいえ、まだ来ていませんが。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+なんじごろに きますか。
+About what time will he arrive?
+Nan ji goro ni kimasu ka.
+何時頃に来ますか。
+
+もうすぐ きますよ。
+He'll be here very soon.
+Mou sugu kimasu yo.
+もうすぐ来ますよ。
+
+じゅうじから じゅぎょうが ありますから。
+Because he has class starting at 10:00.
+Juuji kara jugyou ga arimasu kara.
+10時から授業がありますから。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あの、つぎの じゅういちじからの じゅぎょうも ありますか。
+Um, does he also have the next class starting from 11:00?
+Ano, tsugi no juuichiji kara no jugyou mo arimasu ka.
+あの、次の11時からの授業もありますか。
+
+いいえ、ごぜんちゅうは そのじゅぎょうだけですから、また ここに もどりますよ。
+No, that is his only class in the morning, so he will return here again.
+Iie, gozenchuu wa sono jugyou dake desu kara, mata koko ni modorimasu yo.
+いいえ、午前中はその授業だけですから、またここに戻りますよ。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+じゃ、じゅぎょうが おわるころ、また きます。
+Then, I'll come back around the time class finishes.
+Ja, jugyou ga owaru koro, mata kimasu.
+じゃ、授業が終わる頃また来ます。
+
+おとこのがくせいは なんじごろに もういちど きますか。
+About what time will the male student come back again?
+Otoko no gakusei wa nan ji goro ni mou ichido kimasu ka.
+男の学生は何時頃にもう一度来ますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking.
+Onna no gakusei to otoko no gakusei ga hanashite imasu.
+女の学生と男の学生が話しています。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will the two go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+らいしゅう、さとうさんの たんじょうびぷれぜんとを かいに いきませんか。
+Shall we go buy Sato-san's birthday present next week?
+Raishuu, Satou-san no tanjoubi purezento o kai ni ikimasen ka.
+来週佐藤さんの誕生日プレゼントを買いに行きませんか。
+
+そうですね。
+That sounds good.
+Sou desu ne.
+そうですね。
+
+いつかが たんじょうびですから、みっかか よっかに いきましょう。
+Since the 5th is her birthday, let's go on the 3rd or the 4th.
+Itsuka ga tanjoubi desu kara, mikka ka yokka ni ikimashou.
+5日が誕生日ですから、3日か4日に行きましょう。
+
+あ、ちょっと まってください。
+Ah, please wait a moment.
+A, chotto matte kudasai.
+あ、ちょっと待ってください。
+
+わたしは みっかと よっかは あるばいとが あります。
+I have part-time work on the 3rd and the 4th.
+Watashi wa mikka to yokka wa arubaito ga arimasu.
+私は3日と4日はアルバイトがあります。
+
+ふつかは だめですか。
+Is the 2nd no good?
+Futsuka wa dame desu ka.
+2日はダメですか。
+
+いいですよ。
+That is fine.
+Ii desu yo.
+いいですよ。
+
+じゃあ、じゅぎょうが おわったあとに いきましょう。
+Then, let's go after class finishes.
+Jaa, jugyou ga owatta ato ni ikimashou.
+じゃあ授業が終わった後に行きましょう。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will the two go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+いちばん いい ものは いちばんです。
+The best one is number 1.
+Ichiban ii mono wa ichiban desu.
+一番いいものは1番です。
+
+かいとうようしの もんだいにの れいの ところを みてください。
+Please look at the example section of Problem 2 on the answer sheet.
+Kaitouyoushi no mondai ni no rei no tokoro o mite kudasai.
+解答用紙の問題 2 の例のところを見てください。
+
+いちばん いい ものは いちばんですから、こたえは このように かきます。
+Since the best one is number 1, the answer is written like this.
+Ichiban ii mono wa ichiban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは1番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとの たんじょうびは いつですか。
+When is the woman's birthday?
+Onna no hito no tanjoubi wa itsu desu ka.
+女の人の誕生日はいつですか。
+
+きれいな はなですね。
+These are beautiful flowers, aren't they?
+Kireina hana desu ne.
+綺麗なお花ですね。
+
+ええ、たんじょうびに ともだちに もらいました。
+Yes, I got them from my friend for my birthday.
+Ee, tanjoubi ni tomodachi ni moraimashita.
+ええ、誕生日に友達にもらいました。
+
+へえ、いつですか。
+Oh, when was it?
+Hee, itsu desu ka.
+へえ、いつですか。
+
+きのうです、じゅういちにちです。
+It was yesterday, the 11th.
+Kinou desu, juuichinichi desu.
+昨日です、11日です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+え、じゃあ いちが よっつ ならびますね。
+Oh, so there are four 1's lined up, aren't there? (November 11th)
+E, jaa ichi ga yottsu narabimasu ne.
+え、じゃあ1が4つ並びますね。
+
+ええ、そうですよ。
+Yes, that's right.
+Ee, sou desu yo.
+ええ、そうですよ。
+
+おんなのひとの たんじょうびは いつですか。
+When is the woman's birthday?
+Onna no hito no tanjoubi wa itsu desu ka.
+女の人の誕生日はいつですか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+だいがくで おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking at university.
+Daigaku de otoko no gakusei to onna no gakusei ga hanashite imasu.
+大学で男の学生と女の学生が話しています。
+
+ふたりは どこで たべますか。
+Where will they eat?
+Futari wa doko de tabemasu ka.
+2人はどこで食べますか。
+
+やまださん、おひる いっしょに たべませんか。
+Yamada-san, won't you eat lunch together?
+Yamada-san, ohiru issho ni tabemasen ka.
+山田さん、お昼一緒に食べませんか。
+
+いいですよ。
+I'd love to.
+Ii desu yo.
+いいですよ。
+
+じゃあ、がくせいしょくどうが あたらしくなったから いきませんか。
+Well, since the student cafeteria has become new, shall we go there?
+Jaa, gakusei shokdou ga atarashiku natta kara ikimasen ka.
+じゃあ、学生食堂が新しくなったから行きませんか。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+でも、きょうは てんきが いいから そとで たべたいです。
+But since the weather is nice today, I want to eat outside.
+Demo, kyou wa tenki ga ii kara soto de tabetai desu.
+でも、今日は天気がいいから外で食べたいです。
+
+あさから ずっと きょうしつの なかに いましたから。
+Because I've been inside the classroom the whole time since morning.
+Asa kara zutto kyoushitsu no naka ni imashita kara.
+朝からずっと教室の中にいましたから。
+
+じゃあ、おみせで ぱんか おべんとうを かって、さくらこうえんまで いきましょうか。
+Then, shall we buy some bread or bento at a shop and go to Sakura Park?
+Jaa, omise de pan ka obentou o katte, Sakura kouen made ikimashou ka.
+じゃあ、お店でパンかお弁当を買って、桜公園まで行きましょうか。
+
+ええ、そうしましょう。
+Yes, let's do that.
+Ee, sou shimashou.
+ええ、そうしましょう。
+
+ふたりは どこで たべますか。
+Where will they eat?
+Futari wa doko de tabemasu ka.
+2人はどこで食べますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+れすとらんで おんなのひとと みせのひとが はなしています。
+A woman and a restaurant staff member are talking at a restaurant.
+Resutoran de onna no hito to mise no hito ga hanashite imasu.
+レストランで女の人と店の人が話しています。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito wa nani o tabemasu ka.
+女の人は何を食べますか。
+
+すみません、これは とりにくですか。
+Excuse me, is this chicken?
+Sumimasen, kore wa toriniku desu ka.
+すみません、これは鶏肉ですか。
+
+いいえ、こちらは ぶたにくで ございまーす。
+No, this is pork.
+Iie, kochira wa butaniku de gozaimasu.
+いいえ、こちらは豚肉でございます。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+これは？
+What about this?
+Kore wa?
+これは？
+
+こちらは さかなです。
+This is fish.
+Kochira wa sakana desu.
+こちらは魚です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あの、とりにくの りょうりは ありませんか。
+Um, are there any chicken dishes?
+Ano, toriniku no ryouri wa arimasen ka.
+あの、鶏肉の料理はありませんか。
+
+はい、こちらです。
+Yes, they are right here.
+Hai, kochira desu.
+はい、こちらです。
+
+じゃ、これを おねがいします。
+Then, I'll have this one, please.
+Ja, kore o onegai shimasu.
+じゃ、これをお願いします。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito wa nani o tabemasu ka.
+女の人は何を食べますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+だいがくで おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking at university.
+Daigaku de otoko no gakusei to onna no gakusei ga hanashite imasu.
+大学で男の学生と女の学生が話しています。
+
+あしたの ぱーてぃーに せんせいは なんにん きますか。
+How many teachers will come to tomorrow's party?
+Ashita no paatii ni sensei wa nan nin kimasu ka.
+明日のパーティーに先生は何人来ますか。
+
+あしたの くらすの ぱーてぃーには ぜんぶで なんにんくらい きますか。
+About how many people are coming to tomorrow's class party in total?
+Ashita no kurasu no paatii ni wa zenbu de nan nin kurai kimasu ka.
+明日のクラスのパーティーには全部で何人くらい来ますか。
+
+えっと、こないひとが さんにん いますから、ぜんぶで にじゅうよにんです。
+Let's see, since there are 3 people who aren't coming, there will be 24 people in total.
+Etto, konai hito ga san nin imasu kara, zenbu de nijuuyon nin desu.
+えっと、来ない人が3人いますから、全部で24人です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+せんせいたちも きますか。
+Are the teachers also coming?
+Sensei tachi mo kimasu ka.
+先生たちも来ますか。
+
+ええ、やまだせんせいと たなかせんせいが きます。
+Yes, Yamada-sensei and Tanaka-sensei are coming.
+Ee, Yamada sensei to Tanaka sensei ga kimasu.
+ええ、山田先生と田中先生が来ます。
+
+かわしませんせいは？
+What about Kawashima-sensei?
+Kawashima sensei wa?
+川島先生は？
+
+かわしませんせいは こないと いっていました。
+Kawashima-sensei said he wasn't coming.
+Kawashima sensei wa konai to itte imashita.
+川島先生は来ないと言っていました。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あしたの ぱーてぃーに せんせいは なんにん きますか。
+How many teachers will come to tomorrow's party?
+Ashita no paatii ni sensei wa nan nin kimasu ka.
+明日のパーティーに先生は何人来ますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+あしたの ごご、おんなのひとは どこへ いきますか。
+Where will the woman go tomorrow afternoon?
+Ashita no gogo, onna no hito wa doko e ikimasu ka.
+明日の午後、女の人はどこへ行きますか。
+
+あしたの ごご、いっしょに えいがを みに いきませんか。
+Would you like to go to see a movie together tomorrow afternoon?
+Ashita no gogo, issho ni eiga o mi ni ikimasen ka.
+明日の午後、一緒に映画を見に行きませんか。
+
+すみません、あしたは ちょっと いそがしいです。
+I'm sorry, tomorrow I'm a bit busy.
+Sumimasen, ashita wa chotto isogashii desu.
+すみません、明日はちょっと忙しいです。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+ごぜんは びょういんへ いったり、にもつを だしに ゆうびんきょくへ いったり します。
+In the morning, I will do things like going to the hospital and going to the post office to mail packages.
+Gozen wa byouin e ittari, nimotsu o dashi ni yuubinkyoku e ittari shimasu.
+午前は病院へ行ったり、荷物を出しに郵便局へ行ったりします。
+
+ごごは やまだせんせいの じゅぎょうの れぽーとを かきます。
+In the afternoon, I will write a report for Yamada-sensei's class.
+Gogo wa Yamada sensei no jugyou no repooto o kakimasu.
+午後は山田先生の授業のレポートを書きます。
+
+げつようびに だしますから。
+Since I have to submit it on Monday.
+Getsuyoubi ni dashimasu kara.
+月曜日に出しますから。
+
+え、その れぽーと、だすのは きんようびまでですよ。
+Eh, the deadline to submit that report is actually Friday.
+E, sono repooto, dasu no wa kinyoubi made desu yo.
+え、そのレポート、出すのは金曜日までですよ。
+
+ほんとうですか。
+Really?
+Hontou desu ka.
+本当ですか。
+
+じゃあ、わたしも えいがを みに いきたいです。
+In that case, I want to go to see the movie too.
+Jaa, watashi mo eiga o mi ni ikitai desu.
+じゃあ、私も映画を見に行きたいです。
+
+じゃ、いきましょう。
+Then, let's go!
+Ja, ikimashou.
+じゃ、行きましょう。
+
+あしたの ごご、おんなのひとは どこへ いきますか。
+Where will the woman go tomorrow afternoon?
+Ashita no gogo, onna no hito wa doko e ikimasu ka.
+明日の午後、女の人はどこへ行きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+ぱーてぃーで おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking at a party.
+Paatii de otoko no hito to onna no hito ga hanashite imasu.
+パーティーで男の人と女の人が話しています。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+あ、やまださん、のみものが ありませんね。
+Ah, Yamada-san, you don't have a drink, do you?
+A, Yamada-san, nomimono ga arimasen ne.
+あ、山田さん、飲み物がありませんね。
+
+なにを のみますか。
+What would you like to drink?
+Nani o nomimasu ka.
+何を飲みますか。
+
+びーると わいん、あと じゅーすと おちゃが ありますけど。
+We have beer, wine, and also juice and green tea.
+Biiru to wain, ato juusu to ocha ga arimasu kedo.
+ビールとワイン、あとジュースとお茶がありますけど。
+
+あの、こーひーは ありませんか。
+Um, do you have coffee?
+Ano, koohii wa arimasen ka.
+あの、コーヒーはありませんか。
+
+うーん、こーひーは ありませんね。
+Hmm, there is no coffee.
+Uun, koohii wa arimasen ne.
+うーん、コーヒーはありませんね。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あたたかい ものは ありませんか。
+Is there anything warm?
+Atatakai mono wa arimasen ka.
+温かいものはありませんか。
+
+ああ、あたたかい おちゃは できますよ。
+Ah, we can make warm green tea.
+Aa, atatakai ocha wa dekimasu yo.
+ああ、温かいお茶はできますよ。
+
+そうですか、じゃ、それを おねがいします。
+I see, then please give me that.
+Sou desu ka, ja, sore o onegai shimasu.
+そうですか、じゃ、それをお願いします。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, look at the picture while listening to the question.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the person indicated by the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1 から 3 の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+ごはんを たべます。
+You are going to eat.
+Gohan o tabemasu.
+ご飯を食べます。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、ごちそうさまでした。
+1. Thank you for the meal (after eating).
+Ichi, gochisousama deshita.
+1 ごちそうさまでした。
+
+に、いただきます。
+2. Thank you for the food (before eating).
+Ni, itadakimasu.
+2 いただきます。
+
+さん、じゃ、また。
+3. See you later.
+San, ja, mata.
+3 じゃまた。
+
+いちばん いい ものは にばんです。
+The best one is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいさん の れいの ところを みてください。
+Please look at the example section of Problem 3 on the answer sheet.
+Kaitouyoushi no mondai san no rei no tokoro o mite kudasai.
+解答用紙の問題 3 の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best one is number 2, the answer is written like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+ねます。
+You are going to sleep.
+Nemasu.
+寝ます。
+
+ほかのひとに なんと いいますか。
+What do you say to others?
+Hoka no hito ni nan to iimasu ka.
+他の人に何と言いますか。
+
+いち、おつかれさま。
+1. Good job / Thank you for your hard work.
+Ichi, otsukaresama.
+1 お疲れ様。
+
+に、おやすみなさい。
+2. Good night.
+Ni, oyasuminasai.
+2 おやすみなさい。
+
+さん、また あした。
+3. See you tomorrow.
+San, mata ashita.
+3 また明日。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+がっこうへ でかけます。
+You are leaving for school.
+Gakkou e dekakemasu.
+学校へ出かけます。
+
+かぞくに なんと いいますか。
+What do you say to your family?
+Kazoku ni nan to iimasu ka.
+家族に何と言いますか。
+
+いち、しつれいします。
+1. Excuse me (formal).
+Ichi, shitsurei shimasu.
+1 失礼します。
+
+に、いま いきます。
+2. I am going now.
+Ni, ima ikimasu.
+2 今行きます。
+
+さん、いってきます。
+3. I am leaving (I'll go and come back).
+San, ittekimasu.
+3 行ってきます。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+でんしゃに のります。
+You are boarding a train.
+Densha ni norimasu.
+電車に乗ります。
+
+とうきょうまで なんぷんで いくか ききたいです。
+You want to ask how many minutes it takes to get to Tokyo.
+Toukyou made nan fun de iku ka kikitai desu.
+東京まで何分で行くか聞きたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、どのくらい かかりますか。
+1. About how long does it take?
+Ichi, dono kurai kakarimasu ka.
+1 どのくらいかかりますか。
+
+に、いくらですか。
+2. How much is it?
+Ni, ikura desu ka.
+2 いくらですか。
+
+さん、いま なんじですか。
+3. What time is it now?
+San, ima nan ji desu ka.
+3 今何時ですか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+たくしーの なかです。
+You are inside a taxi.
+Takushii no naka desu.
+タクシーの中です。
+
+どこへ いきたいか いいます。
+You tell the driver where you want to go.
+Doko e ikitai ka iimasu.
+どこへ行きたいか言います。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、ちかくの えきまで おねがいします。
+1. To the nearby station, please.
+Ichi, chikaku no eki made onegai shimasu.
+1 近くの駅までお願いします。
+
+に、ちかくの えきまで いきます。
+2. I am going to the nearby station.
+Ni, chikaku no eki made ikimasu.
+2 近くの駅まで行きます。
+
+さん、ちかくの えきまで きてください。
+3. Please come to the nearby station.
+San, chikaku no eki made kite kudasai.
+3 近くの駅まで来てください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+きっさてんに います。
+You are in a cafe.
+Kissaten ni imasu.
+喫茶店にいます。
+
+こーひーを のみたいです。
+You want to drink coffee.
+Koohii o nomitai desu.
+コーヒーを飲みたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、こーひーを おねがいします。
+1. Coffee, please.
+Ichi, koohii o onegai shimasu.
+1 コーヒーをお願いします。
+
+に、こーひーを とってください。
+2. Please pass the coffee.
+Ni, koohii o totte kudasai.
+2 コーヒーを取ってください。
+
+さん、こーひーが あります。
+3. There is coffee.
+San, koohii ga arimasu.
+3 コーヒーがあります。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんででは、えなどが ありません。
+In Problem 4, there are no pictures.
+Mondai yon de wa, e nado ga arimasen.
+問題 4 では、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence, and choose the best response from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1 から 3 の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おなまえは？
+What is your name?
+Oname wa?
+お名前は？
+
+いち、じゅうはっさいです。
+1. I am 18 years old.
+Ichi, juuhassai desu.
+1 18歳です。
+
+に、たなかと もします。
+2. My name is Tanaka.
+Ni, Tanaka to moushimasu.
+2 田中と申します。
+
+さん、いたりあじんです。
+3. I am Italian.
+San, Itariajin desu.
+3 イタリア人です。
+
+いちばん いい ものは にばんです。
+The best one is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいよん の れいの ところを みてください。
+Please look at the example section of Problem 4 on the answer sheet.
+Kaitouyoushi no mondai yon no rei no tokoro o mite kudasai.
+解答用紙の問題 4 の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best one is number 2, the answer is written like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+あのかたは どなたですか。
+Who is that person?
+Ano kata wa donata desu ka.
+あの方はどなたですか。
+
+いち、とても しんせつな ひとです。
+1. They are a very kind person.
+Ichi, totemo shinsetsu na hito desu.
+1 とても親切な人です。
+
+に、いいえ、ちがいます。
+2. No, that is not correct.
+Ni, iie, chigaimasu.
+2 いいえ、違います。
+
+さん、やまだせんせいです。
+3. That is Yamada-sensei.
+San, Yamada sensei desu.
+3 山田先生です。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとうさんは おいくつですか。
+How old is your father?
+Otousan wa oitsu desu ka.
+お父さんはおいくつですか。
+
+いち、ええ、そうです。
+1. Yes, that is right.
+Ichi, ee, sou desu.
+1 ええ、そうです。
+
+に、ごじゅうまいでーす。
+2. It is 50 thin sheets.
+Ni, gojuu mai desu.
+2 50枚です。
+
+さん、ごじゅっさいです。
+3. He is 50 years old.
+San, gojussai desu.
+3 50歳です。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+にほんりょうりは なにが すきですか。
+What Japanese food do you like?
+Nihon ryouri wa nani ga suki desu ka.
+日本料理は何が好きですか。
+
+いち、おいしいです。
+1. It is delicious.
+Ichi, oishii desu.
+1 美味しいです。
+
+に、てんぷらが すきです。
+2. I like tempura.
+Ni, tenpura ga suki desu.
+2 天ぷらが好きです。
+
+さん、ときどき たべます。
+3. I eat it sometimes.
+San, tokidoki tabemasu.
+3 時々食べます。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+まどを あけましょうか。
+Shall I open the window?
+Mado o akemashou ka.
+窓を開けましょうか。
+
+いち、ええ、おねがいします。
+1. Yes, please.
+Ichi, ee, onegai shimasu.
+1 ええ、お願いします。
+
+に、ええ、あけますね。
+2. Yes, I'll open it.
+Ni, ee, akemasu ne.
+2 ええ、開けますね。
+
+さん、いいえ、あけて ください。
+3. No, please open it.
+San, iie, akete kudasai.
+3 いいえ、開けてください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+すみません、おれんじじゅーすを おねがいします。
+Excuse me, orange juice, please.
+Sumimasen, orenji juusu o onegai shimasu.
+すみません、オレンジジュースをお願いします。
+
+いち、けっこうです。
+1. No, thank you / It's fine.
+Ichi, kekkou desu.
+1 結構です。
+
+に、かしこまりました。
+2. Understood / Certainly.
+Ni, kashikomarimashita.
+2 かしこまりました。
+
+さん、はい、おいしいです。
+3. Yes, it's delicious.
+San, hai, oishii desu.
+3 はい、美味しいです。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+かいしゃまで なんで いきますか。
+How do you go to the company?
+Kaisha made nan de ikimasu ka.
+会社まで何で行きますか。
+
+いち、とても とおいです。
+1. It is very far.
+Ichi, totemo tooi desu.
+1 とても遠いです。
+
+に、ばすで いきます。
+2. I go by bus.
+Ni, basu de ikimasu.
+2 バスで行きます。
+
+さん、くじに いきます。
+3. I go at 9 o'clock.
+San, kuji ni ikimasu.
+3 9時に行きます。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 05 - Hard"] = ``;
+
+allWords["Listening 06"] = `
+これ から おとを きいて ください。
+Please listen to the sound now.
+Kore kara oto o kiite kudasai.
+これから音を聞いてください。
+
+にせんにじゅういちねん だいにかい にほんごのうりょくしけん ちょうかい えぬご。
+2021 2nd Japanese Language Proficiency Test Listening N5.
+Nisen nijuuichi nen dai ni kai Nihongo nouryoku shiken choukai enu go.
+2021年第2回日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+もんだいようしに めもを とっても いいです。
+You may take notes on the question sheet.
+Mondai youshi ni memo o totte mo ii desu.
+問題用紙にメモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+くらすで せんせいが はなしています。
+A teacher is talking in class.
+Kurasu de sensei ga hanashite imasu.
+クラスで先生が話しています。
+
+がくせいは きょう うちで どこを べんきょうしますか。
+Where will the students study at home today?
+Gakusei wa kyou uchi de doko o benkyou shimasu ka.
+学生は今日うちでどこを勉強しますか。
+
+では きょうは にじゅっぺーじまで おわりましたから、にじゅういちぺーじは しゅくだいですね。
+Well, since we have finished up to page 20 today, page 21 is homework.
+Dewa kyou wa nijuu peeji made owarimashita kara, nijuuichi peeji wa shukudai desu ne.
+では今日は20ページまで終わりましたから、21ページは宿題ですね。
+
+ぜんぶですか。
+Is it the whole page?
+Zenbu desu ka.
+全部ですか。
+
+いいえ、にじゅういちぺーじの いちばんです。
+No, it is No. 1 on page 21.
+Iie, nijuuichi peeji no ichiban desu.
+いいえ、21ページの1番です。
+
+にばんは くらすで します。
+No. 2 will be done in class.
+Niban wa kurasu de shimasu.
+2番はクラスでします。
+
+がくせいは きょう うちで どこを べんきょうしますか。
+Where will the students study at home today?
+Gakusei wa kyou uchi de doko o benkyou shimasu ka.
+学生は今日うちでどこを勉強しますか。
+
+いちばん いい ものは さんばんです。
+The best answer is No. 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいいちの れいのところを みてください。
+Please look at the example under Problem 1 on the answer sheet.
+Kaitouyoshi no mondai ichi no rei no tokoro o mite kudasai.
+回答用紙の問題1の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best answer is No. 3, write the answer like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajimemasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+りょうりの くらすで おんなの せんせいと おとこの がくせいが はなしています。
+In a cooking class, a female teacher and a male student are talking.
+Ryouri no kurasu de onna no sensei to otoko no gakusei ga hanashite imasu.
+料理のクラスで女の先生と男の学生が話しています。
+
+おとこの がくせいは このあと すぐ なにを しますか。
+What will the male student do immediately after this?
+Otoko no gakusei wa kono ato sugu nani o shimasu ka.
+男の学生はこの後すぐ何をしますか。
+
+では これから かれーを つくりましょう。
+Well, let's make curry now.
+Dewa kore kara karee o tsukurimashou.
+ではこれからカレーを作りましょう。
+
+せんせい、わたしは やさいを きりましょうか。
+Teacher, shall I cut the vegetables?
+Sensei, watashi wa yasai o kirimashou ka.
+先生、私は野菜を切りましょうか。
+
+いいえ、やさいじゃなくて にくを きってください。
+No, please cut the meat, not the vegetables.
+Iie, yasai janaku te niku o kitte kudasai.
+いいえ、野菜じゃなくて肉を切ってください。
+
+はい。
+Yes.
+Hai.
+はい。
+
+おとこの がくせいは このあと すぐ なにを しますか。
+What will the male student do immediately after this?
+Otoko no gakusei wa kono ato sugu nani o shimasu ka.
+男の学生はこの後すぐ何をしますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+きっさてんで みせの おんなのひとと おとこのひとが はなしています。
+At a coffee shop, a shop woman and a man are talking.
+Kissaten de mise no onna no hito to otoko no hito ga hanashite imasu.
+喫茶店で店の女の人と男の人が話しています。
+
+みせの おとこのひとは だれに てぶくろを わたしますか。
+To whom will the shop man hand the gloves?
+Mise no otoko no hito wa dare ni tebukuro o watashimasu ka.
+店の男の人は誰に手袋を渡しますか。
+
+あ、この てぶくろは いま みせを でた おんなのひとのですね。
+Ah, these gloves belong to the woman who just left the shop, don't they?
+A, kono tebukuro wa ima mise o deta onna no hito no desu ne.
+あ、この手袋は今店を出た女の人のですね。
+
+ああ、よにんの ぐるーぷですね。
+Ah, they are a group of four, aren't they?
+Aa, yonin no guruupu desu ne.
+ああ、4人のグループですね。
+
+あそこに いますよ。
+They are over there.
+Asoko ni imasu yo.
+あそこにいますよ。
+
+すぐ もっていて わたしてください。
+Please take them immediately and hand them over.
+Sugu motte itte watashite kudasai.
+すぐ持って行って渡してください。
+
+あの かみが みじかくて めがねを かけている ひとのですよ。
+They belong to the person with short hair who is wearing glasses.
+Ano kami ga mijikaku te megane o kakete iru hito no desu yo.
+あの髪が短くて眼鏡をかけている人のですよ。
+
+わかりました。
+Understood.
+Wakarimashita.
+わかりました。
+
+みせの おとこのひとは だれに てぶくろを わたしますか。
+To whom will the shop man hand the gloves?
+Mise no otoko no hito wa dare ni tebukuro o watashimasu ka.
+店の男の人は誰に手袋を渡しますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おとこのこと おかあさんが はなしています。
+A boy and his mother are talking.
+Otokonoko to okaasan ga hanashite imasu.
+男の子とお母さんが話しています。
+
+おとこのこは にもつを どこに おきますか。
+Where will the boy place the luggage?
+Otokonoko wa nimotsu o doko ni okimasu ka.
+男の子は荷物をどこに置きますか。
+
+おかあさん、にもつ きたよ。
+Mother, the package arrived!
+Okaasan, nimotsu kita yo.
+お母さん、荷物来たよ。
+
+どこに おく？
+Where should I put it?
+Doko ni oku?
+どこに置く？
+
+てーぶるの うえで いい？
+Is on top of the table okay?
+Teeburu no ue de ii?
+テーブルの上でいい？
+
+それ たべものよ。
+That is food.
+Sore tabemono yo.
+それ食べ物よ。
+
+てーぶるの うえじゃなくて れいぞうこに いれて。
+Put it in the refrigerator, not on top of the table.
+Teeburu no ue janaku te reizouko ni irete.
+テーブルの上じゃなくて冷蔵庫に入れて。
+
+おかあさん、れいぞうこ いっぱいだよ。
+Mother, the refrigerator is full.
+Okaasan, reizouko ippai dayo.
+お母さん、冷蔵庫いっぱいだよ。
+
+じゃあ、れいぞうこの よこの いすに おいて。
+Then, place it on the chair next to the refrigerator.
+Jaa, reizouko no yoko no isu ni oite.
+じゃあ冷蔵庫の横の椅子に置いて。
+
+はーい。
+Okay.
+Haai.
+はーい。
+
+おとこのこは にもつを どこに おきますか。
+Where will the boy place the luggage?
+Otokonoko wa nimotsu o doko ni okimasu ka.
+男の子は荷物をどこに置きますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのひとと おとこのひとが でんわで はなしています。
+A woman and a man are talking on the phone.
+Onna no hito to otoko no hito ga denwa de hanashite imasu.
+女の人と男の人が電話で話しています。
+
+おんなのひとは このあと どこへ いきますか。
+Where will the woman go after this?
+Onna no hito wa kono ato doko e ikimasu ka.
+女の人はこの後どこへ行きますか。
+
+もしもし、いま えきに つきました。
+Hello, I've arrived at the station now.
+Moshimoshi, ima eki ni tsukimashita.
+もしもし、今駅に着きました。
+
+そうですか、ぼくは きっさてんに います。
+I see, I'm at the coffee shop.
+Boku wa kissaten ni imasu.
+そうですか、僕は喫茶店にいます。
+
+ああ、えきの となりの きっさてんですね。
+Ah, the coffee shop next to the station, right?
+Aa, eki no tonari no kissaten desu ne.
+ああ、駅の隣の喫茶店ですね。
+
+いいえ、だいがくの まえの きっさてんです。
+No, the coffee shop in front of the university.
+Iie, daigaku no mae no kissaten desu.
+いいえ、大学の前の喫茶店です。
+
+あ、わかりました、すぐ いきます。
+Ah, understood, I'll go right away.
+A, wakarimashita, sugu ikimasu.
+あ、わかりました、すぐ行きます。
+
+おんなのひとは このあと どこへ いきますか。
+Where will the woman go after this?
+Onna no hito wa kono ato doko e ikimasu ka.
+女の人はこの後どこへ行きますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+くらすで せんせいが はなしています。
+The teacher is talking in class.
+Kurasu de sensei ga hanashite imasu.
+クラスで先生が話しています。
+
+がくせいは どこで あたらしい きょうかしょを かいますか。
+Where will the students buy the new textbook?
+Gakusei wa doko de atarashii kyoukasho o kaimasu ka.
+学生はどこで新しい教科書を買いますか。
+
+みなさん、きょう じゅぎょうの あと、この あたらしい きょうかしょを かって、つぎの じゅぎょうの ときに もってきて ください。
+Everyone, please buy this new textbook after class today and bring it to the next class.
+Minasan, kyou jugyou no ato, kono atarashii kyoukasho o katte, tsugi no jugyou no toki ni motte kite kudasai.
+皆さん、今日授業の後、この新しい教科書を買って、次の授業の時に持ってきてください。
+
+きょうかしょの なまえは にほんごにです。
+The name of the textbook is Japanese 2.
+Kyoukasho no namae wa Nihongo ni desu.
+教科書の名前は日本語2です。
+
+きょうかしょは あしたまで いちかいの いちまるいち きょうしつで うっています。
+The textbooks are being sold in room 101 on the 1st floor until tomorrow.
+Kyoukasho wa ashita made ichikai no ichimaruichi kyoushitsu de utte imasu.
+教科書は明日まで1階の101教室で売っています。
+
+この きょうしつは にかいの にまるいち ですから、ちょうど このしたの きょうしつですね。
+Since this classroom is room 201 on the 2nd floor, it's the room right below this one.
+Kono kyoushitsu wa nikai no nimaruichi desu kara, choudo kono shita no kyoushitsu desu ne.
+この教室は2階の201ですから、ちょうどこの下の教室ですね。
+
+がくせいは どこで あたらしい きょうかしょを かいますか。
+Where will the students buy the new textbook?
+Gakusei wa doko de atarashii kyoukasho o kaimasu ka.
+学生はどこで新しい教科書を買いますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+おとこの がくせいと おんなの がくせいが はなしています。
+A male student and a female student are talking.
+Otoko no gakusei to onna no gakusei ga hanashite imasu.
+男の学生と女の学生が話しています。
+
+おんなの がくせいは おとこの がくせいに なにいろの ぼうしを あげますか。
+What color hat will the female student give to the male student?
+Onna no gakusei wa otoko no gakusei ni naniiro no boushi o agemasu ka.
+女の学生は男の学生に何色の帽子をあげますか。
+
+あんさんの その あかい ぼうし いいね。
+Ann, that red hat of yours is nice.
+An-san no sono akai boushi ii ne.
+アンさんのその赤い帽子いいね。
+
+これは わたしが つくった ぼうしだよ。
+This is a hat I made.
+Kore wa watashi ga tsukutta boushi dayo.
+これは私が作った帽子だよ。
+
+じょうずだね。
+You are good at it!
+Jouzu dane.
+上手だね。
+
+ほかの いろで おなじ ものを みっつ つくったから どれか あげる。
+I made three of the same in other colors, so I'll give you one.
+Hoka no iro de onaji mono o mittsu tsukutta kara doreka ageru.
+他の色で同じものを3つ作ったからどれかあげる。
+
+え、ほんとう？ありがとう。
+Eh, really? Thank you!
+E, hontou? Arigatou.
+え、本当？ありがとう。
+
+きいろの ぼうしと、あおと、それから くろが あるよ。
+There is a yellow hat, a blue one, and a black one.
+Kiiro no boushi to, ao to, sorekara kuro ga aru yo.
+黄色の帽子と青とそれから黒があるよ。
+
+どれが いい？
+Which one would you like?
+Dore ga ii?
+どれがいい？
+
+じゃあ、くろと あおの ぼうしは もっているから、きいろが いい。
+Well, since I already have black and blue hats, I would like the yellow one.
+Jaa, kuro to ao no boushi wa motte iru kara, kiiro ga ii.
+じゃあ黒と青の帽子は持っているから黄色がいい。
+
+わかった。
+Understood.
+Wakatta.
+わかった。
+
+おんなの がくせいは おとこの がくせいに なにいろの ぼうしを あげますか。
+What color hat will the female student give to the male student?
+Onna no gakusei wa otoko no gakusei ni naniiro no boushi o agemasu ka.
+女の学生は男の学生に何色の帽子をあげますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+がっこうで せんせいが はなしています。
+The teacher is talking at school.
+Gakkou de sensei ga hanashite imasu.
+学校で先生が話しています。
+
+がくせいは やまに なにを もっていきますか。
+What will the students bring to the mountain?
+Gakusei wa yama ni nani o motte ikimasu ka.
+学生は山に何を持っていきますか。
+
+あしたは ひがしやまに いきます。
+Tomorrow we are going to Higashiyama.
+Ashita wa Higashiyama ni ikimasu.
+明日は東山に行きます。
+
+がっこうの まえの ばすていから やまのしたまで ばすで いきます。
+We will go by bus from the bus stop in front of the school to the foot of the mountain.
+Gakkou no mae no basutei kara yama no shita made basu de ikimasu.
+学校の前のバス停から山の下までバスで行きます。
+
+ばすの きっぷは ごひゃくえんですが、やまに のぼって また ばすで かえりますから、せんえん もってきて ください。
+The bus ticket is 500 yen, but since we will climb the mountain and return by bus, please bring 1000 yen.
+Bus no kippu wa gohyakuen desu ga, yama ni nobotte mata bus de kaerimasu kara, sen'en motte kite kudasai.
+バスの切符は500円ですが、山に登ってまたバスで帰りますから1000円持ってきてください。
+
+やまの うえは すこし さむいですから、うわぎも わすれないで くださいね。
+Since the top of the mountain is a little cold, please don't forget a jacket.
+Yama no ue wa sukoshi samui desu kara, uwagi mo wasurenaide kudasai ne.
+山の上は少し寒いですから上着も忘れないでくださいね。
+
+みんな いっしょに あるきますから、やまの ちずは わたしが もっていきます。
+Since everyone walks together, I will bring the map of the mountain.
+Minna issho ni arukimasu kara, yama no chizu wa watashi ga motte ikimasu.
+みんな一緒に歩きますから山の地図は私が持っていきます。
+
+がくせいは やまに なにを もっていきますか。
+What will the students bring to the mountain?
+Gakusei wa yama ni nani o motte ikimasu ka.
+学生は山に何を持っていきますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、#はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは きのう どこへ いきましたか。
+Where did the man go yesterday?
+Otoko no hito wa kinou doko e ikimashita ka.
+男の人は昨日どこへ行きましたか。
+
+おとこのひとです。
+The man.
+Otoko no hito desu.
+男の人です。
+
+やまださん、きのう どこかへ いきましたか。
+Yamada-san, did you go somewhere yesterday?
+Yamada-san, kinou dokoka e ikimashita ka.
+山田さん、昨日どこかへ行きましたか。
+
+としょかんへ いきました。
+I went to the library.
+Toshokan e ikimashita.
+図書館へ行きました。
+
+えきの そばの としょかんですか。
+The library near the station?
+Eki no soba no toshokan desu ka.
+駅のそばの図書館ですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+ぼくは やまかわでぱーとへ いって、かいものを しました。
+I went to Yamakawa Department Store and did some shopping.
+Boku wa Yamakawa depaarto e itte, kaimono o shimashita.
+僕は山川デパートへ行って買い物をしました。
+
+え、わたしも きのうの よる、やまかわでぱーとの れすとらんへ いきましたよ。
+Oh, I also went to the restaurant at Yamakawa Department Store yesterday evening!
+E, watashi mo kinou no yoru, Yamakawa depaarto no resutoran e ikimashita yo.
+え、私も昨日の夜山川デパートのレストランへ行きましたよ。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+おとこのひとは きのう どこへ いきましたか。
+Where did the man go yesterday?
+Otoko no hito wa kinou doko e ikimashita ka.
+男の人は昨日どこへ行きましたか。
+
+いちばん いい ものは さんばんです。
+The best answer is No. 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいにの れいのところを みてください。
+Please look at the example under Problem 2 on the answer sheet.
+Kaitouyoshi no mondai ni no rei no tokoro o mite kudasai.
+回答用紙の問題2の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best answer is No. 3, write the answer like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajimemasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おんなのひとと おとこの りゅうがくせいが はなしています。
+A woman and a male international student are talking.
+Onna no hito to otoko no ryuugakusei ga hanashite imasu.
+女の人と男の留学生が話しています。
+
+おとこの りゅうがくせいは きんようび なにを していますか。
+What does the male international student do on Fridays?
+Otoko no ryuugakusei wa kinyoubi nani o shite imasu ka.
+男の留学生は金曜日何をしていますか。
+
+日本は どうですか。
+How do you like Japan?
+Nihon wa dou desu ka.
+日本はどうですか。
+
+はい、とても たのしいです。
+Yes, it is very fun.
+Hai, tottemo tanoshii desu.
+はい、とても楽しいです。
+
+まいにち だいがくに いきますか。
+Do you go to the university every day?
+Mainichi daigaku ni ikimasu ka.
+毎日大学に行きますか。
+
+いいえ、げつようびから もくようびまで だいがくに いって、きんようびは ちかくの としょかんで べんきょうします。
+No, I go to the university from Monday to Thursday, and on Fridays I study at a nearby library.
+Iie, getsuyoubi kara mokuyoubi made daigaku ni itte, kinyoubi wa chikaku no toshokan de benkyou shimasu.
+いいえ、月曜日から木曜日まで大学に行って、金曜日は近くの図書館で勉強します。
+
+どようびや にちようびは どうしていますか。
+What do you do on Saturdays and Sundays?
+Doyoubi ya nichiyoubi wa dou shite imasu ka.
+土曜日や日曜日はどうしていますか。
+
+そうじを したり、ともだちと あったり しています。
+I do cleaning, meet with friends, and so on.
+Souji o shitari, tomodachi to attari shite imasu.
+掃除をしたり、友達と会ったりしています。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+おとこの りゅうがくせいは きんようび なにを していますか。
+What does the male international student do on Fridays?
+Otoko no ryuugakusei wa kinyoubi nani o shite imasu ka.
+男の留学生は金曜日何をしていますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは いまから なにを しますか。
+What will the woman do from now?
+Onna no hito wa ima kara nani o shimasu ka.
+女の人は今から何をしますか。
+
+しごとは おわりましたか。
+Did you finish your work?
+Shigoto wa owarimashita ka.
+仕事は終わりましたか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+じゃあ、いっしょに ばんごはんを たべに いきませんか。
+Then, shall we go to eat dinner together?
+Jaa, issho ni bangohan o tabe ni ikimasen ka.
+じゃあ、一緒に晩御飯を食べに行きませんか。
+
+あ、ごめんなさい、ちょっと あたまが いたいですから きょうは もう うちに かえります。
+Ah, I am sorry, I have a bit of a headache, so I'm going home now today.
+A, gomennasai, chotto atama ga itai desu kara kyou wa mou uchi ni kaerimasu.
+あ、ごめんなさい、ちょっと頭が痛いですから今日はもううちに帰ります。
+
+そう、じゃあ、また。
+I see. Well, see you again.
+Sou, jaa, mata.
+そう、じゃあまた。
+
+おんなのひとは いまから なにを しますか。
+What will the woman do from now?
+Onna no hito wa ima kara nani o shimasu ka.
+女の人は今から何をしますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おんなの がくせいと おとこの りゅうがくせいが はなしています。
+A female student and a male international student are talking.
+Onna no gakusei to otoko no ryuugakusei ga hanashite imasu.
+女の学生と男の留学生が話しています。
+
+おとこの がくせいは いつ くにへ かえりますか。
+When will the male student return to his country?
+Otoko no gakusei wa itsu kuni e kaerimasu ka.
+男の学生はいつ国へ帰りますか。
+
+りんさん、いつ くにへ かえりますか。
+Rin-san, when are you returning to your country?
+Rin-san, itsu kuni e kaerimasu ka.
+りんさん、いつ国へ帰りますか。
+
+きょうは さんがつ よっか ですから、ちょうど にしゅうかんごです。
+Today is March 4th, so it is exactly two weeks from now.
+Kyou wa sangatsu yokka desu kara, choudo nishuukan go desu.
+今日は3月4日ですから、ちょうど2週間後です。
+
+そうですか、さらいしゅうの きんようですね。
+I see, so the Friday of the week after next.
+Sou desu ka, saraishuu no kinyou desu ne.
+そうですか、再来週の金曜ですね。
+
+はい。
+Yes.
+Hai.
+はい。
+
+おとこの がくせいは いつ くにへ かえりますか。
+When will the male student return to his country?
+Otoko no gakusei wa itsu kuni e kaerimasu ka.
+男の学生はいつ国へ帰りますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+にほんごの じゅぎょうで おとこの りゅうがくせいが はなしています。
+In a Japanese class, a male international student is talking.
+Nihongo no jugyou de otoko no ryuugakusei ga hanashite imasu.
+日本語の授業で男の留学生が話しています。
+
+おとこの りゅうがくせいが まいにち している すぽーつは なんですか。
+What sport does the male international student play every day?
+Otoko no ryuugakusei ga mainichi shite iru supootsu wa nan desu ka.
+男の留学生が毎日しているスポーツは何ですか。
+
+ぼくは すぽーつが だいすきです。
+I love sports.
+Boku wa supootsu ga daisuki desu.
+僕はスポーツが大好きです。
+
+じゅぎょうの まえに まいあさ ともだちと ばすけっとぼーるの れんしゅうを しています。
+Every morning before class, I practice basketball with friends.
+Jugyou no mae ni maiasa tomodachi to basukettobooru no renshuu o shite imasu.
+授業の前に毎朝友達とバスケットボールの練習をしています。
+
+ときどき だいがくの ぷーるで およいだり、てにすを したり しています。
+Sometimes I swim in the university pool, play tennis, and so on.
+Tokidoki daigaku no puuru de oyoidari, tenisu o shitari shite imasu.
+ときどき大学のプールで泳いだりテニスをしたりしています。
+
+さっかーは あまり しませんが、てれびで まいにち みています。
+I don't play soccer much, but I watch it on TV every day.
+Sakkaar wa amari shimasen ga, terebi de mainichi mite imasu.
+サッカーはあまりしませんがテレビで毎日見ています。
+
+おとこの りゅうがくせいが まいにち している すぽーつは なんですか。
+What sport does the male international student play every day?
+Otoko no ryuugakusei ga mainichi shite iru supootsu wa nan desu ka.
+男の留学生が毎日しているスポーツは何ですか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこの がくせいと おんなの がくせいが はなしています。
+A male student and a female student are talking.
+Otoko no gakusei to onna no gakusei ga hanashite imasu.
+男の学生と女の学生が話しています。
+
+おんなの がくせいの たんじょうびは なんがつ なんにちですか。
+What month and day is the female student's birthday?
+Onna no gakusei no tanjoubi wa nangatsu nannichi desu ka.
+女の学生の誕生日は何月何日ですか。
+
+やまもとさん、きょうは ごがつ にじゅうくにち、やまもとさんの たんじょうびですね。
+Yamamoto-san, today is May 29th, Yamamoto-san's birthday, right?
+Yamamoto-san, kyou wa gogatsu nijuukunichi, Yamamoto-san no tanjoubi desu ne.
+山本さん、今日は5月29日、山本さんの誕生日ですね。
+
+これ、ぷれぜんとです、どうぞ。
+This is a present, here you go.
+Kore, purezento desu, douzo.
+これプレゼントです、どうぞ。
+
+きれいな はなですね、ありがとうございます。
+They are beautiful flowers, thank you.
+Kireina hana desu ne, arigatou gozaimasu.
+綺麗な花ですね、ありがとうございます。
+
+demo, tanjoubi wa mada desu, ichinichi hayai desu yo.
+But my birthday isn't yet, it is one day early.
+Demo, tanjoubi wa mada desu, ichinichi hayai desu yo.
+でも誕生日はまだです、1日早いですよ。
+
+え、すみません。
+Eh, I am sorry.
+E, sumimasen.
+え、すみません。
+
+おんなの がくせいの たんじょうびは なんがつ なんにちですか。
+What month and day is the female student's birthday?
+Onna no gakusei no tanjoubi wa nangatsu nannichi desu ka.
+女の学生の誕生日は何月何日ですか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+みせで おんなのひとと おとこのひとが はがきを みながら はなしています。
+At a shop, a woman and a man are talking while looking at postcards.
+Mise de onna no hito to otoko no hito ga hagaki o minagara hanashite imasu.
+店で女の人と男の人がはがきを見ながら話しています。
+
+ふたりは どの はがきを えらびましたか。
+Which postcard did they choose?
+Futari wa dono hagaki o erabimashita ka.
+2人はどのはがきを選びましたか。
+
+きれいな はがきが たくさん ありますね。
+There are many beautiful postcards.
+Kireina hagaki ga takusan arimasu ne.
+綺麗なはがきがたくさんありますね。
+
+ひとつ えらんで いっしょに りんさんに だしましょうか。
+Shall we choose one and send it to Rin-san together?
+Hitotsu erande issho ni Rin-san ni dashimashou ka.
+ひとつ選んで一緒にりんさんに出しましょうか。
+
+いいですね。
+That's a good idea.
+Ii desu ne.
+いいですね。
+
+はなの え、うみの え、いろいろ ありますね。
+Flower pictures, sea pictures, there are many kinds.
+Hana no e, umi no e, iroiro arimasu ne.
+花の絵、海の絵、色々ありますね。
+
+この やまの はがきは どうですか。
+How about this mountain postcard?
+Kono yama no hagaki wa dou desu ka.
+この山のはがきはどうですか。
+
+りんさんの うちは やまと うみは ちかいから、まいにち みていますよ。
+Rin-san's house is close to mountains and the sea, so he sees them every day.
+Rin-san no uchi wa yama to umi wa chikai kara, mainichi mite imasu yo.
+りんさんのうちは山と海は近いから毎日見ていますよ。
+
+この はしの えの はがきは どうですか。
+How about this bridge picture postcard?
+Kono hashi no e no hagaki wa dou desu ka.
+この橋の絵のはがきはどうですか。
+
+はなが きれいですよ。
+The flowers are beautiful.
+Hana ga kirei desu yo.
+花が綺麗ですよ。
+
+いいね、それを だしましょう。
+That's good, let's send that one.
+Ii desu ne, sore o dashimashou.
+いいですね、それを出しましょう。
+
+ふたりは どの はがきを えらびましたか。
+Which postcard did they choose?
+Futari wa dono hagaki o erabimashita ka.
+2人はどのはがきを選びましたか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, listen to the question while looking at the picture.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What will the person indicated by the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1から3の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+れすとらんで みせのひとを よびます。
+At a restaurant, you call the shop staff.
+Resutoran de mise no hito o yobimasu.
+レストランで店の人を呼びます。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+いらっしゃいませ。
+Welcome.
+Irasshaimase.
+いらっしゃいませ。
+
+に。
+2.
+Ni.
+2。
+
+しつれいしました。
+Excuse me (formal).
+Shitsurei shimashita.
+失礼しました。
+
+さん。
+3.
+San.
+3。
+
+すみません。
+Excuse me.
+Sumimasen.
+すみません。
+
+いちばん いい ものは さんばんです。
+The best answer is No. 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいさんの れいのところを みてください。
+Please look at the example under Problem 3 on the answer sheet.
+Kaitouyoshi no mondai san no rei no tokoro o mite kudasai.
+回答用紙の問題3の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best answer is No. 3, write the answer like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajimemasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+とけいを わすれました。
+You forgot your watch.
+Tokei o wasuremashita.
+時計を忘れました。
+
+いまの じかんが しりたいです。
+You want to know the current time.
+Ima no jikan ga shiritai desu.
+今の時間が知りたいです。
+
+ともだちに なんと いいますか。
+What do you say to your friend?
+Tomodachi ni nan to iimasu ka.
+友達に何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+いま なんじ？
+What time is it now?
+Ima nanji?
+今何時？
+
+に。
+2.
+Ni.
+2。
+
+いま じかんが ある？
+Do you have time now?
+Ima jikan ga aru?
+今時間がある？
+
+さん。
+3.
+San.
+3。
+
+いま じゅうじだよ。
+It is 10 o'clock now.
+Ima juuji dayo.
+今10時だよ。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+せんせいの へやに はいります。
+You enter the teacher's room.
+Sensei no heya ni hairimasu.
+先生の部屋に入ります。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+また あした。
+See you tomorrow.
+Mata ashita.
+また明日。
+
+に。
+2.
+Ni.
+2。
+
+しつれいします。
+Excuse me (as you enter).
+Shitsurei shimasu.
+失礼します。
+
+さん。
+3.
+San.
+3。
+
+どうぞ。
+Go ahead / please.
+Douzo.
+どうぞ。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+ともだちが けっこんします。
+Your friend is getting married.
+Tomodachi ga kekkon shimasu.
+友達が結婚します。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+いらっしゃい。
+Welcome.
+Irasshai.
+いらっしゃい。
+
+に。
+2.
+Ni.
+2。
+
+おめでとう。
+Congratulations.
+Omedetou.
+おめでとう。
+
+さん。
+3.
+San.
+3。
+
+ありがとう。
+Thank you.
+Arigatou.
+ありがとう。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+ばすで きょうとに いきます。
+You go to Kyoto by bus.
+Bus de Kyoto ni ikimasu.
+バスで京都に行きます。
+
+きっぷを かいます。
+You buy a ticket.
+Kippu o kaimasu.
+切符を買います。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+きょうとに ばすで いってください。
+Please go to Kyoto by bus.
+Kyoto ni bus de itte kudasai.
+京都にバスで行ってください。
+
+に。
+2.
+Ni.
+2。
+
+きょうとで きっぷを かってください。
+Please buy a ticket in Kyoto.
+Kyoto de kippu o katte kudasai.
+京都で切符を買ってください。
+
+さん。
+3.
+San.
+3。
+
+きょうとまで いちまい ください。
+One ticket to Kyoto, please.
+Kyoto made ichimai kudasai.
+京都まで1枚ください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+すぷーんで たべたいです。
+You want to eat with a spoon.
+Supuun de tabetai desu.
+スプーンで食べたいです。
+
+みせのひとに なんと いいますか。
+What do you say to the shop staff?
+Mise no hito ni nan to iimasu ka.
+店の人に何と言いますか。
+
+いち。
+1.
+Ichi.
+1。
+
+すぷーんは いかがですか。
+How about a spoon?
+Supuun wa ikaga desu ka.
+スプーンはいかがですか。
+
+に。
+2.
+Ni.
+2。
+
+すぷーんは ありませんか。
+Do you have a spoon?
+Supuun wa arimasen ka.
+スプーンはありませんか。
+
+さん。
+3.
+San.
+3。
+
+すぷーんで たべましょうか。
+Shall we eat with a spoon?
+Supuun de tabemashou ka.
+スプーンで食べましょうか。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは、えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa, e nado ga arimen.
+問題 4 は、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best one from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おくには どちらですか。
+Which country are you from?
+Okuni wa dochira desu ka.
+お国はどちらですか。
+
+いち。
+1.
+Ichi.
+1。
+
+あちらです。
+It is over there.
+Achira desu.
+あちらです。
+
+に。
+2.
+Ni.
+2。
+
+あめりかです。
+It is America.
+Amerika desu.
+アメリカです。
+
+さん。
+3.
+San.
+3。
+
+へやです。
+It is a room.
+Heya desu.
+部屋です。
+
+いちばん いい ものは にばんです。
+The best answer is No. 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいよんの れいのところを みてください。
+Please look at the example under Problem 4 on the answer sheet.
+Kaitouyoshi no mondai yon no rei no tokoro o mite kudasai.
+回答用紙の問題4の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best answer is No. 2, write the answer like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajimemasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+いってきます。
+I'm off / I'm leaving now.
+Ittekimasu.
+行ってきます。
+
+いち。
+1.
+Ichi.
+1。
+
+おかえりなさい。
+Welcome home.
+Okaerinasai.
+お帰りなさい。
+
+に。
+2.
+Ni.
+2。
+
+ただいま。
+I'm home.
+Tadaima.
+ただいま。
+
+さん。
+3.
+San.
+3。
+
+いってらっしゃい。
+Have a good day / Off you go.
+Itterasshai.
+いってらっしゃい。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+それは どこの かめらですか。
+Where is that camera from?
+Sore wa doko no kamera desu ka.
+それはどこのカメラですか。
+
+いち。
+1.
+Ichi.
+1。
+
+いちかいに あります。
+It is on the 1st floor.
+Ichikai ni arimasu.
+1階にあります。
+
+に。
+2.
+Ni.
+2。
+
+にほんのです。
+It is Japanese.
+Nihon no desu.
+日本ののです。
+
+さん。
+3.
+San.
+3。
+
+そこで とります。
+I will take it there.
+Soko de torimasu.
+そこで撮ります。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+どんな かばんを わすれましたか。
+What kind of bag did you lose/forget?
+Donna kaban o wasuremashita ka.
+どんなカバンを忘れましたか。
+
+いち。
+1.
+Ichi.
+1。
+
+でんしゃの なかです。
+In the train.
+Densha no naka desu.
+電車の中です。
+
+に。
+2.
+Ni.
+2。
+
+くろい かばんです。
+A black bag.
+Kuroi kaban desu.
+黒いカバンです。
+
+さん。
+3.
+San.
+3。
+
+わたしのです。
+It is mine.
+Watashi no desu.
+私のです。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+にちようびに いった れすとらん、おいしかったね。
+The restaurant we went to on Sunday was delicious, wasn't it?
+Nichiyoubi ni itta resutoran, oishikatta ne.
+日曜日に行ったレストラン美味しかったね。
+
+いち。
+1.
+Ichi.
+1。
+
+なにを たべる？
+What will you eat?
+Nani o taberu?
+何を食べる？
+
+に。
+2.
+Ni.
+2。
+
+にちようび だいじょうぶだよ。
+Sunday is fine.
+Nichiyoubi daijoubu dayo.
+日曜日大丈夫だよ。
+
+さん。
+3.
+San.
+3。
+
+また いきたいね。
+I want to go again.
+Mata ikitai ne.
+また行きたいね。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+がくせいのとき なにか すぽーつを していましたか。
+Did you play any sports when you were a student?
+Gakusei no toki nanika supootsu o shite imashita ka.
+学生の時何かスポーツをしていましたか。
+
+いち。
+1.
+Ichi.
+1。
+
+なにも していませんでした。
+I didn't play anything.
+Nani mo shite imasen deshita.
+何もしていませんでした。
+
+に。
+2.
+Ni.
+2。
+
+さっかーを しましょう。
+Let's play soccer.
+Sakkaar o shimashou.
+サッカーをしましょう。
+
+さん。
+3.
+San.
+3。
+
+あの がくせいが していました。
+That student was playing.
+Ano gakusei ga shite imashita.
+あの学生がしていました。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+すみません、このえきから やまかわえきまで でんしゃで どのくらい かかりますか。
+Excuse me, how long does it take by train from this station to Yamakawa Station?
+Sumimasen, kono eki kara Yamakawa eki made densha de dono kurai kakarimasu ka.
+すみません、この駅から山川駅まで電車でどのくらいかかりますか。
+
+いち。
+1.
+Ichi.
+1。
+
+じゅうじ じゅうごふんです。
+It is 10:15.
+Juuji juugofun desu.
+10時15分です。
+
+に。
+2.
+Ni.
+2。
+
+あの でんしゃです。
+It is that train.
+Ano densha desu.
+あの電車です。
+
+さん。
+3.
+San.
+3。
+
+じっぷんか じゅうごふんです。
+It is 10 or 15 minutes.
+Jippun ka juugofun desu.
+10分か15分です。
+
+これで ちょうかいしけんを おわります。
+With this, the listening exam is finished.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 06 - Hard"] = ``;
+
+allWords["Listening 07"] = `
+にほんごのうりょくしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Listening N5.
+Nihongo nouryoku shiken choukai enu go.
+日本語能力試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとが いちばん ほしいのは なにですか。
+What does the man want most?
+Otoko no hito ga ichiban hoshii no wa nani desu ka.
+男の人が一番欲しいのは何ですか。
+
+もし おかねが あったら だいやもんどの ゆびわが ほしいな。
+If I had money, I'd want a diamond ring.
+Moshi okane ga attara daiyamondo no yubiwa ga hoshii na.
+もしお金があったらダイヤモンドの指輪が欲しいな。
+
+それは もったいないよ。
+That's a waste.
+Sore wa mottainai yo.
+それはもったいないよ。
+
+いえとか くるまとか かったら いいんだけど。
+It would be good if you bought something like a house or a car, though.
+Ie toka kuruma toka kattara ii ndakedo.
+家とか車とか買ったらいいんだけど。
+
+でも ぼくが いちばん ほしいのは ぱそこんだな。
+But what I want most is a personal computer.
+Demo boku ga ichiban hoshii no wa pasokon dana.
+でも僕が一番欲しいのはパソコンだな。
+
+え、もう なんだいも あるじゃない。
+What? You already have several of them, don't you?
+E, mou nandai mo aru janai.
+え、もう何台もあるじゃない。
+
+あなたこそ もったいないよ。
+You are the one being wasteful.
+Anata koso mottainai yo.
+あなたこそもったいないよ。
+
+おとこのひとが いちばん ほしいのは なにですか。
+What does the man want most?
+Otoko no hito ga ichiban hoshii no wa nani desu ka.
+男の人が一番欲しいのは何ですか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+いすを いくつ よういしますか。
+How many chairs will they prepare?
+Isu o ikutsu youi shimasu ka.
+椅子をいくつか用意しますか。
+
+せんせい、ぱーてぃーの いすは いくつ よういすれば いいですか。
+Teacher, how many chairs should we prepare for the party?
+Sensei, paatii no isu wa ikutsu youi sureba ii desu ka.
+先生、パーティーの椅子はいくつ用意すればいいですか。
+
+そうですね、さんじゅうにんぐらい さんかしますが、それより いつつ おおく よういしてください。
+Well, about 30 people will participate, but please prepare five more than that.
+Sou desu ne, sanjuu-nin gurai sanka shimasu ga, sore yori itsutsu ooku youi shite kudasai.
+そうですね、30人ぐらい参加しますが、それより5つ多く用意してください。
+
+はい、わかりました。
+Yes, I understand.
+Hai, wakarimashita.
+はい、わかりました。
+
+いすを いくつ よういしますか。
+How many chairs will they prepare?
+Isu o ikutsu youi shimasu ka.
+椅子をいくつか用意しますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito ga nani o tabemasu ka.
+女の人は何を食べますか。
+
+ぱーてぃーの りょうり、なにを つくりましょうか。
+What food shall we make for the party?
+Paatii no ryouri, nani o tsukurimashou ka.
+パーティーの料理、何を作りましょうか。
+
+さとうさんは にくは すきですか。
+Mr/Ms. Sato, do you like meat?
+Satou-san wa niku wa suki desu ka.
+佐藤さんは肉は好きですか。
+
+すみません、わたしは にくも さかなも たべません。
+Excuse me, but I do not eat meat or fish.
+Sumimasen, watashi wa niku mo sakana mo tabemasen.
+すみません、私は肉も魚も食べません。
+
+え、やさいしか たべませんか。
+Eh, do you only eat vegetables?
+E, yasai shika tabemasen ka.
+え、野菜しか食べませんか。
+
+ええ、でも たまごは たべます。
+Yes, but I do eat eggs.
+Ee, demo tamago wa tabemasu.
+ええ、でも卵は食べます。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito ga nani o tabemasu ka.
+女の人は何を食べますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おとこうひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは きのう なにを していましたか。
+What was the man doing yesterday?
+Otoko no hito wa kinou nani o shite imashita ka.
+男の人は昨日何をしていましたか。
+
+やまださん、きのうは なにを しましたか。
+Yamada-san, what did you do yesterday?
+Yamada-san, kinou wa nani o shimashita ka.
+山田さん、昨日は何をしましたか。
+
+としょかんに いきました。
+I went to the library.
+Toshokan ni ikimashita.
+図書館に行きました。
+
+こうえんの そばの としょかんですね。
+The library near the park, right?
+Kouen no soba no toshokan desu ne.
+公園のそばの図書館ですね。
+
+おもしろい ほんを よみましたか。
+Did you read an interesting book?
+Omoshiroi hon o yomimashita ka.
+面白い本を読みましたか。
+
+いいえ、としょかんは すずしくて しずかですから、ねていました。
+No, since the library is cool and quiet, I was sleeping.
+Iie, toshokan wa suzushikute shizuka desu kara, nete imashita.
+いいえ、図書館は涼しくて静かですから寝ていました。
+
+うちは あつくて。
+My house was hot.
+Uchi wa atsukute.
+うちは暑くて。
+
+おとこのひとは きのう なにを していましたか。
+What was the man doing yesterday?
+Otoko no hito wa kinou nani o shite imashita ka.
+男の人は昨日何をしていましたか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは けさ なんで かいしゃに きましたか。
+How did the man come to the company this morning?
+Otoko no hito wa kesa nan de kaisha ni kimashita ka.
+男の人は今朝何で会社に来ましたか。
+
+おはようございます。
+Good morning.
+Ohayou gozaimasu.
+おはようございます。
+
+おはようございます。
+Good morning.
+Ohayou gozaimasu.
+おはようございます。
+
+いつも ばすで きますか。
+Do you always come by bus?
+Itsumo basu de kimasu ka.
+いつもバスで来ますか。
+
+いいえ、いつも じてんしゃですが、きょうは あめが ふっていますから。
+No, I always come by bicycle, but since it's raining today...
+Iie, itsumo jitensha desu ga, kyou wa ame ga futte imasu kara.
+いいえ、いつも自転車ですが、今日は雨が降っていますから。
+
+ああ、だから。
+Ah, so that's why.
+Aa, dakara.
+ああ、だから。
+
+ばすでは ちかいですか。
+Is it close by bus?
+Basu de wa chikai desu ka.
+バスでは近いですか。
+
+ええ、まあ、あるいて にじゅっぷんぐらいですが。
+Yes, well, it's about 20 minutes on foot, though.
+Ee, maa, aruite nijuppun gurai desu ga.
+ええ、まあ、歩いて20分ぐらいですが。
+
+おとこのひとは けさ なんで かいしゃに きましたか。
+How did the man come to the company this morning?
+Otoko no hito wa kesa nan de kaisha ni kimashita ka.
+男の人は今朝何で会社に来ましたか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとの おかあさんは いま なにを していますか。
+What is the man's mother doing now?
+Otoko no hito no okaasan wa ima nani o shite imasu ka.
+男の人のお母さんは今何をしていますか。
+
+たかはしさんの おかあさんは なにか しごとを していますか。
+Takahashi-san, is your mother doing any work?
+Takahashi-san no okaasan wa nanika shigoto o shite imasu ka.
+高橋さんのお母さんは何か仕事をしていますか。
+
+いいえ、きょねんまでは こうこうの せんせいでしたが、ことしから だいがくせいに なりました。
+No, she was a high school teacher until last year, but she became a university student starting this year.
+Iie, kyonen made wa koukou no sensei deshita ga, kotoshi kara daigakusei ni narimashita.
+いいえ、去年までは高校の先生でしたが、今年から大学生になりました。
+
+いしゃに なる べんきょうを しています。
+She is studying to become a doctor.
+Isha ni naru benkyou o shite imasu.
+医者になる勉強をしています。
+
+へえ、おいしゃさんに。
+Wow, to be a doctor!
+Hee, oishasan ni.
+へえ、お医者さんに。
+
+それは すごいですね。
+That is amazing, isn't it?
+Sore wa sugoi desu ne.
+それはすごいですね。
+
+おとこのひとの おかあさんは いま なにを していますか。
+What is the man's mother doing now?
+Otoko no hito no okaasan wa ima nani o shite imasu ka.
+男の人のお母さんは今何をしていますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+おとこのひとが はなしています。
+A man is talking.
+Otoko no hito ga hanashite imasu.
+男の人が話しています。
+
+このひとは せんしゅう なんにち やすみましたか。
+How many days did this person rest last week?
+Kono hito wa senshuu nannichi yasumimashita ka.
+この人は先週何日休みましたか。
+
+せんしゅうは ほんとうに いそがしかったです。
+Last week was truly busy.
+Senshuu wa hontou ni isogashikatta desu.
+先週は本当に忙しかったです。
+
+わたしの かいしゃは どようびと にちようびが やすみです。
+My company is closed on Saturdays and Sundays.
+Watashi no kaisha wa doyoubi to nichiyoubi ga yasumi desu.
+私の会社は土曜日と日曜日が休みです。
+
+ごも せんしゅうの どようびは やすまないで かいしゃに いきました。
+But last Saturday, without resting, I went to the company.
+Demo senshuu no doyoubi wa yasumanai de kaisha ni ikimashita.
+でも先週の土曜日は休まないで会社に行きました。
+
+やあ、つかれましたね。
+Oh, I was tired.
+Yaa, tsukaremashita ne.
+やあ、疲れましたね。
+
+このひとは せんしゅう なんにち やすみましたか。
+How many days did this person rest last week?
+Kono hito wa senshuu nannichi yasumimashita ka.
+この人は先週何日休みましたか。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 07 - Hard"] = ``;
+
+allWords["Listening 08"] = `
+にほんごのうりょくしけん かんぜんもし えぬご だいにかい ちょうかい。
+Japanese Language Proficiency Test Complete Mock Exam N5, 2nd Exam, Listening.
+Nihongo nouryoku shiken kanzen moshi enu go dai ni kai choukai.
+日本語能力試験 完全模試 N5 第2回 聴解。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+いえで おんなのひとが おとこのひとと はなしています。
+At home, a woman is talking with a man.
+Ie de onna no hito ga otoko no hito to hanashite imasu.
+家で女の人が男の人と話しています。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+きょうは さむいですね。
+It is cold today, isn't it?
+Kyou wa samui desu ne.
+今日は寒いですね。
+
+あたたかい ものを のみませんか。
+Would you like to drink something warm?
+Atatakai mono o nomimasen ka.
+温かいものを飲みませんか。
+
+ありがとうございます。
+Thank you very much.
+Arigatou gozaimasu.
+ありがとうございます。
+
+こーひー、こうちゃ、あと おちゃも ありますけど。
+There is coffee, black tea, and green tea too.
+Koohii, koucha, ato ocha mo arimasu kedo.
+コーヒー、紅茶、あとお茶もありますけど。
+
+じゃあ こうちゃを おねがいします。
+Well then, black tea please.
+Jaa koucha o onegai shimasu.
+じゃあ紅茶をお願いします。
+
+さとうや みるくは いれますか。
+Do you put in sugar or milk?
+Satou ya miruku wa iremasu ka.
+砂糖やミルクは入れますか。
+
+あ、はい。
+Ah, yes.
+A, hai.
+あ、はい。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+いちばん いい ものは さんばんです。
+The best one is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいいちの れいの ところを みてください。
+Please look at the example section of Problem 1 on the answer sheet.
+Kaitouyoushi no mondai ichi no rei no tokoro o mite kudasai.
+解答用紙の問題 1 の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best one is number 3, the answer is written like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+でぱーとで おとこのひとと みせのひとが はなしています。
+A man and a shop assistant are talking in a department store.
+Depaarto de otoko no hito to mise no hito ga hanashite imasu.
+デパートで男の人と店の人が話しています。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+あの、すみません、おてあらいは どこですか。
+Excuse me, where is the restroom?
+Ano, sumimasen, otearai wa doko desu ka.
+あの、すみません、お手洗いはどこですか。
+
+おてあらいは あちらの かいだんの よこに ございまーす。
+The restroom is next to those stairs over there.
+Otearai wa achira no kaidan no yoko ni gozaimasu.
+お手洗いはあちらの階段の横にございます。
+
+かばん うりばの むこうですね。
+It is beyond the bag section, right?
+Kaban uriba no mukou desu ne.
+カバン売り場の向こうですね。
+
+ええ、わかりました、どうも。
+Yes, I understand. Thank you.
+Ee, wakarimashita, doumo.
+ええ、わかりました、どうも。
+
+おとこのひとは どこへ いきますか。
+Where will the man go?
+Otoko no hito wa doko e ikimasu ka.
+男の人はどこへ行きますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+きょうしつで せんせいが はなしています。
+The teacher is talking in the classroom.
+Kyoushitsu de sensei ga hanashite imasu.
+教室で先生が話しています。
+
+がくせいは はじめに どのぺーじを あけますか。
+Which page will the students open first?
+Gakusei wa hajime ni dono peeji o akemasu ka.
+学生は初めにどのページを開けますか。
+
+いまから にほんごの てすとを します。
+We will now take the Japanese test.
+Ima kara nihongo no tesuto o shimasu.
+今から日本語のテストをします。
+
+てすとは ぜんぶで よんぺーじ あります。
+The test has 4 pages in total.
+Tesuto wa zenbu de yon peeji arimasu.
+テストは全部で4ページあります。
+
+いちぺーじは きくもんだいです。
+Page 1 is the listening section.
+Ichi peeji wa kiku mondai desu.
+1ページは聞く問題です。
+
+にぺーじから よんぺーじは かくもんだいで、よんぺーじには かんじの もんだいも あります。
+Pages 2 through 4 are writing problems, and on page 4 there are also kanji problems.
+Ni peeji kara yon peeji wa kaku mondai de, yon peeji ni wa kanji no mondai mo arimasu.
+2ページから4ページは書く問題で、4ページには漢字の問題もあります。
+
+はじめに きくもんだいを します。
+First, we will do the listening section.
+Hajime ni kiku mondai o shimasu.
+初めに聞く問題をします。
+
+じかんは じゅっぷんです。
+The time limit is 10 minutes.
+Jikan wa juppun desu.
+時間は10分です。
+
+では もんだいを あけて ください。
+Now, please open the question booklet.
+Dewa mondai o akete kudasai.
+では問題を開けてください。
+
+がくせいは はじめに どのぺーじを あけますか。
+Which page will the students open first?
+Gakusei wa hajime ni dono peeji o akemasu ka.
+学生は初めにどのページを開けますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+がっこうで おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking at school.
+Gakkou de onna no gakusei to otoko no gakusei ga hanashite imasu.
+学校で女の学生と男の学生が話しています。
+
+おんなのがくせいは どのせんせいの ところへ いきますか。
+Which teacher's office will the female student go to?
+Onna no gakusei wa dono sensei no tokoro e ikimasu ka.
+女の学生はどの先生のところへ行きますか。
+
+やまださん、この かみは かいたあと、どのせんせいに だしますか。
+Yamada-san, after writing on this paper, which teacher do I submit it to?
+Yamada-san, kono kami wa kaita ato, dono sensei ni dashimasu ka.
+山田さん、この紙は書いた後、どの先生に出しますか。
+
+たなかせんせいですよ。
+It is Tanaka-sensei.
+Tanaka sensei desu yo.
+田中先生ですよ。
+
+たなかせんせい？
+Tanaka-sensei?
+Tanaka sensei?
+田中先生？
+
+おとこのせんせいですか、おんなのせんせいですか。
+Is it a male teacher or a female teacher?
+Otoko no sensei desu ka, onna no sensei desu ka.
+男の先生ですか、女の先生ですか。
+
+おとこのせんせいです。
+It is a male teacher.
+Otoko no sensei desu.
+男の先生です。
+
+めがねを かけていて、せがたかい せんせいです。
+He wears glasses and is tall.
+Megane o kakete ite, se ga takai sensei desu.
+眼鏡をかけていて、背が高い先生です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+じゃあ あとで たなかせんせいの ところに もっていきます。
+Then, I will take it to Tanaka-sensei's place later.
+Jaa ato de Tanaka sensei no tokoro ni motte ikimasu.
+じゃあ後で田中先生のところに持って行きます。
+
+おんなのがくせいは どのせんせいの ところへ いきますか。
+Which teacher's office will the female student go to?
+Onna no gakusei wa dono sensei no tokoro e ikimasu ka.
+女の学生はどの先生のところへ行きますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+みせで おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking at a shop.
+Mise de onna no hito to otoko no hito ga hanashite imasu.
+店で女の人と男の人が話しています。
+
+おとこのひとは どの はんかちを かいますか。
+Which handkerchief will the man buy?
+Otoko no hito wa dono hankachi o kaimasu ka.
+男の人はどのハンカチを買いますか。
+
+やまださんの むすめさんの たんじょうびぷれぜんと、はんかちに しませんか。
+How about a handkerchief for Yamada-san's daughter's birthday present?
+Yamada-san no musumesan no tanjoubi purezento, hankachi ni shimasen ka.
+山田さんの娘さんの誕生日プレゼント、ハンカチにしませんか。
+
+ああ、いいですね。
+Ah, that sounds good.
+Aa, ii desu ne.
+ああ、いいですね。
+
+この ぴんくの はなのは どうですか。
+How about this pink flower one?
+Kono pinku no hana no wa dou desu ka.
+このピンクの花のはどうですか。
+
+おんなのこは すきだと おもいますよ。
+I think girls like it.
+Onnanoko wa suki da to omoimasu yo.
+女の子は好きだと思いますよ。
+
+ああ、こっちの くだものが いろいろ かいてあるのも かわいいですね。
+Ah, this one with various fruits written on it is also cute, isn't it?
+Aa, kocchi no kudamono ga iroiro kaite aru no mo kawaii desu ne.
+ああ、こっちの果物が色々書いてあるのも可愛いですね。
+
+どっちも いいですね。
+Both are very nice.
+Docchi mo ii desu ne.
+どっちもいいですね。
+
+あ、これは どうですか。
+Oh, how about this one?
+A, kore wa dou desu ka.
+あ、これはどうですか。
+
+やまださんの いえ、いぬが にひき いますよね。
+Yamada-san's house has two dogs, right?
+Yamada-san no ie, inu ga nihiki imasu yo ne.
+山田さんの家、犬が2匹いますよね。
+
+ええ、ちょうど これと おなじですよ。
+Yes, they look exactly like this.
+Ee, choudo kore to onaji desu yo.
+ええ、ちょうどこれと同じですよ。
+
+くろいのと しろいのです。
+A black one and a white one.
+Kuroi no to shiroi no desu.
+黒いのと白いのです。
+
+いいですね、これに しましょう。
+Great, let's go with this one.
+Ii desu ne, kore ni shimashou.
+いいですね、これにしましょう。
+
+じゃ、かってきますね。
+Alright, I'll go buy it.
+Ja, katte kimasu ne.
+じゃ、買ってきますね。
+
+おとこのひとは どの はんかちを かいますか。
+Which handkerchief will the man buy?
+Otoko no hito wa dono hankachi o kaimasu ka.
+男の人はどのハンカチを買いますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+がっこうで せんせいと がくせいが はなしています。
+A teacher and a student are talking at school.
+Gakkou de sensei to gakusei ga hanashite imasu.
+学校で先生と学生が話しています。
+
+がくせいは いすを どう ならべますか。
+How will the student arrange the chairs?
+Gakusei wa isu o dou narabemasu ka.
+学生は椅子をどう並べますか。
+
+あした この きょうしつで すぴーちこんてすとを しますから、いすを ならべて ください。
+We are having a speech contest in this classroom tomorrow, so please arrange the chairs.
+Ashita kono kyoushitsu de supiichi kontesuto o shimasu kara, isu o narabete kudasai.
+明日この教室でスピーチコンテストをしますから、椅子を並べてください。
+
+はい、どう ならべますか。
+Yes, how should I arrange them?
+Hai, dou narabemasu ka.
+はい、どう並べますか。
+
+よこに むっつ、たてに やっつ ならべて ください。
+Please arrange them 6 horizontally and 8 vertically.
+Yoko ni muttsu, tate ni yattsu narabete kudasai.
+横に6つ、縦に8つ並べてください。
+
+よこに むっつ、たてに やっつですね。
+6 horizontally and 8 vertically, right?
+Yoko ni muttsu, tate ni yattsu desu ne.
+横に6つ、縦に8つですね。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+がくせいは いすを どう ならべますか。
+How will the student arrange the chairs?
+Gakusei wa isu o dou narabemasu ka.
+学生は椅子をどう並べますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+びょういんで びょういんのひとと おんなのひとが はなしています。
+A hospital receptionist and a woman are talking at a hospital.
+Byouin de byouin no hito to onna no hito ga hanashite imasu.
+病院で病院の人と女の人が話しています。
+
+おんなのひとは どこに すわりますか。
+Where will the woman sit?
+Onna no hito wa doko ni suwarimasu ka.
+女の人はどこに座りますか。
+
+やまださん。
+Yamada-san.
+Yamada-san.
+山田さん。
+
+はい。
+Yes.
+Hai.
+はい。
+
+じゃあ、なまえを よびますから、それまで あそこの いすで ちょっと まっていて ください。
+Well, we will call your name soon, so please wait over there on those chairs until then.
+Jaa, namae o yobimasu kara, sore made asoko no isu de chotto matte ite kudasai.
+じゃあ、名前を呼びますから、それまであそこの椅子でちょっと待っていてください。
+
+あの まどの そばの そふぁーですか。
+Do you mean that sofa next to the window?
+Ano mado no soba no sofaa desu ka.
+あの窓のそばのソファーですか。
+
+ええ、そうです。
+Yes, that's right.
+Ee, sou desu.
+ええ、そうです。
+
+おんなのひとは どこに すわりますか。
+Where will the woman sit?
+Onna no hito wa doko ni suwarimasu ka.
+女の人はどこに座りますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+がっこうで おとこのがくせいと がっこうのひとが はなしています。
+A male student and a school staff member are talking at school.
+Gakkou de otoko no gakusei to gakkou no hito ga hanashite imasu.
+学校で男の学生と学校の人が話しています。
+
+おとこのがくせいは なんじごろに もういちど きますか。
+About what time will the male student come back again?
+Otoko no gakusei wa nan ji goro ni mou ichido kimasu ka.
+男の学生は何時頃にもう一度来ますか。
+
+すみません、せんせいは いますか。
+Excuse me, is the teacher here?
+Sumimasen, sensei wa imasu ka.
+すみません、先生はいますか。
+
+いいえ、まだ きていませんが。
+No, he hasn't come yet.
+Iie, mada kite imasen ga.
+いいえ、まだ来ていませんが。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+なんじごろに きますか。
+About what time will he arrive?
+Nan ji goro ni kimasu ka.
+何時頃に来ますか。
+
+もうすぐ きますよ。
+He'll be here very soon.
+Mou sugu kimasu yo.
+もうすぐ来ますよ。
+
+じゅうじから じゅぎょうが ありますから。
+Because he has class starting at 10:00.
+Juuji kara jugyou ga arimasu kara.
+10時から授業がありますから。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あの、つぎの じゅういちじからの じゅぎょうも ありますか。
+Um, does he also have the next class starting from 11:00?
+Ano, tsugi no juuichiji kara no jugyou mo arimasu ka.
+あの、次の11時からの授業もありますか。
+
+いいえ、ごぜんちゅうは そのじゅぎょうだけですから、また ここに もどりますよ。
+No, that is his only class in the morning, so he will return here again.
+Iie, gozenchuu wa sono jugyou dake desu kara, mata koko ni modorimasu yo.
+いいえ、午前中はその授業だけですから、またここに戻りますよ。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+じゃ、じゅぎょうが おわるころ、また きます。
+Then, I'll come back around the time class finishes.
+Ja, jugyou ga owaru koro, mata kimasu.
+じゃ、授業が終わる頃また来ます。
+
+おとこのがくせいは なんじごろに もういちど きますか。
+About what time will the male student come back again?
+Otoko no gakusei wa nan ji goro ni mou ichido kimasu ka.
+男の学生は何時頃にもう一度来ますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking.
+Onna no gakusei to otoko no gakusei ga hanashite imasu.
+女の学生と男の学生が話しています。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will the two go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+らいしゅう、さとうさんの たんじょうびぷれぜんとを かいに いきませんか。
+Shall we go buy Sato-san's birthday present next week?
+Raishuu, Satou-san no tanjoubi purezento o kai ni ikimasen ka.
+来週佐藤さんの誕生日プレゼントを買いに行きませんか。
+
+そうですね。
+That sounds good.
+Sou desu ne.
+そうですね。
+
+いつかが たんじょうびですから、みっかか よっかに いきましょう。
+Since the 5th is her birthday, let's go on the 3rd or the 4th.
+Itsuka ga tanjoubi desu kara, mikka ka yokka ni ikimashou.
+5日が誕生日ですから、3日か4日に行きましょう。
+
+あ、ちょっと まってください。
+Ah, please wait a moment.
+A, chotto matte kudasai.
+あ、ちょっと待ってください。
+
+わたしは みっかと よっかは あるばいとが あります。
+I have part-time work on the 3rd and the 4th.
+Watashi wa mikka to yokka wa arubaito ga arimasu.
+私は3日と4日はアルバイトがあります。
+
+ふつかは だめですか。
+Is the 2nd no good?
+Futsuka wa dame desu ka.
+2日はダメですか。
+
+いいですよ。
+That is fine.
+Ii desu yo.
+いいですよ。
+
+じゃあ、じゅぎょうが おわったあとに いきましょう。
+Then, let's go after class finishes.
+Jaa, jugyou ga owatta ato ni ikimashou.
+じゃあ授業が終わった後に行きましょう。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will the two go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+いちばん いい ものは いちばんです。
+The best one is number 1.
+Ichiban ii mono wa ichiban desu.
+一番いいものは1番です。
+
+かいとうようしの もんだいにの れいの ところを みてください。
+Please look at the example section of Problem 2 on the answer sheet.
+Kaitouyoushi no mondai ni no rei no tokoro o mite kudasai.
+解答用紙の問題 2 の例のところを見てください。
+
+いちばん いい ものは いちばんですから、こたえは このように かきます。
+Since the best one is number 1, the answer is written like this.
+Ichiban ii mono wa ichiban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは1番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとの たんじょうびは いつですか。
+When is the woman's birthday?
+Onna no hito no tanjoubi wa itsu desu ka.
+女の人の誕生日はいつですか。
+
+きれいな はなですね。
+These are beautiful flowers, aren't they?
+Kireina hana desu ne.
+綺麗なお花ですね。
+
+ええ、たんじょうびに ともだちに もらいました。
+Yes, I got them from my friend for my birthday.
+Ee, tanjoubi ni tomodachi ni moraimashita.
+ええ、誕生日に友達にもらいました。
+
+へえ、いつですか。
+Oh, when was it?
+Hee, itsu desu ka.
+へえ、いつですか。
+
+きのうです、じゅういちにちです。
+It was yesterday, the 11th.
+Kinou desu, juuichinichi desu.
+昨日です、11日です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+え、じゃあ いちが よっつ ならびますね。
+Oh, so there are four 1's lined up, aren't there? (November 11th)
+E, jaa ichi ga yottsu narabimasu ne.
+え、じゃあ1が4つ並びますね。
+
+ええ、そうですよ。
+Yes, that's right.
+Ee, sou desu yo.
+ええ、そうですよ。
+
+おんなのひとの たんじょうびは いつですか。
+When is the woman's birthday?
+Onna no hito no tanjoubi wa itsu desu ka.
+女の人の誕生日はいつですか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+だいがくで おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking at university.
+Daigaku de otoko no gakusei to onna no gakusei ga hanashite imasu.
+大学で男の学生と女の学生が話しています。
+
+ふたりは どこで たべますか。
+Where will they eat?
+Futari wa doko de tabemasu ka.
+2人はどこで食べますか。
+
+やまださん、おひる いっしょに たべませんか。
+Yamada-san, won't you eat lunch together?
+Yamada-san, ohiru issho ni tabemasen ka.
+山田さん、お昼一緒に食べませんか。
+
+いいですよ。
+I'd love to.
+Ii desu yo.
+いいですよ。
+
+じゃあ、がくせいしょくどうが あたらしくなったから いきませんか。
+Well, since the student cafeteria has become new, shall we go there?
+Jaa, gakusei shokdou ga atarashiku natta kara ikimasen ka.
+じゃあ、学生食堂が新しくなったから行きませんか。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+でも、きょうは てんきが いいから そとで たべたいです。
+But since the weather is nice today, I want to eat outside.
+Demo, kyou wa tenki ga ii kara soto de tabetai desu.
+でも、今日は天気がいいから外で食べたいです。
+
+あさから ずっと きょうしつの なかに いましたから。
+Because I've been inside the classroom the whole time since morning.
+Asa kara zutto kyoushitsu no naka ni imashita kara.
+朝からずっと教室の中にいましたから。
+
+じゃあ、おみせで ぱんか おべんとうを かって、さくらこうえんまで いきましょうか。
+Then, shall we buy some bread or bento at a shop and go to Sakura Park?
+Jaa, omise de pan ka obentou o katte, Sakura kouen made ikimashou ka.
+じゃあ、お店でパンかお弁当を買って、桜公園まで行きましょうか。
+
+ええ、そうしましょう。
+Yes, let's do that.
+Ee, sou shimashou.
+ええ、そうしましょう。
+
+ふたりは どこで たべますか。
+Where will they eat?
+Futari wa doko de tabemasu ka.
+2人はどこで食べますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+れすとらんで おんなのひとと みせのひとが はなしています。
+A woman and a restaurant staff member are talking at a restaurant.
+Resutoran de onna no hito to mise no hito ga hanashite imasu.
+レストランで女の人と店の人が話しています。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito wa nani o tabemasu ka.
+女の人は何を食べますか。
+
+すみません、これは とりにくですか。
+Excuse me, is this chicken?
+Sumimasen, kore wa toriniku desu ka.
+すみません、これは鶏肉ですか。
+
+いいえ、こちらは ぶたにくで ございまーす。
+No, this is pork.
+Iie, kochira wa butaniku de gozaimasu.
+いいえ、こちらは豚肉でございます。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+これは？
+What about this?
+Kore wa?
+これは？
+
+こちらは さかなです。
+This is fish.
+Kochira wa sakana desu.
+こちらは魚です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あの、とりにくの りょうりは ありませんか。
+Um, are there any chicken dishes?
+Ano, toriniku no ryouri wa arimasen ka.
+あの、鶏肉の料理はありませんか。
+
+はい、こちらです。
+Yes, they are right here.
+Hai, kochira desu.
+はい、こちらです。
+
+じゃ、これを おねがいします。
+Then, I'll have this one, please.
+Ja, kore o onegai shimasu.
+じゃ、これをお願いします。
+
+おんなのひとは なにを たべますか。
+What will the woman eat?
+Onna no hito wa nani o tabemasu ka.
+女の人は何を食べますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+だいがくで おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking at university.
+Daigaku de otoko no gakusei to onna no gakusei ga hanashite imasu.
+大学で男の学生と女の学生が話しています。
+
+あしたの ぱーてぃーに せんせいは なんにん きますか。
+How many teachers will come to tomorrow's party?
+Ashita no paatii ni sensei wa nan nin kimasu ka.
+明日のパーティーに先生は何人来ますか。
+
+あしたの くらすの ぱーてぃーには ぜんぶで なんにんくらい きますか。
+About how many people are coming to tomorrow's class party in total?
+Ashita no kurasu no paatii ni wa zenbu de nan nin kurai kimasu ka.
+明日のクラスのパーティーには全部で何人くらい来ますか。
+
+えっと、こないひとが さんにん いますから、ぜんぶで にじゅうよにんです。
+Let's see, since there are 3 people who aren't coming, there will be 24 people in total.
+Etto, konai hito ga san nin imasu kara, zenbu de nijuuyon nin desu.
+えっと、来ない人が3人いますから、全部で24人です。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+せんせいたちも きますか。
+Are the teachers also coming?
+Sensei tachi mo kimasu ka.
+先生たちも来ますか。
+
+ええ、やまだせんせいと たなかせんせいが きます。
+Yes, Yamada-sensei and Tanaka-sensei are coming.
+Ee, Yamada sensei to Tanaka sensei ga kimasu.
+ええ、山田先生と田中先生が来ます。
+
+かわしませんせいは？
+What about Kawashima-sensei?
+Kawashima sensei wa?
+川島先生は？
+
+かわしませんせいは こないと いっていました。
+Kawashima-sensei said he wasn't coming.
+Kawashima sensei wa konai to itte imashita.
+川島先生は来ないと言っていました。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あしたの ぱーてぃーに せんせいは なんにん きますか。
+How many teachers will come to tomorrow's party?
+Ashita no paatii ni sensei wa nan nin kimasu ka.
+明日のパーティーに先生は何人来ますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+あしたの ごご、おんなのひとは どこへ いきますか。
+Where will the woman go tomorrow afternoon?
+Ashita no gogo, onna no hito wa doko e ikimasu ka.
+明日の午後、女の人はどこへ行きますか。
+
+あしたの ごご、いっしょに えいがを みに いきませんか。
+Would you like to go to see a movie together tomorrow afternoon?
+Ashita no gogo, issho ni eiga o mi ni ikimasen ka.
+明日の午後、一緒に映画を見に行きませんか。
+
+すみません、あしたは ちょっと いそがしいです。
+I'm sorry, tomorrow I'm a bit busy.
+Sumimasen, ashita wa chotto isogashii desu.
+すみません、明日はちょっと忙しいです。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+ごぜんは びょういんへ いったり、にもつを だしに ゆうびんきょくへ いったり します。
+In the morning, I will do things like going to the hospital and going to the post office to mail packages.
+Gozen wa byouin e ittari, nimotsu o dashi ni yuubinkyoku e ittari shimasu.
+午前は病院へ行ったり、荷物を出しに郵便局へ行ったりします。
+
+ごごは やまだせんせいの じゅぎょうの れぽーとを かきます。
+In the afternoon, I will write a report for Yamada-sensei's class.
+Gogo wa Yamada sensei no jugyou no repooto o kakimasu.
+午後は山田先生の授業のレポートを書きます。
+
+げつようびに だしますから。
+Since I have to submit it on Monday.
+Getsuyoubi ni dashimasu kara.
+月曜日に出しますから。
+
+え、その れぽーと、だすのは きんようびまでですよ。
+Eh, the deadline to submit that report is actually Friday.
+E, sono repooto, dasu no wa kinyoubi made desu yo.
+え、そのレポート、出すのは金曜日までですよ。
+
+ほんとうですか。
+Really?
+Hontou desu ka.
+本当ですか。
+
+じゃあ、わたしも えいがを みに いきたいです。
+In that case, I want to go to see the movie too.
+Jaa, watashi mo eiga o mi ni ikitai desu.
+じゃあ、私も映画を見に行きたいです。
+
+じゃ、いきましょう。
+Then, let's go!
+Ja, ikimashou.
+じゃ、行きましょう。
+
+あしたの ごご、おんなのひとは どこへ いきますか。
+Where will the woman go tomorrow afternoon?
+Ashita no gogo, onna no hito wa doko e ikimasu ka.
+明日の午後、女の人はどこへ行きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+ぱーてぃーで おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking at a party.
+Paatii de otoko no hito to onna no hito ga hanashite imasu.
+パーティーで男の人と女の人が話しています。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+あ、やまださん、のみものが ありませんね。
+Ah, Yamada-san, you don't have a drink, do you?
+A, Yamada-san, nomimono ga arimasen ne.
+あ、山田さん、飲み物がありませんね。
+
+なにを のみますか。
+What would you like to drink?
+Nani o nomimasu ka.
+何を飲みますか。
+
+びーると わいん、あと じゅーすと おちゃが ありますけど。
+We have beer, wine, and also juice and green tea.
+Biiru to wain, ato juusu to ocha ga arimasu kedo.
+ビールとワイン、あとジュースとお茶がありますけど。
+
+あの、こーひーは ありませんか。
+Um, do you have coffee?
+Ano, koohii wa arimasen ka.
+あの、コーヒーはありませんか。
+
+うーん、こーひーは ありませんね。
+Hmm, there is no coffee.
+Uun, koohii wa arimasen ne.
+うーん、コーヒーはありませんね。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+あたたかい ものは ありませんか。
+Is there anything warm?
+Atatakai mono wa arimasen ka.
+温かいものはありませんか。
+
+ああ、あたたかい おちゃは できますよ。
+Ah, we can make warm green tea.
+Aa, atatakai ocha wa dekimasu yo.
+ああ、温かいお茶はできますよ。
+
+そうですか、じゃ、それを おねがいします。
+I see, then please give me that.
+Sou desu ka, ja, sore o onegai shimasu.
+そうですか、じゃ、それをお願いします。
+
+おんなのひとは なにを のみますか。
+What will the woman drink?
+Onna no hito wa nani o nomimasu ka.
+女の人は何を飲みますか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, look at the picture while listening to the question.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the person indicated by the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1 から 3 の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+ごはんを たべます。
+You are going to eat.
+Gohan o tabemasu.
+ご飯を食べます。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、ごちそうさまでした。
+1. Thank you for the meal (after eating).
+Ichi, gochisousama deshita.
+1 ごちそうさまでした。
+
+に、いただきます。
+2. Thank you for the food (before eating).
+Ni, itadakimasu.
+2 いただきます。
+
+さん、じゃ、また。
+3. See you later.
+San, ja, mata.
+3 じゃまた。
+
+いちばん いい ものは にばんです。
+The best one is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいさん の れいの ところを みてください。
+Please look at the example section of Problem 3 on the answer sheet.
+Kaitouyoushi no mondai san no rei no tokoro o mite kudasai.
+解答用紙の問題 3 の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best one is number 2, the answer is written like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+ねます。
+You are going to sleep.
+Nemasu.
+寝ます。
+
+ほかのひとに なんと いいますか。
+What do you say to others?
+Hoka no hito ni nan to iimasu ka.
+他の人に何と言いますか。
+
+いち、おつかれさま。
+1. Good job / Thank you for your hard work.
+Ichi, otsukaresama.
+1 お疲れ様。
+
+に、おやすみなさい。
+2. Good night.
+Ni, oyasuminasai.
+2 おやすみなさい。
+
+さん、また あした。
+3. See you tomorrow.
+San, mata ashita.
+3 また明日。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+がっこうへ でかけます。
+You are leaving for school.
+Gakkou e dekakemasu.
+学校へ出かけます。
+
+かぞくに なんと いいますか。
+What do you say to your family?
+Kazoku ni nan to iimasu ka.
+家族に何と言いますか。
+
+いち、しつれいします。
+1. Excuse me (formal).
+Ichi, shitsurei shimasu.
+1 失礼します。
+
+に、いま いきます。
+2. I am going now.
+Ni, ima ikimasu.
+2 今行きます。
+
+さん、いってきます。
+3. I am leaving (I'll go and come back).
+San, ittekimasu.
+3 行ってきます。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+でんしゃに のります。
+You are boarding a train.
+Densha ni norimasu.
+電車に乗ります。
+
+とうきょうまで なんぷんで いくか ききたいです。
+You want to ask how many minutes it takes to get to Tokyo.
+Toukyou made nan fun de iku ka kikitai desu.
+東京まで何分で行くか聞きたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、どのくらい かかりますか。
+1. About how long does it take?
+Ichi, dono kurai kakarimasu ka.
+1 どのくらいかかりますか。
+
+に、いくらですか。
+2. How much is it?
+Ni, ikura desu ka.
+2 いくらですか。
+
+さん、いま なんじですか。
+3. What time is it now?
+San, ima nan ji desu ka.
+3 今何時ですか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+たくしーの なかです。
+You are inside a taxi.
+Takushii no naka desu.
+タクシーの中です。
+
+どこへ いきたいか いいます。
+You tell the driver where you want to go.
+Doko e ikitai ka iimasu.
+どこへ行きたいか言います。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、ちかくの えきまで おねがいします。
+1. To the nearby station, please.
+Ichi, chikaku no eki made onegai shimasu.
+1 近くの駅までお願いします。
+
+に、ちかくの えきまで いきます。
+2. I am going to the nearby station.
+Ni, chikaku no eki made ikimasu.
+2 近くの駅まで行きます。
+
+さん、ちかくの えきまで きてください。
+3. Please come to the nearby station.
+San, chikaku no eki made kite kudasai.
+3 近くの駅まで来てください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+きっさてんに います。
+You are in a cafe.
+Kissaten ni imasu.
+喫茶店にいます。
+
+こーひーを のみたいです。
+You want to drink coffee.
+Koohii o nomitai desu.
+コーヒーを飲みたいです。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち、こーひーを おねがいします。
+1. Coffee, please.
+Ichi, koohii o onegai shimasu.
+1 コーヒーをお願いします。
+
+に、こーひーを とってください。
+2. Please pass the coffee.
+Ni, koohii o totte kudasai.
+2 コーヒーを取ってください。
+
+さん、こーひーが あります。
+3. There is coffee.
+San, koohii ga arimasu.
+3 コーヒーがあります。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんででは、えなどが ありません。
+In Problem 4, there are no pictures.
+Mondai yon de wa, e nado ga arimasen.
+問題 4 では、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence, and choose the best response from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1 から 3 の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おなまえは？
+What is your name?
+Oname wa?
+お名前は？
+
+いち、じゅうはっさいです。
+1. I am 18 years old.
+Ichi, juuhassai desu.
+1 18歳です。
+
+に、たなかと もします。
+2. My name is Tanaka.
+Ni, Tanaka to moushimasu.
+2 田中と申します。
+
+さん、いたりあじんです。
+3. I am Italian.
+San, Itariajin desu.
+3 イタリア人です。
+
+いちばん いい ものは にばんです。
+The best one is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいよん の れいの ところを みてください。
+Please look at the example section of Problem 4 on the answer sheet.
+Kaitouyoushi no mondai yon no rei no tokoro o mite kudasai.
+解答用紙の問題 4 の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best one is number 2, the answer is written like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Now, we will begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+あのかたは どなたですか。
+Who is that person?
+Ano kata wa donata desu ka.
+あの方はどなたですか。
+
+いち、とても しんせつな ひとです。
+1. They are a very kind person.
+Ichi, totemo shinsetsu na hito desu.
+1 とても親切な人です。
+
+に、いいえ、ちがいます。
+2. No, that is not correct.
+Ni, iie, chigaimasu.
+2 いいえ、違います。
+
+さん、やまだせんせいです。
+3. That is Yamada-sensei.
+San, Yamada sensei desu.
+3 山田先生です。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとうさんは おいくつですか。
+How old is your father?
+Otousan wa oitsu desu ka.
+お父さんはおいくつですか。
+
+いち、ええ、そうです。
+1. Yes, that is right.
+Ichi, ee, sou desu.
+1 ええ、そうです。
+
+に、ごじゅうまいでーす。
+2. It is 50 thin sheets.
+Ni, gojuu mai desu.
+2 50枚です。
+
+さん、ごじゅっさいです。
+3. He is 50 years old.
+San, gojussai desu.
+3 50歳です。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+にほんりょうりは なにが すきですか。
+What Japanese food do you like?
+Nihon ryouri wa nani ga suki desu ka.
+日本料理は何が好きですか。
+
+いち、おいしいです。
+1. It is delicious.
+Ichi, oishii desu.
+1 美味しいです。
+
+に、てんぷらが すきです。
+2. I like tempura.
+Ni, tenpura ga suki desu.
+2 天ぷらが好きです。
+
+さん、ときどき たべます。
+3. I eat it sometimes.
+San, tokidoki tabemasu.
+3 時々食べます。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+まどを あけましょうか。
+Shall I open the window?
+Mado o akemashou ka.
+窓を開けましょうか。
+
+いち、ええ、おねがいします。
+1. Yes, please.
+Ichi, ee, onegai shimasu.
+1 ええ、お願いします。
+
+に、ええ、あけますね。
+2. Yes, I'll open it.
+Ni, ee, akemasu ne.
+2 ええ、開けますね。
+
+さん、いいえ、あけて ください。
+3. No, please open it.
+San, iie, akete kudasai.
+3 いいえ、開けてください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+すみません、おれんじじゅーすを おねがいします。
+Excuse me, orange juice, please.
+Sumimasen, orenji juusu o onegai shimasu.
+すみません、オレンジジュースをお願いします。
+
+いち、けっこうです。
+1. No, thank you / It's fine.
+Ichi, kekkou desu.
+1 結構です。
+
+に、かしこまりました。
+2. Understood / Certainly.
+Ni, kashikomarimashita.
+2 かしこまりました。
+
+さん、はい、おいしいです。
+3. Yes, it's delicious.
+San, hai, oishii desu.
+3 はい、美味しいです。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+かいしゃまで なんで いきますか。
+How do you go to the company?
+Kaisha made nan de ikimasu ka.
+会社まで何で行きますか。
+
+いち、とても とおいです。
+1. It is very far.
+Ichi, totemo tooi desu.
+1 とても遠いです。
+
+に、ばすで いきます。
+2. I go by bus.
+Ni, basu de ikimasu.
+2 バスで行きます。
+
+さん、くじに いきます。
+3. I go at 9 o'clock.
+San, kuji ni ikimasu.
+3 9時に行きます。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 08 - Hard"] = ``;
+
+allWords["Listening 09"] = `
+にほんごのうりょくしけん かんぜんもし えぬご だいいっかい ちょうかい。
+Japanese Language Proficiency Test Complete Mock Exam N5, 1st Exam, Listening.
+Nihongo nouryoku shiken kanzen moshi enu go dai ikkai choukai.
+日本語能力試験 完全模試 N5 第1回 聴解。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+いえで おんなのひとが おとこのひとと はなしています。
+A woman is talking to a man at home.
+Ie de onna no hito ga otoko no hito to hanashite imasu.
+家で女の人が男の人と話しています。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+きょうは さむいですね。
+It's cold today, isn't it?
+Kyou wa samui desu ne.
+今日は寒いですね。
+
+あたたかい ものを のみませんか。
+Would you like to drink something warm?
+Atatakai mono o nomimasen ka.
+温かいものを飲みませんか。
+
+ありがとうございます。
+Thank you.
+Arigatou gozaimasu.
+ありがとうございます。
+
+こーひー、こうちゃ、おちゃも あります。
+We have coffee, black tea, and also green tea.
+Koohii, koucha, ocha mo arimasu.
+コーヒー、紅茶、あとお茶もあります。
+
+こうちゃを おねがいします。
+Black tea, please.
+Koucha o onegai shimasu.
+紅茶をお願いします。
+
+さとうや みるくは いれますか。
+Do you take sugar or milk?
+Satou ya miruku wa iremasu ka.
+砂糖やミルクは入れますか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+おんなのひとは おとこのひとに なにを だしますか。
+What will the woman serve the man?
+Onna no hito wa otoko no hito ni nani o dashimasu ka.
+女の人は男の人に何を出しますか。
+
+いちばん いい ものは さんばんです。
+The best answer is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいいちの れいの ところを みてください。
+Please look at the example section of Problem 1 on the answer sheet.
+Kaitouyoushi no mondai ichi no rei no tokoro o mite kudasai.
+解答用紙の問題1の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best answer is number 3, the answer is written like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+りょこうがいしゃの ひとが がくせいに はなしています。
+A person from a travel agency is talking to students.
+Ryokougaisha no hito gako gakusei ni hanashite imasu.
+旅行会社の人が学生に話しています。
+
+がくせいは はじめに なにを しますか。
+What will the students do first?
+Gakusei wa hajime ni nani o shimasu ka.
+学生は初めに何をしますか。
+
+さくらにほんごがっこうの みなさん、ここに きてください。
+Everyone from Sakura Japanese Language School, please come here.
+Sakura Nihongo Gakkou no minasan, koko ni kite kudasai.
+さくら日本語学校の皆さん、ここにきてください。
+
+いまから みんなで しゃしんを とります。
+We are going to take a photo together now.
+Ima kara minna de shashin o torimasu.
+今からみんなで写真を撮ります。
+
+しゃしんを とった あとは ふりーたいむです。
+After taking the photo, it is free time.
+Shashin o totta ato wa furii taimu desu.
+写真を撮った後はフリータイムです。
+
+ごはんを たべたり、おてらを みたり、かいものを したり、すきな ことを してください。
+Please do what you like, such as eating a meal, looking at temples, or shopping.
+Gohan o tabetari, otera o mitari, kaimono o shitari, suki na koto o shite kudasai.
+ご飯を食べたり、お寺を見たり、買い物をしたり、好きなことをしてください。
+
+にじに また ここへ きてください。
+Please come back here again at 2:00.
+Ni-ji ni mata koko e kite kudasai.
+2時にまたここへ来てください。
+
+では しゃしんを とりましょう。
+Now, let's take a photo.
+Dewa shashin o torimashou.
+では写真を撮りましょう。
+
+がくせいは はじめに なにを しますか。
+What will the students do first?
+Gakusei wa hajime ni nani o shimasu ka.
+学生は初めに何をしますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+でぱーとで おとこのひとと みせのひとが はなしています。
+A man and a shop assistant are talking at a department store.
+Depaarto de otoko no hito to mise no hito ga hanashite imasu.
+デパートで男の人と店の人が話しています。
+
+おとこのひとは なんかいに いきますか。
+Which floor will the man go to?
+Otoko no hito wa nan-kai ni ikimasu ka.
+男の人は何階に行きまか。
+
+あの すみません、めがねうりばは どこですか。
+Um, excuse me, where is the glasses section?
+Ano sumimasen, megane uriba wa doko desu ka.
+あのすみません、メガネ売り場はどこですか。
+
+ろっかいで ございます。
+It is on the 6th floor.
+Roku-kai de gozaimasu.
+6階でございます。
+
+ろっかいですね。あ、ここは なんかいですか。
+The 6th floor, I see. Ah, what floor is this?
+Roku-kai desu ne. A, koko wa nan-kai desu ka.
+6階ですね。あ、ここは何階ですか。
+
+にかいで ございます。
+It is the 2nd floor.
+Ni-kai de gozaimasu.
+2階でございます。
+
+あ、どうも。
+Ah, thank you.
+A, doumo.
+あ、どうも。
+
+おとこのひとは なんかいに いきますか。
+Which floor will the man go to?
+Otoko no hito wa nan-kai ni ikimasu ka.
+男の人は何階に行きますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+きょうしつで せんせいが はなしています。
+The teacher is talking in the classroom.
+Kyoushitsu de sensei ga hanashite imasu.
+教室で先生が話しています。
+
+がくせいは あした どのほんを もってきますか。
+Which book will the students bring tomorrow?
+Gakusei wa ashita dono hon o motte kimasu ka.
+学生は明日どの本を持ってきますか。
+
+あしたから にほんごの くらすが はじまります。
+The Japanese class starts tomorrow.
+Ashita kara Nihongo no kurasu ga hajimarimasu.
+明日から日本語のクラスが始まります。
+
+この にほんご １は まいにち つかいますから わすれないで ください。
+We use this 'Japanese 1' every day, so please do not forget it.
+Kono Nihongo ichi wa mainichi tsukaimasu kara wasurenaide kudasai.
+この日本語1は毎日使いまから忘れないでください。
+
+に は いまは つかいません。
+We do not use '2' right now.
+Ni wa ima wa tsukaimasen.
+2は今は使いません。
+
+それから あしたは かようび ですから かんじの じゅぎょうも あります。
+And, tomorrow is Tuesday, so there is also a Kanji class.
+Sore kara ashita wa kaiboubi desu kara, kanji no jugyou mo arimasu.
+それから明日は火曜日ですから、漢字の授業もあります。
+
+かんじの ほんも もってきて ください。
+Please bring the Kanji book too.
+Kanji no hon mo motte kite kudasai.
+漢字の本も持ってきてください。
+
+せんせい、この ほんは？
+Teacher, what about this book?
+Sensei, kono hon wa?
+先生、この本は？
+
+そのほんは れんしゅうに つかう ほん です。
+That book is for practice.
+Sono hon wa renshuu ni tsukau hon desu.
+その本は練習に使う本です。
+
+うちで つかって ください。
+Please use it at home.
+Uchi de tsukatte kudasai.
+うちで使ってください。
+
+がくせいは あした どのほんを もってきますか。
+Which book will the students bring tomorrow?
+Gakusei wa ashita dono hon o motte kimasu ka.
+学生は明日どの本を持ってきますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+おとこのひとは なにを しますか。
+What will the man do?
+Otoko no hito wa nani o shimasu ka.
+男の人は何をしますか。
+
+このへや あついですね。
+This room is hot, isn't it?
+Kono heya atsui desu ne.
+この部屋暑いですね。
+
+そうですね。まどを あけましょうか。
+That's true. Shall I open the window?
+Sou desu ne. Mado o akemashou ka.
+そうですね。窓を開けましょうか。
+
+いえ、きょうは かぜが つよいですから まどは あけないで ください。
+No, the wind is strong today, so please do not open the window.
+Ie, kyou wa kaze ga tsuyoi desu kara mado wa akenaide kudasai.
+いえ、今日は風が強いですから窓は開けないでください。
+
+えあこんを つけましょう。
+Let's turn on the air conditioner.
+Eakon o tsukemashou.
+エアコンをつけましょう。
+
+そうですね。
+That's true.
+Sou desu ne.
+そうですね。
+
+おとこのひとは なにを しますか。
+What will the man do?
+Otoko no hito wa nani o shimasu ka.
+男の人は何をしますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking.
+Otoko no gakusei to onna no gakusei ga hanashite imasu.
+男の学生と女の学生が話しています。
+
+おんなのがくせいは どの かーてんを かいますか。
+Which curtain will the female student buy?
+Onna no gakusei wa dono kaaten o kaimasu ka.
+女の学生はどのカーテンを買いますか。
+
+あしたは なにを しますか。
+What will you do tomorrow?
+Ashita wa nani o shimasu ka.
+明日は何をしますか。
+
+かーてんを かいます。
+I am going to buy curtains.
+Kaaten o kaimasu.
+カーテンを買います。
+
+かーてんを？ ちいさい かーてんですか。
+Curtains? Are they small curtains?
+Kaaten o? Chiisai kaaten desu ka.
+カーテンを？小さいカーテンですか。
+
+いえ、おおきい かーてんです。
+No, they are big curtains.
+Ie, ookii kaaten desu.
+いえ、大きいカーテンです。
+
+わたしの へやに さいしょから ありましたが あまり すきな でざいんでは ありませんでした。
+They were in my room from the beginning, but I didn't like the design very much.
+Watashi no heya ni saisho kara arimashita ga amari suki na dezain de wa arimasen deshita.
+私の部屋に最初からありましたがあまり好きなデザインではありませんでした。
+
+はなの えで。
+With flower drawings.
+Hana no e de.
+花の絵で。
+
+そうでしたか。どんな かーてんに しますか。
+I see. What kind of curtain will you choose?
+Sou deshita ka. Donna kaaten ni shimasu ka.
+そうでしたか。どんなカーテンにしますか。
+
+しろで なにも かいていない ものに します。
+I will choose a white one with nothing written on it.
+Shiro de nani mo kaite inai mono ni shimasu.
+白で何も書いていないものにします。
+
+おんなのがくせいは どの かーてんを かいますか。
+Which curtain will the female student buy?
+Onna no gakusei wa dono kaaten o kaimasu ka.
+女の学生はどのカーテンを買いますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+くるまの うしろで おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking behind a car.
+Kuruma no ushiro de otoko no hito to onna no hito ga hanashite imasu.
+車の後ろで男の人と女の人が話しています。
+
+おとこのひとは どの かばんを とりますか。
+Which bag will the man take?
+Otoko no hito wa dono kaban o torimasu ka.
+男の人はどのカバンを取りますか。
+
+はらさんの かばんは どれ？
+Which one is Hara-san's bag?
+Hara-san no kaban wa dore?
+原さんのカバンはどれ？
+
+その しろいの。
+That white one.
+Sono shiroi no.
+その白いの。
+
+これ？
+This one?
+Kore?
+これ？
+
+うん、その よこの。
+Yeah, the one next to it.
+Un, sono yoko no.
+うん、その横の。
+
+あ、これ。けっこう おおきいね。
+Ah, this one. It's quite big, isn't it?
+A, kore. Kekkou ookii ne.
+あ、これ。結構大きいね。
+
+おとこのひとは どの かばんを とりますか。
+Which bag will the man take?
+Otoko no hito wa dono kaban o torimasu ka.
+男の人はどのカバンを取りますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+えきで おんなのひとと えきいんが はなしています。
+A woman and a station attendant are talking at a station.
+Eki de onna no hito to ekiin ga hanashite imasu.
+駅で女の人と駅員が話しています。
+
+おんなのひとは なんばん ほーむの でんしゃに のりますか。
+Which platform's train will the woman board?
+Onna no hito wa nan-ban hoomu no densha ni norimasu ka.
+女の人は何番ホームの電車に乗りますか。
+
+すみません。いちばん ほーむの でんしゃは きょうとに いきますか。
+Excuse me. Does the train on platform 1 go to Kyoto?
+Sumimasen. Ichiban hoomu no densha wa Kyouto ni ikimasu ka.
+すみません。1番ホームの電車は京都に行きますか。
+
+きょうとですか。いえ、いちばん ほーむと にばん ほーむは おおさか いきです。
+Kyoto? No, platform 1 and platform 2 are for Osaka.
+Kyouto desu ka. Ie, ichiban hoomu to niban hoomu wa Oosaka iki desu.
+京都ですか。いえ、1番ホームと2番ホームは大阪行きです。
+
+きょうとに いくのは さんばんと よんばんです。
+The ones going to Kyoto are platforms 3 and 4.
+Kyouto ni iku no wa san-ban to yon-ban desu.
+京都に行くのは3番と4番です。
+
+さんばんと よんばんですね。
+Platforms 3 and 4, I see.
+San-ban to yon-ban desu ne.
+3番と4番ですね。
+
+あ、でも きょうは にちようび ですから よんばん ほーむの でんしゃは きょうとには とまりません。
+Ah, but today is Sunday, so the train on platform 4 does not stop at Kyoto.
+A, demo kyou wa nichiyoubi desu kara, yon-ban hoomu no densha wa Kyouto ni wa tomarimasen.
+あ、でも今日は日曜日ですから、4番ホームの電車は京都には止まりません。
+
+そうですか。わかりました。
+Is that so? I understand.
+Sou desu ka. Wakarimashita.
+そうですか。わかりました。
+
+おんなのひとは なんばん ほーむの でんしゃに のりますか。
+Which platform's train will the woman board?
+Onna no hito wa nan-ban hoomu no densha ni norimasu ka.
+女の人は何番ホームの電車に乗りますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking.
+Onna no gakusei to otoko no gakusei ga hanashite imasu.
+女の学生と男の学生が話しています。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will they go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+らいしゅう ささんの たんじょうび ぷれぜんとを かいに いきませんか。
+Shall we go buy a birthday present for Sa-san next week?
+Raishuu Sa-san no tanjoubi purezento o kai ni ikimasen ka.
+来週ささんの誕生日プレゼントを買いに行きませんか。
+
+そうですね。いつかが たんじょうび ですから、みっかか よっかに いきましょう。
+Yes. Since their birthday is on the 5th, let's go on the 3rd or 4th.
+Sou desu ne. Itsuka ga tanjoubi desu kara, mikka ka yokka ni ikimashou.
+そうですね。5日が誕生日ですから、3日か4日に行きましょう。
+
+あ、ちょっと まってください。
+Ah, wait a moment please.
+A, chotto matte kudasai.
+あ、ちょっと待ってください。
+
+わたしは みっかと よっかは あるばいとが あります。
+I have part-time work on the 3rd and 4th.
+Watashi wa mikka to yokka wa arubaito ga arimasu.
+私は3日と4日はアルバイトがあります。
+
+ふつかは だめですか。
+Is the 2nd no good?
+Futsuka wa dame desu ka.
+2日はダメですか。
+
+いいですよ。じゃあ、じゅぎょうが おわった あとに いきましょう。
+That is fine. Then, let's go after class ends.
+Ii desu yo. Jaa, jugyou ga owatta ato ni ikimashou.
+いいですよ。じゃあ、授業が終わった後に行きましょう。
+
+ふたりは いつ ぷれぜんとを かいに いきますか。
+When will they go to buy the present?
+Futari wa itsu purezento o kai ni ikimasu ka.
+2人はいつプレゼントを買いに行きますか。
+
+いちばん いい ものは いちばんです。
+The best answer is number 1.
+Ichiban ii mono wa ichiban desu.
+一番いいものは1番です。
+
+かいとうようしの もんだいにの れいの ところを みてください。
+Please look at the example section of Problem 2 on the answer sheet.
+Kaitouyoushi no mondai ni no rei no tokoro o mite kudasai.
+解答用紙の問題2の例のところを見てください。
+
+いちばん いい ものは いちばんですから、こたえは このように かきます。
+Since the best answer is number 1, the answer is written like this.
+Ichiban ii mono wa ichiban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは1番ですから、答えはこのように書きます。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+ゆうびんきょくで おんなのひとと ゆうびんきょくの ひとが はなしています。
+A woman and a postal worker are talking at the post office.
+Yuubinkyoku de onna no hito to yuubinkyoku no hito ga hanashite imasu.
+郵便局で女の人と郵便局の人が話しています。
+
+おんなのひとは いくら はらいますか。
+How much will the woman pay?
+Onna no hito wa ikura haraimasu ka.
+女の人はいくら払いますか。
+
+はちじゅうえんの きってを にまい ください。
+Please give me two 80-yen stamps.
+Hachijuu-en no kitte o ni-mai kudasai.
+80円の切手を2枚ください。
+
+はちじゅうえんの きってを にまいですね。ひゃくろくじゅうえんです。
+Two 80-yen stamps, yes. That is 160 yen.
+Hachijuu-en no kitte o ni-mai desu ne. Hyakurokujuu-en desu.
+80円の切手を2枚ですね。160円です。
+
+あ、それから はがきも ください。
+Ah, and postcards please.
+A, sore kara hagaki mo kudasai.
+あ、それからはがきもください。
+
+なんまいですか。
+How many sheets?
+Nan-mai desu ka.
+何枚ですか。
+
+ごまい おねがいします。
+Five sheets, please.
+Go-mai onegai shimasu.
+5枚お願いします。
+
+では はがきが ごまいで にひゃくごじゅうえんですから ぜんぶで よんひゃくじゅうえんです。
+So, since five postcards are 250 yen, the total is 410 yen.
+Dewa hagaki ga go-mai de nihyakugojuu-en desu kara zenbu de yonhyakujuu-en desu.
+でははがきが5枚で250円ですから全部で410円です。
+
+じゃあ これで ちょうどです。
+Then, this is exactly the amount.
+Jaa kore de choudo desu.
+じゃあこれでちょうどです。
+
+おんなのひとは いくら はらいますか。
+How much will the woman pay?
+Onna no hito wa ikura haraimasu ka.
+女の人はいくら払いますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+としょかんで おとこのがくせいと としょかんの ひとが はなしています。
+A male student and a librarian are talking in the library.
+Toshokan de otoko no gakusei to toshokan no hito ga hanashite imasu.
+図書館で男の学生と図書館の人が話しています。
+
+おとこのがくせいは ほんを なんさつ かりましたか。
+How many books did the male student borrow?
+Otoko no gakusei wa hon o nan-satsu karimashita ka.
+男の学生は本を何冊借りましたか。
+
+えっと、かりるのは ここで いいですか。
+Um, is it okay to borrow them here?
+Etto, kariru no wa koko de ii desu ka.
+えっと、借りるのはここでいいですか。
+
+はい。おねがいします。ななさつですね。
+Yes. Yes, please. Seven books, right?
+Hai. Onegai shimasu. Nana-satsu desu ne.
+はい。お願いします。7冊ですね。
+
+あ、すみません。がくせいの かたは ごさつまでです。
+Ah, excuse me. Students are limited to five books.
+A, sumimasen. Gakusei no kata wa go-satsu made desu.
+あ、すみません。学生の方は5冊までです。
+
+え、そうですか。
+Eh, really?
+E, sou desu ka.
+え、そうですか。
+
+ええ。せんせいは じゅっさつまで ですが。
+Yes. Teachers can borrow up to ten books though.
+Ee. Sensei wa jyuu-satsu made desu ga.
+ええ。先生は10冊までですが。
+
+わかりました。じゃあ、この にさつは いいです。
+I understand. Then, these two books are fine (I'll leave them).
+Wakarimashita. Jaa, kono ni-satsu wa ii desu.
+わかりました。じゃあ、この2冊はいいです。
+
+おとこのがくせいは ほんを なんさつ かりましたか。
+How many books did the male student borrow?
+Otoko no gakusei wa hon o nan-satsu karimashita ka.
+男の学生は本を何冊借りましたか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女人と男の人が話しています。
+
+おとこのひとは おおさかまで なんで いきましたか。
+How did the man go to Osaka?
+Otoko no hito wa Oosaka made nan de ikimashita ka.
+男の人は大阪まで何で行きましたか。
+
+おしょうがつは どこかへ いきましたか。
+Did you go anywhere during New Year's?
+Oshougatsu wa dokoka e ikimashita ka.
+お正月はどこかへ行きましたか。
+
+おおさかの いえへ かえりました。
+I returned to my home in Osaka.
+Oosaka no ie e kaerimashita.
+大阪の家へ帰りました。
+
+まいねん しょうがつは おやと いっしょに すごします。
+Every year I spend New Year's with my parents.
+Mainen shougatsu wa oya to issho ni sugoshima su.
+毎年正月は親と一緒に過ごします。
+
+そうですか。おおさかへは なんで いきますか。
+I see. How do you go to Osaka?
+Sou desu ka. Oosaka e wa nan de ikimasu ka.
+そうですか。大阪へは何で行きますか。
+
+こんかいは ばすを つかいました。
+I used the bus this time.
+Konkai wa basu o tsukaimashita.
+今回はバスを使いました。
+
+いつもは くるまで いきますが、すこし つかれて いましたから。
+Usually I go by car, but because I was a little tired.
+Itsumo wa kuruma de ikimasu ga, sukoshi tsukarete imashitakara.
+いつもは車で行きますが、少し疲れていましたから。
+
+しんかんせんや ひこうきは？
+What about the Shinkansen or plane?
+Shinkansen ya hikouki wa?
+新幹線や飛行機は？
+
+しんかんせんは べんりですが、ちょっと たかくて。
+The Shinkansen is convenient, but a bit expensive.
+Shinkansen wa benri desu ga, chotto takakute.
+新幹線は便利ですが、ちょっと高くて。
+
+ひこうきは くうこうが ちょっと とおいですね。
+As for the plane, the airport is a bit far, isn't it?
+Hikouki wa kuukou ga chotto tooi desu ne.
+飛行機は空港がちょっと遠いですね。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+おとこのひとは おおさかまで なんで いきましたか。
+How did the man go to Osaka?
+Otoko no hito wa Oosaka made nan de ikimashita ka.
+男の人は大阪まで何で行きましたか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おんなのがくせいと おとこのがくせいが はなしています。
+A female student and a male student are talking.
+Onna no gakusei to otoko no gakusei ga hanashite imasu.
+女の学生と男の学生が話しています。
+
+おんなのがくせいは あした なんじごろ がっこうへ きますか。
+Around what time will the female student come to school tomorrow?
+Onna no gakusei wa ashita nan-ji goro gakkou e kimasu ka.
+女の学生は明日何時頃学校へきますか。
+
+あしたの てすと はやいですね。
+Tomorrow's test is early, isn't it?
+Ashita no tesuto hayai desu ne.
+明日のテスト早いですね。
+
+そうですね。くじは ちょっと はやいですね。たなかさんは なんじに きますか。
+Yes. 9:00 is a bit early. What time will you come, Tanaka-san?
+Sou desu ne. Ku-ji wa chotto hayai desu ne. Tanaka-san wa nan-ji ni kimasu ka.
+そうですね。9時はちょっと早いですね。田中さんは何時にきますか。
+
+そうですね。てすとの じゅっぷんぐらい まえに きます。
+Well. I come about 10 minutes before the test.
+Sou desu ne. Tesuto no juppun gurai mae ni kimasu.
+そうですね。テストの10分ぐらい前にきます。
+
+そうですか。わたしは さんじゅっぷんぐらい まえに きて すこし べんきょうします。
+Is that so? I will come about 30 minutes before to study a bit.
+Sou desu ka. Watashi wa sanjuppun gurai mae ni kite, sukoshi benkyou shimasu.
+そうですか。私は30分ぐらい前にきて少し勉強します。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+おんなのがくせいは あした なんじごろ がっこうへ きますか。
+Around what time will the female student come to school tomorrow?
+Onna no gakusei wa ashita nan-ji goro gakkou e kimasu ka.
+女の学生は明日何時頃学校へきますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おとこのがくせいと おんなのがくせいが はなしています。
+A male student and a female student are talking.
+Otoko no gakusei to onna no gakusei ga hanashite imasu.
+男の学生と女の学生が話しています。
+
+ふたりは いつ えいがを みに いきますか。
+When will they go to see a movie?
+Futari wa itsu eiga o mi ni ikimasu ka.
+2人はいつ映画を見に行きますか。
+
+こんしゅう いっしょに えいがを みに いきませんか。
+Would you like to go see a movie together this week?
+Konshuu issho ni eiga o mi ni ikimasen ka.
+今週一緒に映画を見に行きませんか。
+
+こんしゅうは ちょっと いそがしくて。
+I am a bit busy this week.
+Konshuu wa chotto isogashikute.
+今週はちょっと忙しくて。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+でも らいしゅうは だいじょうぶですよ。かようびか すいようびは どうですか。
+But next week is fine. How about Tuesday or Wednesday?
+Demo raishuu wa daijoubu desu yo. Kaiboubi ka suiyoubi wa dou desu ka.
+でも来週は大丈夫ですよ。火曜日か水曜日はどうですか。
+
+そうですか。じゃあ かようびが いいです。すいようびは ばいとが ありますから。
+I see. Then Tuesday is good. Since I have a part-time job on Wednesday.
+Sou desu ka. Jaa kaiboubi ga ii desu. Suiyoubi wa baito ga arimasu kara.
+そうですか。じゃあ火曜日が良いです。水曜日はバイトがありますから。
+
+いいですよ。
+That is fine.
+Ii desu yo.
+いいですよ。
+
+ふたりは いつ えいがを みに いきますか。
+When will they go to see a movie?
+Futari wa itsu eiga o mi ni ikimasu ka.
+2人はいつ映画を見に行きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは あした どこへ いきますか。
+Where will the woman go tomorrow?
+Onna no hito wa ashita doko e ikimasu ka.
+女の人は明日どこへ行きますか。
+
+やまださんは やすみのひ なにを しますか。
+Yamada-san, what do you do on your days off?
+Yamada-san wa yasumi no hi nani o shimasu ka.
+山田さんは休みの日何をしますか。
+
+そうですね。こうえんで じょぎんぐ したり、でぱーとに かいものに いったり します。
+Well. I do things like jogging in the park, or going to the department store for shopping.
+Sou desu ne. Kouen de jogingu shitari, depaarto ni kaimono ni ittari shimasu.
+そうですね。公園でジョギングしたり、デパートに買い物に行ったりします。
+
+そうですか。あしたは なにを しますか。
+I see. What will you do tomorrow?
+Ashita wa nani o shimasu ka.
+明日な何をしますか。
+
+あしたは あめ ですから たぶん としょかんで ほんを よみます。たなかさんは？
+Since it is raining tomorrow, I will probably read books at the library. What about you, Tanaka-san?
+Ashita wa ame desu kara, tabun toshokan de hon o yomisu. Tanaka-san wa?
+明日は雨ですから、多分図書館で本を読みます。田中さんは？
+
+わたしは ともだちと えいがを みに いきます。
+I am going to see a movie with my friend.
+Watashi wa tomodachi to eiga o mi ni ikimasu.
+私は友達と映画を見に行きます。
+
+そうですか。
+I see.
+Sou desu ka.
+そうですか。
+
+おんなのひとは あした どこへ いきますか。
+Where will the woman go tomorrow?
+Onna no hito wa ashita doko e ikimasu ka.
+女の人は明日どこへ行きますか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, look at the picture while listening to the question.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What does the person marked with the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best answer from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1から3の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+しょくどうで おみせの ひとを よびます。なんと いいますか。
+You want to call a staff member in a restaurant. What do you say?
+Shokudou de omise no hito o yobimasu. Nan to iimasu ka.
+食堂でお店の人を呼びます。何と言いますか。
+
+いち。いらっしゃいませ。
+1. Welcome.
+Ichi. Irasshaimase.
+1. いらっしゃいませ。
+
+に。しつれいしました。
+2. Excuse me (for what I did).
+Ni. Shitsurei shimashita.
+2. 失礼しました。
+
+さん。すみません。
+3. Excuse me.
+San. Sumimasen.
+3. すみません。
+
+いちばん いい ものは さんばんです。
+The best answer is number 3.
+Ichiban ii mono wa sanban desu.
+一番いいものは3番です。
+
+かいとうようしの もんだいさんの れいの ところを みてください。
+Please look at the example section of Problem 3 on the answer sheet.
+Kaitouyoushi no mondai san no rei no tokoro o mite kudasai.
+解答用紙の問題3の例のところを見てください。
+
+いちばん いい ものは さんばんですから、こたえは このように かきます。
+Since the best answer is number 3, the answer is written like this.
+Ichiban ii mono wa sanban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは3番ですから、答えはこのように書きます。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+はじめて あう ひとに あいさつを します。なんと いいますか。
+You greet someone you are meeting for the first time. What do you say?
+Hajimete au hito ni aisatsu o shimasu. Nan to iimasu ka.
+初めて会う人に挨拶をします。何と言いますか。
+
+いち。やまだです。よろしく おねがいします。
+1. I am Yamada. Pleased to meet you.
+Ichi. Yamada desu. Yoroshiku onegai shimasu.
+1. 山田です。よろしくお願いします。
+
+に。やまだです。どういたしまして。
+2. I am Yamada. You are welcome.
+Ni. Yamada desu. Dou itashimashite.
+2. 山田です。どういたしまして。
+
+さん。やまだです。こちらこそ。
+3. I am Yamada. Likewise.
+San. Yamada desu. Kochira koso.
+3. 山田です。こちらこそ。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+せんせいの へやに はいります。なんと いいますか。
+You enter the teacher's room. What do you say?
+Sensei no heya ni hairimasu. Nan to iimasu ka.
+先生の部屋に入ります。何と言いますか。
+
+いち。ただいま。
+1. I am home.
+Ichi. Tadaima.
+1. ただいま。
+
+に。はいりました。
+2. I entered.
+Ni. Hairimashita.
+2. 入りました。
+
+さん。しつれいします。
+3. Excuse me (may I come in).
+San. Shitsurei shimasu.
+3. 失礼します。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+ともだちに おみやげを あげます。なんと いいますか。
+You give a souvenir to your friend. What do you say?
+Tomodachi ni omiyage o agemasu. Nan to iimasu ka.
+友達にお土産をあげます。何と言いますか。
+
+いち。これ わたしの くにの おかしです。ひとつ もらいます。
+1. This is a sweet from my country. I will receive one.
+Ichi. Kore watashi no kuni no okashi desu. Hitotsu moraimasu.
+1. これ私の国のお菓子です。1つもらいます。
+
+に。わたしの くにの おかしです。ひとつ どうぞ。
+2. This is a sweet from my country. Please have one.
+Ni. Watashi no kuni no okashi desu. Hitotsu douzo.
+2. 私の国のお菓子です。1つどうぞ。
+
+さん。これ わたしの くにの おかしです。ひとつ ください。
+3. This is a sweet from my country. Please give me one.
+San. Kore watashi no kuni no okashi desu. Hitotsu kudasai.
+3. これ私の国のお菓子です。1つください。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+しょくどうです。ここに すわりたいです。なんと いいますか。
+You are at a cafeteria. You want to sit here. What do you say?
+Shokudou desu. Koko ni suwaritai desu. Nan to iimasu ka.
+食堂です。ここに座りたいです。何と言いますか。
+
+いち。ここ いいですか。
+1. Is here okay?
+Ichi. Koko ii desu ka.
+1. ここいいですか。
+
+に。ここ すわりませんか。
+2. Won't you sit here?
+Ni. Koko suwarimasen ka.
+2. ここ座りませんか。
+
+さん。ここ すわりましょうか。
+3. Shall we sit here?
+San. Koko suwarimashou ka.
+3. ここ座りましょうか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+しょくどうで ともだちと たべています。しおが ほしいです。なんと いいますか。
+You are eating with a friend at a cafeteria. You want the salt. What do you say?
+Shokudou de tomodachi to tabete imasu. Shio ga hoshii desu. Nan to iimasu ka.
+食堂で友達と食べています。塩が欲しいです。何と言いますか。
+
+いち。すみません、そこの しおを とってください。
+1. Excuse me, please pass that salt over there.
+Ichi. Sumimasen, soko no shio o totte kudasai.
+1. すみません、そこの塩を取ってください。
+
+に。すみません、そこの しおを つかいましょうか。
+2. Excuse me, shall we use that salt over there?
+Ni. Sumimasen, soko no shio o tsukaimashou ka.
+2. すみません、そこの塩を使いましょうか。
+
+さん。すみません、この しおを あげますか。
+3. Excuse me, will you give this salt?
+San. Sumimasen, kono shio o agemasu ka.
+3. すみません、この塩をあげますか。
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは、えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa, e nado ga arimasen.
+問題 4 は、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best answer from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1から3の中から、一番いいものを1つ選んでください。
+
+では れんしゅうしましょう。
+Now, let's practice.
+Dewa renshuu shimashou.
+では練習しましょう。
+
+れい。
+Example.
+Rei.
+例。
+
+おくには どちらですか。
+Which country are you from?
+Okuni wa dochira desu ka.
+お国はどちらですか。
+
+いち。あちらです。
+1. That way.
+Ichi. Achira desu.
+1. あちらです。
+
+に。あめりかです。
+2. America.
+Ni. Amerika desu.
+2. アメリカです。
+
+さん。へやです。
+3. Room.
+San. Heya desu.
+3. 部屋です。
+
+いちばん いい ものは にばんです。
+The best answer is number 2.
+Ichiban ii mono wa niban desu.
+一番いいものは2番です。
+
+かいとうようしの もんだいよんの れいの ところを みてください。
+Please look at the example section of Problem 4 on the answer sheet.
+Kaitouyoushi no mondai yon no rei no tokoro o mite kudasai.
+解答用紙の問題4の例のところを見てください。
+
+いちばん いい ものは にばんですから、こたえは このように かきます。
+Since the best answer is number 2, the answer is written like this.
+Ichiban ii mono wa niban desu kara, kotae wa kono you ni kakimasu.
+一番いいものは2番ですから、答えはこのように書きます。
+
+では はじめます。
+Let's begin.
+Dewa hajemimasu.
+では始めます。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+いま なんじですか。
+What time is it now?
+Ima nan-ji desu ka.
+今何時ですか。
+
+いち。しがつです。
+1. It is April.
+Ichi. Shigatsu desu.
+1. 4月です。
+
+に。よっかです。
+2. It is the 4th day.
+Ni. Yokka desu.
+2. 4日です。
+
+さん。よじです。
+3. It is 4 o'clock.
+San. Yoji desu.
+3. 4時です。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+たなかさんは だいがくは どこですか。
+Tanaka-san, which university do you attend?
+Tanaka-san wa daigaku wa doko desu ka.
+田中さんは大学はどこですか。
+
+いち。ふじだいがくです。
+1. Fuji University.
+Ichi. Fuji Daigaku desu.
+1. 富士大学です。
+
+に。とうきょうに あります。
+2. It is in Tokyo.
+Ni. Toukyou ni arimasu.
+2. 東京にあります。
+
+さん。とうきょうえきから ちかいです。
+3. It is close to Tokyo Station.
+San. Toukyou eki kara chikai desu.
+3. 東京駅から近いです。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+りょこうは どうでしたか。
+How was the trip?
+Ryokou wa dou deshita ka.
+旅行はどうでしたか。
+
+いち。きょうとでした。
+1. It was Kyoto.
+Ichi. Kyouto deshita.
+1. 京都でした。
+
+に。たのしかったです。
+2. It was fun.
+Ni. Tanoshikatta desu.
+2. 楽しかったです。
+
+さん。みっかかんでした。
+3. It was for three days.
+San. Mikka kan deshita.
+3. 3日間でした。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+いっしょに ひるごはんを たべませんか。
+Won't we eat lunch together?
+Issho ni hirugohan o tabemasen ka.
+一緒に昼ご飯を食べませんか。
+
+いち。ええ、いいですね。
+1. Yes, that sounds good.
+Ichi. Ee, ii desu ne.
+1. ええ、いいですね。
+
+に。ええ、たべません。
+2. Yes, I do not eat.
+Ni. Ee, tabemasen.
+2. ええ、食べません。
+
+さん。いえ、たべます。
+3. No, I eat.
+San. Ie, tabemasu.
+3. いえ、食べます。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+この くすりは ごはんの あとに のんで ください。
+Please take this medicine after meals.
+Kono kusuri wa gohan no ato ni nonde kudasai.
+この薬はご飯の後をに飲んでください。
+
+いち。はい、そうしましょう。
+1. Yes, let's do that.
+Ichi. Hai, sou shimashou.
+1. はい、そうしましょう。
+
+に。はい、おねがいします。
+2. Yes, please.
+Ni. Hai, onegai shimasu.
+2. はい、お願いします。
+
+さん。はい、わかりました。
+3. Yes, I understand.
+San. Hai, wakarimashita.
+3. はい、わかりました。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+この くるま どこの ですか。
+Where is this car from?
+Kono kuruma doko no desu ka.
+この車どこのですか。
+
+いち。あかいのです。
+1. It is the red one.
+Ichi. Akai no desu.
+1. 赤いのです。
+
+に。わたしのどす。
+2. It is mine.
+Ni. Watashi no desu.
+2. 私のです。
+
+さん。にほんのです。
+3. It is Japanese.
+San. Nihon no desu.
+3. 日本のです。
+
+これで ちょうかいしけんを おわります。
+This concludes the listening exam.
+Kore de choukai shiken o owarimasu.
+これで聴解試験を終わります。
+
+`;
+
+allWords["Listening 09 - Hard"] = ``;
+
+allWords["Listening 10"] = `
+にほんごのうりょくしけん もぎしけん ちょうかい えぬご。
+Japanese Language Proficiency Test Mock Exam N5 Listening.
+Nihongo nouryoku shiken mogi shiken choukai enu go.
+日本語能力試験 模擬試験 聴解 N5。
+
+これから えぬご の ちょうかいしけんを はじめます。
+We will now begin the N5 listening exam.
+Kore kara enu go no choukai shiken o hajemimasu.
+これから N5 の聴解試験を始めます。
+
+めもを とっても いいです。
+You may take notes.
+Memo o totte mo ii desu.
+メモを取ってもいいです。
+
+もんだいようしを あけて ください。
+Please open the question sheet.
+Mondai youshi o akete kudasai.
+問題用紙を開けてください。
+
+もんだいいち。
+Problem 1.
+Mondai ichi.
+問題 1。
+
+もんだいいちでは、はじめに しつもんを きいて ください。
+In Problem 1, first listen to the question.
+Mondai ichi de wa, hajime ni shitsumon o kiite kudasai.
+問題 1 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは このあと すぐ なにを しますか。
+What will the man do immediately after this?
+Otoko no hito wa kono ato sugu nani o shimasu ka.
+男の人はこの後すぐ何をしますか。
+
+なにか てつだいましょうか。
+Shall I help you with something?
+Nan ka tetsudaimashou ka.
+何か手伝いましょうか。
+
+ありがとう。
+Thank you.
+Arigatou.
+ありがとう。
+
+じゃあ、へやを そうじして。
+Then, clean the room.
+Jaa heya o souji shite.
+じゃあ部屋を掃除して。
+
+この おさらを あらって。
+Wash this plate.
+Kono osara o aratte.
+このお皿を洗って。
+
+りんごを きって。
+Cut the apple.
+Ringo o kitte.
+りんごを切って。
+
+それから じゅーすを かいに…。
+And then go buy some juice...
+Sorekara juusu o kai ni...
+それからジュースを買いに…。
+
+え、それは ちょっと。
+Uh, that is a bit too much...
+E, sore wa chotto.
+え、それはちょっと。
+
+じゃあ、そうじを おねがいします。
+Then, please do the cleaning.
+Jaa souji o onegai shimasu.
+じゃあ掃除をお願いします。
+
+おとこのひとは このあと すぐ なにを しますか。
+What will the man do immediately after this?
+Otoko no hito wa kono ato sugu nani o shimasu ka.
+男の人はこの後すぐ何をしますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+にちようび、おんなのひとは うみへ いく まえに なにを しますか。
+What will the woman do on Sunday before going to the sea?
+Nichiyoubi, onna no hito wa umi e iku mae ni nani o shimasu ka.
+日曜日、女の人は海へ行く前に何をしますか。
+
+にちようび、ぼくの くるまで うみへ いきませんか。
+On Sunday, why don't we go to the sea in my car?
+Nichiyoubi, boku no kuruma de umi e ikimasen ka.
+日曜日、僕の車で海へ行きませんか。
+
+いんたーねっとで いい ところが ありましたから。
+Since I found a good place on the internet.
+Intaanetto de ii tokoro ga arimashita kara.
+インターネットでいいところがありましたから。
+
+いいですね。
+That sounds nice.
+Ii desu ne.
+いいですね。
+
+じゃあ、わたし おべんとう つくりますね。
+Then, I will make lunchboxes.
+Jaa watashi obentou tsukurimasu ne.
+じゃあ私お弁当作りますね。
+
+のみものも。
+Drinks too.
+Nomimono mo.
+飲み物も。
+
+ああ、おべんとうですか。
+Oh, lunchboxes?
+Aa, obentou desu ka.
+ああ、お弁当ですか。
+
+うれしいなあ。
+I am so happy.
+Ureshii naa.
+嬉しいなあ。
+
+でも、のみものは おもいですから いいですよ。
+But indeed drinks are heavy, so it is okay (no need to bring them).
+Demo, nomimono wa omoi desu kara ii desu yo.
+でも、飲み物は重いですからいいですよ。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+じゃあ、そうします。
+Then, I will do so.
+Jaa, sou shimasu.
+じゃあ、そうします。
+
+にちようび、おんなのひとは うみへ いく まえに なにを しますか。
+What will the woman do on Sunday before going to the sea?
+Nichiyoubi, onna no hito wa umi e iku mae ni nani o shimasu ka.
+日曜日、女の人は海へ行く前に何をしますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+せんせいが がくせいに はなしています。
+A teacher is talking to a student.
+Sensei ga gakusei ni hanashite imasu.
+先生が学生に話しています。
+
+これから がくせいは どの じゅんばんで しますか。
+In what order will the students do things from now on?
+Kore kara gakusei wa dono junban de shimasu ka.
+これから学生はどの順番でしますか。
+
+これから かみしばいを つくります。
+We will make picture story shows now.
+Kore kara kamishibai o tsukurimasu.
+これから紙芝居を作ります。
+
+せんせい、かみしばいは なんですか。
+Teacher, what is a picture story show?
+Sensei, kamishibai wa nan desu ka.
+先生、紙芝居は何ですか。
+
+はじめに おはなしを かんがえて ください。
+First, please think of a story.
+Hajime ni ohanashi o kangaete kudasai.
+初めにお話を考えてください。
+
+それから この かみに えを かいて。
+After that, draw a picture on this paper.
+Sorekara kono kami ni e o kaite.
+それからこの紙に絵を書いて。
+
+うしろに おはなしを かいて ください。
+Please write the story on the back.
+Ushiro ni ohanashi o kaite kudasai.
+後ろにお話を書いてください。
+
+えと おはなしを かいた あとで。
+After drawing the picture and writing the story.
+E to ohanashi o kaita ato de.
+絵とお話を書いた後で。
+
+この えを みせながら おはなしを よみます。
+We will read the story while showing this picture.
+Kono e o misenagara ohanashi o yomimasu.
+この絵を見せながらお話を読みます。
+
+いいですか。
+Do you understand?
+Ii desu ka.
+いいですか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+これから がくせいは どの じゅんばんで しますか。
+In what order will the students do things from now on?
+Kore kara gakusei wa dono junban de shimasu ka.
+これから学生はどの順番でしますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おとこうひとと おんなのひとが でんわで はなしています。
+A man and a woman are talking on the phone.
+Otoko no hito to onna no hito ga denwa de hanashite imasu.
+男の人と女の人が電話で話しています。
+
+ふたりは あした どこで あいますか。
+Where will the two meet tomorrow?
+Futari wa ashita doko de aimasu ka.
+2人は明日どこで会いますか。
+
+もしもし、いま えきに つきました。
+Hello, I just arrived at the station.
+Moshimoshi, ima eki ni tsukimashita.
+もしもし、今駅に着きました。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+ぼくは きっさてんに います。
+I am in a coffee shop.
+Boku wa kissaten ni imasu.
+僕は喫茶店にいます。
+
+ああ、えきの となりの きっさてんですね。
+Ah, the coffee shop next to the station, right?
+Aa, eki no tonari no kissaten desu ne.
+ああ、駅の隣の喫茶店ですね。
+
+いいえ、だいがくの まえの きっさてんです。
+No, it's the coffee shop in front of the university.
+Iie, daigaku no mae no kissaten desu.
+いいえ、大学の前の喫茶店です。
+
+あ、わかりました。
+Ah, I understand.
+A, wakarimashita.
+あ、わかりました。
+
+すぐ いきます。
+I will go right away.
+Sugu ikimasu.
+すぐ行きます。
+
+ふたりは あした どこで あいますか。
+Where will the two meet tomorrow?
+Futari wa ashita doko de aimasu ka.
+2人は明日どこで会いますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女人と男の人が話しています。
+
+おんなのひとは だれと きょうとへ いきますか。
+With whom will the woman go to Kyoto?
+Onna no hito wa dare to Kyouto e ikimasu ka.
+女の人は誰と京都へ行きますか。
+
+らいしゅう きょうとへ りょこうに いきます。
+I will travel to Kyoto next week.
+Raishuu Kyouto e ryokou ni ikimasu.
+来週京都へ旅行に行きます。
+
+いいですね。
+That is nice.
+Ii desu ne.
+いいですね。
+
+ひとり で？
+By yourself?
+Hitori de?
+1人で？
+
+いいえ、ははと あねと いっしょに いきます。
+No, I am going together with my mother and older sister.
+Iie, haha to ane to issho ni ikimasu.
+いいえ、母と姉と一緒に行きます。
+
+おとうさんは？
+What about your father?
+Otou-san wa?
+お父さんは？
+
+ちちは しごとが いそがしいですから。
+My father is busy with work, so (he won't go).
+Chichi wa shigoto ga isogashii desu kara.
+父は仕事が忙しいですから。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+おんなのひとは だれと きょうとへ いきますか。
+With whom will the woman go to Kyoto?
+Onna no hito wa dare to Kyouto e ikimasu ka.
+女の人は誰と京都へ行きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+きょうしつで せんせいが はなしています。
+A teacher is talking in a classroom.
+Kyoushitsu de sensei ga hanashite imasu.
+教室で先生が話しています。
+
+この がくせいは つくえの うえに なにを おきますか。
+What will this student leave on the desk?
+Kono gakusei wa tsukue no ue ni nani o okimasu ka.
+この学生は机の上に何を置きますか。
+
+いま てすとを しますから、つくえの うえの ものは かばんに いれて ください。
+Since we will have a test now, please put the things on your desk into your bag.
+Ima tesuto o shimasu kara, tsukue no ue no mono wa kaban ni irete kudasai.
+今テストをしますから、机の上のものは鞄に入れてください。
+
+せんせい、えんぴつと けしごむも かばんに いれますか。
+Teacher, should we put pencils and erasers in the bag too?
+Sensei, enpitsu to keshigomu mo kaban ni iremasu ka.
+先生、鉛筆と消しゴムも鞄に入れますか。
+
+いいえ、それは つくえの うえに おいて ください。
+No, please leave those on the desk.
+Iie, sore wa tsukue no ue ni oite kudasai.
+いいえ、それは机の上に置いてください。
+
+せんせい、とけいは？
+Teacher, what about watches?
+Sensei, tokei wa?
+先生、時計は？
+
+とけいは いいですが、けいたいでんわは だめですよ。
+Watches are fine, but mobile phones are not allowed.
+Tokei wa ii desu ga, keitai denwa wa dame desu yo.
+時計はいいですが、携帯電話はダメですよ。
+
+はい、わかりました。
+Yes, I understand.
+Hai, wakarimashita.
+はい、わかりました。
+
+この がくせいは つくえの うえに なにを おきますか。
+What will this student leave on the desk?
+Kono gakusei wa tsukue no ue ni nani o okimasu ka.
+この学生は机の上に何を置きますか。
+
+ななばん。
+No. 7.
+Nanaban.
+7番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おとこのひとは おんなのひとと いつ どこへ いきますか。
+When and where will the man go with the woman?
+Otoko no hito wa onna no hito to itsu doko e ikimasu ka.
+男の人は女の人といつどこへ行きますか。
+
+すずきさん、ぼく あした ともだちと やまへ いきますが、いっしょに いきませんか。
+Suzuki-san, I am going to the mountain tomorrow with a friend, won't you go together with us?
+Suzuki-san, boku ashita tomodachi to yama e ikimasu ga, issho ni ikimasen ka.
+鈴木さん、僕明日友達と山へ行きますが、一緒に行きませんか。
+
+とても きれいな やまですよ。
+It's a very beautiful mountain.
+Totemo kirei na yama desu yo.
+とても綺麗な山ですよ。
+
+すみません、あしたは やまださんと こんさーとに いきますから。
+I am sorry, but tomorrow I am going to a concert with Yamada-san.
+Sumimasen, ashita wa Yamada-san to konsaato ni ikimasu kara.
+すみません、明日は山田さんとコンサートに行きますから。
+
+そうですか。
+Is that so?
+Sou desu ka.
+そうですか。
+
+ざんねんだなあ。
+That is too bad.
+Zannen da naa.
+残念だなあ。
+
+じゃあ、あさっての にちようびに いっしょに しょくじを しましょう。
+Then, let's have a meal together on Sunday, the day after tomorrow.
+Jaa, asatte no nichiyoubi ni issho ni shokuji o shimashou.
+じゃあ、明後日の日曜日と一緒に食事をしましょう。
+
+ええ、じゃあ、あさって。
+Yes, then, the day after tomorrow.
+Ee, jaa, asatte.
+ええ、じゃあ、明後日。
+
+おとこのひとは おんなのひとと いつ どこへ いきますか。
+When and where will the man go with the woman?
+Otoko no hito wa onna no hito to itsu doko e ikimasu ka.
+男の人は女の人といつどこへ行きますか。
+
+もんだいに。
+Problem 2.
+Mondai ni.
+問題 2。
+
+もんだいにでは、はじめに しつもんを きいて ください。
+In Problem 2, first listen to the question.
+Mondai ni de wa, hajime ni shitsumon o kiite kudasai.
+問題 2 では、初めに質問を聞いてください。
+
+それから はなしを きいて、もんだいようしの いち から よん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Then, listen to the talk and choose the best answer from 1 to 4 on the question sheet.
+Sore kara hanashi o kiite, mondai youshi no ichi kara yon no naka kara, ichiban ii mono o hitotsu erande kudasai.
+それから話を聞いて、問題用紙の1から4の中から、一番いいものを1つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+でぱーとで おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking at a department store.
+Depaarto de otoko no hito to onna no hito ga hanashite imasu.
+デパートで男の人と女の人が話しています。
+
+おんなのひとは どの かばんを かいますか。
+Which bag will the woman buy?
+Onna no hito wa dono kaban o kaimasu ka.
+女の人はどのカバンを買いますか。
+
+この しろい かばん どう？
+How about this white bag?
+Kono shiroi kaban dou?
+この白いカバンどう？
+
+しろは ちょっとね。
+White is a bit...
+Shiro wa chotto ne.
+白はちょっとね。
+
+この くろいのは？
+How about this black one?
+Kono kuroi no wa?
+この黒いのは？
+
+くろいのは うちに あるから、すこし おおきい かばんが いいな。
+Since I already have a black one at home, I would prefer a slightly larger bag.
+Kuroi no wa uchi ni aru kara, sukoshi ookii kaban ga ii na.
+黒いのはうちにあるから、少し大きいカバンがいいな。
+
+じゃあ、これかな。
+Then, how about this one?
+Jaa, kore kana.
+じゃあ、これかな。
+
+そうね。
+That's right.
+Sou ne.
+そうね。
+
+おんなのひとは どの かばんを かいますか。
+Which bag will the woman buy?
+Onna no hito wa dono kaban o kaimasu ka.
+女の人はどのカバンを買いますか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おんなのひとと おとこのひとが はなしています。
+A woman and a man are talking.
+Onna no hito to otoko no hito ga hanashite imasu.
+女の人と男の人が話しています。
+
+えーびーほてるは どこに ありますか。
+Where is the AB Hotel?
+Ee bii hoteru wa dono ni arimasu ka.
+ABホテルはどこにありますか。
+
+すみません、えーびーほてるは どこですか。
+Excuse me, where is the AB Hotel?
+Sumimasen, Ee bii hoteru wa dore desu ka.
+すみません、ABホテルはどこですか。
+
+えーびーほてるですか。
+The AB Hotel?
+Ee bii hoteru desu ka.
+ABホテルですか。
+
+えーびーほてるは、えきの まえの みちを みぎに いってください。
+For the AB Hotel, please go right on the road in front of the station.
+Ee bii hoteru wa, eki no mae no michi o migi ni itte kudasai.
+ABホテルは、駅の前の道を右に行ってください。
+
+あの みちを みぎですね。
+Right on that road, correct?
+Ano michi o migi desu ne.
+あの道を右ですね。
+
+ええ、そうです。
+Yes, that's right.
+Ee, sou desu.
+ええ、そうです。
+
+ひだりがわに ありますよ。
+It is on the left side.
+Hidarigawa ni arimasu yo.
+左側にありますよ。
+
+みぎに いって、ひだりですね。
+Go right, and then it's on the left, right?
+Migi ni itte, hidari desu ne.
+右に行って、左ですね。
+
+ありがとうございました。
+Thank you very much.
+Arigatou gozaimashita.
+ありがとうございました。
+
+えーびーほてるは どこに ありますか。
+Where is the AB Hotel?
+Ee bii hoteru wa dono ni arimasu ka.
+ABホテルはどこにありますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは いつから あるばいとを しますか。
+From when will the woman start her part-time job?
+Onna no hito wa itsu kara arubaito o shimasu ka.
+女の人はいつからアルバイトをしますか。
+
+じゃあ、よろしく おねがいします。
+Well, I look forward to working with you.
+Jaa, yoroshiku onegai shimasu.
+じゃあ、よろしくお願いします。
+
+あしたから きてください。
+Please come starting tomorrow.
+Ashita kara kite kudasai.
+明日から来てください。
+
+え、あしたは ちょっと…。
+Oh, tomorrow is a bit...
+E, ashita wa chotto...
+え、明日はちょっと…。
+
+じゃあ、あさっての もくようびからは？
+Then, how about starting from Thursday, the day after tomorrow?
+Jaa, asatte no mokuyoubi kara wa?
+じゃあ、明後日の木曜日からは？
+
+すみませんが、らいしゅうから おねがいします。
+I am sorry, but please let me start from next week.
+Sumimasen ga, raishuu kara onegai shimasu.
+すみませんが、来週からお願いします。
+
+わかりました。
+I understand.
+Wakarimashita.
+わかりました。
+
+じゃあ、らいしゅう げつようびから きてください。
+Then, please come from next Monday.
+Jaa, raishuu getsuyoubi kara kite kudasai.
+じゃあ、来週月曜日から来てください。
+
+はい。
+Yes.
+Hai.
+はい。
+
+おんなのひとは いつから あるばいとを しますか。
+From when will the woman start her part-time job?
+Onna no hito wa itsu kara arubaito o shimasu ka.
+女の人はいつからアルバイトをしますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+おとこのひとと おんなのひとが はなしています。
+A man and a woman are talking.
+Otoko no hito to onna no hito ga hanashite imasu.
+男の人と女の人が話しています。
+
+おんなのひとは まいにち なんじかん いんたーねっとを しますか。
+How many hours does the woman use the internet every day?
+Onna no hito wa mainichi nan jikan intaanetto o shimasu ka.
+女の人は毎日何時間インターネットをしますか。
+
+ああ、つかれた。
+Ah, I'm tired.
+Aa, tsukareta.
+ああ、疲れた。
+
+あさから げんきが ないね。
+You have no energy since morning.
+Asa kara genki ga nai ne.
+朝から元気がないね。
+
+きのうの ばん、おそくまで げーむを していたから。
+Because I was playing games until late last night.
+Kinou no ban, osoku made geemu o shite ita kara.
+昨日の晩、遅くまでゲームをしていたから。
+
+うん、いつもは さんじかん くらいだけど。
+Yeah, usually it's about 3 hours, but...
+Un, itsumo wa san jikan kurai dakedo.
+うん、いつもは3時間くらいだけど。
+
+きのうは ごじかん やったから、ちょっと つかれたよ。
+yesterday I did it for 5 hours, so I'm a bit tired.
+Kinou wa go jikan yatta kara, chotto tsukareta yo.
+昨日は5時間やったから、ちょっと疲れたよ。
+
+そう。
+I see.
+Sou.
+そう。
+
+わたしも まいにち にじかん くらい いんたーねっと するけど。
+I also use the internet for about 2 hours every day, but...
+Watashi mo mainichi ni jikan kurai intaanetto suru kedo.
+私も毎日2時間くらいインターネットするけど。
+
+げーむは ぜんぜん しない。
+I don't play games at all.
+Geemu wa zenzen shinai.
+ゲームは全然しない。
+
+そう、おもしろいよ。
+Really? It's fun, you know.
+Sou, omoishiroi yo.
+そう、面白いよ。
+
+おんなのひとは まいにち なんじかん いんたーねっとを しますか。
+How many hours does the woman use the internet every day?
+Onna no hito wa mainichi nan jikan intaanetto o shimasu ka.
+女の人は毎日何時間インターネットをしますか。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+せんせいが はなしています。
+A teacher is talking.
+Sensei ga hanashite imasu.
+先生が話しています。
+
+しけんの こたえは なんで かきますか。
+What should the test answers be written with?
+Shiken no kotae wa nan de kakimasu ka.
+試験の答えは何で書きますか。
+
+いまから しけんを します。
+We will have a test from now on.
+Ima kara shiken o shimasu.
+今から試験をします。
+
+しけんの こたえは えんぴつで かいて ください。
+Please write the test answers with a pencil.
+Shiken no kotae wa enpitsu de kaite kudasai.
+試験の答えは鉛筆で書いてください。
+
+ぺんや ぼーるぺんは つかわないで ください。
+Please do not use pens or ballpoint pens.
+Pen ya boorupen wa tsukawanai de kudasai.
+ペンやボールペンは使わないでください。
+
+まちがえた ところは けしごむで きれいに けしてください。
+Please erase mistaken parts cleanly with an eraser.
+Machigaeta tokoro wa keshigomu de kirei ni keshite kudasai.
+間違えたところは消しゴムで綺麗に消してください。
+
+わかりましたか。
+Did you understand?
+Wakarimashita ka.
+わかりましたか。
+
+はい。
+Yes.
+Hai.
+はい。
+
+しけんの こたえは なんで かきますか。
+What should the test answers be written with?
+Shiken no kotae wa nan de kakimasu ka.
+試験の答えは何で書きますか。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+おんなのひとが でんわで おとこのひとに じゅうしょを きいています。
+A woman is asking a man for his address on the phone.
+Onna no hito ga denwa de otoko no hito ni juusho o kiite imasu.
+女の人が電話で男の人に住所を聞いています。
+
+じゅうしょは どれですか。
+Which one is the address?
+Juusho wa dore desu ka.
+住所はどれですか。
+
+もしもし、そちらの じゅうしょですが。
+Hello, regarding your address over there.
+Moshimoshi, sochira no juusho desu ga.
+もしもし、そちらの住所ですが。
+
+ひがしまち いちの じゅうにの じゅうにですよね。
+It is Higashi-machi 1-12-12, right?
+Higashimachi ichi no juu-ni no juu-ni desu yo ne.
+東町1の12の12ですよね。
+
+いいえ、ひがしまち じゃなくて にしまちです。
+No, it is not Higashi-machi, it is Nishi-machi.
+Iie, Higashimachi ja nakute Nishimachi desu.
+いいえ、東町じゃなくて西町です。
+
+にしまちの いちの じゅうにの じゅうさんです。
+It is Nishi-machi 1-12-13.
+Nishimachi no ichi no juu-ni no juu-san desu.
+西町の1の12の13です。
+
+あ、そうですか。
+Ah, is that so?
+Ah, sou desu ka.
+あ、そうですか。
+
+にしまちの いちの じゅうにの じゅうさんですね。
+Nishi-machi 1-12-13, correct?
+Nishimachi no ichi no juu-ni no juu-san desu ne.
+西町の1の12の13ですね。
+
+はい、そうです。
+Yes, that's right.
+Hai, sou desu.
+はい、そうです。
+
+ありがとうございました。
+Thank you very much.
+Arigatou gozaimashita.
+ありがとうございました。
+
+ただしい じゅうしょは どれですか。
+Which is the correct address?
+Tadashii juusho wa dore desu ka.
+正しい住所はどれですか。
+
+もんだいさん。
+Problem 3.
+Mondai san.
+問題 3。
+
+もんだいさんでは、えを みながら しつもんを きいて ください。
+In Problem 3, listen to the question while looking at the picture.
+Mondai san de wa, e o minagara shitsumon o kiite kudasai.
+問題 3 では、絵を見ながら質問を聞いてください。
+
+やじるしの ひとは なんと いいますか。
+What will the person indicated by the arrow say?
+Yajirushi no hito wa nan to iimasu ka.
+矢印の人は何と言いますか。
+
+いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Choose the best one from 1 to 3.
+Ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+1 から 3 の中から、一番いいものを 1 つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+かいしゃの ひとと いっしょに りょこうに いきたいです。
+You want to go on a trip together with someone from work.
+Kaisha no hito to issho ni ryokou ni ikitai desu.
+会社の人と一緒に旅行に行きたいです。
+
+かいしゃの ひとに なんと いいますか。
+What do you say to the person from work?
+Kaisha no hito ni nan to iimasu ka.
+会社の人に何と言いますか。
+
+いち。いっしょに いきませんか。
+1. Won't you go together?
+Ichi. Issho ni ikimasen ka.
+1. 一緒に行きませんか。
+
+に。いっしょに いきましたか。
+2. Did you go together?
+Ni. Issho ni ikimashita ka.
+2. 一緒に行きましたか。
+
+さん。いっしょに いきたいですか。
+3. Do you want to go together?
+San. Issho ni ikitai desu ka.
+3. 一緒に行きたいですか。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+かいぎが はじまる じかんが わかりません。
+You do not know the time the meeting starts.
+Kaigi ga hajimaru jikan ga wakarimasen.
+会議が始まる時間がわかりません。
+
+なんと いいますか。
+What do you say?
+Nan to iimasu ka.
+何と言いますか。
+
+いち。きょうの かいぎ、どこで しますか。
+1. Where will we hold today's meeting?
+Ichi. Kyou no kaigi, dore de shimasu ka.
+1. 今日の会議、どこでしますか。
+
+に。きょうの かいぎ、なんじから ですか。
+2. What time does today's meeting start?
+Ni. Kyou no kaigi, nan ji kara desu ka.
+2. 今日の会議、何時からですか。
+
+さん。きょうの かいぎが でますか。
+3. Will today's meeting attend? (incorrect Japanese)
+San. Kyou no kaigi ga demasu ka.
+3. 今日の会議が出ますか。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+ぱんやで ぱんを かいます。
+You buy bread at a bakery.
+Panya de pan o kaimasu.
+パン屋でパンを買います。
+
+みせの ひとに なんと いいますか。
+What do you say to the shop assistant?
+Mise no hito ni nan to iimasu ka.
+店の人に何と言いますか。
+
+いち。この ぱん ください。
+1. This bread, please.
+Ichi. Kono pan kudasai.
+1. このパンください。
+
+に。この ぱん かってください。
+2. Please buy this bread.
+Ni. Kono pan katte kudasai.
+2. このパン買ってください。
+
+さん。この ぱん かいますか。
+3. Will you buy this bread?
+San. Kono pan kaimasu ka.
+3. このパン買いますか。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+ともだちの ほんを かりたいです。
+You want to borrow a friend's book.
+Tomodachi no hon o karitai desu.
+友達の本を借りたいです。
+
+ともだちに なんと いいますか。
+What do you say to your friend?
+Tomodachi ni nan to iimasu ka.
+友達に何と言いますか。
+
+いち。その ほん もらってください。
+1. Please take that book (as a gift).
+Ichi. Sono hon moratte kudasai.
+1. その本もらってください。
+
+に。その ほん かりてください。
+2. Please borrow that book.
+Ni. Sono hon karite kudasai.
+2. その本借りてください。
+
+さん。その ほん かしてください。
+3. Please lend me that book.
+San. Sono hon kashite kudasai.
+3. その本貸してください。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+ともだちが りょこうから かえってきました。
+A friend returned from a trip.
+Tomodachi ga ryokou kara kaette kimashita.
+友達が旅行から帰ってきました。
+
+ともだちに なんと いいますか。
+What do you say to your friend?
+Tomodachi ni nan to iimasu ka.
+友達に何と言いますか。
+
+いち。りょこう どれに した？
+1. Which trip did you choose?
+Ichi. Ryokou dore ni shita?
+1. 旅行どれにした？
+
+に。りょこう どうする？
+2. What will you do about the trip?
+Ni. Ryokou dou suru?
+2. 旅行どうする？
+
+さん。どうだった？
+3. How was it?
+San. Dou datta?
+3. どうだった？
+
+もんだいよん。
+Problem 4.
+Mondai yon.
+問題 4。
+
+もんだいよんは、えなどが ありません。
+Problem 4 has no pictures.
+Mondai yon wa, e nado ga arisen.
+問題 4 は、絵などがありません。
+
+ぶんを きいて、いち から さん の なか から、いちばん いい ものを ひとつ えらんで ください。
+Listen to the sentence and choose the best response from 1 to 3.
+Bun o kiite, ichi kara san no naka kara, ichiban ii mono o hitotsu erande kudasai.
+文を聞いて、1 から 3 の中から、一番いいものを 1 つ選んでください。
+
+いちばん。
+No. 1.
+Ichiban.
+1番。
+
+すみません、じゅっぷんくらい まってください。
+Excuse me, please wait for about 10 minutes.
+Sumimasen, juppun kurai matte kudasai.
+すみません、10分くらい待ってください。
+
+いち。ええ、いいですか。
+1. Oh, is it okay?
+Ichi. Ee, ii desu ka.
+1. ええ、いいですか。
+
+に。ええ、いいですよ。
+2. Sure, that's fine.
+Ni. Ee, ii desu yo.
+2. ええ、いいですよ。
+
+さん。ええ、いいですね。
+3. Yeah, that sounds good.
+San. Ee, ii desu ne.
+3. ええ、いいですね。
+
+にばん。
+No. 2.
+Niban.
+2番。
+
+おなかが すきましたね。
+I'm hungry, aren't you?
+Onaka ga sukimashita ne.
+お腹が空きましたね。
+
+いち。そうですね、しょくじに しましょう。
+1. That's true, let's have a meal.
+Ichi. Sou desu ne, shokuji ni shimashou.
+1. そうですね、食事にしましょう。
+
+に。そうですよ、おなかですよ。
+2. That's right, it's a stomach.
+Ni. Sou desu yo, onaka desu yo.
+2. そうですよ、お腹ですよ。
+
+さん。そうですね、すきですよ。
+3. That's right, I like it.
+San. Sou desu ne, suki desu yo.
+3. そうですね、好きですね。
+
+さんばん。
+No. 3.
+Sanban.
+3番。
+
+きむらさん、えが じょうずですね。
+Kimura-san, you are good at drawing.
+Kimura-san, e ga jouzu desu ne.
+木村さん、絵が上手ですね。
+
+いち。いいえ、すきですね。
+1. No, I like it.
+Ichi. Iie, suki desu ne.
+1. いいえ、好きですね。
+
+に。え、へたですか。
+2. Eh, am I bad at it?
+Ni. E, heta desu ka.
+2. え、下手ですか。
+
+さん。ありがとうございます。
+3. Thank you very much.
+San. Arigatou gozaimasu.
+3. ありがとうございます。
+
+よんばん。
+No. 4.
+Yonban.
+4番。
+
+しんじゅくまで なんで いきますか。
+How do you go to Shinjuku?
+Shinjuku made nan de ikimasu ka.
+新宿まで何で行きますか。
+
+いち。ともだちと いきます。
+1. I go with a friend.
+Ichi. Tomodachi to ikimasu.
+1. 友達と行きます。
+
+に。あした いきます。
+2. I go tomorrow.
+Ni. Ashita ikimasu.
+2. 明日行きます。
+
+さん。ばすで いきます。
+3. I go by bus.
+San. Basu de ikimasu.
+3. バスで行きます。
+
+ごばん。
+No. 5.
+Goban.
+5番。
+
+にほんごの べんきょうは どうですか。
+How is studying Japanese?
+Nihongo no benkyou wa dou desu ka.
+日本語の勉強はどうですか。
+
+いち。はい、にほんごの べんきょうです。
+1. Yes, it's studying Japanese.
+Ichi. Hai, nihongo no benkyou desu.
+1. はい、日本語の勉強です。
+
+に。とても おもしろいです。
+2. It's very interesting.
+Ni. Tetemo omoishiroi desu.
+2. とても面白いです。
+
+さん。はい、これです。
+3. Yes, this is it.
+San. Hai, kore desu.
+3. はい、これです。
+
+ろくばん。
+No. 6.
+Rokuban.
+6番。
+
+あのひと だれ？
+Who is that person?
+Ano hito dare?
+あの人誰？
+
+いち。あのひとよ。
+1. It's that person.
+Ichi. Ano hito yo.
+1. あの人よ。
+
+に。わたしよ。
+2. It's me.
+Ni. Watashi yo.
+2. 私よ。
+
+さん。たかはしさんよ。
+3. It's Takahashi-san.
+San. Takahashi-san yo.
+3. 高橋さんよ。
+
+`;
+
+allWords["Listening 10 - Hard"] = ``;
+
+allWords["Listening 11"] = ``;
+
+allWords["Listening 11 - Hard"] = ``;
+
+allWords["Listening 12"] = ``;
+
+allWords["Listening 12 - Hard"] = ``;
+
+allWords["Listening 13"] = ``;
+
+allWords["Listening 13 - Hard"] = ``;
+
+allWords["Listening 14"] = ``;
+
+allWords["Listening 14 - Hard"] = ``;
+
+allWords["Listening 15"] = ``;
+
+allWords["Listening 15 - Hard"] = ``;
+
+allWords["Listening 16"] = ``;
+
+allWords["Listening 16 - Hard"] = ``;
+
+allWords["Listening 17"] = ``;
+
+allWords["Listening 17 - Hard"] = ``;
+
+allWords["Listening 18"] = ``;
+
+allWords["Listening 18 - Hard"] = ``;
+
+allWords["Listening 19"] = ``;
+
+allWords["Listening 19 - Hard"] = ``;
+
+allWords["Listening 20"] = ``;
+
+allWords["Listening 20 - Hard"] = ``;
+
+allWords["Listening 21"] = ``;
+
+allWords["Listening 21 - Hard"] = ``;
+
+allWords["Listening 22"] = ``;
+
+allWords["Listening 22 - Hard"] = ``;
+
+allWords["Listening 23"] = ``;
+
+allWords["Listening 23 - Hard"] = ``;
+
+allWords["Listening 24"] = ``;
+
+allWords["Listening 24 - Hard"] = ``;
+
+allWords["Listening 25"] = ``;
+
+allWords["Listening 25 - Hard"] = ``;
+
+allWords["Listening 26"] = ``;
+
+allWords["Listening 26 - Hard"] = ``;
+
+allWords["Listening 27"] = ``;
+
+allWords["Listening 27 - Hard"] = ``;
+
+allWords["Listening 28"] = ``;
+
+allWords["Listening 28 - Hard"] = ``;
+
+allWords["Listening 29"] = ``;
+
+allWords["Listening 29 - Hard"] = ``;
+
+allWords["Listening 30"] = ``;
+
+allWords["Listening 30 - Hard"] = ``;
+
+allWords["Listening 31"] = ``;
+
+allWords["Listening 31 - Hard"] = ``;
+
+allWords["Listening 32"] = ``;
+
+allWords["Listening 32 - Hard"] = ``;
+
+allWords["Listening 33"] = ``;
+
+allWords["Listening 33 - Hard"] = ``;
+
+allWords["Listening 34"] = ``;
+
+allWords["Listening 34 - Hard"] = ``;
+
+allWords["Listening 35"] = ``;
+
+allWords["Listening 35 - Hard"] = ``;
+
+allWords["Listening 36"] = ``;
+
+allWords["Listening 36 - Hard"] = ``;
+
+allWords["Listening 37"] = ``;
+
+allWords["Listening 37 - Hard"] = ``;
+
+allWords["Listening 38"] = ``;
+
+allWords["Listening 38 - Hard"] = ``;
+
+allWords["Listening 39"] = ``;
+
+allWords["Listening 39 - Hard"] = ``;
+
+allWords["Listening 40"] = ``;
+
+allWords["Listening 40 - Hard"] = ``;
+
+allWords["Listening 41"] = ``;
+
+allWords["Listening 41 - Hard"] = ``;
+
+allWords["Listening 42"] = ``;
+
+allWords["Listening 42 - Hard"] = ``;
+
+allWords["Listening 43"] = ``;
+
+allWords["Listening 43 - Hard"] = ``;
+
+allWords["Listening 44"] = ``;
+
+allWords["Listening 44 - Hard"] = ``;
+
+allWords["Listening 45"] = ``;
+
+allWords["Listening 45 - Hard"] = ``;
+
+allWords["Listening 46"] = ``;
+
+allWords["Listening 46 - Hard"] = ``;
+
+allWords["Listening 47"] = ``;
+
+allWords["Listening 47 - Hard"] = ``;
+
+allWords["Listening 48"] = ``;
+
+allWords["Listening 48 - Hard"] = ``;
+
+allWords["Listening 49"] = ``;
+
+allWords["Listening 49 - Hard"] = ``;
+
+allWords["Listening 50"] = ``;
+
+allWords["Listening 50 - Hard"] = ``;
+
+allWords["Listening 51"] = ``;
+
+allWords["Listening 51 - Hard"] = ``;
+
+allWords["Listening 52"] = ``;
+
+allWords["Listening 52 - Hard"] = ``;
+
+allWords["Listening 53"] = ``;
+
+allWords["Listening 53 - Hard"] = ``;
+
+allWords["Listening 54"] = ``;
+
+allWords["Listening 54 - Hard"] = ``;
+
+allWords["Listening 55"] = ``;
+
+allWords["Listening 55 - Hard"] = ``;
+
+allWords["Listening 56"] = ``;
+
+allWords["Listening 56 - Hard"] = ``;
+
+allWords["Listening 57"] = ``;
+
+allWords["Listening 57 - Hard"] = ``;
+
+allWords["Listening 58"] = ``;
+
+allWords["Listening 58 - Hard"] = ``;
+
+allWords["Listening 59"] = ``;
+
+allWords["Listening 59 - Hard"] = ``;
+
+allWords["Listening 60"] = ``;
+
+allWords["Listening 60 - Hard"] = ``;
+
+allWords["Listening 61"] = ``;
+
+allWords["Listening 61 - Hard"] = ``;
+
+allWords["Listening 62"] = ``;
+
+allWords["Listening 62 - Hard"] = ``;
+
+allWords["Listening 63"] = ``;
+
+allWords["Listening 63 - Hard"] = ``;
+
+allWords["Listening 64"] = ``;
+
+allWords["Listening 64 - Hard"] = ``;
+
+allWords["Listening 65"] = ``;
+
+allWords["Listening 65 - Hard"] = ``;
+
+allWords["Listening 66"] = ``;
+
+allWords["Listening 66 - Hard"] = ``;
+
+allWords["Listening 67"] = ``;
+
+allWords["Listening 67 - Hard"] = ``;
+
+allWords["Listening 68"] = ``;
+
+allWords["Listening 68 - Hard"] = ``;
+
+allWords["Listening 69"] = ``;
+
+allWords["Listening 69 - Hard"] = ``;
+
+allWords["Listening 70"] = ``;
+
+allWords["Listening 70 - Hard"] = ``;
+
+allWords["Listening 71"] = ``;
+
+allWords["Listening 71 - Hard"] = ``;
+
+allWords["Listening 72"] = ``;
+
+allWords["Listening 72 - Hard"] = ``;
+
+allWords["Listening 73"] = ``;
+
+allWords["Listening 73 - Hard"] = ``;
+
+allWords["Listening 74"] = ``;
+
+allWords["Listening 74 - Hard"] = ``;
+
+allWords["Listening 75"] = ``;
+
+allWords["Listening 75 - Hard"] = ``;
+
+allWords["Listening 76"] = ``;
+
+allWords["Listening 76 - Hard"] = ``;
+
+allWords["Listening 77"] = ``;
+
+allWords["Listening 77 - Hard"] = ``;
+
+allWords["Listening 78"] = ``;
+
+allWords["Listening 78 - Hard"] = ``;
+
+allWords["Listening 79"] = ``;
+
+allWords["Listening 79 - Hard"] = ``;
+
+allWords["Listening 80"] = ``;
+
+allWords["Listening 80 - Hard"] = ``;
+
+allWords["Listening 81"] = ``;
+
+allWords["Listening 81 - Hard"] = ``;
+
+allWords["Listening 82"] = ``;
+
+allWords["Listening 82 - Hard"] = ``;
+
+allWords["Listening 83"] = ``;
+
+allWords["Listening 83 - Hard"] = ``;
+
+allWords["Listening 84"] = ``;
+
+allWords["Listening 84 - Hard"] = ``;
+
+allWords["Listening 85"] = ``;
+
+allWords["Listening 85 - Hard"] = ``;
+
+allWords["Listening 86"] = ``;
+
+allWords["Listening 86 - Hard"] = ``;
+
+allWords["Listening 87"] = ``;
+
+allWords["Listening 87 - Hard"] = ``;
+
+allWords["Listening 88"] = ``;
+
+allWords["Listening 88 - Hard"] = ``;
+
+allWords["Listening 89"] = ``;
+
+allWords["Listening 89 - Hard"] = ``;
+
+allWords["Listening 90"] = ``;
+
+allWords["Listening 90 - Hard"] = ``;
+
+allWords["Listening 91"] = ``;
+
+allWords["Listening 91 - Hard"] = ``;
+
+allWords["Listening 92"] = ``;
+
+allWords["Listening 92 - Hard"] = ``;
+
+allWords["Listening 93"] = ``;
+
+allWords["Listening 93 - Hard"] = ``;
+
+allWords["Listening 94"] = ``;
+
+allWords["Listening 94 - Hard"] = ``;
+
+allWords["Listening 95"] = ``;
+
+allWords["Listening 95 - Hard"] = ``;
+
+allWords["Listening 96"] = ``;
+
+allWords["Listening 96 - Hard"] = ``;
+
+allWords["Listening 97"] = ``;
+
+allWords["Listening 97 - Hard"] = ``;
+
+allWords["Listening 98"] = ``;
+
+allWords["Listening 98 - Hard"] = ``;
+
+allWords["Listening 99"] = ``;
+
+allWords["Listening 99 - Hard"] = ``;
+
+allWords["Listening 100"] = ``;
+
+allWords["Listening 100 - Hard"] = ``;
+
+allWords["Listening 101"] = ``;
+
+allWords["Listening 101 - Hard"] = ``;
+
+allWords["Listening 102"] = ``;
+
+allWords["Listening 102 - Hard"] = ``;
+
+allWords["Listening 103"] = ``;
+
+allWords["Listening 103 - Hard"] = ``;
+
+allWords["Listening 104"] = ``;
+
+allWords["Listening 104 - Hard"] = ``;
+
+allWords["Listening 105"] = ``;
+
+allWords["Listening 105 - Hard"] = ``;
+
+allWords["Listening 106"] = ``;
+
+allWords["Listening 106 - Hard"] = ``;
+
+allWords["Listening 107"] = ``;
+
+allWords["Listening 107 - Hard"] = ``;
+
+allWords["Listening 108"] = ``;
+
+allWords["Listening 108 - Hard"] = ``;
+
+allWords["Listening 109"] = ``;
+
+allWords["Listening 109 - Hard"] = ``;
+
+allWords["Listening 110"] = ``;
+
+allWords["Listening 110 - Hard"] = ``;
+
+allWords["Listening 111"] = ``;
+
+allWords["Listening 111 - Hard"] = ``;
+
+allWords["Listening 112"] = ``;
+
+allWords["Listening 112 - Hard"] = ``;
+
+allWords["Listening 113"] = ``;
+
+allWords["Listening 113 - Hard"] = ``;
+
+allWords["Listening 114"] = ``;
+
+allWords["Listening 114 - Hard"] = ``;
+
+allWords["Listening 115"] = ``;
+
+allWords["Listening 115 - Hard"] = ``;
+
+allWords["Listening 116"] = ``;
+
+allWords["Listening 116 - Hard"] = ``;
+
+allWords["Listening 117"] = ``;
+
+allWords["Listening 117 - Hard"] = ``;
+
+allWords["Listening 118"] = ``;
+
+allWords["Listening 118 - Hard"] = ``;
+
+allWords["Listening 119"] = ``;
+
+allWords["Listening 119 - Hard"] = ``;
+
+allWords["Listening 120"] = ``;
+
+allWords["Listening 120 - Hard"] = ``;
+
+allWords["Listening 121"] = ``;
+
+allWords["Listening 121 - Hard"] = ``;
+
+allWords["Listening 122"] = ``;
+
+allWords["Listening 122 - Hard"] = ``;
+
+allWords["Listening 123"] = ``;
+
+allWords["Listening 123 - Hard"] = ``;
+
+allWords["Listening 124"] = ``;
+
+allWords["Listening 124 - Hard"] = ``;
+
+allWords["Listening 125"] = ``;
+
+allWords["Listening 125 - Hard"] = ``;
+
+allWords["Listening 126"] = ``;
+
+allWords["Listening 126 - Hard"] = ``;
+
+allWords["Listening 127"] = ``;
+
+allWords["Listening 127 - Hard"] = ``;
+
+allWords["Listening 128"] = ``;
+
+allWords["Listening 128 - Hard"] = ``;
+
+allWords["Listening 129"] = ``;
+
+allWords["Listening 129 - Hard"] = ``;
+
+allWords["Listening 130"] = ``;
+
+allWords["Listening 130 - Hard"] = ``;
+
+allWords["Listening 131"] = ``;
+
+allWords["Listening 131 - Hard"] = ``;
+
+allWords["Listening 132"] = ``;
+
+allWords["Listening 132 - Hard"] = ``;
+
+allWords["Listening 133"] = ``;
+
+allWords["Listening 133 - Hard"] = ``;
+
+allWords["Listening 134"] = ``;
+
+allWords["Listening 134 - Hard"] = ``;
+
+allWords["Listening 135"] = ``;
+
+allWords["Listening 135 - Hard"] = ``;
+
+allWords["Listening 136"] = ``;
+
+allWords["Listening 136 - Hard"] = ``;
+
+allWords["Listening 137"] = ``;
+
+allWords["Listening 137 - Hard"] = ``;
+
+allWords["Listening 138"] = ``;
+
+allWords["Listening 138 - Hard"] = ``;
+
+allWords["Listening 139"] = ``;
+
+allWords["Listening 139 - Hard"] = ``;
+
+allWords["Listening 140"] = ``;
+
+allWords["Listening 140 - Hard"] = ``;
+
+allWords["Listening 141"] = ``;
+
+allWords["Listening 141 - Hard"] = ``;
+
+allWords["Listening 142"] = ``;
+
+allWords["Listening 142 - Hard"] = ``;
+
+allWords["Listening 143"] = ``;
+
+allWords["Listening 143 - Hard"] = ``;
+
+allWords["Listening 144"] = ``;
+
+allWords["Listening 144 - Hard"] = ``;
+
+allWords["Listening 145"] = ``;
+
+allWords["Listening 145 - Hard"] = ``;
+
+allWords["Listening 146"] = ``;
+
+allWords["Listening 146 - Hard"] = ``;
+
+allWords["Listening 147"] = ``;
+
+allWords["Listening 147 - Hard"] = ``;
+
+allWords["Listening 148"] = ``;
+
+allWords["Listening 148 - Hard"] = ``;
+
+allWords["Listening 149"] = ``;
+
+allWords["Listening 149 - Hard"] = ``;
+
+allWords["Listening 150"] = ``;
+
+allWords["Listening 150 - Hard"] = ``;
+
+allWords["Listening 151"] = ``;
+
+allWords["Listening 151 - Hard"] = ``;
+
+allWords["Listening 152"] = ``;
+
+allWords["Listening 152 - Hard"] = ``;
+
+allWords["Listening 153"] = ``;
+
+allWords["Listening 153 - Hard"] = ``;
+
+allWords["Listening 154"] = ``;
+
+allWords["Listening 154 - Hard"] = ``;
+
+allWords["Listening 155"] = ``;
+
+allWords["Listening 155 - Hard"] = ``;
+
+allWords["Listening 156"] = ``;
+
+allWords["Listening 156 - Hard"] = ``;
+
+allWords["Listening 157"] = ``;
+
+allWords["Listening 157 - Hard"] = ``;
+
+allWords["Listening 158"] = ``;
+
+allWords["Listening 158 - Hard"] = ``;
+
+allWords["Listening 159"] = ``;
+
+allWords["Listening 159 - Hard"] = ``;
+
+allWords["Listening 160"] = ``;
+
+allWords["Listening 160 - Hard"] = ``;
+
+allWords["Listening 161"] = ``;
+
+allWords["Listening 161 - Hard"] = ``;
+
+allWords["Listening 162"] = ``;
+
+allWords["Listening 162 - Hard"] = ``;
+
+allWords["Listening 163"] = ``;
+
+allWords["Listening 163 - Hard"] = ``;
+
+allWords["Listening 164"] = ``;
+
+allWords["Listening 164 - Hard"] = ``;
+
+allWords["Listening 165"] = ``;
+
+allWords["Listening 165 - Hard"] = ``;
+
+allWords["Listening 166"] = ``;
+
+allWords["Listening 166 - Hard"] = ``;
+
+allWords["Listening 167"] = ``;
+
+allWords["Listening 167 - Hard"] = ``;
+
+allWords["Listening 168"] = ``;
+
+allWords["Listening 168 - Hard"] = ``;
+
+allWords["Listening 169"] = ``;
+
+allWords["Listening 169 - Hard"] = ``;
+
+allWords["Listening 170"] = ``;
+
+allWords["Listening 170 - Hard"] = ``;
+
+allWords["Listening 171"] = ``;
+
+allWords["Listening 171 - Hard"] = ``;
+
+allWords["Listening 172"] = ``;
+
+allWords["Listening 172 - Hard"] = ``;
+
+allWords["Listening 173"] = ``;
+
+allWords["Listening 173 - Hard"] = ``;
+
+allWords["Listening 174"] = ``;
+
+allWords["Listening 174 - Hard"] = ``;
+
+allWords["Listening 175"] = ``;
+
+allWords["Listening 175 - Hard"] = ``;
+
+allWords["Listening 176"] = ``;
+
+allWords["Listening 176 - Hard"] = ``;
+
+allWords["Listening 177"] = ``;
+
+allWords["Listening 177 - Hard"] = ``;
+
+allWords["Listening 178"] = ``;
+
+allWords["Listening 178 - Hard"] = ``;
+
+allWords["Listening 179"] = ``;
+
+allWords["Listening 179 - Hard"] = ``;
+
+allWords["Listening 180"] = ``;
+
+allWords["Listening 180 - Hard"] = ``;
+
+allWords["Listening 181"] = ``;
+
+allWords["Listening 181 - Hard"] = ``;
+
+allWords["Listening 182"] = ``;
+
+allWords["Listening 182 - Hard"] = ``;
+
+allWords["Listening 183"] = ``;
+
+allWords["Listening 183 - Hard"] = ``;
+
+allWords["Listening 184"] = ``;
+
+allWords["Listening 184 - Hard"] = ``;
+
+allWords["Listening 185"] = ``;
+
+allWords["Listening 185 - Hard"] = ``;
+
+allWords["Listening 186"] = ``;
+
+allWords["Listening 186 - Hard"] = ``;
+
+allWords["Listening 187"] = ``;
+
+allWords["Listening 187 - Hard"] = ``;
+
+allWords["Listening 188"] = ``;
+
+allWords["Listening 188 - Hard"] = ``;
+
+allWords["Listening 189"] = ``;
+
+allWords["Listening 189 - Hard"] = ``;
+
+allWords["Listening 190"] = ``;
+
+allWords["Listening 190 - Hard"] = ``;
+
+allWords["Listening 191"] = ``;
+
+allWords["Listening 191 - Hard"] = ``;
+
+allWords["Listening 192"] = ``;
+
+allWords["Listening 192 - Hard"] = ``;
+
+allWords["Listening 193"] = ``;
+
+allWords["Listening 193 - Hard"] = ``;
+
+allWords["Listening 194"] = ``;
+
+allWords["Listening 194 - Hard"] = ``;
+
+allWords["Listening 195"] = ``;
+
+allWords["Listening 195 - Hard"] = ``;
+
+allWords["Listening 196"] = ``;
+
+allWords["Listening 196 - Hard"] = ``;
+
+allWords["Listening 197"] = ``;
+
+allWords["Listening 197 - Hard"] = ``;
+
+allWords["Listening 198"] = ``;
+
+allWords["Listening 198 - Hard"] = ``;
+
+allWords["Listening 199"] = ``;
+
+allWords["Listening 199 - Hard"] = ``;
+
+allWords["Listening 200"] = ``;
+
+allWords["Listening 200 - Hard"] = ``;
+
+allWords["Listening 201"] = ``;
+
+allWords["Listening 201 - Hard"] = ``;
+
+allWords["Listening 202"] = ``;
+
+allWords["Listening 202 - Hard"] = ``;
+
+allWords["Listening 203"] = ``;
+
+allWords["Listening 203 - Hard"] = ``;
+
+allWords["Listening 204"] = ``;
+
+allWords["Listening 204 - Hard"] = ``;
+
+allWords["Listening 205"] = ``;
+
+allWords["Listening 205 - Hard"] = ``;
+
+allWords["Listening 206"] = ``;
+
+allWords["Listening 206 - Hard"] = ``;
+
+allWords["Listening 207"] = ``;
+
+allWords["Listening 207 - Hard"] = ``;
+
+allWords["Listening 208"] = ``;
+
+allWords["Listening 208 - Hard"] = ``;
+
+allWords["Listening 209"] = ``;
+
+allWords["Listening 209 - Hard"] = ``;
+
+allWords["Listening 210"] = ``;
+
+allWords["Listening 210 - Hard"] = ``;
+
+allWords["Listening 211"] = ``;
+
+allWords["Listening 211 - Hard"] = ``;
+
+allWords["Listening 212"] = ``;
+
+allWords["Listening 212 - Hard"] = ``;
+
+allWords["Listening 213"] = ``;
+
+allWords["Listening 213 - Hard"] = ``;
+
+allWords["Listening 214"] = ``;
+
+allWords["Listening 214 - Hard"] = ``;
+
+allWords["Listening 215"] = ``;
+
+allWords["Listening 215 - Hard"] = ``;
+
+allWords["Listening 216"] = ``;
+
+allWords["Listening 216 - Hard"] = ``;
+
+allWords["Listening 217"] = ``;
+
+allWords["Listening 217 - Hard"] = ``;
+
+allWords["Listening 218"] = ``;
+
+allWords["Listening 218 - Hard"] = ``;
+
+allWords["Listening 219"] = ``;
+
+allWords["Listening 219 - Hard"] = ``;
+
+allWords["Listening 220"] = ``;
+
+allWords["Listening 220 - Hard"] = ``;
+
+allWords["Listening 221"] = ``;
+
+allWords["Listening 221 - Hard"] = ``;
+
+allWords["Listening 222"] = ``;
+
+allWords["Listening 222 - Hard"] = ``;
+
+allWords["Listening 223"] = ``;
+
+allWords["Listening 223 - Hard"] = ``;
+
+allWords["Listening 224"] = ``;
+
+allWords["Listening 224 - Hard"] = ``;
+
+allWords["Listening 225"] = ``;
+
+allWords["Listening 225 - Hard"] = ``;
+
+allWords["Listening 226"] = ``;
+
+allWords["Listening 226 - Hard"] = ``;
+
+allWords["Listening 227"] = ``;
+
+allWords["Listening 227 - Hard"] = ``;
+
+allWords["Listening 228"] = ``;
+
+allWords["Listening 228 - Hard"] = ``;
+
+allWords["Listening 229"] = ``;
+
+allWords["Listening 229 - Hard"] = ``;
+
+allWords["Listening 230"] = ``;
+
+allWords["Listening 230 - Hard"] = ``;
+
+allWords["Listening 231"] = ``;
+
+allWords["Listening 231 - Hard"] = ``;
+
+allWords["Listening 232"] = ``;
+
+allWords["Listening 232 - Hard"] = ``;
+
+allWords["Listening 233"] = ``;
+
+allWords["Listening 233 - Hard"] = ``;
+
+allWords["Listening 234"] = ``;
+
+allWords["Listening 234 - Hard"] = ``;
+
+allWords["Listening 235"] = ``;
+
+allWords["Listening 235 - Hard"] = ``;
+
+allWords["Listening 236"] = ``;
+
+allWords["Listening 236 - Hard"] = ``;
+
+allWords["Listening 237"] = ``;
+
+allWords["Listening 237 - Hard"] = ``;
+
+allWords["Listening 238"] = ``;
+
+allWords["Listening 238 - Hard"] = ``;
+
+allWords["Listening 239"] = ``;
+
+allWords["Listening 239 - Hard"] = ``;
+
+allWords["Listening 240"] = ``;
+
+allWords["Listening 240 - Hard"] = ``;
+
+allWords["Listening 241"] = ``;
+
+allWords["Listening 241 - Hard"] = ``;
+
+allWords["Listening 242"] = ``;
+
+allWords["Listening 242 - Hard"] = ``;
+
+allWords["Listening 243"] = ``;
+
+allWords["Listening 243 - Hard"] = ``;
+
+allWords["Listening 244"] = ``;
+
+allWords["Listening 244 - Hard"] = ``;
+
+allWords["Listening 245"] = ``;
+
+allWords["Listening 245 - Hard"] = ``;
+
+allWords["Listening 246"] = ``;
+
+allWords["Listening 246 - Hard"] = ``;
+
+allWords["Listening 247"] = ``;
+
+allWords["Listening 247 - Hard"] = ``;
+
+allWords["Listening 248"] = ``;
+
+allWords["Listening 248 - Hard"] = ``;
+
+allWords["Listening 249"] = ``;
+
+allWords["Listening 249 - Hard"] = ``;
+
+allWords["Listening 250"] = ``;
+
+allWords["Listening 250 - Hard"] = ``;
+
+allWords["Listening 251"] = ``;
+
+allWords["Listening 251 - Hard"] = ``;
+
+allWords["Listening 252"] = ``;
+
+allWords["Listening 252 - Hard"] = ``;
+
+allWords["Listening 253"] = ``;
+
+allWords["Listening 253 - Hard"] = ``;
+
+allWords["Listening 254"] = ``;
+
+allWords["Listening 254 - Hard"] = ``;
+
+allWords["Listening 255"] = ``;
+
+allWords["Listening 255 - Hard"] = ``;
+
+allWords["Listening 256"] = ``;
+
+allWords["Listening 256 - Hard"] = ``;
+
+allWords["Listening 257"] = ``;
+
+allWords["Listening 257 - Hard"] = ``;
+
+allWords["Listening 258"] = ``;
+
+allWords["Listening 258 - Hard"] = ``;
+
+allWords["Listening 259"] = ``;
+
+allWords["Listening 259 - Hard"] = ``;
+
+allWords["Listening 260"] = ``;
+
+allWords["Listening 260 - Hard"] = ``;
+
+allWords["Listening 261"] = ``;
+
+allWords["Listening 261 - Hard"] = ``;
+
+allWords["Listening 262"] = ``;
+
+allWords["Listening 262 - Hard"] = ``;
+
+allWords["Listening 263"] = ``;
+
+allWords["Listening 263 - Hard"] = ``;
+
+allWords["Listening 264"] = ``;
+
+allWords["Listening 264 - Hard"] = ``;
+
+allWords["Listening 265"] = ``;
+
+allWords["Listening 265 - Hard"] = ``;
+
+allWords["Listening 266"] = ``;
+
+allWords["Listening 266 - Hard"] = ``;
+
+allWords["Listening 267"] = ``;
+
+allWords["Listening 267 - Hard"] = ``;
+
+allWords["Listening 268"] = ``;
+
+allWords["Listening 268 - Hard"] = ``;
+
+allWords["Listening 269"] = ``;
+
+allWords["Listening 269 - Hard"] = ``;
+
+allWords["Listening 270"] = ``;
+
+allWords["Listening 270 - Hard"] = ``;
+
+allWords["Listening 271"] = ``;
+
+allWords["Listening 271 - Hard"] = ``;
+
+allWords["Listening 272"] = ``;
+
+allWords["Listening 272 - Hard"] = ``;
+
+allWords["Listening 273"] = ``;
+
+allWords["Listening 273 - Hard"] = ``;
+
+allWords["Listening 274"] = ``;
+
+allWords["Listening 274 - Hard"] = ``;
+
+allWords["Listening 275"] = ``;
+
+allWords["Listening 275 - Hard"] = ``;
+
+allWords["Listening 276"] = ``;
+
+allWords["Listening 276 - Hard"] = ``;
+
+allWords["Listening 277"] = ``;
+
+allWords["Listening 277 - Hard"] = ``;
+
+allWords["Listening 278"] = ``;
+
+allWords["Listening 278 - Hard"] = ``;
+
+allWords["Listening 279"] = ``;
+
+allWords["Listening 279 - Hard"] = ``;
+
+allWords["Listening 280"] = ``;
+
+allWords["Listening 280 - Hard"] = ``;
+
+allWords["Listening 281"] = ``;
+
+allWords["Listening 281 - Hard"] = ``;
+
+allWords["Listening 282"] = ``;
+
+allWords["Listening 282 - Hard"] = ``;
+
+allWords["Listening 283"] = ``;
+
+allWords["Listening 283 - Hard"] = ``;
+
+allWords["Listening 284"] = ``;
+
+allWords["Listening 284 - Hard"] = ``;
+
+allWords["Listening 285"] = ``;
+
+allWords["Listening 285 - Hard"] = ``;
+
+allWords["Listening 286"] = ``;
+
+allWords["Listening 286 - Hard"] = ``;
+
+allWords["Listening 287"] = ``;
+
+allWords["Listening 287 - Hard"] = ``;
+
+allWords["Listening 288"] = ``;
+
+allWords["Listening 288 - Hard"] = ``;
+
+allWords["Listening 289"] = ``;
+
+allWords["Listening 289 - Hard"] = ``;
+
+allWords["Listening 290"] = ``;
+
+allWords["Listening 290 - Hard"] = ``;
+
+allWords["Genki 01"] = `
+あの
+um...
+Ano
+
+いま
+now
+Ima
+今
+
+えいご
+English (language)
+Eego
+英語
+
+がくせい
+student
+Gakusee
+学生
+
+〜ご
+...language
+...go
+〜語
+
+こうこう
+high school
+Kookoo
+高校
+
+ごご
+P.M.
+Gogo
+午後
+
+ごぜん
+A.M.
+Gozen
+午前
+
+〜さい
+...years old
+...sai
+〜歳
+
+〜さん
+Mr./Ms....
+...san
+
+〜じ
+o'clock
+...ji
+〜時
+
+〜じん
+...people
+...jin
+〜人
+
+せんせい
+teacher; Professor...
+Sensei
+先生
+
+せんもん
+major
+Senmon
+専門
+
+そうです
+That's right.
+Soo Desu
+
+だいがく
+college; university
+Daigaku
+大学
+
+でんわ
+telephone
+Denwa
+電話
+
+ともだち
+friend
+Tomodachi
+友達
+
+なまえ
+name
+Namae
+名前
+
+なん/なに
+what
+Nan/nani
+何
+
+にほん
+Japan
+Nihon
+日本
+
+〜ねんせい
+...year student
+...nensee
+〜年生
+
+はい
+yes
+Hai
+
+はん
+half
+Han
+半
+
+ばんごう
+number
+Bangoo
+番号
+
+りゅうがくせい
+international student
+Ryuugakusee
+留学生
+
+わたし
+I
+Watashi
+私
+
+アメリカ
+U.S.A.
+Amerika
+
+イギリス
+Britain
+Igirisu
+
+オーストラリア
+Australia
+Oosutoraria
+
+かんこく
+Korea
+Kankoku
+韓国
+
+スウェーデン
+Sweden
+Sueeden
+
+ちゅうごく
+China
+Chuugoku
+中国
+
+コンピューター
+computer
+Konpyuutaa
+
+せいじ
+politics
+Seeji
+政治
+
+ビジネス
+business
+Bijinesu
+
+しごと
+job; work; occupation
+Shigoto
+仕事
+
+いしゃ
+doctor
+Isha
+医者
+
+かいしゃいん
+office worker
+Kaishain
+会社員
+
+こうこうせい
+high school student
+Kookoosei
+高校生
+
+べんごし
+lawyer
+Bengoshi
+弁護士
+
+おかあさん
+mother
+Okaasan
+お母さん
+
+おとうさん
+father
+Otoosan
+お父さん
+
+おねえさん
+older sister
+Oneesan
+お姉さん
+
+おにいさん
+older brother
+Oniisan
+お兄さん
+
+いもうと
+younger sister
+Imooto
+妹
+
+おとうと
+younger brother
+Otooto
+弟
+
+`;
+
+allWords["Genki 01 - Hard"] = `
+かがく
+science
+Kagaku
+科学
+
+アジアけんきゅう
+Asian studies
+Ajiakenkyuu
+アジア研究
+
+こくさいかんけい
+international relations
+Kokusaikankei
+国際関係
+
+じんるいがく
+anthropology
+Jinruigaku
+人類学
+
+ぶんがく
+literature
+Bungaku
+文学
+
+れきし
+history
+Rekishi
+歴史
+
+しゅふ
+housewife
+Shufu
+主婦
+
+だいがくいんせい
+graduate student
+Daigakuinsee
+大学院生
+
+だいがくせい
+college student
+Daigakusee
+大学生
+
+`;
+
+allWords["Genki 02"] = `
+これ
+this one
+Kore
+
+それ
+that one
+Sore
+
+あれ
+that one (over there)
+Are
+
+どれ
+which one
+Dore
+
+この
+this ...
+Kono
+
+その
+that ...
+Sono
+
+あの
+that ... (over there)
+Ano
+
+どの
+which ...
+Dono
+
+あそこ
+over there
+Asoko
+
+どこ
+where
+Doko
+
+だれ
+who
+Dare
+
+おいしい
+delicious
+Oishii
+
+さかな
+fish
+Sakana
+魚
+
+にく
+meat
+Niku
+肉
+
+メニュー
+menu
+Menyuu
+
+やさい
+vegetable
+Yasai
+野菜
+
+えんぴつ
+pencil
+Enpitsu
+鉛筆
+
+かさ
+umbrella
+Kasa
+傘
+
+かばん
+bag
+Kaban
+
+くつ
+shoes
+Kutsu
+靴
+
+さいふ
+wallet
+Saifu
+財布
+
+ジーンズ
+jeans
+Jiinzu
+
+じしょ
+dictionary
+Jisho
+辞書
+
+じてんしゃ
+bicycle
+Jitensha
+自転車
+
+しんぶん
+newspaper
+Shinbun
+新聞
+
+テープ
+tape
+Teepu
+
+とけい
+watch; clock
+Tokee
+時計
+
+トレーナー
+sweat shirt
+Toreenaa
+
+ノート
+notebook
+Nooto
+
+ペン
+pen
+Pen
+
+ぼうし
+hat; cap
+Booshi
+帽子
+
+ほん
+book
+Hon
+本
+
+おてあらい
+restroom
+Otearai
+お手洗い
+
+きっさてん
+cafe
+Kissaten
+喫茶店
+
+ぎんこう
+bank
+Ginkoo
+銀行
+
+としょかん
+library
+Toshokan
+図書館
+
+ゆうびんきょく
+post office
+Yuubinkyoku
+郵便局
+
+いくら
+how much
+Ikura
+
+〜えん
+...yen
+...en
+〜円
+
+たかい
+expensive
+Takai
+高い
+
+いらっしゃいませ
+Welcome (to our store)
+Irasshaimase
+
+(〜を) おねがいします
+..., please.
+(...o) Onegaishimasu
+
+(〜を) ください
+Please give me...
+(...o) Kudasai
+
+じゃあ
+then...; if that is the case,...
+Jaa
+
+(〜を) どうぞ
+Here it is.
+(...o) Doozo
+
+どうも
+Thank you.
+Doomo
+
+けいざい
+economics
+Keizai
+経済
+
+`;
+
+allWords["Genki 02 - Hard"] = `
+とんかつ
+pork cutlet
+Tonkatsu
+
+`;
+
+allWords["Genki 03"] = `
+えいが
+movie
+Eiga
+映画
+
+おんがく
+music
+Ongaku
+音楽
+
+ざっし
+magazine
+Zasshi
+雑誌
+
+スポーツ
+sports
+Supootsu
+
+デート
+date (romantic, not calendar)
+Deeto
+
+テニス
+tennis
+Tenisu
+
+テレビ
+TV
+Terebi
+
+ビデオ
+video tape; VCR
+Bideo
+
+あさごはん
+breakfast
+Asagohan
+朝御飯
+
+おさけ
+sake; alcohol
+Osake
+お酒
+
+おちゃ
+green tea
+Ocha
+お茶
+
+コーヒー
+coffee
+Koohii
+
+ばんごはん
+dinner
+Bangohan
+晩御飯
+
+ハンバーガー
+hamburger
+Hanbaagaa
+
+ひるごはん
+lunch
+Hirugohan
+昼御飯
+
+みず
+water
+Mizu
+水
+
+いえ
+home; house
+Ie
+家
+
+がっこう
+school
+Gakkoo
+学校
+
+あさ
+morning
+Asa
+朝
+
+あした
+tomorrow
+Ashita
+
+いつ
+when
+Itsu
+
+きょう
+today
+Kyoo
+
+〜ごろ
+at about
+...goro
+
+こんばん
+tonight
+Konban
+今晩
+
+しゅうまつ
+weekend
+Shuumatsu
+週末
+
+どようび
+Saturday
+Doyoobi
+土曜日
+
+にちようび
+Sunday
+Nichiyoobi
+日曜日
+
+まいにち
+every day
+Mainichi
+毎日
+
+まいばん
+every night
+Maiban
+毎晩
+
+いく
+to go
+Iku
+行く
+
+かえる
+to go back; to return
+Kaeru
+帰る
+
+きく
+to listen; to hear
+Kiku
+聞く
+
+のむ
+to drink
+Nomu
+飲む
+
+はなす
+to speak; to talk
+Hanasu
+話す
+
+よむ
+to read
+Yomu
+読む
+
+おきる
+to get up
+Okiru
+起きる
+
+たべる
+to eat
+Taberu
+食べる
+
+ねる
+to sleep; to go to sleep
+Neru
+寝る
+
+みる
+to see; to look at; to watch
+Miru
+見る
+
+くる
+to come
+Kuru
+来る
+
+する
+to do
+Suru
+
+べんきょうする
+to study
+Benkyoosuru
+勉強する
+
+いい
+good
+Ii
+
+はやい
+early
+Hayai
+早い
+
+あまり + negative
+not much
+Amari + negative
+
+ぜんぜん + negative
+not at all
+Zenzen + negative
+全然
+
+ちょっと
+a little
+Chotto
+
+ときどき
+sometimes
+Tokidoki
+時々
+
+よく
+often; much
+Yoku
+
+そうですね
+That's right.; Let me see.
+Soo desu ne
+
+でも
+but
+Demo
+
+どうですか
+How about...?; How is...?
+Doo desu ka
+
+うち
+home; house; my place
+Uchi
+家
+
+`;
+
+allWords["Genki 03 - Hard"] = `
+たいてい
+usually
+Taitei
+大抵
+
+LL (エルエル)
+language lab
+Erueru
+
+`;
+
+allWords["Genki 04"] = `
+アルバイト
+part-time job
+Arubaito
+
+かいもの
+shopping
+Kaimono
+買い物
+
+クラス
+class
+Kurasu
+
+あなた
+you
+Anata
+
+いぬ
+dog
+Inu
+犬
+
+おみやげ
+souvenir
+Omiyage
+お土産
+
+こども
+child
+Kodomo
+子供
+
+ごはん
+rice; meal
+Gohan
+御飯
+
+しゃしん
+picture; photograph
+Shashin
+写真
+
+つくえ
+desk
+Tsukue
+机
+
+てがみ
+letter
+Tegami
+手紙
+
+ねこ
+cat
+Neko
+猫
+
+パン
+bread
+Pan
+
+ひと
+person
+Hito
+人
+
+おてら
+temple
+Otera
+お寺
+
+こうえん
+park
+Kooen
+公園
+
+スーパー
+supermarket
+Suupaa
+
+デパート
+department store
+Depaato
+
+バスてい
+bus stop
+Basutei
+バス停
+
+びょういん
+hospital
+Byooin
+病院
+
+ホテル
+hotel
+Hoteru
+
+ほんや
+bookstore
+Honya
+本屋
+
+まち
+town; city
+Machi
+町
+
+レストラン
+restaurant
+Resutoran
+
+きのう
+yesterday
+Kinoo
+昨日
+
+〜じかん
+hour
+...jikan
+〜時間
+
+いちじかん
+one hour
+Ichijikan
+一時間
+
+せんしゅう
+last week
+Senshuu
+先週
+
+かようび
+Tuesday
+Kayoobi
+火曜日
+
+すいようび
+Wednesday
+Suiyoobi
+水曜日
+
+もくようび
+Thursday
+Mokuyoobi
+木曜日
+
+きんようび
+Friday
+Kinyoobi
+金曜日
+
+あう
+to meet; to see (a person)
+Au
+会う
+
+ある
+there is ...
+Aru
+
+かう
+to buy
+Kau
+買う
+
+かく
+to write
+Kaku
+書く
+
+とる
+to take (pictures)
+Toru
+撮る
+
+まつ
+to wait
+Matsu
+待つ
+
+わかる
+to understand
+Wakaru
+
+いる
+(a person) is in ...; stays at ...
+Iru
+
+〜ぐらい
+about (approximate measurement)
+...gurai
+
+ごめんなさい
+I'm sorry.
+Gomennasai
+
+たくさん
+many; a lot
+Takusan
+
+〜と
+together with (a person)
+...to
+
+どうして
+why
+Dooshite
+
+ひとりで
+alone
+Hitoride
+一人で
+
+もしもし
+Hello? (used on the phone)
+Moshimoshi
+
+みぎ
+right
+Migi
+右
+
+ひだり
+left
+Hidari
+左
+
+まえ
+front
+Mae
+前
+
+うしろ
+back
+Ushiro
+後ろ
+
+なか
+inside
+Naka
+中
+
+うえ
+on
+Ue
+上
+
+した
+under
+Shita
+下
+
+そば
+near
+Soba
+
+となり
+next
+Tonari
+隣
+
+あいだ
+between
+Aida
+間
+
+そこ
+there
+Soko
+
+ここ
+here
+Koko
+
+げつようび
+Monday
+Getsuyoobi
+月曜日
+
+とき
+when...; at the time of...
+Toki
+時
+
+`;
+
+allWords["Genki 04 - Hard"] = `
+さっき
+a little while ago
+Sakki
+
+だから
+so; therefore
+Dakara
+
+`;
+
+allWords["Genki 05"] = `
+うみ
+sea
+Umi
+海
+
+きって
+postal stamps
+Kitte
+切手
+
+きっぷ
+ticket
+Kippu
+切符
+
+しゅくだい
+homework
+Shukudai
+宿題
+
+たべもの
+food
+Tabemono
+食べ物
+
+たんじょうび
+birthday
+Tanjoobi
+誕生日
+
+テスト
+test
+Tesuto
+
+てんき
+weather
+Tenki
+天気
+
+のみもの
+drink
+Nomimono
+飲み物
+
+はがき
+postcard
+Hagaki
+葉書
+
+バス
+bus
+Basu
+
+ひこうき
+airplane
+Hikooki
+飛行機
+
+へや
+room
+Heya
+部屋
+
+ぼく
+I (used by men)
+Boku
+僕
+
+やすみ
+holiday; day off; absence
+Yasumi
+休み
+
+りょこう
+travel
+Ryokoo
+旅行
+
+あたらしい
+new
+Atarashii
+新しい
+
+あつい
+hot (weather)
+Atsui
+暑い
+
+あつい
+hot (objects)
+Atsui
+熱い
+
+いそがしい
+busy (people/days)
+Isogashii
+忙しい
+
+おおきい
+large
+Ookii
+大きい
+
+おもしろい
+interesting
+Omoshiroi
+面白い
+
+さむい
+cold (weather-not used for objects)
+Samui
+寒い
+
+たのしい
+fun
+Tanoshii
+楽しい
+
+ちいさい
+small
+Chiisai
+小さい
+
+ふるい
+old (thing - not used for people)
+Furui
+古い
+
+むずかしい
+difficult
+Muzukashii
+難しい
+
+やすい
+inexpensive; cheap (thing)
+Yasui
+安い
+
+きらい（な）
+disgusted with; to dislike
+Kirai (na)
+嫌い
+
+きれい（な）
+beautiful; clean
+Kirei (na)
+
+げんき（な）
+healthy; energetic
+Genki (na)
+元気
+
+しずか（な）
+quiet
+Shizuka (na)
+静か
+
+すき（な）
+fond of; to like
+Suki (na)
+好き
+
+にぎやか（な）
+lively
+Nigiyaka (na)
+
+ハンサム（な）
+handsome
+Hansamu (na)
+
+ひま（な）
+not busy; to have a lot of free time
+Hima (na)
+暇
+
+およぐ
+to swim
+Oyogu
+泳ぐ
+
+きく
+to ask
+Kiku
+聞く
+
+いっしょに
+together
+Isshoni
+一緒に
+
+それから
+and then
+Sorekara
+
+だいじょうぶ
+It's okay.; Not to worry.; Everything is under control.
+Daijoobu
+大丈夫
+
+とても
+very
+Totemo
+
+どんな
+what kind of...
+Donna
+
+〜まい
+[counter for flat objects]
+...mai
+〜枚
+
+〜まで
+to (a place); as far as (a place); till (a time)
+...made
+
+のる
+to ride; to board
+Noru
+乗る
+
+こわい
+frightening
+Kowai
+怖い
+
+やさしい
+easy (problem); kind (person)
+Yasashii
+
+だいきらい（な）
+to hate
+Daikirai (na)
+大嫌い
+
+だいすき（な）
+very fond of; to love
+Daisuki (na)
+大好き
+
+`;
+
+allWords["Genki 05 - Hard"] = `
+サーフィン
+surfing
+Saafin
+
+つまらない
+boring
+Tsumaranai
+
+でかける
+to go out
+Dekakeru
+出かける
+
+やる
+to do; to perform
+Yaru
+
+`;
+
+allWords["Genki 06"] = `
+おかね
+money
+Okane
+お金
+
+おばあさん
+grandmother; old woman
+Obaasan
+
+おふろ
+bath
+Ofuro
+お風呂
+
+かんじ
+kanji; Chinese character
+Kanji
+漢字
+
+こんしゅう
+this week
+Konshuu
+今週
+
+つぎ
+next
+Tsugi
+次
+
+でんき
+electricity
+Denki
+電気
+
+でんしゃ
+train
+Densha
+電車
+
+にもつ
+baggage
+Nimotsu
+荷物
+
+ページ
+page
+Peeji
+
+まど
+window
+Mado
+窓
+
+よる
+night
+Yoru
+夜
+
+らいしゅう
+next week
+Raishuu
+来週
+
+らいねん
+next year
+Rainen
+来年
+
+たいへん（な）
+tough (situation)
+Taihen (na)
+大変
+
+いそぐ
+to hurry
+Isogu
+急ぐ
+
+おふろにはいる
+to take a bath
+Ofuro Ni Hairu
+お風呂に入る
+
+かえす
+to return (things)
+Kaesu
+返す
+
+けす
+to turn off; to erase
+Kesu
+消す
+
+しぬ
+to die
+Shinu
+死ぬ
+
+すわる
+to sit down
+Suwaru
+座る
+
+たつ
+to stand up
+Tatsu
+立つ
+
+たばこをすう
+to smoke
+Tabako O Suu
+たばこを吸う
+
+つかう
+to use
+Tsukau
+使う
+
+てつだう
+to help
+Tetsudau
+手伝う
+
+はいる
+to enter
+Hairu
+入る
+
+もつ
+to carry; to hold
+Motsu
+持つ
+
+やすむ
+to be absent (from...); to rest
+Yasumu
+休む
+
+あける
+to open (something)
+Akeru
+開ける
+
+おしえる
+to teach; to instruct
+Oshieru
+教える
+
+おりる
+to get off
+Oriru
+降りる
+
+かりる
+to borrow
+Kariru
+借りる
+
+しめる
+to close (something)
+Shimeru
+閉める
+
+つける
+to turn on
+Tsukeru
+
+でんわをかける
+to make a phone call
+Denwa O Kakeru
+電話をかける
+
+つれてくる
+to bring (a person)
+Tsuretekuru
+連れてくる
+
+もってくる
+to bring (a thing)
+Mottekuru
+持ってくる
+
+あとで
+later on
+Atode
+後で
+
+〜から
+because ...
+...kara
+
+けっこうです
+That would be fine.; That wouldn't be necessary.
+Kekkoo Desu
+結構です
+
+すぐ
+right away
+Sugu
+
+ほんとうですか
+Really?
+Hontoo Desu Ka
+本当ですか
+
+ゆっくり
+slowly; leisurely; unhurriedly
+Yukkuri
+
+あそぶ
+to play; to spend time pleasantly
+Asobu
+遊ぶ
+
+`;
+
+allWords["Genki 06 - Hard"] = `
+きょうかしょ
+textbook
+Kyookasho
+教科書
+
+しみんびょういん
+Municipal Hospital
+Shiminbyooin
+市民病院
+
+わすれる
+to forget; to leave behind
+Wasureru
+忘れる
+
+テレビゲーム
+video game
+Terebigeemu
+
+`;
+
+allWords["Genki 07"] = `
+あね
+(my) older sister
+Ane
+姉
+
+アパート
+apartment
+Apaato
+
+いもうと
+younger sister
+Imooto
+妹
+
+うた
+song
+Uta
+歌
+
+おとうと
+younger brother
+Otooto
+弟
+
+おとこのひと
+man
+Otoko No Hito
+男の人
+
+おにいさん
+older brother
+Oniisan
+お兄さん
+
+おねえさん
+older sister
+Oneesan
+お姉さん
+
+おんなのひと
+woman
+Onna No Hito
+女の人
+
+かいしゃ
+company
+Kaisha
+会社
+
+かぞく
+family
+Kazoku
+家族
+
+かみ
+hair
+Kami
+髪
+
+きょうだい
+brothers and sisters
+Kyoodai
+兄弟
+
+くるま
+car
+Kuruma
+車
+
+コンビニ
+convenience store
+Konbini
+
+しょくどう
+cafeteria; dining commons
+Shokudoo
+食堂
+
+ちち
+(my) father
+Chichi
+父
+
+Tシャツ
+T-shirt
+T-shatsu
+
+め
+eye
+Me
+目
+
+めがね
+glasses
+Megane
+眼鏡
+
+あたまがいい
+bright; smart; clever
+Atama Ga Ii
+頭がいい
+
+かわいい
+cute
+Kawaii
+
+せがたかい
+tall
+Se Ga Takai
+背が高い
+
+せがひくい
+short (stature)
+Se Ga Hikui
+背が低い
+
+ながい
+long
+Nagai
+長い
+
+はやい
+fast
+Hayai
+早い
+
+みじかい
+short (length)
+Mijikai
+短い
+
+しんせつ（な）
+kind
+Shinsetsu (na)
+親切
+
+べんり（な）
+convenient
+Benri (na)
+便利
+
+かぶる
+to put on (a hat)
+Kaburu
+
+しる
+to get to know
+Shiru
+知る
+
+しっています
+I know
+Shitteimasu
+知っています
+
+しりません
+I do not know
+Shirimasen
+知りません
+
+すむ
+to live
+Sumu
+住む
+
+はく
+to put on (items below your waist)
+Haku
+
+めがねをかける
+to put on glasses
+Megane O Kakeru
+
+きる
+to put on (clothes above your waist)
+Kiru
+着る
+
+けっこんする
+to get married
+Kekkonsuru
+結婚する
+
+が
+but
+Ga
+
+ひとり
+one person
+Hitori
+一人
+
+ふたり
+two people
+Futari
+二人
+
+もちろん
+of course
+Mochiron
+
+よかったら
+if you like
+Yokattara
+
+かっこいい
+great-looking
+Kakkooii
+
+`;
+
+allWords["Genki 07 - Hard"] = `
+ふとる
+to gain weight
+Futoru
+太る
+
+ふとっています
+to be on the heavy side
+Futotteimasu
+太っています
+
+やせる
+to lose weight
+Yaseru
+
+やせています
+to be thin
+Yaseteimasu
+
+くに
+country; place of origin
+Kuni
+国
+
+うたう
+to sing
+Utau
+歌う
+
+`;
+
+allWords["Genki 08"] = `
+ざんねんですね
+That's too bad.
+Zannen Desu Ne
+残念ですね
+
+あさって
+the day after tomorrow
+Asatte
+
+あめ
+rain
+Ame
+雨
+
+かいしゃいん
+office worker
+Kaishain
+会社員
+
+カメラ
+camera
+Kamera
+
+カラオケ
+karaoke
+Karaoke
+
+くうき
+air
+Kuuki
+空気
+
+けさ
+this morning
+Kesa
+今朝
+
+こんげつ
+this month
+Kongetsu
+今月
+
+しごと
+job; work; occupation
+Shigoto
+仕事
+
+だいがくせい
+college student
+Daigakusee
+大学生
+
+ディスコ
+disco
+Disuko
+
+てんきよほう
+weather forecast
+Tenkiyohoo
+天気予報
+
+ところ
+place
+Tokoro
+所
+
+トマト
+tomato
+Tomato
+
+なつ
+summer
+Natsu
+夏
+
+なにか
+something
+Nanika
+何か
+
+パーティー
+party
+Paatii
+
+バーベキュー
+barbecue
+Baabekyuu
+
+はし
+chopsticks
+Hashi
+
+ふゆ
+winter
+Fuyu
+冬
+
+まいしゅう
+every week
+Maishuu
+毎週
+
+らいげつ
+next month
+Raigetsu
+来月
+
+じょうず
+skillful; good at...
+Joozu
+上手
+
+へた
+clumsy; poor at...
+Heta
+下手
+
+ゆうめい
+famous
+Yuumei
+有名
+
+あめがふる
+it rains
+Ame Ga Furu
+雨が降る
+
+あらう
+to wash
+Arau
+洗う
+
+いう
+to say
+Iu
+言う
+
+いる
+to need
+Iru
+
+おもう
+to think
+Omou
+思う
+
+きる
+to cut
+Kiru
+切る
+
+つくる
+to make
+Tsukuru
+作る
+
+もっていく
+to take (something)
+Motteiku
+持っていく
+
+はじめる
+to begin
+Hajimeru
+始める
+
+うんてんする
+to drive
+Untensuru
+運転する
+
+せんたくする
+to do laundry
+Sentakusuru
+洗濯する
+
+そうじする
+to clean
+Soojisuru
+掃除する
+
+りょうりする
+to cook
+Ryoorisuru
+料理する
+
+ううん
+uh-uh; no
+Uun
+
+うん
+uh-huh; yes
+Un
+
+かんぱい
+Cheers! (a toast)
+Kanpai
+乾杯
+
+みんなで
+all (of the people) together
+Minna De
+
+ホームステイ
+homestay; living with a local family
+Hoomusutei
+
+`;
+
+allWords["Genki 08 - Hard"] = `
+じろじろみる
+to stare (at ...)
+Jirojiromiru
+じろじろ見る
+
+`;
+
+allWords["Genki 09"] = `
+おべんとう
+boxed lunch
+Obentoo
+お弁当
+
+おんせん
+spa; hot spring
+Onsen
+温泉
+
+かぶき
+Kabuki; traditional Japanese theatrical art
+Kabuki
+
+ギター
+guitar
+Gitaa
+
+くすり
+medicine
+Kusuri
+薬
+
+くすりをのむ
+to take medicine
+Kusuri O Nomu
+薬を飲む
+
+コンサート
+concert
+Konsaato
+
+しけん
+exam
+Shiken
+試験
+
+しんかんせん
+Shinkansen; "Bullet Train"
+Shinkansen
+新幹線
+
+スキー
+ski
+Sukii
+
+せんげつ
+last month
+Sengetsu
+先月
+
+ピアノ
+piano
+Piano
+
+びょうき
+illness; sickness
+Byooki
+病気
+
+あおい
+blue
+Aoi
+青い
+
+あかい
+red
+Akai
+赤い
+
+くろい
+black
+Kuroi
+黒い
+
+さびしい
+lonely
+Sabishii
+寂しい
+
+しろい
+white
+Shiroi
+白い
+
+わかい
+young
+Wakai
+若い
+
+ひく
+to play (a string instrument or piano)
+Hiku
+弾く
+
+もらう
+to get (from somebody)
+Morau
+
+おぼえる
+to memorize
+Oboeru
+覚える
+
+さんぽする
+to take a walk
+Sanposuru
+散歩する
+
+ぜひ
+by all means
+Zehi
+是非
+
+みんな
+all
+Minna
+
+もう
+already
+Moo
+
+ひとつ
+one
+Hitotsu
+一つ
+
+ふたつ
+two
+Futatsu
+二つ
+
+みっつ
+three
+Mittsu
+三つ
+
+よっつ
+four
+Yottsu
+四つ
+
+いつつ
+five
+Itsutsu
+五つ
+
+むっつ
+six
+Muttsu
+六つ
+
+ななつ
+seven
+Nanatsu
+七つ
+
+やっつ
+eight
+Yattsu
+八つ
+
+ここのつ
+nine
+Kokonotsu
+九つ
+
+とお
+ten
+Too
+十
+
+たんご
+word; vocabulary
+Tango
+単語
+
+おわる
+(something) ends
+Owaru
+終わる
+
+はじまる
+(something) begins
+Hajimaru
+始まる
+
+`;
+
+allWords["Genki 09 - Hard"] = `
+こんど
+near future
+Kondo
+今度
+
+さくぶん
+essay; composition
+Sakubun
+作文
+
+にんきがある
+to be popular
+Ninki Ga Aru
+人気がある
+
+でる
+(1) to appear; (2) to attend (2) to exit
+Deru
+出る
+
+うんどうする
+to do physical exercises
+Undoosuru
+運動する
+
+いいこ
+good child
+Iiko
+いい子
+
+いろ
+color
+Iro
+色
+
+いじわる
+mean-spirited
+Ijiwaru
+意地悪
+
+おどる
+to dance
+Odoru
+踊る
+
+`;
+
+allWords["Genki 10"] = `
+あき
+fall
+Aki
+秋
+
+えき
+station
+Eki
+駅
+
+かお
+face
+Kao
+顔
+
+きせつ
+season
+Kisetsu
+季節
+
+ことし
+this year
+Kotoshi
+今年
+
+サッカー
+soccer
+Sakkaa
+
+シャツ
+shirt
+Shatsu
+
+せいかつ
+life; living
+Seikatsu
+生活
+
+せかい
+world
+Sekai
+世界
+
+ちかてつ
+subway
+Chikatetsu
+地下鉄
+
+てぶくろ
+gloves
+Tebukuro
+手袋
+
+はる
+spring
+Haru
+春
+
+パンツ
+pants
+Pantsu
+
+びん
+flight
+Bin
+便
+
+ふね
+ship; boat
+Fune
+船
+
+やきゅう
+baseball
+Yakyuu
+野球
+
+よやく
+reservation
+Yoyaku
+予約
+
+りんご
+apple
+Ringo
+
+あたたかい
+warm
+Atatakai
+暖かい
+
+おそい
+slow; late
+Osoi
+遅い
+
+すずしい
+cool (weather)
+Suzushii
+涼しい
+
+つめたい
+cold (thing/people)
+Tsumetai
+冷たい
+
+ねむい
+sleepy
+Nemui
+眠い
+
+かんたん
+easy; simple
+Kantan
+簡単
+
+かかる
+to take (amount of time / money)
+Kakaru
+
+とまる
+to stay (at a hotel, etc.)
+Tomaru
+泊まる
+
+なる
+to become
+Naru
+
+はらう
+to pay
+Harau
+払う
+
+れんしゅうする
+to practice
+Renshuusuru
+練習する
+
+あるいて
+on foot
+Aruite
+歩いて
+
+いちばん
+best
+Ichiban
+一番
+
+どうやって
+how; by what means
+Dooyatte
+
+どちら
+which
+Dochira
+
+どのぐらい
+how much; how long
+Donogurai
+
+はやく
+(do something) early; fast
+Hayaku
+早く
+
+クレジットカード
+credit card
+Kurejitto Kaado
+
+`;
+
+allWords["Genki 10 - Hard"] = `
+とこや
+barber's
+Tokoya
+床屋
+
+びよういん
+beauty parlor
+Biyooin
+美容院
+
+らいがっき
+next semester
+Raigakki
+来学期
+
+このごろ
+these days
+Konogoro
+
+きめる
+to decide
+Kimeru
+決める
+
+おかねもち
+rich person
+Okanemochi
+お金持ち
+
+ゆうめいじん
+celebrity
+Yuumeijin
+有名人
+
+`;
+
+allWords["Genki 11"] = `
+キャンプ
+camp
+Kyanpu
+
+ドライブ
+drive
+Doraibu
+
+ホストファミリー
+host family
+Hosutofamirii
+
+あと
+after (an event)
+Ato
+後
+
+しゅっしん
+coming from
+Shusshin
+出身
+
+おかし
+snack; sweets
+Okashi
+お菓子
+
+おしょうがつ
+New Year's
+Oshoogatsu
+お正月
+
+おとこのこ
+boy
+Otoko No Ko
+男の子
+
+おもちゃ
+toy
+Omocha
+
+おんなのこ
+girl
+Onna No Ko
+女の子
+
+がいこく
+foreign country
+Gaikoku
+外国
+
+かしゅ
+singer
+Kashu
+歌手
+
+こちら
+this person (polite)
+Kochira
+
+しゃちょう
+president of a company
+Shachoo
+社長
+
+ビール
+beer
+Biiru
+
+びじゅつかん
+art museum
+Bijutsukan
+美術館
+
+やま
+mountain
+Yama
+山
+
+ゆめ
+dream
+Yume
+夢
+
+ルームメイト
+roommate
+Ruumumeito
+
+おなかがすく
+to become hungry
+Onaka Ga Suku
+
+ならう
+to learn
+Narau
+習う
+
+のぼる
+to climb
+Noboru
+登る
+
+はたらく
+to work
+Hataraku
+働く
+
+つかれる
+to get tired
+Tsukareru
+疲れる
+
+やめる
+to quit
+Yameru
+
+しょうかいする
+to introduce
+Shookaisuru
+紹介する
+
+ダイエットする
+to go on a diet
+Daiettosuru
+
+りゅうがくする
+to study abroad
+Ryuugakusuru
+留学する
+
+そして
+and then
+Soshite
+
+もっと
+more
+Motto
+
+`;
+
+allWords["Genki 11 - Hard"] = `
+みずうみ
+lake
+Mizuumi
+湖
+
+うそをつく
+to tell a lie
+Uso O Tsuku
+
+おそく
+(do something) late
+Osoku
+遅く
+
+おそくなる
+to be late (for ...)
+Osokunaru
+遅くなる
+
+ちこくする
+to be late (for an appointment)
+Chikokusuru
+遅刻する
+
+じゅぎょう
+class
+Jugyoo
+授業
+
+しょうらい
+future
+Shoorai
+将来
+
+サボる
+to cut classes
+Saboru
+
+けんかする
+to have a fight; to quarrel
+Kenkasuru
+
+かう
+to own (a pet)
+Kau
+飼う
+
+とる
+to take (a class); to get (a grade)
+Toru
+取る
+
+こんがっき
+this semester
+Kongakki
+今学期
+
+すごく
+very
+Sugoku
+
+ひさしぶり
+it has been a long time
+Hisashiburi
+久しぶり
+
+まあまあ
+okay; so-so
+Maamaa
+
+`;
+
+allWords["Genki 12"] = `
+げんきがない
+don't look well
+Genki Ga Nai
+元気がない
+
+もうすぐ
+very soon; in a few moments/days
+Moosugu
+
+はれ
+sunny weather
+Hare
+晴れ
+
+ホームシック
+homesickness
+Hoomushikku
+
+もの
+thing (concrete object)
+Mono
+物
+
+あし
+leg; foot
+Ashi
+足
+
+いみ
+meaning
+Imi
+意味
+
+おなか
+stomach
+Onaka
+
+かぜ
+cold
+Kaze
+風
+
+かのじょ
+girlfriend
+Kanojo
+彼女
+
+かれ
+boyfriend
+Kare
+彼
+
+くもり
+cloudy weather
+Kumori
+曇り
+
+しあい
+match; game
+Shiai
+試合
+
+ジュース
+juice
+Juusu
+
+のど
+throat
+Nodo
+
+は
+tooth
+Ha
+歯
+
+はな
+flower
+Hana
+花
+
+ふく
+clothes
+Fuku
+服
+
+プレゼント
+present
+Purezento
+
+ゆき
+snow
+Yuki
+雪
+
+ようじ
+business to take care of
+Yooji
+用事
+
+あまい
+sweet
+Amai
+甘い
+
+いたい
+hurt; painful
+Itai
+痛い
+
+おおい
+there are many...
+Ooi
+多い
+
+せまい
+narrow; not spacious
+Semai
+狭い
+
+わるい
+bad
+Warui
+悪い
+
+すてき
+fantastic
+Suteki
+素敵
+
+なくす
+to lose
+Nakusu
+
+のどがかわく
+to become thirsty
+Nodo Ga Kawaku
+のどが渇く
+
+ねつがある
+to have a fever
+Netsu Ga Aru
+熱がある
+
+しんぱいする
+to worry
+Shinpaisuru
+心配する
+
+いつも
+always
+Itsumo
+
+おだいじに
+Get well soon.
+Odaiji Ni
+お大事に
+
+たぶん
+probably; maybe
+Tabun
+多分
+
+にさんにち
+for two to three days
+Nisaannichi
+二三日
+
+はじめて
+for the first time
+Hajimete
+初めて
+
+ふつかよい
+hangover
+Futsukayoi
+二日酔い
+
+`;
+
+allWords["Genki 12 - Hard"] = `
+つごうがわるい
+inconvenient; to have a scheduling conflict
+Tsugoo Ga Warui
+都合が悪い
+
+きおん
+temperature (weather)
+Kion
+気温
+
+せいせき
+grade (on a test, etc.)
+Seiseki
+成績
+
+せき
+cough
+Seki
+咳
+
+せきがでる
+to cough
+Seki Ga Deru
+せきが出る
+
+かぜをひく
+to catch a cold
+Kaze O Hiku
+風邪をひく
+
+きょうみがある
+to be interested (in ...)
+Kyoomi Ga Aru
+興味がある
+
+わかれる
+to break up; to separate
+Wakareru
+別れる
+
+きんちょうする
+to get nervous
+Kinchoosuru
+緊張する
+
+できるだけ
+as much as possible
+Dekirudake
+
+`;
+
+allWords["Genki 13"] = `
+バイオリン
+violin
+Baiorin
+
+べんごし
+lawyer
+Bengoshi
+弁護士
+
+おとな
+adult
+Otona
+大人
+
+がいこくご
+foreign language
+Gaikokugo
+外国語
+
+ウェイター
+waiter
+Weitaa
+
+おじいさん
+grandfather; old man
+Ojiisan
+
+からて
+karate
+Karate
+空手
+
+カレー
+curry
+Karee
+
+きもの
+kimono; Japanese traditional dress
+Kimono
+着物
+
+ケーキ
+cake
+Keeki
+
+こうちゃ
+tea (black tea)
+Koocha
+紅茶
+
+ことば
+language
+Kotoba
+言葉
+
+ゴルフ
+golf
+Gorufu
+
+セーター
+sweater
+Seetaa
+
+ぞう
+elephant
+Zoo
+象
+
+バイク
+motorbike
+Baiku
+
+ぶっか
+(consumer) prices
+Bukka
+物価
+
+ぶんぽう
+grammar
+Bunpoo
+文法
+
+ぼしゅう
+recruitment
+Boshuu
+募集
+
+みせ
+shop; store
+Mise
+店
+
+やくざ
+yakuza; gangster
+Yakuza
+
+やくそく
+promise; appointment
+Yakusoku
+約束
+
+レポート
+(term) paper
+Repooto
+
+わたくし
+I (formal)
+Watakushi
+私
+
+からい
+hot and spicy; salty
+Karai
+辛い
+
+ちかい
+close; near
+Chikai
+近い
+
+いろいろ
+various; different kinds of
+Iroiro
+
+だめ
+no good
+Dame
+
+かす
+to lend; to rent
+Kasu
+貸す
+
+がんばる
+to do one's best; to try hard
+Ganbaru
+頑張る
+
+なく
+to cry
+Naku
+泣く
+
+いらっしゃいます
+(someone honorable) is present/home
+Irasshaimasu
+
+じつは
+as a matter of fact, ...
+Jitsuwa
+実は
+
+ぜんぶ
+all
+Zenbu
+全部
+
+いちにち
+one day
+Ichinichi
+一日
+
+ふつか
+two days
+Futsuka
+二日
+
+みっか
+three days
+Mikka
+三日
+
+よっか
+four days
+Yokka
+四日
+
+いつか
+five days
+Itsuka
+五日
+
+むいか
+six days
+Muika
+六日
+
+ななのか
+seven days
+Nanoka
+七日
+
+ようか
+eight days
+Yooka
+八日
+
+ここのか
+nine days
+Kokonoka
+九日
+
+とおか
+ten days
+Tooka
+十日
+
+よろしくおねがいします
+Thank you (in advance)
+Yoroshiku Onegaishimasu
+よろしくお願いします
+
+`;
+
+allWords["Genki 13 - Hard"] = `
+がっき
+musical instrument
+Gakki
+楽器
+
+こうこく
+advertisement
+Kookoku
+広告
+
+あむ
+to knit
+Amu
+編む
+
+みがく
+to brush (teeth); to polish
+Migaku
+磨く
+
+やくそくをまもる
+to keep a promise
+Yakusoku O Mamoru
+約束を守る
+
+かんどうする
+to be moved/touched (by ...)
+Kandoosuru
+感動する
+
+きびしい
+strict
+Kibishii
+厳しい
+
+しあわせ
+happy (lasting happiness)
+Shiawase
+幸せ
+
+うれしい
+glad
+Ureshii
+
+かなしい
+sad
+Kanashii
+悲しい
+
+`;
+
+allWords["Genki 14"] = `
+ぬいぐるみ
+stuffed animal (e.g., teddy bear)
+Nuigurumi
+
+あに
+(my) older brother
+Ani
+兄
+
+おおやさん
+landlord
+Ooyasan
+大家さん
+
+おかえし
+return (as a token of gratitude)
+Okaeshi
+お返し
+
+おくさん
+(your/his) wife
+Okusan
+奥さん
+
+おじさん
+uncle; middle-aged man
+Ojisan
+
+おばさん
+aunt; middle-aged woman
+Obasan
+
+クラブ
+club; student society
+Kurabu
+
+クリスマス
+Christmas
+Kurisumasu
+
+ごしゅじん
+(your/her) husband
+Goshujin
+
+コップ
+tumbler; glass
+Koppu
+
+さら
+plate; dish
+Sara
+皿
+
+じかん
+time
+Jikan
+時間
+
+チョコレート
+chocolate
+Chokoreeto
+
+でんしメール
+e-mail
+Denshi Meeru
+電子メール
+
+ネクタイ
+necktie
+Nekutai
+
+はは
+(my) mother
+Haha
+母
+
+バレンタインデー
+St. Valentine's Day
+Barentaindee
+
+ビデオカメラ
+camcorder
+Bideokamera
+
+ふうふ
+married couple; husband and wife
+Fuufu
+夫婦
+
+ホワイトデー
+White Day (yet another gift-giving day)
+Howaitodee
+
+マフラー
+winter scarf
+Mafuraa
+
+まんが
+comic book
+Manga
+漫画
+
+マンション
+multistory apartment; condominium
+Manshon
+
+みかん
+mandarin
+Mikan
+
+ゆびわ
+ring
+Yubiwa
+指輪
+
+りょうしん
+parents
+Ryooshin
+両親
+
+りれきしょ
+resume
+Rirekisho
+履歴書
+
+ほしい
+to want
+Hoshii
+欲しい
+
+けち
+stingy; cheap
+Kechi
+
+おくる
+to send
+Okuru
+送る
+
+にあう
+to look good (on somebody)
+Niau
+似合う
+
+あきらめる
+to give up
+Akirameru
+
+あげる
+to give (to others)
+Ageru
+
+くれる
+to give (me)
+Kureru
+
+できる
+to come into existence; to be made
+Dekiru
+
+そうだんする
+to consult
+Soodansuru
+相談する
+
+プロポーズする
+to propose marriage
+Puropoozusuru
+
+おなじ
+same
+Onaji
+同じ
+
+きょねん
+last year
+Kyonen
+去年
+
+わたしたち
+we
+Watashitachi
+私たち
+
+ちょうど
+exactly
+Choodo
+
+よく
+well
+Yoku
+
+こ
+[generic counter for smaller items]
+...ko
+個
+
+さつ
+[counter for bound volumes]
+...satsu
+冊
+
+だい
+[counter for equipment]
+...dai
+台
+
+ひき
+[counter for smaller animals]
+...hiki
+匹
+
+ほん
+[counter for long objects]
+...hon
+本
+
+`;
+
+allWords["Genki 14 - Hard"] = ``;
+
+allWords["Genki 15"] = `
+え
+painting; picture; drawing
+E
+絵
+
+えいがかん
+movie theater
+Eigakan
+映画館
+
+がいこくじん
+foreigner
+Gaikokujin
+外国人
+
+かぐ
+furniture
+Kagu
+家具
+
+かんこう
+sightseeing
+Kankoo
+観光
+
+けっこんしき
+wedding
+Kekkonshiki
+結婚式
+
+じしん
+earthquake
+Jishin
+地震
+
+しめきり
+deadline
+Shimekiri
+締め切り
+
+ジャケット
+jacket
+Jaketto
+
+しゅうかん
+custom
+Shuukan
+習慣
+
+ぜいきん
+tax
+Zeikin
+税金
+
+そつぎょうしき
+graduation ceremony
+Sotsugyooshiki
+卒業式
+
+そば
+Japanese buckwheat noodle
+Soba
+
+ちず
+map
+Chizu
+地図
+
+でんち
+battery
+Denchi
+電池
+
+にわ
+garden
+Niwa
+庭
+
+はっぴょう
+presentation
+Happyoo
+発表
+
+ばんぐみ
+broadcast program
+Bangumi
+番組
+
+プール
+swimming pool
+Puuru
+
+ペット
+pet
+Petto
+
+よてい
+schedule
+Yotei
+予定
+
+りょかん
+inn
+Ryokan
+旅館
+
+わりびきけん
+discount coupon
+Waribikiken
+割引券
+
+ひろい
+spacious; wide
+Hiroi
+広い
+
+うる
+to sell
+Uru
+売る
+
+おろす
+to withdraw (money)
+Orosu
+下ろす
+
+かく
+to draw; to paint
+Kaku
+
+さがす
+to look for
+Sagasu
+探す
+
+さそう
+to invite
+Sasou
+誘う
+
+つきあう
+(1) to date (someone) (2) to keep company
+Tsukiau
+付き合う
+
+つく
+to arrive
+Tsuku
+着く
+
+ほけんにはいる
+to buy insurance
+Hoken ni Hairu
+保険に入る
+
+きをつける
+to be cautious/careful
+Ki o Tsukeru
+気をつける
+
+しらべる
+to look into (a matter)
+Shiraberu
+調べる
+
+すてる
+to throw away
+Suteru
+捨てる
+
+みえる
+to be visible
+Mieru
+見える
+
+する
+to decide on (an item)
+Suru
+
+そつぎょうする
+to graduate (from ...)
+Sotsugyoosuru
+卒業する
+
+よやくする
+to reserve
+Yoyakusuru
+予約する
+
+いちにちじゅう
+all day long
+Ichinichijuu
+一日中
+
+さいきん
+recently
+Saikin
+最近
+
+`;
+
+allWords["Genki 15 - Hard"] = ``;
+
+allWords["Genki 16"] = `
+えきいん
+station attendant
+Ekiin
+駅員
+
+おや
+parent
+Oya
+親
+
+ごみ
+garbage
+Gomi
+
+さとう
+sugar
+Satoo
+砂糖
+
+しょうがくきん
+scholarship
+Shoogakukin
+奨学金
+
+しんせき
+relatives
+Shinseki
+親戚
+
+すいせんじょう
+letter of recommendation
+Suisenjoo
+推薦状
+
+だいがくいん
+graduate school
+Daigakuin
+大学院
+
+たいふう
+typhoon
+Taifuu
+台風
+
+ひ
+day
+Hi
+日
+
+ファイル
+file; portfolio
+Fairu
+
+みち
+way; road; directions
+Michi
+道
+
+めざましどけい
+alarm clock
+Mezamashidokei
+目覚まし時計
+
+きたない
+dirty
+Kitanai
+汚い
+
+おこす
+to wake (someone) up
+Okosu
+起こす
+
+おごる
+to treat (someone) to a meal
+Ogoru
+
+おちこむ
+to get depressed
+Ochikomu
+落ち込む
+
+こまる
+to have difficulty
+Komaru
+困る
+
+だす
+to take (something) out; to hand in (something)
+Dasu
+出す
+
+つれていく
+to take (someone) to (a place)
+Tsureteiku
+連れていく
+
+なおす
+to correct; to fix
+Naosu
+直す
+
+みちにまよう
+to become lost; to lose one's way
+Michi ni Mayou
+道に迷う
+
+やくす
+to translate
+Yakusu
+訳す
+
+わらう
+to laugh
+Warau
+笑う
+
+アイロンをかける
+to iron (clothes)
+Airon o Kakeru
+
+あつめる
+to collect
+Atsumeru
+集める
+
+いれる
+to put (something) in
+Ireru
+入れる
+
+のりおくれる
+to miss (a train, bus, etc.)
+Noriokureru
+乗り遅れる
+
+みせる
+to show
+Miseru
+見せる
+
+あさねぼうする
+to oversleep
+Asaneboosuru
+朝寝坊する
+
+あんないする
+to show (someone) around
+Annaisuru
+案内する
+
+せつめいする
+to explain
+Setsumeisuru
+説明する
+
+むかえにくる
+to come to pick up (someone)
+Mukae ni Kuru
+迎えに来る
+
+ええと
+well...; let me see...
+Eeto
+
+きょうじゅうに
+by the end of today
+Kyoojuuni
+今日中に
+
+このあいだ
+the other day
+Kono Aida
+この間
+
+このぐらい
+about this much
+Kono Gurai
+
+ごめん
+I'm sorry. (casual)
+Gomen
+
+しつれいします
+Excuse me.; Sorry to interrupt you.
+Shitsureishimasu
+失礼します
+
+じぶんで
+(do something) oneself
+Jibun de
+自分で
+
+じゅぎょうちゅうに
+in class; during the class
+Jugyoochuuni
+授業中に
+
+ほかの
+other
+Hokano
+
+`;
+
+allWords["Genki 16 - Hard"] = ``;
+
+allWords["Genki 17"] = `
+おきゃくさん
+guest; visitor; client; customer
+Okyakusan
+お客さん
+
+おとこ
+man
+Otoko
+男
+
+おゆ
+hot water
+Oyu
+お湯
+
+おんな
+woman
+Onna
+女
+
+かぎ
+key
+Kagi
+
+かみ
+paper
+Kami
+紙
+
+きゅうりょう
+salary
+Kyuuryoo
+給料
+
+コンタクト
+contact lenses
+Kontakuto
+
+さいてい
+the lowest; the worst
+Saitee
+最低
+
+サラリーマン
+salaryman; company employee
+Sarariiman
+
+ざんぎょう
+overtime work
+Zangyoo
+残業
+
+ストーブ
+heater
+Sutoobu
+
+たからくじ
+lottery
+Takarakuji
+宝くじ
+
+ちがい
+difference
+Chigai
+違い
+
+ニュース
+news
+Nyuusu
+
+ひげ
+beard
+Hige
+
+ひみつ
+secret
+Himitsu
+秘密
+
+りょう
+dormitory
+Ryoo
+寮
+
+りょこうがいしゃ
+travel agency
+Ryokoogaisha
+旅行会社
+
+うらやましい
+envious
+Urayamashii
+
+すくない
+a little; a few
+Sukunai
+少ない
+
+つよい
+strong
+Tsuyoi
+強い
+
+えらぶ
+to choose; to select
+Erabu
+選ぶ
+
+かみをとかす
+to comb one's hair
+Kami o Tokasu
+髪をとかす
+
+おゆをわかす
+to boil water
+Oyu o Wakasu
+お湯を沸かす
+
+こむ
+to get crowded
+Komu
+込む
+
+たからくじにあたる
+to win a lottery
+Takarakuji ni Ataru
+宝くじに当たる
+
+ぬぐ
+to take off (clothes)
+Nugu
+脱ぐ
+
+ひげをそる
+to shave one's beard
+Hige o Soru
+
+いれる
+to make tea, coffee, etc.
+Ireru
+
+かぎをかける
+to lock
+Kagi o Kakeru
+
+たりる
+to be sufficient; to be enough
+Tariru
+足りる
+
+なれる
+to get used to...
+Nareru
+慣れる
+
+けしょうする
+to put makeup on
+Keshoosuru
+化粧する
+
+しゅうしょくする
+to get a full-time job (at...)
+Shuushokusuru
+就職する
+
+する
+to wear small items (necktie, watch, etc.)
+Suru
+
+りこんする
+to get a divorce
+Rikonsuru
+離婚する
+
+おめでとうございます
+Congratulations!
+Omedetoo Gozaimasu
+
+じぶん
+oneself
+Jibun
+自分
+
+ずいぶん
+very
+Zuibun
+
+そうか
+I see. (casual)
+Sooka
+
+それに
+moreover, ...
+Soreni
+
+たとえば
+for example
+Tatoeba
+例えば
+
+〜にくらべて
+compared with ...
+...ni Kurabete
+〜に比べて
+
+〜によると
+according to ...
+...ni Yoruto
+
+まえ
+before...
+Mae
+前
+
+やっぱり
+after all
+Yappari
+
+`;
+
+allWords["Genki 17 - Hard"] = ``;
+
+allWords["Genki 18"] = `
+あと
+the rest
+Ato
+後
+
+エアコン
+air conditioner
+Eakon
+
+カーテン
+curtain
+Kaaten
+
+ぎゅうにゅう
+milk
+Gyuunyuu
+牛乳
+
+シャンプー
+shampoo
+Shanpuu
+
+スイッチ
+switch
+Suitchi
+
+スカート
+skirt
+Sukaato
+
+しょうゆ
+soy sauce
+Shooyu
+しょう油
+
+そと
+outside
+Soto
+外
+
+タオル
+towel
+Taoru
+
+にっき
+diary
+Nikki
+日記
+
+ポップコーン
+popcorn
+Poppukoon
+
+やちん
+rent
+Yachin
+家賃
+
+ゆうがた
+evening
+Yuugata
+夕方
+
+ラジカセ
+cassette player with a radio
+Rajikase
+
+るすばんでんわ
+answering machine
+Rusubandenwa
+留守番電話
+
+れいぞうこ
+refrigerator
+Reizooko
+冷蔵庫
+
+ろうそく
+candle
+Roosoku
+
+あかるい
+bright
+Akarui
+明るい
+
+きぶんがわるい
+to feel sick
+Kibun ga Warui
+気分が悪い
+
+はずかしい
+embarrassing; to feel embarrassed
+Hazukashii
+恥ずかしい
+
+あく
+(something) opens
+Aku
+開く
+
+あやまる
+to apologize
+Ayamaru
+謝る
+
+おす
+to press; to push
+Osu
+押す
+
+おとす
+to drop (something)
+Otosu
+落とす
+
+おゆがわく
+water boils
+Oyu ga Waku
+お湯が沸く
+
+ころぶ
+to fall down
+Korobu
+転ぶ
+
+こわす
+to break (something)
+Kowasu
+壊す
+
+さく
+to bloom
+Saku
+咲く
+
+しまる
+(something) closes
+Shimaru
+閉まる
+
+たすかる
+to be saved; to be helped
+Tasukaru
+助かる
+
+たのむ
+to ask (a favor)
+Tanomu
+頼む
+
+つく
+(something) turns on
+Tsuku
+
+よごす
+to make dirty
+Yogosu
+汚す
+
+おちる
+(something) drops
+Ochiru
+落ちる
+
+かんがえる
+to think (about); to consider
+Kangaeru
+考える
+
+きえる
+(something) goes off
+Kieru
+消える
+
+こわれる
+(something) breaks
+Kowareru
+壊れる
+
+よごれる
+to become dirty
+Yogoreru
+汚れる
+
+ちゅうもんする
+to place an order
+Chuumonsuru
+注文する
+
+いますぐ
+right away
+Ima Sugu
+今すぐ
+
+おかげで
+thanks to ...
+Okagede
+
+おさきにしつれいします
+See you. (lit., I'm leaving ahead of you.)
+Osaki ni Shitsureishimasu
+お先に失礼します
+
+おつかれさまでした
+You must be tired after working so hard. (ritualistic expression)
+Otsukaresama Deshita
+お疲れ様でした
+
+ほんとうに
+really
+Hontooni
+本当に
+
+まず
+first of all
+Mazu
+
+〜までに
+by (time/date)
+...made ni
+
+どうしよう
+What should I/we do?
+Dooshioo
+
+`;
+
+allWords["Genki 18 - Hard"] = ``;
+
+allWords["Genki 19"] = `
+しょうたいする
+to invite someone (to an event/a place)
+Shootaisuru
+招待する
+
+おくさま
+(your/his) wife (polite)
+Okusama
+奥様
+
+おこさん
+(your/their) child (polite)
+Okosan
+お子さん
+
+おれい
+expression of gratitude
+Orei
+お礼
+
+けいご
+honorific language
+Keigo
+敬語
+
+こちら
+this way (polite)
+Kochira
+
+しゅっちょう
+business trip
+Shutchoo
+出張
+
+しゅるい
+a kind; a sort
+Shurui
+種類
+
+せいかく
+personality
+Seikaku
+性格
+
+ちゅうがくせい
+junior high school student
+Chuugakusei
+中学生
+
+どちら
+where (polite)
+Dochira
+
+なまけもの
+lazy person
+Namakemono
+怠け者
+
+なやみ
+worry
+Nayami
+悩み
+
+はずかしがりや
+shy person
+Hazukashigariya
+恥ずかしがり屋
+
+はなし
+chat; talk
+Hanashi
+話
+
+ぶちょう
+department manager
+Buchoo
+部長
+
+ぶんか
+culture
+Bunka
+文化
+
+まちがい
+mistake
+Machigai
+間違い
+
+なかがいい
+be on good/close terms; to get along well
+Naka ga Ii
+仲がいい
+
+まじめ
+serious; sober; diligent
+Majime
+
+いらっしゃる
+honorific expression for いく, くる, and いる
+Irassharu
+
+おくる
+to walk/drive (someone)
+Okuru
+送る
+
+おこる
+to get angry
+Okoru
+怒る
+
+おっしゃる
+honorific expression for いう
+Ossharu
+
+おやすみになる
+honorific expression for ねる
+Oyasumi ni Naru
+お休みになる
+
+きまる
+to be decided
+Kimaru
+決まる
+
+くださる
+honorific expression for くれる
+Kudasaru
+下さる
+
+ごらんになる
+honorific expression for みる
+Goran ni Naru
+ご覧になる
+
+しりあう
+to get acquainted with
+Shiriau
+知り合う
+
+〜ていらっしゃる
+honorific expression for 〜ている
+...te Irassharu
+
+なさる
+honorific expression for する
+Nasaru
+
+ひっこす
+to move (to another place to live)
+Hikkosu
+引っ越す
+
+めしあがる
+honorific expression for たべる and のむ
+Meshiaagaru
+召し上がる
+
+よぶ
+to call (one's name); to invite
+Yobu
+呼ぶ
+
+よる
+to stop by
+Yoru
+寄る
+
+おくれる
+to become late
+Okureru
+遅れる
+
+かける
+to sit down
+Kakeru
+
+はれる
+to become sunny
+Hareru
+晴れる
+
+もてる
+to be popular (in terms of romantic interest)
+Moteru
+
+えんりょする
+to hold back for the time being; to refrain from
+Enryosuru
+遠慮する
+
+ごちそうする
+to treat/invite (someone) to a meal
+Gochisoosuru
+
+ちゅういする
+to watch out; to give warning
+Chuuisuru
+注意する
+
+はなしをする
+to have a talk
+Hanashi o Suru
+話をする
+
+おととい
+the day before yesterday
+Ototoi
+
+なぜ
+why (=どうして)
+Naze
+
+ほんとうは
+in fact; originally
+Hontooha
+本当は
+
+まいあさ
+every morning
+Maiasa
+毎朝
+
+まだ
+still
+Mada
+
+〜めいさま
+party of... people
+...meisama
+〜名様
+
+ようこそ
+Welcome.
+Yookoso
+
+よろしくおつたえください
+Please give my best regards (to ...)
+Yoroshiku Otsutae Kudasai
+よろしくお伝えください
+
+`;
+
+allWords["Genki 19 - Hard"] = ``;
+
+allWords["Genki 20"] = `
+あちら
+this way (polite)
+Achira
+
+うちゅうじん
+space alien
+Uchuujin
+宇宙人
+
+おと
+sound
+Oto
+音
+
+かかりのもの
+our person in charge
+Kakari no Mono
+係の者
+
+かど
+corner
+Kado
+角
+
+かみさま
+God
+Kamisama
+神様
+
+くうこう
+airport
+Kuukoo
+空港
+
+じ
+letter; character
+Ji
+字
+
+してん
+branch office
+Shiten
+支店
+
+しゅみ
+hobby; pastime
+Shumi
+趣味
+
+しょうせつ
+novel
+Shoosetsu
+小説
+
+しんごう
+traffic light
+Shingoo
+信号
+
+スニーカー
+sneakers
+Suniikaa
+
+せんす
+fan
+Sensu
+扇子
+
+つき
+moon
+Tsuki
+月
+
+ハイヒール
+high heels
+Haihiiru
+
+ゆうべ
+last night
+Yuube
+
+おもい
+heavy; serious (illness)
+Omoi
+重い
+
+あるく
+to walk
+Aruku
+歩く
+
+いたす
+extra-modest expression for する
+Itasu
+致す
+
+いただく
+extra-modest expression for たべる and のむ
+Itadaku
+頂く
+
+いただく
+humble expression for もらう
+Itadaku
+頂く
+
+うかがう
+to humbly visit; to humbly ask
+Ukagau
+伺う
+
+おる
+extra-modest expression for いる
+Oru
+
+ござる
+extra-modest expression for ある
+Gozaru
+
+〜ておる
+extra-modest expression for 〜ている
+...te Oru
+
+〜でござる
+extra-modest expression for です
+...de Gozaru
+
+まいる
+extra-modest expression for いく and くる
+Mairu
+参る
+
+まがる
+to turn (right/left)
+Magaru
+曲がる
+
+もうす
+extra-modest expression for いう
+Moosu
+申す
+
+もどる
+to return; to come back
+Modoru
+戻る
+
+きこえる
+to be audible
+Kikoeru
+聞こえる
+
+さしあげる
+humble expression for あげる
+Sashiageru
+差し上げる
+
+つたえる
+to convey (message)
+Tsutaeru
+伝える
+
+またせる
+to keep (someone) waiting
+Mataseru
+待たせる
+
+こうかんする
+to exchange
+Kookansuru
+交換する
+
+せいかつする
+to lead a life
+Seikatsusuru
+生活する
+
+へんぴんする
+to return (merchandise)
+Henpinsuru
+返品する
+
+おや
+Oh!
+Oya
+
+〜かい
+...th floor
+...kai
+一階
+
+かしこまりました
+Certainly.
+Kashikomarimashita
+
+さあ
+I am not sure, ...
+Saa
+
+しつれいしました
+I'm very sorry
+Shitsureishimashita
+失礼しました
+
+しょうしょう
+a few seconds
+Shooshoo
+少々
+
+それでは
+if that is the case, ...
+Soredewa
+
+できれば
+if possible
+Dekireba
+
+まことに
+really (very polite)
+Makotoni
+誠に
+
+また
+again
+Mata
+
+もうしわけありません
+You have my apologies.
+Mooshiwakearimasen
+申し訳ありません
+
+よろしかったら
+if it is okay (polite)
+Yoroshikattara
+
+`;
+
+allWords["Genki 20 - Hard"] = ``;
+
+allWords["Genki 21"] = `
+あかちゃん
+baby
+Akachan
+赤ちゃん
+
+か
+mosquito
+Ka
+蚊
+
+かいぎ
+business meeting; conference
+Kaigi
+会議
+
+ガソリン
+gasoline
+Gasorin
+
+かんきょう
+environment
+Kankyoo
+環境
+
+けいさつ
+police; police station
+Keisatsu
+警察
+
+こうじょう
+factory
+Koojoo
+工場
+
+こと
+things; matters
+Koto
+事
+
+しゅうでん
+last train
+Shuuden
+終電
+
+スピーチ
+speech
+Supiichi
+
+せいふ
+government
+Seifu
+政府
+
+ちかん
+sexual offender; lascivious man
+Chikan
+
+どろぼう
+burglar
+Doroboo
+泥棒
+
+バイト
+abbreviation of アルバイト
+Baito
+
+はんにん
+criminal
+Hannin
+犯人
+
+ポスター
+poster
+Posutaa
+
+むかし
+old days; past
+Mukashi
+昔
+
+もんく
+complaint
+Monku
+文句
+
+もんくをいう
+to complain
+Monku o Iu
+文句を言う
+
+るす
+absence; not at home
+Rusu
+留守
+
+とおい
+far (away)
+Tooi
+遠い
+
+ひどい
+awful
+Hidoi
+
+あんぜん
+safe
+Anzen
+安全
+
+たいせつ
+precious; valuable
+Taisetsu
+大切
+
+めちゃくちゃ
+messy; disorganized
+Mechakucha
+
+おく
+to put; to lay; to place
+Oku
+置く
+
+きがつく
+to notice
+Ki ga Tsuku
+気が付く
+
+ける
+to kick
+Keru
+
+さす
+to sting; to bite (bug); to stab
+Sasu
+刺す
+
+さわる
+to touch
+Sawaru
+触る
+
+つかまる
+to be arrested; to be caught
+Tsukamaru
+捕まる
+
+つつむ
+to wrap; to cover
+Tsutsumu
+包む
+
+なぐる
+to strike; to hit; to punch
+Naguru
+殴る
+
+ぬすむ
+to steal; to rob
+Nusumu
+盗む
+
+はる
+to post
+Haru
+貼る
+
+ふむ
+to step on
+Fumu
+踏む
+
+ふる
+to turn down (somebody); to reject; to jilt
+Furu
+
+やく
+to bake
+Yaku
+焼く
+
+やる
+to give (to pets, plants, younger siblings, etc.)
+Yaru
+
+いじめる
+to bully
+Ijimeru
+
+きがえる
+to change clothes
+Kigaeru
+着替える
+
+ためる
+to save money
+Tameru
+
+つづける
+to continue
+Tsuzukeru
+
+ほめる
+to praise; to say nice things
+Homeru
+
+まちがえる
+to make a mistake
+Machigaeru
+間違える
+
+みつける
+to find
+Mitsukeru
+見つける
+
+じゅんびする
+to prepare
+Junbisuru
+準備する
+
+ばかにする
+to insult; to make a fool of ...
+Baka ni Suru
+
+びっくりする
+to be surprised
+Bikkurisuru
+
+ひるねをする
+to take a nap
+Hirune o Suru
+昼寝をする
+
+れんらくする
+to contact
+Renrakusuru
+連絡する
+
+〜あいだに
+while...
+...aidani
+〜の間に
+
+ころ
+time of...; when...
+Koro
+
+すこし
+a little
+Sukoshi
+少し
+
+とにかく
+anyhow; anyway
+Tonikaku
+
+どうりょう
+colleague
+Dooryoo
+同僚
+
+`;
+
+allWords["Genki 21 - Hard"] = ``;
+
+allWords["Genki 22"] = `
+あいて
+partner
+Aite
+相手
+
+うけつけ
+reception desk
+Uketsuke
+受付
+
+えいかいわ
+English conversation
+Eikaiwa
+英会話
+
+おじょうさん
+(someone's) daughter (polite)
+Ojoosan
+お嬢さん
+
+かじ
+household matters
+Kaji
+家事
+
+かぜ
+wind
+Kaze
+風
+
+き
+tree
+Ki
+木
+
+きまつしけん
+final examination
+Kimatsushiken
+期末試験
+
+こうはい
+junior members of a group
+Koohai
+後輩
+
+さる
+monkey
+Saru
+猿
+
+じゆう
+freedom
+Jiyuu
+自由
+
+じゅく
+cram school
+Juku
+塾
+
+しょるい
+document
+Shorui
+書類
+
+せんぱい
+senior members of a group
+Senpai
+先輩
+
+ひとりぐらし
+living alone
+Hitorigurashi
+一人暮らし
+
+ぶか
+subordinate
+Buka
+部下
+
+ふくしゅう
+review of lessons
+Fukushuu
+復習
+
+プロジェクト
+project
+Purojekuto
+
+ボール
+ball
+Booru
+
+むだづかい
+waste (money)
+Mudazukai
+無駄遣い
+
+めんきょ
+license
+Menkyo
+免許
+
+よしゅう
+preparation of lessons
+Yoshuu
+予習
+
+うるさい
+noisy; annoying
+Urusai
+
+しんぱい
+worried about
+Shinpai
+心配
+
+びんぼう
+poor
+Binboo
+貧乏
+
+ペラペラ
+fluent
+Perapera
+
+へん
+strange; unusual
+Hen
+変
+
+らく
+easy; comfortable
+Raku
+楽
+
+かつ
+to win
+Katsu
+勝つ
+
+コピーをとる
+to make a photocopy
+Kopii o Toru
+コピーを取る
+
+はこぶ
+to carry from one place to another; transport
+Hakobu
+運ぶ
+
+はしる
+to run
+Hashiru
+走る
+
+ひろう
+to pick up (something)
+Hirou
+拾う
+
+ふく
+to blow
+Fuku
+吹く
+
+ほうっておく
+to leave (someone/something) alone; to neglect
+Hootteoku
+放っておく
+
+まにあう
+to be in time for
+Maniau
+
+むかえにいく
+to go to pick up (someone)
+Mukae ni Iku
+迎えに行く
+
+けいかくをたてる
+to make a plan
+Keikaku o Tateru
+計画を立てる
+
+そだてる
+to raise; to bring up
+Sodateru
+育てる
+
+たすける
+to help; to rescue
+Tasukeru
+助ける
+
+まける
+to lose (a match)
+Makeru
+負ける
+
+おねがいする
+to pray for help
+Onegaisuru
+お願いする
+
+さんせいする
+to agree
+Sanseisuru
+賛成する
+
+しっぱいする
+to fail; to be unsuccessful
+Shippaisuru
+失敗する
+
+てつやする
+to stay up all night
+Tetsuyasuru
+徹夜する
+
+はんたいする
+to oppose; to object to
+Hantaisuru
+反対する
+
+ほんやくする
+to translate
+Honyakusuru
+翻訳する
+
+こんなふう
+in this way
+Konnafuu
+
+ずっと
+for a long time; all the time
+Zutto
+
+ぜったいに
+definitely
+Zettaini
+絶対に
+
+そんなことはない
+I don't think so.
+Sonna Koto wa Nai
+
+〜とか
+...for example
+...toka
+
+なんども
+many times
+Nandomo
+何度も
+
+のんびり
+in a leisurely way
+Nonbiri
+
+もうすこし
+a little more
+Moo Sukoshi
+もう少し
+
+`;
+
+allWords["Genki 22 - Hard"] = ``;
+
+allWords["Genki 23"] = `
+おもいで
+memory
+Omoide
+思い出
+
+かいがいりょこう
+trip to a foreign country
+Kaigairyokoo
+海外旅行
+
+からだ
+body
+Karada
+体
+
+くつした
+socks
+Kutsushita
+靴下
+
+こくさいでんわ
+international call
+Kokusaidenwa
+国際電話
+
+じゅぎょうりょう
+tuition
+Jugyooryoo
+授業料
+
+しょうがっこう
+elementary school
+Shoogakkoo
+小学校
+
+せんきょ
+election
+Senkyo
+選挙
+
+タイヤ
+tire
+Taiya
+
+ただ
+free of charge
+Tada
+
+ばしょ
+place
+Basho
+場所
+
+べっそう
+villa; vacation home
+Bessoo
+別荘
+
+ボーナス
+bonus
+Boonasu
+
+ぼんおどり
+Bon dance (Japanese traditional dance)
+Bon'odori
+盆踊り
+
+めんせつ
+interview
+Mensetsu
+面接
+
+ゆうしょく
+dinner
+Yuushoku
+夕食
+
+りそう
+ideal
+Risoo
+理想
+
+るすばん
+looking after a house during one's absence
+Rusuban
+留守番
+
+まずい
+(food is) terrible
+Mazui
+
+あめがやむ
+the rain stops
+Ame ga Yamu
+雨がやむ
+
+いなくなる
+(someone) is gone; to disappear
+Inaku Naru
+
+おせわになる
+to be in someone's care
+Osewa ni Naru
+お世話になる
+
+おなかをこわす
+to have a stomachache
+Onaka o Kowasu
+
+ちがう
+to be different; wrong
+Chigau
+違う
+
+なくなる
+to be lost; to disappear
+Nakunaru
+
+わるぐちをいう
+to talk behind someone's back
+Waruguchi o Iu
+悪口を言う
+
+うける
+to take (an examination, interview, etc.)
+Ukeru
+受ける
+
+かえる
+to change
+Kaeru
+換える
+
+はなれる
+(something/someone) separates; parts from
+Hanareru
+離れる
+
+〜かおをする
+to look ... (facial expression)
+...kao o Suru
+〜顔をする
+
+がっかりする
+to be disappointed
+Gakkarisuru
+
+がまんする
+to be tolerant/patient
+Gamansuru
+我慢する
+
+せわをする
+to take care of ...
+Sewa o Suru
+世話をする
+
+どうじょうする
+to sympathize
+Doojoosuru
+同情する
+
+パンクする
+(tire) goes flat
+Pankusuru
+
+もどってくる
+(something/someone) comes back
+Modotte Kuru
+戻ってくる
+
+ゆうしょうする
+to win a championship
+Yuushoosuru
+優勝する
+
+いや
+no
+Iya
+
+げんきでね
+Take care of yourself.
+Genki de ne
+元気でね
+
+そうそう
+You are right.
+Soosoo
+
+そろそろ
+it is about time to ...
+Sorosoro
+
+そんな〜
+such ...; that kind of ...
+Sonna...
+
+ものすごく
+extremely
+Monosugoku
+
+`;
+
+allWords["Genki 23 - Hard"] = ``;
+
+allWords["26 Dumps D4"] = `
+わたしはせんせいにちょくせつはなします
+I speak directly to the teacher.
+Watashi wa sensei ni chokusetsu hanashimasu.
+私は先生に直接話します。
+
+にもつがはやくかたづきます
+The boxes are put in order quickly.
+Nimotsu ga hayaku katazukimasu.
+荷物が早く片づきます。
+
+あしたあなたにれんらくします
+I will contact you tomorrow.
+Ashita anata ni renraku shimasu.
+明日あなたに連絡します。
+
+わたしはJLPTにもうしこみます
+I apply for the JLPT.
+Watashi wa JLPT ni moushikomimasu.
+私はJLPTに申し込みます。
+
+かいぎのじかんにおくれます
+I will be late for the meeting.
+Kaigi no jikan ni okuremasu.
+会議の時間に遅れます。
+
+でんしゃにまにあいます
+I will make it in time for the train.
+Densha ni maniaimasu.
+電車に間に合います。
+
+ごみがよくもえます
+The trash burns well.
+Gomi ga yoku moemasu.
+ごみがよく燃えます。
+
+かぎをさがします
+I look for the key.
+Kagi o sagashimasu.
+鍵を探します。
+
+ともだちとパーティーにさんかします
+I attend the party with my friend.
+Tomodachi to paatii ni sanka shimasu.
+友達とパーティーに参加します。
+
+じかんをみます
+I check the time.
+Jikan o mimasu.
+時間を見ます。
+
+かんさいべんはおもしろいです
+The Kansai dialect is interesting.
+Kansai-ben wa omoshiroi desu.
+関西弁は面白いです。
+
+ここはじてんしゃのおきばです
+This is the bicycle parking place.
+Koko wa jitensha no okiba desu.
+ここは自転車の置き場です。
+
+ぎんこうのよこにコンビニがあります
+There is a convenience store next to the bank.
+Ginkou no yoko ni konbini ga arimasu.
+銀行の横にコンビニがあります。
+
+びんをだすひはすいようびです
+Bottle disposal day is Wednesday.
+Bin o dasu hi wa suiyoubi desu.
+瓶を出す日は水曜日です。
+
+さいふがない。こまったなぁ。
+My wallet is gone. What shall I do?
+Saifu ga nai. Komatta naa.
+財布がない。困ったなぁ。
+
+わたしはうちゅうにいきたいです
+I want to go to space.
+Watashi wa uchuu ni ikitai desu.
+私は宇宙に行きたいです。
+
+あしたはつごうがいいです
+Tomorrow is convenient for me.
+Ashita wa tsugou ga ii desu.
+明日は都合がいいです。
+
+きょうはつごうがわるいです
+Today is inconvenient for me.
+Kyou wa tsugou ga warui desu.
+今日は都合が悪いです。
+
+きょう は   きぶんがいいです
+I feel well today.
+Kyou wa kibun ga ii desu.
+今日は気分がいいです。
+
+あさからきぶんがわるいです
+I have felt sick since morning.
+Asa kara kibun ga warui desu.
+朝から気分が悪いです。
+
+いいばしょをしっていますか
+Do you know a good place?
+Ii basho o shitte imasu ka.
+いい場所を知っていますか。
+
+きょうはずいぶんさむいです
+It is quite cold today.
+Kyou wa zuibun samui desu.
+今日はずいぶん寒いです。
+
+あにはにほんのかいしゃではたらいています
+My older brother works at a Japanese company.
+Ani wa Nihon no kaisha de hataraite imasu.
+兄は日本の会社で働いています。
+
+こんなほんははじめてです
+This is my first book like this.
+Konna hon wa hajimete desu.
+こんな本は初めてです。
+
+まいにちごみをだします
+I put out the trash every day.
+Mainichi gomi o dashimasu.
+毎日ごみを出します。
+
+にほんごのじゅぎょうはげつ・すい・きんです
+Japanese class is on Monday, Wednesday, and Friday.
+Nihongo no jugyou wa getsu・sui・kin desu.
+日本語の授業は月・水・金です。
+
+たんてい な ん です か。
+Are you a detective?
+Tantei na n desu ka.
+探偵なんですか。
+
+ええ、たんてい な ん です。
+Yes, I am a detective.
+Ee, tantei na n desu.
+ええ、探偵なんです。
+
+`;
+
+allWords["26 Dumps D4 - Hard"] = `
+あしたはつごうがいいです
+Tomorrow is convenient for me.
+Ashita wa tsugou ga ii desu.
+明日は都合がいいです。
+
+たんてい な ん です か。
+Are you a detective?
+Tantei na n desu ka.
+探偵なんですか。
+
+`;
+
 const appSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1
   },
-  "currentLesson": "Convo E5",
+  "currentLesson": "Extra 26",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "2",
   "quizMode": "quiz1",
   "quizOrder": "original",
   "revealRomaji": false,
-  "focusedWordIndex": 6,
+  "focusedWordIndex": 7,
   "selectedWordIndices": [
-    6
+    7
   ],
   "isSelectionModeActive": false,
   "customCategories": [
@@ -25380,7 +52210,8 @@ const appSettings = {
     "0 General E5",
     "V - Ra G5",
     "Extra 00 E5",
-    "Convo E5"
+    "Convo E5",
+    "26 Dumps D4"
   ],
   "similarWordGroups": [
     {
@@ -25388,12 +52219,13 @@ const appSettings = {
     }
   ],
   "hiddenCategories": [],
-  "lastDestCategory": "Extra 07",
-  "activeDbGroup": "N5 Extra",
+  "othersHiddenSourceGroups": [],
+  "lastDestCategory": "Similar Ones1",
+  "activeDbGroup": "N4 Extra",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
     "N5 Lessons": "Lesson 06",
-    "N5 Others": "All Masu Form Verbs1",
+    "N5 Others": "Similar Ones1",
     "N4 Lessons": "Lesson 26",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
@@ -25401,10 +52233,34 @@ const appSettings = {
     "N5 Grammer": "Grammer 02",
     "N4 Grammer": "Grammer 26",
     "Kanji": "N5 Kanji",
-    "N5 Extra": "Convo E5",
+    "N5 Extra": "Extra 25",
     "N4 Extra": "Extra 26",
-    "N3 Extra": "Show All Words",
+    "N3 Extra": "Extra 51",
     "N5 Grammer Others": "0 Others G5",
-    "N4 Grammer Others": "Show All Words"
+    "N4 Grammer Others": "Show All Words",
+    "N5 Listening": "Listening 07",
+    "N4 Listening": "Listening 26",
+    "N3 Grammer": "Grammer 51",
+    "N3 Grammer Others": "Show All Words",
+    "N3 Listening": "Listening 51",
+    "N2 Lessons": "Lesson 76",
+    "N2 Others": "26 Dumps D4",
+    "N2 Grammer": "Grammer 76",
+    "N2 Grammer Others": "Show All Words",
+    "N2 Extra": "Extra 76",
+    "N2 Listening": "Listening 76",
+    "N1 Lessons": "Lesson 101",
+    "N1 Others": "Questions5",
+    "N1 Grammer": "Grammer 101",
+    "N1 Grammer Others": "Show All Words",
+    "N1 Extra": "Extra 101",
+    "N1 Listening": "Listening 101",
+    "N5 Dumps": "Show All Words",
+    "N4 Dumps": "26 Dumps D4",
+    "N3 Dumps": "Show All Words",
+    "N2 Dumps": "Show All Words",
+    "N1 Dumps": "Show All Words",
+    "N5 Genki": "Genki 09",
+    "N4 Genki": "Genki 13"
   }
 };
