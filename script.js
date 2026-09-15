@@ -28,6 +28,7 @@ const DEFAULT_SETTINGS = {
     "N5 Grammer": "Grammer 01",
     "N5 Grammer Others": "Show All Words",
     "N5 Extra": "Extra 01",
+    "N5 Sentences": "Sentence 01",
     "N5 Listening": "Listening 01",
     "N5 Dumps": "Show All Words",
     "N5 Genki": "Genki 01",
@@ -36,6 +37,7 @@ const DEFAULT_SETTINGS = {
     "N4 Grammer": "Grammer 26",
     "N4 Grammer Others": "Show All Words",
     "N4 Extra": "Extra 26",
+    "N4 Sentences": "Sentence 26",
     "N4 Listening": "Listening 26",
     "N4 Dumps": "Show All Words",
     "N4 Genki": "Genki 13",
@@ -530,6 +532,12 @@ function loadState() {
         });
       }
     }
+    for (const key in defaultDb) {
+      if (!currentWordsDb[key]) {
+        currentWordsDb[key] = defaultDb[key];
+        didModify = true;
+      }
+    }
     if (didModify) {
       localStorage.setItem('n5_words', JSON.stringify(currentWordsDb));
     }
@@ -586,6 +594,14 @@ function loadState() {
     const eStr = `Extra ${String(i).padStart(2, '0')}`;
     const hStr = `${eStr} - Hard`;
     if (!currentWordsDb[eStr]) currentWordsDb[eStr] = [];
+    if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
+  }
+
+  // Ensure Sentence 01-50 categories exist (N5 = 01-25, N4 = 26-50)
+  for (let i = 1; i <= 50; i++) {
+    const sStr = `Sentence ${String(i).padStart(2, '0')}`;
+    const hStr = `${sStr} - Hard`;
+    if (!currentWordsDb[sStr]) currentWordsDb[sStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
@@ -853,9 +869,13 @@ function getLessonsForActiveGroup() {
   else if (group === "N5 Extra") {
     addStandard("Extra", 1, 25);
     addCustom(" E5");
+  } else if (group === "N5 Sentences") {
+    addStandard("Sentence", 1, 25);
   } else if (group === "N4 Extra") {
     addStandard("Extra", 26, 50);
     addCustom(" E4");
+  } else if (group === "N4 Sentences") {
+    addStandard("Sentence", 26, 50);
   } else if (group === "N3 Extra") {
     addStandard("Extra", 51, 75);
     addCustom(" E3");
@@ -904,6 +924,7 @@ function getLessonsForActiveGroup() {
              !k.match(/^Kanji\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Sentence\s+\d+/i) && 
              !k.match(/^Listening\s+\d+/i) && 
              !k.match(/^Genki\s+\d+/i) && 
              !k.match(/^N[1-5]\s+Kanji/i) &&
@@ -1427,6 +1448,7 @@ function populateHiddenCategoriesUI() {
              !k.match(/^Kanji\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Sentence\s+\d+/i) && 
              !k.match(/^Listening\s+\d+/i) && 
              !k.match(/^Genki\s+\d+/i) && 
              !k.match(/^N[1-5]\s+Kanji/i) &&
@@ -2810,6 +2832,17 @@ function updateGroupDropdownOptionsVisibility() {
       }
     }
   }
+  const sentencesOpt = document.getElementById('opt-db-group-sentences');
+  if (sentencesOpt) {
+    if (level === "N5" || level === "N4") {
+      sentencesOpt.style.display = "block";
+    } else {
+      sentencesOpt.style.display = "none";
+      if (selectGroup.value === "Sentences") {
+        selectGroup.value = "Lessons";
+      }
+    }
+  }
 }
 
 function syncSettingsDropdownsFromActiveGroup() {
@@ -3002,6 +3035,7 @@ function navigateActiveGroup(direction) {
     "N5 Grammer",
     "N5 Grammer Others",
     "N5 Extra",
+    "N5 Sentences",
     "N5 Listening",
     "N5 Dumps",
     "N5 Genki",
@@ -3009,6 +3043,7 @@ function navigateActiveGroup(direction) {
     "N4 Grammer",
     "N4 Grammer Others",
     "N4 Extra",
+    "N4 Sentences",
     "N4 Listening",
     "N4 Dumps",
     "N4 Genki",
@@ -3293,9 +3328,13 @@ function populateLessonsDropdown() {
   else if (group === "N5 Extra") {
     addStandard(lessonsList, "Extra", 1, 25);
     addCustom(othersList, " E5");
+  } else if (group === "N5 Sentences") {
+    addStandard(lessonsList, "Sentence", 1, 25);
   } else if (group === "N4 Extra") {
     addStandard(lessonsList, "Extra", 26, 50);
     addCustom(othersList, " E4");
+  } else if (group === "N4 Sentences") {
+    addStandard(lessonsList, "Sentence", 26, 50);
   } else if (group === "N3 Extra") {
     addStandard(lessonsList, "Extra", 51, 75);
     addCustom(othersList, " E3");
@@ -3343,6 +3382,7 @@ function populateLessonsDropdown() {
              !k.match(/^Kanji\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Sentence\s+\d+/i) && 
              !k.match(/^Listening\s+\d+/i) && 
              !k.match(/^Genki\s+\d+/i) && 
              !k.match(/^N[1-5]\s+Kanji/i) &&
@@ -3407,8 +3447,8 @@ function populateLessonsDropdown() {
 
 function createCustomCategory() {
   const group = currentSettings.activeDbGroup || "N5 Lessons";
-  if (group.endsWith("Lessons") || group === "Kanji") {
-    showToast("Cannot create custom categories in Lessons or Kanji groups.", "danger");
+  if (group.endsWith("Lessons") || group.endsWith("Sentences") || group === "Kanji") {
+    showToast("Cannot create custom categories in Lessons, Sentences, or Kanji groups.", "danger");
     return;
   }
 
@@ -3449,7 +3489,7 @@ function createCustomCategory() {
   }
   
   const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji"];
-  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ") || trimmed.startsWith("Listening ") || trimmed.startsWith("Dumps ")) {
+  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ") || trimmed.startsWith("Sentence ") || trimmed.startsWith("Listening ") || trimmed.startsWith("Dumps ")) {
     showToast("This name is reserved or invalid.", "danger");
     return;
   }
@@ -4139,6 +4179,7 @@ function openCategorySelectorModal(customWordsList = null) {
            !k.match(/^Kanji\s+\d+/i) && 
            !k.match(/^Grammer\s+\d+/i) && 
            !k.match(/^Extra\s+\d+/i) && 
+           !k.match(/^Sentence\s+\d+/i) && 
            !k.match(/^Listening\s+\d+/i) && 
            !k.match(/^Genki\s+\d+/i) && 
            !k.match(/^N[1-5]\s+Kanji/i) &&
@@ -4551,6 +4592,10 @@ function determineGroupForCategory(lessonKey) {
     if (num >= 51 && num <= 75) return "N3 Grammer";
     if (num >= 76 && num <= 100) return "N2 Grammer";
     if (num >= 101 && num <= 125) return "N1 Grammer";
+  } else if (baseKey.match(/^Sentence\s+(\d+)/i)) {
+    const num = parseInt(baseKey.match(/^Sentence\s+(\d+)/i)[1], 10);
+    if (num >= 1 && num <= 25) return "N5 Sentences";
+    if (num >= 26 && num <= 50) return "N4 Sentences";
   } else if (baseKey.match(/^Extra\s+(\d+)/i)) {
     const num = parseInt(baseKey.match(/^Extra\s+(\d+)/i)[1], 10);
     if (num >= 1 && num <= 25) return "N5 Extra";
@@ -5767,6 +5812,8 @@ function handleShiftDigit(digit) {
     mode = "Grammer";
   } else if (currentGroup.includes("Extra")) {
     mode = "Extra";
+  } else if (currentGroup.includes("Sentences")) {
+    mode = "Sentence";
   } else if (currentGroup.includes("Listening")) {
     mode = "Listening";
   } else if (currentGroup.includes("Genki")) {
@@ -5814,9 +5861,9 @@ function switchLessonOrKanjiDirectly(num, mode) {
 
     if (num < 1) num = 1;
     
-    if (mode === "Grammer" || mode === "Extra" || mode === "Lesson") {
+    if (mode === "Grammer" || mode === "Extra" || mode === "Lesson" || mode === "Sentence") {
       prefix = mode;
-      targetGroup = `${level} ${mode === "Lesson" ? "Lessons" : mode}`;
+      targetGroup = `${level} ${mode === "Lesson" ? "Lessons" : mode === "Sentence" ? "Sentences" : mode}`;
       let baseStart = levelIndex * 25 + 1; // N5: 1, N4: 26, N3: 51, N2: 76, N1: 101
       let baseEnd = baseStart + 24;        // N5: 25, N4: 50, N3: 75, N2: 100, N1: 125
       let internalNum = num;

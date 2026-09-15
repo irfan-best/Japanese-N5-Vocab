@@ -1,0 +1,502 @@
+[
+  {
+    "n": "01",
+    "counts": {
+      "Lesson 01": 37,
+      "Lesson 01 - Hard": 11,
+      "Extra 01": 36,
+      "Extra 01 - Hard": 36
+    },
+    "total": 120
+  },
+  {
+    "n": "02",
+    "counts": {
+      "Lesson 02": 34,
+      "Lesson 02 - Hard": 16,
+      "Extra 02": 20,
+      "Extra 02 - Hard": 0
+    },
+    "total": 70
+  },
+  {
+    "n": "03",
+    "counts": {
+      "Lesson 03": 70,
+      "Lesson 03 - Hard": 15,
+      "Extra 03": 8,
+      "Extra 03 - Hard": 14
+    },
+    "total": 107
+  },
+  {
+    "n": "04",
+    "counts": {
+      "Lesson 04": 59,
+      "Lesson 04 - Hard": 22,
+      "Extra 04": 10,
+      "Extra 04 - Hard": 0
+    },
+    "total": 91
+  },
+  {
+    "n": "05",
+    "counts": {
+      "Lesson 05": 37,
+      "Lesson 05 - Hard": 31,
+      "Extra 05": 6,
+      "Extra 05 - Hard": 13
+    },
+    "total": 87
+  },
+  {
+    "n": "06",
+    "counts": {
+      "Lesson 06": 39,
+      "Lesson 06 - Hard": 15,
+      "Extra 06": 24,
+      "Extra 06 - Hard": 21
+    },
+    "total": 99
+  },
+  {
+    "n": "07",
+    "counts": {
+      "Lesson 07": 22,
+      "Lesson 07 - Hard": 30,
+      "Extra 07": 34,
+      "Extra 07 - Hard": 0
+    },
+    "total": 86
+  },
+  {
+    "n": "08",
+    "counts": {
+      "Lesson 08": 33,
+      "Lesson 08 - Hard": 30,
+      "Extra 08": 18,
+      "Extra 08 - Hard": 7
+    },
+    "total": 88
+  },
+  {
+    "n": "09",
+    "counts": {
+      "Lesson 09": 32,
+      "Lesson 09 - Hard": 21,
+      "Extra 09": 29,
+      "Extra 09 - Hard": 6
+    },
+    "total": 88
+  },
+  {
+    "n": "10",
+    "counts": {
+      "Lesson 10": 25,
+      "Lesson 10 - Hard": 27,
+      "Extra 10": 11,
+      "Extra 10 - Hard": 0
+    },
+    "total": 63
+  },
+  {
+    "n": "11",
+    "counts": {
+      "Lesson 11": 82,
+      "Lesson 11 - Hard": 42,
+      "Extra 11": 28,
+      "Extra 11 - Hard": 6
+    },
+    "total": 158
+  },
+  {
+    "n": "12",
+    "counts": {
+      "Lesson 12": 21,
+      "Lesson 12 - Hard": 30,
+      "Extra 12": 14,
+      "Extra 12 - Hard": 5
+    },
+    "total": 70
+  },
+  {
+    "n": "13",
+    "counts": {
+      "Lesson 13": 22,
+      "Lesson 13 - Hard": 23,
+      "Extra 13": 28,
+      "Extra 13 - Hard": 7
+    },
+    "total": 80
+  },
+  {
+    "n": "14",
+    "counts": {
+      "Lesson 14": 21,
+      "Lesson 14 - Hard": 19,
+      "Extra 14": 20,
+      "Extra 14 - Hard": 11
+    },
+    "total": 71
+  },
+  {
+    "n": "15",
+    "counts": {
+      "Lesson 15": 9,
+      "Lesson 15 - Hard": 18,
+      "Extra 15": 16,
+      "Extra 15 - Hard": 12
+    },
+    "total": 55
+  },
+  {
+    "n": "16",
+    "counts": {
+      "Lesson 16": 33,
+      "Lesson 16 - Hard": 26,
+      "Extra 16": 4,
+      "Extra 16 - Hard": 5
+    },
+    "total": 68
+  },
+  {
+    "n": "17",
+    "counts": {
+      "Lesson 17": 25,
+      "Lesson 17 - Hard": 13,
+      "Extra 17": 20,
+      "Extra 17 - Hard": 30
+    },
+    "total": 88
+  },
+  {
+    "n": "18",
+    "counts": {
+      "Lesson 18": 8,
+      "Lesson 18 - Hard": 22,
+      "Extra 18": 7,
+      "Extra 18 - Hard": 15
+    },
+    "total": 52
+  },
+  {
+    "n": "19",
+    "counts": {
+      "Lesson 19": 23,
+      "Lesson 19 - Hard": 16,
+      "Extra 19": 12,
+      "Extra 19 - Hard": 4
+    },
+    "total": 55
+  },
+  {
+    "n": "20",
+    "counts": {
+      "Lesson 20": 18,
+      "Lesson 20 - Hard": 11,
+      "Extra 20": 3,
+      "Extra 20 - Hard": 3
+    },
+    "total": 35
+  },
+  {
+    "n": "21",
+    "counts": {
+      "Lesson 21": 20,
+      "Lesson 21 - Hard": 23,
+      "Extra 21": 13,
+      "Extra 21 - Hard": 22
+    },
+    "total": 78
+  },
+  {
+    "n": "22",
+    "counts": {
+      "Lesson 22": 13,
+      "Lesson 22 - Hard": 15,
+      "Extra 22": 25,
+      "Extra 22 - Hard": 3
+    },
+    "total": 56
+  },
+  {
+    "n": "23",
+    "counts": {
+      "Lesson 23": 10,
+      "Lesson 23 - Hard": 23,
+      "Extra 23": 4,
+      "Extra 23 - Hard": 14
+    },
+    "total": 51
+  },
+  {
+    "n": "24",
+    "counts": {
+      "Lesson 24": 10,
+      "Lesson 24 - Hard": 11,
+      "Extra 24": 3,
+      "Extra 24 - Hard": 8
+    },
+    "total": 32
+  },
+  {
+    "n": "25",
+    "counts": {
+      "Lesson 25": 8,
+      "Lesson 25 - Hard": 10,
+      "Extra 25": 11,
+      "Extra 25 - Hard": 14
+    },
+    "total": 43
+  },
+  {
+    "n": "26",
+    "counts": {
+      "Lesson 26": 36,
+      "Lesson 26 - Hard": 15,
+      "Extra 26": 3,
+      "Extra 26 - Hard": 18
+    },
+    "total": 72
+  },
+  {
+    "n": "27",
+    "counts": {
+      "Lesson 27": 43,
+      "Lesson 27 - Hard": 10,
+      "Extra 27": 25,
+      "Extra 27 - Hard": 0
+    },
+    "total": 78
+  },
+  {
+    "n": "28",
+    "counts": {
+      "Lesson 28": 49,
+      "Lesson 28 - Hard": 0,
+      "Extra 28": 28,
+      "Extra 28 - Hard": 0
+    },
+    "total": 77
+  },
+  {
+    "n": "29",
+    "counts": {
+      "Lesson 29": 47,
+      "Lesson 29 - Hard": 0,
+      "Extra 29": 15,
+      "Extra 29 - Hard": 0
+    },
+    "total": 62
+  },
+  {
+    "n": "30",
+    "counts": {
+      "Lesson 30": 54,
+      "Lesson 30 - Hard": 0,
+      "Extra 30": 15,
+      "Extra 30 - Hard": 0
+    },
+    "total": 69
+  },
+  {
+    "n": "31",
+    "counts": {
+      "Lesson 31": 43,
+      "Lesson 31 - Hard": 0,
+      "Extra 31": 37,
+      "Extra 31 - Hard": 0
+    },
+    "total": 80
+  },
+  {
+    "n": "32",
+    "counts": {
+      "Lesson 32": 59,
+      "Lesson 32 - Hard": 0,
+      "Extra 32": 28,
+      "Extra 32 - Hard": 0
+    },
+    "total": 87
+  },
+  {
+    "n": "33",
+    "counts": {
+      "Lesson 33": 54,
+      "Lesson 33 - Hard": 0,
+      "Extra 33": 17,
+      "Extra 33 - Hard": 0
+    },
+    "total": 71
+  },
+  {
+    "n": "34",
+    "counts": {
+      "Lesson 34": 50,
+      "Lesson 34 - Hard": 0,
+      "Extra 34": 44,
+      "Extra 34 - Hard": 0
+    },
+    "total": 94
+  },
+  {
+    "n": "35",
+    "counts": {
+      "Lesson 35": 50,
+      "Lesson 35 - Hard": 0,
+      "Extra 35": 8,
+      "Extra 35 - Hard": 0
+    },
+    "total": 58
+  },
+  {
+    "n": "36",
+    "counts": {
+      "Lesson 36": 51,
+      "Lesson 36 - Hard": 0,
+      "Extra 36": 29,
+      "Extra 36 - Hard": 0
+    },
+    "total": 80
+  },
+  {
+    "n": "37",
+    "counts": {
+      "Lesson 37": 60,
+      "Lesson 37 - Hard": 0,
+      "Extra 37": 17,
+      "Extra 37 - Hard": 0
+    },
+    "total": 77
+  },
+  {
+    "n": "38",
+    "counts": {
+      "Lesson 38": 45,
+      "Lesson 38 - Hard": 0,
+      "Extra 38": 8,
+      "Extra 38 - Hard": 0
+    },
+    "total": 53
+  },
+  {
+    "n": "39",
+    "counts": {
+      "Lesson 39": 44,
+      "Lesson 39 - Hard": 0,
+      "Extra 39": 16,
+      "Extra 39 - Hard": 0
+    },
+    "total": 60
+  },
+  {
+    "n": "40",
+    "counts": {
+      "Lesson 40": 66,
+      "Lesson 40 - Hard": 0,
+      "Extra 40": 42,
+      "Extra 40 - Hard": 0
+    },
+    "total": 108
+  },
+  {
+    "n": "41",
+    "counts": {
+      "Lesson 41": 54,
+      "Lesson 41 - Hard": 0,
+      "Extra 41": 27,
+      "Extra 41 - Hard": 0
+    },
+    "total": 81
+  },
+  {
+    "n": "42",
+    "counts": {
+      "Lesson 42": 55,
+      "Lesson 42 - Hard": 0,
+      "Extra 42": 35,
+      "Extra 42 - Hard": 0
+    },
+    "total": 90
+  },
+  {
+    "n": "43",
+    "counts": {
+      "Lesson 43": 30,
+      "Lesson 43 - Hard": 0,
+      "Extra 43": 21,
+      "Extra 43 - Hard": 0
+    },
+    "total": 51
+  },
+  {
+    "n": "44",
+    "counts": {
+      "Lesson 44": 41,
+      "Lesson 44 - Hard": 0,
+      "Extra 44": 27,
+      "Extra 44 - Hard": 0
+    },
+    "total": 68
+  },
+  {
+    "n": "45",
+    "counts": {
+      "Lesson 45": 34,
+      "Lesson 45 - Hard": 0,
+      "Extra 45": 24,
+      "Extra 45 - Hard": 0
+    },
+    "total": 58
+  },
+  {
+    "n": "46",
+    "counts": {
+      "Lesson 46": 32,
+      "Lesson 46 - Hard": 0,
+      "Extra 46": 62,
+      "Extra 46 - Hard": 0
+    },
+    "total": 94
+  },
+  {
+    "n": "47",
+    "counts": {
+      "Lesson 47": 40,
+      "Lesson 47 - Hard": 0,
+      "Extra 47": 16,
+      "Extra 47 - Hard": 0
+    },
+    "total": 56
+  },
+  {
+    "n": "48",
+    "counts": {
+      "Lesson 48": 31,
+      "Lesson 48 - Hard": 0,
+      "Extra 48": 19,
+      "Extra 48 - Hard": 0
+    },
+    "total": 50
+  },
+  {
+    "n": "49",
+    "counts": {
+      "Lesson 49": 43,
+      "Lesson 49 - Hard": 0,
+      "Extra 49": 20,
+      "Extra 49 - Hard": 0
+    },
+    "total": 63
+  },
+  {
+    "n": "50",
+    "counts": {
+      "Lesson 50": 46,
+      "Lesson 50 - Hard": 0,
+      "Extra 50": 16,
+      "Extra 50 - Hard": 0
+    },
+    "total": 62
+  }
+]

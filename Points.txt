@@ -505,3 +505,18 @@ youhin vs seihin
 
     seihin:     product, manufactured goods     Things made by a company/factory
         Electrical products/appliances      Home electrical appliances
+
+hokano vs betsu no
+    Hokano (他の): Noun + Particle no (の). Hoka (他 / 外) is a noun meaning "other," "besides," or "the rest."
+
+    Betsu no (別の): Noun + Particle no (の). Betsu (別) is a noun meaning "different," "separate," or "another."
+
+    Hokano (他の): Means "other" in the sense of "in addition to" or "besides this one." It implies choosing another option from a set of remaining choices, or looking at "the rest."
+
+    Betsu no (別の): Means "another" in the sense of "different", "distinct", or "separate." It emphasizes a complete change in quality, type, category, or location.
+
+Shuuri vs Naoshi:
+    Shūri (修理): Formal, technical, and mechanical. Used for fixing broken machinery, electronics, vehicles, structures, or complex systems to restore them to working order.
+
+    Naoshi (直し): Casual, general, and broad. Used for altering, adjusting, touching up, or correcting clothes, mistakes, habits, or minor physical defects.
+
