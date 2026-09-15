@@ -18,12 +18,13 @@ const DEFAULT_SETTINGS = {
   similarWordGroups: [],
   hiddenCategories: [],
   othersHiddenSourceGroups: [],
+  othersHiddenLevels: [],
   lastDestCategory: "",
   activeDbGroup: "N5 Lessons",
   showCategoryModeActive: false,
   lastGroupCategories: {
     "N5 Lessons": "Lesson 01",
-    "N5 Others": "Questions1",
+    "N5 Others": "Questions",
     "N5 Grammer": "Grammer 01",
     "N5 Grammer Others": "Show All Words",
     "N5 Extra": "Extra 01",
@@ -31,7 +32,7 @@ const DEFAULT_SETTINGS = {
     "N5 Dumps": "Show All Words",
     "N5 Genki": "Genki 01",
     "N4 Lessons": "Lesson 26",
-    "N4 Others": "Questions2",
+    "N4 Others": "Questions",
     "N4 Grammer": "Grammer 26",
     "N4 Grammer Others": "Show All Words",
     "N4 Extra": "Extra 26",
@@ -39,27 +40,28 @@ const DEFAULT_SETTINGS = {
     "N4 Dumps": "Show All Words",
     "N4 Genki": "Genki 13",
     "N3 Lessons": "Lesson 51",
-    "N3 Others": "Questions3",
+    "N3 Others": "Questions",
     "N3 Grammer": "Grammer 51",
     "N3 Grammer Others": "Show All Words",
     "N3 Extra": "Extra 51",
     "N3 Listening": "Listening 51",
     "N3 Dumps": "Show All Words",
     "N2 Lessons": "Lesson 76",
-    "N2 Others": "Questions4",
+    "N2 Others": "Questions",
     "N2 Grammer": "Grammer 76",
     "N2 Grammer Others": "Show All Words",
     "N2 Extra": "Extra 76",
     "N2 Listening": "Listening 76",
     "N2 Dumps": "Show All Words",
     "N1 Lessons": "Lesson 101",
-    "N1 Others": "Questions5",
+    "N1 Others": "Questions",
     "N1 Grammer": "Grammer 101",
     "N1 Grammer Others": "Show All Words",
     "N1 Extra": "Extra 101",
     "N1 Listening": "Listening 101",
     "N1 Dumps": "Show All Words",
-    "Kanji": "N5 Kanji"
+    "Kanji": "N5 Kanji",
+    "Others": "Questions"
   }
 };
 
@@ -232,21 +234,20 @@ function saveWords() {
 
 function cleanCategoryNameForUI(cat) {
   if (!cat) return "";
+  const isHard = cat.endsWith(" - Hard");
+  const base = isHard ? cat.replace(" - Hard", "") : cat;
   
-  if (cat.startsWith("Lesson ") || cat.startsWith("Kanji ") || cat.startsWith("Genki ")) {
-    return cat;
+  if (base.startsWith("Lesson ") || base.startsWith("Grammer ") || base.startsWith("Extra ") || base.startsWith("Kanji ") || base.startsWith("Genki ")) {
+    return isHard ? base + " (Hard)" : base;
   }
 
-  // Clean standard categories: Grammer, Extra, Listening
-  let m = cat.match(/^(Grammer|Extra|Listening)\s+(\d+)/i);
+  // Clean standard categories: Listening
+  let m = base.match(/^(Listening)\s+(\d+)/i);
   if (m) {
     const prefix = m[1];
     const num = parseInt(m[2], 10);
     let uiNum = num;
-    let step = 25;
-    if (prefix === "Listening") {
-      step = 58;
-    }
+    let step = 58;
     
     if (num <= step) uiNum = num;
     else if (num <= step * 2) uiNum = num - step;
@@ -254,16 +255,46 @@ function cleanCategoryNameForUI(cat) {
     else if (num <= step * 4) uiNum = num - step * 3;
     else uiNum = num - step * 4;
     
-    return `${prefix} ${String(uiNum).padStart(2, '0')}`;
+    const res = `${prefix} ${String(uiNum).padStart(2, '0')}`;
+    return isHard ? res + " (Hard)" : res;
   }
   
-  return cat
-    .replace(/\s+G[1-5]$/, "")
-    .replace(/\s+E[1-5]$/, "")
-    .replace(/\s+L[1-5]$/, "")
-    .replace(/\s+D[1-5]$/, "")
+  let cleaned = base
+    .replace(/\s*G[1-5]$/, "")
+    .replace(/\s*E[1-5]$/, "")
+    .replace(/\s*L[1-5]$/, "")
+    .replace(/\s*D[1-5]$/, "")
     .replace(/\s+[1-5]$/, "")
     .trim();
+
+  return isHard ? cleaned + " (Hard)" : cleaned;
+}
+
+function stripTrailingOne(name) {
+  if (!name) return name;
+  const isHard = name.endsWith(" - Hard");
+  const base = isHard ? name.replace(" - Hard", "") : name;
+
+  if (base.match(/^(Lesson|Grammer|Extra|Listening|Kanji|Genki)\s+\d+/i) ||
+      base.match(/^(N[1-5]\s+Kanji)/i) ||
+      base.endsWith(" G5") || base.endsWith(" G4") || base.endsWith(" G3") || base.endsWith(" G2") || base.endsWith(" G1") ||
+      base.endsWith(" E5") || base.endsWith(" E4") || base.endsWith(" E3") || base.endsWith(" E2") || base.endsWith(" E1") ||
+      base.endsWith(" L5") || base.endsWith(" L4") || base.endsWith(" L3") || base.endsWith(" L2") || base.endsWith(" L1") ||
+      base.endsWith(" D5") || base.endsWith(" D4") || base.endsWith(" D3") || base.endsWith(" D2") || base.endsWith(" D1") ||
+      base === "Show All Words" || base === "Same Meaning" || base === "Same Romaji" || base === "Similar Words") {
+    return name;
+  }
+
+  let cleanedBase = base;
+  if (cleanedBase.endsWith(" - 1")) {
+    cleanedBase = cleanedBase.replace(/ - 1$/, "");
+  } else if (cleanedBase.endsWith(" 1")) {
+    cleanedBase = cleanedBase.replace(/ 1$/, "");
+  } else if (cleanedBase.endsWith("1") && !cleanedBase.match(/\d{2}$/)) {
+    cleanedBase = cleanedBase.slice(0, -1);
+  }
+
+  return isHard ? cleanedBase + " - Hard" : cleanedBase;
 }
 
 function migrateCustomCategorySuffixes() {
@@ -273,11 +304,13 @@ function migrateCustomCategorySuffixes() {
   if (currentSettings.customCategories) {
     const orig = JSON.stringify(currentSettings.customCategories);
     currentSettings.customCategories = currentSettings.customCategories.map(cat => {
-      if (cat.endsWith(" G1")) return cat.replace(/ G1$/, " G5");
-      if (cat.endsWith(" E1")) return cat.replace(/ E1$/, " E5");
-      if (cat.endsWith(" G2")) return cat.replace(/ G2$/, " G4");
-      if (cat.endsWith(" E2")) return cat.replace(/ E2$/, " E4");
-      return cat;
+      let nextCat = cat;
+      if (nextCat.endsWith(" G1")) nextCat = nextCat.replace(/ G1$/, " G5");
+      if (nextCat.endsWith(" E1")) nextCat = nextCat.replace(/ E1$/, " E5");
+      if (nextCat.endsWith(" G2")) nextCat = nextCat.replace(/ G2$/, " G4");
+      if (nextCat.endsWith(" E2")) nextCat = nextCat.replace(/ E2$/, " E4");
+      nextCat = stripTrailingOne(nextCat);
+      return nextCat;
     });
     if (JSON.stringify(currentSettings.customCategories) !== orig) {
       didModify = true;
@@ -288,11 +321,13 @@ function migrateCustomCategorySuffixes() {
   if (currentSettings.hiddenCategories) {
     const orig = JSON.stringify(currentSettings.hiddenCategories);
     currentSettings.hiddenCategories = currentSettings.hiddenCategories.map(cat => {
-      if (cat.endsWith(" G1")) return cat.replace(/ G1$/, " G5");
-      if (cat.endsWith(" E1")) return cat.replace(/ E1$/, " E5");
-      if (cat.endsWith(" G2")) return cat.replace(/ G2$/, " G4");
-      if (cat.endsWith(" E2")) return cat.replace(/ E2$/, " E4");
-      return cat;
+      let nextCat = cat;
+      if (nextCat.endsWith(" G1")) nextCat = nextCat.replace(/ G1$/, " G5");
+      if (nextCat.endsWith(" E1")) nextCat = nextCat.replace(/ E1$/, " E5");
+      if (nextCat.endsWith(" G2")) nextCat = nextCat.replace(/ G2$/, " G4");
+      if (nextCat.endsWith(" E2")) nextCat = nextCat.replace(/ E2$/, " E4");
+      nextCat = stripTrailingOne(nextCat);
+      return nextCat;
     });
     if (JSON.stringify(currentSettings.hiddenCategories) !== orig) {
       didModify = true;
@@ -312,6 +347,8 @@ function migrateCustomCategorySuffixes() {
     else if (key.endsWith(" E2")) newKey = key.replace(/ E2$/, " E4");
     else if (key.endsWith(" E2 - Hard")) newKey = key.replace(/ E2 - Hard$/, " E4 - Hard");
     
+    newKey = stripTrailingOne(newKey);
+
     if (newKey !== key) {
       currentWordsDb[newKey] = currentWordsDb[key];
       delete currentWordsDb[key];
@@ -327,6 +364,7 @@ function migrateCustomCategorySuffixes() {
     if (cat.endsWith(" E1")) nextCat = cat.replace(/ E1$/, " E5");
     if (cat.endsWith(" G2")) nextCat = cat.replace(/ G2$/, " G4");
     if (cat.endsWith(" E2")) nextCat = cat.replace(/ E2$/, " E4");
+    nextCat = stripTrailingOne(nextCat);
     if (nextCat !== cat) {
       currentSettings.currentLesson = nextCat;
       didModify = true;
@@ -341,6 +379,7 @@ function migrateCustomCategorySuffixes() {
     if (cat.endsWith(" E1")) nextCat = cat.replace(/ E1$/, " E5");
     if (cat.endsWith(" G2")) nextCat = cat.replace(/ G2$/, " G4");
     if (cat.endsWith(" E2")) nextCat = cat.replace(/ E2$/, " E4");
+    nextCat = stripTrailingOne(nextCat);
     if (nextCat !== cat) {
       currentSettings.lastDestCategory = nextCat;
       didModify = true;
@@ -353,10 +392,12 @@ function migrateCustomCategorySuffixes() {
     for (const g in currentSettings.lastGroupCategories) {
       let cat = currentSettings.lastGroupCategories[g];
       if (cat) {
-        if (cat.endsWith(" G1")) currentSettings.lastGroupCategories[g] = cat.replace(/ G1$/, " G5");
-        if (cat.endsWith(" E1")) currentSettings.lastGroupCategories[g] = cat.replace(/ E1$/, " E5");
-        if (cat.endsWith(" G2")) currentSettings.lastGroupCategories[g] = cat.replace(/ G2$/, " G4");
-        if (cat.endsWith(" E2")) currentSettings.lastGroupCategories[g] = cat.replace(/ E2$/, " E4");
+        if (cat.endsWith(" G1")) cat = cat.replace(/ G1$/, " G5");
+        if (cat.endsWith(" E1")) cat = cat.replace(/ E1$/, " E5");
+        if (cat.endsWith(" G2")) cat = cat.replace(/ G2$/, " G4");
+        if (cat.endsWith(" E2")) cat = cat.replace(/ E2$/, " E4");
+        cat = stripTrailingOne(cat);
+        currentSettings.lastGroupCategories[g] = cat;
       }
     }
     if (currentSettings.lastGroupCategories["N5 Extra"] === "Show All Words") {
@@ -373,6 +414,9 @@ function migrateCustomCategorySuffixes() {
     }
     if (currentSettings.lastGroupCategories["N1 Extra"] === "Show All Words") {
       currentSettings.lastGroupCategories["N1 Extra"] = "Extra 101";
+    }
+    if (currentSettings.lastGroupCategories["Others"]) {
+      currentSettings.lastGroupCategories["Others"] = stripTrailingOne(currentSettings.lastGroupCategories["Others"]);
     }
     
     // Copy any missing default category mappings
@@ -430,6 +474,9 @@ function loadState() {
   }
   if (!currentSettings.othersHiddenSourceGroups) {
     currentSettings.othersHiddenSourceGroups = [];
+  }
+  if (!currentSettings.othersHiddenLevels) {
+    currentSettings.othersHiddenLevels = [];
   }
   if (currentSettings.lastDestCategory === undefined) {
     currentSettings.lastDestCategory = "";
@@ -846,30 +893,33 @@ function getLessonsForActiveGroup() {
   else if (group === "N5 Genki") addStandard("Genki", 1, 12);
   else if (group === "N4 Genki") addStandard("Genki", 13, 23);
 
-  else if (group.endsWith("Others")) {
-    let suffix = "";
-    let lvl = "";
-    if (group === "N5 Others") { suffix = "1"; lvl = "5"; }
-    else if (group === "N4 Others") { suffix = "2"; lvl = "4"; }
-    else if (group === "N3 Others") { suffix = "3"; lvl = "3"; }
-    else if (group === "N2 Others") { suffix = "4"; lvl = "2"; }
-    else if (group === "N1 Others") { suffix = "5"; lvl = "1"; }
+  else if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) {
+    const isOtherCat = (k) => {
+      return !k.endsWith(" - Hard") &&
+             !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
+             !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
+             !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
+             !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
+             !k.match(/^Lesson\s+\d+/i) && 
+             !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grammer\s+\d+/i) && 
+             !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Listening\s+\d+/i) && 
+             !k.match(/^Genki\s+\d+/i) && 
+             !k.match(/^N[1-5]\s+Kanji/i) &&
+             k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
+    };
 
-    if (suffix) {
-      const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
-      allKeys.forEach(k => {
-        if (k.endsWith(suffix) && 
-            !k.endsWith(` G${lvl}`) && 
-            !k.endsWith(` E${lvl}`) && 
-            !k.endsWith(` L${lvl}`) &&
-            !k.endsWith(` D${lvl}`) &&
-            !k.match(/^Lesson\s+\d+/i) && 
-            !k.match(/^Kanji\s+\d+/i) && 
-            !k.match(/^Grammer\s+\d+/i) && 
-            !k.match(/^Extra\s+\d+/i) && 
-            !k.match(/^Listening\s+\d+/i) && 
-            !k.match(/^N[1-5]\s+Kanji/i)) {
-          if (!lessons.includes(k)) lessons.push(k);
+    const allKeys = Object.keys(currentWordsDb);
+    allKeys.forEach(k => {
+      if (isOtherCat(k) && !lessons.includes(k)) {
+        lessons.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (isOtherCat(cat) && !lessons.includes(cat)) {
+          lessons.push(cat);
         }
       });
     }
@@ -1016,7 +1066,7 @@ function getAllCategoriesForWord(word) {
 
 function isWordVisible(word) {
   const group = currentSettings.activeDbGroup || "N5 Lessons";
-  const isOthersGroup = group.endsWith("Others") && !group.includes("Grammer");
+  const isOthersGroup = group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"));
   const isLessonsGroup = group.endsWith("Lessons");
   const isExtraGroup = group.endsWith("Extra");
   const isGenkiGroup = group.endsWith("Genki");
@@ -1026,24 +1076,111 @@ function isWordVisible(word) {
     const cats = getAllCategoriesForWord(word);
     if (cats.length === 0) return true;
 
-    const wordSourceGroups = new Set();
+    const associations = [];
     cats.forEach(c => {
-      if (c.match(/^Lesson\s+\d+/i)) {
-        wordSourceGroups.add("Lesson");
-      } else if (c.match(/^Extra\s+\d+/i) || c.match(/\s+E[1-5]$/)) {
-        wordSourceGroups.add("Extra");
-      } else if (c.match(/^Genki\s+\d+/i)) {
-        wordSourceGroups.add("Genki");
-      } else if (c.match(/^(N[1-5]\s+Kanji|Kanji\s+\d+)/i) || c.includes("Kanji")) {
-        wordSourceGroups.add("Kanji");
+      // Lesson
+      let m = c.match(/^Lesson\s+(\d+)/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        if (num >= 1 && num <= 25) associations.push({ level: "N5", group: "Lesson" });
+        else if (num >= 26 && num <= 50) associations.push({ level: "N4", group: "Lesson" });
+        else if (num >= 51 && num <= 75) associations.push({ level: "N3", group: "Lesson" });
+        else if (num >= 76 && num <= 100) associations.push({ level: "N2", group: "Lesson" });
+        else if (num >= 101 && num <= 125) associations.push({ level: "N1", group: "Lesson" });
+        return;
       }
+      // Extra
+      m = c.match(/^Extra\s+(\d+)/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        if (num >= 1 && num <= 25) associations.push({ level: "N5", group: "Extra" });
+        else if (num >= 26 && num <= 50) associations.push({ level: "N4", group: "Extra" });
+        else if (num >= 51 && num <= 75) associations.push({ level: "N3", group: "Extra" });
+        else if (num >= 76 && num <= 100) associations.push({ level: "N2", group: "Extra" });
+        else if (num >= 101 && num <= 125) associations.push({ level: "N1", group: "Extra" });
+        return;
+      }
+      if (c.endsWith(" E5")) { associations.push({ level: "N5", group: "Extra" }); return; }
+      if (c.endsWith(" E4")) { associations.push({ level: "N4", group: "Extra" }); return; }
+      if (c.endsWith(" E3")) { associations.push({ level: "N3", group: "Extra" }); return; }
+      if (c.endsWith(" E2")) { associations.push({ level: "N2", group: "Extra" }); return; }
+      if (c.endsWith(" E1")) { associations.push({ level: "N1", group: "Extra" }); return; }
+
+      // Genki
+      m = c.match(/^Genki\s+(\d+)/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        if (num >= 1 && num <= 12) associations.push({ level: "N5", group: "Genki" });
+        else if (num >= 13 && num <= 23) associations.push({ level: "N4", group: "Genki" });
+        return;
+      }
+
+      // Kanji
+      if (c.includes("N5 Kanji") || c.match(/^Kanji\s+(0?[1-9]|1[0-9]|20)$/i)) { associations.push({ level: "N5", group: "Kanji" }); return; }
+      if (c.includes("N4 Kanji") || c.match(/^Kanji\s+21$/i)) { associations.push({ level: "N4", group: "Kanji" }); return; }
+      if (c.includes("N3 Kanji") || c.match(/^Kanji\s+(4[1-9]|5[0-9]|60)$/i)) { associations.push({ level: "N3", group: "Kanji" }); return; }
+      if (c.includes("N2 Kanji")) { associations.push({ level: "N2", group: "Kanji" }); return; }
+      if (c.includes("N1 Kanji")) { associations.push({ level: "N1", group: "Kanji" }); return; }
+
+      // Grammer
+      m = c.match(/^Grammer\s+(\d+)/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        if (num >= 1 && num <= 25) associations.push({ level: "N5", group: null });
+        else if (num >= 26 && num <= 50) associations.push({ level: "N4", group: null });
+        else if (num >= 51 && num <= 75) associations.push({ level: "N3", group: null });
+        else if (num >= 76 && num <= 100) associations.push({ level: "N2", group: null });
+        else if (num >= 101 && num <= 125) associations.push({ level: "N1", group: null });
+        return;
+      }
+      if (c.endsWith(" G5")) { associations.push({ level: "N5", group: null }); return; }
+      if (c.endsWith(" G4")) { associations.push({ level: "N4", group: null }); return; }
+      if (c.endsWith(" G3")) { associations.push({ level: "N3", group: null }); return; }
+      if (c.endsWith(" G2")) { associations.push({ level: "N2", group: null }); return; }
+      if (c.endsWith(" G1")) { associations.push({ level: "N1", group: null }); return; }
+
+      // Listening
+      m = c.match(/^Listening\s+(\d+)/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        if (num >= 1 && num <= 58) associations.push({ level: "N5", group: null });
+        else if (num >= 59 && num <= 116) associations.push({ level: "N4", group: null });
+        else if (num >= 117 && num <= 174) associations.push({ level: "N3", group: null });
+        else if (num >= 175 && num <= 232) associations.push({ level: "N2", group: null });
+        else if (num >= 233 && num <= 290) associations.push({ level: "N1", group: null });
+        return;
+      }
+      if (c.endsWith(" L5")) { associations.push({ level: "N5", group: null }); return; }
+      if (c.endsWith(" L4")) { associations.push({ level: "N4", group: null }); return; }
+      if (c.endsWith(" L3")) { associations.push({ level: "N3", group: null }); return; }
+      if (c.endsWith(" L2")) { associations.push({ level: "N2", group: null }); return; }
+      if (c.endsWith(" L1")) { associations.push({ level: "N1", group: null }); return; }
+
+      // Dumps
+      if (c.endsWith(" D5")) { associations.push({ level: "N5", group: null }); return; }
+      if (c.endsWith(" D4")) { associations.push({ level: "N4", group: null }); return; }
+      if (c.endsWith(" D3")) { associations.push({ level: "N3", group: null }); return; }
+      if (c.endsWith(" D2")) { associations.push({ level: "N2", group: null }); return; }
+      if (c.endsWith(" D1")) { associations.push({ level: "N1", group: null }); return; }
+
+      // Suffixes 1 to 5
+      if (c.endsWith(" 1") || (c.endsWith("1") && !c.match(/\d{2}/))) { associations.push({ level: "N5", group: null }); return; }
+      if (c.endsWith(" 2") || (c.endsWith("2") && !c.match(/\d{2}/))) { associations.push({ level: "N4", group: null }); return; }
+      if (c.endsWith(" 3") || (c.endsWith("3") && !c.match(/\d{2}/))) { associations.push({ level: "N3", group: null }); return; }
+      if (c.endsWith(" 4") || (c.endsWith("4") && !c.match(/\d{2}/))) { associations.push({ level: "N2", group: null }); return; }
+      if (c.endsWith(" 5") || (c.endsWith("5") && !c.match(/\d{2}/))) { associations.push({ level: "N1", group: null }); return; }
     });
 
-    if (wordSourceGroups.size === 0) return true;
+    if (associations.length === 0) return true;
 
-    const hiddenSourceGroups = currentSettings.othersHiddenSourceGroups || [];
-    const hasVisibleSource = Array.from(wordSourceGroups).some(g => !hiddenSourceGroups.includes(g));
-    return hasVisibleSource;
+    const hiddenLevels = currentSettings.othersHiddenLevels || [];
+    const hiddenGroups = currentSettings.othersHiddenSourceGroups || [];
+
+    const hasVisibleAssociation = associations.some(a => 
+      !hiddenLevels.includes(a.level) && (!a.group || !hiddenGroups.includes(a.group))
+    );
+
+    return hasVisibleAssociation;
   }
 
   if (!isLessonsGroup && !isExtraGroup && !isGenkiGroup && !isGrammerGroup) return true;
@@ -1079,7 +1216,7 @@ function populateHiddenCategoriesUI() {
   container.innerHTML = "";
 
   const group = currentSettings.activeDbGroup || "N5 Lessons";
-  const isOthersGroup = group.endsWith("Others") && !group.includes("Grammer");
+  const isOthersGroup = group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"));
   const isLessonsGroup = group.endsWith("Lessons");
   const isExtraGroup = group.endsWith("Extra");
   const isGenkiGroup = group.endsWith("Genki");
@@ -1108,18 +1245,21 @@ function populateHiddenCategoriesUI() {
   if (!currentSettings.othersHiddenSourceGroups) {
     currentSettings.othersHiddenSourceGroups = [];
   }
+  if (!currentSettings.othersHiddenLevels) {
+    currentSettings.othersHiddenLevels = [];
+  }
 
   const btnSelectAll = document.getElementById('btn-hide-select-all');
   const btnSelectNone = document.getElementById('btn-hide-select-none');
 
   if (isOthersGroup) {
-    const options = (group.startsWith("N3") || group.startsWith("N2") || group.startsWith("N1"))
-      ? ["Extra", "Lesson", "Kanji"]
-      : ["Extra", "Lesson", "Genki", "Kanji"];
+    const levelOptions = ["N5", "N4", "N3", "N2", "N1"];
+    const groupOptions = ["Extra", "Lesson", "Genki", "Kanji"];
 
     if (btnSelectAll) {
       btnSelectAll.onclick = (e) => {
         e.preventDefault();
+        currentSettings.othersHiddenLevels = [];
         currentSettings.othersHiddenSourceGroups = [];
         saveSettings();
         renderCards();
@@ -1130,22 +1270,75 @@ function populateHiddenCategoriesUI() {
     if (btnSelectNone) {
       btnSelectNone.onclick = (e) => {
         e.preventDefault();
-        options.forEach(opt => {
-          if (!currentSettings.othersHiddenSourceGroups.includes(opt)) {
-            currentSettings.othersHiddenSourceGroups.push(opt);
-          }
-        });
+        currentSettings.othersHiddenLevels = [...levelOptions];
+        currentSettings.othersHiddenSourceGroups = [...groupOptions];
         saveSettings();
         renderCards();
         populateHiddenCategoriesUI();
       };
     }
 
-    options.forEach(opt => {
+    const row = document.createElement('div');
+    row.style.display = "flex";
+    row.style.gap = "0.75rem";
+    row.style.width = "100%";
+
+    // Left column: Levels
+    const colLevels = document.createElement('div');
+    colLevels.style.display = "flex";
+    colLevels.style.flexDirection = "column";
+    colLevels.style.gap = "0.35rem";
+    colLevels.style.flex = "1";
+    colLevels.style.borderRight = "1px solid var(--border-color)";
+    colLevels.style.paddingRight = "0.5rem";
+
+    levelOptions.forEach(lv => {
       const div = document.createElement('div');
       div.style.display = "flex";
       div.style.alignItems = "center";
-      div.style.gap = "0.5rem";
+      div.style.gap = "0.4rem";
+
+      const cb = document.createElement('input');
+      cb.type = "checkbox";
+      cb.value = lv;
+      cb.id = `hide-level-${lv}`;
+      cb.checked = !currentSettings.othersHiddenLevels.includes(lv);
+
+      cb.addEventListener('change', () => {
+        if (cb.checked) {
+          currentSettings.othersHiddenLevels = currentSettings.othersHiddenLevels.filter(l => l !== lv);
+        } else {
+          if (!currentSettings.othersHiddenLevels.includes(lv)) {
+            currentSettings.othersHiddenLevels.push(lv);
+          }
+        }
+        saveSettings();
+        renderCards();
+      });
+
+      const lbl = document.createElement('label');
+      lbl.htmlFor = cb.id;
+      lbl.textContent = lv;
+      lbl.style.fontSize = "0.85rem";
+      lbl.style.cursor = "pointer";
+
+      div.appendChild(cb);
+      div.appendChild(lbl);
+      colLevels.appendChild(div);
+    });
+
+    // Right column: Source Groups
+    const colGroups = document.createElement('div');
+    colGroups.style.display = "flex";
+    colGroups.style.flexDirection = "column";
+    colGroups.style.gap = "0.35rem";
+    colGroups.style.flex = "1";
+
+    groupOptions.forEach(opt => {
+      const div = document.createElement('div');
+      div.style.display = "flex";
+      div.style.alignItems = "center";
+      div.style.gap = "0.4rem";
 
       const cb = document.createElement('input');
       cb.type = "checkbox";
@@ -1173,8 +1366,12 @@ function populateHiddenCategoriesUI() {
 
       div.appendChild(cb);
       div.appendChild(lbl);
-      container.appendChild(div);
+      colGroups.appendChild(div);
     });
+
+    row.appendChild(colLevels);
+    row.appendChild(colGroups);
+    container.appendChild(row);
 
     return;
   }
@@ -1184,31 +1381,21 @@ function populateHiddenCategoriesUI() {
   if (isLessonsGroup || isExtraGroup || isGenkiGroup) {
     const isShowAll = (currentSettings.currentLesson === 'Show All Words');
 
-    let targetSuffix = "1";
-    let lvl = "5";
     let startLesson = 1, endLesson = 25;
     let startExtra = 1, endExtra = 25;
     let startGenki = 1, endGenki = 12;
 
     if (group.startsWith("N4")) {
-      targetSuffix = "2";
-      lvl = "4";
       startLesson = 26; endLesson = 50;
       startExtra = 26; endExtra = 50;
       startGenki = 13; endGenki = 23;
     } else if (group.startsWith("N3")) {
-      targetSuffix = "3";
-      lvl = "3";
       startLesson = 51; endLesson = 75;
       startExtra = 51; endExtra = 75;
     } else if (group.startsWith("N2")) {
-      targetSuffix = "4";
-      lvl = "2";
       startLesson = 76; endLesson = 100;
       startExtra = 76; endExtra = 100;
     } else if (group.startsWith("N1")) {
-      targetSuffix = "5";
-      lvl = "1";
       startLesson = 101; endLesson = 125;
       startExtra = 101; endExtra = 125;
     }
@@ -1229,32 +1416,33 @@ function populateHiddenCategoriesUI() {
       }
     }
 
-    // Add Others groups custom categories for this level
-    const filterOthersFn = (k) => {
-      return k.endsWith(targetSuffix) && 
-             !k.endsWith(` G${lvl}`) && 
-             !k.endsWith(` E${lvl}`) && 
-             !k.endsWith(` L${lvl}`) && 
-             !k.endsWith(` D${lvl}`) && 
+    // Add Others groups custom categories
+    const isOtherCat = (k) => {
+      return !k.endsWith(" - Hard") &&
+             !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
+             !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
+             !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
+             !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
              !k.match(/^Lesson\s+\d+/i) && 
              !k.match(/^Kanji\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
              !k.match(/^Listening\s+\d+/i) && 
              !k.match(/^Genki\s+\d+/i) && 
-             !k.match(/^N[1-5]\s+Kanji/i);
+             !k.match(/^N[1-5]\s+Kanji/i) &&
+             k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
     };
 
-    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+    const allKeys = Object.keys(currentWordsDb);
     allKeys.forEach(k => {
-      if (filterOthersFn(k) && !allCats.includes(k)) {
+      if (isOtherCat(k) && !allCats.includes(k)) {
         allCats.push(k);
       }
     });
 
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (filterOthersFn(cat) && !allCats.includes(cat)) {
+        if (isOtherCat(cat) && !allCats.includes(cat)) {
           allCats.push(cat);
         }
       });
@@ -1922,6 +2110,76 @@ function deleteSelected() {
 // IMPORT SYSTEM
 // ==========================================================================
 
+function isMultiCategoryImportText(text) {
+  if (!text) return false;
+  const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  if (lines.length === 0) return false;
+  const firstLine = lines[0];
+  return /^(Extra|Lesson|Genki|Genji|Grammer|Grammar)\s+(\d+)$/i.test(firstLine);
+}
+
+function normalizeCategoryHeader(headerLine) {
+  const m = headerLine.trim().match(/^(Extra|Lesson|Genki|Genji|Grammer|Grammar)\s+(\d+)$/i);
+  if (!m) return null;
+  let prefix = m[1];
+  const num = parseInt(m[2], 10);
+  
+  if (/^extra$/i.test(prefix)) prefix = "Extra";
+  else if (/^lesson$/i.test(prefix)) prefix = "Lesson";
+  else if (/^(genki|genji)$/i.test(prefix)) prefix = "Genki";
+  else if (/^(grammer|grammar)$/i.test(prefix)) prefix = "Grammer";
+  
+  return `${prefix} ${String(num).padStart(2, '0')}`;
+}
+
+function parseMultiCategoryImport(text) {
+  const lines = text.split('\n');
+  const sections = [];
+  let currentHeader = null;
+  let currentLines = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const rawLine = lines[i];
+    const trimmed = rawLine.trim();
+    const normalizedHeader = normalizeCategoryHeader(trimmed);
+
+    if (normalizedHeader) {
+      if (currentHeader) {
+        sections.push({
+          category: currentHeader,
+          text: currentLines.join('\n')
+        });
+      }
+      currentHeader = normalizedHeader;
+      currentLines = [];
+    } else {
+      if (currentHeader) {
+        currentLines.push(rawLine);
+      }
+    }
+  }
+
+  if (currentHeader) {
+    sections.push({
+      category: currentHeader,
+      text: currentLines.join('\n')
+    });
+  }
+
+  const results = [];
+  sections.forEach(sec => {
+    const words = parseWords(sec.text);
+    if (words.length > 0) {
+      results.push({
+        category: sec.category,
+        words: words
+      });
+    }
+  });
+
+  return results;
+}
+
 function triggerImport() {
   const textarea = document.getElementById('import-text');
   if (!textarea) return;
@@ -1932,6 +2190,46 @@ function triggerImport() {
     return;
   }
 
+  // Check if first non-empty line matches multi-category format {Extra/Lesson/Genki/Grammer} {number}
+  if (isMultiCategoryImportText(text)) {
+    const sections = parseMultiCategoryImport(text);
+    let totalWords = 0;
+    const updatedCategories = [];
+
+    sections.forEach(sec => {
+      const catKey = sec.category;
+      if (!currentWordsDb[catKey]) {
+        currentWordsDb[catKey] = [];
+      }
+      if (!currentWordsDb[catKey + " - Hard"]) {
+        currentWordsDb[catKey + " - Hard"] = [];
+      }
+      currentWordsDb[catKey] = currentWordsDb[catKey].concat(sec.words);
+      totalWords += sec.words.length;
+      if (!updatedCategories.includes(catKey)) {
+        updatedCategories.push(catKey);
+      }
+    });
+
+    if (totalWords === 0) {
+      showToast("No valid vocabulary entries detected. Match 3 or 4-line format.", "danger");
+      return;
+    }
+
+    saveWords();
+    renderCards();
+    closeActiveModal();
+    textarea.value = "";
+    
+    if (updatedCategories.length === 1) {
+      showToast(`Successfully imported ${totalWords} word(s) into ${cleanCategoryNameForUI(updatedCategories[0])}.`, 'success');
+    } else {
+      showToast(`Successfully imported ${totalWords} word(s) across ${updatedCategories.length} categories.`, 'success');
+    }
+    return;
+  }
+
+  // Original single-category import
   const parsed = parseWords(text);
   if (parsed.length === 0) {
     showToast("No valid vocabulary entries detected. Match 3 or 4-line format.", "danger");
@@ -1939,6 +2237,9 @@ function triggerImport() {
   }
 
   const currentKey = getActiveLessonKey();
+  if (!currentWordsDb[currentKey]) {
+    currentWordsDb[currentKey] = [];
+  }
   currentWordsDb[currentKey] = currentWordsDb[currentKey].concat(parsed);
 
   saveWords();
@@ -2517,8 +2818,8 @@ function syncSettingsDropdownsFromActiveGroup() {
   if (!selectLevel || !selectGroup) return;
 
   const active = currentSettings.activeDbGroup || "N5 Lessons";
-  if (active === "Kanji") {
-    selectGroup.value = "Kanji";
+  if (active === "Kanji" || active === "Others" || (active.endsWith("Others") && !active.includes("Grammer"))) {
+    selectGroup.value = (active === "Kanji") ? "Kanji" : "Others";
     const levelGroup = selectLevel.closest('.quiz-option-group');
     if (levelGroup) levelGroup.style.display = "none";
   } else {
@@ -2544,6 +2845,10 @@ function syncActiveGroupFromSettingsDropdowns() {
   const group = selectGroup.value;
   if (group === "Kanji") {
     currentSettings.activeDbGroup = "Kanji";
+    const levelGroup = selectLevel.closest('.quiz-option-group');
+    if (levelGroup) levelGroup.style.display = "none";
+  } else if (group === "Others") {
+    currentSettings.activeDbGroup = "Others";
     const levelGroup = selectLevel.closest('.quiz-option-group');
     if (levelGroup) levelGroup.style.display = "none";
   } else {
@@ -2633,7 +2938,7 @@ function renderFlaggedWordsList() {
     left.innerHTML = `
       <div class="japanese">${item.word.japanese}</div>
       <div class="english">${item.word.english}</div>
-      <div class="romaji">${item.word.romaji} (from ${item.lesson})</div>
+      <div class="romaji">${item.word.romaji} (from ${cleanCategoryNameForUI(item.lesson)})</div>
     `;
 
     const right = document.createElement('div');
@@ -2694,7 +2999,6 @@ function navigateLessonCategory(direction) {
 function navigateActiveGroup(direction) {
   const groups = [
     "N5 Lessons",
-    "N5 Others",
     "N5 Grammer",
     "N5 Grammer Others",
     "N5 Extra",
@@ -2702,7 +3006,6 @@ function navigateActiveGroup(direction) {
     "N5 Dumps",
     "N5 Genki",
     "N4 Lessons",
-    "N4 Others",
     "N4 Grammer",
     "N4 Grammer Others",
     "N4 Extra",
@@ -2710,27 +3013,25 @@ function navigateActiveGroup(direction) {
     "N4 Dumps",
     "N4 Genki",
     "N3 Lessons",
-    "N3 Others",
     "N3 Grammer",
     "N3 Grammer Others",
     "N3 Extra",
     "N3 Listening",
     "N3 Dumps",
     "N2 Lessons",
-    "N2 Others",
     "N2 Grammer",
     "N2 Grammer Others",
     "N2 Extra",
     "N2 Listening",
     "N2 Dumps",
     "N1 Lessons",
-    "N1 Others",
     "N1 Grammer",
     "N1 Grammer Others",
     "N1 Extra",
     "N1 Listening",
     "N1 Dumps",
-    "Kanji"
+    "Kanji",
+    "Others"
   ];
   
   const currentGroup = currentSettings.activeDbGroup || "N5 Lessons";
@@ -3031,44 +3332,35 @@ function populateLessonsDropdown() {
 
   else if (group === "N5 Genki") addStandard(lessonsList, "Genki", 1, 12);
   else if (group === "N4 Genki") addStandard(lessonsList, "Genki", 13, 23);
+  else if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) {
+    const isOtherCat = (k) => {
+      return !k.endsWith(" - Hard") &&
+             !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
+             !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
+             !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
+             !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
+             !k.match(/^Lesson\s+\d+/i) && 
+             !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grammer\s+\d+/i) && 
+             !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Listening\s+\d+/i) && 
+             !k.match(/^Genki\s+\d+/i) && 
+             !k.match(/^N[1-5]\s+Kanji/i) &&
+             k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
+    };
 
-  else if (group.endsWith("Others")) {
-    let suffix = "";
-    let lvl = "";
-    if (group === "N5 Others") { suffix = "1"; lvl = "5"; }
-    else if (group === "N4 Others") { suffix = "2"; lvl = "4"; }
-    else if (group === "N3 Others") { suffix = "3"; lvl = "3"; }
-    else if (group === "N2 Others") { suffix = "4"; lvl = "2"; }
-    else if (group === "N1 Others") { suffix = "5"; lvl = "1"; }
-
-    if (suffix) {
-      const filterFn = (k) => {
-        return k.endsWith(suffix) && 
-               !k.endsWith(` G${lvl}`) && 
-               !k.endsWith(` E${lvl}`) && 
-               !k.endsWith(` L${lvl}`) &&
-               !k.endsWith(` D${lvl}`) &&
-               !k.match(/^Lesson\s+\d+/i) && 
-               !k.match(/^Kanji\s+\d+/i) && 
-               !k.match(/^Grammer\s+\d+/i) && 
-               !k.match(/^Extra\s+\d+/i) && 
-               !k.match(/^Listening\s+\d+/i) && 
-               !k.match(/^N[1-5]\s+Kanji/i);
-      };
-
-      const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
-      allKeys.forEach(k => {
-        if (filterFn(k)) {
-          if (!othersList.includes(k)) othersList.push(k);
+    const allKeys = Object.keys(currentWordsDb);
+    allKeys.forEach(k => {
+      if (isOtherCat(k) && !othersList.includes(k)) {
+        othersList.push(k);
+      }
+    });
+    if (currentSettings.customCategories) {
+      currentSettings.customCategories.forEach(cat => {
+        if (isOtherCat(cat) && !othersList.includes(cat)) {
+          othersList.push(cat);
         }
       });
-      if (currentSettings.customCategories) {
-        currentSettings.customCategories.forEach(cat => {
-          if (filterFn(cat)) {
-            if (!othersList.includes(cat)) othersList.push(cat);
-          }
-        });
-      }
     }
   }
 
@@ -3090,7 +3382,7 @@ function populateLessonsDropdown() {
   othersList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
   const specialList = [];
-  if (group.endsWith("Others") && !group.includes("Grammer")) {
+  if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) {
     specialList.push("Show All Words", "Same Meaning", "Same Romaji");
   }
   const finalCategories = [...lessonsList, ...kanjiList, ...grammerList, ...othersList, ...specialList];
@@ -3130,11 +3422,7 @@ function createCustomCategory() {
   }
   
   let suffix = "";
-  if (group === "N5 Others") suffix = " 1";
-  else if (group === "N4 Others") suffix = " 2";
-  else if (group === "N3 Others") suffix = " 3";
-  else if (group === "N2 Others") suffix = " 4";
-  else if (group === "N1 Others") suffix = " 5";
+  if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) suffix = "";
   else if (group === "N5 Grammer" || group === "N5 Grammer Others") suffix = " G5";
   else if (group === "N4 Grammer" || group === "N4 Grammer Others") suffix = " G4";
   else if (group === "N3 Grammer" || group === "N3 Grammer Others") suffix = " G3";
@@ -3841,6 +4129,22 @@ function openCategorySelectorModal(customWordsList = null) {
     }
   };
 
+  const isOtherCat = (k) => {
+    return !k.endsWith(" - Hard") &&
+           !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
+           !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
+           !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
+           !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
+           !k.match(/^Lesson\s+\d+/i) && 
+           !k.match(/^Kanji\s+\d+/i) && 
+           !k.match(/^Grammer\s+\d+/i) && 
+           !k.match(/^Extra\s+\d+/i) && 
+           !k.match(/^Listening\s+\d+/i) && 
+           !k.match(/^Genki\s+\d+/i) && 
+           !k.match(/^N[1-5]\s+Kanji/i) &&
+           k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
+  };
+
   if (group.includes("Grammer")) {
     let suffix = " G5";
     if (group.startsWith("N4")) suffix = " G4";
@@ -3848,54 +4152,20 @@ function openCategorySelectorModal(customWordsList = null) {
     else if (group.startsWith("N2")) suffix = " G2";
     else if (group.startsWith("N1")) suffix = " G1";
     addCustom(suffix);
-  } else {
-    // Except "Grammer" and "Grammer Others" categories, allow copy words to "Others" categories
-    // For Kanji Group, if category name contains N5, show "N5 Others" categories, lly N4..N1
-    let targetSuffix = "1";
-    let lvl = "5";
+  }
 
-    if (group === "Kanji") {
-      if (currentL.includes("N4")) { targetSuffix = "2"; lvl = "4"; }
-      else if (currentL.includes("N3")) { targetSuffix = "3"; lvl = "3"; }
-      else if (currentL.includes("N2")) { targetSuffix = "4"; lvl = "2"; }
-      else if (currentL.includes("N1")) { targetSuffix = "5"; lvl = "1"; }
-      else { targetSuffix = "1"; lvl = "5"; }
-    } else {
-      if (group.startsWith("N4")) { targetSuffix = "2"; lvl = "4"; }
-      else if (group.startsWith("N3")) { targetSuffix = "3"; lvl = "3"; }
-      else if (group.startsWith("N2")) { targetSuffix = "4"; lvl = "2"; }
-      else if (group.startsWith("N1")) { targetSuffix = "5"; lvl = "1"; }
-      else { targetSuffix = "1"; lvl = "5"; }
+  const allKeys = Object.keys(currentWordsDb);
+  allKeys.forEach(k => {
+    if (isOtherCat(k) && k !== currentL && !targetCats.includes(k)) {
+      targetCats.push(k);
     }
-
-    const filterFn = (k) => {
-      return k.endsWith(targetSuffix) && 
-             !k.endsWith(` G${lvl}`) && 
-             !k.endsWith(` E${lvl}`) && 
-             !k.endsWith(` L${lvl}`) && 
-             !k.endsWith(` D${lvl}`) && 
-             !k.match(/^Lesson\s+\d+/i) && 
-             !k.match(/^Kanji\s+\d+/i) && 
-             !k.match(/^Grammer\s+\d+/i) && 
-             !k.match(/^Extra\s+\d+/i) && 
-             !k.match(/^Listening\s+\d+/i) && 
-             !k.match(/^Genki\s+\d+/i) && 
-             !k.match(/^N[1-5]\s+Kanji/i);
-    };
-
-    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
-    allKeys.forEach(k => {
-      if (filterFn(k) && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Show All Words" && k !== currentL && !targetCats.includes(k)) {
-        targetCats.push(k);
+  });
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories.forEach(cat => {
+      if (isOtherCat(cat) && cat !== currentL && !targetCats.includes(cat)) {
+        targetCats.push(cat);
       }
     });
-    if (currentSettings.customCategories) {
-      currentSettings.customCategories.forEach(cat => {
-        if (filterFn(cat) && cat !== "Same Meaning" && cat !== "Same Romaji" && cat !== "Show All Words" && cat !== currentL && !targetCats.includes(cat)) {
-          targetCats.push(cat);
-        }
-      });
-    }
   }
 
 
@@ -4090,7 +4360,11 @@ function getAllAppCategories() {
     });
   }
 
-  cats.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
+  cats.sort((a, b) => {
+    const cleanA = cleanCategoryNameForUI(a.name);
+    const cleanB = cleanCategoryNameForUI(b.name);
+    return cleanA.localeCompare(cleanB, undefined, { numeric: true, sensitivity: 'base' });
+  });
   return cats;
 }
 
@@ -4105,7 +4379,11 @@ function initCategoryJump() {
     activeCategoryJumpIndex = -1;
 
     if (query.length > 0) {
-      categoryJumpMatches = allCats.filter(c => c.name.toLowerCase().includes(query));
+      categoryJumpMatches = allCats.filter(c => {
+        const cleanName = cleanCategoryNameForUI(c.name).toLowerCase();
+        const groupName = (c.group || "").toLowerCase();
+        return cleanName.includes(query) || groupName.includes(query);
+      });
     } else {
       categoryJumpMatches = allCats;
     }
@@ -4183,7 +4461,7 @@ function renderCategoryJumpResults() {
       row.classList.add('selected');
     }
     row.innerHTML = `
-      <span>${item.name}</span>
+      <span>${cleanCategoryNameForUI(item.name)}</span>
       <span class="group-tag">${item.group}</span>
     `;
 
@@ -4243,7 +4521,7 @@ function jumpToCategory(categoryName) {
   saveSettings();
   renderCards();
   
-  showToast(`Jumped to: ${categoryName} (${targetGroup})`, 'info');
+  showToast(`Jumped to: ${cleanCategoryNameForUI(categoryName)} (${targetGroup})`, 'info');
 }
 
 // --------------------------------------------------------------------------
@@ -4309,13 +4587,14 @@ function determineGroupForCategory(lessonKey) {
     if (baseKey.endsWith(" L3")) return "N3 Listening";
     if (baseKey.endsWith(" L2")) return "N2 Listening";
     if (baseKey.endsWith(" L1")) return "N1 Listening";
-    if (baseKey.endsWith("1")) return "N5 Others";
-    if (baseKey.endsWith("2")) return "N4 Others";
-    if (baseKey.endsWith("3")) return "N3 Others";
-    if (baseKey.endsWith("4")) return "N2 Others";
-    if (baseKey.endsWith("5")) return "N1 Others";
+    if (baseKey.endsWith(" D5")) return "N5 Dumps";
+    if (baseKey.endsWith(" D4")) return "N4 Dumps";
+    if (baseKey.endsWith(" D3")) return "N3 Dumps";
+    if (baseKey.endsWith(" D2")) return "N2 Dumps";
+    if (baseKey.endsWith(" D1")) return "N1 Dumps";
+    return "Others";
   }
-  return "N5 Lessons";
+  return "Others";
 }
 
 let activeSearchResultIndex = -1;
@@ -4394,7 +4673,7 @@ function initGlobalSearch() {
           
           row.innerHTML = `
             <div class="search-result-meta">
-              <span>${lessonBase}</span>
+              <span>${cleanCategoryNameForUI(lessonBase)}</span>
               <span>${categoryName}</span>
             </div>
             <div class="search-result-text">
@@ -5535,26 +5814,21 @@ function switchLessonOrKanjiDirectly(num, mode) {
 
     if (num < 1) num = 1;
     
-    let prefix = "Lesson";
-    let max = 25;
-    let min = 1;
-    if (mode === "Grammer") {
-      prefix = "Grammer";
-      max = 25;
-      min = 1;
-      targetGroup = `${level} Grammer`;
-      if (num < min) num = min;
-      if (num > max) num = max;
-      let internalNum = num + (levelIndex * 25);
-      categoryName = `${prefix} ${String(internalNum).padStart(2, '0')}`;
-    } else if (mode === "Extra") {
-      prefix = "Extra";
-      max = 25;
-      min = 1;
-      targetGroup = `${level} Extra`;
-      if (num < min) num = min;
-      if (num > max) num = max;
-      let internalNum = num + (levelIndex * 25);
+    if (mode === "Grammer" || mode === "Extra" || mode === "Lesson") {
+      prefix = mode;
+      targetGroup = `${level} ${mode === "Lesson" ? "Lessons" : mode}`;
+      let baseStart = levelIndex * 25 + 1; // N5: 1, N4: 26, N3: 51, N2: 76, N1: 101
+      let baseEnd = baseStart + 24;        // N5: 25, N4: 50, N3: 75, N2: 100, N1: 125
+      let internalNum = num;
+      if (num >= baseStart && num <= baseEnd) {
+        internalNum = num;
+      } else if (num >= 1 && num <= 25) {
+        internalNum = (baseStart - 1) + num;
+      } else if (num < 1) {
+        internalNum = baseStart;
+      } else {
+        internalNum = baseEnd;
+      }
       categoryName = `${prefix} ${String(internalNum).padStart(2, '0')}`;
     } else if (mode === "Listening") {
       prefix = "Listening";
@@ -5581,22 +5855,6 @@ function switchLessonOrKanjiDirectly(num, mode) {
       if (num < min) num = min;
       if (num > max) num = max;
       categoryName = `${prefix} ${String(num).padStart(2, '0')}`;
-    } else {
-      prefix = "Lesson";
-      targetGroup = `${level} Lessons`;
-      let baseStart = levelIndex * 25 + 1; // N5: 1, N4: 26, N3: 51, N2: 76, N1: 101
-      let baseEnd = baseStart + 24;        // N5: 25, N4: 50, N3: 75, N2: 100, N1: 125
-      let internalNum = num;
-      if (num >= baseStart && num <= baseEnd) {
-        internalNum = num;
-      } else if (num >= 1 && num <= 25) {
-        internalNum = (baseStart - 1) + num;
-      } else if (num < 1) {
-        internalNum = baseStart;
-      } else {
-        internalNum = baseEnd;
-      }
-      categoryName = `${prefix} ${String(internalNum).padStart(2, '0')}`;
     }
   }
   
