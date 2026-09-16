@@ -6858,35 +6858,10 @@ put out [the trash]
 [gomi o~] Dashimasu
 [ごみを～] 出します
 
-げつ・すい・きん
-Monday, Wednesday and Friday
-Getsu・Sui・Kin
-月・水・金
-
 ボランティア
 volunteer
 Borantia
 ボランティア
-
-かん
-can
-Kan
-缶
-
-[お]ゆ
-hot water
-[O]yu
-[お]湯
-
-やります
-do
-Yarimasu
-やります
-
-こわい
-be afraid of
-Kowai
-怖い
 
 いつでも
 any time
@@ -6907,6 +6882,31 @@ Daredemo
 anything
 Nandemo
 なんでも
+
+げつ・すい・きん
+Monday, Wednesday and Friday
+Getsu・Sui・Kin
+月・水・金
+
+かん
+can
+Kan
+缶
+
+[お]ゆ
+hot water
+[O]yu
+[お]湯
+
+やります
+do
+Yarimasu
+やります
+
+こわい
+be afraid of
+Kowai
+怖い
 
 ガス
 gas
@@ -7019,6 +7019,11 @@ allWords["Lesson 27"] = `
 [kuukou ga~] Dekimasu
 [空港が～] できます
 
+つけます
+attach, put on
+Tsukemasu
+付けます
+
 かいます
 keep (a pet), raise (an animal)
 Kaimasu
@@ -7088,11 +7093,6 @@ Daisuki [na]
 fantastic, mysterious
 Fushigi [na]
 不思議 [な]
-
-つけます
-attach, put on
-Tsukemasu
-付けます
 
 じゆうに
 freely
@@ -7267,15 +7267,15 @@ Sunday carpenter
 Nichiyoudaiku
 日曜大工
 
-しゅじんこう
-hero, heroine
-Shujinkou
-主人公
-
 かたち
 shape
 Katachi
 形
+
+しゅじんこう
+hero, heroine
+Shujinkou
+主人公
 
 たとえば
 for example
@@ -7535,30 +7535,30 @@ Muryou
 allWords["Lesson 28 - Hard"] = ``;
 
 allWords["Lesson 29"] = `
-あきます [ドアが～]
+[ドアが～] あきます
 [a door] open
-Akimasu [doa ga~]
-開きます [ドアが～]
+[doa ga~] Akimasu
+[ドアが～] 開きます
 
-しまります [ドアが～]
+[ドアが～] しまります
 [a door] close, shut
-Shimarimasu [doa ga~]
-閉まります [ドアが～]
+[doa ga~] Shimarimasu
+[ドアが～] 閉まります
 
-つきます [でんきが～]
+[でんきが～] つきます
 [a light] come on
-Tsukimasu [denki ga~]
-つきます [電気が～]
+[denki ga~] Tsukimasu
+[電気が～] つきます
 
-きえます [でんきが～]
+[でんきが～] きえます
 [a light] go off, disappear
-Kiemasu [denki ga~]
-消えます [電気が～]
+[denki ga~] Kiemasu
+[電気が～] 消えます
 
-こみます [みちが～]
+[みちが～] こみます
 [a road] get crowded
-Komimasu [michi ga~]
-込みます [道が～]
+[michi ga~] Komimasu
+[道が～] 込みます
 
 すきます [みちが～]
 [a road] get empty
@@ -15121,6 +15121,26 @@ scenery, view
 Keshiki
 景色
 
+こうきょう りょうきん ふりこみ
+Payment of utility charges
+Koukyou ryoukin furikomi
+公共 料金 振り込み
+
+こうきょ
+Imperial Palace
+Koukyo
+皇居
+
+じどうけんばいき
+ticket machine
+Jidou kenbaiki
+自動券売機
+
+じどうはんばいき
+vending machine
+jidouhanbaiki
+じどうはんばいき
+
 `;
 
 allWords["Similar Ones - Hard"] = ``;
@@ -16795,6 +16815,21 @@ Fushigi [na]
 set up [a class], open, hold
 [kyoushitsu o~] Hirakimasu
 [教室を～] 開きます
+
+のびる
+Stretch
+Nobiru
+伸びる
+
+ちぢむ
+Shrink
+Chijimu
+縮む
+
+つけます
+attach, put on
+Tsukemasu
+付けます
 
 `;
 
@@ -20615,99 +20650,2433 @@ Undoukai ni sankashimasu ka.
 
 allWords["Grammer 26 - Hard"] = ``;
 
-allWords["Grammer 27"] = ``;
+allWords["Grammer 27"] = `
+かきます / かけます
+to write / can write
+kakimasu / kakemasu
+書きます / 書けます
+
+かいます / かえます
+to buy / can buy
+kaimasu / kaemasu
+買います / 買えます
+
+たべます / たべられます
+to eat / can eat
+tabemasu / taberareru
+食べます / 食べられます
+
+きます / こられます
+to come / can come
+kimasu / koraremasu
+来ます / 来られます
+
+します / できます
+to do / can do
+shimasu / dekimasu
+します / できます
+
+わたしは にほんごを はなせます。
+I speak Japanese.
+Watashi wa Nihongo wo hanasemasu.
+わたしは 日本語を 話せます。
+
+わたしは にほんごが はなせます。
+I can speak Japanese.
+Watashi wa Nihongo ga hanasemasu.
+わたしは 日本語が 話せます。
+
+ひとり で びょういん へ いけますか。
+Can you go to the hospital alone?
+Hitori de byouin e ikemasu ka.
+一人で 病院へ 行けますか。
+
+たなかさんに あえませんでした。
+I could not see Mr. Tanaka.
+Tanaka-san ni aemasen deshita.
+田中さんに 会えませんでした。
+
+ミラーさんは かんじが よめます。
+Mr. Miller can read kanji.
+Miraa-san wa kanji ga yomemasu.
+ミラーさんは 漢字が 読めます。
+
+この ぎんこうで ドルが かえられます。
+You can change dollars at this bank.
+Kono ginkou de doru ga kaeraremasu.
+この 銀行で ドルが 換えられます。
+
+しんかんせんから ふじさん が みえます。
+Mt. Fuji can be seen from the Shinkansen.
+Shinkansen kara Fujisan ga miemasu.
+新幹線から 富士山が 見えます。
+
+しんじゅくで くろさわの えいがが みられます。
+You can see Kurosawa's movies in Shinjuku.
+Shinjuku de Kurosawa no eiga ga miraremasu.
+新宿で 黒澤の 映画が 見られます。
+
+でんわで てんきよほう が きけます。
+You can hear the weather forecast by phone.
+Denwa de tenki yohou ga kikemasu.
+電話で 天気予報が 聞けます。
+
+ラジオの おとが きこえます。
+The sound of a radio can be heard.
+Rajio no oto ga kikoemasu.
+ラジオの 音が 聞こえます。
+
+えきの まえに おおきい スーパーが できました。
+A big supermarket has been completed in front of the station.
+Eki no mae ni ookii suupaa ga dekimashita.
+駅の 前に 大きい スーパーが できました。
+
+とけいの しゅうりは いつ できますか。
+When can you fix this watch?
+Tokei no shuuri wa itsu dekimasu ka.
+時計の 修理は いつ できますか。
+
+わたしの がっこうには アメリカじんの せんせいが います。
+In my school there is an American teacher.
+Watashi no gakkou ni wa Amerikajin no sensei ga imasu.
+わたしの 学校には アメリカ人の 先生が います。
+
+わたしの がっこうでは ちゅうごくごが ならえます。
+In my school we can learn the Chinese language.
+Watashi no gakkou de wa Chuugokugo ga naraemasu.
+わたしの 学校では 中国語が 習えます。
+
+きのうは やまが みえましたが、きょうは みえません。
+Yesterday we could see mountains, but not today.
+Kinou wa yama ga miemashita ga, kyou wa miemasen.
+きのうは 山が 見えましたが、きょうは 見えません。
+
+ワインは のみますが、ビールは のみません。
+I drink wine, but not beer.
+Wain wa nomimasu ga, biiru wa nomimasen.
+ワインは 飲みますが、ビールは 飲みません。
+
+きょうとへは いきますが、おおさかへは いきません。
+I will go to Kyoto, but not to Osaka.
+Kyouto e wa ikimasu ga, Oosaka e wa ikimasen.
+京都へは 行きますが、大阪へは 行きません。
+
+クララさんは えいごが はなせます。
+Klara can speak English.
+Kurara-san wa Eigo ga hanasemasu.
+クララさんは 英語が 話せます。
+
+それから、フランスごも はなせます。
+She can speak French, too.
+Sorekara, Furansugo mo hanasemasu.
+それから、フランス語も 話せます。
+
+きょねん アメリカへ いきまし た。
+I went to America last year.
+Kyonen Amerika e ikimashita.
+去年 アメリカへ 行きました。
+
+メキシコへも いきまし た。
+I went to Mexico, too.
+Mekishiko e mo ikimashita.
+メキシコへも 行きました。
+
+わたしの へやから うみが みえます。
+The sea can be seen from my room.
+Watashi no heya kara umi ga miemasu.
+わたしの 部屋から 海が 見えます。
+
+おとうとの へやから も みえます。
+It can also be seen from my brother's room.
+Otouto no heya kara mo miemasu.
+弟の 部屋から も 見えます。
+
+ローマじしか かけません。
+I can only write Roman letters.
+Roomaji shika kakemasen.
+ローマ字しか 書けません。
+
+ローマじだけ かけます。
+I can write Roman letters.
+Roomaji dake kakemasu.
+ローマ字だけ 書けます。
+
+`;
 
 allWords["Grammer 27 - Hard"] = ``;
 
-allWords["Grammer 28"] = ``;
+allWords["Grammer 28"] = `
+おんがくを ききながら しょくじを します。
+I listen to music while eating.
+Ongaku wo kikinagara shokuji wo shimasu.
+音楽を 聞きながら 食事を します。
+
+はたらきながら にほんごを べんきょうして います。
+I'm working and studying Japanese.
+Hatarakinagara Nihongo wo benkyou shite imasu.
+働きながら 日本語を 勉強して います。
+
+まいあさ ジョギングを して います。
+I jog every morning.
+Maiasa jogingu wo shite imasu.
+毎朝 ジョギングを して います。
+
+こどもの とき、まいばん 8じに ねて いました。
+I used to go to bed at eight every evening when I was a child.
+Kodomo no toki, maiban hachi-ji ni nete imashita.
+子どもの とき、毎晩 8時に 寝て いました。
+
+ワットせんせいは ねっしんだし、まじめだし、けいけんも あります。
+Professor Watt is earnest and diligent and has experience.
+Watto-sensei wa nesshin dashi, majime dashi, keiken mo arimasu.
+ワット先生は 熱心だし、まじめだし、経験も あります。
+
+えきから ちかいし、くるまで こられるし、
+It's near the station, and you can also come here by car,
+Eki kara chikai shi, kuruma de korareru shi,
+駅から 近いし、車で 来られるし、
+
+この みせは とても べんりです。
+this shop is very convenient.
+kono mise wa totemo benri desu.
+この 店は とても 便利です。
+
+むすこに えいごを おしえて いただけませんか。
+Could you teach English to my son?
+Musuko ni Eigo wo oshiete itadakemasen ka.
+息子に 英語を教えて いただけませんか。
+
+...うん、しゅっちょうも おおいし、もうすぐ にほんごの しけんも あるし......
+...Sorry. I often go on business trips, and I have to take a Japanese exam soon...
+...Un, shuchou mo ooi shi, mousugu Nihongo no shiken mo aru shi...
+...うん、出張も 多いし、もうすぐ 日本語の 試験も あるし......
+
+いろも きれいだし、この くつを かいます。
+Because the color is beautiful, I'll buy this pair of shoes.
+Iro mo kirei dashi, kono kutsu wo kaimasu.
+色も きれいだし、この 靴を 買います。
+
+どうして さくらだいがくを えらんだんですか。
+Why did you choose Sakura University?
+Doushite Sakura Daigaku wo erandan desu ka.
+どうして さくら大学を 選んだんですか。
+
+...さくらだいがくは、ちちが でた だいがくだし、
+...Because Sakura University is my father's alma mater,
+...Sakura Daigaku wa, chichi ga deta daigaku dashi,
+...さくら大学は、父が 出た 大学だし、
+
+いい せんせいも おおいし、
+there are many good teachers,
+ii sensei mo ooi shi,
+いい 先生も 多いし、
+
+それに うちから ちかいですから。
+and besides, it's near my house.
+soreni uchi kara chikai desu kara.
+それに 家から 近いですから。
+
+この レストランは ねだんも やすいし、おいしいんです。
+The food is inexpensive and tasty in this restaurant.
+Kono resutoran wa nedan mo yasui shi, oishiin desu.
+この レストランは 値段も 安いし、おいしいんです。
+
+...それで ひとが おおいんですね。
+...And that's why it's crowded.
+...Sorede hito ga ooin desu ne.
+...それで 人が 多いんですね。
+
+よく この きっさてんに くるんですか
+Do you often come to this coffee shop?
+Yoku kono kissaten ni kuru n desu ka
+よく この 喫茶店に 来るんですか
+
+`;
 
 allWords["Grammer 28 - Hard"] = ``;
 
-allWords["Grammer 29"] = ``;
+allWords["Grammer 29"] = `
+まどが われて います。
+The window is broken.
+Mado ga warete imasu.
+窓が 割れて います。
+
+でんきが ついて います。
+The light is on.
+Denki ga tsuite imasu.
+電気が ついて います。
+
+まどが われました
+The window broke.
+Mado ga waremashita
+窓が 割れました
+
+まどが われて います
+The window is broken.
+Mado ga warete imasu
+窓が 割れて います
+
+けさは みちが こんで いました。
+The road was crowded this morning.
+Kesaha michi ga konde imashita.
+けさは 道が 込んで いました。
+
+この いすは こわれて います。
+This chair is broken.
+Kono isu wa kowarete imasu.
+この いすは 壊れて います。
+
+シュミットさんが もって きた ワインは
+The wine that Mr. Schmidt brought
+Shumitto-san ga motte kita wain wa
+シュミットさんが 持って 来た ワインは
+
+ぜんぶ のんで しまいました。
+we drank all of it.
+zenbu nonde shimaimashita.
+全部 飲んで しまいました。
+
+かんじの しゅくだいは もう やって しまいました。
+I have done my kanji homework already.
+Kanji no shukudai wa mou yatte shimaimashita.
+漢字の 宿題は もう やって しまいました。
+
+ひるごはんまでに レポートを かいて しまいます。
+I intend to finish writing the report by lunch time.
+Hirugohan made ni repooto wo kaite shimaimas.
+昼ごはんまでに レポートを 書いて しまいます。
+
+パスポートを なくして しまいました。
+I lost my passport.
+Pasupooto wo nakushite shimaimashita.
+パスポートを なくして しまいました。
+
+パソコンが こしょうして しまいました。
+My personal computer is broken.
+Pasokon ga koshou shite shimaimashita.
+パソコンが 故障して しまいました。
+
+[かばんが] ありました。
+I've found [the bag].
+[Kaban ga] arimashita.
+[かばんが] ありました。
+
+どこかで さいふを なくして しまいました。
+I lost my wallet somewhere.
+Dokoka de saifu wo nakushite shimaimashita.
+どこかで 財布を なくして しまいました。
+
+どこかに でんわが ありませんか。
+Is there a pay phone somewhere nearby?
+Dokoka ni denwa ga arimasen ka.
+どこかに 電話が ありませんか。
+
+`;
 
 allWords["Grammer 29 - Hard"] = ``;
 
-allWords["Grammer 30"] = ``;
+allWords["Grammer 30"] = `
+カレンダーに こんげつの よていが かいて あります。
+This month's schedule is written on the calendar.
+Karendaa ni kongetsu no yotei ga kaite arimasu.
+カレンダーに 今月の 予定が 書いて あります。
+
+つくえの うえに メモが おいて あります。
+There is a memo put on the desk.
+Tsukue no ue ni memo ga oite arimasu.
+机の 上に メモが 置いて あります。
+
+メモは どこですか。
+Where is the memo?
+Memo wa doko desu ka.
+メモは どこですか。
+
+...[メモは] つくえの うえに おいて あります。
+...It's been put on the desk.
+...[Memo wa] tsukue no ue ni oite arimasu.
+...[メモは] 机の 上に 置いて あります。
+
+こんげつの よていは カレンダーに かいて あります。
+This month's schedule has been written on the calendar.
+Kongetsu no yotei wa karendaa ni kaite arimasu.
+今月の 予定は カレンダーに 書いて あります。
+
+たんじょうびの プレゼントは もう かって あります。
+I have already bought the present for her birthday.
+Tanjoubi no purezento wa mou katte arimasu.
+誕生日の プレゼントは もう 買って あります。
+
+ホテルは もう よやくして あります。
+I have already reserved a hotel.
+Hoteru wa mou yoyaku shite arimasu.
+ホテルは もう 予約して あります。
+
+まどが しまって います。
+The window is closed.
+Mado ga shimatte imasu.
+窓が 閉まって います。
+
+まどが しめて あります。
+The window has been closed.
+Mado ga shimete arimasu.
+窓が 閉めて あります。
+
+りょこうの まえに きっぷを かっておきます。
+I'll buy a ticket before the trip.
+Ryokou no mae ni kippu wo katte okimasu.
+旅行の 前に 切符を 買っておきます。
+
+つぎの かいぎまでに なにを して おいたら いいですか。
+What should I do before the next meeting?
+Tsugi no kaigi made ni nani wo shite oitara ii desu ka.
+次の 会議までに 何を して おいたら いいですか。
+
+...この しりょうを よんで おいて ください。
+...Read these materials.
+...Kono shiryou wo yonde oite kudasai.
+...この 資料を 読んで おいて ください。
+
+はさみを つかったら、もとの ところに もどして おいて ください。
+When you finish using the scissors, put them back where they were.
+Hasami wo tsukattara, moto no tokoro ni modoshite oite kudasai.
+はさみを 使ったら、元の 所に 戻して おいて ください。
+
+あした かいぎが ありますから、
+Please leave the chairs as they are
+Ashita kaigi ga arimasu kara,
+あした 会議が ありますから、
+
+いすは この ままに して おいて ください。
+because a meeting will be held here tomorrow.
+isu wa kono mama ni shite oite kudasai.
+いすは この ままに して おいて ください。
+
+そこに おいて おいて ください。
+Please leave it there.
+Soko ni oite oite kudasai.
+そこに 置いて おいて ください。
+
+まだ あめが ふって います。
+It's still raining.
+Mada ame ga futte imasu.
+まだ 雨が 降って います。
+
+どうぐを かたづけましょうか。
+Shall I put away the tools?
+Dougu wo katadzukemashou ka.
+道具を 片づけましょうか。
+
+...まだ つかって いますから、その ままに して おいて ください。
+...No, leave them there; I'm still using them.
+...Mada tsukatte imasu kara, sono mama ni shite oite kudasai.
+...まだ 使って いますから、その ままに して おいて ください。
+
+ブロードウェイで ミュージカルを したいと おもうんですが......
+I'd like to see a musical on Broadway...
+Buroodowei de myuujikaru wo mitai to omou n desu ga...
+ブロードウェイで ミュージカルを 見たいと 思うんですが......
+
+...それは いいですね。
+...That sounds nice.
+...Sore wa ii desu ne.
+...それは いいですね。
+
+らいげつから おおさかの ほんしゃに てんきんなんです。
+I will be transferred to the Osaka head office next month.
+Raigetsu kara Oosaka no honsha ni tenkin nan desu.
+来月から 大阪の 本社に 転勤なんです。
+
+...それは おめでとう ございます。
+...Congratulations!
+...Sore wa omedetou gozaimasu.
+...それは おめでとう ございます。
+
+ときどき あたまや いが いたくなるんです。
+Sometimes I have pains in my stomach and head.
+Tokidoki atama ya i ga itaku naru n desu.
+時々 頭や 胃が 痛くなるんです。
+
+...それは いけませんね。
+...That's bad.
+...Sore wa ikemasen ne.
+...それは いけませんね。
+
+`;
 
 allWords["Grammer 30 - Hard"] = ``;
 
-allWords["Grammer 31"] = ``;
+allWords["Grammer 31"] = `
+ちょっと やすもうか。
+Shall we take a rest?
+Chotto yasumou ka.
+ちょっと 休もうか。
+
+すこし やすもう。
+Shall we take a rest for a while?
+Sukoshi yasumou.
+少し 休もう。
+
+てつだおうか。
+Shall I help you?
+Tetsudaou ka.
+手伝おうか。
+
+しゅうまつは うみに いこうと おもっています。
+I'm thinking of going to the beach at the weekend.
+Shuumatsu wa umi ni ikou to omotte imasu.
+週末は 海に 行こうと 思っています。
+
+いまから ぎんこうへ いこうと おもっています。
+I'm going to the bank now.
+Ima kara ginkou e ikou to omotte imasu.
+今から 銀行へ 行こうと 思っています。
+
+かれは がいこくで はたらこうと おもっています。
+He is thinking of working in a foreign country.
+Kare wa gaikoku de hatarakou to omotte imasu.
+彼は 外国で 働こうと 思っています。
+
+くにへ かえっても、
+Even when I go back to my country,
+Kuni e kaette mo,
+国へ 帰っても、
+
+じゅうどうを つづける つもりです。
+I'll continue with my judo.
+juudou wo tsuzukeru tsumori desu.
+柔道を 続ける つもりです。
+
+あしたからは たばこを すわない つもりです。
+I'm determined not to smoke from tomorrow.
+Ashita kara wa tabako wo suwanai tsumori desu.
+あしたからは たばこを 吸わない つもりです。
+
+しちがつの おわりに ドイツへ しゅっちょうする よていです。
+I'm scheduled to go on a business trip to Germany at the end of July.
+Shichigatsu no owari ni Doitsu e shutchou suru yotei desu.
+7月の 終わりに ドイツへ 出張する 予定です。
+
+りょこうは いっしゅうかんぐらいの よていです。
+The trip is scheduled to last for a week.
+Ryokou wa isshuukan gurai no yotei desu.
+旅行は 1週間ぐらいの 予定です。
+
+ぎんこうは まだ あいて いません。
+The bank is not open yet.
+Ginkou wa mada aite imasen.
+銀行は まだ 開いて いません。
+
+レポートは もう かきましたか。
+Have you written the report yet?
+Repooto wa mou kakimashita ka.
+レポートは もう 書きましたか。
+
+...いいえ、まだ かいて いません。
+...No, not yet.
+...Iie, mada kaite imasen.
+...いいえ、まだ 書いて いません。
+
+とうきょうに ない ものが ひとつだけ ある。
+There's one thing missing in Tokyo.
+Toukyou ni nai mono ga hitotsu dake aru.
+東京に ない 物が 1つだけ ある。
+
+それは うつくしい しぜんだ。
+And that's nature.
+Sore wa utsukushii shizen da.
+それは 美しい 自然だ。
+
+わたしが いちばん ほしい ものは 「どこで も ドア」です。
+What I want most is a "magic door."
+Watashi ga ichiban hoshii mono wa "Dokodemo Doa" desu.
+わたしが いちばん 欲しい 物は 「どこで も ドア」です。
+
+この ドアを あけると、
+When you open this door,
+Kono doa woakeru to,
+この ドアを あけると、
+
+どこで も いきたい ところへ いけます。
+you can go anywhere you want.
+dokodemo ikitai tokoro e ikemasu.
+どこで も 行きたい 所へ 行けます。
+
+`;
 
 allWords["Grammer 31 - Hard"] = ``;
 
-allWords["Grammer 32"] = ``;
+allWords["Grammer 32"] = `
+まいにち うんどうした ほうがいいです。
+It is good to do some exercise everyday.
+Mainichi undou shita hou ga ii desu.
+毎日 運動した ほうがいいです。
+
+ねつが あるんです。
+I've got a fever.
+Netsu ga arun desu.
+熱が あるんです。
+
+...じゃ、おふろに はいらない ほうがいいですよ。
+...So, you had better not take a bath.
+...Ja, ofuro ni hairanai hou ga ii desu yo.
+...じゃ、おふろに 入らない ほうがいいですよ。
+
+にほんの おてらが いたいんですが......
+I would like to see some Japanese temples...
+Nihon no otera ga mitai n desu ga...
+日本の お寺が 見たいんですが......
+
+...じゃ、きょうとへ いったら いいですよ。
+...So, it would be a good idea to go to Kyoto.
+...Ja, Kyouto e ittara ii desu yo.
+...じゃ、京都へ 行ったら いいですよ。
+
+あしたは あめが ふるでしょう。
+It will rain tomorrow.
+Ashita wa ame ga furu deshou.
+あしたは 雨が 降るでしょう。
+
+タワポンさんは ごうかくするでしょうか。
+Do you think Mr. Thawapon will pass the exam?
+Tawapon-san wa goukaku suru deshou ka.
+タワポンさんは 合格するでしょうか。
+
+やくそくの じかんに まに あわないかも しれません。
+We might not be in time for the appointment.
+Yakusoku no jikan ni mani awanai kamo shiremasen.
+約束の 時間に 間に 合わないかも しれません。
+
+ミラーさんは きっと きます。
+Mr. Miller will surely come.
+Miraa-san wa kitto kimasu.
+ミラーさんは きっと 来ます。
+
+あしたは きっと あめでしょう。
+It will undoubtedly rain tomorrow.
+Ashita wa kitto ame deshou.
+あしたは きっと 雨でしょう。
+
+ミラーさんは くるでしょうか。
+Do you think Mr. Miller will come?
+Miraa-san wa kuru deshou ka.
+ミラーさんは 来るでしょうか。
+
+...たぶん くるでしょう。
+...I guess so.
+...Tabun kuru deshou.
+...たぶん 来るでしょう。
+
+やまださんは この ニュースを たぶん しらないと おもいます。
+I guess Mr. Yamada does not know this news.
+Yamada-san wa kono nyuusu wo tabun shiranai to omoimasu.
+山田さんは この ニュースを たぶん 知らないと 思います。
+
+もしかしたら さんがつに そつぎょうできないかも しれません。
+There is a possibility I might be unable to graduate in March.
+Moshikashitara sangatsu ni sotsugyou dekinai kamo shiremasen.
+もしかしたら 3月に 卒業できないかも しれません。
+
+なににか しんぱいな ことが あるんですか。
+Is anything bothering you?
+Nani ka shinpai na koto ga aru n desu ka.
+何か 心配な ことが あるんですか。
+
+スキーに いきたいんですが、どこか いい ところが ありませんか。
+I want to go skiing. Could you recommend a good ski resort?
+Sukii ni ikitai n desu ga, dokoka ii tokoro ga arimasen ka.
+スキーに 行きたいんですが、どこか いい 所が ありませんか。
+
+えくまで さんじゅっぷんで いけますか。
+Can I reach the station in thirty minutes?
+Eki made sanjuppun de ikemasu ka.
+駅まで 30分で 行けますか。
+
+さんまんえんで ビデオが かえますか。
+Can I buy a video player for 30,000 yen?
+Sanman-en de bideo ga kaemasu ka.
+3万円で ビデオが 買えますか。
+
+`;
 
 allWords["Grammer 32 - Hard"] = ``;
 
-allWords["Grammer 33"] = ``;
+allWords["Grammer 33"] = `
+はやく ねろ。
+Go to bed immediately.
+Hayaku nero.
+早く 寝ろ。
+
+おくれるな。
+Don't be late.
+Okureru na.
+遅れるな。
+
+うちへ こいよ。
+Come to my house tomorrow.
+Uchi e koi yo.
+うちへ 来いよ。
+
+あまり のむなよ。
+Don't drink too much.
+Amari nomu na yo.
+あまり 飲むなよ。
+
+にげろ。
+Run.
+Nigero.
+逃げろ。
+
+エレベーターを つかうな。
+Don't use the elevator.
+ErebEtaa wo tsukau na.
+エレベーターを 使うな。
+
+やすめ。
+Rest.
+Yasume.
+休め。
+
+やすむな。
+Don't rest.
+Yasumu na.
+休むな。
+
+がんばれ。
+Fight!
+Ganbare.
+頑張れ。
+
+まけるな。
+Don't lose!
+Makeru na.
+負けるな。
+
+とまれ。
+Stop.
+Tomare.
+止まれ。
+
+はいるな。
+Don't enter.
+Hairu na.
+入るな。
+
+べんきょうしなさい。
+Study.
+Benkyou shinasai.
+勉強しなさい。
+
+あの かんじは なんと よむんですか。
+How do you read that kanji?
+Ano kanji wa nan to yomu n desu ka.
+あの 漢字は 何と 読むんですか。
+
+あそこに 「とまれ」と かいて あります。
+"Tomare" is written over there.
+Asoko ni "Tomare" to kaite arimasu.
+あそこに 「止まれ」と 書いて あります。
+
+「たちいりきんし」は はいるなと いう いみです。
+"Tachiiri-Kinshi" means don't enter.
+"Tachiiri-kinshi" wa hairu na to iu imi desu.
+「立ち入り禁止」は 入るなと いう 意味です。
+
+この マークは どういう いみですか。
+What does this sign mean?
+Kono maaku wa douiu imi desu ka.
+この マークは どういう 意味ですか。
+
+...せんたくきで あらえろと いう いみです。
+...It means machine washable.
+...Sentakuki de araeru to iu imi desu.
+...洗濯機で 洗えると いう 意味です。
+
+たなかさんは 「あした やすみたい」と いっていました。
+Mr. Tanaka said, "I want to take a day off tomorrow."
+Tanaka-san wa "Ashita yasumitai" to itte imashita.
+田中さんは 「あした 休みたい」と 言っていました。
+
+たなかさんは あした やすむと いっていました。
+Mr. Tanaka said that he would take a day off tomorrow.
+Tanaka-san wa ashita yasumu to itte imashita.
+田中さんは あした 休むと 言っていました。
+
+ワンさんに 「あとで でんわを ください」と
+Could you please tell Mr. Wang
+Wan-san ni "Ato de denwa wo kudasai" to
+ワンさんに 「あとで 電話を ください」と
+
+つたえて いただけませんか。
+to give me a call later?
+tsutaete itadakemasen ka.
+伝えて いただけませんか。
+
+すみませんが、わたなべさんに あしたの パーティーは
+Could you please tell Ms. Watanabe that the party tomorrow
+Sumimasen ga, Watanabe-san ni ashita no paatii wa
+すみませんが、渡辺さんに あしたの パーティーは
+
+ろくじからだと つたえて いただけませんか。
+will be from 6 o'clock?
+roku-ji kara da to tsutaete itadakemasen ka.
+6時からだと 伝えて いただけませんか。
+
+`;
 
 allWords["Grammer 33 - Hard"] = ``;
 
-allWords["Grammer 34"] = ``;
+allWords["Grammer 34"] = `
+わたしが やる とおりに、やって ください。
+Please do as I do.
+Watashi ga yaru toori ni, yatte kudasai.
+わたしが やる とおりに、やって ください。
+
+わたしが いう とおりに、かいて ください。
+Please write down what I say as it is.
+Watashi ga iu toori ni, kaite kudasai.
+わたしが 言う とおりに、書いて ください。
+
+みたとおりに、はなして ください。
+Please tell us what you saw as it was.
+Mita toori ni, hanashite kudasai.
+見たとおりに、話して ください。
+
+せんの とおりに、かみを きって ください。
+Please cut the paper following the line.
+Sen no toori ni, kami wo kitte kudasai.
+線の とおりに、紙を 切って ください。
+
+せつめいしょの とおりに、くみたてました。
+I assembled it according to the handbook.
+Setsumeisho no toori ni, kumitatemashita.
+説明書の とおりに、組み立てました。
+
+あたらしいのを かった あとで、
+After I bought a new watch,
+Atarashii no wo katta ato de,
+新しいのを 買った あとで、
+
+なくした とけいが みつかりました。
+I found the one I'd lost.
+nakushita tokei ga mitsukarimashita.
+なくした 時計が 見つかりました。
+
+しごとの あとで、のみに いきませんか。
+Shall we go and have a drink after work?
+Shigoto no ato de, nomi ni ikimasen ka.
+仕事の あとで、飲みに 行きませんか。
+
+しょうゆを つけて たべます。
+We eat it with soy sauce.
+Shouyu wo tsukete tabemasu.
+しょうゆを つけて 食べます。
+
+しょうゆを つけないで たべます。
+We eat it without soy sauce.
+Shouyu wo tsukenaide tabemasu.
+しょうゆを つけないで 食べます。
+
+にちようびは どこも いかないで、
+Next Sunday I won't go anywhere.
+Nichiyoubi wa dokomo ikanaide,
+日曜日は どこも 行かないで、
+
+うちで ゆっくり やすみます。
+I will rest at home instead.
+uchi de yukkuri yasumimasu.
+うちで ゆっくり 休みます。
+
+`;
 
 allWords["Grammer 34 - Hard"] = ``;
 
-allWords["Grammer 35"] = ``;
+allWords["Grammer 35"] = `
+ボタンを おせば、まどが あきます。
+If you push the button, the window will open.
+Botan wo oseba, mado ga akimasu.
+ボタンを 押せば、窓が 開きます。
+
+かれが いけば、わたしも いきます。
+If he goes, I will go, too.
+Kare ga ikeba, watashi mo ikimasu.
+彼が 行けば、わたしも 行きます。
+
+いい てんきなら、むこうに しまが みえます。
+When it is fine, an island can be seen over there.
+Ii tenki nara, mukou ni shima ga miemasu.
+いい 天気なら、向こうに 島が 見えます。
+
+ほかに いけんが なければ、これで おわりましょう。
+If you don't have any other opinions, let's close this meeting now.
+Hoka ni iken ga nakereba, kore de owarimashou.
+ほかに 意見が なければ、これで 終わりましょう。
+
+あしたまでに レポートを ださなければ なりませんか。
+Do I have to hand in the report by tomorrow?
+Ashita made ni repooto wo dasanakereba narimasen ka.
+あしたまでに レポートを 出さなければ なりませんか。
+
+...むりなら、きんようびまでに だして ください。
+...If it is impossible, hand it in by this Friday.
+...Muri nara, kin'youbi made ni dashite kudasai.
+...無理なら、金曜日までに 出して ください。
+
+ここを おせば、ドアが あきます。
+Press here, and the door will open.
+Koko wo oseba, doa ga akimasu.
+ここを 押せば、ドアが 開きます。
+
+ここを おすと、ドアが あきます。
+If you press here, the door will open.
+Koko wo osu to, doa ga akimasu.
+ここを 押すと、ドアが 開きます。
+
+じかんが なかったら、テレビを みません。
+If I don't have time, I will not watch television.
+Jikan ga nakattara, terebi wo mimasen.
+時間が なかったら、テレビを 見ません。
+
+じかんが なければ、テレビを みません。
+If I don't have time, I will not watch television.
+Jikan ga nakereba, terebi wo mimasen.
+時間が なければ、テレビを 見ません。
+
+とうきょうへ きたら、ぜひ れんらくして ください。
+Please contact me, when you come to Tokyo.
+Toukyou e kitara, zehi renraku shite kudasai.
+東京へ 来たら、ぜひ 連絡して ください。
+
+おんせんに いきたいんですが、
+I want to visit a hot spring resort.
+Onsen ni ikitai n desu ga,
+温泉に 行きたいんですが、
+
+どこか いい ところが ありませんか。
+Don't you know any good place?
+dokoka ii tokoro ga arimasen ka.
+どこか いい 所が ありませんか。
+
+...おんせんなら、はこねが いいですよ。
+...If you are talking about hot springs, Hakone would be good.
+...Onsen nara, Hakone ga ii desu yo.
+...温泉なら、箱根が いいですよ。
+
+ほんを かりたいんですが、どう したら いいですか。
+I would like to borrow some books. What should I do?
+Hon wo karitai n desu ga, dou shitara ii desu ka.
+本を 借りたいんですが、どう したら いいですか。
+
+ほんを かりたいんですが、どう すれば いいですか。
+I would like to borrow some books. What should I do?
+Hon wo karitai n desu ga, dou sureba ii desu ka.
+本を 借りたいんですが、どう すれば いいですか。
+
+ビートルズの おんがくは きけば きくほど すきに なります。
+The more I listen to the music of the Beatles, the better I like it.
+Biitoruzu no ongaku wa kikeba kiku hodo suki ni narimasu.
+ビートルズの 音楽は 聞けば 聞くほど 好きに なります。
+
+パソコンは そうさが かんたんなら かんたんなほど いいです。
+The easier the operation, the better the computer.
+Pasokon wa sousa ga kantan nara kantan na hodo ii desu.
+パソコンは 操作が 簡単なら 簡単なほど いいです。
+
+`;
 
 allWords["Grammer 35 - Hard"] = ``;
 
-allWords["Grammer 36"] = ``;
+allWords["Grammer 36"] = `
+はやく およげるように、
+I practice every day
+Hayaku oyogeru you ni,
+早く 泳げるように、
+
+まいにち れんしゅうして います。
+so that I can swim fast.
+mainichi renshuu shite imasu.
+毎日 練習して います。
+
+わすれないように、
+Please take a memo
+Wasurenai you ni,
+忘れないように、
+
+メモして ください。
+so that you will not forget.
+memo shite kudasai.
+メモして ください。
+
+まいにち れんしゅうすれば、
+If you practice every day,
+Mainichi renshuu sureba,
+毎日 練習すれば、
+
+およげるように なります。
+you will become able to swim.
+oyogeru you ni narimasu.
+泳げるように なります。
+
+やっと じてんしゃに のれるように なりました。
+I've finally become able to ride a bicycle.
+Yatto jitensha ni noreru you ni narimashita.
+やっと 自転車に 乗れるように なりました。
+
+としを とると、
+As you get older,
+Toshi wo toru to,
+年を とると、
+
+ちいさい じが よめなくなります。
+you cannot read small letters.
+chiisai ji ga yomenaku narimasu.
+小さい 字が 読めなくなります。
+
+ふとりましたから、
+I gained weight so
+Futorimashita kara,
+太りましたから、
+
+すきな ふくが きられなくなりました。
+I can no longer wear my favorite dress.
+sukina fuku ga kirarenaku narimashita.
+好きな 服が 着られなくなりました。
+
+ショパンが ひけるように なりましたか。
+Have you become able to play work by Chopin?
+Shopan ga hikeru you ni narimashita ka.
+ショパンが 弾けるように なりましたか。
+
+...いいえ、まだ ひけません。
+...No, not yet.
+...Iie, mada hikemasen.
+...いいえ、まだ 弾けません。
+
+にほんじんは 100ねんぐらいまえから
+The Japanese started to eat beef and pork
+Nihonjin wa hyaku-nen gurai mae kara
+日本人は 100年ぐらい前から
+
+ぎゅうにくや ぶたにくを たべるように なりました。
+from about 100 years ago.
+gyuuniku ya butaniku wo taberu you ni narimashita.
+牛肉や 豚肉を 食べるように なりました。
+
+くるまを かってから、
+I do not walk much
+Kuruma wo katte kara,
+車を 買ってから、
+
+わたしは あまり あるかなくなりました。
+since I bought a car.
+watashi wa amari arukanaku narimashita.
+わたしは あまり 歩かなくなりました。
+
+まいにち うんどうして、
+I try to take exercise every day
+Mainichi undou shite,
+毎日 運動して、
+
+なんでも たべるように して います。
+and eat a variety of foods.
+nandemo taberu you ni shite imasu.
+何でも 食べるように して います。
+
+はに わるいですから、
+I try not to eat sweets
+Ha ni warui desu kara,
+歯に 悪いですから、
+
+あまい ものを たべないように して います。
+because they are bad for my teeth.
+amai mono wo tabenai you ni shite imasu.
+甘い 物を 食べないように して います。
+
+もっと やさいを たべるように して ください。
+Please try to eat more vegetables.
+Motto yasai wo taberu you ni shite kudasai.
+もっと 野菜を 食べるように して ください。
+
+あしたは ぜったいに じかんに おくれないように して ください。
+Please be sure not to be late tomorrow.
+Ashita wa zettai ni jikan ni okurenai you ni shite kudasai.
+あしたは 絶対に 時間に 遅れないように して ください。
+
+すみませんが、しおを とって ください。
+Excuse me, please pass me the salt.
+Sumimasen ga, shio wo totte kudasai.
+すみませんが、塩を 取って ください。
+
+どんな スポーツを していますか。
+What kind of sports do you do?
+Donna supootsu wo shite imasu ka.
+どんな スポーツを していますか。
+
+...そうですね。テニスとか すいえいとか......
+...Well, playing tennis, swimming, and so on.
+...Sou desu ne. Tenisu toka suiei toka...
+...そうですね。テニスとか 水泳とか......
+
+`;
 
 allWords["Grammer 36 - Hard"] = ``;
 
-allWords["Grammer 37"] = ``;
+allWords["Grammer 37"] = `
+かきます / かかれます
+to write / to be written
+kakimasu / kakaremasu
+書きます / 書かれます
+
+はなします / はなされます
+to speak / to be spoken
+hanashimasu / hanasaremasu
+話します / 話されます
+
+たべます / たべられます
+to eat / to be eaten
+tabemasu / taberaremasu
+食べます / 食べられます
+
+きます / こられます
+to come / to be come
+kimasu / koraremasu
+来ます / 来られます
+
+します / されます
+to do / to be done
+shimasu / saremasu
+します / されます
+
+わたしは せんせいに ほめられました。
+I was praised by my teacher.
+Watashi wa sensei ni homeramashita.
+わたしは 先生に 褒められました。
+
+わたしは ははに かいものを たのまれました。
+I was asked to go shopping by my mother.
+Watashi wa haha ni kaimono wo tanomaremashita.
+わたしは 母に 買い物・頼まれました。
+
+わたしは いぬに かまれました。
+I was bitten by a dog.
+Watashi wa inu ni kamaremashita.
+わたしは 犬に かまれました。
+
+おとうとに パソコンを こわされました。
+My brother broke my personal computer.
+Otouoto ni pasokon wo kowasaremashita.
+弟に パソコンを 壊されました。
+
+わたしは いぬに てを かまれました。
+I had my hand bitten by a dog.
+Watashi wa inu ni te wo kamaremashita.
+わたしは 犬に 手を かまれました。
+
+わたしは ともだちに じてんしゃを しゅうりして もらいました。
+I had my bicycle repaired by my friend.
+Watashi wa tomodachi ni jitensha wo shuuri shite moraimashita.
+わたしは 友達に 自転車を 修理して もらいました。
+
+フランスで ふるい にほんの えが はっけんされました。
+An old Japanese picture has been discovered in France.
+Furansu de furui Nihon no ega hakkensaremashita.
+フランスで 古い 日本の 絵が 発見されました。
+
+にほんの くるまは せかいじゅうへ ゆしゅつされています。
+Japanese cars are exported all over the world.
+Nihon no kuruma wa sekaijuu e yushutsu sarete imasu.
+日本の 車は 世界中へ 輸出されています。
+
+かいぎは こうべで ひらかれました。
+The assembly was held in Kobe.
+Kaigi wa Koube de hirakaremashita.
+会議は 神戸で 開かれました。
+
+『げんじものがたり』は
+"The Tale of Genji"
+"Genji Monogatari" wa
+『源氏物語』は
+
+むらさきしきぶによって かかれました。
+was written by Murasaki Shikibu.
+Murasaki Shikibu ni yotte kakaremashita.
+紫式部によって 書かれました。
+
+でんわは ベルによって はつめいされました。
+The telephone was invented by Bell.
+Denwa wa Beru ni yotte hatsumeisaremashita.
+電話は ベルによって 発明されました。
+
+ビールは むぎから つくられます。
+Beer is made from barley.
+Biiru wa mugi kara tsukuraremasu.
+ビールは 麦から 造られます。
+
+むかしの にほんの いえは きで つくられました。
+Japanese houses were made of wood in the past.
+Mukashi no Nihon no ie wa ki de tsukuraremashita.
+昔の 日本の 家は 木で 造られました。
+
+`;
 
 allWords["Grammer 37 - Hard"] = ``;
 
-allWords["Grammer 38"] = ``;
+allWords["Grammer 38"] = `
+テニスは おもしろいです。
+Tennis is fun.
+Tenisu wa omoshiroi desu.
+テニスは おもしろいです。
+
+テニスを するのは おもしろいです。
+Playing tennis is fun.
+Tenisu wo suru no wa omoshiroi desu.
+テニスを するのは おもしろいです。
+
+テニスを みるのは おもしろいです。
+Watching tennis is fun.
+Tenisu wo miru no wa omoshiroi desu.
+テニスを 見るのは おもしろいです。
+
+わたしは はなが すきです。
+I like flowers.
+Watashi wa hana ga suki desu.
+わたしは 花が 好きです。
+
+わたしは はなを そだてるのが すきです。
+I like growing flowers.
+Watashi wa hana wo sodateru no ga suki desu.
+わたしは 花を 育てるのが 好きです。
+
+とうきょうの ひとは あるくのが はやいです。
+People in Tokyo walk fast.
+Toukyou no hito wa aruku no ga hayai desu.
+東京の 人は 歩くのが 早いです。
+
+かぎを わすれました。
+I forgot the key.
+Kagi wo wasuremashita.
+かぎを 忘れました。
+
+ぎゅうにゅうを かうのを わすれました。
+I forgot to buy the milk.
+Gyuunyuu wo kau no wo wasuremashita.
+牛乳を 買うのを 忘れました。
+
+くるまの まどを しめるのを わすれました。
+I forgot to close the car window.
+Kuruma no mado wo shimeru no wo wasuremashita.
+車の 窓を 閉めるのを 忘れました。
+
+すずきさんが らいげつ けっこんするのを
+Do you know that Mr. Suzuki
+Suzuki-san ga raigetsu kekkon suru no wo
+鈴木さんが 来月 結婚するのを
+
+しっていますか。
+is going to get married next month?
+shitte imasu ka.
+知っていますか。
+
+きむらさんに あかちゃんが うまれたのを
+Do you know that Ms. Kimura
+Kimura-san ni akachan ga umareta no wo
+木村さんに 赤ちゃんが 生まれたのを
+
+しっていましたか。
+had a baby?
+shitte imashita ka.
+知っていましたか。
+
+...いいえ、しりませんでした。
+...No, I didn't.
+...Iie, shirimasen deshita.
+...いいえ、知りませんでした。
+
+ミラーさんの じゅうしょを しっていますか。
+Do you know Mr. Miller's address?
+Miraa-san no juusho wo shitte imasu ka.
+ミラーさんの 住所を 知っていますか。
+
+...いいえ、しりません。
+...No, I don't.
+...Iie, shirimasen.
+...いいえ、知りません。
+
+むすめが うまれたのは
+My daughter was born
+Musume ga umareta no wa
+娘が 生まれたのは
+
+ほっかいどうの ちいさい まちです。
+in a small town in Hokkaido.
+Hokkaido no chiisai machi desu.
+北海道の 小さい 町です。
+
+1ねんで いちばん いそがしいのは 12がつです。
+December is the busiest month of the year.
+Ichi-nen de ichiban isogashii no wa juu-ni-gatsu desu.
+1年で いちばん 忙しいのは 12月です。
+
+つかれた ときや さびしい とき、
+When I am tired or lonely,
+Tsukareta toki ya sabishii toki,
+疲れた ときや 寂しい とき、
+
+ふるさとを おもいだします。
+I remember my hometown.
+furusato wo omoidashimasu.
+ふるさとを 思い出します。
+
+うまれた ときから、
+Since I was born,
+Umareta toki kara,
+生まれた ときから、
+
+ずっと おおさかに すんでいます。
+I have been living in Osaka.
+zutto Oosaka ni sunde imasu.
+ずっと 大阪に 住んでいます。
+
+`;
 
 allWords["Grammer 38 - Hard"] = ``;
 
-allWords["Grammer 39"] = ``;
+allWords["Grammer 39"] = `
+ニュースを きいて、びっくりしました。
+I was surprised to hear the news.
+Nyuusu wo kiite, bikkuri shimashita.
+ニュースを 聞いて、びっくりしました。
+
+かぞくに あえなくて、さびしいです。
+I miss my family.
+Kazoku ni aenaku te, sabishii desu.
+家族に 会えなくて、寂しいです。
+
+どようびは つごうが わるくて、
+Saturday is inconvenient for me,
+Doyoubi wa tsugou ga waruku te,
+土曜日は 都合が 悪くて、
+
+いけません。
+so I cannot come.
+ikemasen.
+行けません。
+
+はなしが ふくざつで、
+The story was complicated,
+Hanashi ga fukuzatsu de,
+話が 複雑で、
+
+よく わかりませんでした。
+so I could not understand it well.
+yoku wakarimasen deshita.
+よく 分かりませんでした。
+
+じこが あって、
+There was an accident,
+Jiko ga atte,
+事故が あって、
+
+バスが おくれて しまいました。
+so the bus was delayed.
+basu ga okurete shimaimashita.
+バスが 遅れて しまいました。
+
+じゅぎょうに おくれて、
+I was late for the lesson,
+Jugyou ni okurete,
+授業に 遅れて、
+
+せんせいに しかられました。
+so I was scolded by my teacher.
+sensei ni shikararemashita.
+先生に 叱られました。
+
+あぶないですから、
+It is dangerous,
+Abunai desu kara,
+危険ですから、
+
+きかいに ふれないで ください。
+so please do not touch the machine.
+kikai ni furenaide kudasai.
+機械に 触れないで ください。
+
+あした かいぎが ありますから、
+The meeting will be held tomorrow,
+Ashita kaigi ga arimasu kara,
+あした 会議が ありますから、
+
+きょう じゅんびしなければ なりません。
+so we have to make preparations for it today.
+kyou junbi shinakereba narimasen.
+今日 準備しなければ なりません。
+
+じしんで ビルが たおれました。
+Because of the earthquake, a building collapsed.
+Jishin de biru ga taoremashita.
+地震で ビルが 倒れました。
+
+びょうきで かいしゃを やすみました。
+Because of illness, I took a day off work.
+Byouki de kaisha wo yasumimashita.
+病気で 会社を 休みました。
+
+にほんごが わからないので、
+I don't understand Japanese,
+Nihongo ga wakaranai node,
+日本語が 分からないので、
+
+えいごで はなしていただけませんか。
+so would you please speak in English?
+Eigo de hanashite itadakemasen ka.
+英語で 話していただけませんか。
+
+ようじが あるので、おさきに しつれいします。
+As I have something to do, may I leave now?
+Youji ga aru node, osaki ni shitsurei shimasu.
+用事が あるので、お先に 失礼します。
+
+ようじが ありますので、おさきに しつれいします。
+As I have something to do, may I leave now?
+Youji ga arimasu node, osaki ni shitsurei shimasu.
+用事が ありますので、お先に 失礼します。
+
+じつは くる とちゅうで じこが あって、
+Actually, on my way here there was an accident,
+Jitsu wa kuru tochuu de jiko ga atte,
+実は 来る 途中で 事故が あって、
+
+バスが おくれて しまったんです。
+and the bus was delayed.
+basu ga okurete shimaitan desu.
+バスが 遅れて しまったんです。
+
+マラソンの とちゅうで
+During the marathon,
+Marason no tochuu de
+マラソンの 途中で
+
+きぶんが わるくなりました。
+I got sick.
+kibun ga waraku narimashita.
+気分が 悪くなりました。
+
+`;
 
 allWords["Grammer 39 - Hard"] = ``;
 
-allWords["Grammer 40"] = ``;
+allWords["Grammer 40"] = `
+JL107びんは なんじに とうちゃくするか、
+Please check what time JL107 will arrive,
+JL107-bin wa nan-ji ni touchaku suru ka,
+JL107便は 何時に 到着するか、
+
+しらべて ください。
+please check.
+shirabete kudasai.
+調べて ください。
+
+けっこんの お祝いは なにが いいか、
+We are talking about what to give
+Kekkon no oiwai wa nani ga ii ka,
+結婚の お祝いは 何が いいか、
+
+はなして います。
+as a wedding present.
+hanashite imasu.
+話して います。
+
+わたしたちが はじめて あったのは いつか、
+Do you remember when it was
+Watashitachi ga hajimete atta no wa itsu ka,
+わたしたちが 初めて 会ったのは いつか、
+
+おぼえて いますか。
+that we first met?
+oboete imasu ka.
+覚えて いますか。
+
+ぼうねんかいに しゅっせきするか どうか、
+Please answer whether you'll attend the year-end party or not
+Bounenkai ni shusseki suru ka dou ka,
+忘年会に 出席するか どうか、
+
+20にちまでに へんじを ください。
+by the 20th.
+hatsuka made ni henji wo kudasai.
+20日までに 返事を ください。
+
+その はなしは ほんとうか どうか、
+I don't know whether the story is true or not.
+Sono hanashi wa hontou ka dou ka,
+その 話は ほんとうか どうか、
+
+わかりません。
+I don't know.
+wakarimasen.
+分かりません。
+
+まちがいが ないか どうか、
+Please check if there are no mistakes.
+Machigai ga nai ka dou ka,
+まちがいが ないか どうか、
+
+しらべて ください。
+please check.
+shirabete kudasai.
+調べて ください。
+
+もう いちど かんがえて みます。
+I'll think it over again.
+Mou ichido kangaete mimasu.
+もう 一度 考えて みます。
+
+うちゅうから ちきゅうを みてみたいです。
+I want to see the earth from space.
+Uchuu kara Chikyuu wo mite mitai desu.
+宇宙から 地球を 見てみたいです。
+
+この ズボンを はいて みても いいですか。
+May I try on this pair of trousers?
+Kono zubon wo haite mite mo ii desu ka.
+この ズボンを はいて みても いいですか。
+
+やまの たかさは どうやって はかるか、
+Do you know how to measure
+Yama no takasa wa dou yatte hakaru ka,
+山の 高さは どうやって 測るか、
+
+しって いますか。
+the height of a mountain?
+shitte imasu ka.
+知って いますか。
+
+あたらしい はしの ながさは 3,911メートルです。
+The new bridge is 3,911 meters long.
+Atarashii hashi no nagasa wa san-sen kyuu-hyaku juu-ichi meetoru desu.
+新しい 橋の 長さは 3,911メートルです。
+
+ハンスは がっこうで どうでしょうか。
+How is Hans doing at school?
+Hansu wa gakkou de dou deshou ka.
+ハンスは 学校で どうでしょうか。
+
+`;
 
 allWords["Grammer 40 - Hard"] = ``;
 
-allWords["Grammer 41"] = ``;
+allWords["Grammer 41"] = `
+わたしは むすこに おかしを やりました。
+I gave some sweets to my son.
+Watashi wa musuko ni okashi wo yarimashita.
+わたしは 息子に お菓子を やりました。
+
+わたしは いぬに えさを やりました。
+I gave some food to the dog.
+Watashi wa inu ni esa wo yarimashita.
+わたしは 犬に えさを やりました。
+
+わたしは ぶちょうに おみやげを いただきました。
+I received a souvenir from the general manager.
+Watashi wa buchou ni omiyage wo itadakimashita.
+わたしは 部長に お土産を いただきました。
+
+ぶちょうが わたしに おみやげを くださいました。
+The general manager gave me a souvenir.
+Buchou ga watashi ni omiyage wo kudasaimashita.
+部長が わたしに お土産を くださいました。
+
+ぶちょうが むすめに おみやげを くださいました。
+The general manager gave a souvenir to my daughter.
+Buchou ga musume ni omiyage wo kudasaimashita.
+部長が 娘に お土産を くださいました。
+
+わたしは むすこに かみひこうきを つくって やりました。
+I made a paper plane for my son.
+Watashi wa musuko ni kamihikouki wo tsukutte yarimashita.
+わたしは 息子に 紙飛行機を 作って やりました。
+
+わたしは いぬを さんぽに つれて いって やりました。
+I took my dog for a walk.
+Watashi wa inu wo sanpo ni tsurete itte yarimashita.
+わたしは 犬を 散歩に 連れて 行って やりました。
+
+わたしは むすめの しゅくだいを みて やりました。
+I checked my daughter's homework.
+Watashi wa musume no shukudai wo mite yarimashita.
+わたしは 娘の 宿題を 見て やりました。
+
+わたしは ぶちょうに てがみの まちがいを なおして いただきました。
+I had my letter corrected by the manager.
+Watashi wa buchou ni tegami no machigai wo naoshite itadakimashita.
+わたしは 部長に 手紙の 間違いを 直して いただきました。
+
+ぶちょうの おくさんは わたしに ちゃどうを おしえて くださいました。
+The general manager's wife taught me the tea ceremony.
+Buchou no okusan wa watashi ni chadou wo oshiete kudasaimashita.
+部長の 奥さんは わたしに 茶道を 教えて くださいました。
+
+ぶちょうは わたしを えきまで おくって くださいました。
+The general manager took me to the station.
+Buchou wa watashi wo eki made okutte kudasaimashita.
+部長は わたしを 駅まで 送って くださいました。
+
+ぶちょうは わたしの レポートを なおして くださいました。
+The general manager corrected my report.
+Buchou wa watashi no repooto wo naoshite kudasaimashita.
+部長は わたしの レポートを 直して くださいました。
+
+コピーきの つかいかたを おしえて くださいませんか。
+Will you kindly show me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete kudasaimasen ka.
+コピー機の 使い方を 教えて くださいませんか。
+
+コピーきの つかいかたを おしえて いただけませんか。
+Would you kindly show me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete itadakemasen ka.
+コピー機の 使い方を 教えて いただけませんか。
+
+たなかさんが けっこんの お祝いに この おさらを くださいました。
+Mr. Tanaka gave me this plate as a wedding gift.
+Tanaka-san ga kekkon no oiwai ni kono osara wo kudasaimashita.
+田中さんが 結婚の お祝いに この お皿を くださいました。
+
+わたしは ほっかいどうりょこうの おみやげに にんぎょうを かいました。
+I bought a doll as a souvenir of the trip to Hokkaido.
+Watashi wa Hokkaidoo ryokou no omiyage ni ningyou wo kaimashita.
+わたしは 北海道旅行の お土産に 人形を 買いました。
+
+`;
 
 allWords["Grammer 41 - Hard"] = ``;
 
-allWords["Grammer 42"] = ``;
+allWords["Grammer 42"] = `
+じぶんの おみせを もつ ために、
+I am saving money
+Jibun no omise wo motsu tame ni,
+自分の お店を 持つ ために、
+
+ちょきんして います。
+in order to have my own shop.
+chokin shite imasu.
+貯金して います。
+
+ひっこしの ために、くるまを かります。
+I will rent a car for the move.
+Hikkoshi no tame ni, kuruma wo karimasu.
+引っ越しの ために、車を 借ります。
+
+けんこうの ために、まいあさ ジョギングして います。
+For my health, I jog every morning.
+Kenkou no tame ni, maiasa jogingu shite imasu.
+健康の ために、毎朝 ジョギングして います。
+
+かぞくの ために、うちを たてます。
+I will build a house for my family.
+Kazoku no tame ni, uchi wo tatemasu.
+家族の ために、うちを 建てます。
+
+じぶんの おみせが もてるように、ちょきんして います。
+I am saving money so that I can have my own shop.
+Jibun no omise ga moteru you ni, chokin shite imasu.
+自分の お店が 持てるように、貯金して います。
+
+べんごしに なる ために、ほうりつを べんきょうして います。
+I study law in order to become a lawyer.
+Bengoshi ni naru tame ni, houritsu wo benkyou shite imasu.
+弁護士に なる ために、法律を 勉強して います。
+
+にほんごが じょうずに なるように、まいにち べんきょうして います。
+I study everyday so that my Japanese may improve.
+Nihongo ga jouzu ni naru you ni, mainichi benkyou shite imasu.
+日本語が 上手に なるように、毎日 勉強して います。
+
+この はさみは はなを きるのに つかいます。
+This pair of scissors is used to cut flowers.
+Kono hasami wa hana wo kiru no ni tsukaimasu.
+この はさみは 花を 切るのに 使います。
+
+この かばんは おおきくて、りょこうに べんりです。
+This bag is big and convenient for trips.
+Kono kaban wa ookikute, ryokou ni benri desu.
+この かばんは 大きくて、旅行に 便利です。
+
+でんわばんごうを しらべるのに じかんが かかりました。
+It took a lot of time to find the telephone number.
+Denwa-bangou wo shiraberu no ni jikan ga kakarimashita.
+電話番号を 調べるのに 時間が かかりました。
+
+こうべへ ふねを みに いきます。
+I'll go to Kobe to look at the ships.
+Koube e fune wo mi ni ikimasu.
+神戸へ 船を 見に 行きます。
+
+にほんへ けいざいの べんきょうに きました。
+I came to Japan to study economics.
+Nihon e keizai no benkyou ni kimashita.
+日本へ 経済の 勉強に 来ました。
+
+はやく とどくように、そくたつで だします。
+I will mail this by special delivery so that it can get there earlier.
+Hayaku todoku you ni, sokutatsu de dashimasu.
+早く 届くように、速達で 出します。
+
+わすれないように、メモします。
+I make a note so that I don't forget.
+Wasurenai you ni, memo shimasu.
+忘れないように、メモします。
+
+だいがくに はいる ために、いっしょうけんめい べんきょうします。
+I study as hard as possible in order to enter a university.
+Daigaku ni hairu tame ni, isshoukenmei benkyou shimasu.
+大学に 入る ために、一生懸命 勉強します。
+
+けんこうの ために、やさいを たくさん たべます。
+I eat a lot of vegetables for my health.
+Kenkou no tame ni, yasai wo takusan tabemasu.
+健康の ために、野菜を たくさん 食べます。
+
+ファイルは しりょうを せいりするのに つかいます。
+Files are used to put papers in order.
+Fairu wa shiryou wo seiri suru no ni tsukaimasu.
+ファイルは 資料を 整理するのに 使います。
+
+ちかくに みせが なくて、かいものに ふべんです。
+There are no stores nearby, so it is inconvenient for shopping.
+Chikaku ni mise ga nakute, kaimono ni fuben desu.
+近くに 店が なくて、買い物に 不便です。
+
+にほんでは けっこんしきを するのに にひゃくまんえんは いります。
+In Japan you need at least 2 million yen to hold a wedding.
+Nihon de wa kekkonshiki wo suru no ni ni-hyaku-man-en wa irimasu.
+日本では 結婚式を するのに 200万円は 要ります。
+
+えきまで あるくのに にじかんも かかりました。
+It took as long as two hours to get to the station.
+Eki made aruku no ni ni-jikan mo kakarimashita.
+駅まで 歩くのに 2時間も かかりました。
+
+うちを たてるのに さんせんまんえんも ひつようなんですか。
+You need as much as 30 million yen to build a house?
+Uchi wo tateru no ni san-sen-man-en mo hitsuyou nan desu ka.
+うちを 建てのに 3,000万円も 必要なんですか。
+
+`;
 
 allWords["Grammer 42 - Hard"] = ``;
 
-allWords["Grammer 43"] = ``;
+allWords["Grammer 43"] = `
+いまにも あめが ふりそうです。
+It looks like it will rain at any moment.
+Ima ni mo ame ga furisou desu.
+今にも 雨が 降りそうです。
+
+シャンプーが なくなりそうです。
+It looks like we are running out of shampoo.
+Shanpuu ga nakunarisou desu.
+シャンプーが なくなりそうです。
+
+もうすぐ さくらが さきそうです。
+The cherry blossoms may soon be in bloom.
+Mousugu sakura ga sakisou desu.
+もうすぐ 桜が 咲きそうです。
+
+これから さむくなりそうです。
+It seems it'll be getting cold from now on.
+Kore kara samukunarisou desu.
+これから 寒くなりそうです。
+
+この りょうりは からそうです。
+This dish looks spicy.
+Kono ryouri wa karasou desu.
+この 料理は 辛そうです。
+
+かのじょは あたまが よさそうです。
+She seems to have brains.
+Kanojo wa atama ga yosasou desu.
+彼女は 頭が 良さそうです。
+
+この つくえは じょうぶそうです。
+This desk looks strong and durable.
+Kono tsukue wa joubusou desu.
+この 机は 丈夫そうです。
+
+ミラーさんは うれしそうです。
+Mr. Miller looks happy.
+Miraa-san wa ureshisou desu.
+ミラーさんは うれしそうです。
+
+ちょっと たばこを かって きます。
+I'm just popping out to buy some cigarettes.
+Chotto tabako wo katte kimasu.
+ちょっと たばこを 買って 来ます。
+
+スーパーで ミルクを かって きます。
+I'm going to the supermarket to buy some milk.
+Suupaa de miruku wo katte kimasu.
+スーパーで ミルクを 買って 来ます。
+
+だいどころから コップを とって きます。
+I'm going to fetch a glass from the kitchen.
+Daidokoro kara koppu wo totte kimasu.
+台所から コップを 取って 来ます。
+
+ゆうびんきょくへ いって きます。
+I'm going to the post office.
+Yuubinkyoku e itte kimasu.
+郵便局へ 行って 来ます。
+
+ちょっと でかけて きます。
+I'm going out.
+Chotto dekakete kimasu.
+ちょっと 出かけて 来ます。
+
+`;
 
 allWords["Grammer 43 - Hard"] = ``;
 
-allWords["Grammer 44"] = ``;
+allWords["Grammer 44"] = `
+ゆうべ おさけを のみすぎました。
+I drank too much last night.
+Yuube osake wo nomisugimashita.
+ゆうべ お酒を 飲みすぎました。
+
+この セーターは おおきすぎます。
+This sweater is too large.
+Kono seetaa wa ookisugimasu.
+この セーターは 大きすぎます。
+
+さいきんの くるまは そうさが かんたんすぎて、
+The handling of recent cars is so easy
+Saikin no kuruma wa sousa ga kantansugite,
+最近の 車は 操作が 簡単すぎて、
+
+うんてんが おもしろくないです。
+that driving them is not so enjoyable for me.
+unten ga omoshirokunai desu.
+運転が おもしろくないです。
+
+いくら すきでも、のみすぎると、
+No matter how much you like it, drinking too much
+Ikura suki demo, nomisugiru to,
+いくら 好きでも、飲みすぎると、
+
+からだに わるいですよ。
+is bad for your health.
+karada ni warui desu yo.
+体に 悪いですよ。
+
+この パソコンは つかいやすいです。
+This personal computer is easy to use.
+Kono pasokon wa tsukaiyasui desu.
+この パソコンは 使いやすいです。
+
+とうきょうは すみにくいです。
+Living in Tokyo is difficult.
+Toukyou wa suminikui desu.
+東京は 住みにくいです。
+
+しろい シャツは よごれやすいです。
+A white shirt gets dirty easily.
+Shiroi shatsu wa yogoreyasui desu.
+白い シャツは 汚れやすいです。
+
+あめの ひは せんたくものが かわきにくいです。
+Things won't dry easily on a rainy day.
+Ame no hi wa sentakumono ga kawakinikui desu.
+雨の 日は 洗濯物が 乾きにくいです。
+
+この くすりは さとうを いれると、
+If you add some sugar to this medicine,
+Kono kusuri wa satou wo ireru to,
+この 薬は 砂糖を 入れると、
+
+のみやすく なりますよ。
+it will be easier to take.
+nomiyasuku narimasu yo.
+飲みやすく なりますよ。
+
+この コップは われにくくて、あんぜんですよ。
+This glass won't break easily, so it is safe.
+Kono koppu wa warenikukute, anzen desu yo.
+この コップは 割れにくくて、安全ですよ。
+
+おとを おおきく します。
+I will turn up the volume.
+Oto wo ookiku shimasu.
+音を 大きく します。
+
+へやを きれいに します。
+I will clean my room.
+Heya wo kirei ni shimasu.
+部屋を きれいに します。
+
+しおの りょうを はんぶんに しました。
+I reduced the amount of salt by half.
+Shio no ryou wo hanbun ni shimashita.
+塩の 量を 半分に しました。
+
+へやは シングルに しますか、ツインに しますか。
+Would you like a single room or a twin room?
+Heya wa shinguru ni shimasu ka, tsuin ni shimasu ka.
+部屋は シングルに しますか、ツインに しますか。
+
+かいぎは あしたに します。
+I will set the meeting for tomorrow.
+Kaigi wa ashita ni shimasu.
+会議は あしたに します。
+
+やさいを こまかく きって ください。
+Please cut the vegetables into small pieces.
+Yasai wo komakaku kitte kudasai.
+野菜を 細かく 切って ください。
+
+でんきや みずは たいせつに つかいましょう。
+Let's conserve electricity and water.
+Denki ya mizu wa taisetsu ni tsukaimashou.
+電気や 水は 大切に 使いましょう。
+
+`;
 
 allWords["Grammer 44 - Hard"] = ``;
 
-allWords["Grammer 45"] = ``;
+allWords["Grammer 45"] = `
+かいぎに まにあわない ばあいは、
+If you cannot be in time for the meeting,
+Kaigi ni maniawanai baai wa,
+会議に 間に合わない 場合は、
+
+れんらくして ください。
+please inform us.
+renraku shite kudasai.
+連絡して ください。
+
+じかんに おくれた ばあいは、
+If you are late,
+Jikan ni okureta baai wa,
+時間に 遅れた 場合は、
+
+かいじょうに はいれません。
+you will not be admitted to the hall.
+kaijou ni hairemasen.
+会場に 入れません。
+
+ファックスの ちょうしが わるい ばあいは、
+In the event that the fax machine does not work well,
+Fakkusu no choushi ga warui baai wa,
+ファックスの 調子が 悪い 場合は、
+
+どう したら いいですか。
+what should I do?
+dou shitara ii desu ka.
+どう したら いいですか。
+
+りょうしゅうしょが ひつような ばあいは、
+When you need a receipt,
+Ryoushuusho ga hitsuyou na baai wa,
+領収書が 必要な 場合は、
+
+かかりに いって ください。
+please tell the person in charge.
+kakari ni itte kudasai.
+係に 言って ください。
+
+かじや じしんの ばあいは、
+In case of fire or earthquake,
+Kaji ya jishin no baai wa,
+火事や 地震の 場合は、
+
+エレベーターを つかわないで ください。
+do not use the elevator.
+erebeetaa wo tsukawanaide kudasai.
+エレベーターを 使わないで ください。
+
+やくそくを したのに、
+She did not come,
+Yakusoku wo shita noni,
+約束を したのに、
+
+かのじょは きませんでした。
+even though she promised.
+kanojo wa kimasen deshita.
+彼女は 来ませんでした。
+
+きょうは にちようびなのに、
+Even though today is Sunday,
+Kyou wa Nichiyoubi nanoni,
+きょうは 日曜日なのに、
+
+はたらかなければ なりません。
+I have to work.
+hatarakanakereba narimasen.
+働かなければ なりません。
+
+わたしの へやは せまいですが、きれいです。
+My room is small but clean.
+Watashi no heya wa semai desu ga, kirei desu.
+わたしの 部屋は 狭いですが、きれいです。
+
+あした あめが ふっても、でかけます。
+Even if it rains tomorrow, I will go out.
+Ashita ame ga futte mo, dekakemasu.
+あした 雨が 降っても、出かけます。
+
+やくそくを したのに、
+You promised to come.
+Yakusoku wo shita noni,
+約束を したのに、
+
+どうして こなかったんですか。
+Why didn't you come?
+doushite konakattan desu ka.
+どうして 来なかったんですか。
+
+`;
 
 allWords["Grammer 45 - Hard"] = ``;
 
-allWords["Grammer 46"] = ``;
+allWords["Grammer 46"] = `
+ひるごはんは もう たべましたか。
+Have you had lunch yet?
+Hirugohan wa mou tabemashita ka.
+昼ごはんは もう 食べましたか。
+
+...いいえ、これから たべるところです。
+...No, I'm going to have it now.
+...Iie, korekara taberu tokoro desu.
+...いいえ、これから 食べるところです。
+
+かいぎは もう はじまりましたか。
+Has the meeting begun yet?
+Kaigi wa mou hajimaimashita ka.
+会議は もう 始まりましたか。
+
+...いいえ、いまから はじまるところです。
+...No, it's just beginning now.
+...Iie, ima kara hajimaru tokoro desu.
+...いいえ、今から 始まるところです。
+
+こしょうの げんいんが わかりましたか。
+Do you know what caused the breakdown?
+Koshou no gen'in ga wakarimashita ka.
+故障の原因が わかりましたか。
+
+...いいえ、いま しらべている ところです。
+...No, we are investigating it now.
+...Iie, ima shirabete iru tokoro desu.
+...いいえ、今 調べている ところです。
+
+わたなべさんは いますか。
+Is Ms. Watanabe here?
+Watanabe-san wa imasu ka.
+渡辺さんは いますか。
+
+...あ、たったいま かえったところです。
+...Oh, she's just left.
+...A, tatta ima kaetta tokoro desu.
+...あ、たった今 帰ったところです。
+
+まだ エレベーターの まえに いるかも しれません。
+She may be somewhere near the elevator.
+Mada erebeetaa no mae ni iru kamo shiremasen.
+まだ エレベーターの 前に いるかもしれません。
+
+たったいま バスが でたところです。
+The bus left just now.
+Tatta ima basu ga deta tokoro desu.
+たった今 バスが 出たところです。
+
+もしもし たなかですが、いま いいでしょうか。
+Hello. This is Tanaka speaking. May I talk to you now?
+Moshimoshi Tanaka desu ga, ima ii deshou ka.
+もしもし 田中ですが、今 いいでしょうか。
+
+...すみません。いまから でかけるところなんです。
+...Sorry. I'm just going out.
+...Sumimasen. Ima kara dekakeru tokoro nan desu.
+...すみません。今から 出かけるところなんです。
+
+さっき ひるごはんを たべたばかりです。
+I had lunch only a while ago.
+Sakki hirugohan wo tabeta bakari desu.
+さっき 昼ごはんを 食べたばかりです。
+
+きむらさんは せんげつ この かいしゃに はいったばかりです。
+Ms. Kimura joined this company only a month ago.
+Kimura-san wa sengetsu kono kaisha ni haitta bakari desu.
+木村さんは 先月 この 会社に 入ったばかりです。
+
+この ビデオは せんしゅう かったばかりなのに、
+I bought this video only a week ago,
+Kono bideo wa senshuu katta bakari nanoni,
+この ビデオは 先週 買ったばかりなのに、
+
+ちょうしが おかしいです。
+but it isn't working well.
+choushi ga okashii desu.
+調子が おかしいです。
+
+ミラーさんは きょう くるでしょうか。
+Do you think Mr. Miller will come today?
+Miraa-san wa kyou kuru deshou ka.
+ミラーさんは きょう 来るでしょうか。
+
+...くるはずです。きのう その でんわが ありましたから。
+...I'm sure he'll come. I received a phone call from him yesterday.
+...Kuru hazu desu. Kinou sono denwa ga arimashita kara.
+...来るはずです。きのう その 電話が ありましたから。
+
+`;
 
 allWords["Grammer 46 - Hard"] = ``;
 
-allWords["Grammer 47"] = ``;
+allWords["Grammer 47"] = `
+てんきよほうによると、あしたは さむくなるそうです。
+According to the weather forecast, it will be cold tomorrow.
+Tenki yohou ni yoruto, ashita wa samuku naru sou desu.
+天気予報によると、あしたは 寒くなるそうです。
+
+クララさんは こどもの とき、フランスに すんでいたそうです。
+I heard that Klara lived in France when she was a child.
+Kurara-san wa kodomo no toki, Furansu ni sunde ita sou desu.
+クララさんは 子どもの とき、フランスに 住んでいたそうです。
+
+バリとうは とても きれいだそうです。
+I hear that Bali is very beautiful.
+Bari-tou wa totemo kirei da sou desu.
+バリ島は とても きれいだそうです。
+
+あめが ふりそうです。
+It looks like rain.
+Ame ga furisou desu.
+雨が 降りそうです。
+
+あめが ふるそうです。
+I heard that it will rain.
+Ame ga furu sou desu.
+雨が 降るそうです。
+
+この りょうりは おいしそうです。
+This food looks delicious.
+Kono ryouri wa oishisou desu.
+この 料理は おいしそうです。
+
+この りょうりは おいしいそうです。
+I heard that this food is delicious.
+Kono ryouri wa oishii sou desu.
+この 料理は おいしいそうです。
+
+ミラーさんは あした きょうとへ いくそうです。
+I hear that Mr. Miller is going to Kyoto tomorrow.
+Miraa-san wa ashita Kyouto e iku sou desu.
+ミラーさんは あした 京都へ 行くそうです。
+
+ミラーさんは あした きょうとへ いくと いっていました。
+Mr. Miller said that he is going to Kyoto tomorrow.
+Miraa-san wa ashita Kyouto e iku to itte imashita.
+ミラーさんは あした 京都へ 行くと 言っていました。
+
+ひとが おおぜい あつまっていますね。
+Look, there is a big crowd.
+Hito ga oozei atsumatte imasu ne.
+人が 大勢 集まっていますね。
+
+...じこの ようですね。
+...It looks like there's been an accident.
+...Jiko no you desu ne.
+...事故の ようですね。
+
+パトカーと きゅうきゅうしゃが きていますよ。
+A patrol car and an ambulance are there.
+Patokaa to kyuukyuusha ga kite imasu yo.
+パトカーと 救急車が 来ていますよ。
+
+せきも でるし、あたまも いたい。
+I have a cough and a headache.
+Seki mo deru shi, atama mo itai.
+咳も 出るし、頭も 痛い。
+
+どうも かぜを ひいたようだ。
+It looks like I've caught a cold.
+Doumo kaze wo hiita you da.
+どうも 風邪を ひいたようだ。
+
+ミラーさんは いそがしそうです。
+Mr. Miller seems to be busy.
+Miraa-san wa isogashisou desu.
+ミラーさんは 忙しそうです。
+
+ミラーさんは いそがしいようです。
+It seems that Mr. Miller is busy.
+Miraa-san wa isogashii you desu.
+ミラーさんは 忙しいようです。
+
+へんな おとが しますね。
+There's a strange sound, isn't there?
+Hen na oto ga shimasu ne.
+変な 音が しますね。
+
+`;
 
 allWords["Grammer 47 - Hard"] = ``;
 
-allWords["Grammer 48"] = ``;
+allWords["Grammer 48"] = `
+いきます / いかせます
+to go / to make or let go
+ikimasu / ikasemasu
+行きます / 行かせます
+
+たべます / たべさせます
+to eat / to make or let eat
+tabemasu / tabesasemasu
+食べます / 食べさせます
+
+きます / こさせます
+to come / to make or let come
+kimasu / kosasemasu
+来ます / 来させます
+
+します / させます
+to do / to make or let do
+shimasu / sasemasu
+します / させます
+
+ぶちょうは かとうさんを おおさかへ しゅっちょうさせます。
+The department manager makes Kato go to Osaka on business.
+Buchou wa Katou-san wo Oosaka e shutchou sasemasu.
+部長は 加藤さんを 大阪へ 出張させます。
+
+わたしは むすめを じゆうに あそばせました。
+I let my daughter play freely.
+Watashi wa musume wo jiyuu ni asobasemashita.
+わたしは 娘を 自由に 遊ばせました。
+
+わたしは こどもに みちの みぎがわを あるかせます。
+I make my child walk on the right side of the road.
+Watashi wa kodomo ni michi no migigawa wo arukasemasu.
+わたしは 子どもに 道の 右側を 歩かせます。
+
+わたしは こどもを あるかせます。
+I make my child walk.
+Watashi wa kodomo wo arukasemasu.
+わたしは 子どもを 歩かせます。
+
+あさは いそがしいですから、
+I am busy in the morning,
+Asa wa isogashii desu kara,
+朝は 忙しいですから、
+
+むすめに あさごはんの じゅんびを てつだわせます。
+so I make my daughter help prepare breakfast.
+musume ni asagohan no junbi wo tetsudawasemasu.
+娘に 朝ごはんの 準備を 手伝わせます。
+
+せんせいは せいとに いけんを いわせました。
+The teacher let her students freely voice their opinions.
+Sensei wa seito ni iken wo iwasemashita.
+先生は 生徒に 意見を 言わせました。
+
+えきに ついたら、おでんわを ください。
+When you arrive at the station, please call me.
+Eki ni tsuitara, odenwa wo kudasai.
+駅から 着いたら、お電話を ください。
+
+かかりの ものを むかえに いかせますから。
+I will send a member of my staff to the station to pick you up.
+Kakari no mono wo mukae ni ikasemasu kara.
+係の 者を 迎えに 行かせますから。
+
+...わかりました。
+...Thank you.
+...Wakarimashita.
+...わかりました。
+
+わたしは ぶちょうに せつめいして いただきました。
+I had the department manager explain it to me.
+Watashi wa buchou ni setsumei shite itadakimashita.
+わたしは 部長に 説明して いただきました。
+
+わたしは ともだちに せつめいして もらいました。
+I had my friend explain it to me.
+Watashi wa tomodachi ni setsumei shite moraimashita.
+わたしは 友達に 説明して もらいました。
+
+こどもの とき、からだが よわくて、
+When I was a child, my health was poor,
+Kodomo no toki, karada ga yowakute,
+子どもの とき、体が 弱くて、
+
+ははを しんぱいさせました。
+and I worried my mother.
+haha wo shinpai sasemashita.
+母を 心配させました。
+
+コピーきの つかいかたを おしえて いただけませんか。
+Would you please tell me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete itadakemasen ka.
+コピー機の 使い方を 教えて いただけませんか。
+
+ともだちの けっこんしきが あるので、
+As I'm going to attend my friend's wedding,
+Tomodachi no kekkonshiki ga aru node,
+友達の 結婚式が あるので、
+
+そうたいさせて いただけませんか。
+would you please let me leave earlier?
+soutai sasete itadakemasen ka.
+早退させて いただけませんか。
+
+`;
 
 allWords["Grammer 48 - Hard"] = ``;
 
-allWords["Grammer 49"] = ``;
+allWords["Grammer 49"] = `
+なかむらさんは しちじに こられます。
+Mr. Nakamura is coming at 7.
+Nakamura-san wa shichi-ji ni koraremasu.
+中村さんは 7時に 来られます。
+
+おさけを やめられたんですか。
+Have you given up drinking?
+Osake wo yameratan desu ka.
+お酒を やめられたんですか。
+
+しゃちょうは もう おかえりに なりました。
+The president has already left for home.
+Shachou wa mou okaeri ni narimashita.
+社長は もう お帰りになりました。
+
+ワットせんせいは けんきゅうしつに いらっしゃいます。
+Professor Watt is in the office.
+Watto-sensei wa kenkyuushitsu ni irasshaimasu.
+ワット先生は 研究室に いらっしゃいます。
+
+どうぞ おめしあがり ください。
+Please help yourself.
+Douzo omeshagari kudasai.
+どうぞ お召し上がりください。
+
+ワットせんせいは テニスを なさいますか。
+Does Professor Watt play tennis?
+Watto-sensei wa tenisu wo nasaimasu ka.
+ワット先生は テニスを なさいますか。
+
+...いいえ、なさらないと おもいます。
+...No, I don't think so.
+...Iie, nasaranai to omoimasu.
+...いいえ、なさらないと 思います。
+
+あちらから おはいり ください。
+Please enter from over there.
+Achira kara ohairi kudasai.
+あちらから お入りください。
+
+しゃちょうは なんじに いらっしゃる？
+What time will the general manager come?
+Shachou wa nan-ji ni irassharu?
+社長は 何時に いらっしゃる？
+
+しゃちょうの おくさまも いっしょに ゴルフに いかれます。
+The general manager's wife will go golfing together with him.
+Shachou no okusama mo issho ni gorufu ni ikaremasu.
+社長の 奥様も いっしょに ゴルフに 行かれます。
+
+ハンスが ねつを だしまして、
+Hans became feverish last night
+Hansu ga netsu wo dashimashite,
+ハンスが 熱を 出しまして、
+
+けさも まだ さがらないんです。
+and still has a fever this morning.
+kesa mo mada sagaranai n desu.
+けさも まだ 下がらないんです。
+
+`;
 
 allWords["Grammer 49 - Hard"] = ``;
 
-allWords["Grammer 50"] = ``;
+allWords["Grammer 50"] = `
+おもそうですね。おもちしましょうか。
+It looks so heavy. Shall I carry it for you?
+Omosou desu ne. Omochi shimashou ka.
+重そうですね。お持ちしましょうか。
+
+しゃちょうに スケジュールを おしらせします。
+I will tell the president the schedule.
+Shachou ni sukejuuru wo oshirase shimasu.
+社長に スケジュールを お知らせします。
+
+あにが くるまで おおくりします。
+My elder brother will take you in his car.
+Ani ga kuruma de ookuri shimasu.
+兄が 車で お送りします。
+
+えどとうきょうはくぶつかんへ ごあんないします。
+I will take you to the Edo-Tokyo Museum.
+Edo Toukyou Hakubutsukan e goannai shimasu.
+江戸東京博物館へ ご案内します。
+
+きょうの よていを ごせつめいします。
+I will explain today's schedule.
+Kyou no yotei wo gosetsumei shimasu.
+きょうの 予定を ご説明します。
+
+しゃちょうの おくさまに おめに かかりました。
+I met the president's wife.
+Shachou no okusama ni ome ni kakarimashita.
+社長の 奥様に お目にかかりました。
+
+あしたは だれが てつだいに きて くれますか。
+Who will come over to help me tomorrow?
+Ashita wa dare ga tetsudai ni kite kuremasu ka.
+あしたは 誰が 手伝いに 来て くれますか。
+
+...わたしが うかがいます。
+...I will.
+...Watashi ga ukagaimasu.
+...私が 伺います。
+
+ミラーと もうします。
+My name is Miller.
+Miraa to moushimasu.
+ミラーと 申します。
+
+アメリカから まいりました。
+I come from the United States.
+Amerika kara mairimashita.
+アメリカから 参りました。
+
+でんわは かいだんの よこに ございます。
+The pay phone is beside the stairs.
+Denwa wa kaidan no yoko ni gozaimasu.
+電話は 階段の 横に ございます。
+
+はい、IMCで ございます。
+Hello, this is IMC.
+Hai, IMC de gozaimasu.
+はい、IMCで ございます。
+
+...パワーでんきの シュミットですが、ミラーさん、おねがいします。
+...This is Schmidt of Power Electric. May I speak to Mr. Miller?
+...Pawaa Denki no Shumitto desu ga, Miraa-san, onegai shimasu.
+...パワー電気の シュミットですが、ミラーさん、お願いします。
+
+おのみものは なにが よろしいでしょうか。
+What would you like to drink?
+Onomimono wa nani ga yoroshii deshou ka.
+お飲みものは 何が よろしいでしょうか。
+
+...コーヒーを おねがいします。
+...Coffee, please.
+...Koohii wo onegai shimasu.
+...コーヒーを お願いします。
+
+この パンフレットを いただいても よろしいでしょうか。
+May I have one of these pamphlets?
+Kono panfurettu wo itadaitemo yoroshii deshou ka.
+この パンフレットを いただいても よろしいでしょうか。
+
+`;
 
 allWords["Grammer 50 - Hard"] = ``;
 
@@ -30683,11 +33052,6 @@ Waterproofing / Waterproof
 Bousui kakou
 防水 加工
 
-サイズ なおし
-Alterations / Size adjustment
-Saizu naoshi
-サイズ 直し
-
 ちぢむ
 Shrink
 Chijimu
@@ -30697,6 +33061,11 @@ Chijimu
 Stretch
 Nobiru
 伸びる
+
+サイズ なおし
+Alterations / Size adjustment
+Saizu naoshi
+サイズ 直し
 
 みずあらい
 Laundering / Washing in water
@@ -30711,25 +33080,15 @@ Genzou
 `;
 
 allWords["Extra 28"] = `
-うちを かりる
-Renting accommodation
-Uchi o kariru
-うちを 借りる
+2エルディーキー
+2LDK
+Ni ERU-Dii-Kii
+2LDK
 
-ろせん
-Train line
-Rosen
-路線
-
-もよりえき
-Nearest station
-Moyori eki
-最寄り駅
-
-とほ
-Walk / Walking distance (on foot)
-Toho
-徒歩
+いま・しょくどう・だいどころ (エルディーキー)
+Living/dining room with kitchen (LDK)
+Ima, shokudou, daidokoro (LDK)
+居間・食堂・台所 (LDK)
 
 マンション
 Condominium (reinforced concrete)
@@ -30741,20 +33100,43 @@ Apartment building
 Apaato
 アパート
 
-いっこだて
-Detached house, single house
-Ikkodate
-一戸建て
-
-ちく...ねん
-... years old (years since construction)
-Chiku...nen
-築...年
-
 やちん
 Rental fee / Rent
 Yachin
 家賃
+
+7まん4せんえん
+74,000 yen
+Nana-man yon-sen en
+7万4千円
+
+6,000えん
+6,000 yen
+Roku-sen en
+6,000円
+
+やすい ふどうさん
+Yasui Real Estate
+Yasui Fudousan
+やすい 不動産
+
+にしおぎくぼえき
+Nishi-Ogikubo Station
+Nishi-Ogikubo-eki
+西荻窪駅
+
+`;
+
+allWords["Extra 28 - Hard"] = `
+うちを かりる
+Renting accommodation
+Uchi o kariru
+うちを 借りる
+
+いっこだて
+Detached house, single house
+Ikkodate
+一戸建て
 
 しききん
 Deposit money
@@ -30776,84 +33158,72 @@ Facing south
 Minamimuki
 南向き
 
-...かいだての...かい
-...th floor of ...-story building
-...kaidate no...kai
-...階建ての...階
+もよりえき
+Nearest station
+Moyori eki
+最寄り駅
 
-いま・しょくどう・だいどころ (エルディーキー)
-Living/dining room with kitchen (LDK)
-Ima, shokudou, daidokoro (LDK)
-居間・食堂・台所 (LDK)
-
-...じょう
-... mats (tatami mat unit of room area)
-...jou
-...畳
-
-ふどうさんや
-Real estate agent
-Fudousan-ya
-不動産屋
-
-ちゅうおうせん
-Chūou Line
-Chūou-sen
-中央線
-
-にしおぎくぼえき
-Nishi-Ogikubo Station
-Nishi-Ogikubo-eki
-西荻窪駅
+とほ
+Walk / Walking distance (on foot)
+Toho
+徒歩
 
 とほ 5ふん
 5-minute walk
 Toho go-fun
 徒歩 5分
 
-ちく 3ねん
-3 years old (built 3 years ago)
-Chiku san-nen
-築 3年
+ふどうさんや
+Real estate agent
+Fudousan-ya
+不動産屋
 
-7まん4せんえん
-74,000 yen
-Nana-man yon-sen en
-7万4千円
-
-2かげつぶん
-2 months' worth
-Ni-kagetsu-bun
-2か月分
-
-6,000えん
-6,000 yen
-Roku-sen en
-6,000円
+...かいだての...かい
+...th floor of ...-story building
+...kaidate no...kai
+...階建ての...階
 
 10かいだての 8かい
 8th floor of a 10-story building
 Jukkai-date no hachi-kai
 10階建ての 8階
 
-2エルディーキー
-2LDK
-Ni ERU-Dii-Kii
-2LDK
+...じょう
+... mats (tatami mat unit of room area)
+...jou
+...畳
 
 6じょう
 6 mats (tatami)
 Roku-jou
 6畳
 
-やすい ふどうさん
-Yasui Real Estate
-Yasui Fudousan
-やすい 不動産
+ろせん
+Train line
+Rosen
+路線
+
+ちゅうおうせん
+Chuuou Line
+Chuuou-sen
+中央線
+
+ちく...ねん
+... years old (years since construction)
+Chiku...nen
+築...年
+
+ちく 3ねん
+3 years old (built 3 years ago)
+Chiku san-nen
+築 3年
+
+2かげつぶん
+2 months' worth
+Ni-kagetsu-bun
+2か月分
 
 `;
-
-allWords["Extra 28 - Hard"] = ``;
 
 allWords["Extra 29"] = `
 じょうたい・ようす
@@ -55358,41 +57728,6 @@ The airplane flies across the clouds.
 Hikouki ga kumo o koete tobimasu.
 飛行機が雲を越えて飛びます。
 
-きょうしつにはたなかさんしかいません
-there is nobody but Mr./Ms. Tanaka in the classroom
-Kyōshitsu ni wa Tanaka-san shika imasen
-教室には田中さんしか居ません
-
-みずしかのみません
-I drink nothing but water
-Mizu shika nomimasen
-水しか飲みません
-
-ともだちにしかはなしていません
-I have spoken to nobody except my friend
-Tomodachi ni shika hanashite imasen
-友達にしか話していません
-
-げんきんでしかはらえません
-you can pay with nothing other than cash
-Genkin de shika haraemasen
-現金でしか払えません
-
-せんせいからしかれんらくがきませんでした
-communication came from no one except the teacher
-Sensei kara shika renraku ga kimasen deshita
-先生からしか連絡が来ませんでした
-
-かぞくとしかりょこうしません
-I travel with no one other than my family
-Kazoku to shika ryokō shimasen
-家族としか旅行しません
-
-ごじまでしかあいていません
-it is open only until 5 o'clock
-Go-ji made shika aite imasen
-5時までしか開いていません
-
 `;
 
 allWords["27 Dumps D4 - Hard"] = ``;
@@ -70986,15 +73321,17 @@ const appSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1
   },
-  "currentLesson": "Lesson 28",
+  "currentLesson": "Lesson 29",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "2",
   "quizMode": "quiz1",
   "quizOrder": "original",
   "revealRomaji": false,
-  "focusedWordIndex": -1,
-  "selectedWordIndices": [],
+  "focusedWordIndex": 4,
+  "selectedWordIndices": [
+    4
+  ],
   "isSelectionModeActive": false,
   "customCategories": [
     "Phrases",
@@ -71041,21 +73378,21 @@ const appSettings = {
   "othersHiddenLevels": [
     "N5"
   ],
-  "lastDestCategory": "Honorifics",
+  "lastDestCategory": "Similar Ones",
   "activeDbGroup": "N4 Lessons",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 06",
+    "N5 Lessons": "Lesson 03",
     "N5 Others": "All Masu Form Verbs",
-    "N4 Lessons": "Lesson 28",
+    "N4 Lessons": "Lesson 29",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
     "N5 Grammer": "Grammer 01",
-    "N4 Grammer": "Grammer 26",
+    "N4 Grammer": "Grammer 28",
     "Kanji": "N5 Kanji",
-    "N5 Extra": "Extra 16",
-    "N4 Extra": "Extra 27",
+    "N5 Extra": "Extra 14",
+    "N4 Extra": "Extra 28",
     "N3 Extra": "Extra 51",
     "N5 Grammer Others": "0 Others G5",
     "N4 Grammer Others": "Show All Words",
