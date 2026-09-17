@@ -6305,7 +6305,7 @@ douzo ogenki de
 
 `;
 
-allWords["Phrases"] = `
+allWords["Phrases1"] = `
 ［どうぞ］ よろしく ［おねがいします］
 Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
 [douzo] yoroshiku [onegaishimasu]
@@ -6731,26 +6731,299 @@ Wow! Look at all those people!
 waa, sugoi hito desu ne
 わあ、すごい ひとですね
 
-こまったなぁ
-What shall I do?
-Komatta naa
-困ったなぁ。
+`;
+
+allWords["Phrases1 - Hard"] = ``;
+
+allWords["Questions1"] = `
+なんですか
+Yes? (lit: What is it?)
+nan desu ka
+なんですか
+
+どうやって
+how, in what way
+douyatte
+どうやって
+
+どう
+how (is it?)
+dou
+どう
+
+いくつ
+how many
+ikutsu
+いくつ
+
+どうして
+why
+doushite
+どうして
+
+なにか
+something
+nanika
+なにか
+
+どこか
+somewhere, some place
+dokoka
+どこか
+
+どんな〜
+what kind of ~
+donna~
+どんな〜
+
+なん~
+what~, how many~
+nan
+なん~
+
+なに
+what
+nani
+なに
+
+どのぐらい
+how long
+donokurai
+どのぐらい
+
+いくら
+how much
+ikura
+いくら
+
+だれ
+who
+dare
+だれ
+
+どなた
+who (polite)
+donata
+どなた
+
+いつ
+when
+itsu
+いつ
+
+どれ
+which one(of 3 or more)
+dore
+どれ
+
+どの〜
+which ~ (3 or more)
+dono~
+どの〜
+
+どちら
+which one (between two things)
+dochira
+どちら
+
+どちら
+which way, where (polite)
+dochira
+どちら
+
+どっち
+which one(way), where (informal)
+docchi
+どっち
+
+なんさい
+how old
+nansai
+なんさい
+
+おいくつ
+how old (formal)
+oikutsu
+おいくつ
+
+なんかい
+what floor
+nankai
+なんかい
+
+なんばん
+what number
+nanban
+なんばん
+
+なんようび
+what day of the week
+nanyoubi
+なんようび
+
+なんぷん
+what minute
+nanpun
+なんぷん
+
+なんじ
+what time
+nanji
+なんじ
+
+なんがつ
+what month
+nangatsu
+なんがつ
+
+なんにち
+which day of the month, how many days
+nannichi
+なんにち
+
+おなまえは
+May i have your name?
+onamae wa
+おなまえは
+
+なんねん
+what year
+nannen
+なんねん
 
 `;
 
-allWords["Phrases - Hard"] = ``;
-
-allWords["Questions"] = ``;
-
 allWords["Questions - Hard"] = ``;
 
-allWords["Counters"] = ``;
+allWords["Counters1"] = `
+〜かい
+counter for frequency
+~kai
+〜かい
 
-allWords["Counters - Hard"] = ``;
+〜だい
+counter for machines cars etc.
+~dai
+〜だい
 
-allWords["Food Names"] = ``;
+〜まい
+counter for thin and flat objects such as paper stamps etc.
+~mai
+〜まい
 
-allWords["Food Names - Hard"] = ``;
+〜め
+the ~nth (ordinal)
+~me
+〜め
+
+〜だんめ
+the nth shelf
+~danme
+〜だんめ
+
+〜ばんせん
+platform ~, ~th platform
+~bansen
+〜ばんせん
+
+〜ねん
+(number) of years
+~nen
+〜ねん
+
+〜かげつ
+(number) of months
+~kagetsu
+〜かげつ
+
+〜しゅうかん
+(number) of weeks
+~shuukan
+〜しゅうかん
+
+〜じかん
+(number) of hours
+~jikan
+〜じかん
+
+さい
+-years old
+-sai
+さい
+
+〜かい・〜がい・ 〜っかい
+-th floor
+-kai / -gai / -kkai
+〜かい・〜がい・ 〜っかい
+
+〜ふん・〜ぷん
+-minute
+~fun / ~pun
+〜ふん・〜ぷん
+
+〜まん
+ten thousand
+-man
+〜まん
+
+〜にち
+~th day of the month, # of days
+~nichi
+〜にち
+
+〜がつ
+~th month of the year
+~gatsu
+〜がつ
+
+〜にん
+~ people
+~nin
+〜にん
+
+〜じ
+-o'clock
+~ji
+〜じ
+
+`;
+
+allWords["Counters1 - Hard"] = ``;
+
+allWords["Food Names1"] = `
+すきやき
+beef and vegetable hot pot
+sukiyaki
+すきやき
+
+さしみ
+sliced raw fish
+sashimi
+さしみ
+
+すし
+rice with vinegar topped with raw fish
+sushi
+すし
+
+てんぷら
+seafood and vegetables deep fried in batter
+tempura
+てんぷら
+
+ぎゅうどん
+bowl of rice topped with beef
+gyuudon
+ぎゅうどん
+
+てんぷら
+seafood and vegetables deep fried in batter
+tempura
+てんぷら
+
+`;
+
+allWords["Food Names1 - Hard"] = ``;
 
 allWords["Lesson 26"] = `
 うんどうかい
@@ -6853,10 +7126,10 @@ garbage, trash, dust
 Gomi
 ごみ
 
-[ごみを～] だします
+だします [ごみを～]
 put out [the trash]
-[gomi o~] Dashimasu
-[ごみを～] 出します
+Dashimasu [gomi o~]
+出します [ごみを～]
 
 げつ・すい・きん
 Monday, Wednesday and Friday
@@ -7014,11 +7287,6 @@ Komatta naa
 `;
 
 allWords["Lesson 27"] = `
-[くうこうが～] できます
-[an airport] be made, be completed, come into existence
-[kuukou ga~] Dekimasu
-[空港が～] できます
-
 かいます
 keep (a pet), raise (an animal)
 Kaimasu
@@ -7029,90 +7297,35 @@ build
 Tatemasu
 建てます
 
-[みちを～]   ハしります
+はしります [みちを～]
 run, drive [along a road]
-[michi o~] Hashirimasu
-[道を～] 走ります
+Hashirimasu [michi o~]
+走ります [道を～]
 
-[やすみを～] とります
+とります [やすみを～]
 take [a holiday]
-[yasumi o~] Torimasu
-[休みを～] 取ります
+Torimasu [yasumi o~]
+取ります [休みを～]
 
-[やまが～] みえます
+みえます [やまが～]
 [a mountain] can be seen
-[yama ga~] Miemasu
-[山が～] 見えます
+Miemasu [yama ga~]
+見えます [山が～]
 
-[おとが～] きこえます
+きこえます [おとが～]
 [a sound] can be heard
-[oto ga~] Kikoemasu
-[音が～] 聞こえます
+Kikoemasu [oto ga~]
+聞こえます [音が～]
 
-むかし
-old days, ancient times
-Mukashi
-昔
+できます [くうこうが～]
+[an airport] be made, be completed, come into existence
+Dekimasu [kuukou ga~]
+できます [空港が～]
 
-～ご
-~ after (duration of time)
-~go
-～後
-
-ほかの
-other
-Hoka no
-ほかの
-
-はっきり
-clearly
-Hakkiri
-はっきり
-
-いつか
-someday, sometime
-Itsuka
-いつか
-
-すばらしい
-marvelous, wonderful
-Subarashii
-素晴らしい
-
-だいすき [な]
-like very much
-Daisuki [na]
-大好き [な]
-
-ふしぎ [な]
-fantastic, mysterious
-Fushigi [na]
-不思議 [な]
-
-つけます
-attach, put on
-Tsukemasu
-付けます
-
-じゆうに
-freely
-Jiyuu ni
-自由に
-
-とびます
-fly
-Tobimasu
-飛びます
-
-しょうらい
-future
-Shourai
-将来
-
-なみ
-wave
-Nami
-波
+ひらきます [きょうしつを～]
+set up [a class], open, hold
+Hirakimasu [kyoushitsu o~]
+開きます [教室を～]
 
 ペット
 pet
@@ -7129,20 +7342,45 @@ voice
 Koe
 声
 
+なみ
+wave
+Nami
+波
+
 はなび
 fireworks
 Hanabi
 花火
+
+けしき
+scenery, view
+Keshiki
+景色
 
 ひるま
 daytime
 Hiruma
 昼間
 
+むかし
+old days, ancient times
+Mukashi
+昔
+
+どうぐ
+tool, instrument, equipment
+Dougu
+道具
+
 じどうはんばいき
 vending machine
 Jidouhanbaiki
 自動販売機
+
+つうしんはんばい
+mail order, mail-order sales
+Tsuushinhanbai
+通信販売
 
 クリーニング
 [dry] cleaning, laundry
@@ -7169,6 +7407,31 @@ party room
 Paatiiruumu
 パーティールーム
 
+～ご
+~ after (duration of time)
+~go
+～後
+
+～しか
+only ~ (used with negatives)
+~shika
+～しか
+
+ほかの
+other
+Hoka no
+ほかの
+
+はっきり
+clearly
+Hakkiri
+はっきり
+
+ほとんど
+almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
+Hotondo
+ほとんど
+
 かんさいくうこう
 Kansai International Airport
 Kansai Kuukou
@@ -7184,6 +7447,11 @@ peninsula in Shizuoka Prefecture
 Izu
 ※伊豆
 
+にちようだいく
+Sunday carpenter
+Nichiyoudaiku
+日曜大工
+
 ほんだな
 bookshelf
 Hondana
@@ -7194,78 +7462,30 @@ dream (～をみます：have a dream)
 Yume
 夢
 
+いつか
+someday, sometime
+Itsuka
+いつか
+
+すばらしい
+marvelous, wonderful
+Subarashii
+素晴らしい
+
 こどもたち
 children
 Kodomotachi
 子どもたち
 
+だいすき [な]
+like very much
+Daisuki [na]
+大好き [な]
+
 まんが
 cartoon, comic strip
 Manga
 漫画
-
-ロボット
-robot
-Robotto
-ロボット
-
-ポケット
-pocket
-Poketto
-ポケット
-
-そら
-sky
-Sora
-空
-
-じぶん
-oneself
-Jibun
-自分
-
-ドラえもん
-name of a cartoon character
-Doraemon
-※ドラえもん
-
-`;
-
-allWords["Lesson 27 - Hard"] = `
-つうしんはんばい
-mail order, mail-order sales
-Tsuushinhanbai
-通信販売
-
-けしき
-scenery, view
-Keshiki
-景色
-
-～しか
-only ~ (used with negatives)
-~shika
-～しか
-
-[きょうしつを～] ひらきます
-set up [a class], open, hold
-[kyoushitsu o~] Hirakimasu
-[教室を～] 開きます
-
-ほとんど
-almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
-Hotondo
-ほとんど
-
-どうぐ
-tool, instrument, equipment
-Dougu
-道具
-
-にちようだいく
-Sunday carpenter
-Nichiyoudaiku
-日曜大工
 
 しゅじんこう
 hero, heroine
@@ -7277,12 +7497,64 @@ shape
 Katachi
 形
 
+ロボット
+robot
+Robotto
+ロボット
+
+ふしぎ [な]
+fantastic, mysterious
+Fushigi [na]
+不思議 [な]
+
+ポケット
+pocket
+Poketto
+ポケット
+
 たとえば
 for example
 Tatoeba
 例えば
 
+つけます
+attach, put on
+Tsukemasu
+付けます
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+そら
+sky
+Sora
+空
+
+とびます
+fly
+Tobimasu
+飛びます
+
+じぶん
+oneself
+Jibun
+自分
+
+しょうらい
+future
+Shourai
+将来
+
+ドラえもん
+name of a cartoon character
+Doraemon
+※ドラえもん
+
 `;
+
+allWords["Lesson 27 - Hard"] = ``;
 
 allWords["Lesson 28"] = `
 うれます [パンが～]
@@ -13049,7 +13321,17 @@ allWords["Kanji 60"] = ``;
 
 allWords["Kanji 60 - Hard"] = ``;
 
-allWords["Romaji"] = `
+allWords["Questions"] = ``;
+
+allWords["Counters"] = ``;
+
+allWords["Counters - Hard"] = ``;
+
+allWords["Food Names"] = ``;
+
+allWords["Food Names - Hard"] = ``;
+
+allWords["Romaji1"] = `
 ヨーロッパ
 Europe
 yooroppa
@@ -13750,46 +14032,11 @@ homestay
 hoomusutei
 ホームステイ
 
-ドライクリーニング
-Dry cleaning
-Dorai kuriiningu
-ドライクリーニング
-
-サービスサイズ
-Service size
-Saabisu saizu
-サービスサイズ
-
-スライド
-Slide
-Suraido
-スライド
-
-プリント
-Printing
-Purinto
-プリント
-
-コピー、ファクス
-Photocopy, fax
-Kopii, fakusu
-コピー、ファクス
-
-パノラマサイズ
-Panoramic size
-Panorama saizu
-パノラマサイズ
-
-ネガ
-Negative
-Nega
-ネガ
-
 `;
 
-allWords["Romaji - Hard"] = ``;
+allWords["Romaji1 - Hard"] = ``;
 
-allWords["Number"] = `
+allWords["Number1"] = `
 ひとつ
 one (for counting, means one item)
 hitotsu
@@ -14567,7 +14814,7 @@ juujikan
 
 `;
 
-allWords["Number - Hard"] = `
+allWords["Number1 - Hard"] = `
 よじ
 4 o'clock
 yoji
@@ -14650,7 +14897,7 @@ chika jukkai
 
 `;
 
-allWords["Similar Ones"] = `
+allWords["Similar Ones1"] = `
 どうも
 Well, thanks
 doumo
@@ -15038,7 +15285,7 @@ Shokudou
 
 しょくぎょう
 Occupations
-shokugyou
+shokugyō
 職業
 
 しょくよくが ありません
@@ -15066,66 +15313,11 @@ dinner
 Yuushoku
 夕食
 
-よこ
-side
-Yoko
-横
-
-うんどうかい
-athletic meeting
-Undoukai
-運動会
-
-うちゅう
-space, universe
-Uchuu
-宇宙
-
-うちゅうせん
-spaceship
-Uchuusen
-宇宙船
-
-うちゅうひこうし
-astronaut
-Uchuuhikoushi
-宇宙飛行士
-
-きぶんがいい
-feel well
-Kibun ga ii
-気分がいい
-
-きぶんがわるい
-feel ill
-Kibun ga warui
-気分が悪い
-
-ずいぶん
-pretty, very
-Zuibun
-ずいぶん
-
-でんしメール
-electronic mail
-Denshi meeru
-電子メール
-
-いしき
-consciousness, awareness, mindfulness
-Ishiki
-意識
-
-けしき
-scenery, view
-Keshiki
-景色
-
 `;
 
-allWords["Similar Ones - Hard"] = ``;
+allWords["Similar Ones1 - Hard"] = ``;
 
-allWords["Ko So Aso"] = `
+allWords["Ko So Aso1"] = `
 そちら
 your place
 sochira
@@ -15246,26 +15438,11 @@ this (polite form of kore)
 kochira
 こちら
 
-こんな～
-~ like this
-Konna~
-こんな～
-
-そんな～
-~ like that (near the listener)
-Sonna~
-そんな～
-
-あんな～
-~ like that (far from both the speaker and the listener)
-Anna~
-あんな～
-
 `;
 
-allWords["Ko So Aso - Hard"] = ``;
+allWords["Ko So Aso1 - Hard"] = ``;
 
-allWords["Half Words"] = `
+allWords["Half Words1"] = `
 あのう
 Er... (used to show hesitation)
 anou
@@ -15468,9 +15645,9 @@ e?
 
 `;
 
-allWords["Half Words - Hard"] = ``;
+allWords["Half Words1 - Hard"] = ``;
 
-allWords["Na Adjectives"] = `
+allWords["Na Adjectives1"] = `
 すてき（な）
 fine, nice, wonderful
 suteki na
@@ -15581,21 +15758,11 @@ waste
 muda
 むだ
 
-だいすき [な]
-like very much
-Daisuki [na]
-大好き [な]
-
-ふしぎ [な]
-fantastic, mysterious
-Fushigi [na]
-不思議 [な]
-
 `;
 
-allWords["Na Adjectives - Hard"] = ``;
+allWords["Na Adjectives1 - Hard"] = ``;
 
-allWords["All Masu Form Verbs"] = `
+allWords["All Masu Form Verbs1"] = `
 きます
 wear, put on (a shirt, dress, jacket etc)
 kimasu
@@ -16741,66 +16908,11 @@ to dance
 Odoru
 踊る
 
-[にもつが] かたづきます
-[boxes] be put in order
-[nimotsu ga~] Katadukimasu (or) Katazukimasu
-[荷物が～] 片づきます
-
-れんらくします
-contact
-Renrakushimasu
-連絡します
-
-もうしこみます
-apply for, enter for
-Moushikomimasu
-申し込みます
-
-[じかんに～] おくれます
-be late [for an appointment, etc.]
-[jikan ni~] Okuremasu
-[時間に～] 遅れます
-
-[じかんに～] まにあいます
-be in time [for an appointment, etc.]
-[jikan ni~] Maniaimasu
-[時間に～] 間に合います
-
-[ごみが～] もえます
-burn [trash]
-[gomi ga~] Moemasu
-[ごみが～] 燃えます
-
-さがします
-look for, search
-Sagashimasu
-探します、捜します
-
-[パーティーに～] さんかします
-attend [a party]
-[paatii ni~] Sankashimasu
-[パーティーに～] 参加します
-
-[じかんを～] みます
-check [time]
-[jikan o~] Mimasu
-[時間を～] 見ます、診ます
-
-ふしぎ [な]
-fantastic, mysterious
-Fushigi [na]
-不思議 [な]
-
-[きょうしつを～] ひらきます
-set up [a class], open, hold
-[kyoushitsu o~] Hirakimasu
-[教室を～] 開きます
-
 `;
 
-allWords["All Masu Form Verbs - Hard"] = ``;
+allWords["All Masu Form Verbs1 - Hard"] = ``;
 
-allWords["Connectors"] = `
+allWords["Connectors1"] = `
 けん
 prefecture
 ken
@@ -16858,7 +16970,7 @@ Mr. (informal of ~san)
 
 `;
 
-allWords["Connectors - Hard"] = ``;
+allWords["Connectors1 - Hard"] = ``;
 
 allWords["N5 Kanji"] = `
 人
@@ -18943,7 +19055,7 @@ Sakura ga arimasu.
 
 こうえんが あります。
 There's a park.
-Kouen ga arimasu.
+Kōen ga arimasu.
 公園が あります。
 
 おとこのひとが います。
@@ -18963,7 +19075,7 @@ Watashi no heya ni tsukue ga arimasu.
 
 じむしょに みらーさんが います。
 Mr. Miller is in the office.
-Jimusho ni Miraa-san ga imasu.
+Jimusho ni Mirā-san ga imasu.
 事務所に ミラーさんが います。
 
 ちかに なにがありますか。
@@ -18988,17 +19100,17 @@ Kimura-san ga imasu.
 
 とうきょうでぃずにーらんどは ちばけんに あります。
 Tokyo Disneyland is in Chiba prefecture.
-Toukyou Dizuniirando wa Chiba-ken ni arimasu.
+Tōkyō Dizunīrando wa Chiba-ken ni arimasu.
 東京ディズニーランドは 千葉県に あります。
 
 みらーさんは じむしょに います。
 Mr. Miller is in the office.
-Miraa-san wa jimusho ni imasu.
+Mirā-san wa jimusho ni imasu.
 ミラーさんは 事務所に います。
 
 とうきょうでぃずにーらんどは どこに ありますか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko ni arimasu ka.
+Tōkyō Dizunīrando wa doko ni arimasu ka.
 東京ディズニーランドは どこに ありますか。
 
 ちばけんに あります。
@@ -19008,7 +19120,7 @@ Chiba-ken ni arimasu.
 
 みらーさんは どこに いますか。
 Where's Mr. Miller?
-Miraa-san wa doko ni imasu ka.
+Mirā-san wa doko ni imasu ka.
 ミラーさんは どこに いますか。
 
 じむしょに います。
@@ -19018,7 +19130,7 @@ Jimusho ni imasu.
 
 とうきょうでぃずにーらんどは どこですか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko desu ka.
+Tōkyō Dizunīrando wa doko desu ka.
 東京ディズニーランドは どこですか。
 
 ちばけんです。
@@ -19033,12 +19145,12 @@ Tsukue no ue ni shashin ga arimasu.
 
 ゆうびんきょくは ぎんこうのとなりに あります。
 The post office is next to the bank.
-Yūbinkyoku wa ginkou no tonari ni arimasu.
+Yūbinkyoku wa ginkō no tonari ni arimasu.
 郵便局は 銀行の隣に あります。
 
 ほんやは はなやと すーぱーの あいだに あります。
 The bookshop is between the florist and the supermarket.
-Honya wa hanaya to sūpaa no aida ni arimasu.
+Honya wa hanaya to sūpā no aida ni arimasu.
 本屋は 花屋と スーパーの 間に あります。
 
 えきのちかくで ともだちに あいました。
@@ -19088,7 +19200,7 @@ Gaikokujin no gakusei ga futari imasu.
 
 くにで にかけつ にほんごを べんきょうしました。
 I studied Japanese for two months in my home country.
-Kuni de nikagetsu nihongo o benkyou shimashita.
+Kuni de nikagetsu nihongo o benkyō shimashita.
 国で 2か月 日本語を 勉強しました。
 
 みかんを いくつ かいましたか。
@@ -19113,27 +19225,27 @@ Gonin imasu.
 
 まいばん なんじかん にほんごを べんきょうしますか。
 How many hours do you study Japanese every night?
-Maiban nanjikan nihongo o benkyou shimasu ka.
+Maiban nanjikan nihongo o benkyō shimasu ka.
 毎晩 何時間 日本語を 勉強しますか。
 
 にじかん べんきょうします。
 [I study for] two hours.
-Nijikan benkyou shimasu.
+Nijikan benkyō shimasu.
 2時間 勉強します。
 
 どのくらい にほんごを べんきょうしましたか。
 How long did you study Japanese for?
-Donokurai nihongo o benkyou shimashita ka.
+Donokurai nihongo o benkyō shimashita ka.
 どのくらい 日本語を 勉強しましたか。
 
 さんねん べんきょうしました。
 [I studied it for] three years.
-Sannen benkyou shimashita.
+Sannen benkyō shimashita.
 3年 勉強しました。
 
 おおさかから とうきょうまで どのくらい かかりますか。
 How long does it take from Osaka to Tokyo?
-ousaka kara Toukyou made donokurai kakarimasu ka.
+Ōsaka kara Tōkyō made donokurai kakarimasu ka.
 大阪から 東京まで どのくらい かかりますか。
 
 しんかんせんで にじかんはん かかります。
@@ -19143,7 +19255,7 @@ Shinkansen de nijikanhan kakarimasu.
 
 がっこうに せんせいが さんじゅうにんぐらい います。
 There are about thirty teachers at our school.
-Gakkou ni sensei ga sanjū-nin gurai imasu.
+Gakkō ni sensei ga sanjū-nin gurai imasu.
 学校に 先生が 30人ぐらい います。
 
 じゅうごふんぐらい かかります。
@@ -19158,12 +19270,12 @@ Ikkagetsu ni nikai eiga o mimasu.
 
 ぱわーでんきに がいこくじんの しゃいんが ひとりだけ います。
 There is only one foreign employee at Power Electric.
-Pawaa-denki ni gaikokujin no shain ga hitori dake imasu.
+Pawā-denki ni gaikokujin no shain ga hitori dake imasu.
 パワー電気に 外国人の 社員が 1人だけ います。
 
 やすみは にちようびだけです。
 Sunday is my only day off.
-Yasumi wa nichiyoubi dake desu.
+Yasumi wa nichiyōbi dake desu.
 休みは 日曜日だけです。
 
 `;
@@ -19173,47 +19285,47 @@ allWords["Grammer 11 - Hard"] = ``;
 allWords["Grammer 12"] = `
 きのうは あめでした。
 It was rainy yesterday.
-Kinou wa ame deshita.
+Kinō wa ame deshita.
 きのうは 雨でした。
 
 きのうの しけん は かんたんじゃ ありませんでした。
 Yesterday's exam wasn't easy.
-Kinou no shiken wa kantan ja arimasendeshita.
+Kinō no shiken wa kantan ja arimasendeshita.
 きのうの 試験は 簡単じゃ ありませんでした。
 
 きのうは あつかったです。
 It was hot yesterday.
-Kinou wa atsukatta desu.
+Kinō wa atsukatta desu.
 きのうは 暑かったです。
 
 きのうの ぱーてぃーは あまり たのしくなかったです。
 I didn't enjoy yesterday's party very much.
-Kinou no paatii wa amari tanoshikunakatta desu.
+Kinō no pātī wa amari tanoshikunakatta desu.
 きのうの パーティーは あまり 楽しくなかったです。
 
 この くるまは あの くるまより おおきいです。
 This car's bigger than that one.
-Kono kuruma wa ano kuruma yori oukii desu.
+Kono kuruma wa ano kuruma yori ōkii desu.
 この 車は あの 車より 大きいです。
 
 さっかーと やきゅうと どちらが おもしろいですか。
 Which [do you think] is more interesting, soccer or baseball?
-Sakkaa to yakyū to dochira ga omoshiroi desu ka.
+Sakkā to yakyū to dochira ga omoshiroi desu ka.
 サッカーと 野球と どちらが おもしろいですか。
 
 ……さっかーの ほうが おもしろいです。
 ……[I think] soccer's more interesting.
-...Sakkaa no hou ga omoshiroi desu.
+...Sakkā no hō ga omoshiroi desu.
 ……サッカーの ほうが おもしろいです。
 
 みらーさんと さんとすさんと どちらが てにすが じょうずですか。
 Who's better at tennis, Mr. Miller or Mr. Santos?
-Miraa-san to Santosu-san to dochira ga tenisu ga jouzu desu ka.
+Mirā-san to Santosu-san to dochira ga tenisu ga jōzu desu ka.
 ミラーさんと サントスさんと どちらが テニスが 上手ですか。
 
 ほっかいどうと おおさかと どちらが すずしいですか。
 Which is cooler, Hokkaido or Osaka?
-Hokkaidou to ousaka to dochira ga suzushii desu ka.
+Hokkaidō to Ōsaka to dochira ga suzushii desu ka.
 北海道と 大阪と どちらが 涼しいですか。
 
 はると あきと どちらが すきですか。
@@ -19223,7 +19335,7 @@ Haru to aki to dochira ga suki desu ka.
 
 にほんりょうり［のなかで］なにが いちばん おいしいですか。
 Which of all the Japanese dishes is the most delicious?
-Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
+Nihon-ryōri [no naka de] nani ga ichiban oishii desu ka.
 日本料理［の中で］何が いちばん おいしいですか。
 
 ……てんぷらが いちばん おいしいです。
@@ -19233,7 +19345,7 @@ Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
 
 よーろっぱで どこが いちばん よかったですか。
 What was your favorite place in Europe?
-Youroppa de doko ga ichiban yokatta desu ka.
+Yōroppa de doko ga ichiban yokatta desu ka.
 ヨーロッパで どこが いちばん よかったですか。
 
 ……すいすが いちばん よかったです。
@@ -19248,7 +19360,7 @@ Kazoku de dare ga ichiban se ga takai desu ka.
 
 ……おとうとが いちばん せが たかいです。
 ……My younger brother is [the tallest].
-...Otouto ga ichiban se ga takai desu.
+...Otōto ga ichiban se ga takai desu.
 ……弟が いちばん 背が 高いです。
 
 いちねんで いつが いちばん さむいですか。
@@ -19268,7 +19380,7 @@ Karina-san no kaban wa dore desu ka.
 
 ……あの あかく て、おおきいのです。
 ……That big red one.
-...Ano akakute, oukii no desu.
+...Ano akakute, ōkii no desu.
 ……あの 赤くて、大きいのです。
 
 `;
@@ -19313,7 +19425,7 @@ Watashi wa tenpura o tabetai desu.
 
 こうべで なにを かいたいですか。
 What do you want to buy in Kobe?
-Koube de nani o kaitai desu ka.
+Kōbe de nani o kaitai desu ka.
 神 戸で 何 を 買 いたいですか。
 
 くつを かいたいです。
@@ -19328,22 +19440,22 @@ Onaka ga itai desu kara, nani mo tabetakunai desu.
 
 こうべへ いんど りょうりを たべに いきます。
 I'm going to Kobe to have some Indian food.
-Koube e Indo ryouri o tabe ni ikimasu.
+Kōbe e Indo ryōri o tabe ni ikimasu.
 神 戸へ インド 料 理 を 食 べに 行 きます。
 
 こうべへ かいものに いきます。
 I'm going shopping in Kobe.
-Koube e kaimono ni ikimasu.
+Kōbe e kaimono ni ikimasu.
 神 戸へ 買 い物 に 行 きます。
 
 にほんへ びじゅつの べんきょうに きました。
 I came to Japan to study art.
-Nihon e bijutsu no benkyou ni kimashita.
+Nihon e bijutsu no benkyō ni kimashita.
 日 本 へ 美 術 の 勉 強 に 来 ました。
 
 あした きょうとの おまつりに いきます。
 I'm going to see a festival in Kyoto tomorrow.
-Ashita Kyouto no omatsuri ni ikimasu.
+Ashita Kyōto no omatsuri ni ikimasu.
 あした 京 都 の お祭 りに 行 きます。
 
 ふゆやすみは どこか［へ］ いきましたか。
@@ -19353,7 +19465,7 @@ Fuyuyasumi wa dokoka [e] ikimashita ka.
 
 はい。ほっかいどうへ すきーに いきました。
 Yes, I went skiing in Hokkaido.
-Hai. Hokkaidou e sukii ni ikimashita.
+Hai. Hokkaidō e sukī ni ikimashita.
 はい。北 海 道 へ スキーに 行 きました。
 
 のどが かわきましたから、なに か［を］ のみたいです。
@@ -19378,17 +19490,17 @@ Sumimasen ga, kono kanji no yomikata o oshiete kudasai.
 
 ぼーるぺんで なまえを かいて ください。
 Please write your name with a ballpoint pen.
-Bourupen de namae o kaite kudasai.
+Bōrupen de namae o kaite kudasai.
 ボールペンで 名 前 を 書 いて ください。
 
 どうぞ たくさん たべて ください。
 Please eat as much as you want.
-Douzo takusan tabete kudasai.
+Dōzo takusan tabete kudasai.
 どうぞ たくさん 食 べて ください。
 
 みらーさんは いま でんわを かけて います。
 Mr. Miller is making a phone call now.
-Miraa-san wa ima denwa o kakete imasu.
+Mirā-san wa ima denwa o kakete imasu.
 ミラーさんは 今 電 話 を かけて います。
 
 いま あめが ふって いますか。
@@ -19408,7 +19520,7 @@ Iie, futte imasen.
 
 あしたも きましょうか。
 Shall I come tomorrow, too?
-Ashita mo kimashou ka.
+Ashita mo kimashō ka.
 あしたも 来 ましょうか。
 
 ええ、じゅうじに きて ください。
@@ -19418,7 +19530,7 @@ Ee, jū-ji ni kite kudasai.
 
 かさを かしましょうか。
 Shall I lend you my umbrella?
-Kasa o kashimashou ka.
+Kasa o kashimashō ka.
 傘 を 貸 しましょうか。
 
 すみません。おねがいします。
@@ -19428,12 +19540,12 @@ Sumimasen. Onegaishimasu.
 
 にもつを もちましょうか。
 Shall I carry your bag?
-Nimotsu o mochimashou ka.
+Nimotsu o mochimashō ka.
 荷 物 を 持 ちましょうか。
 
 いいえ、けっこうです。
 No, thank you.
-Iie, kekkou desu.
+Iie, kekkō desu.
 いいえ、けっこうです。
 
 あめが ふって います。
@@ -19443,7 +19555,7 @@ Ame ga futte imasu.
 
 みらーさんが いませんね。
 Mr. Miller isn't here, is he?
-Miraa-san ga imasen ne.
+Mirā-san ga imasen ne.
 ミラーさんが いませんね。
 
 すみませんが、しおを とって ください。
@@ -19518,12 +19630,12 @@ Watashi wa kamera o motte imasu.
 
 わたしは おおさかに すんで います。
 I live in Osaka.
-Watashi wa ousaka ni sunde imasu.
+Watashi wa Ōsaka ni sunde imasu.
 わたしは 大 阪 に 住 んで います。
 
 しやくしょの でんわばんごうを しって いますか。
 Do you know the number of City Hall?
-Shiyakusho no denwa bangou o shitte imasu ka.
+Shiyakusho no denwa bangō o shitte imasu ka.
 市 役 所 の 電 話 番 号 を 知 って いますか。
 
 はい、しって います。
@@ -19538,22 +19650,22 @@ Iie, shirimasen.
 
 IMC は こんぴゅーたーそふとを つくって います。
 IMC produces computer software.
-IMC wa konpyūtaa sofuto o tsukutte imasu.
+IMC wa konpyūtā sofuto o tsukutte imasu.
 IMC は コンピューターソフトを 作 って います。
 
 すーぱーで なんぷらーを うって います。
 Supermarkets sell nam pla.
-Sūpaa de nanpuraa o utte imasu.
+Sūpā de nanpurā o utte imasu.
 スーパーで ナンプラーを 売 って います。
 
 みらーさんは IMC で はたらいて います。
 Mr. Miller works at IMC.
-Miraa-san wa IMC de hataraite imasu.
+Mirā-san wa IMC de hataraite imasu.
 ミラーさんは IMC で 働 いて います。
 
 いもうとは だいがくで べんきょうして います。
 My younger sister is studying at university.
-Imouto wa daigaku de benkyou shite imasu.
+Imōto wa daigaku de benkyō shite imasu.
 妹 は 大 学 で 勉 強 して います。
 
 ここに はいっては いけません。
@@ -19568,7 +19680,7 @@ Koko ni suwattemo ii desu ka.
 
 きょうとえきから じゅうろくばんの ばすに のって ください。
 Take the Number 16 bus from Kyoto Station.
-Kyouto-eki kara jū-roku-ban no basu ni notte kudasai.
+Kyōto-eki kara jū-roku-ban no basu ni notte kudasai.
 京 都 駅 から 16 番 の バスに 乗 って ください。
 
 ここに くるまを とめて ください。
@@ -20615,99 +20727,2433 @@ Undoukai ni sankashimasu ka.
 
 allWords["Grammer 26 - Hard"] = ``;
 
-allWords["Grammer 27"] = ``;
+allWords["Grammer 27"] = `
+かきます / かけます
+to write / can write
+kakimasu / kakemasu
+書きます / 書けます
+
+かいます / かえます
+to buy / can buy
+kaimasu / kaemasu
+買います / 買えます
+
+たべます / たべられます
+to eat / can eat
+tabemasu / taberareru
+食べます / 食べられます
+
+きます / こられます
+to come / can come
+kimasu / koraremasu
+来ます / 来られます
+
+します / できます
+to do / can do
+shimasu / dekimasu
+します / できます
+
+わたしは にほんごを はなせます。
+I speak Japanese.
+Watashi wa Nihongo wo hanasemasu.
+わたしは 日本語を 話せます。
+
+わたしは にほんごが はなせます。
+I can speak Japanese.
+Watashi wa Nihongo ga hanasemasu.
+わたしは 日本語が 話せます。
+
+ひとり で びょういん へ いけますか。
+Can you go to the hospital alone?
+Hitori de byouin e ikemasu ka.
+一人で 病院へ 行けますか。
+
+たなかさんに あえませんでした。
+I could not see Mr. Tanaka.
+Tanaka-san ni aemasen deshita.
+田中さんに 会えませんでした。
+
+ミラーさんは かんじが よめます。
+Mr. Miller can read kanji.
+Miraa-san wa kanji ga yomemasu.
+ミラーさんは 漢字が 読めます。
+
+この ぎんこうで ドルが かえられます。
+You can change dollars at this bank.
+Kono ginkou de doru ga kaeraremasu.
+この 銀行で ドルが 換えられます。
+
+しんかんせんから ふじさん が みえます。
+Mt. Fuji can be seen from the Shinkansen.
+Shinkansen kara Fujisan ga miemasu.
+新幹線から 富士山が 見えます。
+
+しんじゅくで くろさわの えいがが みられます。
+You can see Kurosawa's movies in Shinjuku.
+Shinjuku de Kurosawa no eiga ga miraremasu.
+新宿で 黒澤の 映画が 見られます。
+
+でんわで てんきよほう が きけます。
+You can hear the weather forecast by phone.
+Denwa de tenki yohou ga kikemasu.
+電話で 天気予報が 聞けます。
+
+ラジオの おとが きこえます。
+The sound of a radio can be heard.
+Rajio no oto ga kikoemasu.
+ラジオの 音が 聞こえます。
+
+えきの まえに おおきい スーパーが できました。
+A big supermarket has been completed in front of the station.
+Eki no mae ni ookii suupaa ga dekimashita.
+駅の 前に 大きい スーパーが できました。
+
+とけいの しゅうりは いつ できますか。
+When can you fix this watch?
+Tokei no shuuri wa itsu dekimasu ka.
+時計の 修理は いつ できますか。
+
+わたしの がっこうには アメリカじんの せんせいが います。
+In my school there is an American teacher.
+Watashi no gakkou ni wa Amerikajin no sensei ga imasu.
+わたしの 学校には アメリカ人の 先生が います。
+
+わたしの がっこうでは ちゅうごくごが ならえます。
+In my school we can learn the Chinese language.
+Watashi no gakkou de wa Chuugokugo ga naraemasu.
+わたしの 学校では 中国語が 習えます。
+
+きのうは やまが みえましたが、きょうは みえません。
+Yesterday we could see mountains, but not today.
+Kinou wa yama ga miemashita ga, kyou wa miemasen.
+きのうは 山が 見えましたが、きょうは 見えません。
+
+ワインは のみますが、ビールは のみません。
+I drink wine, but not beer.
+Wain wa nomimasu ga, biiru wa nomimasen.
+ワインは 飲みますが、ビールは 飲みません。
+
+きょうとへは いきますが、おおさかへは いきません。
+I will go to Kyoto, but not to Osaka.
+Kyouto e wa ikimasu ga, Oosaka e wa ikimasen.
+京都へは 行きますが、大阪へは 行きません。
+
+クララさんは えいごが はなせます。
+Klara can speak English.
+Kurara-san wa Eigo ga hanasemasu.
+クララさんは 英語が 話せます。
+
+それから、フランスごも はなせます。
+She can speak French, too.
+Sorekara, Furansugo mo hanasemasu.
+それから、フランス語も 話せます。
+
+きょねん アメリカへ いきまし た。
+I went to America last year.
+Kyonen Amerika e ikimashita.
+去年 アメリカへ 行きました。
+
+メキシコへも いきまし た。
+I went to Mexico, too.
+Mekishiko e mo ikimashita.
+メキシコへも 行きました。
+
+わたしの へやから うみが みえます。
+The sea can be seen from my room.
+Watashi no heya kara umi ga miemasu.
+わたしの 部屋から 海が 見えます。
+
+おとうとの へやから も みえます。
+It can also be seen from my brother's room.
+Otouto no heya kara mo miemasu.
+弟の 部屋から も 見えます。
+
+ローマじしか かけません。
+I can only write Roman letters.
+Roomaji shika kakemasen.
+ローマ字しか 書けません。
+
+ローマじだけ かけます。
+I can write Roman letters.
+Roomaji dake kakemasu.
+ローマ字だけ 書けます。
+
+`;
 
 allWords["Grammer 27 - Hard"] = ``;
 
-allWords["Grammer 28"] = ``;
+allWords["Grammer 28"] = `
+おんがくを ききながら しょくじを します。
+I listen to music while eating.
+Ongaku wo kikinagara shokuji wo shimasu.
+音楽を 聞きながら 食事を します。
+
+はたらきながら にほんごを べんきょうして います。
+I'm working and studying Japanese.
+Hatarakinagara Nihongo wo benkyou shite imasu.
+働きながら 日本語を 勉強して います。
+
+まいあさ ジョギングを して います。
+I jog every morning.
+Maiasa jogingu wo shite imasu.
+毎朝 ジョギングを して います。
+
+こどもの とき、まいばん 8じに ねて いました。
+I used to go to bed at eight every evening when I was a child.
+Kodomo no toki, maiban hachi-ji ni nete imashita.
+子どもの とき、毎晩 8時に 寝て いました。
+
+ワットせんせいは ねっしんだし、まじめだし、けいけんも あります。
+Professor Watt is earnest and diligent and has experience.
+Watto-sensei wa nesshin dashi, majime dashi, keiken mo arimasu.
+ワット先生は 熱心だし、まじめだし、経験も あります。
+
+えきから ちかいし、くるまで こられるし、
+It's near the station, and you can also come here by car,
+Eki kara chikai shi, kuruma de korareru shi,
+駅から 近いし、車で 来られるし、
+
+この みせは とても べんりです。
+this shop is very convenient.
+kono mise wa totemo benri desu.
+この 店は とても 便利です。
+
+むすこに えいごを おしえて いただけませんか。
+Could you teach English to my son?
+Musuko ni Eigo wo oshiete itadakemasen ka.
+息子に 英語を教えて いただけませんか。
+
+...うん、しゅっちょうも おおいし、もうすぐ にほんごの しけんも あるし......
+...Sorry. I often go on business trips, and I have to take a Japanese exam soon...
+...Un, shuchou mo ooi shi, mousugu Nihongo no shiken mo aru shi...
+...うん、出張も 多いし、もうすぐ 日本語の 試験も あるし......
+
+いろも きれいだし、この くつを かいます。
+Because the color is beautiful, I'll buy this pair of shoes.
+Iro mo kirei dashi, kono kutsu wo kaimasu.
+色も きれいだし、この 靴を 買います。
+
+どうして さくらだいがくを えらんだんですか。
+Why did you choose Sakura University?
+Doushite Sakura Daigaku wo erandan desu ka.
+どうして さくら大学を 選んだんですか。
+
+...さくらだいがくは、ちちが でた だいがくだし、
+...Because Sakura University is my father's alma mater,
+...Sakura Daigaku wa, chichi ga deta daigaku dashi,
+...さくら大学は、父が 出た 大学だし、
+
+いい せんせいも おおいし、
+there are many good teachers,
+ii sensei mo ooi shi,
+いい 先生も 多いし、
+
+それに うちから ちかいですから。
+and besides, it's near my house.
+soreni uchi kara chikai desu kara.
+それに 家から 近いですから。
+
+この レストランは ねだんも やすいし、おいしいんです。
+The food is inexpensive and tasty in this restaurant.
+Kono resutoran wa nedan mo yasui shi, oishiin desu.
+この レストランは 値段も 安いし、おいしいんです。
+
+...それで ひとが おおいんですね。
+...And that's why it's crowded.
+...Sorede hito ga ooin desu ne.
+...それで 人が 多いんですね。
+
+よく この きっさてんに くるんですか
+Do you often come to this coffee shop?
+Yoku kono kissaten ni kuru n desu ka
+よく この 喫茶店に 来るんですか
+
+`;
 
 allWords["Grammer 28 - Hard"] = ``;
 
-allWords["Grammer 29"] = ``;
+allWords["Grammer 29"] = `
+まどが われて います。
+The window is broken.
+Mado ga warete imasu.
+窓が 割れて います。
+
+でんきが ついて います。
+The light is on.
+Denki ga tsuite imasu.
+電気が ついて います。
+
+まどが われました
+The window broke.
+Mado ga waremashita
+窓が 割れました
+
+まどが われて います
+The window is broken.
+Mado ga warete imasu
+窓が 割れて います
+
+けさは みちが こんで いました。
+The road was crowded this morning.
+Kesaha michi ga konde imashita.
+けさは 道が 込んで いました。
+
+この いすは こわれて います。
+This chair is broken.
+Kono isu wa kowarete imasu.
+この いすは 壊れて います。
+
+シュミットさんが もって きた ワインは
+The wine that Mr. Schmidt brought
+Shumitto-san ga motte kita wain wa
+シュミットさんが 持って 来た ワインは
+
+ぜんぶ のんで しまいました。
+we drank all of it.
+zenbu nonde shimaimashita.
+全部 飲んで しまいました。
+
+かんじの しゅくだいは もう やって しまいました。
+I have done my kanji homework already.
+Kanji no shukudai wa mou yatte shimaimashita.
+漢字の 宿題は もう やって しまいました。
+
+ひるごはんまでに レポートを かいて しまいます。
+I intend to finish writing the report by lunch time.
+Hirugohan made ni repooto wo kaite shimaimas.
+昼ごはんまでに レポートを 書いて しまいます。
+
+パスポートを なくして しまいました。
+I lost my passport.
+Pasupooto wo nakushite shimaimashita.
+パスポートを なくして しまいました。
+
+パソコンが こしょうして しまいました。
+My personal computer is broken.
+Pasokon ga koshou shite shimaimashita.
+パソコンが 故障して しまいました。
+
+[かばんが] ありましたよ。
+I've found [the bag].
+[Kaban ga] arimashitayo.
+[かばんが] ありましたよ。
+
+どこかで さいふを なくして しまいました。
+I lost my wallet somewhere.
+Dokoka de saifu wo nakushite shimaimashita.
+どこかで 財布を なくして しまいました。
+
+どこかに でんわが ありませんか。
+Is there a pay phone somewhere nearby?
+Dokoka ni denwa ga arimasen ka.
+どこかに 電話が ありませんか。
+
+`;
 
 allWords["Grammer 29 - Hard"] = ``;
 
-allWords["Grammer 30"] = ``;
+allWords["Grammer 30"] = `
+カレンダーに こんげつの よていが かいて あります。
+This month's schedule is written on the calendar.
+Karendaa ni kongetsu no yotei ga kaite arimasu.
+カレンダーに 今月の 予定が 書いて あります。
+
+つくえの うえに メモが おいて あります。
+There is a memo put on the desk.
+Tsukue no ue ni memo ga oite arimasu.
+机の 上に メモが 置いて あります。
+
+メモは どこですか。
+Where is the memo?
+Memo wa doko desu ka.
+メモは どこですか。
+
+...[メモは] つくえの うえに おいて あります。
+...It's been put on the desk.
+...[Memo wa] tsukue no ue ni oite arimasu.
+...[メモは] 机の 上に 置いて あります。
+
+こんげつの よていは カレンダーに かいて あります。
+This month's schedule has been written on the calendar.
+Kongetsu no yotei wa karendaa ni kaite arimasu.
+今月の 予定は カレンダーに 書いて あります。
+
+たんじょうびの プレゼントは もう かって あります。
+I have already bought the present for her birthday.
+Tanjoubi no purezento wa mou katte arimasu.
+誕生日の プレゼントは もう 買って あります。
+
+ホテルは もう よやくして あります。
+I have already reserved a hotel.
+Hoteru wa mou yoyaku shite arimasu.
+ホテルは もう 予約して あります。
+
+まどが しまって います。
+The window is closed.
+Mado ga shimatte imasu.
+窓が 閉まって います。
+
+まどが しめて あります。
+The window has been closed.
+Mado ga shimete arimasu.
+窓が 閉めて あります。
+
+りょこうの まえに きっぷを かっておきます。
+I'll buy a ticket before the trip.
+Ryokou no mae ni kippu wo katte okimasu.
+旅行の 前に 切符を 買っておきます。
+
+つぎの かいぎまでに なにを して おいたら いいですか。
+What should I do before the next meeting?
+Tsugi no kaigi made ni nani wo shite oitara ii desu ka.
+次の 会議までに 何を して おいたら いいですか。
+
+...この しりょうを よんで おいて ください。
+...Read these materials.
+...Kono shiryou wo yonde oite kudasai.
+...この 資料を 読んで おいて ください。
+
+はさみを つかったら、もとの ところに もどして おいて ください。
+When you finish using the scissors, put them back where they were.
+Hasami wo tsukattara, moto no tokoro ni modoshite oite kudasai.
+はさみを 使ったら、元の 所に 戻して おいて ください。
+
+あした かいぎが ありますから、
+Please leave the chairs as they are
+Ashita kaigi ga arimasu kara,
+あした 会議が ありますから、
+
+いすは この ままに して おいて ください。
+because a meeting will be held here tomorrow.
+isu wa kono mama ni shite oite kudasai.
+いすは この ままに して おいて ください。
+
+そこに おいて おいて ください。
+Please leave it there.
+Soko ni oite oite kudasai.
+そこに 置いて おいて ください。
+
+まだ あめが ふって います。
+It's still raining.
+Mada ame ga futte imasu.
+まだ 雨が 降って います。
+
+どうぐを かたづけましょうか。
+Shall I put away the tools?
+Dougu wo katadzukemashou ka.
+道具を 片づけましょうか。
+
+...まだ つかって いますから、その ままに して おいて ください。
+...No, leave them there; I'm still using them.
+...Mada tsukatte imasu kara, sono mama ni shite oite kudasai.
+...まだ 使って いますから、その ままに して おいて ください。
+
+ブロードウェイで ミュージカルを したいと おもうんですが......
+I'd like to see a musical on Broadway...
+Buroodowei de myuujikaru wo mitai to omou n desu ga...
+ブロードウェイで ミュージカルを 見たいと 思うんですが......
+
+...それは いいですね。
+...That sounds nice.
+...Sore wa ii desu ne.
+...それは いいですね。
+
+らいげつから おおさかの ほんしゃに てんきんなんです。
+I will be transferred to the Osaka head office next month.
+Raigetsu kara Oosaka no honsha ni tenkin nan desu.
+来月から 大阪の 本社に 転勤なんです。
+
+...それは おめでとう ございます。
+...Congratulations!
+...Sore wa omedetou gozaimasu.
+...それは おめでとう ございます。
+
+ときどき あたまや いが いたくなるんです。
+Sometimes I have pains in my stomach and head.
+Tokidoki atama ya i ga itaku naru n desu.
+時々 頭や 胃が 痛くなるんです。
+
+...それは いけませんね。
+...That's bad.
+...Sore wa ikemasen ne.
+...それは いけませんね。
+
+`;
 
 allWords["Grammer 30 - Hard"] = ``;
 
-allWords["Grammer 31"] = ``;
+allWords["Grammer 31"] = `
+ちょっと やすもうか。
+Shall we take a rest?
+Chotto yasumou ka.
+ちょっと 休もうか。
+
+すこし やすもう。
+Shall we take a rest for a while?
+Sukoshi yasumou.
+少し 休もう。
+
+てつだおうか。
+Shall I help you?
+Tetsudaou ka.
+手伝おうか。
+
+しゅうまつは うみに いこうと おもっています。
+I'm thinking of going to the beach at the weekend.
+Shuumatsu wa umi ni ikou to omotte imasu.
+週末は 海に 行こうと 思っています。
+
+いまから ぎんこうへ いこうと おもっています。
+I'm going to the bank now.
+Ima kara ginkou e ikou to omotte imasu.
+今から 銀行へ 行こうと 思っています。
+
+かれは がいこくで はたらこうと おもっています。
+He is thinking of working in a foreign country.
+Kare wa gaikoku de hatarakou to omotte imasu.
+彼は 外国で 働こうと 思っています。
+
+くにへ かえっても、
+Even when I go back to my country,
+Kuni e kaette mo,
+国へ 帰っても、
+
+じゅうどうを つづける つもりです。
+I'll continue with my judo.
+juudou wo tsuzukeru tsumori desu.
+柔道を 続ける つもりです。
+
+あしたからは たばこを すわない つもりです。
+I'm determined not to smoke from tomorrow.
+Ashita kara wa tabako wo suwanai tsumori desu.
+あしたからは たばこを 吸わない つもりです。
+
+しちがつの おわりに ドイツへ しゅっちょうする よていです。
+I'm scheduled to go on a business trip to Germany at the end of July.
+Shichigatsu no owari ni Doitsu e shutchou suru yotei desu.
+7月の 終わりに ドイツへ 出張する 予定です。
+
+りょこうは いっしゅうかんぐらいの よていです。
+The trip is scheduled to last for a week.
+Ryokou wa isshuukan gurai no yotei desu.
+旅行は 1週間ぐらいの 予定です。
+
+ぎんこうは まだ あいて いません。
+The bank is not open yet.
+Ginkou wa mada aite imasen.
+銀行は まだ 開いて いません。
+
+レポートは もう かきましたか。
+Have you written the report yet?
+Repooto wa mou kakimashita ka.
+レポートは もう 書きましたか。
+
+...いいえ、まだ かいて いません。
+...No, not yet.
+...Iie, mada kaite imasen.
+...いいえ、まだ 書いて いません。
+
+とうきょうに ない ものが ひとつだけ ある。
+There's one thing missing in Tokyo.
+Toukyou ni nai mono ga hitotsu dake aru.
+東京に ない 物が 1つだけ ある。
+
+それは うつくしい しぜんだ。
+And that's nature.
+Sore wa utsukushii shizen da.
+それは 美しい 自然だ。
+
+わたしが いちばん ほしい ものは 「どこで も ドア」です。
+What I want most is a "magic door."
+Watashi ga ichiban hoshii mono wa "Dokodemo Doa" desu.
+わたしが いちばん 欲しい 物は 「どこで も ドア」です。
+
+この ドアを あけると、
+When you open this door,
+Kono doa woakeru to,
+この ドアを あけると、
+
+どこで も いきたい ところへ いけます。
+you can go anywhere you want.
+dokodemo ikitai tokoro e ikemasu.
+どこで も 行きたい 所へ 行けます。
+
+`;
 
 allWords["Grammer 31 - Hard"] = ``;
 
-allWords["Grammer 32"] = ``;
+allWords["Grammer 32"] = `
+まいにち うんどうした ほうがいいです。
+It is good to do some exercise everyday.
+Mainichi undou shita hou ga ii desu.
+毎日 運動した ほうがいいです。
+
+ねつが あるんです。
+I've got a fever.
+Netsu ga arun desu.
+熱が あるんです。
+
+...じゃ、おふろに はいらない ほうがいいですよ。
+...So, you had better not take a bath.
+...Ja, ofuro ni hairanai hou ga ii desu yo.
+...じゃ、おふろに 入らない ほうがいいですよ。
+
+にほんの おてらが いたいんですが......
+I would like to see some Japanese temples...
+Nihon no otera ga mitai n desu ga...
+日本の お寺が 見たいんですが......
+
+...じゃ、きょうとへ いったら いいですよ。
+...So, it would be a good idea to go to Kyoto.
+...Ja, Kyouto e ittara ii desu yo.
+...じゃ、京都へ 行ったら いいですよ。
+
+あしたは あめが ふるでしょう。
+It will rain tomorrow.
+Ashita wa ame ga furu deshou.
+あしたは 雨が 降るでしょう。
+
+タワポンさんは ごうかくするでしょうか。
+Do you think Mr. Thawapon will pass the exam?
+Tawapon-san wa goukaku suru deshou ka.
+タワポンさんは 合格するでしょうか。
+
+やくそくの じかんに まに あわないかも しれません。
+We might not be in time for the appointment.
+Yakusoku no jikan ni mani awanai kamo shiremasen.
+約束の 時間に 間に 合わないかも しれません。
+
+ミラーさんは きっと きます。
+Mr. Miller will surely come.
+Miraa-san wa kitto kimasu.
+ミラーさんは きっと 来ます。
+
+あしたは きっと あめでしょう。
+It will undoubtedly rain tomorrow.
+Ashita wa kitto ame deshou.
+あしたは きっと 雨でしょう。
+
+ミラーさんは くるでしょうか。
+Do you think Mr. Miller will come?
+Miraa-san wa kuru deshou ka.
+ミラーさんは 来るでしょうか。
+
+...たぶん くるでしょう。
+...I guess so.
+...Tabun kuru deshou.
+...たぶん 来るでしょう。
+
+やまださんは この ニュースを たぶん しらないと おもいます。
+I guess Mr. Yamada does not know this news.
+Yamada-san wa kono nyuusu wo tabun shiranai to omoimasu.
+山田さんは この ニュースを たぶん 知らないと 思います。
+
+もしかしたら さんがつに そつぎょうできないかも しれません。
+There is a possibility I might be unable to graduate in March.
+Moshikashitara sangatsu ni sotsugyou dekinai kamo shiremasen.
+もしかしたら 3月に 卒業できないかも しれません。
+
+なににか しんぱいな ことが あるんですか。
+Is anything bothering you?
+Nani ka shinpai na koto ga aru n desu ka.
+何か 心配な ことが あるんですか。
+
+スキーに いきたいんですが、どこか いい ところが ありませんか。
+I want to go skiing. Could you recommend a good ski resort?
+Sukii ni ikitai n desu ga, dokoka ii tokoro ga arimasen ka.
+スキーに 行きたいんですが、どこか いい 所が ありませんか。
+
+えくまで さんじゅっぷんで いけますか。
+Can I reach the station in thirty minutes?
+Eki made sanjuppun de ikemasu ka.
+駅まで 30分で 行けますか。
+
+さんまんえんで ビデオが かえますか。
+Can I buy a video player for 30,000 yen?
+Sanman-en de bideo ga kaemasu ka.
+3万円で ビデオが 買えますか。
+
+`;
 
 allWords["Grammer 32 - Hard"] = ``;
 
-allWords["Grammer 33"] = ``;
+allWords["Grammer 33"] = `
+はやく ねろ。
+Go to bed immediately.
+Hayaku nero.
+早く 寝ろ。
+
+おくれるな。
+Don't be late.
+Okureru na.
+遅れるな。
+
+うちへ こいよ。
+Come to my house tomorrow.
+Uchi e koi yo.
+うちへ 来いよ。
+
+あまり のむなよ。
+Don't drink too much.
+Amari nomu na yo.
+あまり 飲むなよ。
+
+にげろ。
+Run.
+Nigero.
+逃げろ。
+
+エレベーターを つかうな。
+Don't use the elevator.
+ErebEtaa wo tsukau na.
+エレベーターを 使うな。
+
+やすめ。
+Rest.
+Yasume.
+休め。
+
+やすむな。
+Don't rest.
+Yasumu na.
+休むな。
+
+がんばれ。
+Fight!
+Ganbare.
+頑張れ。
+
+まけるな。
+Don't lose!
+Makeru na.
+負けるな。
+
+とまれ。
+Stop.
+Tomare.
+止まれ。
+
+はいるな。
+Don't enter.
+Hairu na.
+入るな。
+
+べんきょうしなさい。
+Study.
+Benkyou shinasai.
+勉強しなさい。
+
+あの かんじは なんと よむんですか。
+How do you read that kanji?
+Ano kanji wa nan to yomu n desu ka.
+あの 漢字は 何と 読むんですか。
+
+あそこに 「とまれ」と かいて あります。
+"Tomare" is written over there.
+Asoko ni "Tomare" to kaite arimasu.
+あそこに 「止まれ」と 書いて あります。
+
+「たちいりきんし」は はいるなと いう いみです。
+"Tachiiri-Kinshi" means don't enter.
+"Tachiiri-kinshi" wa hairu na to iu imi desu.
+「立ち入り禁止」は 入るなと いう 意味です。
+
+この マークは どういう いみですか。
+What does this sign mean?
+Kono maaku wa douiu imi desu ka.
+この マークは どういう 意味ですか。
+
+...せんたくきで あらえろと いう いみです。
+...It means machine washable.
+...Sentakuki de araeru to iu imi desu.
+...洗濯機で 洗えると いう 意味です。
+
+たなかさんは 「あした やすみたい」と いっていました。
+Mr. Tanaka said, "I want to take a day off tomorrow."
+Tanaka-san wa "Ashita yasumitai" to itte imashita.
+田中さんは 「あした 休みたい」と 言っていました。
+
+たなかさんは あした やすむと いっていました。
+Mr. Tanaka said that he would take a day off tomorrow.
+Tanaka-san wa ashita yasumu to itte imashita.
+田中さんは あした 休むと 言っていました。
+
+ワンさんに 「あとで でんわを ください」と
+Could you please tell Mr. Wang
+Wan-san ni "Ato de denwa wo kudasai" to
+ワンさんに 「あとで 電話を ください」と
+
+つたえて いただけませんか。
+to give me a call later?
+tsutaete itadakemasen ka.
+伝えて いただけませんか。
+
+すみませんが、わたなべさんに あしたの パーティーは
+Could you please tell Ms. Watanabe that the party tomorrow
+Sumimasen ga, Watanabe-san ni ashita no paatii wa
+すみませんが、渡辺さんに あしたの パーティーは
+
+ろくじからだと つたえて いただけませんか。
+will be from 6 o'clock?
+roku-ji kara da to tsutaete itadakemasen ka.
+6時からだと 伝えて いただけませんか。
+
+`;
 
 allWords["Grammer 33 - Hard"] = ``;
 
-allWords["Grammer 34"] = ``;
+allWords["Grammer 34"] = `
+わたしが やる とおりに、やって ください。
+Please do as I do.
+Watashi ga yaru toori ni, yatte kudasai.
+わたしが やる とおりに、やって ください。
+
+わたしが いう とおりに、かいて ください。
+Please write down what I say as it is.
+Watashi ga iu toori ni, kaite kudasai.
+わたしが 言う とおりに、書いて ください。
+
+みたとおりに、はなして ください。
+Please tell us what you saw as it was.
+Mita toori ni, hanashite kudasai.
+見たとおりに、話して ください。
+
+せんの とおりに、かみを きって ください。
+Please cut the paper following the line.
+Sen no toori ni, kami wo kitte kudasai.
+線の とおりに、紙を 切って ください。
+
+せつめいしょの とおりに、くみたてました。
+I assembled it according to the handbook.
+Setsumeisho no toori ni, kumitatemashita.
+説明書の とおりに、組み立てました。
+
+あたらしいのを かった あとで、
+After I bought a new watch,
+Atarashii no wo katta ato de,
+新しいのを 買った あとで、
+
+なくした とけいが みつかりました。
+I found the one I'd lost.
+nakushita tokei ga mitsukarimashita.
+なくした 時計が 見つかりました。
+
+しごとの あとで、のみに いきませんか。
+Shall we go and have a drink after work?
+Shigoto no ato de, nomi ni ikimasen ka.
+仕事の あとで、飲みに 行きませんか。
+
+しょうゆを つけて たべます。
+We eat it with soy sauce.
+Shouyu wo tsukete tabemasu.
+しょうゆを つけて 食べます。
+
+しょうゆを つけないで たべます。
+We eat it without soy sauce.
+Shouyu wo tsukenaide tabemasu.
+しょうゆを つけないで 食べます。
+
+にちようびは どこも いかないで、
+Next Sunday I won't go anywhere.
+Nichiyoubi wa dokomo ikanaide,
+日曜日は どこも 行かないで、
+
+うちで ゆっくり やすみます。
+I will rest at home instead.
+uchi de yukkuri yasumimasu.
+うちで ゆっくり 休みます。
+
+`;
 
 allWords["Grammer 34 - Hard"] = ``;
 
-allWords["Grammer 35"] = ``;
+allWords["Grammer 35"] = `
+ボタンを おせば、まどが あきます。
+If you push the button, the window will open.
+Botan wo oseba, mado ga akimasu.
+ボタンを 押せば、窓が 開きます。
+
+かれが いけば、わたしも いきます。
+If he goes, I will go, too.
+Kare ga ikeba, watashi mo ikimasu.
+彼が 行けば、わたしも 行きます。
+
+いい てんきなら、むこうに しまが みえます。
+When it is fine, an island can be seen over there.
+Ii tenki nara, mukou ni shima ga miemasu.
+いい 天気なら、向こうに 島が 見えます。
+
+ほかに いけんが なければ、これで おわりましょう。
+If you don't have any other opinions, let's close this meeting now.
+Hoka ni iken ga nakereba, kore de owarimashou.
+ほかに 意見が なければ、これで 終わりましょう。
+
+あしたまでに レポートを ださなければ なりませんか。
+Do I have to hand in the report by tomorrow?
+Ashita made ni repooto wo dasanakereba narimasen ka.
+あしたまでに レポートを 出さなければ なりませんか。
+
+...むりなら、きんようびまでに だして ください。
+...If it is impossible, hand it in by this Friday.
+...Muri nara, kin'youbi made ni dashite kudasai.
+...無理なら、金曜日までに 出して ください。
+
+ここを おせば、ドアが あきます。
+Press here, and the door will open.
+Koko wo oseba, doa ga akimasu.
+ここを 押せば、ドアが 開きます。
+
+ここを おすと、ドアが あきます。
+If you press here, the door will open.
+Koko wo osu to, doa ga akimasu.
+ここを 押すと、ドアが 開きます。
+
+じかんが なかったら、テレビを みません。
+If I don't have time, I will not watch television.
+Jikan ga nakattara, terebi wo mimasen.
+時間が なかったら、テレビを 見ません。
+
+じかんが なければ、テレビを みません。
+If I don't have time, I will not watch television.
+Jikan ga nakereba, terebi wo mimasen.
+時間が なければ、テレビを 見ません。
+
+とうきょうへ きたら、ぜひ れんらくして ください。
+Please contact me, when you come to Tokyo.
+Toukyou e kitara, zehi renraku shite kudasai.
+東京へ 来たら、ぜひ 連絡して ください。
+
+おんせんに いきたいんですが、
+I want to visit a hot spring resort.
+Onsen ni ikitai n desu ga,
+温泉に 行きたいんですが、
+
+どこか いい ところが ありませんか。
+Don't you know any good place?
+dokoka ii tokoro ga arimasen ka.
+どこか いい 所が ありませんか。
+
+...おんせんなら、はこねが いいですよ。
+...If you are talking about hot springs, Hakone would be good.
+...Onsen nara, Hakone ga ii desu yo.
+...温泉なら、箱根が いいですよ。
+
+ほんを かりたいんですが、どう したら いいですか。
+I would like to borrow some books. What should I do?
+Hon wo karitai n desu ga, dou shitara ii desu ka.
+本を 借りたいんですが、どう したら いいですか。
+
+ほんを かりたいんですが、どう すれば いいですか。
+I would like to borrow some books. What should I do?
+Hon wo karitai n desu ga, dou sureba ii desu ka.
+本を 借りたいんですが、どう すれば いいですか。
+
+ビートルズの おんがくは きけば きくほど すきに なります。
+The more I listen to the music of the Beatles, the better I like it.
+Biitoruzu no ongaku wa kikeba kiku hodo suki ni narimasu.
+ビートルズの 音楽は 聞けば 聞くほど 好きに なります。
+
+パソコンは そうさが かんたんなら かんたんなほど いいです。
+The easier the operation, the better the computer.
+Pasokon wa sousa ga kantan nara kantan na hodo ii desu.
+パソコンは 操作が 簡単なら 簡単なほど いいです。
+
+`;
 
 allWords["Grammer 35 - Hard"] = ``;
 
-allWords["Grammer 36"] = ``;
+allWords["Grammer 36"] = `
+はやく およげるように、
+I practice every day
+Hayaku oyogeru you ni,
+早く 泳げるように、
+
+まいにち れんしゅうして います。
+so that I can swim fast.
+mainichi renshuu shite imasu.
+毎日 練習して います。
+
+わすれないように、
+Please take a memo
+Wasurenai you ni,
+忘れないように、
+
+メモして ください。
+so that you will not forget.
+memo shite kudasai.
+メモして ください。
+
+まいにち れんしゅうすれば、
+If you practice every day,
+Mainichi renshuu sureba,
+毎日 練習すれば、
+
+およげるように なります。
+you will become able to swim.
+oyogeru you ni narimasu.
+泳げるように なります。
+
+やっと じてんしゃに のれるように なりました。
+I've finally become able to ride a bicycle.
+Yatto jitensha ni noreru you ni narimashita.
+やっと 自転車に 乗れるように なりました。
+
+としを とると、
+As you get older,
+Toshi wo toru to,
+年を とると、
+
+ちいさい じが よめなくなります。
+you cannot read small letters.
+chiisai ji ga yomenaku narimasu.
+小さい 字が 読めなくなります。
+
+ふとりましたから、
+I gained weight so
+Futorimashita kara,
+太りましたから、
+
+すきな ふくが きられなくなりました。
+I can no longer wear my favorite dress.
+sukina fuku ga kirarenaku narimashita.
+好きな 服が 着られなくなりました。
+
+ショパンが ひけるように なりましたか。
+Have you become able to play work by Chopin?
+Shopan ga hikeru you ni narimashita ka.
+ショパンが 弾けるように なりましたか。
+
+...いいえ、まだ ひけません。
+...No, not yet.
+...Iie, mada hikemasen.
+...いいえ、まだ 弾けません。
+
+にほんじんは 100ねんぐらいまえから
+The Japanese started to eat beef and pork
+Nihonjin wa hyaku-nen gurai mae kara
+日本人は 100年ぐらい前から
+
+ぎゅうにくや ぶたにくを たべるように なりました。
+from about 100 years ago.
+gyuuniku ya butaniku wo taberu you ni narimashita.
+牛肉や 豚肉を 食べるように なりました。
+
+くるまを かってから、
+I do not walk much
+Kuruma wo katte kara,
+車を 買ってから、
+
+わたしは あまり あるかなくなりました。
+since I bought a car.
+watashi wa amari arukanaku narimashita.
+わたしは あまり 歩かなくなりました。
+
+まいにち うんどうして、
+I try to take exercise every day
+Mainichi undou shite,
+毎日 運動して、
+
+なんでも たべるように して います。
+and eat a variety of foods.
+nandemo taberu you ni shite imasu.
+何でも 食べるように して います。
+
+はに わるいですから、
+I try not to eat sweets
+Ha ni warui desu kara,
+歯に 悪いですから、
+
+あまい ものを たべないように して います。
+because they are bad for my teeth.
+amai mono wo tabenai you ni shite imasu.
+甘い 物を 食べないように して います。
+
+もっと やさいを たべるように して ください。
+Please try to eat more vegetables.
+Motto yasai wo taberu you ni shite kudasai.
+もっと 野菜を 食べるように して ください。
+
+あしたは ぜったいに じかんに おくれないように して ください。
+Please be sure not to be late tomorrow.
+Ashita wa zettai ni jikan ni okurenai you ni shite kudasai.
+あしたは 絶対に 時間に 遅れないように して ください。
+
+すみませんが、しおを とって ください。
+Excuse me, please pass me the salt.
+Sumimasen ga, shio wo totte kudasai.
+すみませんが、塩を 取って ください。
+
+どんな スポーツを していますか。
+What kind of sports do you do?
+Donna supootsu wo shite imasu ka.
+どんな スポーツを していますか。
+
+...そうですね。テニスとか すいえいとか......
+...Well, playing tennis, swimming, and so on.
+...Sou desu ne. Tenisu toka suiei toka...
+...そうですね。テニスとか 水泳とか......
+
+`;
 
 allWords["Grammer 36 - Hard"] = ``;
 
-allWords["Grammer 37"] = ``;
+allWords["Grammer 37"] = `
+かきます / かかれます
+to write / to be written
+kakimasu / kakaremasu
+書きます / 書かれます
+
+はなします / はなされます
+to speak / to be spoken
+hanashimasu / hanasaremasu
+話します / 話されます
+
+たべます / たべられます
+to eat / to be eaten
+tabemasu / taberaremasu
+食べます / 食べられます
+
+きます / こられます
+to come / to be come
+kimasu / koraremasu
+来ます / 来られます
+
+します / されます
+to do / to be done
+shimasu / saremasu
+します / されます
+
+わたしは せんせいに ほめられました。
+I was praised by my teacher.
+Watashi wa sensei ni homeramashita.
+わたしは 先生に 褒められました。
+
+わたしは ははに かいものを たのまれました。
+I was asked to go shopping by my mother.
+Watashi wa haha ni kaimono wo tanomaremashita.
+わたしは 母に 買い物・頼まれました。
+
+わたしは いぬに かまれました。
+I was bitten by a dog.
+Watashi wa inu ni kamaremashita.
+わたしは 犬に かまれました。
+
+おとうとに パソコンを こわされました。
+My brother broke my personal computer.
+Otouoto ni pasokon wo kowasaremashita.
+弟に パソコンを 壊されました。
+
+わたしは いぬに てを かまれました。
+I had my hand bitten by a dog.
+Watashi wa inu ni te wo kamaremashita.
+わたしは 犬に 手を かまれました。
+
+わたしは ともだちに じてんしゃを しゅうりして もらいました。
+I had my bicycle repaired by my friend.
+Watashi wa tomodachi ni jitensha wo shuuri shite moraimashita.
+わたしは 友達に 自転車を 修理して もらいました。
+
+フランスで ふるい にほんの えが はっけんされました。
+An old Japanese picture has been discovered in France.
+Furansu de furui Nihon no ega hakkensaremashita.
+フランスで 古い 日本の 絵が 発見されました。
+
+にほんの くるまは せかいじゅうへ ゆしゅつされています。
+Japanese cars are exported all over the world.
+Nihon no kuruma wa sekaijuu e yushutsu sarete imasu.
+日本の 車は 世界中へ 輸出されています。
+
+かいぎは こうべで ひらかれました。
+The assembly was held in Kobe.
+Kaigi wa Koube de hirakaremashita.
+会議は 神戸で 開かれました。
+
+『げんじものがたり』は
+"The Tale of Genji"
+"Genji Monogatari" wa
+『源氏物語』は
+
+むらさきしきぶによって かかれました。
+was written by Murasaki Shikibu.
+Murasaki Shikibu ni yotte kakaremashita.
+紫式部によって 書かれました。
+
+でんわは ベルによって はつめいされました。
+The telephone was invented by Bell.
+Denwa wa Beru ni yotte hatsumeisaremashita.
+電話は ベルによって 発明されました。
+
+ビールは むぎから つくられます。
+Beer is made from barley.
+Biiru wa mugi kara tsukuraremasu.
+ビールは 麦から 造られます。
+
+むかしの にほんの いえは きで つくられました。
+Japanese houses were made of wood in the past.
+Mukashi no Nihon no ie wa ki de tsukuraremashita.
+昔の 日本の 家は 木で 造られました。
+
+`;
 
 allWords["Grammer 37 - Hard"] = ``;
 
-allWords["Grammer 38"] = ``;
+allWords["Grammer 38"] = `
+テニスは おもしろいです。
+Tennis is fun.
+Tenisu wa omoshiroi desu.
+テニスは おもしろいです。
+
+テニスを するのは おもしろいです。
+Playing tennis is fun.
+Tenisu wo suru no wa omoshiroi desu.
+テニスを するのは おもしろいです。
+
+テニスを みるのは おもしろいです。
+Watching tennis is fun.
+Tenisu wo miru no wa omoshiroi desu.
+テニスを 見るのは おもしろいです。
+
+わたしは はなが すきです。
+I like flowers.
+Watashi wa hana ga suki desu.
+わたしは 花が 好きです。
+
+わたしは はなを そだてるのが すきです。
+I like growing flowers.
+Watashi wa hana wo sodateru no ga suki desu.
+わたしは 花を 育てるのが 好きです。
+
+とうきょうの ひとは あるくのが はやいです。
+People in Tokyo walk fast.
+Toukyou no hito wa aruku no ga hayai desu.
+東京の 人は 歩くのが 早いです。
+
+かぎを わすれました。
+I forgot the key.
+Kagi wo wasuremashita.
+かぎを 忘れました。
+
+ぎゅうにゅうを かうのを わすれました。
+I forgot to buy the milk.
+Gyuunyuu wo kau no wo wasuremashita.
+牛乳を 買うのを 忘れました。
+
+くるまの まどを しめるのを わすれました。
+I forgot to close the car window.
+Kuruma no mado wo shimeru no wo wasuremashita.
+車の 窓を 閉めるのを 忘れました。
+
+すずきさんが らいげつ けっこんするのを
+Do you know that Mr. Suzuki
+Suzuki-san ga raigetsu kekkon suru no wo
+鈴木さんが 来月 結婚するのを
+
+しっていますか。
+is going to get married next month?
+shitte imasu ka.
+知っていますか。
+
+きむらさんに あかちゃんが うまれたのを
+Do you know that Ms. Kimura
+Kimura-san ni akachan ga umareta no wo
+木村さんに 赤ちゃんが 生まれたのを
+
+しっていましたか。
+had a baby?
+shitte imashita ka.
+知っていましたか。
+
+...いいえ、しりませんでした。
+...No, I didn't.
+...Iie, shirimasen deshita.
+...いいえ、知りませんでした。
+
+ミラーさんの じゅうしょを しっていますか。
+Do you know Mr. Miller's address?
+Miraa-san no juusho wo shitte imasu ka.
+ミラーさんの 住所を 知っていますか。
+
+...いいえ、しりません。
+...No, I don't.
+...Iie, shirimasen.
+...いいえ、知りません。
+
+むすめが うまれたのは
+My daughter was born
+Musume ga umareta no wa
+娘が 生まれたのは
+
+ほっかいどうの ちいさい まちです。
+in a small town in Hokkaido.
+Hokkaido no chiisai machi desu.
+北海道の 小さい 町です。
+
+1ねんで いちばん いそがしいのは 12がつです。
+December is the busiest month of the year.
+Ichi-nen de ichiban isogashii no wa juu-ni-gatsu desu.
+1年で いちばん 忙しいのは 12月です。
+
+つかれた ときや さびしい とき、
+When I am tired or lonely,
+Tsukareta toki ya sabishii toki,
+疲れた ときや 寂しい とき、
+
+ふるさとを おもいだします。
+I remember my hometown.
+furusato wo omoidashimasu.
+ふるさとを 思い出します。
+
+うまれた ときから、
+Since I was born,
+Umareta toki kara,
+生まれた ときから、
+
+ずっと おおさかに すんでいます。
+I have been living in Osaka.
+zutto Oosaka ni sunde imasu.
+ずっと 大阪に 住んでいます。
+
+`;
 
 allWords["Grammer 38 - Hard"] = ``;
 
-allWords["Grammer 39"] = ``;
+allWords["Grammer 39"] = `
+ニュースを きいて、びっくりしました。
+I was surprised to hear the news.
+Nyuusu wo kiite, bikkuri shimashita.
+ニュースを 聞いて、びっくりしました。
+
+かぞくに あえなくて、さびしいです。
+I miss my family.
+Kazoku ni aenaku te, sabishii desu.
+家族に 会えなくて、寂しいです。
+
+どようびは つごうが わるくて、
+Saturday is inconvenient for me,
+Doyoubi wa tsugou ga waruku te,
+土曜日は 都合が 悪くて、
+
+いけません。
+so I cannot come.
+ikemasen.
+行けません。
+
+はなしが ふくざつで、
+The story was complicated,
+Hanashi ga fukuzatsu de,
+話が 複雑で、
+
+よく わかりませんでした。
+so I could not understand it well.
+yoku wakarimasen deshita.
+よく 分かりませんでした。
+
+じこが あって、
+There was an accident,
+Jiko ga atte,
+事故が あって、
+
+バスが おくれて しまいました。
+so the bus was delayed.
+basu ga okurete shimaimashita.
+バスが 遅れて しまいました。
+
+じゅぎょうに おくれて、
+I was late for the lesson,
+Jugyou ni okurete,
+授業に 遅れて、
+
+せんせいに しかられました。
+so I was scolded by my teacher.
+sensei ni shikararemashita.
+先生に 叱られました。
+
+あぶないですから、
+It is dangerous,
+Abunai desu kara,
+危険ですから、
+
+きかいに ふれないで ください。
+so please do not touch the machine.
+kikai ni furenaide kudasai.
+機械に 触れないで ください。
+
+あした かいぎが ありますから、
+The meeting will be held tomorrow,
+Ashita kaigi ga arimasu kara,
+あした 会議が ありますから、
+
+きょう じゅんびしなければ なりません。
+so we have to make preparations for it today.
+kyou junbi shinakereba narimasen.
+今日 準備しなければ なりません。
+
+じしんで ビルが たおれました。
+Because of the earthquake, a building collapsed.
+Jishin de biru ga taoremashita.
+地震で ビルが 倒れました。
+
+びょうきで かいしゃを やすみました。
+Because of illness, I took a day off work.
+Byouki de kaisha wo yasumimashita.
+病気で 会社を 休みました。
+
+にほんごが わからないので、
+I don't understand Japanese,
+Nihongo ga wakaranai node,
+日本語が 分からないので、
+
+えいごで はなしていただけませんか。
+so would you please speak in English?
+Eigo de hanashite itadakemasen ka.
+英語で 話していただけませんか。
+
+ようじが あるので、おさきに しつれいします。
+As I have something to do, may I leave now?
+Youji ga aru node, osaki ni shitsurei shimasu.
+用事が あるので、お先に 失礼します。
+
+ようじが ありますので、おさきに しつれいします。
+As I have something to do, may I leave now?
+Youji ga arimasu node, osaki ni shitsurei shimasu.
+用事が ありますので、お先に 失礼します。
+
+じつは くる とちゅうで じこが あって、
+Actually, on my way here there was an accident,
+Jitsu wa kuru tochuu de jiko ga atte,
+実は 来る 途中で 事故が あって、
+
+バスが おくれて しまったんです。
+and the bus was delayed.
+basu ga okurete shimaitan desu.
+バスが 遅れて しまったんです。
+
+マラソンの とちゅうで
+During the marathon,
+Marason no tochuu de
+マラソンの 途中で
+
+きぶんが わるくなりました。
+I got sick.
+kibun ga waraku narimashita.
+気分が 悪くなりました。
+
+`;
 
 allWords["Grammer 39 - Hard"] = ``;
 
-allWords["Grammer 40"] = ``;
+allWords["Grammer 40"] = `
+JL107びんは なんじに とうちゃくするか、
+Please check what time JL107 will arrive,
+JL107-bin wa nan-ji ni touchaku suru ka,
+JL107便は 何時に 到着するか、
+
+しらべて ください。
+please check.
+shirabete kudasai.
+調べて ください。
+
+けっこんの お祝いは なにが いいか、
+We are talking about what to give
+Kekkon no oiwai wa nani ga ii ka,
+結婚の お祝いは 何が いいか、
+
+はなして います。
+as a wedding present.
+hanashite imasu.
+話して います。
+
+わたしたちが はじめて あったのは いつか、
+Do you remember when it was
+Watashitachi ga hajimete atta no wa itsu ka,
+わたしたちが 初めて 会ったのは いつか、
+
+おぼえて いますか。
+that we first met?
+oboete imasu ka.
+覚えて いますか。
+
+ぼうねんかいに しゅっせきするか どうか、
+Please answer whether you'll attend the year-end party or not
+Bounenkai ni shusseki suru ka dou ka,
+忘年会に 出席するか どうか、
+
+20にちまでに へんじを ください。
+by the 20th.
+hatsuka made ni henji wo kudasai.
+20日までに 返事を ください。
+
+その はなしは ほんとうか どうか、
+I don't know whether the story is true or not.
+Sono hanashi wa hontou ka dou ka,
+その 話は ほんとうか どうか、
+
+わかりません。
+I don't know.
+wakarimasen.
+分かりません。
+
+まちがいが ないか どうか、
+Please check if there are no mistakes.
+Machigai ga nai ka dou ka,
+まちがいが ないか どうか、
+
+しらべて ください。
+please check.
+shirabete kudasai.
+調べて ください。
+
+もう いちど かんがえて みます。
+I'll think it over again.
+Mou ichido kangaete mimasu.
+もう 一度 考えて みます。
+
+うちゅうから ちきゅうを みてみたいです。
+I want to see the earth from space.
+Uchuu kara Chikyuu wo mite mitai desu.
+宇宙から 地球を 見てみたいです。
+
+この ズボンを はいて みても いいですか。
+May I try on this pair of trousers?
+Kono zubon wo haite mite mo ii desu ka.
+この ズボンを はいて みても いいですか。
+
+やまの たかさは どうやって はかるか、
+Do you know how to measure
+Yama no takasa wa dou yatte hakaru ka,
+山の 高さは どうやって 測るか、
+
+しって いますか。
+the height of a mountain?
+shitte imasu ka.
+知って いますか。
+
+あたらしい はしの ながさは 3,911メートルです。
+The new bridge is 3,911 meters long.
+Atarashii hashi no nagasa wa san-sen kyuu-hyaku juu-ichi meetoru desu.
+新しい 橋の 長さは 3,911メートルです。
+
+ハンスは がっこうで どうでしょうか。
+How is Hans doing at school?
+Hansu wa gakkou de dou deshou ka.
+ハンスは 学校で どうでしょうか。
+
+`;
 
 allWords["Grammer 40 - Hard"] = ``;
 
-allWords["Grammer 41"] = ``;
+allWords["Grammer 41"] = `
+わたしは むすこに おかしを やりました。
+I gave some sweets to my son.
+Watashi wa musuko ni okashi wo yarimashita.
+わたしは 息子に お菓子を やりました。
+
+わたしは いぬに えさを やりました。
+I gave some food to the dog.
+Watashi wa inu ni esa wo yarimashita.
+わたしは 犬に えさを やりました。
+
+わたしは ぶちょうに おみやげを いただきました。
+I received a souvenir from the general manager.
+Watashi wa buchou ni omiyage wo itadakimashita.
+わたしは 部長に お土産を いただきました。
+
+ぶちょうが わたしに おみやげを くださいました。
+The general manager gave me a souvenir.
+Buchou ga watashi ni omiyage wo kudasaimashita.
+部長が わたしに お土産を くださいました。
+
+ぶちょうが むすめに おみやげを くださいました。
+The general manager gave a souvenir to my daughter.
+Buchou ga musume ni omiyage wo kudasaimashita.
+部長が 娘に お土産を くださいました。
+
+わたしは むすこに かみひこうきを つくって やりました。
+I made a paper plane for my son.
+Watashi wa musuko ni kamihikouki wo tsukutte yarimashita.
+わたしは 息子に 紙飛行機を 作って やりました。
+
+わたしは いぬを さんぽに つれて いって やりました。
+I took my dog for a walk.
+Watashi wa inu wo sanpo ni tsurete itte yarimashita.
+わたしは 犬を 散歩に 連れて 行って やりました。
+
+わたしは むすめの しゅくだいを みて やりました。
+I checked my daughter's homework.
+Watashi wa musume no shukudai wo mite yarimashita.
+わたしは 娘の 宿題を 見て やりました。
+
+わたしは ぶちょうに てがみの まちがいを なおして いただきました。
+I had my letter corrected by the manager.
+Watashi wa buchou ni tegami no machigai wo naoshite itadakimashita.
+わたしは 部長に 手紙の 間違いを 直して いただきました。
+
+ぶちょうの おくさんは わたしに ちゃどうを おしえて くださいました。
+The general manager's wife taught me the tea ceremony.
+Buchou no okusan wa watashi ni chadou wo oshiete kudasaimashita.
+部長の 奥さんは わたしに 茶道を 教えて くださいました。
+
+ぶちょうは わたしを えきまで おくって くださいました。
+The general manager took me to the station.
+Buchou wa watashi wo eki made okutte kudasaimashita.
+部長は わたしを 駅まで 送って くださいました。
+
+ぶちょうは わたしの レポートを なおして くださいました。
+The general manager corrected my report.
+Buchou wa watashi no repooto wo naoshite kudasaimashita.
+部長は わたしの レポートを 直して くださいました。
+
+コピーきの つかいかたを おしえて くださいませんか。
+Will you kindly show me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete kudasaimasen ka.
+コピー機の 使い方を 教えて くださいませんか。
+
+コピーきの つかいかたを おしえて いただけませんか。
+Would you kindly show me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete itadakemasen ka.
+コピー機の 使い方を 教えて いただけませんか。
+
+たなかさんが けっこんの お祝いに この おさらを くださいました。
+Mr. Tanaka gave me this plate as a wedding gift.
+Tanaka-san ga kekkon no oiwai ni kono osara wo kudasaimashita.
+田中さんが 結婚の お祝いに この お皿を くださいました。
+
+わたしは ほっかいどうりょこうの おみやげに にんぎょうを かいました。
+I bought a doll as a souvenir of the trip to Hokkaido.
+Watashi wa Hokkaidoo ryokou no omiyage ni ningyou wo kaimashita.
+わたしは 北海道旅行の お土産に 人形を 買いました。
+
+`;
 
 allWords["Grammer 41 - Hard"] = ``;
 
-allWords["Grammer 42"] = ``;
+allWords["Grammer 42"] = `
+じぶんの おみせを もつ ために、
+I am saving money
+Jibun no omise wo motsu tame ni,
+自分の お店を 持つ ために、
+
+ちょきんして います。
+in order to have my own shop.
+chokin shite imasu.
+貯金して います。
+
+ひっこしの ために、くるまを かります。
+I will rent a car for the move.
+Hikkoshi no tame ni, kuruma wo karimasu.
+引っ越しの ために、車を 借ります。
+
+けんこうの ために、まいあさ ジョギングして います。
+For my health, I jog every morning.
+Kenkou no tame ni, maiasa jogingu shite imasu.
+健康の ために、毎朝 ジョギングして います。
+
+かぞくの ために、うちを たてます。
+I will build a house for my family.
+Kazoku no tame ni, uchi wo tatemasu.
+家族の ために、うちを 建てます。
+
+じぶんの おみせが もてるように、ちょきんして います。
+I am saving money so that I can have my own shop.
+Jibun no omise ga moteru you ni, chokin shite imasu.
+自分の お店が 持てるように、貯金して います。
+
+べんごしに なる ために、ほうりつを べんきょうして います。
+I study law in order to become a lawyer.
+Bengoshi ni naru tame ni, houritsu wo benkyou shite imasu.
+弁護士に なる ために、法律を 勉強して います。
+
+にほんごが じょうずに なるように、まいにち べんきょうして います。
+I study everyday so that my Japanese may improve.
+Nihongo ga jouzu ni naru you ni, mainichi benkyou shite imasu.
+日本語が 上手に なるように、毎日 勉強して います。
+
+この はさみは はなを きるのに つかいます。
+This pair of scissors is used to cut flowers.
+Kono hasami wa hana wo kiru no ni tsukaimasu.
+この はさみは 花を 切るのに 使います。
+
+この かばんは おおきくて、りょこうに べんりです。
+This bag is big and convenient for trips.
+Kono kaban wa ookikute, ryokou ni benri desu.
+この かばんは 大きくて、旅行に 便利です。
+
+でんわばんごうを しらべるのに じかんが かかりました。
+It took a lot of time to find the telephone number.
+Denwa-bangou wo shiraberu no ni jikan ga kakarimashita.
+電話番号を 調べるのに 時間が かかりました。
+
+こうべへ ふねを みに いきます。
+I'll go to Kobe to look at the ships.
+Koube e fune wo mi ni ikimasu.
+神戸へ 船を 見に 行きます。
+
+にほんへ けいざいの べんきょうに きました。
+I came to Japan to study economics.
+Nihon e keizai no benkyou ni kimashita.
+日本へ 経済の 勉強に 来ました。
+
+はやく とどくように、そくたつで だします。
+I will mail this by special delivery so that it can get there earlier.
+Hayaku todoku you ni, sokutatsu de dashimasu.
+早く 届くように、速達で 出します。
+
+わすれないように、メモします。
+I make a note so that I don't forget.
+Wasurenai you ni, memo shimasu.
+忘れないように、メモします。
+
+だいがくに はいる ために、いっしょうけんめい べんきょうします。
+I study as hard as possible in order to enter a university.
+Daigaku ni hairu tame ni, isshoukenmei benkyou shimasu.
+大学に 入る ために、一生懸命 勉強します。
+
+けんこうの ために、やさいを たくさん たべます。
+I eat a lot of vegetables for my health.
+Kenkou no tame ni, yasai wo takusan tabemasu.
+健康の ために、野菜を たくさん 食べます。
+
+ファイルは しりょうを せいりするのに つかいます。
+Files are used to put papers in order.
+Fairu wa shiryou wo seiri suru no ni tsukaimasu.
+ファイルは 資料を 整理するのに 使います。
+
+ちかくに みせが なくて、かいものに ふべんです。
+There are no stores nearby, so it is inconvenient for shopping.
+Chikaku ni mise ga nakute, kaimono ni fuben desu.
+近くに 店が なくて、買い物に 不便です。
+
+にほんでは けっこんしきを するのに にひゃくまんえんは いります。
+In Japan you need at least 2 million yen to hold a wedding.
+Nihon de wa kekkonshiki wo suru no ni ni-hyaku-man-en wa irimasu.
+日本では 結婚式を するのに 200万円は 要ります。
+
+えきまで あるくのに にじかんも かかりました。
+It took as long as two hours to get to the station.
+Eki made aruku no ni ni-jikan mo kakarimashita.
+駅まで 歩くのに 2時間も かかりました。
+
+うちを たてるのに さんせんまんえんも ひつようなんですか。
+You need as much as 30 million yen to build a house?
+Uchi wo tateru no ni san-sen-man-en mo hitsuyou nan desu ka.
+うちを 建てのに 3,000万円も 必要なんですか。
+
+`;
 
 allWords["Grammer 42 - Hard"] = ``;
 
-allWords["Grammer 43"] = ``;
+allWords["Grammer 43"] = `
+いまにも あめが ふりそうです。
+It looks like it will rain at any moment.
+Ima ni mo ame ga furisou desu.
+今にも 雨が 降りそうです。
+
+シャンプーが なくなりそうです。
+It looks like we are running out of shampoo.
+Shanpuu ga nakunarisou desu.
+シャンプーが なくなりそうです。
+
+もうすぐ さくらが さきそうです。
+The cherry blossoms may soon be in bloom.
+Mousugu sakura ga sakisou desu.
+もうすぐ 桜が 咲きそうです。
+
+これから さむくなりそうです。
+It seems it'll be getting cold from now on.
+Kore kara samukunarisou desu.
+これから 寒くなりそうです。
+
+この りょうりは からそうです。
+This dish looks spicy.
+Kono ryouri wa karasou desu.
+この 料理は 辛そうです。
+
+かのじょは あたまが よさそうです。
+She seems to have brains.
+Kanojo wa atama ga yosasou desu.
+彼女は 頭が 良さそうです。
+
+この つくえは じょうぶそうです。
+This desk looks strong and durable.
+Kono tsukue wa joubusou desu.
+この 机は 丈夫そうです。
+
+ミラーさんは うれしそうです。
+Mr. Miller looks happy.
+Miraa-san wa ureshisou desu.
+ミラーさんは うれしそうです。
+
+ちょっと たばこを かって きます。
+I'm just popping out to buy some cigarettes.
+Chotto tabako wo katte kimasu.
+ちょっと たばこを 買って 来ます。
+
+スーパーで ミルクを かって きます。
+I'm going to the supermarket to buy some milk.
+Suupaa de miruku wo katte kimasu.
+スーパーで ミルクを 買って 来ます。
+
+だいどころから コップを とって きます。
+I'm going to fetch a glass from the kitchen.
+Daidokoro kara koppu wo totte kimasu.
+台所から コップを 取って 来ます。
+
+ゆうびんきょくへ いって きます。
+I'm going to the post office.
+Yuubinkyoku e itte kimasu.
+郵便局へ 行って 来ます。
+
+ちょっと でかけて きます。
+I'm going out.
+Chotto dekakete kimasu.
+ちょっと 出かけて 来ます。
+
+`;
 
 allWords["Grammer 43 - Hard"] = ``;
 
-allWords["Grammer 44"] = ``;
+allWords["Grammer 44"] = `
+ゆうべ おさけを のみすぎました。
+I drank too much last night.
+Yuube osake wo nomisugimashita.
+ゆうべ お酒を 飲みすぎました。
+
+この セーターは おおきすぎます。
+This sweater is too large.
+Kono seetaa wa ookisugimasu.
+この セーターは 大きすぎます。
+
+さいきんの くるまは そうさが かんたんすぎて、
+The handling of recent cars is so easy
+Saikin no kuruma wa sousa ga kantansugite,
+最近の 車は 操作が 簡単すぎて、
+
+うんてんが おもしろくないです。
+that driving them is not so enjoyable for me.
+unten ga omoshirokunai desu.
+運転が おもしろくないです。
+
+いくら すきでも、のみすぎると、
+No matter how much you like it, drinking too much
+Ikura suki demo, nomisugiru to,
+いくら 好きでも、飲みすぎると、
+
+からだに わるいですよ。
+is bad for your health.
+karada ni warui desu yo.
+体に 悪いですよ。
+
+この パソコンは つかいやすいです。
+This personal computer is easy to use.
+Kono pasokon wa tsukaiyasui desu.
+この パソコンは 使いやすいです。
+
+とうきょうは すみにくいです。
+Living in Tokyo is difficult.
+Toukyou wa suminikui desu.
+東京は 住みにくいです。
+
+しろい シャツは よごれやすいです。
+A white shirt gets dirty easily.
+Shiroi shatsu wa yogoreyasui desu.
+白い シャツは 汚れやすいです。
+
+あめの ひは せんたくものが かわきにくいです。
+Things won't dry easily on a rainy day.
+Ame no hi wa sentakumono ga kawakinikui desu.
+雨の 日は 洗濯物が 乾きにくいです。
+
+この くすりは さとうを いれると、
+If you add some sugar to this medicine,
+Kono kusuri wa satou wo ireru to,
+この 薬は 砂糖を 入れると、
+
+のみやすく なりますよ。
+it will be easier to take.
+nomiyasuku narimasu yo.
+飲みやすく なりますよ。
+
+この コップは われにくくて、あんぜんですよ。
+This glass won't break easily, so it is safe.
+Kono koppu wa warenikukute, anzen desu yo.
+この コップは 割れにくくて、安全ですよ。
+
+おとを おおきく します。
+I will turn up the volume.
+Oto wo ookiku shimasu.
+音を 大きく します。
+
+へやを きれいに します。
+I will clean my room.
+Heya wo kirei ni shimasu.
+部屋を きれいに します。
+
+しおの りょうを はんぶんに しました。
+I reduced the amount of salt by half.
+Shio no ryou wo hanbun ni shimashita.
+塩の 量を 半分に しました。
+
+へやは シングルに しますか、ツインに しますか。
+Would you like a single room or a twin room?
+Heya wa shinguru ni shimasu ka, tsuin ni shimasu ka.
+部屋は シングルに しますか、ツインに しますか。
+
+かいぎは あしたに します。
+I will set the meeting for tomorrow.
+Kaigi wa ashita ni shimasu.
+会議は あしたに します。
+
+やさいを こまかく きって ください。
+Please cut the vegetables into small pieces.
+Yasai wo komakaku kitte kudasai.
+野菜を 細かく 切って ください。
+
+でんきや みずは たいせつに つかいましょう。
+Let's conserve electricity and water.
+Denki ya mizu wa taisetsu ni tsukaimashou.
+電気や 水は 大切に 使いましょう。
+
+`;
 
 allWords["Grammer 44 - Hard"] = ``;
 
-allWords["Grammer 45"] = ``;
+allWords["Grammer 45"] = `
+かいぎに まにあわない ばあいは、
+If you cannot be in time for the meeting,
+Kaigi ni maniawanai baai wa,
+会議に 間に合わない 場合は、
+
+れんらくして ください。
+please inform us.
+renraku shite kudasai.
+連絡して ください。
+
+じかんに おくれた ばあいは、
+If you are late,
+Jikan ni okureta baai wa,
+時間に 遅れた 場合は、
+
+かいじょうに はいれません。
+you will not be admitted to the hall.
+kaijou ni hairemasen.
+会場に 入れません。
+
+ファックスの ちょうしが わるい ばあいは、
+In the event that the fax machine does not work well,
+Fakkusu no choushi ga warui baai wa,
+ファックスの 調子が 悪い 場合は、
+
+どう したら いいですか。
+what should I do?
+dou shitara ii desu ka.
+どう したら いいですか。
+
+りょうしゅうしょが ひつような ばあいは、
+When you need a receipt,
+Ryoushuusho ga hitsuyou na baai wa,
+領収書が 必要な 場合は、
+
+かかりに いって ください。
+please tell the person in charge.
+kakari ni itte kudasai.
+係に 言って ください。
+
+かじや じしんの ばあいは、
+In case of fire or earthquake,
+Kaji ya jishin no baai wa,
+火事や 地震の 場合は、
+
+エレベーターを つかわないで ください。
+do not use the elevator.
+erebeetaa wo tsukawanaide kudasai.
+エレベーターを 使わないで ください。
+
+やくそくを したのに、
+She did not come,
+Yakusoku wo shita noni,
+約束を したのに、
+
+かのじょは きませんでした。
+even though she promised.
+kanojo wa kimasen deshita.
+彼女は 来ませんでした。
+
+きょうは にちようびなのに、
+Even though today is Sunday,
+Kyou wa Nichiyoubi nanoni,
+きょうは 日曜日なのに、
+
+はたらかなければ なりません。
+I have to work.
+hatarakanakereba narimasen.
+働かなければ なりません。
+
+わたしの へやは せまいですが、きれいです。
+My room is small but clean.
+Watashi no heya wa semai desu ga, kirei desu.
+わたしの 部屋は 狭いですが、きれいです。
+
+あした あめが ふっても、でかけます。
+Even if it rains tomorrow, I will go out.
+Ashita ame ga futte mo, dekakemasu.
+あした 雨が 降っても、出かけます。
+
+やくそくを したのに、
+You promised to come.
+Yakusoku wo shita noni,
+約束を したのに、
+
+どうして こなかったんですか。
+Why didn't you come?
+doushite konakattan desu ka.
+どうして 来なかったんですか。
+
+`;
 
 allWords["Grammer 45 - Hard"] = ``;
 
-allWords["Grammer 46"] = ``;
+allWords["Grammer 46"] = `
+ひるごはんは もう たべましたか。
+Have you had lunch yet?
+Hirugohan wa mou tabemashita ka.
+昼ごはんは もう 食べましたか。
+
+...いいえ、これから たべるところです。
+...No, I'm going to have it now.
+...Iie, korekara taberu tokoro desu.
+...いいえ、これから 食べるところです。
+
+かいぎは もう はじまりましたか。
+Has the meeting begun yet?
+Kaigi wa mou hajimaimashita ka.
+会議は もう 始まりましたか。
+
+...いいえ、いまから はじまるところです。
+...No, it's just beginning now.
+...Iie, ima kara hajimaru tokoro desu.
+...いいえ、今から 始まるところです。
+
+こしょうの げんいんが わかりましたか。
+Do you know what caused the breakdown?
+Koshou no gen'in ga wakarimashita ka.
+故障の原因が わかりましたか。
+
+...いいえ、いま しらべている ところです。
+...No, we are investigating it now.
+...Iie, ima shirabete iru tokoro desu.
+...いいえ、今 調べている ところです。
+
+わたなべさんは いますか。
+Is Ms. Watanabe here?
+Watanabe-san wa imasu ka.
+渡辺さんは いますか。
+
+...あ、たったいま かえったところです。
+...Oh, she's just left.
+...A, tatta ima kaetta tokoro desu.
+...あ、たった今 帰ったところです。
+
+まだ エレベーターの まえに いるかも しれません。
+She may be somewhere near the elevator.
+Mada erebeetaa no mae ni iru kamo shiremasen.
+まだ エレベーターの 前に いるかもしれません。
+
+たったいま バスが でたところです。
+The bus left just now.
+Tatta ima basu ga deta tokoro desu.
+たった今 バスが 出たところです。
+
+もしもし たなかですが、いま いいでしょうか。
+Hello. This is Tanaka speaking. May I talk to you now?
+Moshimoshi Tanaka desu ga, ima ii deshou ka.
+もしもし 田中ですが、今 いいでしょうか。
+
+...すみません。いまから でかけるところなんです。
+...Sorry. I'm just going out.
+...Sumimasen. Ima kara dekakeru tokoro nan desu.
+...すみません。今から 出かけるところなんです。
+
+さっき ひるごはんを たべたばかりです。
+I had lunch only a while ago.
+Sakki hirugohan wo tabeta bakari desu.
+さっき 昼ごはんを 食べたばかりです。
+
+きむらさんは せんげつ この かいしゃに はいったばかりです。
+Ms. Kimura joined this company only a month ago.
+Kimura-san wa sengetsu kono kaisha ni haitta bakari desu.
+木村さんは 先月 この 会社に 入ったばかりです。
+
+この ビデオは せんしゅう かったばかりなのに、
+I bought this video only a week ago,
+Kono bideo wa senshuu katta bakari nanoni,
+この ビデオは 先週 買ったばかりなのに、
+
+ちょうしが おかしいです。
+but it isn't working well.
+choushi ga okashii desu.
+調子が おかしいです。
+
+ミラーさんは きょう くるでしょうか。
+Do you think Mr. Miller will come today?
+Miraa-san wa kyou kuru deshou ka.
+ミラーさんは きょう 来るでしょうか。
+
+...くるはずです。きのう その でんわが ありましたから。
+...I'm sure he'll come. I received a phone call from him yesterday.
+...Kuru hazu desu. Kinou sono denwa ga arimashita kara.
+...来るはずです。きのう その 電話が ありましたから。
+
+`;
 
 allWords["Grammer 46 - Hard"] = ``;
 
-allWords["Grammer 47"] = ``;
+allWords["Grammer 47"] = `
+てんきよほうによると、あしたは さむくなるそうです。
+According to the weather forecast, it will be cold tomorrow.
+Tenki yohou ni yoruto, ashita wa samuku naru sou desu.
+天気予報によると、あしたは 寒くなるそうです。
+
+クララさんは こどもの とき、フランスに すんでいたそうです。
+I heard that Klara lived in France when she was a child.
+Kurara-san wa kodomo no toki, Furansu ni sunde ita sou desu.
+クララさんは 子どもの とき、フランスに 住んでいたそうです。
+
+バリとうは とても きれいだそうです。
+I hear that Bali is very beautiful.
+Bari-tou wa totemo kirei da sou desu.
+バリ島は とても きれいだそうです。
+
+あめが ふりそうです。
+It looks like rain.
+Ame ga furisou desu.
+雨が 降りそうです。
+
+あめが ふるそうです。
+I heard that it will rain.
+Ame ga furu sou desu.
+雨が 降るそうです。
+
+この りょうりは おいしそうです。
+This food looks delicious.
+Kono ryouri wa oishisou desu.
+この 料理は おいしそうです。
+
+この りょうりは おいしいそうです。
+I heard that this food is delicious.
+Kono ryouri wa oishii sou desu.
+この 料理は おいしいそうです。
+
+ミラーさんは あした きょうとへ いくそうです。
+I hear that Mr. Miller is going to Kyoto tomorrow.
+Miraa-san wa ashita Kyouto e iku sou desu.
+ミラーさんは あした 京都へ 行くそうです。
+
+ミラーさんは あした きょうとへ いくと いっていました。
+Mr. Miller said that he is going to Kyoto tomorrow.
+Miraa-san wa ashita Kyouto e iku to itte imashita.
+ミラーさんは あした 京都へ 行くと 言っていました。
+
+ひとが おおぜい あつまっていますね。
+Look, there is a big crowd.
+Hito ga oozei atsumatte imasu ne.
+人が 大勢 集まっていますね。
+
+...じこの ようですね。
+...It looks like there's been an accident.
+...Jiko no you desu ne.
+...事故の ようですね。
+
+パトカーと きゅうきゅうしゃが きていますよ。
+A patrol car and an ambulance are there.
+Patokaa to kyuukyuusha ga kite imasu yo.
+パトカーと 救急車が 来ていますよ。
+
+せきも でるし、あたまも いたい。
+I have a cough and a headache.
+Seki mo deru shi, atama mo itai.
+咳も 出るし、頭も 痛い。
+
+どうも かぜを ひいたようだ。
+It looks like I've caught a cold.
+Doumo kaze wo hiita you da.
+どうも 風邪を ひいたようだ。
+
+ミラーさんは いそがしそうです。
+Mr. Miller seems to be busy.
+Miraa-san wa isogashisou desu.
+ミラーさんは 忙しそうです。
+
+ミラーさんは いそがしいようです。
+It seems that Mr. Miller is busy.
+Miraa-san wa isogashii you desu.
+ミラーさんは 忙しいようです。
+
+へんな おとが しますね。
+There's a strange sound, isn't there?
+Hen na oto ga shimasu ne.
+変な 音が しますね。
+
+`;
 
 allWords["Grammer 47 - Hard"] = ``;
 
-allWords["Grammer 48"] = ``;
+allWords["Grammer 48"] = `
+いきます / いかせます
+to go / to make or let go
+ikimasu / ikasemasu
+行きます / 行かせます
+
+たべます / たべさせます
+to eat / to make or let eat
+tabemasu / tabesasemasu
+食べます / 食べさせます
+
+きます / こさせます
+to come / to make or let come
+kimasu / kosasemasu
+来ます / 来させます
+
+します / させます
+to do / to make or let do
+shimasu / sasemasu
+します / させます
+
+ぶちょうは かとうさんを おおさかへ しゅっちょうさせます。
+The department manager makes Kato go to Osaka on business.
+Buchou wa Katou-san wo Oosaka e shutchou sasemasu.
+部長は 加藤さんを 大阪へ 出張させます。
+
+わたしは むすめを じゆうに あそばせました。
+I let my daughter play freely.
+Watashi wa musume wo jiyuu ni asobasemashita.
+わたしは 娘を 自由に 遊ばせました。
+
+わたしは こどもに みちの みぎがわを あるかせます。
+I make my child walk on the right side of the road.
+Watashi wa kodomo ni michi no migigawa wo arukasemasu.
+わたしは 子どもに 道の 右側を 歩かせます。
+
+わたしは こどもを あるかせます。
+I make my child walk.
+Watashi wa kodomo wo arukasemasu.
+わたしは 子どもを 歩かせます。
+
+あさは いそがしいですから、
+I am busy in the morning,
+Asa wa isogashii desu kara,
+朝は 忙しいですから、
+
+むすめに あさごはんの じゅんびを てつだわせます。
+so I make my daughter help prepare breakfast.
+musume ni asagohan no junbi wo tetsudawasemasu.
+娘に 朝ごはんの 準備を 手伝わせます。
+
+せんせいは せいとに いけんを いわせました。
+The teacher let her students freely voice their opinions.
+Sensei wa seito ni iken wo iwasemashita.
+先生は 生徒に 意見を 言わせました。
+
+えきに ついたら、おでんわを ください。
+When you arrive at the station, please call me.
+Eki ni tsuitara, odenwa wo kudasai.
+駅から 着いたら、お電話を ください。
+
+かかりの ものを むかえに いかせますから。
+I will send a member of my staff to the station to pick you up.
+Kakari no mono wo mukae ni ikasemasu kara.
+係の 者を 迎えに 行かせますから。
+
+...わかりました。
+...Thank you.
+...Wakarimashita.
+...わかりました。
+
+わたしは ぶちょうに せつめいして いただきました。
+I had the department manager explain it to me.
+Watashi wa buchou ni setsumei shite itadakimashita.
+わたしは 部長に 説明して いただきました。
+
+わたしは ともだちに せつめいして もらいました。
+I had my friend explain it to me.
+Watashi wa tomodachi ni setsumei shite moraimashita.
+わたしは 友達に 説明して もらいました。
+
+こどもの とき、からだが よわくて、
+When I was a child, my health was poor,
+Kodomo no toki, karada ga yowakute,
+子どもの とき、体が 弱くて、
+
+ははを しんぱいさせました。
+and I worried my mother.
+haha wo shinpai sasemashita.
+母を 心配させました。
+
+コピーきの つかいかたを おしえて いただけませんか。
+Would you please tell me how to use the photocopier?
+Kopiiki no tsukaikata wo oshiete itadakemasen ka.
+コピー機の 使い方を 教えて いただけませんか。
+
+ともだちの けっこんしきが あるので、
+As I'm going to attend my friend's wedding,
+Tomodachi no kekkonshiki ga aru node,
+友達の 結婚式が あるので、
+
+そうたいさせて いただけませんか。
+would you please let me leave earlier?
+soutai sasete itadakemasen ka.
+早退させて いただけませんか。
+
+`;
 
 allWords["Grammer 48 - Hard"] = ``;
 
-allWords["Grammer 49"] = ``;
+allWords["Grammer 49"] = `
+なかむらさんは しちじに こられます。
+Mr. Nakamura is coming at 7.
+Nakamura-san wa shichi-ji ni koraremasu.
+中村さんは 7時に 来られます。
+
+おさけを やめられたんですか。
+Have you given up drinking?
+Osake wo yameratan desu ka.
+お酒を やめられたんですか。
+
+しゃちょうは もう おかえりに なりました。
+The president has already left for home.
+Shachou wa mou okaeri ni narimashita.
+社長は もう お帰りになりました。
+
+ワットせんせいは けんきゅうしつに いらっしゃいます。
+Professor Watt is in the office.
+Watto-sensei wa kenkyuushitsu ni irasshaimasu.
+ワット先生は 研究室に いらっしゃいます。
+
+どうぞ おめしあがり ください。
+Please help yourself.
+Douzo omeshagari kudasai.
+どうぞ お召し上がりください。
+
+ワットせんせいは テニスを なさいますか。
+Does Professor Watt play tennis?
+Watto-sensei wa tenisu wo nasaimasu ka.
+ワット先生は テニスを なさいますか。
+
+...いいえ、なさらないと おもいます。
+...No, I don't think so.
+...Iie, nasaranai to omoimasu.
+...いいえ、なさらないと 思います。
+
+あちらから おはいり ください。
+Please enter from over there.
+Achira kara ohairi kudasai.
+あちらから お入りください。
+
+しゃちょうは なんじに いらっしゃる？
+What time will the general manager come?
+Shachou wa nan-ji ni irassharu?
+社長は 何時に いらっしゃる？
+
+しゃちょうの おくさまも いっしょに ゴルフに いかれます。
+The general manager's wife will go golfing together with him.
+Shachou no okusama mo issho ni gorufu ni ikaremasu.
+社長の 奥様も いっしょに ゴルフに 行かれます。
+
+ハンスが ねつを だしまして、
+Hans became feverish last night
+Hansu ga netsu wo dashimashite,
+ハンスが 熱を 出しまして、
+
+けさも まだ さがらないんです。
+and still has a fever this morning.
+kesa mo mada sagaranai n desu.
+けさも まだ 下がらないんです。
+
+`;
 
 allWords["Grammer 49 - Hard"] = ``;
 
-allWords["Grammer 50"] = ``;
+allWords["Grammer 50"] = `
+おもそうですね。おもちしましょうか。
+It looks so heavy. Shall I carry it for you?
+Omosou desu ne. Omochi shimashou ka.
+重そうですね。お持ちしましょうか。
+
+しゃちょうに スケジュールを おしらせします。
+I will tell the president the schedule.
+Shachou ni sukejuuru wo oshirase shimasu.
+社長に スケジュールを お知らせします。
+
+あにが くるまで おおくりします。
+My elder brother will take you in his car.
+Ani ga kuruma de ookuri shimasu.
+兄が 車で お送りします。
+
+えどとうきょうはくぶつかんへ ごあんないします。
+I will take you to the Edo-Tokyo Museum.
+Edo Toukyou Hakubutsukan e goannai shimasu.
+江戸東京博物館へ ご案内します。
+
+きょうの よていを ごせつめいします。
+I will explain today's schedule.
+Kyou no yotei wo gosetsumei shimasu.
+きょうの 予定を ご説明します。
+
+しゃちょうの おくさまに おめに かかりました。
+I met the president's wife.
+Shachou no okusama ni ome ni kakarimashita.
+社長の 奥様に お目にかかりました。
+
+あしたは だれが てつだいに きて くれますか。
+Who will come over to help me tomorrow?
+Ashita wa dare ga tetsudai ni kite kuremasu ka.
+あしたは 誰が 手伝いに 来て くれますか。
+
+...わたしが うかがいます。
+...I will.
+...Watashi ga ukagaimasu.
+...私が 伺います。
+
+ミラーと もうします。
+My name is Miller.
+Miraa to moushimasu.
+ミラーと 申します。
+
+アメリカから まいりました。
+I come from the United States.
+Amerika kara mairimashita.
+アメリカから 参りました。
+
+でんわは かいだんの よこに ございます。
+The pay phone is beside the stairs.
+Denwa wa kaidan no yoko ni gozaimasu.
+電話は 階段の 横に ございます。
+
+はい、IMCで ございます。
+Hello, this is IMC.
+Hai, IMC de gozaimasu.
+はい、IMCで ございます。
+
+...パワーでんきの シュミットですが、ミラーさん、おねがいします。
+...This is Schmidt of Power Electric. May I speak to Mr. Miller?
+...Pawaa Denki no Shumitto desu ga, Miraa-san, onegai shimasu.
+...パワー電気の シュミットですが、ミラーさん、お願いします。
+
+おのみものは なにが よろしいでしょうか。
+What would you like to drink?
+Onomimono wa nani ga yoroshii deshou ka.
+お飲みものは 何が よろしいでしょうか。
+
+...コーヒーを おねがいします。
+...Coffee, please.
+...Koohii wo onegai shimasu.
+...コーヒーを お願いします。
+
+この パンフレットを いただいても よろしいでしょうか。
+May I have one of these pamphlets?
+Kono panfurettu wo itadaitemo yoroshii deshou ka.
+この パンフレットを いただいても よろしいでしょうか。
+
+`;
 
 allWords["Grammer 50 - Hard"] = ``;
 
@@ -21209,7 +23655,7 @@ allWords["N1 Kanji Hard"] = ``;
 
 allWords["N1 Kanji Hard - Hard"] = ``;
 
-allWords["Group I"] = `
+allWords["Group I - 1"] = `
 会います
 meet [a friend]
 aimasu
@@ -22062,9 +24508,9 @@ wataru
 
 `;
 
-allWords["Group I - Hard"] = ``;
+allWords["Group I - 1 - Hard"] = ``;
 
-allWords["Group II"] = `
+allWords["Group II - 1"] = `
 浴びます［シャワーを ～］
 take [a shower]
 abimasu
@@ -22517,9 +24963,9 @@ wasureru
 
 `;
 
-allWords["Group II - Hard"] = ``;
+allWords["Group II - 1 - Hard"] = ``;
 
-allWords["Group III"] = `
+allWords["Group III - 1"] = `
 来ます
 come
 kimasu
@@ -22782,9 +25228,9 @@ ryuugakusuru
 
 `;
 
-allWords["Group III - Hard"] = ``;
+allWords["Group III - 1 - Hard"] = ``;
 
-allWords["Honorifics"] = `
+allWords["Honorifics1"] = `
 おべんとう
 box lunch, packed lunch
 [o]bentou
@@ -22810,16 +25256,11 @@ prayer
 [o] inori
 おいのり
 
-おふりこみ
-payment
-[O]furikomi
-お振り込み
-
 `;
 
-allWords["Honorifics - Hard"] = ``;
+allWords["Honorifics1 - Hard"] = ``;
 
-allWords["All Patterns"] = `
+allWords["All Patterns1"] = `
 わたしは マイク・ミラーです。
 I'm Mike Miller.
 Watashi wa Maiku Miraa desu.
@@ -23457,7 +25898,11 @@ Moshi ichiokuyen attara, iroiro na kuni o ryokou shitai desu.
 
 `;
 
-allWords["All Patterns - Hard"] = ``;
+allWords["All Patterns1 - Hard"] = ``;
+
+allWords["N5 Extra1"] = ``;
+
+allWords["N5 Extra1 - Hard"] = ``;
 
 allWords["Ni Particle G5"] = ``;
 
@@ -24386,7 +26831,7 @@ Sakura ga arimasu.
 
 こうえんが あります。
 There's a park.
-Kouen ga arimasu.
+Kōen ga arimasu.
 公園が あります。
 
 おとこのひとが います。
@@ -24406,7 +26851,7 @@ Watashi no heya ni tsukue ga arimasu.
 
 じむしょに みらーさんが います。
 Mr. Miller is in the office.
-Jimusho ni Miraa-san ga imasu.
+Jimusho ni Mirā-san ga imasu.
 事務所に ミラーさんが います。
 
 ちかに なにがありますか。
@@ -24431,17 +26876,17 @@ Kimura-san ga imasu.
 
 とうきょうでぃずにーらんどは ちばけんに あります。
 Tokyo Disneyland is in Chiba prefecture.
-Toukyou Dizuniirando wa Chiba-ken ni arimasu.
+Tōkyō Dizunīrando wa Chiba-ken ni arimasu.
 東京ディズニーランドは 千葉県に あります。
 
 みらーさんは じむしょに います。
 Mr. Miller is in the office.
-Miraa-san wa jimusho ni imasu.
+Mirā-san wa jimusho ni imasu.
 ミラーさんは 事務所に います。
 
 とうきょうでぃずにーらんどは どこに ありますか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko ni arimasu ka.
+Tōkyō Dizunīrando wa doko ni arimasu ka.
 東京ディズニーランドは どこに ありますか。
 
 ちばけんに あります。
@@ -24451,7 +26896,7 @@ Chiba-ken ni arimasu.
 
 みらーさんは どこに いますか。
 Where's Mr. Miller?
-Miraa-san wa doko ni imasu ka.
+Mirā-san wa doko ni imasu ka.
 ミラーさんは どこに いますか。
 
 じむしょに います。
@@ -24461,7 +26906,7 @@ Jimusho ni imasu.
 
 とうきょうでぃずにーらんどは どこですか。
 Where's Tokyo Disneyland?
-Toukyou Dizuniirando wa doko desu ka.
+Tōkyō Dizunīrando wa doko desu ka.
 東京ディズニーランドは どこですか。
 
 ちばけんです。
@@ -24476,12 +26921,12 @@ Tsukue no ue ni shashin ga arimasu.
 
 ゆうびんきょくは ぎんこうのとなりに あります。
 The post office is next to the bank.
-Yūbinkyoku wa ginkou no tonari ni arimasu.
+Yūbinkyoku wa ginkō no tonari ni arimasu.
 郵便局は 銀行の隣に あります。
 
 ほんやは はなやと すーぱーの あいだに あります。
 The bookshop is between the florist and the supermarket.
-Honya wa hanaya to sūpaa no aida ni arimasu.
+Honya wa hanaya to sūpā no aida ni arimasu.
 本屋は 花屋と スーパーの 間に あります。
 
 えきのちかくで ともだちに あいました。
@@ -24526,7 +26971,7 @@ Gaikokujin no gakusei ga futari imasu.
 
 くにで にかけつ にほんごを べんきょうしました。
 I studied Japanese for two months in my home country.
-Kuni de nikagetsu nihongo o benkyou shimashita.
+Kuni de nikagetsu nihongo o benkyō shimashita.
 国で 2か月 日本語を 勉強しました。
 
 みかんを いくつ かいましたか。
@@ -24551,27 +26996,27 @@ Gonin imasu.
 
 まいばん なんじかん にほんごを べんきょうしますか。
 How many hours do you study Japanese every night?
-Maiban nanjikan nihongo o benkyou shimasu ka.
+Maiban nanjikan nihongo o benkyō shimasu ka.
 毎晩 何時間 日本語を 勉強しますか。
 
 にじかん べんきょうします。
 [I study for] two hours.
-Nijikan benkyou shimasu.
+Nijikan benkyō shimasu.
 2時間 勉強します。
 
 どのくらい にほんごを べんきょうしましたか。
 How long did you study Japanese for?
-Donokurai nihongo o benkyou shimashita ka.
+Donokurai nihongo o benkyō shimashita ka.
 どのくらい 日本語を 勉強しましたか。
 
 さんねん べんきょうしました。
 [I studied it for] three years.
-Sannen benkyou shimashita.
+Sannen benkyō shimashita.
 3年 勉強しました。
 
 おおさかから とうきょうまで どのくらい かかりますか。
 How long does it take from Osaka to Tokyo?
-ousaka kara Toukyou made donokurai kakarimasu ka.
+Ōsaka kara Tōkyō made donokurai kakarimasu ka.
 大阪から 東京まで どのくらい かかりますか。
 
 しんかんせんで にじかんはん かかります。
@@ -24581,7 +27026,7 @@ Shinkansen de nijikanhan kakarimasu.
 
 がっこうに せんせいが さんじゅうにんぐらい います。
 There are about thirty teachers at our school.
-Gakkou ni sensei ga sanjū-nin gurai imasu.
+Gakkō ni sensei ga sanjū-nin gurai imasu.
 学校に 先生が 30人ぐらい います。
 
 じゅうごふんぐらい かかります。
@@ -24596,57 +27041,57 @@ Ikkagetsu ni nikai eiga o mimasu.
 
 ぱわーでんきに がいこくじんの しゃいんが ひとりだけ います。
 There is only one foreign employee at Power Electric.
-Pawaa-denki ni gaikokujin no shain ga hitori dake imasu.
+Pawā-denki ni gaikokujin no shain ga hitori dake imasu.
 パワー電気に 外国人の 社員が 1人だけ います。
 
 やすみは にちようびだけです。
 Sunday is my only day off.
-Yasumi wa nichiyoubi dake desu.
+Yasumi wa nichiyōbi dake desu.
 休みは 日曜日だけです。
 
 きのうは あめでした。
 It was rainy yesterday.
-Kinou wa ame deshita.
+Kinō wa ame deshita.
 きのうは 雨でした。
 
 きのうの しけん は かんたんじゃ ありませんでした。
 Yesterday's exam wasn't easy.
-Kinou no shiken wa kantan ja arimasendeshita.
+Kinō no shiken wa kantan ja arimasendeshita.
 きのうの 試験は 簡単じゃ ありませんでした。
 
 きのうは あつかったです。
 It was hot yesterday.
-Kinou wa atsukatta desu.
+Kinō wa atsukatta desu.
 きのうは 暑かったです。
 
 きのうの ぱーてぃーは あまり たのしくなかったです。
 I didn't enjoy yesterday's party very much.
-Kinou no paatii wa amari tanoshikunakatta desu.
+Kinō no pātī wa amari tanoshikunakatta desu.
 きのうの パーティーは あまり 楽しくなかったです。
 
 この くるまは あの くるまより おおきいです。
 This car's bigger than that one.
-Kono kuruma wa ano kuruma yori oukii desu.
+Kono kuruma wa ano kuruma yori ōkii desu.
 この 車は あの 車より 大きいです。
 
 さっかーと やきゅうと どちらが おもしろいですか。
 Which [do you think] is more interesting, soccer or baseball?
-Sakkaa to yakyū to dochira ga omoshiroi desu ka.
+Sakkā to yakyū to dochira ga omoshiroi desu ka.
 サッカーと 野球と どちらが おもしろいですか。
 
 ……さっかーの ほうが おもしろいです。
 ……[I think] soccer's more interesting.
-...Sakkaa no hou ga omoshiroi desu.
+...Sakkā no hō ga omoshiroi desu.
 ……サッカーの ほうが おもしろいです。
 
 みらーさんと さんとすさんと どちらが てにすが じょうずですか。
 Who's better at tennis, Mr. Miller or Mr. Santos?
-Miraa-san to Santosu-san to dochira ga tenisu ga jouzu desu ka.
+Mirā-san to Santosu-san to dochira ga tenisu ga jōzu desu ka.
 ミラーさんと サントスさんと どちらが テニスが 上手ですか。
 
 ほっかいどうと おおさかと どちらが すずしいですか。
 Which is cooler, Hokkaido or Osaka?
-Hokkaidou to ousaka to dochira ga suzushii desu ka.
+Hokkaidō to Ōsaka to dochira ga suzushii desu ka.
 北海道と 大阪と どちらが 涼しいですか。
 
 はると あきと どちらが すきですか。
@@ -24656,7 +27101,7 @@ Haru to aki to dochira ga suki desu ka.
 
 にほんりょうり［のなかで］なにが いちばん おいしいですか。
 Which of all the Japanese dishes is the most delicious?
-Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
+Nihon-ryōri [no naka de] nani ga ichiban oishii desu ka.
 日本料理［の中で］何が いちばん おいしいですか。
 
 ……てんぷらが いちばん おいしいです。
@@ -24666,7 +27111,7 @@ Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
 
 よーろっぱで どこが いちばん よかったですか。
 What was your favorite place in Europe?
-Youroppa de doko ga ichiban yokatta desu ka.
+Yōroppa de doko ga ichiban yokatta desu ka.
 ヨーロッパで どこが いちばん よかったですか。
 
 ……すいすが いちばん よかったです。
@@ -24681,7 +27126,7 @@ Kazoku de dare ga ichiban se ga takai desu ka.
 
 ……おとうとが いちばん せが たかいです。
 ……My younger brother is [the tallest].
-...Otouto ga ichiban se ga takai desu.
+...Otōto ga ichiban se ga takai desu.
 ……弟が いちばん 背が 高いです。
 
 いちねんで いつが いちばん さむいですか。
@@ -24701,7 +27146,7 @@ Karina-san no kaban wa dore desu ka.
 
 ……あの あかく て、おおきいのです。
 ……That big red one.
-...Ano akakute, oukii no desu.
+...Ano akakute, ōkii no desu.
 ……あの 赤くて、大きいのです。
 
 わたしは ともだちが ほしいです。
@@ -24741,7 +27186,7 @@ Watashi wa tenpura o tabetai desu.
 
 こうべで なにを かいたいですか。
 What do you want to buy in Kobe?
-Koube de nani o kaitai desu ka.
+Kōbe de nani o kaitai desu ka.
 神 戸で 何 を 買 いたいですか。
 
 くつを かいたいです。
@@ -24756,22 +27201,22 @@ Onaka ga itai desu kara, nani mo tabetakunai desu.
 
 こうべへ いんど りょうりを たべに いきます。
 I'm going to Kobe to have some Indian food.
-Koube e Indo ryouri o tabe ni ikimasu.
+Kōbe e Indo ryōri o tabe ni ikimasu.
 神 戸へ インド 料 理 を 食 べに 行 きます。
 
 こうべへ かいものに いきます。
 I'm going shopping in Kobe.
-Koube e kaimono ni ikimasu.
+Kōbe e kaimono ni ikimasu.
 神 戸へ 買 い物 に 行 きます。
 
 にほんへ びじゅつの べんきょうに きました。
 I came to Japan to study art.
-Nihon e bijutsu no benkyou ni kimashita.
+Nihon e bijutsu no benkyō ni kimashita.
 日 本 へ 美 術 の 勉 強 に 来 ました。
 
 あした きょうとの おまつりに いきます。
 I'm going to see a festival in Kyoto tomorrow.
-Ashita Kyouto no omatsuri ni ikimasu.
+Ashita Kyōto no omatsuri ni ikimasu.
 あした 京 都 の お祭 りに 行 きます。
 
 ふゆやすみは どこか［へ］ いきましたか。
@@ -24781,7 +27226,7 @@ Fuyuyasumi wa dokoka [e] ikimashita ka.
 
 はい。ほっかいどうへ すきーに いきました。
 Yes, I went skiing in Hokkaido.
-Hai. Hokkaidou e sukii ni ikimashita.
+Hai. Hokkaidō e sukī ni ikimashita.
 はい。北 海 道 へ スキーに 行 きました。
 
 のどが かわきましたから、なに か［を］ のみたいです。
@@ -24801,17 +27246,17 @@ Sumimasen ga, kono kanji no yomikata o oshiete kudasai.
 
 ぼーるぺんで なまえを かいて ください。
 Please write your name with a ballpoint pen.
-Bourupen de namae o kaite kudasai.
+Bōrupen de namae o kaite kudasai.
 ボールペンで 名 前 を 書 いて ください。
 
 どうぞ たくさん たべて ください。
 Please eat as much as you want.
-Douzo takusan tabete kudasai.
+Dōzo takusan tabete kudasai.
 どうぞ たくさん 食 べて ください。
 
 みらーさんは いま でんわを かけて います。
 Mr. Miller is making a phone call now.
-Miraa-san wa ima denwa o kakete imasu.
+Mirā-san wa ima denwa o kakete imasu.
 ミラーさんは 今 電 話 を かけて います。
 
 いま あめが ふって いますか。
@@ -24831,7 +27276,7 @@ Iie, futte imasen.
 
 あしたも きましょうか。
 Shall I come tomorrow, too?
-Ashita mo kimashou ka.
+Ashita mo kimashō ka.
 あしたも 来 ましょうか。
 
 ええ、じゅうじに きて ください。
@@ -24841,7 +27286,7 @@ Ee, jū-ji ni kite kudasai.
 
 かさを かしましょうか。
 Shall I lend you my umbrella?
-Kasa o kashimashou ka.
+Kasa o kashimashō ka.
 傘 を 貸 しましょうか。
 
 すみません。おねがいします。
@@ -24851,12 +27296,12 @@ Sumimasen. Onegaishimasu.
 
 にもつを もちましょうか。
 Shall I carry your bag?
-Nimotsu o mochimashou ka.
+Nimotsu o mochimashō ka.
 荷 物 を 持 ちましょうか。
 
 いいえ、けっこうです。
 No, thank you.
-Iie, kekkou desu.
+Iie, kekkō desu.
 いいえ、けっこうです。
 
 あめが ふって います。
@@ -24866,7 +27311,7 @@ Ame ga futte imasu.
 
 みらーさんが いませんね。
 Mr. Miller isn't here, is he?
-Miraa-san ga imasen ne.
+Mirā-san ga imasen ne.
 ミラーさんが いませんね。
 
 すみませんが、しおを とって ください。
@@ -24936,12 +27381,12 @@ Watashi wa kamera o motte imasu.
 
 わたしは おおさかに すんで います。
 I live in Osaka.
-Watashi wa ousaka ni sunde imasu.
+Watashi wa Ōsaka ni sunde imasu.
 わたしは 大 阪 に 住 んで います。
 
 しやくしょの でんわばんごうを しって いますか。
 Do you know the number of City Hall?
-Shiyakusho no denwa bangou o shitte imasu ka.
+Shiyakusho no denwa bangō o shitte imasu ka.
 市 役 所 の 電 話 番 号 を 知 って いますか。
 
 はい、しって います。
@@ -24956,22 +27401,22 @@ Iie, shirimasen.
 
 IMC は こんぴゅーたーそふとを つくって います。
 IMC produces computer software.
-IMC wa konpyūtaa sofuto o tsukutte imasu.
+IMC wa konpyūtā sofuto o tsukutte imasu.
 IMC は コンピューターソフトを 作 って います。
 
 すーぱーで なんぷらーを うって います。
 Supermarkets sell nam pla.
-Sūpaa de nanpuraa o utte imasu.
+Sūpā de nanpurā o utte imasu.
 スーパーで ナンプラーを 売 って います。
 
 みらーさんは IMC で はたらいて います。
 Mr. Miller works at IMC.
-Miraa-san wa IMC de hataraite imasu.
+Mirā-san wa IMC de hataraite imasu.
 ミラーさんは IMC で 働 いて います。
 
 いもうとは だいがくで べんきょうして います。
 My younger sister is studying at university.
-Imouto wa daigaku de benkyou shite imasu.
+Imōto wa daigaku de benkyō shite imasu.
 妹 は 大 学 で 勉 強 して います。
 
 ここに はいっては いけません。
@@ -24986,7 +27431,7 @@ Koko ni suwattemo ii desu ka.
 
 きょうとえきから じゅうろくばんの ばすに のって ください。
 Take the Number 16 bus from Kyoto Station.
-Kyouto-eki kara jū-roku-ban no basu ni notte kudasai.
+Kyōto-eki kara jū-roku-ban no basu ni notte kudasai.
 京 都 駅 から 16 番 の バスに 乗 って ください。
 
 ここに くるまを とめて ください。
@@ -25896,7 +28341,7 @@ Sakura ga arimasu.
 
 こうえんが あります。
 There's a park.
-Kouen ga arimasu.
+Kōen ga arimasu.
 公園が あります。
 
 おとこのひとが います。
@@ -25916,7 +28361,7 @@ Watashi no heya ni tsukue ga arimasu.
 
 じむしょに みらーさんが います。
 Mr. Miller is in the office.
-Jimusho ni Miraa-san ga imasu.
+Jimusho ni Mirā-san ga imasu.
 事務所に ミラーさんが います。
 
 ちかに なにがありますか。
@@ -25941,22 +28386,22 @@ Kimura-san ga imasu.
 
 さっかーと やきゅうと どちらが おもしろいですか。
 Which [do you think] is more interesting, soccer or baseball?
-Sakkaa to yakyū to dochira ga omoshiroi desu ka.
+Sakkā to yakyū to dochira ga omoshiroi desu ka.
 サッカーと 野球と どちらが おもしろいですか。
 
 ……さっかーの ほうが おもしろいです。
 ……[I think] soccer's more interesting.
-...Sakkaa no hou ga omoshiroi desu.
+...Sakkā no hō ga omoshiroi desu.
 ……サッカーの ほうが おもしろいです。
 
 みらーさんと さんとすさんと どちらが てにすが じょうずですか。
 Who's better at tennis, Mr. Miller or Mr. Santos?
-Miraa-san to Santosu-san to dochira ga tenisu ga jouzu desu ka.
+Mirā-san to Santosu-san to dochira ga tenisu ga jōzu desu ka.
 ミラーさんと サントスさんと どちらが テニスが 上手ですか。
 
 ほっかいどうと おおさかと どちらが すずしいですか。
 Which is cooler, Hokkaido or Osaka?
-Hokkaidou to ousaka to dochira ga suzushii desu ka.
+Hokkaidō to Ōsaka to dochira ga suzushii desu ka.
 北海道と 大阪と どちらが 涼しいですか。
 
 はると あきと どちらが すきですか。
@@ -25966,7 +28411,7 @@ Haru to aki to dochira ga suki desu ka.
 
 にほんりょうり［のなかで］なにが いちばん おいしいですか。
 Which of all the Japanese dishes is the most delicious?
-Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
+Nihon-ryōri [no naka de] nani ga ichiban oishii desu ka.
 日本料理［の中で］何が いちばん おいしいですか。
 
 ……てんぷらが いちばん おいしいです。
@@ -25976,7 +28421,7 @@ Nihon-ryouri [no naka de] nani ga ichiban oishii desu ka.
 
 よーろっぱで どこが いちばん よかったですか。
 What was your favorite place in Europe?
-Youroppa de doko ga ichiban yokatta desu ka.
+Yōroppa de doko ga ichiban yokatta desu ka.
 ヨーロッパで どこが いちばん よかったですか。
 
 ……すいすが いちばん よかったです。
@@ -25991,7 +28436,7 @@ Kazoku de dare ga ichiban se ga takai desu ka.
 
 ……おとうとが いちばん せが たかいです。
 ……My younger brother is [the tallest].
-...Otouto ga ichiban se ga takai desu.
+...Otōto ga ichiban se ga takai desu.
 ……弟が いちばん 背が 高いです。
 
 いちねんで いつが いちばん さむいですか。
@@ -26041,7 +28486,7 @@ Watashi wa tenpura o tabetai desu.
 
 こうべで なにを かいたいですか。
 What do you want to buy in Kobe?
-Koube de nani o kaitai desu ka.
+Kōbe de nani o kaitai desu ka.
 神 戸で 何 を 買 いたいですか。
 
 くつを かいたいです。
@@ -26061,7 +28506,7 @@ Ame ga futte imasu.
 
 みらーさんが いませんね。
 Mr. Miller isn't here, is he?
-Miraa-san ga imasen ne.
+Mirā-san ga imasen ne.
 ミラーさんが いませんね。
 
 おとが ちいさいです。
@@ -26341,17 +28786,17 @@ Sumimasen ga, kono kanji no yomikata o oshiete kudasai.
 
 ぼーるぺんで なまえを かいて ください。
 Please write your name with a ballpoint pen.
-Bourupen de namae o kaite kudasai.
+Bōrupen de namae o kaite kudasai.
 ボールペンで 名 前 を 書 いて ください。
 
 どうぞ たくさん たべて ください。
 Please eat as much as you want.
-Douzo takusan tabete kudasai.
+Dōzo takusan tabete kudasai.
 どうぞ たくさん 食 べて ください。
 
 みらーさんは いま でんわを かけて います。
 Mr. Miller is making a phone call now.
-Miraa-san wa ima denwa o kakete imasu.
+Mirā-san wa ima denwa o kakete imasu.
 ミラーさんは 今 電 話 を かけて います。
 
 いま あめが ふって いますか。
@@ -26421,12 +28866,12 @@ Watashi wa kamera o motte imasu.
 
 わたしは おおさかに すんで います。
 I live in Osaka.
-Watashi wa ousaka ni sunde imasu.
+Watashi wa Ōsaka ni sunde imasu.
 わたしは 大 阪 に 住 んで います。
 
 しやくしょの でんわばんごうを しって いますか。
 Do you know the number of City Hall?
-Shiyakusho no denwa bangou o shitte imasu ka.
+Shiyakusho no denwa bangō o shitte imasu ka.
 市 役 所 の 電 話 番 号 を 知 って いますか。
 
 はい、しって います。
@@ -26441,22 +28886,22 @@ Iie, shirimasen.
 
 IMC は こんぴゅーたーそふとを つくって います。
 IMC produces computer software.
-IMC wa konpyūtaa sofuto o tsukutte imasu.
+IMC wa konpyūtā sofuto o tsukutte imasu.
 IMC は コンピューターソフトを 作 って います。
 
 すーぱーで なんぷらーを うって います。
 Supermarkets sell nam pla.
-Sūpaa de nanpuraa o utte imasu.
+Sūpā de nanpurā o utte imasu.
 スーパーで ナンプラーを 売 って います。
 
 みらーさんは IMC で はたらいて います。
 Mr. Miller works at IMC.
-Miraa-san wa IMC de hataraite imasu.
+Mirā-san wa IMC de hataraite imasu.
 ミラーさんは IMC で 働 いて います。
 
 いもうとは だいがくで べんきょうして います。
 My younger sister is studying at university.
-Imouto wa daigaku de benkyou shite imasu.
+Imōto wa daigaku de benkyō shite imasu.
 妹 は 大 学 で 勉 強 して います。
 
 あさ じょぎんぐを して、しゃわーを あびて、かいしゃへ いきます。
@@ -27750,7 +30195,7 @@ seijin no hi
 
 いちがつのだいにげつようび
 2nd Monday of January
-ichigatsu no dai-ni getsuyoubi
+ichigatsu no dai-ni getsuyōbi
 1月の第2月曜日
 
 たいいくのひ
@@ -29248,7 +31693,7 @@ Jaanarisuto
 allWords["Extra 15 - Hard"] = `
 しょくぎょう
 Occupations
-shokugyou
+shokugyō
 職業
 
 こうむいん
@@ -29349,7 +31794,7 @@ Oazukeire
 
 おふりこみ
 payment
-[O]furikomi
+Ofurikomi
 お振り込み
 
 おふりかえ
@@ -30408,7 +32853,7 @@ Youchien
 
 ひとのいっしょう
 Life / A person's lifetime
-hito no isshou
+hito no isshō
 人の一生
 
 せいねん
@@ -30683,11 +33128,6 @@ Waterproofing / Waterproof
 Bousui kakou
 防水 加工
 
-サイズ なおし
-Alterations / Size adjustment
-Saizu naoshi
-サイズ 直し
-
 ちぢむ
 Shrink
 Chijimu
@@ -30697,6 +33137,11 @@ Chijimu
 Stretch
 Nobiru
 伸びる
+
+サイズ なおし
+Alterations / Size adjustment
+Saizu naoshi
+サイズ 直し
 
 みずあらい
 Laundering / Washing in water
@@ -30711,25 +33156,15 @@ Genzou
 `;
 
 allWords["Extra 28"] = `
-うちを かりる
-Renting accommodation
-Uchi o kariru
-うちを 借りる
+2エルディーキー
+2LDK
+Ni ERU-Dii-Kii
+2LDK
 
-ろせん
-Train line
-Rosen
-路線
-
-もよりえき
-Nearest station
-Moyori eki
-最寄り駅
-
-とほ
-Walk / Walking distance (on foot)
-Toho
-徒歩
+いま・しょくどう・だいどころ (エルディーキー)
+Living/dining room with kitchen (LDK)
+Ima, shokudou, daidokoro (LDK)
+居間・食堂・台所 (LDK)
 
 マンション
 Condominium (reinforced concrete)
@@ -30741,20 +33176,48 @@ Apartment building
 Apaato
 アパート
 
-いっこだて
-Detached house, single house
-Ikkodate
-一戸建て
-
-ちく...ねん
-... years old (years since construction)
-Chiku...nen
-築...年
-
 やちん
 Rental fee / Rent
 Yachin
 家賃
+
+7まん4せんえん
+74,000 yen
+Nana-man yon-sen en
+7万4千円
+
+6,000えん
+6,000 yen
+Roku-sen en
+6,000円
+
+やすい ふどうさん
+Yasui Real Estate
+Yasui Fudousan
+やすい 不動産
+
+にしおぎくぼえき
+Nishi-Ogikubo Station
+Nishi-Ogikubo-eki
+西荻窪駅
+
+`;
+
+allWords["Extra 28 - Hard"] = `
+うちを かります
+To rent a house
+Uchi o karimasu
+家を借ります
+
+うちを かりる
+Renting accommodation
+Uchi o kariru
+うちを 借りる
+
+いっこだて
+Detached house, single house
+Ikkodate
+一戸建て
 
 しききん
 Deposit money
@@ -30776,155 +33239,220 @@ Facing south
 Minamimuki
 南向き
 
-...かいだての...かい
-...th floor of ...-story building
-...kaidate no...kai
-...階建ての...階
+もよりえき
+Nearest station
+Moyori eki
+最寄り駅
 
-いま・しょくどう・だいどころ (エルディーキー)
-Living/dining room with kitchen (LDK)
-Ima, shokudou, daidokoro (LDK)
-居間・食堂・台所 (LDK)
-
-...じょう
-... mats (tatami mat unit of room area)
-...jou
-...畳
-
-ふどうさんや
-Real estate agent
-Fudousan-ya
-不動産屋
-
-ちゅうおうせん
-Chūou Line
-Chūou-sen
-中央線
-
-にしおぎくぼえき
-Nishi-Ogikubo Station
-Nishi-Ogikubo-eki
-西荻窪駅
+とほ
+Walk / Walking distance (on foot)
+Toho
+徒歩
 
 とほ 5ふん
 5-minute walk
 Toho go-fun
 徒歩 5分
 
-ちく 3ねん
-3 years old (built 3 years ago)
-Chiku san-nen
-築 3年
+ふどうさんや
+Real estate agent
+Fudousan-ya
+不動産屋
 
-7まん4せんえん
-74,000 yen
-Nana-man yon-sen en
-7万4千円
-
-2かげつぶん
-2 months' worth
-Ni-kagetsu-bun
-2か月分
-
-6,000えん
-6,000 yen
-Roku-sen en
-6,000円
+...かいだての...かい
+...th floor of ...-story building
+...kaidate no...kai
+...階建ての...階
 
 10かいだての 8かい
 8th floor of a 10-story building
 Jukkai-date no hachi-kai
 10階建ての 8階
 
-2エルディーキー
-2LDK
-Ni ERU-Dii-Kii
-2LDK
+...じょう
+... mats (tatami mat unit of room area)
+...jou
+...畳
 
 6じょう
 6 mats (tatami)
 Roku-jou
 6畳
 
-やすい ふどうさん
-Yasui Real Estate
-Yasui Fudousan
-やすい 不動産
+ろせん
+Train line
+Rosen
+路線
+
+ちゅうおうせん
+Chuuou Line
+Chuuou-sen
+中央線
+
+ちく...ねん
+... years old (years since construction)
+Chiku...nen
+築...年
+
+ちく 3ねん
+3 years old (built 3 years ago)
+Chiku san-nen
+築 3年
+
+2かげつぶん
+2 months' worth
+Ni-kagetsu-bun
+2か月分
 
 `;
 
-allWords["Extra 28 - Hard"] = ``;
+allWords["Extra 29"] = ``;
 
-allWords["Extra 29"] = `
-じょうたい・ようす
-State & appearance
-Joutai, yousu
-状態・様子
+allWords["Extra 29 - Hard"] = `
+じょうたい
+State
+Joutai
+状態
+
+ようす
+appearance
+yousu
+様子
+
+ふとります
+Fat / To be overweight
+Futorimasu
+太ります
 
 ふとっている
 Fat / To be overweight
 Futotte iru
 太っている
 
+やせます
+Thin / To be skinny
+Yasemasu
+やせます
+
 やせている
 Thin / To be skinny
 Yasete iru
 やせている
+
+ふくらみます
+Bulging / To be swollen
+Fukuramimasu
+膨らみます
 
 ふくらんでいる
 Bulging / To be swollen
 Fukurande iru
 膨らんでいる
 
+あなが あきます
+Have a hole / There is a hole
+Ana ga akimasu
+穴が開きます
+
 あなが あいている
 Have a hole / There is a hole
 Ana ga aite iru
 穴が開いている
+
+まがります
+Bent / To be curved
+Magarimasu
+曲がります
 
 まがっている
 Bent / To be curved
 Magatte iru
 曲がっている
 
+ゆがみます
+Distorted / To be warped
+Yugamimasu
+ゆがみます
+
 ゆがんでいる
 Distorted / To be warped
 Yugande iru
 ゆがんでいる
+
+へこみます
+Dented / To be sunken
+Hekomimasu
+へこみます
 
 へこんでいる
 Dented / To be sunken
 Hekonde iru
 へこんでいる
 
+ねじれます
+Twisted / To be twisted
+Nejiremasu
+ねじれます
+
 ねじれている
 Twisted / To be twisted
 Nejirete iru
 ねじれている
+
+かけます
+Chipped / To be chipped
+Kakemasu
+欠けます
 
 かけている
 Chipped / To be chipped
 Kakete iru
 欠けている
 
+ひびが はいります
+Cracked / Has a crack
+Hibi ga hairimasu
+ひびが入ります
+
 ひびが はいっている
 Cracked / Has a crack
 Hibi ga haitte iru
 ひびが入っている
+
+くさります
+Rotten / To be spoiled
+Kusarimasu
+腐ります
 
 くさっている
 Rotten / To be spoiled
 Kusatte iru
 腐っている
 
+こおります
+Frozen / To be frozen
+Koorimasu
+凍ります
+
 こおっている
 Frozen / To be frozen
 Koutte iru
 凍っている
 
+かわきます
+Dry / To be dry
+Kawakimasu
+乾きます
+
 かわいている
 Dry / To be dry
 Kawaite iru
 乾いている
+
+ぬれます
+Wet / To be wet
+Nuremasu
+ぬれます
 
 ぬれている
 Wet / To be wet
@@ -30932,8 +33460,6 @@ Nurete iru
 ぬれている
 
 `;
-
-allWords["Extra 29 - Hard"] = ``;
 
 allWords["Extra 30"] = `
 いち
@@ -30950,11 +33476,6 @@ Ue kara nidanme
 Inner part / Back, inside
 Oku
 Oku
-
-てまえ
-This side / Front
-Temae
-手前
 
 まえから 2れつめ
 The second row from the front
@@ -30976,11 +33497,6 @@ Center / Center (of the classroom)
 Mannaka / (Kyoushitsu no) mannaka
 真ん中 / (教室の) 真ん中
 
-3ぎょうめ
-The third line
-Sangyoume
-3行目
-
 2ぎょうめ
 The second line
 Nigyoume
@@ -30990,11 +33506,6 @@ Nigyoume
 Page 4
 Yon pēji
 4ページ
-
-ななめまえ
-Diagonally ahead / Diagonally in front
-Naname mae
-斜め前
 
 ななめうしろ
 Diagonally behind
@@ -31013,7 +33524,23 @@ Beside (the TV) / Next to (the TV)
 
 `;
 
-allWords["Extra 30 - Hard"] = ``;
+allWords["Extra 30 - Hard"] = `
+てまえ
+This side / Front
+Temae
+手前
+
+3ぎょうめ
+The third line
+Sangyoume
+3行目
+
+ななめまえ
+Diagonally ahead / Diagonally in front
+Naname mae
+斜め前
+
+`;
 
 allWords["Extra 31"] = `
 せんもん
@@ -55055,15963 +57582,41 @@ Are you a detective?
 Tantei na n desu ka.
 探偵なんですか。
 
-ここはじてんしゃのおきばです
-This is the bicycle parking place.
-Koko wa jitensha no okiba desu.
-ここは自転車の置き場です。
-
 `;
-
-allWords["27 Dumps D4"] = `
-いしき
-consciousness, awareness, mindfulness
-Ishiki
-意識
-
-つうしんはんばいで あたらしい ふくを かいました。
-I bought new clothes via mail order.
-Tsuushinhanbai de atarashii fuku o kaimashita.
-通信販売で新しい服を買いました。
-
-この しょうひんは つうしんはんばいでのみ かえます。
-This product can only be bought via mail-order sales.
-Kono shouhin wa tsuushinhanbai de nomi kaemasu.
-この商品は通信販売でのみ買えます。
-
-やまの うえからの けしきが とても きれいでした。
-The scenery from the top of the mountain was very beautiful.
-Yama no ue kara no keshiki ga totemo kirei deshita.
-山の上からの景色がとてもきれいでした。
-
-うみの けしきを たのしみながら さんぽしました。
-I enjoyed the ocean view while taking a walk.
-Umi no keshiki o tanoshiminagara sanpo shimashita.
-海の景色を楽しみながら散歩しました。
-
-さいふの なかに 100えんしか ありません。
-There is only 100 yen in my wallet.
-Saifu no naka ni 100-en shika arimasen.
-財布の中に100円しかありません。
-
-きょうは 1じかんしか ねむれませんでした。
-I could only sleep for 1 hour today.
-Kyou wa 1-jikan shika nemuremasen deshita.
-今日は1時間しか眠れませんでした。
-
-らいげつから あたらしい にほんごの きょうしつを ひらきます。
-I will set up a new Japanese class starting next month.
-Raigetsu kara atarashii nihongo no kyoushitsu o hirakimasu.
-来月から新しい日本語の教室を開きます。
-
-らいしゅう こうちょうせんせいが きょうしつを ひらきます。
-The principal will hold a class next week.
-Raishuu kouchousensei ga kyoushitsu o hirakimasu.
-来週校長先生が教室を開きます。
-
-しゅくだいは ほとんど おわりました。
-I have finished almost all of my homework.
-Shukudai wa hotondo owarimashita.
-宿題はほとんど終わりました。
-
-パーティーの たべものは ほとんど なくなりました。
-Almost all of the party food was gone.
-Paatii no tabemono wa hotondo nakunarimashita.
-パーティーの食べ物はほとんどなくなりました。
-
-あさごはんを たべる じかんが ほとんど ありませんでした。
-I had hardly any time to eat breakfast.
-Asagohan o taberu jikan ga hotondo arimasen deshita.
-朝ご飯を食べる時間がほとんどありませんでした。
-
-かれは にほんごを ほとんど はなせません。
-He can hardly speak Japanese.
-Kare wa nihongo o hotondo hanasemasen.
-彼は日本語をほとんど話せません。
-
-しごとで つかう どうぐを かばんに いれました。
-I put the tools used for work into the bag.
-Shigoto de tsukau dougu o kaban ni iremashita.
-仕事で使う道具をバッグに入れました。
-
-りょうりの どうぐを あたらしく かいました。
-I bought new cooking utensils.
-Ryouri no dougu o atarashiku kaimashita.
-料理の道具を新しく買いました。
-
-ちちは しゅうまつに にちようだいくで たなを つくりました。
-My father built a shelf through Sunday carpentry on the weekend.
-Chichi wa shuumatsu ni nichiyoudaiku de tana o tsukurimashita.
-父は週末に日曜大工で棚を作りました。
-
-にちようだいくで いすを しゅうりしました。
-I repaired a chair through Sunday carpentry.
-Nichiyoudaiku de isu o shuuri shimashita.
-日曜大工で椅子を修理しました。
-
-この えいがの しゅじんこうは とても つよいです。
-The hero of this movie is very strong.
-Kono eiga no shujinkou wa totemo tsuyoi desu.
-この映画の主人公はとても強いです。
-
-しょうせつの しゅじんこうに あこがれています。
-I admire the main character of the novel.
-Shousetsu no shujinkou ni akogarete imasu.
-小説の主人公にあこがれています。
-
-この おかしは ほしの かたちを しています。
-This candy has the shape of a star.
-Kono okashi wa hoshi no katachi o shite imasu.
-このお菓子は星の形をしています。
-
-まるい かたちの てーぶるを かいました。
-I bought a round-shaped table.
-Marui katachi no teeburu o kaimashita.
-丸い形のテーブルを買いました。
-
-にほんの たべもの、たとえば すしや てんぷらが すきです。
-I like Japanese food, for example, sushi and tempura.
-Nihon no tabemono, tatoeba sushi ya tempura ga suki desu.
-日本の食べ物、例えば寿司や天ぷらが好きです。
-
-あかい ふく、たとえば この しゃつが いいとおもいます。
-I think red clothes, for example this shirt, would be good.
-Akai fuku, tatoeba kono shatsu ga ii to omoimasu.
-赤い服、例えばこのシャツがいいと思います。
-
-わたしの まちに あたらしい くうこうが できました。
-A new airport was completed in my town.
-Watashi no machi ni atarashii kuukou ga dekimashita.
-私の町に新しい空港ができました。
-
-えきまえに おおきい すーぱーが できました。
-A large supermarket was built in front of the station.
-Ekimae ni ookii suupaa ga dekimashita.
-駅前に大きいスーパーができました。
-
-いえで かわいい いぬを かっています。
-I keep a cute dog at home.
-Ie de kawaii inu o katte imasu.
-家でかわいい犬を飼っています。
-
-しょうらい ねこを かいたいです。
-I want to raise a cat in the future.
-Shourai neko o kaitai desu.
-将来猫を飼いたいです。
-
-らいねん あたらしい いえを たてます。
-I will build a new house next year.
-Rainen atarashii ie o tatemasu.
-来年新しい家を建てます。
-
-かいしゃは ここに びるを たてています。
-The company is building a building here.
-Kaisha wa koko ni biru o tatete imasu.
-会社はここにビルを建てています。
-
-まいあさ こうえんの みちを はしります。
-I run along the park path every morning.
-Maiasa kouen no michi o hashirimasu.
-毎朝公園の道を走ります。
-
-こどもたちが みちを はしっています。
-Children are running along the road.
-Kodomotachi ga michi o hashitte imasu.
-子どもたちが道を走っています。
-
-くるまで ひろい みちを はしりました。
-I drove along the wide road by car.
-Kuruma de hiroi michi o hashirimashita.
-車で広い道を走りました。
-
-ばすが この みちを はしっています。
-A bus is driving along this road.
-Basu ga kono michi o hashitte imasu.
-バスがこの道を走っています。
-
-らいしゅうの きんようびに やすみを とります。
-I will take a holiday next Friday.
-Raishuu no kinyoubi ni yasumi o torimasu.
-来週の金曜日に休みを取ります。
-
-なつやすみを 3っか とりました。
-I took 3 days of summer holiday.
-Natsuyasumi o mikka torimashita.
-夏休みを3日取りました。
-
-へやの まどから ふじさんが みえます。
-Mount Fuji can be seen from the room's window.
-Heya no mado kara Fujisan ga miemasu.
-部屋の窓から富士山が見えます。
-
-ここから うみが よく みえます。
-The sea can be seen clearly from here.
-Koko kara umi ga yoku miemasu.
-ここから海がよく見えます。
-
-そとから あめの おとが きこえます。
-The sound of rain can be heard from outside.
-Soto kara ame no oto ga kikoemasu.
-外から雨の音が聞こえます。
-
-となりから たのしい おんがくが きこえます。
-Lively music can be heard from next door.
-Tonari kara tanoshii ongaku ga kikoemasu.
-隣から楽しい音楽が聞こえます。
-
-さんねんごに にほんに いきたいです。
-I want to go to Japan 3 years after now.
-Sannengo ni Nihon ni ikitai desu.
-3年後に日本に行きたいです。
-
-1じかんごに ここで あいましょう。
-Let's meet here 1 hour from now.
-1-jikango ni koko de aimashou.
-1時間後にここで会いましょう。
-
-ほかの ほんを みせてもらえますか。
-Could you please show me another book?
-Hoka no hon o misete moraemasu ka.
-ほかの本を見せてもらえますか。
-
-ほかの お店に いきましょう。
-Let's go to another store.
-Hoka no omise ni ikimashou.
-ほかの店に行きましょう。
-
-とおくの やまが はっきり みえます。
-The distant mountain can be seen clearly.
-Tooku no yama ga hakkiri miemasu.
-遠くの山がはっきり見えます。
-
-なまえを はっきり かいてください。
-Please write your name clearly.
-Namae o hakkiri kaite kudasai.
-名前をはっきり書いてください。
-
-いつか せかいりょこうを したいです。
-I want to travel around the world someday.
-Itsuka sekai ryokou o shitai desu.
-いつか世界旅行をしたいです。
-
-いつか また あいましょう。
-Let's meet again sometime.
-Itsuka mata aimashou.
-いつかまた会いましょう。
-
-ふしぎな まほうの はなしを ききました。
-I heard a fantastic tale of magic.
-Fushigi na mahou no hanashi o kikimashita.
-不思議な魔法の話を聞きました。
-
-この えほんは ふしぎな せかいの はなしです。
-This picture book is a story of a fantastic world.
-Kono ehon wa fushigi na sekai no hanashi desu.
-この絵本は不思議な世界の話です。
-
-この もりの なかには ふしぎな たてものが あります。
-There is a mysterious building inside this forest.
-Kono mori no naka ni wa fushigi na tatemono ga arimasu.
-この森の中には不思議な建物があります。
-
-かれは ときとき ふしぎな ことばを いいます。
-He sometimes says mysterious things.
-Kare wa tokitoki fushigi na kotoba o iimasu.
-彼はときとき不思議な言葉を言います。
-
-かばんに あたらしい ねーむたぐを つけました。
-I attached a new name tag to the bag.
-Kaban ni atarashii neemutagu o tsukemashita.
-カバンに新しいネームタグを付けました。
-
-しゃしんに めもを つけました。
-I attached a memo to the photo.
-Shashin ni memo o tsukemashita.
-写真にメモを付けました。
-
-ふくに きれいな ぼたんを つけます。
-I put a pretty button on the clothes.
-Fuku ni kirei na botan o tsukemasu.
-服にきれいなボタンを付けます。
-
-ポケットに はっぴーな ばっじを つけます。
-I put a happy badge on my pocket.
-Poketto ni happii na bajji o tsukemasu.
-ポケットにハッピーなバッジを付けます。
-
-へやの なかを じゆうに あるいてください。
-Please walk around inside the room freely.
-Heya no naka o jiyuu ni aruite kudasai.
-部屋の中を自由に歩いてください。
-
-ここにある ほんを じゆうに よんでください。
-Please read the books here freely.
-Koko ni aru hon o jiyuu ni yonde kudasai.
-ここにある本を自由に読んでください。
-
-とりが そらを たかい ところまで とびます。
-The bird flies high up into the sky.
-Tori ga sora o takai tokoro made tobimasu.
-鳥が空を高いところまで飛びます。
-
-ひこうきが くもを こえて とびます。
-The airplane flies across the clouds.
-Hikouki ga kumo o koete tobimasu.
-飛行機が雲を越えて飛びます。
-
-きょうしつにはたなかさんしかいません
-there is nobody but Mr./Ms. Tanaka in the classroom
-Kyōshitsu ni wa Tanaka-san shika imasen
-教室には田中さんしか居ません
-
-みずしかのみません
-I drink nothing but water
-Mizu shika nomimasen
-水しか飲みません
-
-ともだちにしかはなしていません
-I have spoken to nobody except my friend
-Tomodachi ni shika hanashite imasen
-友達にしか話していません
-
-げんきんでしかはらえません
-you can pay with nothing other than cash
-Genkin de shika haraemasen
-現金でしか払えません
-
-せんせいからしかれんらくがきませんでした
-communication came from no one except the teacher
-Sensei kara shika renraku ga kimasen deshita
-先生からしか連絡が来ませんでした
-
-かぞくとしかりょこうしません
-I travel with no one other than my family
-Kazoku to shika ryokō shimasen
-家族としか旅行しません
-
-ごじまでしかあいていません
-it is open only until 5 o'clock
-Go-ji made shika aite imasen
-5時までしか開いていません
-
-`;
-
-allWords["27 Dumps D4 - Hard"] = ``;
-
-allWords["Sentence 01"] = `
-はじめまして。
-How do you do? (lit. I am meeting you for the first time. Usually used as the first phrase when introducing oneself.)
-hajimemashite
-はじめまして。
-
-どうぞ よろしく おねがいします。
-Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
-yoroshiku
-どうぞ よろしく おねがいします。
-
-こちらは～さんです。
-This is (someone).
-kochira wa ~-san desu
-こちらは～さんです。
-
-おなまえは。
-May i have your name?
-onamae wa
-おなまえは。
-
-しつれいですが。
-Excuse me, but (used when asking someone for personal information such as their name or address)
-shitsurei desu ga
-しつれいですが。
-
-じこしょうかいをおねがいします。
-Please introduce yourself. / Self-introduction please.
-jiko shoukai o onegaishimasu
-じこしょうかいをおねがいします。
-
-わたしたちはマレーシアじんです。マレーシアからきました。
-We are Malaysian. We come from Malaysia.
-watashitachi wa Mareeshiajin desu. Mareeshia kara kimashita.
-わたしたちはマレーシア人です。マレーシアからきました。
-
-どなたがベトナムじんですか。
-Who is Vietnamese?
-donata ga Betonamujin desu ka.
-どなたがベトナム人ですか。
-
-あのひとはイタリアじんです。
-That person is Italian.
-anohito wa Itariajin desu.
-あのひとはイタリア人です。
-
-これはイタリアごです。
-This is Italian.
-kore wa Itariago desu.
-これはイタリア語です。
-
-あのかたはスペインじんです。
-That person (polite) is Spanish.
-anokata wa Supeinjin desu.
-あのかたはスペイン人です。
-
-これはスペインごです。
-This is Spanish.
-kore wa Supeingo desu.
-これはスペイン語です。
-
-わたしはアメリカじんです。
-I am American.
-watashi wa Amerikajin desu.
-わたしはアメリカ人です。
-
-あなたはインドネシアじんです。
-You are Indonesian.
-anata wa Indoneshiajin desu.
-あなたはインドネシア人です。
-
-これはインドネシアごです。
-This is Indonesian.
-kore wa Indoneshiago desu.
-これはインドネシア語です。
-
-みなさんはかんこくじんです。
-Everyone is South Korean.
-minasan wa Kankokujin desu.
-みなさんは韓国人です。
-
-これはかんこくごです。
-This is Korean.
-kore wa Kankokugo desu.
-これは韓国語です。
-
-だれがタイじんですか。
-Who is Thai?
-dare ga Taijin desu ka.
-だれがタイ人ですか。
-
-ちゅうごくじんはちゅうごくのひとです。
-Chinese is a person from China.
-Chuugokujin wa chuugoku no hito desu.
-中国人はちゅうごくのひとです。
-
-ドイツじんはドイツのひとです。
-German is a person from Germany.
-Doitsujin wa doitsu no hito desu.
-ドイツ人はドイツのひとです。
-
-にほんじんはにほんのひとです。
-Japanese is a person from Japan.
-Nihonjin wa nihon no hito desu.
-日本人はにほんのひとです。
-
-フランスじんはフランスのひとです。
-French is a person from France.
-Furansujin wa furansu no hito desu.
-フランス人はフランスのひとです。
-
-ブラジルじんはブラジルのひとです。
-Brazilian is a person from Brazil.
-Burajirujin wa burajiru no hito desu.
-ブラジル人はブラジルのひとです。
-
-メキシコじんはメキシコのひとです。
-Mexican is a person from Mexico.
-Mekishikojin wa Mekishiko no hito desu.
-メキシコ人はメキシコのひとです。
-
-イランじんはイランのひとです。
-Iranian is a person from Iran.
-Iranjin wa Iran no hito desu.
-イラン人はイランのひとです。
-
-エジプトじんはエジプトのひとです。
-Egyptian is a person from Egypt.
-Ejiputojin wa Ejiputo no hito desu.
-エジプト人はエジプトのひとです。
-
-カナダじんはカナダのひとです。
-Canadian is a person from Canada.
-Kanadajin wa Kanada no hito desu.
-カナダ人はカナダのひとです。
-
-イギリスじんはイギリスのひとです。
-British is a person from U.K.
-Igirisujin wa igirisu no hito desu.
-イギリス人はイギリスのひとです。
-
-オーストラリアじんはオーストラリアのひとです。
-Australian is a person from Australia.
-Oosutorariajin wa Oosutoraria no hito desu.
-オーストラリア人はオーストラリアのひとです。
-
-シンガポールじんはシンガポールのひとです。
-Singaporean is a person from Singapore.
-Shingapoorujin wa Shingapooru no hito desu.
-シンガポール人はシンガポールのひとです。
-
-サウジアラビアじんはサウジアラビアのひとです。
-Saudi Arabian is a person from Saudi Arabia.
-Saujiarabiajin wa Saujiarabia no hito desu.
-サウジアラビア人はサウジアラビアのひとです。
-
-フィリピンじんはフィリピンのひとです。
-Filipino is a person from Philippines.
-Firipinjin wa firipin no hito desu.
-フィリピン人はフィリピンのひとです。
-
-ロシアじんはロシアのひとです。
-Russian is a person from Russia.
-Roshiajin wa Roshia no hito desu.
-ロシア人はロシアのひとです。
-
-インドじんはインドのひとです。
-Indian is a person from India.
-Indojin wa indo no hito desu.
-インド人はインドのひとです。
-
-これはロシアごです。
-This is Russian.
-kore wa Roshiago desu.
-これはロシア語です。
-
-これはフランスごです。
-This is French.
-kore wa Furansugo desu.
-これはフランス語です。
-
-これはにほんごです。
-This is Japanese.
-kore wa Nihongo desu.
-これは日本語です。
-
-これはドイツごです。
-This is German.
-kore wa Doitsugo desu.
-これはドイツ語です。
-
-これはちゅうごくごです。
-This is Chinese.
-kore wa Chuugokugo desu.
-これは中国語です。
-
-これはタイごです。
-This is Thai.
-kore wa Taigo desu.
-これはタイ語です。
-
-これはベトナムごです。
-This is Vietnamese.
-kore wa Betonamugo desu.
-これはベトナム語です。
-
-これはマレーシアごです。
-This is Malaysian.
-kore wa Mareeshiago desu.
-これはマレーシア語です。
-
-これはえいごです。
-This is English.
-kore wa Eigo desu.
-これは英語です。
-
-これはポルトガルごです。
-This is Portuguese.
-kore wa Porutogarugo desu.
-これはポルトガル語です。
-
-これはペルシアごです。
-This is Persian.
-kore wa Perushiago desu.
-これはペルシア語です。
-
-これはアラビアごです。
-This is Arabic.
-kore wa Arabiago desu.
-これはアラビア語です。
-
-これはえいご・フランスごです。
-This is English.
-kore wa Eigo, Furansugo desu.
-これは英語・フランス語です。
-
-これはフィリピノごです。
-This is Filipino.
-kore wa Firipinogo desu.
-これはフィリピノ語です。
-
-これはヒンディーごです。
-This is Hindi.
-kore wa Hindiigo desu.
-これはヒンディー語です。
-
-たろうくんです。
-This is Taro-kun.
-tarou kun desu.
-たろうくんです。
-
-はなこちゃんです。
-This is Hanako-chan.
-hanako chan desu.
-はなこちゃんです。
-
-たなかさんです。
-This is Tanaka-san.
-tanaka san desu.
-たなかさんです。
-
-にほんじんです。
-This uses the nationality suffix -jin (nihon-jin).
-nihon jin desu.
-にほんじんです。
-
-IMCのしゃいんです。
-An employee of IMC.
-IMC no shain desu.
-IMCのしゃいんです。
-
-おいくつですか。なんさいですか。にじゅうさいです。
-How old are you (formal)? How old? I am twenty years old.
-oikutsu desu ka. nansai desu ka. nijuu sai desu.
-おいくつですか。なんさいですか。にじゅうさいです。
-
-はい、これはタイです。
-This is Thailand.
-hai, kore wa tai desu.
-はい、これはタイです。
-
-いいえ、これはかんこくです。
-This is South Korea.
-iie, kore wa kankoku desu.
-いいえ、これはかんこくです。
-
-これはインドネシアです。
-This is Indonesia.
-kore wa indoneshia desu.
-これはインドネシアです。
-
-これはアメリカです。
-This is U.S.A.
-kore wa amerika desu.
-これはアメリカです。
-
-これはスペインです。
-This is Spain.
-kore wa Supein desu.
-これはスペインです。
-
-これはイタリアです。
-This is Italy.
-kore wa Itaria desu.
-これはイタリアです。
-
-これはベトナムです。
-This is Vietnam.
-kore wa Betonamu desu.
-これはベトナムです。
-
-これはかいしゃいんです。
-This is company employee.
-kore wa kaishain desu.
-これはかいしゃいんです。
-
-これはびょういんです。
-This is hospital.
-kore wa byouin desu.
-これはびょういんです。
-
-これはでんきです。
-This is electricity.
-kore wa denki desu.
-これはでんきです。
-
-これはがくせいです。
-This is student.
-kore wa gakusei desu.
-これはがくせいです。
-
-これはいしゃです。
-This is [medical] doctor.
-kore wa isha desu.
-これはいしゃです。
-
-これはエンジニアです。
-This is engineer.
-kore wa enjinia desu.
-これはエンジニアです。
-
-これはだいがくです。
-This is university.
-kore wa daigaku desu.
-これはだいがくです。
-
-これはせんせいです。
-This is teacher.
-kore wa sensei desu.
-これはせんせいです。
-
-これはけんきゅうしゃです。
-This is researcher.
-kore wa kenkyuusha desu.
-これはけんきゅうしゃです。
-
-これはきょうしです。
-This is teacher.
-kore wa kyoushi desu.
-これはきょうしです。
-
-これはぎんこういんです。
-This is bank employee.
-kore wa ginkouin desu.
-これはぎんこういんです。
-
-`;
-
-allWords["Sentence 01 - Hard"] = ``;
-
-allWords["Sentence 02"] = `
-そうですか。
-I see.
-sou desu ka
-そうですか。
-
-こちらこそよろしく。
-I am pleased to meet you too.
-kochirakoso yoroshiku
-こちらこそよろしく。
-
-これからおせわになります。
-I hope for your kind assistance hereafter.
-korekara osewa ni narimasu
-これからおせわになります。
-
-（どうも）ありがとうございます。
-Thank you (very much).
-(doumo) arigatou gozaimasu
-（どうも）ありがとうございます。
-
-ほんのきもちです。
-It's nothing. / It's a token of my gratitude.
-honno kimochi desu
-ほんのきもちです。
-
-これはえいごです。
-This is the English language.
-kore wa eigo desu.
-これはえいごです。
-
-これはにほんごです。
-This is the Japanese language.
-kore wa nihongo desu.
-これはにほんごです。
-
-にほんごです。
-This uses the language suffix -go (nihon-go).
-nihon go desu.
-にほんごです。
-
-ちがいます。
-No it isn't. / You are wrong.
-chigaimasu.
-ちがいます。
-
-これはほんです。
-This/that is book.
-kore wa hon desu.
-これはほんです。
-
-それはざっしです。
-This/that is magazine.
-sore wa zasshi desu.
-それはざっしです。
-
-あれはノートです。
-This/that is notebook.
-are wa nouto desu.
-あれはノートです。
-
-このカードです。
-This/that .
-kono kaado desu.
-このカードです。
-
-そのテレホンカードです。
-This/that telephone card.
-sono terehon kaado desu.
-そのテレホンカードです。
-
-あのボールペンです。
-This/that ballpoint pen.
-ano boorupen desu.
-あのボールペンです。
-
-あのう、これは（カセット）テープです。
-This is .
-anou, kore wa (kasetto) teepu desu.
-あのう、これは（カセット）テープです。
-
-そう、これはテープレコーダーです。
-This is tape recorder.
-sou, kore wa teepu rekoodaa desu.
-そう、これはテープレコーダーです。
-
-えっ、これはかぎです。
-This is key.
-e?, kore wa kagi desu.
-えっ、これはかぎです。
-
-あ、これはかさです。
-This is umbrella.
-a, kore wa kasa desu.
-あ、これはかさです。
-
-どうも、これはかばんです。
-This is bag.
-doumo, kore wa kaban desu.
-どうも、これはかばんです。
-
-どうぞ、これはテレビです。
-This is television.
-douzo, kore wa terebi desu.
-どうぞ、これはテレビです。
-
-これはラジオです。
-This is radio.
-kore wa rajio desu.
-これはラジオです。
-
-これはカメラです。
-This is camera.
-kore wa kamera desu.
-これはカメラです。
-
-これはコンピューターです。
-This is computer.
-kore wa konpyuutaa desu.
-これはコンピューターです。
-
-これはチョコレートです。
-This is chocolate.
-kore wa chokoreeto desu.
-これはチョコレートです。
-
-これはコーヒーです。
-This is coffee.
-kore wa kouhii desu.
-これはコーヒーです。
-
-これはなんです。
-This is what~.
-kore wa nan desu.
-これはなんです。
-
-これはおみやげです。
-This is souvenir.
-kore wa miyage desu.
-これはおみやげです。
-
-これはいすです。
-This is chair.
-kore wa isu desu.
-これはいすです。
-
-これはつくえです。
-This is desk.
-kore wa tsukue desu.
-これはつくえです。
-
-これはとけいです。
-This is watch.
-kore wa tokei desu.
-これはとけいです。
-
-これはてちょうです。
-This is personal organiser.
-kore wa techou desu.
-これはてちょうです。
-
-これはじどうしゃです。
-This is automobile.
-kore wa jidousha desu.
-これはじどうしゃです。
-
-これはシャープペンシルです。
-This is mechanical pencil.
-kore wa shaapupenshiru desu.
-これはシャープペンシルです。
-
-これはえんぴつです。
-This is pencil.
-kore wa enpitsu desu.
-これはえんぴつです。
-
-これはめいしです。
-This is business card.
-kore wa meishi desu.
-これはめいしです。
-
-これはしんぶんです。
-This is newspaper.
-kore wa shinbun desu.
-これはしんぶんです。
-
-これはじしょです。
-This is dictionary.
-kore wa jisho desu.
-これはじしょです。
-
-これはさとうです。
-This is Sato.
-kore wa satou desu.
-これは佐藤です。
-
-これはすずきです。
-This is Suzuki.
-kore wa suzuki desu.
-これは鈴木です。
-
-これはたかはしです。
-This is Takahashi.
-kore wa takahashi desu.
-これは高橋です。
-
-これはたなかです。
-This is Tanaka.
-kore wa tanaka desu.
-これは田中です。
-
-これはわたなべです。
-This is Watanabe.
-kore wa watanabe desu.
-これは渡辺です。
-
-これはいとうです。
-This is Ito.
-kore wa itou desu.
-これは伊藤です。
-
-これはやまもとです。
-This is Yamamoto.
-kore wa yamamoto desu.
-これは山本です。
-
-これはなかむらです。
-This is Nakamura.
-kore wa nakamura desu.
-これは中村です。
-
-これはこばやしです。
-This is Kobayashi.
-kore wa kobayashi desu.
-これは小林です。
-
-これはかとうです。
-This is Kato.
-kore wa katou desu.
-これは加藤です。
-
-これはよしだです。
-This is Yoshida.
-kore wa yoshida desu.
-これは吉田です。
-
-これはやまだです。
-This is Yamada.
-kore wa yamada desu.
-これは山田です。
-
-これはささきです。
-This is Sasaki.
-kore wa sasaki desu.
-これは佐々木です。
-
-これはさいとうです。
-This is Saito.
-kore wa saitou desu.
-これは斎藤です。
-
-これはやまぐちです。
-This is Yamaguchi.
-kore wa yamaguchi desu.
-これは山口です。
-
-これはまつもとです。
-This is Matsumoto.
-kore wa matsumoto desu.
-これは松本です。
-
-これはいのうえです。
-This is Inoue.
-kore wa inoue desu.
-これは井上です。
-
-これはきむらです。
-This is Kimura.
-kore wa kimura desu.
-これは木村です。
-
-これははやしです。
-This is Hayashi.
-kore wa hayashi desu.
-これは林です。
-
-これはしみずです。
-This is Shimizu.
-kore wa shimizu desu.
-これは清水です。
-
-`;
-
-allWords["Sentence 02 - Hard"] = ``;
-
-allWords["Sentence 03"] = `
-〜をください。
-Give me ~ please.
--o kudasai
-〜をください。
-
-〜でございます。
-polite form of "desu"
--de gozaimasu
-〜でございます。
-
-〜をみせてください。
-Please show me ~.
--o misete kudasai
-〜をみせてください。
-
-すみませんはここです。
-Excuse me is here.
-sumimasen wa koko desu.
-すみませんはここです。
-
-へやはそこです。
-room is there.
-heya wa soko desu.
-へやはそこです。
-
-いくらはあそこです。
-how much is that place over there.
-ikura wa asoko desu.
-いくらはあそこです。
-
-ワインはこちらです。
-wine is this way.
-wain wa kochira desu.
-ワインはこちらです。
-
-タバコはそちらです。
-tobacco is that way.
-tabako wa sochira desu.
-タバコはそちらです。
-
-ロビーはあちらです。
-lobby is that way.
-robii wa achira desu.
-ロビーはあちらです。
-
-エレベーターはどこです。
-elevator is where.
-erebeetaa wa doko desu.
-エレベーターはどこです。
-
-ネクタイはどちらです。
-necktie is which way.
-nekutai wa dochira desu.
-ネクタイはどちらです。
-
-じゃ、これはかい・がい・っかいです。
-This is -th floor.
-ja, kore wa kai / -gai / -kkai desu.
-じゃ、これはかい・がい・っかいです。
-
-これはえんです。
-This is -yen.
-kore wa en desu.
-これはえんです。
-
-これはトイレです。
-This is toilet.
-kore wa toire desu.
-これはトイレです。
-
-これはエスカレーターです。
-This is escalator.
-kore wa esukareetaa desu.
-これはエスカレーターです。
-
-これはちかです。
-This is basement.
-kore wa chika desu.
-これはちかです。
-
-これはまんです。
-This is ten thousand.
-kore wa man desu.
-これはまんです。
-
-これはちかいっかいです。
-This is Basement 1.
-kore wa chika ikkai desu.
-これはちかいっかいです。
-
-これはちかにかいです。
-This is Basement 2.
-kore wa chika nikai desu.
-これはちかにかいです。
-
-これはちかさんがいです。
-This is Basement 3.
-kore wa chika sangai desu.
-これはちかさんがいです。
-
-これはちかよんかいです。
-This is Basement 4.
-kore wa chika yonkai desu.
-これはちかよんかいです。
-
-これはちかごかいです。
-This is Basement 5.
-kore wa chika gokai desu.
-これはちかごかいです。
-
-これはちかろっかいです。
-This is Basement 6.
-kore wa chika rokkai desu.
-これはちかろっかいです。
-
-これはちかななかいです。
-This is Basement 7.
-kore wa chika nanakai desu.
-これはちかななかいです。
-
-これはちかはっかいです。
-This is Basement 8.
-kore wa chika hakkai desu.
-これはちかはっかいです。
-
-これはちかきゅうかいです。
-This is Basement 9.
-kore wa chika kyūkai desu.
-これはちかきゅうかいです。
-
-これはちかじゅっかいです。
-This is Basement 10.
-kore wa chika jukkai desu.
-これはちかじゅっかいです。
-
-これはちかじゅういっかいです。
-This is Basement 11.
-kore wa chika juuikkai desu.
-これはちかじゅういっかいです。
-
-これはひゃくです。
-This is 100.
-kore wa hyaku desu.
-これはひゃくです。
-
-これはにひゃくです。
-This is 200.
-kore wa nihyaku desu.
-これはにひゃくです。
-
-これはさんびゃくです。
-This is 300.
-kore wa sanbyaku desu.
-これはさんびゃくです。
-
-これはよんひゃくです。
-This is 400.
-kore wa yonhyaku desu.
-これはよんひゃくです。
-
-これはごひゃくです。
-This is 500.
-kore wa gohyaku desu.
-これはごひゃくです。
-
-これはろっぴゃくです。
-This is 600.
-kore wa roppyaku desu.
-これはろっぴゃくです。
-
-これはななひゃくです。
-This is 700.
-kore wa nanahyaku desu.
-これはななひゃくです。
-
-これははっぴゃくです。
-This is 800.
-kore wa happyaku desu.
-これははっぴゃくです。
-
-これはきゅうひゃくです。
-This is 900.
-kore wa kyūhyaku desu.
-これはきゅうひゃくです。
-
-これはせんです。
-This is 1000.
-kore wa sen desu.
-これはせんです。
-
-これはにせんです。
-This is 2000.
-kore wa ni sen desu.
-これはにせんです。
-
-これはさんぜんです。
-This is 3000.
-kore wa sanzen desu.
-これはさんぜんです。
-
-これはよんせんです。
-This is 4000.
-kore wa yon sen desu.
-これはよんせんです。
-
-これはごせんです。
-This is 5000.
-kore wa go sen desu.
-これはごせんです。
-
-これはろくせんです。
-This is 6000.
-kore wa roku sen desu.
-これはろくせんです。
-
-これはななせんです。
-This is 7000.
-kore wa nana sen desu.
-これはななせんです。
-
-これははっせんです。
-This is 8000.
-kore wa hassen desu.
-これははっせんです。
-
-これはきゅうせんです。
-This is 9000.
-kore wa kyuu sen desu.
-これはきゅうせんです。
-
-これはいちまんです。
-This is 10 K.
-kore wa ichiman desu.
-これはいちまんです。
-
-これはにまんです。
-This is 20K.
-kore wa niman desu.
-これはにまんです。
-
-これはさんまんです。
-This is 30K.
-kore wa sanman desu.
-これはさんまんです。
-
-これはよんまんです。
-This is 40.
-kore wa yonman desu.
-これはよんまんです。
-
-これはごまんです。
-This is 50000.
-kore wa goman desu.
-これはごまんです。
-
-これはろくまんです。
-This is 60K.
-kore wa rokuman desu.
-これはろくまんです。
-
-これはななまんです。
-This is 70K.
-kore wa nanaman desu.
-これはななまんです。
-
-これははちまんです。
-This is 80000.
-kore wa hachiman desu.
-これははちまんです。
-
-これはきゅうまんです。
-This is 90K.
-kore wa kyuuman desu.
-これはきゅうまんです。
-
-これはじゅうまんです。
-This is 100K.
-kore wa juuman desu.
-これはじゅうまんです。
-
-これはじゅういちまんです。
-This is 110 K.
-kore wa juuichiman desu.
-これはじゅういちまんです。
-
-これはひゃくまんです。
-This is 1 Million.
-kore wa hyakuman desu.
-これはひゃくまんです。
-
-これはせんまんです。
-This is 10M.
-kore wa senman desu.
-これはせんまんです。
-
-これはきゅうせんきゅうひゃくきゅうじゅうきゅうまんきゅうせんきゅうひゃくきゅうじゅうきゅうです。
-This is 99 999 999.
-kore wa kyuusen kyuuhyaku kyuujuu kyuuman kyuusen kyuuhyaku kyuujuu kyuu desu.
-これはきゅうせんきゅうひゃくきゅうじゅうきゅうまんきゅうせんきゅうひゃくきゅうじゅうきゅうです。
-
-これはジャカルタです。
-This is Jakarta.
-kore wa jakaruta desu.
-これはジャカルタです。
-
-これはベルリンです。
-This is Berlin.
-kore wa berurin desu.
-これはベルリンです。
-
-これは新大阪です。
-This is Shin-Osaka.
-kore wa shin-oosaka desu.
-これは新大阪です。
-
-これはじどうはんばいきです。
-This is vending machine.
-kore wa jidouhanbaiki desu.
-これはじどうはんばいきです。
-
-これはかいぎしつです。
-This is meeting room.
-kore wa kaigishitsu desu.
-これはかいぎしつです。
-
-これはかいだんです。
-This is staircase.
-kore wa kaidan desu.
-これはかいだんです。
-
-これはしょくどうです。
-This is dining hall.
-kore wa shokudou desu.
-これはしょくどうです。
-
-これはじむしょです。
-This is office.
-kore wa jimusho desu.
-これはじむしょです。
-
-これはきょうしつです。
-This is classroom.
-kore wa kyoushitsu desu.
-これはきょうしつです。
-
-これはおてあらいです。
-This is toilet.
-kore wa otearai desu.
-これはおてあらいです。
-
-これはうけつけです。
-This is reception desk.
-kore wa uketsuke desu.
-これはうけつけです。
-
-これはうりばです。
-This is department.
-kore wa uriba desu.
-これはうりばです。
-
-これはなんかいです。
-This is what floor.
-kore wa nankai desu.
-これはなんかいです。
-
-これはでんわです。
-This is telephone handset.
-kore wa denwa desu.
-これはでんわです。
-
-これはイタリアです。
-This is Italy.
-kore wa itaria desu.
-これはイタリアです。
-
-これはスイスです。
-This is Switzerland.
-kore wa suisu desu.
-これはスイスです。
-
-これはアクセサリーです。
-This is accessories.
-kore wa akusesarii desu.
-これはアクセサリーです。
-
-これはちゅうしゃじょうです。
-This is car park / parking lot.
-kore wa chuushajou desu.
-これは駐車場です。
-
-これはレストランです。
-This is restaurant.
-kore wa resutoran desu.
-これはレストランです。
-
-これはとけいです。
-This is watch.
-kore wa tokei desu.
-これは時計です。
-
-これはめがねです。
-This is spectacles.
-kore wa megane desu.
-これは眼鏡です。
-
-これはほんです。
-This is book.
-kore wa hon desu.
-これは本です。
-
-これはくつです。
-This is shoes.
-kore wa kutsu desu.
-これは靴です。
-
-これはかばんです。
-This is bag.
-kore wa kaban desu.
-これはかばんです。
-
-これはおくじょうゆうえんちです。
-This is amusement area.
-kore wa okujou yuuenchi desu.
-これは屋上遊園地です。
-
-これはもよおしものかいじょうです。
-This is event hall.
-kore wa moyooshimono kaijou desu.
-これは催し物会場です。
-
-これはおもちゃです。
-This is toy.
-kore wa omocha desu.
-これはおもちゃです。
-
-これはぶんぼうぐです。
-This is stationery.
-kore wa bunbougu desu.
-これは文房具です。
-
-これはかぐです。
-This is furniture.
-kore wa kagu desu.
-これは家具です。
-
-これはしょっきです。
-This is tableware / kitchenware.
-kore wa shokki desu.
-これは食器です。
-
-これはしんしふくです。
-This is men's wear.
-kore wa shinshifuku desu.
-これは紳士服です。
-
-これはふじんふくです。
-This is ladies' wear.
-kore wa fujinfuku desu.
-これは婦人服です。
-
-これはけしょうひんです。
-This is cosmetics.
-kore wa keshouhin desu.
-これは化粧品です。
-
-これはスポーツようひんです。
-This is sporting goods.
-kore wa supootsu youhin desu.
-これはスポーツ用品です。
-
-これはりょこうようひんです。
-This is leisure goods / travel goods.
-kore wa ryokou youhin desu.
-これは旅行用品です。
-
-これはでんかせいひんです。
-This is electrical appliances.
-kore wa denka seihin desu.
-これは電化製品です。
-
-これはしょくひんです。
-This is food.
-kore wa shokuhin desu.
-これは食品です。
-
-これはこどもふくです。
-This is children's clothes.
-kore wa kodomofuku desu.
-これは子ども服です。
-
-`;
-
-allWords["Sentence 03 - Hard"] = ``;
-
-allWords["Sentence 04"] = `
-おねがいします。
-Please. (ask for a favor)
-onegaishimasu
-おねがいします。
-
-これはごごです。
-This is p.m.
-kore wa gogo desu.
-これはごごです。
-
-けさにおきます。
-get up this morning.
-kesa ni okimasu.
-けさにおきます。
-
-デパートをねます。
-sleep department store.
-depaato o nemasu.
-デパートをねます。
-
-やすみます。
-take a rest.
-yasumimasu.
-やすみます。
-
-ぎんこうをべんきょうします。
-study bank.
-ginkou o benkyoushimasu.
-ぎんこうをべんきょうします。
-
-いまをおわります。
-finish now.
-ima o owarimasu.
-いまをおわります。
-
-はんにはたらきます。
-work half.
-han ni hatarakimasu.
-はんにはたらきます。
-
-なんじはそちらです。
-what time is your place.
-nanji wa sochira desu.
-なんじはそちらです。
-
-これはからです。
-This is from~.
-kore wa kara desu.
-これはからです。
-
-これはまでです。
-This is up to~.
-kore wa made desu.
-これはまでです。
-
-これはじです。
-This is -o'clock.
-kore wa ji desu.
-これはじです。
-
-これはふん・ぷんです。
-This is -minute.
-kore wa fun / ~pun desu.
-これはふん・ぷんです。
-
-これはなんぷんです。
-This is what minute.
-kore wa nanpun desu.
-これはなんぷんです。
-
-これはあさです。
-This is morning.
-kore wa asa desu.
-これはあさです。
-
-これはひるです。
-This is daytime.
-kore wa hiru desu.
-これはひるです。
-
-これはばん・よるです。
-This is night.
-kore wa ban / yoru desu.
-これはばん・よるです。
-
-これはあしたです。
-This is tomorrow.
-kore wa ashita desu.
-これはあしたです。
-
-これはあさってです。
-This is the day after tomorrow.
-kore wa asatte desu.
-これはあさってです。
-
-これはこんばんです。
-This is this evening.
-kore wa konban desu.
-これはこんばんです。
-
-これはやすみです。
-This is rest.
-kore wa yasumi desu.
-これはやすみです。
-
-これはひるやすみです。
-This is lunchtime.
-kore wa hiruyasumi desu.
-これはひるやすみです。
-
-これはまいあさです。
-This is every morning.
-kore wa maiasa desu.
-これはまいあさです。
-
-これはまいばんです。
-This is every night.
-kore wa maiban desu.
-これはまいばんです。
-
-これはまいにちです。
-This is every day.
-kore wa mainichi desu.
-これはまいにちです。
-
-これはなんようびです。
-This is what day of the week.
-kore wa nanyoubi desu.
-これはなんようびです。
-
-これはとです。
-This is and.
-kore wa to desu.
-これはとです。
-
-これはたいへんですねです。
-This is That's tough.
-kore wa taihen desu ne desu.
-これはたいへんですねです。
-
-これはえーとです。
-This is well.
-kore wa eeto desu.
-これはえーとです。
-
-これはニューヨークです。
-This is New York.
-kore wa nyuuyooku desu.
-これはニューヨークです。
-
-これはロンドンです。
-This is London.
-kore wa rondon desu.
-これはロンドンです。
-
-これはバンコクです。
-This is Bangkok.
-kore wa bankoku desu.
-これはバンコクです。
-
-これはいちじです。
-This is 1 o'clock.
-kore wa ichiji desu.
-これはいちじです。
-
-これはにじです。
-This is 2 o'clock.
-kore wa niji desu.
-これはにじです。
-
-これはさんじです。
-This is 3 o'clock.
-kore wa sanji desu.
-これはさんじです。
-
-これはよじです。
-This is 4 o'clock.
-kore wa yoji desu.
-これはよじです。
-
-これはごじです。
-This is 5 o'clock.
-kore wa goji desu.
-これはごじです。
-
-これはろくじです。
-This is 6 o'clock.
-kore wa rokuji desu.
-これはろくじです。
-
-これはしちじです。
-This is 7 o'clock.
-kore wa shichiji desu.
-これはしちじです。
-
-これははちじです。
-This is 8 o'clock.
-kore wa hachiji desu.
-これははちじです。
-
-これはくじです。
-This is 9 o'clock.
-kore wa kuji desu.
-これはくじです。
-
-これはじゅうじです。
-This is 10 o'clock.
-kore wa juuji desu.
-これはじゅうじです。
-
-これはじゅういちじです。
-This is 11 o'clock.
-kore wa juuichiji desu.
-これはじゅういちじです。
-
-これはじゅうにじです。
-This is 12 o'clock.
-kore wa juuniji desu.
-これはじゅうにじです。
-
-これはいっぷんです。
-This is 1 minute.
-kore wa ippun desu.
-これはいっぷんです。
-
-これはにふんです。
-This is 2 minutes.
-kore wa nifun desu.
-これはにふんです。
-
-これはさんぷんです。
-This is 3 minutes.
-kore wa sanpun desu.
-これはさんぷんです。
-
-これはよんぷんです。
-This is 4 minutes.
-kore wa yonpun desu.
-これはよんぷんです。
-
-これはごふんです。
-This is 5 minutes.
-kore wa gofun desu.
-これはごふんです。
-
-これはろっぷんです。
-This is 6 minutes.
-kore wa roppun desu.
-これはろっぷんです。
-
-これはななふん(or)しちふんです。
-This is 7 minutes.
-kore wa nanafun / shichifun desu.
-これはななふん(or)しちふんです。
-
-これははっぷんです。
-This is 8 minutes.
-kore wa happun desu.
-これははっぷんです。
-
-これはきゅうふんです。
-This is 9 minutes.
-kore wa kyuufun desu.
-これはきゅうふんです。
-
-これはじゅっぷん(or)じゅうっぷんです。
-This is 10 minutes.
-kore wa juppun / juuppun desu.
-これはじゅっぷん(or)じゅうっぷんです。
-
-これはじゅういっぷんです。
-This is 11 minutes.
-kore wa jūippun desu.
-これはじゅういっぷんです。
-
-これはおといあわせのばんごうです。
-This is the number being inquired about.
-kore wa otoiawase no bangou desu.
-これはおといあわせのばんごうです。
-
-これはびじゅつかんです。
-This is art museum.
-kore wa bijutsukan desu.
-これはびじゅつかんです。
-
-これはとしょかんです。
-This is library.
-kore wa toshokan desu.
-これはとしょかんです。
-
-これはゆうびんきょくです。
-This is post office.
-kore wa yuubinkyoku desu.
-これはゆうびんきょくです。
-
-これはロサンゼルスです。
-This is Los Angeles.
-kore wa rosanzerusu desu.
-これはロサンゼルスです。
-
-これはペキンです。
-This is Beijing.
-kore wa pekin desu.
-これはペキンです。
-
-これはおとといです。
-This is the day before yesterday.
-kore wa ototoi desu.
-これはおとといです。
-
-これはごぜんです。
-This is a.m.
-kore wa gozen desu.
-これはごぜんです。
-
-これはかしこまりましたです。
-This is Certainly.
-kore wa kashikomarimashita desu.
-これはかしこまりましたです。
-
-これはなんばんです。
-This is what number.
-kore wa nanban desu.
-これはなんばんです。
-
-これはばんごうです。
-This is number.
-kore wa bangou desu.
-これはばんごうです。
-
-これはきょうです。
-This is today.
-kore wa kyou desu.
-これはきょうです。
-
-これはきのうです。
-This is yesterday.
-kore wa kinou desu.
-これはきのうです。
-
-これはにちようびです。
-This is Sunday.
-kore wa nichiyoubi desu.
-これはにちようびです。
-
-これはげつようびです。
-This is Monday.
-kore wa getsuyoubi desu.
-これはげつようびです。
-
-これはかようびです。
-This is Tuesday.
-kore wa kayoubi desu.
-これはかようびです。
-
-これはすいようびです。
-This is Wednesday.
-kore wa suiyoubi desu.
-これはすいようびです。
-
-これはもくようびです。
-This is Thursday.
-kore wa mokuyoubi desu.
-これはもくようびです。
-
-これはきんようびです。
-This is Friday.
-kore wa kinyoubi desu.
-これはきんようびです。
-
-これはどようびです。
-This is Saturday.
-kore wa doyoubi desu.
-これはどようびです。
-
-これはけいさつしょです。
-This is police station.
-kore wa keisatsusho desu.
-これは警察署です。
-
-これはしょうぼうしょです。
-This is fire/ambulance station.
-kore wa shoubousho desu.
-これは消防署です。
-
-これはじほうです。
-This is time signal.
-kore wa jihou desu.
-これは時報です。
-
-これはてんきよほうです。
-This is weather forecast.
-kore wa tenki yohou desu.
-これは天気予報です。
-
-これはでんわばんごうあんないです。
-This is directory inquiries.
-kore wa denwa bangou annai desu.
-これは電話番号案内です。
-
-これはひょうごけんです。
-This is Hyogo Prefecture.
-kore wa hyougoken desu.
-これは兵庫県です。
-
-これはこうべしです。
-This is Kobe City.
-kore wa koubeshi desu.
-これは神戸市です。
-
-これはちゅうおうくです。
-This is Chuo Ward.
-kore wa chuuouku desu.
-これは中央区です。
-
-これはさんのみやです。
-This is Sannomiya.
-kore wa sannomiya desu.
-これは三宮です。
-
-これはごうです。
-This is apartment number.
-kore wa gou desu.
-これは号です。
-
-`;
-
-allWords["Sentence 04 - Hard"] = ``;
-
-allWords["Sentence 05"] = `
-かぞくはでんしゃです。
-family is train.
-kazoku wa densha desu.
-かぞくはでんしゃです。
-
-いつにいきます。
-go when.
-itsu ni ikimasu.
-いつにいきます。
-
-がっこうにきます。
-come school.
-gakkou ni kimasu.
-がっこうにきます。
-
-えきにかえります。
-go home station.
-eki ni kaerimasu.
-えきにかえります。
-
-これはちかてつです。
-This is subway.
-kore wa chikatetsu desu.
-これはちかてつです。
-
-これはバスです。
-This is bus.
-kore wa basu desu.
-これはバスです。
-
-これはタクシーです。
-This is taxi.
-kore wa takushii desu.
-これはタクシーです。
-
-これはひとです。
-This is person.
-kore wa hito desu.
-これはひとです。
-
-これはともだちです。
-This is friend.
-kore wa tomodachi desu.
-これはともだちです。
-
-これはかれです。
-This is he.
-kore wa kare desu.
-これはかれです。
-
-これはかのじょです。
-This is she.
-kore wa kanojo desu.
-これはかのじょです。
-
-これはひとりでです。
-This is alone.
-kore wa hitoride desu.
-これはひとりでです。
-
-これはせんしゅうです。
-This is last week.
-kore wa senshuu desu.
-これはせんしゅうです。
-
-これはこんしゅうです。
-This is this week.
-kore wa konshuu desu.
-これはこんしゅうです。
-
-これはらいしゅうです。
-This is next week.
-kore wa raishuu desu.
-これはらいしゅうです。
-
-これはにちです。
-This is ~th day of the month.
-kore wa nichi desu.
-これはにちです。
-
-これはなんにちです。
-This is which day of the month.
-kore wa nannichi desu.
-これはなんにちです。
-
-これはたんじょうびです。
-This is birthday.
-kore wa tanjoubi desu.
-これはたんじょうびです。
-
-これはつぎです。
-This is next.
-kore wa tsugi desu.
-これはつぎです。
-
-これはつぎのでんしゃです。
-This is next train.
-kore wa tsugino densha desu.
-これはつぎのでんしゃです。
-
-これはスーパーです。
-This is super market.
-kore wa suupaa desu.
-これはスーパーです。
-
-これはいちがつです。
-This is January.
-kore wa ichigatsu desu.
-これはいちがつです。
-
-これはにがつです。
-This is February.
-kore wa nigatsu desu.
-これはにがつです。
-
-これはさんがつです。
-This is March.
-kore wa sangatsu desu.
-これはさんがつです。
-
-これはしがつです。
-This is April.
-kore wa shigatsu desu.
-これはしがつです。
-
-これはごがつです。
-This is May.
-kore wa gogatsu desu.
-これはごがつです。
-
-これはろくがつです。
-This is June.
-kore wa rokugatsu desu.
-これはろくがつです。
-
-これはしちがつです。
-This is July.
-kore wa shichigatsu desu.
-これはしちがつです。
-
-これははちがつです。
-This is August.
-kore wa hachigatsu desu.
-これははちがつです。
-
-これはくがつです。
-This is September.
-kore wa kugatsu desu.
-これはくがつです。
-
-これはじゅうがつです。
-This is October.
-kore wa juugatsu desu.
-これはじゅうがつです。
-
-これはじゅういちがつです。
-This is November.
-kore wa juuichigatsu desu.
-これはじゅういちがつです。
-
-これはじゅうにがつです。
-This is December.
-kore wa juunigatsu desu.
-これはじゅうにがつです。
-
-これはひこうきです。
-This is airplane.
-kore wa hikouki desu.
-これはひこうきです。
-
-これはふつうです。
-This is local.
-kore wa futsuu desu.
-これはふつうです。
-
-これはきゅうこうです。
-This is Rapid.
-kore wa kyuukou desu.
-これはきゅうこうです。
-
-これはとっきゅうです。
-This is Express.
-kore wa tokkyuu desu.
-これはとっきゅうです。
-
-これはしんかんせんです。
-This is bullet train.
-kore wa shinkansen desu.
-これはしんかんせんです。
-
-これはじてんしゃです。
-This is bicycle.
-kore wa jitensha desu.
-これはじてんしゃです。
-
-これはあるいてです。
-This is on foot.
-kore wa aruite desu.
-これはあるいてです。
-
-これはばんせんです。
-This is platform ~.
-kore wa bansen desu.
-これはばんせんです。
-
-これはどういたしましてです。
-This is You're welcome. Don't mention it.
-kore wa dou itashimashite desu.
-これはどういたしましてです。
-
-これはらいねんです。
-This is next year.
-kore wa rainen desu.
-これはらいねんです。
-
-これはことしです。
-This is this year.
-kore wa kotoshi desu.
-これはことしです。
-
-これはきょねんです。
-This is last year.
-kore wa kyonen desu.
-これはきょねんです。
-
-これはらいげつです。
-This is next month.
-kore wa raigetsu desu.
-これはらいげつです。
-
-これはこんげつです。
-This is this month.
-kore wa kongetsu desu.
-これはこんげつです。
-
-これはついたちです。
-This is first day of the month.
-kore wa tsuitachi desu.
-これはついたちです。
-
-これはふつかです。
-This is second day.
-kore wa futsuka desu.
-これはふつかです。
-
-これはみっかです。
-This is third day of the month.
-kore wa mikka desu.
-これはみっかです。
-
-これはよっかです。
-This is fourth day of the month.
-kore wa yokka desu.
-これはよっかです。
-
-これはいつかです。
-This is fifth day of the month.
-kore wa itsuka desu.
-これはいつかです。
-
-これはむいかです。
-This is sixth day of the month.
-kore wa muika desu.
-これはむいかです。
-
-これはなのかです。
-This is seventh day of the month.
-kore wa nanoka desu.
-これはなのかです。
-
-これはようかです。
-This is eighth day of the month.
-kore wa youka desu.
-これはようかです。
-
-これはここのかです。
-This is ninth day of the month.
-kore wa kokonoka desu.
-これはここのかです。
-
-これはとおかです。
-This is tenth day of the month.
-kore wa tooka desu.
-これはとおかです。
-
-これはじゅういちにちです。
-This is Eleventh day of the month.
-kore wa juichi-nichi desu.
-これはじゅういちにちです。
-
-これはじゅうよっかです。
-This is fourteenth day of the month.
-kore wa juuyokka desu.
-これはじゅうよっかです。
-
-これははつかです。
-This is twentieth day of the month.
-kore wa hatsuka desu.
-これははつかです。
-
-これはにじゅうよっかです。
-This is twenty fourth day of the month.
-kore wa nijuuyokka desu.
-これはにじゅうよっかです。
-
-これはなんがつです。
-This is what month.
-kore wa nangatsu desu.
-これはなんがつです。
-
-これはふねです。
-This is ship.
-kore wa fune desu.
-これはふねです。
-
-これはがつです。
-This is ~th month of the year.
-kore wa gatsu desu.
-これはがつです。
-
-これはうみのひです。
-This is Marine Day.
-kore wa umi no hi desu.
-これは海の日です。
-
-これはしょうわのひです。
-This is Showa Day.
-kore wa shouwa no hi desu.
-これは昭和の日です。
-
-これはみどりのひです。
-This is Greenery Day.
-kore wa midori no hi desu.
-これはみどりの日です。
-
-これはこどものひです。
-This is Children's Day.
-kore wa kodomo no hi desu.
-これはこどもの日です。
-
-これはやまのひです。
-This is Mountain Day.
-kore wa yama no hi desu.
-これは山の日です。
-
-これはゴールデンウィークです。
-This is Golden Week.
-kore wa gooruden wiiku desu.
-これはゴールデンウィークです。
-
-これはけんぽうきねんびです。
-This is Constitution Memorial Day.
-kore wa kenpou kinenbi desu.
-これは憲法記念日です。
-
-これはしゅくさいじつです。
-This is national holiday.
-kore wa shukusaijitsu desu.
-これは祝祭日です。
-
-これはがんじつです。
-This is New Year's Day.
-kore wa ganjitsu desu.
-これは元日です。
-
-これはけんこくきねんのひです。
-This is National Foundation Day.
-kore wa kenkoku kinen no hi desu.
-これは建国記念の日です。
-
-これはけいろうのひです。
-This is Respect-for-the-Aged Day.
-kore wa keirou no hi desu.
-これは敬老の日です。
-
-これはきんろうかんしゃのひです。
-This is Labour Thanksgiving Day.
-kore wa kinrou kansha no hi desu.
-これは勤労感謝の日です。
-
-これはしゅんぶんのひです。
-This is Vernal Equinox Day.
-kore wa shunbun no hi desu.
-これは春分の日です。
-
-これはしゅうぶんのひです。
-This is Autumnal Equinox Day.
-kore wa shuubun no hi desu.
-これは秋分の日です。
-
-これはてんのうたんじょうびです。
-This is The Emperor's Birthday.
-kore wa tennou tanjoubi desu.
-これは天皇誕生日です。
-
-これはせいじんのひです。
-This is Coming-of-Age Day.
-kore wa seijin no hi desu.
-これは成人の日です。
-
-これはいちがつのだいにげつようびです。
-This is 2nd Monday of January.
-kore wa ichigatsu no dai-ni getsuyoubi desu.
-これは1月の第2月曜日です。
-
-これはたいいくのひです。
-This is Health and Sports Day.
-kore wa taiiku no hi desu.
-これは体育の日です。
-
-これはぶんかのひです。
-This is Culture Day.
-kore wa bunka no hi desu.
-これは文化の日です。
-
-`;
-
-allWords["Sentence 05 - Hard"] = ``;
-
-allWords["Sentence 06"] = `
-なんですか。
-Yes? (lit: What is it?)
-nan desu ka
-なんですか。
-
-にんじんです。
-This person is carrot.
-ninjin desu.
-にんじんです。
-
-これはたまごです。
-This is egg.
-kore wa tamago desu.
-これはたまごです。
-
-これはいちごです。
-This is strawberry.
-kore wa ichigo desu.
-これはいちごです。
-
-これはりんごです。
-This is apple.
-kore wa ringo desu.
-これはりんごです。
-
-ええをたべます。
-eat yes.
-ee o tabemasu.
-ええをたべます。
-
-わかりましたをのみます。
-drink Ok i understand.
-wakarimashita o nomimasu.
-わかりましたをのみます。
-
-いつもにききます。
-hear always.
-itsumo ni kikimasu.
-いつもにききます。
-
-それからをよみます。
-read after than.
-sorekara o yomimasu.
-それからをよみます。
-
-かいます。
-buy.
-kaimasu.
-かいます。
-
-ちょっとをします。
-do a little while.
-chotto o shimasu.
-ちょっとをします。
-
-すいます。
-smoke.
-suimasu.
-すいます。
-
-ときどきをとります。
-take sometimes.
-tokidoki o torimasu.
-ときどきをとります。
-
-いいですねにかきます。
-write that's good.
-ii desu ne ni kakimasu.
-いいですねにかきます。
-
-じゃ、またをみます。
-see well then See you [tomorrow].
-ja mata o mimasu.
-じゃ、またをみます。
-
-あいます。
-meet.
-aimasu.
-あいます。
-
-ごはんをおはなみをします。
-view the cherry blossoms a meal.
-gohan o ohanami o shimasu.
-ごはんをおはなみをします。
-
-これはあさごはんです。
-This is breakfast.
-kore wa asagohan desu.
-これはあさごはんです。
-
-これはひるごはんです。
-This is lunch.
-kore wa hirugohan desu.
-これはひるごはんです。
-
-これはばんごはんです。
-This is supper.
-kore wa bangohan desu.
-これはばんごはんです。
-
-これはパンです。
-This is bread.
-kore wa pan desu.
-これはパンです。
-
-これはにくです。
-This is meat.
-kore wa niku desu.
-これはにくです。
-
-これはさかなです。
-This is fish.
-kore wa sakana desu.
-これはさかなです。
-
-これはみずです。
-This is water.
-kore wa mizu desu.
-これはみずです。
-
-これはおちゃです。
-This is tea.
-kore wa ocha desu.
-これはおちゃです。
-
-これはこうちゃです。
-This is black tea.
-kore wa koucha desu.
-これはこうちゃです。
-
-これはジュースです。
-This is juice.
-kore wa juusu desu.
-これはジュースです。
-
-これはビールです。
-This is beer.
-kore wa biiru desu.
-これはビールです。
-
-これは（お）さけです。
-This is alcohol.
-kore wa (o)sake desu.
-これは（お）さけです。
-
-これはビデオです。
-This is video [tape].
-kore wa bideo desu.
-これはビデオです。
-
-これはえいがです。
-This is movie.
-kore wa eiga desu.
-これはえいがです。
-
-これはCDです。
-This is CD.
-kore wa shii dii desu.
-これはCDです。
-
-これはレポートです。
-This is report.
-kore wa repooto desu.
-これはレポートです。
-
-これはみせです。
-This is store.
-kore wa mise desu.
-これはみせです。
-
-これはレストランです。
-This is restaurant.
-kore wa resutoran desu.
-これはレストランです。
-
-これはテニスです。
-This is tennis.
-kore wa tenisu desu.
-これはテニスです。
-
-これはサッカーです。
-This is soccer.
-kore wa sakkaa desu.
-これはサッカーです。
-
-これはなにです。
-This is what.
-kore wa nani desu.
-これはなにです。
-
-これはメキシコです。
-This is Mekishiko.
-kore wa Mexico desu.
-これはメキシコです。
-
-これはくだものです。
-This is fruit.
-kore wa kudamono desu.
-これはくだものです。
-
-これはぎゅうにゅう・ミルクです。
-This is milk.
-kore wa gyuunyuu / miruku desu.
-これはぎゅうにゅう・ミルクです。
-
-これはやさいです。
-This is vegetable.
-kore wa yasai desu.
-これはやさいです。
-
-これはてがみです。
-This is letter.
-kore wa tegami desu.
-これはてがみです。
-
-これはしゃしんです。
-This is photograph.
-kore wa shashin desu.
-これはしゃしんです。
-
-これはにわです。
-This is garden.
-kore wa niwa desu.
-これはにわです。
-
-これはしゅくだいです。
-This is homework.
-kore wa shukudai desu.
-これはしゅくだいです。
-
-これはおはなみです。
-This is cherry blossom viewing.
-kore wa (o) hanami desu.
-これは（お）はなみです。
-
-これはいっしょにです。
-This is together.
-kore wa isshoni desu.
-これはいっしょにです。
-
-これはキャベツです。
-This is cabbage.
-kore wa kyabetsu desu.
-これはキャベツです。
-
-これはさけです。
-This is salmon.
-kore wa sake desu.
-これはさけです。
-
-これはレタスです。
-This is lettuce.
-kore wa retasu desu.
-これはレタスです。
-
-これはももです。
-This is peach.
-kore wa momo desu.
-これはももです。
-
-これはぎゅうにくです。
-This is beef.
-kore wa gyuuniku desu.
-これは牛肉です。
-
-これはとりにくです。
-This is chicken.
-kore wa toriniku desu.
-これは鶏肉です。
-
-これはぶたにくです。
-This is pork.
-kore wa butaniku desu.
-これは豚肉です。
-
-これはソーセージです。
-This is sausage.
-kore wa sooseeji desu.
-これはソーセージです。
-
-これはたまねぎです。
-This is onion.
-kore wa tamanegi desu.
-これはたまねぎです。
-
-これはねぎです。
-This is spring onion / scallion.
-kore wa negi desu.
-これはねぎです。
-
-これはすいかです。
-This is watermelon.
-kore wa suika desu.
-これはすいかです。
-
-これはたこです。
-This is octopus.
-kore wa tako desu.
-これはたこです。
-
-これはトマトです。
-This is tomato.
-kore wa tomato desu.
-これはトマトです。
-
-これはみかんです。
-This is mandarin orange.
-kore wa mikan desu.
-これはみかんです。
-
-これはバナナです。
-This is banana.
-kore wa banana desu.
-これはバナナです。
-
-これはハムです。
-This is ham.
-kore wa hamu desu.
-これはハムです。
-
-これはきゅうりです。
-This is cucumber.
-kore wa kyuuri desu.
-これはきゅうりです。
-
-これははくさいです。
-This is Chinese cabbage.
-kore wa hakusai desu.
-これは白菜です。
-
-これはほうれんそうです。
-This is spinach.
-kore wa hourensou desu.
-これはほうれんそうです。
-
-これはじゃがいもです。
-This is potato.
-kore wa jagaimo desu.
-これはじゃがいもです。
-
-これはだいこんです。
-This is Japanese radish / mooli.
-kore wa daikon desu.
-これは大根です。
-
-これはぶどうです。
-This is grape.
-kore wa budou desu.
-これはぶどうです。
-
-これはなしです。
-This is Japanese pear.
-kore wa nashi desu.
-これはなしです。
-
-これはかきです。
-This is persimmon.
-kore wa kaki desu.
-これはかきです。
-
-これはあじです。
-This is horse mackerel.
-kore wa aji desu.
-これはあじです。
-
-これはいわしです。
-This is sardine.
-kore wa iwashi desu.
-これはいわしです。
-
-これはさばです。
-This is mackerel.
-kore wa saba desu.
-これはさばです。
-
-これはさんまです。
-This is mackerel pike.
-kore wa sanma desu.
-これはさんまです。
-
-これはたいです。
-This is sea bream.
-kore wa tai desu.
-これはたいです。
-
-これはたらです。
-This is cod.
-kore wa tara desu.
-これはたらです。
-
-これはえびです。
-This is lobster / shrimp.
-kore wa ebi desu.
-これはえびです。
-
-これはかにです。
-This is crab.
-kore wa kani desu.
-これはかにです。
-
-これはいかです。
-This is cuttlefish / squid.
-kore wa ika desu.
-これはいかです。
-
-これはこめです。
-This is rice.
-kore wa kome desu.
-これはこめです。
-
-これはかいです。
-This is shellfish.
-kore wa kai desu.
-これはかいです。
-
-これはなすです。
-This is egg plant / aubergine.
-kore wa nasu desu.
-これはなすです。
-
-これはまめです。
-This is beans / peas.
-kore wa mame desu.
-これはまめです。
-
-`;
-
-allWords["Sentence 06 - Hard"] = ``;
-
-allWords["Sentence 07"] = `
-どうぞおあがりください。
-Do come in.
-douzo oagari kudasai
-どうぞおあがりください。
-
-ごめんください。
-Anybody home?, May I come in?
-gomenkudasai
-ごめんください。
-
-いらっしゃい。
-How nice of you to come. (lit. Welcome.)
-irasshai
-いらっしゃい。
-
-〜はいかがですか。
-Would you like to have ~?
-~ wa ikaga desu ka
-〜はいかがですか。
-
-いただきます。
-Thank you./I accept. (said before starting to eat or drink)
-itadakimasu
-いただきます。
-
-〜すてきですね。
-What a nice ~!
-~ suteki desu ne
-〜すてきですね。
-
-かして ください。
-Please lend (it to me).
-kashite kudasai
-かして ください。
-
-ちちはごしゅじんです。
-is husband.
-chichi wa goshujin desu.
-ちちはご主人です。
-
-ははははしです。
-is chopsticks.
-haha wa hashi desu.
-ははははしです。
-
-おとうさんはパンチです。
-is punch.
-otousan wa panchi desu.
-おとうさんはパンチです。
-
-おかあさんはかみです。
-is paper.
-okaasan wa kami desu.
-おかあさんはかみです。
-
-かぞくははなです。
-family is flower.
-kazoku wa hana desu.
-家族ははなです。
-
-そぼはクリスマスです。
-grandmother is Christmas.
-sobo wa kurisumasu desu.
-祖母はクリスマスです。
-
-そふはスプーンです。
-grandfather is spoon.
-sofu wa supuun desu.
-祖父はスプーンです。
-
-そふぼはナイフです。
-grandparents is knife.
-sofubo wa naifu desu.
-祖父母はナイフです。
-
-りょうしんはフォークです。
-parents is fork.
-ryoushin wa fooku desu.
-両親はフォークです。
-
-あねはパソコンです。
-elder sister is personal computer.
-ane wa pasokon desu.
-姉はパソコンです。
-
-いもうとはシャツです。
-younger sister is shirt.
-imouto wa shatsu desu.
-妹はシャツです。
-
-おとうとはプレゼントです。
-younger brother is present.
-otouto wa purezento desu.
-弟はプレゼントです。
-
-きょうだいはおかねです。
-brothers and sisters is money.
-kyoudai wa okane desu.
-兄弟はおかねです。
-
-つまはきっぷです。
-wife is ticket.
-tsuma wa kippu desu.
-妻はきっぷです。
-
-おっとはスペインです。
-husband is Spain.
-otto wa supein desu.
-夫はスペインです。
-
-ふうふはホッチキスです。
-husband and wife is stapler.
-fuufu wa hocchikisu desu.
-夫婦はホッチキスです。
-
-むすめはにもつです。
-daughter is luggage.
-musume wa nimotsu desu.
-娘はにもつです。
-
-むすこははさみです。
-son is scissors.
-musuko wa hasami desu.
-息子ははさみです。
-
-こどもはけしゴムです。
-children is eraser.
-kodomo wa keshigomu desu.
-子どもはけしゴムです。
-
-おばあさんはこれからです。
-grandmother is from now on.
-obaasan wa korekara desu.
-おばあさんはこれからです。
-
-おじいさんはりょこうです。
-grandfather is trip.
-ojiisan wa ryokou desu.
-おじいさんはりょこうです。
-
-ごりょうしんはヨーロッパです。
-parents is Europe.
-goryoushin wa yooroppa desu.
-ご両親はヨーロッパです。
-
-おねえさんはファックスです。
-elder sister is fax.
-oneesan wa fakkusu desu.
-お姉さんはファックスです。
-
-おにいさんはワープロです。
-elder brother is word processor.
-oniisan wa waapuro desu.
-お兄さんはワープロです。
-
-いもうとさんはセロテープです。
-younger sister is Sellotape.
-imoutosan wa seroteepu desu.
-妹さんはセロテープです。
-
-おとうとさんはケータイです。
-younger brother is mobile phone.
-otoutosan wa keetai desu.
-弟さんはケータイです。
-
-ごきょうだいはねんがじょうです。
-brothers and sisters is New Year's greeting card.
-gokyoudai wa nengajou desu.
-ご兄弟はねんがじょうです。
-
-おくさんはメールです。
-wife is e-mail.
-okusan wa meeru desu.
-奥さんはメールです。
-
-ごふうふはあniです。
-married couple is elder brother.
-gofuufu wa ani desu.
-ご夫婦は兄です。
-
-むすめさんはむすこさんです。
-daughter is son.
-musumesan wa musukosan desu.
-娘さんは息子さんです。
-
-おこさんです。
-children is here.
-okosan desu.
-お子さんです。
-
-でんわをかけます。
-make (a phone call)
-(denwa o) kakemasu
-でんわをかけます。
-
-りょこうをします。
-travel, make a trip
-ryokou o shimasu
-りょこうをします。
-
-きります。
-cut, slice
-kirimasu
-きります。
-
-おくります。
-send
-okurimasu
-おくります。
-
-あげます。
-give
-agemasu
-あげます。
-
-もらいます。
-receive.
-moraimasu.
-もらいます。
-
-かします。
-lend
-kashimasu
-かします。
-
-かります。
-borrow
-karimasu
-かります。
-
-おしえます。
-teach
-oshiemasu
-おしえます。
-
-ならいます。
-learn.
-naraimasu.
-ならいます。
-
-しつれいします。
-Excuse me. (lit. to be rude)
-shitsurei shimasu
-しつれいします。
-
-まだ、これはてです。
-This is hand.
-mada, kore wa te desu.
-まだ、これはてです。
-
-もう。
-already
-mou
-もう。
-
-`;
-
-allWords["Sentence 07 - Hard"] = ``;
-
-allWords["Sentence 08"] = `
-いいえ、けっこうです。
-No thank you.
-iie kekkoo desu.
-いいえ、けっこうです。
-
-おげんきですか。
-How are you?
-genki desu ka
-おげんきですか。
-
-またいらっしゃってください。
-Please come again.
-mata irasshatte kudasai
-またいらっしゃってください。
-
-〜もういっぱいいかがですか。
-Won't you have another cup of ~?
-~ mou ippai ikaga desu ka
-〜もういっぱいいかがですか。
-
-げんき（な）をしごとをします。
-do one's job healthy.
-genki na o shigoto o shimasu.
-げんき（な）をしごとをします。
-
-ちいさいをそろそろしつれいします。
-It's almost time to leave now small.
-chiisai o sorosoro shitsurei shimasu.
-ちいさいをそろそろしつれいします。
-
-これはむずかしいです。
-This is difficult.
-kore wa muzukashii desu.
-これはむずかしいです。
-
-これはたかいです。
-This is expensive.
-kore wa takai desu.
-これはたかいです。
-
-これはやすいです。
-This is inexpensive.
-kore wa yasui desu.
-これはやすいです。
-
-これはさくらです。
-This is cherry blossom.
-kore wa sakura desu.
-これはさくらです。
-
-これはが、です。
-This is ~ but ~.
-kore wa ga ~/ ~ nga desu.
-これはが、です。
-
-これはハンサム（な）です。
-This is handsome.
-kore wa hansamu na desu.
-これはハンサム（な）です。
-
-これはどれです。
-This is which one.
-kore wa dore desu.
-これはどれです。
-
-これはきれい（な）です。
-This is beautiful.
-kore wa kirei na desu.
-これはきれい（な）です。
-
-これはしずか（な）です。
-This is quiet.
-kore wa shizuka na desu.
-これはしずか（な）です。
-
-これはにぎやか（な）です。
-This is lively.
-kore wa nigiyaka na desu.
-これはにぎやか（な）です。
-
-これはすてき（な）です。
-This is fine.
-kore wa suteki na desu.
-これはすてき（な）です。
-
-これはおおきいです。
-This is big.
-kore wa ookii desu.
-これはおおきいです。
-
-これはあたらしいです。
-This is new.
-kore wa atarashii desu.
-これはあたらしいです。
-
-これはふるいです。
-This is old.
-kore wa furui desu.
-これはふるいです。
-
-これはおもしろいです。
-This is interesting.
-kore wa omoshiroi desu.
-これはおもしろいです。
-
-これはおいしいです。
-This is delicious.
-kore wa oishii desu.
-これはおいしいです。
-
-これはたのしいです。
-This is enjoyable.
-kore wa tanoshii desu.
-これはたのしいです。
-
-これはしろいです。
-This is white.
-kore wa shiroi desu.
-これはしろいです。
-
-これはくろいです。
-This is black.
-kore wa kuroi desu.
-これはくろいです。
-
-これはあかいです。
-This is red.
-kore wa akai desu.
-これはあかいです。
-
-これはあおいです。
-This is blue.
-kore wa aoi desu.
-これはあおいです。
-
-これはやまです。
-This is mountain.
-kore wa yama desu.
-これはやまです。
-
-これはまちです。
-This is town.
-kore wa machi desu.
-これはまちです。
-
-これはべんきょうです。
-This is study.
-kore wa benkyou desu.
-これはべんきょうです。
-
-これはどうです。
-This is how.
-kore wa dou desu.
-これはどうです。
-
-これはどんなです。
-This is what kind of ~.
-kore wa donna desu.
-これはどんなです。
-
-これはとてもです。
-This is very.
-kore wa totemo desu.
-これはとてもです。
-
-これはふじさんです。
-This is Mt. Fuji.
-kore wa fuji-san desu.
-これはふじさんです。
-
-これはところです。
-This is place.
-kore wa tokoro desu.
-これはところです。
-
-これはいそがしいです。
-This is busy.
-kore wa isogashii desu.
-これはいそがしいです。
-
-これはせいかつです。
-This is life.
-kore wa seikatsu desu.
-これはせいかつです。
-
-これはしんせつ（な）です。
-This is helpful.
-kore wa shinsetsu na desu.
-これはしんせつ（な）です。
-
-これはいい・よいです。
-This is good.
-kore wa ii / yoi desu.
-これはいい・よいです。
-
-これはあまりです。
-This is not so.
-kore wa amari desu.
-これはあまりです。
-
-これはそしてです。
-This is and.
-kore wa soshite desu.
-これはそしてです。
-
-これはやさしいです。
-This is easy.
-kore wa yasashii desu.
-これはやさしいです。
-
-これはゆうめい（な）です。
-This is famous.
-kore wa yuumei na desu.
-これはゆうめい（な）です。
-
-これはひま（な）です。
-This is free.
-kore wa hima na desu.
-これはひま（な）です。
-
-これはべんり（な）です。
-This is convenient.
-kore wa benri na desu.
-これはべんり（な）です。
-
-これはさむいです。
-This is cold.
-kore wa samui desu.
-これはさむいです。
-
-これはつめたいです。
-This is cold.
-kore wa tsumetai desu.
-これはつめたいです。
-
-これはひくいです。
-This is low.
-kore wa hikui desu.
-これはひくいです。
-
-これはくるまです。
-This is car.
-kore wa kuruma desu.
-これはくるまです。
-
-これはりょうです。
-This is dormitory.
-kore wa ryou desu.
-これはりょうです。
-
-これは（お）しごとです。
-This is work.
-kore wa (o)shigoto desu.
-これは（お）しごとです。
-
-これはそうですねです。
-This is Well let me see...
-kore wa sou desu ne desu.
-これはそうですねです。
-
-これはにほんのせいかつになれましたかです。
-This is Have you got used to the life in Japan?.
-kore wa nihon no seikatsu ni naremashita ka desu.
-これはにほんのせいかつになれましたかです。
-
-これはもうですねです。
-This is It's already ~ isn't it?.
-kore wa mou ~ desu ne desu.
-これはもうですねです。
-
-これはびわこです。
-This is Lake Biwa.
-kore wa biwa-ko desu.
-これはびわこです。
-
-これはシャンハイです。
-This is Shanghai.
-kore wa shanhai desu.
-これはシャンハイです。
-
-これはしちにんのさむらいです。
-This is The Seven Samurai.
-kore wa shichi-nin no samurai desu.
-これはしちにんのさむらいです。
-
-これはきんかくじです。
-This is Kinkakuji Temple.
-kore wa kinkakuji desu.
-これはきんかくじです。
-
-これはわるいです。
-This is bad.
-kore wa warui desu.
-これはわるいです。
-
-これはあついです。
-This is hot.
-kore wa atsui desu.
-これはあついです。
-
-これはたべものです。
-This is food.
-kore wa tabemono desu.
-これはたべものです。
-
-これはしろです。
-This is white.
-kore wa Shiro desu.
-これは白です。
-
-これはくろです。
-This is black.
-kore wa Kuro desu.
-これは黒です。
-
-これはあかです。
-This is red.
-kore wa Aka desu.
-これは赤です。
-
-これはあおです。
-This is blue.
-kore wa Ao desu.
-これは青です。
-
-これはみどりです。
-This is green.
-kore wa Midori desu.
-これは緑です。
-
-これはむらさきです。
-This is purple.
-kore wa Murasaki desu.
-これは紫です。
-
-これはピンクです。
-This is pink.
-kore wa Pinku desu.
-これはピンクです。
-
-これはオレンジです。
-This is orange.
-kore wa Orenji desu.
-これはオレンジです。
-
-これはグレーです。
-This is gray.
-kore wa Guree desu.
-これはグレーです。
-
-これはベージュです。
-This is beige.
-kore wa Beeju desu.
-これはベージュです。
-
-これはきいろいです。
-This is yellow.
-kore wa Kiiroi desu.
-これは黄色いです。
-
-これはちゃいろいです。
-This is brown.
-kore wa Chairoi desu.
-これは茶色いです。
-
-これはあまいです。
-This is sweet.
-kore wa Amai desu.
-これは甘いです。
-
-これはからいです。
-This is hot.
-kore wa Karai desu.
-これは辛いです。
-
-これはきいろです。
-This is yellow.
-kore wa Kiiro desu.
-これは黄色です。
-
-これはちゃいろです。
-This is brown.
-kore wa Chairo desu.
-これは茶色です。
-
-これはにがいです。
-This is bitter.
-kore wa Nigai desu.
-これは苦いです。
-
-これはしおからいです。
-This is salty.
-kore wa Shiokarai desu.
-これは塩辛いです。
-
-これはすっぱいです。
-This is sour.
-kore wa Suppai desu.
-これは酸っぱいです。
-
-これはこいです。
-This is strong.
-kore wa Koi desu.
-これは濃いです。
-
-これはうすいです。
-This is weak.
-kore wa Usui desu.
-これは薄いです。
-
-`;
-
-allWords["Sentence 08 - Hard"] = ``;
-
-allWords["Sentence 09"] = `
-いっしょにいかがですか。
-Won't you join me (us)?
-isshoni ikaga desu ka
-いっしょにいかがですか。
-
-だめですか。
-So you cannot (come)?
-dame desu ka
-だめですか。
-
-またこんどおねがいします。
-Please ask me again some other time. (used when refusing an invitation indirectly, considering someone's feelings)
-mata kondo onegaishimasu
-またこんどおねがいします。
-
-こどもはごしゅじんです。
-child is someone else's husband.
-kodomo wa goshujin desu.
-こどもはごしゅじんです。
-
-おくさんはおっと・しゅじんです。
-is .
-okusan wa otto / shujin desu.
-おくさんはおっと・しゅじんです。
-
-わかります。
-understand.
-wakarimasu.
-わかります。
-
-あります。
-have.
-arimasu.
-あります。
-
-すき（な）をスポーツをします。
-play sports like.
-suki na o supootsu o shimasu.
-すき（な）をスポーツをします。
-
-きらい（な）をやきゅうをします。
-play baseball dislike.
-kirai na o yakyuu o shimasu.
-きらい（な）をやきゅうをします。
-
-のみものをダンスをします。
-to dance drinks.
-nomimono o dansu o shimasu.
-のみものをダンスをします。
-
-これはだいたいです。
-This is mostly.
-kore wa daitai desu.
-これはだいたいです。
-
-これはえです。
-This is picture.
-kore wa e desu.
-これはえです。
-
-これはじです。
-This is letter.
-kore wa ji desu.
-これはじです。
-
-これはじかんです。
-This is time.
-kore wa jikan desu.
-これはじかんです。
-
-これはやくそくです。
-This is appointment.
-kore wa yakusoku desu.
-これはやくそくです。
-
-これはたくさんです。
-This is many.
-kore wa takusan desu.
-これはたくさんです。
-
-これはすこしです。
-This is a little.
-kore wa sukoshi desu.
-これはすこしです。
-
-これはぜんぜんです。
-This is not at all.
-kore wa zenzen desu.
-これはぜんぜんです。
-
-これはもしもしです。
-This is hello.
-kore wa moshimoshi desu.
-これはもしもしです。
-
-これはああです。
-This is oh.
-kore wa aa desu.
-これはああです。
-
-これははやくです。
-This is early.
-kore wa hayaku desu.
-これははやくです。
-
-これはスポーツです。
-This is sport.
-kore wa supootsu desu.
-これはスポーツです。
-
-これはダンスです。
-This is dance.
-kore wa dansu desu.
-これはダンスです。
-
-これはおんがくです。
-This is music.
-kore wa ongaku desu.
-これはおんがくです。
-
-これはクラシックです。
-This is classical music.
-kore wa kurashikku desu.
-これはクラシックです。
-
-これはジャズです。
-This is jazz.
-kore wa jazu desu.
-これはジャズです。
-
-これはコンサートです。
-This is concert.
-kore wa konsaato desu.
-これはコンサートです。
-
-これはカラオケです。
-This is karaoke.
-kore wa karaoke desu.
-これはカラオケです。
-
-これはかんじです。
-This is Chinese characters.
-kore wa kanji desu.
-これはかんじです。
-
-これはひらがなです。
-This is hiragana script.
-kore wa hiragana desu.
-これはひらがなです。
-
-これはカタカナです。
-This is katakana script.
-kore wa katakana desu.
-これはカタカナです。
-
-これはローマじです。
-This is Roman alphabet.
-kore wa roomaji desu.
-これはローマじです。
-
-これはチケットです。
-This is ticket.
-kore wa chiketto desu.
-これはチケットです。
-
-これはかぶきです。
-This is Traditional Japanese musical drama.
-kore wa kabuki desu.
-これはかぶきです。
-
-これはこまかいおかねです。
-This is small change.
-kore wa komakai okane desu.
-これはこまかいおかねです。
-
-これはざんねんですねです。
-This is I'm sorry.
-kore wa zannen desu ne desu.
-これはざんねんですねです。
-
-これはじょうず（な）です。
-This is good at.
-kore wa jouzu na desu.
-これはじょうず（な）です。
-
-これはへた（な）です。
-This is poor at.
-kore wa heta na desu.
-これはへた（な）です。
-
-これはようじです。
-This is something to do.
-kore wa youji desu.
-これはようじです。
-
-これはつま・かないです。
-This is .
-kore wa tsuma / kanai desu.
-これはつま・かないです。
-
-これはりょうりです。
-This is dish.
-kore wa ryouri desu.
-これはりょうりです。
-
-これはよくです。
-This is well.
-kore wa yoku desu.
-これはよくです。
-
-これははちょっと…です。
-This is ~ is a bit difficult..
-kore wa wa chotto... desu.
-これははちょっと…です。
-
-これはからです。
-This is because ~.
-kore wa kara desu.
-これはからです。
-
-これはどうしてです。
-This is why.
-kore wa doushite desu.
-これはどうしてです。
-
-これはすみませんです。
-This is I am sorry.
-kore wa sumimasen desu.
-これはすみませんです。
-
-これはやきゅうです。
-This is baseball.
-kore wa yakyuu desu.
-これはやきゅうです。
-
-これはうたです。
-This is song.
-kore wa uta desu.
-これはうたです。
-
-これはエスエフです。
-This is science fiction.
-kore wa Esuefu desu.
-これはSFです。
-
-これはせんそうです。
-This is war.
-kore wa Sensou desu.
-これは戦争です。
-
-これはラテンです。
-This is Latin-American.
-kore wa Raten desu.
-これはラテンです。
-
-これはけんどうです。
-This is Japanese fencing.
-kore wa Kendou desu.
-これは剣道です。
-
-これはミュージカルです。
-This is musical.
-kore wa Myuujikaru desu.
-これはミュージカルです。
-
-これはドキュメンタリーです。
-This is documentary.
-kore wa Dokyumentarii desu.
-これはドキュメンタリーです。
-
-これはれんあいです。
-This is romance.
-kore wa Ren'ai desu.
-これは恋愛です。
-
-これはポップスです。
-This is pop.
-kore wa Poppusu desu.
-これはポップスです。
-
-これはロックです。
-This is rock.
-kore wa Rokku desu.
-これはロックです。
-
-これはオペラです。
-This is opera.
-kore wa Opera desu.
-これはオペラです。
-
-これはホラーです。
-This is horror.
-kore wa Horaa desu.
-これはホラーです。
-
-これはアニメです。
-This is cartoon.
-kore wa Anime desu.
-これはアニメです。
-
-これはミステリーです。
-This is mystery.
-kore wa Misuterii desu.
-これはミステリーです。
-
-これはアクションです。
-This is action.
-kore wa Akushon desu.
-これはアクションです。
-
-これはソフトボールです。
-This is softball.
-kore wa Sofutobooru desu.
-これはソフトボールです。
-
-これはサッカーです。
-This is soccer.
-kore wa Sakkaa desu.
-これはサッカーです。
-
-これはラグビーです。
-This is rugby.
-kore wa Ragubii desu.
-これはラグビーです。
-
-これはすもうです。
-This is sumo.
-kore wa Sumou desu.
-これは相撲です。
-
-これはバレーボールです。
-This is volleyball.
-kore wa Bareebooru desu.
-これはバレーボールです。
-
-これはじゅうどうです。
-This is judo.
-kore wa Juudou desu.
-これは柔道です。
-
-これはバスケットボールです。
-This is basketball.
-kore wa Basukettobooru desu.
-これはバスケットボールです。
-
-これはテニスです。
-This is tennis.
-kore wa Tenisu desu.
-これはテニスです。
-
-これはボウリングです。
-This is bowling.
-kore wa Bouringu desu.
-これはBouringuです。
-
-これはスキーです。
-This is skiing.
-kore wa Sukii desu.
-これはスキーです。
-
-これはスケートです。
-This is skating.
-kore wa Sukeeto desu.
-これはスケートです。
-
-これはピンポンです。
-This is ping-pong.
-kore wa Pinpon desu.
-これはピンポンです。
-
-これはみんようです。
-This is folk.
-kore wa Minyou desu.
-これは民謡です。
-
-これはぶんげいです。
-This is film based on a classic work.
-kore wa Bungei desu.
-これは文芸です。
-
-これはきげきです。
-This is comedy.
-kore wa Kigeki desu.
-これは喜劇です。
-
-これはたっきゅうです。
-This is table tennis.
-kore wa Takkyuu desu.
-これは卓球です。
-
-これはすいえいです。
-This is swimming.
-kore wa Suiei desu.
-これは水泳です。
-
-これはえんかです。
-This is traditional Japanese popular songs.
-kore wa Enka desu.
-これは演歌です。
-
-`;
-
-allWords["Sentence 09 - Hard"] = ``;
-
-allWords["Sentence 10"] = `
-います。
-exist.
-imasu.
-います。
-
-あります。
-exist.
-arimasu.
-あります。
-
-これはいろいろ（な）です。
-This is various.
-kore wa iroiro na desu.
-これはいろいろ（な）です。
-
-これはきです。
-This is tree.
-kore wa ki desu.
-これはきです。
-
-これははこです。
-This is box.
-kore wa hako desu.
-これははこです。
-
-これはまどです。
-This is window.
-kore wa mado desu.
-これはまどです。
-
-これはなかです。
-This is in.
-kore wa naka desu.
-これはなかです。
-
-これはとなりです。
-This is next.
-kore wa tonari desu.
-これはとなりです。
-
-これはいちばんです。
-This is the number one.
-kore wa ichiban desu.
-これはいちばんです。
-
-これはおとこのひとです。
-This is man.
-kore wa otoko no hito desu.
-これはおとこのひとです。
-
-これはおんなのひとです。
-This is woman.
-kore wa onna no hito desu.
-これはおんなのひとです。
-
-これはおとこのこです。
-This is boy.
-kore wa otoko no ko desu.
-これはおとこのこです。
-
-これはおんなのこです。
-This is girl.
-kore wa onna no ko desu.
-これはおんなのこです。
-
-これはいぬです。
-This is dog.
-kore wa inu desu.
-これはいぬです。
-
-これはねこです。
-This is cat.
-kore wa neko desu.
-これはねこです。
-
-これはフィルムです。
-This is film.
-kore wa firumu desu.
-これはフィルムです。
-
-これはスイッチです。
-This is switch.
-kore wa suicchi desu.
-これはスイッチです。
-
-これはテーブルです。
-This is table.
-kore wa teeburu desu.
-これはテーブルです。
-
-これはベッドです。
-This is bed.
-kore wa beddo desu.
-これはベッドです。
-
-これはドアです。
-This is door.
-kore wa doa desu.
-これはドアです。
-
-これはこうえんです。
-This is park.
-kore wa kouen desu.
-これはこうえんです。
-
-これはやです。
-This is ~store.
-kore wa ya desu.
-これはやです。
-
-これはスパイスコーナーです。
-This is spice corner.
-kore wa supaisu koonaa desu.
-これはスパイスコーナーです。
-
-これはチリソースです。
-This is chili sauce.
-kore wa chiri soosu desu.
-これはチリソースです。
-
-これはとうきょうディズニーランドです。
-This is Tokyo Disneyland.
-kore wa toukyou dizuniirando desu.
-これはとうきょうディズニーランドです。
-
-これはでんちです。
-This is battery.
-kore wa denchi desu.
-これはでんちです。
-
-これはれいぞうこです。
-This is refrigerator.
-kore wa reizouko desu.
-これはれいぞうこです。
-
-これはきっさてんです。
-This is coffee shop.
-kore wa kissaten desu.
-これはきっさてんです。
-
-これはのりばです。
-This is a fixed place to catch taxis.
-kore wa noriba desu.
-これはのりばです。
-
-これはちかくです。
-This is near.
-kore wa chikaku desu.
-これはちかくです。
-
-これはあいだです。
-This is between.
-kore wa aida desu.
-これはあいだです。
-
-これはだんめです。
-This is the nth shelf.
-kore wa danme desu.
-これはだんめです。
-
-これはたなです。
-This is shelf.
-kore wa tana desu.
-これはたなです。
-
-これはほんやです。
-This is bookstore.
-kore wa honya desu.
-これはほんやです。
-
-これはうえです。
-This is on.
-kore wa ue desu.
-これはうえです。
-
-これはしたです。
-This is under.
-kore wa shita desu.
-これはしたです。
-
-これはまえです。
-This is front.
-kore wa mae desu.
-これはまえです。
-
-これはうしろです。
-This is back.
-kore wa ushiro desu.
-これはうしろです。
-
-これはみぎです。
-This is right.
-kore wa migi desu.
-これはみぎです。
-
-これはひだりです。
-This is left.
-kore wa hidari desu.
-これはひだりです。
-
-これはおくです。
-This is the back.
-kore wa oku desu.
-これはおくです。
-
-これはそとです。
-This is outside.
-kore wa soto desu.
-これはそとです。
-
-これはビルです。
-This is building.
-kore wa biru desu.
-これはビルです。
-
-これはけんです。
-This is prefecture.
-kore wa ken desu.
-これはけんです。
-
-これはどうもすみませんです。
-This is Thank you.
-kore wa doumo sumimasen desu.
-これはどうもすみませんです。
-
-これはポストです。
-This is mailbox.
-kore wa posuto desu.
-これはポストです。
-
-これはものです。
-This is thing.
-kore wa mono desu.
-これはものです。
-
-これはパンダです。
-This is panda.
-kore wa panda desu.
-これはパンダです。
-
-これはぞうです。
-This is elephant.
-kore wa zou desu.
-これはぞうです。
-
-これはATMです。
-This is cash machine.
-kore wa ee-tii-emu desu.
-これはATMです。
-
-これはコンビニです。
-This is convenience store.
-kore wa konbini desu.
-これはコンビニです。
-
-これはうちのなかです。
-This is Inside the house.
-kore wa uchi no naka desu.
-これはうちの中です。
-
-これはげんかんです。
-This is entrance hall.
-kore wa Genkan desu.
-これは玄関です。
-
-これはふろばです。
-This is bathroom.
-kore wa Furoba desu.
-これはふろ場です。
-
-これはせんめんじょです。
-This is washroom.
-kore wa Senmenjo desu.
-これは洗面所です。
-
-これはだいどころです。
-This is kitchen.
-kore wa Daidokoro desu.
-これは台所です。
-
-これはしょくどうです。
-This is dining room.
-kore wa Shokudou desu.
-これは食堂です。
-
-これはいまです。
-This is living room.
-kore wa Ima desu.
-これは居間です。
-
-これはしんしつです。
-This is bedroom.
-kore wa Shinshitsu desu.
-これは寝室です。
-
-これはろうかです。
-This is hall.
-kore wa Rouka desu.
-これは廊下です。
-
-これはベランダです。
-This is balcony.
-kore wa Beranda desu.
-これはベランダです。
-
-これはトイレです。
-This is toilet.
-kore wa Toire desu.
-これはトイレです。
-
-`;
-
-allWords["Sentence 10 - Hard"] = ``;
-
-allWords["Sentence 11"] = `
-いってらっしゃい。
-See you later./So long. (lit. Go and come back.)
-itterasshai
-いってらっしゃい。
-
-いって きます。
-See you later./So long. (lit. I'm going and coming back.)
-itte kimasu
-いって きます。
-
-いってまいります。
-I'm off, see you later. (lit. I'm going and coming back)
-itte mairimasu
-いってまいります。
-
-いらっしゃいませ。
-Welcome. / May I help you? (greeting a customer or a guest entering a shop)
-irasshaimase
-いらっしゃいませ。
-
-いいてんきですね。
-Nice weather isn't it?
-ii tenki desu ne
-いいてんきですね。
-
-おでかけですか。
-Are you going out?
-odekake desu ka
-おでかけですか。
-
-これはりんごです。
-This is apple.
-kore wa ringo desu.
-これはりんごです。
-
-たなかさんです。
-This is Tanaka-san.
-tanaka san desu.
-たなかさんです。
-
-みんなはすしです。
-all is vinegared rice with raw fish.
-minna wa Sushi desu.
-みんなはすしです。
-
-きょうだいはオーストラリアです。
-brothers and sisters is Australia.
-kyoudai wa oosutoraria desu.
-きょうだいはオーストラリアです。
-
-あにはみかんです。
-is mandarin orange.
-ani wa mikan desu.
-あにはみかんです。
-
-おにいさんはカレーです。
-is curry.
-oniisan wa karee desu.
-おにいさんはカレーです。
-
-あねはぜんぶでです。
-is in total.
-ane wa zenbude desu.
-あねはぜんぶでです。
-
-おねえさんはサンドイッチです。
-is sandwich.
-oneesan wa sandoicchi desu.
-おねえさんはサンドイッチです。
-
-おとうとはアイスクリームです。
-is ice cream.
-otouto wa aisukuriimu desu.
-おとうとはアイスクリームです。
-
-おとうとさんはいもうとです。
-is .
-otoutosan wa imouto desu.
-おとうとさんはいもうとです。
-
-いもうとさんはいちです。
-is one.
-imoutosan wa ichi desu.
-いもうとさんはいちです。
-
-にほんごです。
-This uses the language suffix -go (nihon-go).
-nihon go desu.
-にほんごです。
-
-（こどもが）います。
-have.
-(kodomo ga) imasu.
-（こどもが）います。
-
-（にほん）にいます。
-stay.
-(nihon) ni imasu.
-（にほん）にいます。
-
-（かいしゃを）やすみます。
-take a day off.
-(kaisha o) yasumimasu.
-（かいしゃを）やすみます。
-
-かかります。
-take.
-kakarimasu.
-かかります。
-
-これはにです。
-This is two.
-kore wa ni desu.
-これはにです。
-
-これはよんです。
-This is four.
-kore wa yon, shi desu.
-これはよんです。
-
-これはろくです。
-This is six.
-kore wa roku desu.
-これはろくです。
-
-これはななです。
-This is seven.
-kore wa nana, shichi desu.
-これはななです。
-
-これははちです。
-This is eight.
-kore wa hachi desu.
-これははちです。
-
-これはきゅうです。
-This is nine.
-kore wa kyuu, ku desu.
-これはきゅうです。
-
-これはじゅうです。
-This is ten.
-kore wa juu desu.
-これはじゅうです。
-
-これはひとりです。
-This is one person.
-kore wa hitori desu.
-これはひとりです。
-
-これはふたりです。
-This is two people.
-kore wa futari desu.
-これはふたりです。
-
-これはさんにんです。
-This is three people.
-kore wa sannin desu.
-これはさんにんです。
-
-これはよにんです。
-This is four people.
-kore wa yonin desu.
-これはよにんです。
-
-これはごにんです。
-This is five people.
-kore wa gonin desu.
-これはごにんです。
-
-これはろくにんです。
-This is six people.
-kore wa rokunin desu.
-これはろくにんです。
-
-これはななにん/しちにんです。
-This is seven people.
-kore wa nananin, shichinin desu.
-これはななにん/しちにんです。
-
-これははちにんです。
-This is eight people.
-kore wa hachinin desu.
-これははちにんです。
-
-これはきゅうにん/くにんです。
-This is nine people.
-kore wa kyuunin desu.
-これはきゅうにん/くにんです。
-
-これはじゅうにんです。
-This is ten people.
-kore wa juunin desu.
-これはじゅうにんです。
-
-これはいちだいです。
-This is one machine / vehicle.
-kore wa ichidai desu.
-これはいちだいです。
-
-これはにだいです。
-This is two machines / vehicles.
-kore wa nidai desu.
-これはにだいです。
-
-これはさんだいです。
-This is three machines / vehicles.
-kore wa sandai desu.
-これはさんだいです。
-
-これはよんだいです。
-This is four machines / vehicles.
-kore wa yondai desu.
-これはよんだいです。
-
-これはごだいです。
-This is five machines / vehicles.
-kore wa godai desu.
-これはごだいです。
-
-これはろくだいです。
-This is six machines / vehicles.
-kore wa rokudai desu.
-これはろくだいです。
-
-これはななだいです。
-This is seven machines / vehicles.
-kore wa nanadai desu.
-これはななだいです。
-
-これははちだいです。
-This is eight machines / vehicles.
-kore wa hachidai desu.
-これははちだいです。
-
-これはきゅうだいです。
-This is nine machines / vehicles.
-kore wa kyuudai desu.
-これはきゅうだいです。
-
-これはじゅうだいです。
-This is ten machines / vehicles.
-kore wa juudai desu.
-これはじゅうだいです。
-
-これはいちまいです。
-This is one flat object / sheet.
-kore wa ichimai desu.
-これはいちまいです。
-
-これはにまいです。
-This is two flat objects / sheets.
-kore wa nimai desu.
-これはにまいです。
-
-これはさんまいです。
-This is three flat objects / sheets.
-kore wa sanmai desu.
-これはさんまいです。
-
-これはよんまいです。
-This is four flat objects / sheets.
-kore wa yonmai desu.
-これはよんまいです。
-
-これはごまいです。
-This is five flat objects / sheets.
-kore wa gomai desu.
-これはごまいです。
-
-これはろくまいです。
-This is six flat objects / sheets.
-kore wa rokumai desu.
-これはろくまいです。
-
-これはななまいです。
-This is seven flat objects / sheets.
-kore wa nanamai desu.
-これはななまいです。
-
-これははちまいです。
-This is eight flat objects / sheets.
-kore wa hachimai desu.
-これははちまいです。
-
-これはきゅうまいです。
-This is nine flat objects / sheets.
-kore wa kyuumai desu.
-これはきゅうまいです。
-
-これはじゅうまいです。
-This is ten flat objects / sheets.
-kore wa juumai desu.
-これはじゅうまいです。
-
-これはいっかいです。
-This is once / one time.
-kore wa ikkai desu.
-これはいっかいです。
-
-これはにかいです。
-This is twice / two times.
-kore wa nikai desu.
-これはにかいです。
-
-これはさんかいです。
-This is three times.
-kore wa sankai desu.
-これはさんかいです。
-
-これはよんかいです。
-This is four times.
-kore wa yonkai desu.
-これはよんかいです。
-
-これはごかいです。
-This is five times.
-kore wa gokai desu.
-これはごかいです。
-
-これはろっかいです。
-This is six times.
-kore wa rokkai desu.
-これはろっかいです。
-
-これはなにかい/しちかいです。
-This is seven times.
-kore wa nanakai desu.
-これはなにかい/しちかいです。
-
-これははっかい/はちかいです。
-This is eight times.
-kore wa hakkai desu.
-これははっかい/はちかいです。
-
-これはきゅうかいです。
-This is nine times.
-kore wa kyuukai desu.
-これはきゅうかいです。
-
-これはじゅっかいです。
-This is ten times.
-kore wa jukkai desu.
-これはじゅっかいです。
-
-これはいちじかんです。
-This is one hour.
-kore wa ichijikan desu.
-これはいちじかんです。
-
-これはにじかんです。
-This is two hours.
-kore wa nijikan desu.
-これはにじかんです。
-
-これはさんじかんです。
-This is three hours.
-kore wa sanjikan desu.
-これはさんじかんです。
-
-これはよじかんです。
-This is four hours.
-kore wa yojikan desu.
-これはよじかんです。
-
-これはごじかんです。
-This is five hours.
-kore wa gojikan desu.
-これはごじかんです。
-
-これはろくじかんです。
-This is six hours.
-kore wa rokujikan desu.
-これはろくじかんです。
-
-これはしちじかん/ななじかんです。
-This is seven hours.
-kore wa shichijikan / nanajikan desu.
-これはしちじかん/ななじかんです。
-
-これははちじかんです。
-This is eight hours.
-kore wa hachijikan desu.
-これははちじかんです。
-
-これはくじかん/きゅうじかんです。
-This is nine hours.
-kore wa kujikan desu.
-これはくじかん/きゅうじかんです。
-
-これはじゅうじかんです。
-This is ten hours.
-kore wa juujikan desu.
-これはじゅうじかんです。
-
-これはきってです。
-This is postage stamp.
-kore wa kitte desu.
-これはきってです。
-
-これははがきです。
-This is post card.
-kore wa hagaki desu.
-これははがきです。
-
-これはふうとうです。
-This is envelope.
-kore wa fuutou desu.
-これはふうとうです。
-
-これはそくたつです。
-This is special delivery.
-kore wa sokutatsu desu.
-これはそくたつです。
-
-これはかきとめです。
-This is registered mail.
-kore wa kakitome desu.
-これはかきとめです。
-
-これはエアメール・こうくうびんです。
-This is airmail.
-kore wa eameeru desu.
-これはエアメール・こうくうびんです。
-
-これはふなびんです。
-This is sea mail.
-kore wa funabin desu.
-これはふなびんです。
-
-これはがいこくです。
-This is foreign country.
-kore wa gaikoku desu.
-これはがいこくです。
-
-これはだけです。
-This is only ~.
-kore wa dake desu.
-これはだけです。
-
-これはだいです。
-This is counter for machines cars etc.
-kore wa dai desu.
-これはだいです。
-
-これはまいです。
-This is counter for thin and flat objects such as paper stamps etc.
-kore wa mai desu.
-これはまいです。
-
-これはかいです。
-This is counter for frequency.
-kore wa kai desu.
-これはかいです。
-
-これはじかんです。
-This is .
-kore wa jikan desu.
-これはじかんです。
-
-これはしゅうかんです。
-This is .
-kore wa shuukan desu.
-これはしゅうかんです。
-
-これはかげつです。
-This is .
-kore wa kagetsu desu.
-これはかげつです。
-
-これはねんです。
-This is .
-kore wa nen desu.
-これはねんです。
-
-これはぐらいです。
-This is about.
-kore wa gurai desu.
-これはぐらいです。
-
-これはどのぐらいです。
-This is how long.
-kore wa donokurai desu.
-これはどのぐらいです。
-
-これはちょっとまでです。
-This is I'm just going to ~ for a short while.
-kore wa chotto ~ made desu.
-これはちょっとまでです。
-
-これはそれからです。
-This is and then.
-kore wa sorekara desu.
-これはそれからです。
-
-これはひとつです。
-This is one.
-kore wa hitotsu desu.
-これはひとつです。
-
-これはふたつです。
-This is two.
-kore wa futatsu desu.
-これはふたつです。
-
-これはみっつです。
-This is three.
-kore wa mittsu desu.
-これはみっつです。
-
-これはよっつです。
-This is four.
-kore wa yottsu desu.
-これはよっつです。
-
-これはいつつです。
-This is five.
-kore wa itsutsu desu.
-これはいつつです。
-
-これはむっつです。
-This is six.
-kore wa muttsu desu.
-これはむっつです。
-
-これはななつです。
-This is seven.
-kore wa nanatsu desu.
-これはななつです。
-
-これはやっつです。
-This is eight.
-kore wa yattsu desu.
-これはやっつです。
-
-これはここのつです。
-This is nine.
-kore wa kokonotsu desu.
-これはここのつです。
-
-これはとおです。
-This is ten.
-kore wa too desu.
-これはとおです。
-
-これはいくつです。
-This is how many.
-kore wa ikutsu desu.
-これはいくつです。
-
-これはにんです。
-This is ~ people.
-kore wa nin desu.
-これはにんです。
-
-これはなんねんです。
-This is what year.
-kore wa nannen desu.
-これはなんねんです。
-
-これはナンプラーです。
-This is nam pla.
-kore wa nanpuraa desu.
-これはナンプラーです。
-
-これはコーナーです。
-This is corner.
-kore wa koonaa desu.
-これはコーナーです。
-
-これはいちばんしたです。
-This is the bottom.
-kore wa ichiban shita desu.
-これはいちばんしたです。
-
-これはやきにくです。
-This is grilled meat.
-kore wa Yakiniku desu.
-これは焼き肉です。
-
-これはハンバーグです。
-This is hamburg steak.
-kore wa Hanbaagu desu.
-これはハンバーグです。
-
-これはハンバーガーです。
-This is hamburger.
-kore wa Hanbaagaa desu.
-これはハンバーガーです。
-
-これはコロッケです。
-This is croquette.
-kore wa Korokke desu.
-これはコロッケです。
-
-これはえびフライです。
-This is fried shrimp.
-kore wa Ebi furai desu.
-これはえびフライです。
-
-これはスパゲッティです。
-This is spaghetti.
-kore wa Supagettii desu.
-これはスパゲッティです。
-
-これはランチです。
-This is western-style set meal.
-kore wa Ranchi desu.
-これはランチです。
-
-これはカレーライスです。
-This is curry with rice.
-kore wa Kareeraisu desu.
-これはカレーライスです。
-
-これはみそしるです。
-This is miso soup.
-kore wa Misoshiru desu.
-これはみそ汁です。
-
-これはうどんです。
-This is Japanese noodles made from wheat flour.
-kore wa Udon desu.
-これはうどんです。
-
-これはそばです。
-This is Japanese noodles made from buckwheat flour.
-kore wa Soba desu.
-これはそばです。
-
-これはラーメンです。
-This is Chinese noodles in soup with meat and vegetables.
-kore wa Raamen desu.
-これはラーメンです。
-
-これはフライドチキンです。
-This is fried chicken.
-kore wa Furaido chikin desu.
-これはフライドチキンです。
-
-これはサラダです。
-This is salad.
-kore wa Sarada desu.
-これはサラダです。
-
-これはスープです。
-This is soup.
-kore wa Suupu desu.
-これはスープです。
-
-これはピザです。
-This is pizza.
-kore wa Piza desu.
-これはピザです。
-
-これはトーストです。
-This is toast.
-kore wa Toosuto desu.
-これはトーストです。
-
-これはコーヒーです。
-This is coffee.
-kore wa Koohii desu.
-これはコーヒーです。
-
-これはこうちゃです。
-This is black tea.
-kore wa Koucha desu.
-これは紅茶です。
-
-これはココアです。
-This is cocoa.
-kore wa Kokoa desu.
-これはココアです。
-
-これはジュースです。
-This is juice.
-kore wa Juusu desu.
-これはジュースです。
-
-これはコーラです。
-This is cola.
-kore wa Koora desu.
-これはコーラです。
-
-これはていしょくです。
-This is set meal.
-kore wa Teishoku desu.
-これは定食です。
-
-これはぎゅうどんです。
-This is a bowl of rice with beef.
-kore wa Gyudon desu.
-これは牛どんです。
-
-これはおにぎりです。
-This is rice ball.
-kore wa Onigiri desu.
-これはおにぎりです。
-
-これはてんぷらです。
-This is fried seafood and vegetables.
-kore wa Tenpura desu.
-これはてんぷらです。
-
-これはてんどんです。
-This is a bowl of rice with fried seafood and vegetables.
-kore wa Tendon desu.
-これは天どんです。
-
-これはおやこどんです。
-This is a bowl of rice with chicken and egg.
-kore wa Oyakodon desu.
-これは親子どんです。
-
-これはやさいいためです。
-This is sautéed vegetables.
-kore wa Yasai itame desu.
-これは野菜いためです。
-
-これはつけものです。
-This is pickles.
-kore wa Tsukemono desu.
-これは漬物です。
-
-これはやきそばです。
-This is Chinese stir-fried noodles with pork and vegetables.
-kore wa Yakisoba desu.
-これは焼きそばです。
-
-これはおこのみやきです。
-This is a type of pancake grilled with meat.
-kore wa Okonomiyaki desu.
-これはお好み焼きです。
-
-`;
-
-allWords["Sentence 11 - Hard"] = ``;
-
-allWords["Sentence 12"] = `
-かんたん（な）はどちらです。
-easy is which one.
-kantan na wa dochira desu.
-かんたん（な）はどちらです。
-
-これはとおいです。
-This is far.
-kore wa tooi desu.
-これはとおいです。
-
-これははやいです。
-This is fast.
-kore wa hayai desu.
-これははやいです。
-
-これはあたたかいです。
-This is warm.
-kore wa atatakai desu.
-これはあたたかいです。
-
-これはあまいです。
-This is sweet.
-kore wa amai desu.
-これはあまいです。
-
-これははるです。
-This is spring.
-kore wa haru desu.
-これははるです。
-
-これはなつです。
-This is summer.
-kore wa natsu desu.
-これはなつです。
-
-これはあきです。
-This is autumn.
-kore wa aki desu.
-これはあきです。
-
-これはあめです。
-This is rain.
-kore wa ame desu.
-これはあめです。
-
-これはゆきです。
-This is snow.
-kore wa yuki desu.
-これはゆきです。
-
-これはうみです。
-This is sea.
-kore wa umi desu.
-これはうみです。
-
-これはせかいです。
-This is world.
-kore wa sekai desu.
-これはせかいです。
-
-これははじめてです。
-This is for the first time.
-kore wa hajimete desu.
-これははじめてです。
-
-これはただいまです。
-This is I'm home.
-kore wa tadaima desu.
-これはただいまです。
-
-これはすごいですねです。
-This is That's amazing.
-kore wa sugoi desu ne desu.
-これはすごいですねです。
-
-これは（コーヒーが）いいです。
-This is prefer.
-kore wa (koohii ga) ii desu.
-これは（コーヒーが）いいです。
-
-これはホテルです。
-This is hotel.
-kore wa hoteru desu.
-これはホテルです。
-
-これはパーティーです。
-This is party.
-kore wa paatii desu.
-これはパーティーです。
-
-これはホンコンです。
-This is Hong Kong.
-kore wa honkon desu.
-これはホンコンです。
-
-これはシンガポールです。
-This is Singapore.
-kore wa shingapooru desu.
-これはシンガポールです。
-
-これはクラスです。
-This is class.
-kore wa kurasu desu.
-これはクラスです。
-
-これはすずしいです。
-This is cool.
-kore wa suzushii desu.
-これはすずしいです。
-
-これは（ひとが）おおいです。
-This is many.
-kore wa (hito ga) ooi desu.
-これは（ひとが）おおいです。
-
-これは（ひとが）すくないです。
-This is few.
-kore wa (hito ga) sukunai desu.
-これは（ひとが）すくないです。
-
-これはきせつです。
-This is season.
-kore wa kisetsu desu.
-これはきせつです。
-
-これはくもりです。
-This is cloudy.
-kore wa kumori desu.
-これはくもりです。
-
-これはしけんです。
-This is examination.
-kore wa shiken desu.
-これはしけんです。
-
-これはすきやきです。
-This is beef and vegetable hot pot.
-kore wa sukiyaki desu.
-これはすきやきです。
-
-これはさしみです。
-This is sliced raw fish.
-kore wa sashimi desu.
-これはさしみです。
-
-これはすしです。
-This is rice with vinegar topped with raw fish.
-kore wa sushi desu.
-これはすしです。
-
-これはてんぷらです。
-This is seafood and vegetables deep fried in batter.
-kore wa tempura desu.
-これはてんぷらです。
-
-これはいけばなです。
-This is flower arrangement.
-kore wa ikebana desu.
-これはいけばなです。
-
-これはもみじです。
-This is maple.
-kore wa momiji desu.
-これはもみじです。
-
-これはちかいです。
-This is near.
-kore wa chikai desu.
-これはちかいです。
-
-これはおそいです。
-This is slow.
-kore wa osoi desu.
-これはおそいです。
-
-これはからいです。
-This is hot.
-kore wa karai desu.
-これはからいです。
-
-これはおもいです。
-This is heavy.
-kore wa omoi desu.
-これはおもいです。
-
-これはかるいです。
-This is light.
-kore wa karui desu.
-これはかるいです。
-
-これはふゆです。
-This is winter.
-kore wa fuyu desu.
-これはふゆです。
-
-これはてんきです。
-This is weather.
-kore wa tenki desu.
-これはてんきです。
-
-これはくうこうです。
-This is airport.
-kore wa kuukou desu.
-これはくうこうです。
-
-これはまつりです。
-This is festival.
-kore wa matsuri desu.
-これはまつりです。
-
-これはどちらもです。
-This is both.
-kore wa dochiramo desu.
-これはどちらもです。
-
-これはずっとです。
-This is by far.
-kore wa zutto desu.
-これはずっとです。
-
-これはおかえりなさいです。
-This is Welcome home.
-kore wa okaerinasai desu.
-これはおかえりなさいです。
-
-これはでもです。
-This is but.
-kore wa demo desu.
-これはでもです。
-
-これはつかれましたです。
-This is I'm tired.
-kore wa tsukaremashita desu.
-これはつかれましたです。
-
-これはぶたにくです。
-This is pork.
-kore wa butaniku desu.
-これはぶたにくです。
-
-これはレモンです。
-This is lemon.
-kore wa remon desu.
-これはレモンです。
-
-これはわあ、すごいひとですねです。
-This is Wow! Look at all those people!.
-kore wa waa, sugoi hito desu ne desu.
-これはわあ、すごいひとですねです。
-
-これはろくおんじ（きんかくじ）きんかくです。
-This is Rokuon-ji Temple.
-kore wa Rokuonji (Kinkakuji) desu.
-これは鹿苑寺（金閣寺）です。
-
-これはひろしまです。
-This is Hiroshima.
-kore wa Hiroshima desu.
-これは広島です。
-
-これはひめじです。
-This is Himeji.
-kore wa Himeji desu.
-これは姫路です。
-
-これはおおさかです。
-This is Osaka.
-kore wa Oosaka desu.
-これは大阪です。
-
-これはならです。
-This is Nara.
-kore wa Nara desu.
-これは奈良です。
-
-これはきょうとです。
-This is Kyoto.
-kore wa Kyouto desu.
-これは京都です。
-
-これはとうきょうです。
-This is Tokyo.
-kore wa Toukyou desu.
-これは東京です。
-
-これはにっこうです。
-This is Nikko.
-kore wa Nikkou desu.
-これは日光です。
-
-これはひめじじょうです。
-This is Himeji Castle.
-kore wa Himejijou desu.
-これは姫路城です。
-
-これはふじさんです。
-This is Mt. Fuji.
-kore wa Fujisan desu.
-これは富士山です。
-
-これはかんだまつりです。
-This is Kanda Festival.
-kore wa Kanda Matsuri desu.
-これは神田祭です。
-
-これはてんじんまつりです。
-This is Tenjin Festival.
-kore wa Tenjin Matsuri desu.
-これは天神祭です。
-
-これはぎおんまつりです。
-This is Gion Festival.
-kore wa Gion Matsuri desu.
-これは祇園祭です。
-
-これはとうだいじです。
-This is Todai-ji Temple.
-kore wa Toudaiji desu.
-これは東大寺です。
-
-これはこうきょです。
-This is Imperial Palace.
-kore wa Koukyo desu.
-これは皇居です。
-
-これはまつりとめいしょです。
-This is Festivals and places of note.
-kore wa matsuri to meisho desu.
-これは祭りと名所です。
-
-これはげんばくドームです。
-This is Atomic Bomb Dome.
-kore wa Genbaku Doomu desu.
-これは原爆ドームです。
-
-これはだいぶつです。
-This is Great Buddha.
-kore wa Daibutsu desu.
-これは大仏です。
-
-これはとうしょうぐうです。
-This is Toshogu Shrine.
-kore wa Toushouguu desu.
-これは東照宮です。
-
-`;
-
-allWords["Sentence 12 - Hard"] = ``;
-
-allWords["Sentence 13"] = `
-そうしましょう。
-Let's do that
-sou shimashou
-そうしましょう。
-
-（しょうしょう）おまちください。
-Please wait (for a moment)
-(shoushou) omachi kudasai
-（しょうしょう）おまちください。
-
-そうですねをつかれます。
-get tired Yes.
-sou desu ne o tsukaremasu.
-そうですねをつかれます。
-
-さびしいをけっこんします。
-marry lonely.
-sabishii o kekkonshimasu.
-さびしいをけっこんします。
-
-ひろいをつりをします。
-to fish wide.
-hiroi o tsuri o shimasu.
-ひろいをつりをします。
-
-せまいをスキーをします。
-to ski narrow.
-semai o skii o shimasu.
-せまいをスキーをします。
-
-びじゅつをかいぎをします。
-hold a meeting fine arts.
-bijutsu o kaigi o shimasu.
-びじゅつをかいぎをします。
-
-ていしょくをとうろくをします。
-to register set meal.
-teishoku o touroku o shimasu.
-ていしょくをとうろくをします。
-
-たいへん（な）をおよぎます。
-swim hard.
-taihen na o oyogimasu.
-たいへん（な）をおよぎます。
-
-ほしいをむかえます。
-go to meet want.
-hoshii o mukaemasu.
-ほしいをむかえます。
-
-プールをだします。
-take out swimming pool.
-puuru o dashimasu.
-プールをだします。
-
-スキーを（みせに）はいります。
-enter skiing.
-skii o (mise ni) hairimasu.
-スキーを（みせに）はいります。
-
-かいぎを（みせを）でます。
-go out meeting.
-kaigi o (mise o) demasu.
-かいぎを（みせを）でます。
-
-しゅうまつをしょくじします。
-have a meal weekend.
-shuumatsu o shokujishimasu.
-しゅうまつをしょくじします。
-
-ロシアを（こうえんを）さんぽします。
-take a walk Russia.
-roshia o (kouen o) samposhimasu.
-ロシアを（こうえんを）さんぽします。
-
-しやくしょをあそびます。
-enjoy oneself city hall.
-shiyakusho o asobimasu.
-しやくしょをあそびます。
-
-けいざいをかいものします。
-do shopping economy.
-keizai o kaimonoshimasu.
-けいざいをかいものします。
-
-これはごろです。
-This is about.
-kore wa goro desu.
-これはごろです。
-
-これはつりです。
-This is fishing.
-kore wa tsuri desu.
-これはつりです。
-
-これはでんしじしょです。
-This is electronic dictionary.
-kore wa でんしじしょ desu.
-これはでんしじしょです。
-
-これはとうろくです。
-This is registration.
-kore wa touroku desu.
-これはとうろくです。
-
-これはごちゅうもんはです。
-This is May I take your order?.
-kore wa gochuumon wa desu.
-これはごちゅうもんはです。
-
-これはおなかがすきましたです。
-This is .
-kore wa onaka ga sukimashita desu.
-これはおなかがすきましたです。
-
-これはおなかがいっぱいですです。
-This is .
-kore wa onaka ga ippai desu desu.
-これはおなかがいっぱいですです。
-
-これはのどがかわきましたです。
-This is .
-kore wa nodo ga kawakimashita desu.
-これはのどがかわきましたです。
-
-これはぎゅうどんです。
-This is bowl of rice topped with beef.
-kore wa gyuudon desu.
-これはぎゅうどんです。
-
-これはかわです。
-This is river.
-kore wa kawa desu.
-これはかわです。
-
-これはなにかです。
-This is something.
-kore wa nanika desu.
-これはなにかです。
-
-これはどこかです。
-This is somewhere.
-kore wa dokoka desu.
-これはどこかです。
-
-これはべつべつにです。
-This is separately.
-kore wa betsubetsu ni desu.
-これはべつべつにです。
-
-これはえいがかんです。
-This is cinema.
-kore wa Eigakan desu.
-これは映画館です。
-
-これはどうぶつえんです。
-This is zoo.
-kore wa Doubutsuen desu.
-これは動物園です。
-
-これはにくやです。
-This is butcher's shop.
-kore wa Nikuya desu.
-これは肉屋です。
-
-これはさかやです。
-This is off-licence.
-kore wa Sakaya desu.
-これは酒屋です。
-
-これはびじゅつかんです。
-This is art museum.
-kore wa Bijutsukan desu.
-これは美術館です。
-
-これはとしょかんです。
-This is library.
-kore wa Toshokan desu.
-これは図書館です。
-
-これはゆうえんちです。
-This is amusement park.
-kore wa Yuuenchi desu.
-これは遊園地です。
-
-これはおてらです。
-This is Buddhist temple.
-kore wa Otera desu.
-これはお寺です。
-
-これはじんじゃです。
-This is Shinto shrine.
-kore wa Jinja desu.
-これは神社です。
-
-これはモスクです。
-This is Mosque.
-kore wa Mosuku desu.
-これはモスクです。
-
-これはこうえんです。
-This is park.
-kore wa Kouen desu.
-これは公園です。
-
-これはたいしかんです。
-This is embassy.
-kore wa Taishikan desu.
-これは大使館です。
-
-これはけいさつしょです。
-This is police station.
-kore wa Keisatsusho desu.
-これは警察署です。
-
-これはしょうぼうしょです。
-This is fire station.
-kore wa Shoubousho desu.
-これは消防署です。
-
-これはちゅうしゃじょうです。
-This is car park.
-kore wa Chuushajou desu.
-これは駐車場です。
-
-これはだいがくです。
-This is university.
-kore wa Daigaku desu.
-これは大学です。
-
-これはこうこうです。
-This is senior high school.
-kore wa Koukou desu.
-これは高校です。
-
-これはちゅうがっこうです。
-This is junior high school.
-kore wa Chuugakkou desu.
-これは中学校です。
-
-これはしょうがっこうです。
-This is elementary school.
-kore wa Shougakkou desu.
-これは小学校です。
-
-これはようちえんです。
-This is kindergarten.
-kore wa Youchien desu.
-これは幼稚園です。
-
-これはパンやです。
-This is bakery.
-kore wa Pan-ya desu.
-これはパン屋です。
-
-これはさかなやです。
-This is fishmonger's.
-kore wa Sakanaya desu.
-これは魚屋です。
-
-これはきっさてんです。
-This is café.
-kore wa Kissaten desu.
-これは喫茶店です。
-
-これはコンビニです。
-This is convenience store.
-kore wa Konbini desu.
-これはコンビニです。
-
-これはスーパーです。
-This is supermarket.
-kore wa Suupaa desu.
-これはスーパーです。
-
-これはデパートです。
-This is department store.
-kore wa Depaato desu.
-これはデパートです。
-
-これはにゅうこくかんりきょくです。
-This is immigration bureau.
-kore wa Nyuukokukanrikyoku desu.
-これは入国管理局です。
-
-これはきょうかいです。
-This is Christian church.
-kore wa Kyoukai desu.
-これは教会です。
-
-これはこうばんです。
-This is police box.
-kore wa Kouban desu.
-これは交番です。
-
-これははくぶつかんです。
-This is museum.
-kore wa Hakubutsukan desu.
-これは博物館です。
-
-これはたいいくかんです。
-This is gymnasium.
-kore wa Taiikukan desu.
-これは体育館です。
-
-これはしょくぶつえんです。
-This is botanical garden.
-kore wa Shokubutsuen desu.
-これは植物園です。
-
-これはやおやです。
-This is greengrocer's.
-kore wa Yaoya desu.
-これは八百屋です。
-
-`;
-
-allWords["Sentence 13 - Hard"] = ``;
-
-allWords["Sentence 14"] = `
-しんごうをみぎへまがってください。
-Turn to the right at the signal.
-shingou o migi e magatte kudasai
-しんごうをみぎへまがってください。
-
-これでおねがいします。
-I'd like to pay with this.
-kore de onegaishimasu
-これでおねがいします。
-
-ゆっくりをおしえます。
-tell slowly.
-yukkuri o oshiemasu.
-ゆっくりをおしえます。
-
-すぐをはなします。
-speak immediately.
-sugu o hanashimasu.
-すぐをはなします。
-
-またをみせます。
-show again.
-mata o misemasu.
-またをみせます。
-
-あとでをはじめます。
-start later.
-atode o hajimemasu.
-あとでをはじめます。
-
-もうすこしをコピーします。
-copy a little more.
-mou sukoshi o kopii shimasu.
-もうすこしをコピーします。
-
-いいですよをつけます。
-turn on Sure. Certainly.
-ii desu yo o tsukemasu.
-いいですよをつけます。
-
-さあをけします。
-turn off right.
-saa o keshimasu.
-さあをけします。
-
-まっすぐをあけます。
-open straight.
-massugu o akemasu.
-まっすぐをあけます。
-
-しおをしめます。
-close salt.
-shio o shimemasu.
-しおをしめます。
-
-エアコンをまちます。
-wait air conditioner.
-eakon o machimasu.
-エアコンをまちます。
-
-パスポートをとめます。
-stop passport.
-pasupooto o tomemasu.
-パスポートをとめます。
-
-なまえを（みぎへ）まがります。
-turn name.
-namae o (migi e) magarimasu.
-なまえを（みぎへ）まがります。
-
-ちずをもちます。
-hold map.
-chizu o mochimasu.
-ちずをもちます。
-
-じゅうしょをよびます。
-call address.
-juusho o yobimasu.
-じゅうしょをよびます。
-
-さとうを（あめが）ふります。
-to fall sugar.
-satou o (ame ga) furimasu.
-さとうを（あめが）ふります。
-
-おつりをいそぎます。
-hurry change.
-otsuri o isogimasu.
-おつりをいそぎます。
-
-よみかたをとります。
-take how to read.
-yomikata o torimasu.
-よみかたをとります。
-
-てつだいます。
-help.
-tetsudaimasu.
-てつだいます。
-
-あれはじどうけんばいきです。
-This/that is ticket machine.
-are wa Jidou kenbaiki desu.
-あれは自動券売機です。
-
-もう、これはかたです。
-This is how to ~.
-mou, kore wa kata desu.
-もう、これはかたです。
-
-これはきっぷうりばです。
-This is ticket office.
-kore wa Kippu uriba desu.
-これは切符売り場です。
-
-これはちゅうおうぐちです。
-This is central exit.
-kore wa Chuuouguchi desu.
-これは中央口です。
-
-これはホームです。
-This is platform.
-kore wa hoomu desu.
-これはプラットホームです。
-
-これはタクシーのりばです。
-This is taxi rank.
-kore wa Takushii noriba desu.
-これはタクシー乗り場です。
-
-これはとうきょういきです。
-This is for [TOKYO].
-kore wa iki desu.
-これは東京行きです。
-
-これはえきです。
-This is Station.
-kore wa Eki desu.
-これは駅です。
-
-これはでぐちです。
-This is exit.
-kore wa Deguchi desu.
-これは出口です。
-
-これはいりぐちです。
-This is entrance.
-kore wa Iriguchi desu.
-これは入り口です。
-
-これはひがしぐちです。
-This is east exit.
-kore wa Higashiguchi desu.
-これは東口です。
-
-これはにしぐちです。
-This is west exit.
-kore wa Nishiguchi desu.
-これは西口です。
-
-これはみなみぐちです。
-This is south exit.
-kore wa Minamiguchi desu.
-これは南口です。
-
-これはきたぐちです。
-This is north exit.
-kore wa Kitaguchi desu.
-これは北口です。
-
-これはコインロッカーです。
-This is coin locker.
-kore wa Koin rokkaa desu.
-これはコインロッカーです。
-
-これはバスターミナルです。
-This is bus terminal.
-kore wa Basu taaminaru desu.
-これはバスターミナルです。
-
-これはバスていです。
-This is bus stop.
-kore wa Basutei desu.
-これはバス停です。
-
-これはとっきゅうです。
-This is super-express train.
-kore wa Tokkyuu desu.
-これは特急です。
-
-これはきゅうこうです。
-This is express train.
-kore wa Kyuukou desu.
-これは急行です。
-
-これはふつうです。
-This is local train.
-kore wa Futsuu desu.
-これは普通です。
-
-これはじこくひょうです。
-This is timetable.
-kore wa Jikokuhyou desu.
-これは時刻表です。
-
-これはかいさつぐちです。
-This is ticket barrier.
-kore wa Kaisatsuguchi desu.
-これは改札口です。
-
-これはかいすうけんです。
-This is coupon ticket.
-kore wa Kaisuuken desu.
-これは回数券です。
-
-これはていきけんです。
-This is season ticket.
-kore wa Teikiken desu.
-これは定期券です。
-
-これはせいさんきです。
-This is fare adjustment machine.
-kore wa Seisanki desu.
-これは精算機です。
-
-これはばいてんです。
-This is kiosk.
-kore wa Baiten desu.
-これは売店です。
-
-これはかいそくです。
-This is rapid service train.
-kore wa Kaisoku desu.
-これは快速です。
-
-これはじゅんきゅうです。
-This is semi-express train.
-kore wa Junkyuu desu.
-これは準急です。
-
-これははつです。
-This is departing ～.
-kore wa hatsu desu.
-これは発です。
-
-これはちゃくです。
-This is arriving at ～.
-kore wa chaku desu.
-これは着です。
-
-これはかたみちです。
-This is one way.
-kore wa Katamichi desu.
-これは片道です。
-
-これはおうふくです。
-This is return/round trip.
-kore wa Oufuku desu.
-これは往復です。
-
-`;
-
-allWords["Sentence 14 - Hard"] = ``;
-
-allWords["Sentence 15"] = `
-いらっしゃいます。
-be (honorific equivalent of imasu)
-irasshaimasu
-いらっしゃいます。
-
-ふくをけんきゅうします。
-to research clothes.
-fuku o kenkyuu shimasu.
-ふくをけんきゅうします。
-
-すんでいます。
-live.
-sundeimasu.
-すんでいます。
-
-おおさかにすんでいます。
-live in Osaka.
-oosaka ni sundeimasu.
-おおさかにすんでいます。
-
-カタログをつくります。
-make catalog.
-katarogu o tsukurimasu.
-カタログをつくります。
-
-ごかぞくをしります。
-get to know your family.
-gokazoku o shirimasu.
-ごかぞくをしります。
-
-しっています。
-know.
-shitteimasu.
-しっています。
-
-ソフトをおもいだします。
-remember software.
-sofuto o omoidashimasu.
-ソフトをおもいだします。
-
-こうこうをたちます。
-stand up senior high school.
-koukou o tachimasu.
-こうこうをたちます。
-
-せいひんをすわります。
-sit down products.
-seihin o suwarimasu.
-せいひんをすわります。
-
-つかいます。
-use.
-tsukaimasu.
-つかいます。
-
-じこくひょうにおきます。
-put timetable.
-jikokuhyou ni okimasu.
-じこくひょうにおきます。
-
-プレイガイドをうります。
-sell .
-pureigaido o urimasu.
-プレイガイドをうります。
-
-すみます。
-to live.
-sumimasu.
-すみます。
-
-これはしりょうです。
-This is materials.
-kore wa shiryou desu.
-これはしりょうです。
-
-これはどくしんです。
-This is single.
-kore wa dokushin desu.
-これはどくしんです。
-
-これはとくにです。
-This is especially.
-kore wa tokuni desu.
-これはとくにです。
-
-これはせんもんです。
-This is specialty.
-kore wa senmon desu.
-これはせんもんです。
-
-これははいしゃです。
-This is dentist.
-kore wa haisha desu.
-これははいしゃです。
-
-これはスポーツせんしゅです。
-This is athlete.
-kore wa Supootsu senshu desu.
-これはスポーツ選手です。
-
-これはせいじかです。
-This is politician.
-kore wa Seijika desu.
-これは政治家です。
-
-これはおんがくかです。
-This is musician.
-kore wa Ongakuka desu.
-これは音楽家です。
-
-これはえきいんです。
-This is station attendant.
-kore wa Ekiin desu.
-これは駅員です。
-
-これはうんてんしゅです。
-This is driver.
-kore wa Untenshu desu.
-これは運転手です。
-
-これはけいさつかんです。
-This is policeman.
-kore wa Keisatsukan desu.
-これは警察官です。
-
-これはかいしゃいんです。
-This is company employee.
-kore wa Kaishain desu.
-これは会社員です。
-
-これはぎんこういんです。
-This is bank employee.
-kore wa Ginkouin desu.
-これは銀行員です。
-
-これはゆうびんきょくいんです。
-This is postman.
-kore wa Yuubinkyokuin desu.
-これは郵便局員です。
-
-これはてんいんです。
-This is shop assistant.
-kore wa Tenin desu.
-これは店員です。
-
-これはきょうしです。
-This is teacher.
-kore wa Kyoushi desu.
-これは教師です。
-
-これはべんごしです。
-This is solicitor.
-kore wa Bengoshi desu.
-これは弁護士です。
-
-これはけんきゅうしゃです。
-This is research worker.
-kore wa Kenkyuusha desu.
-これは研究者です。
-
-これはエンジニアです。
-This is engineer.
-kore wa Enjinia desu.
-これはエンジニアです。
-
-これはデザイナーです。
-This is designer.
-kore wa Dezainaa desu.
-これはデザイナーです。
-
-これはジャーナリストです。
-This is journalist.
-kore wa Jaanarisuto desu.
-これはジャーナリストです。
-
-これはしょくぎょうです。
-This is Occupations.
-kore wa shokugyou desu.
-これは職業です。
-
-これはこうむいんです。
-This is civil servant.
-kore wa Koumuin desu.
-これは公務員です。
-
-これはちょうりしです。
-This is cook.
-kore wa Chourishi desu.
-これは調理師です。
-
-これはりようしです。
-This is barber.
-kore wa Riyoushi desu.
-これは理容師です。
-
-これはびようしです。
-This is beautician.
-kore wa Biyoushi desu.
-これは美容師です。
-
-これはかんごしです。
-This is nurse.
-kore wa Kangoshi desu.
-これは看護師です。
-
-これはがいこうかんです。
-This is diplomat.
-kore wa Gaikoukan desu.
-これは外交官です。
-
-これはがかです。
-This is painter.
-kore wa Gaka desu.
-これは画家です。
-
-これはさっかです。
-This is author.
-kore wa Sakka desu.
-これは作家です。
-
-これはけんちくかです。
-This is architect.
-kore wa Kenchikuka desu.
-これは建築家です。
-
-これはかしゅです。
-This is singer.
-kore wa Kashu desu.
-これは歌手です。
-
-これははいゆうです。
-This is actor.
-kore wa Haiyuu desu.
-これは俳優です。
-
-`;
-
-allWords["Sentence 15 - Hard"] = ``;
-
-allWords["Sentence 16"] = `
-おひきだしですか。
-Are you making a withdrawal?
-ohikidashi desu ka
-おひきだしですか。
-
-あたまがいいを（シャワーを）あびます。
-bathe clever.
-atama ga ii o (shawaa o) abimasu.
-あたまがいいを（シャワーを）あびます。
-
-あたまをだします。
-take out head.
-atama o dashimasu.
-あたまをだします。
-
-かみをかくにんします。
-confirm hair.
-kami o kakunin shimasu.
-かみをかくにんします。
-
-かおを（だいがくに）はいります。
-enter face.
-kao o (daigaku ni) hairimasu.
-かおを（だいがくに）はいります。
-
-サービスを（だいがくを）でます。
-graduate service.
-saabisu o (daigaku o) demasu.
-サービスを（だいがくを）でます。
-
-みどりをジョギングをします。
-jog green.
-midori o jogingu o shimasu.
-みどりをジョギングをします。
-
-どうやってをおします。
-push how.
-douyatte o oshimasu.
-どうやってをおします。
-
-どのをいれます。
-put in which ~.
-dono o iremasu.
-どのをいれます。
-
-いいえ、まだまだですを（でんしゃに）のります。
-ride No I still have a long way to go.
-iie mada mada desu o (densha ni) norimasu.
-いいえ、まだまだですを（でんしゃに）のります。
-
-わたしは（でんしゃを）おります。
-I am here (humble).
-watashi wa (densha o) orimasu.
-わたしは（でんしゃを）おります。
-
-キャッシュカードを（でんしゃに）のりかえます。
-change cash card.
-kyasshu kaado o (densha ni) norikaemasu.
-キャッシュカードを（でんしゃに）のりかえます。
-
-つぎにをやめます。
-quit next.
-tsugi ni o yamemasu.
-つぎにをやめます。
-
-ボタンをはいります。
-enter button.
-botan o hairimasu.
-ボタンをはいります。
-
-これはアジアです。
-This is Asia.
-kore wa ajia desu.
-これはアジアです。
-
-これはバンドンです。
-This is Bandung.
-kore wa bandon desu.
-これはバンドンです。
-
-これはベラクルスです。
-This is Veracruz.
-kore wa berakurusu desu.
-これはベラクルスです。
-
-これはフランケンです。
-This is Franken.
-kore wa furanken desu.
-これはフランケンです。
-
-これはベトナムです。
-This is Vietnam.
-kore wa betonamu desu.
-これはベトナムです。
-
-これはフエです。
-This is Hue.
-kore wa fue desu.
-これはフエです。
-
-これはわかいです。
-This is young.
-kore wa wakai desu.
-これはわかいです。
-
-これはながいです。
-This is long.
-kore wa nagai desu.
-これはながいです。
-
-これはあかるいです。
-This is bright.
-kore wa akarui desu.
-これはあかるいです。
-
-これはおなかです。
-This is stomach.
-kore wa onaka desu.
-これはおなかです。
-
-これははなです。
-This is nose.
-kore wa hana desu.
-これははなです。
-
-これはジョギングです。
-This is jogging.
-kore wa jogingu desu.
-これはジョギングです。
-
-これはシャワーです。
-This is shower.
-kore wa shawaa desu.
-これはシャワーです。
-
-これはばんです。
-This is number ~.
-kore wa ban desu.
-これはばんです。
-
-これはおろしますおかねをです。
-This is withdraw.
-kore wa oroshimasu desu.
-これはおろしますおかねをです。
-
-これはおてらです。
-This is Buddhist temple.
-kore wa otera desu.
-これはおてらです。
-
-これはあんしょうばんごうです。
-This is personal identification number.
-kore wa anshou bangou desu.
-これはあんしょうばんごうです。
-
-これはかくにんです。
-This is confirmation.
-kore wa kakunin desu.
-これはかくにんです。
-
-これはきんがくです。
-This is amount of money.
-kore wa kingaku desu.
-これはきんがくです。
-
-これはみじかいです。
-This is short.
-kore wa mijikai desu.
-これはみじかいです。
-
-これはくらいです。
-This is dark.
-kore wa kurai desu.
-これはくらいです。
-
-これはせがたかいです。
-This is tall.
-kore wa se ga takai desu.
-これはせがたかいです。
-
-これはからだです。
-This is body.
-kore wa karada desu.
-これはからだです。
-
-これはめです。
-This is eye.
-kore wa me desu.
-これはめです。
-
-これはみみです。
-This is ear.
-kore wa mimi desu.
-これはみみです。
-
-これはくちです。
-This is mouth.
-kore wa kuchi desu.
-これはくちです。
-
-これははです。
-This is tooth.
-kore wa ha desu.
-これははです。
-
-これはあしです。
-This is foot.
-kore wa ashi desu.
-これはあしです。
-
-これはじんじゃです。
-This is Shinto shrine.
-kore wa jinja desu.
-これはじんじゃです。
-
-これはりゅうがくせいです。
-This is foreign student.
-kore wa ryuugakusei desu.
-これはりゅうがくせいです。
-
-これはまずです。
-This is first of all.
-kore wa mazu desu.
-これはまずです。
-
-これはジェイアールです。
-This is Japan Railway.
-kore wa jei aaru desu.
-これはジェイアールです。
-
-これはせです。
-This is height.
-kore wa せ desu.
-これはせです。
-
-これはおひきだしです。
-This is withdrawal.
-kore wa Ohikidashi desu.
-これはお引き出しです。
-
-これはえんです。
-This is YEN.
-kore wa En desu.
-これは円です。
-
-これはつうちょうきにゅうです。
-This is updating your passbook.
-kore wa Tsuuchoukinyuu desu.
-これは通帳記入です。
-
-これはざんだかしょうかいです。
-This is balance inquiry.
-kore wa Zandakashoukai desu.
-これは残高照会です。
-
-これはおあずけいれです。
-This is deposit.
-kore wa Oazukeire desu.
-これはお預け入れです。
-
-これはおふりこみです。
-This is payment.
-kore wa Ofurikomi desu.
-これはお振り込みです。
-
-これはおふりかえです。
-This is transfer.
-kore wa Ofurikae desu.
-これはお振り替えです。
-
-`;
-
-allWords["Sentence 16 - Hard"] = ``;
-
-allWords["Sentence 17"] = `
-ですから。
-therefore, so
-desu kara
-ですから。
-
-どう しましたか。
-What seems to be the problem?
-Dou shimashita ka.
-どう しましたか。
-
-これはあごです。
-This is chin.
-kore wa Ago desu.
-これは顎です。
-
-ねつをわすれます。
-forget fever.
-netsu o wasuremasu.
-ねつをわすれます。
-
-こたえを（レポートを）だします。
-hand in answer.
-kotae o (repooto o) dashimasu.
-こたえを（レポートを）だします。
-
-おだいじにをでかけます。
-go out Take care of yourself. Get well soon.
-odaijini o dekakemasu.
-おだいじにをでかけます。
-
-どうしましたかをしんぱいします。
-worry What's the matter?.
-doushimashita ka o shinpaishimasu.
-どうしましたかをしんぱいします。
-
-びょうきを（おふろに）はいります。
-take illness.
-byouki o (ofuro ni) hairimasu.
-びょうきを（おふろに）はいります。
-
-たいせつ（な）を（くすりを）のみます。
-take important.
-taisetsu na o (kusuri o) nomimasu.
-たいせつ（な）を（くすりを）のみます。
-
-もんだいをしゅっちょうします。
-go on a business trip question.
-mondai o shucchoushimasu.
-もんだいをしゅっちょうします。
-
-だいじょうぶ（です）をざんぎょうします。
-work overtime it's all right.
-daijoubu desu o zangyoushimasu.
-だいじょうぶ（です）をざんぎょうします。
-
-あぶないをおぼえます。
-memorize dangerous.
-abunai o oboemasu.
-あぶないをおぼえます。
-
-かぜをなくします。
-lose cold.
-kaze o nakushimasu.
-かぜをなくします。
-
-せんせいをかえします。
-give back doctor.
-sensei o kaeshimasu.
-せんせいをかえします。
-
-くすりをぬぎます。
-take off medicine.
-kusuri o nugimasu.
-くすりをぬぎます。
-
-にさんにちにもっていきます。
-take a few days.
-ni san nichi ni motteikimasu.
-にさんにちにもっていきます。
-
-にさんにもってきます。
-bring a few ~.
-ni san ni mottekimasu.
-にさんにもってきます。
-
-はらいます。
-pay.
-haraimasu.
-はらいます。
-
-ねつがあります。
-have a temperature.
-Netsu ga arimasu.
-熱があります。
-
-おふろをはきけがします。
-feel sick bath.
-ofuro o Hakike ga shimasu.
-おふろを吐き気がします。
-
-のどをさむけがします。
-feel a chill throat.
-nodo o Samuke ga shimasu.
-のどを寒気がします。
-
-（けんこう）ほけんしょうをめまいがします。
-feel dizzy .
-(kenkou) hokenshou o Memai ga shimasu.
-（けんこう）ほけんしょうをめまいがします。
-
-きんえんをげりをします。
-have diarrhoea no smoking.
-kinen o Geri wo shimasu.
-きんえんを下痢をします。
-
-うわぎをべんぴをします。
-be constipated jacket.
-uwagi o Benpi wo shimasu.
-うわぎを便秘をします。
-
-したぎをけがをします。
-get injured underwear.
-shitagi o Kega wo shimasu.
-したぎをけがをします。
-
-しょくよくがありませんをやけどをします。
-get burnt have no appetite.
-Shokuyoku ga arimasen o Yakedo wo shimasu.
-食欲がありませんをやけどをします。
-
-インフルエンザをかたがこります。
-feel stiff in one's shoulders flu.
-Infuruenza o Kata ga korimasu.
-インフルエンザを肩がこります。
-
-せなかをせきがでます。
-have a cough back.
-Senaka o Seki ga demasu.
-背中をせきが出ます。
-
-あたまがいたいをはなみずがでます。
-have a runny nose have a headache.
-Atama ga itai o Hanamizu ga demasu.
-頭が痛いを鼻水が出ます。
-
-おなかがいたいをちがでます。
-bleed have a stomachache.
-Onaka ga itai o Chi ga demasu.
-おなかが痛いを血が出ます。
-
-これはまでにです。
-This is before ~.
-kore wa made ni desu.
-これはまでにです。
-
-これはがいたいですです。
-This is ~ hurts.
-kore wa ga itai desu desu.
-これはがいたいですです。
-
-これははがいたいです。
-This is have a toothache.
-kore wa Ha ga itai desu.
-これは歯が痛いです。
-
-これはあたまです。
-This is head.
-kore wa Atama desu.
-これは頭です。
-
-これはかみです。
-This is hair.
-kore wa Kami desu.
-これは髪です。
-
-これはみみです。
-This is ear.
-kore wa Mimi desu.
-これは耳です。
-
-これはあしです。
-This is leg.
-kore wa Ashi desu.
-これは足です。
-
-これはてです。
-This is hand.
-kore wa Te desu.
-これは手です。
-
-これはおなかです。
-This is stomach.
-kore wa Onaka desu.
-これはお腹です。
-
-これはくちです。
-This is mouth.
-kore wa Kuchi desu.
-これは口です。
-
-これははなです。
-This is nose.
-kore wa Hana desu.
-これは鼻です。
-
-これはめです。
-This is eye.
-kore wa Me desu.
-これは目です。
-
-これはかおです。
-This is face.
-kore wa Kao desu.
-これは顔です。
-
-これはもうちょうです。
-This is appendicitis.
-kore wa Mouchou desu.
-これは盲腸です。
-
-これはぎっくりごしです。
-This is slipped disc.
-kore wa Gikkurigoshi desu.
-これはぎっくり腰です。
-
-これはからだがだるいです。
-This is feel weary.
-kore wa Karada ga darui desu.
-これは体がだるいです。
-
-これはかゆいです。
-This is itchy.
-kore wa Kayui desu.
-これはかゆいです。
-
-これはねんざです。
-This is sprain.
-kore wa Nenza desu.
-これはねんざです。
-
-これはこっせつです。
-This is bone fracture.
-kore wa Kossetsu desu.
-これは骨折です。
-
-これはふつかよいです。
-This is hangover.
-kore wa Futsukayoi desu.
-これは二日酔いです。
-
-これはこしです。
-This is waist.
-kore wa Koshi desu.
-これは腰です。
-
-これはしりです。
-This is bottom.
-kore wa Shiri desu.
-これは尻です。
-
-これはほねです。
-This is bone.
-kore wa Hone desu.
-これは骨です。
-
-これはゆびです。
-This is finger.
-kore wa Yubi desu.
-これは指です。
-
-これはつめです。
-This is nail.
-kore wa Tsume desu.
-これは爪です。
-
-これはひざです。
-This is knee.
-kore wa Hiza desu.
-これは膝です。
-
-これはひじです。
-This is elbow.
-kore wa Hiji desu.
-これは肘です。
-
-これはうでです。
-This is arm.
-kore wa Ude desu.
-これは腕です。
-
-これはむねです。
-This is chest.
-kore wa Mune desu.
-これは胸です。
-
-これはかたです。
-This is shoulder.
-kore wa Kata desu.
-これは肩です。
-
-これはくびです。
-This is neck.
-kore wa Kubi desu.
-これは首です。
-
-`;
-
-allWords["Sentence 17 - Hard"] = ``;
-
-allWords["Sentence 18"] = `
-ほんとうですか。
-Really?
-hontou desu ka
-ほんとうですか。
-
-それはおもしろいですねにできます。
-be able to That must be interesting.
-sore wa omoshiroi desu ne ni dekimasu.
-それはおもしろいですねにできます。
-
-うたいます。
-sing.
-utaimasu.
-うたいます。
-
-へえをおいのりをします。
-pray Oh really!.
-hee o oinori o shimasu.
-へえをおいのりをします。
-
-あらいます。
-wash.
-araimasu.
-あらいます。
-
-ピアノにひきます。
-play piano.
-piano ni hikimasu.
-ピアノにひきます。
-
-かちょうをあつめます。
-collect section chief.
-kachou o atsumemasu.
-かちょうをあつめます。
-
-ぶちょうをすてます。
-throw away department chief.
-buchou o sutemasu.
-ぶちょうをすてます。
-
-しゃちょうをかえます。
-replace president of a company.
-shachou o kaemasu.
-しゃちょうをかえます。
-
-こくさいをうんてんします。
-drive international~.
-kokusai o unten shimasu.
-こくさいをうんてんします。
-
-げんきんをよやくします。
-reserve cash.
-genkin o yoyaku shimasu.
-げんきんをよやくします。
-
-にっきをけんがくします。
-visit some place to study diary.
-nikki o kengaku shimasu.
-にっきをけんがくします。
-
-これはメートルです。
-This is ~meter.
-kore wa meetoru desu.
-これはメートルです。
-
-これはおいのりです。
-This is prayer.
-kore wa inori desu.
-これはおいのりです。
-
-これはぼくじょうです。
-This is ranch.
-kore wa bokujou desu.
-これはぼくじょうです。
-
-これはしゅみです。
-This is hobby.
-kore wa shumi desu.
-これはしゅみです。
-
-これはどうぶつです。
-This is animal.
-kore wa doubutsu desu.
-これはどうぶつです。
-
-これはうまです。
-This is horse.
-kore wa uma desu.
-これはうまです。
-
-これはなかなかです。
-This is not easily.
-kore wa nakanaka desu.
-これはなかなかです。
-
-これはぜひです。
-This is by all means.
-kore wa zehi desu.
-これはぜひです。
-
-これはインターネットです。
-This is the Internet.
-kore wa intaanetto desu.
-これはインターネットです。
-
-これはうごきです。
-This is Actions.
-kore wa ugoki desu.
-これは動きです。
-
-これはのぼるです。
-This is climb.
-kore wa Noboru desu.
-これは登るです。
-
-これははしるです。
-This is run.
-kore wa Hashiru desu.
-これは走るです。
-
-これはおよぐです。
-This is swim.
-kore wa Oyogu desu.
-これは泳ぐです。
-
-これはけるです。
-This is kick.
-kore wa Keru desu.
-これはけるです。
-
-これはひくです。
-This is pull.
-kore wa Hiku desu.
-これは引くです。
-
-これはおすです。
-This is push.
-kore wa Osu desu.
-これは押すです。
-
-これはとぶです。
-This is fly.
-kore wa Tobu desu.
-これは飛ぶです。
-
-これはまぐろです。
-This is tuna.
-kore wa maguro desu.
-これはまぐろです。
-
-これはもぐるです。
-This is dive.
-kore wa Moguru desu.
-これはもぐるです。
-
-これはまげるです。
-This is bend.
-kore wa Mageru desu.
-これは曲げるです。
-
-これはとびこむです。
-This is dive into.
-kore wa Tobikomu desu.
-これは飛び込むです。
-
-これはさかだちするです。
-This is do a handstand.
-kore wa Sakadachisuru desu.
-これは逆立ちするです。
-
-これははうです。
-This is crawl.
-kore wa Hau desu.
-これははうです。
-
-これはふるです。
-This is wave.
-kore wa Furu desu.
-これは振るです。
-
-これはもちあげるです。
-This is lift.
-kore wa Mochiageru desu.
-これは持ち上げるです。
-
-これはなげるです。
-This is throw.
-kore wa Nageru desu.
-これは投げるです。
-
-これはたたくです。
-This is pat.
-kore wa Tataku desu.
-これはたたくです。
-
-これはのばすです。
-This is extend.
-kore wa Nobasu desu.
-これは伸ばすです。
-
-これはころぶです。
-This is fall down.
-kore wa Korobu desu.
-これは転ぶです。
-
-これはふりむくです。
-This is look back.
-kore wa Furimuku desu.
-これは振り向くです。
-
-`;
-
-allWords["Sentence 18 - Hard"] = ``;
-
-allWords["Sentence 19"] = `
-これはまんざい・らくごです。
-This is manzai.
-kore wa Manzai, Rakugo desu.
-これは漫才・落語です。
-
-ねむいをゴルフをします。
-play golf sleepy.
-nemui o gorufu o shimasu.
-ねむいをゴルフをします。
-
-つよいをダイエットをします。
-go on a diet strong.
-tsuyoi o daietto o shimasu.
-つよいをダイエットをします。
-
-よわいをやまをのぼります。
-climb a mountain weak.
-yowai o yama o noborimasu.
-よわいをやまをのぼります。
-
-おかげさまでをホテルにとまります。
-stay in a hotel Thank you. All thanks to you..
-okagesama de o hoteru ni tomarimasu.
-おかげさまでをホテルにとまります。
-
-もうすぐをふくをせんたくします。
-wash the clothes very soon.
-mou sugu o fuku o sentaku shimasu.
-もうすぐをふくをせんたくします。
-
-むり（な）をれんしゅうします。
-to practice impossible.
-muri na o renshuu shimasu.
-むり（な）をれんしゅうします。
-
-からだにいいをダンスをれんしゅうします。
-practice the dance good for one's body.
-karada ni ii o dansu o renshuu shimasu.
-からだにいいをダンスをれんしゅうします。
-
-あしたにじゅうさんさいになります。
-turn 23 years old tomorrow.
-ashita nijuusan sai ni narimasu.
-あしたにじゅうさんさいになります。
-
-ゴルフをのぼります。
-climb golf.
-gorufu o noborimasu.
-ゴルフをのぼります。
-
-こどものひをとまります。
-stay Children's Day.
-Kodomo no Hi o tomarimasu.
-こどものひをとまります。
-
-ちょうしがいいをそうじします。
-clean be in a good condition.
-choushi ga ii o souji shimasu.
-ちょうしがいいをそうじします。
-
-ちょうしがわるいをせんたくします。
-do the laundry be in a bad condition.
-choushi ga warui o sentaku shimasu.
-ちょうしがわるいをせんたくします。
-
-なります。
-become.
-narimasu.
-なります。
-
-これはひです。
-This is day.
-kore wa hi desu.
-これはひです。
-
-これはダイエットです。
-This is diet.
-kore wa daietto desu.
-これはダイエットです。
-
-これはケーキです。
-This is cake.
-kore wa keeki desu.
-これはケーキです。
-
-これはすもうです。
-This is sumo wrestling.
-kore wa すもう desu.
-これはすもうです。
-
-これはさどうです。
-This is tea ceremony.
-kore wa sadou desu.
-これはさどうです。
-
-これはれんしゅうです。
-This is practice.
-kore wa renshuu desu.
-これはれんしゅうです。
-
-これはちょうしです。
-This is condition.
-kore wa choushi desu.
-これはちょうしです。
-
-これはパチンコです。
-This is Japanese pinball game.
-kore wa pachinko desu.
-これはパチンコです。
-
-これはだんだんです。
-This is gradually.
-kore wa dandan desu.
-これはだんだんです。
-
-これはかんぱいです。
-This is bottoms up / cheers.
-kore wa kanpai desu.
-これはかんぱいです。
-
-これはしかしです。
-This is but.
-kore wa shikashi desu.
-これはしかしです。
-
-これはいちどです。
-This is once.
-kore wa ichido desu.
-これはいちどです。
-
-これはいちどもです。
-This is not even once.
-kore wa ichidomo desu.
-これはいちどもです。
-
-これはじつはです。
-This is actually..
-kore wa jitsu wa desu.
-これはじつはです。
-
-これはなんかいもです。
-This is many times.
-kore wa nankai mo desu.
-これはなんかいもです。
-
-これはいご・しょうぎです。
-This is go.
-kore wa Igo, Shougi desu.
-これは囲碁・将棋です。
-
-これはかぶきです。
-This is Kabuki.
-kore wa Kabuki desu.
-これは歌舞伎です。
-
-これはのうです。
-This is Noh.
-kore wa Nou desu.
-これは能です。
-
-これはぶんらくです。
-This is Bunraku.
-kore wa Bunraku desu.
-これは文楽です。
-
-これはじゅうどうです。
-This is judo.
-kore wa Juudou desu.
-これは柔道です。
-
-これはけんどうです。
-This is kendo.
-kore wa Kendou desu.
-これは剣道です。
-
-これはからてです。
-This is karate.
-kore wa Karate desu.
-これは空手です。
-
-これはカラオケです。
-This is karaoke.
-kore wa Karaoke desu.
-これはカラオケです。
-
-これはでんとうぶんか・ごらくです。
-This is Traditional culture and entertainment.
-kore wa dentou bunka / goraku desu.
-これは伝統文化・娯楽です。
-
-これはかどうです。
-This is flower arranging.
-kore wa Kadou desu.
-これは華道です。
-
-これはしょどうです。
-This is calligraphy.
-kore wa Shodou desu.
-これは書道です。
-
-これはぼんおどりです。
-This is Bon dance.
-kore wa Bon odori desu.
-これは盆踊りです。
-
-`;
-
-allWords["Sentence 19 - Hard"] = ``;
-
-allWords["Sentence 20"] = `
-たろうくんです。
-This is Taro-kun.
-tarou kun desu.
-たろうくんです。
-
-どうするのをでんわします。
-phone What will you do?.
-dou suru no o denwa shimasu.
-どうするのをでんわします。
-
-いろいろを（ビザが）いります。
-need various.
-iroiro o (biza ga) irimasu.
-いろいろを（ビザが）いります。
-
-おわりをしらべます。
-check the end.
-owari o shirabemasu.
-おわりをしらべます。
-
-みんなでをなおします。
-correct all together.
-minna de o naoshimasu.
-みんなでをなおします。
-
-うんをしゅうりします。
-repair yes.
-un o shuuri shimasu.
-うんをしゅうりします。
-
-これはううんです。
-This is no.
-kore wa uun desu.
-これはううんです。
-
-これはきものです。
-This is traditional Japanese attire.
-kore wa kimono desu.
-これはきものです。
-
-これはサラリーマンです。
-This is office worker.
-kore wa sarariiman desu.
-これはサラリーマンです。
-
-これはビザです。
-This is visa.
-kore wa biza desu.
-これはビザです。
-
-これははじめです。
-This is the beginning.
-kore wa hajime desu.
-これははじめです。
-
-これはこっちです。
-This is this way.
-kore wa kocchi desu.
-これはこっちです。
-
-これはそっちです。
-This is that way.
-kore wa socchi desu.
-これはそっちです。
-
-これはあっちです。
-This is that way.
-kore wa acchi desu.
-これはあっちです。
-
-これはどっちです。
-This is which one.
-kore wa docchi desu.
-これはどっちです。
-
-これはぼくです。
-This is I.
-kore wa boku desu.
-これはぼくです。
-
-これはきみです。
-This is you.
-kore wa kimi desu.
-これはきみです。
-
-これはことばです。
-This is word.
-kore wa kotoba desu.
-これはことばです。
-
-これはぶっかです。
-This is commodity prices.
-kore wa bukka desu.
-これはぶっかです。
-
-これはこのあいだです。
-This is the other day.
-kore wa kono aida desu.
-これはこのあいだです。
-
-これはけどです。
-This is ~but.
-kore wa kedo desu.
-これはけどです。
-
-これはくにへかえるのです。
-This is Are you going back to your country?.
-kore wa kuni e kaeru no desu.
-これはくにへかえるのです。
-
-これはどうしようかなです。
-This is What shall I do?.
-kore wa dou shiyou kana desu.
-これはどうしようかなです。
-
-これはよかったら…です。
-This is if you like...
-kore wa yokattara... desu.
-これはよかったら…です。
-
-これはひとのよびかたです。
-This is How to address people.
-kore wa hito no yobikata desu.
-これは人の呼び方です。
-
-これはせんせいです。
-This is Doctor / Teacher / Professor.
-kore wa Sensei desu.
-これは先生です。
-
-これはぶちょうです。
-This is department head.
-kore wa Buchou desu.
-これは部長です。
-
-これはおきゃくさまです。
-This is Mr./Ms. Customer.
-kore wa Okyakusama desu.
-これはお客様です。
-
-これはおにあいですよです。
-This is It looks good on you / You two look great together.
-kore wa oniai desu yo desu.
-これはお似合いですよです。
-
-これはいたいんですです。
-This is It hurts.
-kore wa itai ndesu desu.
-これは痛いんですです。
-
-`;
-
-allWords["Sentence 20 - Hard"] = ``;
-
-allWords["Sentence 21"] = `
-〜でものみませんか。
-How about drinking ~ or something?
-~ demo nomimasen ka
-〜でものみませんか。
-
-ないかくそうりだいじんです。
-This person is prime minister.
-Naikaku souri daijin desu.
-内閣総理大臣です。
-
-ラッシュをまけます。
-lose rush hour.
-rasshu o makemasu.
-ラッシュをまけます。
-
-ユーモアをおはなしをします。
-talk humor.
-yuumoa o ohanashi o shimasu.
-ユーモアをおはなしをします。
-
-おなじをアルバイトをします。
-work a part-time job the same.
-onaji o arubaito o shimasu.
-おなじをアルバイトをします。
-
-きっとをスピーチをします。
-make/deliver a speech surely.
-kitto o supiichi o shimasu.
-きっとをスピーチをします。
-
-もちろんをやくにたちます。
-be useful of course.
-mochiron o yakunitachimasu.
-もちろんをやくにたちます。
-
-おもいます。
-think.
-omoimasu.
-おもいます。
-
-いいます。
-say.
-iimasu.
-いいます。
-
-すごいをたります。
-be enough awful.
-sugoi o tarimasu.
-すごいをたります。
-
-むだ（な）をかちます。
-win wasteful.
-muda na o kachimasu.
-むだ（な）をかちます。
-
-あります。
-be held.
-arimasu.
-あります。
-
-これはむだです。
-This is waste.
-kore wa muda desu.
-これはむだです。
-
-これはたぶんです。
-This is probably.
-kore wa tabun desu.
-これはたぶんです。
-
-これはほんとうにです。
-This is really.
-kore wa hontou ni desu.
-これはほんとうにです。
-
-これはニュースです。
-This is news.
-kore wa nyuusu desu.
-これはニュースです。
-
-これはスピーチです。
-This is speech.
-kore wa supiichi desu.
-これはスピーチです。
-
-これはデザインです。
-This is design.
-kore wa dezain desu.
-これはデザインです。
-
-これはカンガルーです。
-This is kangaroo.
-kore wa kangaruu desu.
-これはカンガルーです。
-
-これはゆめです。
-This is dream.
-kore wa yume desu.
-これはゆめです。
-
-これはてんさいです。
-This is genius.
-kore wa てんさい desu.
-これはてんさいです。
-
-これはしゅしょうです。
-This is prime minister.
-kore wa shushou desu.
-これはしゅしょうです。
-
-これはだいとうりょうです。
-This is president.
-kore wa daitouryou desu.
-これはだいとうりょうです。
-
-これはほうそうです。
-This is announcement.
-kore wa ほうそう desu.
-これはほうそうです。
-
-これはいけんです。
-This is opinion.
-kore wa iken desu.
-これはいけんです。
-
-これはこうつうです。
-This is transportation.
-kore wa koutsuu desu.
-これはこうつうです。
-
-これはについてです。
-This is about ~.
-kore wa ni tsuite desu.
-これはについてです。
-
-これはしかたがありませんです。
-This is There is no other choice. / It can't be helped.
-kore wa shikata ga arimasen desu.
-これはしかたがありませんです。
-
-これはしばらくですねです。
-This is It's been a long time. / Long time no see.
-kore wa shibaraku desu ne desu.
-これはしばらくですねです。
-
-これはふべん（な）です。
-This is inconvenient.
-kore wa fuben na desu.
-これはふべん（な）です。
-
-これはせいじです。
-This is politics.
-kore wa seiji desu.
-これはせいじです。
-
-これはしあいです。
-This is game.
-kore wa shiai desu.
-これはしあいです。
-
-これはアルバイトです。
-This is side job.
-kore wa arubaito desu.
-これはアルバイトです。
-
-これはさいきんです。
-This is recently.
-kore wa saikin desu.
-これはさいきんです。
-
-これはおはなしです。
-This is talk.
-kore wa hanashi desu.
-これはおはなしです。
-
-これはそんなにです。
-This is not so much.
-kore wa sonnani desu.
-これはそんなにです。
-
-これはみないと…です。
-This is I've got to watch it.
-kore wa minaito... desu.
-これはみないと…です。
-
-これはだいがくです。
-This is university.
-kore wa Daigaku desu.
-これは大学です。
-
-これはこうとうがっこうです。
-This is upper secondary.
-kore wa Koutougakkou desu.
-これは高等学校です。
-
-これはちゅうがっこうです。
-This is lower secondary.
-kore wa Chuugakkou desu.
-これは中学校です。
-
-これはしょうがっこうです。
-This is primary.
-kore wa Shougakkou desu.
-これは小学校です。
-
-これはようちえんです。
-This is kindergarten.
-kore wa Youchien desu.
-これは幼稚園です。
-
-これはかちょうです。
-This is section head.
-kore wa Kachou desu.
-これは課長です。
-
-これはぶちょうです。
-This is department head.
-kore wa Buchou desu.
-これは部長です。
-
-これはしゃちょうです。
-This is president.
-kore wa Shachou desu.
-これは社長です。
-
-これはぎんこうです。
-This is bank.
-kore wa Ginkou desu.
-これは銀行です。
-
-これはえきです。
-This is station.
-kore wa Eki desu.
-これは駅です。
-
-これはびょういんです。
-This is hospital.
-kore wa Byouin desu.
-これは病院です。
-
-これはかいしゃです。
-This is company.
-kore wa Kaisha desu.
-これは会社です。
-
-これはくにです。
-This is nation.
-kore wa Kuni desu.
-これは国です。
-
-これはやくしょくめいです。
-This is Positions in society.
-kore wa yakushokumei desu.
-これは役職名です。
-
-これはがくちょうです。
-This is [university] president.
-kore wa Gakuchou desu.
-これは学長です。
-
-これはこうちょうです。
-This is [school] head teacher.
-kore wa Kouchou desu.
-これは校長です。
-
-これはえんちょうです。
-This is [kindergarten] head teacher.
-kore wa Enchou desu.
-これは園長です。
-
-これはとうどりです。
-This is [bank] president.
-kore wa Toudori desu.
-これは頭取です。
-
-これはしてんちょうです。
-This is branch manager.
-kore wa Shitenchou desu.
-これは支店長です。
-
-これはけいさつです。
-This is police station.
-kore wa Keisatsu desu.
-これは警察です。
-
-これはしょちょうです。
-This is officer in charge.
-kore wa Shochou desu.
-これは署長です。
-
-これはえきちょうです。
-This is stationmaster.
-kore wa Ekichou desu.
-これは駅長です。
-
-これはいんちょうです。
-This is [hospital] director.
-kore wa Inchou desu.
-これは院長です。
-
-これはかんごしちょうです。
-This is head nurse.
-kore wa Kangoshichou desu.
-これは看護師長です。
-
-これはかいちょうです。
-This is chairman.
-kore wa Kaichou desu.
-これは会長です。
-
-これはじゅうやくです。
-This is director.
-kore wa Juuyaku desu.
-これは重役です。
-
-これはとどうふけんです。
-This is prefecture.
-kore wa Todoufuken desu.
-これは都道府県です。
-
-これはしです。
-This is city.
-kore wa Shi desu.
-これは市です。
-
-これはまちです。
-This is town.
-kore wa Machi desu.
-これは町です。
-
-これはむらです。
-This is village.
-kore wa Mura desu.
-これは村です。
-
-これはちじです。
-This is governor.
-kore wa Chiji desu.
-これは知事です。
-
-これはしちょうです。
-This is city mayor.
-kore wa Shichou desu.
-これは市長です。
-
-これはちょうちょうです。
-This is town mayor.
-kore wa Chouchou desu.
-これは町長です。
-
-これはそんちょうです。
-This is village headman.
-kore wa Sonchou desu.
-これは村長です。
-
-`;
-
-allWords["Sentence 21 - Hard"] = ``;
-
-allWords["Sentence 22"] = `
-おさがしですか。
-Are you looking for ～?
-osagashi desu ka
-おさがしですか。
-
-おめでとうございます。
-Congratulations.
-omedetou gozaimasu
-おめでとうございます。
-
-めがねにきます。
-wear glasses.
-megane ni kimasu.
-めがねにきます。
-
-ダイニングキッチンにはきます。
-wear kitchen with a dining area.
-dainingu kicchin ni hakimasu.
-ダイニングキッチンにはきます。
-
-ふとんをかぶります。
-wear Japanese-style mattress and quilt.
-futon o kaburimasu.
-ふとんをかぶります。
-
-よくをかけます。
-wear often.
-yoku o kakemasu.
-よくをかけます。
-
-うーんをうまれます。
-be born ummm...
-uun o umaremasu.
-うーんをうまれます。
-
-パリをつけます。
-wear Paris.
-pari o tsukemasu.
-パリをつけます。
-
-コートをします。
-wear coat.
-kooto o shimasu.
-コートをします。
-
-スーツをはめます。
-wear suit.
-suutsu o hamemasu.
-スーツをはめます。
-
-セーターにまきます。
-wear around the neck sweater.
-seetaa ni makimasu.
-セーターにまきます。
-
-ぼうしをしめます。
-wear hat.
-boushi o shimemasu.
-ぼうしをしめます。
-
-アパートはこちらです。
-apartment is this.
-apaato wa kochira desu.
-アパートはこちらです。
-
-これはばんりのちょうじょうです。
-This is the Great Wall of China.
-kore wa banri no choujou desu.
-これはばんりのちょうじょうです。
-
-これはやちんです。
-This is house rent.
-kore wa yachin desu.
-これはやちんです。
-
-これはわしつです。
-This is Japanese-style room.
-kore wa washitsu desu.
-これはわしつです。
-
-これはおしいれです。
-This is Japanese-style closet.
-kore wa oshiire desu.
-これはおしいれです。
-
-これはくつしたです。
-This is socks.
-kore wa Kutsushita desu.
-これはくつしたです。
-
-これはいふくです。
-This is Clothes.
-kore wa ifuku desu.
-これは衣服です。
-
-これはてぶくろです。
-This is gloves.
-kore wa Tebukuro desu.
-これは手袋です。
-
-これはしたぎです。
-This is underwear.
-kore wa Shitagi desu.
-これは下着です。
-
-これはマフラーです。
-This is scarf.
-kore wa Mafuraa desu.
-これはマフラーです。
-
-これはおびです。
-This is obi.
-kore wa Obi desu.
-これは帯です。
-
-これはぞうりです。
-This is zori.
-kore wa Zouri desu.
-これはぞうりです。
-
-これはたびです。
-This is tabi.
-kore wa Tabi desu.
-これはたびです。
-
-これはうわぎです。
-This is jacket.
-kore wa Uwagi desu.
-これは上着です。
-
-これは（オーバー）コートです。
-This is overcoat.
-kore wa (Oobaa) cooto desu.
-これは（オーバー）コートです。
-
-これはストッキングです。
-This is tights.
-kore wa Sutokkingu desu.
-これはストッキングです。
-
-これはワンピースです。
-This is one-piece dress.
-kore wa Wanpiisu desu.
-これはワンピースです。
-
-これはジーンズです。
-This is jeans.
-kore wa Jiinzu desu.
-これはジーンズです。
-
-これはスカートです。
-This is skirt.
-kore wa Sukaato desu.
-これはスカートです。
-
-これはブラウスです。
-This is blouse.
-kore wa Burausu desu.
-これはブラウスです。
-
-これはパンティーです。
-This is panties.
-kore wa Pantii desu.
-これはパンティーです。
-
-これはきものです。
-This is kimono.
-kore wa Kimono desu.
-これは着物です。
-
-これはレインコートです。
-This is raincoat.
-kore wa Reinkooto desu.
-これはレインコートです。
-
-これはネクタイです。
-This is tie.
-kore wa Nekutai desu.
-これはネクタイです。
-
-これはベルトです。
-This is belt.
-kore wa Beruto desu.
-これはベルトです。
-
-これはハイヒールです。
-This is high heels.
-kore wa Haihiiru desu.
-これはハイヒールです。
-
-これはブーツです。
-This is boots.
-kore wa Buutsu desu.
-これはブーツです。
-
-これはパンツです。
-This is pants.
-kore wa Pantsu desu.
-これはパンツです。
-
-これはズボンです。
-This is trousers.
-kore wa Zubon desu.
-これはズボンです。
-
-これはワイシャツです。
-This is [white] shirt.
-kore wa Waishatsu desu.
-これはワイシャツです。
-
-これはうんどうぐつです。
-This is trainers.
-kore wa Undougutsu desu.
-これは運動靴です。
-
-`;
-
-allWords["Sentence 22 - Hard"] = ``;
-
-allWords["Sentence 23"] = `
-でんきやをさわります。
-touch electrician.
-denkiya o sawarimasu.
-でんきやをさわります。
-
-しんごうをでます。
-come out traffic light.
-shingou o demasu.
-しんごうをでます。
-
-サイズをこしょうします。
-fail size.
-saizu o koshou shimasu.
-サイズをこしょうします。
-
-はしにうごきます。
-move bridge.
-hashi ni ugokimasu.
-はしにうごきます。
-
-さわりますドアににあるきます。
-walk touch [a door].
-sawarimasu ni arukimasu.
-さわりますドアににあるきます。
-
-でますおつりがをひっこしします。
-move [change] come out.
-demasu o hikkoshi shimasu.
-でますおつりがをひっこしします。
-
-こしょうに（せんせいに）ききます。
-ask break down.
-koshou ni (sensei ni) kikimasu.
-こしょうに（せんせいに）ききます。
-
-こうさてんをまわします。
-turn crossroad.
-kousaten o mawashimasu.
-こうさてんをまわします。
-
-ちゅうしゃじょうにひきます。
-pull parking lot.
-chuushajou ni hikimasu.
-ちゅうしゃじょうにひきます。
-
-たてものをかえます。
-change building.
-tatemono o kaemasu.
-たてものをかえます。
-
-がいこくじんとうろくしょうをわたります。
-cross alien registration card.
-gaikokujin tourokushou o watarimasu.
-がいこくじんとうろくしょうをわたります。
-
-これはやです。
-This is person of ~ shop.
-kore wa ya desu.
-これはやです。
-
-これはごちそうさまでしたです。
-This is That was delicious..
-kore wa gochisousama desu.
-これはごちそうさまでしたです。
-
-これはつまみです。
-This is knob.
-kore wa tsumami desu.
-これはつまみです。
-
-これはおしょうがつです。
-This is New Year's Day.
-kore wa shougatsu desu.
-これはおしょうがつです。
-
-これはきをつけてです。
-This is pay attention.
-kore wa ki o tsukete desu.
-これはきをつけてです。
-
-これはきかいです。
-This is machine.
-kore wa kikai desu.
-これはきかいです。
-
-これはおゆです。
-This is hot water.
-kore wa yu desu.
-これはおゆです。
-
-これはみちです。
-This is road.
-kore wa michi desu.
-これはみちです。
-
-これはめです。
-This is the ~nth.
-kore wa me desu.
-これはめです。
-
-これはおとです。
-This is sound.
-kore wa oto desu.
-これはおとです。
-
-これはかどです。
-This is corner.
-kore wa kado desu.
-これはかどです。
-
-これはガソリンスタンドです。
-This is petrol station.
-kore wa Gasorin sutando desu.
-これはガソリンスタンドです。
-
-これはとまれです。
-This is Stop.
-kore wa Tomare desu.
-これは止まれです。
-
-これはどうろです。
-This is Roads / Streets.
-kore wa douro desu.
-これは道路です。
-
-これはほどうです。
-This is pavement.
-kore wa Hodou desu.
-これは歩道です。
-
-これはしゃどうです。
-This is road.
-kore wa Shadou desu.
-これは車道です。
-
-これはこうそくどうろです。
-This is motorway.
-kore wa Kousokudouro desu.
-これは高速道路です。
-
-これはとおりです。
-This is street.
-kore wa Toori desu.
-これは通りです。
-
-これはおうだんほどうです。
-This is pedestrian crossing.
-kore wa Oudan hodou desu.
-これは横断歩道です。
-
-これはほどうきょうです。
-This is pedestrian bridge.
-kore wa Hodoukyou desu.
-これは歩道橋です。
-
-これはさかです。
-This is slope.
-kore wa Saka desu.
-これは坂です。
-
-これはふみきりです。
-This is railway crossing.
-kore wa Fumikiri desu.
-これは踏切です。
-
-これはいっぽうつうこうです。
-This is One Way.
-kore wa Ippoutsuukou desu.
-これは一方通行です。
-
-これはしんにゅうきんしです。
-This is No Entry.
-kore wa Shinnyuukinshi desu.
-これは進入禁止です。
-
-これはちゅうしゃきんしです。
-This is No Parking.
-kore wa Chuushakinshi desu.
-これは駐車禁止です。
-
-これはうせつきんしです。
-This is No Right Turn.
-kore wa Usetsukinshi desu.
-これは右折禁止です。
-
-`;
-
-allWords["Sentence 23 - Hard"] = ``;
-
-allWords["Sentence 24"] = `
-おじいさん・おじいちゃんをくれます。
-give grandfather.
-ojiisan / ojiichan o kuremasu.
-おじいさん・おじいちゃんをくれます。
-
-おばあさん・おばあちゃんをじゅんびします。
-prepare grandmother.
-obaasan / obaachan o junbi shimau.
-おばあさん・おばあちゃんをじゅんびします。
-
-おかしをしょうかいします。
-introduce sweets.
-okashi o shoukai shimasu.
-おかしをしょうかいします。
-
-ぜんぶにつれていきます。
-take all.
-zenbu ni tsurete ikimasu.
-ぜんぶにつれていきます。
-
-おべんとうにつれてきます。
-bring box lunch.
-bentou ni tsurete kimasu.
-おべんとうにつれてきます。
-
-母のひをあんないします。
-show around Mother's Day.
-haha no hi o annai shimasu.
-母のひをあんないします。
-
-ホームステイをせつめいします。
-explain homestay.
-hoomusutei o setsumei shimasu.
-ホームステイをせつめいします。
-
-いみをいれます。
-make meaning.
-imi o iremasu.
-いみをいれます。
-
-ほかにをおくります。
-escort / see besides.
-hokani o okurimasu.
-ほかにをおくります。
-
-これはじゅんびです。
-This is preparation.
-kore wa junbi desu.
-これはじゅんびです。
-
-これはじぶんでです。
-This is by oneself.
-kore wa jibun de desu.
-これはじぶんでです。
-
-これはワゴンしゃです。
-This is station wagon.
-kore wa wagon sha desu.
-これはワゴンしゃです。
-
-これはにゅうがくいわいです。
-This is Gift celebrating admission to school.
-kore wa Nyuugakuiwai desu.
-これは入学祝いです。
-
-これはそつぎょういわいです。
-This is Graduation gift.
-kore wa Sotsugyouiwai desu.
-これは卒業祝いです。
-
-これはけっこんいわいです。
-This is Wedding gift.
-kore wa Kekkon'iwai desu.
-これは結婚祝いです。
-
-これはぞうとうのしゅうかんです。
-This is Exchanging gifts.
-kore wa zoutou no shuukan desu.
-これは贈答の習慣です。
-
-これはのしぶくろです。
-This is Special decorated envelope for money gifts.
-kore wa Noshibukuro desu.
-これは熨斗袋です。
-
-これはとしだまです。
-This is Small gift of money given by parents and relatives to children on New Year’s Day.
-kore wa Toshidama desu.
-これはお年玉です。
-
-これはしゅっさんいわいです。
-This is Gift celebrating a birth.
-kore wa Shussaniwai desu.
-これは出産祝いです。
-
-これはおちゅうげんです。
-This is Gift for a person whose care you are under.
-kore wa Ochugen desu.
-これはお中元です。
-
-これはおせいぼです。
-This is Gift for a person whose care you are under.
-kore wa Oseibo desu.
-これはお歳暮です。
-
-これはおこうでんです。
-This is Condolence money.
-kore wa Okouden desu.
-これはお香典です。
-
-これはおみまいです。
-This is Present given when visiting a sick or injured person.
-kore wa Omimai desu.
-これはお見舞いです。
-
-`;
-
-allWords["Sentence 24 - Hard"] = ``;
-
-allWords["Sentence 25"] = `
-いっぱいのみましょう。
-Let's have a drink.
-ippai nomimashou
-いっぱいのみましょう。
-
-こどもはろうじんです。
-child is old age.
-Kodomo wa Roujin desu.
-子どもは老人です。
-
-いなかをりゅうがくします。
-study abroad countryside.
-inaka o ryuugaku shimasu.
-いなかをりゅうがくします。
-
-いろいろおせわになりましたをがんばります。
-do one's best Thank you for everything you have done for me.
-iroiro osewa ni narimashita o ganbarimasu.
-いろいろおせわになりましたをがんばります。
-
-グループをてんきんします。
-be transferred to another office group.
-guruupu o tenkin shimasu.
-グループをてんきんします。
-
-チャンスをかんがえます。
-think chance.
-chansu o kangaemasu.
-チャンスをかんがえます。
-
-たいしかんにつきます。
-arrive embassy.
-taishikan ni tsukimasu.
-たいしかんにつきます。
-
-てんきんをとしをとります。
-grow old job transfer / relocation.
-tenkin o toshi o torimasu.
-てんきんをとしをとります。
-
-おくをうまれます。
-be born hundred million.
-oku o Umaremasu.
-おくを生まれます。
-
-もしたらをがっこうにはいります。
-enter school if ~.
-moshi ~tara o Gakkou ni hairimasu.
-もしたらを学校に入ります。
-
-いくらでも／てもをがっこうをでます。
-graduate from school no matter how.
-ikura ~ demo / temo o Gakkou o demasu.
-いくらでも／てもを学校を出ます。
-
-ことをけっこんします。
-get married thing.
-koto o Kekkonshimasu.
-ことを結婚します。
-
-どうぞおげんきでをこどもがうまれます。
-have a child Best of luck.
-douzo ogenki de o Kodomo ga umaremasu.
-どうぞおげんきでを子どもが生まれます。
-
-あかちゃんをしごとをやめます。
-retire baby.
-Akachan o Shigoto o yamemasu.
-赤ちゃんを仕事をやめます。
-
-しょうがっこうをしゅうしょくします。
-get a job primary.
-Shougakkou o Shuushokushimasu.
-小学校を就職します。
-
-ちゅうがっこうをりこんします。
-get divorced lower secondary.
-Chuugakkou o Rikonshimasu.
-中学校を離婚します。
-
-だいがくをさいこんします。
-remarry university.
-Daigaku o Saikonshimasu.
-大学を再婚します。
-
-ほいくえんをしにます。
-die nursery school.
-Hoikuen o Shinimasu.
-保育園を死にます。
-
-これはようちえんです。
-This is kindergarten.
-kore wa Youchien desu.
-これは幼稚園です。
-
-これはひとのいっしょうです。
-This is Life / A person's lifetime.
-kore wa hito no isshou desu.
-これは人の一生です。
-
-これはせいねんです。
-This is youth.
-kore wa Seinen desu.
-これは青年です。
-
-これはちゅうねんです。
-This is middle age.
-kore wa Chuunen desu.
-これは中年です。
-
-これはこうとうがっこうです。
-This is upper secondary.
-kore wa Koutougakkou desu.
-これは高等学校です。
-
-これはたんだいです。
-This is junior college.
-kore wa Tandai desu.
-これは短大です。
-
-これはせんもんがっこうです。
-This is technical college.
-kore wa Senmongakkou desu.
-これは専門学校です。
-
-これはだいがくいんです。
-This is postgraduate course.
-kore wa Daigakuin desu.
-これは大学院です。
-
-`;
-
-allWords["Sentence 25 - Hard"] = ``;
-
-allWords["Sentence 26"] = `
-うんどうかいをだします。
-put out [the trash] athletic meeting.
-Undoukai o Dashimasu.
-運動会を出します。
-
-うちゅうをやります。
-do space.
-Uchuu o Yarimasu.
-宇宙をやります。
-
-うちゅうせんにかたづきます。
-[boxes] be put in order spaceship.
-Uchuusen ni Katadukimasu (or) Katazukimasu.
-宇宙船に片づきます。
-
-うちゅうひこうしをれんらくします。
-contact astronaut.
-Uchuuhikoushi o Renrakushimasu.
-宇宙飛行士を連絡します。
-
-つごうがいいをもうしこみます。
-apply for convenient.
-Tsugou ga ii o Moushikomimasu.
-都合がいいを申し込みます。
-
-つごうがわるいをおくれます。
-be late [for an appointment inconvenient.
-Tsugou ga warui o Okuremasu.
-都合が悪いを遅れます。
-
-まにあいます。
-be in time [for an appointment.
-Maniaimasu.
-間に合います。
-
-きぶんがいいをもえます。
-burn [trash] feel well.
-Kibun ga ii o Moemasu.
-気分がいいを燃えます。
-
-きぶんがわるいをさがします。
-look for feel ill.
-Kibun ga warui o Sagashimasu.
-気分が悪いを探します、捜します。
-
-ばしょをさんかします。
-attend [a party] place.
-Basho o Sankashimasu.
-場所を参加します。
-
-ずいぶんをみます。
-check [time] pretty.
-Zuibun o Mimasu.
-ずいぶんを見ます、診ます。
-
-これはがいしゃです。
-This is ~ company.
-kore wa gaisha desu.
-これは会社です。
-
-これはでんしメールです。
-This is electronic mail.
-kore wa Denshi meeru desu.
-これは電子メールです。
-
-これはべつのです。
-This is another.
-kore wa Betsu no desu.
-これは別のです。
-
-これはしんぶんしゃです。
-This is newspaper publishing company.
-kore wa Shinbunsha desu.
-これは新聞社です。
-
-これはこんなです。
-This is ~ like this.
-kore wa Konna desu.
-これはこんなです。
-
-これはそんなです。
-This is ~ like that.
-kore wa Sonna desu.
-これはそんなです。
-
-これはあんなです。
-This is ~ like that.
-kore wa Anna desu.
-これはあんなです。
-
-これはこんどです。
-This is next time.
-kore wa Kondo desu.
-これは今度です。
-
-これはエヌエイチケーです。
-This is Nippon Hoso Kyokai.
-kore wa NHK (Enueichikei) desu.
-これはNHKです。
-
-これはごみです。
-This is garbage.
-kore wa Gomi desu.
-これはごみです。
-
-これはげつ・すい・きんです。
-This is Monday.
-kore wa Getsu・Sui・Kin desu.
-これは月・水・金です。
-
-これはボランティアです。
-This is volunteer.
-kore wa Borantia desu.
-これはボランティアです。
-
-これはかんです。
-This is can.
-kore wa Kan desu.
-これは缶です。
-
-これはゆです。
-This is hot water.
-kore wa yu desu.
-これは湯です。
-
-これはこわいです。
-This is be afraid of.
-kore wa Kowai desu.
-これは怖いです。
-
-これはいつでもです。
-This is any time.
-kore wa Itsudemo desu.
-これはいつでもです。
-
-これはどこでもです。
-This is anywhere.
-kore wa Dokodemo desu.
-これはどこでもです。
-
-これはだれでもです。
-This is anybody.
-kore wa Daredemo desu.
-これはだれでもです。
-
-これはなんでもです。
-This is anything.
-kore wa Nandemo desu.
-これはなんでもです。
-
-これはガスです。
-This is gas.
-kore wa Gasu desu.
-これはガスです。
-
-これはじゅうどうです。
-This is judo.
-kore wa Juudou desu.
-これは柔道です。
-
-これはこどものひです。
-This is Children's Day.
-kore wa Kodomo no hi desu.
-これはこどもの日です。
-
-これはどいたかおです。
-This is Japanese astronaut.
-kore wa Doi Takao desu.
-これは土井隆雄です。
-
-これはエドヤストアです。
-This is fictitious store.
-kore wa Edoyasutora desu.
-これはエドヤストアです。
-
-これはちょくせつです。
-This is directly.
-kore wa Chokusetsu desu.
-これは直接です。
-
-これはべんです。
-This is ~ dialect.
-kore wa ben desu.
-これは弁です。
-
-これはおきばです。
-This is place where something is put.
-kore wa Okiba desu.
-これは置き場です。
-
-これはよこです。
-This is side.
-kore wa Yoko desu.
-これは横です。
-
-これはびんです。
-This is bottle.
-kore wa Bin desu.
-これは瓶です。
-
-これはこまったなぁです。
-This is What shall I do?.
-kore wa Komatta naa desu.
-これは困ったなぁ。です。
-
-これはしゅうしゅうび：もくようびです。
-This is Collection day: Thursday.
-kore wa Shūshūbi: Mokuyoubi desu.
-これは収集日：木曜日です。
-
-これはかぐです。
-This is Scrap furniture.
-kore wa Kagu desu.
-これは家具です。
-
-これはじてんしゃです。
-This is Bicycles.
-kore wa Jitensha desu.
-これは自転車です。
-
-これはきんぞくせいだいどころようひんです。
-This is Metal kitchen utensils.
-kore wa Kinzokusei daidokoro youhin desu.
-これは金属製台所用品です。
-
-これはかていでんきせいひんです。
-This is Household Electrical appliances.
-kore wa Katei denki seihin desu.
-これは家庭電気製品です。
-
-これはそだいごみです。
-This is Bulky refuse.
-kore wa Sodai gomi desu.
-これは粗大ごみです。
-
-これはしげんごみです。
-This is Recyclable refuse.
-kore wa Shigen gomi desu.
-これは資源ごみです。
-
-これはかねんごみ(もえるごみ)です。
-This is Combustible refuse.
-kore wa Kanen gomi (Moeru gomi) desu.
-これは可燃ごみ(燃えるごみ)です。
-
-これはふねんごみ(もえないごみ)です。
-This is Non-combustible refuse.
-kore wa Funen gomi (Moenai gomi) desu.
-これは不燃ごみ(燃えないごみ)です。
-
-これはごみのだしかたです。
-This is Refuse disposal.
-kore wa Gomi no dashikata desu.
-これはごみの出し方です。
-
-これはごみしゅうしゅうびのおしらせです。
-This is Refuse collection day information.
-kore wa Gomi shuushuubi no oshirase desu.
-これはごみ収集日のお知らせです。
-
-これはかみくずです。
-This is Paper / Wastepaper.
-kore wa Kamikuzu desu.
-これは紙くずです。
-
-これはなまごみです。
-This is Garbage / Kitchen waste.
-kore wa Namagomi desu.
-これは生ごみです。
-
-これはしゅうしゅうび：だいさんかようびです。
-This is Collection day: the third Tuesday.
-kore wa Shūshūbi: Dai-san kayoubi desu.
-これは収集日：第３火曜日です。
-
-これはしゅうしゅうび：だいに、だいよんかようびです。
-This is Collection day: the second and fourth Tuesday.
-kore wa Shūshūbi: Dai-ni, Dai-yon kayoubi desu.
-これは収集日：第２、第４火曜日です。
-
-これはあきかんです。
-This is Cans / Empty cans.
-kore wa Akikan desu.
-これは空き缶です。
-
-これはあきびんです。
-This is Bottles / Empty bottles.
-kore wa Akibin desu.
-これは空きびんです。
-
-これはふるしんぶんです。
-This is Newspaper / Old newspaper.
-kore wa Furushinbun desu.
-これは古新聞です。
-
-これはガラスせいひんです。
-This is Glass products.
-kore wa Garasu seihin desu.
-これはガラス製品です。
-
-これはプラスチックせいひんです。
-This is Plastics / Plastic products.
-kore wa Purasuchikku seihin desu.
-これはプラスチック製品です。
-
-これはしゅうしゅうび：げつ・すい・きんようびです。
-This is Collection days: Mon.
-kore wa Shuushuubi: Getsu, Sui, Kin'youbi desu.
-これは収集日：月・水・金曜日です。
-
-`;
-
-allWords["Sentence 26 - Hard"] = ``;
-
-allWords["Sentence 27"] = `
-にほんごです。
-This uses the language suffix -go (nihon-go).
-nihon go desu.
-にほん後です。
-
-むかしにできます。
-[an airport] be made old days.
-Mukashi ni Dekimasu.
-昔にできます。
-
-かいます。
-keep.
-Kaimasu.
-飼います。
-
-ほかのをたてます。
-build other.
-Hoka no o Tatemasu.
-ほかのを建てます。
-
-はっきりをハしります。
-run clearly.
-Hakkiri o Hashirimasu.
-はっきりを走ります。
-
-いつかをとります。
-take [a holiday] someday.
-Itsuka o Torimasu.
-いつかを取ります。
-
-すばらしいをみえます。
-[a mountain] can be seen marvelous.
-Subarashii o Miemasu.
-素晴らしいを見えます。
-
-だいすきをきこえます。
-[a sound] can be heard like very much.
-Daisuki o Kikoemasu.
-大好きを聞こえます。
-
-ふしぎをつけます。
-attach fantastic.
-Fushigi o Tsukemasu.
-不思議を付けます。
-
-じゆうにをとびます。
-fly freely.
-Jiyuu ni o Tobimasu.
-自由にを飛びます。
-
-しょうらいにひらきます。
-set up [a class] future.
-Shourai ni Hirakimasu.
-将来に開きます。
-
-これはなみです。
-This is wave.
-kore wa Nami desu.
-これは波です。
-
-これはペットです。
-This is pet.
-kore wa Petto desu.
-これはペットです。
-
-これはとりです。
-This is bird.
-kore wa Tori desu.
-これは鳥です。
-
-これはこえです。
-This is voice.
-kore wa Koe desu.
-これは声です。
-
-これははなびです。
-This is fireworks.
-kore wa Hanabi desu.
-これは花火です。
-
-これはひるまです。
-This is daytime.
-kore wa Hiruma desu.
-これは昼間です。
-
-これはじどうはんばいきです。
-This is vending machine.
-kore wa Jidouhanbaiki desu.
-これは自動販売機です。
-
-これはクリーニングです。
-This is [dry] cleaning.
-kore wa Kuriiningu desu.
-これはクリーニングです。
-
-これはマンションです。
-This is condominium.
-kore wa Manshon desu.
-これはマンションです。
-
-これはだいどころです。
-This is kitchen.
-kore wa Daidokoro desu.
-これは台所です。
-
-これはきょうしつです。
-This is ~ class.
-kore wa kyoushitsu desu.
-これは教室です。
-
-これはパーティールームです。
-This is party room.
-kore wa Paatiiruumu desu.
-これはパーティールームです。
-
-これはかんさいくうこうです。
-This is Kansai International Airport.
-kore wa Kansai Kuukou desu.
-これは関西空港です。
-
-これはあきはばらです。
-This is name of a shopping district in Tokyo with many electrical stores.
-kore wa Akihabara desu.
-これは秋葉原です。
-
-これはいずです。
-This is peninsula in Shizuoka Prefecture.
-kore wa Izu desu.
-これは伊豆です。
-
-これはほんだなです。
-This is bookshelf.
-kore wa Hondana desu.
-これは本棚です。
-
-これはゆめです。
-This is dream.
-kore wa Yume desu.
-これは夢です。
-
-これはこどもたちです。
-This is children.
-kore wa Kodomotachi desu.
-これは子どもたちです。
-
-これはまんがです。
-This is cartoon.
-kore wa Manga desu.
-これは漫画です。
-
-これはロボットです。
-This is robot.
-kore wa Robotto desu.
-これはロボットです。
-
-これはポケットです。
-This is pocket.
-kore wa Poketto desu.
-これはポケットです。
-
-これはそらです。
-This is sky.
-kore wa Sora desu.
-これは空です。
-
-これはじぶんです。
-This is oneself.
-kore wa Jibun desu.
-これは自分です。
-
-これはドラえもんです。
-This is name of a cartoon character.
-kore wa Doraemon desu.
-これはドラえもんです。
-
-これはつうしんはんばいです。
-This is mail order.
-kore wa Tsuushinhanbai desu.
-これは通信販売です。
-
-これはけしきです。
-This is scenery.
-kore wa Keshiki desu.
-これは景色です。
-
-これはしかです。
-This is only ~.
-kore wa shika desu.
-これはしかです。
-
-これはほとんどです。
-This is almost all.
-kore wa Hotondo desu.
-これはほとんどです。
-
-これはどうぐです。
-This is tool.
-kore wa Dougu desu.
-これは道具です。
-
-これはにちようだいくです。
-This is Sunday carpenter.
-kore wa Nichiyoudaiku desu.
-これは日曜大工です。
-
-これはしゅじんこうです。
-This is hero.
-kore wa Shujinkou desu.
-これは主人公です。
-
-これはかたちです。
-This is shape.
-kore wa Katachi desu.
-これは形です。
-
-これはたとえばです。
-This is for example.
-kore wa Tatoeba desu.
-これは例えばです。
-
-これはちかくのみせです。
-This is Shops found locally.
-kore wa Chikaku no mise desu.
-これは近くの店です。
-
-これはしゃしんやです。
-This is Camera shop.
-kore wa Shashinya desu.
-これは写真屋です。
-
-これはげんぞうです。
-This is Developing.
-kore wa Genzou desu.
-これは現像です。
-
-これはプリントです。
-This is Printing.
-kore wa Purinto desu.
-これはプリントです。
-
-これはやきましです。
-This is Extra print.
-kore wa Yakimashi desu.
-これは焼き増しです。
-
-これはひきのばしです。
-This is Enlargement.
-kore wa Hikinobashi desu.
-これは引き伸ばしです。
-
-これはネガです。
-This is Negative.
-kore wa Nega desu.
-これはネガです。
-
-これはスライドです。
-This is Slide.
-kore wa Suraido desu.
-これはスライドです。
-
-これはサービスサイズです。
-This is Service size.
-kore wa Saabisu saizu desu.
-これはサービスサイズです。
-
-これはパノラマサイズです。
-This is Panoramic size.
-kore wa Panorama saizu desu.
-これはパノラマサイズです。
-
-これはクリーニングやです。
-This is Cleaners / Dry cleaner's.
-kore wa Kuriiningu-ya desu.
-これはクリーニング屋です。
-
-これはドライクリーニングです。
-This is Dry cleaning.
-kore wa Dorai kuriiningu desu.
-これはドライクリーニングです。
-
-これはみずあらいです。
-This is Laundering / Washing in water.
-kore wa Mizuarai desu.
-これは水洗いです。
-
-これはしみぬきです。
-This is Stain removal.
-kore wa Shiminuki desu.
-これは染み抜きです。
-
-これはぼうすいかこうです。
-This is Waterproofing / Waterproof.
-kore wa Bousui kakou desu.
-これは防水加工です。
-
-これはサイズなおしです。
-This is Alterations / Size adjustment.
-kore wa Saizu naoshi desu.
-これはサイズ直しです。
-
-これはちぢむです。
-This is Shrink.
-kore wa Chijimu desu.
-これは縮むです。
-
-これはのびるです。
-This is Stretch.
-kore wa Nobiru desu.
-これは伸びるです。
-
-これはコンビニです。
-This is Convenience store.
-kore wa Konbini desu.
-これはコンビニです。
-
-これはたくはいびんのうけつけです。
-This is Delivery service reception.
-kore wa Takuhaibin no uketsuke desu.
-これは宅配便の受付です。
-
-これはしゃしんげんぞうです。
-This is Photo developing.
-kore wa Shashin genzou desu.
-これは写真現像です。
-
-これはこうきょうりょうきんふりこみです。
-This is Payment of utility charges.
-kore wa Koukyou ryoukin furikomi desu.
-これは公共料金振り込みです。
-
-これはコピー、ファクスです。
-This is Photocopy.
-kore wa Kopii, fakusu desu.
-これはコピー、ファクスです。
-
-これははがき、きってのはんばいです。
-This is Sale of postcards and stamps.
-kore wa Hagaki, kitte no hanbai desu.
-これははがき、切手の販売です。
-
-これはコンサートチケットのはんばいです。
-This is Sale of concert tickets.
-kore wa Konsaato chiketto no hanbai desu.
-これはコンサートチケットの販売です。
-
-`;
-
-allWords["Sentence 27 - Hard"] = ``;
-
-allWords["Sentence 28"] = `
-おねがいが あるんですが。
-I have a favor to ask.
-Onegai ga arun desu ga.
-お願いが あるんですが。
-
-むすこはまじめです。
-is serious.
-Musuko wa Majime desu.
-息子はまじめです。
-
-むすこさんはねっしんです。
-is earnest.
-Musukosan wa Nesshin desu.
-息子さんは熱心です。
-
-むすめはやさしいです。
-is gentle.
-Musume wa Yasashii desu.
-娘は優しいです。
-
-むすめさんはえらいです。
-is great.
-Musumesan wa Erai desu.
-娘さんは偉いです。
-
-ちょうどいいをうれます。
-[bread] sell proper.
-Choudo ii o Uremasu.
-ちょうどいいを売れます。
-
-しゅうかんをおどります。
-dance custom.
-Shuukan o Odorimasu.
-習慣を踊ります。
-
-けいけんをかみます。
-chew experience.
-Keiken o Kamimasu.
-経験をかみます。
-
-ちからをえらびます。
-choose power.
-Chikara o Erabimasu.
-力を選びます。
-
-ちがいます。
-be different.
-Chigaimasu.
-違います。
-
-かよいます。
-go to and from [university].
-Kayoimasu.
-通います。
-
-にんきをメモします。
-take a memo popularity.
-Ninki o Memoshimasu.
-人気をメモします。
-
-かたちをおしゃべりします。
-chat form.
-Katachi o Oshaberishimasu.
-形をおしゃべりします。
-
-これはいろです。
-This is color.
-kore wa Iro desu.
-これは色です。
-
-これはあじです。
-This is taste.
-kore wa Aji desu.
-これは味です。
-
-これはガムです。
-This is chewing gum.
-kore wa Gamu desu.
-これはガムです。
-
-これはしなものです。
-This is goods.
-kore wa Shinamono desu.
-これは品物です。
-
-これはねだんです。
-This is price.
-kore wa Nedan desu.
-これは値段です。
-
-これはきゅうりょうです。
-This is salary.
-kore wa Kyuuryou desu.
-これは給料です。
-
-これはボーナスです。
-This is bonus.
-kore wa Boonasu desu.
-これはボーナスです。
-
-これはばんぐみです。
-This is program.
-kore wa Bangumi desu.
-これは番組です。
-
-これはドラマです。
-This is drama.
-kore wa Dorama desu.
-これはドラマです。
-
-これはしょうせつです。
-This is novel.
-kore wa Shousetsu desu.
-これは小説です。
-
-これはしょうせつかです。
-This is novelist.
-kore wa Shousetsuka desu.
-これは小説家です。
-
-これはかしゅです。
-This is singer.
-kore wa Kashu desu.
-これは歌手です。
-
-これはかんりにんです。
-This is janitor.
-kore wa Kanrinin desu.
-これは管理人です。
-
-これはじぶんです。
-This is oneself.
-kore wa Jibun desu.
-これは自分です。
-
-これはしょうらいです。
-This is future.
-kore wa Shourai desu.
-これは将来です。
-
-これはしばらくです。
-This is a little while.
-kore wa Shibaraku desu.
-これはしばらくです。
-
-これはたいていです。
-This is usually.
-kore wa Taitei desu.
-これはたいていです。
-
-これはそれにです。
-This is in addition.
-kore wa Sore ni desu.
-これはそれにです。
-
-これはそれでです。
-This is and so.
-kore wa Sore de desu.
-これはそれでです。
-
-これはホームステイです。
-This is homestay.
-kore wa Hoomusutei desu.
-これはホームステイです。
-
-これはかいわです。
-This is conversation.
-kore wa Kaiwa desu.
-これは会話です。
-
-これはおしらせです。
-This is notice.
-kore wa Oshirase desu.
-これはお知らせです。
-
-これはひにちです。
-This is date.
-kore wa Hinichi desu.
-これは日にちです。
-
-これはどです。
-This is Saturday.
-kore wa Do desu.
-これは土です。
-
-これはたいいくかんです。
-This is gymnasium.
-kore wa Taiikukan desu.
-これは体育館です。
-
-これはむりょうです。
-This is free of charge.
-kore wa Muryou desu.
-これは無料です。
-
-これはうちをかりるです。
-This is Renting accommodation.
-kore wa Uchi o kariru desu.
-これはうちを借りるです。
-
-これはろせんです。
-This is Train line.
-kore wa Rosen desu.
-これは路線です。
-
-これはもよりえきです。
-This is Nearest station.
-kore wa Moyori eki desu.
-これは最寄り駅です。
-
-これはとほです。
-This is Walk / Walking distance.
-kore wa Toho desu.
-これは徒歩です。
-
-これはマンションです。
-This is Condominium.
-kore wa Manshon desu.
-これはマンションです。
-
-これはアパートです。
-This is Apartment building.
-kore wa Apaato desu.
-これはアパートです。
-
-これはいっこだてです。
-This is Detached house.
-kore wa Ikkodate desu.
-これは一戸建てです。
-
-これはちく...ねんです。
-This is ... years old.
-kore wa Chiku...nen desu.
-これは築...年です。
-
-これはやちんです。
-This is Rental fee / Rent.
-kore wa Yachin desu.
-これは家賃です。
-
-これはしききんです。
-This is Deposit money.
-kore wa Shikikin desu.
-これは敷金です。
-
-これはれいきんです。
-This is Gift money.
-kore wa Reikin desu.
-これは礼金です。
-
-これはかんりひです。
-This is Maintenance fee.
-kore wa Kanrihi desu.
-これは管理費です。
-
-これはみなみむきです。
-This is Facing south.
-kore wa Minamimuki desu.
-これは南向きです。
-
-これは...かいだての...かいです。
-This is ...th floor of ...-story building.
-kore wa...kaidate no...kai desu.
-これは...階建ての...階です。
-
-これはいま・しょくどう・だいどころ(エルディーキー)です。
-This is Living/dining room with kitchen.
-kore wa Ima, shokudou, daidokoro (LDK) desu.
-これは居間・食堂・台所(LDK)です。
-
-これは...じょうです。
-This is ... mats.
-kore wa...jou desu.
-これは...畳です。
-
-これはふどうさんやです。
-This is Real estate agent.
-kore wa Fudousan-ya desu.
-これは不動産屋です。
-
-これはちゅうおうせんです。
-This is Chūou Line.
-kore wa Chūou-sen desu.
-これは中央線です。
-
-これはにしおぎくぼえきです。
-This is Nishi-Ogikubo Station.
-kore wa Nishi-Ogikubo-eki desu.
-これは西荻窪駅です。
-
-ここはとほ5ふんです。
-This place is 5-minute walk.
-koko wa Toho go-fun desu.
-ここは徒歩5分です。
-
-ここはちく3ねんです。
-This place is 3 years old.
-koko wa Chiku san-nen desu.
-ここは築3年です。
-
-ここは7まん4せんえんです。
-This place is 74.
-koko wa Nana-man yon-sen en desu.
-ここは7万4千円です。
-
-ここは2かげつぶんです。
-This place is 2 months' worth.
-koko wa Ni-kagetsu-bun desu.
-ここは2か月分です。
-
-ここは6,000えんです。
-This place is 6.
-koko wa Roku-sen en desu.
-ここは6,000円です。
-
-ここは10かいだての8かいです。
-This place is 8th floor of a 10-story building.
-koko wa Jukkai-date no hachi-kai desu.
-ここは10階建ての8階です。
-
-ここは2エルディーキーです。
-This place is 2LDK.
-koko wa Ni ERU-Dii-Kii desu.
-ここは2LDKです。
-
-ここは6じょうです。
-This place is 6 mats.
-koko wa Roku-jou desu.
-ここは6畳です。
-
-これはやすいふどうさんです。
-This is Yasui Real Estate.
-kore wa Yasui Fudousan desu.
-これはやすい不動産です。
-
-`;
-
-allWords["Sentence 28 - Hard"] = ``;
-
-allWords["Sentence 29"] = `
-おさきに どうぞ。
-After you./Go ahead, please.
-Osaki ni douzo.
-お先に どうぞ。
-
-よかった。
-Thank goodness! (used to express a feeling of relief)
-Yokatta.
-よかった。
-
-さらにあきます。
-[a door] open plate.
-sara ni Akimasu.
-皿に開きます。
-
-ちゃわんをしまります。
-[a door] close rice bowl.
-chawan o Shimarimasu.
-茶わんを閉まります。
-
-コップにつきます。
-[a light] come on glass.
-Koppu ni Tsukimasu.
-コップにつきます。
-
-ガラスをきえます。
-[a light] go off glass.
-Garasu o Kiemasu.
-ガラスを消えます。
-
-さいふをこみます。
-[a road] get crowded wallet.
-Saifu o Komimasu.
-財布を込みます。
-
-ふくろにすきます。
-[a road] get empty bag.
-Fukuro ni Sukimasu.
-袋にすきます。
-
-えだをこわれます。
-[a chair] break branch.
-Eda o Kowaremasu.
-枝を壊れます。
-
-えきいんをわれます。
-[a glass] break station employee.
-Ekiin o Waremasu.
-駅員を割れます。
-
-このへんをおれます。
-[a tree] break this neighborhood.
-Kono hen o Oremasu.
-この辺を折れます。
-
-このくらいをやぶれます。
-[the paper] tear about this size.
-Kono kurai o Yaburemasu.
-このくらいを破れます。
-
-いまのでんしゃをよごれます。
-[the clothes] get dirty the train which has just left.
-Ima no densha o Yogoremasu.
-今の電車を汚れます。
-
-わすれものをはずれます。
-[a button] be undone things left behind.
-Wasuremono o Hazuremasu.
-忘れ物を外れます。
-
-ポケットをとまります。
-[an elevator] stop pocket.
-Poketto o Tomarimasu.
-ポケットを止まります。
-
-おぼえていませんをまちがえます。
-make a mistake I don't remember.
-Oboete imasen o Machigaemasu.
-覚えていませんをまちがえます。
-
-あみだなをおとします。
-drop rack.
-Amidana o Otoshimasu.
-網棚を落とします。
-
-かかります。
-be locked.
-Kakarimasu.
-掛かります。
-
-たしかをさします。
-point I suppose.
-Tashika o Sashimasu.
-確かを指します。
-
-よつやをたおれます。
-fall down name of a station in Tokyo.
-Yotsuya o Taoremasu.
-四ツ谷を倒れます。
-
-これはへんです。
-This is the place around ~.
-kore wa hen desu.
-これは辺です。
-
-これはがわです。
-This is ~ side.
-kore wa gawa desu.
-これは側です。
-
-これはじしんです。
-This is earthquake.
-kore wa Jishin desu.
-これは地震です。
-
-これはかべです。
-This is wall.
-kore wa Kabe desu.
-これは壁です。
-
-これははりです。
-This is hands.
-kore wa Hari desu.
-これは針です。
-
-これはえきまえです。
-This is the area in front of a station.
-kore wa Ekimae desu.
-これは駅前です。
-
-これはにしです。
-This is west.
-kore wa Nishi desu.
-これは西です。
-
-これはほうです。
-This is direction.
-kore wa Hou desu.
-これは方です。
-
-これはさんのみやです。
-This is name of a place in Kobe.
-kore wa Sannomiya desu.
-これは三宮です。
-
-これはじょうたい・ようすです。
-This is State & appearance.
-kore wa Joutai, yousu desu.
-これは状態・様子です。
-
-これはふとっているです。
-This is Fat / To be overweight.
-kore wa Futotte iru desu.
-これは太っているです。
-
-これはやせているです。
-This is Thin / To be skinny.
-kore wa Yasete iru desu.
-これはやせているです。
-
-これはふくらんでいるです。
-This is Bulging / To be swollen.
-kore wa Fukurande iru desu.
-これは膨らんでいるです。
-
-これはあながあいているです。
-This is Have a hole / There is a hole.
-kore wa Ana ga aite iru desu.
-これは穴が開いているです。
-
-これはまがっているです。
-This is Bent / To be curved.
-kore wa Magatte iru desu.
-これは曲がっているです。
-
-これはゆがんでいるです。
-This is Distorted / To be warped.
-kore wa Yugande iru desu.
-これはゆがんでいるです。
-
-これはへこんでいるです。
-This is Dented / To be sunken.
-kore wa Hekonde iru desu.
-これはへこんでいるです。
-
-これはねじれているです。
-This is Twisted / To be twisted.
-kore wa Nejirete iru desu.
-これはねじれているです。
-
-これはかけているです。
-This is Chipped / To be chipped.
-kore wa Kakete iru desu.
-これは欠けているです。
-
-これはひびがはいっているです。
-This is Cracked / Has a crack.
-kore wa Hibi ga haitte iru desu.
-これはひびが入っているです。
-
-これはくさっているです。
-This is Rotten / To be spoiled.
-kore wa Kusatte iru desu.
-これは腐っているです。
-
-これはこおっているです。
-This is Frozen / To be frozen.
-kore wa Koutte iru desu.
-これは凍っているです。
-
-これはかわいているです。
-This is Dry / To be dry.
-kore wa Kawaite iru desu.
-これは乾いているです。
-
-これはぬれているです。
-This is Wet / To be wet.
-kore wa Nurete iru desu.
-これはぬれているです。
-
-`;
-
-allWords["Sentence 29 - Hard"] = ``;
-
-allWords["Sentence 30"] = `
-ごくろうさま。
-Thank you for your hard work. (used by a superior or older person to express appreciation for a subordinate's work)
-Gokurousama
-ご苦労さま。
-
-なんか ごきぼうが ありますか。
-Do you have any requests?
-Nanka gokibou ga arimasu ka.
-何かご希望がありますか。
-
-それは いいですね。
-That's a good idea./That sounds nice.
-Sore wa ii desu ne.
-それは いいですね。
-
-おこさんはひきだしです。
-is drawer.
-Okosan wa Hikidashi desu.
-お子さんは引き出しです。
-
-じゅぎょうをはります。
-put up class.
-Jugyou o Harimasu.
-授業をはります。
-
-こうぎをかけます。
-hang lecture.
-Kougi o Kakemasu.
-講義を掛けます。
-
-ミーティングをかざります。
-display meeting.
-Miitingu o Kazarimasu.
-ミーティングを飾ります。
-
-よていをならべます。
-arrange plan.
-Yotei o Narabemasu.
-予定を並べます。
-
-おしらせをうえます。
-plant notice.
-Oshirase o Uemasu.
-お知らせを植えます。
-
-あんないしょをもどします。
-return guide book.
-Annaisho o Modoshimasu.
-案内書を戻します。
-
-カレンダーをまとめます。
-put ~ together calendar.
-Karendaa o Matomemasu.
-カレンダーをまとめます。
-
-ポスターをかたづけます。
-put things in order poster.
-Posutaa o Katadukemasu.
-ポスターを片づけます。
-
-しまいます。
-put things in their proper place.
-Shimaimasu.
-しまいます。
-
-ごみばこをきめます。
-decide trash can.
-Gomibako o Kimemasu.
-ごみ箱を決めます。
-
-にんぎょうをしらせます。
-inform doll.
-Ningyou o Shirasemasu.
-人形を知らせます。
-
-かびんをそうだんします。
-consult vase.
-Kabin o Soudanshimasu.
-花瓶を相談します。
-
-かがみをよしゅうします。
-prepare one's lesson mirror.
-Kagami o Yoshuushimasu.
-鏡を予習します。
-
-げんかんをふくしゅうします。
-review one's lesson front door.
-Genkan o Fukushuushimasu.
-玄関を復習します。
-
-ろうかをそのままにします。
-leave things as they are corridor.
-Rouka o Sonomama ni shimasu.
-廊下をそのままにします。
-
-かべをめがさめます。
-wake up wall.
-Kabe o Me ga samemasu.
-壁を目が覚めます。
-
-まだ、これはいけです。
-This is pond.
-Mada, kore wa Ike desu.
-まだ、これは池です。
-
-これはこうばんです。
-This is police box.
-kore wa Kouban desu.
-これは交番です。
-
-これはもとのところです。
-This is original place.
-kore wa Moto no tokoro desu.
-これは元の所です。
-
-これはまわりです。
-This is round.
-kore wa Mawari desu.
-これは周りです。
-
-これはまんなかです。
-This is center.
-kore wa Mannaka desu.
-これは真ん中です。
-
-これはすみです。
-This is corner.
-kore wa Sumi desu.
-これは隅です。
-
-これはほどです。
-This is about ~.
-kore wa hodo desu.
-これはほどです。
-
-これはよていひょうです。
-This is schedule.
-kore wa Yoteihyou desu.
-これは予定表です。
-
-これはきぼうです。
-This is hope.
-kore wa Kibou desu.
-これは希望です。
-
-これはミュージカルです。
-This is musical.
-kore wa Myuujikaru desu.
-これはミュージカルです。
-
-これはブロードウェイです。
-This is Broadway.
-kore wa Buroodowei desu.
-これはブロードウェイです。
-
-これはまるいです。
-This is round.
-kore wa Marui desu.
-これは丸いです。
-
-これはあるです。
-This is one ~.
-kore wa Aru desu.
-これはあるです。
-
-これはちきゅうです。
-This is earth.
-kore wa Chikyuu desu.
-これは地球です。
-
-これはうれしいです。
-This is glad.
-kore wa Ureshii desu.
-これはうれしいです。
-
-これはいやです。
-This is hateful.
-kore wa Iya desu.
-これは嫌です。
-
-これはするとです。
-This is and.
-kore wa Suruto desu.
-これはするとです。
-
-これはいちです。
-This is Location / Position.
-kore wa Ichi desu.
-これは位置です。
-
-ここはうえから2だんめです。
-This place is The second from the top.
-koko wa Ue kara nidanme desu.
-ここは上から2段目です。
-
-これはおくです。
-This is Inner part / Back.
-kore wa Oku desu.
-これはOkuです。
-
-これはてまえです。
-This is This side / Front.
-kore wa Temae desu.
-これは手前です。
-
-ここはまえから2れつめです。
-This place is The second row from the front.
-koko wa Mae kara niretsume desu.
-ここは前から2列目です。
-
-これは(つくえの)まわりです。
-This is Around.
-kore wa (Tsukue no) mawari desu.
-これは(机の)周りです。
-
-これは(ほんの)そばです。
-This is Beside.
-kore wa (Hon no) soba desu.
-これは(本の)そばです。
-
-これはまんなか/(きょうしつの)まんなかです。
-This is Center / Center.
-kore wa Mannaka / (Kyoushitsu no) mannaka desu.
-これは真ん中/(教室の)真ん中です。
-
-ここは3ぎょうめです。
-This place is The third line.
-koko wa Sangyoume desu.
-ここは3行目です。
-
-ここは2ぎょうめです。
-This place is The second line.
-koko wa Nigyoume desu.
-ここは2行目です。
-
-ここは4ページです。
-This place is Page 4.
-koko wa Yon pēji desu.
-ここは4ページです。
-
-これはななめまえです。
-This is Diagonally ahead / Diagonally in front.
-kore wa Naname mae desu.
-これは斜め前です。
-
-これはななめうしろです。
-This is Diagonally behind.
-kore wa Naname ushiro desu.
-これは斜め後ろです。
-
-これは(テレビの)よこです。
-This is Beside.
-kore wa (Terebi no) yoko desu.
-これは(テレビの)横です。
-
-`;
-
-allWords["Sentence 30 - Hard"] = ``;
-
-allWords["Sentence 31"] = `
-れんきゅうをはじまります。
-[a ceremony] begin consecutive holidays.
-Renkyuu o Hajimarimasu.
-連休を始まります。
-
-さくぶんをつづけます。
-continue essay.
-Sakubun o Tsudukemasu.
-作文を続けます。
-
-てんらんかいをみつけます。
-find exhibition.
-Tenrankai o Mitsukemasu.
-展覧会を見つけます。
-
-けっこんしきをうけます。
-take [an examination] wedding ceremony.
-Kekkonshiki o Ukemasu.
-結婚式を受けます。
-
-そうしきににゅうがくします。
-enter [a university] funeral.
-soushiki ni Nyuugakushimasu.
-葬式に入学します。
-
-しきをそつぎょうします。
-graduate [from a university] ceremony.
-Shiki o Sotsugyoushimasu.
-式を卒業します。
-
-ほんしゃにしゅっせきします。
-attend [a meeting] head office.
-Honsha ni Shussekishimasu.
-本社に出席します。
-
-してんをきゅうけいします。
-take a break branch office.
-Shiten o Kyuukeishimasu.
-支店を休憩します。
-
-きょうかいをのこります。
-remain church.
-Kyoukai o Nokorimasu.
-教会を残ります。
-
-だいがくいんをとじます。
-close graduate school.
-Daigakuin o Tojimasu.
-大学院を閉じます。
-
-どうぶつえんをあつまります。
-gather zoo.
-Doubutsuen o Atsumarimasu.
-動物園を集まります。
-
-おんせんにきがつきます。
-notice hot spring.
-Onsen ni Ki ga tsukimasu.
-温泉に気がつきます。
-
-これはおきゃくです。
-This is visitor.
-kore wa Okyaku desu.
-これはお客です。
-
-これはだれかです。
-This is somebody.
-kore wa Dareka desu.
-これはだれかです。
-
-これはのほうです。
-This is place toward ~.
-kore wa no hou desu.
-これはの方です。
-
-これは---RightPage---です。
-This is ずっと.
-kore wa all the time desu.
-これはZuttoです。
-
-これはピカソです。
-This is Pablo Picasso.
-kore wa Pikaso desu.
-これはピカソです。
-
-これはうえのこうえんです。
-This is Ueno Park.
-kore wa Ueno kouen desu.
-これは上野公園です。
-
-これはつきにです。
-This is per month.
-kore wa Tsuki ni desu.
-これは月にです。
-
-これはふつうのです。
-This is ordinary.
-kore wa Futsuu no desu.
-これは普通のです。
-
-これはインターネットです。
-This is Internet.
-kore wa Intaanetto desu.
-これはインターネットです。
-
-これはむらです。
-This is village.
-kore wa Mura desu.
-これは村です。
-
-これはえいがかんです。
-This is movie theater.
-kore wa Eigakan desu.
-これは映画館です。
-
-これはいやです。
-This is hateful.
-kore wa Iya desu.
-これは嫌です。
-
-これはそらです。
-This is sky.
-kore wa Sora desu.
-これは空です。
-
-これはとかいです。
-This is city.
-kore wa Tokai desu.
-これは都会です。
-
-これはじゆうにです。
-This is freely.
-kore wa Jiyuu ni desu.
-これは自由にです。
-
-これはせかいじゅうです。
-This is all over the world.
-kore wa Sekaijuu desu.
-これは世界中です。
-
-これはうつくしいです。
-This is beautiful.
-kore wa Utsukushii desu.
-これは美しいです。
-
-これはしぜんです。
-This is nature.
-kore wa Shizen desu.
-これは自然です。
-
-これはすばらしさです。
-This is goodness.
-kore wa Subarashisa desu.
-これはすばらしさです。
-
-これはせんもんです。
-This is Fields of study.
-kore wa Senmon desu.
-これは専門です。
-
-これはせいじがくです。
-This is politics.
-kore wa Seijigaku desu.
-これは政治学です。
-
-これはこくさいかんけいがくです。
-This is international relations.
-kore wa Kokusai kankeigaku desu.
-これは国際関係学です。
-
-これはほうりつがくです。
-This is law.
-kore wa Houritsugaku desu.
-これは法律学です。
-
-これはけいざいがくです。
-This is economics.
-kore wa Keizaigaku desu.
-これは経済学です。
-
-これはけいえいがくです。
-This is business administration.
-kore wa Keieigaku desu.
-これは経営学です。
-
-これはしゃかいがくです。
-This is sociology.
-kore wa Shakaigaku desu.
-これは社会学です。
-
-これはきょういくがくです。
-This is education.
-kore wa Kyouikugaku desu.
-これは教育学です。
-
-これはぶんがくです。
-This is literature.
-kore wa Bungaku desu.
-これは文学です。
-
-これはげんごがくです。
-This is linguistics.
-kore wa Gengogaku desu.
-これは言語学です。
-
-これはしんりがくです。
-This is psychology.
-kore wa Shinrigaku desu.
-これは心理学です。
-
-これはてつがくです。
-This is philosophy.
-kore wa Tetsugaku desu.
-これは哲学です。
-
-これはしゅうきょうがくです。
-This is theology.
-kore wa Shūkyougaku desu.
-これは宗教学です。
-
-これはげいじゅつです。
-This is arts.
-kore wa Geijutsu desu.
-これは芸術です。
-
-これはびじゅつです。
-This is fine arts.
-kore wa Bijutsu desu.
-これは美術です。
-
-これはおんがくです。
-This is music.
-kore wa Ongaku desu.
-これは音楽です。
-
-これはたいいくがくです。
-This is physical education.
-kore wa Taiikugaku desu.
-これは体育学です。
-
-これはいがくです。
-This is medical science.
-kore wa Igaku desu.
-これは医学です。
-
-これはやくがくです。
-This is pharmacology.
-kore wa Yakugaku desu.
-これは薬学です。
-
-これはかがくです。
-This is chemistry.
-kore wa Kagaku desu.
-これは化学です。
-
-これはせいかがくです。
-This is biochemistry.
-kore wa Seikagaku desu.
-これは生化学です。
-
-これはせいぶつがくです。
-This is biology.
-kore wa Seibutsu-gaku desu.
-これは生物学です。
-
-これはのうがくです。
-This is agriculture.
-kore wa Nougaku desu.
-これは農学です。
-
-これはちがくです。
-This is geology.
-kore wa Chigaku desu.
-これは地学です。
-
-これはちりがくです。
-This is geography.
-kore wa Chirigaku desu.
-これは地理学です。
-
-これはすうがくです。
-This is mathematics.
-kore wa Sūgaku desu.
-これは数学です。
-
-これはぶつりがくです。
-This is physics.
-kore wa Butsurigaku desu.
-これは物理学です。
-
-これはこうがくです。
-This is engineering.
-kore wa Kougaku desu.
-これは工学です。
-
-これはどぼくこうがくです。
-This is civil engineering.
-kore wa Doboku kougaku desu.
-これは土木工学です。
-
-これはでんしこうがくです。
-This is electronics.
-kore wa Denshi kougaku desu.
-これは電子工学です。
-
-これはでんきこうがくです。
-This is electrical engineering.
-kore wa Denki kougaku desu.
-これは電気工学です。
-
-これはきかいこうがくです。
-This is mechanical engineering.
-kore wa Kikai kougaku desu.
-これは機械工学です。
-
-これはコンピューターこうがくです。
-This is computer science.
-kore wa Konpyūtaa kougaku desu.
-これはコンピューター工学です。
-
-これはいでんしこうがくです。
-This is genetic engineering.
-kore wa Idenshi kougaku desu.
-これは遺伝子工学です。
-
-これはけんちくがくです。
-This is architecture.
-kore wa Kenchikugaku desu.
-これは建築学です。
-
-これはてんもんがくです。
-This is astronomy.
-kore wa Tenmongaku desu.
-これは天文学です。
-
-これはかんきょうかがくです。
-This is environmental science.
-kore wa Kankyou kagaku desu.
-これは環境科学です。
-
-`;
-
-allWords["Sentence 31 - Hard"] = ``;
-
-allWords["Sentence 32"] = `
-しんぱいをうんどうします。
-take exercise worried.
-Shinpai o Undoushimasu.
-心配を運動します。
-
-じゅうぶんをせいこうします。
-succeed enough.
-Juubun o Seikoushimasu.
-十分を成功します。
-
-おかしいをしっぱいします。
-fail [an examination] strange.
-Okashii o Shippaishimasu.
-おかしいを失敗します。
-
-うるさいをごうかくします。
-pass [an examination] noisy.
-Urusai o Goukakushimasu.
-うるさいを合格します。
-
-やけどをもどります。
-return burning.
-Yakedo o Modorimasu.
-やけどを戻ります。
-
-けがをやみます。
-[rain] stop injury.
-Kega o Yamimasu.
-けがをやみます。
-
-せきをはれます。
-clear up cough.
-Seki o Haremasu.
-せきを晴れます。
-
-インフルエンザをくもります。
-get cloudy influenza.
-Infuruenza o Kumorimasu.
-インフルエンザを曇ります。
-
-そらにふきます。
-[wind] blow sky.
-Sora ni Fukimasu.
-空に吹きます。
-
-わたしはなおります。
-I am here (humble).
-watashi wa Naorimasu.
-わたしは治ります、直ります。
-
-たいようにつづきます。
-[high temperature] continue sun.
-Taiyou ni Tsudukimasu.
-太陽に続きます。
-
-ほしにひきます。
-catch [a cold] star.
-Hoshi ni Hikimasu.
-星にひきます。
-
-つきをひやします。
-cool moon.
-Tsuki o Hiyashimasu.
-月を冷やします。
-
-かぜをゆっくりします。
-take one's time wind.
-Kaze o Yukkurishimasu.
-風をゆっくりします。
-
----RightPage---をこまります。
-be in trouble きた.
-north o Komarimasu.
-Kitaを困ります。
-
-みなみをあたります。
-win [a lottery] south.
-Minami o Atarimasu.
-南を当たります。
-
-にしをあめがふります。
-rain west.
-Nishi o Ame ga furimasu.
-西を雨が降ります。
-
-ひがしをゆきがふります。
-snow east.
-Higashi o Yuki ga furimasu.
-東を雪が降ります。
-
-はれのちくもりになります。
-fine.
-Hare nochi kumori ni narimasu.
-晴れのち曇りになります。
-
-くもりときどき(いちじ)あめになります。
-cloudy.
-Kumori tokidoki (ichiji) ame ni narimasu.
-曇り時々(一時)雨になります。
-
-かみなりがなります。
-thunder.
-Kaminari ga narimasu.
-雷が鳴ります。
-
-すいどうにかぜがふきます。
-wind faucet.
-Suidou ni Kaze ga fukimasu.
-水道に風が吹きます。
-
-エンジンをにじがでます。
-rainbow engine.
-Enjin o Niji ga demasu.
-エンジンを虹が出ます。
-
-これはチームです。
-This is team.
-kore wa Chiimu desu.
-これはチームです。
-
-これはこんやです。
-This is this evening.
-kore wa Konya desu.
-これは今夜です。
-
-これはゆうがたです。
-This is late afternoon.
-kore wa Yuugata desu.
-これは夕方です。
-
-これはまえです。
-This is a time in the past.
-kore wa Mae desu.
-これは前です。
-
-これはおそくです。
-This is late.
-kore wa Osoku desu.
-これは遅くです。
-
-これはこんなにです。
-This is like this.
-kore wa Konnani desu.
-これはこんなにです。
-
-これはそんなにです。
-This is like that.
-kore wa Sonnani desu.
-これはそんなにです。
-
-これはあんなにです。
-This is like that.
-kore wa Annani desu.
-これはあんなにです。
-
-これはもしかしたらです。
-This is possibly.
-kore wa Moshikashitara desu.
-これはもしかしたらです。
-
-これはそれはいけませんねです。
-This is That's too bad.
-kore wa Sore wa ikemasen ne desu.
-これはそれはいけませんねです。
-
-これはオリンピックです。
-This is Olympic Games.
-kore wa Orinpikku desu.
-これはオリンピックです。
-
-これはげんきです。
-This is vigor.
-kore wa Genki desu.
-これは元気です。
-
-これはいです。
-This is stomach.
-kore wa I desu.
-これは胃です。
-
-これははたらきすぎです。
-This is working too much.
-kore wa Hatarakisugi desu.
-これは働きすぎです。
-
-これはストレスです。
-This is stress.
-kore wa Sutoresu desu.
-これはストレスです。
-
-これはむりをするです。
-This is work more than one's capacity.
-kore wa Muri o suru desu.
-これは無理をするです。
-
-これはほしうらないです。
-This is horoscope.
-kore wa Hoshiuranai desu.
-これは星占いです。
-
-これはおうしざです。
-This is Taurus.
-kore wa Oushiza desu.
-これは牡牛座です。
-
-これはたからくじです。
-This is lottery.
-kore wa Takarakuji desu.
-これは宝くじです。
-
-これはけんこうです。
-This is health.
-kore wa Kenkou desu.
-これは健康です。
-
-これはれんあいです。
-This is romantic love.
-kore wa Ren'ai desu.
-これは恋愛です。
-
-これはこいびとです。
-This is sweetheart.
-kore wa Koibito desu.
-これは恋人です。
-
-これはかねもちです。
-This is rich person.
-kore wa kanemochi desu.
-これは金持ちです。
-
-これはてんきよほうです。
-This is Weather forecast.
-kore wa Tenki yohou desu.
-これは天気予報です。
-
-これはこうすいかくりつパーセントです。
-This is probability of rain.
-kore wa Kousui kakuritsu paasento desu.
-これは降水確率%(パーセント)です。
-
-これはくもりところによってあめです。
-This is cloudy.
-kore wa Kumori tokoro ni yotte ame desu.
-これは曇り所によって雨です。
-
-これはさいこうきおんどです。
-This is the highest temperature.
-kore wa Saikou kion do desu.
-これは最高気温℃(ど)です。
-
-これはさいていきおんどです。
-This is the lowest temperature.
-kore wa Saitei kion do desu.
-これは最低気温℃(ど)です。
-
-これはほっかいどうちほうです。
-This is Hokkaido area.
-kore wa Hokkaidou chihou desu.
-これは北海道地方です。
-
-これはとうほくちほうです。
-This is Tohoku area.
-kore wa Touhoku chihou desu.
-これは東北地方です。
-
-これはかんとうちほうです。
-This is Kanto area.
-kore wa Kantou chihou desu.
-これは関東地方です。
-
-これはちゅうぶちほうです。
-This is Chubu area.
-kore wa Chūbu chihou desu.
-これは中部地方です。
-
-これはきんきちほうです。
-This is Kinki area.
-kore wa Kinki chihou desu.
-これは近畿地方です。
-
-これはちゅうごくちほうです。
-This is Chugoku area.
-kore wa Chūgoku chihou desu.
-これは中国地方です。
-
-これはしこくちほうです。
-This is Shikoku area.
-kore wa Shikoku chihou desu.
-これは四国地方です。
-
-これはきゅうしゅうちほうです。
-This is Kyushu area.
-kore wa Kyūshū chihou desu.
-これは九州地方です。
-
-これはにわかあめ/ゆうだちです。
-This is shower / sudden evening shower.
-kore wa Niwakaame / Yūdachi desu.
-これはにわか雨/夕立です。
-
-これはたいふうです。
-This is typhoon.
-kore wa Taifū desu.
-これは台風です。
-
-これはくも(がでます)です。
-This is cloud.
-kore wa Kumo (ga demasu) desu.
-これは雲(が出ます)です。
-
-これはしつどがたかい/ひくいです。
-This is humidity.
-kore wa Shitsudo ga takai / hikui desu.
-これは湿度が高い/低いです。
-
-これはむしあついです。
-This is hot and humid.
-kore wa Mushiatsui desu.
-これは蒸し暑いです。
-
-これはさわやかです。
-This is refreshing.
-kore wa Sawayaka desu.
-これはさわやかです。
-
-`;
-
-allWords["Sentence 32 - Hard"] = ``;
-
-allWords["Sentence 33"] = `
-だめをにげます。
-run away no good.
-Dame o Nigemasu.
-だめを逃げます。
-
-せきをさわぎます。
-make a noise seat.
-Seki o Sawagimasu.
-席を騒ぎます。
-
-ファイトをあきらめます。
-give up fight.
-Faito o Akiramemasu.
-ファイトをあきらめます。
-
-マークをなげます。
-throw mark.
-Maaku o Nagemasu.
-マークを投げます。
-
-ボールをまもります。
-keep ball.
-Booru o Mamorimasu.
-ボールを守ります。
-
-せんたくきをあげます。
-raise washing machine.
-Sentakuki o Agemasu.
-洗濯機を上げます。
-
-きそくをさげます。
-lower regulation.
-Kisoku o Sagemasu.
-規則を下げます。
-
-しようきんしをつたえます。
-convey Do not use.
-Shiyoukinshi o Tsutaemasu.
-使用禁止を伝えます。
-
-たちいりきんしをちゅういします。
-be careful [of the cars] Keep out.
-Tachiirikinshi o Chuuishimasu.
-立入禁止を注意します。
-
-いりぐちをはずします。
-be away [from one's desk] entrance.
-Iriguchi o Hazushimasu.
-入口を外します。
-
-でぐちをうちます。
-send [a telegram] exit.
-Deguchi o Uchimasu.
-出口を打ちます。
-
-なくなります。
-pass away.
-Nakunarimasu.
-亡くなります。
-
-ひじょうぐちをりようします。
-use emergency exit.
-Hijouguchi o Riyoushimasu.
-非常口を利用します。
-
-もう、これはきです。
-This is ~ machine.
-Mou, kore wa ki desu.
-もう、これは機です。
-
-これはむりょうです。
-This is free of charge.
-kore wa Muryou desu.
-これは無料です。
-
-これはほんじつきゅうぎょうです。
-This is closed today.
-kore wa Honjitsu kyuugyou desu.
-これは本日休業です。
-
-これはえいぎょうちゅうです。
-This is open for business.
-kore wa Eigyouchuu desu.
-これは営業中です。
-
-これはしようちゅうです。
-This is in use.
-kore wa Shiyouchuu desu.
-これは使用中です。
-
-これはちゅうです。
-This is ~ing.
-kore wa chuu desu.
-これは中です。
-
-これは---RightPage---です。
-This is どういう～.
-kore wa what kind of desu.
-これはDouiuです。
-
-これはあとです。
-This is ~ left.
-kore wa Ato desu.
-これはあとです。
-
-これはちゅうしゃいはんです。
-This is parking violation.
-kore wa Chuushaihan desu.
-これは駐車違反です。
-
-これはそりゃあです。
-This is well.
-kore wa Soryaa desu.
-これはそりゃあです。
-
-これはいないです。
-This is within ~.
-kore wa inai desu.
-これは以内です。
-
-これはけいさつです。
-This is police station.
-kore wa Keisatsu desu.
-これは警察です。
-
-これはばっきんです。
-This is fine.
-kore wa Bakkin desu.
-これは罰金です。
-
-これはでんぽうです。
-This is telegram.
-kore wa Denpou desu.
-これは電報です。
-
-これはひとびとです。
-This is people.
-kore wa Hitobito desu.
-これは人々です。
-
-これはきゅうようです。
-This is urgent business.
-kore wa Kyuuyou desu.
-これは急用です。
-
-これはでんぽうだいです。
-This is telegram charge.
-kore wa Denpoudai desu.
-これは電報代です。
-
-これはできるだけです。
-This is as much as possible.
-kore wa Dekirudake desu.
-これはできるだけです。
-
-これはみじかくです。
-This is shortly.
-kore wa Mijikaku desu.
-これは短くです。
-
-これはまたです。
-This is and.
-kore wa Mata desu.
-これはまたです。
-
-これはたとえばです。
-This is for example.
-kore wa Tatoeba desu.
-これは例えばです。
-
-これはキトクです。
-This is in a critical condition.
-kore wa Kitoku desu.
-これはキトク(危篤)です。
-
-これはおもいびょうきです。
-This is serious illness.
-kore wa Omoi byouki desu.
-これは重い病気です。
-
-これはあすです。
-This is tomorrow.
-kore wa Asu desu.
-これは明日です。
-
-これはるすです。
-This is absence.
-kore wa Rusu desu.
-これは留守です。
-
-これはるすばんです。
-This is looking after a house during the owner's absence.
-kore wa Rusuban desu.
-これは留守番です。
-
-これはいわいです。
-This is celebration.
-kore wa iwai desu.
-これは祝いです。
-
-これはかなしみです。
-This is sorrow.
-kore wa Kanashimi desu.
-これは悲しみです。
-
-これはひょうしきです。
-This is Signs.
-kore wa Hyoushiki desu.
-これは標識です。
-
-これはじゅんびちゅうです。
-This is In preparation.
-kore wa Junbichū desu.
-これは準備中です。
-
-これはへいてんです。
-This is Closed.
-kore wa Heiten desu.
-これは閉店です。
-
-これはていきゅうびです。
-This is Regular holiday.
-kore wa Teikyūbi desu.
-これは定休日です。
-
-これはけしょうしつです。
-This is Toilet / Restroom.
-kore wa Keshoushitsu desu.
-これは化粧室です。
-
-これはきんえんせきです。
-This is No smoking seat.
-kore wa Kin'enseki desu.
-これは禁煙席です。
-
-これはよやくせきです。
-This is Reserved seat.
-kore wa Yoyakuseki desu.
-これは予約席です。
-
-これはわれものちゅういです。
-This is Fragile.
-kore wa Waremono chūi desu.
-これは割れ物注意です。
-
-これはうんてんしょしんしゃちゅういです。
-This is Beginner driver.
-kore wa Unten shoshinsha chūi desu.
-これは運転初心者注意です。
-
-これはこうじちゅうです。
-This is Under construction.
-kore wa Koujichū desu.
-これは工事中です。
-
-これはかきげんきんです。
-This is Flammable / Keep away from fire.
-kore wa Kaki genkin desu.
-これは火気厳禁です。
-
-ここはてあらい30どです。
-This place is Wash by hand.
-koko wa Tearai sanjū-do desu.
-ここは手洗い30℃です。
-
-これはアイロン(ていおん)です。
-This is Iron at a low temperature.
-kore wa Airon (teion) desu.
-これはアイロン(低温)です。
-
-これはえんそけいひょうはくざいふかです。
-This is Don't use chlorine bleach.
-kore wa Ensokei hyouhakuzai fuka desu.
-これは塩素系漂白剤不可です。
-
-これはドライクリーニングです。
-This is Dry clean only.
-kore wa Dorai kuriiningu desu.
-これはドライクリーニングです。
-
-`;
-
-allWords["Sentence 33 - Hard"] = ``;
-
-allWords["Sentence 34"] = `
-これでいいですか。
-Is this all right?
-Kore de ii desu ka.
-これでいいですか。
-
-ほそいにみがきます。
-brush [one's teeth] thin.
-Hosoi ni Migakimasu.
-細いに磨きます。
-
-ふといをくみたてます。
-assemble thick.
-Futoi o Kumitatemasu.
-太いを組み立てます。
-
-わたしはおります。
-I am here (humble).
-watashi wa Orimasu.
-わたしは折ります。
-
-ぼんおどりにきがつきます。
-notice Bon Festival dance.
-Bon-odori ni Ki ga tsukimasu.
-盆踊りに気がつきます。
-
-スポーツクラブをつけます。
-put [in soy sauce] sports club.
-Supootsu kurabu o Tsukemasu.
-スポーツクラブをつけます。
-
-かぐをみつかります。
-[a key] be found furniture.
-Kagu o Mitsukarimasu.
-家具を見つかります。
-
-キーをします。
-put on key.
-Kii o Shimasu.
-キーをします。
-
-シートベルトをしつもんします。
-ask a question seat belt.
-Shiitoberuto o Shitsumonshimasu.
-シートベルトを質問します。
-
-せつめいしょをおちゃをたてます。
-make green tea explanatory pamphlet.
-Setsumeisho o Ocha o tatemasu.
-説明書をお茶をたてます。
-
-せんをのせます。
-place on line.
-Sen o Nosemasu.
-線を載せます。
-
-やじるしをひにかけます。
-put on the stove arrow.
-Yajirushi o Hi ni kakemasu.
-矢印を火にかけます。
-
-くろをにます。
-cook black.
-Kuro o Nimasu.
-黒を煮ます。
-
-しろをにえます。
-be cooked white.
-Shiro o Niemasu.
-白を煮えます。
-
-これはずです。
-This is figure.
-kore wa Zu desu.
-これは図です。
-
-これはあかです。
-This is red.
-kore wa Aka desu.
-これは赤です。
-
-これはあおです。
-This is blue.
-kore wa Ao desu.
-これは青です。
-
-これはこんです。
-This is navy blue.
-kore wa Kon desu.
-これは紺です。
-
-これはきいろです。
-This is yellow.
-kore wa Kiiro desu.
-これは黄色です。
-
-これはちゃいろです。
-This is brown.
-kore wa Chairo desu.
-これは茶色です。
-
-これは---RightPage---です。
-This is しょうゆ.
-kore wa soy, soy sauce desu.
-これはShouyuです。
-
-これはソースです。
-This is sauce.
-kore wa Soosu desu.
-これはソースです。
-
-これはかです。
-This is ~ or ~.
-kore wa ka desu.
-これはかです。
-
-これはゆうべです。
-This is last night.
-kore wa Yuube desu.
-これはゆうべです。
-
-これはさっきです。
-This is a short while ago.
-kore wa Sakki desu.
-これはさっきです。
-
-これはさどうです。
-This is tea ceremony.
-kore wa Sadou desu.
-これは茶道です。
-
-これはさきにです。
-This is first.
-kore wa Saki ni desu.
-これは先にです。
-
-これはにがいです。
-This is bitter.
-kore wa Nigai desu.
-これは苦いです。
-
-これはおやこどんぶりです。
-This is a bowl of cooked rice with chicken and egg.
-kore wa Oyakodonburi desu.
-これは親子どんぶりです。
-
-これはざいりょうです。
-This is material.
-kore wa Zairyou desu.
-これは材料です。
-
-これはーグラムです。
-This is ー gram.
-kore wa guramu desu.
-これはーグラムです。
-
-これはーこです。
-This is .
-kore wa ko desu.
-これはー個です。
-
-これはたまねぎです。
-This is onion.
-kore wa Tamanegi desu.
-これはたまねぎです。
-
-これはよんぶんのいちです。
-This is one fourth.
-kore wa Yonbun no ichi desu.
-これは4分の1です。
-
-これはちょうみりょうです。
-This is seasoning.
-kore wa Choumiryou desu.
-これは調味料です。
-
-これはなべです。
-This is pan.
-kore wa Nabe desu.
-これはなべです。
-
-これはひです。
-This is fire.
-kore wa Hi desu.
-これは火です。
-
-これはどんぶりです。
-This is ceramic bowl.
-kore wa Donburi desu.
-これはどんぶりです。
-
-これはりょうりです。
-This is Cooking.
-kore wa Ryouri desu.
-これは料理です。
-
-これはにるです。
-This is boil.
-kore wa Niru desu.
-これは煮るです。
-
-これはやくです。
-This is boil.
-kore wa Yaku desu.
-これは焼くです。
-
-これはあげます/あげるです。
-This is deep fry.
-kore wa Agemasu / Ageru desu.
-これは揚げます/揚げるです。
-
-これはいためるです。
-This is shallow fry / stir fry.
-kore wa Itameru desu.
-これはいためるです。
-
-これはゆでるです。
-This is boil.
-kore wa Yuderu desu.
-これはゆでるです。
-
-これはむすです。
-This is steam.
-kore wa Musu desu.
-これは蒸すです。
-
-これはむくです。
-This is peel.
-kore wa Muku desu.
-これはむくです。
-
-これはきざむです。
-This is chop.
-kore wa Kizamu desu.
-これはきざむです。
-
-これはかきまぜるです。
-This is stir.
-kore wa Kakimazeru desu.
-これはかき混ぜるです。
-
-これはしょうゆです。
-This is soy sauce.
-kore wa Shouyu desu.
-これはしょうゆです。
-
-これはさとうです。
-This is sugar.
-kore wa Satou desu.
-これは砂糖です。
-
-これはしおです。
-This is salt.
-kore wa Shio desu.
-これは塩です。
-
-これはすです。
-This is vinegar.
-kore wa Su desu.
-これは酢です。
-
-これはみそです。
-This is miso.
-kore wa Miso desu.
-これはみそです。
-
-これはあぶらです。
-This is oil.
-kore wa Abura desu.
-これは油です。
-
-これはマヨネーズです。
-This is mayonnaise.
-kore wa Mayonēzu desu.
-これはマヨネーズです。
-
-これはケチャップです。
-This is ketchup.
-kore wa Kechappu desu.
-これはケチャップです。
-
-これはからし(マスタード)です。
-This is mustard.
-kore wa Karashi (Masutaado) desu.
-これはからし(マスタード)です。
-
-これはこしょうです。
-This is pepper.
-kore wa Koshou desu.
-これはこしょうです。
-
-これはとうがらしです。
-This is red pepper.
-kore wa Tougarashi desu.
-これはとうがらしです。
-
-これはしょうがです。
-This is ginger.
-kore wa Shouga desu.
-これはしょうがです。
-
-これはわさびです。
-This is Japanese horseradish.
-kore wa Wasabi desu.
-これはわさびです。
-
-これはカレーこです。
-This is curry powder.
-kore wa Karē-ko desu.
-これはカレー粉です。
-
-これはだいどころようひんです。
-This is Cookware & Kitchen Utensils.
-kore wa Daidokoro youhin desu.
-これは台所用品です。
-
-これはやかんです。
-This is kettle.
-kore wa Yakan desu.
-これはやかんです。
-
-これはふたです。
-This is lid.
-kore wa Futa desu.
-これはふたです。
-
-これはおたまです。
-This is ladle.
-kore wa Otama desu.
-これはおたまです。
-
-これはまないたです。
-This is cutting board.
-kore wa Manaita desu.
-これはまな板です。
-
-これはふきんです。
-This is kitchen towel.
-kore wa Fukin desu.
-これはふきんです。
-
-これはフライパンです。
-This is frying pan.
-kore wa Furaipan desu.
-これはフライパンです。
-
-これはでんしオーブンレンジです。
-This is microwave oven.
-kore wa Denshi oubun renji desu.
-これは電子オーブンレンジです。
-
-これはすいはんきです。
-This is rice cooker.
-kore wa Suihanki desu.
-これは炊飯器です。
-
-これはしゃもじです。
-This is rice paddle.
-kore wa Shamoji desu.
-これはしゃもじです。
-
-これはかんきりです。
-This is can opener.
-kore wa Kankiri desu.
-これは缶切りです。
-
-これはせんぬきです。
-This is bottle opener.
-kore wa Sennuki desu.
-これは栓抜きです。
-
-これはざるです。
-This is colander.
-kore wa Zaru desu.
-これはざるです。
-
-これはポットです。
-This is thermos bottle.
-kore wa Potto desu.
-これはポットです。
-
-これはガスだい(ガスコンロ)です。
-This is gas stove.
-kore wa Gasudai (Gasukonro) desu.
-これはガス台(ガスコンロ)です。
-
-これはながしです。
-This is sink.
-kore wa Nagashi desu.
-これは流しです。
-
-これはかんきせんです。
-This is ventilation fan.
-kore wa Kankisen desu.
-これは換気扇です。
-
-`;
-
-allWords["Sentence 34 - Hard"] = ``;
-
-allWords["Sentence 35"] = `
-これははなよりだんごです。
-This is Cake before flowers..
-kore wa Hana yori dango desu.
-これは花よりだんごです。
-
-らくにさきます。
-[flowers] bloom comfortable.
-Raku ni Sakimasu.
-楽に咲きます。
-
-ただしいをかわります。
-[the color] change correct.
-Tadashii o Kawarimasu.
-正しいを変わります。
-
-めずらしいをこまります。
-be in trouble rare.
-Mezurashii o Komarimasu.
-珍しいを困ります。
-
-かたをつけます。
-draw [a circle] person.
-Kata o Tsukemasu.
-方を付けます。
-
-ひろいます。
-pick up.
-Hiroimasu.
-拾います。
-
-かかります。
-get through [on the telephone].
-Kakarimasu.
-かかります。
-
-むこうをまじわります。
-keep company with over there.
-Mukou o Majiwarimasu.
-向こうを交わります。
-
-しまをなかよくします。
-be on good terms with island.
-Shima o Nakayokushimasu.
-島を仲よくします。
-
-むらをこれでおわります。
-We'll finish now village.
-Mura o Kore de owarimasu.
-村をこれで終わります。。
-
-これはみなとです。
-This is port.
-kore wa Minato desu.
-これは港です。
-
-これはきんじょです。
-This is neighborhood.
-kore wa Kinjo desu.
-これは近所です。
-
-これはおくじょうです。
-This is rooftop.
-kore wa Okujou desu.
-これは屋上です。
-
-これはかいがいです。
-This is overseas.
-kore wa Kaigai desu.
-これは海外です。
-
-これはやまのぼりです。
-This is mountain climbing.
-kore wa Yamanobori desu.
-これは山登りです。
-
-これはハイキングです。
-This is hiking.
-kore wa Haikingu desu.
-これはハイキングです。
-
-これはきかいです。
-This is chance.
-kore wa Kikai desu.
-これは機会です。
-
-これはきょかです。
-This is permission.
-kore wa Kyoka desu.
-これは許可です。
-
-これはまるです。
-This is circle.
-kore wa Maru desu.
-これは丸です。
-
-これはそうさです。
-This is operation.
-kore wa Sousa desu.
-これは操作です。
-
-これはほうほうです。
-This is method.
-kore wa Houhou desu.
-これは方法です。
-
-これは---RightPage---です。
-This is せつび.
-kore wa equipment, facilities desu.
-これはSetsubiです。
-
-これはカーテンです。
-This is curtain.
-kore wa Kaaten desu.
-これはカーテンです。
-
-これはひもです。
-This is string.
-kore wa Himo desu.
-これはひもです。
-
-これはふたです。
-This is lid.
-kore wa Futa desu.
-これはふたです。
-
-これははです。
-This is leaf.
-kore wa Ha desu.
-これは葉です。
-
-これはきょくです。
-This is a piece of music.
-kore wa Kyoku desu.
-これは曲です。
-
-これはたのしみです。
-This is pleasure.
-kore wa Tanoshimi desu.
-これは楽しみです。
-
-これはもっとです。
-This is more.
-kore wa Motto desu.
-これはもっとです。
-
-これははじめにです。
-This is first.
-kore wa Hajime ni desu.
-これははじめにです。
-
-これはそれならです。
-This is in that case.
-kore wa Sorenara desu.
-これはそれならです。
-
-これはやこうバスです。
-This is night bus.
-kore wa Yakou basu desu.
-これは夜行バスです。
-
-これはりょこうしゃです。
-This is travel agency.
-kore wa Ryokousha desu.
-これは旅行社です。
-
-これはくわしいです。
-This is detailed.
-kore wa Kuwashii desu.
-これは詳しいです。
-
-これはスキーじょうです。
-This is ski resort.
-kore wa Sukiijou desu.
-これはスキー場です。
-
-これはくさつです。
-This is Kusatsu.
-kore wa Kusatsu desu.
-これは草津です。
-
-これはしがこうげんです。
-This is Shiga Kogen.
-kore wa Shiga kougen desu.
-これは志賀高原です。
-
-これははこねです。
-This is resort in Kanagawa Prefecture.
-kore wa Hakone desu.
-これは箱根です。
-
-これはにっこうです。
-This is tourist spot in Tochigi Prefecture.
-kore wa Nikkou desu.
-これは日光です。
-
-これははくばです。
-This is resort in Nagano Prefecture.
-kore wa Hakuba desu.
-これは白馬です。
-
-これはアフリカです。
-This is Africa.
-kore wa Afurika desu.
-これはアフリカです。
-
-これはしゅです。
-This is red.
-kore wa Shu desu.
-これは朱です。
-
-これはことわざです。
-This is proverb.
-kore wa Kotowaza desu.
-これはことわざです。
-
-これはひつようです。
-This is necessary.
-kore wa Hitsuyou desu.
-これは必要です。
-
-これはすめばみやこです。
-This is Wherever you live.
-kore wa Sumeba miyako desu.
-これは住めば都です。
-
-これはさんにんよればもんじゅのちえです。
-This is Two heads are better than one.
-kore wa Sannin yoreba Monju no chie desu.
-これは三人寄れば文殊の知恵です。
-
-これはたてばしゃくやく、すわればぼたん、あるくすがたはゆりのはなです。
-This is She is very beautiful..
-kore wa Tateba shakuyaku, suwareba botan, aruku sugata wa yuri no hana desu.
-これは立てばしゃくやく、座ればぼたん、歩く姿はゆりの花です。
-
-これはちりもつもればやまとなるです。
-This is Many a little makes a mickle..
-kore wa Chiri mo tsumoreba yama to naru desu.
-これはちりも積もれば山となるです。
-
-これはうわさをすればかげです。
-This is Speak of the devil and he is sure to appear.
-kore wa Uwasa o sureba kage desu.
-これはうわさをすれば影です。
-
-これはてんせきこけをしょうぜずです。
-This is A rolling stone gathers no moss.
-kore wa Tenseki koke o shouzezu desu.
-これは転石苔を生ぜずです。
-
-`;
-
-allWords["Sentence 35 - Hard"] = ``;
-
-allWords["Sentence 36"] = `
-していらっしゃいます。
-be doing (respectful equivalent of しています)
-Shite irasshaimasu
-していらっしゃいます。
-
-かたいにとどきます。
-[parcels] be delivered hard.
-Katai ni Todokimasu.
-硬い、固いに届きます。
-
-やわらかいをでます。
-participate [in the game] soft.
-Yawarakai o Demasu.
-柔らかいを出ます。
-
-でんしをうちます。
-type [on a word processor] electronic ~.
-Denshi o Uchimasu.
-電子を打ちます。
-
-けいたいをちょきんします。
-save money portable ~.
-Keitai o Chokinshimasu.
-携帯を貯金します。
-
-こうじょうをふとります。
-get fat factory.
-Koujou o Futorimasu.
-工場を太ります。
-
-けんこうをやせます。
-get slim health.
-Kenkou o Yasemasu.
-健康をやせます。
-
-けんどうをすぎます。
-pass [7 o'clock] kendo.
-Kendou o Sugimasu.
-剣道を過ぎます。
-
-まいしゅうをなれます。
-get accustomed to [the customs] every week.
-Maishuu o Naremasu.
-毎週を慣れます。
-
-まいつきをチャレンジします。
-challenge every month.
-Maitsuki o Charenjishimasu.
-毎月をチャレンジします。
-
-まいとし(まいねん)をはこびます。
-carry every year.
-Maitoshi (mainen) o Hakobimasu.
-毎年を運びます。
-
-やっとをとびます。
-fly finally.
-Yatto o Tobimasu.
-やっとを飛びます。
-
-これはかなりです。
-This is fairly.
-kore wa Kanari desu.
-これはかなりです。
-
-これはかならずです。
-This is without fail.
-kore wa Kanarazu desu.
-これは必ずです。
-
-これはぜったいにです。
-This is absolutely.
-kore wa Zettai ni desu.
-これは絶対にです。
-
-これはじょうずにです。
-This is well.
-kore wa Jouzu ni desu.
-これは上手にです。
-
-これはできるだけです。
-This is as much as possible.
-kore wa Dekiru dake desu.
-これはできるだけです。
-
-これはこのごろです。
-This is these days.
-kore wa Kono goro desu.
-これはこのごろです。
-
-これはずつです。
-This is ~.
-kore wa zutsu desu.
-これはずつです。
-
-これはそのがです。
-This is That is more ~.
-kore wa Sono ga desu.
-これはそのがです。
-
-これはショパンです。
-This is Chopin.
-kore wa Shopan desu.
-これはショパンです。
-
-これはおきゃくさまです。
-This is guest.
-kore wa Okyakusama desu.
-これはお客様です。
-
-これはとくべつです。
-This is special.
-kore wa Tokubetsu desu.
-これは特別です。
-
-これはすいえいです。
-This is swimming.
-kore wa Suiei desu.
-これは水泳です。
-
-これはとか、とかです。
-This is ~.
-kore wa toka, ~toka desu.
-これはとか、とかです。
-
-これはタンゴです。
-This is tango.
-kore wa Tango desu.
-これはタンゴです。
-
-これはきもちです。
-This is feeling.
-kore wa Kimochi desu.
-これは気持ちです。
-
-これはのりものです。
-This is vehicle.
-kore wa Norimono desu.
-これは乗り物です。
-
-これはれきしです。
-This is history.
-kore wa Rekishi desu.
-これは歴史です。
-
-これはーーせいきです。
-This is -th century.
-kore wa -seiki desu.
-これはーー世紀です。
-
-これはとおくです。
-This is far.
-kore wa Tooku desu.
-これは遠くです。
-
-これはきしゃです。
-This is locomotive.
-kore wa Kisha desu.
-これは汽車です。
-
-これはきせんです。
-This is steam boat.
-kore wa Kisen desu.
-これは汽船です。
-
-これはおおぜいのです。
-This is many.
-kore wa Oozei no desu.
-これは大勢のです。
-
-これはあんぜんです。
-This is safe.
-kore wa Anzen desu.
-これは安全です。
-
-これはうちゅうです。
-This is space.
-kore wa Uchuu desu.
-これは宇宙です。
-
-これはちきゅうです。
-This is earth.
-kore wa Chikyuu desu.
-これは地球です。
-
-これはライトきょうだいです。
-This is Wright brothers.
-kore wa Raito kyoudai desu.
-これはライト兄弟です。
-
-これはウィルバー・ライトです。
-This is Wilbur Wright.
-kore wa Wirubaa Raito desu.
-これはウィルバー・ライトです。
-
-これはオーヴィル・ライトです。
-This is Orville Wright.
-kore wa Ooviru Raito desu.
-これはオーヴィル・ライトです。
-
-これはいいださんです。
-This is Good Person.
-kore wa Iida-san desu.
-これはいいださんです。
-
-これはきそくだたしいせいかつをするです。
-This is lead a well-regulated life.
-kore wa Kisoku tadashii seikatsu o suru desu.
-これは規則正しい生活をするです。
-
-これははやねはやおきをするです。
-This is keep early hours.
-kore wa Hayane hayaoki o suru desu.
-これは早寝早起きをするです。
-
-これはうんどうをする/スポーツをするです。
-This is take exercise / do sports.
-kore wa Undou o suru / Supoutsu o suru desu.
-これは運動をする/スポーツをするです。
-
-これはよくあるくです。
-This is walk a lot.
-kore wa Yoku aruku desu.
-これはよく歩くです。
-
-これはすききらいがないです。
-This is have no particular likes and dislikes.
-kore wa Sukikirai ga nai desu.
-これは好き嫌いがないです。
-
-これはえいようのバランスをかんがえてたべるです。
-This is have a balanced diet.
-kore wa Eiyou no baransu o kangaete taberu desu.
-これは栄養のバランスを考えて食べるです。
-
-これはけんこうしんだんをうけるです。
-This is have health checks.
-kore wa Kenkou shindan o ukeru desu.
-これは健康診断を受けるです。
-
-これはだめださんです。
-This is Bad Person.
-kore wa Dameda-san desu.
-これはだめださんです。
-
-これはよふかしをするです。
-This is sit up late.
-kore wa Yofukashi o suru desu.
-これは夜更かしをするです。
-
-これはあまりうんどうしないです。
-This is take little exercise.
-kore wa Amari undou shinai desu.
-これはあまり運動しないです。
-
-これはすききらいがあるです。
-This is have many likes and dislikes.
-kore wa Sukikirai ga aru desu.
-これは好き嫌いがあるです。
-
-これはインスタントしょくひんをよくたべるです。
-This is often eat instant food.
-kore wa Insutanto shokuhin o yoku taberu desu.
-これはインスタント食品をよく食べるです。
-
-これはがいしょくがおおいです。
-This is often eat out.
-kore wa Gaishoku ga oui desu.
-これは外食が多いです。
-
-これはたばこをすうです。
-This is smoke.
-kore wa Tabako o suu desu.
-これはたばこを吸うです。
-
-これはよくおさけをのむです。
-This is drink a lot.
-kore wa Yoku osake o nomu desu.
-これはよくお酒を飲むです。
-
-これはいつつのたいせつなえいようそとそれをふくむたべものです。
-This is Five Important Nutrients and Foods Containing Them.
-kore wa Itsutsu no taisetsu na eiyouso to sore o fukumu tabemono desu.
-これは5つの大切な栄養素とそれを含む食べ物です。
-
-これはたんすいかぶつです。
-This is carbohydrates.
-kore wa Tansuikabutsu desu.
-これは炭水化物です。
-
-これはいもです。
-This is potato.
-kore wa Imo desu.
-これはいもです。
-
-これはたんぱくしつです。
-This is protein.
-kore wa Tanpakushitsu desu.
-これはたんぱく質です。
-
-これはとうふです。
-This is tofu.
-kore wa Toufu desu.
-これはとうふです。
-
-これはまめです。
-This is beans.
-kore wa Mame desu.
-これは豆です。
-
-これはししつです。
-This is fat.
-kore wa Shishitsu desu.
-これは脂質です。
-
-これはあぶらです。
-This is fat.
-kore wa Abura desu.
-これはあぶらです。
-
-これはビタミンです。
-This is vitamins.
-kore wa Bitamin desu.
-これはビタミンです。
-
-これはカルシウムです。
-This is calcium.
-kore wa Karushiumu desu.
-これはカルシウムです。
-
-これはのりです。
-This is laver.
-kore wa Nori desu.
-これはのりです。
-
-これはかいそうです。
-This is seaweed.
-kore wa Kaisou desu.
-これは海草です。
-
-`;
-
-allWords["Sentence 36 - Hard"] = ``;
-
-allWords["Sentence 37"] = `
-よかったですね。
-That's lucky, isn't it?
-Yokatta desu ne.
-よかったですね。
-
-いっぴきもいません。
-There is not a single (mouse).
-Ippiki mo imasen.
-一匹もいません。
-
-こめをほめます。
-praise rice.
-Kome o Homemasu.
-米を褒めます。
-
-むぎをしかります。
-scold barley.
-Mugi o Shikarimasu.
-麦を叱ります。
-
-さそいます。
-invite.
-Sasoimasu.
-誘います。
-
-せきゆをおこします。
-wake [someone] up oil.
-Sekiyu o Okoshimasu.
-石油を起こします。
-
-げんりょうをしょうたいします。
-invite raw material.
-Genryou o Shoutaishimasu.
-原料を招待します。
-
-デートをたのみます。
-ask date.
-Deeto o Tanomimasu.
-デートを頼みます。
-
-どろぼうをちゅういします。
-warn thief.
-Dorobou o Chuui shimasu.
-泥棒を注意します。
-
-けいかんをとります。
-rob policeman.
-Keikan o Torimasu.
-警官をとります。
-
-けんちくかをふみます。
-step on [someone's foot] architect.
-Kenchikuka o Fumimasu.
-建築家を踏みます。
-
-かがくしゃをこわします。
-break scientist.
-Kagakusha o Kowashimasu.
-科学者を壊します。
-
-まんがをよごします。
-make ~ dirty cartoon.
-Manga o Yogoshimasu.
-漫画を汚します。
-
-おこないます。
-hold.
-Okonaimasu.
-行います。
-
-せかいちゅうをゆしゅつします。
-export all over the world.
-Sekaichuu o Yushutsushimasu.
-世界中を輸出します。
-
-ドミニカをゆにゅうします。
-import Dominica.
-Dominika o Yunyuushimasu.
-ドミニカを輸入します。
-
-ライトきょうだいをほんやくします。
-translate Wright brothers.
-Raito kyoudai o Honyakushimasu.
-ライト兄弟を翻訳します。
-
-ウィルバー・ライトをはつめいします。
-invent Wilbur Wright.
-Wirubaa Raito o Hatsumeishimasu.
-ウィルバー・ライトを発明します。
-
-オーヴィル・ライトをはっけんします。
-discover Orville Wright.
-Ooviru Raito o Hakkenshimasu.
-オーヴィル・ライトを発見します。
-
-げんじものがたりをせっけいします。
-design "The Tale of Genji".
-Genji monogatari o Sekkeishimasu.
-源氏物語を設計します。
-
-むらさきしきぶをうめたてます。
-reclaim Heian Period.
-Murasaki Shikibu o Umetatemasu.
-紫式部を埋め立てます。
-
-グラハム・ベルをりようします。
-use Alexander Graham Bell.
-Gurahamu Beru o Riyou shimasu.
-グラハム・ベルを利用します。
-
-とうしょうぐうをねむります。
-sleep shrine dedicated to Tokugawa Ieyasu in Nikko.
-Toushouguu o Nemurimasu.
-東照宮を眠ります。
-
-えどじだいをほります。
-engrave Edo Period.
-Edo jidai o Horimasu.
-江戸時代を彫ります。
-
-これはじゅうです。
-This is all over ~.
-kore wa juu desu.
-これは中です。
-
-これはによってです。
-This is by ~.
-kore wa ni yotte desu.
-これはによってです。
-
-これはサウジアラビアです。
-This is Saudi Arabia.
-kore wa Saujiarabia desu.
-これはサウジアラビアです。
-
-これはぎじゅつです。
-This is technology.
-kore wa Gijutsu desu.
-これは技術です。
-
-これはとちです。
-This is land.
-kore wa Tochi desu.
-これは土地です。
-
-これはそうおんです。
-This is noise.
-kore wa Souon desu.
-これは騒音です。
-
-これはアクセスです。
-This is access.
-kore wa Akusesu desu.
-これはアクセスです。
-
-これはーーせいきです。
-This is -th century.
-kore wa -seiki desu.
-これはーー世紀です。
-
-これはごうかです。
-This is gorgeous.
-kore wa Gouka desu.
-これは豪華です。
-
-これはちょうこくです。
-This is engraving.
-kore wa Choukoku desu.
-これは彫刻です。
-
-これはなかまです。
-This is colleague.
-kore wa Nakama desu.
-これは仲間です。
-
-これはそのあとです。
-This is after that.
-kore wa Sono ato desu.
-これはそのあとです。
-
-これはいっしょうけんめいです。
-This is with all one's effort.
-kore wa Isshoukenmei desu.
-これは一生懸命です。
-
-これはねずみです。
-This is mouse.
-kore wa Nezumi desu.
-これはねずみです。
-
-これはねむりねこです。
-This is The Sleeping Cat.
-kore wa Nemuri-neko desu.
-これは眠り猫です。
-
-これはひだりじんごろうです。
-This is famous Japanese sculptor of the Edo Period.
-kore wa Hidari Jingorou desu.
-これは左甚五郎です。
-
-これはじこ・じけんです。
-This is Incident.
-kore wa Jiko, jiken desu.
-これは事故・事件です。
-
-これはころすです。
-This is kill.
-kore wa Korosu desu.
-これは殺すです。
-
-これはうつです。
-This is shoot.
-kore wa Utsu desu.
-これは撃つです。
-
-これはさすです。
-This is stab.
-kore wa Sasu desu.
-これは刺すです。
-
-これはかむです。
-This is bite.
-kore wa Kamu desu.
-これはかむです。
-
-これはひくです。
-This is run over.
-kore wa Hiku desu.
-これはひくです。
-
-これははねるです。
-This is hit.
-kore wa Haneru desu.
-これははねるです。
-
-これはしょうとつするです。
-This is crash.
-kore wa Shoutotsu suru desu.
-これは衝突するです。
-
-これはついとつするです。
-This is crash into the rear of a car.
-kore wa Tsuitotsu suru desu.
-これは追突するです。
-
-これはぬすむです。
-This is steal.
-kore wa Nusumu desu.
-これは盗むです。
-
-これはついらくするです。
-This is fall.
-kore wa Tsuiraku suru desu.
-これは墜落するです。
-
-これはゆうかいするです。
-This is kidnap.
-kore wa Yūkai suru desu.
-これは誘拐するです。
-
-これはハイジャックするです。
-This is hijack.
-kore wa Haijakku suru desu.
-これはハイジャックするです。
-
-これははこぶです。
-This is carry.
-kore wa Hakobu desu.
-これは運ぶです。
-
-これはばくはつするです。
-This is explode.
-kore wa Bakuhatsu suru desu.
-これは爆発するです。
-
-これはたすけるです。
-This is rescue.
-kore wa Tasukeru desu.
-これは助けるです。
-
-これはちんぼつするです。
-This is sink.
-kore wa Chinbotsu suru desu.
-これは沈没するです。
-
-`;
-
-allWords["Sentence 37 - Hard"] = ``;
-
-allWords["Sentence 38"] = `
-いけない。
-Oops!/ Oh, no! (used when one has made a mistake)
-ikenai.
-いけない。
-
-おさきに 。
-Excuse me (for leaving before you).
-Osaki ni .
-お先に 。
-
-これはふたごです。
-This is twins.
-kore wa Futago desu.
-これは双子です。
-
-きもちがいいをそだてます。
-breed pleasant.
-Kimochi ga ii o Sodatemasu.
-気持ちがいいを育てます。
-
-きもちがわるいをはこびます。
-carry unpleasant.
-Kimochi ga warui o Hakobimasu.
-気持ちが悪いを運びます。
-
-なくなります。
-pass away.
-Nakunarimasu.
-亡くなります。
-
-おおきなをにゅういんします。
-enter hospital large ~.
-Ookina o Nyuuinshimasu.
-大きなを入院します。
-
-ちいさなをたいいんします。
-leave hospital small ~.
-Chiisana o Taiinshimasu.
-小さなを退院します。
-
-あかちゃんをいれます。
-turn on [the power switch] baby.
-Akachan o Iremasu.
-赤ちゃんを入れます。
-
-しょうがっこうをきります。
-turn off [the power switch] elementary school.
-Shougakkou o Kirimasu.
-小学校を切ります。
-
-ちゅうがっこうをかけます。
-lock junior high school.
-Chuugakkou o Kakemasu.
-中学校を掛けます。
-
-えきまえをせいりします。
-put the area in front of the station.
-Ekimae o Seiri shimasu.
-駅前を整理します。
-
-かいがんをおします。
-affix [a seal] seaside.
-Kaigan o Oshimasu.
-海岸を押します。
-
-にています。
-resemble.
-Nite imasu.
-似ています。
-
-うそをせわをします。
-take care lie.
-Uso o Sewa o shimasu.
-うそを世話をします。
-
-しょるいをじかんがたちます。
-time pass by document.
-Shorui o Jikan ga tachimasu.
-書類を時間がたちます。
-
-でんげんをけんかします。
-quarrel power switch.
-Dengen o Kenka shimasu.
-電源をけんかします。
-
-これはせいです。
-This is made in ~.
-kore wa sei desu.
-これは製です。
-
-これはげんばくドームです。
-This is dome commemorating the atomic bombing of Hiroshima.
-kore wa Genbaku doomu desu.
-これは原爆ドームです。
-
-これはかいらんです。
-This is circular.
-kore wa Kairan desu.
-これは回覧です。
-
-これはけんきゅうしつです。
-This is study room.
-kore wa Kenkyuushitsu desu.
-これは研究室です。
-
-これはきちんとです。
-This is neatly.
-kore wa Kichinto desu.
-これはきちんとです。
-
-これはというほんです。
-This is the book titled ~.
-kore wa to iu hon desu.
-これはという本です。
-
-これはーーさつです。
-This is .
-kore wa -satsu desu.
-これはーー冊です。
-
-これははこです。
-This is box.
-kore wa Hako desu.
-これははこです。
-
-これはしまいです。
-This is sisters.
-kore wa Shimai desu.
-これは姉妹です。
-
-ここは5ねんせいです。
-This place is fifth grade.
-koko wa 5-nensei desu.
-ここは5年生です。
-
-これはせいかくです。
-This is character.
-kore wa Seikaku desu.
-これは性格です。
-
-これはおとなしいです。
-This is quiet.
-kore wa Otonashii desu.
-これはおとなしいです。
-
-これはだいすきです。
-This is like very much.
-kore wa Daisuki desu.
-これは大好きです。
-
-これはーーてんです。
-This is -- points.
-kore wa - ten desu.
-これはーー点です。
-
-これはクラスです。
-This is class.
-kore wa Kurasu desu.
-これはクラスです。
-
-これはふしぎです。
-This is mysterious.
-kore wa Fushigi desu.
-これは不思議です。
-
-これはねんちゅうぎょうじです。
-This is Annual events.
-kore wa Nenchū gyouji desu.
-これは年中行事です。
-
-ここはおしょうがつ(1がつ1にち3にち)です。
-This place is New Year's Day.
-koko wa Oshougatsu (Ichi-gatsu tachi-ka ~ mik-ka) desu.
-ここはお正月(1月1日3日)です。
-
-ここはひなまつり(3がつ3にち)です。
-This place is The Doll's Festival.
-koko wa Hinamatsuri (San-gatsu mik-ka) desu.
-ここはひな祭り(3月3日)です。
-
-ここはこどものひ(5がつ5にち)です。
-This place is Children's Day.
-koko wa Kodomo no hi (Go-gatsu go-ka) desu.
-ここはこどもの日(5月5日)です。
-
-ここはたなばた(7がつ7にち)です。
-This place is The Star Festival.
-koko wa Tanabata (Shichi-gatsu nano-ka) desu.
-ここは七夕(7月7日)です。
-
-ここはおぼん(8がつ13にち15にち)です。
-This place is The Bon Festival.
-koko wa Obon (Hachi-gatsu jūsan-nichi ~ jūgo-nichi) desu.
-ここはお盆(8月13日15日)です。
-
-ここはおつきみ(9がつ15にちごろ)です。
-This place is Moon Viewing.
-koko wa Otsukimi (Ku-gatsu jūgo-nichi goro) desu.
-ここはお月見(9月15日ごろ)です。
-
-ここはおおみそか(12がつ31にち)です。
-This place is New Year's Eve.
-koko wa oumisoka (Jūni-gatsu sanjūichi-nichi) desu.
-ここは大みそか(12月31日)です。
-
-`;
-
-allWords["Sentence 38 - Hard"] = ``;
-
-allWords["Sentence 39"] = `
-おつかれさまでした。
-Thank you for your hard work (used to express appreciation for a colleague's or subordinate's work)
-Otsukaresama deshita.
-お疲れ様でした。
-
-うかがいます。
-I'm coming. (humble way of saying いきます)
-Ukagaimasu.
-伺います。
-
-ふくざつをこたえます。
-answer [a question] complicated.
-Fukuzatsu o Kotaemasu.
-複雑を答えます。
-
-じゃまをたおれます。
-[a building] fall down obstructive.
-Jama o Taoremasu.
-邪魔を倒れます。
-
-きたないをやけます。
-[a house] burn down dirty.
-Kitanai o Yakemasu.
-汚いを焼けます。
-
-わたしはとおります。
-I am here (humble).
-watashi wa Toorimasu.
-わたしは通ります。
-
-かなしいをしにます。
-die sad.
-Kanashii o Shinimasu.
-悲しいを死にます。
-
-うれしいをびっくりします。
-be surprised glad.
-Ureshii o Bikkuri shimasu.
-うれしいをびっくりします。
-
-はずかしいをがっかりします。
-be disappointed embarrassed.
-Hazukashii o Gakkari shimasu.
-恥ずかしいをがっかりします。
-
-じしんをあんしんします。
-be relieved earthquake.
-Jishin o Anshin shimasu.
-地震を安心します。
-
-たいふうをちこくします。
-be late typhoon.
-Taifuu o Chikoku shimasu.
-台風を遅刻します。
-
-かじをそうたいします。
-leave [work or school] earlier than usual fire.
-Kaji o Soutai shimasu.
-火事を早退します。
-
-じこをけんかします。
-quarrel accident.
-Jiko o Kenka shimasu.
-事故をけんかします。
-
-みあいをりこんします。
-divorce interview with a view to marriage.
-miai o Rikon shimasu.
-見合いを離婚します。
-
-でんわだいをぶつかります。
-bump telephone charge.
-Denwadai o Butsukarimasu.
-電話代をぶつかります。
-
-フロントをならびます。
-stand in a queue front desk.
-Furonto o Narabimasu.
-フロントを並びます。
-
-ーーごうしつをせいようかします。
-be Westernized room number --.
-- goushitsu o Seiyoukashimasu.
-ーー号室を西洋化します。
-
-あいます。
-fit.
-Aimasu.
-合います。
-
-これはだいです。
-This is charge.
-kore wa dai desu.
-これは代です。
-
-これはタオルです。
-This is towel.
-kore wa Taoru desu.
-これはタオルです。
-
-これはせっけんです。
-This is soap.
-kore wa Sekken desu.
-これはせっけんです。
-
-これはおおぜいです。
-This is a great number of people.
-kore wa Oozei desu.
-これは大勢です。
-
-これはとちゅうでです。
-This is on the way.
-kore wa Tochuu de desu.
-これは途中でです。
-
-これはトラックです。
-This is truck.
-kore wa Torakku desu.
-これはトラックです。
-
-これはおとなです。
-This is adult.
-kore wa Otona desu.
-これは大人です。
-
-これはようふくです。
-This is Western clothes.
-kore wa Youfuku desu.
-これは洋服です。
-
-これはいまではです。
-This is now.
-kore wa Ima de wa desu.
-これは今ではです。
-
-これはせいじんしきです。
-This is coming-of-age celebration.
-kore wa Seijinshiki desu.
-これは成人式です。
-
-これはきもちです。
-This is Feelings.
-kore wa Kimochi desu.
-これは気持ちです。
-
-これはたのしいです。
-This is pleasant.
-kore wa Tanoshii desu.
-これは楽しいです。
-
-これはさびしいです。
-This is lonely.
-kore wa Sabishii desu.
-これは寂しいです。
-
-これはおもしろいです。
-This is amusing.
-kore wa Omoshiroi desu.
-これはおもしろいです。
-
-これはうらやましいです。
-This is envious.
-kore wa Urayamashii desu.
-これはうらやましいです。
-
-これはなつかしいです。
-This is dear.
-kore wa Natsukashii desu.
-これは懐かしいです。
-
-これはびっくりするです。
-This is be surprised.
-kore wa Bikkuri suru desu.
-これはびっくりするです。
-
-これはがっかりするです。
-This is be disappointed.
-kore wa Gakkari suru desu.
-これはがっかりするです。
-
-これはうっとりするです。
-This is be enchanted.
-kore wa Uttori suru desu.
-これはうっとりするです。
-
-これはわくわくするです。
-This is be excited.
-kore wa Wakuwaku suru desu.
-これはわくわくするです。
-
-これはいらいらするです。
-This is be irritated.
-kore wa Iraira suru desu.
-これはいらいらするです。
-
-これはどきどきするです。
-This is be scared / heart pounding.
-kore wa Dokidoki suru desu.
-これはどきどきするです。
-
-これははらはらするです。
-This is feel uneasy.
-kore wa Harahara suru desu.
-これははらはらするです。
-
-`;
-
-allWords["Sentence 39 - Hard"] = ``;
-
-allWords["Sentence 40"] = `
-どうでしょうか。
-How is ~? (polite way of saying どうですか)
-Dou deshou ka.
-どうでしょうか。
-
-いらっしゃいます。
-come (respectful equivalent of きます)
-Irasshaimasu
-いらっしゃいます。
-
-きけんをかぞえます。
-count dangerous.
-Kiken o Kazoemasu.
-危険を数えます。
-
-ひつようをはかります。
-measure necessary.
-Hitsuyou o Hakarimasu.
-必要を測ります、量ります。
-
-うちゅうをたしかめます。
-confirm space.
-Uchuu o Tashikamemasu.
-宇宙を確かめます。
-
-あいます。
-[the size] fit.
-Aimasu.
-合います。
-
-ちきゅうをしゅっぱつします。
-depart earth.
-Chikyuu o Shuppatsushimasu.
-地球を出発します。
-
-ぼうねんかいをとうちゃくします。
-arrive year-end party.
-Bounenkai o Touchakushimasu.
-忘年会を到着します。
-
-よいます。
-get drunk.
-Yoimasu.
-酔います。
-
-しんねんかいをつみます。
-load New Year's party.
-Shinnenkai o Tsumimasu.
-新年会を積みます。
-
-にじかいをうごかします。
-start second party.
-Nijikai o Ugokashimasu.
-二次会を動かします。
-
-たいかいをてにいれます。
-obtain mass meeting.
-Taikai o Te ni iremasu.
-大会を手に入れます。
-
-マラソンをうわさします。
-gossip marathon.
-Marason o Uwasa shimasu.
-マラソンをうわさします。
-
-これはコンテストです。
-This is contest.
-kore wa Kontest desu.
-これはコンテストです。
-
-これはおもてです。
-This is face.
-kore wa Omote desu.
-これは表です。
-
-これはうらです。
-This is back.
-kore wa Ura desu.
-これは裏です。
-
-これはへんじです。
-This is reply.
-kore wa Henji desu.
-これは返事です。
-
-これはもうしこみです。
-This is Application.
-kore wa Moushikomi desu.
-これは申し込みです。
-
-これはほんとうです。
-This is truth.
-kore wa Hontou desu.
-これはほんとうです。
-
-これはまちがいです。
-This is mistake.
-kore wa Machigai desu.
-これはまちがいです。
-
-これはきずです。
-This is defect.
-kore wa Kizu desu.
-これは傷です。
-
-これはズボンです。
-This is trousers.
-kore wa Zubon desu.
-これはズボンです。
-
-これはながさです。
-This is length.
-kore wa Nagasa desu.
-これは長さです。
-
-これはおもさです。
-This is weight.
-kore wa Omosa desu.
-これは重さです。
-
-これはたかさです。
-This is height.
-kore wa Takasa desu.
-これは高さです。
-
-これはおおきさです。
-This is size.
-kore wa Ookisa desu.
-これは大きさです。
-
-これはびんです。
-This is flight.
-kore wa bin desu.
-これは便です。
-
-これはーーごうです。
-This is train number.
-kore wa - gou desu.
-これはーー号です。
-
-これはーーこです。
-This is .
-kore wa - ko desu.
-これはーー個です。
-
-これはーーほん(ーーぽん、ーーぼん)です。
-This is .
-kore wa - hon (-- pon, -- bon) desu.
-これはーー本(ーーぽん、ーーぼん)です。
-
-これはーーはい(ーーぱい、ーーばい)です。
-This is .
-kore wa - hai (-- pai, -- bai) desu.
-これはーー杯(ーーぱい、ーーばい)です。
-
-これはーーキロです。
-This is -- kilograms.
-kore wa - kiro desu.
-これはーーキロです。
-
-これはーーグラムです。
-This is -- grams.
-kore wa - guramu desu.
-これはーーグラムです。
-
-これはーーセンチです。
-This is -- centimeters.
-kore wa - senchi desu.
-これはーーセンチです。
-
-これはーーミリです。
-This is -- millimeters.
-kore wa - miri desu.
-これはーーミリです。
-
-これはーーいじょうです。
-This is not less than.
-kore wa - ijou desu.
-これはーー以上です。
-
-これはーーいかです。
-This is not more than.
-kore wa - ika desu.
-これはーー以下です。
-
-これはさあです。
-This is well.
-kore wa Saa desu.
-これはさあです。
-
-これはゴッホです。
-This is Vincent van Gogh.
-kore wa Goho desu.
-これはゴッホです。
-
-これはゆきまつりです。
-This is Snow Festival in Sapporo.
-kore wa Yuki-matsuri desu.
-これは雪祭りです。
-
-これはのぞみです。
-This is name of a Shinkansen train.
-kore wa Nozomi desu.
-これはのぞみです。
-
-これはＪＬです。
-This is Japan Airlines.
-kore wa Jeeru desu.
-これはＪＬです。
-
-これはクラスです。
-This is class.
-kore wa Kurasu desu.
-これはクラスです。
-
-これはテストです。
-This is test.
-kore wa Tesuto desu.
-これはテストです。
-
-これはせいせきです。
-This is performance.
-kore wa Seiseki desu.
-これは成績です。
-
-これはところでです。
-This is by the way.
-kore wa Tokorode desu.
-これはところでです。
-
-これはようすです。
-This is situation.
-kore wa Yousu desu.
-これは様子です。
-
-これはじけんです。
-This is incident.
-kore wa Jiken desu.
-これは事件です。
-
-これはオートバイです。
-This is motorcycle.
-kore wa Ootobai desu.
-これはオートバイです。
-
-これはばくだんです。
-This is bomb.
-kore wa Bakudan desu.
-これは爆弾です。
-
-これはうんてんしゅです。
-This is driver.
-kore wa Untenshu desu.
-これは運転手です。
-
-これははなれたです。
-This is remote.
-kore wa Hanareta desu.
-これは離れたです。
-
-これはがです。
-This is but.
-kore wa ga desu.
-これはがです。
-
-これはきゅうにです。
-This is suddenly.
-kore wa Kyuu ni desu.
-これは急にです。
-
-これはいっしょうけんめいです。
-This is with all one's effort.
-kore wa Isshoukenmei desu.
-これは一生懸命です。
-
-これははんにんです。
-This is suspect.
-kore wa Hannin desu.
-これは犯人です。
-
-これはいまでもです。
-This is even now.
-kore wa Ima demo desu.
-これは今でもです。
-
-これはたんい・せん・かたち・もようです。
-This is Measurement.
-kore wa Tan'i, sen, katachi, moyou desu.
-これは単位・線・形・模様です。
-
-これはめんせきです。
-This is Area.
-kore wa Menseki desu.
-これは面積です。
-
-これはへいほうセンチメートルです。
-This is square centimeter.
-kore wa Heihou senchimētoru desu.
-これは平方センチメートルです。
-
-これはへいほうメートルです。
-This is square meter.
-kore wa Heihou mētoru desu.
-これは平方メートルです。
-
-これはへいほうキロメートルです。
-This is square kilometer.
-kore wa Heihou kiromētoru desu.
-これは平方キロメートルです。
-
-これはたいせき・ようせきです。
-This is Volume and capacity.
-kore wa Taiseki, youseki desu.
-これは体積・容積です。
-
-これはりっぽうセンチメートルです。
-This is cubic centimeter.
-kore wa Rippou senchimētoru desu.
-これは立方センチメートルです。
-
-これはりっぽうメートルです。
-This is cubic meter.
-kore wa Rippou mētoru desu.
-これは立方メートルです。
-
-これはミリリットルです。
-This is milliliter.
-kore wa Miririttoru desu.
-これはミリリットルです。
-
-これはシーシーです。
-This is cc.
-kore wa Shii-shii desu.
-これはシーシーです。
-
-これはリットルです。
-This is liter.
-kore wa Rittoru desu.
-これはリットルです。
-
-これはミリです。
-This is millimeter.
-kore wa Miri desu.
-これはミリです。
-
-これはセンチです。
-This is centimeter.
-kore wa Senchi desu.
-これはセンチです。
-
-これはメートルです。
-This is meter.
-kore wa Mētoru desu.
-これはメートルです。
-
-これはキロです。
-This is kilometer.
-kore wa Kiro desu.
-これはキロです。
-
-これはミリグラムです。
-This is milligram.
-kore wa Miriguramu desu.
-これはミリグラムです。
-
-これはグラムです。
-This is gram.
-kore wa Guramu desu.
-これはグラムです。
-
-これはトンです。
-This is ton.
-kore wa Ton desu.
-これはトンです。
-
-これはけいさんです。
-This is Calculation.
-kore wa Keisan desu.
-これは計算です。
-
-これはたすです。
-This is plus.
-kore wa Tasu desu.
-これはたすです。
-
-これはひくです。
-This is minus.
-kore wa Hiku desu.
-これはひくです。
-
-これはかけるです。
-This is multiply.
-kore wa Kakeru desu.
-これはかけるです。
-
-これはわるです。
-This is divide.
-kore wa Waru desu.
-これはわるです。
-
-これはは(イコール)です。
-This is equal.
-kore wa Wa (Ikouru) desu.
-これはは(イコール)です。
-
-これはせんです。
-This is Lines.
-kore wa Sen desu.
-これは線です。
-
-これはちょくせんです。
-This is straight line.
-kore wa Chokusen desu.
-これは直線です。
-
-これはきょくせんです。
-This is curved line.
-kore wa Kyokusen desu.
-これは曲線です。
-
-これはてんせんです。
-This is dotted line.
-kore wa Tensen desu.
-これは点線です。
-
-これはかたちです。
-This is Shapes.
-kore wa Katachi desu.
-これは形です。
-
-これはえんです。
-This is circle.
-kore wa En desu.
-これは円です。
-
-これはさんかくです。
-This is triangle.
-kore wa Sankaku desu.
-これは三角です。
-
-これはしかくです。
-This is square.
-kore wa Shikaku desu.
-これは四角です。
-
-これはもようです。
-This is Patterns.
-kore wa Moyou desu.
-これは模様です。
-
-これはたてじまです。
-This is vertical stripes.
-kore wa Tatejima desu.
-これは縦じまです。
-
-これはよこじまです。
-This is horizontal stripes.
-kore wa Yokojima desu.
-これは横じまです。
-
-これはチェックです。
-This is check.
-kore wa Chekku desu.
-これはチェックです。
-
-これはみずたまです。
-This is polka-dot.
-kore wa Mizutama desu.
-これは水玉です。
-
-これははながらです。
-This is floral print.
-kore wa Hanagara desu.
-これは花柄です。
-
-これはむじです。
-This is plain.
-kore wa Muji desu.
-これは無地です。
-
-`;
-
-allWords["Sentence 40 - Hard"] = ``;
-
-allWords["Sentence 41"] = `
-いただきます。
-receive (humble equivalent of もらいます)
-Itadakimasu
-いただきます。
-
-くださいます。
-give (respectful equivalent of くれます)
-Kudasaimasu
-くださいます。
-
-たくはいびんから、ペンだんびん！
-If it's a home delivery, Call Pen-Dan Express!
-Takuhaibin kara, Pen-dan-bin!
-宅配便から、ペンだん便！
-
-じたくから くうこうまで はいたつします。
-Delivers from home to the airport.
-Jitaku kara kūkou made haitatsu shimasu.
-自宅から 空港まで 配達します。
-
-がくせいや たんしんしゃの ちいさい ひっこしを します。
-Can also do small moves for students or single persons.
-Gakusei ya tanshinsha no chiisai hikkoshi o shimasu.
-学生や 単身者の 小さい 引っ越しを します。
-
-とまりませんか。
-Come and stay with us.
-Tomarimansen ka
-泊まりませんか。
-
-べんりや / なんでも します！！
-Helping Hands / Leave anything and everything to us!!
-Benri-ya / Nan demo shimasu!!
-便利屋 / 何でも します！！
-
-レンタル サービス / なんでも かします！！
-Rental Service / Rent anything and everything.
-Rentaru saabisu / Nan demo kashimasu!!
-レンタル サービス / 何でも 貸します！！
-
-これはまごです。
-This is grandchild.
-kore wa Mago desu.
-これは孫です。
-
-そふはおととしです。
-is the year before last.
-Sofu wa Ototoshi desu.
-祖父はおととしです。
-
-そぼはむかしばなしです。
-is old tale.
-Sobo wa Mukashibarashi desu.
-祖母は昔話です。
-
-かわいいをやります。
-give lovely.
-Kawaii o Yarimasu.
-かわいいをやります。
-
-おいわいをよびます。
-invite celebration.
-Oiwai o Yobimasu.
-お祝いを呼びます。
-
-おとしだまをとりかえます。
-exchange money given as a New Year's gift.
-Otoshidama o Torikaemasu.
-お年玉を取り替えます。
-
-みまいをしんせつにします。
-be kind to [expression of] sympathy.
-mimai o Shinsetsu ni shimasu.
-見舞いを親切にします。
-
-きょうみがあります。
-interest.
-Kyoumi ~ga arimasu.
-興味があります。
-
-じょうほうをあずかります。
-keep information.
-Jouhou o Azukarimasu.
-情報を預かります。
-
-ぶんぽうをたすかります。
-be of help grammar.
-Bunpou o Tasukimasu.
-文法を助かります。
-
-はつおんをいじめます。
-bully pronunciation.
-Hatsuon o Ijimemasu.
-発音をいじめます。
-
-さるをたすけます。
-save ape.
-Saru o Tasukemasu.
-猿を助けます。
-
-えさをくらします。
-live feed.
-Esa o Kurashimasu.
-えさを暮らします。
-
-おもちゃにおてらでたいけんできます。
-You can try the following at our temple toy.
-Omocha ni Otera de taiken dekimasu.
-おもちゃにお寺で体験できます。
-
-えほんにざぜんができます。
-zen meditation picture book.
-Ehon ni Zazen ga dekimasu.
-絵本に座禅ができます。
-
-えはがきをしょうじんりょうりがたべられます。
-vegetarian food picture postcard.
-Ehagaki o Shoujin ryouri ga taberaremasu.
-絵はがきを精進料理が食べられます。
-
-これはドライバーです。
-This is screwdriver.
-kore wa Doraibaa desu.
-これはドライバーです。
-
-これはハンカチです。
-This is handkerchief.
-kore wa Hankachi desu.
-これはハンカチです。
-
-これはくつしたです。
-This is socks.
-kore wa Kutsushita desu.
-これは靴下です。
-
-これはてぶくろです。
-This is gloves.
-kore wa Tebukuro desu.
-これは手袋です。
-
-これはゆびわです。
-This is ring.
-kore wa Yubiwa desu.
-これは指輪です。
-
-これはバッグです。
-This is bag.
-kore wa Baggu desu.
-これはバッグです。
-
-これはおじです。
-This is .
-kore wa Oji desu.
-これはおじです。
-
-これはおじさんです。
-This is .
-kore wa Ojisan desu.
-これはおじさんです。
-
-これはおばです。
-This is .
-kore wa Oba desu.
-これはおばです。
-
-これはおばさんです。
-This is .
-kore wa Obasan desu.
-これはおばさんです。
-
-これははあです。
-This is yes.
-kore wa Haa desu.
-これははあです。
-
-これはもうしわけありませんです。
-This is I'm sorry/Excuse me.
-kore wa Moushiwake arimasen desu.
-これは申し訳ありませんです。
-
-これはせんじつです。
-This is the other day.
-kore wa Senjitsu desu.
-これは先日です。
-
-これはあるです。
-This is a certain ~.
-kore wa Aru desu.
-これはあるです。
-
-これはおとこです。
-This is man.
-kore wa Otoko desu.
-これは男です。
-
-これはこどもたちです。
-This is children.
-kore wa Kodomotachi desu.
-これは子どもたちです。
-
-これはかめです。
-This is turtle.
-kore wa Kame desu.
-これはかめです。
-
-これはしろです。
-This is castle.
-kore wa shiro desu.
-これは城です。
-
-これはおひめさまです。
-This is princess.
-kore wa Ohimesama desu.
-これはお姫様です。
-
-これはたのしくです。
-This is happily.
-kore wa Tanoshiku desu.
-これは楽しくです。
-
-これはりくです。
-This is land.
-kore wa Riku desu.
-これは陸です。
-
-これはするとです。
-This is and.
-kore wa Suruto desu.
-これはするとです。
-
-これはけむりです。
-This is smoke.
-kore wa Kemuri desu.
-これは煙です。
-
-これはまっしろです。
-This is pure white.
-kore wa Masshiro desu.
-これは真っ白です。
-
-これはなかみです。
-This is content.
-kore wa Nakami desu.
-これは中身です。
-
-これはべんりじょうほうです。
-This is Useful Information.
-kore wa Benri jouhou desu.
-これは便利情報です。
-
-これはみうらゲストハウス/みんしゅくみうらです。
-This is Miura Guest House / Miura Pension.
-kore wa Miura Gesuto Hausu / Minshuku Miura desu.
-これは三浦ゲストハウス/民宿三浦です。
-
-これはやすいくつろぎ、かていてきなたのしいふんいきとしんせつなサービスです。
-This is Nice accommodation with friendly atmosphere and warm service at a reasonable price.
-kore wa Yasui kutsurogi, kateiteki na tanoshii fuen'iki to shinsetsu na saabisu desu.
-これは安いくつろぎ、家庭的な楽しい雰囲気と親切なサービスです。
-
-これはこうみんかんからのおしらせです。
-This is Community Center Information.
-kore wa Kouminkan kara no oshirase desu.
-これは公民館からのお知らせです。
-
-これはげつようび:にほんごこうざです。
-This is Mon. Japanese language class.
-kore wa Getsuyoubi: Nihongo kouza desu.
-これは月曜日:日本語講座です。
-
-これはかようび:いけばなスクールです。
-This is Tue. Flower arrangement class.
-kore wa Kayoubi: Ikebana sukūru desu.
-これは火曜日:生け花スクールです。
-
-これはすいようび:にほんりょうりきょうしつです。
-This is Wed. Japanese cooking class.
-kore wa Suiyoubi: Nihon ryouri kyoushitsu desu.
-これは水曜日:日本料理教室です。
-
-ここはまいつきだい3にちようびのあさ:バザーです。
-This place is on the 3rd Sun. of every month: Bazaar.
-koko wa Maitsuki dai-san nichiyoubi no asa: Bazaa desu.
-ここは毎月第3日曜日の朝:バザーです。
-
-これはいえのしゅうり、そうじです。
-This is house repairs.
-kore wa Ie no shūri, souji desu.
-これは家の修理、掃除です。
-
-これはあかちゃん、こどものせわです。
-This is baby sitting.
-kore wa Akachan, kodomo no sewa desu.
-これは赤ちゃん、子どもの世話です。
-
-これはいぬのさんぽです。
-This is dog walking.
-kore wa Inu no sanpo desu.
-これは犬の散歩です。
-
-これははなしあいてです。
-This is companion service.
-kore wa Hanashiaite desu.
-これは話し相手です。
-
-これはカラオケです。
-This is karaoke sets.
-kore wa Karaoke desu.
-これはカラオケです。
-
-これはビデオカメラです。
-This is video cameras.
-kore wa Bideo kamera desu.
-これはビデオカメラです。
-
-これはけいたいでんわです。
-This is cellular phones.
-kore wa Keitai denwa desu.
-これは携帯電話です。
-
-これはベビーようひんです。
-This is baby goods.
-kore wa Bebii youhin desu.
-これはベビー用品です。
-
-これはレジャーようひんです。
-This is recreational equipment / travel goods.
-kore wa Rejaa youhin desu.
-これはレジャー用品です。
-
-これはきんぎょくじです。
-This is Kingyokuji.
-kore wa Kingyokuji desu.
-これは金銀寺です。
-
-`;
-
-allWords["Sentence 41 - Hard"] = ``;
-
-allWords["Sentence 42"] = `
-あついをつつみます。
-wrap thick.
-Atsui o Tsutsumimasu.
-厚いを包みます。
-
-うすいをわかします。
-boil thin.
-Usui o Wakashimasu.
-薄いを沸かします。
-
-べんごしをまぜます。
-mix lawyer.
-Bengoshi o Mazemasu.
-弁護士を混ぜます。
-
-おんがくかをけいさんします。
-calculate musician.
-Ongakuka o Keisanshimasu.
-音楽家を計算します。
-
-これはこどもたちです。
-This is children.
-kore wa Kodomotachi desu.
-これは子どもたちです。
-
-これはふたりです。
-This is couple.
-kore wa Futari desu.
-これは二人です。
-
-これはきょういくです。
-This is education.
-kore wa Kyouiku desu.
-これは教育です。
-
-これはれきしです。
-This is history.
-kore wa Rekishi desu.
-これは歴史です。
-
-これはぶんかです。
-This is culture.
-kore wa Bunka desu.
-これは文化です。
-
-これはしゃかいです。
-This is society.
-kore wa Shakai desu.
-これは社会です。
-
-これはほうりつです。
-This is law.
-kore wa Houritsu desu.
-これは法律です。
-
-これはせんそうです。
-This is war.
-kore wa Sensou desu.
-これは戦争です。
-
-これはへいわです。
-This is peace.
-kore wa Heiwa desu.
-これは平和です。
-
-これはもくてきです。
-This is purpose.
-kore wa Mokuteki desu.
-これは目的です。
-
-これはあんぜんです。
-This is safety.
-kore wa Anzen desu.
-これは安全です。
-
-これはろんぶんです。
-This is thesis.
-kore wa Ronbun desu.
-これは論文です。
-
-これはかんけいです。
-This is relation.
-kore wa Kankei desu.
-これは関係です。
-
-これはミキサーです。
-This is mixer.
-kore wa Mikisaa desu.
-これはミキサーです。
-
-これはやかんです。
-This is kettle.
-kore wa Yakan desu.
-これはやかんです。
-
-これはせんぬきです。
-This is cap opener.
-kore wa Sennuki desu.
-これはせんぬきです。
-
-これはかんきりです。
-This is can opener.
-kore wa Kankiri desu.
-これはかんきりです。
-
-これはかんづめです。
-This is canned food.
-kore wa Kanzume desu.
-これは缶詰です。
-
-これはふろしきです。
-This is wrapping cloth used to carry things.
-kore wa Furoshiki desu.
-これはふろしきです。
-
-これはそろばんです。
-This is abacus.
-kore wa Soroban desu.
-これはそろばんです。
-
-これはたいおんけいです。
-This is .
-kore wa Taionkei desu.
-これは体温計です。
-
-これはざいりょうです。
-This is material.
-kore wa Zairyou desu.
-これは材料です。
-
-これはいしです。
-This is stone.
-kore wa Ishi desu.
-これは石です。
-
-これはピラミッドです。
-This is pyramid.
-kore wa Piramiddo desu.
-これはピラミッドです。
-
-これはデータです。
-This is data.
-kore wa Deeta desu.
-これはデータです。
-
-これはファイルです。
-This is file.
-kore wa Fairu desu.
-これはファイルです。
-
-これはあるです。
-This is a certain ~.
-kore wa Aru desu.
-これはあるです。
-
-これはいっしょうけんめいです。
-This is with all one's effort.
-kore wa Isshoukenmei desu.
-これは一生懸命です。
-
-これはなぜです。
-This is why.
-kore wa Naze desu.
-これはなぜです。
-
-これはこくれんです。
-This is United Nations.
-kore wa Kokuren desu.
-これは国連です。
-
-これはエリーゼのためにです。
-This is Für Elise.
-kore wa Eriize no tame ni desu.
-これはエリーゼのためにです。
-
-これはベートーベンです。
-This is Ludwig van Beethoven.
-kore wa Beetooben desu.
-これはベートーベンです。
-
-これはポーランドです。
-This is Poland.
-kore wa Poorando desu.
-これはポーランドです。
-
-これはローンです。
-This is loan.
-kore wa Roon desu.
-これはローンです。
-
-これはセットです。
-This is set.
-kore wa Setto desu.
-これはセットです。
-
-これはあとです。
-This is the amount left unused.
-kore wa Ato desu.
-これはあとです。
-
-これはカップラーメンです。
-This is instant Chinese noodles sold in a ready-to-use disposable container.
-kore wa Kappu raamen desu.
-これはカップラーメンです。
-
-これはインスタントラーメンです。
-This is instant Chinese noodles.
-kore wa Insutanto raamen desu.
-これはインスタントラーメンです。
-
-これはなべです。
-This is pan.
-kore wa Nabe desu.
-これはなべです。
-
-これはどんぶりです。
-This is ceramic bowl.
-kore wa Donburi desu.
-これはどんぶりです。
-
-これはしょくひんです。
-This is food.
-kore wa Shokuhin desu.
-これは食品です。
-
-これはちょうさです。
-This is investigation.
-kore wa Chousa desu.
-これは調査です。
-
-これはカップです。
-This is cup.
-kore wa Kappu desu.
-これはカップです。
-
-これはまたです。
-This is and.
-kore wa Mata desu.
-これはまたです。
-
-これはのかわりにです。
-This is in place of ~.
-kore wa no kawari ni desu.
-これはの代わりにです。
-
-これはどこででもです。
-This is in any place.
-kore wa Doko de demo desu.
-これはどこででもです。
-
-これはいまではです。
-This is now.
-kore wa Ima de wa desu.
-これは今ではです。
-
-これはじむようひん・どうぐです。
-This is Office supplies & tools.
-kore wa Jimuyouhin, dougu desu.
-これは事務用品・道具です。
-
-これはけしごむです。
-This is eraser.
-kore wa Keshigomu desu.
-これは消しゴムです。
-
-これはしゅうせいえきです。
-This is correction liquid.
-kore wa Shūseieki desu.
-これは修正液です。
-
-これはきるです。
-This is cut.
-kore wa Kiru desu.
-これは切るです。
-
-これはのこぎりです。
-This is saw.
-kore wa Nokogiri desu.
-これはのこぎりです。
-
-これはセロテープです。
-This is Sellotape.
-kore wa Serotēpu desu.
-これはセロテープです。
-
-これはガムテープです。
-This is packaging tape.
-kore wa Gamutēpu desu.
-これはガムテープです。
-
-これはけすです。
-This is erase.
-kore wa Kesu desu.
-これは消すです。
-
-これはのりです。
-This is glue.
-kore wa Nori desu.
-これはのりです。
-
-これはホッチキスです。
-This is stapler.
-kore wa Hocchikisu desu.
-これはホッチキスです。
-
-これはとじるです。
-This is staple.
-kore wa Tojiru desu.
-これはとじるです。
-
-これはクリップです。
-This is clip.
-kore wa Kurippu desu.
-これはクリップです。
-
-これははさむ・とじるです。
-This is clip.
-kore wa Hasamu, tojiru desu.
-これははさむ・とじるです。
-
-これはくぎです。
-This is nail.
-kore wa Kugi desu.
-これはくぎです。
-
-これは(くぎを)うつです。
-This is hit.
-kore wa (Kugi o) utsu desu.
-これは(くぎを)打つです。
-
-これはかなづちです。
-This is hammer.
-kore wa Kanazuchi desu.
-これは金づちです。
-
-これはパンチです。
-This is hole punch.
-kore wa Panchi desu.
-これはパンチです。
-
-これは(あなを)あけるです。
-This is punch.
-kore wa (Ana o) akeru desu.
-これは(穴を)開けるです。
-
-これはがびょう(おしピン)です。
-This is thumbtack.
-kore wa Gabyou (Oshipin) desu.
-これは画鋲(押しピン)です。
-
-これはとめるです。
-This is pin / tack.
-kore wa Tomeru desu.
-これは留めるです。
-
-これはカッターです。
-This is cutter.
-kore wa Kattaa desu.
-これはカッターです。
-
-これははさみです。
-This is scissors.
-kore wa Hasami desu.
-これははさみです。
-
-これはペンチです。
-This is pliers.
-kore wa Penchi desu.
-これはペンチです。
-
-これはドライバーです。
-This is screwdriver.
-kore wa Doraibaa desu.
-これはドライバーです。
-
-これは(ねじを)しめる/ゆるめるです。
-This is tighten / loosen.
-kore wa (Neji o) shimeru / yurumeru desu.
-これは(ねじを)締める/緩めるです。
-
-これはけいさんきです。
-This is calculator.
-kore wa Keisanki desu.
-これは計算機です。
-
-これはけいさんするです。
-This is calculate.
-kore wa Keisan suru desu.
-これは計算するです。
-
-これはまげる/きるです。
-This is bend / cut.
-kore wa Mageru / Kiru desu.
-これは曲げる/切るです。
-
-これはえんぴつけずりです。
-This is pencil sharpener.
-kore wa Enpitsu kezuri desu.
-これは鉛筆削りです。
-
-これはけずるです。
-This is sharpen.
-kore wa Kezuru desu.
-これは削るです。
-
-これはじょうぎ(ものさし)です。
-This is ruler.
-kore wa Jougi (Monosashi) desu.
-これは定規(物差し)です。
-
-これは(せんを)ひく/はかるです。
-This is draw.
-kore wa (Sen o) hiku / Hakaru desu.
-これは(線を)引く/測るです。
-
-これはファイルするです。
-This is file.
-kore wa Fairu suru desu.
-これはファイルするです。
-
-`;
-
-allWords["Sentence 42 - Hard"] = ``;
-
-allWords["Sentence 43"] = `
-じょうぶをふえます。
-[exports] increase strong.
-Joubu o Fuemasu.
-丈夫を増えます。
-
-へんをへります。
-[exports] decrease strange.
-Hen o Herimasu.
-変を減ります。
-
-しあわせをあがります。
-[the price] rise happy.
-Shiawase o Agarimasu.
-幸せを上がります。
-
-うまいをさがります。
-[the price] fall tasty.
-Umai o Sagarimasu.
-うまいを下がります。
-
-まずいをきれます。
-[a string] break not tasty.
-Mazui o Kiremasu.
-まずいを切れます。
-
-つまらないをとれます。
-[a button] come off boring.
-Tsumaranai o Toremasu.
-つまらないをとれます。
-
-ガソリンをおちます。
-[baggage] fall down petrol.
-Gasorin o Ochimasu.
-ガソリンを落ちます。
-
-なくなります。
-[petrol.
-Nakunarimasu.
-なくなります。
-
-センスがあります。
-taste.
-Sensu ~ga arimasu.
-センスがあります。
-
-といいます。
-~.
-to iimasu.
-といいます。
-
-これはひです。
-This is fire.
-kore wa Hi desu.
-これは火です。
-
-これはだんぼうです。
-This is heating.
-kore wa Danbou desu.
-これは暖房です。
-
-これはれいぼうです。
-This is air-conditioning.
-kore wa Reibou desu.
-これは冷房です。
-
-これはいまにもです。
-This is at any moment.
-kore wa Ima ni mo desu.
-これは今にもです。
-
-これはわあです。
-This is Oh!/Wow!.
-kore wa Waa desu.
-これはわあです。
-
-これはかいいんです。
-This is member.
-kore wa Kaiin desu.
-これは会員です。
-
-これはてきとうです。
-This is suitable.
-kore wa Tekitou desu.
-これは適当です。
-
-これはねんれいです。
-This is age.
-kore wa Nenrei desu.
-これは年齢です。
-
-これはしゅうにゅうです。
-This is income.
-kore wa Shuunyuu desu.
-これは収入です。
-
-これはぴったりです。
-This is exactly.
-kore wa Pittari desu.
-これはぴったりです。
-
-これはそのうえです。
-This is in addition to that.
-kore wa Sonoue desu.
-これはそのうえです。
-
-これはばらです。
-This is rose.
-kore wa Bara desu.
-これはばらです。
-
-これはドライブです。
-This is driving.
-kore wa Doraibu desu.
-これはドライブです。
-
-これはせいかく・せいしつです。
-This is Personality & nature.
-kore wa Seikaku, seishitsu desu.
-これは性格・性質です。
-
-これはあかるいです。
-This is bright.
-kore wa Akarui desu.
-これは明るいです。
-
-これはくらいです。
-This is gloomy.
-kore wa Kurai desu.
-これは暗いです。
-
-これはかっぱつです。
-This is active.
-kore wa Kappatsu desu.
-これは活発です。
-
-これはせいじつです。
-This is sincere.
-kore wa Seijitsu desu.
-これは誠実です。
-
-これはわがままです。
-This is selfish.
-kore wa Wagamama desu.
-これはわがままです。
-
-これはまじめです。
-This is serious.
-kore wa Majime desu.
-これはまじめです。
-
-これはふまじめです。
-This is frivolous.
-kore wa Fumajime desu.
-これはふまじめです。
-
-これはやさしいです。
-This is kind.
-kore wa Yasashii desu.
-これは優しいです。
-
-これはおとなしいです。
-This is quiet.
-kore wa Otonashii desu.
-これはおとなしいです。
-
-これはつめたいです。
-This is cold.
-kore wa Tsumetai desu.
-これは冷たいです。
-
-これはきびしいです。
-This is strict.
-kore wa Kibishii desu.
-これは厳しいです。
-
-これはがんこです。
-This is stubborn.
-kore wa Ganko desu.
-これは頑固です。
-
-これはすなおです。
-This is obedient.
-kore wa Sunao desu.
-これは素直です。
-
-これはいじわるです。
-This is ill-natured.
-kore wa Ijiwaru desu.
-これはいじわるです。
-
-これはきがながいです。
-This is slow-tempered.
-kore wa Ki ga nagai desu.
-これは気が長いです。
-
-これはきがみじかいです。
-This is quick-tempered.
-kore wa Ki ga mijikai desu.
-これは気が短いです。
-
-これはきがつよいです。
-This is strong-willed.
-kore wa Ki ga tsuyoi desu.
-これは気が強いです。
-
-これはきがよわいです。
-This is timid.
-kore wa Ki ga yowai desu.
-これは気が弱いです。
-
-これはかちきです。
-This is competitive.
-kore wa Kachiki desu.
-これは勝ち気です。
-
-これはしんけいしつです。
-This is nervous.
-kore wa Shinkeishitsu desu.
-これは神経質です。
-
-`;
-
-allWords["Sentence 43 - Hard"] = ``;
-
-allWords["Sentence 44"] = `
-どうなさいますか。
-What can I do for you?
-Dou nasaimasu ka.
-どうなさいますか。
-
-どういうふうに なさいますか。
-How would you like it done?
-Dou iu fuu ni nasaimasu ka.
-どういうふうに なさいますか。
-
-～みたいに してください。
-Do it like ~.
-~ mitai ni shite kudasai.
-～みたいに してください。
-
-これで よろしいでしょうか。
-Would this be all right?
-Kore de yoroshii deshou ka.
-これで よろしいでしょうか。
-
-おつかれさまでした。
-Thank you for being patient.
-otsukaresama deshita.
-お疲れ様でした。
-
-きってください。
-Please cut it
-Kitte kudasai
-切ってください。
-
-あんぜんになきます。
-cry safe.
-Anzen ni Nakimasu.
-安全に泣きます。
-
-わらいます。
-laugh.
-Waraimasu.
-笑います。
-
-ていねいにかわきます。
-dry polite.
-Teinei ni Kawakimasu.
-丁寧に乾きます。
-
-こまかいをぬれます。
-get wet small.
-Komakai o Nuremasu.
-細かいを濡れます。
-
-こいをすべります。
-slip strong.
-Koi o Suberimasu.
-濃いを滑ります。
-
-うすいにおきます。
-[an accident] happen weak.
-Usui ni Okimasu.
-薄いに起きます。
-
-くうきをちょうせつします。
-adjust air.
-Kuuki o Chousetsushimasu.
-空気を調節します。
-
-なみだをいやがります。
-dislike tear.
-Namida o Iyagarimasu.
-涙を嫌がります。
-
-わしょくをわかれます。
-part Japanese dish.
-Washoku o Wakaremasu.
-和食を別れます。
-
-これはようしょくです。
-This is Western dish.
-kore wa Youshoku desu.
-これは洋食です。
-
-これはおかずです。
-This is side dish.
-kore wa Okazu desu.
-これはおかずです。
-
-これはりょうです。
-This is quantity.
-kore wa Ryou desu.
-これは量です。
-
-これは―ばいです。
-This is ― times.
-kore wa ―bai desu.
-これは―倍です。
-
-これははんぶんです。
-This is half.
-kore wa Hanbun desu.
-これは半分です。
-
-これはシングルです。
-This is single room.
-kore wa Shinguru desu.
-これはシングルです。
-
-これはツインです。
-This is twin-bedded room.
-kore wa Tsuin desu.
-これはツインです。
-
-これはたんすです。
-This is chest of drawers.
-kore wa Tansu desu.
-これはたんすです。
-
-これはせんたくものです。
-This is washing.
-kore wa Sentakumono desu.
-これは洗濯物です。
-
-これはりゆうです。
-This is reason.
-kore wa Riyuu desu.
-これは理由です。
-
-これはカットです。
-This is haircut.
-kore wa Katto desu.
-これはカットです。
-
-これはシャンプーです。
-This is shampoo.
-kore wa Shanpuu desu.
-これはシャンプーです。
-
-これはショートです。
-This is short.
-kore wa Shooto desu.
-これはショートです。
-
-これはまたです。
-This is and.
-kore wa Mata desu.
-これはまたです。
-
-これはじゅんじょです。
-This is order.
-kore wa Junjo desu.
-これは順序です。
-
-これはひょうげんです。
-This is expression.
-kore wa Hyougen desu.
-これは表現です。
-
-これはたとえばです。
-This is for example.
-kore wa Tatoeba desu.
-これは例えばです。
-
-これはこれらです。
-This is these things.
-kore wa Korera desu.
-これはこれらです。
-
-これはえんぎがわるいです。
-This is unlucky.
-kore wa Engi ga warui desu.
-これは縁起が悪いです。
-
-これはびよういん・りはつてんです。
-This is Beauty parlor & barber shop.
-kore wa Biyouin, rihatsuten desu.
-これは美容院・理髪店です。
-
-これはパーマです。
-This is perm.
-kore wa Paama desu.
-これはパーマです。
-
-これはセットです。
-This is set.
-kore wa Setto desu.
-これはセットです。
-
-これはリンスです。
-This is rinse.
-kore wa Rinsu desu.
-これはリンスです。
-
-これはトリートメントです。
-This is treatment.
-kore wa Toriitomento desu.
-これはトリートメントです。
-
-これはブローです。
-This is blow-dry.
-kore wa Burou desu.
-これはブローです。
-
-これはヘアダイです。
-This is hairdye.
-kore wa Headai desu.
-これはヘアダイです。
-
-これはそるです。
-This is shave [beard/face].
-kore wa Soru desu.
-これはそるです。
-
-これはわけるです。
-This is part [hair].
-kore wa Wakeru desu.
-これは分けるです。
-
-これはみみがみえるくらいにです。
-This is so that you can see my ears.
-kore wa Mimi ga mieru kurai ni desu.
-これは耳が見えるくらいにです。
-
-これはかたにかかるくらいにです。
-This is to shoulder length.
-kore wa Kata ni kakaru kurai ni desu.
-これは肩にかかるくらいにです。
-
-これはまゆがかくれるくらいにです。
-This is so that my eyebrows are covered.
-kore wa Mayu ga kakureru kurai ni desu.
-これはまゆが隠れるくらいにです。
-
-これはいっせんちくらいです。
-This is about one centimeter.
-kore wa Issenchi kurai desu.
-これは1センチくらいです。
-
-これはこのしゃしんのようにです。
-This is so that it looks like this photograph.
-kore wa Kono shashin no you ni desu.
-これはこの写真のようにです。
-
-これはいろいろなヘアスタイルです。
-This is Various Hairstyles.
-kore wa Iroiro na heasutairu desu.
-これはいろいろなヘアスタイルです。
-
-これはボブです。
-This is bob.
-kore wa Bobu desu.
-これはボブです。
-
-これはおかっぱです。
-This is bobbed hair.
-kore wa Okappa desu.
-これはおかっぱです。
-
-これはまるがりです。
-This is close-cropped cut.
-kore wa Marugari desu.
-これは丸刈りです。
-
-これはレイヤーカットです。
-This is layered cut.
-kore wa Reiyaa katto desu.
-これはレイヤーカットです。
-
-これはみつあみです。
-This is braids.
-kore wa Mitsuami desu.
-これは三つ編みです。
-
-これはちょうはつです。
-This is long hair.
-kore wa Chouhatsu desu.
-これは長髪です。
-
-これはソバージュです。
-This is shaggy perm.
-kore wa Sobaaju desu.
-これはソバージュです。
-
-これはポニーテールです。
-This is ponytail.
-kore wa Poniitēru desu.
-これはポニーテールです。
-
-これはリーゼントです。
-This is ducktail.
-kore wa Riizento desu.
-これはリーゼントです。
-
-`;
-
-allWords["Sentence 44 - Hard"] = ``;
-
-allWords["Sentence 45"] = `
-ほしょうしょをあやまります。
-apologize guarantee.
-Hoshousho o Ayamarimasu.
-保証書を謝ります。
-
-あいます。
-encounter [an accident].
-Aimasu.
-遭います。
-
-りょうしゅうしょをしんじます。
-believe receipt.
-Ryoushuusho o Shinjimasu.
-領収書を信じます。
-
-おくりものをよういします。
-prepare gift.
-Okurimono o Youishimasu.
-贈り物を用意します。
-
-まちがいでんわをキャンセルします。
-cancel wrong.
-Machigaidenwa o Kyanserushimasu.
-間違い電話をキャンセルします。
-
-キャンプにうまくいきます。
-go well camp.
-Kyanpu ni Umaku ikimasu.
-キャンプにうまくいきます。
-
-たのしみにしています。
-be looking forward to.
-Tanoshimi ni shite imasu.
-楽しみにしています。
-
-かかりをゆうしょうします。
-win the championship person in charge.
-Kakari o Yuushoushimasu.
-係を優勝します。
-
-ちゅうしをねむります。
-sleep calling off.
-Chuushi o Nemurimasu.
-中止を眠ります。
-
-てんをめがさめます。
-wake up point.
-Ten o Me ga samemasu.
-点を目が覚めます。
-
-なります。
-ring.
-Narimasu.
-鳴ります。
-
-レバーをセットします。
-set lever.
-Rebaa o Settoshimasu.
-レバーをセットします。
-
-これはさつです。
-This is [―yen] note.
-kore wa satsu desu.
-これは札です。
-
-これはきゅうにです。
-This is suddenly.
-kore wa Kyuuni desu.
-これは急にです。
-
-これはちゃんとです。
-This is regularly.
-kore wa Chanto desu.
-これはちゃんとです。
-
-これはいじょうですです。
-This is That's all.
-kore wa Ijou desu desu.
-これは以上ですです。
-
-これはかかりいんです。
-This is person in charge.
-kore wa Kakariin desu.
-これは係員です。
-
-これはコースです。
-This is course.
-kore wa Koosu desu.
-これはコースです。
-
-これはスタートです。
-This is start.
-kore wa Sutaato desu.
-これはスタートです。
-
-これは―いです。
-This is -th.
-kore wa ―i desu.
-これは―位です。
-
-これはなやみです。
-This is trouble.
-kore wa Nayami desu.
-これは悩みです。
-
-これはめざましです。
-This is alarm clock.
-kore wa Mezamashi desu.
-これは目覚ましです。
-
-これはだいがくせいです。
-This is university student.
-kore wa Daigakusei desu.
-これは大学生です。
-
-これはかいとうです。
-This is answer.
-kore wa Kaitou desu.
-これは回答です。
-
-これはそれでもです。
-This is nevertheless.
-kore wa Soredemo desu.
-これはそれでもです。
-
-これはひじょうのばあいです。
-This is Emergency.
-kore wa Hijou no baai desu.
-これは非常の場合です。
-
-これはきちょうひんです。
-This is Valuables.
-kore wa Kichouhin desu.
-これは貴重品です。
-
-これはひじょうようひんです。
-This is Emergency medicine / Emergency supplies.
-kore wa Hijou youhin desu.
-これは非常用品です。
-
-これはじしんのばあいです。
-This is In Case of Earthquake.
-kore wa Jishin no baai desu.
-これは地震の場合です。
-
-これはそなえがたいせつです。
-This is Prepare first.
-kore wa Sonae ga taisetsu desu.
-これは備えが大切です。
-
-これはかぐがたおれないようにしておくです。
-This is Make sure to fix furniture so that it will not fall over.
-kore wa Kagu ga taorenai you ni shite oku desu.
-これは家具が倒れないようにしておくです。
-
-これはしょうかきをそなえる・みずをためておくです。
-This is Have a fire extinguisher on hand / Keep an emergency supply of water.
-kore wa Shoukaki o sonaeru, mizu o tamete oku desu.
-これは消火器を備える・水を貯めておくです。
-
-これはひじょうようもちだしぶくろをじゅんびしておくです。
-This is Keep items needed in an emergency in a bag.
-kore wa Hijouyou mochidashibukuro o junbi shite oku desu.
-これは非常用持ち出し袋を準備しておくです。
-
-これはちいきのひなんばしょをかくにんしておくです。
-This is Make sure you know where the evacuation point is in your district.
-kore wa Chiiki no hinanbasho o kakunin shite oku desu.
-これは地域の避難場所を確認しておくです。
-
-これはかぞく、ちじんと、もしものばあいのれんらくさきをきめておくです。
-This is Decide on a contact address with your family.
-kore wa Kazoku, chijin to, moshimo no baai no renrakusaki o kimete oku desu.
-これは家族、知人と、もしもの場合の連絡先を決めておくです。
-
-これはまんいちじしんがおきたばあいです。
-This is When an Earthquake Strikes.
-kore wa Man'ichi jishin ga okita baai desu.
-これは万一地震が起きた場合です。
-
-これはすぐひのしまつです。
-This is Immediately extinguish any fire in use.
-kore wa Sugu hi no shimatsu desu.
-これはすぐ火の始末です。
-
-これはとをあけてでぐちのかくほです。
-This is Open doors to secure an exit path.
-kore wa To o akete deguchi no kakuho desu.
-これは戸を開けて出口の確保です。
-
-これはあわててそとにとびださないです。
-This is Do not panic or rush outside.
-kore wa Awatete soto ni tobidasanai desu.
-これは慌てて外に飛び出さないです。
-
-これはてーぶるのしたにもぐるです。
-This is Get under a table.
-kore wa Tēburu no shita ni moguru desu.
-これはテーブルの下にもぐるです。
-
-これはゆれがおさまったらです。
-This is When an Earthquake Stops.
-kore wa Yure ga osamattara desu.
-これは揺れが収まったらです。
-
-これはただしいじょうほうをきく(がけくずれ、つなみにちゅうい)です。
-This is Get accurate information..
-kore wa Tadashii jouhou o kiku (Gakekuzure, tsunami ni chūi) desu.
-これは正しい情報を聞く(崖崩れ、津波に注意)です。
-
-これはひなんするばあいはです。
-This is When You Evacuate.
-kore wa Hinan suru baai wa desu.
-これは避難する場合はです。
-
-これはくるまをつかわず、かならずあるいてです。
-This is Do not evacuate by car.
-kore wa Kuruma o tsukawazu, kanarazu aruite desu.
-これは車を使わず、必ず歩いてです。
-
-これはたいふうのばあいです。
-This is In Case of Typhoon.
-kore wa Taifū no baai desu.
-これは台風の場合です。
-
-これはてんきよほうをきくです。
-This is Listen to the weather forecast.
-kore wa Tenki yohou o kiku desu.
-これは天気予報を聞くです。
-
-これはいえのまわりのてんけんです。
-This is Check the exterior of the house.
-kore wa Ie no mawari no tenken desu.
-これは家の周りの点検です。
-
-これはらじおのでんちのそなえをです。
-This is Have radio batteries on hand.
-kore wa Rajio no denchi no sonae o desu.
-これはラジオの電池の備えをです。
-
-これはみず、きんきゅうしょくひんのじゅんびです。
-This is Keep a supply of water and food.
-kore wa Mizu, kinkyū shokuhin no junbi desu.
-これは水、緊急食品の準備です。
-
-`;
-
-allWords["Sentence 45 - Hard"] = ``;
-
-allWords["Sentence 46"] = `
-いま いいでしょうか。
-May I bother you now?
-Ima ii deshou ka。
-今 いいでしょうか。
-
-どちら様でしょうか。
-Who is this, please?
-Dochira sama deshou ka。
-どちら様でしょうか。
-
-おまたせしました。
-Sorry to have kept you waiting.
-Omatase shimashita。
-お待たせしました。
-
-るすにやきます。
-bake absence.
-Rusu ni Yakimasu.
-留守に焼きます。
-
-たくはいびんをわたします。
-hand over delivery service.
-Takuhaibin o Watashimasu.
-宅配便を渡します。
-
-げんいんにかえってきます。
-come back cause.
-Gen'in ni Kaette kimasu.
-原因に帰って来ます。
-
-ちゅうしゃをでます。
-[a bus] leave injection.
-Chuusha o Demasu.
-注射を出ます。
-
-むかいます。
-head for.
-Mukaimasu.
-向かいます。
-
-しょくよくをてにはいります。
-[information] come in appetite.
-Shokuyoku o Te ni hairimasu.
-食欲を手に入ります。
-
-パンフレットをにゅうりょくします。
-input pamphlet.
-Panfuretto o Nyuuryoku shimasu.
-パンフレットを入力します。
-
-ステレオはこちらです。
-stereo is my place.
-Sutereo wa Kochira desu.
-ステレオはこちらです。
-
-これはのところです。
-This is the place around ~.
-kore wa no tokoro desu.
-これはの所です。
-
-これはちょうどです。
-This is just.
-kore wa Choudo desu.
-これはちょうどです。
-
-これはたったいまです。
-This is just now.
-kore wa Tatta ima desu.
-これはたった今です。
-
-これはガスサービスセンターです。
-This is gas service center.
-kore wa Gasu saabisu sentaa desu.
-これはガスサービスセンターです。
-
-これはガスレンジです。
-This is gas range.
-kore wa Gasu renji desu.
-これはガスレンジです。
-
-これはぐあいです。
-This is condition.
-kore wa Guai desu.
-これは具合です。
-
-これはちしきです。
-This is knowledge.
-kore wa Chishiki desu.
-これは知識です。
-
-これはほうこです。
-This is treasury.
-kore wa Houko desu.
-これは宝庫です。
-
-これはシステムです。
-This is system.
-kore wa Shisutemu desu.
-これはシステムです。
-
-これはたとえばです。
-This is for example.
-kore wa Tatoeba desu.
-これは例えばです。
-
-これはキーワードです。
-This is key word.
-kore wa Kiiwaado desu.
-これはキーワードです。
-
-これはいちぶぶんです。
-This is one part.
-kore wa Ichi bubun desu.
-これは一部分です。
-
-これはびょうです。
-This is second.
-kore wa Byou desu.
-これは秒です。
-
-これはかたかなごのルーツです。
-This is Roots of Katakana Words.
-kore wa Katakana-go no rūtsu desu.
-これはかたかな語のルーツです。
-
-これはたべもの・のみものです。
-This is Food & drink.
-kore wa Tabemono, nomimono desu.
-これは食べ物・飲み物です。
-
-これはジャムです。
-This is jam.
-kore wa Jamu desu.
-これはジャムです。
-
-これはハムです。
-This is ham.
-kore wa Hamu desu.
-これはハムです。
-
-これはクッキーです。
-This is cookie.
-kore wa Kukkii desu.
-これはクッキーです。
-
-これはチーズです。
-This is cheese.
-kore wa Chiizu desu.
-これはチーズです。
-
-これはいりょうです。
-This is clothes.
-kore wa Iryou desu.
-これは衣料です。
-
-これはエプロンです。
-This is apron.
-kore wa Epuron desu.
-これはエプロンです。
-
-これはスカートです。
-This is skirt.
-kore wa Sukaato desu.
-これはスカートです。
-
-これはスーツです。
-This is suit.
-kore wa Sūtsu desu.
-これはスーツです。
-
-これはびょうきです。
-This is illness.
-kore wa Byouki desu.
-これは病気です。
-
-これはインフルエンザです。
-This is influenza.
-kore wa Infuruenza desu.
-これはインフルエンザです。
-
-これはストレスです。
-This is stress.
-kore wa Sutoresu desu.
-これはストレスです。
-
-これはげいじゅつです。
-This is arts.
-kore wa Geijutsu desu.
-これは芸術です。
-
-これはドラマです。
-This is drama.
-kore wa Dorama desu.
-これはドラマです。
-
-これはメロディーです。
-This is melody.
-kore wa Merodii desu.
-これはメロディーです。
-
-これはコーラスです。
-This is chorus.
-kore wa Kourasu desu.
-これはコーラスです。
-
-これはそのたです。
-This is others.
-kore wa Sonota desu.
-これはその他です。
-
-これはスケジュールです。
-This is schedule.
-kore wa Skejūru desu.
-これはスケジュールです。
-
-これはティッシュペーパーです。
-This is tissues.
-kore wa Tisshupēpaa desu.
-これはティッシュペーパーです。
-
-これはトラブルです。
-This is trouble.
-kore wa Toraburu desu.
-これはトラブルです。
-
-これはレジャーです。
-This is leisure.
-kore wa Rejaa desu.
-これはレジャーです。
-
-これはアンケートです。
-This is questionnaire.
-kore wa Ankēto desu.
-これはアンケートです。
-
-これはコンクールです。
-This is competition.
-kore wa Konkūru desu.
-これはコンクールです。
-
-これはピエロです。
-This is pierrot.
-kore wa Piero desu.
-これはピエロです。
-
-これはコロッケです。
-This is croquette.
-kore wa Korokke desu.
-これはコロッケです。
-
-これはオムレツです。
-This is omelette.
-kore wa Omuretsu desu.
-これはオムレツです。
-
-これはズボンです。
-This is trousers.
-kore wa Zubon desu.
-これはズボンです。
-
-これはランジェリーです。
-This is lingerie.
-kore wa Ranjerii desu.
-これはランジェリーです。
-
-これはキュロットです。
-This is culotte.
-kore wa Kyurotto desu.
-これはキュロットです。
-
-これはバレエです。
-This is ballet.
-kore wa Baree desu.
-これはバレエです。
-
-これはシャンソンです。
-This is chanson.
-kore wa Shanson desu.
-これはシャンソンです。
-
-これはアトリエです。
-This is studio.
-kore wa Atorie desu.
-これはアトリエです。
-
-これはメルヘンです。
-This is fairy tale.
-kore wa Meruhen desu.
-これはメルヘンです。
-
-これはピーマンです。
-This is green pepper.
-kore wa Piiman desu.
-これはピーマンです。
-
-これはフランクフルトです。
-This is frankfurter.
-kore wa Furankufuruto desu.
-これはフランクフルトです。
-
-これはレントゲンです。
-This is X-ray.
-kore wa Rentogen desu.
-これはレントゲンです。
-
-これはノイローゼです。
-This is neurosis.
-kore wa Noirouze desu.
-これはノイローゼです。
-
-これはアレルギーです。
-This is allergy.
-kore wa Arerugii desu.
-これはアレルギーです。
-
-これはアルバイトです。
-This is part-time job.
-kore wa Arubaito desu.
-これはアルバイトです。
-
-これはエネルギーです。
-This is energy.
-kore wa Enerugii desu.
-これはエネルギーです。
-
-これはゲレンデです。
-This is ski slope.
-kore wa Gerende desu.
-これはゲレンデです。
-
-これはテーマです。
-This is theme.
-kore wa Tēma desu.
-これはテーマです。
-
-これはビールです。
-This is beer.
-kore wa Biiru desu.
-これはビールです。
-
-これはコーヒーです。
-This is coffee.
-kore wa Kouhii desu.
-これはコーヒーです。
-
-これはホックです。
-This is hook.
-kore wa Hokku desu.
-これはホックです。
-
-これはズックです。
-This is deck shoes.
-kore wa Zukku desu.
-これはズックです。
-
-これはピロードです。
-This is velvet.
-kore wa Piroudo desu.
-これはピロードです。
-
-これはチョッキです。
-This is vest.
-kore wa Chokki desu.
-これはチョッキです。
-
-これはメスです。
-This is scalpel.
-kore wa Mesu desu.
-これはメスです。
-
-これはピンセットです。
-This is tweezers.
-kore wa Pinsetto desu.
-これはピンセットです。
-
-これはゴムです。
-This is rubber.
-kore wa Gomu desu.
-これはゴムです。
-
-これはペンキです。
-This is paint.
-kore wa Penki desu.
-これはペンキです。
-
-これはガラスです。
-This is glass.
-kore wa Garasu desu.
-これはガラスです。
-
-これはコックです。
-This is cook.
-kore wa Kokku desu.
-これはコックです。
-
-これはパンです。
-This is bread.
-kore wa Pan desu.
-これはパンです。
-
-これはカステラです。
-This is sponge cake.
-kore wa Kasutera desu.
-これはカステラです。
-
-これはカルタです。
-This is card.
-kore wa Karuta desu.
-これはカルタです。
-
-これはマカロニです。
-This is macaroni.
-kore wa Makaroni desu.
-これはマカロニです。
-
-これはスパゲッティです。
-This is spaghetti.
-kore wa Supagetti desu.
-これはスパゲッティです。
-
-これはオペラです。
-This is opera.
-kore wa Opera desu.
-これはオペラです。
-
-これはバレリーナです。
-This is ballerina.
-kore wa Bareriina desu.
-これはバレリーナです。
-
-`;
-
-allWords["Sentence 46 - Hard"] = ``;
-
-allWords["Sentence 47"] = `
-これはぎおんご・ぎたいごです。
-This is Onomatopoeia.
-kore wa Giongo, gitaigo desu.
-これは擬音語・擬態語です。
-
-ひどいをあつまります。
-[people] gather terrible.
-Hidoi o Atsumarimasu.
-ひどいを集まります。
-
-こわいをわかれます。
-[people] part frightening.
-Kowai o Wakaremasu.
-怖いを別れます。
-
-てんきよほうをながいきします。
-live long weather forecast.
-Tenki yohou o Nagaiki shimasu.
-天気予報を長生きします。
-
-はっぴょうをします。
-[sound/voice] be heard announcement.
-Happyou o Shimasu.
-発表をします。
-
-じっけんをさします。
-put up [an umbrella] experiment.
-Jikken o Sashimasu.
-実験をさします。
-
-しりあいます。
-get acquainted.
-Shiriaimasu.
-知り合います。
-
-じんこうをくらべます。
-compare [with men] population.
-Jinkou o Kurabemasu.
-人口を比べます。
-
-においをしらべます。
-survey smell.
-Nioi o Shirabemasu.
-においを調べます。
-
-これはかがくです。
-This is science.
-kore wa Kagaku desu.
-これは科学です。
-
-これはいがくです。
-This is medicine.
-kore wa Igaku desu.
-これは医学です。
-
-これはぶんがくです。
-This is literature.
-kore wa Bungaku desu.
-これは文学です。
-
-これはパトカーです。
-This is patrol car.
-kore wa Patokaa desu.
-これはパトカーです。
-
-これはきゅうきゅうしゃです。
-This is ambulance.
-kore wa Kyuukyuusha desu.
-これは救急車です。
-
-これはさんせいです。
-This is approval.
-kore wa Sansei desu.
-これは賛成です。
-
-これははんたいです。
-This is objection.
-kore wa Hantai desu.
-これは反対です。
-
-これはだんせいです。
-This is male.
-kore wa Dansei desu.
-これは男性です。
-
-これはじょせいです。
-This is female.
-kore wa Josei desu.
-これは女性です。
-
-これはによるとです。
-This is according to ~.
-kore wa ni yoru to desu.
-これはによるとです。
-
-これはバリです。
-This is Bali.
-kore wa Bari desu.
-これはバリです。
-
-これはイランです。
-This is Iran.
-kore wa Iran desu.
-これはイランです。
-
-これはカリフォルニアです。
-This is California.
-kore wa Kariforunia desu.
-これはカリフォルニアです。
-
-これはグアムです。
-This is Guam.
-kore wa Guamu desu.
-これはグアムです。
-
-これはこいびとです。
-This is sweetheart.
-kore wa Koibito desu.
-これは恋人です。
-
-これはあいいてです。
-This is sweetheart.
-kore wa Koibito desu.
-これは恋人です。
-
-これはあいてです。
-This is the other person.
-kore wa Aite desu.
-これは相手です。
-
-これはへいきんじゅみょうです。
-This is average life span.
-kore wa Heikin jumyou desu.
-これは平均寿命です。
-
-これははかせです。
-This is doctor.
-kore wa Hakase desu.
-これは博士です。
-
-これはのうです。
-This is brain.
-kore wa Nou desu.
-これは脳です。
-
-これはホルモンです。
-This is hormone.
-kore wa ホルモン desu.
-これはホルモンです。
-
-これはけしょうひんです。
-This is cosmetics.
-kore wa Keshouhin desu.
-これは化粧品です。
-
-これはけしょうです。
-This is makeup.
-kore wa Keshou desu.
-これは化粧です。
-
-これはザーザー(ふる)です。
-This is .
-kore wa Zaazaa (furu) desu.
-これはザーザー(降る)です。
-
-これはビュービュー(ふく)です。
-This is .
-kore wa Byūbyū (fuku) desu.
-これはビュービュー(吹く)です。
-
-これはゴロゴロ(なる)です。
-This is .
-kore wa Gorogoro (naru) desu.
-これはゴロゴロ(鳴る)です。
-
-これはワンワン(ほえる)です。
-This is bowwow.
-kore wa Wanwan (hoeru) desu.
-これはワンワン(ほえる)です。
-
-これはニャーニャー(なく)です。
-This is meow.
-kore wa Nyaanyaa (naku) desu.
-これはニャーニャー(鳴く)です。
-
-これはカーカー(なく)です。
-This is caw.
-kore wa Kaakaa (naku) desu.
-これはカーカー(鳴く)です。
-
-これはげらげら(わらう)です。
-This is guffaw.
-kore wa Geragera (warau) desu.
-これはげらげら(笑う)です。
-
-これはしくしく(なく)です。
-This is sob.
-kore wa Shikushiku (naku) desu.
-これはしくしく(泣く)です。
-
-これはきょろきょろ(みる)です。
-This is .
-kore wa Kyorokyoro (miru) desu.
-これはきょろきょろ(見る)です。
-
-これはぱくぱく(たべる)です。
-This is .
-kore wa Pakupaku (taberu) desu.
-これはぱくぱく(食べる)です。
-
-これはぐうぐう(ねる)です。
-This is .
-kore wa Gūgū (neru) desu.
-これはぐうぐう(寝る)です。
-
-これはすらすら(よむ)です。
-This is .
-kore wa Surasura (yomu) desu.
-これはすらすら(読む)です。
-
-これはざらざら(している)です。
-This is .
-kore wa Zarazara (shite iru) desu.
-これはざらざら(している)です。
-
-これはべたべた(している)です。
-This is .
-kore wa Betabeta (shite iru) desu.
-これはべたべた(している)です。
-
-これはつるつる(している)です。
-This is .
-kore wa Tsurutsuru (shite iru) desu.
-これはつるつる(している)です。
-
-`;
-
-allWords["Sentence 47 - Hard"] = ``;
-
-allWords["Sentence 48"] = `
-いいことですね。
-That's good.
-Ii koto desu ne。
-いいことですね。
-
-おいそがしいですか。
-Are you busy? (used when talking to someone senior or older)
-Oisogashii desu ka。
-お忙しいですか。
-
-いやをおろします。
-put down unwilling.
-Iya o Oroshimasu.
-嫌を下ろします、降ろします。
-
-きびしいをとどけます。
-deliver strict.
-Kibishii o Todokemasu.
-厳しいを届けます。
-
-じゅくをせわをします。
-take care of ~ cram school.
-Juku o Sewa o shimasu.
-塾を世話をします。
-
-スケジュールをたのしめます。
-enjoy oneself schedule.
-Sukejuuru o Tanoshimemasu.
-スケジュールを楽しめます。
-
-せいとをかわりをします。
-be a substitute pupil.
-Seito o Kawari o shimasu.
-生徒を代わりをします。
-
-ものをきょうそうします。
-race person.
-Mono o Kyousou shimasu.
-者を競走します。
-
-にゅうかんをとらえます。
-catch Immigration Bureau.
-Nyuukan o Toraemasu.
-入管をとらえます。
-
-これはさいにゅうこくビザです。
-This is re-entry visa.
-kore wa Sainyuukoku biza desu.
-これは再入国ビザです。
-
-これはじゆうにです。
-This is freely.
-kore wa Jiyuu ni desu.
-これは自由にです。
-
-これはかんです。
-This is for ~.
-kore wa kan desu.
-これは間です。
-
-これはひさしぶりです。
-This is after a long time.
-kore wa Hisashiburi desu.
-これは久しぶりです。
-
-これはえいぎょうです。
-This is business.
-kore wa Eigyou desu.
-これは営業です。
-
-これはそれまでにです。
-This is by that time.
-kore wa Sore made ni desu.
-これはそれまでにです。
-
-これはかまいませんです。
-This is It's all right./It doesn't matter.
-kore wa Kamaimasen desu.
-これはかまいませんです。
-
-これはもともとです。
-This is originally.
-kore wa Motomoto desu.
-これはもともとです。
-
-これはせいきです。
-This is -th century.
-kore wa seiki desu.
-これは世紀です。
-
-これはサーカスです。
-This is circus.
-kore wa Saakasu desu.
-これはサーカスです。
-
-これはげいです。
-This is performance.
-kore wa Gei desu.
-これは芸です。
-
-これはうつくしいです。
-This is beautiful.
-kore wa Utsukushii desu.
-これは美しいです。
-
-これはすがたです。
-This is figure.
-kore wa Sugata desu.
-これは姿です。
-
-これはこころです。
-This is heart.
-kore wa Kokoro desu.
-これは心です。
-
-これはにとってです。
-This is for ~.
-kore wa ni totte desu.
-これはにとってです。
-
-これはしつける・きたえるです。
-This is Discipline.
-kore wa Shitsukeru, kitaeru desu.
-これはしつける・鍛えるです。
-
-これはこどもになにをさせますかです。
-This is What will you make or let your children do?.
-kore wa Kodomo ni nani o sasemasu ka desu.
-これは子どもに何をさせますかです。
-
-これはしぜんのなかであそぶです。
-This is play outdoors in natural surroundings.
-kore wa Shizen no naka de asobu desu.
-これは自然の中で遊ぶです。
-
-これはスポーツをするです。
-This is do sports.
-kore wa Supoutsu o suru desu.
-これはスポーツをするです。
-
-これはひとりでりょこうするです。
-This is go on a trip alone.
-kore wa Hitori de ryokou suru desu.
-これは一人で旅行するです。
-
-これはいろいろなけいけんをするです。
-This is have various experiences.
-kore wa Iroiro na keiken o suru desu.
-これはいろいろな経験をするです。
-
-これはボランティアにさんかするです。
-This is participate in voluntary activities.
-kore wa Borantia ni sanka suru desu.
-これはボランティアに参加するです。
-
-これはうちのしごとをてつだうです。
-This is do some household chores.
-kore wa Uchi no shigoto o tetsudau desu.
-これはうちの仕事を手伝うです。
-
-これはおじいちゃん、おばあちゃんのせわをするです。
-This is take care of their sister.
-kore wa Ojiichan, obaachan no sewa o suru desu.
-これはおじいちゃん、おばあちゃんの世話をするです。
-
-これはならいごとです。
-This is Lessons / Extracurricular activities.
-kore wa Naraigoto desu.
-これは習い事です。
-
-これはじゅくへいくです。
-This is go to "juku.
-kore wa Juku e iku desu.
-これは塾へ行くです。
-
-これはピアノやえいごをならうです。
-This is learn to play the piano.
-kore wa Piano ya eigo o narau desu.
-これはピアノや英語を習うです。
-
-これはいいほんをたくさんよむです。
-This is read many good books.
-kore wa Ii hon o takusan yomu desu.
-これはいい本をたくさん読むです。
-
-これはおとしよりのはなしをきくです。
-This is listen to old people.
-kore wa Otoshiyori no hanashi o kiku desu.
-これはお年寄りの話を聞くです。
-
-これはじぶんのやりたいことをやるです。
-This is do what they want to do.
-kore wa Jibun no yaritai koto o yaru desu.
-これは自分のやりたいことをやるです。
-
-これはじぶんのすることはじぶんできめるです。
-This is make decisions by themselves.
-kore wa Jibun no suru koto wa jibun de kimeru desu.
-これは自分のすることは自分で決めるです。
-
-これはじしんをもつです。
-This is have confidence.
-kore wa Jishin o motsu desu.
-これは自信を持つです。
-
-これはせきにんをもつです。
-This is take responsibility.
-kore wa Sekinin o motsu desu.
-これは責任を持つです。
-
-これはがまんするです。
-This is be patient.
-kore wa Gaman suru desu.
-これは我慢するです。
-
-`;
-
-allWords["Sentence 48 - Hard"] = ``;
-
-allWords["Sentence 49"] = `
-いらっしゃいます。
-be, go, come (respectful equivalent of います, いきます and きます)
-Irasshaimasu
-いらっしゃいます。
-
-よろしくおつたえください。
-Give my best regards./Please say hello.
-Yoroshiku otsutae kudasai。
-よろしくお伝えください。
-
-しつれいいたします。
-Good-bye. (humble equivalent of しつれいします)
-Shitsurei itashimasu。
-失礼いたします。
-
-でいらっしゃいます。
-be (respectful equivalent of です)
-De irasshaimasu
-でいらっしゃいます。
-
-...さんの おたくで いらっしゃいますか。
-Is this ... residence?
-...-san no otaku de irasshaimasu ka.
-...さんの お宅で いらっしゃいますか。
-
-もしもし、...。
-Hello. Is this ...?
-Moshimoshi, ...
-もしもし、...。
-
-はい、...で ございますが、...さんで いらっしゃいますか。
-Yes, this is ..., calling. Can I speak to Mr. ...?
-Hai, ... de gozaimasu ga, ...-san de irasshaimasu ka.
-はい、...で ございますが、...さんで いらっしゃいますか。
-
-わたし、...と もうしますが、...さんで いらっしゃいますか。
-This is ..., calling. Can I speak to Mr. ...?
-Watashi, ... to moushimasu ga, ...-san de irasshaimasu ka.
-私、...と 申しますが、...さんで いらっしゃいますか。
-
-いいえ、ちがいます。
-No, it isn't.
-Iie, chigaimasu.
-いいえ、違います。
-
-あ、しつれいしました。
-Oh, I'm sorry.
-A, shitsurei shimashita.
-あ、失礼しました。
-
-はい、ちょっと おまちください。
-Yes. One moment, please.
-Hai, chotto omachi kudasai.
-はい、ちょっと お待ちください。
-
-もしもし、...ですが...。
-Hello, ... speaking...
-Moshimoshi, ... desu ga...
-もしもし、...ですが...。
-
-あ、そうですか。
-I see.
-A, sou desu ka.
-あ、そうですか。
-
-あのう、でんごんを おねがいできますか。
-May I leave a message?
-Anou, dengon o onegai dekimasu ka.
-あのう、伝言を お願いできますか。
-
-はい、どうぞ。
-Yes, go ahead.
-Hai, douzo.
-はい、どうぞ。
-
-では、すみませんが、かいぎは 10じに はじまると おつたえください。
-Tell him the meeting will start at 10.
-Dewa, sumimasen ga, kaigi wa jū-ji ni hajimaru to otsutaekudasai.
-では、すみませんが、会議は 10時に 始まると お伝えください。
-
-はい、わかりました。
-Yes, certainly.
-Hai, wakarimashita.
-はい、わかりました。
-
-...は でかけておりますが。
-... is not here.
-... wa dekakete orimasu ga.
-...は 出かけておりますが。
-
-なんじごろ おかえりに なりますか。
-When will he come back?
-Nan-ji goro okaeri ni narimasu ka.
-何時ごろ お帰りになりますか。
-
-10じごろに なると おもいます。
-He will be back around 10.
-Jū-ji goro ni naru to omoimasu.
-10時ごろに なると 思います。
-
-では、そのころ また おでんわします。
-I'll call again around that time then.
-Dewa, sono koro mata odenwa shimasu.
-では、そのころ また お電話します。
-
-そうですか。しつれいします。
-I see. Good-bye.
-Sou desu ka. Shitsurei shimasu.
-そうですか。失礼します。
-
-ごぞんじですをつとめます。
-work [for a company] know.
-Gozonji desu o Tsutomemasu.
-ご存じですを勤めます。
-
-やすみます。
-sit on [a chair].
-Yasumimasu.
-休みます。
-
-あいさつをすごします。
-spend [time] greeting.
-Aisatsu o Sugoshimasu.
-挨拶を過ごします。
-
-はいざらをよります。
-drop into [a bank] ashtray.
-Haizara o Yorimasu.
-灰皿を寄ります。
-
-りょかんをめしあがります。
-eat Japanese-style hotel or inn.
-Ryokan o Meshiagarimasu.
-旅館を召し上がります。
-
-おっしゃいます。
-say.
-Osshaimasu.
-おっしゃいます。
-
-なさいます。
-do.
-Nasaimasu.
-なさいます。
-
-ごらんになります。
-see.
-Goran ni narimasu.
-ご覧になります。
-
-かいじょうをだします。
-run [a fever] meeting place.
-Kaijou o Dashimasu.
-会場を出します。
-
-バスていをじゅしょうします。
-be awarded a prize bus stop.
-Basutei o Jushou shimasu.
-バス停を受賞します。
-
-これはぼうえきです。
-This is trade.
-kore wa Boueki desu.
-これは貿易です。
-
-これはさまです。
-This is respectful equivalent of ～さん.
-kore wa sama desu.
-これは様です。
-
-これはかえりにです。
-This is on the way back.
-kore wa Kaeri ni desu.
-これは帰りにです。
-
-これはたまにです。
-This is once in a while.
-kore wa Tama ni desu.
-これはたまにです。
-
-これはちっともです。
-This is not at all.
-kore wa Chittomo desu.
-これはちっともです。
-
-これはえんりょなくです。
-This is without reserve.
-kore wa Enryo naku desu.
-これは遠慮なくです。
-
-これはねんくみです。
-This is class ~ of -th grade.
-kore wa nen ~ kumi desu.
-これは年組です。
-
-これはではです。
-This is well.
-kore wa Deha desu.
-これはではです。
-
-これはひまわりしょうがっこうです。
-This is fictitious elementary school.
-kore wa Himawari shougakkou desu.
-これはひまわり小学校です。
-
-これはこうしです。
-This is lecturer.
-kore wa Koushi desu.
-これは講師です。
-
-これはおおくのです。
-This is many ~.
-kore wa Ooku no desu.
-これは多くのです。
-
-これはさくひんです。
-This is work.
-kore wa Sakuhin desu.
-これは作品です。
-
-これはせかいてきにです。
-This is world-wide.
-kore wa Sekaiteki ni desu.
-これは世界的にです。
-
-これはさっかです。
-This is novelist.
-kore wa Sakka desu.
-これは作家です。
-
-これはちょうなんです。
-This is one's eldest son.
-kore wa Chounan desu.
-これは長男です。
-
-これはしょうがいです。
-This is handicap.
-kore wa Shougai desu.
-これは障害です。
-
-これはおもちですです。
-This is have.
-kore wa Omochi desu desu.
-これはお持ちですです。
-
-これはさっきょくです。
-This is composition.
-kore wa Sakkyoku desu.
-これは作曲です。
-
-これはかつどうです。
-This is activity.
-kore wa Katsudou desu.
-これは活動です。
-
-これはそれではです。
-This is well.
-kore wa Soredeha desu.
-これはそれではです。
-
-これはおおえけんざぶろうです。
-This is Japanese novelist.
-kore wa Ooe Kenzaburou desu.
-これは大江健三郎です。
-
-これはとうきょうだいがくです。
-This is Tokyo University.
-kore wa Toukyou daigaku desu.
-これは東京大学です。
-
-これはノーベルぶんがくしょうです。
-This is Nobel Prize for literature.
-kore wa Nooberu bungakushou desu.
-これはノーベル文学賞です。
-
-これはでんわのかけかたです。
-This is Talking on the telephone.
-kore wa Denwa no kakekata desu.
-これは電話のかけかたです。
-
-これは...はがいしゅつちゅうですが...です。
-This is ... is out.
-kore wa... wa gaishutsuchū desu ga... desu.
-これは...は外出中ですが...です。
-
-`;
-
-allWords["Sentence 49 - Hard"] = ``;
-
-allWords["Sentence 50"] = `
-いただきます。
-eat, drink, receive (humble equivalent of たべます、のみます and もらいます)
-Itadakimasu
-いただきます。
-
-ございます。
-be (polite equivalent of あります)
-Gozaimasu
-ございます。
-
-～でございます。
-be (polite equivalent of です)
-~ de gozaimasu
-～でございます。
-
-ひとことよろしいでしょうか。
-May I say one word?
-Hitokoto yoroshii deshou ka。
-ひとこと よろしいでしょうか。
-
-おげんきでいらっしゃいますか。
-How are you doing? (respectful equivalent of おげんきですか)
-Ogenki de irasshaimasu ka。
-お元気でいらっしゃいますか。
-
-わたしはまいります。
-I go (humble).
-watashi wa Mairimasu.
-わたしは参ります。
-
-わたしはおります。
-I am here (humble).
-watashi wa Orimasu.
-わたしはおります。
-
-たなかともうします。
-My name is Tanaka (say).
-tanaka to Moushimasu.
-たなかと申します。
-
-いたします。
-I will do it (humble).
-Itashimasu.
-いたします。
-
-わたくしをはいけんします。
-see I.
-Watakushi o Haikenshimasu.
-私を拝見します。
-
-ガイドをぞんじます。
-know guide.
-Gaido o Zonjimasu.
-ガイドを存じます。
-
-うかがいます。
-ask.
-Ukagaimasu.
-伺います。
-
-おめにかかります。
-meet.
-Ome ni kakarimasu.
-お目にかかります。
-
-きんちょうします。
-become tense.
-Kinchou shimasu.
-緊張します。
-
-おたくをほうそうします。
-broadcast .
-Otaku o Housou shimasu.
-お宅を放送します。
-
-こうがいをとります。
-record [on video] suburbs.
-Kougai o Torimasu.
-郊外を撮ります。
-
-かないます。
-[dream] be realized.
-Kanaimasu.
-かないます。
-
-きょうりょくします。
-cooperate.
-Kyouryoku shimasu.
-協力します。
-
-アルバムをかんしゃします。
-be grateful album.
-Arubamu o Kansha shimasu.
-アルバムを感謝します。
-
-さらいしゅうをめいわくをかけます。
-trouble the week after next.
-Saraishuu o Meiwaku o kakemasu.
-再来週を迷惑をかけます。
-
-さらいげつをいかします。
-make good use of the month after next.
-Saraigetsu o Ikashimasu.
-再来月を生かします。
-
-これはさらいねんです。
-This is the year after next.
-kore wa Sarainen desu.
-これは再来年です。
-
-これははんとしです。
-This is half a year.
-kore wa Hantoshi desu.
-これは半年です。
-
-これはさいしょにです。
-This is first of all.
-kore wa Saisho ni desu.
-これは最初にです。
-
-これはさいごにです。
-This is lastly.
-kore wa Saigo ni desu.
-これは最後にです。
-
-これはただいまです。
-This is now.
-kore wa Tadaima desu.
-これはただ今です。
-
-これはえどとうきょうはくぶつかんです。
-This is Edo-Tokyo Museum.
-kore wa Edo Toukyou hakubutsukan desu.
-これは江戸東京博物館です。
-
-これはしょうきんです。
-This is prize money.
-kore wa Shoukin desu.
-これは賞金です。
-
-これはしぜんです。
-This is nature.
-kore wa Shizen desu.
-これは自然です。
-
-これはきりんです。
-This is giraffe.
-kore wa Kirin desu.
-これはきりんです。
-
-これはぞうです。
-This is elephant.
-kore wa Zou desu.
-これは象です。
-
-これはころです。
-This is times.
-kore wa Koro desu.
-これはころです。
-
-これはこころからです。
-This is from my heart.
-kore wa Kokoro kara desu.
-これは心からです。
-
-これはおれいです。
-This is gratitude.
-kore wa Orei desu.
-これは礼です。
-
-これははいけいです。
-This is Dear ~.
-kore wa Haikei desu.
-これは拝啓です。
-
-これはうつくしいです。
-This is beautiful.
-kore wa Utsukushii desu.
-これは美しいです。
-
-これはおしろです。
-This is castle.
-kore wa Oshiro desu.
-これは城です。
-
-これはけいぐです。
-This is Sincerely yours.
-kore wa Keigu desu.
-これは敬具です。
-
-これはミュンヘンです。
-This is Munich.
-kore wa Myunhen desu.
-これはミュンヘンです。
-
-これはふうとう・はがきのあてなのかきかたです。
-This is How to write addresses.
-kore wa Fūtou, hagaki no atena no kakikata desu.
-これは封筒・はがきのあて名の書き方です。
-
-これはふうとうです。
-This is envelope.
-kore wa Fūtou desu.
-これは封筒です。
-
-これはゆうびんはがきです。
-This is card / postcard.
-kore wa Yūbin hagaki desu.
-これは郵便はがきです。
-
-これはさしだしにんです。
-This is Sender's.
-kore wa Sashidashinin desu.
-これは差出人です。
-
-これはじゅうしょです。
-This is address.
-kore wa Jūsho desu.
-これは住所です。
-
-これはしめい/なまえです。
-This is name.
-kore wa Shimei / Namae desu.
-これは氏名/名前です。
-
-これはうけとりにんです。
-This is Receiver's.
-kore wa Uketorinin desu.
-これは受取人です。
-
-これはゆうびんばんごうです。
-This is postal zip code.
-kore wa Yūbin bangou desu.
-これは郵便番号です。
-
-これはさまです。
-This is Mr. / Ms. / Mrs..
-kore wa Sama desu.
-これは様です。
-
-これはせんせいです。
-This is Teacher / Professor.
-kore wa Sensei desu.
-これは先生です。
-
-ここはとうきょうとちよだくかんだにしきちょう1-16-3です。
-This place is Tokyo-to.
-koko wa Toukyou-to Chiyoda-ku Kanda Nishikichou 1-16-3 desu.
-ここは東京都千代田区神田錦町1-16-3です。
-
-これはマイク・ミラーです。
-This is Mike Miller.
-kore wa Maiku Miraa desu.
-これはマイク・ミラーです。
-
-ここはおおさかふおおさかしあべのくももだに1-7-15です。
-This place is Osaka-fu.
-koko wa ousaka-fu ousaka-shi Abeno-ku Momodani 1-7-15 desu.
-ここは大阪府大阪市阿倍野区桃谷1-7-15です。
-
-これはまつもとただしさまです。
-This is Mr. Tadashi Matsumoto.
-kore wa Matsumoto Tadashi-sama desu.
-これは松本正様です。
-
-ここはとうきょうとあだちくごたんの1-14-1です。
-This place is Tokyo-to.
-koko wa Toukyou-to Adachi-ku Gotanno 1-14-1 desu.
-ここは東京都足立区五反野1-14-1です。
-
-これはたなかかずこせんせいです。
-This is Prof. Kazuko Tanaka.
-kore wa Tanaka Kazuko-sensei desu.
-これは田中和子先生です。
-
-`;
-
-allWords["Sentence 50 - Hard"] = ``;
 
 const appSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1
   },
-  "currentLesson": "Lesson 28",
+  "currentLesson": "Extra 26",
   "isHard": false,
   "displayMode": "big-english",
   "readingGap": "2",
   "quizMode": "quiz1",
   "quizOrder": "original",
   "revealRomaji": false,
-  "focusedWordIndex": -1,
-  "selectedWordIndices": [],
+  "focusedWordIndex": 7,
+  "selectedWordIndices": [
+    7
+  ],
   "isSelectionModeActive": false,
   "customCategories": [
-    "Phrases",
+    "Phrases1",
     "Questions",
     "Counters",
     "Food Names",
-    "Romaji",
-    "Half Words",
-    "Na Adjectives",
-    "All Masu Form Verbs",
-    "Connectors",
+    "Romaji1",
+    "Half Words1",
+    "Na Adjectives1",
+    "All Masu Form Verbs1",
+    "Connectors1",
     "N5 Kanji",
-    "Group I",
-    "Group II",
-    "Group III",
-    "Honorifics",
-    "All Patterns",
+    "Group I - 1",
+    "Group II - 1",
+    "Group III - 1",
+    "Honorifics1",
+    "All Patterns1",
+    "N5 Extra1",
     "Ni Particle G5",
     "0 Others G5",
     "No Particle G5",
@@ -71028,8 +57633,7 @@ const appSettings = {
     "V - Ra G5",
     "Extra 00 E5",
     "Convo E5",
-    "26 Dumps D4",
-    "27 Dumps D4"
+    "26 Dumps D4"
   ],
   "similarWordGroups": [
     {
@@ -71038,29 +57642,26 @@ const appSettings = {
   ],
   "hiddenCategories": [],
   "othersHiddenSourceGroups": [],
-  "othersHiddenLevels": [
-    "N5"
-  ],
-  "lastDestCategory": "Honorifics",
-  "activeDbGroup": "N4 Lessons",
+  "lastDestCategory": "Similar Ones1",
+  "activeDbGroup": "N4 Extra",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
     "N5 Lessons": "Lesson 06",
-    "N5 Others": "All Masu Form Verbs",
-    "N4 Lessons": "Lesson 28",
+    "N5 Others": "Similar Ones1",
+    "N4 Lessons": "Lesson 26",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
-    "N5 Grammer": "Grammer 01",
+    "N5 Grammer": "Grammer 02",
     "N4 Grammer": "Grammer 26",
     "Kanji": "N5 Kanji",
-    "N5 Extra": "Extra 16",
-    "N4 Extra": "Extra 27",
+    "N5 Extra": "Extra 25",
+    "N4 Extra": "Extra 26",
     "N3 Extra": "Extra 51",
     "N5 Grammer Others": "0 Others G5",
     "N4 Grammer Others": "Show All Words",
-    "N5 Listening": "Listening 26",
-    "N4 Listening": "Listening 84",
+    "N5 Listening": "Listening 07",
+    "N4 Listening": "Listening 26",
     "N3 Grammer": "Grammer 51",
     "N3 Grammer Others": "Show All Words",
     "N3 Listening": "Listening 51",
@@ -71077,14 +57678,11 @@ const appSettings = {
     "N1 Extra": "Extra 101",
     "N1 Listening": "Listening 101",
     "N5 Dumps": "Show All Words",
-    "N4 Dumps": "27 Dumps D4",
+    "N4 Dumps": "26 Dumps D4",
     "N3 Dumps": "Show All Words",
     "N2 Dumps": "Show All Words",
     "N1 Dumps": "Show All Words",
     "N5 Genki": "Genki 09",
-    "N4 Genki": "Genki 13",
-    "Others": "All Masu Form Verbs",
-    "N5 Sentences": "Sentence 01",
-    "N4 Sentences": "Sentence 27"
+    "N4 Genki": "Genki 13"
   }
 };
