@@ -990,11 +990,21 @@ function reorderWords(fromIdx, toIdx) {
   if (key === 'Show All Words' || key === 'Similar Words' || key === 'Same Meaning' || key === 'Same Romaji') return;
 
   const list = currentWordsDb[key];
-  if (!list || fromIdx < 0 || fromIdx >= list.length || toIdx < 0 || toIdx >= list.length) return;
+  if (!list) return;
 
-  // Move the item
-  const [movedWord] = list.splice(fromIdx, 1);
-  list.splice(toIdx, 0, movedWord);
+  const activeWords = getActiveWords();
+  if (fromIdx < 0 || fromIdx >= activeWords.length || toIdx < 0 || toIdx >= activeWords.length || fromIdx === toIdx) return;
+
+  const fromWord = activeWords[fromIdx];
+  const toWord = activeWords[toIdx];
+  const realFromIdx = list.indexOf(fromWord);
+  const realToIdx = list.indexOf(toWord);
+
+  if (realFromIdx < 0 || realToIdx < 0) return;
+
+  const [movedWord] = list.splice(realFromIdx, 1);
+  const targetIdx = list.indexOf(toWord);
+  list.splice(fromIdx < toIdx ? targetIdx + 1 : targetIdx, 0, movedWord);
 
   saveWords();
   renderCards();
@@ -1963,7 +1973,9 @@ function moveSelectedToHard() {
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson + " - Hard";
 
-  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
+  const activeWords = getActiveWords();
+  const itemsToMove = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
+  if (itemsToMove.length === 0) return;
   
   // Custom categories: copy instead of move
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
@@ -1971,9 +1983,13 @@ function moveSelectedToHard() {
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter(w => !itemsToMove.includes(w));
   }
   
+  if (!currentWordsDb[targetKey]) {
+    currentWordsDb[targetKey] = [];
+  }
+
   const uniqueItemsToMove = itemsToMove.filter(w => {
     return !currentWordsDb[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
@@ -1987,7 +2003,7 @@ function moveSelectedToHard() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Hard list.`, 'success');
+  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${itemsToMove.length} word(s) to Hard list.`, 'success');
 }
 
 // Move selected items to Normal list
@@ -1998,16 +2014,22 @@ function moveSelectedToNormal() {
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson;
 
-  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
+  const activeWords = getActiveWords();
+  const itemsToMove = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
+  if (itemsToMove.length === 0) return;
   
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
   const isListeningGroup = (currentSettings.activeDbGroup || "").includes("Listening");
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter(w => !itemsToMove.includes(w));
   }
   
+  if (!currentWordsDb[targetKey]) {
+    currentWordsDb[targetKey] = [];
+  }
+
   const uniqueItemsToMove = itemsToMove.filter(w => {
     return !currentWordsDb[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
@@ -2021,7 +2043,7 @@ function moveSelectedToNormal() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Normal list.`, 'success');
+  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${itemsToMove.length} word(s) to Normal list.`, 'success');
 }
 
 // Move selected items UP in position (left)
@@ -2030,35 +2052,29 @@ function moveSelectedUp() {
   const list = currentWordsDb[currentKey];
   if (!list || list.length === 0) return;
 
+  const activeWords = getActiveWords();
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  const firstSelected = selectedIdxs[0];
-  if (firstSelected === 0) return; // Already at top, do nothing
+  if (selectedIdxs.length === 0 || selectedIdxs[0] === 0) return;
 
-  if (selectedIdxs[0] === 0) return; // Already at top, do nothing
+  const selectedElements = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
+  if (selectedElements.length === 0) return;
 
-  const selectedElements = selectedIdxs.map(idx => list[idx]);
-  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
+  const prevActiveWord = activeWords[selectedIdxs[0] - 1];
+  const insertIdx = list.indexOf(prevActiveWord);
+  if (insertIdx === -1) return;
 
-  const insertIdx = firstSelected - 1;
+  const unselectedElements = list.filter(w => !selectedElements.includes(w));
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
-  // Calculate new contiguous indices for selection
-  const newSelectedIdxs = [];
-  for (let i = 0; i < selectedElements.length; i++) {
-    newSelectedIdxs.push(insertIdx + i);
-  }
-
+  const newSelectedIdxs = selectedIdxs.map(idx => idx - 1);
   currentSettings.selectedWordIndices = newSelectedIdxs;
-
-  // Update selection and focus
-  currentSettings.selectedWordIndices = newSelectedIdxs;
-  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
-  if (focusInSelected !== -1) {
-    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
+  if (currentSettings.focusedWordIndex >= 0) {
+    currentSettings.focusedWordIndex = Math.max(0, currentSettings.focusedWordIndex - 1);
   } else {
     currentSettings.focusedWordIndex = newSelectedIdxs[0];
   }
+
   saveWords();
   saveSettings();
   renderCards();
@@ -2070,30 +2086,26 @@ function moveSelectedDown() {
   const list = currentWordsDb[currentKey];
   if (!list || list.length === 0) return;
 
+  const activeWords = getActiveWords();
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  if (selectedIdxs.length === 0) return;
+  if (selectedIdxs.length === 0 || selectedIdxs[selectedIdxs.length - 1] >= activeWords.length - 1) return;
 
-  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
-  if (lastSelected === list.length - 1) return; // Already at bottom, do nothing
+  const selectedElements = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
+  if (selectedElements.length === 0) return;
 
-  const selectedElements = selectedIdxs.map(idx => list[idx]);
-  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
+  const nextActiveWord = activeWords[selectedIdxs[selectedIdxs.length - 1] + 1];
+  const targetIdx = list.indexOf(nextActiveWord);
+  if (targetIdx === -1) return;
 
-  const insertIdx = (lastSelected + 2) - selectedIdxs.length;
+  const unselectedElements = list.filter(w => !selectedElements.includes(w));
+  const insertIdx = unselectedElements.indexOf(nextActiveWord) + 1;
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
-  // Calculate new contiguous indices for selection
-  const newSelectedIdxs = [];
-  for (let i = 0; i < selectedElements.length; i++) {
-    newSelectedIdxs.push(insertIdx + i);
-  }
-
-  // Update selection and focus
+  const newSelectedIdxs = selectedIdxs.map(idx => idx + 1);
   currentSettings.selectedWordIndices = newSelectedIdxs;
-  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
-  if (focusInSelected !== -1) {
-    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
+  if (currentSettings.focusedWordIndex >= 0) {
+    currentSettings.focusedWordIndex = Math.min(activeWords.length - 1, currentSettings.focusedWordIndex + 1);
   } else {
     currentSettings.focusedWordIndex = newSelectedIdxs[0];
   }
@@ -2112,17 +2124,19 @@ function deleteSelected() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => b - a);
   if (selectedIdxs.length === 0) return;
 
-  if (confirm(`Are you sure you want to delete ${selectedIdxs.length} selected word(s)?`)) {
-    selectedIdxs.forEach(idx => {
-      list.splice(idx, 1);
-    });
+  const activeWords = getActiveWords();
+  const itemsToDelete = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
+  if (itemsToDelete.length === 0) return;
+
+  if (confirm(`Are you sure you want to delete ${itemsToDelete.length} selected word(s)?`)) {
+    currentWordsDb[currentKey] = list.filter(w => !itemsToDelete.includes(w));
 
     currentSettings.selectedWordIndices = [];
     currentSettings.focusedWordIndex = -1;
     saveWords();
     saveSettings();
     renderCards();
-    showToast(`Deleted ${selectedIdxs.length} word(s).`, 'success');
+    showToast(`Deleted ${itemsToDelete.length} word(s).`, 'success');
   }
 }
 
@@ -3532,37 +3546,7 @@ function openWordEditModal(lesson, index) {
   let sourceLesson = lesson;
   let sourceIndex = index;
   
-  if (lesson === 'Same Meaning') {
-    const all = getActiveWords();
-    const wordToFind = all[index];
-    if (!wordToFind) return;
-    
-    // Find in database
-    for (const key in currentWordsDb) {
-      const idx = currentWordsDb[key].findIndex(w => w.japanese === wordToFind.japanese && w.english === wordToFind.english);
-      if (idx >= 0) {
-        sourceLesson = key;
-        sourceIndex = idx;
-        targetWord = currentWordsDb[key][idx];
-        break;
-      }
-    }
-  } else if (lesson === 'Show All Words') {
-    const all = getShowAllWords();
-    const wordToFind = all[index];
-    if (!wordToFind) return;
-    
-    // Find in database
-    for (const key in currentWordsDb) {
-      const idx = currentWordsDb[key].findIndex(w => w.japanese === wordToFind.japanese && w.english === wordToFind.english);
-      if (idx >= 0) {
-        sourceLesson = key;
-        sourceIndex = idx;
-        targetWord = currentWordsDb[key][idx];
-        break;
-      }
-    }
-  } else if (lesson === 'Similar Words') {
+  if (lesson === 'Similar Words') {
     // Similar Words can be edited too, but they live in currentSettings.similarWordGroups
     // Find group index and word index from the caller
     // E.g. index is {groupIdx: g, wordIdx: w}
@@ -3575,9 +3559,25 @@ function openWordEditModal(lesson, index) {
       sourceIndex = JSON.stringify({ groupIdx, wordIdx });
     }
   } else {
+    const activeWords = getActiveWords();
+    targetWord = activeWords[index];
+    if (!targetWord) return;
+    
     const listKey = getActiveLessonKey();
-    targetWord = currentWordsDb[listKey] ? currentWordsDb[listKey][index] : null;
-    sourceLesson = listKey;
+    if (currentWordsDb[listKey] && currentWordsDb[listKey].includes(targetWord)) {
+      sourceLesson = listKey;
+      sourceIndex = currentWordsDb[listKey].indexOf(targetWord);
+    } else {
+      // Find in database
+      for (const key in currentWordsDb) {
+        const idx = currentWordsDb[key].findIndex(w => w.japanese === targetWord.japanese && w.english === targetWord.english);
+        if (idx >= 0) {
+          sourceLesson = key;
+          sourceIndex = idx;
+          break;
+        }
+      }
+    }
   }
   
   if (!targetWord) return;
