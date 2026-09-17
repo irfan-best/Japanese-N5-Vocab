@@ -7126,40 +7126,15 @@ garbage, trash, dust
 Gomi
 ごみ
 
-だします [ごみを～]
+[ごみを～] だします
 put out [the trash]
-Dashimasu [gomi o~]
-出します [ごみを～]
-
-げつ・すい・きん
-Monday, Wednesday and Friday
-Getsu・Sui・Kin
-月・水・金
+[gomi o~] Dashimasu
+[ごみを～] 出します
 
 ボランティア
 volunteer
 Borantia
 ボランティア
-
-かん
-can
-Kan
-缶
-
-[お]ゆ
-hot water
-[O]yu
-[お]湯
-
-やります
-do
-Yarimasu
-やります
-
-こわい
-be afraid of
-Kowai
-怖い
 
 いつでも
 any time
@@ -7180,6 +7155,31 @@ Daredemo
 anything
 Nandemo
 なんでも
+
+げつ・すい・きん
+Monday, Wednesday and Friday
+Getsu・Sui・Kin
+月・水・金
+
+かん
+can
+Kan
+缶
+
+[お]ゆ
+hot water
+[O]yu
+[お]湯
+
+やります
+do
+Yarimasu
+やります
+
+こわい
+be afraid of
+Kowai
+怖い
 
 ガス
 gas
@@ -7287,6 +7287,16 @@ Komatta naa
 `;
 
 allWords["Lesson 27"] = `
+[くうこうが～] できます
+[an airport] be made, be completed, come into existence
+[kuukou ga~] Dekimasu
+[空港が～] できます
+
+つけます
+attach, put on
+Tsukemasu
+付けます
+
 かいます
 keep (a pet), raise (an animal)
 Kaimasu
@@ -7297,35 +7307,85 @@ build
 Tatemasu
 建てます
 
-はしります [みちを～]
+[みちを～]   ハしります
 run, drive [along a road]
-Hashirimasu [michi o~]
-走ります [道を～]
+[michi o~] Hashirimasu
+[道を～] 走ります
 
-とります [やすみを～]
+[やすみを～] とります
 take [a holiday]
-Torimasu [yasumi o~]
-取ります [休みを～]
+[yasumi o~] Torimasu
+[休みを～] 取ります
 
-みえます [やまが～]
+[やまが～] みえます
 [a mountain] can be seen
-Miemasu [yama ga~]
-見えます [山が～]
+[yama ga~] Miemasu
+[山が～] 見えます
 
-きこえます [おとが～]
+[おとが～] きこえます
 [a sound] can be heard
-Kikoemasu [oto ga~]
-聞こえます [音が～]
+[oto ga~] Kikoemasu
+[音が～] 聞こえます
 
-できます [くうこうが～]
-[an airport] be made, be completed, come into existence
-Dekimasu [kuukou ga~]
-できます [空港が～]
+むかし
+old days, ancient times
+Mukashi
+昔
 
-ひらきます [きょうしつを～]
-set up [a class], open, hold
-Hirakimasu [kyoushitsu o~]
-開きます [教室を～]
+～ご
+~ after (duration of time)
+~go
+～後
+
+ほかの
+other
+Hoka no
+ほかの
+
+はっきり
+clearly
+Hakkiri
+はっきり
+
+いつか
+someday, sometime
+Itsuka
+いつか
+
+すばらしい
+marvelous, wonderful
+Subarashii
+素晴らしい
+
+だいすき [な]
+like very much
+Daisuki [na]
+大好き [な]
+
+ふしぎ [な]
+fantastic, mysterious
+Fushigi [na]
+不思議 [な]
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+とびます
+fly
+Tobimasu
+飛びます
+
+しょうらい
+future
+Shourai
+将来
+
+なみ
+wave
+Nami
+波
 
 ペット
 pet
@@ -7342,45 +7402,20 @@ voice
 Koe
 声
 
-なみ
-wave
-Nami
-波
-
 はなび
 fireworks
 Hanabi
 花火
-
-けしき
-scenery, view
-Keshiki
-景色
 
 ひるま
 daytime
 Hiruma
 昼間
 
-むかし
-old days, ancient times
-Mukashi
-昔
-
-どうぐ
-tool, instrument, equipment
-Dougu
-道具
-
 じどうはんばいき
 vending machine
 Jidouhanbaiki
 自動販売機
-
-つうしんはんばい
-mail order, mail-order sales
-Tsuushinhanbai
-通信販売
 
 クリーニング
 [dry] cleaning, laundry
@@ -7407,31 +7442,6 @@ party room
 Paatiiruumu
 パーティールーム
 
-～ご
-~ after (duration of time)
-~go
-～後
-
-～しか
-only ~ (used with negatives)
-~shika
-～しか
-
-ほかの
-other
-Hoka no
-ほかの
-
-はっきり
-clearly
-Hakkiri
-はっきり
-
-ほとんど
-almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
-Hotondo
-ほとんど
-
 かんさいくうこう
 Kansai International Airport
 Kansai Kuukou
@@ -7447,11 +7457,6 @@ peninsula in Shizuoka Prefecture
 Izu
 ※伊豆
 
-にちようだいく
-Sunday carpenter
-Nichiyoudaiku
-日曜大工
-
 ほんだな
 bookshelf
 Hondana
@@ -7462,90 +7467,35 @@ dream (～をみます：have a dream)
 Yume
 夢
 
-いつか
-someday, sometime
-Itsuka
-いつか
-
-すばらしい
-marvelous, wonderful
-Subarashii
-素晴らしい
-
 こどもたち
 children
 Kodomotachi
 子どもたち
-
-だいすき [な]
-like very much
-Daisuki [na]
-大好き [な]
 
 まんが
 cartoon, comic strip
 Manga
 漫画
 
-しゅじんこう
-hero, heroine
-Shujinkou
-主人公
-
-かたち
-shape
-Katachi
-形
-
 ロボット
 robot
 Robotto
 ロボット
-
-ふしぎ [な]
-fantastic, mysterious
-Fushigi [na]
-不思議 [な]
 
 ポケット
 pocket
 Poketto
 ポケット
 
-たとえば
-for example
-Tatoeba
-例えば
-
-つけます
-attach, put on
-Tsukemasu
-付けます
-
-じゆうに
-freely
-Jiyuu ni
-自由に
-
 そら
 sky
 Sora
 空
 
-とびます
-fly
-Tobimasu
-飛びます
-
 じぶん
 oneself
 Jibun
 自分
-
-しょうらい
-future
-Shourai
-将来
 
 ドラえもん
 name of a cartoon character
@@ -7554,23 +7504,69 @@ Doraemon
 
 `;
 
-allWords["Lesson 27 - Hard"] = ``;
+allWords["Lesson 27 - Hard"] = `
+つうしんはんばい
+mail order, mail-order sales
+Tsuushinhanbai
+通信販売
+
+けしき
+scenery, view
+Keshiki
+景色
+
+～しか
+only ~ (used with negatives)
+~shika
+～しか
+
+[きょうしつを～] ひらきます
+set up [a class], open, hold
+[kyoushitsu o~] Hirakimasu
+[教室を～] 開きます
+
+ほとんど
+almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
+Hotondo
+ほとんど
+
+どうぐ
+tool, instrument, equipment
+Dougu
+道具
+
+にちようだいく
+Sunday carpenter
+Nichiyoudaiku
+日曜大工
+
+かたち
+shape
+Katachi
+形
+
+しゅじんこう
+hero, heroine
+Shujinkou
+主人公
+
+たとえば
+for example
+Tatoeba
+例えば
+
+`;
 
 allWords["Lesson 28"] = `
-うれます [パンが～]
+[パンが～] うれます
 [bread] sell, be sold
-Uremasu [pan ga~]
-売れます [パンが～]
+[pan ga~] Uremasu
+[パンが～] 売れます
 
 おどります
 dance
 Odorimasu
 踊ります
-
-かみます
-chew, bite
-Kamimasu
-かみます
 
 えらびます
 choose
@@ -7582,130 +7578,75 @@ be different
 Chigaimasu
 違います
 
-かよいます [だいがくに～]
-go to and from [university]
-Kayoimasu [daigaku ni~]
-通います [大学に～]
-
 メモします
 take a memo
 Memoshimasu
 メモします
 
-まじめ [な]
-serious
-Majime [na]
-まじめ [な]
+それに
+in addition
+Sore ni
+それに
 
-ねっしん [な]
-earnest
-Nesshin [na]
-熱心 [な]
-
-やさしい
-gentle, kind
-Yasashii
-優しい
+それで
+and so
+Sore de
+それで
 
 えらい
 great, admirable
 Erai
 偉い
 
-ちょうどいい
-proper, just right
-Choudo ii
-ちょうどいい
+かしゅ
+singer
+Kashu
+歌手
 
-しゅうかん
-custom
-Shuukan
-習慣
+しょうらい
+future
+Shourai
+将来
 
-けいけん
-experience
-Keiken
-経験
+おしらせ
+notice
+Oshirase
+お知らせ
 
-ちから
-power
-Chikara
-力
+たいいくかん
+gymnasium
+Taiikukan
+体育館
+
+やさしい
+gentle, kind
+Yasashii
+優しい
 
 にんき
 popularity (be popular [with students])
 Ninki
 人気
 
-かたち
-form, shape
-Katachi
-形
-
 いろ
 color
 Iro
 色
-
-あじ
-taste
-Aji
-味
 
 ガム
 chewing gum
 Gamu
 ガム
 
-しなもの
-goods
-Shinamono
-品物
-
-ねだん
-price
-Nedan
-値段
-
-きゅうりょう
-salary
-Kyuuryou
-給料
-
 ボーナス
 bonus
 Boonasu
 ボーナス
 
-ばんぐみ
-program
-Bangumi
-番組
-
 ドラマ
 drama
 Dorama
 ドラマ
-
-しょうせつ
-novel
-Shousetsu
-小説
-
-しょうせつか
-novelist
-Shousetsuka
-小説家
-
-かしゅ
-singer
-Kashu
-歌手
-
-かんりにん
-janitor
-Kanrinin
-管理人
 
 むすこ
 (my) son
@@ -7732,31 +7673,6 @@ oneself
 Jibun
 自分
 
-しょうらい
-future
-Shourai
-将来
-
-しばらく
-a little while
-Shibaraku
-しばらく
-
-たいてい
-usually, mostly
-Taitei
-たいてい
-
-それに
-in addition
-Sore ni
-それに
-
-それで
-and so
-Sore de
-それで
-
 [ちょっと] おねがいが あるんですが。
 I have a favor to ask.
 [ちょっと] Onegai ga arun desu ga.
@@ -7772,135 +7688,171 @@ conversation
 Kaiwa
 会話
 
-おしゃべりします
-chat
-Oshaberishimasu
-おしゃべりします
-
-おしらせ
-notice
-Oshirase
-お知らせ
-
-ひにち
-date
-Hinichi
-日にち
-
 ど
 Saturday
 Do
 土
 
-たいいくかん
-gymnasium
-Taiikukan
-体育館
+`;
+
+allWords["Lesson 28 - Hard"] = `
+おしゃべりします
+chat
+Oshaberishimasu
+おしゃべりします
+
+[だいがくに～] かよいます
+go to and from [university]
+[daigaku ni~] Kayoimasu
+[大学に～] 通います
 
 むりょう
 free of charge
 Muryou
 無料
 
+ねっしん [な]
+earnest
+Nesshin [na]
+熱心 [な]
+
+ねだん
+price
+Nedan
+値段
+
+けいけん
+experience
+Keiken
+経験
+
+きゅうりょう
+salary
+Kyuuryou
+給料
+
+ばんぐみ
+program
+Bangumi
+番組
+
+しょうせつ
+novel
+Shousetsu
+小説
+
+しょうせつか
+novelist
+Shousetsuka
+小説家
+
+かんりにん
+janitor
+Kanrinin
+管理人
+
+あじ
+taste
+Aji
+味
+
+しなもの
+goods
+Shinamono
+品物
+
+かみます
+chew, bite
+Kamimasu
+かみます
+
+ちょうどいい
+proper, just right
+Choudo ii
+ちょうどいい
+
+ひにち
+date
+Hinichi
+日にち
+
+しゅうかん
+custom
+Shuukan
+習慣
+
+ちから
+power
+Chikara
+力
+
+しばらく
+a little while
+Shibaraku
+しばらく
+
+たいてい
+usually, mostly
+Taitei
+たいてい
+
+まじめ [な]
+serious
+Majime [na]
+まじめ [な]
+
+かたち
+form, shape
+Katachi
+形
+
 `;
 
-allWords["Lesson 28 - Hard"] = ``;
-
 allWords["Lesson 29"] = `
-あきます [ドアが～]
-[a door] open
-Akimasu [doa ga~]
-開きます [ドアが～]
-
-しまります [ドアが～]
-[a door] close, shut
-Shimarimasu [doa ga~]
-閉まります [ドアが～]
-
-つきます [でんきが～]
-[a light] come on
-Tsukimasu [denki ga~]
-つきます [電気が～]
-
-きえます [でんきが～]
-[a light] go off, disappear
-Kiemasu [denki ga~]
-消えます [電気が～]
-
-こみます [みちが～]
+[みちが～] こみます
 [a road] get crowded
-Komimasu [michi ga~]
-込みます [道が～]
+[michi ga~] Komimasu
+[道が～] 込みます
 
-すきます [みちが～]
+[みちが～] すきます
 [a road] get empty
-Sukimasu [michi ga~]
-すきます [道が～]
+[michi ga~] Sukimasu
+[道が～] すきます
 
-こわれます [いすが～]
-[a chair] break
-Kowaremasu [isu ga~]
-壊れます [椅子が～]
+[でんきが～] つきます
+[a light] come on
+[denki ga~] Tsukimasu
+[電気が～] つきます
 
-われます [コップが～]
-[a glass] break, smash
-Waremasu [koppu ga~]
-割れます [コップが～]
+[でんきが～] きえます
+[a light] go off, disappear
+[denki ga~] Kiemasu
+[電気が～] 消えます
 
-おれます [きが～]
-[a tree] break, snap
-Oremasu [ki ga~]
-折れます [木が～]
-
-やぶれます [かみが～]
-[the paper] tear
-Yaburemasu [kami ga~]
-破れます [紙が～]
-
-よごれます [ふくが～]
-[the clothes] get dirty
-Yogoremasu [fuku ga~]
-汚れます [服が～]
-
-つきます [ポケットが～]
+[ポケットが～] つきます
 [a pocket] be attached
-Tsukimasu [poketto ga~]
-付きます [ポケットが～]
+[poketto ga~] Tsukimasu
+[ポケットが～] 付きます
 
-はずれます [ボタンが～]
-[a button] be undone
-Hazuremasu [botan ga~]
-外れます [ボタンが～]
+[ドアが～] あきます
+[a door] open
+[doa ga~] Akimasu
+[ドアが～] 開きます
 
-とまります [エレベーターが～]
+[ドアが～] しまります
+[a door] close, shut
+[doa ga~] Shimarimasu
+[ドアが～] 閉まります
+
+[エレベーターが～] とまります
 [an elevator] stop
-Tomarimasu [erebeetaa ga~]
-止まります [エレベーターが～]
+[erebeetaa ga~] Tomarimasu
+[エレベーターが～] 止まります
 
 まちがえます
 make a mistake
 Machigaemasu
 まちがえます
-
-おとします
-drop, lose
-Otoshimasu
-落とします
-
-かかります [かぎが～]
-be locked
-Kakarimasu [kagi ga~]
-掛かります [鍵が～]
-
-[お]さら
-plate, dish
-[O]sara
-[お]皿
-
-[お]ちゃわん
-rice bowl
-[O]chawan
-[お]茶わん
 
 コップ
 glass (vessel)
@@ -7912,45 +7864,30 @@ glass (material)
 Garasu
 ガラス
 
-さいふ
-wallet, purse
-Saifu
-財布
-
-ふくろ
-bag
-Fukuro
-袋
-
-えだ
-branch, twig
-Eda
-枝
-
-えきいん
-station employee
-Ekiin
-駅員
-
-このへん
-this neighborhood, around here
-Kono hen
-この辺
-
-～へん
-the place around ~
-~hen
-～辺
-
 このくらい
 about this size
 Kono kurai
 このくらい
 
-おさきに どうぞ。
-After you./Go ahead, please.
-Osaki ni douzo.
-お先に どうぞ。
+わすれもの
+things left behind, lost property
+Wasuremono
+忘れ物
+
+おぼえて いません
+I don't remember.
+Oboete imasen
+覚えていません
+
+えきまえ
+the area in front of a station
+Ekimae
+駅前
+
+さいふ
+wallet, purse
+Saifu
+財布
 
 [ああ、] よかった。
 Thank goodness! (used to express a feeling of relief)
@@ -7962,40 +7899,143 @@ the train which has just left
 Ima no densha
 今の電車
 
-わすれもの
-things left behind, lost property
-Wasuremono
-忘れ物
-
-～がわ
-~ side
-~gawa
-～側
-
 ポケット
 pocket
 Poketto
 ポケット
 
-おぼえて いません
-I don't remember.
-Oboete imasen
-覚えていません
+よつや
+name of a station in Tokyo
+Yotsuya
+※四ツ谷
+
+にし
+west
+Nishi
+西
+
+さんのみや
+name of a place in Kobe
+Sannomiya
+※三宮
+
+`;
+
+allWords["Lesson 29 - Hard"] = `
+[いすが～] こわれます
+[a chair] break
+[isu ga~] Kowaremasu
+[椅子が～] 壊れます
+
+[コップが～] われます
+[a glass] break, smash
+[koppu ga~] Waremasu
+[コップが～] 割れます
+
+[きが～] おれます
+[a tree] break, snap
+[ki ga~] Oremasu
+[木が～] 折れます
+
+[かみが～] やぶれます
+[the paper] tear
+[kami ga~] Yaburemasu
+[紙が～] 破れます
+
+[ふくが～] よごれます
+[the clothes] get dirty
+[fuku ga~] Yogoremasu
+[服が～] 汚れます
+
+[ボタンが～] はずれます
+[a button] be undone/ miss
+[botan ga~] Hazuremasu
+[ボタンが～] 外れます
+
+おとします
+drop, lose
+Otoshimasu
+落とします
+
+[かぎが～] かかります
+be locked
+[kagi ga~] Kakarimasu
+[鍵が～] 掛かります
+
+えだ
+branch, twig (of an tree)
+Eda
+枝
+
+～がわ
+~ side (ex: Left Side, hidari gawa)
+~gawa
+～側
 
 あみだな
-rack
+rack (overhead luggage racks)
 Amidana
 網棚
+
+さします
+point
+Sashimasu
+指します
+
+たおれます
+fall down
+Taoremasu
+倒れます
+
+ほう
+direction
+Hou
+方
+
+[お]さら
+plate, dish
+[O]sara
+[お]皿
+
+[お]ちゃわん
+rice bowl
+[O]chawan
+[お]茶わん
+
+このへん
+this neighborhood, around here
+Kono hen
+この辺
+
+～へん
+the place around ~
+~hen
+～辺
+
+おさきに どうぞ。
+After you./Go ahead, please.
+Osaki ni douzo.
+お先に どうぞ。
 
 たしか
 I suppose, if I am correct
 Tashika
 確か
 
-よつや
-name of a station in Tokyo
-Yotsuya
-※四ツ谷
+はり
+hands (of a clock)
+Hari
+針
+
+ふくろ
+bag
+Fukuro
+袋
+
+えきいん
+station employee
+Ekiin
+駅員
 
 じしん
 earthquake
@@ -8007,70 +8047,13 @@ wall
 Kabe
 壁
 
-はり
-hands (of a clock)
-Hari
-針
-
-さします
-point
-Sashimasu
-指します
-
-えきまえ
-the area in front of a station
-Ekimae
-駅前
-
-たおれます
-fall down
-Taoremasu
-倒れます
-
-にし
-west
-Nishi
-西
-
-ほう
-direction
-Hou
-方
-
-さんのみや
-name of a place in Kobe
-Sannomiya
-※三宮
-
 `;
 
-allWords["Lesson 29 - Hard"] = ``;
-
 allWords["Lesson 30"] = `
-はります
-put up, post, paste
-Harimasu
-はります
-
-かけます
-hang
-Kakemasu
-掛けます
-
-かざります
-display, decorate
-Kazarimasu
-飾ります
-
-ならべます
-arrange, line up
-Narabemasu
-並べます
-
-うえます
-plant
-Uemasu
-植えます
+そのままに します
+leave things as they are
+Sonomama ni shimasu
+そのままに します
 
 もどします
 return, put ~ back
@@ -8082,15 +8065,10 @@ put ~ together, put ~ in shape, sum up
 Matomemasu
 まとめます
 
-かたづけます
-put things in order, tidy up
-Katadukemasu
-片づけます
-
-しまいます
-put things in their proper place
-Shimaimasu
-しまいます
+もとの ところ
+original place
+Moto no tokoro
+元の所
 
 きめます
 decide
@@ -8102,60 +8080,135 @@ inform
 Shirasemasu
 知らせます
 
-そうだんします
-consult, discuss
-Soudanshimasu
-相談します
-
-よしゅうします
-prepare one's lesson
-Yoshuushimasu
-予習します
-
-ふくしゅうします
-review one's lesson
-Fukushuushimasu
-復習します
-
-そのままに します
-leave things as they are
-Sonomama ni shimasu
-そのままに します
-
-おこさん
-(someone else's) child
-Okosan
-お子さん
-
-じゅぎょう
-class
-Jugyou
-授業
-
 こうぎ
 lecture
 Kougi
 講義
 
-ミーティング
-meeting
-Miitingu
-ミーティング
+いけ
+pond
+Ike
+池
+
+こうばん
+police box
+Kouban
+交番
+
+すみ
+corner
+Sumi
+隅
+
+～ほど
+about ~
+~hodo
+～ほど
 
 よてい
 plan, schedule
 Yotei
 予定
 
-おしらせ
-notice
-Oshirase
-お知らせ
+よていひょう
+schedule
+Yoteihyou
+予定表
+
+きぼう
+hope, request
+Kibou
+希望
+
+なんか ごきぼうが ありますか。
+Do you have any requests?
+Nanka gokibou ga arimasu ka.
+何かご希望がありますか。
+
+まるい
+round
+Marui
+丸い
+
+ある～
+one ~, a certain ~
+Aru~
+ある～
+
+ちきゅう
+earth
+Chikyuu
+地球
+
+いや [な]
+hateful, disagreeable
+Iya [na]
+嫌 [な]
+
+すると
+and, then
+Suruto
+すると
+
+にんぎょう
+doll
+Ningyou
+人形
+
+まんなか
+center
+Mannaka
+真ん中
 
 あんないしょ
 guide book
 Annaisho
 案内書
+
+じゅぎょう
+class
+Jugyou
+授業
+
+まわり
+round, around
+Mawari
+周り
+
+ごくろうさま。
+Thank you for your hard work. (used by a superior or older person to express appreciation for a subordinate's work)
+Gokurousama
+ご苦労さま。
+
+かたづけます
+put things in order, tidy up
+Katadukemasu
+片づけます
+
+かけます
+hang
+Kakemasu
+掛けます
+
+ミーティング
+meeting
+Miitingu
+ミーティング
+
+ろうか
+corridor, hallway
+Rouka
+廊下
+
+おしらせ
+notice
+Oshirase
+お知らせ
+
+ごみばこ
+trash can, dustbin
+Gomibako
+ごみ箱
 
 カレンダー
 calendar
@@ -8166,16 +8219,6 @@ Karendaa
 poster
 Posutaa
 ポスター
-
-ごみばこ
-trash can, dustbin
-Gomibako
-ごみ箱
-
-にんぎょう
-doll
-Ningyou
-人形
 
 かびん
 vase
@@ -8197,75 +8240,15 @@ front door, porch, entrance hall
 Genkan
 玄関
 
-ろうか
-corridor, hallway
-Rouka
-廊下
-
 かべ
 wall
 Kabe
 壁
 
-いけ
-pond
-Ike
-池
-
-こうばん
-police box
-Kouban
-交番
-
-もとの ところ
-original place
-Moto no tokoro
-元の所
-
-まわり
-round, around
-Mawari
-周り
-
-まんなか
-center
-Mannaka
-真ん中
-
-すみ
-corner
-Sumi
-隅
-
 まだ
 still
 Mada
 まだ
-
-～ほど
-about ~
-~hodo
-～ほど
-
-よていひょう
-schedule
-Yoteihyou
-予定表
-
-ごくろうさま。
-Thank you for your hard work. (used by a superior or older person to express appreciation for a subordinate's work)
-Gokurousama
-ご苦労さま。
-
-きぼう
-hope, request
-Kibou
-希望
-
-なんか ごきぼうが ありますか。
-Do you have any requests?
-Nanka gokibou ga arimasu ka.
-何かご希望がありますか。
 
 ミュージカル
 musical
@@ -8277,49 +8260,70 @@ That's a good idea./That sounds nice.
 Sore wa ii desu ne.
 それは いいですね。
 
+おこさん
+(someone else's) child
+Okosan
+お子さん
+
 ブロードウェイ
 Broadway
 Buroodowei
 ※ブロードウェイ
-
-まるい
-round
-Marui
-丸い
-
-ある～
-one ~, a certain ~
-Aru~
-ある～
-
-ちきゅう
-earth
-Chikyuu
-地球
 
 うれしい
 glad, happy
 Ureshii
 うれしい
 
-いや [な]
-hateful, disagreeable
-Iya [na]
-嫌 [な]
+`;
 
-すると
-and, then
-Suruto
-すると
+allWords["Lesson 30 - Hard"] = `
+よしゅうします
+prepare one's lesson
+Yoshuushimasu
+予習します
+
+ふくしゅうします
+review one's lesson
+Fukushuushimasu
+復習します
+
+かざります
+display, decorate
+Kazarimasu
+飾ります
+
+そうだんします
+consult, discuss
+Soudanshimasu
+相談します
 
 めが さめます
 wake up
 Me ga samemasu
 目が覚めます
 
-`;
+はります
+put up, post, paste
+Harimasu
+はります
 
-allWords["Lesson 30 - Hard"] = ``;
+ならべます
+arrange, line up
+Narabemasu
+並べます
+
+しまいます
+put things in their proper place
+Shimaimasu
+しまいます
+
+うえます
+plant
+Uemasu
+植えます
+
+`;
 
 allWords["Lesson 31"] = `
 はじまります I [しきが～]
