@@ -238,3 +238,10 @@ out, when we click on answer reveal then read out answer in japanese.
 
 For each category now if we have 4 lines the 4th line will be kanji, if there are only 3 lines then 
 it doesn't have kanji, so kanji is same as japanese.
+
+------------
+17th sep:
+show option to goto current number's extra, sentences, lesson
+in search of category first show lesson, then extra, the sentence then others
+give option of left and right arrow so that user can be able to goto prev and next lessons on mobile.
+on words add some information (or) icon they should be showing diffs and other points which im' saving.
