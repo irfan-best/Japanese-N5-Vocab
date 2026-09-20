@@ -245,3 +245,29 @@ show option to goto current number's extra, sentences, lesson
 in search of category first show lesson, then extra, the sentence then others
 give option of left and right arrow so that user can be able to goto prev and next lessons on mobile.
 on words add some information (or) icon they should be showing diffs and other points which im' saving.
+
+clicking i, should word info when an word is selected
+add L, G, E -> button on the top, When i'm in Lesson 25 dont show L button, clicking on G -> should take me to Grammer 25, and E -> Should take
+me to Extra 25 -> similar for Extra 25, we will be seeing only L and G button and it should do the same
+add Left arrow and right arrow button so that it will be used to navigate on mobile, basically goto previous category, goto next category.
+
+
+Mawari
+    Around (Surroundings, Vicinity, Proximity)
+        Kono mawari ni wa shizuka na kafe ga takusan arimasu.
+        There are many quiet cafes around here.
+
+        Kare wa mawari no iken wo yoku kiku hito da.
+        He is a person who listens closely to the opinions of those around him.
+
+    Round (Rotation, Circuit, Turn)
+        Kouen wo hito-mawari hashitta.
+        I ran one round of the park.
+
+        Tsuki wa chikyuu no mawari wo kouten shite iru.
+        The moon orbits / goes round the Earth.
+
+then show data correctly
+when there is an empty line then show and empty line in UI also.
+
+add move to temp button, split and move using tags for entire webiste

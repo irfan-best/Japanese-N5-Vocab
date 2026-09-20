@@ -1592,18 +1592,20 @@ html[data-theme="light"] .moon-icon { display: block; }
   color: #ffffff !important;
 }
 
-/* Card Edit Overlay Button */
+/* Card Edit Overlay Button (Top Left Corner) */
 .btn-card-edit {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
   background: none;
   border: none;
   color: var(--text-secondary);
   cursor: pointer;
   opacity: 0;
-  transition: opacity var(--transition-fast), color var(--transition-fast);
-  padding: 4px;
+  transition: opacity var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+  padding: 0;
   border-radius: var(--radius-sm);
   z-index: 5;
   display: flex;
@@ -1617,6 +1619,108 @@ html[data-theme="light"] .moon-icon { display: block; }
 .btn-card-edit:hover {
   color: var(--accent);
   background-color: var(--border-color);
+  transform: scale(1.1);
+}
+
+/* Card Info / Points Overlay Button (Top Right Corner) */
+.btn-card-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: var(--accent-light);
+  border: 1px solid rgba(79, 70, 229, 0.25);
+  color: var(--accent);
+  cursor: pointer;
+  opacity: 0.95;
+  transition: opacity var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  padding: 0;
+  border-radius: var(--radius-round);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(79, 70, 229, 0.12);
+}
+html[data-theme="dark"] .btn-card-info {
+  background-color: rgba(99, 102, 241, 0.22);
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #a5b4fc;
+}
+.vocab-card:hover .btn-card-info,
+.vocab-card:focus-within .btn-card-info {
+  opacity: 1;
+}
+.btn-card-info:hover {
+  color: #ffffff !important;
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  transform: scale(1.15);
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.35);
+}
+
+.vocab-card.has-info-btn .card-badge {
+  right: 36px;
+}
+
+/* Points Modal Styles */
+.points-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.points-block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.points-block-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.25rem 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 1.5px solid var(--accent-light);
+  display: flex;
+  align-items: center;
+}
+.points-block-divider {
+  border: none;
+  border-top: 2px dashed var(--border-color);
+  margin: 0.75rem 0;
+}
+.points-section-box {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+}
+.points-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.points-lines-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.points-lines-list li {
+  list-style-type: disc;
+}
+.points-divider {
+  border: none;
+  border-top: 1px dashed var(--border-color);
+  margin: 0.5rem 0;
 }
 
 /* Similar Words category layouts */

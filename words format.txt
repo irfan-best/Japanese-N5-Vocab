@@ -7,3 +7,19 @@ Chokusetsu (romanji)
 contact
 Renrakushimasu
 連絡します
+
+
+
+-------------
+
+for few blocks we have data like this:
+あたります [たからくじが～]
+win [a lottery]
+Atarimasu [takarakuji ga~]
+当たります [宝くじが～]
+
+convert them to 
+[たからくじが～] あたります
+win [a lottery]
+[takarakuji ga~] Atarimasu
+[宝くじが～] 当たります

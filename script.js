@@ -990,21 +990,11 @@ function reorderWords(fromIdx, toIdx) {
   if (key === 'Show All Words' || key === 'Similar Words' || key === 'Same Meaning' || key === 'Same Romaji') return;
 
   const list = currentWordsDb[key];
-  if (!list) return;
+  if (!list || fromIdx < 0 || fromIdx >= list.length || toIdx < 0 || toIdx >= list.length) return;
 
-  const activeWords = getActiveWords();
-  if (fromIdx < 0 || fromIdx >= activeWords.length || toIdx < 0 || toIdx >= activeWords.length || fromIdx === toIdx) return;
-
-  const fromWord = activeWords[fromIdx];
-  const toWord = activeWords[toIdx];
-  const realFromIdx = list.indexOf(fromWord);
-  const realToIdx = list.indexOf(toWord);
-
-  if (realFromIdx < 0 || realToIdx < 0) return;
-
-  const [movedWord] = list.splice(realFromIdx, 1);
-  const targetIdx = list.indexOf(toWord);
-  list.splice(fromIdx < toIdx ? targetIdx + 1 : targetIdx, 0, movedWord);
+  // Move the item
+  const [movedWord] = list.splice(fromIdx, 1);
+  list.splice(toIdx, 0, movedWord);
 
   saveWords();
   renderCards();
@@ -1823,7 +1813,24 @@ function renderCards() {
       }
     }
 
-    // Edit Pen Button Overlay
+    // Info / Points Overlay Button (Top Right Corner)
+    const pointsData = getPointsForWord(word);
+    if (pointsData && pointsData.length > 0) {
+      card.classList.add('has-info-btn');
+      const btnInfo = document.createElement('button');
+      btnInfo.className = 'btn-card-info';
+      btnInfo.title = pointsData.length > 1 ? `View Notes & Comparisons (${pointsData.length})` : 'View Notes & Comparison';
+      btnInfo.innerHTML = `
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      `;
+      btnInfo.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openPointsInfoModal(pointsData, word);
+      });
+      card.appendChild(btnInfo);
+    }
+
+    // Edit Pen Button Overlay (Top Left Corner)
     const btnEdit = document.createElement('button');
     btnEdit.className = 'btn-card-edit';
     btnEdit.title = 'Edit Word';
@@ -1973,9 +1980,7 @@ function moveSelectedToHard() {
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson + " - Hard";
 
-  const activeWords = getActiveWords();
-  const itemsToMove = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
-  if (itemsToMove.length === 0) return;
+  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
   
   // Custom categories: copy instead of move
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
@@ -1983,13 +1988,9 @@ function moveSelectedToHard() {
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter(w => !itemsToMove.includes(w));
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
   }
   
-  if (!currentWordsDb[targetKey]) {
-    currentWordsDb[targetKey] = [];
-  }
-
   const uniqueItemsToMove = itemsToMove.filter(w => {
     return !currentWordsDb[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
@@ -2003,7 +2004,7 @@ function moveSelectedToHard() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${itemsToMove.length} word(s) to Hard list.`, 'success');
+  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Hard list.`, 'success');
 }
 
 // Move selected items to Normal list
@@ -2014,22 +2015,16 @@ function moveSelectedToNormal() {
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson;
 
-  const activeWords = getActiveWords();
-  const itemsToMove = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
-  if (itemsToMove.length === 0) return;
+  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
   
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
   const isListeningGroup = (currentSettings.activeDbGroup || "").includes("Listening");
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter(w => !itemsToMove.includes(w));
+    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
   }
   
-  if (!currentWordsDb[targetKey]) {
-    currentWordsDb[targetKey] = [];
-  }
-
   const uniqueItemsToMove = itemsToMove.filter(w => {
     return !currentWordsDb[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
@@ -2043,7 +2038,7 @@ function moveSelectedToNormal() {
   saveWords();
   saveSettings();
   renderCards();
-  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${itemsToMove.length} word(s) to Normal list.`, 'success');
+  showToast(`${shouldCopy ? 'Copied' : 'Moved'} ${selectedIdxs.length} word(s) to Normal list.`, 'success');
 }
 
 // Move selected items UP in position (left)
@@ -2052,29 +2047,35 @@ function moveSelectedUp() {
   const list = currentWordsDb[currentKey];
   if (!list || list.length === 0) return;
 
-  const activeWords = getActiveWords();
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  if (selectedIdxs.length === 0 || selectedIdxs[0] === 0) return;
+  const firstSelected = selectedIdxs[0];
+  if (firstSelected === 0) return; // Already at top, do nothing
 
-  const selectedElements = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
-  if (selectedElements.length === 0) return;
+  if (selectedIdxs[0] === 0) return; // Already at top, do nothing
 
-  const prevActiveWord = activeWords[selectedIdxs[0] - 1];
-  const insertIdx = list.indexOf(prevActiveWord);
-  if (insertIdx === -1) return;
+  const selectedElements = selectedIdxs.map(idx => list[idx]);
+  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
 
-  const unselectedElements = list.filter(w => !selectedElements.includes(w));
+  const insertIdx = firstSelected - 1;
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
-  const newSelectedIdxs = selectedIdxs.map(idx => idx - 1);
+  // Calculate new contiguous indices for selection
+  const newSelectedIdxs = [];
+  for (let i = 0; i < selectedElements.length; i++) {
+    newSelectedIdxs.push(insertIdx + i);
+  }
+
   currentSettings.selectedWordIndices = newSelectedIdxs;
-  if (currentSettings.focusedWordIndex >= 0) {
-    currentSettings.focusedWordIndex = Math.max(0, currentSettings.focusedWordIndex - 1);
+
+  // Update selection and focus
+  currentSettings.selectedWordIndices = newSelectedIdxs;
+  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
+  if (focusInSelected !== -1) {
+    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
   } else {
     currentSettings.focusedWordIndex = newSelectedIdxs[0];
   }
-
   saveWords();
   saveSettings();
   renderCards();
@@ -2086,26 +2087,30 @@ function moveSelectedDown() {
   const list = currentWordsDb[currentKey];
   if (!list || list.length === 0) return;
 
-  const activeWords = getActiveWords();
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  if (selectedIdxs.length === 0 || selectedIdxs[selectedIdxs.length - 1] >= activeWords.length - 1) return;
+  if (selectedIdxs.length === 0) return;
 
-  const selectedElements = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
-  if (selectedElements.length === 0) return;
+  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
+  if (lastSelected === list.length - 1) return; // Already at bottom, do nothing
 
-  const nextActiveWord = activeWords[selectedIdxs[selectedIdxs.length - 1] + 1];
-  const targetIdx = list.indexOf(nextActiveWord);
-  if (targetIdx === -1) return;
+  const selectedElements = selectedIdxs.map(idx => list[idx]);
+  const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
 
-  const unselectedElements = list.filter(w => !selectedElements.includes(w));
-  const insertIdx = unselectedElements.indexOf(nextActiveWord) + 1;
+  const insertIdx = (lastSelected + 2) - selectedIdxs.length;
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
-  const newSelectedIdxs = selectedIdxs.map(idx => idx + 1);
+  // Calculate new contiguous indices for selection
+  const newSelectedIdxs = [];
+  for (let i = 0; i < selectedElements.length; i++) {
+    newSelectedIdxs.push(insertIdx + i);
+  }
+
+  // Update selection and focus
   currentSettings.selectedWordIndices = newSelectedIdxs;
-  if (currentSettings.focusedWordIndex >= 0) {
-    currentSettings.focusedWordIndex = Math.min(activeWords.length - 1, currentSettings.focusedWordIndex + 1);
+  const focusInSelected = selectedIdxs.indexOf(currentSettings.focusedWordIndex);
+  if (focusInSelected !== -1) {
+    currentSettings.focusedWordIndex = insertIdx + focusInSelected;
   } else {
     currentSettings.focusedWordIndex = newSelectedIdxs[0];
   }
@@ -2124,19 +2129,17 @@ function deleteSelected() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => b - a);
   if (selectedIdxs.length === 0) return;
 
-  const activeWords = getActiveWords();
-  const itemsToDelete = selectedIdxs.map(idx => activeWords[idx]).filter(Boolean);
-  if (itemsToDelete.length === 0) return;
-
-  if (confirm(`Are you sure you want to delete ${itemsToDelete.length} selected word(s)?`)) {
-    currentWordsDb[currentKey] = list.filter(w => !itemsToDelete.includes(w));
+  if (confirm(`Are you sure you want to delete ${selectedIdxs.length} selected word(s)?`)) {
+    selectedIdxs.forEach(idx => {
+      list.splice(idx, 1);
+    });
 
     currentSettings.selectedWordIndices = [];
     currentSettings.focusedWordIndex = -1;
     saveWords();
     saveSettings();
     renderCards();
-    showToast(`Deleted ${itemsToDelete.length} word(s).`, 'success');
+    showToast(`Deleted ${selectedIdxs.length} word(s).`, 'success');
   }
 }
 
@@ -3661,6 +3664,241 @@ function saveWordEditChanges() {
   closeActiveModal();
   renderCards();
   showToast("Saved word changes.", "success");
+}
+
+// ==========================================================================
+// POINTS & COMPARISON NOTES SYSTEM
+// ==========================================================================
+
+let parsedPointsCache = null;
+
+function cleanWordForMatching(str) {
+  if (!str) return "";
+  return str
+    .replace(/\[.*?\]/g, "")      // ASCII square brackets
+    .replace(/［.*?］/g, "")      // Full-width square brackets
+    .replace(/\(.*?\)/g, "")      // ASCII parentheses
+    .replace(/（.*?）/g, "")      // Full-width parentheses
+    .replace(/[~〜\-・,.\/\\:;!?]/g, " ") // Special symbols to spaces
+    .replace(/\s+/g, " ")         // Collapse spaces
+    .trim()
+    .toLowerCase();
+}
+
+function parsePointsData(rawText) {
+  if (!rawText) return [];
+  const lines = rawText.split('\n');
+  const blocks = [];
+  let currentBlock = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+
+    // Check if top-level header (no leading whitespace)
+    const isTopLevel = !line.startsWith(' ') && !line.startsWith('\t');
+    if (isTopLevel) {
+      if (currentBlock) {
+        blocks.push(currentBlock);
+      }
+      const headerTitle = trimmed.replace(/:+$/, '').trim();
+      const keywords = headerTitle.split(/\s+vs\s+/i).map(k => cleanWordForMatching(k)).filter(Boolean);
+      currentBlock = {
+        rawHeader: headerTitle,
+        keywords: keywords,
+        rawLines: []
+      };
+    } else if (currentBlock) {
+      currentBlock.rawLines.push(line);
+    }
+  }
+
+  if (currentBlock) {
+    blocks.push(currentBlock);
+  }
+
+  function isSubheader(line, keywords) {
+    const trimmed = line.trim();
+    if (!trimmed) return false;
+    const withoutColon = trimmed.replace(/:+$/, '').trim();
+    const cleaned = cleanWordForMatching(withoutColon);
+    
+    // Check if matches one of the block keywords (e.g. toshi, machi, tokai, shussekishimasu)
+    if (keywords && keywords.includes(cleaned)) return true;
+    
+    // Check if ends with colon and looks like a header label (short, no quotes or sentence punctuation)
+    if (trimmed.endsWith(':') && withoutColon.length <= 50 && !trimmed.includes('"') && !trimmed.includes('”') && !/[.!?]$/.test(withoutColon)) {
+      return true;
+    }
+    
+    return false;
+  }
+
+  return blocks.map(block => {
+    const rawLines = block.rawLines;
+    const sections = [];
+    let currentSection = null;
+
+    let hasSubHeaders = false;
+    for (const line of rawLines) {
+      if (isSubheader(line, block.keywords)) {
+        hasSubHeaders = true;
+        break;
+      }
+    }
+
+    if (hasSubHeaders) {
+      for (const line of rawLines) {
+        const trimmed = line.trim();
+        if (!trimmed) continue;
+
+        if (isSubheader(line, block.keywords)) {
+          if (currentSection) {
+            sections.push(currentSection);
+          }
+          currentSection = {
+            title: trimmed.replace(/:+$/, '').trim(),
+            lines: []
+          };
+        } else if (currentSection) {
+          currentSection.lines.push(trimmed);
+        }
+      }
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+    } else {
+      const contentLines = rawLines.map(l => l.trim()).filter(Boolean);
+      sections.push({
+        title: block.rawHeader,
+        lines: contentLines
+      });
+    }
+
+    return {
+      rawHeader: block.rawHeader,
+      keywords: block.keywords,
+      sections: sections
+    };
+  });
+}
+
+function getParsedPoints() {
+  if (parsedPointsCache) return parsedPointsCache;
+  if (typeof allPoints !== 'undefined' && allPoints) {
+    parsedPointsCache = parsePointsData(allPoints);
+  } else {
+    parsedPointsCache = [];
+  }
+  return parsedPointsCache;
+}
+
+function getPointsForWord(word) {
+  if (!word) return null;
+  const blocks = getParsedPoints();
+  if (!blocks || blocks.length === 0) return null;
+
+  const cleanRomaji = cleanWordForMatching(word.romaji);
+  if (!cleanRomaji) return null;
+
+  const matchedBlocks = [];
+  for (const block of blocks) {
+    let isMatch = false;
+    for (const keyword of block.keywords) {
+      if (cleanRomaji === keyword) {
+        isMatch = true;
+        break;
+      }
+      const tokens = cleanRomaji.split(/\s+/);
+      if (tokens.includes(keyword)) {
+        isMatch = true;
+        break;
+      }
+      if (cleanRomaji.endsWith(" " + keyword) || cleanRomaji.startsWith(keyword + " ")) {
+        isMatch = true;
+        break;
+      }
+    }
+    if (isMatch) {
+      matchedBlocks.push(block);
+    }
+  }
+  return matchedBlocks.length > 0 ? matchedBlocks : null;
+}
+
+function openPointsInfoModal(pointsData, word) {
+  if (!pointsData) return;
+  const blocks = Array.isArray(pointsData) ? pointsData : [pointsData];
+  if (blocks.length === 0) return;
+  
+  const titleEl = document.getElementById('points-info-title');
+  const bodyEl = document.getElementById('points-info-body');
+  if (!titleEl || !bodyEl) return;
+
+  if (blocks.length === 1) {
+    titleEl.textContent = blocks[0].rawHeader || "Word Notes & Comparison";
+  } else {
+    titleEl.textContent = (word && word.romaji ? word.romaji : "Word") + " - Notes & Comparisons";
+  }
+  bodyEl.innerHTML = "";
+
+  const container = document.createElement('div');
+  container.className = 'points-content-wrapper';
+
+  blocks.forEach((block, bIdx) => {
+    if (bIdx > 0) {
+      const blockHr = document.createElement('hr');
+      blockHr.className = 'points-block-divider';
+      container.appendChild(blockHr);
+    }
+
+    const blockWrapper = document.createElement('div');
+    blockWrapper.className = 'points-block-container';
+
+    if (blocks.length > 1) {
+      const blockTitle = document.createElement('h3');
+      blockTitle.className = 'points-block-title';
+      blockTitle.textContent = block.rawHeader;
+      blockWrapper.appendChild(blockTitle);
+    }
+
+    block.sections.forEach((sec, sIdx) => {
+      if (sIdx > 0) {
+        const hr = document.createElement('hr');
+        hr.className = 'points-divider';
+        blockWrapper.appendChild(hr);
+      }
+
+      const secBox = document.createElement('div');
+      secBox.className = 'points-section-box';
+
+      if (block.sections.length > 1 || sec.title.toLowerCase() !== (block.rawHeader || "").toLowerCase()) {
+        const h4 = document.createElement('h4');
+        h4.className = 'points-section-title';
+        h4.textContent = sec.title;
+        secBox.appendChild(h4);
+      }
+
+      if (sec.lines && sec.lines.length > 0) {
+        const ul = document.createElement('ul');
+        ul.className = 'points-lines-list';
+        sec.lines.forEach(lineText => {
+          const li = document.createElement('li');
+          li.textContent = lineText;
+          ul.appendChild(li);
+        });
+        secBox.appendChild(ul);
+      }
+
+      blockWrapper.appendChild(secBox);
+    });
+
+    container.appendChild(blockWrapper);
+  });
+
+  bodyEl.appendChild(container);
+  openModal('modal-points-info');
 }
 
 function getAutoGroup1Words() {
