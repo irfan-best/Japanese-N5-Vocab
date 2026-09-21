@@ -23,3 +23,20 @@ convert them to
 win [a lottery]
 [takarakuji ga~] Atarimasu
 [宝くじが～] 当たります
+
+----------------------------------
+
+you need to 2 things, one remove verb classifications that is I, II, III
+also
+for few blocks we have data like this:
+あたります [たからくじが～]
+win [a lottery]
+Atarimasu [takarakuji ga~]
+当たります [宝くじが～]
+
+convert them to 
+[たからくじが～] あたります
+win [a lottery]
+[takarakuji ga~] Atarimasu
+[宝くじが～] 当たります
+

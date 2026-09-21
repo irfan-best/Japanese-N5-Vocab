@@ -241,15 +241,18 @@ it doesn't have kanji, so kanji is same as japanese.
 
 ------------
 17th sep:
+clicking i, should word info when an word is selected, even when i'm in quiz, if i click on i key then open popup of that word,
+    clicking esc should take me back to quiz and continue from there
+add L, G, E -> button on the top, When i'm in Lesson 25 dont show L button, clicking on G -> should take me to Grammer 25, and E -> Should take
+me to Extra 25 -> similar for Extra 25, we will be seeing only L and G button and it should do the same
+add Left arrow and right arrow button so that it will be used to navigate on mobile, basically goto previous category, goto next category.
+
+
+
 show option to goto current number's extra, sentences, lesson
 in search of category first show lesson, then extra, the sentence then others
 give option of left and right arrow so that user can be able to goto prev and next lessons on mobile.
 on words add some information (or) icon they should be showing diffs and other points which im' saving.
-
-clicking i, should word info when an word is selected
-add L, G, E -> button on the top, When i'm in Lesson 25 dont show L button, clicking on G -> should take me to Grammer 25, and E -> Should take
-me to Extra 25 -> similar for Extra 25, we will be seeing only L and G button and it should do the same
-add Left arrow and right arrow button so that it will be used to navigate on mobile, basically goto previous category, goto next category.
 
 
 Mawari

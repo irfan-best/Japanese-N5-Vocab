@@ -15,17 +15,6 @@ Ukemasu:
     Taking/Undergoing Medical Checks, Surgery, or Services
     Taking Lessons, Classes, or Training
 
-Tojimasu vs Shimemasu:
-    shimemasu: 
-        Sliding, swinging, or pulling something to cover an opening
-        Doors, windows, curtains, drawers, zippers, lids (screw-top)
-        Blocking an entrance/passage or sealing an opening
-
-    tojimasu:  
-        Folding, shutting, or bringing sides together from an open state
-        Books, eyes, mouths, umbrellas, laptops, meetings, flowers
-        Bringing a split/hinged object back into a
-
 Toshi vs Machi vs Tokai:
     toshi   
         City, metropolis
@@ -672,4 +661,135 @@ rusu:
     Tomaru - stay in house
     Rusu   - absence / away from house / not a home
     Ruffy away from house so house is silent(suzuka) = rusu
+
+Mamorimasu
+    Keep (a promise / time / secret)
+    I will keep my promise
+    Yakusoku wo mamorimasu
+
+    Please keep to the time / Be on time
+    Jikan wo mamotte kudasa-i
+
+    I will keep the secret
+    Himitsu wo mamorimasu
+
+    Follow / Obey (rules / laws)
+
+Heiten vs Tojimasu vs Shimemasu
+
+	Heiten
+		Closing shop / Closing a business (Noun/Verb specifically used for a store, shop, or business closing for the day or permanently)
+
+		Kono mise wa hachi-ji ni heiten shimasu.
+		This store closes at 8 o'clock.
+
+		Kyou wa heiten no hi desu.
+		Today is the store's day off.
+
+	Tojimasu
+		To close / To shut / To seal (Used for closing things that open and shut from the middle or along a hinge/fold, like books, eyes, umbrellas, meetings, or accounts)
+
+		Hon wo tojimasu.
+		I will close the book.
+
+		Me wo tojite kudasai.
+		Please close your eyes.
+
+	Shimemasu
+		To close / To shut (General, everyday verb used for physically sliding or pulling shut things like doors, windows, curtains, drawers, or lids)
+
+		Dua wo shimemasu.
+		I will close the door.
+
+		Mado wo shimetekudasai.
+		Please close the window.
+
+Kado vs Sumi
+
+	Kado
+		Corner / Edge (External corner or edge of a physical object, street corner, or outer angle that protrudes outward)
+
+		Kono kado wo migi ni magarimasu.
+		Turn right at this corner.
+
+		Tsukue no kado ni ataramashita.
+		I hit the edge/corner of the table.
+
+	Sumi
+		Corner / Nook (Internal corner, recess, or inner angle of a room, box, or enclosed space)
+
+		Heya no sumi ni tsukue ga arimasu.
+		There is a desk in the corner of the room.
+
+		Sumi ni osamete kudasai.
+		Please put it away in the corner.
+
+Niwakaame vs Yuudachi
+
+	Niwakaame
+		Rain shower / Sudden rain (General term for a sudden, brief rain shower that can happen at any time of day or year)
+
+		Niwakaame ga fute kimashita.
+		A sudden rain shower started falling.
+
+		Kyou wa niwakaame ni choui shite kudasai.
+		Please be careful of sudden rain showers today.
+
+	Yuudachi
+		Evening sudden shower / Summer rainstorm (Specific term for a sudden afternoon or evening rainstorm, often accompanied by thunder, occurring in summer)
+
+		Natsu no yuudachi ni aimashita.
+		I got caught in a sudden summer evening shower.
+
+		Yuudachi no ato wa suzushiku narimasu.
+		It becomes cool after an evening shower.
+
+Hiyashimasu vs Suzushii
+
+	Hiyashimasu
+		To cool down / To chill (Active verb meaning to deliberately make an object, food, drink, or body part cold using ice, a refrigerator, or cold water)
+
+		Suika wo mizu de hiyashimasu.
+		I cool down the watermelon with water.
+
+		Juusu wo reizouko de hiyashimashita.
+		I chilled the juice in the refrigerator.
+
+	Suzushii
+		Cool / Refreshing (I-adjective describing a pleasant, comfortably cool air temperature, breeze, or weather)
+
+		Kyou wa suzushii kaze ga fukimatsu.
+		A cool breeze is blowing today.
+
+		Aki wa suzushikute sugashiyai desu.
+		Autumn is cool and refreshing.
+
+Niru vs Yaku vs Yuderu
+
+	Niru
+		To boil / To simmer / To stew (Cooking verb meaning to cook food by simmering or boiling it in a flavored liquid, broth, or sauce, allowing the food to absorb the flavor)
+
+		Sakana wo niru.
+		I simmer fish (in sauce).
+
+		Yasai wo shouyu de nimashita.
+		I stewed vegetables with soy sauce.
+
+	Yaku
+		To bake / To grill / To roast / To fry (Cooking verb meaning to cook food with direct heat, fire, or on a hot surface, such as a pan, oven, or grill)
+
+		Niku wo yaku.
+		I grill meat.
+
+		Pan wo yakimashita.
+		I baked bread.
+
+	Yuderu
+		To boil (in plain water) / To blanch (Cooking verb meaning to submerge and cook food in boiling hot water without adding seasoning, often discarded afterward)
+
+		Tamago wo yuderu.
+		I boil an egg.
+
+		Yudeta pasuta wo zara ni morimasu.
+		I place the boiled pasta on a plate.
 `

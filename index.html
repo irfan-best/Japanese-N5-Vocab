@@ -59,11 +59,11 @@
       <div class="panel-section selection-controls">
         <div class="input-group">
           <label for="select-lesson">Lesson / Category</label>
-          <div class="lesson-select-wrapper" style="display: flex; gap: 0.5rem; align-items: center; width: 100%;">
+          <div class="lesson-select-wrapper" style="display: flex; gap: 0.5rem; align-items: center;">
             <select id="select-lesson" class="custom-select" style="flex: 1;">
               <!-- Programmatically populated: Lesson 01 - Lesson 25, custom categories, Show All, Similar Words -->
             </select>
-            <button id="btn-add-category" class="btn btn-secondary" title="Create Custom Category" style="padding: 0 0.75rem; height: 38px; font-weight: bold; font-size: 1.2rem;">+</button>
+            <button id="btn-add-category" class="btn btn-secondary" title="Create Custom Category" style="padding: 0 0.75rem; height: 42px; font-weight: bold; font-size: 1.2rem;">+</button>
           </div>
         </div>
 
@@ -137,6 +137,19 @@
           <button id="btn-import" class="btn btn-secondary">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
             Import
+          </button>
+        </div>
+        <div class="action-nav-row">
+          <button id="btn-nav-prev-cat" class="btn btn-secondary btn-cat-nav" title="Previous Category (Ctrl+Left)" aria-label="Previous Category">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div id="quick-lge-group" class="quick-lge-group">
+            <button id="btn-quick-lesson" class="btn btn-secondary btn-lge" title="Switch to Lesson (L)">L</button>
+            <button id="btn-quick-grammer" class="btn btn-secondary btn-lge" title="Switch to Grm (G)">G</button>
+            <button id="btn-quick-extra" class="btn btn-secondary btn-lge" title="Switch to Extra (E)">E</button>
+          </div>
+          <button id="btn-nav-next-cat" class="btn btn-secondary btn-cat-nav" title="Next Category (Ctrl+Right)" aria-label="Next Category">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
         </div>
       </div>
@@ -225,6 +238,9 @@
         </button>
       </div>
       <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <button id="btn-quiz-info" class="btn btn-icon btn-small hidden" title="View Word Notes & Comparison (I)" aria-label="Word Notes" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; padding: 0.25rem; color: var(--text-secondary); transition: color var(--transition-fast);">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        </button>
         <button id="btn-quiz-flag" class="btn btn-icon btn-small" title="Flag current word" aria-label="Flag current word" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; padding: 0.25rem; color: var(--text-secondary); transition: color var(--transition-fast);">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
         </button>
@@ -500,7 +516,23 @@
               </tr>
               <tr>
                 <td><kbd>I</kbd></td>
-                <td>Open Import vocabulary modal and focus the text box.</td>
+                <td>View Notes & Comparison for selected word (or current Quiz word).</td>
+              </tr>
+              <tr>
+                <td><kbd>W</kbd></td>
+                <td>Focus Lesson / Category dropdown.</td>
+              </tr>
+              <tr>
+                <td><kbd>L</kbd></td>
+                <td>Quick switch to corresponding Lesson category (e.g. Lesson 25).</td>
+              </tr>
+              <tr>
+                <td><kbd>G</kbd></td>
+                <td>Quick switch to corresponding Grm category (e.g. Grm 25).</td>
+              </tr>
+              <tr>
+                <td><kbd>E</kbd></td>
+                <td>Edit selected word card, or quick switch to corresponding Extra category (when no card is selected).</td>
               </tr>
               <tr>
                 <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd> (in Import Modal)</td>
@@ -777,9 +809,17 @@ kenkyuusha</pre>
   </div>
 
   <!-- Points / Info Modal -->
-  <div id="modal-points-info" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="points-info-title" style="max-width: 520px;">
-    <div class="modal-header">
-      <h2 id="points-info-title" style="margin: 0; font-size: 1.25rem;">Word Notes & Comparison</h2>
+  <div id="modal-points-info" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="points-info-title" style="max-width: 520px; z-index: 100;">
+    <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <h2 id="points-info-title" style="margin: 0; font-size: 1.25rem;">Word Notes & Comparison</h2>
+        <button id="btn-points-speak" class="btn btn-icon btn-small" title="Read Notes (English)" aria-label="Read Notes" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; padding: 0.25rem; color: var(--text-secondary); transition: color var(--transition-fast);">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+      </div>
       <button class="btn-close-modal" aria-label="Close Info Modal">&times;</button>
     </div>
     <div class="modal-body" id="points-info-body" style="max-height: 70vh; overflow-y: auto;">

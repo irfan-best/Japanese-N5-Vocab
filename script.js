@@ -25,7 +25,7 @@ const DEFAULT_SETTINGS = {
   lastGroupCategories: {
     "N5 Lessons": "Lesson 01",
     "N5 Others": "Questions",
-    "N5 Grammer": "Grammer 01",
+    "N5 Grammer": "Grm 01",
     "N5 Grammer Others": "Show All Words",
     "N5 Extra": "Extra 01",
     "N5 Listening": "Listening 01",
@@ -33,7 +33,7 @@ const DEFAULT_SETTINGS = {
     "N5 Genki": "Genki 01",
     "N4 Lessons": "Lesson 26",
     "N4 Others": "Questions",
-    "N4 Grammer": "Grammer 26",
+    "N4 Grammer": "Grm 26",
     "N4 Grammer Others": "Show All Words",
     "N4 Extra": "Extra 26",
     "N4 Listening": "Listening 26",
@@ -41,21 +41,21 @@ const DEFAULT_SETTINGS = {
     "N4 Genki": "Genki 13",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Questions",
-    "N3 Grammer": "Grammer 51",
+    "N3 Grammer": "Grm 51",
     "N3 Grammer Others": "Show All Words",
     "N3 Extra": "Extra 51",
     "N3 Listening": "Listening 51",
     "N3 Dumps": "Show All Words",
     "N2 Lessons": "Lesson 76",
     "N2 Others": "Questions",
-    "N2 Grammer": "Grammer 76",
+    "N2 Grammer": "Grm 76",
     "N2 Grammer Others": "Show All Words",
     "N2 Extra": "Extra 76",
     "N2 Listening": "Listening 76",
     "N2 Dumps": "Show All Words",
     "N1 Lessons": "Lesson 101",
     "N1 Others": "Questions",
-    "N1 Grammer": "Grammer 101",
+    "N1 Grammer": "Grm 101",
     "N1 Grammer Others": "Show All Words",
     "N1 Extra": "Extra 101",
     "N1 Listening": "Listening 101",
@@ -237,7 +237,7 @@ function cleanCategoryNameForUI(cat) {
   const isHard = cat.endsWith(" - Hard");
   const base = isHard ? cat.replace(" - Hard", "") : cat;
   
-  if (base.startsWith("Lesson ") || base.startsWith("Grammer ") || base.startsWith("Extra ") || base.startsWith("Kanji ") || base.startsWith("Genki ")) {
+  if (base.startsWith("Lesson ") || base.startsWith("Grm ") || base.startsWith("Grammer ") || base.startsWith("Extra ") || base.startsWith("Kanji ") || base.startsWith("Genki ")) {
     return isHard ? base + " (Hard)" : base;
   }
 
@@ -275,7 +275,7 @@ function stripTrailingOne(name) {
   const isHard = name.endsWith(" - Hard");
   const base = isHard ? name.replace(" - Hard", "") : name;
 
-  if (base.match(/^(Lesson|Grammer|Extra|Listening|Kanji|Genki)\s+\d+/i) ||
+  if (base.match(/^(Lesson|Grm|Grammer|Extra|Listening|Kanji|Genki)\s+\d+/i) ||
       base.match(/^(N[1-5]\s+Kanji)/i) ||
       base.endsWith(" G5") || base.endsWith(" G4") || base.endsWith(" G3") || base.endsWith(" G2") || base.endsWith(" G1") ||
       base.endsWith(" E5") || base.endsWith(" E4") || base.endsWith(" E3") || base.endsWith(" E2") || base.endsWith(" E1") ||
@@ -338,14 +338,17 @@ function migrateCustomCategorySuffixes() {
   let dbModified = false;
   for (const key in currentWordsDb) {
     let newKey = key;
-    if (key.endsWith(" G1")) newKey = key.replace(/ G1$/, " G5");
-    else if (key.endsWith(" G1 - Hard")) newKey = key.replace(/ G1 - Hard$/, " G5 - Hard");
-    else if (key.endsWith(" E1")) newKey = key.replace(/ E1$/, " E5");
-    else if (key.endsWith(" E1 - Hard")) newKey = key.replace(/ E1 - Hard$/, " E5 - Hard");
-    else if (key.endsWith(" G2")) newKey = key.replace(/ G2$/, " G4");
-    else if (key.endsWith(" G2 - Hard")) newKey = key.replace(/ G2 - Hard$/, " G4 - Hard");
-    else if (key.endsWith(" E2")) newKey = key.replace(/ E2$/, " E4");
-    else if (key.endsWith(" E2 - Hard")) newKey = key.replace(/ E2 - Hard$/, " E4 - Hard");
+    if (key.startsWith("Grammer ")) {
+      newKey = key.replace(/^Grammer /, "Grm ");
+    }
+    if (newKey.endsWith(" G1")) newKey = newKey.replace(/ G1$/, " G5");
+    else if (newKey.endsWith(" G1 - Hard")) newKey = newKey.replace(/ G1 - Hard$/, " G5 - Hard");
+    else if (newKey.endsWith(" E1")) newKey = newKey.replace(/ E1$/, " E5");
+    else if (newKey.endsWith(" E1 - Hard")) newKey = newKey.replace(/ E1 - Hard$/, " E5 - Hard");
+    else if (newKey.endsWith(" G2")) newKey = newKey.replace(/ G2$/, " G4");
+    else if (newKey.endsWith(" G2 - Hard")) newKey = newKey.replace(/ G2 - Hard$/, " G4 - Hard");
+    else if (newKey.endsWith(" E2")) newKey = newKey.replace(/ E2$/, " E4");
+    else if (newKey.endsWith(" E2 - Hard")) newKey = newKey.replace(/ E2 - Hard$/, " E4 - Hard");
     
     newKey = stripTrailingOne(newKey);
 
@@ -360,10 +363,11 @@ function migrateCustomCategorySuffixes() {
   if (currentSettings.currentLesson) {
     let cat = currentSettings.currentLesson;
     let nextCat = cat;
-    if (cat.endsWith(" G1")) nextCat = cat.replace(/ G1$/, " G5");
-    if (cat.endsWith(" E1")) nextCat = cat.replace(/ E1$/, " E5");
-    if (cat.endsWith(" G2")) nextCat = cat.replace(/ G2$/, " G4");
-    if (cat.endsWith(" E2")) nextCat = cat.replace(/ E2$/, " E4");
+    if (nextCat.startsWith("Grammer ")) nextCat = nextCat.replace(/^Grammer /, "Grm ");
+    if (nextCat.endsWith(" G1")) nextCat = nextCat.replace(/ G1$/, " G5");
+    if (nextCat.endsWith(" E1")) nextCat = nextCat.replace(/ E1$/, " E5");
+    if (nextCat.endsWith(" G2")) nextCat = nextCat.replace(/ G2$/, " G4");
+    if (nextCat.endsWith(" E2")) nextCat = nextCat.replace(/ E2$/, " E4");
     nextCat = stripTrailingOne(nextCat);
     if (nextCat !== cat) {
       currentSettings.currentLesson = nextCat;
@@ -375,10 +379,11 @@ function migrateCustomCategorySuffixes() {
   if (currentSettings.lastDestCategory) {
     let cat = currentSettings.lastDestCategory;
     let nextCat = cat;
-    if (cat.endsWith(" G1")) nextCat = cat.replace(/ G1$/, " G5");
-    if (cat.endsWith(" E1")) nextCat = cat.replace(/ E1$/, " E5");
-    if (cat.endsWith(" G2")) nextCat = cat.replace(/ G2$/, " G4");
-    if (cat.endsWith(" E2")) nextCat = cat.replace(/ E2$/, " E4");
+    if (nextCat.startsWith("Grammer ")) nextCat = nextCat.replace(/^Grammer /, "Grm ");
+    if (nextCat.endsWith(" G1")) nextCat = nextCat.replace(/ G1$/, " G5");
+    if (nextCat.endsWith(" E1")) nextCat = nextCat.replace(/ E1$/, " E5");
+    if (nextCat.endsWith(" G2")) nextCat = nextCat.replace(/ G2$/, " G4");
+    if (nextCat.endsWith(" E2")) nextCat = nextCat.replace(/ E2$/, " E4");
     nextCat = stripTrailingOne(nextCat);
     if (nextCat !== cat) {
       currentSettings.lastDestCategory = nextCat;
@@ -392,6 +397,7 @@ function migrateCustomCategorySuffixes() {
     for (const g in currentSettings.lastGroupCategories) {
       let cat = currentSettings.lastGroupCategories[g];
       if (cat) {
+        if (cat.startsWith("Grammer ")) cat = cat.replace(/^Grammer /, "Grm ");
         if (cat.endsWith(" G1")) cat = cat.replace(/ G1$/, " G5");
         if (cat.endsWith(" E1")) cat = cat.replace(/ E1$/, " E5");
         if (cat.endsWith(" G2")) cat = cat.replace(/ G2$/, " G4");
@@ -399,6 +405,21 @@ function migrateCustomCategorySuffixes() {
         cat = stripTrailingOne(cat);
         currentSettings.lastGroupCategories[g] = cat;
       }
+    }
+    if (currentSettings.lastGroupCategories["N5 Grammer"] && currentSettings.lastGroupCategories["N5 Grammer"].startsWith("Grammer ")) {
+      currentSettings.lastGroupCategories["N5 Grammer"] = currentSettings.lastGroupCategories["N5 Grammer"].replace(/^Grammer /, "Grm ");
+    }
+    if (currentSettings.lastGroupCategories["N4 Grammer"] && currentSettings.lastGroupCategories["N4 Grammer"].startsWith("Grammer ")) {
+      currentSettings.lastGroupCategories["N4 Grammer"] = currentSettings.lastGroupCategories["N4 Grammer"].replace(/^Grammer /, "Grm ");
+    }
+    if (currentSettings.lastGroupCategories["N3 Grammer"] && currentSettings.lastGroupCategories["N3 Grammer"].startsWith("Grammer ")) {
+      currentSettings.lastGroupCategories["N3 Grammer"] = currentSettings.lastGroupCategories["N3 Grammer"].replace(/^Grammer /, "Grm ");
+    }
+    if (currentSettings.lastGroupCategories["N2 Grammer"] && currentSettings.lastGroupCategories["N2 Grammer"].startsWith("Grammer ")) {
+      currentSettings.lastGroupCategories["N2 Grammer"] = currentSettings.lastGroupCategories["N2 Grammer"].replace(/^Grammer /, "Grm ");
+    }
+    if (currentSettings.lastGroupCategories["N1 Grammer"] && currentSettings.lastGroupCategories["N1 Grammer"].startsWith("Grammer ")) {
+      currentSettings.lastGroupCategories["N1 Grammer"] = currentSettings.lastGroupCategories["N1 Grammer"].replace(/^Grammer /, "Grm ");
     }
     if (currentSettings.lastGroupCategories["N5 Extra"] === "Show All Words") {
       currentSettings.lastGroupCategories["N5 Extra"] = "Extra 01";
@@ -579,9 +600,9 @@ function loadState() {
     });
   });
 
-  // Ensure all 125 Grammer categories and hard versions exist
+  // Ensure all 125 Grm categories and hard versions exist
   for (let i = 1; i <= 125; i++) {
-    const gStr = `Grammer ${String(i).padStart(2, '0')}`;
+    const gStr = `Grm ${String(i).padStart(2, '0')}`;
     const hStr = `${gStr} - Hard`;
     if (!currentWordsDb[gStr]) currentWordsDb[gStr] = [];
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
@@ -852,11 +873,11 @@ function getLessonsForActiveGroup() {
   else if (group === "N2 Lessons") addStandard("Lesson", 76, 100);
   else if (group === "N1 Lessons") addStandard("Lesson", 101, 125);
   
-  else if (group === "N5 Grammer") addStandard("Grammer", 1, 25);
-  else if (group === "N4 Grammer") addStandard("Grammer", 26, 50);
-  else if (group === "N3 Grammer") addStandard("Grammer", 51, 75);
-  else if (group === "N2 Grammer") addStandard("Grammer", 76, 100);
-  else if (group === "N1 Grammer") addStandard("Grammer", 101, 125);
+  else if (group === "N5 Grammer") addStandard("Grm", 1, 25);
+  else if (group === "N4 Grammer") addStandard("Grm", 26, 50);
+  else if (group === "N3 Grammer") addStandard("Grm", 51, 75);
+  else if (group === "N2 Grammer") addStandard("Grm", 76, 100);
+  else if (group === "N1 Grammer") addStandard("Grm", 101, 125);
   
   else if (group === "N5 Grammer Others") addCustom(" G5");
   else if (group === "N4 Grammer Others") addCustom(" G4");
@@ -920,6 +941,7 @@ function getLessonsForActiveGroup() {
              !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
              !k.match(/^Lesson\s+\d+/i) && 
              !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grm\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
              !k.match(/^Sentence\s+\d+/i) && 
@@ -1141,10 +1163,10 @@ function isWordVisible(word) {
       if (c.includes("N2 Kanji")) { associations.push({ level: "N2", group: "Kanji" }); return; }
       if (c.includes("N1 Kanji")) { associations.push({ level: "N1", group: "Kanji" }); return; }
 
-      // Grammer
-      m = c.match(/^Grammer\s+(\d+)/i);
+      // Grm / Grammer
+      m = c.match(/^(Grm|Grammer)\s+(\d+)/i);
       if (m) {
-        const num = parseInt(m[1], 10);
+        const num = parseInt(m[2], 10);
         if (num >= 1 && num <= 25) associations.push({ level: "N5", group: null });
         else if (num >= 26 && num <= 50) associations.push({ level: "N4", group: null });
         else if (num >= 51 && num <= 75) associations.push({ level: "N3", group: null });
@@ -1213,7 +1235,7 @@ function isWordVisible(word) {
       return false;
     }
     const isStandardLesson = c.match(/^Lesson\s+\d+/i);
-    const isStandardGrammer = c.match(/^Grammer\s+\d+/i);
+    const isStandardGrammer = c.match(/^(Grm|Grammer)\s+\d+/i);
     const isStandardExtra = c.match(/^Extra\s+\d+/i);
     const isStandardGenki = c.match(/^Genki\s+\d+/i);
     if (isStandardLesson || isStandardGrammer || isStandardExtra || isStandardGenki) {
@@ -1444,6 +1466,7 @@ function populateHiddenCategoriesUI() {
              !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
              !k.match(/^Lesson\s+\d+/i) && 
              !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grm\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
              !k.match(/^Sentence\s+\d+/i) && 
@@ -1670,6 +1693,7 @@ function renderCards() {
   const managementPanel = document.querySelector('.management-panel');
   if (toggleGroup) toggleGroup.style.display = (isShowAll || isSimilar || isSameMeaning || isSameRomaji) ? 'none' : 'flex';
   if (managementPanel) managementPanel.style.display = (isShowAll || isSimilar || isSameMeaning || isSameRomaji) ? 'none' : 'flex';
+  updateQuickLgeButtons();
 
   if (isSimilar) {
     if (emptyState) emptyState.classList.add('hidden');
@@ -1853,6 +1877,7 @@ function renderCards() {
   });
 
   updateManagementButtons();
+  updateQuickLgeButtons();
 }
 
 // Card Click selection handler
@@ -2048,15 +2073,15 @@ function moveSelectedUp() {
   if (!list || list.length === 0) return;
 
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-  const firstSelected = selectedIdxs[0];
-  if (firstSelected === 0) return; // Already at top, do nothing
+  if (selectedIdxs.length === 0) return;
 
-  if (selectedIdxs[0] === 0) return; // Already at top, do nothing
+  const isAllAtTop = selectedIdxs.every((idx, i) => idx === i);
+  if (isAllAtTop) return; // Already at top, do nothing
 
   const selectedElements = selectedIdxs.map(idx => list[idx]);
   const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
 
-  const insertIdx = firstSelected - 1;
+  const insertIdx = Math.max(0, selectedIdxs[0] - 1);
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
@@ -2065,8 +2090,6 @@ function moveSelectedUp() {
   for (let i = 0; i < selectedElements.length; i++) {
     newSelectedIdxs.push(insertIdx + i);
   }
-
-  currentSettings.selectedWordIndices = newSelectedIdxs;
 
   // Update selection and focus
   currentSettings.selectedWordIndices = newSelectedIdxs;
@@ -2090,13 +2113,15 @@ function moveSelectedDown() {
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
   if (selectedIdxs.length === 0) return;
 
-  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
-  if (lastSelected === list.length - 1) return; // Already at bottom, do nothing
+  const k = selectedIdxs.length;
+  const isAllAtBottom = selectedIdxs.every((idx, i) => idx === (list.length - k + i));
+  if (isAllAtBottom) return; // Already at bottom, do nothing
 
+  const lastSelected = selectedIdxs[selectedIdxs.length - 1];
   const selectedElements = selectedIdxs.map(idx => list[idx]);
   const unselectedElements = list.filter((_, idx) => !selectedIdxs.includes(idx));
 
-  const insertIdx = (lastSelected + 2) - selectedIdxs.length;
+  const insertIdx = Math.max(0, Math.min(unselectedElements.length, (lastSelected + 2) - selectedIdxs.length));
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
   currentWordsDb[currentKey] = unselectedElements;
 
@@ -2152,11 +2177,11 @@ function isMultiCategoryImportText(text) {
   const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
   if (lines.length === 0) return false;
   const firstLine = lines[0];
-  return /^(Extra|Lesson|Genki|Genji|Grammer|Grammar)\s+(\d+)$/i.test(firstLine);
+  return /^(Extra|Lesson|Genki|Genji|Grammer|Grammar|Grm)\s+(\d+)$/i.test(firstLine);
 }
 
 function normalizeCategoryHeader(headerLine) {
-  const m = headerLine.trim().match(/^(Extra|Lesson|Genki|Genji|Grammer|Grammar)\s+(\d+)$/i);
+  const m = headerLine.trim().match(/^(Extra|Lesson|Genki|Genji|Grammer|Grammar|Grm)\s+(\d+)$/i);
   if (!m) return null;
   let prefix = m[1];
   const num = parseInt(m[2], 10);
@@ -2164,7 +2189,7 @@ function normalizeCategoryHeader(headerLine) {
   if (/^extra$/i.test(prefix)) prefix = "Extra";
   else if (/^lesson$/i.test(prefix)) prefix = "Lesson";
   else if (/^(genki|genji)$/i.test(prefix)) prefix = "Genki";
-  else if (/^(grammer|grammar)$/i.test(prefix)) prefix = "Grammer";
+  else if (/^(grammer|grammar|grm)$/i.test(prefix)) prefix = "Grm";
   
   return `${prefix} ${String(num).padStart(2, '0')}`;
 }
@@ -2530,6 +2555,18 @@ function showQuizQuestion() {
 
   updateQuizNavigationButtons();
 
+  // Update Quiz Info Button Visibility based on Points data
+  const btnQuizInfo = document.getElementById('btn-quiz-info');
+  if (btnQuizInfo) {
+    const pointsData = getPointsForWord(word);
+    if (pointsData && pointsData.length > 0) {
+      btnQuizInfo.classList.remove('hidden');
+      btnQuizInfo.title = pointsData.length > 1 ? `View Word Notes & Comparisons (${pointsData.length}) (I)` : 'View Word Notes & Comparison (I)';
+    } else {
+      btnQuizInfo.classList.add('hidden');
+    }
+  }
+
   const belongs = belongsToAnyCustomCategory(word);
   if (belongs) {
     qBox.classList.add('atleast-one-category');
@@ -2669,6 +2706,8 @@ function finishQuiz() {
   document.getElementById('btn-quiz-prev').classList.add('hidden');
   document.getElementById('btn-quiz-next').classList.add('hidden');
   document.getElementById('btn-quiz-flag').classList.add('hidden');
+  const btnQuizInfo = document.getElementById('btn-quiz-info');
+  if (btnQuizInfo) btnQuizInfo.classList.add('hidden');
 
   // Show Completion Controls
   const completionControls = document.getElementById('quiz-completion-controls');
@@ -2931,12 +2970,23 @@ function openModal(modalId) {
 }
 
 function closeActiveModal() {
+  const pointsModal = document.getElementById('modal-points-info');
+  const quizModal = document.getElementById('modal-quiz');
+  
+  // If points info modal is open on top of active quiz modal, close only points modal
+  if (pointsModal && !pointsModal.classList.contains('hidden') && quizModal && !quizModal.classList.contains('hidden')) {
+    pointsModal.classList.add('hidden');
+    stopSpeech();
+    return;
+  }
+
   document.getElementById('modal-backdrop').classList.add('hidden');
   document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden'));
 
   // Reset quiz panel view back to setup mode if quiz was closed
   document.getElementById('quiz-setup-view').classList.remove('hidden');
   document.getElementById('quiz-active-view').classList.add('hidden');
+  stopSpeech();
 }
 
 // Populate Flagged words modal interface
@@ -3042,6 +3092,69 @@ function navigateLessonCategory(direction) {
   saveSettings();
   renderCards();
   showToast(`Category: ${targetCategory}`, 'info');
+}
+
+function updateQuickLgeButtons() {
+  const container = document.getElementById('quick-lge-group');
+  const btnL = document.getElementById('btn-quick-lesson');
+  const btnG = document.getElementById('btn-quick-grammer');
+  const btnE = document.getElementById('btn-quick-extra');
+  
+  if (!container || !btnL || !btnG || !btnE) return;
+
+  const currentLesson = currentSettings.currentLesson || "";
+  const m = currentLesson.match(/^(Lesson|Grm|Grammer|Grammar|Extra|Genki|Listening|Sentence)\s+(\d+)/i);
+  
+  if (!m) {
+    container.style.display = "none";
+    return;
+  }
+  
+  container.style.display = "flex";
+  const type = m[1].toLowerCase();
+  
+  if (type === 'lesson') {
+    btnL.style.display = 'none';
+    btnG.style.display = 'inline-flex';
+    btnE.style.display = 'inline-flex';
+  } else if (type === 'grm' || type === 'grammer' || type === 'grammar') {
+    btnL.style.display = 'inline-flex';
+    btnG.style.display = 'none';
+    btnE.style.display = 'inline-flex';
+  } else if (type === 'extra') {
+    btnL.style.display = 'inline-flex';
+    btnG.style.display = 'inline-flex';
+    btnE.style.display = 'none';
+  } else {
+    btnL.style.display = 'inline-flex';
+    btnG.style.display = 'inline-flex';
+    btnE.style.display = 'inline-flex';
+  }
+}
+
+function switchCategoryType(targetType) {
+  const currentLesson = currentSettings.currentLesson || "";
+  const m = currentLesson.match(/^(Lesson|Grm|Grammer|Grammar|Extra|Genki|Listening|Sentence)\s+(\d+)/i);
+  if (!m) {
+    showToast(`Current category does not have a number to switch to ${targetType}.`, 'warning');
+    return;
+  }
+  
+  const num = parseInt(m[2], 10);
+  const formattedNum = String(num).padStart(2, '0');
+  
+  let targetCategory = "";
+  if (targetType === 'L') {
+    targetCategory = `Lesson ${formattedNum}`;
+  } else if (targetType === 'G') {
+    targetCategory = `Grm ${formattedNum}`;
+  } else if (targetType === 'E') {
+    targetCategory = `Extra ${formattedNum}`;
+  }
+  
+  if (!targetCategory || targetCategory === currentLesson) return;
+  
+  jumpToCategory(targetCategory);
 }
 
 function navigateActiveGroup(direction) {
@@ -3203,6 +3316,8 @@ function populateQuizSetupLessons() {
 
 function openQuizModal() {
   populateQuizSetupLessons();
+  const btnQuizInfo = document.getElementById('btn-quiz-info');
+  if (btnQuizInfo) btnQuizInfo.classList.add('hidden');
   openModal('modal-quiz');
 }
 
@@ -3328,11 +3443,11 @@ function populateLessonsDropdown() {
   else if (group === "N2 Lessons") addStandard(lessonsList, "Lesson", 76, 100);
   else if (group === "N1 Lessons") addStandard(lessonsList, "Lesson", 101, 125);
   
-  else if (group === "N5 Grammer") addStandard(grammerList, "Grammer", 1, 25);
-  else if (group === "N4 Grammer") addStandard(grammerList, "Grammer", 26, 50);
-  else if (group === "N3 Grammer") addStandard(grammerList, "Grammer", 51, 75);
-  else if (group === "N2 Grammer") addStandard(grammerList, "Grammer", 76, 100);
-  else if (group === "N1 Grammer") addStandard(grammerList, "Grammer", 101, 125);
+  else if (group === "N5 Grammer") addStandard(grammerList, "Grm", 1, 25);
+  else if (group === "N4 Grammer") addStandard(grammerList, "Grm", 26, 50);
+  else if (group === "N3 Grammer") addStandard(grammerList, "Grm", 51, 75);
+  else if (group === "N2 Grammer") addStandard(grammerList, "Grm", 76, 100);
+  else if (group === "N1 Grammer") addStandard(grammerList, "Grm", 101, 125);
   
   else if (group === "N5 Grammer Others") addCustom(othersList, " G5");
   else if (group === "N4 Grammer Others") addCustom(othersList, " G4");
@@ -3458,6 +3573,7 @@ function populateLessonsDropdown() {
   }
 
   populateHiddenCategoriesUI();
+  updateQuickLgeButtons();
 }
 
 function createCustomCategory() {
@@ -3504,7 +3620,7 @@ function createCustomCategory() {
   }
   
   const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji"];
-  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ") || trimmed.startsWith("Sentence ") || trimmed.startsWith("Listening ") || trimmed.startsWith("Dumps ")) {
+  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grm ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ") || trimmed.startsWith("Sentence ") || trimmed.startsWith("Listening ") || trimmed.startsWith("Dumps ")) {
     showToast("This name is reserved or invalid.", "danger");
     return;
   }
@@ -3694,10 +3810,10 @@ function parsePointsData(rawText) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmed = line.trim();
-    if (!trimmed) continue;
+    if (trimmed === 'var allPoints = `' || trimmed === '`') continue;
 
     // Check if top-level header (no leading whitespace)
-    const isTopLevel = !line.startsWith(' ') && !line.startsWith('\t');
+    const isTopLevel = trimmed && !line.startsWith(' ') && !line.startsWith('\t');
     if (isTopLevel) {
       if (currentBlock) {
         blocks.push(currentBlock);
@@ -3718,43 +3834,58 @@ function parsePointsData(rawText) {
     blocks.push(currentBlock);
   }
 
-  function isSubheader(line, keywords) {
+  function getIndent(line) {
+    const m = line.match(/^([ \t]+)/);
+    if (!m) return 0;
+    return m[1].replace(/\t/g, '    ').length;
+  }
+
+  function isSubheaderLine(line, minIndent, maxIndent, keywords) {
     const trimmed = line.trim();
     if (!trimmed) return false;
+    
+    // Multi-level indentation hierarchy (e.g. Mawari, Temae, Shibaraku, or multi-level vs blocks)
+    if (maxIndent > minIndent && getIndent(line) === minIndent) {
+      return true;
+    }
+
     const withoutColon = trimmed.replace(/:+$/, '').trim();
     const cleaned = cleanWordForMatching(withoutColon);
-    
-    // Check if matches one of the block keywords (e.g. toshi, machi, tokai, shussekishimasu)
     if (keywords && keywords.includes(cleaned)) return true;
-    
-    // Check if ends with colon and looks like a header label (short, no quotes or sentence punctuation)
     if (trimmed.endsWith(':') && withoutColon.length <= 50 && !trimmed.includes('"') && !trimmed.includes('”') && !/[.!?]$/.test(withoutColon)) {
       return true;
     }
-    
     return false;
   }
 
   return blocks.map(block => {
     const rawLines = block.rawLines;
+    const nonEmptyLines = rawLines.filter(l => l.trim().length > 0);
+    const indents = nonEmptyLines.map(l => getIndent(l));
+    const minIndent = indents.length > 0 ? Math.min(...indents) : 0;
+    const maxIndent = indents.length > 0 ? Math.max(...indents) : 0;
+
     const sections = [];
     let currentSection = null;
 
     let hasSubHeaders = false;
     for (const line of rawLines) {
-      if (isSubheader(line, block.keywords)) {
+      if (isSubheaderLine(line, minIndent, maxIndent, block.keywords)) {
         hasSubHeaders = true;
         break;
       }
     }
 
     if (hasSubHeaders) {
-      for (const line of rawLines) {
+      for (let i = 0; i < rawLines.length; i++) {
+        const line = rawLines[i];
         const trimmed = line.trim();
-        if (!trimmed) continue;
 
-        if (isSubheader(line, block.keywords)) {
+        if (isSubheaderLine(line, minIndent, maxIndent, block.keywords)) {
           if (currentSection) {
+            while (currentSection.lines.length > 0 && currentSection.lines[currentSection.lines.length - 1] === "") {
+              currentSection.lines.pop();
+            }
             sections.push(currentSection);
           }
           currentSection = {
@@ -3762,17 +3893,40 @@ function parsePointsData(rawText) {
             lines: []
           };
         } else if (currentSection) {
-          currentSection.lines.push(trimmed);
+          if (!trimmed) {
+            // Preserve empty line between paragraphs (collapsed to max 1)
+            if (currentSection.lines.length > 0 && currentSection.lines[currentSection.lines.length - 1] !== "") {
+              currentSection.lines.push("");
+            }
+          } else {
+            currentSection.lines.push(trimmed);
+          }
         }
       }
       if (currentSection) {
+        while (currentSection.lines.length > 0 && currentSection.lines[currentSection.lines.length - 1] === "") {
+          currentSection.lines.pop();
+        }
         sections.push(currentSection);
       }
     } else {
-      const contentLines = rawLines.map(l => l.trim()).filter(Boolean);
+      const linesWithBlanks = [];
+      for (const line of rawLines) {
+        const trimmed = line.trim();
+        if (!trimmed) {
+          if (linesWithBlanks.length > 0 && linesWithBlanks[linesWithBlanks.length - 1] !== "") {
+            linesWithBlanks.push("");
+          }
+        } else {
+          linesWithBlanks.push(trimmed);
+        }
+      }
+      while (linesWithBlanks.length > 0 && linesWithBlanks[linesWithBlanks.length - 1] === "") {
+        linesWithBlanks.pop();
+      }
       sections.push({
         title: block.rawHeader,
-        lines: contentLines
+        lines: linesWithBlanks
       });
     }
 
@@ -3801,21 +3955,25 @@ function getPointsForWord(word) {
 
   const cleanRomaji = cleanWordForMatching(word.romaji);
   if (!cleanRomaji) return null;
+  const cleanRomajiNorm = cleanRomaji.replace(/du/g, 'zu');
 
   const matchedBlocks = [];
   for (const block of blocks) {
     let isMatch = false;
     for (const keyword of block.keywords) {
-      if (cleanRomaji === keyword) {
+      const keywordNorm = keyword.replace(/du/g, 'zu');
+      if (cleanRomaji === keyword || cleanRomajiNorm === keywordNorm) {
         isMatch = true;
         break;
       }
       const tokens = cleanRomaji.split(/\s+/);
-      if (tokens.includes(keyword)) {
+      const tokensNorm = cleanRomajiNorm.split(/\s+/);
+      if (tokens.includes(keyword) || tokensNorm.includes(keywordNorm)) {
         isMatch = true;
         break;
       }
-      if (cleanRomaji.endsWith(" " + keyword) || cleanRomaji.startsWith(keyword + " ")) {
+      if (cleanRomaji.endsWith(" " + keyword) || cleanRomaji.startsWith(keyword + " ") ||
+          cleanRomajiNorm.endsWith(" " + keywordNorm) || cleanRomajiNorm.startsWith(keywordNorm + " ")) {
         isMatch = true;
         break;
       }
@@ -3827,6 +3985,8 @@ function getPointsForWord(word) {
   return matchedBlocks.length > 0 ? matchedBlocks : null;
 }
 
+let currentPointsSpeechText = "";
+
 function openPointsInfoModal(pointsData, word) {
   if (!pointsData) return;
   const blocks = Array.isArray(pointsData) ? pointsData : [pointsData];
@@ -3835,6 +3995,8 @@ function openPointsInfoModal(pointsData, word) {
   const titleEl = document.getElementById('points-info-title');
   const bodyEl = document.getElementById('points-info-body');
   if (!titleEl || !bodyEl) return;
+
+  stopSpeech();
 
   if (blocks.length === 1) {
     titleEl.textContent = blocks[0].rawHeader || "Word Notes & Comparison";
@@ -3845,6 +4007,8 @@ function openPointsInfoModal(pointsData, word) {
 
   const container = document.createElement('div');
   container.className = 'points-content-wrapper';
+
+  const speechParts = [];
 
   blocks.forEach((block, bIdx) => {
     if (bIdx > 0) {
@@ -3861,6 +4025,7 @@ function openPointsInfoModal(pointsData, word) {
       blockTitle.className = 'points-block-title';
       blockTitle.textContent = block.rawHeader;
       blockWrapper.appendChild(blockTitle);
+      speechParts.push(block.rawHeader);
     }
 
     block.sections.forEach((sec, sIdx) => {
@@ -3873,22 +4038,49 @@ function openPointsInfoModal(pointsData, word) {
       const secBox = document.createElement('div');
       secBox.className = 'points-section-box';
 
-      if (block.sections.length > 1 || sec.title.toLowerCase() !== (block.rawHeader || "").toLowerCase()) {
+      const showSecTitle = block.sections.length > 1 || sec.title.toLowerCase() !== (block.rawHeader || "").toLowerCase();
+      if (showSecTitle) {
         const h4 = document.createElement('h4');
         h4.className = 'points-section-title';
         h4.textContent = sec.title;
         secBox.appendChild(h4);
+        speechParts.push(sec.title);
       }
 
       if (sec.lines && sec.lines.length > 0) {
-        const ul = document.createElement('ul');
-        ul.className = 'points-lines-list';
+        // Group consecutive non-empty lines, separating groups with an empty spacer
+        const groups = [];
+        let currentGroup = [];
         sec.lines.forEach(lineText => {
-          const li = document.createElement('li');
-          li.textContent = lineText;
-          ul.appendChild(li);
+          if (lineText.trim() === "") {
+            if (currentGroup.length > 0) {
+              groups.push(currentGroup);
+              currentGroup = [];
+            }
+          } else {
+            currentGroup.push(lineText);
+            speechParts.push(lineText);
+          }
         });
-        secBox.appendChild(ul);
+        if (currentGroup.length > 0) {
+          groups.push(currentGroup);
+        }
+
+        groups.forEach((group, gIdx) => {
+          if (gIdx > 0) {
+            const spacer = document.createElement('div');
+            spacer.className = 'points-lines-spacer';
+            secBox.appendChild(spacer);
+          }
+          const ul = document.createElement('ul');
+          ul.className = 'points-lines-list';
+          group.forEach(lineText => {
+            const li = document.createElement('li');
+            li.textContent = lineText;
+            ul.appendChild(li);
+          });
+          secBox.appendChild(ul);
+        });
       }
 
       blockWrapper.appendChild(secBox);
@@ -3899,7 +4091,14 @@ function openPointsInfoModal(pointsData, word) {
 
   bodyEl.appendChild(container);
   openModal('modal-points-info');
+
+  // Read out points data in English voice
+  currentPointsSpeechText = speechParts.map(p => p.trim().replace(/[.:]+$/, '')).join('. ');
+  if (currentPointsSpeechText) {
+    speakText(currentPointsSpeechText, 'en');
+  }
 }
+
 
 function getAutoGroup1Words() {
   const allWords = getShowAllWords();
@@ -4413,6 +4612,7 @@ function openCategorySelectorModal(customWordsList = null) {
            !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
            !k.match(/^Lesson\s+\d+/i) && 
            !k.match(/^Kanji\s+\d+/i) && 
+           !k.match(/^Grm\s+\d+/i) && 
            !k.match(/^Grammer\s+\d+/i) && 
            !k.match(/^Extra\s+\d+/i) && 
            !k.match(/^Sentence\s+\d+/i) && 
@@ -4638,11 +4838,51 @@ function getAllAppCategories() {
   }
 
   cats.sort((a, b) => {
+    const rankA = getCategoryTypeRank(a.name, a.group);
+    const rankB = getCategoryTypeRank(b.name, b.group);
+    if (rankA !== rankB) {
+      return rankA - rankB;
+    }
     const cleanA = cleanCategoryNameForUI(a.name);
     const cleanB = cleanCategoryNameForUI(b.name);
     return cleanA.localeCompare(cleanB, undefined, { numeric: true, sensitivity: 'base' });
   });
   return cats;
+}
+
+function getCategoryTypeRank(catName, groupName) {
+  const clean = cleanCategoryNameForUI(catName).toLowerCase();
+  const raw = (catName || "").toLowerCase();
+  const group = (groupName || "").toLowerCase();
+
+  if (clean.startsWith("lesson ") || raw.startsWith("lesson ") || group.includes("lessons")) return 1;
+  if (clean.startsWith("extra ") || raw.startsWith("extra ") || group.includes("extra")) return 2;
+  if (clean.startsWith("grm ") || clean.startsWith("grammer ") || raw.startsWith("grm ") || raw.startsWith("grammer ") || group.includes("grammer")) return 3;
+  if (clean.includes("dump") || raw.includes("dump") || group.includes("dump")) return 4;
+  if (clean.startsWith("genki ") || raw.startsWith("genki ") || group.includes("genki")) return 5;
+  if (clean.startsWith("listening ") || raw.startsWith("listening ") || group.includes("listening")) return 6;
+  if (clean.startsWith("sentence ") || raw.startsWith("sentence ") || group.includes("sentence")) return 7;
+  if (clean.includes("kanji") || raw.includes("kanji") || group.includes("kanji")) return 8;
+  return 9;
+}
+
+function getCategoryNumbers(item) {
+  const numbers = new Set();
+  const cleanName = cleanCategoryNameForUI(item.name);
+  const rawName = item.name;
+  
+  const regexClean = /(\d+)/g;
+  let m;
+  while ((m = regexClean.exec(cleanName)) !== null) {
+    numbers.add(parseInt(m[1], 10));
+  }
+  
+  const mRaw = rawName.match(/^(Lesson|Extra|Grm|Grammer|Genki|Listening|Sentence|Kanji)\s+(\d+)/i);
+  if (mRaw) {
+    numbers.add(parseInt(mRaw[2], 10));
+  }
+
+  return Array.from(numbers);
 }
 
 function initCategoryJump() {
@@ -4651,15 +4891,51 @@ function initCategoryJump() {
   if (!jumpInput || !jumpResults) return;
 
   jumpInput.addEventListener('input', () => {
-    const query = jumpInput.value.trim().toLowerCase();
+    const rawQuery = jumpInput.value.trim();
+    const query = rawQuery.toLowerCase();
     const allCats = getAllAppCategories();
     activeCategoryJumpIndex = -1;
 
     if (query.length > 0) {
-      categoryJumpMatches = allCats.filter(c => {
-        const cleanName = cleanCategoryNameForUI(c.name).toLowerCase();
-        const groupName = (c.group || "").toLowerCase();
-        return cleanName.includes(query) || groupName.includes(query);
+      const isNumericOnly = /^\d+$/.test(query);
+      const prefixNumberMatch = query.match(/^([a-z]+)\s*(\d+)$/i);
+
+      if (isNumericOnly) {
+        const targetNum = parseInt(query, 10);
+        categoryJumpMatches = allCats.filter(c => {
+          const nums = getCategoryNumbers(c);
+          return nums.includes(targetNum);
+        });
+      } else if (prefixNumberMatch) {
+        const prefix = prefixNumberMatch[1];
+        const targetNum = parseInt(prefixNumberMatch[2], 10);
+        categoryJumpMatches = allCats.filter(c => {
+          const clean = cleanCategoryNameForUI(c.name).toLowerCase();
+          const raw = c.name.toLowerCase();
+          const group = (c.group || "").toLowerCase();
+          const prefixMatches = clean.includes(prefix) || raw.includes(prefix) || group.includes(prefix);
+          if (!prefixMatches) return false;
+          const nums = getCategoryNumbers(c);
+          return nums.includes(targetNum);
+        });
+      } else {
+        categoryJumpMatches = allCats.filter(c => {
+          const cleanName = cleanCategoryNameForUI(c.name).toLowerCase();
+          const rawName = c.name.toLowerCase();
+          const groupName = (c.group || "").toLowerCase();
+          return cleanName.includes(query) || rawName.includes(query) || groupName.includes(query);
+        });
+      }
+
+      categoryJumpMatches.sort((a, b) => {
+        const rankA = getCategoryTypeRank(a.name, a.group);
+        const rankB = getCategoryTypeRank(b.name, b.group);
+        if (rankA !== rankB) {
+          return rankA - rankB;
+        }
+        const cleanA = cleanCategoryNameForUI(a.name);
+        const cleanB = cleanCategoryNameForUI(b.name);
+        return cleanA.localeCompare(cleanB, undefined, { numeric: true, sensitivity: 'base' });
       });
     } else {
       categoryJumpMatches = allCats;
@@ -4821,8 +5097,8 @@ function determineGroupForCategory(lessonKey) {
     if (num >= 1 && num <= 20) return "N5 Kanji";
     if (num === 21) return "N4 Kanji";
     if (num >= 41 && num <= 60) return "N3 Kanji";
-  } else if (baseKey.match(/^Grammer\s+(\d+)/i)) {
-    const num = parseInt(baseKey.match(/^Grammer\s+(\d+)/i)[1], 10);
+  } else if (baseKey.match(/^(Grm|Grammer)\s+(\d+)/i)) {
+    const num = parseInt(baseKey.match(/^(Grm|Grammer)\s+(\d+)/i)[2], 10);
     if (num >= 1 && num <= 25) return "N5 Grammer";
     if (num >= 26 && num <= 50) return "N4 Grammer";
     if (num >= 51 && num <= 75) return "N3 Grammer";
@@ -5328,6 +5604,38 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-import').addEventListener('click', () => openModal('modal-import'));
   document.getElementById('btn-empty-import').addEventListener('click', () => openModal('modal-import'));
 
+  // Category Navigation & Quick L/G/E Buttons
+  const btnPrevCat = document.getElementById('btn-nav-prev-cat');
+  if (btnPrevCat) {
+    btnPrevCat.addEventListener('click', () => navigateLessonCategory('prev'));
+  }
+  const btnNextCat = document.getElementById('btn-nav-next-cat');
+  if (btnNextCat) {
+    btnNextCat.addEventListener('click', () => navigateLessonCategory('next'));
+  }
+  const btnQuickL = document.getElementById('btn-quick-lesson');
+  if (btnQuickL) {
+    btnQuickL.addEventListener('click', () => switchCategoryType('L'));
+  }
+  const btnQuickG = document.getElementById('btn-quick-grammer');
+  if (btnQuickG) {
+    btnQuickG.addEventListener('click', () => switchCategoryType('G'));
+  }
+  const btnQuickE = document.getElementById('btn-quick-extra');
+  if (btnQuickE) {
+    btnQuickE.addEventListener('click', () => switchCategoryType('E'));
+  }
+
+  const btnPointsSpeak = document.getElementById('btn-points-speak');
+  if (btnPointsSpeak) {
+    btnPointsSpeak.addEventListener('click', () => {
+      if (currentPointsSpeechText) {
+        stopSpeech();
+        speakText(currentPointsSpeechText, 'en');
+      }
+    });
+  }
+
   // Management controls
   document.getElementById('btn-move-to-hard').addEventListener('click', moveSelectedToHard);
   document.getElementById('btn-move-to-normal').addEventListener('click', moveSelectedToNormal);
@@ -5590,6 +5898,18 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-quiz-prev').addEventListener('click', prevQuizQuestion);
   document.getElementById('btn-quiz-next').addEventListener('click', nextQuizQuestion);
   document.getElementById('btn-quiz-flag').addEventListener('click', flagCurrentQuizWord);
+  const btnQuizInfo = document.getElementById('btn-quiz-info');
+  if (btnQuizInfo) {
+    btnQuizInfo.addEventListener('click', () => {
+      if (quizCurrentIndex >= 0 && quizCurrentIndex < quizWords.length) {
+        const quizWord = quizWords[quizCurrentIndex];
+        const pointsData = getPointsForWord(quizWord);
+        if (pointsData && pointsData.length > 0) {
+          openPointsInfoModal(pointsData, quizWord);
+        }
+      }
+    });
+  }
 
   // Typing submit event on enter key
   document.getElementById('quiz-typed-answer').addEventListener('keydown', (e) => {
@@ -5727,6 +6047,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isInputFocused) {
               e.preventDefault();
               restartCurrentQuiz();
+              return;
+            }
+          }
+
+          if (e.key === 'i' || e.key === 'I') {
+            if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+            if (!isInputFocused) {
+              e.preventDefault();
+              if (quizCurrentIndex >= 0 && quizCurrentIndex < quizWords.length) {
+                const quizWord = quizWords[quizCurrentIndex];
+                const pointsData = getPointsForWord(quizWord);
+                if (pointsData && pointsData.length > 0) {
+                  openPointsInfoModal(pointsData, quizWord);
+                } else {
+                  showToast(`No additional notes found for "${quizWord.japanese}".`, 'info');
+                }
+              }
               return;
             }
           }
@@ -5887,14 +6224,41 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         deleteSelected();
         break;
+      case 'w':
+      case 'W':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        const selectLessonEl = document.querySelector('#select-lesson');
+        if (selectLessonEl) selectLessonEl.focus();
+        break;
+      case 'l':
+      case 'L':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        switchCategoryType('L');
+        break;
+      case 'g':
+      case 'G':
+        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        e.preventDefault();
+        switchCategoryType('G');
+        break;
       case 'e':
       case 'E':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
-        if (!currentSettings.isSelectionModeActive) {
-          if (currentSettings.focusedWordIndex >= 0) {
-            e.preventDefault();
-            openWordEditModal(currentSettings.currentLesson, currentSettings.focusedWordIndex);
-          }
+        e.preventDefault();
+        const activeWordsForEdit = getActiveWords();
+        let editWordIdx = -1;
+        if (currentSettings.focusedWordIndex >= 0 && currentSettings.focusedWordIndex < activeWordsForEdit.length) {
+          editWordIdx = currentSettings.focusedWordIndex;
+        } else if (currentSettings.selectedWordIndices.length > 0 && currentSettings.selectedWordIndices[0] < activeWordsForEdit.length) {
+          editWordIdx = currentSettings.selectedWordIndices[0];
+        }
+
+        if (editWordIdx >= 0) {
+          openWordEditModal(currentSettings.currentLesson, editWordIdx);
+        } else {
+          switchCategoryType('E');
         }
         break;
       case 'q':
@@ -5949,19 +6313,24 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'I':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
-        const btnImport = document.getElementById('btn-import');
-        if (btnImport) {
-          btnImport.click();
-          setTimeout(() => {
-            const txt = document.getElementById('import-text');
-            if (txt) txt.focus();
-          }, 100);
+        const activeW = getActiveWords();
+        let targetW = null;
+        if (currentSettings.focusedWordIndex >= 0 && currentSettings.focusedWordIndex < activeW.length) {
+          targetW = activeW[currentSettings.focusedWordIndex];
+        } else if (currentSettings.selectedWordIndices.length > 0 && currentSettings.selectedWordIndices[0] < activeW.length) {
+          targetW = activeW[currentSettings.selectedWordIndices[0]];
+        }
+        if (targetW) {
+          const pointsData = getPointsForWord(targetW);
+          if (pointsData && pointsData.length > 0) {
+            openPointsInfoModal(pointsData, targetW);
+          } else {
+            showToast(`No additional notes found for "${targetW.japanese}".`, 'info');
+          }
+        } else {
+          showToast("Select a word card to view notes.", "info");
         }
         break;
-      case 'l':
-      case 'L':
-          var selectLesson = document.querySelector('#select-lesson');
-          selectLesson.focus();
       case 'c':
       case 'C':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
@@ -6045,7 +6414,7 @@ function handleShiftDigit(digit) {
   if (currentGroup.includes("Kanji")) {
     mode = "Kanji";
   } else if (currentGroup.includes("Grammer")) {
-    mode = "Grammer";
+    mode = "Grm";
   } else if (currentGroup.includes("Extra")) {
     mode = "Extra";
   } else if (currentGroup.includes("Sentences")) {
@@ -6097,9 +6466,9 @@ function switchLessonOrKanjiDirectly(num, mode) {
 
     if (num < 1) num = 1;
     
-    if (mode === "Grammer" || mode === "Extra" || mode === "Lesson" || mode === "Sentence") {
-      prefix = mode;
-      targetGroup = `${level} ${mode === "Lesson" ? "Lessons" : mode === "Sentence" ? "Sentences" : mode}`;
+    if (mode === "Grm" || mode === "Grammer" || mode === "Extra" || mode === "Lesson" || mode === "Sentence") {
+      prefix = (mode === "Grammer") ? "Grm" : mode;
+      targetGroup = `${level} ${mode === "Lesson" ? "Lessons" : mode === "Sentence" ? "Sentences" : (mode === "Grm" || mode === "Grammer") ? "Grammer" : mode}`;
       let baseStart = levelIndex * 25 + 1; // N5: 1, N4: 26, N3: 51, N2: 76, N1: 101
       let baseEnd = baseStart + 24;        // N5: 25, N4: 50, N3: 75, N2: 100, N1: 125
       let internalNum = num;

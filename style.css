@@ -420,6 +420,14 @@ html[data-theme="light"] .moon-icon { display: block; }
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Action Controls */
+.action-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
 /* Action Controls Buttons Grid */
 .action-buttons-grid {
   display: flex;
@@ -438,6 +446,14 @@ html[data-theme="light"] .moon-icon { display: block; }
   font-size: 0.95rem;
   font-weight: 600;
   box-sizing: border-box;
+}
+
+.action-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 /* Keyboard Helpers Info */
@@ -829,6 +845,10 @@ html[data-theme="light"] .moon-icon { display: block; }
 }
 .btn-close-modal:hover {
   color: var(--text-primary);
+}
+#btn-quiz-info:hover {
+  color: var(--accent) !important;
+  transform: scale(1.15);
 }
 
 .modal-body {
@@ -1717,6 +1737,9 @@ html[data-theme="dark"] .btn-card-info {
 .points-lines-list li {
   list-style-type: disc;
 }
+.points-lines-spacer {
+  height: 0.65rem;
+}
 .points-divider {
   border: none;
   border-top: 1px dashed var(--border-color);
@@ -1961,4 +1984,60 @@ body:not(.selection-mode-active) #btn-copy-to {
 }
 #btn-quiz-flag:hover {
   color: var(--accent) !important;
+}
+
+/* Quick Category Switch (L, G, E) & Navigation Buttons */
+.quick-lge-group {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.btn-lge {
+  padding: 0 0.75rem !important;
+  height: 38px !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  min-width: 38px !important;
+  flex: 1;
+  max-width: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.btn-lge:hover {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+  border-color: var(--accent) !important;
+  transform: translateY(-1px);
+}
+
+.btn-cat-nav {
+  padding: 0 0.65rem !important;
+  height: 38px !important;
+  min-width: 44px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-cat-nav:hover {
+  background-color: var(--border-color);
+  color: var(--accent);
 }
