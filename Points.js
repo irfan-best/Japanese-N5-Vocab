@@ -900,6 +900,76 @@ Tsuushinhanbai:
     Tsuushin: Communication / Telecommunication
     hanbai: Sales / Selling / Marketing
 
+Takuhaibin no uketsuke:
+    takuhaibin: 
+        Home courier service
+        Noun referring to door-to-door delivery services (e.g., Kuroneko Yamato).
 
+        Taku: Home / House
+        Hai: Deliver / Distribute
+        Bin: Mail / Transport / Flight
 
-`
+Koukyou ryoukin furikomi
+    Koukyou: Public / Community
+    
+    ryoukin: Charge / Fee / Rate
+    
+    furikomi: Bank transfer / Payment
+
+Bousui kakou
+    Bousui: Waterproof / Water protection
+    kakou:  Processing / Treatment / Manufacture
+
+Hikinobashi:
+    Hiku: to pull
+    nobasu: extend
+
+Shiminuki:
+    shimi o nuku — to extract/remove a stain.
+    shimi: Noun meaning "stain," "blot," or "spot."
+    nuki: nuku - to extract, pull out, or remove.
+
+Yakimashi:
+    Yaku: to bake/burn, historically used for "developing/exposing" photographic paper
+    here exposing means - In traditional film photography, "exposing" (or exposure) refers to shining light onto light-sensitive photographic paper to create an image.
+
+    masu (mashimasu): to increase/add
+
+Oshaberishimasu:
+    shaberi: to talk/chatter
+
+Muryou
+    mu: Nothing, non-existence, without
+    ryou: fee, charge, rate.
+
+Nesshin:
+    netsu: heat, fever, passion
+    shin: Heart, mind, spirit
+
+Keiken:
+    kei: Pass through, undergo, manage. (think as -> kei of keizai)
+    ken: Test, examine, effect.  (think as -> ken of shiken)
+
+Kyuuryou:
+    kyuu: Supply, provide, pay.
+    ryou: Fee, material, compensation.
+
+Bangumi:
+    Ban: Number, order, turn.
+    gumi: Group, pair, setup
+
+Shousetsu:
+    shou -> small, minor
+    setsu -> Story, theory, talk.
+
+kanrinin:
+    kanri: manage
+
+moyori eki:
+    moyomasu: to draw near, apporach
+
+Ni-kagetsu bun:
+    bun: Portion, share, amount
+    even in kanji, minute kanji, it says part
+
+    `

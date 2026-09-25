@@ -6634,6 +6634,11 @@ someday, sometime
 Itsuka
 いつか
 
+ゆめ
+dream (～をみます：have a dream)
+Yume
+夢
+
 すばらしい
 marvelous, wonderful
 Subarashii
@@ -6724,30 +6729,10 @@ party room
 Paatiiruumu
 パーティールーム
 
-かんさいくうこう
-Kansai International Airport
-Kansai Kuukou
-※関西空港
-
-あきはばら
-name of a shopping district in Tokyo with many electrical stores
-Akihabara
-※秋葉原
-
-いず
-peninsula in Shizuoka Prefecture
-Izu
-※伊豆
-
 ほんだな
 bookshelf
 Hondana
 本棚
-
-ゆめ
-dream (～をみます：have a dream)
-Yume
-夢
 
 こどもたち
 children
@@ -6779,10 +6764,25 @@ oneself
 Jibun
 自分
 
+かんさいくうこう
+Kansai International Airport
+Kansai Kuukou
+※関西空港
+
 ドラえもん
 name of a cartoon character
 Doraemon
 ※ドラえもん
+
+あきはばら
+name of a shopping district in Tokyo with many electrical stores
+Akihabara
+※秋葉原
+
+いず
+peninsula in Shizuoka Prefecture
+Izu
+※伊豆
 
 `;
 
@@ -40684,7 +40684,7 @@ Ikura
 〜円
 
 たかい
-expensive
+expensive (plain form)
 Takai
 高い
 
@@ -48318,6 +48318,16 @@ Shuukan
 culture
 Bunka
 文化
+
+ドライクリーニング
+Dry cleaning
+Dorai kuriiningu
+ドライクリーニング
+
+クリーニング
+[dry] cleaning, laundry
+Kuriiningu
+クリーニング
 
 `;
 
@@ -58317,6 +58327,11 @@ finish
 owarimasu
 おわります
 
+[ごみが～] もえます
+burn [trash]
+[gomi ga~] Moemasu
+[ごみが～] 燃えます
+
 `;
 
 allWords["InTransitive Verbs - Hard"] = ``;
@@ -58532,6 +58547,21 @@ to come
 Kuru
 来る
 
+たべた
+ate
+Tabeta
+食べた
+
+たべない
+not eat
+Tabenai
+食べない
+
+たべなかった
+did not eat
+Tabenakatta
+食べなかった
+
 `;
 
 allWords["All Forms - Hard"] = `
@@ -58569,7 +58599,7 @@ Konai
 
 allWords["Adjective Forms"] = `
 たかい
-expensive
+expensive (plain form)
 Takai
 高い
 
@@ -58618,6 +58648,66 @@ becomes quiet
 Shizuka ni narimasu
 静かになります
 
+たかくて
+expensive (te-form)
+Takakute
+高くて
+
+しずかで
+quiet (te-form)
+Shizukade
+静かで
+
+たかいでしょう
+is probably expensive
+Takai deshou
+高いでしょう
+
+しずかでしょう
+is probably quiet
+Shizuka deshou
+静かでしょう
+
+たかい
+expensive (plain form)
+Takai
+高い
+
+たかかった
+was expensive (plain past form)
+Takakatta
+高かった
+
+しずかだ
+quiet (plain form)
+Shizuka da
+静かだ
+
+しずかだった
+was quiet (plain past form)
+Shizukadatta
+静かだった
+
+たかくても
+even if it is expensive
+Takakutemo
+高くても
+
+しずかでも
+even if it is quiet
+Shizukademo
+静かでも
+
+たかいとき
+when it is expensive
+Takai toki
+高いとき
+
+しずかなとき
+when it is quiet
+Shizuka na toki
+静かなとき
+
 `;
 
 allWords["Adjective Forms - Hard"] = ``;
@@ -58627,7 +58717,7 @@ const appSettings = {
     "ほうそう::announcement, broadcast": 1,
     "にわかあめ / ゆうだち::shower / sudden evening shower": 2
   },
-  "currentLesson": "Lesson 04",
+  "currentLesson": "Extra 27",
   "isHard": true,
   "displayMode": "big-english",
   "readingGap": "2",
@@ -58686,13 +58776,13 @@ const appSettings = {
   "hiddenCategories": [],
   "othersHiddenSourceGroups": [],
   "othersHiddenLevels": [],
-  "lastDestCategory": "InTransitive Verbs",
-  "activeDbGroup": "N5 Lessons",
+  "lastDestCategory": "Similar Ones",
+  "activeDbGroup": "N4 Extra",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 04",
+    "N5 Lessons": "Lesson 13",
     "N5 Others": "Similar Ones",
-    "N4 Lessons": "Lesson 35",
+    "N4 Lessons": "Lesson 27",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
@@ -58700,7 +58790,7 @@ const appSettings = {
     "N4 Grammer": "Grm 35",
     "Kanji": "N5 Kanji",
     "N5 Extra": "Extra 01",
-    "N4 Extra": "Extra 35",
+    "N4 Extra": "Extra 27",
     "N3 Extra": "Extra 51",
     "N5 Grammer Others": "0 Others G5",
     "N4 Grammer Others": "Show All Words",
@@ -58728,6 +58818,6 @@ const appSettings = {
     "N1 Dumps": "Show All Words",
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
-    "Others": "Adjective Forms"
+    "Others": "Similar Ones"
   }
 };

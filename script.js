@@ -210,7 +210,144 @@ function clearAllStateCaches() {
   wordCategoriesCache = null;
 }
 
-// Save application state to local storage
+// URL CATEGORY DATA MANAGEMENT (Saving active category to URL instead of local storage)
+function getCategoryDataFromUrl() {
+  if (typeof window === 'undefined' || !window.location) return null;
+
+  let cat = null;
+  let group = null;
+  let isHard = false;
+
+  try {
+    // 1. Try URL Search Params
+    if (window.location.search) {
+      const params = new URLSearchParams(window.location.search);
+      cat = params.get('cat') || params.get('category') || params.get('lesson');
+      group = params.get('group') || params.get('dbGroup') || params.get('db');
+      const typeParam = params.get('type') || params.get('mode') || params.get('hard');
+      if (typeParam && (typeParam.toLowerCase() === 'hard' || typeParam === '1' || typeParam.toLowerCase() === 'true')) {
+        isHard = true;
+      }
+    }
+
+    // 2. If not found in search, try Hash Params
+    if (!cat && window.location.hash) {
+      const rawHash = window.location.hash.replace(/^#/, '').trim();
+      if (rawHash) {
+        if (rawHash.includes('=') || rawHash.includes('&')) {
+          const hashParams = new URLSearchParams(rawHash);
+          cat = hashParams.get('cat') || hashParams.get('category') || hashParams.get('lesson');
+          if (!group) group = hashParams.get('group') || hashParams.get('dbGroup') || hashParams.get('db');
+          const typeParam = hashParams.get('type') || hashParams.get('mode') || hashParams.get('hard');
+          if (typeParam && (typeParam.toLowerCase() === 'hard' || typeParam === '1' || typeParam.toLowerCase() === 'true')) {
+            isHard = true;
+          }
+        } else {
+          try {
+            cat = decodeURIComponent(rawHash);
+          } catch (e) {
+            cat = rawHash;
+          }
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("Error parsing category from URL:", err);
+  }
+
+  if (!cat) return null;
+
+  cat = cat.trim();
+  if (cat.startsWith("Grammer ")) {
+    cat = cat.replace(/^Grammer /, "Grm ");
+  }
+  if (cat.endsWith(" - Hard")) {
+    cat = cat.replace(" - Hard", "");
+    isHard = true;
+  }
+
+  if (!group) {
+    group = determineGroupForCategory(cat);
+  }
+
+  return { category: cat, group: group, isHard: isHard };
+}
+
+function updateUrlWithCategoryData() {
+  if (typeof window === 'undefined' || !window.location) return;
+
+  const cat = currentSettings.currentLesson;
+  if (!cat || cat === 'Search Results' || cat === 'Search Results - Hard') {
+    return;
+  }
+
+  try {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cat', cat);
+    if (currentSettings.activeDbGroup) {
+      url.searchParams.set('group', currentSettings.activeDbGroup);
+    }
+    if (currentSettings.isHard) {
+      url.searchParams.set('type', 'hard');
+    } else {
+      url.searchParams.delete('type');
+    }
+    // Clean up alternative aliases if present
+    url.searchParams.delete('category');
+    url.searchParams.delete('lesson');
+    url.searchParams.delete('mode');
+    url.searchParams.delete('hard');
+
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+    }
+  } catch (e) {
+    try {
+      const catEnc = encodeURIComponent(cat);
+      const grpEnc = encodeURIComponent(currentSettings.activeDbGroup || '');
+      const hardStr = currentSettings.isHard ? '&type=hard' : '';
+      window.location.hash = `cat=${catEnc}&group=${grpEnc}${hardStr}`;
+    } catch (err) {
+      console.warn("Could not update URL with category data:", err);
+    }
+  }
+}
+
+function handleUrlCategoryChange() {
+  const urlData = getCategoryDataFromUrl();
+  if (urlData && urlData.category) {
+    if (urlData.category === currentSettings.currentLesson && 
+        urlData.isHard === currentSettings.isHard && 
+        (!urlData.group || urlData.group === currentSettings.activeDbGroup)) {
+      return;
+    }
+
+    if (urlData.group && urlData.group !== currentSettings.activeDbGroup) {
+      currentSettings.activeDbGroup = urlData.group;
+      syncSettingsDropdownsFromActiveGroup();
+    }
+    currentSettings.currentLesson = urlData.category;
+    currentSettings.isHard = !!urlData.isHard;
+    
+    // Update radio buttons
+    const modeNormal = document.getElementById('mode-normal');
+    const modeHard = document.getElementById('mode-hard');
+    if (modeNormal && modeHard) {
+      modeNormal.checked = !currentSettings.isHard;
+      modeHard.checked = currentSettings.isHard;
+    }
+
+    populateLessonsDropdown();
+    const selectLesson = document.getElementById('select-lesson');
+    if (selectLesson) selectLesson.value = currentSettings.currentLesson;
+
+    renderCards();
+    updateQuickLgeButtons();
+    populateQuizSetupLessons();
+  }
+}
+
+// Save application state to local storage & URL
 function saveSettings() {
   const cat = currentSettings.currentLesson;
   if (cat && cat !== 'Search Results' && cat !== 'Search Results - Hard') {
@@ -221,6 +358,7 @@ function saveSettings() {
   }
   localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
   clearAllStateCaches();
+  updateUrlWithCategoryData();
 }
 
 function saveWords() {
@@ -645,6 +783,29 @@ function loadState() {
     if (!currentWordsDb[cat]) currentWordsDb[cat] = [];
     if (!currentWordsDb[cat + " - Hard"]) currentWordsDb[cat + " - Hard"] = [];
   });
+
+  // 3. Category Data from URL (Priority over local storage)
+  const urlCatData = getCategoryDataFromUrl();
+  if (urlCatData && urlCatData.category) {
+    currentSettings.currentLesson = urlCatData.category;
+    if (urlCatData.group) {
+      currentSettings.activeDbGroup = urlCatData.group;
+    } else {
+      currentSettings.activeDbGroup = determineGroupForCategory(urlCatData.category);
+    }
+    currentSettings.isHard = !!urlCatData.isHard;
+  } else {
+    // If no category in URL, ensure valid default is set and written to URL
+    if (!currentSettings.currentLesson || currentSettings.currentLesson === 'Search Results') {
+      currentSettings.currentLesson = (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[currentSettings.activeDbGroup]) || DEFAULT_SETTINGS.currentLesson;
+    }
+    if (!currentSettings.activeDbGroup) {
+      currentSettings.activeDbGroup = DEFAULT_SETTINGS.activeDbGroup;
+    }
+  }
+
+  // Ensure current category is in sync with URL
+  updateUrlWithCategoryData();
 
   // If we loaded defaults from words.js, serialize them back to initialize the local storage cache
   if (settingsInitializedFromJs) {
@@ -5535,8 +5696,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   // Render Layout UI cards
+  syncSettingsDropdownsFromActiveGroup();
   renderCards();
   updateSelectionModeUI();
+
+  // Listen for browser Back/Forward navigation changes
+  window.addEventListener('popstate', handleUrlCategoryChange);
+  window.addEventListener('hashchange', handleUrlCategoryChange);
 
   // ================= EVENT DELEGATION LISTENERS =================
 
