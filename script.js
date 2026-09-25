@@ -2869,6 +2869,64 @@ function copyCurrentCategoryToClipboardNewFormat() {
     });
 }
 
+function copySelectedWordsRomajiEnglishToClipboard() {
+  stopSpeech();
+
+  const activeWords = getActiveWords();
+  const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
+  const selectedWords = selectedIdxs
+    .filter(idx => idx >= 0 && idx < activeWords.length)
+    .map(idx => activeWords[idx]);
+
+  if (selectedWords.length === 0) {
+    showToast("No words selected to copy.", "warning");
+    return;
+  }
+
+  const text = selectedWords
+    .map(w => `${(w.romaji || '').trim()}\n${(w.english || '').trim()}`)
+    .join('\n\n');
+
+  if (!text.trim()) {
+    showToast("Selected words have no content to copy.", "warning");
+    return;
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        showToast(`Copied ${selectedWords.length} word(s) to clipboard!`, "success");
+      })
+      .catch(err => {
+        console.error("Failed to copy words:", err);
+        fallbackCopyToClipboard(text, selectedWords.length);
+      });
+  } else {
+    fallbackCopyToClipboard(text, selectedWords.length);
+  }
+}
+
+function fallbackCopyToClipboard(text, count) {
+  try {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.select();
+    const successful = document.execCommand('copy');
+    document.body.removeChild(textArea);
+    if (successful) {
+      showToast(`Copied ${count} word(s) to clipboard!`, "success");
+    } else {
+      showToast("Error writing to clipboard.", "danger");
+    }
+  } catch (err) {
+    console.error("Fallback copy failed:", err);
+    showToast("Error writing to clipboard.", "danger");
+  }
+}
+
 function updateGroupDropdownOptionsVisibility() {
   const selectLevel = document.getElementById('select-db-level');
   const selectGroup = document.getElementById('select-db-group');
@@ -3985,8 +4043,6 @@ function getPointsForWord(word) {
   return matchedBlocks.length > 0 ? matchedBlocks : null;
 }
 
-let currentPointsSpeechText = "";
-
 function openPointsInfoModal(pointsData, word) {
   if (!pointsData) return;
   const blocks = Array.isArray(pointsData) ? pointsData : [pointsData];
@@ -4008,8 +4064,6 @@ function openPointsInfoModal(pointsData, word) {
   const container = document.createElement('div');
   container.className = 'points-content-wrapper';
 
-  const speechParts = [];
-
   blocks.forEach((block, bIdx) => {
     if (bIdx > 0) {
       const blockHr = document.createElement('hr');
@@ -4025,7 +4079,6 @@ function openPointsInfoModal(pointsData, word) {
       blockTitle.className = 'points-block-title';
       blockTitle.textContent = block.rawHeader;
       blockWrapper.appendChild(blockTitle);
-      speechParts.push(block.rawHeader);
     }
 
     block.sections.forEach((sec, sIdx) => {
@@ -4044,7 +4097,6 @@ function openPointsInfoModal(pointsData, word) {
         h4.className = 'points-section-title';
         h4.textContent = sec.title;
         secBox.appendChild(h4);
-        speechParts.push(sec.title);
       }
 
       if (sec.lines && sec.lines.length > 0) {
@@ -4059,7 +4111,6 @@ function openPointsInfoModal(pointsData, word) {
             }
           } else {
             currentGroup.push(lineText);
-            speechParts.push(lineText);
           }
         });
         if (currentGroup.length > 0) {
@@ -4091,12 +4142,6 @@ function openPointsInfoModal(pointsData, word) {
 
   bodyEl.appendChild(container);
   openModal('modal-points-info');
-
-  // Read out points data in English voice
-  currentPointsSpeechText = speechParts.map(p => p.trim().replace(/[.:]+$/, '')).join('. ');
-  if (currentPointsSpeechText) {
-    speakText(currentPointsSpeechText, 'en');
-  }
 }
 
 
@@ -5626,16 +5671,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btnQuickE.addEventListener('click', () => switchCategoryType('E'));
   }
 
-  const btnPointsSpeak = document.getElementById('btn-points-speak');
-  if (btnPointsSpeak) {
-    btnPointsSpeak.addEventListener('click', () => {
-      if (currentPointsSpeechText) {
-        stopSpeech();
-        speakText(currentPointsSpeechText, 'en');
-      }
-    });
-  }
-
   // Management controls
   document.getElementById('btn-move-to-hard').addEventListener('click', moveSelectedToHard);
   document.getElementById('btn-move-to-normal').addEventListener('click', moveSelectedToNormal);
@@ -6235,7 +6270,11 @@ document.addEventListener('DOMContentLoaded', () => {
       case 'L':
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
-        switchCategoryType('L');
+        if (currentSettings.isSelectionModeActive && currentSettings.selectedWordIndices && currentSettings.selectedWordIndices.length > 0) {
+          copySelectedWordsRomajiEnglishToClipboard();
+        } else {
+          switchCategoryType('L');
+        }
         break;
       case 'g':
       case 'G':
@@ -6328,7 +6367,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showToast(`No additional notes found for "${targetW.japanese}".`, 'info');
           }
         } else {
-          showToast("Select a word card to view notes.", "info");
+          openModal('modal-import');
         }
         break;
       case 'c':

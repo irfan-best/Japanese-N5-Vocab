@@ -46,22 +46,25 @@ Katazukemasu vs Katazukimasu
 
 Shimaimasu vs Narabemasu vs Katazukemasu vs Katazukimasu:
     Narabemasu
-        Narabemasu means to line up or set out items where they can be seen, while Shimaimasu means to put away or store items out of sight.
+        Narabemasu means to line up or set out items where they can be seen
 
-        Narabemasu  Line up, arrange, display
-                Organizes things for display, sale, or immediate use.
+        Line up, arrange, display
+        Organizes things for display, sale, or immediate use.
 
         Narabemasu means placing items in orderly lines/rows. 
         
     Katazukemasu
         Katazukemasu means returning a messy state to order.
+        Katazukemasu is the overall process of cleaning a room (which includes throwing away trash, wiping surfaces, and putting items away).
+
 
     Shimaimasu
+        Shimaimasu means to put away or store items out of sight.
         Put away, store, put back
         Clears the space by returning things to their proper storage spot.
 
-        Shimaimasu means specifically putting objects into drawers/closets. Katazukemasu is the overall process of cleaning a room (which includes throwing away trash, wiping surfaces, and putting items away).
-
+        Shimaimasu means specifically putting objects into drawers/closets. 
+        
 Miitingu vs kaigi:
     Kaigi
         formal
@@ -792,4 +795,111 @@ Niru vs Yaku vs Yuderu
 
 		Yudeta pasuta wo zara ni morimasu.
 		I place the boiled pasta on a plate.
+
+Tanoshimi
+    Ryokō ga tanoshimi desu.
+    I am looking forward to the trip.
+
+Futa
+    Please put the lid on the pot.
+    The plastic bottle cap won't open.
+    I will open the lid of the trash can.
+
+Seikai vs Tadashi
+
+	Seikai
+		Correct answer / Right choice (Noun used for the correct answer to a question, test, problem, or decision)
+
+		Kono mondai no seikai wa nan desu ka.
+		What is the correct answer to this problem?
+
+		Sore wa seikai desu.
+		That is the correct answer.
+
+	Tadashi
+		Correct / Right / Just / Honest (I-adjective describing a state, statement, action, or behavior that is factual, proper, or morally right)
+
+		Tadashii kotae wo erande kudasai.
+		Please choose the correct answer.
+
+		Kare no okonai wa tadashii desu.
+		His action is correct.
+
+        pick up (something off the ground or a surface) or to find/gather something.
+        Gomi o hiroimasu.
+        I will pick up trash.
+
+        Michi de saifu o hiroimashita.
+        I found / picked up a wallet on the street.
+
+        Ochita kagi o hiroite kudasai.
+        Please pick up the dropped key.
+
+Akai vs Shu
+
+	Akai
+		Red (Standard, primary i-adjective used for the general color red, including bright red, crimson, or basic color descriptions)
+
+		Akai kuruma wo mimasu.
+		I see a red car.
+
+		Kono ringo wa akai desu.
+		This apple is red.
+
+	Shu
+		Vermilion / Cinnabar red / Scarlet (Noun referring specifically to a bright red-orange or traditional reddish-orange color, often associated with Japanese Torii gates, traditional ink, or lacquerware)
+
+		Torii no iro wa shu desu.
+		The color of the Torii gate is vermilion.
+
+		Shuiro no inkan wo tsukaimasu.
+		I use a vermilion-colored personal seal.
+
+Souse:
+    Computer operation, machine operation, but not for medical operation.
+
+Moushikomimasu vs Nyuugakushimasu
+    Nyuugakushimasu
+        Enrolling / Formally Matriculating
+        The final step after you have been accepted.
+
+    Moushikomimasu
+        Applying / Submitting an Application
+        The initial step to register or apply for something.
+
+go vs goro vs gurai:
+    go:
+        [Duration] + go
+        "After" / "In" (Duration / Elapsed Time)
+        Attached to a length of time (hours, days, years).
+        States how much time will pass before an event happens.
+
+    goro:
+        "About" / "Around" (Point in Time)
+        Attached to a specific point on the clock or calendar.
+        [Point in time] + goro
+        
+    Gurai:
+        Duration / Quantity (both gurai and go -> are duration)
+        is for a duration or quantity (an amount of time, a period, or a general measure).
+        Estimates an approximate amount or length of time.
+
+yasumi o torimasu vs yasumimasu:
+    yasumimasu:
+        Absence / Resting / Being off work
+        Focuses on not working, resting, or being absent on a specific day.
+        "I am taking a day off / resting / skipping."
+        
+        yasumi o torimasu:
+        Taking paid leave / requesting paid leave / requesting formal time off
+        Focuses on the action of requesting or securing authorized leave (e.g., from a manager or HR).
+        "I am taking a (day of) vacation / official leave."
+        Formal, intentional, and usually implies paid leave or securing approval to take time off work or school.
+
+Tsuushinhanbai:
+    Tsuushin: Communication / Telecommunication
+    hanbai: Sales / Selling / Marketing
+
+
+
 `

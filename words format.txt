@@ -40,3 +40,8 @@ win [a lottery]
 [takarakuji ga~] Atarimasu
 [宝くじが～] 当たります
 
+
+------------------------
+move logic:
+when 2,5,7 are selected and i do move up, then order should become 2,5,7,1,3,4,....
+simillarly for move down, basically move before the first most selected one.

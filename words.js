@@ -8591,6 +8591,11 @@ ceramic bowl
 Donburi
 どんぶり
 
+おやこどんぶり
+a bowl of cooked rice with chicken and egg
+Oyakodonburi
+親子どんぶり
+
 ちょうみりょう
 seasoning, flavoring
 Choumiryou
@@ -8651,43 +8656,67 @@ material, ingredient
 Zairyou
 材料
 
-おやこどんぶり
-a bowl of cooked rice with chicken and egg
-Oyakodonburi
-親子どんぶり
-
 `;
 
 allWords["Lesson 35"] = `
-さきます I [はなが～]
+くわしい
+detailed
+Kuwashii
+詳しい
+
+せつび
+equipment, facilities
+Setsubi
+
+[花が～] さきます
 [flowers] bloom
-Sakimasu [hana ga~]
-咲きます [花が～]
+[hana ga~] Sakimasu
+[花が～] 咲きます
 
-かわります I [いろが～]
-[the color] change
-Kawarimasu [iro ga~]
-変わります [色が～]
+なかよくします
+be on good terms with
+Nakayokushimasu
+仲よくします
 
-こまります I
-be in trouble, have a problem
-Komarimasu
-困ります
+おくじょう
+rooftop
+Okujou
+屋上
 
-つけます II [まるを～]
-draw [a circle], mark [with a circle]
-Tsukemasu [maru o~]
-付けます [丸を～]
+ひつよう[な]
+necessary, essential
+Hitsuyou[na]
+必要[な]
 
-ひろいます I
-pick up
-Hiroimasu
-拾います
+めずらしい
+rare, uncommon
+Mezurashii
+珍しい
 
-かかります I [でんわが～]
-get through [on the telephone], have [a phone call]
-Kakarimasu [denwa ga~]
-かかります [電話が～]
+かいがい
+overseas
+Kaigai
+海外
+
+これで おわります
+We'll finish now.
+Kore de owarimasu
+これで終わります。
+
+それなら
+in that case
+Sorenara
+それなら
+
+スキーじょう
+ski resort, ski ground
+Sukiijou
+スキー場
+
+りょこうしゃ
+travel agency
+Ryokousha
+旅行社
 
 らく[な]
 comfortable, easy
@@ -8699,154 +8728,95 @@ correct, right
 Tadashii
 正しい
 
-めずらしい
-rare, uncommon
-Mezurashii
-珍しい
-
-かた
-person (respectful equivalent of ひと)
-Kata
-方
-
-むこう
-over there, the other side
-Mukou
-向こう
-
 しま
 island
 Shima
 島
-
-むら
-village
-Mura
-村
 
 みなと
 port, harbor
 Minato
 港
 
-きんじょ
-neighborhood, vicinity
-Kinjo
-近所
-
-おくじょう
-rooftop
-Okujou
-屋上
-
-かいがい
-overseas
-Kaigai
-海外
-
 やまのぼり
 mountain climbing
 Yamanobori
 山登り
-
-ハイキング
-hiking
-Haikingu
-ハイキング
-
-きかい
-chance, opportunity
-Kikai
-機会
-
-きょか
-permission
-Kyoka
-許可
-
-まる
-circle
-Maru
-丸
-
-そうさ
-operation
-Sousa
-操作
 
 ほうほう
 method
 Houhou
 方法
 
-せつび
-equipment, facilities
-Setsubi
+たのしみ
+pleasure, enjoyment, expectation
+Tanoshimi
+楽しみ
 
-カーテン
-curtain
-Kaaten
-カーテン
+[まるを～] つけます
+draw [a circle], mark [with a circle]
+[maru o~] Tsukemasu
+[丸を～] 付けます
 
-ひも
-string
-Himo
-ひも
+[でんわが～] かかります
+get through [on the telephone], have [a phone call]
+[denwa ga~] Kakarimasu
+[電話が～] かかります
+
+こまります
+be in trouble, have a problem
+Komarimasu
+困ります
+
+かた
+person (respectful equivalent of ひと)
+Kata
+方
+
+[いろが～] かわります
+[the color] change
+[iro ga~] Kawarimasu
+[色が～] 変わります
+
+きんじょ
+neighborhood, vicinity
+Kinjo
+近所
 
 ふた
 lid, cover, cap
 Futa
 ふた
 
-は
-leaf
-Ha
-葉
-
-きょく
-a piece of music
-Kyoku
-曲
-
-たのしみ
-pleasure, enjoyment, expectation
-Tanoshimi
-楽しみ
-
-もっと
-more
-Motto
-もっと
-
 はじめに
 first
 Hajime ni
 はじめに
 
-それなら
-in that case
-Sorenara
-それなら
+むら
+village
+Mura
+村
 
-やこうバス
-night bus
-Yakou basu
-夜行バス
+ハイキング
+hiking
+Haikingu
+ハイキング
 
-りょこうしゃ
-travel agency
-Ryokousha
-旅行社
+まる
+circle
+Maru
+丸
 
-くわしい
-detailed
-Kuwashii
-詳しい
+カーテン
+curtain
+Kaaten
+カーテン
 
-スキーじょう
-ski resort, ski ground
-Sukiijou
-スキー場
+もっと
+more
+Motto
+もっと
 
 くさつ
 Kusatsu (resort in Gunma Prefecture)
@@ -8878,39 +8848,70 @@ Africa
 Afurika
 ※アフリカ
 
-しゅ
-red
-Shu
-朱
+`;
 
-まじわります I
-keep company with
-Majiwarimasu
-交わります
-
+allWords["Lesson 35 - Hard"] = `
 ことわざ
 proverb
 Kotowaza
 ことわざ
 
-なかよくします III
-be on good terms with
-Nakayokushimasu
-仲よくします
+そうさ
+operation
+Sousa
+操作
 
-ひつよう[な]
-necessary, essential
-Hitsuyou[na]
-必要[な]
+ひも
+string (used for tying)
+Himo
+ひも
 
-これで おわります
-We'll finish now.
-Kore de owarimasu
-これで終わります。
+やこうバス
+night bus
+Yakou basu
+夜行バス
+
+ひろいます
+pick up
+Hiroimasu
+拾います
+
+まじわります
+keep company with
+Majiwarimasu
+交わります
+
+きょか
+permission
+Kyoka
+許可
+
+きょく
+a piece of music
+Kyoku
+曲
+
+きかい
+chance, opportunity
+Kikai
+機会
+
+は
+leaf
+Ha
+葉
+
+しゅ
+red
+Shu
+朱
+
+むこう
+over there, the other side
+Mukou
+向こう
 
 `;
-
-allWords["Lesson 35 - Hard"] = ``;
 
 allWords["Lesson 36"] = `
 とどきます I [にもつが～]
@@ -22647,35 +22648,60 @@ Nabe
 `;
 
 allWords["Extra 34 - Hard"] = `
-いためる
+かんきり
+can opener
+Kankiri
+缶切り
+
+せんぬき
+bottle opener
+Sennuki
+栓抜き
+
+ざる
+colander
+Zaru
+ざる
+
+ポット
+thermos bottle
+Potto
+ポット
+
+ながし [だい]
+sink
+Nagashi [dai]
+流し [台]
+
+かんきせん
+ventilation fan
+Kankisen
+換気扇
+
+いためます
 shallow fry / stir fry
-Itameru
-いためる
+Itamemasu
+炒めます
 
-むす
+むします
 steam
-Musu
-蒸す
+Mushimasu
+蒸します
 
-むく
+むきます
 peel, pare
-Muku
-むく
+Mukimasu
+剥きます
 
-きざむ
+きざみます
 chop, mince
-Kizamu
-きざむ
+Kizamimasu
+刻みます
 
-かきまぜる
+かきまぜます
 stir
-Kakimazeru
-かき混ぜる
-
-す
-vinegar
-Su
-酢
+Kakimazemasu
+かき混ぜます
 
 あぶら
 oil, fat
@@ -22687,15 +22713,15 @@ mustard
 Karashi (Masutaado)
 からし (マスタード)
 
-こしょう
-pepper
-Koshou
-こしょう
-
 とうがらし
 red pepper
 Tougarashi
 とうがらし
+
+こしょう
+pepper
+Koshou
+こしょう
 
 しょうが
 ginger
@@ -22707,11 +22733,6 @@ Japanese horseradish
 Wasabi
 わさび
 
-カレーこ
-curry powder
-Karē-ko
-カレー粉
-
 やかん
 kettle
 Yakan
@@ -22721,11 +22742,6 @@ Yakan
 lid
 Futa
 ふた
-
-おたま
-ladle
-Otama
-おたま
 
 まないた
 cutting board
@@ -22752,40 +22768,25 @@ rice paddle
 Shamoji
 しゃもじ
 
-かんきり
-can opener
-Kankiri
-缶切り
-
-せんぬき
-bottle opener
-Sennuki
-栓抜き
-
-ざる
-colander
-Zaru
-ざる
-
-ポット
-thermos bottle
-Potto
-ポット
+おたま
+ladle
+Otama
+おたま
 
 ガスだい (ガスコンロ)
 gas stove
 Gasudai (Gasukonro)
 ガス台 (ガスコンロ)
 
-ながし [だい]
-sink
-Nagashi [dai]
-流し [台]
+カレーこ
+curry powder
+Karē-ko
+カレー粉
 
-かんきせん
-ventilation fan
-Kankisen
-換気扇
+す
+vinegar
+Su
+酢
 
 `;
 
@@ -46307,6 +46308,11 @@ Wow! Look at all those people!
 waa, sugoi hito desu ne
 わあ、すごい ひとですね
 
+これで おわります
+We'll finish now.
+Kore de owarimasu
+これで終わります。
+
 `;
 
 allWords["Phrases - Hard"] = ``;
@@ -48648,6 +48654,11 @@ e?
 allWords["Half Words - Hard"] = ``;
 
 allWords["Na Adjectives"] = `
+しんぱい[な]
+worried, anxious
+Shinpai[na]
+心配[な]
+
 すてき（な）
 fine, nice, wonderful
 suteki na
@@ -48757,11 +48768,6 @@ muda na
 waste
 muda
 むだ
-
-しんぱい[な]
-worried, anxious
-Shinpai[na]
-心配[な]
 
 `;
 
@@ -49927,6 +49933,31 @@ put out [the trash]
 chew, bite
 Kamimasu
 かみます
+
+いためる
+shallow fry / stir fry
+Itameru
+いためる
+
+むす
+steam
+Musu
+蒸す
+
+むく
+peel, pare
+Muku
+むく
+
+きざむ
+chop, mince
+Kizamu
+きざむ
+
+かきまぜる
+stir
+Kakimazeru
+かき混ぜる
 
 `;
 
@@ -51302,6 +51333,11 @@ wasuremasu
 forget
 wasureru
 わすれる
+
+にます
+cook, boil
+Nimasu
+煮ます
 
 `;
 
@@ -58270,13 +58306,329 @@ allWords["Grm 125"] = ``;
 
 allWords["Grm 125 - Hard"] = ``;
 
+allWords["InTransitive Verbs"] = `
+[花が～] さきます
+[flowers] bloom
+[hana ga~] Sakimasu
+[花が～] 咲きます
+
+おわります
+finish
+owarimasu
+おわります
+
+`;
+
+allWords["InTransitive Verbs - Hard"] = ``;
+
+allWords["All Forms"] = `
+あいます
+meet
+Aimasu
+会います
+
+あって
+meet
+Atte
+会って
+
+まちます
+wait
+Machimasu
+待ちます
+
+まって
+wait
+Matte
+待って
+
+とります
+take
+Torimasu
+取ります
+
+とって
+take
+Totte
+取って
+
+のみます
+drink
+Nomimasu
+飲みます
+
+のんで
+drink
+Nonde
+飲んで
+
+しにます
+die
+Shinimasu
+死にます
+
+しんで
+die
+Shinde
+死にます
+
+よびます
+call
+Yobimasu
+呼びます
+
+よんで
+call
+Yonde
+呼んで
+
+かきます
+write
+Kakimasu
+書きます
+
+かいて
+write
+Kaite
+書いて
+
+いそぎます
+hurry
+Isogimasu
+急ぎます
+
+いそいで
+hurry
+Isoide
+急いで
+
+はなします
+speak
+Hanashimasu
+話します
+
+はなして
+speak
+Hanashte
+話して
+
+たべます
+eat
+Tabemasu
+食べます
+
+たべて
+eat
+Tabete
+食べて
+
+します
+do
+Shimasu
+します
+
+して
+do
+Shite
+して
+
+きます
+come
+Kimasu
+来ます
+
+きて
+come
+Kite
+来て
+
+かきます
+write
+Kakimasu
+書きます
+
+かかない
+not write
+Kakanai
+書かない
+
+かいます
+buy
+Kaimasu
+買います
+
+かわない
+not buy
+Kawanai
+買わない
+
+たべます
+eat
+Tabemasu
+食べます
+
+たべない
+not eat
+Tabenai
+食べない
+
+します
+do
+Shimasu
+します
+
+しない
+not do
+Shinai
+しない
+
+きます
+come
+Kimasu
+来ます
+
+こない
+not come
+Konai
+来ない
+
+かきます
+write
+Kakimasu
+書きます
+
+かく
+to write
+Kaku
+書く
+
+たべます
+eat
+Tabemasu
+食べます
+
+たべる
+to eat
+Taberu
+食べる
+
+します
+do
+Shimasu
+します
+
+する
+to do
+Suru
+する
+
+きます
+come
+Kimasu
+来ます
+
+くる
+to come
+Kuru
+来る
+
+`;
+
+allWords["All Forms - Hard"] = `
+いきます
+go
+Ikimasu
+行きます
+
+いって
+go
+Itte
+行って
+
+かいます
+buy
+Kaimasu
+買います
+
+かわない
+not buy
+Kawanai
+買わない
+
+きます
+come
+Kimasu
+来ます
+
+こない
+not come
+Konai
+来ない
+
+`;
+
+allWords["Adjective Forms"] = `
+たかい
+expensive
+Takai
+高い
+
+たかくないです
+is not expensive
+Takakunai desu
+高くないです
+
+たかかったです
+was expensive
+Takakatta desu
+高かったです
+
+たかくなかったです
+was not expensive
+Takakunakatta desu
+高くなかったです
+
+たかくなります
+becomes expensive
+Takaku narimasu
+高くなります
+
+しずか（な）
+quiet
+Shizuka (na)
+静か（な）
+
+しずかじゃありません
+is not quiet
+Shizuka ja arimasen
+静かじゃありません
+
+しずかでした
+was quiet
+Shizukadeshita
+静かでした
+
+しずかじゃありませんでした
+was not quiet
+Shizuka ja arimasen deshita
+静かじゃありませんでした
+
+しずかになります
+becomes quiet
+Shizuka ni narimasu
+静かになります
+
+`;
+
+allWords["Adjective Forms - Hard"] = ``;
+
 const appSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1,
     "にわかあめ / ゆうだち::shower / sudden evening shower": 2
   },
-  "currentLesson": "Extra 34",
-  "isHard": false,
+  "currentLesson": "Lesson 04",
+  "isHard": true,
   "displayMode": "big-english",
   "readingGap": "2",
   "quizMode": "quiz1",
@@ -58321,7 +58673,10 @@ const appSettings = {
     "26 Dumps D4",
     "N4 Rod",
     "32 Dumps D4",
-    "33 Dumps D4"
+    "33 Dumps D4",
+    "InTransitive Verbs",
+    "All Forms",
+    "Adjective Forms"
   ],
   "similarWordGroups": [
     {
@@ -58331,21 +58686,21 @@ const appSettings = {
   "hiddenCategories": [],
   "othersHiddenSourceGroups": [],
   "othersHiddenLevels": [],
-  "lastDestCategory": "Na Adjectives",
-  "activeDbGroup": "N4 Extra",
+  "lastDestCategory": "InTransitive Verbs",
+  "activeDbGroup": "N5 Lessons",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 01",
+    "N5 Lessons": "Lesson 04",
     "N5 Others": "Similar Ones",
-    "N4 Lessons": "Lesson 26",
+    "N4 Lessons": "Lesson 35",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
     "N5 Grammer": "Grm 01",
-    "N4 Grammer": "Grm 26",
+    "N4 Grammer": "Grm 35",
     "Kanji": "N5 Kanji",
     "N5 Extra": "Extra 01",
-    "N4 Extra": "Extra 34",
+    "N4 Extra": "Extra 35",
     "N3 Extra": "Extra 51",
     "N5 Grammer Others": "0 Others G5",
     "N4 Grammer Others": "Show All Words",
@@ -58373,6 +58728,6 @@ const appSettings = {
     "N1 Dumps": "Show All Words",
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
-    "Others": "Transitive and Intransitive Pairs"
+    "Others": "Adjective Forms"
   }
 };
