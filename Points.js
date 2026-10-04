@@ -44,7 +44,14 @@ Katazukemasu vs Katazukimasu
     Katazukimasu
         intransitive
 
-Shimaimasu vs Narabemasu vs Katazukemasu vs Katazukimasu:
+Shimaimasu vs Narabemasu vs Katazukemasu vs Katazukimasu vs Modoshimasu vs Seiri shimasu:
+    Modoshimasu:
+        Restoring an object to its original, proper spot or prior state.
+
+    Katazukemasu
+        Katazukemasu means returning a messy state to order.
+        Katazukemasu is the overall process of cleaning a room (which includes throwing away trash, wiping surfaces, and putting items away).
+
     Narabemasu
         Narabemasu means to line up or set out items where they can be seen
 
@@ -52,11 +59,6 @@ Shimaimasu vs Narabemasu vs Katazukemasu vs Katazukimasu:
         Organizes things for display, sale, or immediate use.
 
         Narabemasu means placing items in orderly lines/rows. 
-        
-    Katazukemasu
-        Katazukemasu means returning a messy state to order.
-        Katazukemasu is the overall process of cleaning a room (which includes throwing away trash, wiping surfaces, and putting items away).
-
 
     Shimaimasu
         Shimaimasu means to put away or store items out of sight.
@@ -64,6 +66,10 @@ Shimaimasu vs Narabemasu vs Katazukemasu vs Katazukimasu:
         Clears the space by returning things to their proper storage spot.
 
         Shimaimasu means specifically putting objects into drawers/closets. 
+
+    Seiri shimasu:
+        Organize, sort out
+        Categorizing, structuring, or throwing out unneeded items
         
 Miitingu vs kaigi:
     Kaigi
@@ -135,6 +141,8 @@ Yoshuushimasu vs Fukushuushimasu:
     Fukushuushimasu:
         is done after the class
 
+    shuu - think as from renshuu
+
 Aru:
     Aru hi -> a certain day, any one day
 
@@ -147,7 +155,7 @@ Yoteihyou vs Yotei:
 
 Hodo vs Gurui:
     Hodo
-        formal
+        formal of Gurai
 
 Otoshimasu vs nakushimasu vs makemasu:
     Otoshimasu 
@@ -290,16 +298,33 @@ Shitsumon vs Mondai:
         Nani mo mondai wa arimasen.
         There is no problem at all.
 
-Saikin vs Sakki
+Saikin vs Sakki vs kono goro
+
+    Kono goro:
+        These days, nowadays 
+        Continuous state or habit (past to present) 
+        cannot be used for single completed events
+        Repeated Habits/Trends: ("These days I've been sleeping early")  
+        Casual / Conversational
+
+        Habit/State: Konogoro, isogashii desu.
 
     Saikin
         Recently / These days (Broader time frame spanning days, weeks, or months up to the present)
+        Specific past point OR ongoing state
+        Can be used for single completed events or continuous states:
+            ("I recently bought a car")
+        Repeated Habits/Trends: ("I've been sleeping early lately")
+        Neutral / Standard (spoken & written)
+
+        Habit/State: Saikin, isogashii desu.
 
         Saikin isogashii desu.
         I am busy these days / recently.
 
         Saikin kono hon wo yomimashita.
         I read this book recently.
+
 
     Sakki
         Just now / A moment ago (Very immediate past, typically minutes or an hour ago on the same day)
@@ -730,6 +755,7 @@ Kado vs Sumi
 Niwakaame vs Yuudachi
 
 	Niwakaame
+        Niwaka - Sudden, abrupt, unexpected
 		Rain shower / Sudden rain (General term for a sudden, brief rain shower that can happen at any time of day or year)
 
 		Niwakaame ga fute kimashita.
@@ -739,6 +765,8 @@ Niwakaame vs Yuudachi
 		Please be careful of sudden rain showers today.
 
 	Yuudachi
+        Yuu - evening
+        dachi - rise up, stand up, stand (think as tachimasu)
 		Evening sudden shower / Summer rainstorm (Specific term for a sudden afternoon or evening rainstorm, often accompanied by thunder, occurring in summer)
 
 		Natsu no yuudachi ni aimashita.
@@ -746,6 +774,30 @@ Niwakaame vs Yuudachi
 
 		Yuudachi no ato wa suzushiku narimasu.
 		It becomes cool after an evening shower.
+
+Kumori tokidoki (ichiji) ame ni narimasu:
+    Ichiji - for a time/ temporarily
+
+Kumori tokoro ni yotte ame:
+    Ni yotte - "Depending on" / "According to."
+
+Hare nochi kumori ni narimasu:
+    nochi - "Later" / "Afterward."
+
+Kousui kakuritsu paasento:
+    Kousui: percipiatation / Rainfall
+    Kakuritsu: "Probability" / "Likelihood"
+
+Kaminari ga narimasu
+    here why ga is used?
+        When you say [Noun] になります, it means the overall weather transforms into that state
+
+        You cannot say "The weather becomes thunder" in Japanese, just like you wouldn't say "It becomes thunder" in English.
+
+        Thunder is a SOUND/EVENT, not a general weather state
+
+atode vs nochi:
+    Nochi - is for Sequential Phenomena & Weather
 
 Hiyashimasu vs Suzushii
 
@@ -972,4 +1024,583 @@ Ni-kagetsu bun:
     bun: Portion, share, amount
     even in kanji, minute kanji, it says part
 
+Kougi vs Juugyou:
+    Juugyou:
+        Class / Lesson
+        Elementary, middle, high school, cram schools (or general school classes)
+
+    Kougi:
+        Lecture
+        Universities, academic conferences, professional seminars
+
+Ukemasu:
+    to take, to undergo, to receive
+
+Shussekishimasu:
+    Shusseki - attendence (or) prescence
+
+Ki ga tsukimasu:
+    ki -> mind, spirit, attention
+    tsukimasu -> attach
+
+Soushiki:
+    sou -> burial
+    shiki -> cermony
+
+Tenrankai:
+    kai -> meeting, gather, assembly
+    it's from kaigi
+
+Renkyuu:
+    Ren - consecutive (from Renkyuu - continous practice)
+    Kyuu - rest (for Kyuukei shimasu)
+
+Sakubun:
+    Saku - to make, create, write
+    bun - sentence, text, writting, composition
+
+Shinrigaku:
+    Shin - mind, heart, spirit
+    ri - logic, reason, mechanism
+
+Konban vs Konya:
+    Konban
+        Conversational, standard daily speech
+        Early evening to dinnertime (around 6 PM – 9 PM)
+        Used in greetings (Konbanwa)
+
+    Konya:
+        Slightly more literary, elegant, or formal
+        Deeper night (late evening into past midnight)
+
+Oushiza:
+    ushi - cow, ox, bull
+
+Takarakuji:
+    Takara: treasure
+    Kuji: lottery, draw, raffle
+
+Atarimasu:
+    We use an intransitive verb because in the Japanese way of thinking, 
+    winning a lottery isn't an action you actively perform on the ticket—it's 
+    something that happens to the ticket.
+
+Nakunarimasu vs Shinimasu
+    Nakunarimasu
+        "To pass away" / "To become deceased"
+        Polite, respectful, euphemistic, sensitive
+        Humans only (family, friends, people)
+
+    Shinimasu
+        "To die" / "To perish"
+        Direct, blunt, clinical
+        Humans, animals, plants, insects, cells
+
+Ato:
+    Ato juppun de hajimarimasu.
+    There are 10 minutes left until it starts. / It starts in 10 minutes.
+
+    Tesuto shuuryou made, ato go-fun desu.
+    There are 5 minutes remaining until the test ends.
+
+inai:
+    Mikka-inai ni henshin shimasu
+    I will reply within 3 days
+
+Mata:
+    Kare wa Nihongo ga tokui desu. Mata, Eigo mo hanasemasu.
+    He is good at Japanese. And / Also, he can speak English.
+
+Ensokei hyouhakuzai fuka:
+    Ensokei: Chlorine-based
+    Enso: Chlorine
+    kei: System, line, type, or based
+    Hyouhakuzai: Bleach
+    Hyou: Drift, float, bleach
+    haku: white
+    zai: Agent, Chemical, medicine, solution
+    fuka: Not allowed/ Do not use
+
+Keshoushitsu vs Otearai vs Toire
+    Keshoushitsu:
+        Very Formal / Elegant
+        "Makeup Room" / "Dressing Room"
+        Best Used For: Upscale venues, public signage, formal announcements
+
+    Otearai:
+        Polite & Natural
+        "Hand-washing [place]"
+        Best Used For: Standard polite spoken request (trains, restaurants, homes)
+
+    Toire:
+        Casual / Direct
+        Best Used For: Casual conversations with friends, family, or close colleagues
+
+Airon teion:
+    airon - "Iron" or "Ironing."
+    Teion - Low temperature.
+
+Teikyuubi:
+    Tei - Fixed, regular, set
+    Kyuu - Rest, Holiday (from Kyuukei)
+    bi - day
+
+Unten shoshinsha chuui:
+    Sho - first / initial
+    Shin - Heart / Mind
+    Sha - Person
+
+    Chuui - Caution / Attention
+
+Annaisho vs Setsumeisho:
+    Annaisho:
+        Guide / Orient / Inform
+        "Information/Guidance Document"
+        Guidebook, Brochure, Information Sheet, Directory
+
+    Setsumeisho:
+        Explain How Something Works / Operates
+        "Explanation Document"
+        Instruction Manual, User Guide, Directions
+
+Shiminuki vs Sennuki:
+    nuki - Extract, pull out, remove
+
+Sousa:
+    Sou - sou sou like that
+
+Yakou basu:
+    ya - night
+    kou - travel
+
+Sumeba miyako:
+    Miyako - Noun meaning capital city, metropolis, or a comfortable center of culture and life.
+
+Sannin yoreba Monju no chie:
+    Yoreba: conditional form of yoru(to approach, to come together)
+    Monju: Manjusri, the Bodhisattva of wisdom in Buddhist tradition.
+    Chie: wisdom, intellect, or resourcefulness
+
+Tateba shakuyaku, suwareba botan, aruku sugata wa yuri no hana:
+    Botan: Peony flower
+    Yuri: Lily
+
+Chiri mo tsumoreba yama to naru:
+    Chiri: dust, specks, or tiny particles.
+    Tsumoru: to accumulate / pile up
+
+Tenseki koke o shouzezu
+    Ten - roll/turn
+    seki - stone
+
+    koke - moss
+    shouzezu - Classical/literary negative form of the verb Shoujiru(to produce, yield, or grow) → "Does not produce / grow".
+
+Himo:
+    refers to a cord, string, braid, or lace used for tying, securing, or decorating objects.
+    Kimono - for kimono tying also we used Himo.
+
+Nagashi vs Nagashi dai:
+    Nagashidai: 
+        Specifically refers to the physical kitchen sink unit—including the basin, countertop, and cabinet frame beneath it.
+
+    Nagashi: 
+        A broader, casual term for any sink, washing area, or running-water spot. It can refer to the kitchen sink, a outdoor sink, or even the drain/wash area in a traditional Japanese bathroom.
+
+    The suffix dai (台) means stand, counter, platform, or base. In a Japanese kitchen, it attaches to the core function of each appliance area to name that specific counter unit.
+
+Kankisen:
+    Kan - think as can
+    Ki - air
+    sen - fan
+
+Suihanki:
+    Sui - Think as water
+    Han - from gohan
+    ki - is generally used for machines (jidouhanbaiki, hikouki..)
+
+oyakodonburi vs oyakodon:
+    both are same, oyakodon is just short form.
+
+Doubutsuen:
+    In Japanese, -en refers to an open-air garden, park, or outdoor grounds, whereas -kan refers to a building, hall, or indoor structure.
+
+    Since a zoo is primarily an open-air park or outdoor garden area where animals live, it takes -en:
+
+    Doubutsuen: Animal + Garden/Park = Zoo
+
+yasumimasu vs yasumi o shimasu vs yasumi o torimasu:
+    yasumi o shimasu -> to take a rest
+    yasumimasu -> to take a rest / take a day off / be absent
+    yasumimasu -> is more often used. (natural)
+
+    yasumi o torimasu:
+        Formal / Structural 
+        ("to secure/take a vacation day").
+        Formal request for official leave/vacation time at work.
+
+Kyoushitsu:
+    ryouri kyoushitsu - cooking class
+    nihongo kyoushitsu - japanese language class
+
+Konna vs konnani:
+    (konna) is an adjective / modifier --> modifies Nouns.
+    (konnani) is an adverb --> modifies Verbs, Adjectives, or entire Clauses.
+
+    (konna hon) = a book like this / this kind of book
+    (konna hito) = a person like this / this kind of person
+
+    (konnani takai) = so expensive! / this expensive!
+    (konnani taberu) = to eat this much!
+
+Zutsu:
+    Hitori ni ni-mai zutsu kubatte kudasai.
+    Please hand out 2 sheets to each person.
+
+Sono ga:
+    Sono hou ga:
+    The pattern sono hou ga means "that way is more ~" or "that option is better / easier / faster ~".
+    Sono hō ga ii desu.
+    That way is better. / I prefer that option.
+
+hito ga ooi  vs oozei no:
+    hito ga ooi:
+        "People are many"
+        States a condition or situation about a place.
+
+    Oozei no:
+        "A crowd of..." / "A large group of..."
+        Directly describes a noun or specifies the actors doing an action.
+
+        Oozei no hito ga kouen ni imasu.
+        Eki no mae ni oozei no hito ga atsumatte imasu.
+    
+toka toka:
+    Yasumi no hi wa eiga o miru to ka, hon o yomu to ka shite sugoshimasu.  
+    
+Eiyou no baransu o kangaete taberu:
+    Eiyou: nutrition, nourishment
+
+Kenkou shindan o ukeru
+    Shindan: medical examination, checkup
+    
+Imo:
+    is a general word that means potato, taro, or root vegetable/tuber
+
+abura vs shishitsu vs sekiyu:
+    Shishitsu (脂質) is the scientific term for lipids/fats as a macronutrient, 
+    while Abura (油 / 脂) refers specifically to visible, culinary fats 
+    and oils used in cooking.
+
+    sekiyu:
+        "Petroleum" / "Crude oil" / "Kerosene"
+        Specifically refers to mineral oil extracted from the earth or petroleum products.
+        Used when talking about energy resources, industrial fuel, or heating fuel.
+
+        Sekiyu no kakaku ga agaramashita.
+        Sekiyu stoobu ni keroshin (sekiyu) o入れます (iremasu).
+
+    abura:
+        "Oil" / "Fat" / "Grease"
+        A broad category covering all liquids that don't mix with water (cooking oil, animal fat, lubricants).
+        Used for food, cooking, general grease, or as a general word for oil.
+
+        Tenpura o tsukuru no ni abura o tskaimasu.
+        Kono niku wa abura ga ooi desu.
+
+Itsutsu no taisetsu na eiyouso to sore o fukumu tabemono:
+    Eiyouso - so is element / Component
+    fukumu - to include, to contain, to comprise
+
+Tansuikabutsu:
+    Tan - Carbon
+    Sui - Water / Hydrogen-oxygen
+    Kabutsu - Compound
+
+Shishitsu:
+    Shi - Fat / Oil
+    Shitsu - Quality / Substance / Matter
+
+Yofukashi o suru:
+    Yo - of yoru
+
+sasoimasu vs shoutaishimasu:
+    sasoimasu:
+        "Invite" / "Ask someone to join"
+        Suggests doing an activity together in a casual or everyday context.
+        Focuses on proposing an action or outing with a peer or friend.
+
+        Tomodachi o eiga ni sasoimashita.
+        Issho ni ranchi o tabeyou to sasoimashita.
+
+    shoutaishimasu:
+        "Invite" / "Host someone"
+        Formally invites or hosts someone at an event, occasion, or venue.
+        Focuses on the host-guest relationship for official or special events.
+
+        Kekkonshiki ni sensei o shoutaishimashita.
+        Uchi ni tomodachi o shoutaishimashita.
+
+nemasu vs nemurimasu:
+    nemasu:
+        "Go to bed" / "Lie down to sleep"
+        Focuses on the action or routine of going to bed or lying down.
+        Refers to the act of starting sleep or bedtime behavior.
+
+        Kyou wa hayaku nemasu.
+        Mai ashi juu-ni-ji ni nemasu.
+
+    nemurimasu:
+        "Sleep" / "Be asleep"
+        Focuses on the physiological state or condition of being asleep.
+        Refers to the actual state of sleeping or quality/depth of sleep.
+
+        Kino no yoru wa yoku nemurimashita.
+        Aka-chan ga shizuka ni nemutte imasu.
+    
+Okonaimasu:
+    To carry out, hold, execute, perform
+    Events, ceremonies, meetings, research, tests, plans
+
+choukoku vs horimasu:
+    choukoku:
+        "Sculpture" / "Carving" / "Engraving"
+        Functions as a noun representing the finished artwork or object.
+        Focuses on the resulting art piece or the field of artistic carving.
+
+        Kouen ni choukoku ga arimasu.
+        Kanojo wa choukoku o benkyou shite imasu.
+
+    horimasu:
+        "Carve" / "Engrave" / "Sculpt"
+        Functions as a verb representing the physical action of carving.
+        Focuses on the process or act of cutting/chiseling into material.
+
+        Ki o horite ningyou o tsukurimashita.
+        Kabe ni namae o horimasu.
+
+Yunyuushimasu:
+    Yu - Transport/send
+    nyuu - Enter (from nyuugakushimasu)
+
+Honyakushimasu:
+    Hon - this of book
+    yaku - translate / reason (even in yakunitachimasu yaku - may be reason (or) use)
+
+Genryou:
+    this is similar to "Materia" - Shiryou
+
+Souon:
+    Sou - sawagimasu
+    on  - oto
+
+Gouka:
+    Goukai - means heroic, hearty, grand, large-scale
+
+Umetatemasu:
+    Umemasu - bury, plant, fill in
+
+hikimasu vs hashirimasu vs nigemasu:
+    hikimasu:
+        "Run over" / "Knock down with a vehicle"
+        Refers specifically to a vehicle striking or running over a person, animal, or object.
+        Focuses on the accident/impact caused by a driving vehicle.
+
+        Kuruma ga inu o hikimashita.
+        Arakujidou ni hikaresou ni narimashita.
+
+    hashirimasu:
+        "Run" / "Jog"
+        Refers to the physical action of moving quickly on foot.
+        Focuses on exercise, sports, or moving at a fast speed to get somewhere.
+
+        Maiasa kouen o hashirimasu.
+        Eki dekara hashirimashita.
+
+    nigemasu:
+        "Run away" / "Escape" / "Flee"
+        Refers to running or moving away to escape from danger, a threat, or capture.
+        Focuses on safety, avoiding harm, or getting away from a person/situation.
+
+        Dorobou ga nigemashita.
+        Kainushi kara inu ga nigemashita.
+
+hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shimasu:
+    hikimasu:
+        "Run over" / "Drag under"
+        Refers to a vehicle rolling over someone/something or pulling them under the tires.
+        Focuses on the crushing or dragging impact of the wheels.
+
+        Kuruma ga inu o hikimashita.
+        A car ran over a dog.
+
+
+    hanemasu:
+        "Hit and send flying" / "Strike"
+        Refers to a vehicle striking a pedestrian or object and bouncing/throwing them off.
+        Focuses on the impact force that repels or throws the subject into the air or side.
+
+        Kousaten de kuruma ni haneraremashita.
+        [I / Someone] was hit by a car at an intersection.
+
+        Shika ga kuruma ni haneraremashita.
+        A deer was hit by a car.
+
+    shoutotsu shimasu:
+        "Crash" / "Collide"
+        Refers to two or more moving objects (or a vehicle and a stationary obstacle) hitting each other head-on or forcefully.
+        Focuses on the overall impact/collision between objects (cars, trains, ships, or people), rather than hitting a pedestrian.
+
+        Kuruma to kuruma ga shoutotsu shimashita.
+        Two cars collided with each other.
+
+        Denzou ga kabe ni shoutotsu shimashita.
+        The utility pole collided with the wall.
+
+    tsuitotsu shimasu:
+        "Rear-end" / "Crash into the back of"
+        Refers specifically to a vehicle hitting another vehicle or object from behind.
+        Focuses on rear-end collisions where the following vehicle strikes the back of the front vehicle.
+
+        Toraakku ga mae no kuruma ni tsuitotsu shimashita.
+        A truck rear-ended the car in front of it.
+
+    tsuiraku shimasu:
+        "Fall" / "Plummet" / "Crash (from a high place)"
+        Refers to an object or vehicle falling from a high altitude, high level, or the sky.
+        Focuses on dropping from a height, such as airplanes crashing or objects/people falling off a cliff or building.
+
+        Hikouki ga yama ni tsuiraku shimashita.
+        Kensetsu genba kara mono ga tsuiraku shimashita.
+
+jiko vs jiken:
+    jiko:
+        "Accident" / "Incident"
+        Refers to unforeseen, unintentional events causing damage, injury, or disruption without criminal intent.
+        Focuses on traffic crashes, natural disasters, mechanical failures, or random mishaps.
+
+        Kousaten de koutsuu jiko ga arimashita.
+        There was a traffic accident at the intersection.
+
+        Densha ga jiko de tomatte imasu.
+        The train is stopped due to an accident.
+
+    jiken:
+        "Case" / "Crime" / "Criminal Incident"
+        Refers to an event involving human intent, wrongdoing, criminal activity, or a police investigation.
+        Focuses on crimes, legal cases, scandals, or mysterious events caused by someone deliberate action.
+
+        Keisatsu ga kono jiken o souza shite imasu.
+        The police are investigating this incident/crime.
+
+        Goutou jiken ga okorimashita.
+        A robbery incident occurred.
+
+Tsuitotsu shimasu:
+    Tsui - To chase, follow, or pursue from behind
+    Totsu - Thrust, dash, pierce, or collide suddenly
+
+undou o shimasu vs undoushimasu:
+    undou o shimasu:
+        "Do exercise" / "Perform physical activity"
+        Uses the direct object particle "o" to separate the noun (undou) from the verb (shimasu).
+        Focuses slightly more on "exercise" as a distinct activity or noun, allowing descriptors/modifiers before "undou".
+
+        Kyou wa karui undou o shimasu.
+        Gakko de undou o shimasu.
+
+    undoushimasu:
+        "Exercise" / "To exercise"
+        Combines the noun and verb into a single, compound Suru-verb (undousuru).
+        Focuses on the overall action of exercising; grammatically smoother for quick, direct statements.
+
+        Maiasa undoushimasu.
+        Shuumatsu ni undoushimasu.
+
+Iremasu:
+    For "[dengen o~] Iremasu"
+    -> since we are putting electricity into the device, we use the 
+    transitive verb "iremasu" (to put in / to insert).
+
+sei:
+    (Nihon-sei) = Made in Japan
+
+ten:
+    (Hyaku-ten) = 100 points
+    (Nan-ten?) = How many points?
+
+Otonashi vs Shizuka:
+    Otonashi:
+        Used exclusively for living things (people, pets, animals). It describes a 
+        personality trait or temperament—meaning quiet, reserved, gentle, docile, or well-behaved.
+
+    Shizuka:
+        Used for places, environments, or states of noise (and occasionally people as a 
+        temporary state). It describes an absence of sound or commotion.
+
+Okonaimasu:
+    It is the formal version of shimasu and is commonly used when hosting events, 
+    conducting investigations, performing tasks, or carrying out official procedures.
+
+furonto vs uketsuke:
+    Furonto:
+        "Front" / "Front Desk" / "Reception"
+        Refers to the front desk area of a hotel, office, or business where guests or clients are greeted and assisted. 
+        Hotels, inns, resorts, gyms, sports clubs
+        Service counter for check-in/out, room keys, hospitality
+
+    Uketsuke:
+        "Reception" / "Reception Desk" / "Information Desk"
+        Refers to the area where visitors are received and information is provided, often at a hotel, office, or public institution.
+        Offices, hospitals, events, government buildings
+        Check-in point for registration, visitor logs, appointments
+
+Otsukaresama deshita vs Gokurousama
+    Otsukaresama deshita
+        Equal --> Equal OR Subordinate --> Superior
+        Anyone to peers or bosses/superiors
+        Polite, respectful, universally safe
+        Lit -> "You must be tired (from your hard work)"
+
+    Gokurousama
+        Superior --> Subordinate ONLY
+        Bosses, managers, or elders to workers/inferiors
+        Authoritative, appreciative from above
+        Lit -> "Thank you for your trouble/labor"
+
+Chikoku shimasu vs okurimasu
+    Although both concepts involve lateness or delay, Chikoku shimasu specifically means a person being late for an event or appointment, whereas Okuremasu is a broader verb meaning to be delayed, behind schedule, or late.
+
+    Chikoku:
+        People only
+        "To arrive late"
+
+    Okurimasu:
+        People, vehicles, clocks, schedules, payments
+        "To be delayed / run behind schedule"
+
+testo vs shiken:
+    Testo:
+        Casual, everyday test/quiz
+        Small quizzes, weekly classroom tests, informal checks
+        Schools, language classes, quick assessments
+
+    Shiken:
+        Formal, high-stakes examination
+        Entrance exams, national certifications, final exams
+        Universities, job applications, licensing boards
+
+Touchaku shimasu vs Tsukimasu:
+    Touchaku shimasu:
+        Formal, official, written, public announcements
+        Flight schedules, train delays, delivery tracking, business contexts
+        Airports, stations, logistics, formal documentation
+
+    Tsukimasu:
+        Casual to standard spoken conversation
+        Arriving at home, meeting up with friends, daily commute
+        Text messages, phone calls, informal chats
+
+Hanareta:
+    from Hanaremasu - to separate, stray, or leave
     `

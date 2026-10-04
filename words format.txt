@@ -8,22 +8,6 @@ contact
 Renrakushimasu
 連絡します
 
-
-
--------------
-
-for few blocks we have data like this:
-あたります [たからくじが～]
-win [a lottery]
-Atarimasu [takarakuji ga~]
-当たります [宝くじが～]
-
-convert them to 
-[たからくじが～] あたります
-win [a lottery]
-[takarakuji ga~] Atarimasu
-[宝くじが～] 当たります
-
 ----------------------------------
 
 you need to 2 things, one remove verb classifications that is I, II, III
@@ -40,8 +24,15 @@ win [a lottery]
 [takarakuji ga~] Atarimasu
 [宝くじが～] 当たります
 
+dont do anything else, not even single other character to be disturbed
 
 ------------------------
 move logic:
+if there are 1 to 10 images
 when 2,5,7 are selected and i do move up, then order should become 2,5,7,1,3,4,....
 simillarly for move down, basically move before the first most selected one.
+if 1,2,5,7 selected move up should do order as 1,2,5,7,3,4,6,8...
+lly for move down
+
+--------------------------------------------
+vs code diff format:

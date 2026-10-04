@@ -247,12 +247,12 @@ add L, G, E -> button on the top, When i'm in Lesson 25 dont show L button, clic
 me to Extra 25 -> similar for Extra 25, we will be seeing only L and G button and it should do the same
 add Left arrow and right arrow button so that it will be used to navigate on mobile, basically goto previous category, goto next category.
 
-
-
 show option to goto current number's extra, sentences, lesson
 in search of category first show lesson, then extra, the sentence then others
 give option of left and right arrow so that user can be able to goto prev and next lessons on mobile.
 on words add some information (or) icon they should be showing diffs and other points which im' saving.
+
+
 
 
 Mawari
@@ -273,4 +273,37 @@ Mawari
 then show data correctly
 when there is an empty line then show and empty line in UI also.
 
+When i'm starting an quiz by selecting an word and being in original order option, 
+then quiz starting from that word, but when i restart the quiz it should start from begining
+
 add move to temp button, split and move using tags for entire webiste
+
+----------------
+(check if below are implemented or no)
+https://www.youtube.com/watch?v=Q_Kl6u92E50
+https://x.com/ViniciusAfton/status/2099246762397446345
+https://x.com/figo52q/status/2099584920037273643
+https://x.com/_youngcapalot/status/2099272142038647221
+https://x.com/m4rkimofc/status/2099619199853211942
+https://x.com/PokemanZ0N6/status/2099723544817000522
+
+move to correct pixiv using tags button
+fix it's logic currnet it is doing move for entire website it should do only for my
+
+fix renaming to name foldername bug
+move to temp -> by one button click, it should delete empty folder
+change order of folders by drag and drop
+
+moving using tags also has some glitch tried to move on "Lycoris"
+fix issue of url having '
+special categories feature
+split and moving using tags -> for entire website
+Tomo-chan is a Girl! -> is not getting moved to "Tomo-chan is a Girl"
+Emilia (Re:Zero) -> is not getting moved to "Rezero - Emilia"
+one you do split take me to left to current one header
+dont allow adding the image that are not in {artwork id} {img number} format to best ones.txt
+when showing count, only do the sum of result coming ones
+
+=== grammeer
+url has current category,
+indentation correction when size of line exceeds
