@@ -664,8 +664,96 @@ html[data-theme="light"] .moon-icon { display: block; }
   display: none !important;
 }
 
-.vocab-card:not(.mode-kanji-only) .card-kanji {
+.vocab-card:not(.mode-kanji-only):not(.mode-custom) .card-kanji {
   display: none !important;
+}
+
+/* Custom Display Mode Card Styling */
+.vocab-card.mode-custom {
+  gap: 0.25rem;
+}
+
+.vocab-card.mode-custom .custom-line {
+  width: 100%;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.35;
+}
+
+.vocab-card.mode-custom .custom-line.card-kanji,
+.vocab-card.mode-custom .custom-line.card-japanese,
+.vocab-card.mode-custom .custom-line.card-english,
+.vocab-card.mode-custom .custom-line.card-romaji {
+  display: block !important;
+}
+
+/* Big Line Styling in Custom Mode */
+.vocab-card.mode-custom .custom-big.card-english {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+.vocab-card.mode-custom .custom-big.card-japanese,
+.vocab-card.mode-custom .custom-big.card-kanji {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--font-jp);
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+.vocab-card.mode-custom .custom-big.card-romaji {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+/* Small Line Styling in Custom Mode */
+.vocab-card.mode-custom .custom-small.card-english {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.vocab-card.mode-custom .custom-small.card-japanese,
+.vocab-card.mode-custom .custom-small.card-kanji {
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: var(--font-jp);
+  color: var(--text-secondary);
+}
+.vocab-card.mode-custom .custom-small.card-romaji {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Equal size styling when Big Text is None */
+.vocab-card.mode-custom.no-big .custom-line.card-english {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.vocab-card.mode-custom.no-big .custom-line.card-japanese,
+.vocab-card.mode-custom.no-big .custom-line.card-kanji {
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: var(--font-jp);
+  color: var(--text-primary);
+}
+.vocab-card.mode-custom.no-big .custom-line.card-romaji {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.btn-custom-disp-gear {
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+.btn-custom-disp-gear:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 .vocab-card.no-kanji {

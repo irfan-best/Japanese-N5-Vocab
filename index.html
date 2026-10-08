@@ -82,7 +82,13 @@
       <!-- Display Options -->
       <div class="panel-section display-controls">
         <div class="input-group">
-          <label for="select-display-mode">Display Mode</label>
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <label for="select-display-mode" style="margin: 0;">Display Mode</label>
+            <button id="btn-custom-disp-gear" class="btn-custom-disp-gear hidden" title="Configure Custom Display Mode" style="background: none; border: none; cursor: pointer; color: var(--accent); padding: 0; display: inline-flex; align-items: center; font-size: 0.75rem; font-weight: 600; text-decoration: none;">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 3px;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83-2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              Customize
+            </button>
+          </div>
           <select id="select-display-mode" class="custom-select">
             <option value="big-english">Big English</option>
             <option value="big-japanese">Big Japanese</option>
@@ -90,6 +96,7 @@
             <option value="japanese-only">Japanese Only</option>
             <option value="romaji-only">Romaji Only</option>
             <option value="kanji-only">Kanji Only</option>
+            <option value="custom">Custom</option>
           </select>
         </div>
 
@@ -551,8 +558,8 @@
                 <td>Toggle between Light and Dark themes.</td>
               </tr>
               <tr>
-                <td><kbd>Alt</kbd> + <kbd>1</kbd> .. <kbd>5</kbd></td>
-                <td>Change display modes (1: Big English, 2: Big Jap, 3: Eng, 4: Jap, 5: Romaji).</td>
+                <td><kbd>Alt</kbd> + <kbd>1</kbd> .. <kbd>7</kbd></td>
+                <td>Change display modes (1: Big English, 2: Big Jap, 3: Eng, 4: Jap, 5: Romaji, 6: Kanji, 7: Custom).</td>
               </tr>
               <tr>
                 <td><kbd>Shift</kbd> + two digits (e.g. <kbd>03</kbd>, <kbd>27</kbd>)</td>
@@ -816,6 +823,98 @@ kenkyuusha</pre>
     </div>
     <div class="modal-body" id="points-info-body" style="max-height: 70vh; overflow-y: auto;">
       <!-- Content populated dynamically -->
+    </div>
+  </div>
+
+  <!-- Custom Display Mode Modal -->
+  <div id="modal-custom-display" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="custom-display-title" style="max-width: 480px;">
+    <div class="modal-header">
+      <h2 id="custom-display-title" style="margin: 0; font-size: 1.25rem;">Custom Display Mode</h2>
+      <button class="btn-close-modal" aria-label="Close Custom Display Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+      <!-- Number of Lines -->
+      <div class="quiz-option-group">
+        <label for="custom-disp-line-count" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Number of Lines to Show</label>
+        <select id="custom-disp-line-count" class="custom-select" style="width: 100%;">
+          <option value="1">1 Line</option>
+          <option value="2">2 Lines</option>
+          <option value="3" selected>3 Lines</option>
+          <option value="4">4 Lines</option>
+        </select>
+      </div>
+
+      <!-- Line Selectors -->
+      <div id="custom-disp-lines-container" style="display: flex; flex-direction: column; gap: 0.65rem;">
+        <div class="quiz-option-group" id="custom-disp-group-line1">
+          <label for="custom-disp-line1" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.25rem; display: block;">Line 1</label>
+          <select id="custom-disp-line1" class="custom-select" style="width: 100%;">
+            <option value="english">English</option>
+            <option value="japanese">Japanese (without Kanji)</option>
+            <option value="romaji">Romaji</option>
+            <option value="kanji">Kanji</option>
+          </select>
+        </div>
+
+        <div class="quiz-option-group" id="custom-disp-group-line2">
+          <label for="custom-disp-line2" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.25rem; display: block;">Line 2</label>
+          <select id="custom-disp-line2" class="custom-select" style="width: 100%;">
+            <option value="japanese">Japanese (without Kanji)</option>
+            <option value="english">English</option>
+            <option value="romaji">Romaji</option>
+            <option value="kanji">Kanji</option>
+          </select>
+        </div>
+
+        <div class="quiz-option-group" id="custom-disp-group-line3">
+          <label for="custom-disp-line3" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.25rem; display: block;">Line 3</label>
+          <select id="custom-disp-line3" class="custom-select" style="width: 100%;">
+            <option value="romaji">Romaji</option>
+            <option value="japanese">Japanese (without Kanji)</option>
+            <option value="english">English</option>
+            <option value="kanji">Kanji</option>
+          </select>
+        </div>
+
+        <div class="quiz-option-group" id="custom-disp-group-line4">
+          <label for="custom-disp-line4" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.25rem; display: block;">Line 4</label>
+          <select id="custom-disp-line4" class="custom-select" style="width: 100%;">
+            <option value="kanji">Kanji</option>
+            <option value="japanese">Japanese (without Kanji)</option>
+            <option value="english">English</option>
+            <option value="romaji">Romaji</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Big / Emphasized Text -->
+      <div class="quiz-option-group">
+        <label for="custom-disp-big-text" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Big / Emphasized Text</label>
+        <select id="custom-disp-big-text" class="custom-select" style="width: 100%;">
+          <option value="line1">Line 1 (Top Line)</option>
+          <option value="line2">Line 2</option>
+          <option value="line3">Line 3</option>
+          <option value="line4">Line 4</option>
+          <option value="english">English</option>
+          <option value="japanese">Japanese (Kana)</option>
+          <option value="romaji">Romaji</option>
+          <option value="kanji">Kanji</option>
+          <option value="none">None (Standard / Equal Size)</option>
+        </select>
+      </div>
+
+      <!-- Live Card Preview -->
+      <div class="quiz-option-group" style="margin-top: 0.25rem;">
+        <label style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Live Preview</label>
+        <div id="custom-disp-preview-card" class="vocab-card mode-custom" style="pointer-events: none; margin: 0 auto; max-width: 280px; width: 100%; min-height: 120px; box-sizing: border-box;">
+          <!-- Dynamically rendered preview -->
+        </div>
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+        <button id="btn-save-custom-display" class="btn btn-primary btn-large" style="flex: 1;">Save & Apply</button>
+        <button id="btn-cancel-custom-display" class="btn btn-secondary btn-large" style="flex: 1;" onclick="closeActiveModal()">Cancel</button>
+      </div>
     </div>
   </div>
 

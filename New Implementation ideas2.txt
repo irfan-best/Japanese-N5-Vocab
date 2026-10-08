@@ -280,13 +280,6 @@ add move to temp button, split and move using tags for entire webiste
 
 ----------------
 (check if below are implemented or no)
-https://www.youtube.com/watch?v=Q_Kl6u92E50
-https://x.com/ViniciusAfton/status/2099246762397446345
-https://x.com/figo52q/status/2099584920037273643
-https://x.com/_youngcapalot/status/2099272142038647221
-https://x.com/m4rkimofc/status/2099619199853211942
-https://x.com/PokemanZ0N6/status/2099723544817000522
-
 move to correct pixiv using tags button
 fix it's logic currnet it is doing move for entire website it should do only for my
 
@@ -307,3 +300,41 @@ when showing count, only do the sum of result coming ones
 === grammeer
 url has current category,
 indentation correction when size of line exceeds
+
+above all done
+grammer website -> home tab (defautl order, lessons order)
+
+category website:
+    feature to change folders order, based on first 5 images check
+    clicking on one button should show goto Home tab, show only first image of an folder
+    order of images is order of folders in header, give option to change number of images to be shown
+    i.e i should be able to select 5 also instead of 1 (only 1-5 values should be allowed to enter)
+    if 5 is selected then show first 5 images of that folder, give me option so that i can move one image
+    (even if 5 are selected), the all 5 should be moved( should be move either before start of series (or) end
+    of an series, but not in between), all 5 images of an folder should be side by side, and also
+    change the order of images = change the order of folders on the header.
+    this feature's main purpose is to change the order of folders on the header by see the content present in the
+    folder(see first n images, n = 1-5 (any one value))
+
+    do whatever you can per row show 15 images, i.e 3 sets of 5 images
+    so that it will be very much easy for me to change the order "Folder Order Preview" feature
+
+--------------- new ones ----
+
+pa getter -> (check if all of these are implemented crctly)
+    clicking m -> should move selected categories to nrml/"run for"
+    shift up arrow/down arrow should do 
+    "Move Up"/"Move Down" button clicks
+    Nrml/Run For -> this information should be present in url.
+
+    show total number of images to be download (in both normal and "run for")
+
+    for all images add an "Goto Website" button
+    clicking on "Summer Time Rending" button should open "http://localhost:3001/All%20Websites%20Links/4%20Pixiv/Summer%20Time%20Rendering/index.html#sdfssfds"
+        link similarlly for others
+
+----
+PA Getter:
+    dont show image names, number of images to download should be highlighted
+    and in after that number in brackets show number of urls only number
+    

@@ -7,6 +7,11 @@ const DEFAULT_SETTINGS = {
   currentLesson: "Lesson 01",
   isHard: false,
   displayMode: "big-english",
+  customDisplayConfig: {
+    lineCount: 3,
+    lines: ["english", "japanese", "romaji", "kanji"],
+    bigText: "line1"
+  },
   readingGap: "0",
   quizMode: "quiz1",
   quizOrder: "random",
@@ -639,6 +644,19 @@ function loadState() {
   }
   if (currentSettings.lastDestCategory === undefined) {
     currentSettings.lastDestCategory = "";
+  }
+  if (!currentSettings.customDisplayConfig) {
+    currentSettings.customDisplayConfig = { ...DEFAULT_SETTINGS.customDisplayConfig };
+  } else {
+    if (!currentSettings.customDisplayConfig.lines || !Array.isArray(currentSettings.customDisplayConfig.lines)) {
+      currentSettings.customDisplayConfig.lines = ["english", "japanese", "romaji", "kanji"];
+    }
+    if (!currentSettings.customDisplayConfig.lineCount) {
+      currentSettings.customDisplayConfig.lineCount = 3;
+    }
+    if (!currentSettings.customDisplayConfig.bigText) {
+      currentSettings.customDisplayConfig.bigText = "line1";
+    }
   }
   if (!currentSettings.lastGroupCategories) {
     currentSettings.lastGroupCategories = { ...DEFAULT_SETTINGS.lastGroupCategories };
@@ -1967,26 +1985,30 @@ function renderCards() {
     }
 
     // Card Content elements
-    const jpDiv = document.createElement('div');
-    jpDiv.className = 'card-japanese';
-    jpDiv.textContent = word.japanese;
+    if (currentSettings.displayMode === 'custom') {
+      renderCustomWordLines(card, word, currentSettings.customDisplayConfig);
+    } else {
+      const jpDiv = document.createElement('div');
+      jpDiv.className = 'card-japanese';
+      jpDiv.textContent = word.japanese;
 
-    const enDiv = document.createElement('div');
-    enDiv.className = 'card-english';
-    enDiv.textContent = word.english;
+      const enDiv = document.createElement('div');
+      enDiv.className = 'card-english';
+      enDiv.textContent = word.english;
 
-    const romajiDiv = document.createElement('div');
-    romajiDiv.className = 'card-romaji';
-    romajiDiv.textContent = word.romaji;
+      const romajiDiv = document.createElement('div');
+      romajiDiv.className = 'card-romaji';
+      romajiDiv.textContent = word.romaji;
 
-    const kanjiDiv = document.createElement('div');
-    kanjiDiv.className = 'card-kanji';
-    kanjiDiv.textContent = word.kanji || word.japanese;
+      const kanjiDiv = document.createElement('div');
+      kanjiDiv.className = 'card-kanji';
+      kanjiDiv.textContent = word.kanji || word.japanese;
 
-    card.appendChild(jpDiv);
-    card.appendChild(enDiv);
-    card.appendChild(romajiDiv);
-    card.appendChild(kanjiDiv);
+      card.appendChild(jpDiv);
+      card.appendChild(enDiv);
+      card.appendChild(romajiDiv);
+      card.appendChild(kanjiDiv);
+    }
 
     if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
       const cats = getAllCategoriesForWord(word);
@@ -3729,6 +3751,7 @@ function populateLessonsDropdown() {
              !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
              !k.match(/^Lesson\s+\d+/i) && 
              !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grm\s+\d+/i) && 
              !k.match(/^Grammer\s+\d+/i) && 
              !k.match(/^Extra\s+\d+/i) && 
              !k.match(/^Sentence\s+\d+/i) && 
@@ -3877,6 +3900,160 @@ function createCustomCategory() {
   renderCards();
   
   showToast(`Created category "${trimmed}"`, 'success');
+}
+
+// --------------------------------------------------------------------------
+// CUSTOM DISPLAY MODE ENGINE & MODAL CONTROLLER
+// --------------------------------------------------------------------------
+
+function renderCustomWordLines(containerElement, word, config) {
+  const cfg = config || currentSettings.customDisplayConfig || DEFAULT_SETTINGS.customDisplayConfig;
+  const count = Math.min(4, Math.max(1, parseInt(cfg.lineCount, 10) || 3));
+  const lines = (cfg.lines || ["english", "japanese", "romaji", "kanji"]).slice(0, count);
+  const bigChoice = cfg.bigText || "line1";
+
+  let hasAnyBig = false;
+  lines.forEach((lineType, lIdx) => {
+    const isBig = (bigChoice === `line${lIdx + 1}`) || (bigChoice === lineType);
+    if (isBig) hasAnyBig = true;
+
+    const lineDiv = document.createElement('div');
+    let text = "";
+    let cls = "";
+    if (lineType === "japanese") {
+      text = word.japanese || "";
+      cls = "card-japanese";
+    } else if (lineType === "english") {
+      text = word.english || "";
+      cls = "card-english";
+    } else if (lineType === "romaji") {
+      text = word.romaji || "";
+      cls = "card-romaji";
+    } else if (lineType === "kanji") {
+      text = word.kanji || word.japanese || "";
+      cls = "card-kanji";
+    }
+    lineDiv.className = `custom-line custom-line-${lIdx + 1} ${cls} ${isBig ? 'custom-big' : 'custom-small'}`;
+    lineDiv.textContent = text;
+    containerElement.appendChild(lineDiv);
+  });
+
+  if (!hasAnyBig) {
+    containerElement.classList.add('no-big');
+  } else {
+    containerElement.classList.remove('no-big');
+  }
+}
+
+function updateCustomDisplayGearButtonVisibility() {
+  const btn = document.getElementById('btn-custom-disp-gear');
+  if (!btn) return;
+  if (currentSettings.displayMode === 'custom') {
+    btn.classList.remove('hidden');
+  } else {
+    btn.classList.add('hidden');
+  }
+}
+
+function openCustomDisplayModal() {
+  const cfg = currentSettings.customDisplayConfig || DEFAULT_SETTINGS.customDisplayConfig;
+  const lineCountSelect = document.getElementById('custom-disp-line-count');
+  const line1Select = document.getElementById('custom-disp-line1');
+  const line2Select = document.getElementById('custom-disp-line2');
+  const line3Select = document.getElementById('custom-disp-line3');
+  const line4Select = document.getElementById('custom-disp-line4');
+  const bigTextSelect = document.getElementById('custom-disp-big-text');
+
+  if (lineCountSelect) lineCountSelect.value = String(cfg.lineCount || 3);
+  if (line1Select) line1Select.value = (cfg.lines && cfg.lines[0]) || "english";
+  if (line2Select) line2Select.value = (cfg.lines && cfg.lines[1]) || "japanese";
+  if (line3Select) line3Select.value = (cfg.lines && cfg.lines[2]) || "romaji";
+  if (line4Select) line4Select.value = (cfg.lines && cfg.lines[3]) || "kanji";
+  if (bigTextSelect) bigTextSelect.value = cfg.bigText || "line1";
+
+  updateCustomDisplayModalPreview();
+  openModal('modal-custom-display');
+}
+
+function updateCustomDisplayModalPreview() {
+  const lineCountSelect = document.getElementById('custom-disp-line-count');
+  const line1Select = document.getElementById('custom-disp-line1');
+  const line2Select = document.getElementById('custom-disp-line2');
+  const line3Select = document.getElementById('custom-disp-line3');
+  const line4Select = document.getElementById('custom-disp-line4');
+  const bigTextSelect = document.getElementById('custom-disp-big-text');
+  const previewCard = document.getElementById('custom-disp-preview-card');
+
+  if (!lineCountSelect || !previewCard) return;
+
+  const count = parseInt(lineCountSelect.value, 10) || 3;
+
+  // Show/Hide line select groups based on count
+  const g1 = document.getElementById('custom-disp-group-line1');
+  const g2 = document.getElementById('custom-disp-group-line2');
+  const g3 = document.getElementById('custom-disp-group-line3');
+  const g4 = document.getElementById('custom-disp-group-line4');
+
+  if (g1) g1.style.display = count >= 1 ? 'block' : 'none';
+  if (g2) g2.style.display = count >= 2 ? 'block' : 'none';
+  if (g3) g3.style.display = count >= 3 ? 'block' : 'none';
+  if (g4) g4.style.display = count >= 4 ? 'block' : 'none';
+
+  const previewCfg = {
+    lineCount: count,
+    lines: [
+      line1Select ? line1Select.value : "english",
+      line2Select ? line2Select.value : "japanese",
+      line3Select ? line3Select.value : "romaji",
+      line4Select ? line4Select.value : "kanji"
+    ],
+    bigText: bigTextSelect ? bigTextSelect.value : "line1"
+  };
+
+  const sampleWord = {
+    japanese: "けんきゅうしゃ",
+    english: "researcher, scholar",
+    romaji: "Kenkyuusha",
+    kanji: "研究者"
+  };
+
+  previewCard.innerHTML = "";
+  renderCustomWordLines(previewCard, sampleWord, previewCfg);
+}
+
+function saveCustomDisplaySettings() {
+  const lineCountSelect = document.getElementById('custom-disp-line-count');
+  const line1Select = document.getElementById('custom-disp-line1');
+  const line2Select = document.getElementById('custom-disp-line2');
+  const line3Select = document.getElementById('custom-disp-line3');
+  const line4Select = document.getElementById('custom-disp-line4');
+  const bigTextSelect = document.getElementById('custom-disp-big-text');
+
+  const count = parseInt(lineCountSelect.value, 10) || 3;
+  const cfg = {
+    lineCount: count,
+    lines: [
+      line1Select ? line1Select.value : "english",
+      line2Select ? line2Select.value : "japanese",
+      line3Select ? line3Select.value : "romaji",
+      line4Select ? line4Select.value : "kanji"
+    ],
+    bigText: bigTextSelect ? bigTextSelect.value : "line1"
+  };
+
+  currentSettings.customDisplayConfig = cfg;
+  currentSettings.displayMode = 'custom';
+
+  const selectDisplay = document.getElementById('select-display-mode');
+  if (selectDisplay) {
+    selectDisplay.value = 'custom';
+  }
+
+  updateCustomDisplayGearButtonVisibility();
+  saveSettings();
+  renderCards();
+  closeActiveModal();
+  showToast("Custom Display Mode applied.", "success");
 }
 
 function openWordEditModal(lesson, index) {
@@ -5699,6 +5876,7 @@ document.addEventListener('DOMContentLoaded', () => {
   syncSettingsDropdownsFromActiveGroup();
   renderCards();
   updateSelectionModeUI();
+  updateCustomDisplayGearButtonVisibility();
 
   // Listen for browser Back/Forward navigation changes
   window.addEventListener('popstate', handleUrlCategoryChange);
@@ -5724,6 +5902,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnSaveWord = document.getElementById('btn-save-word');
   if (btnSaveWord) {
     btnSaveWord.addEventListener('click', saveWordEditChanges);
+  }
+
+  // Custom Display Mode listeners
+  const btnSaveCustomDisp = document.getElementById('btn-save-custom-display');
+  if (btnSaveCustomDisp) {
+    btnSaveCustomDisp.addEventListener('click', saveCustomDisplaySettings);
+  }
+
+  const customDispLineCount = document.getElementById('custom-disp-line-count');
+  const customDispLine1 = document.getElementById('custom-disp-line1');
+  const customDispLine2 = document.getElementById('custom-disp-line2');
+  const customDispLine3 = document.getElementById('custom-disp-line3');
+  const customDispLine4 = document.getElementById('custom-disp-line4');
+  const customDispBigText = document.getElementById('custom-disp-big-text');
+
+  [customDispLineCount, customDispLine1, customDispLine2, customDispLine3, customDispLine4, customDispBigText].forEach(el => {
+    if (el) {
+      el.addEventListener('change', updateCustomDisplayModalPreview);
+      el.addEventListener('input', updateCustomDisplayModalPreview);
+    }
+  });
+
+  const btnCustomDispGear = document.getElementById('btn-custom-disp-gear');
+  if (btnCustomDispGear) {
+    btnCustomDispGear.addEventListener('click', openCustomDisplayModal);
   }
 
   // Quiz lessons checkbox multi-select buttons
@@ -5797,8 +6000,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('select-display-mode').addEventListener('change', (e) => {
     stopSpeech();
     currentSettings.displayMode = e.target.value;
+    updateCustomDisplayGearButtonVisibility();
     saveSettings();
     renderCards();
+    if (e.target.value === 'custom') {
+      openCustomDisplayModal();
+    }
   });
 
   document.getElementById('select-gap').addEventListener('change', (e) => {
@@ -6048,6 +6255,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Custom Display Mode Modal keyboard shortcuts (Enter to save, Esc to cancel)
+  const customDispModal = document.getElementById('modal-custom-display');
+  if (customDispModal) {
+    customDispModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        saveCustomDisplaySettings();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeActiveModal();
+      }
+    });
+  }
+
   // Theme Toggle Button
   document.getElementById('theme-toggle').addEventListener('click', () => {
     const curTheme = document.documentElement.getAttribute('data-theme');
@@ -6172,15 +6395,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Alt + 1-5 for Display Mode selection
-    if (e.altKey && e.key >= '1' && e.key <= '5') {
+    // Alt + 1-7 for Display Mode selection
+    if (e.altKey && e.key >= '1' && e.key <= '7') {
       e.preventDefault();
       const selectDisplayMode = document.getElementById('select-display-mode');
       if (selectDisplayMode) {
         const index = parseInt(e.key, 10) - 1;
-        selectDisplayMode.selectedIndex = index;
-        selectDisplayMode.dispatchEvent(new Event('change'));
-        showToast(`Display Mode: ${selectDisplayMode.options[index].text}`, 'info');
+        if (index < selectDisplayMode.options.length) {
+          selectDisplayMode.selectedIndex = index;
+          selectDisplayMode.dispatchEvent(new Event('change'));
+          showToast(`Display Mode: ${selectDisplayMode.options[index].text}`, 'info');
+        }
       }
       return;
     }

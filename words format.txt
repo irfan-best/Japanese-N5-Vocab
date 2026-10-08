@@ -25,6 +25,8 @@ win [a lottery]
 [宝くじが～] 当たります
 
 dont do anything else, not even single other character to be disturbed
+1st line of block should be only without kanji, 4th line of block shoudl be only in kanjis
+(dont disturb them)
 
 ------------------------
 move logic:
@@ -34,5 +36,39 @@ simillarly for move down, basically move before the first most selected one.
 if 1,2,5,7 selected move up should do order as 1,2,5,7,3,4,6,8...
 lly for move down
 
+------------------------
+selection logic:
+when 2 and 10 are already selecting, by holding shift if i select 4, then 3,4 should selected, 
+since 4's nearest selected image is 2, when i select 8 with shift then 8,9 should be selected.
+
+clicking on down arrow should take me next row, clicking 1 should should select first image of current row,
+2 should select 2nd image of current...
+------------------------
+images display logic:
+no space between images, when 1 key pressed then show 1 image per row, 2 key press - then 2 images per row
+... 9, 0 -> 10 images per row
+when 4 images to be shown on row, image width = 25% of screen width, image height is auto
+nothing else to take image spaces
+when image is selected we will be adding border right, that will reduce width dimenstions automatically 
+
+
+
 --------------------------------------------
-vs code diff format:
+give me similar to this format:
+kono aida vs senjitsu:
+    kono aida:
+        Casual / Everyday
+        Spoken with friends, family, peers, or close coworkers.
+
+    senjitsu:
+        Polite / Formal / Business
+        Used in business emails, formal speech, writing, and with superiors/customers.
+
+give me copy box, give me plain text format not in md format
+
+-------------------------
+pixiv folders format
+This folder "E:\All in One\Websites\Get Files for All Folders\public\All Websites Links\4 Pixiv" has
+multiple subfolders, each subfolder has "Images" folder, this Images folder has multiple subfolders, 
+there we have iamges with names as "{artworkid} {img number}"
+

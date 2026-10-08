@@ -463,11 +463,13 @@ Mawari vs Hen
         Eki no hen wa shizuka desu.
         The area around the station is quiet.
 
-Fukuro vs Kaban
+Fukuro vs Kaban vs Baggu
 
     Fukuro
         Bag / Sack / Pouch (Soft, unstructured containers or flexible packaging made of paper, plastic, or cloth)
-
+        Plastic bags, paper bags, cloth pouches, trash bags, or envelopes. 
+        It does not refer to daily accessories like a backpack or briefcase.
+        
         Super de fukuro wo moraimashita.
         I received a bag (shopping bag) at the supermarket.
 
@@ -476,12 +478,20 @@ Fukuro vs Kaban
 
     Kaban
         Bag / Briefcase / Backpack (Structured bags designed to carry personal items, work materials, or belongings)
+        A sturdy, general term for bags meant for carrying personal belongings, books, laptops, or work items.
+        Has shape, handles, or straps (backpacks, briefcases, shoulder bags, tote bags, school bags).
 
         Atarashii kaban wo kaimashita.
         I bought a new bag / briefcase.
 
         Kaban no naka ni hon ga arimasu.
         There is a book inside my bag.
+
+    Baggu:
+        The Katakana loanword from English "bag." It overlaps heavily with kaban, 
+        but often leans toward fashion, casual bags, or specific styles
+
+        Commonly used for handbags, designer bags, shopping bags (eko baggu), or travel bags.
 
 Kuriiningu vs Souji vs Sentaku vs Kuriiningu-ya
 
@@ -819,7 +829,7 @@ Hiyashimasu vs Suzushii
 		Aki wa suzushikute sugashiyai desu.
 		Autumn is cool and refreshing.
 
-Niru vs Yaku vs Yuderu
+Niru vs Yaku vs Yuderu vs Wakashimasu
 
 	Niru
 		To boil / To simmer / To stew (Cooking verb meaning to cook food by simmering or boiling it in a flavored liquid, broth, or sauce, allowing the food to absorb the flavor)
@@ -847,6 +857,11 @@ Niru vs Yaku vs Yuderu
 
 		Yudeta pasuta wo zara ni morimasu.
 		I place the boiled pasta on a plate.
+
+    Wakashimasu:
+        To boil / heat up
+        Plain liquid itself (Water/Tea)
+        The water/liquid, not solid food
 
 Tanoshimi
     Ryokō ga tanoshimi desu.
@@ -1324,11 +1339,15 @@ Shishitsu:
 Yofukashi o suru:
     Yo - of yoru
 
-sasoimasu vs shoutaishimasu:
+sasoimasu vs shoutaishimasu vs yobimasu:
     sasoimasu:
         "Invite" / "Ask someone to join"
         Suggests doing an activity together in a casual or everyday context.
         Focuses on proposing an action or outing with a peer or friend.
+        Target: Friends, peers, or colleagues of equal/lower status.
+
+        Key feature: Usually implies an option for the other person to 
+        accept or decline without pressure.
 
         Tomodachi o eiga ni sasoimashita.
         Issho ni ranchi o tabeyou to sasoimashita.
@@ -1337,9 +1356,21 @@ sasoimasu vs shoutaishimasu:
         "Invite" / "Host someone"
         Formally invites or hosts someone at an event, occasion, or venue.
         Focuses on the host-guest relationship for official or special events.
+        Target: Guests, superiors, clients, or close friends being welcomed to a specific hosted event.
+
+        Key feature: Implies hospitality (you are acting as the host) or an official 
+        invitation (wedding, party, formal dinner).
 
         Kekkonshiki ni sensei o shoutaishimashita.
         Uchi ni tomodachi o shoutaishimashita.
+
+    yobimasu:
+        Calling out a name, summoning someone to a place, or inviting/bringing people together.
+        Target: Anyone, depending on context (calling a taxi, calling a doctor, calling out
+        to a friend, or inviting friends over).
+
+        Key feature: Focuses on the physical act of requesting someone to come to where you are.
+
 
 nemasu vs nemurimasu:
     nemasu:
@@ -1425,9 +1456,16 @@ hikimasu vs hashirimasu vs nigemasu:
         Dorobou ga nigemashita.
         Kainushi kara inu ga nigemashita.
 
-hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shimasu:
+butsukarimasu vs hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shimasu:
+    butsukarimasu: (intransitive)
+        Transitive: Butsukemasu
+        Broadest term; general bumping, crashing, or clashing
+        Bumps into / Collides	
+        People, Vehicles, Ideas
+
     hikimasu:
         "Run over" / "Drag under"
+        Vehicles (hitting humans/animals)
         Refers to a vehicle rolling over someone/something or pulling them under the tires.
         Focuses on the crushing or dragging impact of the wheels.
 
@@ -1437,6 +1475,7 @@ hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shima
 
     hanemasu:
         "Hit and send flying" / "Strike"
+        Vehicles (hitting humans/animals)
         Refers to a vehicle striking a pedestrian or object and bouncing/throwing them off.
         Focuses on the impact force that repels or throws the subject into the air or side.
 
@@ -1447,6 +1486,8 @@ hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shima
         A deer was hit by a car.
 
     shoutotsu shimasu:
+        Vehicles, Trains, Planets
+        Formal/news term for two moving entities crashing head-on
         "Crash" / "Collide"
         Refers to two or more moving objects (or a vehicle and a stationary obstacle) hitting each other head-on or forcefully.
         Focuses on the overall impact/collision between objects (cars, trains, ships, or people), rather than hitting a pedestrian.
@@ -1458,6 +1499,7 @@ hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shima
         The utility pole collided with the wall.
 
     tsuitotsu shimasu:
+        Vehicles
         "Rear-end" / "Crash into the back of"
         Refers specifically to a vehicle hitting another vehicle or object from behind.
         Focuses on rear-end collisions where the following vehicle strikes the back of the front vehicle.
@@ -1466,8 +1508,11 @@ hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shima
         A truck rear-ended the car in front of it.
 
     tsuiraku shimasu:
+        Aircraft, Flying objects, Heights
+        Free-fall crash
         "Fall" / "Plummet" / "Crash (from a high place)"
         Refers to an object or vehicle falling from a high altitude, high level, or the sky.
+        Crashing downward from a high position to the ground
         Focuses on dropping from a height, such as airplanes crashing or objects/people falling off a cliff or building.
 
         Hikouki ga yama ni tsuiraku shimashita.
@@ -1590,7 +1635,7 @@ testo vs shiken:
         Entrance exams, national certifications, final exams
         Universities, job applications, licensing boards
 
-Touchaku shimasu vs Tsukimasu:
+Touchakushimasu vs Tsukimasu:
     Touchaku shimasu:
         Formal, official, written, public announcements
         Flight schedules, train delays, delivery tracking, business contexts
@@ -1603,4 +1648,567 @@ Touchaku shimasu vs Tsukimasu:
 
 Hanareta:
     from Hanaremasu - to separate, stray, or leave
-    `
+    
+Sankaku:
+    Sankaku: "Triangular" / "Three-cornered"
+    Used in daily life for triangular objects, snacks, signs, or concepts.
+
+    Sankakukei: "A Triangle" (Geometric figure)
+    Used in math class, technical descriptions, or precise geometric definitions.
+
+Riku:
+    specifically means land, terra firma, or shore in opposition to the sea or sky. 
+    It emphasizes land as a continuous physical mass or surface as opposed to water.
+    
+    Fune ga riku ni chikazuite imasu.
+    The ship is approaching the land / shore.
+
+    Taifuu ga riku ni agarimashita.
+    The typhoon made landfall
+
+Sumimasu vs Imasu vs Kurashimasu:
+
+    Sumimasu (Sunde imasu):
+        Focuses on official residence, physical dwelling, and home address
+        Stating where you live long-term, filling forms, introducing your hometown/city
+        Housing documents, basic introductions, long-term residence statements
+
+    Imasu:
+        Focuses on current physical location and temporary presence at a specific moment
+        Telling someone where you are right now, spotting a person or animal
+        Phone calls, location updates, temporary stays, travel itineraries
+
+    Kurashimasu (Kurashite imasu):
+        Focuses on lifestyle, daily routine, living environment, and companions
+        Describing living alone, living with family, standard of living, countryside life
+        Conversations about personal life, lifestyle choices, daily living arrangements
+
+        Expressing Living Alone / Companionship:
+        Hitori de kurashite imasu.
+        (I am living alone.)
+        
+        Kazoku to issho ni kurashitai desu.
+        (I want to live together with my family.)
+
+        Describing Lifestyle / Living Conditions:
+            Inaka de shizuka ni kurashimasu.
+            (I will live quietly in the countryside.)
+            
+            Shataku de kaiteki ni kurashite imasu.
+            (I am living comfortably in company housing.)
+
+        Talking About Financial / Life Situations:
+            Nenkin de kurashite imasu.
+            (I am living on a pension.)
+            
+            Sukunai okane de kurashiru no wa taihen desu.
+            (Living on little money is difficult.)
+
+        Asking About Someone's Living Situation:
+            Nihon de no kurashi wa dou desu ka.
+            (How is your life/living in Japan?)
+
+haitatsu:
+    haitatsu shimasu means "to deliver" or "will deliver" in Japanese.
+    haitatus: Delivery / Distribution
+    
+haitatsu vs hakobimasu vs todokimasu:
+
+    Haitatsu shimasu:
+        Focuses on commercial delivery services, official courier distribution, and business logistics
+        Describing package deliveries, food orders, mail routing, and courier job responsibilities
+        Postal service operations, e-commerce order tracking, delivery service roles
+
+        (Commercial / Service Delivery):
+        
+        Amazon no takkyūbin wo haitatsu shimasu.
+        (I will deliver the Amazon express package.)
+        
+        Pizaya ga jūmin ni piza wo haitatsu shimasu.
+        (The pizza shop delivers pizza to the residents.)
+        
+        Sagawa Kyūbin no haitatsuin ga mainichi nimotsu wo haitatsu shimasu.
+        (The Sagawa Express delivery agent delivers packages every day.)
+
+    Todokimasu (Todokemasu):
+        Focuses on the final outcome of reaching a destination or personal hand-delivery to a recipient
+        Tracking arrived packages (todokimasu) or personally handing over a lost item or gift (todokemasu)
+        Delivery arrival notifications, returning lost property, handing documents directly to a person
+    
+        (Intransitive - Item arrives / reaches destination)
+
+        Kino chūmon shita fuku ga kyō todokimashita.
+        (The clothes I ordered yesterday arrived today.)
+        
+        Mada nihon kara no tegami ga todokimasen.
+        (The letter from Japan hasn't arrived yet.)
+        
+        Nainai no kimochi ga aite ni todokimashita.
+        (My feelings were successfully conveyed/reached the other person.)
+
+    Todokemasu (Transitive - Handing over / delivering to someone personally):
+        Kōban ni wasuremono wo todokemasu.
+        (I will take/deliver the lost property to the police box.)
+        
+        Gakkyū tayori wo tsugi no ie ni todokemasu.
+        (I will hand-deliver the class newsletter to the next house.)
+        
+        Tomodachi ni tanjōbi presento wo todokemasu.
+        (I will hand over / deliver the birthday present to my friend.)
+
+    Hakobimasu:
+        Focuses on physical transport, mechanical conveyance, and moving items from point A to B
+        Moving heavy furniture, transporting cargo by truck, carrying luggage by hand
+        House moving logistics, factory transport, manual labor, physical carrying
+
+Hanashiaite:
+    Hanashi - The noun form/stem form of of hanashimasu
+    aite    - aite coming from aimasu
+
+tanshinsha:
+    means "a single person living alone" or "a single-person household."
+
+taiken:
+    means "hands-on experience," "personal experience," or "trial / preview."
+
+minshuku: 
+    is a traditional Japanese family-run guesthouse or bed-and-breakfast, 
+    typically located in countryside towns, fishing villages, mountain 
+    resorts, or near hot springs.
+
+kateiteki:
+    means "homey," "cozy," "warm and welcoming," or "like a family environment."
+    Katei - household
+    teki - makes it's household-like or household-ish
+        teki is from - tekitou - which means - suitable proper
+
+kono aida vs senjitsu:
+    kono aida:
+        Casual / Everyday
+        Spoken with friends, family, peers, or close coworkers.
+
+    senjitsu:
+        Polite / Formal / Business
+        Used in business emails, formal speech, writing, and with superiors/customers.
+
+Azukarimasu vs Oazukeire:
+    Azukarimasu means "to entrust," "to deposit," or "to leave something/someone in someone else's care."
+    Azukemasu - transitive
+    Azukarimasu - intransitive
+
+Mokuji vs Nakami:
+    Mokuji:
+        Table of contents / Outline / Index
+        Used for books, reports, manuals, documents, and web pages to list chapters and page numbers.
+
+    Nakami:
+        Physical contents / Inside substance / Core meaning
+        Used for items inside a container (box, bag, bottle) or the actual depth and detail of a speech, article, or lesson.
+
+Agemasu vs Yarimasu vs Kuremasu vs Moraimasu:
+
+    Agemasu:
+        Standard / Polite / Equal or Superior recipient
+        Used when you (or someone in your group) give something to equal peers, friends, equals, or superiors.
+        Everyday polite giving, exchanging gifts with friends, donating, offering help to peers.
+
+    Kuremasu:
+        Inward giving / Receiver is "Me" or "My in-group"
+        Used when someone else gives something TO YOU (or to your family/friends).
+        Receiving gifts from others, accepting help or favors done for you.
+
+    Moraimasu:
+        [Watashi wa] Yamada-san ni hana o moraimashita.
+        I received some flowers from Mr. Yamada.
+
+        Satou-san wa watashi ni kurisumasu kaado o kuremashita.
+        Ms. Sato gave me a Christmas card.
+
+    Yarimasu:
+        Casual / Downward directional / Plants, animals, or younger subordinates
+        Used when giving to plants (watering), feeding pets, or giving items to younger siblings, children, or lower subordinates.
+        Watering plants, feeding animals, giving small allowances or treats to young children.
+
+    1. Feeding pets / Watering plants:
+        Inu ni esa wo yarimasu.
+        I feed the dog (give food to the dog).
+
+        Hana ni miz wo yarimasu.
+        I water the flowers (give water to the flowers).
+
+    2. Giving to younger siblings / Children:
+        Otouto ni omocha wo yarimasu.
+        I give a toy to my younger brother.
+
+        Kodomo ni okashi wo yarimasu.
+        I give snacks to the children.
+
+    3. Offering help / Favors to juniors or animals:
+        Kouhai ni shigoto wo yarimasu.
+        I hand off/assign work to a junior coworker.
+
+        Neko ni ocha wo... yarimasu? (Neko ni mizu wo yarimasu).
+        I give water to the cat.
+    
+Seihin vs Youhin:
+
+    Seihin (製品):
+        Manufactured goods / Finished commercial products
+        Focuses on the production process (items produced by a company or factory for sale).
+        Electronics, manufactured merchandise, industrial products, factory goods.
+
+    Youhin (用品):
+        Supplies / Equipment for a specific purpose
+        Focuses on the intended function or category of use (gear/goods made for a specific activity).
+        Sports gear (spōtsu-yōhin), office supplies (jimuhin/jimu-yōhin), daily necessities (nichiyōhin), pet supplies.
+    
+koushuukai:
+    koushuukai means Short course / Workshop / Training session
+
+Shoujin:
+    originally means spiritual devotion, diligence, or striving toward enlightenment in Buddhism.
+    Buddhist monks developed a diet completely free of meat, fish, poultry, onions, garlic, 
+    and other pungent vegetables. 
+    Over time, Shoujin became shorthand for this pure, plant-based culinary tradition.
+
+Rejaa:
+    means Leisure / Recreation
+    Rejaa -> is borrowed from "Leisure"
+
+    Recreation items like sports equipment, camping gear, or hobby supplies are 
+    often used specifically for fun, relaxation, outdoor activities, sports, or
+    hobbies during your free (leisure) time.
+    
+Ikebana sukuuru:
+    sukuuru - school
+
+hanko:
+    A personal seal or stamp, which is traditionally used in Japan instead of a 
+    signature for signing official documents, contracts, banking forms, and delivery receipts.
+
+uchi vs ie:
+    Uchi:
+        The concept of "my home," "my family," or "in-group"
+        Casual, intimate, and spoken-language friendly
+        Can mean home, family, company, or team
+        "My home / my circle" (emotional connection)
+
+    Ie:
+        The physical building, house, or formal household
+        More neutral, objective, and formal
+        Refers specifically to a physical dwelling or lineage
+        "The house" (objective structure)
+
+Kyouiku vs Kyouikugaku:
+    Kyouiku:
+        Education, Schooling, Training
+        The practical activity of teaching and raising students
+        Schools, parenting, corporate training, social upbringing
+
+    Kyouikugaku:
+        Pedagogy, Educational Studies / Science
+        The academic field that researches how education works
+        University majors, academic research, educational theory
+
+Doko de demo vs Doko demo:
+    Doko demo:
+        anywhere
+
+    Doko de demo:
+        At/in any place
+
+Kurippu vs Hasamu vs Tojiru:
+    Kurippu:
+        Paper clip / Binder clip	
+        The physical tool itself.
+
+    Hasamu:
+        To clip / pinch / sandwich between
+        The mechanical action of holding something between 
+        two surfaces (using a clip, pegs, or chopsticks).
+
+    Tojiru:
+        To close / bind together
+        The goal of closing a file, notebook, or set of papers so they stay together.
+
+jougi vs monosashi:
+    jougi:
+        instead of becoming yougi by reading he became jougi.
+        Drawing Lines / Office & School Use
+        Used for drawing straight lines or guiding a pen/pencil, usually made of plastic or metal.
+
+    monosashi:
+        Measuring Length / Craft & Tailoring Use
+        Used specifically for measuring distances or dimensions from the zero edge, common in woodworking and sewing.
+
+gabyou vs oshipin:
+    gabyou:
+        Standard / Written / Formal
+        The standard Japanese word for a flat metal thumbtack, commonly used in official contexts, news, and stationery packaging.
+
+    oshipin:
+        Casual / Spoken / Daily Conversation
+        A colloquial term (push-pin) used in everyday conversation, often referring to pushpins with raised plastic handles.
+
+Kezurimasu:
+    think as tsuri(fishing) - after repeated fishing you have sharped the skills
+    this leads to - zuri
+
+Kanazuchi:
+    think as -> Kana and Bocchi are friends
+    Kana hits Bocchi with hammer
+
+(Neji o) shimeru vs Kugi:
+    Neji - think of Nejiremasu (twisted, screen also should be turned)
+    Kugi - is nail (this doesn't have turning lines, screw has turning lines)
+        -> you break an lock if no key(kagi) with kugi
+    Yurumeru - think as yor's dream to loosen the screw (since she previously hit very hard with hammer)
+
+Shuuseieki:
+    one week, remind me(sei) to by Correction Liquid in the station.
+
+taoremasu vs ochimasu:
+    taoremasu:
+        To Topple / Fall Over / Collapse
+        Used when a standing object, person, or structure loses balance and falls sideways or down from an upright position (e.g., trees, buildings, sick people).
+
+    ochimasu:
+        To Fall Down / Drop From Height
+        Used when an object or person drops straight down from a high place to a lower place due to gravity (e.g., leaves from a tree, a wallet from a pocket, test scores).
+
+Ureshi vs Tanoshi:
+    Tanoshi:
+        means fun, enjoyable, or pleasant
+
+    Ureshi:
+        describes an internal feeling of joy or gladness, often triggered by a specific piece of 
+        good news, a gift, or something positive happening to you.
+
+shiawase vs ureshii:
+    shiawase:
+        Deep / Long-term Happiness & Fulfillment
+        Refers to a lasting state of well-being, contentment, or a happy life overall (e.g., a peaceful marriage, good health, feeling blessed).
+
+    ureshii:
+        Short-term / Immediate Joy & Delight
+        Refers to a quick emotional spark of joy triggered by a specific positive event or outcome (e.g., receiving a gift, passing an exam, hearing good news).
+
+sagarimasu vs herimasu:
+    sagarimasu:
+        To Drop / Go Down (Position, Level, Degree)
+        Used when a value, level, temperature, rank, or position moves downward on a scale, without necessarily changing in total quantity (e.g., body temperature dropping, prices going down, grades dropping).
+
+    herimasu:
+        To Decrease / Shrink in Quantity
+        Used when the physical amount, volume, number, or total quantity of something becomes smaller or less than before (e.g., population decreasing, remaining money shrinking, weight dropping).
+
+joubu vs genki:
+    joubu:
+        Physical Strength / Durability / Sturdiness
+        Used to describe strong physical bodies, robust health that rarely falls ill, or durable objects that do not break easily.
+
+    genki:
+        Energy / High Spirits / Overall Well-being
+        Used to describe emotional vitality, energetic mood, active health, or being lively and well in daily life.
+
+pittari vs choudo ii:
+    pittari:
+        Exact Fit / Perfect Match / Snug
+        Emphasizes a tight, precise, or exact match with zero room or gap (e.g., clothes fitting perfectly, exact time, exact amount of money).
+
+    choudo ii:
+        Just Right / Comfortable / Ideal Level
+        Emphasizes a comfortable, suitable, or convenient degree without feeling excess or lack (e.g., room temperature, steak doneness, timing).
+
+Kachiki:
+    from kachimasu
+
+Shinkeishitsu:
+    remeber as - shinbun reading in an room, time(tokei) is less 
+
+Seijitsu:
+    senjitsu - is other day used in formal setting
+    in formal setting we will be sincere.
+
+Kappatsu:   
+    remeber as kappa + tsui
+
+Komakai:
+    fine - is not fine money, it is fine like that of "This is fine(good)"
+
+Namida:
+    is a noun that means tear (as in crying). Tears - water from eyes.
+
+Engi:
+    means omen, luck
+
+Dou iu fuu ni nasaimasu ka.:
+    nasaimasu: To do
+    fuu: way
+
+Kata ni kakaru kurai ni:
+    kata ni - ni is used here - is used to mark the target, destination, or point of contact.
+    kata ni kakaru means "to hang down onto the shoulders" or "to reach the shoulders
+    (15-4 pattern)
+
+rihatsuten vs tokoya:
+    also said as - tokoya (in casual)
+    Tone: Warm, colloquial, informal.
+
+    rihatsuten - formal and official
+    Tone: Official, professional, literary.
+
+Mayu ga kakureru kurai ni:
+    kakureru: kakuremasu (intransitive)
+    -> to be hidden/ to be covered
+    transitive pair - kakusimasu
+
+yoii shimasu vs junbi shimasu:
+    youi shimasu:
+        Short-Term / Immediate / Item-Focused
+        Focuses on getting specific physical items, tools, or materials ready for immediate use.
+
+    junbi shimasu:
+        Long-Term / Process-Oriented / Event-Focused
+        Focuses on the overall planning, steps, or multi-stage process needed for a future event.
+    
+okurimono vs tsukaikata (presento):
+    okurimono:
+        Traditional / Formal / Japanese Style
+        Refers to thoughtful gifts, seasonal offerings (like Ochugen or Oseibo), or ceremonial presents. Used in polite or traditional contexts.
+
+    presento:
+        Casual / Modern / Western Style
+        Borrowed from English. Used for everyday gift-giving like birthday presents, Christmas gifts, or casual surprises among friends and family.
+        
+narimasu:
+    a ring or phone ringing
+    
+Ryoushuusho:
+    Rembering logic
+    Ryou - dormitary (our area)
+    shuu - week
+    sho - show
+    This week it's our area no need to show receipt
+    
+kakari vs kakariin:
+    kakari:
+        Task / Duty / Role
+        Refers to the specific duty, assignment, or role itself, or the person assigned to it in informal contexts. Common in schools, small groups, or daily tasks.
+
+    kakariin:
+        Staff Member / Official Attendant / Person in Charge
+        Refers explicitly to the official person, employee, or staff member assigned to a duty. Used in customer service, official announcements, business, and formal settings.
+
+―i:
+    1st place: dai-ichi-i
+    2nd place: dai-ni-i
+    3rd place: dai-san-i
+    4th place: dai-yon-i
+    5th place: dai-go-i
+    6th place: dai-roku-i
+    7th place: dai-nana-i
+    8th place: dai-hachi-i
+    9th place: dai-kyuu-i
+    10th place: dai-juu-i
+    
+mezamashi vs mezamashidokei:
+    mezamashi:
+        Action / Function / Short Name
+        Derived from mezamasu (to awaken/wake up). Refers to the act of waking someone up, an alarm function, or used as a casual shorthand for an alarm clock.
+
+    mezamashidokei:
+        Concrete Object / Specific Noun
+        Combines mezamashi (awakening) + tokei/dokei (clock/watch). Refers explicitly to the physical alarm clock device itself.
+
+Jishin no baai
+    Case / Situation
+    
+Sonae ga taisetsu:
+    Preparation is important.
+    Sonae - Noun meaning "preparation," "readiness," or "precaution" (from the verb sonaeru, to prepare).
+
+Kagu ga taorenai you ni shite oku:
+    30-2 -> pattern, Vte-form okimasu -> completion of a necessary action by a given time.
+    
+Kichouhin:
+    chou - remember as from techou
+    hin - Article, goods, item - physical item/ property (shokuhin)
+    
+Man'ichi jishin ga okita baai
+    Manichi - Adverb emphasizing emergency/unlikely occurrence
+    here okita baai -> is 45th lesson pattern
+    for jiko ga okimasu -> jishin ga okimasu
+    
+To o akete deguchi no kakuho:
+    kakuho - Noun meaning securing, ensuring, or guaranteeing (used here as a practical noun directive).
+    
+kinkyuu vs hijou:
+    kinkyuu:
+        KinKyuu = Kyuu - (from kyuu ni - urgent)
+        Urgent / Time-Sensitive / Pressing Action
+        Focuses on immediacy and speed. Describes a critical situation or action that demands prompt attention, fast response, or emergency measures right away (e.g., emergency meeting, urgent broadcast, emergency landing).
+
+    hijou:
+        Emergency / Abnormal State / Extreme Condition
+        Focuses on non-ordinary or dangerous circumstances. Describes an unusual, extraordinary, or crisis state that deviates from normal safety conditions (e.g., emergency exit, emergency stairs, state of emergency).
+        
+Subayaku hi no shimatsu
+    subayaku - Quickly / Immediately / Swiftly
+        (from subayai - i-adjective)
+
+    shimatsu - Settlement / Management / Extinguishing / Handling
+
+Moguru:
+    "to dive under," "to duck," or "to crawl into."
+    mogurimasu
+
+Shoukaki - fire extinguisher
+    shou - extinguish, ka - fire, ki - device
+
+mochidashibukuro:
+    mochidashi - mochimasu (to hold/to carry) + dashiimasu - to take out
+    bukuro - fukuro - bag
+    Emergency grab-bag
+
+yuujin vs tomodachi:
+    yuujin:
+        Formal / Written / Neutral
+        Used in formal contexts, public speaking, business, writing, or when introducing a friend respectfully to others. Refers to a friend with a tone of clear respect.
+
+    tomodachi:
+        Casual / Spoken / Everyday
+        The standard everyday word for a friend. Used in casual conversation, daily speech, and among peers, family, or close acquaintances.
+
+kakuho shimasu vs hoshousho:
+    kakuho shimasu:
+        Action / Verb (To Secure / To Guarantee / To Reserve)
+        Refers to the physical or operational act of securing, reserving, obtaining, or holding onto something (e.g., securing budget, reserving seats, or ensuring safety).
+
+    hoshousho:
+        Concrete Document / Noun (Warranty / Guarantee Certificate)
+        Refers explicitly to a physical document or certificate that acts as a written warranty or guarantee for a product, service, or legal agreement.
+
+subayaku vs hayaku:
+    subayaku:
+        Nimble / Swift / Quick Action
+        Focuses on agility, reflexes, and sudden smooth movement. Describes completing an action or movement with sharpness, speed, and efficiency without delay (e.g., dodging quickly, reacting fast).
+
+    hayaku:
+        Fast / Early / General Speed
+        The broad everyday term for speed and time. Refers to moving at high speed, doing something in a short time, or doing something early/ahead of schedule (e.g., running fast, waking up early).
+
+junbi vs sonaemasu:
+    junbi:
+        Process / Action / General Preparation
+        Focuses on the active process, setup, or arrangements made for an expected upcoming event, task, or activity (e.g., getting ready for a trip, meeting, or exam).
+
+    sonaemasu:
+        Precaution / Provision / Readiness for Emergencies
+        Focuses on building a safeguard, stock, or mental/physical readiness to handle unexpected risks, disasters, or potential future troubles (e.g., emergency supplies, disaster preparedness).
+
+gakekuzure:
+    gake - cliff, steep slope
+    kuzure - crumble, collapse, breakdown
+    
+`
