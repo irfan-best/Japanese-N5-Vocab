@@ -19,6 +19,7 @@ const DEFAULT_SETTINGS = {
   focusedWordIndex: -1,
   selectedWordIndices: [],
   isSelectionModeActive: false,
+  activeTagFilter: "",
   customCategories: [],
   similarWordGroups: [],
   hiddenCategories: [],
@@ -26,7 +27,7 @@ const DEFAULT_SETTINGS = {
   othersHiddenLevels: [],
   lastDestCategory: "",
   activeDbGroup: "N5 Lessons",
-  showCategoryModeActive: false,
+  showCategoryModeActive: true,
   lastGroupCategories: {
     "N5 Lessons": "Lesson 01",
     "N5 Others": "Questions",
@@ -66,13 +67,23 @@ const DEFAULT_SETTINGS = {
     "N1 Listening": "Listening 101",
     "N1 Dumps": "Show All Words",
     "Kanji": "N5 Kanji",
-    "Others": "Questions"
+    "Others": "Questions",
+    "Ultimate": "Lesson 01"
   }
 };
 
 // Main Runtime State Variables
 let currentSettings = { ...DEFAULT_SETTINGS };
-let currentWordsDb = {}; // Maps lesson key (e.g. "Lesson 01") to array of parsed word objects
+let currentWordsDb = {}; // Standard DB: Maps lesson key to array of parsed word objects
+let currentUltimateWordsDb = {}; // Ultimate DB: Maps category key to array of parsed word objects
+
+function isUltimateMode() {
+  return currentSettings.activeDbGroup === "Ultimate";
+}
+
+function getActiveDb() {
+  return (currentSettings.activeDbGroup === "Ultimate") ? currentUltimateWordsDb : currentWordsDb;
+}
 
 // Speech Synthesis State
 let jpVoice = null;
@@ -98,29 +109,42 @@ function parseWords(text) {
   const blocks = text.split(/\n\s*\n/);
   const words = [];
   blocks.forEach(block => {
-    const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-    if (lines.length >= 3) {
-      const jp = lines[0];
-      const eng = lines[1];
-      const romaji = lines[2];
-      const kanji = lines.length >= 4 ? lines[3] : "";
+    const rawLines = block.split('\n').map(l => l.trim());
+    while (rawLines.length > 0 && rawLines[0] === '') rawLines.shift();
+    while (rawLines.length > 0 && rawLines[rawLines.length - 1] === '') rawLines.pop();
+    if (rawLines.length >= 3) {
+      const jp = rawLines[0];
+      const eng = rawLines[1];
+      const romaji = rawLines[2];
+      const kanji = rawLines.length >= 4 ? rawLines[3] : "";
+      let tags = [];
+      if (rawLines.length >= 5 && rawLines[4]) {
+        tags = rawLines[4].split(',').map(t => t.trim()).filter(t => t.length > 0);
+      }
       words.push({
         japanese: jp,
         english: eng,
         romaji: romaji,
-        kanji: kanji
+        kanji: kanji,
+        tags: tags
       });
     }
   });
   return words;
 }
 
-// Convert parsed words array back into text format (3 or 4 lines per block)
+// Convert parsed words array back into text format (3, 4, or 5 lines per block)
 function serializeWords(wordsArray) {
   if (!wordsArray || wordsArray.length === 0) return "";
   let text = "\n";
   wordsArray.forEach(w => {
-    if (w.kanji && w.kanji.trim()) {
+    const hasKanji = (w.kanji && w.kanji.trim());
+    const hasTags = (Array.isArray(w.tags) && w.tags.length > 0);
+    if (hasTags) {
+      const kanjiLine = (w.kanji !== undefined && w.kanji !== null) ? w.kanji : "";
+      const tagsStr = w.tags.map(t => t.trim()).filter(Boolean).join(', ');
+      text += `${w.japanese}\n${w.english}\n${w.romaji}\n${kanjiLine}\n${tagsStr}\n\n`;
+    } else if (hasKanji) {
       text += `${w.japanese}\n${w.english}\n${w.romaji}\n${w.kanji}\n\n`;
     } else {
       text += `${w.japanese}\n${w.english}\n${w.romaji}\n\n`;
@@ -361,17 +385,27 @@ function saveSettings() {
     }
     currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = cat;
   }
-  localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
+  if (isUltimateMode()) {
+    localStorage.setItem('ultimate_app_settings', JSON.stringify(currentSettings));
+  } else {
+    localStorage.setItem('n5_app_settings', JSON.stringify(currentSettings));
+  }
   clearAllStateCaches();
   updateUrlWithCategoryData();
 }
 
 function saveWords() {
-  const dbCopy = { ...currentWordsDb };
-  console.log('dbCOpy:',dbCopy);
-  delete dbCopy["Search Results"];
-  delete dbCopy["Search Results - Hard"];
-  localStorage.setItem('n5_words', JSON.stringify(dbCopy));
+  if (isUltimateMode()) {
+    const dbCopy = { ...currentUltimateWordsDb };
+    delete dbCopy["Search Results"];
+    delete dbCopy["Search Results - Hard"];
+    localStorage.setItem('ultimate_words', JSON.stringify(dbCopy));
+  } else {
+    const dbCopy = { ...currentWordsDb };
+    delete dbCopy["Search Results"];
+    delete dbCopy["Search Results - Hard"];
+    localStorage.setItem('n5_words', JSON.stringify(dbCopy));
+  }
   clearAllStateCaches();
 }
 
@@ -379,6 +413,10 @@ function cleanCategoryNameForUI(cat) {
   if (!cat) return "";
   const isHard = cat.endsWith(" - Hard");
   const base = isHard ? cat.replace(" - Hard", "") : cat;
+  
+  if (isUltimateMode()) {
+    return isHard ? base + " (Hard)" : base;
+  }
   
   if (base.startsWith("Lesson ") || base.startsWith("Grm ") || base.startsWith("Grammer ") || base.startsWith("Extra ") || base.startsWith("Kanji ") || base.startsWith("Genki ")) {
     return isHard ? base + " (Hard)" : base;
@@ -607,19 +645,27 @@ function migrateCustomCategorySuffixes() {
 function loadState() {
   let settingsInitializedFromJs = false;
   let wordsInitializedFromJs = false;
+  let ultimateWordsInitializedFromJs = false;
 
   // Clear search query on load so it's not maintained/restored on refresh
   localStorage.removeItem('n5_search_term');
 
+  // URL Category data
+  const urlCatData = getCategoryDataFromUrl();
+  const isUrlUltimate = (urlCatData && urlCatData.group === "Ultimate");
+
   // 1. Load Settings
-  const savedSettings = localStorage.getItem('n5_app_settings');
+  const settingsKey = isUrlUltimate ? 'ultimate_app_settings' : 'n5_app_settings';
+  const savedSettings = localStorage.getItem(settingsKey) || (!isUrlUltimate ? localStorage.getItem('n5_app_settings') : null);
   if (savedSettings) {
     currentSettings = { ...DEFAULT_SETTINGS, ...JSON.parse(savedSettings) };
     if (currentSettings.currentLesson === 'Search Results') {
       currentSettings.currentLesson = (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[currentSettings.activeDbGroup]) || "Lesson 01";
     }
   } else {
-    if (typeof appSettings !== 'undefined') {
+    if (isUrlUltimate && typeof appUltimateSettings !== 'undefined') {
+      currentSettings = { ...DEFAULT_SETTINGS, ...appUltimateSettings };
+    } else if (typeof appSettings !== 'undefined') {
       currentSettings = { ...DEFAULT_SETTINGS, ...appSettings };
     } else {
       currentSettings = { ...DEFAULT_SETTINGS };
@@ -644,6 +690,12 @@ function loadState() {
   }
   if (currentSettings.lastDestCategory === undefined) {
     currentSettings.lastDestCategory = "";
+  }
+  if (currentSettings.activeTagFilter === undefined) {
+    currentSettings.activeTagFilter = "";
+  }
+  if (currentSettings.showCategoryModeActive === undefined) {
+    currentSettings.showCategoryModeActive = true;
   }
   if (!currentSettings.customDisplayConfig) {
     currentSettings.customDisplayConfig = { ...DEFAULT_SETTINGS.customDisplayConfig };
@@ -671,15 +723,17 @@ function loadState() {
     delete currentSettings.lastGroupCategories["N3 Kanji"];
   }
 
-  // 2. Load Words
+  // 2. Load Standard Words
   const savedWords = localStorage.getItem('n5_words');
   if (savedWords) {
     currentWordsDb = JSON.parse(savedWords);
     
     // Parse default words from words.js to backfill missing kanji property
     const defaultDb = {};
-    for (const key in allWords) {
-      defaultDb[key] = parseWords(allWords[key]);
+    if (typeof allWords !== 'undefined') {
+      for (const key in allWords) {
+        defaultDb[key] = parseWords(allWords[key]);
+      }
     }
     
     // Backfill missing kanji property non-destructively
@@ -687,20 +741,18 @@ function loadState() {
     for (const key in currentWordsDb) {
       if (Array.isArray(currentWordsDb[key])) {
         currentWordsDb[key].forEach(w => {
+          if (!w.tags) w.tags = [];
           if (w.kanji === undefined) {
-            // Find match in defaultDb for the same category first
             let match = null;
             if (defaultDb[key]) {
               match = defaultDb[key].find(dw => dw.japanese === w.japanese && dw.english === w.english);
             }
-            // If not found in same category, search globally
             if (!match) {
               for (const k in defaultDb) {
                 match = defaultDb[k].find(dw => dw.japanese === w.japanese && dw.english === w.english);
                 if (match) break;
               }
             }
-            // Assign kanji
             w.kanji = match ? match.kanji : "";
             didModify = true;
           }
@@ -718,18 +770,49 @@ function loadState() {
     }
   } else {
     currentWordsDb = {};
-    // Load from words.js allWords object
-    for (const key in allWords) {
-      currentWordsDb[key] = parseWords(allWords[key]);
+    if (typeof allWords !== 'undefined') {
+      for (const key in allWords) {
+        currentWordsDb[key] = parseWords(allWords[key]);
+      }
     }
     wordsInitializedFromJs = true;
+  }
+
+  // 3. Load Ultimate Words
+  const savedUltimateWords = localStorage.getItem('ultimate_words');
+  if (savedUltimateWords) {
+    currentUltimateWordsDb = JSON.parse(savedUltimateWords);
+    for (const key in currentUltimateWordsDb) {
+      if (Array.isArray(currentUltimateWordsDb[key])) {
+        currentUltimateWordsDb[key].forEach(w => {
+          if (!w.tags) w.tags = [];
+        });
+      }
+    }
+  } else {
+    currentUltimateWordsDb = {};
+    if (typeof allUltimateWords !== 'undefined') {
+      for (const key in allUltimateWords) {
+        currentUltimateWordsDb[key] = parseWords(allUltimateWords[key]);
+      }
+    }
+    ultimateWordsInitializedFromJs = true;
+  }
+
+  // Ensure all Ultimate categories have corresponding - Hard categories
+  for (const key in currentUltimateWordsDb) {
+    if (!key.endsWith(" - Hard")) {
+      const hKey = key + " - Hard";
+      if (!currentUltimateWordsDb[hKey]) {
+        currentUltimateWordsDb[hKey] = [];
+      }
+    }
   }
 
   // Migrate suffixes G1->G5, E1->E5, G2->G4, E2->E4
   migrateCustomCategorySuffixes();
 
-  // Ensure all 75 lessons and hard versions exist
-  // Ensure all 125 Lesson categories and hard versions exist
+  // Ensure standard categories exist for currentWordsDb
   for (let i = 1; i <= 125; i++) {
     const lStr = `Lesson ${String(i).padStart(2, '0')}`;
     const hStr = `${lStr} - Hard`;
@@ -737,7 +820,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 60 legacy kanji categories and hard versions exist (for backward compatibility)
   for (let i = 1; i <= 60; i++) {
     const kStr = `Kanji ${String(i).padStart(2, '0')}`;
     const hStr = `${kStr} - Hard`;
@@ -745,7 +827,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 15 new Kanji categories (N5 to N1) and their hard versions exist
   const levels = ["N5", "N4", "N3", "N2", "N1"];
   levels.forEach(lv => {
     const cats = [`${lv} Kanji`, `${lv} Kanji New Vocab`, `${lv} Kanji Hard`];
@@ -756,7 +837,6 @@ function loadState() {
     });
   });
 
-  // Ensure all 125 Grm categories and hard versions exist
   for (let i = 1; i <= 125; i++) {
     const gStr = `Grm ${String(i).padStart(2, '0')}`;
     const hStr = `${gStr} - Hard`;
@@ -764,7 +844,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 125 Extra categories and hard versions exist
   for (let i = 1; i <= 125; i++) {
     const eStr = `Extra ${String(i).padStart(2, '0')}`;
     const hStr = `${eStr} - Hard`;
@@ -772,7 +851,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure Sentence 01-50 categories exist (N5 = 01-25, N4 = 26-50)
   for (let i = 1; i <= 50; i++) {
     const sStr = `Sentence ${String(i).padStart(2, '0')}`;
     const hStr = `${sStr} - Hard`;
@@ -780,7 +858,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 290 Listening categories and hard versions exist
   for (let i = 1; i <= 290; i++) {
     const liStr = `Listening ${String(i).padStart(2, '0')}`;
     const hStr = `${liStr} - Hard`;
@@ -788,7 +865,6 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all 23 Genki categories and hard versions exist
   for (let i = 1; i <= 23; i++) {
     const gStr = `Genki ${String(i).padStart(2, '0')}`;
     const hStr = `${gStr} - Hard`;
@@ -796,14 +872,14 @@ function loadState() {
     if (!currentWordsDb[hStr]) currentWordsDb[hStr] = [];
   }
 
-  // Ensure all custom categories exist
+  // Ensure custom categories exist in active DB
   currentSettings.customCategories.forEach(cat => {
-    if (!currentWordsDb[cat]) currentWordsDb[cat] = [];
-    if (!currentWordsDb[cat + " - Hard"]) currentWordsDb[cat + " - Hard"] = [];
+    const db = getActiveDb();
+    if (!db[cat]) db[cat] = [];
+    if (!db[cat + " - Hard"]) db[cat + " - Hard"] = [];
   });
 
-  // 3. Category Data from URL (Priority over local storage)
-  const urlCatData = getCategoryDataFromUrl();
+  // 4. Category Data from URL (Priority over local storage)
   if (urlCatData && urlCatData.category) {
     currentSettings.currentLesson = urlCatData.category;
     if (urlCatData.group) {
@@ -813,7 +889,6 @@ function loadState() {
     }
     currentSettings.isHard = !!urlCatData.isHard;
   } else {
-    // If no category in URL, ensure valid default is set and written to URL
     if (!currentSettings.currentLesson || currentSettings.currentLesson === 'Search Results') {
       currentSettings.currentLesson = (currentSettings.lastGroupCategories && currentSettings.lastGroupCategories[currentSettings.activeDbGroup]) || DEFAULT_SETTINGS.currentLesson;
     }
@@ -822,15 +897,16 @@ function loadState() {
     }
   }
 
-  // Ensure current category is in sync with URL
   updateUrlWithCategoryData();
 
-  // If we loaded defaults from words.js, serialize them back to initialize the local storage cache
   if (settingsInitializedFromJs) {
     saveSettings();
   }
   if (wordsInitializedFromJs) {
     saveWords();
+  }
+  if (ultimateWordsInitializedFromJs) {
+    localStorage.setItem('ultimate_words', JSON.stringify(currentUltimateWordsDb));
   }
 }
 
@@ -1031,6 +1107,18 @@ function getLessonsForActiveGroup() {
   const group = currentSettings.activeDbGroup || "N5 Lessons";
   const lessons = [];
   
+  if (group === "Ultimate") {
+    const allKeys = Object.keys(currentUltimateWordsDb).filter(k => 
+      !k.endsWith(" - Hard") && 
+      k !== "Search Results" && 
+      k !== "Show All Words" && 
+      k !== "Same Meaning" && 
+      k !== "Same Romaji" && 
+      k !== "Similar Words"
+    );
+    return allKeys;
+  }
+
   const addStandard = (prefix, start, end) => {
     for (let i = start; i <= end; i++) {
       lessons.push(`${prefix} ${String(i).padStart(2, '0')}`);
@@ -1172,25 +1260,33 @@ function getActiveLessonKey() {
 
 // Get array of word objects currently shown
 function getActiveWords() {
+  let list = [];
   if (currentSettings.currentLesson === 'Show All Words') {
-    return getShowAllWords().filter(isWordVisible);
+    list = getShowAllWords().filter(isWordVisible);
+  } else if (currentSettings.currentLesson === 'Same Meaning') {
+    list = getSameMeaningWords().filter(isWordVisible);
+  } else if (currentSettings.currentLesson === 'Same Romaji') {
+    list = getSameRomajiWords().filter(isWordVisible);
+  } else {
+    const key = getActiveLessonKey();
+    const db = getActiveDb();
+    list = (db[key] || []).filter(isWordVisible);
   }
-  if (currentSettings.currentLesson === 'Same Meaning') {
-    return getSameMeaningWords().filter(isWordVisible);
+
+  if (currentSettings.activeTagFilter && currentSettings.activeTagFilter.trim()) {
+    const filterTag = currentSettings.activeTagFilter.trim().toLowerCase();
+    list = list.filter(w => Array.isArray(w.tags) && w.tags.some(t => t.trim().toLowerCase() === filterTag));
   }
-  if (currentSettings.currentLesson === 'Same Romaji') {
-    return getSameRomajiWords().filter(isWordVisible);
-  }
-  const key = getActiveLessonKey();
-  const list = currentWordsDb[key] || [];
-  return list.filter(isWordVisible);
+
+  return list;
 }
 
 function reorderWords(fromIdx, toIdx) {
   const key = getActiveLessonKey();
   if (key === 'Show All Words' || key === 'Similar Words' || key === 'Same Meaning' || key === 'Same Romaji') return;
 
-  const list = currentWordsDb[key];
+  const db = getActiveDb();
+  const list = db[key];
   if (!list || fromIdx < 0 || fromIdx >= list.length || toIdx < 0 || toIdx >= list.length) return;
 
   // Move the item
@@ -1207,10 +1303,11 @@ function getShowAllWords() {
   }
   const uniqueMap = new Map();
   const lessons = getLessonsForActiveGroup();
+  const db = getActiveDb();
   
   lessons.forEach(lKey => {
     // Normal list
-    const listN = currentWordsDb[lKey] || [];
+    const listN = db[lKey] || [];
     listN.forEach(w => {
       const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
       if (!uniqueMap.has(dupKey)) {
@@ -1218,7 +1315,7 @@ function getShowAllWords() {
       }
     });
     // Hard list
-    const listH = currentWordsDb[lKey + " - Hard"] || [];
+    const listH = db[lKey + " - Hard"] || [];
     listH.forEach(w => {
       const dupKey = `${w.japanese.trim()}|${w.english.trim()}|${w.romaji.trim()}`;
       if (!uniqueMap.has(dupKey)) {
@@ -1245,17 +1342,53 @@ function getShowAllWords() {
 function belongsToAnyCustomCategory(word) {
   if (!word) return false;
   const cats = getAllCategoriesForWord(word);
+  if (isUltimateMode()) {
+    const currentCat = currentSettings.currentLesson;
+    return cats.some(c => c !== currentCat);
+  }
   const customCats = currentSettings.customCategories || [];
   return cats.some(c => customCats.includes(c));
 }
 
+function getAllUniqueTags() {
+  const db = getActiveDb();
+  const tagSet = new Set();
+  for (const cat in db) {
+    const list = db[cat] || [];
+    list.forEach(w => {
+      if (w && Array.isArray(w.tags)) {
+        w.tags.forEach(t => {
+          if (t && t.trim()) tagSet.add(t.trim());
+        });
+      }
+    });
+  }
+  return Array.from(tagSet).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+}
 
+function populateTagFilterDropdown() {
+  const select = document.getElementById('select-tag-filter');
+  if (!select) return;
+  const currentVal = currentSettings.activeTagFilter || "";
+  select.innerHTML = '<option value="">All Tags</option>';
+  const allTags = getAllUniqueTags();
+  allTags.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    if (t.toLowerCase() === currentVal.toLowerCase()) {
+      opt.selected = true;
+    }
+    select.appendChild(opt);
+  });
+}
 
 function getAllCategoriesForWord(word) {
   if (!word || !word.japanese || !word.english) return [];
   const wordJp = word.japanese.trim();
   const wordEng = word.english.trim();
-  const cacheKey = `${wordJp}::${wordEng}`;
+  const dbGroup = isUltimateMode() ? "Ultimate" : (currentSettings.activeDbGroup || "standard");
+  const cacheKey = `${dbGroup}::${wordJp}::${wordEng}`;
 
   if (!wordCategoriesCache) {
     wordCategoriesCache = new Map();
@@ -1265,20 +1398,24 @@ function getAllCategoriesForWord(word) {
   }
 
   const categories = [];
+  const db = getActiveDb();
 
-  // Check all lessons and custom categories in currentWordsDb
-  for (const key in currentWordsDb) {
+  // Check all categories in active db (Ultimate or Standard)
+  for (const key in db) {
+    if (key === "Search Results" || key === "Search Results - Hard" || key === "Show All Words" || key === "Same Meaning" || key === "Same Romaji" || key === "Similar Words") continue;
     const isHardKey = key.endsWith(" - Hard");
     const baseKey = isHardKey ? key.replace(" - Hard", "") : key;
     
     if (categories.includes(baseKey)) continue;
 
-    const list = currentWordsDb[key] || [];
-    const found = list.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
+    const list = db[key] || [];
+    const found = list.some(w => w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng);
     if (found) {
       categories.push(baseKey);
     }
   }
+
+  categories.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
   wordCategoriesCache.set(cacheKey, categories);
   return categories;
@@ -1758,28 +1895,85 @@ function populateHiddenCategoriesUI() {
 }
 
 function getCopiedCategoriesList(word) {
-  const list = [];
-  if (!word || !word.japanese || !word.english) return list;
+  if (!word || !word.japanese || !word.english) return [];
+  const allCats = getAllCategoriesForWord(word);
+  const currentCat = currentSettings.currentLesson;
+  
+  return allCats.filter(c => c !== currentCat);
+}
 
+function removeWordFromSpecificCategory(word, categoryName) {
+  if (!word || !categoryName || !word.japanese || !word.english) return;
+  
   const wordJp = word.japanese.trim();
   const wordEng = word.english.trim();
+  const db = getActiveDb();
 
-  // 1. Check custom categories
-  if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
-      const normalList = currentWordsDb[cat] || [];
-      const hardList = currentWordsDb[cat + " - Hard"] || [];
-      
-      const inNormal = normalList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
-      const inHard = hardList.some(w => w.japanese.trim() === wordJp && w.english.trim() === wordEng);
-      
-      if (inNormal || inHard) {
-        list.push(cat);
-      }
-    });
+  let removedCount = 0;
+  
+  // 1. Remove from normal list of category
+  if (Array.isArray(db[categoryName])) {
+    const origLen = db[categoryName].length;
+    db[categoryName] = db[categoryName].filter(w => 
+      !(w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng)
+    );
+    removedCount += (origLen - db[categoryName].length);
   }
 
-  return list;
+  // 2. Remove from hard list of category if present
+  const hardKey = categoryName + " - Hard";
+  if (Array.isArray(db[hardKey])) {
+    const origHardLen = db[hardKey].length;
+    db[hardKey] = db[hardKey].filter(w => 
+      !(w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng)
+    );
+    removedCount += (origHardLen - db[hardKey].length);
+  }
+
+  if (removedCount > 0) {
+    saveWords();
+    clearAllStateCaches();
+    renderCards();
+    showToast(`Removed "${word.japanese}" from ${cleanCategoryNameForUI(categoryName)}.`, 'success');
+  } else {
+    showToast(`Word was not found in ${cleanCategoryNameForUI(categoryName)}.`, 'info');
+  }
+}
+
+function renderWordCategoryTags(container, word) {
+  if (currentSettings.showCategoryModeActive === false) return;
+  const cats = getAllCategoriesForWord(word);
+  if (cats.length === 0) return;
+
+  const catsDiv = document.createElement('div');
+  catsDiv.className = 'card-categories-list';
+
+  cats.forEach(c => {
+    const tagSpan = document.createElement('span');
+    tagSpan.className = 'card-category-tag';
+    
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'category-tag-name';
+    nameSpan.textContent = cleanCategoryNameForUI(c);
+    tagSpan.appendChild(nameSpan);
+
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'btn-remove-category-tag';
+    removeBtn.innerHTML = '&times;';
+    removeBtn.title = `Remove word from ${cleanCategoryNameForUI(c)}`;
+    removeBtn.setAttribute('aria-label', `Remove from ${cleanCategoryNameForUI(c)}`);
+
+    removeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      removeWordFromSpecificCategory(word, c);
+    });
+
+    tagSpan.appendChild(removeBtn);
+    catsDiv.appendChild(tagSpan);
+  });
+
+  container.appendChild(catsDiv);
 }
 
 // Redraw vocabulary grid from memory state
@@ -1790,8 +1984,9 @@ function renderCards() {
       for (let i = 0; i < selectLesson.options.length; i++) {
         if (selectLesson.options[i].value === "Search Results") {
           selectLesson.remove(i);
-          delete currentWordsDb["Search Results"];
-          delete currentWordsDb["Search Results - Hard"];
+          const db = getActiveDb();
+          delete db["Search Results"];
+          delete db["Search Results - Hard"];
           break;
         }
       }
@@ -1810,14 +2005,15 @@ function renderCards() {
   const lessonKey = currentSettings.currentLesson;
   let normalCount = 0;
   let hardCount = 0;
+  const db = getActiveDb();
 
   if (lessonKey === 'Show All Words' || lessonKey === 'Same Meaning' || lessonKey === 'Same Romaji') {
     normalCount = getActiveWords().length;
     hardCount = 0;
   } else {
-    normalCount = currentWordsDb[lessonKey] ? currentWordsDb[lessonKey].length : 0;
+    normalCount = db[lessonKey] ? db[lessonKey].length : 0;
     const hardKey = lessonKey + " - Hard";
-    hardCount = currentWordsDb[hardKey] ? currentWordsDb[hardKey].length : 0;
+    hardCount = db[hardKey] ? db[hardKey].length : 0;
   }
   const selectedCount = currentSettings.selectedWordIndices.length;
 
@@ -1841,8 +2037,8 @@ function renderCards() {
       for (let i = 1; i <= 25; i++) {
         const keyN = `Lesson ${String(i).padStart(2, '0')}`;
         const keyH = `${keyN} - Hard`;
-        totalLessonsWords += (currentWordsDb[keyN] ? currentWordsDb[keyN].length : 0);
-        totalLessonsWords += (currentWordsDb[keyH] ? currentWordsDb[keyH].length : 0);
+        totalLessonsWords += (db[keyN] ? db[keyN].length : 0);
+        totalLessonsWords += (db[keyH] ? db[keyH].length : 0);
       }
       statLesson.textContent = totalLessonsWords;
     } else {
@@ -1880,8 +2076,6 @@ function renderCards() {
     renderSimilarWordsGroups();
     return;
   }
-
-
 
   const words = getActiveWords();
   container.innerHTML = "";
@@ -1943,17 +2137,9 @@ function renderCards() {
     // Set categories tooltip on hover
     const copiedCats = getCopiedCategoriesList(word);
     if (copiedCats.length > 0) {
-      card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+      card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${cleanCategoryNameForUI(c)}`).join('\n'));
       card.classList.add('atleast-one-category');
-      var getEnglishWord = card.querySelector('.card-english');
-      console.log('card classlist idx',idx,card.classList);
-      // console.log('render cards atleast added',getEnglishWord.innerHTML);
     }
-    // if (belongsToAnyCustomCategory(word)) {
-    //   card.classList.add('atleast-one-category');
-    // } else {
-    //   card.classList.remove('atleast-one-category');
-    // }
     
     // Focused State
     if (idx === currentSettings.focusedWordIndex) {
@@ -2010,13 +2196,22 @@ function renderCards() {
       card.appendChild(kanjiDiv);
     }
 
-    if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
-      const cats = getAllCategoriesForWord(word);
-      if (cats.length > 0) {
-        const catsDiv = document.createElement('div');
-        catsDiv.className = 'card-categories-list';
-        catsDiv.innerHTML = cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ');
-        card.appendChild(catsDiv);
+    renderWordCategoryTags(card, word);
+
+    // Render Tags if present
+    if (word.tags && Array.isArray(word.tags) && word.tags.length > 0) {
+      const tagsContainer = document.createElement('div');
+      tagsContainer.className = 'card-tags-container';
+      word.tags.forEach(tag => {
+        if (tag && tag.trim()) {
+          const tagPill = document.createElement('span');
+          tagPill.className = 'card-tag-pill';
+          tagPill.textContent = tag.trim();
+          tagsContainer.appendChild(tagPill);
+        }
+      });
+      if (tagsContainer.children.length > 0) {
+        card.appendChild(tagsContainer);
       }
     }
 
@@ -2061,6 +2256,7 @@ function renderCards() {
 
   updateManagementButtons();
   updateQuickLgeButtons();
+  setTimeout(updateActiveRowHighlight, 0);
 }
 
 // Card Click selection handler
@@ -2145,11 +2341,242 @@ function updateManagementButtons() {
   if (btnCopyTo) {
     btnCopyTo.disabled = !hasSelection;
   }
+
+  const btnAddTagsSelected = document.getElementById('btn-add-tags-selected');
+  if (btnAddTagsSelected) {
+    btnAddTagsSelected.disabled = !hasSelection;
+  }
+}
+
+// Add tags to all currently selected words
+function addTagsToSelectedWords() {
+  const selectedIndices = currentSettings.selectedWordIndices || [];
+  const activeWords = getActiveWords();
+  const selectedWords = selectedIndices.map(idx => activeWords[idx]).filter(Boolean);
+
+  if (selectedWords.length === 0) {
+    showToast("No words selected. Please select words first.", "warning");
+    return;
+  }
+
+  const tagInput = prompt(`Add tags for ${selectedWords.length} selected word(s) (comma-separated):`);
+  if (tagInput === null) return;
+  const tagsToAdd = tagInput.split(',').map(t => t.trim()).filter(t => t.length > 0);
+  if (tagsToAdd.length === 0) return;
+
+  const db = getActiveDb();
+  selectedWords.forEach(targetWord => {
+    for (const key in db) {
+      const list = db[key] || [];
+      list.forEach(w => {
+        if (w.japanese === targetWord.japanese && w.english === targetWord.english) {
+          if (!Array.isArray(w.tags)) w.tags = [];
+          tagsToAdd.forEach(tag => {
+            if (!w.tags.some(existing => existing.toLowerCase() === tag.toLowerCase())) {
+              w.tags.push(tag);
+            }
+          });
+        }
+      });
+    }
+  });
+
+  saveWords();
+  saveSettings();
+  populateTagFilterDropdown();
+  renderCards();
+  showToast(`Added tags to ${selectedWords.length} word(s).`, "success");
 }
 
 // ==========================================================================
 // CARD NAVIGATION & ACTIONS
 // ==========================================================================
+
+function updateActiveRowHighlight() {
+  const cards = Array.from(document.querySelectorAll('#vocab-grid .vocab-card'));
+  if (cards.length === 0) return;
+  
+  const rows = [];
+  let currentRow = [];
+  let lastTop = null;
+  
+  cards.forEach(card => {
+    const top = card.offsetTop;
+    if (lastTop === null || Math.abs(top - lastTop) <= 12) {
+      currentRow.push(card);
+      if (lastTop === null) lastTop = top;
+    } else {
+      rows.push(currentRow);
+      currentRow = [card];
+      lastTop = top;
+    }
+  });
+  if (currentRow.length > 0) {
+    rows.push(currentRow);
+  }
+
+  let currentWordIdx = currentSettings.focusedWordIndex;
+  let activeRowIdx = 0;
+  if (currentWordIdx >= 0) {
+    for (let r = 0; r < rows.length; r++) {
+      const cIdx = rows[r].findIndex(c => parseInt(c.getAttribute('data-index'), 10) === currentWordIdx);
+      if (cIdx >= 0) {
+        activeRowIdx = r;
+        break;
+      }
+    }
+  }
+
+  cards.forEach(c => c.classList.remove('row-active'));
+  if (rows[activeRowIdx]) {
+    rows[activeRowIdx].forEach(c => c.classList.add('row-active'));
+  }
+}
+
+function navigateGridRow(direction) {
+  const cards = Array.from(document.querySelectorAll('#vocab-grid .vocab-card'));
+  if (cards.length === 0) return;
+  
+  stopSpeech();
+
+  const rows = [];
+  let currentRow = [];
+  let lastTop = null;
+  
+  cards.forEach(card => {
+    const top = card.offsetTop;
+    if (lastTop === null || Math.abs(top - lastTop) <= 12) {
+      currentRow.push(card);
+      if (lastTop === null) lastTop = top;
+    } else {
+      rows.push(currentRow);
+      currentRow = [card];
+      lastTop = top;
+    }
+  });
+  if (currentRow.length > 0) {
+    rows.push(currentRow);
+  }
+
+  let currentWordIdx = currentSettings.focusedWordIndex;
+  let activeRowIdx = 0;
+  let activeColIdx = 0;
+  
+  if (currentWordIdx >= 0) {
+    for (let r = 0; r < rows.length; r++) {
+      const cIdx = rows[r].findIndex(c => parseInt(c.getAttribute('data-index'), 10) === currentWordIdx);
+      if (cIdx >= 0) {
+        activeRowIdx = r;
+        activeColIdx = cIdx;
+        break;
+      }
+    }
+  }
+
+  let targetRowIdx = activeRowIdx;
+  if (direction === 'down' || direction === 'next') {
+    targetRowIdx = Math.min(rows.length - 1, activeRowIdx + 1);
+  } else if (direction === 'up' || direction === 'prev') {
+    targetRowIdx = Math.max(0, activeRowIdx - 1);
+  }
+
+  const targetRow = rows[targetRowIdx];
+  const targetColIdx = Math.min(activeColIdx, targetRow.length - 1);
+  const targetCard = targetRow[targetColIdx];
+  const targetWordIdx = parseInt(targetCard.getAttribute('data-index'), 10);
+
+  currentSettings.focusedWordIndex = targetWordIdx;
+  if (!currentSettings.isSelectionModeActive) {
+    currentSettings.selectedWordIndices = [targetWordIdx];
+  }
+
+  cards.forEach(c => c.classList.remove('focused', 'row-active'));
+  targetRow.forEach(c => c.classList.add('row-active'));
+  targetCard.classList.add('focused');
+  targetCard.focus();
+  targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  saveSettings();
+  const activeWords = getActiveWords();
+  if (activeWords[targetWordIdx]) {
+    speakText(cleanJapaneseSpeakText(activeWords[targetWordIdx].japanese), 'ja');
+  }
+}
+
+function selectRowCardByNumber(digit) {
+  const cards = Array.from(document.querySelectorAll('#vocab-grid .vocab-card'));
+  if (cards.length === 0) return;
+
+  stopSpeech();
+
+  const rows = [];
+  let currentRow = [];
+  let lastTop = null;
+  
+  cards.forEach(card => {
+    const top = card.offsetTop;
+    if (lastTop === null || Math.abs(top - lastTop) <= 12) {
+      currentRow.push(card);
+      if (lastTop === null) lastTop = top;
+    } else {
+      rows.push(currentRow);
+      currentRow = [card];
+      lastTop = top;
+    }
+  });
+  if (currentRow.length > 0) {
+    rows.push(currentRow);
+  }
+
+  let currentWordIdx = currentSettings.focusedWordIndex;
+  let activeRowIdx = 0;
+  if (currentWordIdx >= 0) {
+    for (let r = 0; r < rows.length; r++) {
+      const cIdx = rows[r].findIndex(c => parseInt(c.getAttribute('data-index'), 10) === currentWordIdx);
+      if (cIdx >= 0) {
+        activeRowIdx = r;
+        break;
+      }
+    }
+  }
+
+  const targetRow = rows[activeRowIdx];
+  const cardColIdx = digit - 1; // 1-based to 0-based
+  if (cardColIdx < 0 || cardColIdx >= targetRow.length) {
+    showToast(`No item ${digit} in active row (${targetRow.length} item${targetRow.length > 1 ? 's' : ''})`, 'info');
+    return;
+  }
+
+  const targetCard = targetRow[cardColIdx];
+  const targetWordIdx = parseInt(targetCard.getAttribute('data-index'), 10);
+
+  currentSettings.focusedWordIndex = targetWordIdx;
+
+  if (currentSettings.isSelectionModeActive) {
+    if (currentSettings.selectedWordIndices.includes(targetWordIdx)) {
+      currentSettings.selectedWordIndices = currentSettings.selectedWordIndices.filter(i => i !== targetWordIdx);
+      targetCard.classList.remove('selected');
+    } else {
+      currentSettings.selectedWordIndices.push(targetWordIdx);
+      targetCard.classList.add('selected');
+    }
+    updateManagementButtons();
+  } else {
+    currentSettings.selectedWordIndices = [targetWordIdx];
+  }
+
+  cards.forEach(c => c.classList.remove('focused', 'row-active'));
+  targetRow.forEach(c => c.classList.add('row-active'));
+  targetCard.classList.add('focused');
+  targetCard.focus();
+  targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  saveSettings();
+  const activeWords = getActiveWords();
+  if (activeWords[targetWordIdx]) {
+    speakText(cleanJapaneseSpeakText(activeWords[targetWordIdx].japanese), 'ja');
+  }
+}
 
 // Handle keyboard arrows and card select speak
 function navigateFocus(direction) {
@@ -2187,8 +2614,9 @@ function moveSelectedToHard() {
 
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson + " - Hard";
+  const db = getActiveDb();
 
-  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
+  const itemsToMove = selectedIdxs.map(idx => (db[currentKey] || [])[idx]).filter(Boolean);
   
   // Custom categories: copy instead of move
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
@@ -2196,16 +2624,17 @@ function moveSelectedToHard() {
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+    db[currentKey] = (db[currentKey] || []).filter((_, idx) => !selectedIdxs.includes(idx));
   }
   
+  if (!db[targetKey]) db[targetKey] = [];
   const uniqueItemsToMove = itemsToMove.filter(w => {
-    return !currentWordsDb[targetKey].some(destWord => 
+    return !db[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
       destWord.english.trim() === w.english.trim()
     );
   });
-  currentWordsDb[targetKey].push(...uniqueItemsToMove);
+  db[targetKey].push(...uniqueItemsToMove);
 
   currentSettings.selectedWordIndices = [];
   currentSettings.focusedWordIndex = -1;
@@ -2222,24 +2651,26 @@ function moveSelectedToNormal() {
 
   const currentKey = getActiveLessonKey();
   const targetKey = currentSettings.currentLesson;
+  const db = getActiveDb();
 
-  const itemsToMove = selectedIdxs.map(idx => currentWordsDb[currentKey][idx]);
+  const itemsToMove = selectedIdxs.map(idx => (db[currentKey] || [])[idx]).filter(Boolean);
   
   const isCustomCategory = currentSettings.customCategories.includes(currentSettings.currentLesson);
   const isListeningGroup = (currentSettings.activeDbGroup || "").includes("Listening");
   const shouldCopy = isCustomCategory || isListeningGroup;
 
   if (!shouldCopy) {
-    currentWordsDb[currentKey] = currentWordsDb[currentKey].filter((_, idx) => !selectedIdxs.includes(idx));
+    db[currentKey] = (db[currentKey] || []).filter((_, idx) => !selectedIdxs.includes(idx));
   }
   
+  if (!db[targetKey]) db[targetKey] = [];
   const uniqueItemsToMove = itemsToMove.filter(w => {
-    return !currentWordsDb[targetKey].some(destWord => 
+    return !db[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
       destWord.english.trim() === w.english.trim()
     );
   });
-  currentWordsDb[targetKey].push(...uniqueItemsToMove);
+  db[targetKey].push(...uniqueItemsToMove);
 
   currentSettings.selectedWordIndices = [];
   currentSettings.focusedWordIndex = -1;
@@ -2252,7 +2683,8 @@ function moveSelectedToNormal() {
 // Move selected items UP in position (left)
 function moveSelectedUp() {
   const currentKey = getActiveLessonKey();
-  const list = currentWordsDb[currentKey];
+  const db = getActiveDb();
+  const list = db[currentKey];
   if (!list || list.length === 0) return;
 
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
@@ -2266,7 +2698,7 @@ function moveSelectedUp() {
 
   const insertIdx = Math.max(0, selectedIdxs[0] - 1);
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
-  currentWordsDb[currentKey] = unselectedElements;
+  db[currentKey] = unselectedElements;
 
   // Calculate new contiguous indices for selection
   const newSelectedIdxs = [];
@@ -2290,7 +2722,8 @@ function moveSelectedUp() {
 // Move selected items DOWN in position (right)
 function moveSelectedDown() {
   const currentKey = getActiveLessonKey();
-  const list = currentWordsDb[currentKey];
+  const db = getActiveDb();
+  const list = db[currentKey];
   if (!list || list.length === 0) return;
 
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
@@ -2306,7 +2739,7 @@ function moveSelectedDown() {
 
   const insertIdx = Math.max(0, Math.min(unselectedElements.length, (lastSelected + 2) - selectedIdxs.length));
   unselectedElements.splice(insertIdx, 0, ...selectedElements);
-  currentWordsDb[currentKey] = unselectedElements;
+  db[currentKey] = unselectedElements;
 
   // Calculate new contiguous indices for selection
   const newSelectedIdxs = [];
@@ -2331,7 +2764,8 @@ function moveSelectedDown() {
 // Delete selected items
 function deleteSelected() {
   const currentKey = getActiveLessonKey();
-  const list = currentWordsDb[currentKey];
+  const db = getActiveDb();
+  const list = db[currentKey];
   if (!list) return;
 
   const selectedIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => b - a);
@@ -2441,15 +2875,16 @@ function triggerImport() {
     let totalWords = 0;
     const updatedCategories = [];
 
+    const db = getActiveDb();
     sections.forEach(sec => {
       const catKey = sec.category;
-      if (!currentWordsDb[catKey]) {
-        currentWordsDb[catKey] = [];
+      if (!db[catKey]) {
+        db[catKey] = [];
       }
-      if (!currentWordsDb[catKey + " - Hard"]) {
-        currentWordsDb[catKey + " - Hard"] = [];
+      if (!db[catKey + " - Hard"]) {
+        db[catKey + " - Hard"] = [];
       }
-      currentWordsDb[catKey] = currentWordsDb[catKey].concat(sec.words);
+      db[catKey] = db[catKey].concat(sec.words);
       totalWords += sec.words.length;
       if (!updatedCategories.includes(catKey)) {
         updatedCategories.push(catKey);
@@ -2482,10 +2917,11 @@ function triggerImport() {
   }
 
   const currentKey = getActiveLessonKey();
-  if (!currentWordsDb[currentKey]) {
-    currentWordsDb[currentKey] = [];
+  const db = getActiveDb();
+  if (!db[currentKey]) {
+    db[currentKey] = [];
   }
-  currentWordsDb[currentKey] = currentWordsDb[currentKey].concat(parsed);
+  db[currentKey] = db[currentKey].concat(parsed);
 
   saveWords();
   renderCards();
@@ -2499,31 +2935,62 @@ function triggerImport() {
 // ==========================================================================
 
 let quizStates = [];
+let quizSourceSelectedWords = null;
 
-function startQuiz() {
+function startQuiz(customWordsList = null) {
   let words = [];
-  const container = document.getElementById('quiz-lessons-container');
-  const checkedBoxes = container ? container.querySelectorAll('input[type="checkbox"]:checked') : [];
-  
-  if (checkedBoxes.length > 0) {
-    const isHardActive = currentSettings.isHard;
-    checkedBoxes.forEach(cb => {
-      const val = cb.value;
-      const key = isHardActive ? `${val} - Hard` : val;
-      const list = currentWordsDb[key] || [];
-      list.forEach(w => {
-        if (isWordVisible(w)) {
-          words.push({
-            japanese: w.japanese,
-            english: w.english,
-            romaji: w.romaji,
-            kanji: w.kanji || ""
-          });
-        }
+
+  if (customWordsList && Array.isArray(customWordsList) && customWordsList.length > 0) {
+    words = customWordsList.map(w => ({ ...w }));
+  } else if (currentSettings.selectedWordIndices && currentSettings.selectedWordIndices.length > 0) {
+    const activeWords = getActiveWords();
+    const sortedSelIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
+    const selWords = sortedSelIdxs.map(i => activeWords[i]).filter(Boolean);
+    if (selWords.length > 0) {
+      words = selWords.map(w => ({
+        japanese: w.japanese,
+        english: w.english,
+        romaji: w.romaji,
+        kanji: w.kanji || "",
+        tags: w.tags || []
+      }));
+      quizSourceSelectedWords = [...words];
+    }
+  }
+
+  if (words.length === 0) {
+    quizSourceSelectedWords = null;
+    const container = document.getElementById('quiz-lessons-container');
+    const checkedBoxes = container ? container.querySelectorAll('input[type="checkbox"]:checked') : [];
+    
+    if (checkedBoxes.length > 0) {
+      const isHardActive = currentSettings.isHard;
+      const db = getActiveDb();
+      checkedBoxes.forEach(cb => {
+        const val = cb.value;
+        const key = isHardActive ? `${val} - Hard` : val;
+        const list = db[key] || [];
+        list.forEach(w => {
+          if (isWordVisible(w)) {
+            words.push({
+              japanese: w.japanese,
+              english: w.english,
+              romaji: w.romaji,
+              kanji: w.kanji || "",
+              tags: w.tags || []
+            });
+          }
+        });
       });
-    });
-  } else {
-    words = getActiveWords();
+    } else {
+      words = getActiveWords().map(w => ({
+        japanese: w.japanese,
+        english: w.english,
+        romaji: w.romaji,
+        kanji: w.kanji || "",
+        tags: w.tags || []
+      }));
+    }
   }
 
   if (words.length === 0) {
@@ -2549,27 +3016,6 @@ function startQuiz() {
     userTyped: "",
     isCorrect: false
   }));
-
-  // Handle selected card starting point if quizOrder is "original"
-  if (orderVal === 'original' && currentSettings.selectedWordIndices.length > 0) {
-    const activeWords = getActiveWords();
-    const sortedSelIdxs = [...currentSettings.selectedWordIndices].sort((a, b) => a - b);
-    const selectedWord = activeWords[sortedSelIdxs[0]];
-    if (selectedWord) {
-      const targetIndex = quizWords.findIndex(qw => qw.japanese === selectedWord.japanese && qw.english === selectedWord.english);
-      if (targetIndex >= 0) {
-        quizCurrentIndex = targetIndex;
-        quizScore = targetIndex;
-        for (let i = 0; i < targetIndex; i++) {
-          quizStates[i] = {
-            answered: true,
-            userTyped: quizWords[i].japanese || "",
-            isCorrect: true
-          };
-        }
-      }
-    }
-  }
 
   // Toggle Quiz Views and Reset Navigation Controls
   document.getElementById('quiz-setup-view').classList.add('hidden');
@@ -2908,7 +3354,11 @@ function finishQuiz() {
 }
 
 function restartCurrentQuiz() {
-  startQuiz();
+  if (quizSourceSelectedWords && quizSourceSelectedWords.length > 0) {
+    startQuiz(quizSourceSelectedWords);
+  } else {
+    startQuiz();
+  }
 }
 
 function toggleDifficultyAndQuiz() {
@@ -2993,6 +3443,14 @@ function incrementWordFlag(word) {
 
 // Reset storage cache and reload settings
 function resetCache() {
+  if (isUltimateMode()) {
+    if (confirm("Warning: This will reset the Ultimate cache and restore its defaults. Reset Ultimate cache?")) {
+      localStorage.removeItem('ultimate_words');
+      localStorage.removeItem('ultimate_app_settings');
+      window.location.reload();
+    }
+    return;
+  }
   if (confirm("Warning: This will clear all local overrides and flag records. Reset local storage cache?")) {
     localStorage.removeItem('n5_words');
     localStorage.removeItem('n5_app_settings');
@@ -3000,20 +3458,28 @@ function resetCache() {
   }
 }
 
-// Export the complete data package for words.js clipboard replacement
+// Export the complete data package for words.js / Ultimate.js clipboard replacement
 function copySettingsToClipboard() {
   stopSpeech();
   
-  let clipContent = "const allWords = {};\n\n";
-  for (const key in currentWordsDb) {
-    if (key === 'Search Results' || key === 'Search Results - Hard') continue;
-    clipContent += `allWords["${key}"] = \`${serializeWords(currentWordsDb[key])}\`;\n\n`;
+  let clipContent = "";
+  if (isUltimateMode()) {
+    clipContent = "const allUltimateWords = {};\n\n";
+    for (const key in currentUltimateWordsDb) {
+      if (key === 'Search Results' || key === 'Search Results - Hard') continue;
+      clipContent += `allUltimateWords["${key}"] = \`${serializeWords(currentUltimateWordsDb[key])}\`;\n\n`;
+    }
+    clipContent += "const appUltimateSettings = " + JSON.stringify(currentSettings, null, 2) + ";\n";
+  } else {
+    clipContent = "const allWords = {};\n\n";
+    for (const key in currentWordsDb) {
+      if (key === 'Search Results' || key === 'Search Results - Hard') continue;
+      clipContent += `allWords["${key}"] = \`${serializeWords(currentWordsDb[key])}\`;\n\n`;
+    }
+    clipContent += "const appSettings = " + JSON.stringify(currentSettings, null, 2) + ";\n";
   }
 
-  // 2. Serialize current settings & stats
-  clipContent += "const appSettings = " + JSON.stringify(currentSettings, null, 2) + ";\n";
-
-  // 3. Write copy
+  // Write copy
   navigator.clipboard.writeText(clipContent)
     .then(() => {
       showToast("Configuration copied to clipboard successfully!", "success");
@@ -3146,8 +3612,8 @@ function syncSettingsDropdownsFromActiveGroup() {
   if (!selectLevel || !selectGroup) return;
 
   const active = currentSettings.activeDbGroup || "N5 Lessons";
-  if (active === "Kanji" || active === "Others" || (active.endsWith("Others") && !active.includes("Grammer"))) {
-    selectGroup.value = (active === "Kanji") ? "Kanji" : "Others";
+  if (active === "Ultimate" || active === "Kanji" || active === "Others" || (active.endsWith("Others") && !active.includes("Grammer"))) {
+    selectGroup.value = (active === "Ultimate") ? "Ultimate" : (active === "Kanji") ? "Kanji" : "Others";
     const levelGroup = selectLevel.closest('.quiz-option-group');
     if (levelGroup) levelGroup.style.display = "none";
   } else {
@@ -3171,7 +3637,11 @@ function syncActiveGroupFromSettingsDropdowns() {
   updateGroupDropdownOptionsVisibility();
 
   const group = selectGroup.value;
-  if (group === "Kanji") {
+  if (group === "Ultimate") {
+    currentSettings.activeDbGroup = "Ultimate";
+    const levelGroup = selectLevel.closest('.quiz-option-group');
+    if (levelGroup) levelGroup.style.display = "none";
+  } else if (group === "Kanji") {
     currentSettings.activeDbGroup = "Kanji";
     const levelGroup = selectLevel.closest('.quiz-option-group');
     if (levelGroup) levelGroup.style.display = "none";
@@ -3237,12 +3707,13 @@ function renderFlaggedWordsList() {
 
   container.innerHTML = "";
 
-  // 1. Gather all words from currentWordsDb having flags > 0
+  // 1. Gather all words from active DB having flags > 0
   const flaggedItems = [];
+  const db = getActiveDb();
   
   // Look through all lessons
-  for (const lessonKey in currentWordsDb) {
-    const list = currentWordsDb[lessonKey];
+  for (const lessonKey in db) {
+    const list = db[lessonKey] || [];
     list.forEach(w => {
       const wKey = getWordKey(w);
       const flags = currentSettings.flagCounts[wKey] || 0;
@@ -3435,7 +3906,8 @@ function navigateActiveGroup(direction) {
     "N1 Listening",
     "N1 Dumps",
     "Kanji",
-    "Others"
+    "Others",
+    "Ultimate"
   ];
   
   const currentGroup = currentSettings.activeDbGroup || "N5 Lessons";
@@ -3533,6 +4005,40 @@ function populateQuizSetupLessons() {
   if (!container) return;
   
   container.innerHTML = "";
+
+  if (currentSettings.selectedWordIndices && currentSettings.selectedWordIndices.length > 0) {
+    const noticeDiv = document.createElement('div');
+    noticeDiv.style.gridColumn = "1 / -1";
+    noticeDiv.style.padding = "0.5rem 0.75rem";
+    noticeDiv.style.marginBottom = "0.4rem";
+    noticeDiv.style.borderRadius = "var(--radius-sm)";
+    noticeDiv.style.background = "var(--accent-glow)";
+    noticeDiv.style.border = "1px solid var(--accent-color)";
+    noticeDiv.style.display = "flex";
+    noticeDiv.style.alignItems = "center";
+    noticeDiv.style.justifyContent = "space-between";
+    noticeDiv.style.fontSize = "0.85rem";
+    noticeDiv.style.fontWeight = "600";
+    noticeDiv.style.color = "var(--text-primary)";
+
+    noticeDiv.innerHTML = `
+      <span>Quiz will play for <strong>${currentSettings.selectedWordIndices.length}</strong> selected word(s)</span>
+      <button type="button" id="btn-quiz-clear-selected" class="btn btn-secondary btn-small" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">Clear Selection</button>
+    `;
+    container.appendChild(noticeDiv);
+
+    const clearBtn = noticeDiv.querySelector('#btn-quiz-clear-selected');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        currentSettings.selectedWordIndices = [];
+        currentSettings.focusedWordIndex = -1;
+        saveSettings();
+        renderCards();
+        populateQuizSetupLessons();
+        showToast("Cleared selected words for quiz", "info");
+      });
+    }
+  }
   
   const keys = getCategoriesForActiveGroup();
   
@@ -3678,7 +4184,20 @@ function populateLessonsDropdown() {
     }
   };
 
-  if (group === "N5 Lessons") addStandard(lessonsList, "Lesson", 1, 25);
+  if (group === "Ultimate") {
+    const allKeys = Object.keys(currentUltimateWordsDb).filter(k => 
+      !k.endsWith(" - Hard") && 
+      k !== "Search Results" && 
+      k !== "Show All Words" && 
+      k !== "Same Meaning" && 
+      k !== "Same Romaji" && 
+      k !== "Similar Words"
+    );
+    allKeys.forEach(k => {
+      lessonsList.push(k);
+    });
+  }
+  else if (group === "N5 Lessons") addStandard(lessonsList, "Lesson", 1, 25);
   else if (group === "N4 Lessons") addStandard(lessonsList, "Lesson", 26, 50);
   else if (group === "N3 Lessons") addStandard(lessonsList, "Lesson", 51, 75);
   else if (group === "N2 Lessons") addStandard(lessonsList, "Lesson", 76, 100);
@@ -3786,15 +4305,17 @@ function populateLessonsDropdown() {
   }
 
   // Sort lists
-  lessonsList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
-  if (group !== "Kanji") {
+  if (group !== "Ultimate") {
+    lessonsList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  }
+  if (group !== "Kanji" && group !== "Ultimate") {
     kanjiList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   }
   grammerList.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   othersList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
   const specialList = [];
-  if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) {
+  if (group === "Others" || group === "Ultimate" || (group.endsWith("Others") && !group.includes("Grammer"))) {
     specialList.push("Show All Words", "Same Meaning", "Same Romaji");
   }
   const finalCategories = [...lessonsList, ...kanjiList, ...grammerList, ...othersList, ...specialList];
@@ -3815,6 +4336,7 @@ function populateLessonsDropdown() {
   }
 
   populateHiddenCategoriesUI();
+  populateTagFilterDropdown();
   updateQuickLgeButtons();
 }
 
@@ -3835,7 +4357,7 @@ function createCustomCategory() {
   }
   
   let suffix = "";
-  if (group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) suffix = "";
+  if (group === "Ultimate" || group === "Others" || (group.endsWith("Others") && !group.includes("Grammer"))) suffix = "";
   else if (group === "N5 Grammer" || group === "N5 Grammer Others") suffix = " G5";
   else if (group === "N4 Grammer" || group === "N4 Grammer Others") suffix = " G4";
   else if (group === "N3 Grammer" || group === "N3 Grammer Others") suffix = " G3";
@@ -3862,19 +4384,21 @@ function createCustomCategory() {
   }
   
   const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji"];
-  if (reserved.includes(trimmed) || trimmed.startsWith("Lesson ") || trimmed.startsWith("Grm ") || trimmed.startsWith("Grammer ") || trimmed.startsWith("Kanji ") || trimmed.startsWith("Extra ") || trimmed.startsWith("Sentence ") || trimmed.startsWith("Listening ") || trimmed.startsWith("Dumps ")) {
+  if (reserved.includes(trimmed)) {
     showToast("This name is reserved or invalid.", "danger");
     return;
   }
   
-  if (currentSettings.customCategories.includes(trimmed)) {
+  const db = getActiveDb();
+  if (db[trimmed] || (currentSettings.customCategories && currentSettings.customCategories.includes(trimmed))) {
     showToast("This category already exists.", "danger");
     return;
   }
 
+  if (!currentSettings.customCategories) currentSettings.customCategories = [];
   currentSettings.customCategories.push(trimmed);
-  currentWordsDb[trimmed] = [];
-  currentWordsDb[trimmed + " - Hard"] = [];
+  db[trimmed] = [];
+  db[trimmed + " - Hard"] = [];
   
   saveSettings();
   saveWords();
@@ -3900,6 +4424,88 @@ function createCustomCategory() {
   renderCards();
   
   showToast(`Created category "${trimmed}"`, 'success');
+}
+
+function renameCurrentCategory() {
+  const currentCat = currentSettings.currentLesson;
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results"];
+  if (reserved.includes(currentCat)) {
+    showToast("Cannot rename this view.", "danger");
+    return;
+  }
+
+  const newName = prompt(`Enter new name for category "${currentCat}":`, currentCat);
+  if (newName === null) return;
+  const trimmed = newName.trim();
+  if (!trimmed || trimmed === currentCat) return;
+
+  if (reserved.includes(trimmed)) {
+    showToast("This category name is reserved.", "danger");
+    return;
+  }
+
+  const db = getActiveDb();
+  if (db[trimmed] || db[trimmed + " - Hard"]) {
+    showToast("A category with this name already exists.", "danger");
+    return;
+  }
+
+  db[trimmed] = db[currentCat] || [];
+  delete db[currentCat];
+  db[trimmed + " - Hard"] = db[currentCat + " - Hard"] || [];
+  delete db[currentCat + " - Hard"];
+
+  if (currentSettings.customCategories) {
+    const idx = currentSettings.customCategories.indexOf(currentCat);
+    if (idx >= 0) {
+      currentSettings.customCategories[idx] = trimmed;
+    } else {
+      currentSettings.customCategories.push(trimmed);
+    }
+  }
+
+  currentSettings.currentLesson = trimmed;
+  if (!currentSettings.lastGroupCategories) currentSettings.lastGroupCategories = {};
+  currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = trimmed;
+
+  saveWords();
+  saveSettings();
+  populateLessonsDropdown();
+  renderCards();
+  showToast(`Renamed category to "${trimmed}"`, "success");
+}
+
+function deleteCurrentCategory() {
+  const currentCat = currentSettings.currentLesson;
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results"];
+  if (reserved.includes(currentCat)) {
+    showToast("Cannot delete this view.", "danger");
+    return;
+  }
+
+  if (!confirm(`Are you sure you want to delete category "${currentCat}" and all its words?`)) {
+    return;
+  }
+
+  const db = getActiveDb();
+  delete db[currentCat];
+  delete db[currentCat + " - Hard"];
+
+  if (currentSettings.customCategories) {
+    currentSettings.customCategories = currentSettings.customCategories.filter(c => c !== currentCat);
+  }
+
+  const remaining = getLessonsForActiveGroup();
+  const nextCat = remaining.length > 0 ? remaining[0] : "Show All Words";
+  currentSettings.currentLesson = nextCat;
+  if (!currentSettings.lastGroupCategories) currentSettings.lastGroupCategories = {};
+  currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = nextCat;
+
+  saveWords();
+  saveSettings();
+  populateLessonsDropdown();
+  renderCards();
+  showToast(`Deleted category "${currentCat}"`, "success");
 }
 
 // --------------------------------------------------------------------------
@@ -4060,11 +4666,9 @@ function openWordEditModal(lesson, index) {
   let targetWord = null;
   let sourceLesson = lesson;
   let sourceIndex = index;
+  const db = getActiveDb();
   
   if (lesson === 'Similar Words') {
-    // Similar Words can be edited too, but they live in currentSettings.similarWordGroups
-    // Find group index and word index from the caller
-    // E.g. index is {groupIdx: g, wordIdx: w}
     const groupIdx = index.groupIdx;
     const wordIdx = index.wordIdx;
     const group = currentSettings.similarWordGroups[groupIdx];
@@ -4079,13 +4683,12 @@ function openWordEditModal(lesson, index) {
     if (!targetWord) return;
     
     const listKey = getActiveLessonKey();
-    if (currentWordsDb[listKey] && currentWordsDb[listKey].includes(targetWord)) {
+    if (db[listKey] && db[listKey].includes(targetWord)) {
       sourceLesson = listKey;
-      sourceIndex = currentWordsDb[listKey].indexOf(targetWord);
+      sourceIndex = db[listKey].indexOf(targetWord);
     } else {
-      // Find in database
-      for (const key in currentWordsDb) {
-        const idx = currentWordsDb[key].findIndex(w => w.japanese === targetWord.japanese && w.english === targetWord.english);
+      for (const key in db) {
+        const idx = db[key].findIndex(w => w.japanese === targetWord.japanese && w.english === targetWord.english);
         if (idx >= 0) {
           sourceLesson = key;
           sourceIndex = idx;
@@ -4108,6 +4711,11 @@ function openWordEditModal(lesson, index) {
   document.getElementById('edit-word-english').value = targetWord.english;
   document.getElementById('edit-word-kanji').value = targetWord.kanji || "";
   
+  const tagsInput = document.getElementById('edit-word-tags');
+  if (tagsInput) {
+    tagsInput.value = (Array.isArray(targetWord.tags) && targetWord.tags.length > 0) ? targetWord.tags.join(', ') : "";
+  }
+  
   openModal('modal-edit-word');
   setTimeout(() => {
     const jpInput = document.getElementById('edit-word-japanese');
@@ -4127,21 +4735,24 @@ function saveWordEditChanges() {
   const newRomaji = document.getElementById('edit-word-romaji').value.trim();
   const newEng = document.getElementById('edit-word-english').value.trim();
   const newKanji = document.getElementById('edit-word-kanji').value.trim();
+  const tagsInput = document.getElementById('edit-word-tags');
+  const newTags = tagsInput ? tagsInput.value.split(',').map(t => t.trim()).filter(t => t.length > 0) : [];
   
   if (!newJp || !newRomaji || !newEng) {
-    showToast("All fields must be filled.", "danger");
+    showToast("Japanese, Romaji, and English fields must be filled.", "danger");
     return;
   }
 
-  // Update in all categories of currentWordsDb
-  for (const key in currentWordsDb) {
-    const list = currentWordsDb[key] || [];
+  const db = getActiveDb();
+  for (const key in db) {
+    const list = db[key] || [];
     list.forEach(w => {
       if (w.japanese === origJp && w.english === origEng) {
         w.japanese = newJp;
         w.romaji = newRomaji;
         w.english = newEng;
         w.kanji = newKanji;
+        w.tags = [...newTags];
       }
     });
   }
@@ -4156,6 +4767,7 @@ function saveWordEditChanges() {
             w.romaji = newRomaji;
             w.english = newEng;
             w.kanji = newKanji;
+            w.tags = [...newTags];
           }
         });
       }
@@ -4172,6 +4784,7 @@ function saveWordEditChanges() {
   
   saveWords();
   saveSettings();
+  populateTagFilterDropdown();
   
   closeActiveModal();
   renderCards();
@@ -4593,7 +5206,7 @@ function renderSimilarWordsGroups() {
       
       const copiedCats = getCopiedCategoriesList(w);
       if (copiedCats.length > 0) {
-        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${cleanCategoryNameForUI(c)}`).join('\n'));
         card.classList.add("atleast-one-category");
       }
       if (belongsToAnyCustomCategory(w)) {
@@ -4604,20 +5217,12 @@ function renderSimilarWordsGroups() {
         speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
       });
       
-      let catsHtml = "";
-      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
-        const cats = getAllCategoriesForWord(w);
-        if (cats.length > 0) {
-          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
-        }
-      }
-
       card.innerHTML = `
         <div class="card-jp text-japanese">${w.japanese}</div>
         <div class="card-romaji">${w.romaji}</div>
         <div class="card-eng">${w.english}</div>
-        ${catsHtml}
       `;
+      renderWordCategoryTags(card, w);
       g1CardsContainer.appendChild(card);
     });
   }
@@ -4650,7 +5255,7 @@ function renderSimilarWordsGroups() {
       
       const copiedCats = getCopiedCategoriesList(w);
       if (copiedCats.length > 0) {
-        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+        card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${cleanCategoryNameForUI(c)}`).join('\n'));
         card.classList.add('atleast-one-category');
       }
       if (belongsToAnyCustomCategory(w)) {
@@ -4661,20 +5266,12 @@ function renderSimilarWordsGroups() {
         speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
       });
       
-      let catsHtml = "";
-      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
-        const cats = getAllCategoriesForWord(w);
-        if (cats.length > 0) {
-          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
-        }
-      }
-
       card.innerHTML = `
         <div class="card-jp text-japanese">${w.japanese}</div>
         <div class="card-romaji">${w.romaji}</div>
         <div class="card-eng">${w.english}</div>
-        ${catsHtml}
       `;
+      renderWordCategoryTags(card, w);
       g2CardsContainer.appendChild(card);
     });
   }
@@ -4759,7 +5356,7 @@ function renderSimilarWordsGroups() {
         
         const copiedCats = getCopiedCategoriesList(w);
         if (copiedCats.length > 0) {
-          card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${c}`).join('\n'));
+          card.setAttribute('title', `Copied to:\n` + copiedCats.map(c => `• ${cleanCategoryNameForUI(c)}`).join('\n'));
           card.classList.add('atleast-one-category');
         }
         if (belongsToAnyCustomCategory(w)) {
@@ -4782,24 +5379,16 @@ function renderSimilarWordsGroups() {
           speakText(cleanJapaneseSpeakText(w.japanese), 'ja');
         });
 
-      let catsHtml = "";
-      if (currentSettings.showCategoryModeActive && !isMobileDevice()) {
-        const cats = getAllCategoriesForWord(w);
-        if (cats.length > 0) {
-          catsHtml = `<div class="card-categories-list">${cats.map(c => `<span class="card-category-tag">${c}</span>`).join(' ')}</div>`;
-        }
-      }
-
       card.innerHTML = `
         <div class="card-jp text-japanese">${w.japanese}</div>
         <div class="card-romaji">${w.romaji}</div>
         <div class="card-eng">${w.english}</div>
-        ${catsHtml}
         <button class="btn-card-edit atleast-one-category" title="Edit Word" style="top: 4px; right: 24px; opacity: 1;">
           <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
         </button>
         <button class="btn-remove-from-group" title="Remove Word">&times;</button>
       `;
+      renderWordCategoryTags(card, w);
         
         card.querySelector('.btn-card-edit').addEventListener('click', (e) => {
           e.stopPropagation();
@@ -4962,73 +5551,87 @@ function openCategorySelectorModal(customWordsList = null) {
 
   const targetCats = [];
 
-  const addStandard = (prefix, start, end) => {
-    for (let i = start; i <= end; i++) {
-      const name = `${prefix} ${String(i).padStart(2, '0')}`;
-      if (name !== currentL && !targetCats.includes(name)) {
-        targetCats.push(name);
-      }
-    }
-  };
-
-  const addCustom = (suffix) => {
-    const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+  if (group === "Ultimate") {
+    const db = getActiveDb();
+    const allKeys = Object.keys(db).filter(k => 
+      !k.endsWith(" - Hard") && 
+      k !== "Search Results" && 
+      k !== "Show All Words" && 
+      k !== "Same Meaning" && 
+      k !== "Same Romaji" && 
+      k !== "Similar Words" &&
+      k !== currentL
+    );
     allKeys.forEach(k => {
-      if (k.endsWith(suffix) && k !== currentL && !targetCats.includes(k)) {
+      if (!targetCats.includes(k)) targetCats.push(k);
+    });
+  } else {
+    const addStandard = (prefix, start, end) => {
+      for (let i = start; i <= end; i++) {
+        const name = `${prefix} ${String(i).padStart(2, '0')}`;
+        if (name !== currentL && !targetCats.includes(name)) {
+          targetCats.push(name);
+        }
+      }
+    };
+
+    const addCustom = (suffix) => {
+      const allKeys = Object.keys(currentWordsDb).filter(k => !k.endsWith(" - Hard"));
+      allKeys.forEach(k => {
+        if (k.endsWith(suffix) && k !== currentL && !targetCats.includes(k)) {
+          targetCats.push(k);
+        }
+      });
+      if (currentSettings.customCategories) {
+        currentSettings.customCategories.forEach(cat => {
+          if (cat.endsWith(suffix) && cat !== currentL && !targetCats.includes(cat)) {
+            targetCats.push(cat);
+          }
+        });
+      }
+    };
+
+    const isOtherCat = (k) => {
+      return !k.endsWith(" - Hard") &&
+             !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
+             !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
+             !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
+             !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
+             !k.match(/^Lesson\s+\d+/i) && 
+             !k.match(/^Kanji\s+\d+/i) && 
+             !k.match(/^Grm\s+\d+/i) && 
+             !k.match(/^Grammer\s+\d+/i) && 
+             !k.match(/^Extra\s+\d+/i) && 
+             !k.match(/^Sentence\s+\d+/i) && 
+             !k.match(/^Listening\s+\d+/i) && 
+             !k.match(/^Genki\s+\d+/i) && 
+             !k.match(/^N[1-5]\s+Kanji/i) &&
+             k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
+    };
+
+    if (group.includes("Grammer")) {
+      let suffix = " G5";
+      if (group.startsWith("N4")) suffix = " G4";
+      else if (group.startsWith("N3")) suffix = " G3";
+      else if (group.startsWith("N2")) suffix = " G2";
+      else if (group.startsWith("N1")) suffix = " G1";
+      addCustom(suffix);
+    }
+
+    const allKeys = Object.keys(currentWordsDb);
+    allKeys.forEach(k => {
+      if (isOtherCat(k) && k !== currentL && !targetCats.includes(k)) {
         targetCats.push(k);
       }
     });
     if (currentSettings.customCategories) {
       currentSettings.customCategories.forEach(cat => {
-        if (cat.endsWith(suffix) && cat !== currentL && !targetCats.includes(cat)) {
+        if (isOtherCat(cat) && cat !== currentL && !targetCats.includes(cat)) {
           targetCats.push(cat);
         }
       });
     }
-  };
-
-  const isOtherCat = (k) => {
-    return !k.endsWith(" - Hard") &&
-           !k.endsWith(" G5") && !k.endsWith(" G4") && !k.endsWith(" G3") && !k.endsWith(" G2") && !k.endsWith(" G1") &&
-           !k.endsWith(" E5") && !k.endsWith(" E4") && !k.endsWith(" E3") && !k.endsWith(" E2") && !k.endsWith(" E1") &&
-           !k.endsWith(" L5") && !k.endsWith(" L4") && !k.endsWith(" L3") && !k.endsWith(" L2") && !k.endsWith(" L1") &&
-           !k.endsWith(" D5") && !k.endsWith(" D4") && !k.endsWith(" D3") && !k.endsWith(" D2") && !k.endsWith(" D1") &&
-           !k.match(/^Lesson\s+\d+/i) && 
-           !k.match(/^Kanji\s+\d+/i) && 
-           !k.match(/^Grm\s+\d+/i) && 
-           !k.match(/^Grammer\s+\d+/i) && 
-           !k.match(/^Extra\s+\d+/i) && 
-           !k.match(/^Sentence\s+\d+/i) && 
-           !k.match(/^Listening\s+\d+/i) && 
-           !k.match(/^Genki\s+\d+/i) && 
-           !k.match(/^N[1-5]\s+Kanji/i) &&
-           k !== "Show All Words" && k !== "Same Meaning" && k !== "Same Romaji" && k !== "Similar Words";
-  };
-
-  if (group.includes("Grammer")) {
-    let suffix = " G5";
-    if (group.startsWith("N4")) suffix = " G4";
-    else if (group.startsWith("N3")) suffix = " G3";
-    else if (group.startsWith("N2")) suffix = " G2";
-    else if (group.startsWith("N1")) suffix = " G1";
-    addCustom(suffix);
   }
-
-  const allKeys = Object.keys(currentWordsDb);
-  allKeys.forEach(k => {
-    if (isOtherCat(k) && k !== currentL && !targetCats.includes(k)) {
-      targetCats.push(k);
-    }
-  });
-  if (currentSettings.customCategories) {
-    currentSettings.customCategories.forEach(cat => {
-      if (isOtherCat(cat) && cat !== currentL && !targetCats.includes(cat)) {
-        targetCats.push(cat);
-      }
-    });
-  }
-
-
 
   targetCats.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
@@ -5067,25 +5670,27 @@ function executeCategoryWordCopy() {
   
   // Always copy the Normal version of the word (never the Hard version)
   const targetKey = destCategory;
+  const db = getActiveDb();
   
-  if (!currentWordsDb[targetKey]) currentWordsDb[targetKey] = [];
+  if (!db[targetKey]) db[targetKey] = [];
 
-  console.log('wrodstOCopy:',wordsToCopy);
+  console.log('wrodstOCopy:', wordsToCopy);
   
   let copiedCount = 0;
   // Copy words (clone objects to prevent reference conflicts, ensuring no duplicates)
   wordsToCopy.forEach(w => {
     if (!w) return;
-    const isDuplicate = currentWordsDb[targetKey].some(destWord => 
+    const isDuplicate = db[targetKey].some(destWord => 
       destWord.japanese.trim() === w.japanese.trim() && 
       destWord.english.trim() === w.english.trim()
     );
     if (!isDuplicate) {
-      currentWordsDb[targetKey].push({
+      db[targetKey].push({
         japanese: w.japanese,
         english: w.english,
         romaji: w.romaji,
-        kanji: w.kanji || ""
+        kanji: w.kanji || "",
+        tags: Array.isArray(w.tags) ? [...w.tags] : []
       });
       copiedCount++;
     }
@@ -5196,6 +5801,22 @@ function getAllAppCategories() {
   const cats = [];
   const added = new Set();
   
+  if (isUltimateMode()) {
+    for (const key in currentUltimateWordsDb) {
+      if (key === "Search Results" || key === "Search Results - Hard") continue;
+      const baseKey = key.endsWith(" - Hard") ? key.replace(" - Hard", "") : key;
+      if (!added.has(baseKey)) {
+        added.add(baseKey);
+        cats.push({
+          name: baseKey,
+          group: "Ultimate"
+        });
+      }
+    }
+    cats.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
+    return cats;
+  }
+
   for (const key in currentWordsDb) {
     if (key === "Search Results" || key === "Search Results - Hard") continue;
     const baseKey = key.endsWith(" - Hard") ? key.replace(" - Hard", "") : key;
@@ -5431,6 +6052,26 @@ function openCategoryJumpModal() {
 function jumpToCategory(categoryName) {
   stopSpeech();
   
+  if (isUltimateMode()) {
+    currentSettings.currentLesson = categoryName;
+    currentSettings.focusedWordIndex = -1;
+    currentSettings.selectedWordIndices = [];
+    if (!currentSettings.lastGroupCategories) {
+      currentSettings.lastGroupCategories = {};
+    }
+    currentSettings.lastGroupCategories["Ultimate"] = categoryName;
+
+    const selectLesson = document.getElementById('select-lesson');
+    if (selectLesson) {
+      selectLesson.value = categoryName;
+    }
+
+    saveSettings();
+    renderCards();
+    showToast(`Jumped to: ${cleanCategoryNameForUI(categoryName)} (Ultimate)`, 'info');
+    return;
+  }
+
   const targetGroup = determineGroupForCategory(categoryName);
   
   if (targetGroup !== currentSettings.activeDbGroup) {
@@ -5562,15 +6203,18 @@ function initGlobalSearch() {
       const group2 = []; // exact match
       const group3 = []; // partial match
       
-      for (const lessonKey in currentWordsDb) {
+      const isUlt = isUltimateMode();
+      const targetDb = isUlt ? currentUltimateWordsDb : currentWordsDb;
+
+      for (const lessonKey in targetDb) {
         if (lessonKey === "Search Results" || lessonKey === "Search Results - Hard") continue;
-        const list = currentWordsDb[lessonKey];
+        const list = targetDb[lessonKey] || [];
         const isCurrentCat = (lessonKey === currentL || lessonKey === currentLHard);
 
         list.forEach(w => {
-          const engLower = w.english.toLowerCase();
-          const romajiLower = w.romaji.toLowerCase();
-          const jpLower = w.japanese.toLowerCase();
+          const engLower = (w.english || "").toLowerCase();
+          const romajiLower = (w.romaji || "").toLowerCase();
+          const jpLower = (w.japanese || "").toLowerCase();
 
           const engMatch = engLower.includes(query);
           const romajiMatch = romajiLower.includes(query);
@@ -5626,6 +6270,55 @@ function initGlobalSearch() {
           row.addEventListener('click', () => {
             // Click handler
             stopSpeech();
+
+            if (isUltimateMode()) {
+              currentSettings.currentLesson = lessonBase;
+              currentSettings.isHard = isHardWord;
+              
+              if (!currentSettings.lastGroupCategories) {
+                currentSettings.lastGroupCategories = {};
+              }
+              currentSettings.lastGroupCategories["Ultimate"] = lessonBase;
+
+              const selectLesson = document.getElementById('select-lesson');
+              if (selectLesson) selectLesson.value = lessonBase;
+              
+              const normalRadio = document.getElementById('mode-normal');
+              const hardRadio = document.getElementById('mode-hard');
+              if (isHardWord) {
+                if (hardRadio) hardRadio.checked = true;
+              } else {
+                if (normalRadio) normalRadio.checked = true;
+              }
+              
+              saveSettings();
+              renderCards();
+              
+              const activeWords = getActiveWords();
+              const idx = activeWords.findIndex(w => w.japanese === res.word.japanese && w.english === res.word.english);
+              
+              if (idx >= 0) {
+                currentSettings.focusedWordIndex = idx;
+                currentSettings.selectedWordIndices = [idx];
+                saveSettings();
+                renderCards();
+                
+                setTimeout(() => {
+                  const card = document.querySelector(`.vocab-card[data-index="${idx}"]`);
+                  if (card) {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    card.focus();
+                  }
+                  speakText(cleanJapaneseSpeakText(res.word.japanese), 'ja');
+                }, 100);
+              }
+              
+              searchInput.value = "";
+              localStorage.removeItem('n5_search_term');
+              if (btnClear) btnClear.classList.add('hidden');
+              searchResults.classList.add('hidden');
+              return;
+            }
             
             // Switch DB Group if it has changed
             const targetGroup = determineGroupForCategory(res.lessonKey);
@@ -5785,15 +6478,17 @@ function triggerSearchResultsCategory() {
 
   const results = [];
   const uniqueKeys = new Set();
+  const db = getActiveDb();
 
-  for (const key in currentWordsDb) {
+  for (const key in db) {
     if (key === "Search Results" || key === "Search Results - Hard") continue;
-    const list = currentWordsDb[key] || [];
+    const list = db[key] || [];
     list.forEach(w => {
-      const engMatch = w.english.toLowerCase().includes(query);
-      const romajiMatch = w.romaji.toLowerCase().includes(query);
-      if (engMatch || romajiMatch) {
-        const dupKey = `${w.japanese.trim()}::${w.english.trim()}::${w.romaji.trim()}`;
+      const engMatch = (w.english || "").toLowerCase().includes(query);
+      const romajiMatch = (w.romaji || "").toLowerCase().includes(query);
+      const jpMatch = (w.japanese || "").toLowerCase().includes(query);
+      if (engMatch || romajiMatch || jpMatch) {
+        const dupKey = `${(w.japanese || '').trim()}::${(w.english || '').trim()}::${(w.romaji || '').trim()}`;
         if (!uniqueKeys.has(dupKey)) {
           uniqueKeys.add(dupKey);
           results.push(w);
@@ -5802,8 +6497,8 @@ function triggerSearchResultsCategory() {
     });
   }
 
-  currentWordsDb["Search Results"] = results;
-  currentWordsDb["Search Results - Hard"] = results;
+  db["Search Results"] = results;
+  db["Search Results - Hard"] = results;
 
   const selectLesson = document.getElementById('select-lesson');
   if (selectLesson) {
@@ -6056,6 +6751,32 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCopyTo.addEventListener('click', openCategorySelectorModal);
   }
 
+  const btnAddTagsSelected = document.getElementById('btn-add-tags-selected');
+  if (btnAddTagsSelected) {
+    btnAddTagsSelected.addEventListener('click', addTagsToSelectedWords);
+  }
+
+  const btnRenameCat = document.getElementById('btn-rename-category');
+  if (btnRenameCat) {
+    btnRenameCat.addEventListener('click', renameCurrentCategory);
+  }
+
+  const btnDeleteCat = document.getElementById('btn-delete-category');
+  if (btnDeleteCat) {
+    btnDeleteCat.addEventListener('click', deleteCurrentCategory);
+  }
+
+  const selectTagFilter = document.getElementById('select-tag-filter');
+  if (selectTagFilter) {
+    selectTagFilter.addEventListener('change', (e) => {
+      currentSettings.activeTagFilter = e.target.value;
+      currentSettings.focusedWordIndex = -1;
+      currentSettings.selectedWordIndices = [];
+      saveSettings();
+      renderCards();
+    });
+  }
+
   const btnCopyC = document.getElementById('btn-copy-c-format');
   if (btnCopyC) {
     btnCopyC.addEventListener('click', copyCurrentCategoryToClipboardNewFormat);
@@ -6097,7 +6818,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (selectDbGroup) {
     selectDbGroup.addEventListener('change', (e) => {
-      if (e.target.value === "Kanji") {
+      if (e.target.value === "Kanji" || e.target.value === "Ultimate" || e.target.value === "Others") {
         if (selectDbLevel) {
           const lg = selectDbLevel.closest('.quiz-option-group');
           if (lg) lg.style.display = "none";
@@ -6360,14 +7081,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ctrl + P toggle category mode
     if (e.ctrlKey && (e.key === 'p' || e.key === 'P')) {
-      if (!isMobileDevice()) {
-        e.preventDefault();
-        currentSettings.showCategoryModeActive = !currentSettings.showCategoryModeActive;
-        saveSettings();
-        renderCards();
-        showToast(currentSettings.showCategoryModeActive ? "Show Category Mode: ON" : "Show Category Mode: OFF", "info");
-        return;
-      }
+      e.preventDefault();
+      currentSettings.showCategoryModeActive = !currentSettings.showCategoryModeActive;
+      saveSettings();
+      renderCards();
+      showToast(currentSettings.showCategoryModeActive ? "Show Category Mode: ON" : "Show Category Mode: OFF", "info");
+      return;
     }
 
     // ESC to close modals/deselect (handled before standard inputs bypass so it works when inputs are focused)
@@ -6507,7 +7226,7 @@ document.addEventListener('DOMContentLoaded', () => {
               e.preventDefault();
               prevQuizQuestion();
             }
-          } else if (e.key === 'ArrowRight') {
+          } else if (e.key === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
             if (!isInputFocused) {
               e.preventDefault();
               nextQuizQuestion();
@@ -6571,7 +7290,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         navigateLessonCategory('prev');
         return;
-      } else if (e.key === 'ArrowRight') {
+      } else if (e.key === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
         e.preventDefault();
         navigateLessonCategory('next');
         return;
@@ -6582,34 +7301,64 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Selection Mode Arrow Navigation (Left/Up or Right/Down Arrow move cards)
-    if (currentSettings.isSelectionModeActive) {
-      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+    // Grid Navigation & Number Key Selection
+    if (!e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey) {
+      if (e.key === 'ArrowDown') {
         e.preventDefault();
-        moveSelectedUp();
+        if (currentSettings.isSelectionModeActive) {
+          moveSelectedDown();
+        } else {
+          navigateFocus('next');
+        }
         return;
-      } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        moveSelectedDown();
+        if (currentSettings.isSelectionModeActive) {
+          moveSelectedUp();
+        } else {
+          navigateFocus('prev');
+        }
         return;
-      }
-    } else {
-      // Normal Mode Card Navigation
-      if (e.shiftKey && e.key === 'ArrowRight') {
+      } else if (e.key === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
         e.preventDefault();
-        navigateActiveGroup('next');
-        return;
-      } else if (e.shiftKey && e.key === 'ArrowLeft') {
-        e.preventDefault();
-        navigateActiveGroup('prev');
-        return;
-      } else if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        navigateFocus('next');
+        if (currentSettings.isSelectionModeActive) {
+          moveSelectedDown();
+        } else {
+          navigateFocus('next');
+        }
         return;
       } else if (e.key === 'ArrowLeft') {
         e.preventDefault();
-        navigateFocus('prev');
+        if (currentSettings.isSelectionModeActive) {
+          moveSelectedUp();
+        } else {
+          navigateFocus('prev');
+        }
+        return;
+      } else if (e.key >= '1' && e.key <= '9') {
+        e.preventDefault();
+        selectRowCardByNumber(parseInt(e.key, 10));
+        return;
+      }
+    }
+
+    // Shift + Row / Group Navigation
+    if (e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        navigateGridRow('down');
+        return;
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        navigateGridRow('up');
+        return;
+      } else if (e.key === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
+        e.preventDefault();
+        navigateActiveGroup('next');
+        return;
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        navigateActiveGroup('prev');
         return;
       }
     }

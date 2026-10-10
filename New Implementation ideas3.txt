@@ -1,0 +1,61 @@
+Create me an "Ulitmate" Group, Similar to Kanji Group This is standalone group that we can switch from any Level(N5,N4.)
+
+Initially can you each and every category into this Group, all categories that have atleast one word(either in hard or normal) should be copied here, just copy not move
+
+if we 2 categories with same name, do the necessary things and make sure to copy both of these categories data to that files, also make this information is present in another file Ultimate.js it's not words.js
+
+doing reset cache when i'm in ultimate should only do reset catche for ultimate, dont do anything in words.js
+copy to clipboard also should be giving information for only ultimate
+
+make sure ultimate vocab and other categories vocab dont any link
+i.e editing an vocab in ultimate should not impact on the (not ultimate) ones
+
+categories prsent information also should be of only from ultimate
+
+no need to follow any naming convension for categories just give them as is, i.e if for lesson categories ends with l5 copy the same name into Ultimate, no need to hide anything, give exactly same
+
+give me option to edit the name of the category
+here give me option to add tags for each words, when i select multiple words then i should be add tags to all of those selected words(if an tag is already present dont add twice)
+
+when i click e for an words, then 5th box should be tags as comma seperation
+
+give me option to filter by tags also, 
+
+clicking on down arrow should take me next row, clicking 1 should should select first image of current row,
+2 should select 2nd image of current...
+(this will make selection very much easier)
+
+give me option to delete an category
+
+
+--------------------------------------------
+when i some words selected then start quiz only for those, reply quiz will only play for those words only
+when i'm in ulitmate search category should do only with in the ultimate
+search results only should show only from ulimate when we are in ultimate
+
+when we are not in ulimate it's behavour should be current behavour
+
+when i'm doing shift + down/ up arrow then only doing row logic
+instead if i do just donw/up arrow then do goto next word logic for down arrow(this was previous behavoir,
+i want it back), same for up arrow
+also goto row should make an word's top most line as focus
+also app-header should not be sticky top.
+
+changing ordder of words is not working now.
+----------------
+-> save lessons info as tags in ultimate.
+
+
+current logic -> being in selection mode and selected some words n clicking on m -> toogle words to
+    hard/normal (keep this logic as is)
+    additional change -> when i'm click M then it should be doing move to category, 
+    if we are in ultimate -> then category is within the Ultimate only
+
+    if we are outside ulitmate -> then it should be similar to that of copy to category feature.
+
+dont allow remove from category, when there is only 1 category, when i hover on category then also it
+should not show  x symbol when it is the only category.
+dont highlight current row - no need of this feature.
+
+when only one word is selected start quiz for - that word to last (if order is original)
+-> if multiple words are selected then start quiz for only those words

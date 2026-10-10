@@ -2210,5 +2210,71 @@ junbi vs sonaemasu:
 gakekuzure:
     gake - cliff, steep slope
     kuzure - crumble, collapse, breakdown
+
+ifuku vs fuku:
+    ifuku:
+        Polite / Formal / Written
+        Used in official documents, textbooks, signs, technical terms, and statistics for "garments" or "apparel."
+
+    fuku:
+        Casual / Everyday / Spoken
+        Used in daily conversations, casual writing, and general speech with friends, family, and coworkers for "clothes" or "outfit."
+ 
+Karuta vs Kaado:
+    Karuta:
+        かるた / カルタ
+        Traditional Japanese playing cards (especially matching poem/picture card games) or specific traditional deck games like Hyakunin Isshu. Derived from Portuguese "carta".
+
+    Kaado:
+        カード
+        Modern general cards (credit/debit cards, ID cards, business cards, playing cards/poker cards, greeting cards, trading cards). Derived from English "card".
+        
+dansei vs otoko:
+    dansei:
+        Formal / Written / Respectful
+        Refers to male individuals, men, or the male gender in professional, academic, public, or polite contexts. Used in surveys, forms, news broadcasts, and polite speech.
+
+    otoko:
+        Casual / Everyday / General Gender Term
+        The standard native Japanese word for a man, male, or boy. Used in casual conversation, literature, and compound words, but can sound direct or blunt if used inappropriately in formal settings.
+
+[oto/koe ga~] shimasu vs kikoemasu:
+    [oto/koe ga~] shimasu:
+        Sensory Perception / Noticeable Presence / Spontaneous Sensation
+        Focuses on perceiving a sound or voice through the senses, often emphasizing the source, nature, or quality of the sound (e.g., "there is a sound/voice," "it makes a sound," or "I sense/notice a sound").
+
+    kikoemasu:
+        Auditory Ability / Passive Hearing / Reach of Sound
+        Focuses on the physical capability or natural condition of sound reaching the ears without active effort (e.g., "can be heard," "is audible," or "can hear").
+
+happyou vs housou:
+    happyou:
+        Announcement / Presentation / Official Release
+        Refers to making an official statement, presenting information, disclosing results, or delivering a talk to an audience (e.g., releasing research results, project presentations, or company announcements).
+
+    housou:
+        Broadcasting / Transmission / Airing
+        Refers to transmitting audio or video content over the airwaves, internet, or public speaker systems (e.g., TV broadcasts, radio shows, or station/building announcements over a loudspeaker).
+
+hakase vs isha:
+    hakase:
+        Doctorate / Scholar / Academic Title (PhD)
+        Refers to an expert, professor, or holder of a doctoral degree (PhD) in any academic field (e.g., science, literature, engineering). Also used as an affectionate title for knowledgeable experts or scientists.
+
+    isha:
+        Medical Doctor / Physician / Medical Professional
+        Refers specifically to a licensed medical doctor who treats sick or injured people in a clinic or hospital (e.g., general practitioner, surgeon, pediatrician).
+
+giongo vs gitaigo:
+    giongo:
+        Onomatopoeia / Sound-Imitating Words
+        Words that imitate real, physical sounds made by living creatures, inanimate objects, or natural phenomena (e.g., wanwan for a dog's bark, zaazaa for heavy rain, dokidoki for a heartbeat).
+
+    gitaigo:
+        Mimetic Words / State & Manner Words
+        Words that depict non-audible states, visual appearances, actions, emotions, or physical conditions that do not produce actual sound (e.g., nikoniko for smiling, glittering, feeling sticky or sluggish).
+    
+Mono:
+    Ie no mono - Members of my household / family
     
 `

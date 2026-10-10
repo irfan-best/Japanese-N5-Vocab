@@ -59,11 +59,17 @@
       <div class="panel-section selection-controls">
         <div class="input-group">
           <label for="select-lesson">Lesson / Category</label>
-          <div class="lesson-select-wrapper" style="display: flex; gap: 0.5rem; align-items: center;">
+          <div class="lesson-select-wrapper" style="display: flex; gap: 0.35rem; align-items: center;">
             <select id="select-lesson" class="custom-select" style="flex: 1;">
               <!-- Programmatically populated: Lesson 01 - Lesson 25, custom categories, Show All, Similar Words -->
             </select>
-            <button id="btn-add-category" class="btn btn-secondary" title="Create Custom Category" style="padding: 0 0.75rem; height: 42px; font-weight: bold; font-size: 1.2rem;">+</button>
+            <button id="btn-add-category" class="btn btn-secondary" title="Create Custom Category" style="padding: 0 0.65rem; height: 42px; font-weight: bold; font-size: 1.2rem;">+</button>
+            <button id="btn-rename-category" class="btn btn-secondary" title="Rename Current Category" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            </button>
+            <button id="btn-delete-category" class="btn btn-danger" title="Delete Current Category" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
           </div>
         </div>
 
@@ -76,6 +82,13 @@
             <input type="radio" id="mode-hard" name="lesson-type" value="hard">
             <label for="mode-hard">Hard</label>
           </div>
+        </div>
+
+        <div class="input-group tag-filter-group" id="tag-filter-group">
+          <label for="select-tag-filter">Filter by Tag</label>
+          <select id="select-tag-filter" class="custom-select" style="min-width: 130px;">
+            <option value="">All Tags</option>
+          </select>
         </div>
       </div>
 
@@ -188,7 +201,7 @@
 
     <!-- Quick Keyboard Selection Instructions (Visual cue only on desktop, hidden on mobile) -->
     <div class="kbd-info">
-      <span>Use <strong>&larr;</strong> and <strong>&rarr;</strong> to select cards and speak. Click cards to focus. <strong>Ctrl+Click</strong> to toggle selection, <strong>Shift+Click</strong> to select ranges.</span>
+      <span>Use <strong>&larr;</strong> and <strong>&rarr;</strong> (or <strong>J</strong>) to select cards and speak. Click cards to focus. <strong>Ctrl+Click</strong> to toggle selection, <strong>Shift+Click</strong> to select ranges.</span>
     </div>
 
     <!-- Cards Layout / Vocabulary Cards Grid -->
@@ -217,6 +230,7 @@
         </button>
         <button id="btn-delete" class="btn btn-danger" disabled>Delete Selected</button>
         <button id="btn-copy-to" class="btn btn-secondary" disabled>Copy Words To</button>
+        <button id="btn-add-tags-selected" class="btn btn-secondary" disabled title="Add tags to selected words">Add Tags</button>
       </div>
       <div class="manage-right">
         <button id="btn-toggle-selection-mode" class="btn btn-outline" title="Toggle Selection Mode">Enable Selection Mode</button>
@@ -438,19 +452,23 @@
                 <td>Delete all selected words.</td>
               </tr>
               <tr>
-                <td><kbd>&rarr;</kbd> (Right Arrow) (in Normal Mode)</td>
-                <td>Move focus to next card and play Japanese audio.</td>
-              </tr>
-              <tr>
-                <td><kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (Left/Right Arrow)</td>
+                <td><kbd>&larr;</kbd> / <kbd>&rarr;</kbd> / <kbd>J</kbd></td>
                 <td>Move focus to previous/next card and play Japanese audio.</td>
               </tr>
               <tr>
-                <td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (Left/Right Arrow)</td>
+                <td><kbd>&uarr;</kbd> / <kbd>&darr;</kbd> (Up/Down Arrow) (in Grid)</td>
+                <td>Move focus up/down by full grid row and play Japanese audio.</td>
+              </tr>
+              <tr>
+                <td><kbd>1</kbd> .. <kbd>9</kbd></td>
+                <td>Directly select / focus the 1st through 9th card in the currently active row.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (or <kbd>Ctrl</kbd>+<kbd>J</kbd>)</td>
                 <td>Cycle to previous/next lesson category.</td>
               </tr>
               <tr>
-                <td><kbd>Shift</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (Left/Right Arrow)</td>
+                <td><kbd>Shift</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd> (or <kbd>Shift</kbd>+<kbd>J</kbd>)</td>
                 <td>Cycle to previous/next database group (Normal Mode only).</td>
               </tr>
               <tr>
@@ -490,7 +508,7 @@
                 <td>Move selected card(s) Up (left).</td>
               </tr>
               <tr>
-                <td><kbd>&rarr;</kbd> / <kbd>&darr;</kbd> (Right/Down Arrow) (in Selection Mode)</td>
+                <td><kbd>&rarr;</kbd> / <kbd>&darr;</kbd> / <kbd>J</kbd> (in Selection Mode)</td>
                 <td>Move selected card(s) Down (right).</td>
               </tr>
               <tr>
@@ -590,7 +608,7 @@
                 <td>Go to previous question (when text input is not focused).</td>
               </tr>
               <tr>
-                <td><kbd>&rarr;</kbd> (Right Arrow) (in Quiz Active)</td>
+                <td><kbd>&rarr;</kbd> / <kbd>J</kbd> (in Quiz Active)</td>
                 <td>Go to next question (when text input is not focused).</td>
               </tr>
               <tr>
@@ -721,6 +739,7 @@ kenkyuusha</pre>
           <option value="Dumps">Dumps</option>
           <option value="Genki" id="opt-db-group-genki">Genki</option>
           <option value="Kanji">Kanji</option>
+          <option value="Ultimate" id="opt-db-group-ultimate">Ultimate</option>
         </select>
       </div>
       <div class="modal-actions" style="margin-top: 1.5rem;">
@@ -808,6 +827,10 @@ kenkyuusha</pre>
       <div class="quiz-option-group">
         <label for="edit-word-kanji">Kanji</label>
         <input type="text" id="edit-word-kanji" class="quiz-text-input">
+      </div>
+      <div class="quiz-option-group">
+        <label for="edit-word-tags">Tags (comma-separated)</label>
+        <input type="text" id="edit-word-tags" class="quiz-text-input" placeholder="e.g. verb, N5, food">
       </div>
       <div class="quiz-setup-actions" style="margin-top: 1.5rem;">
         <button id="btn-save-word" class="btn btn-primary btn-large">Save Changes</button>
@@ -920,6 +943,7 @@ kenkyuusha</pre>
 
   <!-- Scripts -->
   <script src="Points.js"></script>
+  <script src="Ultimate.js"></script>
   <script src="words.js"></script>
   <script src="script.js"></script>
 </body>

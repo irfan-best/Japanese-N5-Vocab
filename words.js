@@ -11374,10 +11374,35 @@ Kakari
 `;
 
 allWords["Lesson 46"] = `
-やきます
-bake, grill, roast
-Yakimasu
-焼きます
+ちしき
+knowledge
+Chishiki
+知識
+
+ほうこ
+treasury
+Houko
+宝庫
+
+おまたせしました。
+Sorry to have kept you waiting.
+Omatase shimashita。
+お待たせしました。
+
+いちぶぶん
+one part
+Ichi bubun
+一部分
+
+[～へ] むかいます
+head for
+[~ e] Mukaimasu
+[～へ] 向かいます
+
+ガスレンジ
+gas range, gas cooker
+Gasu renji
+ガスレンジ
 
 わたします
 hand over
@@ -11389,55 +11414,45 @@ come back
 Kaette kimasu
 帰って 来ます
 
-[バスが～] でます
-[a bus] leave, depart
-[basu ga~] Demasu
-[バスが～] 出ます
-
-[～へ] むかいます
-head for
-[~ e] Mukaimasu
-[～へ] 向かいます
-
 [じょうほうが～] てにはいります
 [information] come in, reach
 [jouhou ga~] Te ni hairimasu
 [情報が～] 手に入ります
 
-にゅうりょくします
-input
-Nyuuryoku shimasu
-入力します
+[バスが～] でます
+[a bus] leave, depart
+[basu ga~] Demasu
+[バスが～] 出ます
 
 [ほんが～] でます
 [a book] be published
 [hon ga~] Demasu
 [本が～] 出ます
 
-るす
-absence
-Rusu
-留守
-
-たくはいびん
-delivery service
-Takuhaibin
-宅配便
-
-げんいん
-cause
-Gen'in
-原因
-
-ちゅうしゃ
-injection
-Chuusha
-注射
-
 しょくよく
 appetite
 Shokuyoku
 食欲
+
+こちら
+my place, my side
+Kochira
+こちら
+
+ちょうど
+just, exactly
+Choudo
+ちょうど
+
+いま いいでしょうか。
+May I bother you now?
+Ima ii deshou ka。
+今 いいでしょうか。
+
+どちら様でしょうか。
+Who is this, please?
+Dochira sama deshou ka。
+どちら様でしょうか。
 
 パンフレット
 pamphlet
@@ -11449,85 +11464,73 @@ stereo
 Sutereo
 ステレオ
 
-こちら
-my place, my side
-Kochira
-こちら
-
-～の ところ
-the place around ~
-~ no tokoro
-～の 所
-
-ちょうど
-just, exactly
-Choudo
-ちょうど
-
-たったいま
-just now (used with the past tense; indicates completion)
-Tatta ima
-たった今
-
-いま いいでしょうか。
-May I bother you now?
-Ima ii deshou ka。
-今 いいでしょうか。
-
 ガスサービスセンター
 gas service center
 Gasu saabisu sentaa
 ガスサービスセンター
-
-ガスレンジ
-gas range, gas cooker
-Gasu renji
-ガスレンジ
-
-ぐあい
-condition
-Guai
-具合
-
-どちら様でしょうか。
-Who is this, please?
-Dochira sama deshou ka。
-どちら様でしょうか。
-
-おまたせしました。
-Sorry to have kept you waiting.
-Omatase shimashita。
-お待たせしました。
-
-ちしき
-knowledge
-Chishiki
-知識
-
-ほうこ
-treasury
-Houko
-宝庫
 
 システム
 system
 Shisutemu
 システム
 
-たとえば
-for example
-Tatoeba
-例えば
-
 キーワード
 key word
 Kiiwaado
 キーワード
 
-いちぶぶん
-one part
-Ichi bubun
-一部分
+たくハいびん
+delivery service
+Takuhaibin
+宅配便
+
+たとえば
+for example
+Tatoeba
+例えば
+
+るす
+absence
+Rusu
+留守
+
+やきます
+bake, grill, roast
+Yakimasu
+焼きます
+
+`;
+
+allWords["Lesson 46 - Hard"] = `
+にゅうりょくします
+input
+Nyuuryoku shimasu
+入力します
+
+ちゅうしゃ
+injection
+Chuusha
+注射
+
+げんいん
+cause
+Gen'in
+原因
+
+～の ところ
+the place around ~
+~ no tokoro
+～の 所
+
+たったいま
+just now (used with the past tense; indicates completion)
+Tatta ima
+たった今
+
+ぐあい
+condition
+Guai
+具合
 
 びょう
 second
@@ -11535,8 +11538,6 @@ Byou
 秒
 
 `;
-
-allWords["Lesson 46 - Hard"] = ``;
 
 allWords["Lesson 47"] = `
 [ひとが～] あつまります
@@ -23941,6 +23942,66 @@ Reiyaa katto
 `;
 
 allWords["Extra 45"] = `
+しょうかきを そなえる・みずを ためて おく
+Have a fire extinguisher on hand / Keep an emergency supply of water.
+Shoukaki o sonaeru, mizu o tamete oku
+消火器を 備える・水を 貯めて おく
+
+ひじょうよう もちだしぶくろ を ようい して おく
+Keep items needed in an emergency in a bag.
+Hijouyou mochidashibukuro o youi shite oku
+非常用持ち出し袋を用意しておく
+
+ちいきの ひなんばしょを かくにんして おく
+Make sure you know where the evacuation point is in your district.
+Chiiki no hinanbasho o kakunin shite oku
+地域の 避難場所を 確認して おく
+
+かぞく、ちじん、ゆうじん と、もしも の ばあい の れんらくさき を きめて おく
+Decide on a contact address with your family, friends and acquaintances.
+Kazoku, chijin, yuujin to, moshimo no baai no renrakusaki o kimete oku
+家族、知人、友人と、もしもの場合の連絡先を決めておく
+
+とを あけて でぐちの かくほ
+Open doors to secure an exit path.
+To o akete deguchi no kakuho
+戸を 開けて 出口の 確保
+
+あわてて そとに とびださない
+Do not panic or rush outside.
+Awatete soto ni tobidasanai
+慌てて 外に 飛び出さない
+
+じしん が おさまったら
+When an Earthquake Stops
+Jishin ga osamattara
+地震が収まったら
+
+やまくずれ、がけくずれ、つなみ に ちゅうい
+Beware of landslides and tidal waves.
+Yamaguzure, gakekuzure, tsunami ni chūi
+山崩れ、崖崩れ、津波に注意
+
+ひなんする ばあいは
+When You Evacuate
+Hinan suru baai wa
+避難する 場合は
+
+いえの まわりの てんけん
+Check the exterior of the house.
+Ie no mawari no tenken
+家の 周りの 点検
+
+きちょうひん
+Valuables
+Kichouhin
+貴重品
+
+ただしい じょうほう を きく
+Get accurate information.
+Tadashii jōhō o kiku
+正しい情報を聞く
+
 まんいち じしんが おきた ばあい
 When an Earthquake Strikes
 Man'ichi jishin ga okita baai
@@ -24009,65 +24070,95 @@ Tenki yohou o kiku
 `;
 
 allWords["Extra 45 - Hard"] = `
-しょうかきを そなえる・みずを ためて おく
-Have a fire extinguisher on hand / Keep an emergency supply of water.
-Shoukaki o sonaeru, mizu o tamete oku
-消火器を 備える・水を 貯めて おく
+おさまります
+to subside / to calm down / to abate
+Osamarimasu
+収まります
 
-ひじょうよう もちだしぶくろ を ようい して おく
-Keep items needed in an emergency in a bag.
-Hijouyou mochidashibukuro o youi shite oku
-非常用持ち出し袋を用意しておく
+やまくずれ
+landslide (mountain collapse)
+Yamakuzure (Yamaguzure)
+山崩れ
 
-ちいきの ひなんばしょを かくにんして おく
-Make sure you know where the evacuation point is in your district.
-Chiiki no hinanbasho o kakunin shite oku
-地域の 避難場所を 確認して おく
+がけくずれ
+landslide / cliff collapse
+Gakekuzure
+崖崩れ
 
-かぞく、ちじん、ゆうじん と、もしも の ばあい の れんらくさき を きめて おく
-Decide on a contact address with your family, friends and acquaintances.
-Kazoku, chijin, yuujin to, moshimo no baai no renrakusaki o kimete oku
-家族、知人、友人と、もしもの場合の連絡先を決めておく
+しょうかき
+fire extinguisher
+Shoukaki
+消火器
 
-とを あけて でぐちの かくほ
-Open doors to secure an exit path.
-To o akete deguchi no kakuho
-戸を 開けて 出口の 確保
+そなえます
+to prepare / to provide / to equip
+Sonaemasu
+備えます
 
-あわてて そとに とびださない
-Do not panic or rush outside.
-Awatete soto ni tobidasanai
-慌てて 外に 飛び出さない
+ためます
+to store / to accumulate
+Tamemasu
+貯めます
 
-じしん が おさまったら
-When an Earthquake Stops
-Jishin ga osamattara
-地震が収まったら
+ちいき
+region / area / district
+Chiiki
+地域
 
-ただしい じょうほう を きく
-Get accurate information.
-Tadashii jōhō o kiku
-正しい情報を聞く
+ちじん
+acquaintance
+Chijin
+知人
 
-やまくずれ、がけくずれ、つなみ に ちゅうい
-Beware of landslides and tidal waves.
-Yamaguzure, gakekuzure, tsunami ni chūi
-山崩れ、崖崩れ、津波に注意
+かくほ
+securing / ensuring / guarantee
+Kakuho
+確保
 
-ひなんする ばあいは
-When You Evacuate
-Hinan suru baai wa
-避難する 場合は
+あわたてます
+to panic / to hurry
+Awatatemasu
+慌てます
 
-いえの まわりの てんけん
-Check the exterior of the house.
-Ie no mawari no tenken
-家の 周りの 点検
+とびだしません
+do not rush out / do not dash out
+Tobidashimasen
+飛び出しません
+
+てんけん
+inspection / check
+Tenken
+点検
 
 きちょうひん
-Valuables
+valuables
 Kichouhin
 貴重品
+
+ひなん
+evacuation / refuge
+Hinan
+避難
+
+ひじょうよう
+emergency use / for emergency use
+Hijouyou
+非常用
+
+もちだしぶくろ
+emergency grab bag / emergency evacuation bag
+Mochidashibukuro
+持ち出し袋
+
+ゆうじん
+friend
+Yuujin
+友人
+
+と
+door
+To
+戸
 
 `;
 
@@ -58000,8 +58091,8 @@ const appSettings = {
     "にわかあめ / ゆうだち::shower / sudden evening shower": 2,
     "はなれた::remote": 1
   },
-  "currentLesson": "Extra 45",
-  "isHard": true,
+  "currentLesson": "Lesson 46",
+  "isHard": false,
   "displayMode": "big-english",
   "customDisplayConfig": {
     "lineCount": 3,
@@ -58015,11 +58106,12 @@ const appSettings = {
   },
   "readingGap": "2",
   "quizMode": "quiz1",
-  "quizOrder": "random",
+  "quizOrder": "original",
   "revealRomaji": false,
   "focusedWordIndex": -1,
   "selectedWordIndices": [],
   "isSelectionModeActive": false,
+  "activeTagFilter": "",
   "customCategories": [
     "Phrases",
     "Questions",
@@ -58071,12 +58163,12 @@ const appSettings = {
   "othersHiddenSourceGroups": [],
   "othersHiddenLevels": [],
   "lastDestCategory": "Group II",
-  "activeDbGroup": "N4 Extra",
+  "activeDbGroup": "N4 Lessons",
   "showCategoryModeActive": true,
   "lastGroupCategories": {
     "N5 Lessons": "Lesson 01",
     "N5 Others": "Similar Ones",
-    "N4 Lessons": "Lesson 45",
+    "N4 Lessons": "Lesson 46",
     "N4 Others": "Extra 42",
     "N3 Lessons": "Lesson 51",
     "N3 Others": "Same Romaji",
@@ -58084,7 +58176,7 @@ const appSettings = {
     "N4 Grammer": "Grm 44",
     "Kanji": "N5 Kanji",
     "N5 Extra": "Extra 07",
-    "N4 Extra": "Extra 45",
+    "N4 Extra": "Extra 46",
     "N3 Extra": "Extra 51",
     "N5 Grammer Others": "Adjective G5",
     "N4 Grammer Others": "Show All Words",
@@ -58112,6 +58204,7 @@ const appSettings = {
     "N1 Dumps": "Show All Words",
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
-    "Others": "Similar Ones"
+    "Others": "Similar Ones",
+    "Ultimate": "Lesson 46"
   }
 };
