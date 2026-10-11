@@ -1902,6 +1902,8 @@ function getCopiedCategoriesList(word) {
   return allCats.filter(c => c !== currentCat);
 }
 
+let lastRemovedWordUndoAction = null;
+
 function removeWordFromSpecificCategory(word, categoryName) {
   if (!word || !categoryName || !word.japanese || !word.english) return;
   
@@ -1910,33 +1912,96 @@ function removeWordFromSpecificCategory(word, categoryName) {
   const db = getActiveDb();
 
   let removedCount = 0;
+  let savedNormalIndex = -1;
+  let savedNormalWord = null;
+  let savedHardIndex = -1;
+  let savedHardWord = null;
   
-  // 1. Remove from normal list of category
+  // 1. Remove from normal list of category while capturing exact index
   if (Array.isArray(db[categoryName])) {
-    const origLen = db[categoryName].length;
-    db[categoryName] = db[categoryName].filter(w => 
-      !(w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng)
+    savedNormalIndex = db[categoryName].findIndex(w => 
+      w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng
     );
-    removedCount += (origLen - db[categoryName].length);
+    if (savedNormalIndex >= 0) {
+      savedNormalWord = JSON.parse(JSON.stringify(db[categoryName][savedNormalIndex]));
+      db[categoryName].splice(savedNormalIndex, 1);
+      removedCount++;
+    }
   }
 
-  // 2. Remove from hard list of category if present
+  // 2. Remove from hard list of category if present while capturing exact index
   const hardKey = categoryName + " - Hard";
   if (Array.isArray(db[hardKey])) {
-    const origHardLen = db[hardKey].length;
-    db[hardKey] = db[hardKey].filter(w => 
-      !(w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng)
+    savedHardIndex = db[hardKey].findIndex(w => 
+      w && w.japanese && w.english && w.japanese.trim() === wordJp && w.english.trim() === wordEng
     );
-    removedCount += (origHardLen - db[hardKey].length);
+    if (savedHardIndex >= 0) {
+      savedHardWord = JSON.parse(JSON.stringify(db[hardKey][savedHardIndex]));
+      db[hardKey].splice(savedHardIndex, 1);
+      removedCount++;
+    }
   }
 
   if (removedCount > 0) {
+    // Record single-word undo state with exact positions
+    lastRemovedWordUndoAction = {
+      categoryName: categoryName,
+      normalIndex: savedNormalIndex,
+      savedNormalWord: savedNormalWord,
+      hardIndex: savedHardIndex,
+      savedHardWord: savedHardWord,
+      wordDisplay: word.japanese,
+      isUltimate: isUltimateMode()
+    };
+
     saveWords();
     clearAllStateCaches();
     renderCards();
-    showToast(`Removed "${word.japanese}" from ${cleanCategoryNameForUI(categoryName)}.`, 'success');
+    showToast(`Removed "${word.japanese}" from ${cleanCategoryNameForUI(categoryName)}. (Ctrl+Z to undo)`, 'success');
   } else {
     showToast(`Word was not found in ${cleanCategoryNameForUI(categoryName)}.`, 'info');
+  }
+}
+
+function undoLastWordRemoval() {
+  if (!lastRemovedWordUndoAction) {
+    showToast("Nothing to undo.", "info");
+    return;
+  }
+
+  const { categoryName, normalIndex, savedNormalWord, hardIndex, savedHardWord, wordDisplay, isUltimate } = lastRemovedWordUndoAction;
+  const db = isUltimate ? currentUltimateWordsDb : currentWordsDb;
+  let restored = false;
+
+  // Restore into normal list at the exact previous position
+  if (savedNormalWord && normalIndex >= 0) {
+    if (!Array.isArray(db[categoryName])) {
+      db[categoryName] = [];
+    }
+    const insertIdx = Math.min(normalIndex, db[categoryName].length);
+    db[categoryName].splice(insertIdx, 0, savedNormalWord);
+    restored = true;
+  }
+
+  // Restore into hard list at the exact previous position
+  const hardKey = categoryName + " - Hard";
+  if (savedHardWord && hardIndex >= 0) {
+    if (!Array.isArray(db[hardKey])) {
+      db[hardKey] = [];
+    }
+    const insertHardIdx = Math.min(hardIndex, db[hardKey].length);
+    db[hardKey].splice(insertHardIdx, 0, savedHardWord);
+    restored = true;
+  }
+
+  if (restored) {
+    lastRemovedWordUndoAction = null; // Only single word change to be reverted
+    saveWords();
+    clearAllStateCaches();
+    renderCards();
+    showToast(`Restored "${wordDisplay}" back to ${cleanCategoryNameForUI(categoryName)}.`, 'success');
+  } else {
+    showToast("Failed to restore word.", "danger");
   }
 }
 
@@ -1976,8 +2041,16 @@ function renderWordCategoryTags(container, word) {
   container.appendChild(catsDiv);
 }
 
+function updateAppHeaderTitle() {
+  const headerTitle = document.getElementById('app-header-title') || document.querySelector('.logo-area h1');
+  if (headerTitle) {
+    headerTitle.textContent = isUltimateMode() ? "Ultimate" : "N5 Vocab";
+  }
+}
+
 // Redraw vocabulary grid from memory state
 function renderCards() {
+  updateAppHeaderTitle();
   if (currentSettings.currentLesson !== "Search Results") {
     const selectLesson = document.getElementById('select-lesson');
     if (selectLesson) {
@@ -2340,6 +2413,11 @@ function updateManagementButtons() {
   const btnCopyTo = document.getElementById('btn-copy-to');
   if (btnCopyTo) {
     btnCopyTo.disabled = !hasSelection;
+  }
+
+  const btnMoveToCategory = document.getElementById('btn-move-to-category');
+  if (btnMoveToCategory) {
+    btnMoveToCategory.disabled = !hasSelection;
   }
 
   const btnAddTagsSelected = document.getElementById('btn-add-tags-selected');
@@ -3787,12 +3865,14 @@ function navigateLessonCategory(direction) {
   if (!selectLesson || selectLesson.options.length === 0) return;
   
   let index = selectLesson.selectedIndex;
+  if (index < 0 || isNaN(index)) index = 0;
   if (direction === 'next') {
     index = (index + 1) % selectLesson.options.length;
   } else if (direction === 'prev') {
     index = (index - 1 + selectLesson.options.length) % selectLesson.options.length;
   }
   
+  if (!selectLesson.options[index]) return;
   const targetCategory = selectLesson.options[index].value;
   stopSpeech();
   
@@ -5520,17 +5600,25 @@ function createSimilarWordGroup() {
 }
 
 let wordsToCopy = [];
+let categorySelectorMode = 'copy'; // 'copy' or 'move'
 
-function openCategorySelectorModal(customWordsList = null) {
+function openCategorySelectorModal(customWordsList = null, mode = 'copy') {
+  categorySelectorMode = mode;
   if (customWordsList && Array.isArray(customWordsList)) {
     wordsToCopy = customWordsList;
   } else {
     const words = getActiveWords();
-    wordsToCopy = currentSettings.selectedWordIndices.map(idx => words[idx]);
+    if (currentSettings.selectedWordIndices && currentSettings.selectedWordIndices.length > 0) {
+      wordsToCopy = currentSettings.selectedWordIndices.map(idx => words[idx]).filter(Boolean);
+    } else if (currentSettings.focusedWordIndex >= 0 && currentSettings.focusedWordIndex < words.length) {
+      wordsToCopy = [words[currentSettings.focusedWordIndex]];
+    } else {
+      wordsToCopy = [];
+    }
   }
 
   if (wordsToCopy.length === 0) {
-    showToast("Please select words to copy first.", "info");
+    showToast(`Please select words to ${mode === 'move' ? 'move' : 'copy'} first.`, "info");
     return;
   }
   
@@ -5538,6 +5626,15 @@ function openCategorySelectorModal(customWordsList = null) {
   if (!selectDest) return;
   
   selectDest.innerHTML = "";
+
+  const titleEl = document.getElementById('cat-sel-title');
+  if (titleEl) {
+    titleEl.textContent = (mode === 'move') ? 'Move Words to Category' : 'Copy Words to Category';
+  }
+  const btnConfirm = document.getElementById('btn-confirm-copy');
+  if (btnConfirm) {
+    btnConfirm.textContent = (mode === 'move') ? 'Move Words' : 'Copy Words';
+  }
   
   const currentL = currentSettings.currentLesson;
   
@@ -5551,7 +5648,8 @@ function openCategorySelectorModal(customWordsList = null) {
 
   const targetCats = [];
 
-  if (group === "Ultimate") {
+  const isUlt = isUltimateMode() || (group === "Ultimate");
+  if (isUlt) {
     const db = getActiveDb();
     const allKeys = Object.keys(db).filter(k => 
       !k.endsWith(" - Hard") && 
@@ -5673,8 +5771,6 @@ function executeCategoryWordCopy() {
   const db = getActiveDb();
   
   if (!db[targetKey]) db[targetKey] = [];
-
-  console.log('wrodstOCopy:', wordsToCopy);
   
   let copiedCount = 0;
   // Copy words (clone objects to prevent reference conflicts, ensuring no duplicates)
@@ -5695,8 +5791,30 @@ function executeCategoryWordCopy() {
       copiedCount++;
     }
   });
+
+  // If in 'move' mode, remove words from current category (both normal and hard if present)
+  let removedCount = 0;
+  if (categorySelectorMode === 'move') {
+    const currentLesson = currentSettings.currentLesson;
+    const normalKey = currentLesson;
+    const hardKey = currentLesson + " - Hard";
+    [normalKey, hardKey].forEach(k => {
+      if (Array.isArray(db[k])) {
+        const initialLen = db[k].length;
+        db[k] = db[k].filter(w => {
+          return !wordsToCopy.some(movedW => 
+            movedW && w &&
+            movedW.japanese.trim() === w.japanese.trim() && 
+            movedW.english.trim() === w.english.trim()
+          );
+        });
+        removedCount += (initialLen - db[k].length);
+      }
+    });
+  }
   
   saveWords();
+  clearAllStateCaches();
   
   // Clean selections
   currentSettings.selectedWordIndices = [];
@@ -5705,10 +5823,14 @@ function executeCategoryWordCopy() {
   
   closeActiveModal();
   renderCards();
-  if (copiedCount > 0) {
-    showToast(`Copied ${copiedCount} words to ${destCategory} (Normal)`, 'success');
+  if (categorySelectorMode === 'move') {
+    showToast(`Moved ${wordsToCopy.length} words to ${cleanCategoryNameForUI(destCategory)} (Normal)`, 'success');
   } else {
-    showToast(`All words already exist in ${destCategory}.`, 'info');
+    if (copiedCount > 0) {
+      showToast(`Copied ${copiedCount} words to ${cleanCategoryNameForUI(destCategory)} (Normal)`, 'success');
+    } else {
+      showToast(`All words already exist in ${cleanCategoryNameForUI(destCategory)}.`, 'info');
+    }
   }
 }
 
@@ -6748,7 +6870,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const btnCopyTo = document.getElementById('btn-copy-to');
   if (btnCopyTo) {
-    btnCopyTo.addEventListener('click', openCategorySelectorModal);
+    btnCopyTo.addEventListener('click', () => openCategorySelectorModal(null, 'copy'));
+  }
+
+  const btnMoveToCategory = document.getElementById('btn-move-to-category');
+  if (btnMoveToCategory) {
+    btnMoveToCategory.addEventListener('click', () => openCategorySelectorModal(null, 'move'));
   }
 
   const btnAddTagsSelected = document.getElementById('btn-add-tags-selected');
@@ -7114,6 +7241,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    // Ctrl + Z to Undo last single word removal from category
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'z' || e.key === 'Z') && !e.shiftKey && !e.altKey) {
+      e.preventDefault();
+      undoLastWordRemoval();
+      return;
+    }
+
     // Alt + 1-7 for Display Mode selection
     if (e.altKey && e.key >= '1' && e.key <= '7') {
       e.preventDefault();
@@ -7459,8 +7593,16 @@ document.addEventListener('DOMContentLoaded', () => {
         togglePlayAll();
         break;
       case 'm':
-      case 'M':
-        if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        if (e.shiftKey) {
+          // Shift + m (i.e. 'M') -> Move to Category
+          if (currentSettings.isSelectionModeActive) {
+            e.preventDefault();
+            openCategorySelectorModal(null, 'move');
+          }
+          return;
+        }
+        // Lowercase 'm' -> toggle Normal / Hard
         if (currentSettings.isSelectionModeActive) {
           e.preventDefault();
           if (currentSettings.isHard) {
@@ -7468,6 +7610,13 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             moveSelectedToHard();
           }
+        }
+        break;
+      case 'M':
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        if (currentSettings.isSelectionModeActive) {
+          e.preventDefault();
+          openCategorySelectorModal(null, 'move');
         }
         break;
       case 'd':

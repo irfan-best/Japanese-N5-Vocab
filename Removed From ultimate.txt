@@ -1,0 +1,1159 @@
+Grm
+Listening
+Ga Particle G5
+V - Nai G5
+Convo E5
+Convo E5
+0 Others G5
+All Patterns
+..
+
+allUltimateWords["N5 Kanji"] = `
+ひと
+person
+hito
+人
+
+カナダじん
+Canadian
+kanada-jin
+カナダ人
+
+さんにん
+three people
+sannin
+三人
+
+そのひ
+that day
+sono hi
+その日
+
+みっか
+the third day of the month
+mikka
+三日
+
+じゅうごにち
+the fifteenth day of the month
+juugo-nichi
+十五日
+
+にちようび
+Sunday
+nichiyoubi
+日曜日
+
+ひとつ
+one
+hitotsu
+一つ
+
+ひとり
+one person
+hitori
+一人
+
+いちにち
+one day
+ichinichi
+一日
+
+ついたち
+the first day of the month
+tsuitachi
+一日
+
+いっぷん
+one minute
+ippun
+一分
+
+ふたつ
+two
+futatsu
+二つ
+
+ふつか
+two days / the second day of the month
+futsuka
+二日
+
+やすみます
+rest, have rest, have a day off, be absent
+yasumimasu
+休みます
+
+やすみ
+holiday, vacation, day off, absence
+yasumi
+休み
+
+みます
+see / look / watch
+mimasu
+見ます
+
+みえます
+be visible
+miemasu
+見えます
+
+みせます
+show
+misemasu
+見せます
+
+いけん
+opinion
+iken
+意見
+
+いま
+now
+ima
+今
+
+こんげつ
+this month
+kongetsu
+今月
+
+きょう
+today
+kyou
+今日
+
+おおきい
+big
+ookii
+大きい
+
+だいがく
+university
+daigaku
+大学
+
+たいせつ
+important
+taisetsu
+大切
+
+おとな
+adult
+otona
+大人
+
+ちいさい
+small
+chiisai
+小さい
+
+ことり
+small bird
+kotori
+小鳥
+
+しょうがっこう
+elementary school
+shougakkou
+小学校
+
+うえ
+on / above
+ue
+上
+
+あげます
+raise
+agemasu
+上げます
+
+あがります
+go up; rise
+agarimasu
+上がります
+
+じょうず
+good at; skillful
+jouzu
+上手
+
+した
+under
+shita
+下
+
+くつした
+socks
+kutsushita
+くつ下
+
+さげます
+lower; get down
+sagemasu
+下げます
+
+さがります
+go down
+sagarimasu
+下がります
+
+ちかてつ
+subway; underground
+chikatetsu
+地下鉄
+
+なか
+inside
+naka
+中
+
+ちゅうごく
+China
+chuugoku
+中国
+
+でんわちゅう
+on the phone
+denwachuu
+電話中
+
+いちにちじゅう
+all day long
+ichinichijuu
+一日中
+
+みぎ
+right
+migi
+右
+
+ひだり
+left
+hidari
+左
+
+やま
+mountain
+yama
+山
+
+ふじさん
+Mt. Fuji
+fujisan
+富士山
+
+かわ
+river
+kawa
+川
+
+しろい
+white (adj.)
+shiroi
+白い
+
+しろ
+white (noun)
+shiro
+白
+
+ほん
+book
+hon
+本
+
+きゅうほん
+nine pieces (long object)
+kyuuhon
+九本
+
+にほん
+Japan
+nihon
+日本
+
+ほんとう
+true; real
+hontou
+本当
+
+ほんしゃ
+head office
+honsha
+本社
+
+こども
+child
+kodomo
+子ども
+
+こどもたち
+children
+kodomotachi
+子どもたち
+
+このこ
+this child
+kono ko
+この子
+
+おとこ
+man
+otoko
+男
+
+おとこのこ
+boy
+otokonoko
+男の子
+
+だんせい
+man; male
+dansei
+男性
+
+おんな
+woman
+onna
+女
+
+おんなのこ
+girl
+onnanoko
+女の子
+
+じょせい
+woman; female
+josei
+女性
+
+ちち
+(my) father
+chichi
+父
+
+おとうさん
+(someone's) father
+otousan
+お父さん
+
+そふ
+(my) grandfather
+sofu
+祖父
+
+はは
+(my) mother
+haha
+母
+
+おかあさん
+(someone's) mother
+okaasan
+お母さん
+
+そぼ
+(my) grandmother
+sobo
+祖母
+
+したぎ
+underwear
+shitagi
+下着
+
+ともだち
+friend
+tomodachi
+友だち
+
+さきに
+earlier
+sakini
+先に
+
+せんげつ
+last month
+sengetsu
+先月
+
+いきます
+live
+ikimasu
+生きます
+
+うまれます
+be born
+umaremasu
+生まれます
+
+なま
+raw
+nama
+生
+
+なまビール
+draft beer
+nama biiru
+生ビール
+
+せんせい
+teacher
+sensei
+先生
+
+たんじょうび
+birthday
+tanjoubi
+誕生日
+
+まなびます
+learn; study
+manabimasu
+学びます
+
+がくせい
+student
+gakusei
+学生
+
+しょうがくせい
+elementary school children
+shougakusei
+小学生
+
+ちゅうがくせい
+junior high school student
+chuugakusei
+中学生
+
+だいがく
+university; college
+daigaku
+大学
+
+だいがくせい
+university student
+daigakusei
+大学生
+
+がっこう
+school
+gakkou
+学校
+
+ちゅうがっこう
+junior high school, lower secondary (junior high) school
+chuugakkou
+中学校
+
+あとで
+later
+atode
+後で
+
+いちねんご
+one year after
+ichinengo
+一年後
+
+ごご
+afternoon; p.m.
+gogo
+午後
+
+ごぜん
+morning; a.m.
+gozen
+午前
+
+なまえ
+name
+namae
+名前
+
+ゆうめい
+famous
+yuumei
+有名
+
+くるま
+car
+kuruma
+車
+
+でんしゃ
+train
+densha
+電車
+
+ききます
+hear / listen / ask
+kikimasu
+聞きます
+
+きこえます
+be audible
+kikoemasu
+聞こえます
+
+しんぶん
+newspaper
+shinbun
+新聞
+
+かきます
+write
+kakimasu
+書きます
+
+としょかん
+library
+toshokan
+図書館
+
+よみます
+read
+yomimasu
+読みます
+
+どくしょ
+reading
+dokusho
+読書
+
+くに
+country
+kuni
+国
+
+こくさいでんわ
+international call
+kokusaidenwa
+国際電話
+
+そと
+outside
+soto
+外
+
+がいこく
+foreign country
+gaikoku
+外国
+
+がいこくじん
+foreigner
+gaikokujin
+外国人
+
+にほんご
+Japanese (language)
+nihongo
+日本語
+
+えいご
+English (language)
+eigo
+英語
+
+いれます
+put in
+iremasu
+入れます
+
+はいります
+enter / join
+hairimasu
+入ります
+
+にゅうがくします
+enter a school
+nyuugakushimasu
+入学します
+
+だします
+put out, take out, hand in, send, to submit
+dashimasu
+出します
+
+でます
+leave / attend
+demasu
+出ます
+
+でかけます
+go out
+dekakemasu
+出かけます
+
+しゅっぱつします
+leave; depart
+shuppatsushimasu
+出発します
+
+あめ
+rain
+ame
+雨
+
+ひがし
+east
+higashi
+東
+
+とうきょう
+Tokyo
+toukyou
+東京
+
+にし
+west
+nishi
+西
+
+せいよう
+the West; Western
+seiyou
+西洋
+
+かんさい
+the Kansai region
+kansai
+関西
+
+みなみ
+south
+minami
+南
+
+とうなんアジア
+Southeast Asia
+tounan ajia
+東南アジア
+
+きた
+north
+kita
+北
+
+とうほく
+Tohoku region
+touhoku
+東北
+
+ながい
+long
+nagai
+長い
+
+こうちょう
+principal
+kouchou
+校長
+
+たかい
+high / expensive
+takai
+高い
+
+こうこう
+high school
+koukou
+高校
+
+こうこうせい
+high school student
+koukousei
+高校生
+
+くち
+mouth
+kuchi
+口
+
+いりぐち
+entrance
+iriguchi
+入口
+
+でぐち
+exit
+deguchi
+出口
+
+じんこう
+population
+jinkou
+人口
+
+め
+eye
+me
+目
+
+て
+hand / arm
+te
+手
+
+おてあらい
+lavatory; rest room
+otearai
+お手洗い
+
+うんてんしゅ
+driver
+untenshu
+運転手
+
+じょうず
+skillful
+jouzu
+上手
+
+へた
+poor; unskillful
+heta
+下手
+
+あし
+foot / leg
+ashi
+足
+
+たります
+enough
+tarimasu
+足ります
+
+ちかい
+close
+chikai
+近い
+
+ちかく
+neighborhood
+chikaku
+近く
+
+きんじょ
+neighborhood
+kinjo
+近所
+
+さいきん
+recently
+saikin
+最近
+
+あります
+exist
+arimasu
+有ります
+
+はな
+flower
+hana
+花
+
+はなや
+flower shop
+hanaya
+花屋
+
+はなび
+fireworks
+hanabi
+花火
+
+かびん
+vase
+kabin
+花びん
+
+あかい
+red (adj.)
+akai
+赤い
+
+あか
+red (noun)
+aka
+赤
+
+あかちゃん
+baby
+akachan
+赤ちゃん
+
+かみ
+paper
+kami
+紙
+
+てがみ
+letter
+tegami
+手紙
+
+かいます
+buy
+kaimasu
+買います
+
+かいもの
+shopping
+kaimono
+買い物
+
+あさ
+morning
+asa
+朝
+
+まいあさ
+every morning
+maiasa
+毎朝
+
+けさ
+this morning
+kesa
+今朝
+
+ひる
+noon
+hiru
+昼
+
+ひるごはん
+lunch
+hirugohan
+昼ごはん
+
+ひるま
+daytime
+hiruma
+昼間
+
+ゆうがた
+evening
+yuugata
+夕方
+
+ゆうはん
+dinner; supper
+yuuhan
+夕飯
+
+よる
+night
+yoru
+夜
+
+こんや
+tonight, this evening
+konya
+今夜
+
+わたし
+I
+watashi
+私
+
+わたくし
+I (formal)
+watakushi
+わたくし
+
+いえ
+house
+ie
+家
+
+かぞく
+family
+kazoku
+家族
+
+あいます
+see (a person)
+aimasu
+会います
+
+かいわ
+conversation
+kaiwa
+会話
+
+かいぎ
+meeting, conference, business meeting
+kaigi
+会議
+
+かいしゃ
+company
+kaisha
+会社
+
+しゃかい
+society
+shakai
+社会
+
+しゃちょう
+company president
+shachou
+社長
+
+みせ
+store; shop
+mise
+店
+
+てんいん
+salesclerk; shop assistant
+ten-in
+店員
+
+のみます
+drink
+nomimasu
+飲みます
+
+のみもの
+drink; beverage
+nomimono
+飲み物
+
+おおい
+a lot of
+ooi
+多い
+
+すくない
+few; little
+sukunai
+少ない
+
+すこし
+a little
+sukoshi
+少し
+
+ふるい
+old
+furui
+古い
+
+あたらしい
+new
+atarashii
+新しい
+
+ひろい
+wide; spacious
+hiroi
+広い
+
+やすい
+inexpensive; cheap (thing)
+yasui
+安い
+
+あんしんします
+feel relieved
+anshin-shimasu
+安心します
+
+たちます
+stand
+tachimasu
+立ちます
+
+しります
+know
+shirimasu
+知ります
+
+いいます
+say; tell
+iimasu
+言います
+
+ことば
+word; language
+kotoba
+言葉
+
+でんごん
+message
+dengon
+伝言
+
+おもいます
+think
+omoimasu
+思います
+
+おもいだします
+remember, recollect
+omoidashimasu
+思い出します
+
+あるきます
+walk
+arukimasu
+歩きます
+
+さんぽします
+take a walk
+sanpo-shimasu
+散歩します
+
+はしります
+run
+hashirimasu
+走ります
+
+すみます
+live; inhabit
+sumimasu
+住みます
+
+じゅうしょ
+address
+juusho
+住所
+
+そら
+sky
+sora
+空
+
+あきます
+open, be vacant; be unoccupied
+akimasu
+空きます
+
+くうき
+air
+kuuki
+空気
+
+くうこう
+airport
+kuukou
+空港
+
+しゅう
+week
+shuu
+週
+
+らいしゅう
+next week
+raishuu
+来週
+
+こんしゅう
+this week
+konshuu
+今週
+
+にしゅうかん
+two weeks
+nishuukan
+二週間
+
+さかな
+fish
+sakana
+魚
+
+さかなや
+fish store
+sakanaya
+魚屋
+
+みみ
+ear
+mimi
+耳
+
+ぎん
+silver
+gin
+銀
+
+ぎんこう
+bank
+ginkou
+銀行
+
+みち
+road; street
+michi
+道
+
+すいどう
+waterworks; tap water
+suidou
+水道
+
+えき
+station
+eki
+駅
+
+`;
+
+allUltimateWords["N5 Kanji - Hard"] = ``;
+
+allUltimateWords["N5 Kanji Hard"] = `
+かんさい
+the Kansai region
+kansai
+関西
+
+せいよう
+the West; Western
+seiyou
+西洋
+
+とうなんアジア
+Southeast Asia
+tounan ajia
+東南アジア
+
+とうほく
+Tohoku region
+touhoku
+東北
+
+いりぐち
+entrance
+iriguchi
+入口
+
+でぐち
+exit
+deguchi
+出口
+
+じんこう
+population
+jinkou
+人口
+
+ひるま
+daytime
+hiruma
+昼間
+
+`;
+
+allUltimateWords["N5 Kanji Hard - Hard"] = ``;

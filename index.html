@@ -18,7 +18,7 @@
   <header class="app-header">
     <div class="header-container">
       <div class="logo-area">
-        <h1>N5 Vocab</h1>
+        <h1 id="app-header-title">N5 Vocab</h1>
         <span id="selection-mode-badge" class="selection-badge hidden">Selection Mode</span>
       </div>
       <div class="search-area">
@@ -230,6 +230,7 @@
         </button>
         <button id="btn-delete" class="btn btn-danger" disabled>Delete Selected</button>
         <button id="btn-copy-to" class="btn btn-secondary" disabled>Copy Words To</button>
+        <button id="btn-move-to-category" class="btn btn-secondary" disabled>Move Words To</button>
         <button id="btn-add-tags-selected" class="btn btn-secondary" disabled title="Add tags to selected words">Add Tags</button>
       </div>
       <div class="manage-right">
@@ -444,8 +445,12 @@
                 <td>Toggle Selection Mode (needed to use selection commands).</td>
               </tr>
               <tr>
-                <td><kbd>M</kbd> (in Selection Mode)</td>
-                <td>Move selected words to Hard (Normal list) / Move to Normal (Hard list).</td>
+                <td><kbd>m</kbd> (in Selection Mode)</td>
+                <td>Toggle selected card(s) Normal / Hard status.</td>
+              </tr>
+              <tr>
+                <td><kbd>M</kbd> / <kbd>Shift</kbd>+<kbd>M</kbd> (in Selection Mode)</td>
+                <td>Move selected words to another category.</td>
               </tr>
               <tr>
                 <td><kbd>D</kbd> (in Selection Mode)</td>
@@ -474,6 +479,10 @@
               <tr>
                 <td><kbd>Shift</kbd> + <kbd>Enter</kbd></td>
                 <td>Open Quick Category Jump modal.</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                <td>Undo removing a word from a category.</td>
               </tr>
               <tr>
                 <td><kbd>Space</kbd></td>
@@ -532,8 +541,12 @@
                 <td>Toggle play all audio.</td>
               </tr>
               <tr>
-                <td><kbd>M</kbd> (in Selection Mode)</td>
+                <td><kbd>m</kbd> (in Selection Mode)</td>
                 <td>Toggle selected card(s) Normal / Hard status.</td>
+              </tr>
+              <tr>
+                <td><kbd>M</kbd> / <kbd>Shift</kbd>+<kbd>M</kbd> (in Selection Mode)</td>
+                <td>Move selected card(s) to another category.</td>
               </tr>
               <tr>
                 <td><kbd>Shift</kbd> + <kbd>Q</kbd> then <kbd>U</kbd></td>

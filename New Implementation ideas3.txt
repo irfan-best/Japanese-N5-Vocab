@@ -53,9 +53,37 @@ current logic -> being in selection mode and selected some words n clicking on m
 
     if we are outside ulitmate -> then it should be similar to that of copy to category feature.
 
+when i'm in Ultimate change the "N5 Vocab" in the header to "Ultimate"
 dont allow remove from category, when there is only 1 category, when i hover on category then also it
 should not show  x symbol when it is the only category.
+
+----------
+alt + left arrow -> should take me to the previous category
 dont highlight current row - no need of this feature.
 
+make up and down arrows one function, right and left arrow one function
 when only one word is selected start quiz for - that word to last (if order is original)
 -> if multiple words are selected then start quiz for only those words
+
+within ultimate make them into 2 parts, Dumps, Main
+in give move an category to Main (or) Dumps
+for now, All Grm, Extra, Genki, Lessons and All Listening -> move to Dumps
+    (move to copy to should do for any of the category from present in main and dumps, but give results
+    first from Main only.)
+all others keep them in Main.
+
+In Database Group Settings -> JLPT Level = Ultimate, Database Group -> Main, Dump 
+do this change.
+
+when i click on i -> then take the focus to the import box.
+
+fix - [oto/koe ga~] shimasu
+
+when i'm in quiz, instead of showing "Vocabulary Quiz" just show "Quiz", 
+add "R" this is only available when current quiz is in original original, clicking it will restart quiz
+in random order, simillary "O" button.
+
+Dont show, "+", edit, delete category buttons for mobile device.
+give option to increase font size of all lines -> for custom one.
+
+on quiz answer, show kanji also

@@ -92,6 +92,7 @@ Konomama ni shimasu vs Sonomama ni shimasu
 jidousha vs kuruma
     Kuruma
         casual - Daily speech, casual chats, spoken Japanese.
+        Very broad (includes cars, carts, train cars, rickshaws)
         Usually means a car/automobile, but can loosely refer to any wheeled vehicle (even carts or carriages in historical context).
 
     jidousha
@@ -103,10 +104,16 @@ Denwa:
     Denwa o shimasu -> make a phone call
 
 Yoru vs Ban:
-    Ban generally refers to the early evening to nighttime period (roughly from sunset until bedtime). It is often used in compound words and polite greetings.
-        Konban, maiban
+    Ban:
+        Evening / Early Night
+        Around sunset until bedtime (approx. 6:00 PM - 10:00 PM)
+        Ban generally refers to the early evening to nighttime period (roughly from sunset until bedtime). 
+        Rarely used alone; almost always part of compound words - Konban, maiban, bangohan
 
-    Yoru covers the entire period of darkness (from dusk through midnight and late into the night). It is the standard, standalone word for "night" in daily conversation.
+    Yoru:
+        Night / Darkness
+        The entire period of darkness from sunset to sunrise (approx. 7:00 PM - 5:00 AM)
+        Yoru covers the entire period of darkness (from dusk through midnight and late into the night). It is the standard, standalone word for "night" in daily conversation.
 
 Shiten:
     (shiten) specifically means a corporate branch office of a business, commercial enterprise, or bank.
@@ -114,11 +121,11 @@ Shiten:
 
     Commercial business branches, corporate offices, bank branches
 
-Me ga samemasu vs Okimasu
+Me ga samemasu vs mezamemasu vs Okimasu
     Me ga samemasu: 
         My eyes open / I regain consciousness
         You are conscious, but you might still be lying in bed.
-        Opposite: Nemuri ni tsuku (fall asleep)
+        Opposite: Nemuri ni tsukimasu (fall asleep)
 
         Shichi-ji ni me ga samemashita ga, shichi-ji han ni okimashita.
         I woke up (opened my eyes) at 7:00, but I got up (out of bed) at 7:30.
@@ -126,10 +133,13 @@ Me ga samemasu vs Okimasu
         Ōkina oto de me ga sameta.
         I woke up because of a loud noise. (Focuses on the sudden opening of the eyes/consciousness)
     
+    Mezamemasu:
+        The verb form of mezamashi. It shares the exact same root as me ga samemasu, but it functions as a single intransitive verb. It sounds a bit more bookish or formal in daily conversation compared to okimasu.
+
     Okimasu: 
         I get up / I rise
         You sit up or physically get out of bed.
-        Opposite: Nemasu (寝ます - Go to bed / Lie down)
+        Opposite: Nemasu - Go to bed / Lie down
 
         Maiasa roku-ji ni okimasu.
         I get up at 6:00 every morning. (Focuses on your daily routine of getting out of bed)
@@ -187,16 +197,7 @@ Kyuukeishimasu vs Yasumimasu:
         Covers taking a full day off work/school, sleeping, going on vacation, or general recovery.
         Taking a vacation, calling in sick, taking a weekend off, going to sleep    
 
-Sotsugyoushimasu vs Demasu:
-    Sotsugyoushimasu
-        To graduate
-        Specific to completing an educational program or graduating from a school/university.
-        Graduating from high school, graduating from university
 
-    Demasu
-        To exit, leave, attend, or originate from
-        Broad verb meaning to step out of a space, leave a place, attend an event, or graduate (when paired with school + o).
-        Leaving a room/house, leaving a city/country, attending a meeting, graduating school
 
 no hou:
     Migi no hou e magatte kudasai
@@ -356,7 +357,7 @@ go:
     I will go to Japan after one year.
 
 
-Hiruma vs Hiru
+Hiruma vs Hiru vs Gogo vs Yuugata
 
     Hiruma
         Daytime / Hours of daylight (Broad period from morning to dusk when the sun is up)
@@ -375,6 +376,28 @@ Hiruma vs Hiru
 
         Hiru gohan wo tabemasu.
         I eat lunch (midday meal).
+
+    Gogo:
+        P.M., Afternoon
+        A formal / clock-based time indicator used in schedules, business, and telling time (12:00 PM to 11:59 PM).
+
+    Yuugata:
+        Late afternoon / Early evening
+        ~4:00 PM - 6:30 PM (twilight/dusk)
+        The transition time when the sun sets and daylight turns into dusk.
+
+Yuube:
+    It is close to ban than that of yoru
+    words like senban (or) senyoru -> doesn't exist
+
+maitoshi vs mainen:
+    maitoshi:
+        Spoken / Everyday / Natural Speech
+        The native Japanese reading (kun'yomi). Highly common in daily conversation, informal writing, and general spoken Japanese when talking about yearly events or routines.
+
+    mainen:
+        Formal / Written / Statistics & Business
+        The Sino-Japanese reading (on'yomi). Preferred in formal contexts, written reports, news broadcasts, business documents, and official or statistical contexts.
 
 Hoka no vs Betsu no
 
@@ -925,14 +948,61 @@ Akai vs Shu
 Souse:
     Computer operation, machine operation, but not for medical operation.
 
-Moushikomimasu vs Nyuugakushimasu
+Moushikomimasu vs Nyuugakushimasu vs Hairimasu
     Nyuugakushimasu
         Enrolling / Formally Matriculating
+        This is specific for schools, colleges, and universities when officially enrolling or attending an entrance ceremony (nyuugakushiki).
+
+        It focuses on the formal state/event of becoming a student at an educational institution.
         The final step after you have been accepted.
+
+    Hairimasu
+        Mostly used is this - Daigaku ni Hairimasu
+        To enter, to get into
+        Casual / General. Means "to enter" physically or "to get into / gain admission to" a school/organization.
 
     Moushikomimasu
         Applying / Submitting an Application
         The initial step to register or apply for something.
+
+demasu:
+    come out, exit
+    bus ga demasu -> leaves the bus stop
+    transitive pair - dashimasu - submit, send, take out
+    shiai ni demasu -> think as may we need to send in our self to game
+    bon ga demasu -> publish the book = submit the book
+
+shokuhin vs tabemono vs gohan
+    shokuhin
+        Foodstuffs, food products
+        Formal / Written / Commercial
+        Labels, industry, grocery categories, science
+        Food goods / Food products (shoku = eat/food + hin = product/goods).
+        Refers to packaged foods, canned goods, raw ingredients, and food as an industry or merchandise.
+
+    tabemono
+        Food, things to eat
+        Casual / Everyday spoken
+        General conversation about items you eat
+
+    gohan
+        A meal / Cooked rice
+        Everyday spoken
+        Daily meals (breakfast/lunch/dinner) or plain rice
+
+yakushokumei:
+    yaku - Role / Official Duty / Post
+    shoku - job
+    mei - Name / Title
+
+honyaku shimasu vs yakushimasu:
+    honyaku shimasu
+        Formal / Standard. Sound professional and explicit.
+        Used broadly in business, academics, and general conversation.
+
+    yakushimasu
+        Standard / Slightly more direct or casual.
+        Often used in language study, literature, or direct actions.
 
 go vs goro vs gurai:
     go:
@@ -1056,7 +1126,13 @@ Shussekishimasu:
 
 Ki ga tsukimasu:
     ki -> mind, spirit, attention
-    tsukimasu -> attach
+
+    [koto ni~] Ki ga tsukimasu
+    notice, become aware of
+
+    notice, become aware of things left behind
+    wasuremono ni Ki ga tsukimasu
+
 
 Soushiki:
     sou -> burial
@@ -1080,13 +1156,21 @@ Shinrigaku:
 
 Konban vs Konya:
     Konban
+        (this is from ban)
         Conversational, standard daily speech
-        Early evening to dinnertime (around 6 PM – 9 PM)
+        Early evening to dinnertime (around 6 PM - 9 PM)
         Used in greetings (Konbanwa)
+        Daily conversations, friendly greetings
 
     Konya:
+        (this is from yoru)
         Slightly more literary, elegant, or formal
+        "Tonight" (focused on the whole night, including late hours)
         Deeper night (late evening into past midnight)
+        News broadcasts, written reports, songs, drama, and literature
+
+Shain:
+    used with a company's name, e.g. IMC no shain
 
 Oushiza:
     ushi - cow, ox, bull
@@ -1136,6 +1220,9 @@ Ensokei hyouhakuzai fuka:
     zai: Agent, Chemical, medicine, solution
     fuka: Not allowed/ Do not use
 
+Keshou:
+    Keshou o shimasu - put on makeup
+
 Keshoushitsu vs Otearai vs Toire
     Keshoushitsu:
         Very Formal / Elegant
@@ -1159,6 +1246,50 @@ Teikyuubi:
     Tei - Fixed, regular, set
     Kyuu - Rest, Holiday (from Kyuukei)
     bi - day
+    This is not festival holidays, this is saturday (or) sunday kind holiday.
+    A fixed, recurring day off for a business or store.
+
+futsuu vs Kyuukou vs Tokkyuu vs Junkyuu vs Kaisoku vs shinkansen
+    Kyuu - here also means "hurry," "urgent," "sudden," or "speed."
+
+    futsuu:
+        Stops at every single station.
+        Slowest
+
+    Junkyuu
+        Jun - semi (think as june is half of year = semi)
+        Skips some local stations (stops at more stations than a regular express).
+        Slow-medium
+
+    Kaisoku
+        Skips several stations to speed up the journey, but charges no extra fee.
+        Medium
+
+    Kyuukou
+        Skips a large number of stations; stops only at major transfer hubs.
+        Fast
+        kou - ikou (lets go)
+
+    Tokkyuu
+        Skips almost all stations; requires a surcharge ticket (Tokkyuu-ken).
+        Intercity
+
+    shinkansen
+        Operates on dedicated high-speed tracks between major cities
+        Fastest (Maglev / High-Speed Rail)
+
+raku vs kaiteki:
+    raku:
+        Ease & Low Effort / Relief
+        Easy, effortless, comfortable (relaxing), pain-free.
+        Opp: Taihen, kurushii
+
+    kaiteki:
+        Pleasant & Ideal Environment
+        Atmosphere & Climate: Perfect room temperature, clean air conditioning, quiet hotel room.
+        Pleasantness & High Amenity(something that makes a place pleasant or easy to live in)
+        Pleasant, cozy, comfortable, agreeable.
+        Opp: Fukai - Unplesant/uncomfortable
 
 Unten shoshinsha chuui:
     Sho - first / initial
@@ -1254,9 +1385,53 @@ yasumimasu vs yasumi o shimasu vs yasumi o torimasu:
         ("to secure/take a vacation day").
         Formal request for official leave/vacation time at work.
 
-Kyoushitsu:
-    ryouri kyoushitsu - cooking class
-    nihongo kyoushitsu - japanese language class
+hitoride vs Jibun de
+    Hitoride
+        Doing something without companions or other people around
+        I went to the movie theater alone (no friends came along).
+        Hitoride ryouri o tsukurimashita.
+        I cooked dinner alone (I was the only person in the kitchen).
+
+        Solitude / Company
+        "By one person" / "Alone"
+        "Is anyone with you?"
+
+    Jibun de
+        Doing something by yourself without external assistance, even if other people are present in the room.
+        I did the homework myself (without getting help from a teacher, parent, or friend).
+        Jibun de ryouri o tsukurimashita
+        I cooked dinner myself (I didn't order takeaway or have someone cook it for me)
+
+        Autonomy / Effort
+        "By self" / "On one's own"
+        "Who did the action / work?"
+
+
+
+Kyoushitsu vs jugyou vs Kurasu vs Sukuuru vs Koushuukai:
+    Kyoushitsu:
+        ryouri kyoushitsu - cooking class
+        nihongo kyoushitsu - japanese language class
+        When used for a lesson, it implies a friendly, skill-based workshop or hobby class rather than academic study.
+
+    Jugyou:
+        It refers to the act of instruction or period of study, not the physical room. You say 
+        to take a class/lesson or class starts.
+
+    Kurasu:
+        The Group of Students / Homeroom / Level
+        Refers to the social cohort/group of classmates
+
+    Sukuuru:
+        A Structured Private Academy or School Institution
+        Often used in katakana for commercial, modern, or stylish skill centers
+        English conversation school, Computer school
+
+    Koushuukai:
+        Short-term Training Course / Seminar / Workshop Series
+        Formal, goal-oriented short courses or workshops lasting anywhere from a single afternoon to a few weeks.
+        Used for professional development, certification updates, or structured public workshops rather than ongoing weekly hobbies.
+
 
 Konna vs konnani:
     (konna) is an adjective / modifier --> modifies Nouns.
@@ -1374,6 +1549,10 @@ sasoimasu vs shoutaishimasu vs yobimasu:
 
 nemasu vs nemurimasu:
     nemasu:
+        "I go to bed at 11 PM."
+        Routine / Physical Act
+        Going to bed, lying down, or starting your sleep routine.
+
         "Go to bed" / "Lie down to sleep"
         Focuses on the action or routine of going to bed or lying down.
         Refers to the act of starting sleep or bedtime behavior.
@@ -1382,12 +1561,25 @@ nemasu vs nemurimasu:
         Mai ashi juu-ni-ji ni nemasu.
 
     nemurimasu:
+        "I slept deeply last night."
+        Biological State
+        Actually being in the state of sleep or unconsciousness. Focuses on sleep quality.
+        Gussuri nemurimashita. -> I slept soundly / deeply.
+
         "Sleep" / "Be asleep"
         Focuses on the physiological state or condition of being asleep.
         Refers to the actual state of sleeping or quality/depth of sleep.
 
         Kino no yoru wa yoku nemurimashita.
         Aka-chan ga shizuka ni nemutte imasu.
+
+    Nemuri ni Tsuimasu:
+        "To drift off to sleep / to fall asleep."
+        Transition / Poetic
+        The exact process of drifting off or falling into sleep. Very literary/descriptive.
+        Shizuka ni nemuri ni tsukimashita. --> 
+            They quietly fell into a deep sleep / drifted off to sleep.
+
     
 Okonaimasu:
     To carry out, hold, execute, perform
@@ -1455,6 +1647,15 @@ hikimasu vs hashirimasu vs nigemasu:
 
         Dorobou ga nigemashita.
         Kainushi kara inu ga nigemashita.
+
+Tsukemasu:
+    shouyu o~ Tsukemasu
+    Put on sauce
+    wear (earrings perfume, ring, necklace etc) lit. attach
+
+Tsukimasu:
+    poketto ga~ Tsukimasu
+    pocket be attached
 
 butsukarimasu vs hikimasu vs hanemasu vs shoutotsu shimasu vs tsuitotsu shimasu vs tsuiraku shimasu:
     butsukarimasu: (intransitive)
@@ -1862,9 +2063,6 @@ Seihin vs Youhin:
         Focuses on the intended function or category of use (gear/goods made for a specific activity).
         Sports gear (spōtsu-yōhin), office supplies (jimuhin/jimu-yōhin), daily necessities (nichiyōhin), pet supplies.
     
-koushuukai:
-    koushuukai means Short course / Workshop / Training session
-
 Shoujin:
     originally means spiritual devotion, diligence, or striving toward enlightenment in Buddhism.
     Buddhist monks developed a diet completely free of meat, fish, poultry, onions, garlic, 
@@ -1878,9 +2076,6 @@ Rejaa:
     Recreation items like sports equipment, camping gear, or hobby supplies are 
     often used specifically for fun, relaxation, outdoor activities, sports, or
     hobbies during your free (leisure) time.
-    
-Ikebana sukuuru:
-    sukuuru - school
 
 hanko:
     A personal seal or stamp, which is traditionally used in Japan instead of a 
@@ -1958,10 +2153,12 @@ Kanazuchi:
     think as -> Kana and Bocchi are friends
     Kana hits Bocchi with hammer
 
-(Neji o) shimeru vs Kugi:
-    Neji - think of Nejiremasu (twisted, screen also should be turned)
+Neji vs Kugi:
+    Neji - think of Nejiremasu (twisted, screw also should be turned)
     Kugi - is nail (this doesn't have turning lines, screw has turning lines)
         -> you break an lock if no key(kagi) with kugi
+  
+Yurumeru:
     Yurumeru - think as yor's dream to loosen the screw (since she previously hit very hard with hammer)
 
 Shuuseieki:
@@ -2011,14 +2208,40 @@ joubu vs genki:
         Energy / High Spirits / Overall Well-being
         Used to describe emotional vitality, energetic mood, active health, or being lively and well in daily life.
 
-pittari vs choudo ii:
+pittari vs choudo ii vs tekitou:
+    tekitou:
+        Suitable / Appropriate / Fit (Can also mean casual/lazy in slang)
+        Matching criteria, proper roles, general appropriateness.
+        Something that matches the purpose, requirement, or situation
+
+        kono shigoto ni tekitou na hito
+        A suitable person for this job.
+
+        Kareshi no henji wa tekitou datta
+        My boyfriend's reply was vague/half-hearted.
+
+    choudo ii:
+        Just right / Perfectly balanced (Not too much, not too little)
+        Size, temperature, timing, quantity.
+        Kono suupu wa shiokagen ga choudo ii desu.
+        The salt level in this soup is just right.
+        Fuku no saizu ga choudo ii.
+        The clothing size is just right (not too loose, not too tight).
+
+        Just Right / Comfortable / Ideal Level
+        Emphasizes a comfortable, suitable, or convenient degree without feeling excess or lack (e.g., room temperature, steak doneness, timing).
+
     pittari:
+        Spot on / Snug fit / Exact match (Like a puzzle piece
+        Clothing size, exact numbers, physical fit.
+        Kono kutsu wa saizu ga pittari desu.
+        These shoes are a perfect snug fit.
+        Pazuru piisu ga pittari au
+        The puzzle pieces fit together perfectly.
+
         Exact Fit / Perfect Match / Snug
         Emphasizes a tight, precise, or exact match with zero room or gap (e.g., clothes fitting perfectly, exact time, exact amount of money).
 
-    choudo ii:
-        Just Right / Comfortable / Ideal Level
-        Emphasizes a comfortable, suitable, or convenient degree without feeling excess or lack (e.g., room temperature, steak doneness, timing).
 
 Kachiki:
     from kachimasu
@@ -2072,15 +2295,24 @@ yoii shimasu vs junbi shimasu:
         Long-Term / Process-Oriented / Event-Focused
         Focuses on the overall planning, steps, or multi-stage process needed for a future event.
     
-okurimono vs tsukaikata (presento):
+okurimono vs presento vs omiyage:
     okurimono:
+        okurimono o shimasu - give a present
         Traditional / Formal / Japanese Style
+
+        okurimono is the umbrella term for all gifts and presents in Japanese, and formal term
         Refers to thoughtful gifts, seasonal offerings (like Ochugen or Oseibo), or ceremonial presents. Used in polite or traditional contexts.
 
     presento:
         Casual / Modern / Western Style
         Borrowed from English. Used for everyday gift-giving like birthday presents, Christmas gifts, or casual surprises among friends and family.
         
+    omiyage:
+        Travel Souvenir / Courtesy Gift
+        Sharing an experience from a place you visited with co-workers, friends, or family. Usually packaged individual snacks or sweets.
+
+        Regional food specialties (meibutsu), local sweets, keychains.
+
 narimasu:
     a ring or phone ringing
     
@@ -2113,13 +2345,18 @@ kakari vs kakariin:
     10th place: dai-juu-i
     
 mezamashi vs mezamashidokei:
-    mezamashi:
-        Action / Function / Short Name
-        Derived from mezamasu (to awaken/wake up). Refers to the act of waking someone up, an alarm function, or used as a casual shorthand for an alarm clock.
 
     mezamashidokei:
         Concrete Object / Specific Noun
-        Combines mezamashi (awakening) + tokei/dokei (clock/watch). Refers explicitly to the physical alarm clock device itself.
+        Combines mezamashi (awakening) + tokei/dokei (clock/watch). 
+        Refers explicitly to the physical alarm clock device itself.
+
+    mezamashi:
+        Mezamashi - short form of mezamashidokei
+        When used alone, context makes it clear that it refers to an alarm / alarm clock.
+
+        Action / Function / Short Name
+        Derived from mezamasu (to awaken/wake up). Refers to the act of waking someone up, an alarm function, or used as a casual shorthand for an alarm clock.
 
 Jishin no baai
     Case / Situation
@@ -2134,6 +2371,22 @@ Kagu ga taorenai you ni shite oku:
 Kichouhin:
     chou - remember as from techou
     hin - Article, goods, item - physical item/ property (shokuhin)
+
+Shokuyaku:
+    yaku - Desire, want, greed
+
+Suiminjutsu vs Saiminjutsu
+
+    Suiminjutsu
+        Literal technique of sleeping or inducing sleep
+        Sleep Technique / Art of Sleep
+        this is only specific to sleep
+
+    Saiminjutsu
+        Hypnotism / Hypnosis
+        Standard word for hypnosis or mesmerism
+
+
     
 Man'ichi jishin ga okita baai
     Manichi - Adverb emphasizing emergency/unlikely occurrence
@@ -2167,7 +2420,8 @@ Shoukaki - fire extinguisher
     shou - extinguish, ka - fire, ki - device
 
 mochidashibukuro:
-    mochidashi - mochimasu (to hold/to carry) + dashiimasu - to take out
+    mochimasu (to hold/to carry) 
+    dashimasu - to take out
     bukuro - fukuro - bag
     Emergency grab-bag
 
@@ -2276,5 +2530,121 @@ giongo vs gitaigo:
     
 Mono:
     Ie no mono - Members of my household / family
+ 
+Asanebou shimasu:
+    Asa - morning
+    ne - nemasu
+    bou
+        Over time, it evolved into a casual, fond, or slightly teasing suffix added to nouns or verb stems to describe a person who embodies a specific trait, habit, or personality type.
+        It turns an action or quality into a "person"
+        sleep + person = sleepyhead
+        nebou = sleepyhead, oversleeping, late riser
     
-`
+        Asanebou lit -> morning sleep-head" or "oversleeping."
+
+Nemuri ni tsukimasu:
+    tsukimasu - A verb meaning "to seat oneself," "to settle into," or "to enter a state."
+
+shougakkou vs chuugakkou vs Koutougakkou vs kouko vs daigaku vs Tandai vs Senmongakkou vs Daigakuin:
+    shougakkou
+        1-6 classes
+
+    chuugakkou
+        7-9
+
+    Koutougakkou / kouko
+        Kouko - casual
+        Koutougakko - formal
+        10-12
+
+    daigaku
+        4 years - undergraduate - Btech, Bsc..
+        Age - 18-22
+
+    Tandai
+        Associate Degree / Diploma
+        2 years
+        Age - 18-20
+
+    Senmongakkou
+        2 (or) 3 years
+        Age - 18-20+
+
+    Daigakuin
+        M.Tech / M.S. / M.A. / Ph.D.
+        Age - 22-24+
+
+Koutougakkou seito:
+    Koutougakkou seito = koukousei 
+    only diff is formality
+    seito - Refers to junior high and high school pupils in a institutional or pedagogical context (e.g., "the teacher addressed the students"
+
+Kachou:
+    The head of a specific section or team within a department, reporting directly to the Buchou.
+
+Naikaku Souri Daijin vs Shushou:
+    Naikaku Souri Daijin
+        The official, legal title of the Prime Minister of Japan (used in government documents, legal contexts, news broadcasts, and official ceremonies).
+        
+    Shushou:
+        The everyday, concise term used in daily conversation, newspaper headlines, and informal/general news reporting. It can also refer to foreign prime ministers - UK Prime Minister
+
+Gakuchou:
+    this is not an student, this person is like headmaster
+
+Hoikuen:
+    Ho ho - santa
+    iku - go
+    if you go you can meet santa - said by parents
+
+    Nursery School / Daycare / Preschool Center
+    Care and daily support for children whose parents are working, ill, or otherwise unable to provide care during the day.
+
+Youchien:
+    you - yo
+    chi - kids have cold
+    en - is common for enchou, hoikuen
+        "garden," "institution," or "facility" (often referring to places focused on children or public grounds)
+
+Yuushoku vs Bangohan:
+    yuushoku: 
+        evening meal
+        Formal / Written / Polite
+        Menus, business, news, written text
+        "Evening meal," "Dinner"
+
+    Bangohan:
+        night/evening meal
+        Casual
+        Daily conversations with family/friends
+        "Dinner," "Supper"
+
+gyuunyuu vs miruku:
+    gyuunyuu:
+        Pure Cow's Milk / Unprocessed Fresh Milk
+        Refers specifically to standard liquid cow's milk sold in cartons or bottles. Used in cooking, drinking fresh, or describing actual dairy milk product categories.
+
+    miruku:
+        Processed Milk Products / Non-Dairy / Beverage Additive
+        Loanword from English. Commonly used for processed milk products (powdered baby formula, condensed milk), non-dairy milks, milk added to coffee/tea, or milk-flavored sweets and beverages.
+
+chiketto vs kippu:
+    chiketto:
+        Events / Entertainment / Leisure Pass
+        Loanword from English. Refers primarily to admission passes or tickets for events, entertainment, culture, and leisure (e.g., concert tickets, movie tickets, museum entries, theme park passes).
+
+    kippu:
+        Transportation / Travel / Official Fare Paper
+        Refers specifically to transit tickets for transportation services or travel fares (e.g., train tickets, bus tickets, subway passes, boarding tickets).
+
+kaitou vs henji:
+    kaitou:
+        Formal Answer / Solution / Official Response
+        Refers to answering a formal question, inquiry, survey, test problem, or official request with a solution or specific information (e.g., test answers, official corporate responses, survey replies).
+
+    henji:
+        Acknowledge / Verbal Reply / Everyday Answer
+        Refers to giving a direct personal reply, verbal response, or acknowledgment when spoken to, called, emailed, or sent a message (e.g., replying to a message, answering "yes" when called).
+
+
+    `
