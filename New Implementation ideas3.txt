@@ -60,14 +60,14 @@ should not show  x symbol when it is the only category.
 ----------
 alt + left arrow -> should take me to the previous category
 dont highlight current row - no need of this feature.
+alt + right arrow -> should also work, similar to that of chrome browser current behaviour.
 
-make up and down arrows one function, right and left arrow one function
 when only one word is selected start quiz for - that word to last (if order is original)
 -> if multiple words are selected then start quiz for only those words
 
 within ultimate make them into 2 parts, Dumps, Main
 in give move an category to Main (or) Dumps
-for now, All Grm, Extra, Genki, Lessons and All Listening -> move to Dumps
+for now move Extra, Genki, Lessons-> move to Dumps
     (move to copy to should do for any of the category from present in main and dumps, but give results
     first from Main only.)
 all others keep them in Main.
@@ -77,13 +77,22 @@ do this change.
 
 when i click on i -> then take the focus to the import box.
 
-fix - [oto/koe ga~] shimasu
-
 when i'm in quiz, instead of showing "Vocabulary Quiz" just show "Quiz", 
 add "R" this is only available when current quiz is in original original, clicking it will restart quiz
 in random order, simillary "O" button.
 
 Dont show, "+", edit, delete category buttons for mobile device.
-give option to increase font size of all lines -> for custom one.
+give option to increase font size of all lines -> for custom option in display Mode settings
 
-on quiz answer, show kanji also
+on quiz answers show kanji also
+show count of all words across all category in Ultimate's Main
+drap and drop feature also give to change the order of categories.
+----------------------------
+when i'm changing name of an category, that category is going to last.
+
+
+make up and down arrows one function, right and left arrow one function
+copy to (or) move to -> make destination category as search box (search logic add)
+fix - [oto/koe ga~] shimasu (fix on vocab)
+
+colors for each lines of words.

@@ -1,6 +1,17 @@
 const allUltimateWords = {};
 
-allUltimateWords["Lesson 07"] = ``;
+allUltimateWords["Lesson 07"] = `
+もよおしもの かいじょう
+event hall
+moyooshimono kaijou
+催し物会場
+
+びよういん
+Beauty parlor
+Biyouin
+美容院
+
+`;
 
 allUltimateWords["Lesson 07 - Hard"] = `
 ホッチキス
@@ -8,312 +19,17 @@ stapler
 hocchikisu
 ホッチキス
 
-にもつ
-luggage, baggage, parcel
-nimotsu
-荷物
-
-けしゴム
-eraser, rubber
-keshigomu
-消しゴム
-
-ケータイ
-mobile phone, cell phone
-keetai
-ケータイ
-
-ねんがじょう
-New Year's greeting card
-nengajou
-年賀状
-
-メール
-e-mail
-meeru
-メール
-
-かして ください
-Please lend (it to me).
-kashite kudasai
-貸してください
-
 `;
 
-allUltimateWords["Lesson 08"] = `
-ちいさい
-small, little
-chiisai
-小さい
+allUltimateWords["Lesson 08"] = ``;
 
-むずかしい
-difficult
-muzukashii
-難しい
+allUltimateWords["Lesson 08 - Hard"] = ``;
 
-たかい
-expensive, tall, high
-takai
-高い
+allUltimateWords["Lesson 09"] = ``;
 
-おおきい
-big, large
-ookii
-大きい
+allUltimateWords["Lesson 09 - Hard"] = ``;
 
-あたらしい
-new, fresh
-atarashii
-新しい
-
-ふるい
-old (not used to describe a person＇s age）
-furui
-古い
-
-おもしろい
-interesting
-omoshiroi
-面白い
-
-おいしい
-delicious, tasty
-oishii
-美味しい
-
-たのしい
-enjoyable, fun
-tanoshii
-楽しい
-
-しろい
-white
-shiroi
-白い
-
-くろい
-black
-kuroi
-黒い
-
-あかい
-red
-akai
-赤い
-
-あおい
-blue
-aoi
-青い
-
-やま
-mountain
-yama
-山
-
-べんきょう
-study (noun)
-benkyou
-勉強
-
-とても
-very
-totemo
-とても
-
-`;
-
-allUltimateWords["Lesson 08 - Hard"] = `
-ところ
-place
-tokoro
-所
-
-いい・よい
-good
-ii / yoi
-良い
-
-やさしい
-easy, kind
-yasashii
-易しい・優しい
-
-さむい
-cold (temperature)
-samui
-寒い
-
-つめたい
-cold (touch)
-tsumetai
-冷たい
-
-ひくい
-low
-hikui
-低い
-
-（お）しごと
-work, business
-(o)shigoto
-（お）仕事
-
-わるい
-bad
-warui
-悪い
-
-あつい
-hot
-atsui
-暑い・熱い
-
-`;
-
-allUltimateWords["Lesson 09"] = `
-のみもの
-drinks
-nomimono
-飲み物
-
-だいたい
-mostly, roughly
-daitai
-大体
-
-え
-picture, drawing
-e
-絵
-
-じ
-letter, character
-ji
-字
-
-じかん
-time
-jikan
-時間
-
-こども
-child
-kodomo
-子供
-
-たくさん
-many, much
-takusan
-沢山
-
-すこし
-a little, a few
-sukoshi
-少し
-
-もしもし
-hello (used on the phone)
-moshimoshi
-もしもし
-
-おんがく
-music
-ongaku
-音楽
-
-`;
-
-allUltimateWords["Lesson 09 - Hard"] = `
-かぶき
-Traditional Japanese musical drama
-kabuki
-歌舞伎
-
-ごしゅじん
-someone else's husband
-goshujin
-ご主人
-
-おっと・しゅじん
-(my) husband
-otto / shujin
-夫・主人
-
-つま・かない
-(my) wife
-tsuma / kanai
-妻・家内
-
-うた
-song
-uta
-歌
-
-`;
-
-allUltimateWords["Lesson 10"] = `
-き
-tree, wood
-ki
-木
-
-はこ
-box
-hako
-箱
-
-まど
-window
-mado
-窓
-
-なか
-in, inside
-naka
-中
-
-となり
-next, next door, beside
-tonari
-隣
-
-いちばん〜
-the number one, the most ~
-ichiban~
-一番〜
-
-おとこのひと
-man
-otoko no hito
-男の人
-
-おんなのひと
-woman
-onna no hito
-女の人
-
-おとこのこ
-boy
-otoko no ko
-男の子
-
-おんなのこ
-girl
-onna no ko
-女の子
-
-いぬ
-dog
-inu
-犬
-
-ねこ
-cat
-neko
-猫
-
-`;
+allUltimateWords["Lesson 10"] = ``;
 
 allUltimateWords["Lesson 10 - Hard"] = `
 れいぞうこ
@@ -321,125 +37,14 @@ refrigerator
 reizouko
 冷蔵庫
 
-あいだ
-between, among
-aida
-間
-
 たな
 shelf, rack
 tana
 棚
 
-ほんや
-bookstore
-honya
-本屋
-
-うえ
-on, above, over
-ue
-上
-
-した
-under, below, beneath
-shita
-下
-
-まえ
-front, before
-mae
-前
-
-みぎ
-right (side)
-migi
-右
-
-ひだり
-left (side)
-hidari
-左
-
-そと
-outside
-soto
-外
-
-もの
-thing
-mono
-物
-
-ぞう
-elephant
-zou
-象
-
 `;
 
-allUltimateWords["Lesson 11"] = `
-りんご
-apple
-ringo
-林檎
-
-みかん
-mandarin orange
-mikan
-蜜柑
-
-ぜんぶで
-in total
-zenbude
-全部で
-
-きょうだい
-brothers and sisters
-kyoudai
-兄弟
-
-あに
-(my) elder brother
-ani
-兄
-
-おにいさん
-(someone else's) elder brother
-oniisan
-お兄さん
-
-あね
-(my) elder sister
-ane
-姉
-
-おねえさん
-(someone else's) elder sister
-oneesan
-お姉さん
-
-おとうと
-(my) younger brother
-otouto
-弟
-
-おとうとさん
-(someone else's) younger brother
-otoutosan
-弟さん
-
-いもうと
-(my) younger sister
-imouto
-妹
-
-いもうとさん
-(someone else's) younger sister
-imoutosan
-妹さん
-
-`;
+allUltimateWords["Lesson 11"] = ``;
 
 allUltimateWords["Lesson 11 - Hard"] = `
 はがき
@@ -467,258 +72,40 @@ sea mail
 funabin
 船便
 
-ナンプラー
-nam pla
-nanpuraa
-ナンプラー
-
-コーナー
-corner, section
-koonaa
-コーナー
-
-いちばん した
-the bottom
-ichiban shita
-一番下
-
 `;
 
-allUltimateWords["Lesson 12"] = `
-とおい
-far
-tooi
-遠い
-
-はやい
-fast, early
-hayai
-早い・速い
-
-あたたかい
-warm
-atatakai
-温かい・暖かい
-
-あまい
-sweet
-amai
-甘い
-
-はる
-spring
-haru
-春
-
-なつ
-summer
-natsu
-夏
-
-あき
-autumn, fall
-aki
-秋
-
-あめ
-rain, rainy
-ame
-雨
-
-ゆき
-snow, snowy
-yuki
-雪
-
-うみ
-sea, ocean
-umi
-海
-
-せかい
-world
-sekai
-世界
-
-はじめて
-for the first time
-hajimete
-初めて
-
-（コーヒーが）いい
-prefer (coffee)
-(koohii ga) ii
-（コーヒーが）良い
-
-`;
+allUltimateWords["Lesson 12"] = ``;
 
 allUltimateWords["Lesson 12 - Hard"] = `
-すずしい
-cool
-suzushii
-涼しい
-
-（ひとが）おおい
-many (people), much
-(hito ga) ooi
-（人が）多い
-
-（ひとが）すくない
-few (people), a little
-(hito ga) sukunai
-（人が）少ない
-
-くもり
-cloudy
-kumori
-曇り
-
 しけん
 examination
 shiken
 試験
-
-いけばな
-flower arrangement (～を します： practise flower arrangement)
-ikebana
-生け花
-
-もみじ
-maple, red leaves of autumn
-momiji
-紅葉
-
-おそい
-slow, late
-osoi
-遅い
-
-からい
-hot (taste), spicy
-karai
-辛い
-
-おもい
-heavy
-omoi
-重い
 
 かるい
 light (adjective)
 karui
 軽い
 
-ふゆ
-winter
-fuyu
-冬
-
 てんき
 weather
 tenki
 天気
-
-[お] まつり
-festival
-[o] matsuri
-[お] 祭り
-
-ずっと
-by far, the whole time
-zutto
-ずっと
-
-つかれました
-I'm tired.
-tsukaremashita
-疲れました
 
 ぶたにく
 pork
 butaniku
 豚肉
 
-レモン
-lemon
-remon
-レモン
-
 `;
 
-allUltimateWords["Lesson 13"] = `
-さびしい
-lonely
-sabishii
-寂しい
+allUltimateWords["Lesson 13"] = ``;
 
-ひろい
-wide, spacious
-hiroi
-広い
-
-せまい
-narrow, small (room)
-semai
-狭い
-
-びじゅつ
-fine arts
-bijutsu
-美術
-
-ほしい
-want (something)
-hoshii
-欲しい
-
-しゅうまつ
-weekend
-shuumatsu
-週末
-
-`;
-
-allUltimateWords["Lesson 13 - Hard"] = `
-けいざい
-economy
-keizai
-経済
-
-つり
-fishing
-tsuri
-釣り
-
-でんしじしょ
-electronic dictionary
-でんしじしょ
-電子辞書
-
-とうろく
-registration
-touroku
-登録
-
-かわ
-river
-kawa
-川
-
-べつべつに
-separately, individually
-betsubetsu ni
-別々に
-
-`;
+allUltimateWords["Lesson 13 - Hard"] = ``;
 
 allUltimateWords["Lesson 14"] = `
-ゆっくり
-slowly, leisurely
-yukkuri
-ゆっくり
-
 すぐ
-immediately
+immediately, right away
 sugu
 直ぐ
 
@@ -728,7 +115,7 @@ mata
 又
 
 あとで
-later
+later, later on
 atode
 後で
 
@@ -737,206 +124,17 @@ a little more
 mou sukoshi
 もう少し
 
-まっすぐ
-straight
-massugu
-真っ直ぐ
-
-しお
-salt
-shio
-塩
-
-ちず
-map
-chizu
-地図
-
 `;
 
-allUltimateWords["Lesson 14 - Hard"] = `
-さとう
-sugar
-satou
-砂糖
+allUltimateWords["Lesson 14 - Hard"] = ``;
 
-よみかた
-how to read, way of reading
-yomikata
-読み方
+allUltimateWords["Lesson 15"] = ``;
 
-`;
+allUltimateWords["Lesson 15 - Hard"] = ``;
 
-allUltimateWords["Lesson 15"] = `
-ふく
-clothes
-fuku
-服
-
-ごかぞく
-your family
-gokazoku
-ご家族
-
-`;
-
-allUltimateWords["Lesson 15 - Hard"] = `
-じこくひょう
-timetable, chart
-jikokuhyou
-時刻表
-
-プレイガイド
-(theater) ticket agency
-pureigaido
-プレイガイド
-
-とくに
-especially
-tokuni
-特に
-
-せんもん
-specialty, field of study
-senmon
-専門
-
-はいしゃ
-dentist, dentist's
-haisha
-歯医者
-
-`;
-
-allUltimateWords["Lesson 16"] = `
-あたまがいい
-clever, smart
-atama ga ii
-頭が良い
-
-あたま
-head, brain
-atama
-頭
-
-かみ
-hair
-kami
-髪
-
-かお
-face
-kao
-顔
-
-みどり
-green, greenery
-midori
-緑
-
-キャッシュカード
-cash card, ATM Card
-kyasshu kaado
-キャッシュカード
-
-つぎに
-next, as a next step
-tsugi ni
-次に
-
-わかい
-young
-wakai
-若い
-
-ながい
-long
-nagai
-長い
-
-あかるい
-bright, light, colorful
-akarui
-明るい
-
-おなか
-stomach
-onaka
-お腹
-
-`;
+allUltimateWords["Lesson 16"] = ``;
 
 allUltimateWords["Lesson 16 - Hard"] = `
-おてら
-Buddhist temple
-otera
-お寺
-
-あんしょうばんごう
-personal identification number, PIN
-anshou bangou
-暗証番号
-
-かくにん
-confirmation
-kakunin
-確認
-
-みじかい
-short
-mijikai
-短い
-
-くらい
-dark
-kurai
-暗い
-
-せがたかい
-tall (person)
-se ga takai
-背が高い
-
-からだ
-body, health
-karada
-体
-
-め
-eye
-me
-目
-
-みみ
-ear
-mimi
-耳
-
-くち
-mouth
-kuchi
-口
-
-は
-tooth
-ha
-歯
-
-あし
-foot, leg
-ashi
-足・脚
-
-じんじゃ
-Shinto shrine
-jinja
-神社
-
-まず
-first of all
-mazu
-先ず
-
 せ
 height
 せ
@@ -944,100 +142,13 @@ height
 
 `;
 
-allUltimateWords["Lesson 17"] = `
-ねつ
-fever
-netsu
-熱
+allUltimateWords["Lesson 17"] = ``;
 
-こたえ
-answer
-kotae
-答え
-
-びょうき
-illness, disease
-byouki
-病気
-
-もんだい
-question, problem, trouble
-mondai
-問題
-
-あぶない
-dangerous
-abunai
-危ない
-
-かぜ
-cold, flu
-kaze
-風邪
-
-くすり
-medicine
-kusuri
-薬
-
-おふろ
-bath
-ofuro
-お風呂
-
-のど
-throat
-nodo
-喉
-
-`;
-
-allUltimateWords["Lesson 17 - Hard"] = `
-きんえん
-no smoking
-kinen
-禁煙
-
-うわぎ
-jacket, outerwear
-uwagi
-上着
-
-したぎ
-underwear
-shitagi
-下着
-
-`;
+allUltimateWords["Lesson 17 - Hard"] = ``;
 
 allUltimateWords["Lesson 18"] = ``;
 
 allUltimateWords["Lesson 18 - Hard"] = `
-こくさい~
-international~
-kokusai
-国際〜
-
-げんきん
-cash
-genkin
-現金
-
-ぼくじょう
-ranch, farm
-bokujou
-牧場
-
-しゅみ
-hobby
-shumi
-趣味
-
-うま
-horse
-uma
-馬
-
 なかなか
 not easily
 nakanaka
@@ -1061,137 +172,31 @@ weak
 yowai
 弱い
 
-ひ
-day, date
-hi
-日
-
 もうすぐ
 very soon
 mou sugu
 もうすぐ
 
-からだにいい
-good for one's body
-karada ni ii
-体に良い
-
-こどものひ
-Children's Day
-Kodomo no Hi
-こどもの日
-
-ちょうしがいい
-be in a good condition
-choushi ga ii
-調子が良い
-
-ちょうしがわるい
-be in a bad condition
-choushi ga warui
-調子が悪い
-
 `;
 
 allUltimateWords["Lesson 19 - Hard"] = `
-さどう
-tea ceremony
-sadou
-茶道
-
-れんしゅう
-practice
-renshuu
-練習
-
 ちょうし
 condition, state of health
 choushi
 調子
-
-パチンコ
-Japanese pinball game
-pachinko
-パチンコ
 
 だんだん
 gradually
 dandan
 段々
 
-かんぱい
-bottoms up / cheers
-kanpai
-乾杯
-
-いちど
-once, one time
-ichido
-一度
-
-いちども
-not even once, never
-ichidomo
-一度も
-
-じつは
-actually.., the truth is..
-jitsu wa
-実はこちら・実は
-
-なんかいも
-many times
-nankai mo
-何回も
-
 `;
 
-allUltimateWords["Lesson 20"] = `
-いろいろ
-various
-iroiro
-色々
-
-おわり
-the end
-owari
-終わり
-
-きもの
-traditional Japanese attire
-kimono
-着物
-
-サラリーマン
-office worker
-sarariiman
-サラリーマン
-
-はじめ
-the beginning
-hajime
-初め・始め
-
-ぼく
-I (informal used by men)
-boku
-僕
-
-きみ
-you (informal)
-kimi
-君
-
-`;
+allUltimateWords["Lesson 20"] = ``;
 
 allUltimateWords["Lesson 20 - Hard"] = `
-ことば
-word, language
-kotoba
-言葉
-
 ぶっか
-commodity prices
+commodity prices, (consumer) prices
 bukka
 物価
 
@@ -1203,34 +208,9 @@ rush hour
 rasshu [ji]
 ラッシュ [時]
 
-おなじ
-the same
-onaji
-同じ
-
-きっと
-surely, no doubt
-kitto
-きっと
-
-すごい
-awful, great
-sugoi
-凄い
-
-たぶん
-probably, perhaps, maybe
-tabun
-多分
-
-ゆめ
-dream
-yume
-夢
-
 てんさい
 genius
-てんさい
+tensai
 天才
 
 `;
@@ -1251,40 +231,9 @@ politics
 seiji
 政治
 
-しあい
-game, match
-shiai
-試合
-
-アルバイト
-side job, part-time job
-arubaito
-アルバイト
-
-さいきん
-recently, these days
-saikin
-最近
-
 `;
 
-allUltimateWords["Lesson 22"] = `
-めがね
-glasses
-megane
-眼鏡
-
-ふとん
-Japanese-style mattress and quilt
-futon
-布団
-
-ぼうし
-hat, cap
-boushi
-帽子
-
-`;
+allUltimateWords["Lesson 22"] = ``;
 
 allUltimateWords["Lesson 22 - Hard"] = `
 ばんりのちょうじょう
@@ -1292,47 +241,11 @@ the Great Wall of China
 banri no choujou
 万里の長城
 
-やちん
-house rent
-yachin
-家賃
-
-わしつ
-Japanese-style room
-washitsu
-和室
-
-おしいれ
-Japanese-style closet
-oshiire
-押し入れ
-
 `;
 
-allUltimateWords["Lesson 23"] = `
-しんごう
-traffic light
-shingou
-信号
-
-`;
+allUltimateWords["Lesson 23"] = ``;
 
 allUltimateWords["Lesson 23 - Hard"] = `
-こしょう
-break down, malfunction
-koshou
-故障
-
-ちゅうしゃじょう
-parking lot, car park
-chuushajou
-駐車場
-
-たてもの
-building
-tatemono
-建物
-
 がいこくじんとうろくしょう
 alien registration card
 gaikokujin tourokushou
@@ -1348,91 +261,29 @@ machine
 kikai
 機械
 
-おと
-sound
-oto
-音
-
 `;
 
 allUltimateWords["Lesson 24"] = `
-おじいさん・おじいちゃん
-grandfather, old man
-ojiisan / ojiichan
-お祖父さん・おじいちゃん
-
-おばあさん・おばあちゃん
-grandmother, old woman
-obaasan / obaachan
-お祖母さん・おばあちゃん
-
-おかし
-sweets, snacks
-okashi
-お菓子
-
 ぜんぶ
 all
 zenbu
 全部
 
-母のひ
-Mother's Day
-haha no hi
-母の日
-
 `;
 
 allUltimateWords["Lesson 24 - Hard"] = `
-いみ
-meaning
-imi
-意味
-
 じゅんび
 preparation
 junbi
 準備
 
-ワゴンしゃ
-station wagon, wagon car/vehicle
-wagon sha
-ワゴン車
-
 `;
 
-allUltimateWords["Lesson 25"] = `
-いなか
-countryside, rural area
-inaka
-田舎
+allUltimateWords["Lesson 25"] = ``;
 
-`;
-
-allUltimateWords["Lesson 25 - Hard"] = `
-たいしかん
-embassy
-taishikan
-大使館
-
-てんきん
-job transfer / relocation
-tenkin
-転勤
-
-こと
-thing, matter (intangible)
-koto
-事
-
-`;
+allUltimateWords["Lesson 25 - Hard"] = ``;
 
 allUltimateWords["Questions"] = `
-なんですか
-Yes? (lit: What is it?)
-nan desu ka
-何ですか
-
 どうやって
 how, in what way
 douyatte
@@ -1442,16 +293,6 @@ douyatte
 how (is it?)
 dou
 どう
-
-いくつ
-how many
-ikutsu
-幾つ
-
-どうして
-why
-doushite
-如何して
 
 なにか
 something
@@ -1463,6 +304,16 @@ somewhere, some place
 dokoka
 どこか
 
+いくつ
+how many
+ikutsu
+幾つ
+
+どうして
+why
+doushite
+如何して
+
 どんな〜
 what kind of ~
 donna~
@@ -1473,20 +324,15 @@ what~, how many~
 nan
 何~
 
+なんですか
+Yes? (lit: What is it?)
+nan desu ka
+何ですか
+
 なに
 what
 nani
 何
-
-どのぐらい
-how long
-donokurai
-どの位
-
-いくら
-how much
-ikura
-幾ら
 
 だれ
 who
@@ -1498,35 +344,20 @@ who (polite)
 donata
 何方
 
+どのぐらい
+how long
+donokurai
+どの位
+
+いくら
+how much
+ikura
+幾ら
+
 いつ
 when
 itsu
 何時
-
-なんさい
-how old
-nansai
-何歳
-
-おいくつ
-how old (formal)
-oikutsu
-お幾つ
-
-なんかい
-what floor
-nankai
-何階
-
-なんばん
-what number
-nanban
-何番
-
-なんようび
-what day of the week
-nanyoubi
-何曜日
 
 なんぷん
 what minute
@@ -1538,75 +369,60 @@ what time
 nanji
 何時
 
-なんがつ
-what month
-nangatsu
-何月
+なんようび
+what day of the week
+nanyoubi
+何曜日
 
 なんにち
 which day of the month, how many days
 nannichi
 何日
 
-おなまえは
-May i have your name?
-onamae wa
-お名前は
+なんがつ
+what month
+nangatsu
+何月
 
 なんねん
 what year
 nannen
 何年
 
+なんさい
+how old
+nansai
+何歳
+
+おいくつ
+how old (formal)
+oikutsu
+お幾つ
+
+おなまえは
+May i have your name?
+onamae wa
+お名前は
+
+なんかい
+what floor
+nankai
+何階
+
+なんばん
+what number
+nanban
+何番
+
 `;
 
 allUltimateWords["Questions - Hard"] = ``;
 
 allUltimateWords["Lesson 26"] = `
-うちゅう
-space, universe
-Uchuu
-宇宙
-
-うちゅうせん
-spaceship
-Uchuusen
-宇宙船
-
-つごうがいい
-convenient (concerning time)
-Tsugou ga ii
-都合がいい
-
-つごうがわるい
-inconvenient (concerning time)
-Tsugou ga warui
-都合が悪い
-
-きぶんがいい
-feel well
-Kibun ga ii
-気分がいい
-
-きぶんがわるい
-feel ill
-Kibun ga warui
-気分が悪い
-
-ばしょ
-place
-Basho
-場所
-
 ～がいしゃ
 ~ company
 ~gaisha
 ～会社
-
-でんしメール
-electronic mail
-Denshi meeru
-電子メール
 
 べつの
 another
@@ -1662,16 +478,6 @@ Getsu・Sui・Kin
 can
 Kan
 缶
-
-[お]ゆ
-hot water
-[O]yu
-[お]湯
-
-こわい
-be afraid of
-Kowai
-怖い
 
 ガス
 gas
@@ -1800,14 +606,9 @@ run, drive [along a road]
 [音が～] 聞こえます
 
 むかし
-old days, ancient times
+old days, ancient times, past
 Mukashi
 昔
-
-～ご
-~ after (duration of time)
-~go
-～後
 
 ほかの
 other
@@ -1824,18 +625,8 @@ someday, sometime
 Itsuka
 いつか
 
-ゆめ
-dream (～をみます：have a dream)
-Yume
-夢
-
-すばらしい
-marvelous, wonderful
-Subarashii
-素晴らしい
-
 だいすき [な]
-like very much
+like very much, very fond of, to love
 Daisuki [na]
 大好き [な]
 
@@ -1843,11 +634,6 @@ Daisuki [na]
 freely
 Jiyuu ni
 自由に
-
-とびます
-fly
-Tobimasu
-飛びます
 
 しょうらい
 future
@@ -1880,7 +666,7 @@ Hanabi
 花火
 
 マンション
-condominium, apartment house
+multistory apartment; condominium (reinforced concrete), condominium, apartment house
 Manshon
 マンション
 
@@ -1894,13 +680,8 @@ bookshelf
 Hondana
 本棚
 
-こどもたち
-children
-Kodomotachi
-子どもたち
-
 まんが
-cartoon, comic strip
+manga, cartoon, comic strip, comic book
 Manga
 漫画
 
@@ -1942,11 +723,6 @@ mail order, mail-order sales
 Tsuushinhanbai
 通信販売
 
-けしき
-scenery, view
-Keshiki
-景色
-
 ～しか
 only ~ (used with negatives)
 ~shika
@@ -1958,7 +734,7 @@ Hotondo
 ほとんど
 
 どうぐ
-tool, instrument, equipment
+tool, instrument, equipment, implements
 Dougu
 道具
 
@@ -1966,11 +742,6 @@ Dougu
 Sunday carpenter
 Nichiyoudaiku
 日曜大工
-
-かたち
-shape
-Katachi
-形
 
 たとえば
 for example
@@ -1980,13 +751,8 @@ Tatoeba
 `;
 
 allUltimateWords["Lesson 28"] = `
-おどります
-dance
-Odorimasu
-踊ります
-
 ちがいます
-be different
+be different, No that's wrong.
 Chigaimasu
 違います
 
@@ -2009,16 +775,6 @@ Kashu
 notice
 Oshirase
 お知らせ
-
-たいいくかん
-gymnasium
-Taiikukan
-体育館
-
-やさしい
-gentle, kind
-Yasashii
-優しい
 
 にんき
 popularity (be popular [with students])
@@ -2088,23 +844,13 @@ go to and from [university]
 [daigaku ni~] Kayoimasu
 [大学に～] 通います
 
-ねっしん [な]
-Earnest, Enthusiastic, Passionate, Zealous
-Nesshin [na]
-熱心 [な]
-
-まじめ [な]
-Serious, Diligent, Honest, Reliable
-Majime [na]
-まじめ [な]
-
 ねだん
 price
 Nedan
 値段
 
 ばんぐみ
-program
+program, broadcast program
 Bangumi
 番組
 
@@ -2148,13 +894,8 @@ a little while
 Shibaraku
 しばらく
 
-たいてい
-usually, mostly
-Taitei
-たいてい
-
 かたち
-form, shape
+form, shape, shapes
 Katachi
 形
 
@@ -2182,7 +923,7 @@ Machigaemasu
 まちがえます
 
 コップ
-glass (vessel)
+tumbler, glass (vessel)
 Koppu
 コップ
 
@@ -2264,11 +1005,6 @@ allUltimateWords["Lesson 29 - Hard"] = `
 [fuku ga~] Yogoremasu
 [服が～] 汚れます
 
-おとします
-drop, lose
-Otoshimasu
-落とします
-
 [かぎが～] かかります
 be locked
 [kagi ga~] Kakarimasu
@@ -2283,11 +1019,6 @@ Eda
 ~ side (ex: Left Side, hidari gawa)
 ~gawa
 ～側
-
-あみだな
-rack (overhead luggage racks)
-Amidana
-網棚
 
 さします
 point
@@ -2387,35 +1118,10 @@ inform
 Shirasemasu
 知らせます
 
-こうばん
-police box
-Kouban
-交番
-
-いけ
-pond
-Ike
-池
-
-すみ
-corner
-Sumi
-隅
-
 ～ほど
 about ~
 ~hodo
 ～ほど
-
-よてい
-plan, schedule
-Yotei
-予定
-
-よていひょう
-schedule
-Yoteihyou
-予定表
 
 きぼう
 hope, request
@@ -2438,7 +1144,7 @@ Aru~
 ある～
 
 いや [な]
-hateful, disagreeable
+hateful, disagreeable, unwilling, reluctant
 Iya [na]
 嫌 [な]
 
@@ -2472,11 +1178,6 @@ trash can, dustbin
 Gomibako
 ごみ箱
 
-ろうか
-corridor, hallway
-Rouka
-廊下
-
 かたづけます
 put things in order, tidy up
 Katadukemasu
@@ -2507,11 +1208,6 @@ drawer
 Hikidashi
 引き出し
 
-げんかん
-front door, porch, entrance hall
-Genkan
-玄関
-
 まだ
 still
 Mada
@@ -2527,20 +1223,10 @@ That's a good idea./That sounds nice.
 Sore wa ii desu ne.
 それは いいですね。
 
-おこさん
-(someone else's) child
-Okosan
-お子さん
-
 ブロードウェイ
 Broadway
 Buroodowei
 ※ブロードウェイ
-
-うれしい
-glad, happy
-Ureshii
-うれしい
 
 `;
 
@@ -2569,11 +1255,6 @@ Soudanshimasu
 put up, post, paste
 Harimasu
 はります
-
-ならべます
-arrange, line up
-Narabemasu
-並べます
 
 しまいます
 put things in their proper place
@@ -2618,11 +1299,6 @@ gather
 Atsumarimasu
 集まります
 
-うつくしい
-beautiful
-Utsukushii
-美しい
-
 せかいじゅう
 all over the world
 Sekaijuu
@@ -2634,7 +1310,7 @@ Subarashisa
 すばらしさ
 
 けっこんしき
-wedding ceremony
+wedding, wedding ceremony
 Kekkonshiki
 結婚式
 
@@ -2643,45 +1319,15 @@ ceremony
 Shiki
 式
 
-きょうかい
-church
-Kyoukai
-教会
-
-だいがくいん
-graduate school
-Daigakuin
-大学院
-
 ほんしゃ
 head office
 Honsha
 本社
 
-インターネット
-Internet
-Intaanetto
-インターネット
-
-ずっと
-all the time
-Zutto
-ずっと
-
 だれか
 somebody
 Dareka
 だれか
-
-えいがかん
-movie theater
-Eigakan
-映画館
-
-いや[な]
-hateful, disagreeable
-Iya[na]
-嫌[な]
 
 おんせん
 hot spring, spa
@@ -2710,13 +1356,7 @@ Pikaso
 
 `;
 
-allUltimateWords["Lesson 31 - Hard"] = `
-[かいぎに～] しゅっせきします
-attend [a meeting]
-[kaigi ni~] Shussekishimasu
-[会議に～] 出席します
-
-`;
+allUltimateWords["Lesson 31 - Hard"] = ``;
 
 allUltimateWords["Lesson 32"] = `
 せいこうします
@@ -2755,7 +1395,7 @@ Chiimu
 チーム
 
 まえ
-a time in the past, before
+front, before, a time in the past, before
 Mae
 前
 
@@ -2795,7 +1435,7 @@ Undoushimasu
 運動します
 
 はれます
-clear up
+clear up, clear, fair
 Haremasu
 晴れます
 
@@ -2803,21 +1443,6 @@ Haremasu
 get cloudy
 Kumorimasu
 曇ります
-
-うるさい
-noisy
-Urusai
-うるさい
-
-せき
-cough (~ が でます : have a cough)
-Seki
-せき
-
-インフルエンザ
-influenza
-Infuruenza
-インフルエンザ
 
 たいよう
 sun
@@ -2880,7 +1505,7 @@ Sutoresu
 ストレス
 
 れんあい
-romantic love
+romantic love, romance
 Ren'ai
 恋愛
 
@@ -2889,7 +1514,7 @@ sweetheart, boyfriend, girlfriend
 Koibito
 恋人
 
-[お]かねもち
+おかねもち
 rich person
 [O]kanemochi
 [お]金持ち
@@ -2975,16 +1600,6 @@ pass away, die
 Nakunarimasu
 亡くなります
 
-[お]いわい
-celebration
-[O]iwai
-[お]祝い
-
-せき
-seat
-Seki
-席
-
 あげます
 raise, lift up
 Agemasu
@@ -3029,11 +1644,6 @@ Iriguchi
 exit
 Deguchi
 出口
-
-けいさつ
-police station
-Keisatsu
-警察
 
 できるだけ
 as much as possible
@@ -3103,25 +1713,10 @@ telegram charge
 Denpoudai
 電報代
 
-るす
-absence
-Rusu
-留守
-
 るすばん
 looking after a house during the owner's absence
 Rusuban
 留守番
-
-きそく
-regulation, rule
-Kisoku
-規則
-
-キトク
-in a critical condition
-Kitoku
-危篤
 
 ひじょうぐち
 emergency exit
@@ -3153,11 +1748,6 @@ and
 Mata
 また
 
-ひとびと
-people
-Hitobito
-人々
-
 もう
 (not) any longer (used with negatives)
 Mou
@@ -3171,11 +1761,6 @@ Mou
 `;
 
 allUltimateWords["Lesson 34"] = `
-ず
-figure, drawing
-Zu
-図
-
 こん
 navy blue, dark blue (noun)
 Kon
@@ -3216,30 +1801,15 @@ Setsumeisho
 -ko
 ー個
 
-ひ
-fire, heating
-Hi
-火
-
 おります
 bend, fold, break, snap
 Orimasu
 折ります
 
-[かぎが～] みつかります
-[a key] be found
-[kagi ga~] Mitsukarimasu
-[かぎ发～] 見つかります
-
 せん
-line
+line, lines
 Sen
 線
-
-さっき
-a short while ago
-Sakki
-さっき
 
 さきに
 first (when doing something before something else)
@@ -3334,16 +1904,6 @@ Tamanegi
 `;
 
 allUltimateWords["Lesson 34 - Hard"] = `
-どんぶり
-ceramic bowl
-Donburi
-どんぶり
-
-おやこどんぶり
-a bowl of cooked rice with chicken and egg
-Oyakodonburi
-親子どんぶり
-
 よんぶんのいち
 one fourth
 Yonbun no ichi
@@ -3412,11 +1972,6 @@ necessary, essential
 Hitsuyou[na]
 必要[な]
 
-めずらしい
-rare, uncommon
-Mezurashii
-珍しい
-
 それなら
 in that case
 Sorenara
@@ -3426,11 +1981,6 @@ Sorenara
 travel agency
 Ryokousha
 旅行社
-
-ただしい
-correct, right
-Tadashii
-正しい
 
 しま
 island
@@ -3492,11 +2042,6 @@ hiking
 Haikingu
 ハイキング
 
-まる
-circle
-Maru
-丸
-
 カーテン
 curtain
 Kaaten
@@ -3520,7 +2065,7 @@ Shiga kougen
 はこね
 resort in Kanagawa Prefecture
 Hakone
-※箱根
+箱根
 
 にっこう
 tourist spot in Tochigi Prefecture
@@ -3594,7 +2139,7 @@ Kanarazu
 必ず
 
 ぜったいに
-absolutely (used with negatives)
+definitely, absolutely (used with negatives)
 Zettai ni
 絶対に
 
@@ -3629,7 +2174,7 @@ Suiei
 水泳
 
 きもち
-feeling, enthusiasm
+feelings, feeling, enthusiasm
 Kimochi
 気持ち
 
@@ -3653,11 +2198,6 @@ well, skillfully
 Jouzu ni
 上手に
 
-でんし～
-electronic ~
-Denshi~
-電子～
-
 けんどう
 kendo (Japanese style fencing)
 Kendou
@@ -3674,7 +2214,7 @@ Tango
 タンゴ
 
 ふとります
-get fat
+get fat, Fat / To be overweight
 Futorimasu
 太ります
 
@@ -3705,11 +2245,6 @@ allUltimateWords["Lesson 36 - Hard"] = `
 pass [7 o'clock]
 [7-ji o~] Sugimasu
 [7時を～] 過ぎます
-
-はこびます
-carry, transport
-Hakobimasu
-運びます
 
 ちょきんします
 save money
@@ -3746,20 +2281,10 @@ Sono [hou] ga ~
 ~toka, ~toka
 ～とか、～とか
 
-ーーせいき
--th century
---seiki
-ーー世紀
-
 きせん
 steam boat
 Kisen
 汽船
-
-おおぜいの ～
-many (people)
-Oozei no ~
-大勢の ～
 
 [にもつが～] とどきます
 [parcels] be delivered
@@ -3829,11 +2354,6 @@ rob, steal
 Torimasu
 とります
 
-ほります
-engrave, carve
-Horimasu
-彫ります
-
 ねずみ
 mouse
 Nezumi
@@ -3879,25 +2399,10 @@ access
 Akusesu
 アクセス
 
-デート
-date
-Deeto
-デート
-
 けんちくか
 architect
 Kenchikuka
 建築家
-
-まんが
-cartoon
-Manga
-漫画
-
-サウジアラビア
-Saudi Arabia
-Saujiarabia
-サウジアラビア
 
 げんじものがたり
 "The Tale of Genji" (Japanese novel)
@@ -3915,7 +2420,7 @@ Murasaki Shikibu
 紫式部
 
 とうしょうぐう
-shrine dedicated to Tokugawa Ieyasu in Nikko, Tochigi Prefecture
+Toshogu Shrine, shrine dedicated to Tokugawa Ieyasu in Nikko, Tochigi Prefecture
 Toushouguu
 東照宮
 
@@ -3942,11 +2447,6 @@ design, plan
 Sekkeishimasu
 設計します
 
-せきゆ
-oil
-Sekiyu
-石油
-
 そうおん
 noise
 Souon
@@ -3956,11 +2456,6 @@ Souon
 gorgeous
 Gouka [na]
 豪華 [な]
-
-ちょうこく
-engraving, carving, sculpture
-Choukoku
-彫刻
 
 おこないます
 hold, carry out, practice
@@ -3982,11 +2477,6 @@ with all one's effort
 Isshoukenmei
 一生懸命
 
-ぎじゅつ
-technology, technique
-Gijutsu
-技術
-
 えどじだい
 Edo Period (1603-1868)
 Edo jidai
@@ -3996,7 +2486,7 @@ Edo jidai
 
 allUltimateWords["Lesson 38"] = `
 げんばくドーム
-dome commemorating the atomic bombing of Hiroshima
+Atomic Bomb Dome, dome commemorating the atomic bombing of Hiroshima
 Genbaku doomu
 原爆ドーム
 
@@ -4010,11 +2500,6 @@ turn off [the power switch]
 [dengen o~] Kirimasu
 [電源を～] 切ります
 
-しまい
-sisters
-Shimai
-姉妹
-
 ～せい
 made in ~
 ~sei
@@ -4024,11 +2509,6 @@ made in ~
 -- points
 -- ten
 ーー点
-
-ふたご
-twins
-Futago
-双子
 
 にています
 resemble, be like
@@ -4050,11 +2530,6 @@ Excuse me (for leaving before you).
 Osaki ni [shitsurei shimasu].
 お先に [失礼します]。
 
-おとなしい
-quiet
-Otonashii
-おとなしい
-
 けんかします
 quarrel, fight
 Kenka shimasu
@@ -4075,25 +2550,10 @@ fifth grade, fifth year, 5th grader
 5-nensei
 5年生
 
-きもちがいい
-pleasant, agreeable
-Kimochi ga ii
-気持ちがいい
-
-きもちがわるい
-unpleasant, disgusting
-Kimochi ga warui
-気持ちが悪い
-
 おおきな～
 large ~
 Ookina~
 大きな～
-
-ちいさな～
-small ~
-Chiisana~
-小さな～
 
 なくなります
 pass away (euphemistic expression for しにます (L. 39))
@@ -4105,20 +2565,10 @@ baby
 Akachan
 赤ちゃん
 
-えきまえ
-the area in front of the station
-Ekimae
-駅前
-
 うそ
 lie, fib
 Uso
 うそ
-
-ふしぎ [な]
-mysterious, strange
-Fushigi [na]
-不思議 [な]
 
 `;
 
@@ -4261,21 +2711,6 @@ towel
 Taoru
 タオル
 
-りこんします
-divorce
-Rikon shimasu
-離婚します
-
-ならびます
-stand in a queue, line up
-Narabimasu
-並びます
-
-はずかしい
-embarrassed, ashamed
-Hazukashii
-恥ずかしい
-
 たいふう
 typhoon
 Taifuu
@@ -4301,16 +2736,6 @@ obstructive, in the way
 Jama [na]
 邪魔 [な]
 
-じこ
-accident
-Jiko
-事故
-
-かなしい
-sad
-Kanashii
-悲しい
-
 でんわだい
 telephone charge
 Denwadai
@@ -4321,11 +2746,6 @@ charge, fare, fee
 ~dai
 ～代
 
-おおぜい
-a great number of people
-Oozei
-大勢
-
 トラック
 truck, lorry
 Torakku
@@ -4334,11 +2754,6 @@ Torakku
 `;
 
 allUltimateWords["Lesson 39 - Hard"] = `
-ぶつかります
-bump, collide
-Butsukarimasu
-ぶつかります
-
 きたない
 dirty
 Kitanai
@@ -4367,11 +2782,6 @@ confirm, make sure
 Tashikamemasu
 確かめます
 
-しゅっぱつします
-depart
-Shuppatsushimasu
-出発します
-
 はかります
 measure, weigh
 Hakarimasu
@@ -4386,11 +2796,6 @@ Nijikai
 defect, wound, scratch
 Kizu
 傷
-
-せいせき
-performance, score, result
-Seiseki
-成績
 
 ところで
 by the way
@@ -4433,7 +2838,7 @@ Ookisa
 大きさ
 
 さあ
-well, let me see (used when unsure of something)
+I am not sure...., well let me see (used when unsure of something)
 Saa
 さあ
 
@@ -4461,11 +2866,6 @@ Irasshaimasu
 gossip
 Uwasa shimasu
 うわさします
-
-ーーこ
-(counter for small objects)
--- ko
-ーー個
 
 ーーキロ
 -- kilograms, -- kilometers
@@ -4532,11 +2932,6 @@ Vincent van Gogh, Dutch painter (1853-90)
 Goho
 ゴッホ
 
-※のぞみ
-name of a Shinkansen train
-Nozomi
-※のぞみ
-
 じけん
 incident, case
 Jiken
@@ -4546,11 +2941,6 @@ Jiken
 driver
 Untenshu
 運転手
-
-ひつよう [な]
-necessary
-Hitsuyou [na]
-必要 [な]
 
 `;
 
@@ -4678,11 +3068,6 @@ invite
 Yobimasu
 呼びます
 
-とりかえます
-exchange
-Torikaemasu
-取り替えます
-
 しんせつにします
 be kind to
 Shinsetsu ni shimasu
@@ -4702,11 +3087,6 @@ Kyoumi [konpyuutaa ni kyoumi ga arimasu]
 ape, monkey
 Saru
 猿
-
-まご
-grandchild
-Mago
-孫
 
 ドライバー
 screwdriver
@@ -4728,41 +3108,6 @@ turtle, tortoise
 Kame
 かめ
 
-おとしだま
-money given as a New Year's gift
-Otoshidama
-お年玉
-
-[お]みまい
-[expression of] sympathy, consolatory gift to a sick person
-[O]mimai
-[お]見舞い
-
-おじ
-(my) uncle
-Oji
-おじ
-
-おじさん
-(someone else's) uncle
-Ojisan
-おじさん
-
-おば
-(my) aunt
-Oba
-おば
-
-おばさん
-(someone else's) aunt
-Obasan
-おばさん
-
-おいわい
-celebration, gift (~を します: celebrate)
-Oiwai
-お祝い
-
 ぶんぽう
 grammar
 Bunpou
@@ -4772,11 +3117,6 @@ Bunpou
 pronunciation
 Hatsuon
 発音
-
-かわいい
-lovely, cute
-Kawaii
-かわいい
 
 おもちゃ
 toy
@@ -4793,21 +3133,6 @@ gloves
 Tebukuro
 手袋
 
-そふ
-(my) grandfather
-Sofu
-祖父
-
-そぼ
-(my) grandmother
-Sobo
-祖母
-
-ある～
-a certain ~, one ~
-Aru ~
-ある～
-
 おとこ
 man
 Otoko
@@ -4820,11 +3145,6 @@ allUltimateWords["Lesson 41 - Hard"] = `
 keep, receive (a thing) in trust
 Azukarimasu
 預かります
-
-せんじつ
-the other day
-Senjitsu
-先日
 
 えさ
 feed, bait
@@ -4894,11 +3214,6 @@ thin
 Usui
 薄い
 
-ふたり
-couple
-Futari
-二人
-
 きょういく
 education
 Kyouiku
@@ -4922,7 +3237,7 @@ Mokuteki
 あと
 the amount left unused, the rest
 Ato
-あと
+後
 
 どこででも
 in any place
@@ -4939,23 +3254,13 @@ pyramid
 Piramiddo
 ピラミッド
 
-ファイル
-file
-Fairu
-ファイル
-
 ローン
 loan
 Roon
 ローン
 
-けいさんします
-calculate
-Keisanshimasu
-計算します
-
 べんごし
-lawyer, attorney
+lawyer, attorney, solicitor,
 Bengoshi
 弁護士
 
@@ -4969,13 +3274,8 @@ society
 Shakai
 社会
 
-ほうりつ
-law
-Houritsu
-法律
-
 あんぜん
-safety
+safety, safe
 Anzen
 安全
 
@@ -4990,7 +3290,7 @@ Yakan
 やかん
 
 せんぬき
-cap opener
+cap opener, bottle opener
 Sennuki
 せんぬき
 
@@ -5003,11 +3303,6 @@ Kankiri
 data
 Deeta
 データ
-
-なぜ
-why
-Naze
-なぜ
 
 ベートーベン
 Ludwig van Beethoven, German composer (1770-1827)
@@ -5095,11 +3390,6 @@ tasty, good at
 Umai
 うまい
 
-まずい
-not tasty
-Mazui
-まずい
-
 つまらない
 boring, uninteresting
 Tsumaranai
@@ -5150,18 +3440,13 @@ petrol, gasoline
 Gasorin
 ガソリン
 
-ひ
-fire
-Hi
-火
-
 わあ
 Oh!/Wow!
 Waa
 わあ
 
 ドライブ
-driving
+driving, drive
 Doraibu
 ドライブ
 
@@ -5224,7 +3509,7 @@ Sonoue
 そのうえ
 
 ～といいます
-~ (one's name) is ~
+~ (one's name) is ~, is called
 ~ to iimasu
 ～といいます
 
@@ -5246,25 +3531,10 @@ laugh, smile
 Waraimasu
 笑います
 
-えんぎがわるい
-unlucky, ill-omened
-Engi ga warui
-縁起が悪い
-
 ひょうげん
 expression
 Hyougen
 表現
-
-[じこが～] おきます
-[an accident] happen
-[jiko ga~] Okimasu
-[事故が～] 起きます
-
-くうき
-air
-Kuuki
-空気
 
 ―ばい
 ― times
@@ -5316,11 +3586,6 @@ weak (taste), light (color)
 Usui
 薄い
 
-はんぶん
-half
-Hanbun
-半分
-
 ショート
 short
 Shooto
@@ -5340,16 +3605,6 @@ Komakai
 shampoo
 Shanpuu
 シャンプー
-
-かわきます
-dry
-Kawakimasu
-乾きます
-
-ぬれます
-get wet
-Nuremasu
-濡れます
 
 `;
 
@@ -5396,11 +3651,6 @@ allUltimateWords["Lesson 45"] = `
 apologize
 Ayamarimasu
 謝ります
-
-[じこに～] あいます
-encounter [an accident]
-[jiko ni~] Aimasu
-[事故に～] 遭います
 
 よういします
 prepare
@@ -5523,11 +3773,6 @@ knowledge
 Chishiki
 知識
 
-ほうこ
-treasury
-Houko
-宝庫
-
 おまたせしました。
 Sorry to have kept you waiting.
 Omatase shimashita。
@@ -5608,11 +3853,6 @@ delivery service
 Takuhaibin
 宅配便
 
-やきます
-bake, grill, roast
-Yakimasu
-焼きます
-
 `;
 
 allUltimateWords["Lesson 46 - Hard"] = `
@@ -5654,16 +3894,6 @@ Byou
 `;
 
 allUltimateWords["Lesson 47"] = `
-しらべます
-survey, research
-Shirabemasu
-調べます
-
-じっけん
-experiment
-Jikken
-実験
-
 しりあいます
 get acquainted
 Shiriaimasu
@@ -5720,12 +3950,12 @@ taste
 [人が～] 別れます
 
 ひどい
-terrible, severe
+terrible, severe, awful
 Hidoi
 ひどい
 
 こわい
-frightening, horrible
+frightening, horrible, be afraid of
 Kowai
 怖い
 
@@ -5740,7 +3970,7 @@ Nioi
 におい
 
 かがく
-science
+science, chemistry
 Kagaku
 科学
 
@@ -5759,11 +3989,6 @@ Bali (island) (in Indonesia)
 Bari
 ※バリ
 
-イラン
-Iran
-Iran
-※イラン
-
 カリフォルニア
 California (in U.S.A.)
 Kariforunia
@@ -5773,11 +3998,6 @@ Kariforunia
 Guam
 Guamu
 ※グアム
-
-あいいて
-sweetheart, boyfriend, girlfriend
-Koibito
-恋人
 
 ホルモン
 hormone
@@ -5818,7 +4038,7 @@ Nou
 脳
 
 あいて
-the other person
+the other person, partner
 Aite
 相手
 
@@ -5865,18 +4085,13 @@ person (referring to one's relatives or subordinates)
 Mono
 者
 
-せわを します
-take care of ~
-Sewa o shimasu
-世話を します
-
 かわりをします
 be a substitute, be a replacement
 Kawari o shimasu
 代わりをします
 
 ひさしぶり
-after a long time
+after a long time, it has been a long time
 Hisashiburi
 久しぶり
 
@@ -5889,16 +4104,6 @@ Sore made ni
 enjoy oneself
 Tanoshimemasu
 楽しめます I
-
-いや [な]
-unwilling, reluctant
-Iya [na]
-嫌 [な]
-
-きびしい
-strict, hard
-Kibishii
-厳しい
 
 スケジュール
 schedule
@@ -5919,11 +4124,6 @@ Saakasu
 heart, mind
 Kokoro
 心
-
-とどけます
-deliver, report
-Todokemasu
-届けます
 
 `;
 
@@ -6035,11 +4235,6 @@ Aisatsu
 ashtray
 Haizara
 灰皿
-
-りょかん
-Japanese-style hotel or inn
-Ryokan
-旅館
 
 バスてい
 bus stop
@@ -6160,11 +4355,6 @@ Soredeha
 Japanese novelist (1935–2023)
 Ooe Kenzaburou
 ※大江 健三郎
-
-とうきょうだいがく
-Tokyo University
-Toukyou daigaku
-※東京大学
 
 ノーベルぶんがくしょう
 Nobel Prize for literature
@@ -6291,11 +4481,6 @@ album
 Arubamu
 アルバム
 
-さらいしゅう
-the week after next
-Saraishuu
-再来週
-
 さらいげつ
 the month after next
 Saraigetsu
@@ -6306,16 +4491,6 @@ the year after next
 Sarainen
 再来年
 
-はんとし
-half a year
-Hantoshi
-半年
-
-さいしょに
-first of all
-Saisho ni
-最初に
-
 さいごに
 lastly
 Saigo ni
@@ -6325,11 +4500,6 @@ Saigo ni
 now
 Tadaima
 ただ今
-
-えどとうきょうはくぶつかん
-Edo-Tokyo Museum
-Edo Toukyou hakubutsukan
-※江戸東京博物館
 
 しょうきん
 prize money
@@ -6357,7 +4527,7 @@ Kokoro kara
 心から
 
 おれい
-gratitude, thanks
+expression of gratitude, gratitude, thanks
 Orei
 [お] 礼
 
@@ -6380,11 +4550,6 @@ Keigu
 Munich (in Germany)
 Myunhen
 ※ミュンヘン
-
-しゅうでん
-last train
-Shuuden
-終電
 
 `;
 
@@ -6481,6 +4646,11 @@ ten thousand
 ~ji
 〜時
 
+〜じかん
+hour, time
+...jikan
+〜時間
+
 `;
 
 allUltimateWords["Counters - Hard"] = ``;
@@ -6516,11 +4686,21 @@ seafood and vegetables deep fried in batter
 tempura
 天ぷら
 
+どんぶり
+ceramic bowl
+Donburi
+どんぶり
+
+おやこどんぶり
+a bowl of cooked rice with chicken and egg
+Oyakodonburi
+親子どんぶり
+
 `;
 
 allUltimateWords["Food Names - Hard"] = ``;
 
-allUltimateWords["Extra 00 E5"] = `
+allUltimateWords["Grm Terms"] = `
 いけいようし
 い-adjective
 ikeiyoushi
@@ -6547,14 +4727,9 @@ keiyoushibun
 形容詞文
 
 れんしゅう
-exercise
+exercise, practice
 renshuu
 練習
-
-もんだい
-practice question
-mondai
-問題
 
 フォーム
 form
@@ -6606,11 +4781,6 @@ That's fine.
 ii desu
 いいです。
 
-ちがいます
-No, that's wrong.
-chigaimasu
-違います。
-
 れい
 example
 rei
@@ -6648,16 +4818,56 @@ onegaishimasu
 
 `;
 
-allUltimateWords["Extra 00 E5 - Hard"] = `
+allUltimateWords["Grm Terms - Hard"] = `
+かのうけい
+potential
+Kanoukei
+可能形
+
+いこうけい
+volitional
+Ikoukei
+意向形
+
+めいれいけい
+imperative
+Meireikei
+命令形
+
+きんしけい
+prohibitive
+Kinshikei
+禁止形
+
+じょうけんけい
+conditional
+Joukenkei
+条件形
+
+うけみけい
+passive
+Ukemikei
+受身形
+
+しえきけい
+causative
+Shiekikei
+使役形
+
+そんけいご
+respectful
+Sonkeigo
+尊敬語
+
+けんじょうご
+humble
+Kenjougo
+謙譲語
+
 ぎもんし
 interrogative
 gimonshi
 疑問詞
-
-ふくしゅう
-review
-fukushuu
-復習
 
 ふくし
 adverb
@@ -6693,21 +4903,6 @@ suushi
 counter suffix
 josuushi
 助数詞
-
-しゅご
-subject
-shugo
-主語
-
-じゅつご
-predicate
-jutsugo
-述語
-
-もくてきご
-object
-mokutekigo
-目的語
 
 しゅだい
 topic
@@ -6779,16 +4974,6 @@ adjective
 keiyoushi
 形容詞
 
-かこ
-past
-kako
-過去
-
-ひかこ
-non-past
-hikako
-非過去
-
 しつもん
 question
 shitsumon
@@ -6826,387 +5011,11 @@ yomimono
 
 `;
 
-allUltimateWords["Extra 01"] = `
-マレーシア
-Malaysia
-Mareeshia
-マレーシア
-
-マレーシアじん
-Malaysian
-Mareeshiajin
-マレーシア人
-
-マレーシアご
-Malaysian
-Mareeshiago
-マレーシア語
-
-ベトナムじん
-Vietnamese
-Betonamujin
-ベトナム人
-
-ベトナムご
-Vietnamese
-Betonamugo
-ベトナム語
-
-イタリアじん
-Italian
-Itariajin
-イタリア人
-
-イタリアご
-Italian
-Itariago
-イタリア語
-
-スペインじん
-Spanish
-Supeinjin
-スペイン人
-
-スペインご
-Spanish
-Supeingo
-スペイン語
-
-アメリカじん
-American
-Amerikajin
-アメリカ人
-
-えいご
-English
-Eigo
-英語
-
-インドネシアじん
-Indonesian
-Indoneshiajin
-インドネシア人
-
-インドネシアご
-Indonesian
-Indoneshiago
-インドネシア語
-
-かんこくじん
-South Korean
-Kankokujin
-韓国人
-
-かんこくご
-Korean
-Kankokugo
-韓国語
-
-タイじん
-Thai
-Taijin
-タイ人
-
-タイご
-Thai
-Taigo
-タイ語
-
-ちゅうごくじん
-Chinese
-Chuugokujin
-中国人
-
-ちゅうごくご
-Chinese
-Chuugokugo
-中国語
-
-ドイツじん
-German
-Doitsujin
-ドイツ人
-
-ドイツご
-German
-Doitsugo
-ドイツ語
-
-にほんじん
-Japanese
-Nihonjin
-日本人
-
-にほんご
-Japanese
-Nihongo
-日本語
-
-フランスじん
-French
-Furansujin
-フランス人
-
-フランスご
-French
-Furansugo
-フランス語
-
-`;
-
-allUltimateWords["Extra 01 - Hard"] = `
-ブラジルじん
-Brazilian
-Burajirujin
-ブラジル人
-
-ポルトガルご
-Portuguese
-Porutogarugo
-ポルトガル語
-
-メキシコ
-Mexico
-Mekishiko
-メキシコ
-
-メキシコじん
-Mexican
-Mekishikojin
-メキシコ人
-
-スペインご
-Spanish
-Supeingo
-スペイン語
-
-イランじん
-Iranian
-Iranjin
-イラン人
-
-ペルシアご
-Persian
-Perushiago
-ペルシア語
-
-エジプト
-Egypt
-Ejiputo
-エジプト
-
-エジプトじん
-Egyptian
-Ejiputojin
-エジプト人
-
-アラビアご
-Arabic
-Arabiago
-アラビア語
-
-カナダ
-Canada
-Kanada
-カナダ
-
-カナダじん
-Canadian
-Kanadajin
-カナダ人
-
-えいご・フランスご
-English, French
-Eigo, Furansugo
-英語・フランス語
-
-イギリスじん
-British
-Igirisujin
-イギリス人
-
-えいご
-English
-Eigo
-英語
-
-オーストラリアじん
-Australian
-Oosutorariajin
-オーストラリア人
-
-えいご
-English
-Eigo
-英語
-
-シンガポールじん
-Singaporean
-Shingapoorujin
-シンガポール人
-
-えいご
-English
-Eigo
-英語
-
-サウジアラビアじん
-Saudi Arabian
-Saujiarabiajin
-サウジアラビア人
-
-アラビアご
-Arabic
-Arabiago
-アラビア語
-
-フィリピンじん
-Filipino
-Firipinjin
-フィリピン人
-
-フィリピノご
-Filipino
-Firipinogo
-フィリピノ語
-
-ロシアじん
-Russian
-Roshiajin
-ロシア人
-
-ロシアご
-Russian
-Roshiago
-ロシア語
-
-インドじん
-Indian
-Indojin
-インド人
-
-ヒンディーご
-Hindi
-Hindiigo
-ヒンディー語
-
-`;
-
-allUltimateWords["Extra 02"] = `
-さとう
-Sato
-satou
-佐藤
-
-すずき
-Suzuki
-suzuki
-鈴木
-
-たかはし
-Takahashi
-takahashi
-高橋
-
-たなか
-Tanaka
-tanaka
-田中
-
-わたなべ
-Watanabe
-watanabe
-渡辺
-
-いとう
-Ito
-itou
-伊藤
-
-やまもと
-Yamamoto
-yamamoto
-山本
-
-なかむら
-Nakamura
-nakamura
-中村
-
-こばやし
-Kobayashi
-kobayashi
-小林
-
-かとう
-Kato
-katou
-加藤
-
-よしだ
-Yoshida
-yoshida
-吉田
-
-やまだ
-Yamada
-yamada
-山田
-
-ささき
-Sasaki
-sasaki
-佐々木
-
-さいとう
-Saito
-saitou
-斎藤
-
-やまぐち
-Yamaguchi
-yamaguchi
-山口
-
-まつもと
-Matsumoto
-matsumoto
-松本
-
-いのうえ
-Inoue
-inoue
-井上
-
-きむら
-Kimura
-kimura
-木村
-
-はやし
-Hayashi
-hayashi
-林
-
-しみず
-Shimizu
-shimizu
-清水
-
-`;
-
-allUltimateWords["Extra 02 - Hard"] = ``;
-
 allUltimateWords["Extra 03"] = `
 アクセサリー
 accessories
 akusesarii
 アクセサリー
-
-ちゅうしゃじょう
-car park / parking lot
-chuushajou
-駐車場
 
 めがね
 spectacles, glasses
@@ -7216,25 +5025,10 @@ megane
 `;
 
 allUltimateWords["Extra 03 - Hard"] = `
-おくじょう ゆうえんち
-amusement area
-okujou yuuenchi
-屋上遊園地
-
-もよおしもの かいじょう
-event hall
-moyooshimono kaijou
-催し物会場
-
 ぶんぼうぐ
 stationery
 bunbougu
 文房具
-
-しょっき
-tableware / kitchenware
-shokki
-食器
 
 しんしふく
 men's wear
@@ -7246,24 +5040,9 @@ ladies' wear
 fujinfuku
 婦人服
 
-こどもふく
-children's clothes
-kodomofuku
-子ども服
-
 `;
 
 allUltimateWords["Extra 04"] = `
-けいさつしょ
-police station
-keisatsusho
-警察署
-
-しょうぼうしょ
-fire/ambulance station
-shoubousho
-消防署
-
 じほう
 time signal
 jihou
@@ -7283,11 +5062,6 @@ hyougoken
 Chuo Ward
 chuuouku
 中央区
-
-さんのみや
-Sannomiya (town name)
-sannomiya
-三宮
 
 ごう
 apartment number
@@ -7332,16 +5106,6 @@ Constitution Memorial Day
 kenpou kinenbi
 憲法記念日
 
-しゅくさいじつ
-national holiday
-shukusaijitsu
-祝祭日
-
-がんじつ
-New Year's Day
-ganjitsu
-元日
-
 けんこくきねんのひ
 National Foundation Day
 kenkoku kinen no hi
@@ -7381,11 +5145,6 @@ seijin no hi
 2nd Monday of January
 ichigatsu no dai-ni getsuyoubi
 1月の第2月曜日
-
-たいいくのひ
-Health and Sports Day
-taiiku no hi
-体育の日
 
 ぶんかのひ
 Culture Day
@@ -7454,11 +5213,6 @@ suika
 octopus
 tako
 たこ
-
-やさい
-vegetables
-yasai
-野菜
 
 バナナ
 banana
@@ -7570,192 +5324,11 @@ mame
 
 `;
 
-allUltimateWords["Extra 07"] = `
-そぼ
-grandmother (my)
-sobo
-祖母
-
-そふ
-grandfather (my)
-sofu
-祖父
-
-そふぼ
-grandparents (my)
-sofubo
-祖父母
-
-はは
-mother (my)
-haha
-母
-
-ちち
-father (my)
-chichi
-父
-
-あね
-elder sister (my)
-ane
-姉
-
-あni
-elder brother (my)
-ani
-兄
-
-いもうと
-younger sister (my)
-imouto
-妹
-
-おとうと
-younger brother (my)
-otouto
-弟
-
-きょうだい
-brothers and sisters (my)
-kyoudai
-兄弟
-
-つま
-wife (my)
-tsuma
-妻
-
-おっと
-husband (my)
-otto
-夫
-
-ふうふ
-husband and wife
-fuufu
-夫婦
-
-むすめ
-daughter (my)
-musume
-娘
-
-むすこ
-son (my)
-musuko
-息子
-
-こども
-children (my)
-kodomo
-子ども
-
-おばあさん
-grandmother (someone else's)
-obaasan
-おばあさん
-
-おじいさん
-grandfather (someone else's)
-ojiisan
-おじいさん
-
-おかあさん
-mother (someone else's)
-okaasan
-お母さん
-
-おとうさん
-father (someone else's)
-otousan
-お父さん
-
-おねえさん
-elder sister (someone else's)
-oneesan
-お姉さん
-
-おにいさん
-elder brother (someone else's)
-oniisan
-お兄さん
-
-いもうとさん
-younger sister (someone else's)
-imoutosan
-妹さん
-
-おとうとさん
-younger brother (someone else's)
-otoutosan
-弟さん
-
-ごきょうだい
-brothers and sisters (someone else's)
-gokyoudai
-ご兄弟
-
-おくさん
-wife (someone else's)
-okusan
-奥さん
-
-ごしゅじん
-husband (someone else's)
-goshujin
-ご主人
-
-ごふうふ
-married couple (someone else's)
-gofuufu
-ご夫婦
-
-むすめさん
-daughter (someone else's)
-musumesan
-娘さん
-
-むすこさん
-son (someone else's)
-musukosan
-息子さん
-
-おこさん
-children (someone else's)
-okosan
-お子さん
-
-`;
+allUltimateWords["Extra 07"] = ``;
 
 allUltimateWords["Extra 07 - Hard"] = ``;
 
 allUltimateWords["Extra 08"] = `
-しろ
-white
-Shiro
-白
-
-くろ
-black
-Kuro
-黒
-
-あか
-red
-Aka
-赤
-
-あお
-blue
-Ao
-青
-
-みどり
-green
-Midori
-緑
-
 むらさき
 purple
 Murasaki
@@ -7811,24 +5384,9 @@ blue (adjective)
 Aoi
 青い
 
-からい
-hot (spicy)
-Karai
-辛い
-
 `;
 
 allUltimateWords["Extra 08 - Hard"] = `
-きいろ
-yellow
-Kiiro
-黄色
-
-ちゃいろ
-brown
-Chairo
-茶色
-
 しおからい
 salty
 Shiokarai
@@ -7862,25 +5420,10 @@ Latin-American
 Raten
 ラテン
 
-けんどう
-Japanese fencing
-Kendou
-剣道
-
-クラシック
-classical
-Kurashikku
-クラシック
-
 ドキュメンタリー
 documentary
 Dokyumentarii
 ドキュメンタリー
-
-れんあい
-romance
-Ren'ai
-恋愛
 
 ポップス
 pop
@@ -7903,7 +5446,7 @@ Horaa
 ホラー
 
 アニメ
-cartoon
+cartoon, anime
 Anime
 アニメ
 
@@ -7988,11 +5531,6 @@ Inside the house
 uchi no naka
 うちの中
 
-げんかん
-entrance hall
-Genkan
-玄関
-
 ふろば
 bathroom
 Furoba
@@ -8007,16 +5545,6 @@ Senmenjo
 living room
 Ima
 居間
-
-しんしつ
-bedroom
-Shinshitsu
-寝室
-
-ろうか
-hall
-Rouka
-廊下
 
 ベランダ
 balcony
@@ -8074,7 +5602,7 @@ Udon
 うどん
 
 そば
-Japanese noodles made from buckwheat flour
+Japanese noodles made from buckwheat flour, soba
 Soba
 そば
 
@@ -8109,7 +5637,7 @@ Toosuto
 トースト
 
 ココア
-cocoa
+cocoa, hot chocolate
 Kokoa
 ココア
 
@@ -8129,12 +5657,12 @@ Onigiri
 おにぎり
 
 てんぷら
-fried seafood and vegetables
+fried seafood and vegetables, tempura
 Tenpura
 てんぷら
 
 すし
-vinegared rice with raw fish
+vinegared rice with raw fish, sushi
 Sushi
 すし
 
@@ -8209,11 +5737,6 @@ Tokyo
 Toukyou
 東京
 
-にっこう
-Nikko
-Nikkou
-日光
-
 ひめじじょう
 Himeji Castle
 Himejijou
@@ -8247,29 +5770,9 @@ Festivals and places of note
 matsuri to meisho
 祭りと名所
 
-げんばくドーム
-Atomic Bomb Dome
-Genbaku Doomu
-原爆ドーム
-
-だいぶつ
-Great Buddha
-Daibutsu
-大仏
-
-とうしょうぐう
-Toshogu Shrine
-Toushouguu
-東照宮
-
 `;
 
 allUltimateWords["Extra 13"] = `
-えいがかん
-cinema, movie theater
-Eigakan
-映画館
-
 にくや
 butcher's shop
 Nikuya
@@ -8280,30 +5783,10 @@ off-licence, liquor store
 Sakaya
 酒屋
 
-ゆうえんち
-amusement park
-Yuuenchi
-遊園地
-
 モスク
 Mosque
 Mosuku
 モスク
-
-けいさつしょ
-police station
-Keisatsusho
-警察署
-
-しょうぼうしょ
-fire station
-Shoubousho
-消防署
-
-ちゅうしゃじょう
-car park, parking lot
-Chuushajou
-駐車場
 
 パンや
 bakery
@@ -8314,11 +5797,6 @@ Pan-ya
 fishmonger's, fish store
 Sakanaya
 魚屋
-
-きっさてん
-café, coffee shop
-Kissaten
-喫茶店
 
 `;
 
@@ -8332,11 +5810,6 @@ Nyuukokukanrikyoku
 Christian church
 Kyoukai
 教会
-
-はくぶつかん
-museum
-Hakubutsukan
-博物館
 
 やおや
 greengrocer's, fruit and vegetable store
@@ -8406,29 +5879,9 @@ bus terminal
 Basu taaminaru
 バスターミナル
 
-じこくひょう
-timetable
-Jikokuhyou
-時刻表
-
 `;
 
 allUltimateWords["Extra 14 - Hard"] = `
-かいさつぐち
-ticket barrier
-Kaisatsuguchi
-改札口
-
-かいすうけん
-coupon ticket
-Kaisuuken
-回数券
-
-ていきけん
-season ticket, commuter pass
-Teikiken
-定期券
-
 せいさんき
 fare adjustment machine
 Seisanki
@@ -8472,11 +5925,6 @@ politician
 Seijika
 政治家
 
-けいさつかん
-policeman
-Keisatsukan
-警察官
-
 ゆうびんきょくいん
 postman
 Yuubinkyokuin
@@ -8491,11 +5939,6 @@ Tenin
 teacher
 Kyoushi
 教師
-
-べんごし
-solicitor, lawyer
-Bengoshi
-弁護士
 
 デザイナー
 designer
@@ -8533,20 +5976,10 @@ Haiyuu
 `;
 
 allUltimateWords["Extra 16"] = `
-かくにん
-CONFIRM
-Kakunin
-確認
-
 おひきだし
 withdrawal
 Ohikidashi
 お引き出し
-
-あんしょうばんごう
-personal identification number (PIN)
-Anshoubangou
-暗証番号
 
 えん
 YEN
@@ -8571,11 +6004,6 @@ deposit
 Oazukeire
 お預け入れ
 
-おふりこみ
-payment
-Ofurikomi
-お振り込み
-
 おふりかえ
 transfer
 Ofurikae
@@ -8593,11 +6021,6 @@ Infuruenza
 back
 Senaka
 背中
-
-どう しましたか。
-What seems to be the problem?
-Dou shimashita ka.
-どう しましたか。
 
 あたまが いたい
 have a headache
@@ -8618,16 +6041,6 @@ Ha ga itai
 have a temperature, fever
 Netsu ga arimasu
 熱が あります
-
-あたま
-head
-Atama
-頭
-
-あし
-leg, foot
-Ashi
-足
 
 て
 hand
@@ -8775,35 +6188,10 @@ Actions
 ugoki
 動き
 
-のぼる
-climb
-Noboru
-登る
-
-はしる
-run
-Hashiru
-走る
-
-およぐ
-swim
-Oyogu
-泳ぐ
-
 ける
 kick
 Keru
 ける
-
-ひく
-pull
-Hiku
-引く
-
-おす
-push
-Osu
-押す
 
 `;
 
@@ -8814,11 +6202,6 @@ allUltimateWords["Extra 19"] = `
 go, shogi
 Igo, Shougi
 囲碁・将棋
-
-かぶき
-Kabuki
-Kabuki
-歌舞伎
 
 のう
 Noh
@@ -8835,20 +6218,10 @@ sumo
 Sumou
 相撲
 
-けんどう
-kendo
-Kendou
-剣道
-
 まんざい・らくご
 manzai, rakugo
 Manzai, Rakugo
 漫才・落語
-
-パチンコ
-pachinko
-Pachinko
-パチンコ
 
 `;
 
@@ -8862,11 +6235,6 @@ dentou bunka / goraku
 calligraphy
 Shodou
 書道
-
-ぼんおどり
-Bon dance
-Bon odori
-盆踊り
 
 `;
 
@@ -8896,13 +6264,7 @@ itai ndesu
 
 `;
 
-allUltimateWords["Extra 21"] = `
-くに
-nation
-Kuni
-国
-
-`;
+allUltimateWords["Extra 21"] = ``;
 
 allUltimateWords["Extra 21 - Hard"] = `
 とどうふけん
@@ -8910,21 +6272,11 @@ prefecture (all 47 prefectures)
 Todoufuken
 都道府県
 
-まち
-town
-Machi
-町
-
 `;
 
 allUltimateWords["Extra 22"] = `
-いふく
-Clothes
-ifuku
-衣服
-
 マフラー
-scarf, muffler
+scarf, muffler, winter scarf
 Mafuraa
 マフラー
 
@@ -8942,11 +6294,6 @@ Zouri
 tabi (one type socks)
 Tabi
 たび
-
-うわぎ
-jacket
-Uwagi
-上着
 
 （オーバー）コート
 overcoat, coat
@@ -8973,20 +6320,10 @@ panties
 Pantii
 パンティー
 
-きもの
-kimono
-Kimono
-着物
-
 レインコート
 raincoat
 Reinkooto
 レインコート
-
-ネクタイ
-tie, necktie
-Nekutai
-ネクタイ
 
 ベルト
 belt
@@ -9084,39 +6421,13 @@ Usetsukinshi
 
 `;
 
-allUltimateWords["Extra 24"] = `
-にゅうがくいわい
-Gift celebrating admission to school (money, stationery, book, etc.)
-Nyuugakuiwai
-入学祝い
-
-けっこんいわい
-Wedding gift (money, household goods, etc.)
-Kekkon'iwai
-結婚祝い
-
-`;
+allUltimateWords["Extra 24"] = ``;
 
 allUltimateWords["Extra 24 - Hard"] = `
 ぞうとうのしゅうかん
 Exchanging gifts
 zoutou no shuukan
 贈答の習慣
-
-としだま
-Small gift of money given by parents and relatives to children on New Year’s Day
-Toshidama
-お年玉
-
-しゅっさんいわい
-Gift celebrating a birth (baby clothes, toys, etc.)
-Shussaniwai
-出産祝い
-
-おこうでん
-Condolence money
-Okouden
-お香典
 
 `;
 
@@ -9125,11 +6436,6 @@ allUltimateWords["Extra 25"] = `
 enter school
 Gakkou ni hairimasu
 学校に入ります
-
-けっこんします
-get married
-Kekkonshimasu
-結婚します
 
 こどもがうまれます
 have a child
@@ -9323,11 +6629,6 @@ Service size
 Saabisu saizu
 サービスサイズ
 
-コンビニ
-Convenience store
-Konbini
-コンビニ
-
 `;
 
 allUltimateWords["Extra 27 - Hard"] = `
@@ -9345,11 +6646,6 @@ Yakimashi
 Stain removal
 Shiminuki
 染み抜き
-
-ぼうすい かこう
-Waterproofing / Waterproof
-Bousui kakou
-防水 加工
 
 ひきのばし
 Enlargement
@@ -9384,25 +6680,10 @@ Living/dining room with kitchen (LDK)
 Ima, shokudou, daidokoro (LDK)
 居間・食堂・台所 (LDK)
 
-マンション
-Condominium (reinforced concrete)
-Manshon
-マンション
-
-アパート
-Apartment building
-Apaato
-アパート
-
 やちん
-Rental fee / Rent
+house rent, Rental fee / Rent
 Yachin
 家賃
-
-7まん4せんえん
-74,000 yen
-Nana-man yon-sen en
-7万4千円
 
 6,000えん
 6,000 yen
@@ -9522,16 +6803,6 @@ State
 Joutai
 状態
 
-ようす
-appearance
-yousu
-様子
-
-ふとります
-Fat / To be overweight
-Futorimasu
-太ります
-
 やせます
 Thin / To be skinny
 Yasemasu
@@ -9541,11 +6812,6 @@ Yasemasu
 Bulging / To be swollen
 Fukuramimasu
 膨らみます
-
-まがります
-Bent / To be curved
-Magarimasu
-曲がります
 
 ゆがみます
 Distorted / To be warped
@@ -9588,7 +6854,7 @@ Kawakimasu
 乾きます
 
 ぬれます
-Wet / To be wet
+get wet, Wet / To be wet
 Nuremasu
 ぬれます
 
@@ -9614,11 +6880,6 @@ Naname mae
 The second from the top
 Ue kara nidanme
 上から 2段目
-
-おく
-Inner part / Back, inside
-Oku
-Oku
 
 (つくえの) まわり
 Around (the desk)
@@ -9665,21 +6926,6 @@ sociology
 Shakaigaku
 社会学
 
-げいじゅつ
-arts
-Geijutsu
-芸術
-
-たいいくがく
-physical education
-Taiikugaku
-体育学
-
-せんもん
-Fields of study
-Senmon
-専門
-
 せいじがく
 politics
 Seijigaku
@@ -9689,11 +6935,6 @@ Seijigaku
 international relations
 Kokusai kankeigaku
 国際関係学
-
-けいざいがく
-economics
-Keizaigaku
-経済学
 
 `;
 
@@ -9718,11 +6959,6 @@ environmental science
 Kankyou kagaku
 環境科学
 
-ぶつりがく
-physics
-Butsurigaku
-物理学
-
 しんりがく
 psychology
 Shinrigaku
@@ -9732,11 +6968,6 @@ Shinrigaku
 philosophy
 Tetsugaku
 哲学
-
-いがく
-medical science
-Igaku
-医学
 
 きょういくがく
 education
@@ -9748,11 +6979,6 @@ agriculture
 Nougaku
 農学
 
-ほうりつがく
-law
-Houritsugaku
-法律学
-
 ちがく
 geology
 Chigaku
@@ -9763,45 +6989,10 @@ geography
 Chirigaku
 地理学
 
-すうがく
-mathematics
-Suugaku
-数学
-
-かがく
-chemistry
-Kagaku
-化学
-
-せいかがく
-biochemistry
-Seikagaku
-生化学
-
-せいぶつがく
-biology
-Seibutsu-gaku
-生物学
-
 どぼくこうがく
 civil engineering
 Doboku kougaku
 土木工学
-
-でんきこうがく
-electrical engineering
-Denki kougaku
-電気工学
-
-でんしこうがく
-electronics
-Denshi kougaku
-電子工学
-
-いでんしこうがく
-genetic engineering
-Idenshi kougaku
-遺伝子工学
 
 きかいこうがく
 mechanical engineering
@@ -9821,30 +7012,10 @@ Konpyuutaa kougaku
 `;
 
 allUltimateWords["Extra 32"] = `
-はれます
-clear, fair
-Haremasu
-晴れます
-
-くもります
-cloudy
-Kumorimasu
-曇ります
-
 ゆきがふります
 snow
 Yuki ga furimasu
 雪が降ります
-
-てんきよほう
-Weather forecast
-Tenki yohou
-天気予報
-
-あめがふります
-rain
-Ame ga furimasu
-雨が降ります
 
 とうほくちほう
 Tohoku area
@@ -9881,11 +7052,6 @@ Kyushu area
 Kyuushuu chihou
 九州地方
 
-かぜがふきます
-wind
-Kaze ga fukimasu
-風が吹きます
-
 `;
 
 allUltimateWords["Extra 32 - Hard"] = `
@@ -9909,21 +7075,6 @@ probability of rain
 Kousui kakuritsu paasento
 降水確率 % (パーセント)
 
-さいこうきおん ど
-the highest temperature
-Saikou kion do
-最高気温 ℃ (ど)
-
-さいていきおん ど
-the lowest temperature
-Saitei kion do
-最低気温 ℃ (ど)
-
-しつどがたかい / ひくい
-humidity (high / low)
-Shitsudo ga takai / hikui
-湿度が高い / 低い
-
 さわやか [な]
 refreshing
 Sawayaka [na]
@@ -9946,16 +7097,6 @@ allUltimateWords["Extra 33"] = `
 In preparation
 Junbichuu
 準備中
-
-きんえんせき
-No smoking seat
-Kin'enseki
-禁煙席
-
-ひじょうぐち
-Emergency exit
-Hijouguchi
-非常口
 
 `;
 
@@ -10038,19 +7179,9 @@ miso
 Miso
 みそ
 
-なべ
-pot, pan
-Nabe
-なべ
-
 `;
 
 allUltimateWords["Extra 34 - Hard"] = `
-せんぬき
-bottle opener
-Sennuki
-栓抜き
-
 ざる
 colander
 Zaru
@@ -10070,31 +7201,6 @@ Nagashi [dai]
 ventilation fan
 Kankisen
 換気扇
-
-いためます
-shallow fry / stir fry
-Itamemasu
-炒めます
-
-むきます
-peel, pare
-Mukimasu
-剥きます
-
-きざみます
-chop, mince
-Kizamimasu
-刻みます
-
-かきまぜます
-stir
-Kakimazemasu
-かき混ぜます
-
-あぶら
-oil, fat
-Abura
-油
 
 からし (マスタード)
 mustard
@@ -10121,11 +7227,6 @@ Japanese horseradish
 Wasabi
 わさび
 
-ふた
-lid
-Futa
-ふた
-
 まないた
 cutting board
 Manaita
@@ -10135,11 +7236,6 @@ Manaita
 kitchen towel
 Fukin
 ふきん
-
-でんしオーブンレンジ
-microwave oven
-Denshi oubun renji
-電子オーブンレンジ
 
 すいはんき
 rice cooker
@@ -10173,13 +7269,7 @@ Su
 
 `;
 
-allUltimateWords["Extra 35"] = `
-ことわざ
-Proverbs
-Kotowaza
-ことわざ
-
-`;
+allUltimateWords["Extra 35"] = ``;
 
 allUltimateWords["Extra 35 - Hard"] = `
 すめばみやこ
@@ -10211,11 +7301,6 @@ Hana yori dango
 Speak of the devil and he is sure to appear.
 Uwasa o sureba kage
 うわさをすれば影
-
-てんせきこけをしょうぜず
-A rolling stone gathers no moss.
-Tenseki koke o shouzezu
-転石苔を生ぜず
 
 `;
 
@@ -10265,11 +7350,6 @@ calcium
 Karushiumu
 カルシウム
 
-たばこを すう
-smoke
-Tabako o suu
-たばこを 吸う
-
 よく おさけを のむ
 drink a lot
 Yoku osake o nomu
@@ -10285,16 +7365,6 @@ take exercise / do sports
 Undou o suru / Supoutsu o suru
 運動をする / スポーツをする
 
-まめ
-beans
-Mame
-豆
-
-あぶら
-fat, oil
-Abura
-あぶら
-
 `;
 
 allUltimateWords["Extra 36 - Hard"] = `
@@ -10302,21 +7372,6 @@ allUltimateWords["Extra 36 - Hard"] = `
 sit up late
 Yofukashi o suru
 夜更かしを する
-
-たんすいかぶつ
-carbohydrates
-Tansuikabutsu
-炭水化物
-
-たんぱくしつ
-protein
-Tanpakushitsu
-たんぱく質
-
-ししつ
-fat, oil
-Shishitsu
-脂質
 
 のり
 laver / Dried seaweed sheets
@@ -10361,25 +7416,10 @@ stab
 Sashimasu
 刺します
 
-かみます
-bite
-Kamimasu
-かみます
-
-たすけます
-rescue
-Tasukemasu
-助けます
-
 ぬすみます
 steal
 Nusumimasu
 盗みます
-
-じこ・じけん
-Incident
-Jiko, jiken
-事故・事件
 
 ころします
 kill
@@ -10395,11 +7435,6 @@ Haijakku shimasu
 explode
 Bakuhatsu shimasu
 爆発します
-
-はこびます
-carry
-Hakobimasu
-運びます
 
 `;
 
@@ -10457,16 +7492,6 @@ The Bon Festival (Aug. 13th–15th)
 Obon (Hachi-gatsu juusan-nichi ~ juugo-nichi)
 お盆 (8月13日〜15日)
 
-おしょうがつ (1がつ1にち〜3にち)
-New Year's Day (Jan. 1st–3rd)
-Oshougatsu (Ichi-gatsu tachi-ka ~ mik-ka)
-お正月 (1月1日〜3日)
-
-こどものひ (5がつ5にち)
-Children's Day (May 5th)
-Kodomo no hi (Go-gatsu go-ka)
-こどもの日 (5月5日)
-
 `;
 
 allUltimateWords["Extra 38 - Hard"] = `
@@ -10493,30 +7518,10 @@ be scared / heart pounding
 Dokidoki suru
 どきどきする
 
-うれしい
-happy
-Ureshii
-うれしい
-
-きもち
-Feelings
-Kimochi
-気持ち
-
-たのしい
-pleasant, enjoyable
-Tanoshii
-楽しい
-
 おもしろい
 amusing, interesting
 Omoshiroi
 おもしろい
-
-びっくりする
-be surprised
-Bikkuri suru
-びっくりする
 
 がっかりする
 be disappointed
@@ -10629,35 +7634,10 @@ check
 Chekku
 チェック
 
-ながさ
-Length
-Nagasa
-長さ
-
-おもさ
-Weight
-Omosa
-重さ
-
-グラム
-gram
-Guramu
-グラム
-
 キロ [グラム]
 kilogram
 Kiro [guramu]
 キロ [グラム]
-
-せん
-Lines
-Sen
-線
-
-かたち
-Shapes
-Katachi
-形
 
 `;
 
@@ -10666,16 +7646,6 @@ allUltimateWords["Extra 40 - Hard"] = `
 Measurement, shapes & patterns
 Tan'i, sen, katachi, moyou
 単位・線・形・模様
-
-めんせき
-Area
-Menseki
-面積
-
-たいせき・ようせき
-Volume and capacity
-Taiseki, youseki
-体積・容積
 
 へいほうセンチメートル
 square centimeter
@@ -10686,11 +7656,6 @@ Heihou senchimētoru
 cubic centimeter
 Rippou senchimētoru
 立方センチメートル
-
-けいさん
-Calculation
-Keisan
-計算
 
 たす
 plus
@@ -10810,23 +7775,13 @@ dog walking
 Inu no sanpo
 犬の 散歩
 
-にほんごきょうしつ
-Japanese language class
-Nihon-go kyoushitsu
-日本語教室
-
 バザー
 Bazaar
 Bazā
 バザー
 
-カラオケ
-karaoke sets
-Karaoke
-カラオケ
-
 ビデオ カメラ
-video cameras
+video cameras, camcorder
 Bideo kamera
 ビデオ カメラ
 
@@ -10916,16 +7871,6 @@ pencil sharpener
 Enpitsu kezuri
 鉛筆削り
 
-けいさんき
-calculator
-Keisanki
-計算機
-
-けいさんする
-calculate
-Keisan suru
-計算する
-
 ファイルする
 file
 Fairu suru
@@ -10936,21 +7881,6 @@ clip
 Kurippu
 クリップ
 
-けしごむ
-eraser
-Keshigomu
-消しゴム
-
-けす
-erase
-Kesu
-消す
-
-きる
-cut
-Kiru
-切る
-
 セロテープ
 Sellotape
 Serotēpu
@@ -10960,11 +7890,6 @@ Serotēpu
 hole punch
 Panchi
 パンチ
-
-きる
-cut
-Kiru
-切る
 
 まげる / きる
 bend / cut
@@ -11017,11 +7942,6 @@ Jougi (Monosashi)
 `;
 
 allUltimateWords["Extra 43"] = `
-きびしい
-strict, severe
-Kibishii
-厳しい
-
 わがまま [な]
 selfish
 Wagamama [na]
@@ -11031,11 +7951,6 @@ Wagamama [na]
 gloomy
 Kurai
 暗い
-
-つめたい
-cold
-Tsumetai
-冷たい
 
 きが ながい
 slow-tempered, patient
@@ -11067,49 +7982,9 @@ quiet, gentle
 Otonashii
 おとなしい
 
-やさしい
-kind
-Yasashii
-優しい
-
 `;
 
 allUltimateWords["Extra 43 - Hard"] = `
-せいかく・せいしつ
-Personality & nature
-Seikaku, seishitsu
-性格・性質
-
-しんけいしつ [な]
-nervous
-Shinkeishitsu [na]
-神経質 [な]
-
-かっぱつ [な]
-active
-Kappatsu [na]
-活発 [な]
-
-せいじつ [な]
-sincere
-Seijitsu [na]
-誠実 [な]
-
-すなお [な]
-obedient, gentle
-Sunao [na]
-素直 [な]
-
-まじめ [な]
-serious, earnest
-Majime [na]
-まじめ [な]
-
-ふまじめ [な]
-frivolous
-Fumajime [na]
-ふまじめ [な]
-
 がんこ [な]
 stubborn
 Ganko [na]
@@ -11178,29 +8053,9 @@ Various Hairstyles
 Iroiro na heasutairu
 いろいろな ヘアスタイル
 
-ボブ
-bob
-Bobu
-ボブ
-
-ポニーテール
-ponytail
-Poniitēru
-ポニーテール
-
 `;
 
 allUltimateWords["Extra 44 - Hard"] = `
-リーゼント
-ducktail
-Riizento
-リーゼント
-
-ソバージュ
-shaggy perm
-Sobaaju
-ソバージュ
-
 そる [ひげ/かおを〜]
 shave [beard/face]
 Soru [hige / kao o ~]
@@ -11210,26 +8065,6 @@ Soru [hige / kao o ~]
 so that my eyebrows are covered.
 Mayu ga kakureru kurai ni
 まゆが 隠れる くらいに
-
-まるがり
-close-cropped cut
-Marugari
-丸刈り
-
-みつあみ
-braids
-Mitsuami
-三つ編み
-
-おかっぱ
-bobbed hair
-Okappa
-おかっぱ
-
-レイヤーカット
-layered cut
-Reiyaa katto
-レイヤーカット
 
 `;
 
@@ -11370,11 +8205,6 @@ jam
 Jamu
 ジャム
 
-ハム
-ham
-Hamu
-ハム
-
 クッキー
 cookie
 Kukkii
@@ -11389,16 +8219,6 @@ Chiizu
 apron
 Epuron
 エプロン
-
-びょうき
-illness
-Byouki
-病気
-
-げいじゅつ
-arts
-Geijutsu
-芸術
 
 メロディー
 melody
@@ -11555,20 +8375,10 @@ tweezers
 Pinsetto
 ピンセット
 
-ゴム
-rubber
-Gomu
-ゴム
-
 ペンキ
 paint
 Penki
 ペンキ
-
-ガラス
-glass
-Garasu
-ガラス
 
 コック
 cook
@@ -11746,11 +8556,6 @@ do some household chores
 Uchi no shigoto o tetsudau
 うちの 仕事を 手伝う
 
-おじいちゃん、おばあちゃんの せわをする
-take care of their sister, brother, grandfather and grandmother
-Ojiichan, obaachan no sewa o suru
-おじいちゃん、おばあちゃんの 世話をする
-
 ならいごと
 Lessons / Extracurricular activities
 Naraigoto
@@ -11791,16 +8596,6 @@ have confidence
 Jishin o motsu
 自信を 持つ
 
-せきにんを もつ
-take responsibility
-Sekinin o motsu
-責任を 持つ
-
-がまんする
-be patient
-Gaman suru
-我慢する
-
 `;
 
 allUltimateWords["Extra 48 - Hard"] = ``;
@@ -11815,11 +8610,6 @@ Denwa no kakekata
 Is this ... residence?
 ...-san no otaku de irasshaimasu ka.
 ...さんの お宅で いらっしゃいますか。
-
-もしもし、...。
-Hello. Is this ...?
-Moshimoshi, ...
-もしもし、...。
 
 はい、...で ございますが、...さんで いらっしゃいますか。
 Yes, this is ..., calling. Can I speak to Mr. ...?
@@ -11941,11 +8731,6 @@ postal zip code
 Yuubin bangou
 郵便番号
 
-さま
-Mr. / Ms. / Mrs. (addressee title)
-Sama
-様
-
 とうきょうと ちよだく かんだ にしきちょう 1-16-3
 Tokyo-to, Chiyoda-ku, Kanda Nishikichou 1-16-3
 Toukyou-to Chiyoda-ku Kanda Nishikichou 1-16-3
@@ -11975,1001 +8760,21 @@ Toukyou-to Adachi-ku Gotanno 1-14-1
 
 allUltimateWords["Extra 50 - Hard"] = ``;
 
-allUltimateWords["Convo E5"] = `
-はい みなさん こんにちは。
-Hello everyone.
-Hai minasan konnichiwa.
-はい皆さんこんにちは。
-
-こんにちは。
-Hello.
-Konnichiwa.
-こんにちは。
-
-はい おけさん こんにちは。
-Yes, hello Okkei-san.
-Hai Oke-san konnichiwa.
-はいオケさんこんにちは。
-
-しさん こんにちは。
-Hello Shun-san.
-Shi-san konnichiwa.
-しさんこんにちは。
-
-はい げんきですか。
-Yes, are you well?
-Hai genki desu ka.
-はい元気ですか。
-
-きょうも げんきです。げんきですか。
-I am fine today too. Are you well?
-Kyou mo genki desu. Genki desu ka.
-今日も元気です。元気ですか。
-
-げんきですよ。きょうは いつもより げんきですね。
-I am well! You seem more energetic today than usual.
-Genki desu yo. Kyou wa itsumo yori genki desu ne.
-元気ですよ。今日はいつもより元気ですね。
-
-きょうは ちょっと はしってきました。
-I ran a little bit today.
-Kyou wa chotto hashitte kimashita.
-今日はちょっと走ってきました。
-
-はしってきました。はい。そうか。
-You ran! Yes, I see.
-Hashitte kimashita. Hai. Sou ka.
-走ってきました。はい。そうか。
-
-はい。きょう げんき？
-Yes. Are you energetic today?
-Hai. Kyou genki?
-はい。今日元気？
-
-げんきです、げんきです。わたしは いつもどおり げんきです。
-I am energetic, I am energetic. I am fine as usual.
-Genki desu, genki desu. Watashi wa itsumo doori genki desu.
-元気です、元気です。私はいつも通り元気です。
-
-きのうは なにを たべましたか。
-What did you eat yesterday?
-Kinou wa nani o tabemashita ka.
-昨日は何を食べましたか。
-
-きのうは、きのうは すてーきを たべましたよ。
-Yesterday, yesterday I ate steak!
-Kinou wa, kinou wa suteeki o tabemashita yo.
-昨日は、昨日はステーキを食べましたよ。
-
-ええ、いいな！
-Oh, nice!
-Ee, iina!
-ええ、いいな！
-
-はい、すてーき おいしかった。きのう なにを たべましたか。
-Yes, the steak was delicious. What did you eat yesterday?
-Hai, suteeki oishikatta. Kinou nani o tabemashita ka.
-はい、ステーキ美味しかった。昨日何を食べましたか。
-
-きのうは おすしを たべました。
-I ate sushi yesterday.
-Kinou wa osushi o tabemashita.
-昨日はお寿司を食べました。
-
-いいな。
-Nice.
-Iina.
-いいな。
-
-じゃあ、たぶん きょう わたしは おすしを たべます。
-Well then, maybe I will eat sushi today.
-Jaa, tabun kyou watashi wa osushi o tabemasu.
-じゃあ corporate/formal: じゃあ多分今日私はお寿司を食べます。
-
-あ、じゃあ ぼくは すてーきを たべます。
-Ah, then I will eat steak.
-A, jaa boku wa suteeki o tabemasu.
-あじゃあ僕はステーキを食べます。
-
-え、このあと いっしょに ごはんを たべに いきましょう。
-Eh, let's go eat together after this.
-E, kono ato issho ni gohan o tabe ni ikimashou.
-え、この後一緒にご飯を食べに行きましょう。
-
-あ、もちろんですよ。
-Ah, of course!
-A, mochiron desu yo.
-あ、もちろんですよ。
-
-え、なにが すきですか？なに？なにを たべたいですか。
-Eh, what do you like? What? What do you want to eat?
-E, nani ga suki desu ka? Nani? Nani o tabetai desu ka.
-え、何が好きですか？何？何を食べたいですか。
-
-いんどかれーを たべたいです。
-I want to eat Indian curry.
-Indo karee o tabetai desu.
-インドカレーを食べたいです。
-
-ああ、いいですね。
-Ah, that is good.
-Aa, ii desu ne.
-ああいいですね。
-
-あ、わたしも さいきん たべていないから、たべに いきましょう。
-Ah, I haven't eaten it recently either, so let's go eat.
-A, watashi mo saikin tabete inai kara, tabe ni ikimashou.
-あ、私も最近食べていないから、食べに行きましょう。
-
-ああ、いきましょう。たべに いきましょう。いいですね。
-Ah, let's go! Let's go eat, that's great.
-Aa, ikimashou. Tabe ni ikimashou. Ii desu ne.
-ああ行きましょう。食べに行きましょう。いいですね。
-
-そうですね。きょうの とぴっくですよ、きょうの とぴっく。
-Yes, it is today's topic, today's topic.
-Sou desu ne. Kyou no topikku desu yo, kyou no topikku.
-そうですね。今日のトピックですよ、今日のトピック。
-
-きょうの とぴっくは わたしが だいすきな とぴっくです。
-Today's topic is a topic that I love.
-Kyou no topikku wa watashi ga daisuki na topikku desu.
-今日のトピックは私が大好きなトピックです。
-
-おお！
-Oh!
-Oo!
-おお！
-
-はい、きょうの とぴっくは りょこうです。
-Yes, today's topic is travel.
-Hai, kyou no topikku wa ryokou desu.
-はい、今日のトピックは旅行です。
-
-りょこうですか。
-Travel?
-Ryokou desu ka.
-旅行ですか。
-
-はい。たぶん みなさん りょこうが すきですよね。
-Yes. Probably everyone likes travel, right?
-Hai. Tabun minasan ryokou ga suki desu yo ne.
-はい。多分皆さん旅行が好きですよね。
-
-うん、ね。
-Yeah, right.
-Un, ne.
-うん、ね。
-
-うん。どこに いきたいですか？どこに いきたいですか？
-Yeah. Where do you want to go? Where do you want to go?
-Un. Doko ni ikitai desu ka? Doko ni ikitai desu ka?
-うん。どこに行きたいですか？どこに行きたいですか？
-
-にほんに いきたいですか？にほんの どこに いきたいですか？にほんで なにを したいですか？
-Do you want to go to Japan? Where in Japan do you want to go? What do you want to do in Japan?
-Nihon ni ikitai desu ka? Nihon no doko ni ikitai desu ka? Nihon de nani o shitai desu ka?
-日本に行きたいですか？日本のどこに行きたいですか？日本で何をしたいですか？
-
-りょこうに いくまえに なにを しなきゃいけませんか。
-What do you have to do before you go on a trip?
-Ryokou ni iku mae ni nani o shinakya ikemasen ka.
-旅行に行く前に何をしなきゃいけませんか。
-
-うん、ねえ、そうですよね。
-Yeah, that's true.
-Un, nee, sou desu ne.
-うん、ねえ、そうですよね。
-
-うん。じゃあ、ちょっと りょこうについて はなしましょう。
-Yeah. So let's talk a little bit about travel.
-Un. Jaa, chotto ryokou ni tsuite hanashimashou.
-うん。じゃあちょっと旅行について話しましょう。
-
-はなしましょう！
-Let's talk!
-Hanashimashou!
-話しましょう！
-
-うん。はい、え、どうですか？りょこう、うーん、なんか りょこうしますか。
-Yeah. Yes, eh, how about you? Travel, hmm, do you travel much?
-Un. Hai, e, dou desu ka? Ryokou, uun, nanka ryokou shimasu ka.
-うん。はい、え、どうですか？旅行、うーん、なんか旅行しますか。
-
-りょこうします。だいすきです。
-I travel. I love it.
-Ryokou shimasu. Daisuki desu.
-旅行します。大好きです。
-
-ああ、え、さいきんは りょこうしましたか。
-Ah, eh, have you travelled recently?
-Aa, e, saikin wa ryokou shimashita ka.
-ああ、え、最近は旅行しましたか。
-
-すこしまえに、はい、すいすに いきました。
-A little while ago, yes, I went to Switzerland.
-Sukoshi mae ni, hai, Suisu ni ikimashita.
-少し前に、はい、スイスに行きました。
-
-ええ、すごい、いいな、すいす！
-Wow, great, Switzerland is nice!
-Ee, sugoi, iina, Suisu!
-ええ、すごい、いいな、スイス！
-
-はい、とっても きれいでした。
-Yes, it was very beautiful.
-Hai, tottemo kirei deshita.
-はい、とっても綺麗でした。
-
-いや、いきたいです。わたしは いったことがないので、そう、いつか すいすに いってみたいですよ。
-Wow, I want to go. Since I've never been, yes, I want to try going to Switzerland someday.
-Iya, ikitai desu. Watashi wa itta koto ga nai node, sou, itsuka Suisu ni itte mitai desu yo.
-いや、行きたいです。私は行ったことがないので、そう、いつかスイスに行ってみたいですよ。
-
-うーん、ぼくも ずっと いきたいと おもっていました。
-Hmm, I had also always wanted to go.
-Uun, boku mo zutto ikitai to omotte imashita.
-うーん、僕もずっと行きたいと思っていました。
-
-へえ、きれいでしたか？
-Oh, was it beautiful?
-Hee, kirei deshita ka?
-へえ、綺麗でしたか？
-
-しぜんが ほんとうに きれいでした。
-The nature was truly beautiful.
-Shizen ga hontou ni kirei deshita.
-自然が本当に綺麗でした。
-
-ええ、いいですね。すいすで なにを しましたか。
-Oh, nice. What did you do in Switzerland?
-Ee, ii desu ne. Suisu de nani o shimashita ka.
-ええいいですね。スイスで何をしましたか。
-
-あるぷすの やまに のぼったり、でんしゃで りょこうしたり しました。
-I climbed the Alps, traveled by train, and so on.
-Arupusu no yama ni nobottari, densha de ryokou shitari shimashita.
-アルプスの山に登ったり、電車で旅行したりしました。
-
-すごいね。たくさん いろいろな ことが できましたね。
-Great! You were able to do many different things.
-Sugoi ne. Takusan iroiro na koto ga dekimashita ne.
-すごいね。たくさん色々なことができました。
-
-いいですね、いいな。え、どのくらい すいすに いましたか。
-Nice, nice. Eh, how long were you in Switzerland?
-Ii desu ne, iina. E, dono kurai Suisu ni imashita ka.
-いいですね、いいな。え、どのくらいスイスにいましたか。
-
-いっかげつぐらい いました。
-I was there for about one month.
-Ikkagetsu gurai imashita.
-1ヶ月ぐらいました。
-
-ながいですね、ながいですね。
-That's long, that's long.
-Nagai desu ne, nagai desu ne.
-長いですね、長いですね。
-
-はい。じつは ともだちが すいすの ひと なので、はい、え、いえに とまりました。
-Yes. Actually, my friend is Swiss, so yes, I stayed at their house.
-Hai. Jitsu wa tomodachi ga Suisu no hito nano de, hai, e, ie ni tomarimashita.
-はい。実は友達がスイスの人なので、はい、え、家に泊まりました。
-
-あ、よかったですね！
-Ah, that was good!
-A, yokatta desu ne!
-あ、良かったですね！
-
-うん。だから おかねを あまり つかいませんでした。
-Yeah. So I didn't spend much money.
-Un. Dakara okane o amari tsukaimasen deshita.
-うん。だからお金をあまり使いませんでした。
-
-あ、いいですね。ま、すいすは ぶっかが たかいですよね。
-Ah, that's good. Well, Switzerland has high prices, doesn't it?
-A, ii desu ne. Ma, Suisu wa bukka ga takai desu ne.
-あ、いいですね。ま、スイスは物価が高いですよね。
-
-すごく たかいです。
-It is very expensive.
-Sugoku takai desu.
-すごく高いです。
-
-すごく たかいですね。にほんより たかいです。もう はい、そうですよね。
-Very expensive, isn't it? It's more expensive than Japan. Yes, that's right.
-Sugoku takai desu ne. Nihon yori takai desu. Mou hai, sou desu ne.
-すごく高いですね。日本より高いです。もうはい、そうですよね。
-
-え、じゃあ みずも やちんも、え、れすとらん こーひーも ぜんぶ はい、たかい、たかかったですか。
-Eh, then water, rent, restaurant, coffee, everything was expensive/was it expensive?
-E, jaa mizu mo yachin mo, e, resutoran koohii mo zenbu hai, takai, takakatta desu ka.
-え、じゃあ水も家賃も、え、レストランコーヒーも全部はい、高い、高かったですか。
-
-はい。だから せつやく しなければ いけませんでした。
-Yes. So I had to economise.
-Hai. Dakara setsuyaku shinakereba ikemasen deshita.
-はい。だから節約しなければいけませんでした。
-
-うん。あ、じゃあ すいすに りょこうしている ときも、うん、せつやくを しなければ いけませんでしたか。
-Yeah. Oh, then when you were traveling in Switzerland, did you also have to economise?
-Un. A, jaa Suisu ni ryokou shite iru toki mo, un, setsuyaku o shinakereba ikemasen deshita ka.
-うん。あ、じゃあスイスに旅行している時も、うん、節約をしなければいけませんでしたか。
-
-はい。いつも すーぱーに いって、うんうん、たべものを かいました。
-Yes. I always went to the supermarket and bought food.
-Hai. Itsumo suupaa ni itte, un un, tabemono o kaimashita.
-はい。いつもスーパーに行って、うんうん、食べ物を買いました。
-
-ああ、でも すーぱーも たかいですよね。
-Ah, but supermarkets are also expensive, aren't they?
-Aa, demo suupaa mo takai desu ne.
-ああ、でもスーパーも高いですよね。
-
-すーぱーも たかかったです。
-Supermarkets were also expensive.
-Suupaa mo takakatta desu.
-スーパーも高かったです。
-
-へえ、そうか、そっか。
-Oh, really, I see.
-Hee, sou ka, sokka.
-へえ、そうか、そっか。
-
-はい。すいすで れすとらんに いきましたか。
-Yes. Did you go to a restaurant in Switzerland?
-Hai. Suisu de resutoran ni ikimashita ka.
-はい。スイスでレストランに行きましたか。
-
-いちどだけ いきました。
-I went only once.
-Ichido dake ikimashita.
-1度だけ行きました。
-
-いちどだけ いきました。じゃあ、すいすの れすとらんで なにを たべましたか。
-Only once. Well then, what did you eat at the restaurant in Switzerland?
-Ichido dake ikimashita. Jaa, Suisu no resutoran de nani o tabemashita ka.
-1度だけ行きました。じゃあスイスのレストランで何を食べましたか。
-
-え？すいすの ゆうめいな りょうりを たべました。
-Eh? I ate a famous Swiss dish.
-E? Suisu no yuumeina ryouri o tabemashita.
-え？スイスの有名な料理を食べました。
-
-なにですか。
-What is it?
-Nani desu ka.
-何ですか。
-
-じゃがいもと、うん、ちーずの たべものです。
-It's a food made of potatoes and cheese.
-Jagaimo to, un, chiizu no tabemono desu.
-じゃがいもと、うん、チーズの食べ物です。
-
-へえ。なまえは わかりませんか。あ、あ、わすれましたか。
-Oh. You don't know the name? Ah, did you forget?
-Hee. Namae wa wakarimasen ka. A, a, wasuremashita ka.
-へえ。名前は分かりませんか。あ、あ、忘れましたか。
-
-はい。でも おいしかったですよ！
-Yes. But it was delicious!
-Hai. Demo oishikatta desu yo!
-はい。でも美味しかったですよ！
-
-すいすは ちーずが ゆうめいですよね。
-Switzerland is famous for cheese, isn't it?
-Suisu wa chiizu ga yuumei desu ne.
-スイスはチーズが有名ですよね。
-
-ねえ、すいすは ちーずが ゆうめいです。
-Yes, Switzerland is famous for cheese.
-Nee, Suisu wa chiizu ga yuumei desu.
-ねえ、スイスはチーズが有名です。
-
-うん、おいしかったですか。
-Yeah, was it delicious?
-Un, oishikatta desu ka.
-うん、美味しかったですか。
-
-ほんとうに おいしかったです。
-It was really delicious.
-Hontou ni oishikatta desu.
-本当に美味しかったです。
-
-いいなあ。そうなんだ。
-Nice. I see.
-Iinaa. Sou nanda.
-いいなあ。そうなんだ。
-
-え、すいすで なにが いちばん たのしかったですか。
-Eh, what was the most fun in Switzerland?
-E, Suisu de nani ga ichiban tanoshikatta desu ka.
-え、スイスで何が1番楽しかったですか。
-
-ひとのない はらっぱに いって、うん、おさんぽした ことです。
-Going to an empty field and taking a walk.
-Hito no nai harappa ni itte, un, osanpo shita koto desu.
-人のない原っぱに行って、うん、お散歩したことです。
-
-ええ。あ、そっか。それは かんこうちですか。
-Eh, oh, I see. Is that a tourist spot?
-Ee. A, sokka. Sore wa kankouchi desu ka.
-ええ。あ、そっか。それは観光地ですか。
-
-それは かんこうちでは ありませんね。
-That is not a tourist spot.
-Sore wa kankouchi de wa arimasen ne.
-それは観光地ではありませんね。
-
-ふつうの はらっぱですか。
-Is it just a normal field?
-Futsuu no harappa desu ka.
-普通の原っぱですか。
-
-はい。ふつうの はらっぱと ふつうの みちが ある ちいさな まちです。
-Yes, a small town with a normal field and a normal road.
-Hai. Futsuu no harappa to futsuu no michi ga aru chiisana machi desu.
-はい。普通の原っぱと普通の道がある小さな町です。
-
-あ、そうなんですね。
-Ah, is that so?
-A, sou nan desu ne.
-あ、そうなんですね。
-
-はい。とっても さむくって、はい、こーとを たくさん きて、ぼうしを かぶって、え、ともだちと はなして あるきました。
-Yes. It was very cold, and yes, I wore a lot of coats, put on a hat, and walked while talking with my friend.
-Hai. Tottemo samukutte, hai, kooto o takusan kite, boushi o kabutte, e, tomodachi to hanashite arukimashita.
-はい。とっても寒くって、はい、コートをたくさん着て、帽子をかぶって、え、友達と話して歩きました。
-
-いいね。ええ、すいすは たくさん やまが ありますけど、はいきんぐを しましたか。
-Nice. Switzerland has many mountains, but did you do hiking?
-Ii ne. Ee, Suisu wa takusan yama ga arimasu kedo, haikingu o shimashita ka.
-いいね。ええ、スイスはたくさん山がありますけど、ハイキングをしましたか。
-
-あ、はいきんぐは しませんでした。
-Ah, I didn't hike.
-A, haikingu wa shimasen deshita.
-あ、ハイキングはしませんでした。
-
-ええ、そうなんですね。
-Eh, is that so?
-Ee, sou nan desu ne.
-ええ、そうなんですね。
-
-うん。だけど やまの うえには ろーぷうぇいで いきました。
-Yeah. But we went to the top of the mountain by ropeway.
-Un. Dakedo yama no ue ni wa roopuwei de ikimashita.
-うん。だけど山の上にはロープウェイで行きました。
-
-ああ、そっか。え、ふゆに いきましたか？なつに いきましたか？
-Ah, I see. Did you go in winter? Or in summer?
-Aa, sokka. E, fuyu ni ikimashita ka? Natsu ni ikimashita ka?
-ああ、そっか。え、冬に行きましたか？夏に行きましたか？
-
-ふゆでした。
-It was winter.
-Fuyu deshita.
-冬でした。
-
-あ、そうか。
-Ah, I see.
-A, sou ka.
-あ、そうか。
-
-じゅうにがつから いちがつまで いきました。
-I went from December to January.
-Juunigatsu kara ichigatsu made ikimashita.
-12月から1月まで行きました。
-
-あ、じゃあ ゆきが たくさん ありましたか。
-Oh, then was there a lot of snow?
-A, jaa yuki ga takusan arimashita ka.
-あ、じゃあ雪がたくさんありましたか。
-
-はい。あるひ、うん、あさ おきて まどを あけたら ゆきが たくさん つもっていました。
-Yes. One day, waking up in the morning and opening the window, a lot of snow had accumulated.
-Hai. Aru hi, un, asa okite mado o aketara yuki ga takusan tsumotte imashita.
-はい。ある日、うん、朝起きて窓を開けたら雪がたくさん積もっていました。
-
-いいね。ゆきが すきですか。
-Nice. Do you like snow?
-Ii ne. Yuki ga suki desu ka.
-いいね。雪が好きですか。
-
-ゆきは きれいだと おもいます。でも、すきじゃない。
-I think snow is beautiful. But I don't like it.
-Yuki wa kirei da to omoimasu. Demo, suki janai.
-雪は綺麗だと思います。でも、好きじゃない。
-
-でも、すきじゃない？
-But you don't like it?
-Demo, suki janai?
-でも、好きじゃない？
-
-ふつうです、ふつう。
-It's normal, normal.
-Futsuu desu, futsuu.
-普通です、普通。
-
-まあ、たぶん さむすぎますよね。
-Well, probably it's too cold, right?
-Maa, tabun samusugimasu yo ne.
-まあ、たぶん寒すぎますよね。
-
-さむすぎますね。
-Too cold, indeed.
-Samusugimasu ne.
-寒すぎますね。
-
-そうですよね。
-That's true, isn't it?
-Sou desu ne.
-そうですよね。
-
-うん。しさんは さいきん どこに りょこうに いきましたか。
-Yeah. Where did you travel recently, Shun-san?
-Un. Shi-san wa saikin doko ni ryokou ni ikimashita ka.
-うん。しさんは最近どこに旅行に行きましたか。
-
-さいきんは そうですね、さいきんは よーろっぱに わたしも。
-Recently, let's see, recently I also went to Europe.
-Saikin wa sou desu ne, saikin wa Yooroppa ni watashi mo.
-最近はそうですね、最近はヨーロッパに私も。
-
-あ、そうですか！
-Oh, is that so!
-A, sou desu ka!
-あ、そうですか！
-
-よーろっぱと なんべいに いきました。
-I went to Europe and South America.
-Yooroppa to Nanbei ni ikimashita.
-ヨーロッパと南米に行きました。
-
-おお。いろいろな ところに いきましたね。
-Oh, you went to many different places, didn't you?
-Oo. Iroiro na tokoro ni ikimashita ne.
-おお。色々なところに行きましたね。
-
-はい、そう。あの、わたしの つまは ちりじん ですから、うん、ちりに かえりました。
-Yes, that's right. My wife is Chilean, so yes, we returned to Chile.
-Hai, sou. Ano, watashi no tsuma wa Chirijin desu kara, un, Chiri ni kaerimashita.
-はい、そう。あの、私の妻はチリ人ですから、うん、チリに帰りました。
-
-うーん。
-Hmm.
-Uun.
-うーん。
-
-でも、ちりは ほんとうに とおいです。
-But Chile is really far.
-Demo, Chiri wa hontou ni tooi desu.
-でも、チリは本当に遠いです。
-
-そうですよね。
-That's true, isn't it?
-Sou desu ne.
-そうですよね。
-
-そうで、にほんから ちりまで ほんとうに たくさん じかんが かかります。
-That's right, and it really takes a lot of time from Japan to Chile.
-Sou de, Nihon kara Chiri made hontou ni takusan jikan ga kakarimasu.
-そうで、日本からチリまで本当にたくさん時間がかかります。
-
-うん。
-Yeah.
-Un.
-うん。
-
-ときどき にほんから ちりに いくとき、にほんから あめりかに いって、あめりかから ちりに いきます。
-Sometimes when going from Japan to Chile, we go from Japan to America, and from America to Chile.
-Tokidoki Nihon kara Chiri ni iku toki, Nihon kara Amerika ni itte, Amerika kara Chiri ni ikimasu.
-ときどき日本からチリに行くとき、日本からアメリカに行って、アメリカからチリに行きます。
-
-おお。
-Oh.
-Oo.
-おお。
-
-でも、まえは にほんから よーろっぱに いって、よーろっぱから ちりに いきました。
-But before, we went from Japan to Europe, and from Europe to Chile.
-Demo, mae wa Nihon kara Yooroppa ni itte, Yooroppa kara Chiri ni ikimashita.
-でも、前は日本からヨーロッパに行って、ヨーロッパからチリに行きました。
-
-おお。どちらが よかったですか。
-Oh, which was better?
-Oo. Dochira ga yokatta desu ka.
-おお。どちらが良かったですか。
-
-うーん、むずかしいですね。そう、あめりかに いくときは あめりかの かんこうの えすたを とらなければ いけませんでしたから、ま、ちょっと めんどくさかったですね。
-Hmm, it's difficult. Yes, when going to America, we had to get the US tourist ESTA, so it was a little troublesome.
-Uun, muzukashii desu ne. Sou, Amerika ni iku toki wa Amerika no kankou no Esuta o toranakereba ikemasen deshita kara, ma, chotto mendokusatta desu ne.
-うーん、難しいですね。そう、アメリカに行くときはアメリカの観光のエスタを取らなければいけませんでしたから、ま、ちょっとめんどくさかったですね。
-
-ああ、そうですね。
-Ah, that's true.
-Aa, sou desu ne.
-ああ、そうですね。
-
-そう、よーろっぱは びざが ひつようじゃないです。
-Yes, Europe doesn't require a visa.
-Sou, Yooroppa wa biza ga hitsuyou janai desu.
-そう、ヨーロッパはビザが必要じゃないです。
-
-あ、ひつようが ないですか。
-Ah, there is no need?
-A, hitsuyou ga nai desu ka.
-あ、必要がないですか。
-
-そう、ひつようじゃないから、ま、もっと かんたんでしたね。
-Yes, because it's not required, it was much simpler.
-Sou, hitsuyou janai kara, ma, motto kantan deshita ne.
-そう、必要じゃないから、ま、もっと簡単でしたね。
-
-ああ。じゃあ かかる じかんは どれくらいですか。
-Ah. Then how much is the time it takes?
-Aa. Jaa kakaru jikan wa dore kurai desu ka.
-ああ。じゃあかかる時間はどれくらいですか。
-
-たぶん ほとんど おなじぐらいだと おもいます。でも、さんじゅうじかんから さんじゅうごじかんぐらい かかりますよ。
-Probably I think it's almost the same, but it takes about 30 to 35 hours.
-Tabun hotondo onaji gurai da to omoimasu. Demo, sanjuu-jikan kara sanjuugo-jikan gurai kakarimasu yo.
-たぶんほとんど同じぐらいだと思います。でも、30時間から35時間ぐらいかかりますよ。
-
-ながいですね！
-That is long!
-Nagai desu ne!
-長いですね！
-
-そうなんですよ。ちょっこうびんが ありません。
-That's right. There are no direct flights.
-Sou nan desu yo. Chokkoubin ga arisen.
-そうなんですよ。直行便がありません。
-
-ながい ふらいとの ときは、なにを じゅんびしますか。
-For long flights, what do you prepare?
-Nagai furaito no toki wa, nani o junbi shimasu ka.
-長いフライトの時は、何を準備しますか。
-
-ながい ふらいとの ときは、なんか えいがを だうんろーど したり、うん、かく しごとを ひこうきの なかで したりしますね。
-During long flights, I download movies or do some writing work inside the airplane.
-Nagai furaito no toki wa, nanka eiga o daunroodo shitari, un, kaku shigoto o hikouki no naka de shitari shimasu ne.
-長いフライトの時は、なんか映画をダウンロードしたり、うん、書く仕事を飛行機の中でしたりしますね。
-
-うーん。
-Hmm.
-Uun.
-うーん。
-
-はい、はい、はい、はい。そうで、ちりに いきました。にほんから よーろっぱに いって、よーろっぱを りょこうして、ちりに いきました。
-Yes, yes, yes, yes. And so we went to Chile. We went from Japan to Europe, traveled around Europe, and then went to Chile.
-Hai, hai, hai, hai. Sou de, Chiri ni ikimashita. Nihon kara Yooroppa ni itte, Yooroppa o ryokou shite, Chiri ni ikimashita.
-はい、はい、はい、はい。そうで、チリに行きました。日本からヨーロッパに行って、ヨーロッパを旅行して、チリに行きました。
-
-それは いいですね！
-That is nice!
-Sore wa ii desu ne!
-オススメ、それはいいですね！
-
-ねえ、そう。
-Right, yes.
-Nee, sou.
-ねえ、そう。
-
-え、どの くにに いきましたか。
-Eh, which countries did you go to?
-E, dono kuni ni ikimashita ka.
-え、どの国に行きましたか。
-
-そのときは おおさかに すんでいました。
-At that time, we were living in Osaka.
-Sono toki wa Oosaka ni sunde imashita.
-その時は大阪に住んでいました。
-
-うん。
-Yeah.
-Un.
-うん。
-
-だから、おおさかから ぎりしゃに いって、おお、ぎりしゃから まるた、まるたから いたりあ、いたりあから ふらんす、ふらんすから すぺいんで、すぺいんから ちりに いきましたね。
-So we went from Osaka to Greece, oh, from Greece to Malta, Malta to Italy, Italy to France, France to Spain, and from Spain to Chile.
-Dakara, Oosaka kara Girisha ni itte, oo, Girisha kara Maruta, Maruta kara Itaria, Itaria kara Furansu, Furansu kara Supein de, Supein kara Chiri ni ikimashita ne.
-だから、大阪からギリシャに行って、おお、ギリシャからマルタ、マルタからイタリア、イタリアからフランス、フランスからスペインで、スペインからチリに行きましたね。
-
-たくさん いきましたね！
-You went to many places!
-Takusan ikimashita ne!
-たくさん行きましたね！
-
-そうですね、たくさん りょこうして ちょっと つかれました。
-Yes, we traveled a lot and got a little tired.
-Sou desu ne, takusan ryokou shite chotto tsukaremashita.
-そうですね、たくさん旅行してちょっと疲れました。
-
-あ、そうですか。
-Oh, is that so?
-A, sou desu ka.
-あ、そうですか。
-
-はい。いや、でも たのしかったですよ。たのしかったです。
-Yes. But indeed it was fun. It was fun.
-Hai. Iya, demo tanoshikatta desu yo. Tanoshikatta desu.
-はい。いや、でも楽しかったですよ。楽しかったです。
-
-うん。え、りょこうするときは、はい、いろいろな ばしょに いくのが すきですか。
-Yeah. Eh, when traveling, yes, do you like going to various places?
-Un. E, ryokou suru toki wa, hai, iroiro na basho ni iku no ga suki desu ka.
-うん。え、旅行する時は、はい、色々な場所に行くのが好きですか。
-
-たいてい わたしは ひとつ の ばしょで のんびりするのが すきです。
-Usually, I like relaxing in one place.
-Taitei watashi wa hitotsu no basho de nonbiri suru no ga suki desu.
-大抵私は1つの場所でのんびりするのが好きです。
-
-ええ。じゃあ、今回は ちがったんですか。
-Eh, then this time was different?
-Ee. Jaa, konkai wa chigatta n desu ka.
-ええ。じゃあ、今回は違ったんですか。
-
-そうなんですよ。わたしの つまは よーろっぱに いったことが なかったので。
-That's right. My wife had never been to Europe before.
-Sou nan desu yo. Watashi no tsuma wa Yooroppa ni itta koto ga nakatta node.
-そうなんですよ。私の妻はヨーロッパに行ったことがなかったので。
-
-うん。
-Yeah.
-Un.
-うん。
-
-そう、たくさんの くに、たくさんの まちに いきたいと いっていました。
-So she said she wanted to go to many countries and many towns.
-Sou, takusan no kuni, takusan no machi ni ikitai to itte imashita.
-そう、たくさんの国、たくさんの町に行きたいと言ってました。
-
-そう、だから、だから、はい、たくさんの くにに いかなければ いけませんでした。
-Yes, so, yes, we had to go to many countries.
-Sou, dakara, dakara, hai, takusan no kuni ni ikanakereba ikemasen deshita.
-そう、だから、だから、はい、たくさんの国に行かなければいけませんでした。
-
-ああ、そうだったんですね。おくさんは よろこんでいましたか。
-Ah, I see. Was your wife happy?
-Aa, sou datta n desu ne. Okusan wa yorokonde imashita ka.
-ああ、そうだったんですね。奥さんは喜んでいましたか。
-
-はい、はい、はい、よろこんでましたよ。あの、よーろっぱに はじめて いって、うん、かんどうしていました。
-Yes, yes, yes, she was happy! Going to Europe for the first time, yes, she was deeply moved.
-Hai, hai, hai, yorokondemashita yo. Ano, Yooroppa ni hajimete itte, un, kandou shite imashita.
-はい、はい、はい、喜んでましたよ。あの、ヨーロッパに初めて行って、うん、感動していました。
-
-へえ、なにが いちばん たのしかったと いっていましたか。
-Oh, what did she say was the most fun?
-Hee, nani ga ichiban tanoshikatta to itte imashita ka.
-へえ、何が1番楽しかったと言っていましたか。
-
-あの、たてもの！ああ、ほんとうに きれいだと いっていましたね。
-The buildings! Ah, she said they were really beautiful.
-Ano, tatemono! Aa, hontou ni kirei da to itte imashita ne.
-あの、建物！ああ、本当に綺麗だと言っていましたね。
-
-ああ、そうですね。
-Ah, that's true.
-Aa, sou desu ne.
-ああ、そうですね。
-
-はい、うん。あとは そうです。うん、たてものが いちばん きれいですよね。
-Yes, and then, that's right. Buildings are the most beautiful, aren't they?
-Hai, un. Ato wa sou desu. Un, tatemono ga ichiban kirei desu yo ne.
-はい、うん。あとはそうです。うん、建物が1番綺麗ですよね。
-
-そうですね。よーろっぱは れきしが ふるい、れきしが ありますよね。むかしから ある くにですよね。
-That's true. Europe has a long, old history, doesn't it? They are countries that have existed since long ago, aren't they?
-Soo desu ne. Yooroppa wa rekishi ga furui, rekishi ga arimasu yo ne. Mukashi kara aru kuni desu yo ne.
-そうですね。ヨーロッパは歴史が古い、歴史がありますよね。昔からある国ですよね。
-
-ねえ、ぎりしゃとか いたりあとか ふるい れきしが あるから、うん、はい、きれいでしたよ、ほんとうに きれいでした。
-Right, Greece, Italy, etc. have old histories, so yes, it was beautiful, truly beautiful.
-Nee, Girisha toka Itaria toka furui rekishi ga aru kara, un, hai, kirei deshita yo, hontou ni kirei deshita.
-ねえ、ギリシャとかイタリアとか古い歴史があるから、うん、はい、綺麗でしたよ、本当に綺麗でした。
-
-はあ、いいですね。
-Ah, that's nice.
-Haa, ii desu ne.
-はあ、いいですね。
-
-はい、はい、はい、めちゃくちゃ たのしかったです。
-Yes, yes, yes, it was incredibly fun.
-Hai, hai, hai, mechakucha tanoshikatta desu.
-はい、はい、はい、めちゃくちゃ楽しかったです。
-
-ああ。あ、じゃあ、しさんは なにが いちばん たのしかったですか。
-Oh. Then Shun-san, what was the most fun for you?
-Aa. A, jaa, Shi-san wa nani ga ichiban tanoshikatta desu ka.
-ああ。あ、じゃあ、しさんは何が1番楽しかったですか。
-
-はい。わたしは たぶん ぎりしゃが いちばん たのしかったですね。
-Yes. I think Greece was probably the most fun.
-Hai. Watashi wa tabun Girisha ga ichiban tanoshikatta desu ne.
-はい。私は多分ギリシャが1番楽しかったですね。
-
-ああ、どうしてですか。
-Ah, why is that?
-Aa, doushite desu ka.
-ああ、どうしてですか。
-
-あの、ぎりしゃの たべものが すきです。
-I like Greek food.
-Ano, Girisha no tabemono ga suki desu.
-あの、ギリシャの食べ物が好きです。
-
-へえ、どんな たべものですか。
-Oh, what kind of food is it?
-Hee, donna tabemono desu ka.
-へえ、どんな食べ物ですか。
-
-えっと、なんか ぎりしゃの らっぷの、らっぷの たべものが あります。ぶりと みたいな。
-Well, there is a Greek wrap food, like a burrito.
-Etto, nanka Girisha no rappu no, rappu no tabemono ga arimasu. Burito mitai na.
-えっと、なんかギリシャのラップの、ラップの食べ物があります。ブリトみたいな。
-
-へえ！
-Oh!
-Hee!
-へえ！
-
-ちょっと、ちょっと なまえを わすれてしまいました。はい、でも おいしいんですよ。まいにち たべました。
-I forgot the name a little bit. Yes, but it is delicious! I ate it every day.
-Chotto, chotto namae o wasurete shimaimashita. Hai, demo oishii n desu yo. Mainichi tabemashita.
-ちょっと、ちょっと名前を忘れました。はい、でも美味しいんですよ。毎日食べました。
-
-ええ、まいにち たべましたか！ぶっかは にほんと ちがいますか。
-Eh, you ate it every day! Are prices different from Japan?
-Ee, mainichi tabemashita ka! Bukka wa Nihon to chigaimasu ka.
-ええ、毎日食べましたか！物価は日本と違いますか。
-
-そう、よーろっぱは ぶっかが たかいです。うん、でも ぎりしゃ、ぎりしゃと にほんは おなじぐらいだと おもいます。
-Yes, Europe has high prices, but Greece, Greece and Japan are about the same, I think.
-Sou, Yooroppa wa bukka ga takai desu. Un, demo Girisha, Girisha to Nihon wa onaji gurai da to omoimasu.
-そう、ヨーロッパは物価が高いです。うん、でもギリシャ、ギリシャと日本は同じぐらいだと思います。
-
-あ、そうなんですね。
-Ah, is that so.
-A, sou nan desu ne.
-あ、そうなんですね。
-
-うん、だから ま、にほんと おなじですね。
-Yeah, so it is about the same as Japan, isn't it?
-Un, dakara ma, Nihon to onaji desu ne.
-うん、だからま、日本と同じですね。
-
-ああ、それは いいですね。
-Ah, that is good.
-Aa, sore wa ii desu ne.
-ああ、それはいいですね。
-
-そう、てんきも いいですね。
-Yes, the weather is also good.
-Sou, tenki mo ii desu ne.
-そう、天気もいいですね。
-
-ああ、いいですね。いってみたいです。
-Ah, that's nice. I want to try going.
-Aa, ii desu ne. Itte mitai desu.
-ああ、いいですね。行ってみたいです。
-
-いってみたい、いってみたい。おすすめですよ。いつか いってみてください。
-Try going, try going! It is highly recommended. Please go visit someday.
-Itte mitai, itte mitai. Osusume desu yo. Itsuka itte mite kudasai.
-行ってみたい、行ってみたい。おすすめですよ。いつか行ってみてください。
-
-はい、いいですね。ええ、はい、いいですね。
-Yes, that's nice. Yeah, yes, that's nice.
-Hai, ii desu ne. Ee, hai, ii desu ne.
-はい、いいですね。ええ、はい、いいですね。
-
-はい。いや、みなさん ありがとうございました。あの、りょこうについて はなしてみました。どうでしたか？どのくらい わかりましたか？
-Yes. Well, thank you everyone. We talked about travel. How was it? How much did you understand?
-Hai. Iya, minasan arigatou gozaimashita. Ano, ryokou ni tsuite hanashite mimashita. Dou deshita ka? Dono kurai wakarimashita ka?
-はい。いや、皆さんありがとうございました。あの、旅行について話してみました。どうでしたか？どのくらい分かりましたか？
-
-りょこうは たぶん みなさんが だいすきな とぴっくだから、はいたくさん きいて はなせるように がんばりましょう！がんばりましょう！
-Travel is probably a topic everyone loves, so let's work hard to listen and speak a lot! Let's do our best!
-Ryokou wa tabun minasan ga daisuki na topikku dakara, hai takusan kiite hanaseru you ni gambarimashou! Gambarimashou!
-旅行は多分皆さんが大好きなトピックだから、はい沢山聞いて話せるように頑張りましょう！頑張りましょう！
-
-`;
-
-allUltimateWords["Convo E5 - Hard"] = ``;
-
 allUltimateWords["Genki 01"] = `
 あの
 um...
 Ano
 あの
 
-えいご
-English (language)
-Eego
-英語
-
-〜ご
-...language
-...go
-〜語
-
-こうこう
-high school
-Kookoo
-高校
-
-ごご
-P.M.
-Gogo
-午後
-
-ごぜん
-A.M.
-Gozen
-午前
-
-〜さい
-...years old
-...sai
-〜歳
-
-〜さん
-Mr./Ms....
-...san
-〜さん
-
-〜じ
-o'clock
-...ji
-〜時
-
-〜じん
-...people
-...jin
-〜人
-
-せんもん
-major
-Senmon
-専門
-
 そうです
 That's right.
 Soo Desu
 そうです
 
-だいがく
-college; university
-Daigaku
-大学
-
-でんわ
-telephone
-Denwa
-電話
-
 なん/なに
 what
 Nan/nani
 何
-
-〜ねんせい
-...year student
-...nensee
-〜年生
-
-りゅうがくせい
-international student
-Ryuugakusee
-留学生
-
-イギリス
-Britain
-Igirisu
-イギリス
 
 かんこく
 Korea
@@ -12996,46 +8801,6 @@ doctor
 Isha
 医者
 
-こうこうせい
-high school student
-Kookoosei
-高校生
-
-べんごし
-lawyer
-Bengoshi
-弁護士
-
-おかあさん
-mother
-Okaasan
-お母さん
-
-おとうさん
-father
-Otoosan
-お父さん
-
-おねえさん
-older sister
-Oneesan
-お姉さん
-
-おにいさん
-older brother
-Oniisan
-お兄さん
-
-いもうと
-younger sister
-Imooto
-妹
-
-おとうと
-younger brother
-Otooto
-弟
-
 `;
 
 allUltimateWords["Genki 01 - Hard"] = `
@@ -13049,21 +8814,6 @@ anthropology
 Jinruigaku
 人類学
 
-しゅふ
-housewife
-Shufu
-主婦
-
-だいがくいんせい
-graduate student
-Daigakuinsee
-大学院生
-
-だいがくせい
-college student
-Daigakusee
-大学生
-
 `;
 
 allUltimateWords["Genki 02"] = `
@@ -13071,41 +8821,6 @@ allUltimateWords["Genki 02"] = `
 this one
 Kore
 これ
-
-それ
-that one
-Sore
-それ
-
-あれ
-that one (over there)
-Are
-あれ
-
-どれ
-which one
-Dore
-どれ
-
-どの
-which ...
-Dono
-どの
-
-あそこ
-over there
-Asoko
-あそこ
-
-どこ
-where
-Doko
-どこ
-
-おいしい
-delicious
-Oishii
-おいしい
 
 メニュー
 menu
@@ -13116,11 +8831,6 @@ Menyuu
 shoes
 Kutsu
 靴
-
-さいふ
-wallet
-Saifu
-財布
 
 ジーンズ
 jeans
@@ -13157,16 +8867,6 @@ restroom
 Otearai
 お手洗い
 
-きっさてん
-cafe
-Kissaten
-喫茶店
-
-〜えん
-...yen
-...en
-〜円
-
 いらっしゃいませ
 Welcome (to our store)
 Irasshaimase
@@ -13197,11 +8897,6 @@ Thank you.
 Doomo
 どうも
 
-けいざい
-economics
-Keizai
-経済
-
 `;
 
 allUltimateWords["Genki 02 - Hard"] = `
@@ -13213,25 +8908,10 @@ Tonkatsu
 `;
 
 allUltimateWords["Genki 03"] = `
-スポーツ
-sports
-Supootsu
-スポーツ
-
 デート
 date (romantic, not calendar)
 Deeto
 デート
-
-テレビ
-TV
-Terebi
-テレビ
-
-ビデオ
-video tape; VCR
-Bideo
-ビデオ
 
 おさけ
 sake; alcohol
@@ -13308,11 +8988,6 @@ good
 Ii
 いい
 
-はやい
-early
-Hayai
-早い
-
 あまり + negative
 not much
 Amari + negative
@@ -13327,11 +9002,6 @@ Zenzen + negative
 a little
 Chotto
 ちょっと
-
-よく
-often; much
-Yoku
-よく
 
 そうですね
 That's right.; Let me see.
@@ -13351,11 +9021,6 @@ Uchi
 `;
 
 allUltimateWords["Genki 03 - Hard"] = `
-たいてい
-usually
-Taitei
-大抵
-
 LL (エルエル)
 language lab
 Erueru
@@ -13364,11 +9029,6 @@ LL (エルエル)
 `;
 
 allUltimateWords["Genki 04"] = `
-アルバイト
-part-time job
-Arubaito
-アルバイト
-
 かいもの
 shopping
 Kaimono
@@ -13384,26 +9044,6 @@ person
 Hito
 人
 
-おてら
-temple
-Otera
-お寺
-
-スーパー
-supermarket
-Suupaa
-スーパー
-
-まち
-town; city
-Machi
-町
-
-〜じかん
-hour
-...jikan
-〜時間
-
 あう
 to meet; to see (a person)
 Au
@@ -13413,21 +9053,6 @@ Au
 there is ...
 Aru
 ある
-
-かう
-to buy
-Kau
-買う
-
-かく
-to write (dictionary form)
-Kaku
-書く
-
-とる
-to take (pictures)
-Toru
-撮る
 
 まつ
 to wait
@@ -13444,95 +9069,20 @@ Wakaru
 Iru
 いる
 
-〜ぐらい
-about (approximate measurement)
-...gurai
-〜ぐらい
-
 ごめんなさい
 I'm sorry.
 Gomennasai
 ごめんなさい
-
-たくさん
-many; a lot
-Takusan
-たくさん
-
-〜と
-together with (a person)
-...to
-〜と
 
 ひとりで
 alone
 Hitoride
 一人で
 
-もしもし
-Hello? (used on the phone)
-Moshimoshi
-もしもし
-
-みぎ
-right
-Migi
-右
-
-ひだり
-left
-Hidari
-左
-
-まえ
-front
-Mae
-前
-
-うしろ
-back
-Ushiro
-後ろ
-
-なか
-inside
-Naka
-中
-
-うえ
-on
-Ue
-上
-
-した
-under
-Shita
-下
-
 そば
 near
 Soba
 そば
-
-となり
-next
-Tonari
-隣
-
-あいだ
-between
-Aida
-間
-
-そこ
-there
-Soko
-そこ
-
-ここ
-here
-Koko
-ここ
 
 とき
 when...; at the time of...
@@ -13542,11 +9092,6 @@ Toki
 `;
 
 allUltimateWords["Genki 04 - Hard"] = `
-さっき
-a little while ago
-Sakki
-さっき
-
 だから
 so; therefore
 Dakara
@@ -13555,45 +9100,10 @@ Dakara
 `;
 
 allUltimateWords["Genki 05"] = `
-うみ
-sea
-Umi
-海
-
-きって
-postal stamps
-Kitte
-切手
-
-テスト
-test
-Tesuto
-テスト
-
-のみもの
-drink
-Nomimono
-飲み物
-
-はがき
-postcard
-Hagaki
-葉書
-
-ぼく
-I (used by men)
-Boku
-僕
-
 りょこう
 travel
 Ryokoo
 旅行
-
-あたらしい
-new
-Atarashii
-新しい
 
 あつい
 hot (weather)
@@ -13610,53 +9120,13 @@ busy (people/days)
 Isogashii
 忙しい
 
-おおきい
-large
-Ookii
-大きい
-
-さむい
-cold (weather-not used for objects)
-Samui
-寒い
-
-たのしい
-fun
-Tanoshii
-楽しい
-
-ちいさい
-small
-Chiisai
-小さい
-
 ふるい
 old (thing - not used for people)
 Furui
 古い
 
-きらい（な）
-disgusted with; to dislike
-Kirai (na)
-嫌い
-
-きれい（な）
-beautiful; clean
-Kirei (na)
-きれい（な）
-
-げんき（な）
-healthy; energetic
-Genki (na)
-元気
-
-すき（な）
-fond of; to like
-Suki (na)
-好き
-
 ひま（な）
-not busy; to have a lot of free time
+free time, not busy, to have a lot of free time
 Hima (na)
 暇
 
@@ -13665,30 +9135,10 @@ to swim
 Oyogu
 泳ぐ
 
-きく
-to ask
-Kiku
-聞く
-
-それから
-and then
-Sorekara
-それから
-
 だいじょうぶ
 It's okay.; Not to worry.; Everything is under control.
 Daijoobu
 大丈夫
-
-どんな
-what kind of...
-Donna
-どんな
-
-〜まい
-[counter for flat objects]
-...mai
-〜枚
 
 〜まで
 to (a place); as far as (a place); till (a time)
@@ -13700,11 +9150,6 @@ to ride; to board
 Noru
 乗る
 
-こわい
-frightening
-Kowai
-怖い
-
 やさしい
 easy (problem); kind (person)
 Yasashii
@@ -13715,11 +9160,6 @@ to hate
 Daikirai (na)
 大嫌い
 
-だいすき（な）
-very fond of; to love
-Daisuki (na)
-大好き
-
 `;
 
 allUltimateWords["Genki 05 - Hard"] = `
@@ -13728,58 +9168,18 @@ surfing
 Saafin
 サーフィン
 
-つまらない
-boring
-Tsumaranai
-つまらない
-
 でかける
 to go out
 Dekakeru
 出かける
 
-やる
-to do; to perform
-Yaru
-やる
-
 `;
 
 allUltimateWords["Genki 06"] = `
-おばあさん
-grandmother; old woman
-Obaasan
-おばあさん
-
-かんじ
-kanji; Chinese character
-Kanji
-漢字
-
-でんき
-electricity
-Denki
-電気
-
-にもつ
-baggage
-Nimotsu
-荷物
-
 ページ
 page
 Peeji
 ページ
-
-よる
-night
-Yoru
-夜
-
-たいへん（な）
-tough (situation)
-Taihen (na)
-大変
 
 いそぐ
 to hurry
@@ -13876,35 +9276,10 @@ to make a phone call
 Denwa O Kakeru
 電話をかける
 
-つれてくる
-to bring (a person)
-Tsuretekuru
-連れてくる
-
-もってくる
-to bring (a thing)
-Mottekuru
-持ってくる
-
-あとで
-later on
-Atode
-後で
-
-〜から
-because ...
-...kara
-〜から
-
 けっこうです
 That would be fine.; That wouldn't be necessary.
 Kekkoo Desu
 結構です
-
-すぐ
-right away
-Sugu
-すぐ
 
 ゆっくり
 slowly; leisurely; unhurriedly
@@ -13942,31 +9317,6 @@ Terebigeemu
 `;
 
 allUltimateWords["Genki 07"] = `
-あね
-(my) older sister
-Ane
-姉
-
-いもうと
-younger sister
-Imooto
-妹
-
-おとうと
-younger brother
-Otooto
-弟
-
-おにいさん
-older brother
-Oniisan
-お兄さん
-
-おねえさん
-older sister
-Oneesan
-お姉さん
-
 かいしゃ
 company
 Kaisha
@@ -13987,35 +9337,15 @@ bright; smart; clever
 Atama Ga Ii
 頭がいい
 
-かわいい
-cute
-Kawaii
-かわいい
-
-せがたかい
-tall
-Se Ga Takai
-背が高い
-
 せがひくい
 short (stature)
 Se Ga Hikui
 背が低い
 
-はやい
-fast
-Hayai
-早い
-
 みじかい
 short (length)
 Mijikai
 短い
-
-しんせつ（な）
-kind
-Shinsetsu (na)
-親切
 
 かぶる
 to put on (a hat)
@@ -14052,25 +9382,10 @@ to put on glasses
 Megane O Kakeru
 めがねをかける
 
-きる
-to put on (clothes above your waist)
-Kiru
-着る
-
 けっこんする
 to get married
 Kekkonsuru
 結婚する
-
-よかったら
-if you like
-Yokattara
-よかったら
-
-かっこいい
-great-looking
-Kakkooii
-かっこいい
 
 `;
 
@@ -14096,7 +9411,7 @@ Yaseteimasu
 やせています
 
 くに
-country; place of origin
+nation, country; place of origin
 Kuni
 国
 
@@ -14108,26 +9423,6 @@ Utau
 `;
 
 allUltimateWords["Genki 08"] = `
-ざんねんですね
-That's too bad.
-Zannen Desu Ne
-残念ですね
-
-あめ
-rain
-Ame
-雨
-
-しごと
-job; work; occupation
-Shigoto
-仕事
-
-だいがくせい
-college student
-Daigakusee
-大学生
-
 ディスコ
 disco
 Disuko
@@ -14167,11 +9462,6 @@ Arau
 to say
 Iu
 言う
-
-いる
-to need
-Iru
-いる
 
 おもう
 to think
@@ -14224,14 +9514,9 @@ Un
 うん
 
 かんぱい
-Cheers! (a toast)
+Cheers! (a toast), bottoms up / cheers
 Kanpai
 乾杯
-
-みんなで
-all (of the people) together
-Minna De
-みんなで
 
 ホームステイ
 homestay; living with a local family
@@ -14254,16 +9539,6 @@ boxed lunch
 Obentoo
 お弁当
 
-おんせん
-spa; hot spring
-Onsen
-温泉
-
-かぶき
-Kabuki; traditional Japanese theatrical art
-Kabuki
-かぶき
-
 ギター
 guitar
 Gitaa
@@ -14274,11 +9549,6 @@ to take medicine
 Kusuri O Nomu
 薬を飲む
 
-しんかんせん
-Shinkansen; "Bullet Train"
-Shinkansen
-新幹線
-
 スキー
 ski
 Sukii
@@ -14288,11 +9558,6 @@ Sukii
 illness; sickness
 Byooki
 病気
-
-ひく
-to play (a string instrument or piano)
-Hiku
-弾く
 
 もらう
 to get (from somebody)
@@ -14308,66 +9573,6 @@ Oboeru
 to take a walk
 Sanposuru
 散歩する
-
-ぜひ
-by all means
-Zehi
-是非
-
-みんな
-all
-Minna
-みんな
-
-ひとつ
-one
-Hitotsu
-一つ
-
-ふたつ
-two
-Futatsu
-二つ
-
-みっつ
-three
-Mittsu
-三つ
-
-よっつ
-four
-Yottsu
-四つ
-
-いつつ
-five
-Itsutsu
-五つ
-
-むっつ
-six
-Muttsu
-六つ
-
-ななつ
-seven
-Nanatsu
-七つ
-
-やっつ
-eight
-Yattsu
-八つ
-
-ここのつ
-nine
-Kokonotsu
-九つ
-
-とお
-ten
-Too
-十
 
 たんご
 word; vocabulary
@@ -14392,16 +9597,6 @@ near future
 Kondo
 今度
 
-さくぶん
-essay; composition
-Sakubun
-作文
-
-いいこ
-good child
-Iiko
-いい子
-
 いじわる
 mean-spirited
 Ijiwaru
@@ -14410,16 +9605,6 @@ Ijiwaru
 `;
 
 allUltimateWords["Genki 10"] = `
-あき
-fall
-Aki
-秋
-
-せいかつ
-life; living
-Seikatsu
-生活
-
 ちかてつ
 subway
 Chikatetsu
@@ -14485,25 +9670,10 @@ to practice
 Renshuusuru
 練習する
 
-いちばん
-best
-Ichiban
-一番
-
 どうやって
 how; by what means
 Dooyatte
 どうやって
-
-どちら
-which
-Dochira
-どちら
-
-どのぐらい
-how much; how long
-Donogurai
-どのぐらい
 
 クレジットカード
 credit card
@@ -14518,48 +9688,18 @@ beauty parlor
 Biyooin
 美容院
 
-らいがっき
-next semester
-Raigakki
-来学期
-
 きめる
 to decide
 Kimeru
 決める
 
-おかねもち
-rich person
-Okanemochi
-お金持ち
-
 `;
 
 allUltimateWords["Genki 11"] = `
-ドライブ
-drive
-Doraibu
-ドライブ
-
-ホストファミリー
-host family
-Hosutofamirii
-ホストファミリー
-
 あと
 after (an event)
 Ato
 後
-
-しゅっしん
-coming from
-Shusshin
-出身
-
-おかし
-snack; sweets
-Okashi
-お菓子
 
 おしょうがつ
 New Year's
@@ -14570,11 +9710,6 @@ Oshoogatsu
 this person (polite)
 Kochira
 こちら
-
-びじゅつかん
-art museum
-Bijutsukan
-美術館
 
 ルームメイト
 roommate
@@ -14626,11 +9761,6 @@ to study abroad
 Ryuugakusuru
 留学する
 
-そして
-and then
-Soshite
-そして
-
 `;
 
 allUltimateWords["Genki 11 - Hard"] = `
@@ -14643,11 +9773,6 @@ Mizuumi
 to tell a lie
 Uso O Tsuku
 うそをつく
-
-おそく
-(do something) late
-Osoku
-遅く
 
 おそくなる
 to be late (for ...)
@@ -14679,20 +9804,10 @@ to take (a class); to get (a grade)
 Toru
 取る
 
-こんがっき
-this semester
-Kongakki
-今学期
-
 すごく
 very
 Sugoku
 すごく
-
-ひさしぶり
-it has been a long time
-Hisashiburi
-久しぶり
 
 まあまあ
 okay; so-so
@@ -14713,7 +9828,7 @@ Moosugu
 もうすぐ
 
 はれ
-sunny weather
+sunny weather, clear
 Hare
 晴れ
 
@@ -14727,45 +9842,15 @@ thing (concrete object)
 Mono
 物
 
-あし
-leg; foot
-Ashi
-足
-
-かぜ
-cold
-Kaze
-風
-
 かのじょ
 girlfriend
 Kanojo
 彼女
 
-かれ
-boyfriend
-Kare
-彼
-
 くもり
-cloudy weather
+cloudy, cloudy weather
 Kumori
 曇り
-
-しあい
-match; game
-Shiai
-試合
-
-はな
-flower
-Hana
-花
-
-ゆき
-snow
-Yuki
-雪
 
 ようじ
 business to take care of
@@ -14776,16 +9861,6 @@ Yooji
 hurt; painful
 Itai
 痛い
-
-おおい
-there are many...
-Ooi
-多い
-
-せまい
-narrow; not spacious
-Semai
-狭い
 
 すてき
 fantastic
@@ -14812,21 +9887,6 @@ to worry
 Shinpaisuru
 心配する
 
-いつも
-always
-Itsumo
-いつも
-
-おだいじに
-Get well soon.
-Odaiji Ni
-お大事に
-
-たぶん
-probably; maybe
-Tabun
-多分
-
 にさんにち
 for two to three days
 Nisaannichi
@@ -14840,31 +9900,6 @@ Futsukayoi
 `;
 
 allUltimateWords["Genki 12 - Hard"] = `
-つごうがわるい
-inconvenient; to have a scheduling conflict
-Tsugoo Ga Warui
-都合が悪い
-
-きおん
-temperature (weather)
-Kion
-気温
-
-せいせき
-grade (on a test, etc.)
-Seiseki
-成績
-
-せき
-cough
-Seki
-咳
-
-せきがでる
-to cough
-Seki Ga Deru
-せきが出る
-
 かぜをひく
 to catch a cold
 Kaze O Hiku
@@ -14874,11 +9909,6 @@ Kaze O Hiku
 to be interested (in ...)
 Kyoomi Ga Aru
 興味がある
-
-わかれる
-to break up; to separate
-Wakareru
-別れる
 
 きんちょうする
 to get nervous
@@ -14893,75 +9923,30 @@ violin
 Baiorin
 バイオリン
 
-べんごし
-lawyer
-Bengoshi
-弁護士
-
 ウェイター
 waiter
 Weitaa
 ウェイター
-
-おじいさん
-grandfather; old man
-Ojiisan
-おじいさん
 
 からて
 karate
 Karate
 空手
 
-カレー
-curry
-Karee
-カレー
-
-きもの
-kimono; Japanese traditional dress
-Kimono
-着物
-
 こうちゃ
 tea (black tea)
 Koocha
 紅茶
-
-ことば
-language
-Kotoba
-言葉
 
 バイク
 motorbike
 Baiku
 バイク
 
-ぶっか
-(consumer) prices
-Bukka
-物価
-
-ぼしゅう
-recruitment
-Boshuu
-募集
-
-みせ
-shop; store
-Mise
-店
-
 やくざ
 yakuza; gangster
 Yakuza
 やくざ
-
-レポート
-(term) paper
-Repooto
-レポート
 
 からい
 hot and spicy; salty
@@ -15003,60 +9988,15 @@ Naku
 Irasshaimasu
 いらっしゃいます
 
-じつは
-as a matter of fact, ...
-Jitsuwa
-実は
-
 いちにち
 one day
 Ichinichi
 一日
 
-ふつか
-two days
-Futsuka
-二日
-
-みっか
-three days
-Mikka
-三日
-
-よっか
-four days
-Yokka
-四日
-
-いつか
-five days
-Itsuka
-五日
-
-むいか
-six days
-Muika
-六日
-
-ななのか
-seven days
-Nanoka
-七日
-
 ようか
 eight days
 Yooka
 八日
-
-ここのか
-nine days
-Kokonoka
-九日
-
-とおか
-ten days
-Tooka
-十日
 
 よろしくおねがいします
 Thank you (in advance)
@@ -15066,11 +10006,6 @@ Yoroshiku Onegaishimasu
 `;
 
 allUltimateWords["Genki 13 - Hard"] = `
-がっき
-musical instrument
-Gakki
-楽器
-
 こうこく
 advertisement
 Kookoku
@@ -15091,20 +10026,10 @@ to be moved/touched (by ...)
 Kandoosuru
 感動する
 
-きびしい
-strict
-Kibishii
-厳しい
-
 しあわせ
 happy (lasting happiness)
 Shiawase
 幸せ
-
-うれしい
-glad
-Ureshii
-うれしい
 
 `;
 
@@ -15113,11 +10038,6 @@ allUltimateWords["Genki 14"] = `
 stuffed animal (e.g., teddy bear)
 Nuigurumi
 ぬいぐるみ
-
-あに
-(my) older brother
-Ani
-兄
 
 おおやさん
 landlord
@@ -15129,105 +10049,35 @@ return (as a token of gratitude)
 Okaeshi
 お返し
 
-おくさん
-(your/his) wife
-Okusan
-奥さん
-
-おじさん
-uncle; middle-aged man
-Ojisan
-おじさん
-
-おばさん
-aunt; middle-aged woman
-Obasan
-おばさん
-
 クラブ
 club; student society
 Kurabu
 クラブ
-
-ごしゅじん
-(your/her) husband
-Goshujin
-ごしゅじん
-
-コップ
-tumbler; glass
-Koppu
-コップ
 
 さら
 plate; dish
 Sara
 皿
 
-でんしメール
-e-mail
-Denshi Meeru
-電子メール
-
 バレンタインデー
 St. Valentine's Day
 Barentaindee
 バレンタインデー
-
-ビデオカメラ
-camcorder
-Bideokamera
-ビデオカメラ
-
-ふうふ
-married couple; husband and wife
-Fuufu
-夫婦
 
 ホワイトデー
 White Day (yet another gift-giving day)
 Howaitodee
 ホワイトデー
 
-マフラー
-winter scarf
-Mafuraa
-マフラー
-
-まんが
-comic book
-Manga
-漫画
-
-マンション
-multistory apartment; condominium
-Manshon
-マンション
-
-みかん
-mandarin
-Mikan
-みかん
-
 りれきしょ
 resume
 Rirekisho
 履歴書
 
-ほしい
-to want
-Hoshii
-欲しい
-
 けち
 stingy; cheap
 Kechi
 けち
-
-おくる
-to send
-Okuru
-送る
 
 にあう
 to look good (on somebody)
@@ -15274,11 +10124,6 @@ exactly
 Choodo
 ちょうど
 
-よく
-well
-Yoku
-よく
-
 こ
 [generic counter for smaller items]
 ...ko
@@ -15299,30 +10144,15 @@ Yoku
 ...hiki
 匹
 
-ほん
-[counter for long objects]
-...hon
-本
-
 `;
 
 allUltimateWords["Genki 14 - Hard"] = ``;
 
 allUltimateWords["Genki 15"] = `
-え
-painting; picture; drawing
-E
-絵
-
 かんこう
 sightseeing
 Kankoo
 観光
-
-けっこんしき
-wedding
-Kekkonshiki
-結婚式
 
 しめきり
 deadline
@@ -15344,40 +10174,15 @@ graduation ceremony
 Sotsugyooshiki
 卒業式
 
-そば
-Japanese buckwheat noodle
-Soba
-そば
-
 はっぴょう
 presentation
 Happyoo
 発表
 
-ばんぐみ
-broadcast program
-Bangumi
-番組
-
-よてい
-schedule
-Yotei
-予定
-
-りょかん
-inn
-Ryokan
-旅館
-
 わりびきけん
 discount coupon
 Waribikiken
 割引券
-
-ひろい
-spacious; wide
-Hiroi
-広い
 
 うる
 to sell
@@ -15408,11 +10213,6 @@ Sasou
 (1) to date (someone) (2) to keep company
 Tsukiau
 付き合う
-
-つく
-to arrive
-Tsuku
-着く
 
 ほけんにはいる
 to buy insurance
@@ -15454,50 +10254,25 @@ all day long
 Ichinichijuu
 一日中
 
-さいきん
-recently
-Saikin
-最近
-
 `;
 
 allUltimateWords["Genki 15 - Hard"] = ``;
 
 allUltimateWords["Genki 16"] = `
-えきいん
-station attendant
-Ekiin
-駅員
-
 おや
 parent
 Oya
 親
-
-ごみ
-garbage
-Gomi
-ごみ
 
 しょうがくきん
 scholarship
 Shoogakukin
 奨学金
 
-しんせき
-relatives
-Shinseki
-親戚
-
 すいせんじょう
 letter of recommendation
 Suisenjoo
 推薦状
-
-ひ
-day
-Hi
-日
 
 ファイル
 file; portfolio
@@ -15559,11 +10334,6 @@ to collect
 Atsumeru
 集める
 
-いれる
-to put (something) in
-Ireru
-入れる
-
 のりおくれる
 to miss (a train, bus, etc.)
 Noriokureru
@@ -15589,11 +10359,6 @@ to come to pick up (someone)
 Mukae ni Kuru
 迎えに来る
 
-ええと
-well...; let me see...
-Eeto
-ええと
-
 きょうじゅうに
 by the end of today
 Kyoojuuni
@@ -15603,11 +10368,6 @@ Kyoojuuni
 I'm sorry. (casual)
 Gomen
 ごめん
-
-しつれいします
-Excuse me.; Sorry to interrupt you.
-Shitsureishimasu
-失礼します
 
 じゅぎょうちゅうに
 in class; during the class
@@ -15640,7 +10400,7 @@ Saitee
 最低
 
 サラリーマン
-salaryman; company employee
+salaryman; company employee, office worker
 Sarariiman
 サラリーマン
 
@@ -15664,25 +10424,15 @@ beard
 Hige
 ひげ
 
-ひみつ
-secret
-Himitsu
-秘密
-
 りょこうがいしゃ
 travel agency
-Ryokoogaisha
+Ryokougaisha
 旅行会社
 
 うらやましい
 envious
 Urayamashii
 うらやましい
-
-すくない
-a little; a few
-Sukunai
-少ない
 
 えらぶ
 to choose; to select
@@ -15708,11 +10458,6 @@ Komu
 to win a lottery
 Takarakuji ni Ataru
 宝くじに当たる
-
-ぬぐ
-to take off (clothes)
-Nugu
-脱ぐ
 
 ひげをそる
 to shave one's beard
@@ -15744,11 +10489,6 @@ to put makeup on
 Keshoosuru
 化粧する
 
-する
-to wear small items (necktie, watch, etc.)
-Suru
-する
-
 りこんする
 to get a divorce
 Rikonsuru
@@ -15779,16 +10519,6 @@ compared with ...
 ...ni Kurabete
 〜に比べて
 
-〜によると
-according to ...
-...ni Yoruto
-〜によると
-
-まえ
-before...
-Mae
-前
-
 やっぱり
 after all
 Yappari
@@ -15799,11 +10529,6 @@ Yappari
 allUltimateWords["Genki 17 - Hard"] = ``;
 
 allUltimateWords["Genki 18"] = `
-あと
-the rest
-Ato
-後
-
 スカート
 skirt
 Sukaato
@@ -15818,11 +10543,6 @@ Shooyu
 popcorn
 Poppukoon
 ポップコーン
-
-やちん
-rent
-Yachin
-家賃
 
 ゆうがた
 evening
@@ -15844,18 +10564,8 @@ candle
 Roosoku
 ろうそく
 
-あかるい
-bright
-Akarui
-明るい
-
-きぶんがわるい
-to feel sick
-Kibun ga Warui
-気分が悪い
-
 はずかしい
-embarrassing; to feel embarrassed
+embarrassing; to feel embarrassed, ashamed
 Hazukashii
 恥ずかしい
 
@@ -15964,16 +10674,6 @@ See you. (lit., I'm leaving ahead of you.)
 Osaki ni Shitsureishimasu
 お先に失礼します
 
-おつかれさまでした
-You must be tired after working so hard. (ritualistic expression)
-Otsukaresama Deshita
-お疲れ様でした
-
-〜までに
-by (time/date)
-...made ni
-〜までに
-
 どうしよう
 What should I/we do?
 Dooshioo
@@ -15989,30 +10689,10 @@ to invite someone (to an event/a place)
 Shootaisuru
 招待する
 
-おくさま
-(your/his) wife (polite)
-Okusama
-奥様
-
-おこさん
-(your/their) child (polite)
-Okosan
-お子さん
-
-おれい
-expression of gratitude
-Orei
-お礼
-
 けいご
 honorific language
 Keigo
 敬語
-
-こちら
-this way (polite)
-Kochira
-こちら
 
 しゅっちょう
 business trip
@@ -16024,25 +10704,10 @@ a kind; a sort
 Shurui
 種類
 
-せいかく
-personality
-Seikaku
-性格
-
-どちら
-where (polite)
-Dochira
-どちら
-
 なまけもの
 lazy person
 Namakemono
 怠け者
-
-なやみ
-worry
-Nayami
-悩み
 
 はずかしがりや
 shy person
@@ -16199,26 +10864,11 @@ Welcome.
 Yookoso
 ようこそ
 
-よろしくおつたえください
-Please give my best regards (to ...)
-Yoroshiku Otsutae Kudasai
-よろしくお伝えください
-
 `;
 
 allUltimateWords["Genki 19 - Hard"] = ``;
 
 allUltimateWords["Genki 20"] = `
-あちら
-this way (polite)
-Achira
-あちら
-
-うちゅうじん
-space alien
-Uchuujin
-宇宙人
-
 かかりのもの
 our person in charge
 Kakari no Mono
@@ -16228,11 +10878,6 @@ Kakari no Mono
 God
 Kamisama
 神様
-
-じ
-letter; character
-Ji
-字
 
 しゅみ
 hobby; pastime
@@ -16344,16 +10989,6 @@ to keep (someone) waiting
 Mataseru
 待たせる
 
-こうかんする
-to exchange
-Kookansuru
-交換する
-
-せいかつする
-to lead a life
-Seikatsusuru
-生活する
-
 へんぴんする
 to return (merchandise)
 Henpinsuru
@@ -16368,11 +11003,6 @@ Oya
 ...th floor
 ...kai
 一階
-
-さあ
-I am not sure, ...
-Saa
-さあ
 
 しつれいしました
 I'm very sorry
@@ -16419,25 +11049,10 @@ mosquito
 Ka
 蚊
 
-ガソリン
-gasoline
-Gasorin
-ガソリン
-
 かんきょう
 environment
 Kankyoo
 環境
-
-けいさつ
-police; police station
-Keisatsu
-警察
-
-こと
-things; matters
-Koto
-事
 
 せいふ
 government
@@ -16459,16 +11074,6 @@ abbreviation of アルバイト
 Baito
 バイト
 
-はんにん
-criminal
-Hannin
-犯人
-
-むかし
-old days; past
-Mukashi
-昔
-
 もんく
 complaint
 Monku
@@ -16483,21 +11088,6 @@ Monku o Iu
 absence; not at home
 Rusu
 留守
-
-とおい
-far (away)
-Tooi
-遠い
-
-ひどい
-awful
-Hidoi
-ひどい
-
-あんぜん
-safe
-Anzen
-安全
 
 たいせつ
 precious; valuable
@@ -16518,11 +11108,6 @@ Oku
 to notice
 Ki ga Tsuku
 気が付く
-
-ける
-to kick
-Keru
-ける
 
 さす
 to sting; to bite (bug); to stab
@@ -16569,11 +11154,6 @@ to turn down (somebody); to reject; to jilt
 Furu
 ふる
 
-やく
-to bake
-Yaku
-焼く
-
 やる
 to give (to pets, plants, younger siblings, etc.)
 Yaru
@@ -16608,11 +11188,6 @@ Homeru
 to make a mistake
 Machigaeru
 間違える
-
-みつける
-to find
-Mitsukeru
-見つける
 
 じゅんびする
 to prepare
@@ -16649,11 +11224,6 @@ time of...; when...
 Koro
 ころ
 
-すこし
-a little
-Sukoshi
-少し
-
 とにかく
 anyhow; anyway
 Tonikaku
@@ -16669,11 +11239,6 @@ Dooryoo
 allUltimateWords["Genki 21 - Hard"] = ``;
 
 allUltimateWords["Genki 22"] = `
-あいて
-partner
-Aite
-相手
-
 えいかいわ
 English conversation
 Eikaiwa
@@ -16689,30 +11254,15 @@ household matters
 Kaji
 家事
 
-き
-tree
-Ki
-木
-
 こうはい
 junior members of a group
 Koohai
 後輩
 
-さる
-monkey
-Saru
-猿
-
 じゆう
 freedom
 Jiyuu
 自由
-
-しょるい
-document
-Shorui
-書類
 
 せんぱい
 senior members of a group
@@ -16729,11 +11279,6 @@ subordinate
 Buka
 部下
 
-ふくしゅう
-review of lessons
-Fukushuu
-復習
-
 プロジェクト
 project
 Purojekuto
@@ -16748,11 +11293,6 @@ Mudazukai
 license
 Menkyo
 免許
-
-よしゅう
-preparation of lessons
-Yoshuu
-予習
 
 うるさい
 noisy; annoying
@@ -16793,16 +11333,6 @@ Katsu
 to make a photocopy
 Kopii o Toru
 コピーを取る
-
-はこぶ
-to carry from one place to another; transport
-Hakobu
-運ぶ
-
-はしる
-to run
-Hashiru
-走る
 
 ひろう
 to pick up (something)
@@ -16874,16 +11404,6 @@ to oppose; to object to
 Hantaisuru
 反対する
 
-ずっと
-for a long time; all the time
-Zutto
-ずっと
-
-ぜったいに
-definitely
-Zettaini
-絶対に
-
 そんなことはない
 I don't think so.
 Sonna Koto wa Nai
@@ -16913,16 +11433,6 @@ allUltimateWords["Genki 23"] = `
 memory
 Omoide
 思い出
-
-からだ
-body
-Karada
-体
-
-くつした
-socks
-Kutsushita
-靴下
 
 こくさいでんわ
 international call
@@ -16969,13 +11479,8 @@ ideal
 Risoo
 理想
 
-るすばん
-looking after a house during one's absence
-Rusuban
-留守番
-
 まずい
-(food is) terrible
+not tasty, (food is) terrible
 Mazui
 まずい
 
@@ -17019,11 +11524,6 @@ to take (an examination, interview, etc.)
 Ukeru
 受ける
 
-かえる
-to change
-Kaeru
-換える
-
 はなれる
 (something/someone) separates; parts from
 Hanareru
@@ -17034,13 +11534,8 @@ to look ... (facial expression)
 ...kao o Suru
 〜顔をする
 
-がっかりする
-to be disappointed
-Gakkarisuru
-がっかりする
-
 がまんする
-to be tolerant/patient
+to be tolerant, to be patient
 Gamansuru
 我慢する
 
@@ -17098,162 +11593,6 @@ Monosugoku
 
 allUltimateWords["Genki 23 - Hard"] = ``;
 
-allUltimateWords["26 Dumps D4"] = `
-わたしはせんせいにちょくせつはなします
-I speak directly to the teacher.
-Watashi wa sensei ni chokusetsu hanashimasu.
-私は先生に直接話します。
-
-にもつがはやくかたづきます
-The boxes are put in order quickly.
-Nimotsu ga hayaku katazukimasu.
-荷物が早く片づきます。
-
-あしたあなたにれんらくします
-I will contact you tomorrow.
-Ashita anata ni renraku shimasu.
-明日あなたに連絡します。
-
-わたしはJLPTにもうしこみます
-I apply for the JLPT.
-Watashi wa JLPT ni moushikomimasu.
-私はJLPTに申し込みます。
-
-かいぎのじかんにおくれます
-I will be late for the meeting.
-Kaigi no jikan ni okuremasu.
-会議の時間に遅れます。
-
-でんしゃにまにあいます
-I will make it in time for the train.
-Densha ni maniaimasu.
-電車に間に合います。
-
-ごみがよくもえます
-The trash burns well.
-Gomi ga yoku moemasu.
-ごみがよく燃えます。
-
-かぎをさがします
-I look for the key.
-Kagi o sagashimasu.
-鍵を探します。
-
-ともだちとパーティーにさんかします
-I attend the party with my friend.
-Tomodachi to paatii ni sanka shimasu.
-友達とパーティーに参加します。
-
-じかんをみます
-I check the time.
-Jikan o mimasu.
-時間を見ます。
-
-かんさいべんはおもしろいです
-The Kansai dialect is interesting.
-Kansai-ben wa omoshiroi desu.
-関西弁は面白いです。
-
-ここはじてんしゃのおきばです
-This is the bicycle parking place.
-Koko wa jitensha no okiba desu.
-ここは自転車の置き場です。
-
-ぎんこうのよこにコンビニがあります
-There is a convenience store next to the bank.
-Ginkou no yoko ni konbini ga arimasu.
-銀行の横にコンビニがあります。
-
-びんをだすひはすいようびです
-Bottle disposal day is Wednesday.
-Bin o dasu hi wa suiyoubi desu.
-瓶を出す日は水曜日です。
-
-さいふがない。こまったなぁ。
-My wallet is gone. What shall I do?
-Saifu ga nai. Komatta naa.
-財布がない。困ったなぁ。
-
-わたしはうちゅうにいきたいです
-I want to go to space.
-Watashi wa uchuu ni ikitai desu.
-私は宇宙に行きたいです。
-
-あしたはつごうがいいです
-Tomorrow is convenient for me.
-Ashita wa tsugou ga ii desu.
-明日は都合がいいです。
-
-きょうはつごうがわるいです
-Today is inconvenient for me.
-Kyou wa tsugou ga warui desu.
-今日は都合が悪いです。
-
-きょう は   きぶんがいいです
-I feel well today.
-Kyou wa kibun ga ii desu.
-今日は気分がいいです。
-
-あさからきぶんがわるいです
-I have felt sick since morning.
-Asa kara kibun ga warui desu.
-朝から気分が悪いです。
-
-いいばしょをしっていますか
-Do you know a good place?
-Ii basho o shitte imasu ka.
-いい場所を知っていますか。
-
-きょうはずいぶんさむいです
-It is quite cold today.
-Kyou wa zuibun samui desu.
-今日はずいぶん寒いです。
-
-あにはにほんのかいしゃではたらいています
-My older brother works at a Japanese company.
-Ani wa Nihon no kaisha de hataraite imasu.
-兄は日本の会社で働いています。
-
-こんなほんははじめてです
-This is my first book like this.
-Konna hon wa hajimete desu.
-こんな本は初めてです。
-
-まいにちごみをだします
-I put out the trash every day.
-Mainichi gomi o dashimasu.
-毎日ごみを出します。
-
-にほんごのじゅぎょうはげつ・すい・きんです
-Japanese class is on Monday, Wednesday, and Friday.
-Nihongo no jugyou wa getsu・sui・kin desu.
-日本語の授業は月・水・金です。
-
-たんてい な ん です か。
-Are you a detective?
-Tantei na n desu ka.
-探偵なんですか。
-
-ええ、たんてい な ん です。
-Yes, I am a detective.
-Ee, tantei na n desu.
-ええ、探偵なんです。
-
-`;
-
-allUltimateWords["26 Dumps D4 - Hard"] = `
-あしたはつごうがいいです
-Tomorrow is convenient for me.
-Ashita wa tsugou ga ii desu.
-明日は都合がいいです。
-
-たんてい な ん です か。
-Are you a detective?
-Tantei na n desu ka.
-探偵なんですか。
-
-`;
-
 allUltimateWords["Phrases"] = `
 ［どうぞ］ よろしく ［おねがいします］
 Pleased to meet you. (lit. Please be nice to me. Usually used at the end of a self-introduction.)
@@ -17296,12 +11635,7 @@ itte mairimasu
 行って参ります
 
 いってらっしゃい
-Have a good day, see you later.
-itte rasshai
-行ってらっしゃい
-
-いってらっしゃい
-See you later./So long. (lit. Go and come back.)
+Have a good day, see you later., See you later./So long. (lit. Go and come back.)
 itterasshai
 行ってらっしゃい
 
@@ -17375,13 +11709,8 @@ How are you?
 [o] genki desu ka
 お元気ですか
 
-すみません
-I am sorry.
-sumimasen
-すみません
-
 どうしましたか
-What's the matter?
+What's the matter?, What seems to be the problem?
 doushimashita ka
 どうしましたか
 
@@ -17414,11 +11743,6 @@ How about drinking ~ or something?
 What shall I do?
 dou shiyou kana
 どうしようかな
-
-じこしょうかいをおねがいします。
-Please introduce yourself. / Self-introduction please.
-jiko shoukai o onegaishimasu
-自己紹介をお願いします。
 
 こちらこそよろしく
 I am pleased to meet you too.
@@ -17575,7 +11899,7 @@ iroiro osewa ni narimashita
 いろいろお世話になりました
 
 はじめまして
-How do you do? (lit. I am meeting you for the first time. Usually used as the first phrase when introducing oneself.)
+Nice to meet you, How do you do? (lit. I am meeting you for the first time. Usually used as the first phrase when introducing oneself.)
 hajimemashite
 初めまして
 
@@ -17608,11 +11932,6 @@ dou itashimashite
 Thank you./I accept. (said before starting to eat or drink)
 itadakimasu
 頂きます
-
-にほんのせいかつになれましたか
-Have you got used to the life in Japan?
-nihon no seikatsu ni naremashita ka
-日本の生活に慣れましたか
 
 〜はいかがですか
 Would you like to have ~?
@@ -17655,7 +11974,7 @@ douzo ogenki de
 どうぞお元気で
 
 すみません
-Excuse me
+Excuse me, i am sorry
 sumimasen
 すみません
 
@@ -17694,11 +12013,6 @@ I have a favor to ask.
 allUltimateWords["Phrases - Hard"] = ``;
 
 allUltimateWords["Romaji"] = `
-ヨーロッパ
-Europe
-yooroppa
-ヨーロッパ
-
 ユーモア
 humor
 yuumoa
@@ -17729,55 +12043,20 @@ mailbox, postbox
 posuto
 ポスト
 
-オーストラリア
-Australia
-oosutoraria
-オーストラリア
-
 ファックス
 fax
 fakkusu
 ファックス
-
-カレー[ライス]
-curry (and rice)
-karee [raisu]
-カレー[ライス]
 
 カンガルー
 kangaroo
 kangaruu
 カンガルー
 
-パリ
-Paris
-pari
-パリ
-
-ホンコン
-Hong Kong
-honkon
-香港
-
-バンコク
-Bangkok
-bankoku
-バンコク
-
-バンドン
-Bandung
-bandon
-バンドン
-
 ボタン
 button
 botan
 ボタン
-
-フエ
-Hue
-fue
-フエ
 
 〜メートル
 ~meter
@@ -17809,31 +12088,6 @@ restaurant
 resutoran
 レストラン
 
-タイ
-Thailand
-tai
-タイ
-
-ブラジル
-Brazil
-burajiru
-ブラジル
-
-フィリピン
-Philippines
-firipin
-フィリピン
-
-インド
-India
-indo
-インド
-
-ロシア
-Russia
-roshia
-ロシア
-
 ソフト
 software
 sofuto
@@ -17843,21 +12097,6 @@ sofuto
 chocolate
 chokoreeto
 チョコレート
-
-アメリカ
-U.S.A.
-amerika
-アメリカ
-
-インドネシア
-Indonesia
-indoneshia
-インドネシア
-
-フランス
-France
-furansu
-フランス
 
 コーヒー
 coffee
@@ -17954,16 +12193,6 @@ engineer
 enjinia
 エンジニア
 
-ニューヨーク
-New York
-nyuuyooku
-ニューヨーク
-
-ロンドン
-London
-rondon
-ロンドン
-
 デパート
 department store
 depaato
@@ -18000,7 +12229,7 @@ shii dii
 CD
 
 レポート
-report
+report, (term) paper
 repooto
 レポート
 
@@ -18013,11 +12242,6 @@ tenisu
 Sellotape, Scotch tape, clear adhesive tape
 seroteepu
 セロテープ
-
-スペイン
-Spain
-supein
-スペイン
 
 シャツ
 shirt
@@ -18065,7 +12289,7 @@ roomaji
 ローマ字
 
 かんじ
-Chinese characters
+Kanji, Chinese characters
 kanji
 漢字
 
@@ -18149,11 +12373,6 @@ ice cream
 aisukuriimu
 アイスクリーム
 
-シンガポール
-Singapore
-shingapooru
-シンガポール
-
 ホテル
 hotel
 hoteru
@@ -18173,26 +12392,6 @@ pasupooto
 air conditioner
 eakon
 エアコン
-
-アジア
-Asia
-ajia
-アジア
-
-ベラクルス
-Veracruz
-berakurusu
-ベラクルス
-
-フランケン
-Franken
-furanken
-フランケン
-
-ベトナム
-Vietnam
-betonamu
-ベトナム
 
 ジョギング
 jogging
@@ -18239,11 +12438,6 @@ apartment
 apaato
 アパート
 
-コート
-coat
-kooto
-コート
-
 スーツ
 suit
 suutsu
@@ -18285,7 +12479,7 @@ pasokon
 パソコン
 
 プール
-swimming pool
+swimming pool, pool
 puuru
 プール
 
@@ -18293,31 +12487,6 @@ puuru
 skiing
 skii
 スキー
-
-スイス
-Switzerland
-suisu
-スイス
-
-イタリア
-Italy
-itaria
-イタリア
-
-ベルリン
-Berlin
-berurin
-ベルリン
-
-ジャカルタ
-Jakarta
-jakaruta
-ジャカルタ
-
-メキシコ
-Mekishiko
-Mexico
-メキシコ
 
 パンチ
 punch
@@ -18358,11 +12527,6 @@ shawaa
 the Internet
 intaanetto
 インターネット
-
-ホームステイ
-homestay
-hoomusutei
-ホームステイ
 
 シャープペンシル
 mechanical pencil
@@ -19295,31 +13459,6 @@ trip, tour
 ryokou
 旅行
 
-でんち
-battery
-denchi
-電池
-
-でんき
-electricity, light
-denki
-電気
-
-でんきや
-electrician, electronics/appliance store
-denkiya
-電気屋
-
-けんがくします
-visit some place to study, field trip
-kengaku shimasu
-見学します
-
-きんがく
-amount of money
-kingaku
-金額
-
 さくら
 cherry blossom
 sakura
@@ -19339,16 +13478,6 @@ hana
 nose
 hana
 鼻
-
-いそがしい
-busy
-isogashii
-忙しい
-
-いそぎます
-hurry
-isogimasu
-急ぎます
 
 みなさん
 Ladies and Gentlemen, everybody
@@ -19385,45 +13514,10 @@ clip
 Hasamu, tojimasu
 挟む・閉じます
 
-〜ぐらい
-about (period of time)
-~gurai
-〜位
-
-〜ごろ
-about (time)
-~goro
-〜頃
-
 いつも
 always, usually
 itsumo
 いつも
-
-まち
-town, city
-machi
-町
-
-みち
-road, way
-michi
-道
-
-まちます
-wait
-machimasu
-待ちます
-
-もちます
-hold, carry
-mochimasu
-持ちます
-
-もちろん
-of course
-mochiron
-勿論
 
 こまかいおかね
 small change
@@ -19456,14 +13550,9 @@ ushiro
 後ろ
 
 おく
-the back, inner part
+the back, inner part, inside
 oku
 奥
-
-おくさん
-(someone else's) wife
-okusan
-奥さん
 
 ちかく
 near, vicinity
@@ -19474,16 +13563,6 @@ chikaku
 near (noun or adverb)
 chikai
 近い
-
-しります
-get to know
-shirimasu
-知ります
-
-しっています
-know
-shitteimasu
-知っています
 
 かど
 corner
@@ -19509,21 +13588,6 @@ dokusho
 single, unmarried
 dokushin
 独身
-
-まぐろ
-tuna
-maguro
-鮪
-
-もぐる
-dive
-Moguru
-潜る
-
-まげる
-bend
-Mageru
-曲げる
 
 うんどうぐつ
 trainers, sneakers
@@ -19570,16 +13634,6 @@ fantastic, mysterious
 Fushigi [na]
 不思議 [な]
 
-むしあつけ
-hot and humid
-Mushiatsui
-蒸し暑い
-
-むします
-steam
-Mushimasu
-蒸します
-
 けいかん
 policeman
 Keikan
@@ -19619,16 +13673,6 @@ Denpou
 power switch
 Dengen
 電源
-
-せいかく
-character
-Seikaku
-性格
-
-せいかつ
-life
-seikatsu
-生活
 
 [はんこを～] おします
 affix [a seal], stamp
@@ -19830,16 +13874,6 @@ like that (concerning a matter not related to the speaker or the listener), that
 Annani
 あんなに
 
-このあいだ
-the other day
-kono aida
-この間
-
-このごろ
-these days
-Kono goro
-この頃
-
 そんなことはない
 I don't think so.
 Sonna Koto wa Nai
@@ -19849,11 +13883,6 @@ Sonna Koto wa Nai
 about this size / about this much
 Kono kurai (kono gurai)
 この位
-
-この子
-this child
-kono ko
-この子
 
 こんなふう
 in this way
@@ -19894,6 +13923,16 @@ Sore de
 and, then
 Suruto
 すると
+
+どちら様でしょうか。
+Who is this, please?
+Dochira sama deshou ka。
+どちら様でしょうか。
+
+どちらも
+both
+dochiramo
+どちらも
 
 `;
 
@@ -19939,16 +13978,6 @@ aa
 Oh really! (used when surprised)
 hee
 へえ
-
-よく
-well, much
-yoku
-良く
-
-よく
-often, nicely
-yoku
-良く
 
 ぜんぜん
 not at all (used with negatives)
@@ -20056,7 +14085,7 @@ up to~, till~
 〜まで
 
 〜までに
-before ~, by ~
+before ~, by ~, by (time/date)
 ~ made ni
 〜までに
 
@@ -20134,11 +14163,6 @@ shizuka na
 lively
 nigiyaka na
 賑やか（な）
-
-ひま（な）
-free (time)
-hima na
-暇（な）
 
 しんせつ（な）
 helpful, kind, considerate (not used about one's own family members)
@@ -20249,11 +14273,6 @@ kaerimasu
 give back, return
 kaeshimasu
 返します
-
-かえます
-change
-kaemasu
-変えます
 
 かえます
 replace, change
@@ -20450,16 +14469,6 @@ go out
 dekakemasu
 出掛けます
 
-まちます
-wait
-machimasu
-待ちます
-
-もちます
-hold, carry
-mochimasu
-持ちます
-
 （でんしゃに）のります
 ride, get on (a train)
 (densha ni) norimasu
@@ -20504,31 +14513,6 @@ tarimasu
 stand up
 tachimasu
 立ちます
-
-しります
-get to know
-shirimasu
-知ります
-
-しっています
-know
-shitteimasu
-知っています
-
-いれます
-put in, insert
-iremasu
-入れます
-
-いれます
-make (coffee tea), brew
-iremasu
-淹れます・入れます
-
-（ビザが）いります
-need, require (a visa)
-(biza ga) irimasu
-（ビザが）要ります
 
 （せんせいに）ききます
 ask (the teacher)
@@ -20595,21 +14579,6 @@ lose, be defeated
 makemasu
 負けます
 
-しゅっちょうします
-go on a business trip
-shucchoushimasu
-出張します
-
-けんがくします
-visit some place to study, field trip
-kengaku shimasu
-見学します
-
-りょこうをします
-travel, make a trip
-ryokou o shimasu
-旅行をします
-
 すわります
 sit down
 suwarimasu
@@ -20636,7 +14605,7 @@ noborimasu
 登ります
 
 しらべます
-check, investigate
+check, investigate, survey, research
 shirabemasu
 調べます
 
@@ -20655,35 +14624,15 @@ call (out)
 yobimasu
 呼びます
 
-（みぎへ）まがります
-turn (to the right)
-(migi e) magarimasu
-（右へ）曲がります
-
-しんごうをみぎへまがってください
-Turn to the right at the signal.
-shingou o migi e magatte kudasai
-信号を右へ曲がってください
-
 （あめが）ふります
 to fall (rain)
 (ame ga) furimasu
 （雨が）降ります
 
-おわります
-finish
-owarimasu
-終わります
-
 ならいます
 learn
 naraimasu
 習います
-
-うります
-sell
-urimasu
-売ります
 
 はたらきます
 work (verb)
@@ -20694,11 +14643,6 @@ hatarakimasu
 smoke
 suimasu
 吸います
-
-いそぎます
-hurry
-isogimasu
-急ぎます
 
 すみます
 to live, to reside
@@ -20791,7 +14735,7 @@ mukaemasu
 迎えます
 
 あそびます
-enjoy oneself, play
+enjoy oneself, play, hang out
 asobimasu
 遊びます
 
@@ -20844,11 +14788,6 @@ dekimasu
 sing
 utaimasu
 歌います
-
-なります
-become
-narimasu
-なります
 
 かちます
 win
@@ -20924,11 +14863,6 @@ take a walk, stroll (in a park)
 turn 23 years old tomorrow
 ashita nijuusan sai ni narimasu
 明日二十三歳になります
-
-かくにんします
-confirm
-kakunin shimasu
-確認します
 
 コピーします
 copy
@@ -21100,95 +15034,85 @@ marry, get married
 kekkonshimasu
 結婚します
 
-とぶ
+とびます
 fly
-Tobu
-飛ぶ
+Tobimasu
+飛びます
 
-とぶ
+とびます
 jump
-Tobu
-跳ぶ
+Tobimasu
+跳びます
 
-もぐる
-dive
-Moguru
-潜る
-
-まげる
-bend
-Mageru
-曲げる
-
-とびこむ
+とびこみます
 dive into
-Tobikomu
-飛び込む
+Tobikomimasu
+飛び込みます
 
-さかだちする
+さかだちします
 do a handstand
-Sakadachisuru
-逆立ちする
+Sakadachishimasu
+逆立ちします
 
-はう
+はいます
 crawl
-Hau
-這う
+Haimasu
+賠います / 這います
 
-ふる
+ふります
 wave
-Furu
-振る
+Furimasu
+振ります
 
-もちあげる
+もちあげます
 lift
-Mochiageru
-持ち上げる
+Mochiagemasu
+持ち上げます
 
-なげる
+なげます
 throw
-Nageru
-投げる
+Nagemasu
+投げます
 
-たたく
+たたきます
 pat, tap
-Tataku
-叩く
+Tatakimasu
+叩きます
 
-のばす
+のばします
 extend
-Nobasu
-伸ばす
+Nobashimasu
+伸ばします
 
-ころぶ
+ころびます
 fall down
-Korobu
-転ぶ
+Korobimasu
+転びます
 
-ふりむく
+ふりむきます
 look back
-Furimuku
-振り向く
+Furimukimasu
+振り向きます
 
-にんきがある
+にんきがあります
 to be popular
-Ninki Ga Aru
-人気がある
+Ninki Ga Arimasu
+人気があります
 
-でる
+でます
 (1) to appear; (2) to attend (2) to exit
-Deru
-出る
+Demasu
+出ます
 
-うんどうする
+うんどうします
 to do physical exercises
-Undoosuru
-運動する
+Undooshimasu
+運動します
 
-おどる
+おどります
 to dance
-Odoru
-踊る
+Odorimasu
+踊ります
 
 やります
 do
@@ -21200,40 +15124,30 @@ chew, bite
 Kamimasu
 噛みます
 
-いためる
+いためます
 shallow fry / stir fry
-Itameru
-炒める
+Itamemasu
+炒めます
 
-むす
-steam
-Musu
-蒸す
-
-むく
-peel, pare
-Muku
-剥く
-
-きざむ
+きざみます
 chop, mince
-Kizamu
-刻む
+Kizamimasu
+刻みます
 
-かきまぜる
+かきまぜます
 stir
-Kakimazeru
-かき混ぜる
+Kakimazemasu
+かき混ぜます
 
-ちぢむ
+ちぢみます
 Shrink
-Chijimu
-縮む
+Chijimimasu
+縮みます
 
-のびる
+のびます
 Stretch
-Nobiru
-伸びる
+Nobimasu
+伸びます
 
 (くぎを) うちます
 hit (a nail)
@@ -21245,60 +15159,80 @@ hit (a nail)
 allUltimateWords["All Masu Form Verbs - Hard"] = ``;
 
 allUltimateWords["Connectors"] = `
-けん
-prefecture
-ken
-県
+どのぐらい
+how much; how long
+Donogurai
+どのぐらい
 
-じん
-a nationality of-
--jin
-人
+〜ぐらい
+about (period of time), about (approximate measurement)
+~gurai
+〜位
 
-〜や
-~store, ~shop
-~ya
-〜屋
+〜ごろ
+about (time)
+~goro
+〜頃
 
-〜かた
-how to ~, way of ~ing
-~kata
-〜方
-
-〜ばん
-number ~
-~ban
-〜番
-
-〜や
-person of ~ shop, ~shop
-~ya
-〜屋
+～ご
+~ after (duration of time)
+~go
+～後
 
 〜ご
 ~language
 ~go
 〜語
 
-さん
-Mr./Ms./Mrs.
--san
-さん
+けん
+prefecture
+ken
+県
+
+〜かた
+how to ~, way of ~ing
+~kata
+〜方
+
+〜や
+person of ~ shop, ~shop, ~store
+~ya
+〜屋
+
+〜ばん
+number ~
+~ban
+〜番
+
+じん
+a nationality of-
+-jin
+人
+
+〜じん
+...people
+...jin
+〜人
+
+くん
+suffix added to a boy's name, Mr. (informal of ~san)
+-kun
+君
 
 ちゃん
 suffix added to a child's name
 -chan
 ちゃん
 
-くん
-suffix added to a boy's name
--kun
-君
+さん
+Mr./Ms./Mrs.
+-san
+さん
 
-〜くん
-Mr. (informal of ~san)
-~kun
-〜君
+～さま
+respectful equivalent of ～さん
+~ sama
+～様
 
 `;
 
@@ -21329,11 +15263,6 @@ kaeshimasu
 repair, correct
 naoshimasu
 直します
-
-なくします
-lose
-nakushimasu
-無くします
 
 話します
 speak, talk
@@ -21410,11 +15339,6 @@ stay, be [in Japan]
 imasu
 居ます［日本に ～］
 
-起きます
-get up, wake up
-okimasu
-起きます
-
 降ります［でんしゃを ～］
 get off [a train]
 orimasu
@@ -21444,11 +15368,6 @@ dekimasu
 see, look at, watch
 mimasu
 見ます
-
-しんじます
-believe, trust
-Shinjimasu
-信じます
 
 `;
 
@@ -21490,105 +15409,30 @@ do, play
 shimasu
 します
 
-する
-do, play
-suru
-する
-
 します［ネクタイを～］
 put on [tie]
 shimasu
 します［ネクタイを～］
-
-する
-put on [tie]
-suru
-する
-
-案内します
-show around, show the way
-annaishimasu
-案内します
-
-運転します
-drive
-untenshimasu
-運転します
-
-買い物します
-do shopping
-kaimonoshimasu
-買い物します
-
-結婚します
-marry, get married
-kekkonshimasu
-結婚します
 
 見学します
 tour, visit a place to study it
 kengakushimasu
 見学します
 
-コピーします
-copy
-kopiishimasu
-コピーします
-
 散歩します［こうえんを ～］
 take a walk [in a park]
 sanposhimasu
 散歩します［公園を ～］
-
-残業します
-work overtime
-zangyoushimasu
-残業します
-
-修理します
-repair
-shuurishimasu
-修理します
 
 出張します
 go on a business trip
 shutchoushimasu
 出張します
 
-紹介します
-introduce
-shoukaishimasu
-紹介します
-
-心配します
-worry
-shinpaishimasu
-心配します
-
-説明します
-explain
-setsumeishimasu
-説明します
-
 掃除します
 clean (a room)
 soujishimasu
 掃除します
-
-電話します
-phone
-denwashimasu
-電話します
-
-勉強します
-study
-benkyoushimasu
-勉強します
-
-留学します
-study abroad
-ryuugakushimasu
-留学します
 
 [くるまに～] ちゅういします
 be careful [of the cars]
@@ -21625,7 +15469,7 @@ prayer
 [o] inori
 お祈り
 
-[お]そうしき
+おそうしき
 funeral
 [O]soushiki
 [お]葬式
@@ -21634,671 +15478,7 @@ funeral
 
 allUltimateWords["Honorifics - Hard"] = ``;
 
-allUltimateWords["All Patterns"] = `
-わたしは マイク・ミラーです。
-I'm Mike Miller.
-Watashi wa Maiku Miraa desu.
-私はマイク・ミラーです。
-
-サントスさんは 学生じゃ ありません。
-Mr. Santos isn't a student.
-Santosu-san wa gakusei ja arimasen.
-サントスさんは学生じゃありません。
-
-ミラーさんは アメリカ人ですか。
-Is Mr. Miller an American?
-Miraa-san wa Amerikajin desu ka.
-ミラーさんはアメリカ人ですか。
-
-グプタさんも 会社員です。
-Mr. Gupta is also a company employee.
-Guputa-san mo kaishain desu.
-グプタさんも会社員です。
-
-ミラーさんは IMCの 社員です。
-Mr. Miller is an IMC employee.
-Miraa-san wa IMC no shain desu.
-ミラーさんはIMCの社員です。
-
-あの 方は ミラーさんです。
-That's Mr. Miller.
-Ano kata wa Miraa-san desu.
-あの方はミラーさんです。
-
-それは 辞書ですか。
-Is that a dictionary?
-Sore wa jisho desu ka.
-それは辞書ですか。
-
-この 本は わたしのです。
-This book is mine.
-Kono hon wa watashi no desu.
-この本は私のです。
-
-はい、そうです。
-Yes, it is.
-Hai, sou desu.
-はい、そうです。
-
-これは 「９」ですか、「７」ですか。
-Is this a 9 or a 7?
-Kore wa kyuu desu ka, nana desu ka.
-これは「９」ですか、「７」ですか。
-
-これは コンピューターの 本です。
-This is a book on computers.
-Kore wa konpyuutaa no hon desu.
-これはコンピューターの本です。
-
-この かばんは あなたのですか。
-Is this bag yours?
-Kono kaban wa anata no desu ka.
-このかばんはあなたのですか。
-
-お国は どちらですか。
-What country are you from?
-Okuni wa dochira desu ka.
-お国はどちらですか。
-
-そうですか。
-Oh, I see.
-Sou desu ka.
-そうですか。
-
-お手洗いは あそこです。
-The toilet is over there.
-Otearai wa asoko desu.
-お手洗いはあそこです。
-
-電話は 2階です。
-The telephone is on the second floor.
-Denwa wa nikai desu.
-電話は2階です。
-
-お手洗いは どこですか。
-Where's the toilet?
-Otearai wa doko desu ka.
-お手洗いはどこですか。
-
-これは どこの コンピューターですか。
-Where is this computer made?
-Kore wa doko no konpyuutaa desu ka.
-これはどこのコンピューターですか。
-
-今 7時10分です。
-It's 7:10 now.
-Ima shichiji jippun desu.
-今7時10分です。
-
-わたしは 毎日 勉強します。
-I study every day.
-Watashi wa mainichi benkyou shimasu.
-私は毎日勉強します。
-
-6時半に 起きます。
-I get up at six-thirty.
-Rokujihan ni okimasu.
-6時半に起きます。
-
-9時から 5時まで 勉強します。
-I study from 9 to 5.
-Kuji kara goji made benkyou shimasu.
-9時から5時まで勉強します。
-
-銀行の 休みは 土曜日と 日曜日です。
-The bank is closed on Saturdays and Sundays.
-Ginkou no yasumi wa doyoubi to nichiyoubi desu.
-銀行の休みは土曜日と日曜日です。
-
-大変ですね。
-That's tough, isn't it?
-Taihen desu ne.
-大変ですね。
-
-京都へ 行きます。
-I'm going to Kyoto.
-Kyouto e ikimasu.
-京都へ行きます。
-
-どこへも 行きません。
-I'm not going anywhere.
-Doko e mo ikimasen.
-どこへも行けません。
-
-電車で 行きます。
-I'm going by train.
-Densha de ikimasu.
-電車で行きます。
-
-家族と 日本へ 来ました。
-I came to Japan with my family.
-Kazoku to Nihon e kimashita.
-家族と日本へ来ました。
-
-いつ 日本へ 来ましたか。
-When did you come to Japan?
-Itsu Nihon e kimashita ka.
-いつ日本へ来ましたか。
-
-この アイスクリーム、おいしいですよ。
-This ice cream is very nice, you know.
-Kono aisukuriimu, oishii desu yo.
-このアイスクリーム、おいしいですよ。
-
-あ、そうですね。
-Oh, yes, so it is.
-A, sou desu ne.
-あ、そうですね。
-
-ジュースを 飲みます。
-I drink juice.
-Juusu o nomimasu.
-ジュースを飲みます。
-
-サッカーを します。
-I play soccer.
-Sakkaa o shimasu.
-サッカーをします。
-
-月曜日 何を しますか。
-What are you doing on Monday?
-Getsuyoubi nani o shimasu ka.
-月曜日何をしますか。
-
-それは 何ですか。
-What's that?
-Sore wa nan desu ka.
-それは何ですか。
-
-駅で 新聞を 買います。
-I'm going to buy a paper at the station.
-Eki de shinbun o kaimasu.
-駅で新聞を買います。
-
-いっしょに 京都へ 行きませんか。
-Would you like to come to Kyoto with us?
-Issho ni Kyouto e ikimasen ka.
-いっしょに京都へ行きませんか。
-
-ちょっと 休みましょう。
-Let's take a break.
-Chotto yasumimashou.
-ちょっと休みましょう。
-
-はしで 食べます。
-I eat with chopsticks.
-Hashi de tabemasu.
-はしで食べます。
-
-「ありがとう」は 英語で 何ですか。
-What's 'Arigato' in English?
-"Arigatou" wa Eigo de nan desu ka.
-「ありがとう」は英語で何ですか。
-
-木村さんに 花を あげました。
-I gave Ms. Kimura some flowers.
-Kimura-san ni hana o agemashita.
-木村さんに花をあげました。
-
-山田さんに 花を もらいました。
-I received some flowers from Mr. Yamada.
-Yamada-san ni hana o moraimashita.
-山田さんに花をもらいました。
-
-もう 荷物を 送りましたか。
-Have you sent the baggage yet?
-Mou nimotsu o okurimashita ka.
-もう荷物を送りましたか。
-
-ワット先生は 親切です。
-Mr. Watt is kind.
-Watto-sensei wa shinsetsu desu.
-ワット先生は親切です。
-
-富士山は 高いです。
-Mt. Fuji is high.
-Fujisan wa takai desu.
-富士山は高いです。
-
-ワット先生は 親切な 先生です。
-Mr. Watt is a considerate teacher.
-Watto-sensei wa shinsetsu na sensei desu.
-ワット先生は親切な先生です。
-
-富士山は 高い 山です。
-Mt. Fuji is a high mountain.
-Fujisan wa takai yama desu.
-富士山は高い山です。
-
-日本の 食べ物は おいしいですが、高いです。
-Japanese food is delicious, but it is expensive.
-Nihon no tabemono wa oishii desu ga, takai desu.
-日本の食べ物は美味しいですが、高いです。
-
-北京は とても 寒いです。
-Beijing is very cold.
-Pekin wa totemo samui desu.
-北京はとても寒いです。
-
-日本の 生活は どうですか。
-How do you find life in Japan?
-Nihon no seikatsu wa dou desu ka.
-日本の生活はどうですか。
-
-奈良は どんな 町ですか。
-What sort of town is Nara?
-Nara wa donna machi desu ka.
-奈良はどんな町ですか。
-
-わたしは 車が あります。
-I have a car.
-Watashi wa kuruma ga arimasu.
-私は車があります。
-
-わたしは イタリア料理が 好きです。
-I like Italian food.
-Watashi wa Itaria ryouri ga suki desu.
-私はイタリア料理が好きです。
-
-英語が よく わかります。
-I understand English well.
-Eigo ga yoku wakarimasu.
-英語がよく分かります。
-
-時間が ありませんから、新聞を 読みません。
-I don't read newspapers because I don't have time.
-Jikan ga arimasen kara, shinbun o yomimasen.
-時間がありませんから、新聞を読みません。
-
-どうして 朝 新聞を 読みませんか。
-Why don't you read a newspaper in the mornings?
-Doushite asa shinbun o yomimasen ka.
-どうして朝新聞を読みませんか。
-
-コンピューターが あります。
-There's a computer.
-Konpyuutaa ga arimasu.
-コンピューターがあります。
-
-わたしの 部屋に 机が あります。
-There's a desk in my room.
-Watashi no heya ni tsukue ga arimasu.
-私の部屋に机があります。
-
-ミラーさんは 事務所に います。
-Mr. Miller is in the office.
-Miraa-san wa jimusho ni imasu.
-ミラーさんは事務所に居ます。
-
-机の 上に 写真が あります。 There's a photograph on the desk.
-Tsukue no ue ni shashin ga arimasu.
-机の上に写真があります。
-
-箱の 中に 手紙や 写真が あります。
-There are some letters, photographs and other things in the box.
-Hako no naka ni tegami ya shashin ga arimasu.
-箱の中に手紙や写真があります。
-
-りんごを 4つ 買いました。
-I bought four apples.
-Ringo o yotsu kaimashita.
-りんごを4つ買いました。
-
-どのくらい 日本語を 勉強しましたか。
-How long did you study Japanese for?
-Dono kurai Nihongo o benkyou shimashita ka.
-どのくらい日本語を勉強しましたか。
-
-15分ぐらい かかります。
-It takes about fifteen minutes.
-Juugofun gurai kakarimasu.
-15分ぐらいかかります。
-
-1か月に 2回 映画を 見ます。
-I go to see a film about twice a month.
-Ikkagetsu ni nikai eiga o mimasu.
-1か月に2回映画を見ます。
-
-休みは 日曜日だけです。
-Sunday is my only day off.
-Yasumi wa nichiyoubi dake desu.
-休みは日曜日だけです。
-
-この 車は あの 車より 大きいです。
-This car's bigger than that one.
-Kono kuruma wa ano kuruma yori ookii desu.
-この車はあの車より大きいです。
-
-サッカーと 野球と どちらが おもしろいですか。
-Which is more interesting, soccer or baseball?
-Sakkaa to yakyuu to dochira ga omoshiroi desu ka.
-サッカーと野球とどちらが面白いですか。
-
-日本料理［の 中］で 何が いちばん おいしいですか。
-Which of all the Japanese dishes is the most delicious?
-Nihon ryouri [no naka] de nani ga ichiban oishii desu ka.
-日本料理［の中から］で何が一番美味しいですか。
-
-あの 赤くて、大きいのです。
-That big red one.
-Ano akakute, ookii no desu.
-あの赤くて、大きいのです。
-
-わたしは 友達が 欲しいです。
-I want some friends.
-Watashi wa tomodachi ga hoshii desu.
-私は友達が欲しいです。
-
-わたしは 沖縄へ 行きたいです。
-I want to go to Okinawa.
-Watashi wa Okinawa e ikitai desu.
-私は沖縄へ行きたいです。
-
-神戸へ インド料理を 食べに 行きます。
-I'm going to Kobe to have some Indian food.
-Koube e Indo ryouri o tabe ni ikimasu.
-神戸へインド料理を食べに行きます。
-
-のどが かわきましたから、何か 飲みたいです。
-I'm thirsty; I'd like something to drink.
-Nodo ga kawakimashita kara, nani ka nomitai desu.
-のどが渇きましたから、何か飲みたいです。
-
-ボールペンで 名前を 書いて ください。
-Please write your name with a ballpoint pen.
-Boorupen de namae o kaite kudasai.
-ボールペンで名前を書いてください。
-
-ミラーさんは 今 電話を かけて います。
-Mr. Miller is making a phone call now.
-Miraa-san wa ima denwa o kakete imasu.
-ミラーさんは今電話を掛けています。
-
-傘を 貸しましょうか。
-Shall I lend you my umbrella?
-Kasa o kashimashou ka.
-傘を貸しましょうか。
-
-雨が 降って います。
-It's raining.
-Ame ga futte imasu.
-雨が降っています。
-
-写真を 撮っても いいですか。
-May I take a photo?
-Shashin o totte mo ii desu ka.
-写真を撮ってもいいですか。
-
-ここで たばこを 吸っては いけません。
-You can't smoke here.
-Koko de tabako o sutte wa ikemasen.
-ここでたばこを吸ってはいけません。
-
-わたしは 大阪に 住んで います。
-I live in Osaka.
-Watashi wa Oosaka ni sunde imasu.
-私は大阪に住んでいます。
-
-ここに 座っても いいですか。
-May I sit here?
-Koko ni suwatte mo ii desu ka.
-ここに座ってもいいですか。
-
-ここに 住所を 書いて ください。
-Write your address here, please.
-Koko ni juusho o kaite kudasai.
-ここに住所を書いてください。
-
-朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。
-In the mornings, I go jogging, take a shower, and then go to work.
-Asa jogingu o shite, shawaa o abite, kaisha e ikimasu.
-朝ジョギングをして、シャワーを浴びて、会社へ行きます。
-
-ミラーさんは 若くて、元気です。
-Mr. Miller is young and energetic.
-Miraa-san wa wakakute, genki desu.
-ミラーさんは若くて、元気です。
-
-お金を 入れてから、ボタンを 押して ください。
-Put the money in, please, and then press the button.
-Okane o irete kara, botan o oshite kudasai.
-お金を入れてから、ボタンを押してください。
-
-大阪は 食べ物が おいしいです。
-The food in Osaka is very good.
-Oosaka wa tabemono ga oishii desu.
-大阪は食べ物が美味しいです。
-
-7時に うちを 出ます。
-I leave home at seven.
-Shichiji ni uchi o demasu.
-7時にうちを出ます。
-
-大学まで どうやって 行きますか。
-How do you get to the University?
-Daigaku made douyatte ikimasu ka.
-大学までどうやって行きますか。
-
-ミラーさんの 傘は どれですか。
-Which is Mr. Miller's umbrella?
-Miraa-san no kasa wa dore desu ka.
-ミラーさんの傘はどれですか。
-
-ここで 写真を 撮らないで ください。
-Please don't take photographs here.
-Koko de shashin o toranaide kudasai.
-ここで写真を撮らないでください。
-
-薬を 飲まなければ なりません。
-I must take some medicine.
-Kusuri o nomanakereba narimasen.
-薬を飲まなければなりません。
-
-あした 来なくても いいです。
-You don't have to come tomorrow.
-Ashita konakute mo ii desu.
-あした来なくてもいいです。
-
-荷物は ここに 置かないで ください。
-Don't put your bags here, please.
-Nimotsu wa koko ni okanaide kudasai.
-荷物はここに置かないでください。
-
-会議は 5時までに 終わります。
-The meeting will end by five.
-Kaigi wa goji made ni owarimasu.
-会議は5時までに終わります。
-
-ミラーさんは 漢字を 読む ことが できます。
-Mr. Miller can read kanji.
-Miraa-san wa kanji o yomu koto ga dekimasu.
-ミラーさんは漢字を読むことができます。
-
-わたしの 趣味は 音楽を 聞く ことです。
-My interest is listening to music.
-Watashi no shuumi wa ongaku o kiku koto desu.
-私の趣味は音楽を聞くことです。
-
-寝る まえに、本を 読みます。
-I read a book before going to bed.
-Neru mae ni, hon o yomimasu.
-寝るまえに、本を読みます。
-
-日本では なかなか 馬を 見る ことが できません。
-You don't see many horses in Japan.
-Nihon de wa naka-naka uma o miru koto ga dekimasen.
-日本ではなかなか馬を見ることができません。
-
-ぜひ 北海道へ 行きたいです。
-I really want to go to Hokkaido.
-Zehi Hokkaidou e ikitai desu.
-ぜひ北海道へ行きたいです。
-
-馬に 乗った ことが あります。
-I've ridden a horse.
-Uma ni notta koto ga arimasu.
-馬に乗ったことがあります。
-
-日曜日は テニスを したり、映画を 見たり します。
-On Sundays, I play tennis, watch a film, and so on.
-Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.
-日曜日はテニスをしたり、映画を見たりします。
-
-寒くなります。
-Get cold.
-Samuku narimasu.
-寒くなります。
-
-コーヒーを 飲む？
-Want some coffee?
-Koohii o nomu?
-コーヒーを飲む？
-
-今晩 暇？
-You free tonight?
-Konban hima?
-今晩暇？
-
-辞書、持って る？
-Have you got a dictionary?
-Jisho, motte ru?
-辞書、持ってる？
-
-その カレーは おいしい？ ……うん、辛いけど、おいしい。
-Is that curry good? ... Yes, it's spicy, but it's nice.
-Sono karee wa oishii? ... Un, karai kedo, oishii.
-そのカレーは美味しい？ ……うん、辛いけど、美味しい。
-
-あした 雨が 降ると 思います。
-I think it's going to rain tomorrow.
-Ashita ame ga furu to omoimasu.
-あした雨が降ると思います。
-
-ミラーさんは 東京へ 出張すると 言いました。
-Mr. Miller said that he would be going to Tokyo on business.
-Miraa-san wa Toukyou e shuuchou suru to iimashita.
-ミラーさんは東京へ出張すると言いました。
-
-あした パーティーに 行くでしょう？
-You're going to the party tomorrow, right?
-Ashita paatii ni iku deshou?
-あしたパーティーに行くでしょう？
-
-東京で 日本と ブラジルの サッカーの 試合が あります。
-There's a soccer match between Japan and Brazil in Tokyo.
-Toukyou de Nihon to Burajiru no sakkaa no shiai ga arimasu.
-東京で日本とブラジルのサッカーの試合があります。
-
-ちょっと ビールでも 飲みませんか。
-How about drinking a beer or something?
-Chotto biiru demo nomimasen ka.
-ちょっとビールでも飲みませんか。
-
-もう 帰らないと……。
-I have to be getting home......
-Mou kaeranaito...
-もう帰らないと……。
-
-これは ミラーさんが 住んで いた うちです。
-This is the house where Mr. Miller used to live.
-Kore wa Miraa-san ga sunde ita uchi desu.
-これはミラーさんが住んでいたうちです。
-
-わたしは 朝ごはんを 食べる 時間が ありません。
-I don't have time to eat breakfast.
-Watashi wa asagohan o taberu jikan ga arimasen.
-私は朝ごはんを食べる時間がありません。
-
-図書館で 本を 借りる とき、カードが 要ります。
-You need your card when you borrow a book from the library.
-Toshokan de hon o kariru toki, kaado ga irimasu.
-図書館で本を借りるとき、カードが要ります。
-
-パリへ 行った とき、かばんを 買いました。
-I bought a bag when I went to Paris.
-Pari e itta toki, kaban o kaimashita.
-パリへ行ったとき、かばんを買いました。
-
-この ボタンを 押すと、お釣りが出ます。
-If you press this button, you'll get your change.
-Kono botan o osu to, otsuri ga demasu.
-このボタンを押すと、お釣りが出ます。
-
-公園を 散歩します。
-I go for a walk in the park.
-Kouen o sanpo shimasu.
-公園を散歩します。
-
-佐藤さんは わたしに クリスマスカードを くれました。
-Ms. Sato gave me a Christmas card.
-Satou-san wa watashi ni Kurisumasu kaado o kuremashita.
-佐藤さんはわたしにクリスマスカードをくれました。
-
-わたしは 木村さんに 本を 貸して あげました。
-I lent Ms. Kimura a book.
-Watashi wa Kimura-san ni hon o kashite agemashita.
-私は木村さんに本を貸してあげました。
-
-わたしは 山田さんに 図書館の 電話番号を 教えて もらいました。
-Mr. Yamada told me the telephone number of the library.
-Watashi wa Yamada-san ni toshokan no denwa bangou o oshiete moraimashita.
-私は山田さんに図書館の電話番号を教えてもらいました。
-
-母は セーターを 送って くれました。
-My mother sent me a sweater.
-Haha wa seetaa o okutte kuremashita.
-母はセーターを送ってくれました。
-
-お金が あたら、旅行します。
-If I had some money, I'd go travelling.
-Okane ga attara, ryokou shimasu.
-お金が合ったら、旅行します。
-
-10時になったら、出かけましょう。
-Shall we go out once it gets to 10 o'clock?
-Juuji ni nattara, dekakemashou.
-10時になったら、出かけましょう。
-
-雨が 降っても、洗濯します。
-I'll do the laundry even if it rains.
-Ame ga futte mo, sentaku shimasu.
-雨が降っても、洗濯します。
-
-もし 1億円あったら、いろいろな 国を 旅行したいです。
-If I had a hundred million yen, I'd like to travel round the world.
-Moshi ichiokuyen attara, iroiro na kuni o ryokou shitai desu.
-もし1億円あったら、いろいろな国を旅行したいです。
-
-`;
-
-allUltimateWords["All Patterns - Hard"] = ``;
-
 allUltimateWords["Transitive and Intransitive Pairs"] = `
-いれます
-put in / insert
-Iremasu
-入れます
-
-はいります
-enter / go in
-Hairimasu
-入ります
-
-[ボタンが～] はずれます
-[a button] be undone/ miss
-[botan ga~] Hazuremasu
-[ボタンが～] 外れます
-
-[せきを～] はずします
-be away [from one's desk]
-[seki o~] Hazushimasu
-[席を～] 外します
-
-きえます
-go off / turn off
-Kiemasu
-消えます
-
 なくします
 lose (something)
 Nakushimasu
@@ -22404,16 +15584,6 @@ begin / start
 Hajimarimasu
 始まります
 
-うります
-sell
-Urimasu
-売ります
-
-うれます
-sell well / be sold
-Uremasu
-売れます
-
 あつめます
 collect / gather (something)
 Atsumemasu
@@ -22425,7 +15595,7 @@ Atsumarimasu
 集まります
 
 とどけます
-deliver / send
+deliver, send, report
 Todokemasu
 届けます
 
@@ -22520,7 +15690,7 @@ Tasukarimasu
 助かります
 
 たすけます
-save, help
+rescue, save, help
 Tasukemasu
 助けます
 
@@ -22573,141 +15743,11 @@ Iyagarimasu
 
 allUltimateWords["Transitive Verbs - Hard"] = ``;
 
-allUltimateWords["N4 Rod"] = `
-てんらんかい
-exhibition
-Tenrankai
-展覧会
-
-えんそけい   ひょうはくざい   ふか
-Don't use chlorine bleach
-Ensokei hyouhakuzai fuka
-塩素系漂白剤不可
-
-`;
-
-allUltimateWords["N4 Rod - Hard"] = ``;
-
-allUltimateWords["32 Dumps D4"] = `
-なんにか しんぱい な こと が あるん です か
-Is anything bothering you?
-Nanika shinpai na koto ga arun desu ka
-何か心配なことがあるんですか
-
-すきー に いきたい ん です が、 どこか いい ところ ありません か
-I want to go skiing. Could you recommend a good ski resort?
-Sukī ni ikitai n desu ga, dokoka ii tokoro arimasen ka
-スキーに行きたいんですが、どこかいいところありませんか
-
-なにか 〜 もの
-Something [adjective] (object)
-Nanika ~ mono
-何か〜もの
-
-なにか つめたい もの
-Something cold
-Nanika tsumetai mono
-何か冷たいもの
-
-どこか 〜 ところ
-Somewhere [adjective] (place)
-Dokoka ~ tokoro
-どこか〜ところ
-
-どこか しずか な ところ
-Somewhere quiet
-Dokoka shizuka na tokoro
-どこか静かなところ
-
-だれか 〜 ひと
-Someone [adjective] (person)
-Dareka ~ hito
-誰か〜人
-
-だれか しんせつ な ひと
-Someone kind
-Dareka shinsetsu na hito
-誰か親切な人
-
-いつか 〜 とき
-Sometime [adjective] (time)
-Itsuka ~ toki
-いつか〜時
-
-いつか つごう の いい とき
-Sometime when it is convenient
-Itsuka tsugou no ii toki
-いつかつごうのいい時
-
-`;
-
-allUltimateWords["32 Dumps D4 - Hard"] = ``;
-
-allUltimateWords["33 Dumps D4"] = `
-かいぎちゅうです
-I am in the middle of a meeting
-Kaigi-chuu desu
-会議中です
-
-かれはいま、うんてんちゅうです
-He is driving right now
-Kare wa ima, unten-chuu desu
-彼は今、運転中です
-
-どういういみですか
-What does that mean
-Dou iu imi desu ka
-どういう意味ですか
-
-どういうしごとをしていますか
-What kind of work do you do
-Dou iu shigoto wo shite imasu ka
-どういう仕事をしていますか
-
-もうおなかがいっぱいでたべられません
-I am full, so I cannot eat any more
-Mou onaka ga ippai de taberaremasen
-もうお腹がいっぱいで食べられません
-
-もうかれとははなしたくありません
-I don't want to talk to him any longer
-Mou kare to wa hanashitaku arimasen
-もう彼とは話したくありません
-
-てすとがおわるまで、あとごふんです
-There are 5 minutes left until the test ends
-Tesuto ga owaru made, ato go-fun desu
-テストが終わるまで、あと５分です
-
-あとひとつしかありません
-There is only one left
-Ato hitotsu shika arimasen
-あと一つしかありません
-
-みっかいないにへんしんします
-I will reply within 3 days
-Mikka-inai ni henshin shimasu
-３日以内に返信します
-
-せんえんいないでかえるほんをさがしています
-I am looking for a book I can buy within 1,000 yen
-Sen-en-inai de kaeru hon wo sagashite imasu
-１000円以内で買える本を探しています
-
-`;
-
-allUltimateWords["33 Dumps D4 - Hard"] = ``;
-
 allUltimateWords["InTransitive Verbs"] = `
 [花が～] さきます
 [flowers] bloom
 [hana ga~] Sakimasu
 [花が～] 咲きます
-
-おわります
-finish
-owarimasu
-おわります
 
 [ごみが～] もえます
 burn [trash]
@@ -22734,11 +15774,6 @@ return
 Modorimasu
 戻ります
 
-なります
-become
-narimasu
-なります
-
 [サイズが～] あいます
 [the size] fit
 [saizu ga~] Aimasu
@@ -22747,663 +15782,6 @@ narimasu
 `;
 
 allUltimateWords["InTransitive Verbs - Hard"] = ``;
-
-allUltimateWords["All Forms"] = `
-あいます
-meet (te-form concept)
-Aimasu
-会います
-
-あって
-meet
-Atte
-会って
-
-まちます
-wait
-Machimasu
-待ちます
-
-まって
-wait
-Matte
-待って
-
-とります
-take
-Torimasu
-取ります
-
-とって
-take
-Totte
-取って
-
-のみます
-drink
-Nomimasu
-飲みます
-
-のんで
-drink
-Nonde
-飲んで
-
-しにます
-die
-Shinimasu
-死にます
-
-しんで
-die
-Shinde
-死にます
-
-よびます
-call
-Yobimasu
-呼びます
-
-よんで
-call
-Yonde
-呼んで
-
-かきます
-write
-Kakimasu
-書きます
-
-かいて
-write
-Kaite
-書いて
-
-いそぎます
-hurry
-Isogimasu
-急ぎます
-
-いそいで
-hurry
-Isoide
-急いで
-
-はなします
-speak
-Hanashimasu
-話します
-
-はなして
-speak
-Hanashte
-話して
-
-たべます
-eat
-Tabemasu
-食べます
-
-たべて
-eat
-Tabete
-食べて
-
-します
-do
-Shimasu
-します
-
-して
-do
-Shite
-して
-
-きます
-come
-Kimasu
-来ます
-
-きて
-come
-Kite
-来て
-
-かきます
-write (nai-form concept)
-Kakimasu
-書きます
-
-かかない
-not write
-Kakanai
-書かない
-
-かいます
-buy
-Kaimasu
-買います
-
-かわない
-not buy
-Kawanai
-買わない
-
-たべます
-eat
-Tabemasu
-食べます
-
-たべない
-not eat
-Tabenai
-食べない
-
-します
-do
-Shimasu
-します
-
-しない
-not do
-Shinai
-しない
-
-きます
-come
-Kimasu
-来ます
-
-こない
-not come
-Konai
-来ない
-
-かきます
-write (dictionary form concept)
-Kakimasu
-書きます
-
-かく
-to write
-Kaku
-書く
-
-たべます
-eat
-Tabemasu
-食べます
-
-たべる
-to eat
-Taberu
-食べる
-
-します
-do
-Shimasu
-します
-
-する
-to do
-Suru
-する
-
-きます
-come
-Kimasu
-来ます
-
-くる
-to come
-Kuru
-来る
-
-たべた
-ate (plain past = ta-form)
-Tabeta
-食べた
-
-たべない
-not eat (plain negative = nai-form)
-Tabenai
-食べない
-
-たべなかった
-did not eat (plain negative past = nai-form -i + katta)
-Tabenakatta
-食べなかった
-
-かきます
-write (potential verb concept)
-Kakimasu
-書きます
-
-かけます
-can write
-Kakemasu
-書けます
-
-たべます
-eat
-Tabemasu
-食べます
-
-たべられます
-can eat
-Taberaremasu
-食べられます
-
-します
-do
-Shimasu
-します
-
-できます
-can do
-Dekimasu
-できます
-
-きます
-come
-Kimasu
-来ます
-
-こられます
-can come
-Koraremasu
-来られます
-
-わかります
-understand
-Wakarimasu
-分かります
-
-わかります（かんのうけいはありません）
-understand (has no potential form)
-Wakarimasu (has no potential form)
-分かります（可能形はありません）
-
-かこう
-let's write (Volitional form concept)
-Kakou
-書こう
-
-たべよう
-let's eat
-Tabeyou
-食べよう
-
-しよう
-let's do
-Shiyou
-しよう
-
-こよう
-let's come
-Koyou
-来よう
-
-かけ
-write! (Imperative form concept)
-Kake
-書け
-
-たべろ
-eat!
-Tabero
-食べろ
-
-しろ
-do!
-Shiro
-しろ
-
-こい
-come!
-Koi
-来い
-
-わかります（めいれいけいはありません）
-understand (has no imperative form)
-Wakarimasu (has no imperative form)
-分かります（命令形はありません）
-
-できます（めいれいけいはありません）
-can do (has no imperative form)
-Dekimasu (has no imperative form)
-できます（命令形はありません）
-
-あります（めいれいけいはありません）
-there is / have (has no imperative form)
-Arimasu (has no imperative form)
-あります（命令形はありません）
-
-かきなさい
-write (nasai form, little less imperative)
-Kakinasai (-masu and +nasai)
-書きなさい
-
-たべなさい
-eat
-Tabenasai
-食べなさい
-
-しなさい
-do
-Shinasai
-しなさい
-
-きなさい
-come
-Kinasai
-来なさい
-
-かけば
-if I write / if you write (conditional form)
-Kakeba
-書けば
-
-たべれば
-if I eat / if you eat
-Tabereba
-食べれば
-
-すれば
-if I do / if you do
-Sureba
-すれば
-
-くれば
-if I come / if you come
-Kureba
-来れば
-
-かかれます
-is written / to be written
-Kakaremasu (passive form)
-書かれます
-
-たべられます
-is eaten / to be eaten
-Taberaremasu
-食べられます
-
-されます
-is done / to be done
-Saremasu
-されます
-
-こられます
-is come (passive/suffered)
-Koraremasu
-来られます
-
-`;
-
-allUltimateWords["All Forms - Hard"] = `
-いきます
-go
-Ikimasu
-行きます
-
-いって
-go
-Itte
-行って
-
-かいます
-buy
-Kaimasu
-買います
-
-かわない
-not buy
-Kawanai
-買わない
-
-きます
-come
-Kimasu
-来ます
-
-こない
-not come
-Konai
-来ない
-
-`;
-
-allUltimateWords["Adjective Forms"] = `
-たかい
-expensive (plain form)
-Takai
-高い
-
-しずか（な）
-quiet
-Shizuka (na)
-静か（な）
-
-たかくないです
-is not expensive
-Takakunai desu
-高くないです
-
-しずかじゃありません
-is not quiet
-Shizuka ja arimasen
-静かじゃありません
-
-たかかったです
-was expensive
-Takakatta desu
-高かったです
-
-しずかでした
-was quiet
-Shizukadeshita
-静かでした
-
-たかくなかったです
-was not expensive
-Takakunakatta desu
-高くなかったです
-
-しずかじゃありませんでした
-was not quiet
-Shizuka ja arimasen deshita
-静かじゃありませんでした
-
-たかくなります
-becomes expensive
-Takaku narimasu
-高くなります
-
-しずかになります
-becomes quiet
-Shizuka ni narimasu
-静かになります
-
-たかくて
-expensive (te-form)
-Takakute
-高くて
-
-しずかで
-quiet (te-form)
-Shizukade
-静かで
-
-たかいでしょう
-is probably expensive
-Takai deshou
-高いでしょう
-
-しずかでしょう
-is probably quiet
-Shizuka deshou
-静かでしょう
-
-たかい
-expensive (plain form)
-Takai
-高い
-
-たかかった
-was expensive (plain past form)
-Takakatta
-高かった
-
-しずかだ
-quiet (plain form)
-Shizuka da
-静かだ
-
-しずかだった
-was quiet (plain past form)
-Shizukadatta
-静かだった
-
-たかくても
-even if it is expensive
-Takakutemo
-高くても
-
-しずかでも
-even if it is quiet
-Shizukademo
-静かでも
-
-たかいとき
-when it is expensive
-Takai toki
-高いとき
-
-しずかなとき
-when it is quiet
-Shizuka na toki
-静かなとき
-
-たかいんです
-is expensive (n desu form)
-Takai n desu
-高いんです
-
-しずかなんです
-is quiet (n desu form)
-Shizuka nan desu
-静かなんです
-
-たかければ
-if it is expensive (conditional ~ba form)
-Takakereba
-高ければ
-
-しずかなら
-if it is quiet (conditional ~ba/~nara form)
-Shizuka nara
-静かなら
-
-たかいでしょう
-is probably expensive / right?
-Takai deshou
-高いでしょう
-
-しずかでしょう
-is probably quiet / right?
-Shizuka deshou
-静かでしょう
-
-`;
-
-allUltimateWords["Adjective Forms - Hard"] = ``;
-
-allUltimateWords["New Ones E4"] = `
-かのうけい
-potential
-Kanoukei
-可能形
-
-いこうけい
-volitional
-Ikoukei
-意向形
-
-めいれいけい
-imperative
-Meireikei
-命令形
-
-きんしけい
-prohibitive
-Kinshikei
-禁止形
-
-じょうけんけい
-conditional
-Joukenkei
-条件形
-
-うけみけい
-passive
-Ukemikei
-受身形
-
-しえきけい
-causative
-Shiekikei
-使役形
-
-そんけいご
-respectful
-Sonkeigo
-尊敬語
-
-けんじょうご
-humble
-Kenjougo
-謙譲語
-
-`;
-
-allUltimateWords["New Ones E4 - Hard"] = ``;
-
-allUltimateWords["N5 Extra"] = ``;
-
-allUltimateWords["N5 Extra - Hard"] = ``;
-
-allUltimateWords["Ni Particle G5"] = ``;
-
-allUltimateWords["Ni Particle G5 - Hard"] = ``;
-
-allUltimateWords["No Particle G5"] = ``;
-
-allUltimateWords["No Particle G5 - Hard"] = ``;
-
-allUltimateWords["To Particle G5"] = ``;
-
-allUltimateWords["To Particle G5 - Hard"] = ``;
-
-allUltimateWords["E Particle G5"] = ``;
-
-allUltimateWords["E Particle G5 - Hard"] = ``;
-
-allUltimateWords["De Particle G5"] = ``;
-
-allUltimateWords["De Particle G5 - Hard"] = ``;
-
-allUltimateWords["O Particle G5"] = ``;
-
-allUltimateWords["O Particle G5 - Hard"] = ``;
-
-allUltimateWords["Adjective G5"] = ``;
-
-allUltimateWords["Adjective G5 - Hard"] = ``;
-
-allUltimateWords["0 General E5"] = ``;
-
-allUltimateWords["0 General E5 - Hard"] = ``;
 
 allUltimateWords["Easy 01"] = `
 しんぶん
@@ -23415,26 +15793,6 @@ shinbun
 pencil
 enpitsu
 鉛筆
-
-ドイツ
-Germany
-doitsu
-ドイツ
-
-かんこく
-South Korea
-kankoku
-韓国
-
-ちゅうごく
-China
-chuugoku
-中国
-
-イギリス
-U.K.
-igirisu
-イギリス
 
 わたしたち
 we
@@ -23450,11 +15808,6 @@ watashi
 hospital
 byouin
 病院
-
-にほん
-Japan
-nihon
-日本
 
 ほん
 book
@@ -23501,15 +15854,15 @@ half
 han
 半
 
+はんぶん
+half
+Hanbun
+半分
+
 えき
 station
 eki
 駅
-
-かぞく
-family
-kazoku
-家族
 
 たんじょうび
 birthday
@@ -23546,6 +15899,41 @@ that person (more polite)
 anokata
 あの方
 
+ひとびと
+people
+Hitobito
+人々
+
+おおぜい
+a great number of people
+Oozei
+大勢
+
+おおぜいの ～
+many (people)
+Oozei no ~
+大勢の ～
+
+カレー
+curry
+Karee
+カレー
+
+カレー[ライス]
+curry (and rice)
+karee [raisu]
+カレー[ライス]
+
+わけます
+divide / separate / share
+Wakemasu
+別けます / 分けます
+
+わかれます
+break up / separate / part ways
+Wakaremasu
+別れます / 分かれます
+
 かれ
 he, him, boyfriend
 kare
@@ -23555,6 +15943,31 @@ kare
 she, her, girlfriend
 kanojo
 彼女
+
+もとかれ
+ex-boyfriend
+Motokare
+元彼 / 元カレ
+
+もとかの
+ex-girlfriend
+Motokano
+元彼女 / 元カノ
+
+もともと
+originally / from the start / naturally
+Motomoto
+元々 / 元元
+
+じもと
+local / hometown / local area
+Jimoto
+地元
+
+あしもと
+at one's feet / step / underfoot
+Ashimoto
+足元 / 足下
 
 はい
 yes
@@ -23621,11 +16034,6 @@ doctor (used to address medical doctor)
 sensei
 先生
 
-せんせい
-Teacher / Professor (used instead of sama for teachers)
-Sensei
-先生
-
 ぎんこう
 bank
 ginkou
@@ -23645,6 +16053,31 @@ kaishain
 employee of ～ company
 shain
 〜社員
+
+～がいしゃ
+~ company
+~gaisha
+～会社
+
+りょこうがいしゃ
+travel agency
+Ryokougaisha
+旅行会社
+
+きしゃ
+locomotive
+Kisha
+汽車
+
+かいしゃ
+company
+Kaisha
+会社
+
+はいしゃ
+dentist, dentist's
+haisha
+歯医者
 
 `;
 
@@ -23670,21 +16103,6 @@ jidousha
 car, vehicle, wheel
 kuruma
 車
-
-じどうはんばいき
-vending machine
-jidouhanbaiki
-自動販売機
-
-じどうけんばいき
-ticket machine
-Jidou kenbaiki
-自動券売機
-
-ひこうき
-airplane
-hikouki
-飛行機
 
 せんたくき
 washing machine
@@ -23736,20 +16154,65 @@ Dorai kuriiningu
 Kuriiningu
 クリーニング
 
-いしゃ
-[medical] doctor
-isha
-医者
-
-はかせ
-doctor
-Hakase
-博士
-
 ざっし
 magazine
 zasshi
 雑誌
+
+でんきや
+electrician, electronics/appliance store
+denkiya
+電気屋
+
+でんき
+electricity, light
+denki
+電気
+
+でんち
+battery
+denchi
+電池
+
+でんきこうがく
+electrical engineering
+Denki kougaku
+電気工学
+
+でんしこうがく
+electronics
+Denshi kougaku
+電子工学
+
+いでんしこうがく
+genetic engineering
+Idenshi kougaku
+遺伝子工学
+
+でんし～
+electronic ~
+Denshi~
+電子～
+
+でんしメール
+electronic mail, e-mail
+Denshi meeru
+電子メール
+
+でんしオーブンレンジ
+microwave oven
+Denshi oubun renji
+電子オーブンレンジ
+
+でんしレンジ
+microwave oven
+Denshirenji
+電子レンジ
+
+でんしじしょ
+electronic dictionary
+densha jisho
+電子辞書
 
 じしょ
 dictionary
@@ -23770,61 +16233,6 @@ kagi
 nail
 Kugi
 釘
-
-かばん
-bag, briefcase
-kaban
-鞄
-
-バッグ
-bag
-Baggu
-バッグ
-
-ふくろ
-bag
-Fukuro
-袋
-
-もちだしぶくろ
-emergency grab bag, disaster evacuation bag
-Mochidashibukuro
-持出袋
-
-のしぶくろ
-Special decorated envelope for money gifts
-Noshibukuro
-熨斗袋
-
-プレゼント
-present
-purezento
-プレゼント
-
-おみやげ
-souvenir, present
-[o]miyage
-お土産
-
-おみまい
-Present given when visiting a sick or injured person (flowers, fruit, etc.)
-Omimai
-お見舞い
-
-おくりもの
-gift, present
-Okurimono
-贈り物
-
-おちゅうげん
-Gift for a person whose care you are under (Jul. or Aug.)
-Ochugen
-お中元
-
-おせいぼ
-Gift for a person whose care you are under (Dec.)
-Oseibo
-お歳暮
 
 トイレ
 toilet, rest room
@@ -23871,15 +16279,35 @@ train
 densha
 電車
 
+つぎ
+next
+tsugi
+次
+
 つぎの でんしゃ
 next train
 tsugino densha
 次の電車
 
+いす
+chair
+isu
+椅子
+
 つくえ
 desk
 tsukue
 机
+
+うけつけ
+reception desk
+uketsuke
+受付
+
+フロント
+front desk, reception desk
+Furonto
+フロント
 
 てちょう
 personal organiser, pocket notebook, dairy
@@ -23891,25 +16319,10 @@ diary, journal
 nikki
 日記
 
-いす
-chair
-isu
-椅子
-
 めいし
 business card
 meishi
 名刺
-
-うけつけ
-reception desk
-uketsuke
-受付
-
-フロント
-front desk, reception desk
-Furonto
-フロント
 
 〜でございます
 polite form of "desu"
@@ -23936,15 +16349,15 @@ the number being inquired about
 otoiawase no bangou
 お問い合わせの番号
 
-びじゅつかん
-art museum, art gallery
-bijutsukan
-美術館
-
 ゆうびんきょく
 post office
 yuubinkyoku
 郵便局
+
+けっきょく
+after all / in the end
+Kekkyoku
+結局
 
 あるいて
 on foot
@@ -23976,25 +16389,10 @@ pretty, very
 Zuibun
 随分
 
-つぎ
-next
-tsugi
-次
-
-きゅうこう
-Rapid
-kyuukou
-急行
-
-とっきゅう
-Express
-tokkyuu
-特急
-
-うちゅうひこうし
-astronaut
-Uchuuhikoushi
-宇宙飛行士
+ぜんぶで
+in total
+zenbude
+全部で
 
 `;
 
@@ -24057,7 +16455,7 @@ Yuudachi
 夕立
 
 にわかあめ
-shower rain
+sudden rain
 Niwakaame
 にわか雨
 
@@ -24196,16 +16594,26 @@ every year
 Mainen
 毎年
 
+さらいしゅう
+the week after next
+Saraishuu
+再来週
+
+しゅうまつ
+weekend
+shuumatsu
+週末
+
+はんとし
+half a year
+Hantoshi
+半年
+
 `;
 
 allUltimateWords["Time Day - Hard"] = ``;
 
 allUltimateWords["Study"] = `
-としょかん
-library
-toshokan
-としょかん
-
 がっこう
 school
 gakkou
@@ -24271,231 +16679,41 @@ junior college
 Tandai
 短大
 
+せんもん
+major, specialty, field of study, Fields of study
+senmon
+専門
+
 せんもんがっこう
 technical college, professional school
 Senmongakkou
 専門学校
 
 だいがくいん
-postgraduate course
+postgraduate course, graduate school
 Daigakuin
 大学院
+
+だいがくいんせい
+graduate student
+Daigakuinsee
+大学院生
 
 `;
 
 allUltimateWords["Study - Hard"] = ``;
 
 allUltimateWords["Medium 02"] = `
-かいぎしつ
-meeting room, conference room
-kaigishitsu
-かいぎしつ
-
-ミーティング
-meeting
-Miitingu
-ミーティング
-
-かいぎ
-meeting, conference, business meeting
-kaigi
-会議
-
-こうぎ
-lecture
-Kougi
-講義
-
-こうし
-lecturer
-Koushi
-講師
-
-かいがい
-overseas
-Kaigai
-海外
-
-がいしょくが おおい
-often eat out
-Gaishoku ga oui
-外食が 多い
-
-がいこくご
-foreign language
-Gaikokugo
-外国語
-
-がいこうかん
-diplomat, foreign affairs officer
-Gaikoukan
-外交官
-
-かいがいりょこう
-trip to a foreign country
-Kaigairyokoo
-海外旅行
-
-りゅうがくせい
-foreign student
-ryuugakusei
-りゅうがくせい
-
-がいこく
-foreigner
-gaikokujin
-外国人
-
-がいこく
-foreign country
-gaikoku
-外国
-
-うんどうかい
-athletic meeting
-Undoukai
-運動会
-
-たいかい
-mass meeting, convention
-Taikai
-大会
-
-かいだん
-staircase
-kaidan
-かいだん
-
-かいらん
-circular, sending round
-Kairan
-回覧
-
-かいがん
-seaside, seashore
-Kaigan
-海岸
-
-りく
-land, shore
-Riku
-陸
-
-...じょう
-... mats (tatami mat unit of room area)
-...jou
-...畳
-
-6じょう
-6 mats (tatami)
-Roku-jou
-6畳
-
-いじょうです
-That's all.
-Ijou desu
-以上です
-
-ーーいじょう
-not less than, ~ over (>=)
--- ijou
-ーー以上
-
-ーーいか
-not more than, ~ under ~ (<=)
--- ika
-ーー以下
-
-おくじょう
-rooftop
-Okujou
-屋上
-
-スキーじょう
-ski resort, ski ground
-Sukiijou
-スキー場
-
-こうじょう
-factory
-Koujou
-工場
-
-こうがく
-engineering
-Kougaku
-工学
-
-こうじちゅう
-Under construction
-Koujichuu
-工事中
-
-かいじょう
-meeting place, hall
-Kaijou
-会場
-
-しょくどう
-dining hall, canteen
-shokudou
-食堂
-
-しゅくだい
-homework
-shukudai
-宿題
-
-じむしょ
-office
-jimusho
-事務所
-
-やさい
-vegetable
-yasai
-野菜
-
-やすい
-inexpensive; cheap (thing)
-yasui
-安い
-
-きょうしつ
-classroom
-kyoushitsu
-きょうしつ
-
-～きょうしつ
-~ class
-~kyoushitsu
-～教室
-
-じゅぎょう
-class
-Jugyou
-授業
-
-クラス
-class
-kurasu
-クラス
-
-いけばなスクール
-Flower arrangement class
-Ikebana sukuuru
-生け花スクール
-
-にほんりょうりこうしゅうかい
-Japanese cooking class
-Nihon ryouri koushuukai
-日本料理講習会
+ケータイ
+mobile phone, cell phone
+keetai
+ケータイ
 
 `;
 
 allUltimateWords["Medium 02 - Hard"] = ``;
 
-allUltimateWords["Verbs 01"] = `
+allUltimateWords["Nemasu"] = `
 とけい
 watch, clock
 tokei
@@ -24536,6 +16754,21 @@ wake up, get up
 Okimasu
 起きます
 
+おきます
+put
+okimasu
+置きます
+
+[じこが～] おきます
+[an accident] happen
+[jiko ga~] Okimasu
+[事故が～] 起きます
+
+[じこに～] あいます
+encounter [an accident]
+[jiko ni~] Aimasu
+[事故に～] 遭います
+
 ねます
 to sleep, go to bed
 nemasu
@@ -24566,15 +16799,105 @@ sleepy
 nemui
 ねむい
 
+おやすみになります
+sleep, rest (honorific equivalent of ねます)
+Oyasumi ni narimasu
+お休みになります
+
 `;
 
-allUltimateWords["Verbs 01 - Hard"] = ``;
+allUltimateWords["Nemasu - Hard"] = ``;
 
 allUltimateWords["Tadoushi"] = `
 [きょうしつを～] ひらきます
 set up [a class], open, hold
 [kyoushitsu o~] Hirakimasu
 [教室を～] 開きます
+
+もうしこみます
+apply for, enter for
+Moushikomimasu
+申し込みます
+
+もうします
+say (humble equivalent of iimasu)
+Moushimasu
+申します
+
+けんこう しんだんを うけます
+have health checks
+Kenkou shindan o ukemasu
+健康 診断を 受けます
+
+とりかえます
+exchange
+Torikaemasu
+取り替えます
+
+こうかんします
+to exchange
+Koukanshimasu
+交換します
+
+[やすみを～] とります
+take [a holiday]
+[yasumi o~] Torimasu
+[休みを～] 取ります
+
+かくにんします
+confirm
+kakunin shimasu
+確認します
+
+しんじます
+believe, trust
+Shinjimasu
+信じます
+
+せんたくします
+do the laundry, wash
+sentaku shimasu
+洗濯します
+
+そうじします
+clean
+souji shimasu
+掃除します
+
+あらいます
+wash
+araimasu
+洗います
+
+おきます
+put
+okimasu
+置きます
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
+けんがくします
+visit some place to study, field trip
+kengaku shimasu
+見学します
+
+よやくします
+reserve, book
+yoyaku shimasu
+予約します
+
+ほんやくします
+translate
+Honyakushimasu
+翻訳します
+
+けんきゅうします
+to research, to study
+kenkyuu shimasu
+研究します
 
 `;
 
@@ -24605,6 +16928,66 @@ Nemuri ni tsukimasu
 arrive, reach
 tsukimasu
 つきます
+
+なります
+become
+narimasu
+なります
+
+[だいがくを～] そつぎょうします
+graduate [from a university]
+[daigaku o~] Sotsugyoushimasu
+[大学を～] 卒業します
+
+[だいがくに～] にゅうがくします
+enter [a university]
+[daigaku ni~] Nyuugakushimasu
+[大学に～] 入学します
+
+（ビザが）いります
+need, require (a visa)
+(biza ga) irimasu
+（ビザが）要ります
+
+きゅうけいします
+take a break, take a rest
+Kyuukeishimasu
+休憩します
+
+やすみます
+rest, have rest, have a day off, be absent
+yasumimasu
+休みます
+
+おやすみになります
+sleep, rest (honorific equivalent of ねます)
+Oyasumi ni narimasu
+お休みになります
+
+[じこに～] あいます
+encounter [an accident]
+[jiko ni~] Aimasu
+[事故に～] 遭います
+
+しゅうしょくします
+to get a full-time job (at...)
+Shuushokushimasu
+就職します
+
+しょくじします
+have a meal, dine
+shokujishimasu
+食事します
+
+しゅっちょうします
+go on a business trip
+shucchoushimasu
+出張します
+
+せいかつします
+to live / to lead a life
+Seikatsushimasu
+生活します
 
 `;
 
@@ -24671,15 +17054,15 @@ attach, put on
 Tsukemasu
 付けます
 
-みつかります
-be found
-Mitsukarimasu
-見つかります
-
 みつけます
 find
 Mitsukemasu
 見つけます
+
+みつかります
+be found
+Mitsukarimasu
+見つかります
 
 [まるを～] つけます
 draw [a circle], mark [with a circle], to draw, to add, to mark
@@ -24731,6 +17114,186 @@ come out / exit
 Demasu
 出ます
 
+おわります
+finish
+owarimasu
+終わります
+
+おえます
+to finish / to end / to complete
+Oemasu
+終えます
+
+うります
+sell
+Urimasu
+売ります
+
+うれます
+sell well / be sold
+Uremasu
+売れます
+
+ぶつかります
+bump, collide
+Butsukarimasu
+ぶつかります
+
+ぶつけます
+hit, strike, or throw something against
+Butsukemasu
+ぶつけます
+
+いれます
+put in / insert
+Iremasu
+入れます
+
+（だいがくに）はいります
+enroll, enter (university)
+(daigaku ni) hairimasu
+（大学に）入ります
+
+[ボタンが～] はずれます
+[a button] be undone/ miss
+[botan ga~] Hazuremasu
+[ボタンが～] 外れます
+
+[せきを～] はずします
+be away [from one's desk]
+[seki o~] Hazushimasu
+[席を～] 外します
+
+まがります
+bent / to be curved
+Magarimasu
+曲がります
+
+まげます
+bend / curve
+Magemasu
+曲げます
+
+もぐります
+dive
+Mogurimasu
+潜ります
+
+もぐらせます
+submerge / make dive
+Mogurasemasu
+潜らせます
+
+むれます
+be steamed / get stuffy
+Muremasu
+蒸れます
+
+むします
+steam
+Mushimasu
+蒸します
+
+むけます
+peel off / come off
+Mukemasu
+剥けます
+
+むきます
+peel, pare
+Mukimasu
+剥きます
+
+いそがせます
+hurry someone / rush
+Isogasemasu
+急がせます
+
+いそぎます
+hurry
+isogimasu
+急ぎます
+
+しられます
+be known / become known
+Shiraremasu
+知られます
+
+しります
+get to know
+shirimasu
+知ります
+
+まちます
+wait
+machimasu
+待ちます
+
+またせます
+keep (someone) waiting
+Matasemasu
+待たせます
+
+もたせます
+let hold / give / entrust to
+Motasemasu
+持たせます
+
+もちます
+hold, carry
+mochimasu
+持ちます
+
+やくにたてます
+put to use / make use of
+Yakunitatemasu
+役に立てます
+
+やくにたちます
+be useful
+yakunitachimasu
+役に立ちます
+
+つかわれます
+be used / be employed
+Tsukawaremasu
+使われます
+
+つかいます
+use
+tsukaimasu
+使えます・使います
+
+つくります
+make, produce
+tsukurimasu
+作ります
+
+つかられます
+be made / be produced
+Tsukaremasu
+作られます / 造られます
+
+やくされます
+be translated / be interpreted
+Yakusaremasu
+訳されます
+
+やくします
+to translate / to interpret
+Yakushimasu
+訳します
+
+わけます
+divide / separate / share
+Wakemasu
+別けます / 分けます
+
+わかれます
+break up / separate / part ways
+Wakaremasu
+別れます / 分かれます
+
 `;
 
 allUltimateWords["Pair - Hard"] = ``;
@@ -24751,11 +17314,21 @@ put out, take out, hand in, send, to submit
 Dashimasu
 出します
 
+なくします
+lose
+nakushimasu
+無くします
+
+おきます
+put
+okimasu
+置きます
+
 `;
 
 allUltimateWords["G1 - Hard"] = ``;
 
-allUltimateWords["Verbs 02"] = `
+allUltimateWords["Tsukemasu Close"] = `
 つけます
 turn on (light / appliance)
 Tsukemasu
@@ -24775,6 +17348,21 @@ Keshimasu
 [a light] go off, disappear
 [denki ga~] Kiemasu
 [電気が～] 消えます
+
+けしき
+scenery, view
+Keshiki
+景色
+
+けしゴム
+eraser, rubber
+keshigomu
+消しゴム
+
+ゴム
+rubber
+Gomu
+ゴム
 
 つけます
 attach, put on
@@ -24863,7 +17451,7 @@ Tojimasu
 
 `;
 
-allUltimateWords["Verbs 02 - Hard"] = ``;
+allUltimateWords["Tsukemasu Close - Hard"] = ``;
 
 allUltimateWords["Leader"] = `
 かちょう
@@ -24873,6 +17461,11 @@ Kachou
 
 ぶちょう
 department head
+Buchou
+部長
+
+ぶちょう
+club president
 Buchou
 部長
 
@@ -24906,6 +17499,41 @@ student council president
 Seitokaichou
 生徒会長
 
+ふくせいとかいちょう
+vice student council president
+Fukuseitokaichou
+副生徒会長
+
+いんちょう
+[hospital] director
+Inchou
+院長
+
+いいんちょう
+class leader
+Iinchou
+委員長
+
+ふくいんちょう
+vice class leader
+Fukuinchou
+副委員長
+
+たんしんしゃ
+single person / person living alone (away from family)
+Tanshinsha
+単身者
+
+たんんにんのせんせい
+homeroom teacher
+Tannin no sensei
+担任の先生
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
 がくちょう
 [university] president
 Gakuchou
@@ -24926,20 +17554,15 @@ officer in charge
 Shochou
 署長
 
-いんちょう
-[hospital] director
-Inchou
-院長
+かんごし
+nurse
+Kangoshi
+看護師
 
 かんごしちょう
 head nurse
 Kangoshichou
 看護師長
-
-かんごし
-nurse
-Kangoshi
-看護師
 
 ちょうちょう
 town mayor
@@ -24951,15 +17574,15 @@ village headman, chief of the village
 Sonchou
 村長
 
-ちじ
-governor
-Chiji
-知事
-
 ちじん
 acquaintance
 Chijin
 知人
+
+ちじ
+governor
+Chiji
+知事
 
 えきちょう
 stationmaster
@@ -24995,472 +17618,7 @@ Shitenchou
 
 allUltimateWords["Leader - Hard"] = ``;
 
-allUltimateWords["Food"] = `
-どうぶつ
-animal
-doubutsu
-動物
-
-どうぶつえん
-zoo
-Doubutsuen
-動物園
-
-こうえん
-park
-kouen
-公園
-
-ほいくえん
-nursery school
-Hoikuen
-保育園
-
-ようちえん
-kindergarten
-Youchien
-幼稚園
-
-えんちょう
-[kindergarten] head teacher, principal
-Enchou
-園長
-
-しょくぶつえん
-botanical garden
-Shokubutsuen
-植物園
-
-ごはん
-a meal, cooked rice
-gohan
-ご飯
-
-くだもの
-fruit
-kudamono
-果物
-
-たべもの
-food
-tabemono
-食べ物
-
-しょくひん
-food
-shokuhin
-食品
-
-せいひん
-products, manufactured goods
-seihin
-製品
-
-いんすたんとしょくひん
-instant food / instant food products
-Insutanto shokuhin
-インスタント食品
-
-ていしょく
-set meal
-teishoku
-定食
-
-しょくよく
-appetite
-Shokuyoku
-食欲
-
-せいよく
-sexual desire / libido
-Seiyoku
-性欲
-
-すいみんよく
-desire to sleep / urge to sleep
-Suiminyoku
-睡眠欲
-
-すいみんじゅつ
-sleep hyponis
-Suiminjutsu
-睡眠術
-
-さいみんじゅつ
-hypnosis / hypnotism
-Saiminjutsu
-催眠術
-
-しゅうしょく
-modification
-shuushoku
-修飾
-
-しゅうしょくします
-to get a full-time job (at...)
-Shuushokushimasu
-就職します
-
-しょくじします
-have a meal, dine
-shokujishimasu
-食事します
-
-わしょく
-Japanese dish
-Washoku
-和食
-
-ようしょく
-Western dish
-Youshoku
-洋食
-
-ゆうしょく
-dinner
-Yuushoku
-夕食
-
-ばんごはん
-supper, dinner
-bangohan
-晩ご飯
-
-あさごはん
-breakfast
-asagohan
-朝ご飯
-
-ひるごはん
-lunch
-hirugohan
-昼ご飯
-
-しょくぎょう
-Occupations
-shokugyou
-職業
-
-ゆうめい
-famous
-yuumei
-有名
-
-しめい
-full name / name
-Shimei
-氏名
-
-びょうめい
-name of a disease / illness name
-Byoumei
-病名
-
-えきめい
-station name
-Ekimei
-駅名
-
-ゆうめい（な）
-famous
-yuumei na
-有名（な）
-
-ゆうめいじん
-celebrity
-Yuumeijin
-有名人
-
-ダイニングキッチン
-kitchen with a dining area
-dainingu kicchin
-ダイニングキッチン
-
-だいどころ
-kitchen
-Daidokoro
-台所
-
-かてい でんき せいひん
-Household Electrical appliances
-Katei denki seihin
-家庭 電気 製品
-
-でんかせいひん
-electrical appliances
-denka seihin
-電化製品
-
-ガラス せいひん
-Glass products
-Garasu seihin
-ガラス 製品
-
-プラスチック せいひん
-Plastics / Plastic products
-Purasuchikku seihin
-プラスチック 製品
-
-きんぞくせい だいどころ ようひん
-Metal kitchen utensils
-Kinzokusei daidokoro youhin
-金属製 台所 用品
-
-だいどころようひん
-Cookware & Kitchen Utensils
-Daidokoro youhin
-台所用品
-
-スポーツ ようひん
-sporting goods
-supootsu youhin
-スポーツ用品
-
-りょこう ようひん
-leisure goods / travel goods
-ryokou youhin
-旅行用品
-
-ベビーようひん
-baby goods
-Bebii youhin
-ベビー用品
-
-レジャーようひん
-recreational equipment
-Rejaa youhin
-レジャー用品
-
-じむようひん・どうぐ
-Office supplies & tools
-Jimuyouhin, dougu
-事務用品・道具
-
-ひじょうようひん
-Emergency medicine / Emergency supplies
-Hijou youhin
-非常用品
-
-`;
-
-allUltimateWords["Food - Hard"] = ``;
-
-allUltimateWords["Gyou"] = `
-にんぎょう
-doll
-Ningyou
-人形
-
-しょくぎょう
-Occupations
-shokugyou
-職業
-
-じゅぎょう
-class
-Jugyou
-授業
-
-えいが
-movie
-eiga
-映画
-
-えいぎょう
-business, sales
-Eigyou
-営業
-
-えいぎょうちゅう
-Open for business
-Eigyouchuu
-営業中
-
-けいえいがく
-business administration
-Keieigaku
-経営学
-
-[か] ぎょう
-［か］row
-kagyou
-［か］行
-
-[い] れつ
-［い］column (generally it is row only)
-iretsu
-［い］列
-
-まえから 2れつめ
-The second row from the front
-Mae kara niretsume
-前から 2列目
-
-2ぎょうめ
-The second line
-Nigyoume
-2行目
-
-3ぎょうめ
-The third line
-Sangyoume
-3行目
-
-ようじ
-something to do, errand
-youji
-用事
-
-ねんちゅうぎょうじ
-Annual events
-Nenchuu gyouji
-年中行事
-
-[だいがくに～] にゅうがくします
-enter [a university]
-[daigaku ni~] Nyuugakushimasu
-[大学に～] 入学します
-
-[だいがくを～] そつぎょうします
-graduate [from a university]
-[daigaku o~] Sotsugyoushimasu
-[大学を～] 卒業します
-
-そつぎょういわい
-Graduation gift (money, stationery, book, etc.)
-Sotsugyouiwai
-卒業祝い
-
-もうしこみます
-apply for, enter for
-Moushikomimasu
-申し込みます
-
-もうしこみ
-Application
-Moushikomi
-申し込み
-
-もしかしたら
-possibly, perhaps
-Moshikashitara
-もしかしたら
-
-もうしわけありません
-I'm sorry/Excuse me.
-Moushiwake arimasen
-申し訳ありません
-
-もうします
-say (humble equivalent of いいます)
-Moushimasu
-申します
-
-（だいがくに）はいります
-enroll, enter (university)
-(daigaku ni) hairimasu
-（大学に）入ります
-
-（だいがくを）でます
-graduate (from university)
-(daigaku o) demasu
-（大学を）出ます
-
-（みせに）はいります
-enter (a shop)
-(mise ni) hairimasu
-（店に）入ります
-
-（みせを）でます
-go out (of a shop)
-(mise o) demasu
-（店を）出ます
-
-でます
-come out
-demasu
-出ます
-
-［おつりが～］でます
-[change] come out
-[otsuri ga ~] demasu
-［お釣りが～］ 出ます
-
-せきが でます
-have a cough
-Seki ga demasu
-せきが 出ます
-
-はなみずが でます
-have a runny nose
-Hanamizu ga demasu
-鼻水が 出ます
-
-ちが でます
-bleed
-Chi ga demasu
-血が 出ます
-
-くも (がでます)
-cloud
-Kumo (ga demasu)
-雲 (が出ます)
-
-にじがでます
-rainbow
-Niji ga demasu
-虹が出ます
-
-[バスが～] でます
-[a bus] leave, depart
-[basu ga~] Demasu
-[バスが～] 出ます
-
-[ほんが～] でます
-[a book] be published
-[hon ga~] Demasu
-[本が～] 出ます
-
-[しあいに～] でます
-participate [in the game]
-[shiai ni~] Demasu
-[試合に～] 出ます
-
-でます
-leave / attend
-demasu
-出ます
-
-だします
-put out, take out, hand in, send, to submit
-Dashimasu
-出します
-
-でます
-come out / exit
-Demasu
-出ます
-
-[ねつを～] だします
-run [a fever] (lit. bring out fever)
-[netsu o~] Dashimasu
-[熱を～] 出します
-
-（レポートを）だします
-hand in (a report)
-(repooto o) dashimasu
-（レポートを）出します
-
-[ごみを～] だします
-put out [the trash]
-[gomi o~] Dashimasu
-[ごみを～] 出します
-
-`;
-
-allUltimateWords["Gyou - Hard"] = ``;
-
-allUltimateWords["Yaku"] = `
+allUltimateWords["Shi Yaku"] = `
 し
 city
 Shi
@@ -25511,6 +17669,11 @@ reserve, book
 yoyaku shimasu
 予約します
 
+やくにたてます
+put to use / make use of
+Yakunitatemasu
+役に立てます
+
 やくにたちます
 be useful
 yakunitachimasu
@@ -25521,10 +17684,20 @@ use
 tsukaimasu
 使えます・使います
 
+つかわれます
+be used / be employed
+Tsukawaremasu
+使われます
+
 つくります
 make, produce
 tsukurimasu
 作ります
+
+つかられます
+be made / be produced
+Tsukaremasu
+作られます / 造られます
 
 ほんやくします
 translate
@@ -25535,6 +17708,11 @@ Honyakushimasu
 to translate / to interpret
 Yakushimasu
 訳します
+
+やくされます
+be translated / be interpreted
+Yakusaremasu
+訳されます
 
 すばやく
 quickly / swiftly / nimbly
@@ -25563,9 +17741,9 @@ Okyakusama
 
 `;
 
-allUltimateWords["Yaku - Hard"] = ``;
+allUltimateWords["Shi Yaku - Hard"] = ``;
 
-allUltimateWords["Kyuu"] = `
+allUltimateWords["Kyuu Train"] = `
 きゅうに
 suddenly
 Kyuu ni
@@ -25581,6 +17759,11 @@ urgent business
 Kyuuyou
 急用
 
+ぼしゅう
+recruitment
+Boshuu
+募集
+
 しゅうにゅう
 income
 Shuunyuu
@@ -25590,6 +17773,21 @@ Shuunyuu
 salary
 Kyuuryou
 給料
+
+こうきょう りょうきん ふりこみ
+Payment of utility charges
+Koukyou ryoukin furikomi
+公共 料金 振り込み
+
+こうきょ
+Imperial Palace
+Koukyo
+皇居
+
+おふりこみ
+payment
+Ofurikomi
+お振り込み
 
 れんきゅう
 consecutive holidays
@@ -25636,10 +17834,10 @@ Good night.
 oyasuminasai
 お休みなさい。
 
-おやすみになる
-honorific expression for ねる
-Oyasumi ni Naru
-お休みになる
+おやすみになります
+sleep, rest (honorific equivalent of ねます)
+Oyasumi ni narimasu
+お休みになります
 
 ひるやすみ
 lunchtime
@@ -25746,6 +17944,11 @@ express train
 Kyuukou
 急行
 
+きゅうこう
+Rapid
+kyuukou
+急行
+
 たいせつ（な）
 important, precious
 taisetsu na
@@ -25757,8 +17960,13 @@ Tokubetsu [na]
 特別 [な]
 
 とっきゅう
-super-express train
+super-express train / limitted express
 Tokkyuu
+特急
+
+とっきゅう
+Express
+tokkyuu
 特急
 
 しんかんせん
@@ -25768,38 +17976,98 @@ shinkansen
 
 `;
 
-allUltimateWords["Kyuu - Hard"] = ``;
-
-allUltimateWords["Ga Particle G5"] = ``;
-
-allUltimateWords["Ga Particle G5 - Hard"] = ``;
-
-allUltimateWords["V - Nai G5"] = ``;
-
-allUltimateWords["V - Nai G5 - Hard"] = ``;
-
-allUltimateWords["V - Te G5"] = ``;
-
-allUltimateWords["V - Te G5 - Hard"] = ``;
-
-allUltimateWords["V - Ta G5"] = ``;
-
-allUltimateWords["V - Ta G5 - Hard"] = ``;
-
-allUltimateWords["V - Ra G5"] = ``;
-
-allUltimateWords["V - Ra G5 - Hard"] = ``;
+allUltimateWords["Kyuu Train - Hard"] = ``;
 
 allUltimateWords["Kou"] = `
+しゅじんこう
+hero, heroine
+Shujinkou
+主人公
+
 じんこう
 population
 jinkou
 人口
 
+とりかえます
+exchange
+Torikaemasu
+取り替えます
+
+こうかんします
+to exchange
+Koukanshimasu
+交換します
+
+こうばん
+police box
+Kouban
+交番
+
 こうさてん
 crossing
 Kousaten
 交差点
+
+しゅうてん
+last stop / terminal (of a train/bus line)
+Shuuten
+終点
+
+しゅうでん
+last train
+Shuuden
+終電
+
+こうつう
+transportation, traffic
+koutsuu
+交通
+
+つうがく
+commuting to school / attending school
+Tsuugaku
+通学
+
+つうきん
+commuting to work
+Tsuukin
+通勤
+
+つうち
+notice / notification / report
+Tsuuchi
+通知
+
+うちゅう
+space, universe
+Uchuu
+宇宙
+
+うちゅうじん
+space alien
+Uchuujin
+宇宙人
+
+うちゅうせん
+spaceship
+Uchuusen
+宇宙船
+
+うちゅうひこうし
+astronaut
+Uchuuhikoushi
+宇宙飛行士
+
+ひこうき
+airplane
+hikouki
+飛行機
+
+くうき
+air
+Kuuki
+空気
 
 くうこう
 airport
@@ -25810,16 +18078,6 @@ kuukou
 over there, the other side
 Mukou
 向こう
-
-こうつう
-transportation, traffic
-koutsuu
-交通
-
-しゅじんこう
-hero, heroine
-Shujinkou
-主人公
 
 けんこう
 Health
@@ -25840,26 +18098,6 @@ Kenkou shindan o ukemasu
 take [an examination]
 [shiken o~] Ukemasu
 [試験を～] 受けます
-
-こうきょ
-Imperial Palace
-Koukyo
-皇居
-
-こうきょう りょうきん ふりこみ
-Payment of utility charges
-Koukyou ryoukin furikomi
-公共 料金 振り込み
-
-こうてい
-affirmative
-koutei
-肯定
-
-ひてい
-negative
-hitei
-否定
 
 `;
 
@@ -25915,11 +18153,6 @@ pan
 a little while, a little bit
 chotto
 一寸
-
-ときどき
-sometimes
-tokidoki
-時々
 
 じゃ、また [あした]
 well then See you [tomorrow]
@@ -25986,26 +18219,6 @@ money
 okane
 お金
 
-ちち
-(my) father
-chichi
-父
-
-はは
-(my) mother
-haha
-母
-
-おとうさん
-(someone else's) father (also used to address one's own father)
-otousan
-お父さん
-
-おかあさん
-(someone else's) mother (also used to address one's own mother)
-okaasan
-お母さん
-
 もう
 already
 mou
@@ -26015,11 +18228,7 @@ mou
 
 allUltimateWords["Easy 02 - Hard"] = ``;
 
-allUltimateWords["0 Others G5"] = ``;
-
-allUltimateWords["0 Others G5 - Hard"] = ``;
-
-allUltimateWords["Ryou"] = `
+allUltimateWords["Ryou Hair Mitsu"] = `
 りゆう
 reason
 Riyuu
@@ -26029,6 +18238,26 @@ Riyuu
 use
 Riyoushimasu
 利用します
+
+りようし
+barber
+Riyoushi
+理容師
+
+とこや
+barber's
+Tokoya
+床屋
+
+りハつてん
+Barber shop
+Rihatsuten
+理髪店
+
+ちょうはつ
+long hair
+Chouhatsu
+長髪
 
 りょう
 quantity
@@ -26041,8 +18270,8 @@ ryou
 寮
 
 りょうり
-Cooking
-Ryouri
+dish (cooked food), cooking
+ryouri
 料理
 
 りょうしん
@@ -26054,6 +18283,26 @@ ryoushin
 parents (someone else's)
 goryoushin
 ご両親
+
+かくにん
+confirmation, confirm
+kakunin
+確認
+
+かくにんします
+confirm
+kakunin shimasu
+確認します
+
+かくじつ
+certain / reliable / definite
+Kakujitsu
+確実
+
+かくほ
+securing / reservation / arrest
+Kakuho
+確保
 
 ほしょうしょ
 guarantee
@@ -26100,52 +18349,5658 @@ clothes
 Iryou
 衣料
 
-りょうり
-dish (cooked food), cooking
-ryouri
-料理
+ふく
+clothes
+fuku
+服
+
+いふく
+Clothes
+ifuku
+衣服
+
+こどもふく
+children's clothes
+kodomofuku
+子ども服
 
 しりょう
 materials, data
 shiryou
 資料
 
-りようし
-barber
-Riyoushi
-理容師
+しります
+get to know
+shirimasu
+知ります
 
-とこや
-barber's
-Tokoya
-床屋
+しっています
+know
+shitteimasu
+知っています
 
-びよういん
-Beauty parlor
-Biyouin
-美容院
+リーゼント
+ducktail
+Riizento
+リーゼント
 
-りハつてん
-Barber shop
-Rihatsuten
-理髪店
+ソバージュ
+shaggy perm
+Sobaaju
+ソバージュ
 
-ちょうはつ
-long hair
-Chouhatsu
-長髪
+まるがり
+close-cropped cut
+Marugari
+丸刈り
+
+ボブ
+bob
+Bobu
+ボブ
+
+おかっぱ
+bobbed hair
+Okappa
+おかっぱ
+
+かっぱつ [な]
+active
+Kappatsu [na]
+活発 [な]
+
+レイヤーカット
+layered cut
+Reiyaa katto
+レイヤーカット
+
+ポニーテール
+ponytail
+Poniitēru
+ポニーテール
+
+みつあみ
+braids
+Mitsuami
+三つ編み
+
+あみだな
+rack (overhead luggage racks)
+Amidana
+網棚
+
+ひみつ
+secret
+Himitsu
+秘密
+
+みつけます
+find
+Mitsukemasu
+見つけます
+
+みつかります
+be found
+Mitsukarimasu
+見つかります
+
+[かぎが～] みつかります
+[a key] be found
+[kagi ga~] Mitsukarimasu
+[かぎ发～] 見つかります
+
+りゅうがくせい
+international student
+Ryuugakusee
+留学生
+
+〜ねんせい
+...year student
+...nensee
+〜年生
 
 `;
 
-allUltimateWords["Ryou - Hard"] = ``;
+allUltimateWords["Ryou Hair Mitsu - Hard"] = ``;
+
+allUltimateWords["Verbs 01"] = `
+みち
+road, way
+michi
+道
+
+まち
+town, city
+machi
+町
+
+まちます
+wait
+machimasu
+待ちます
+
+またせます
+keep (someone) waiting
+Matasemasu
+待たせます
+
+もちろん
+of course
+mochiron
+勿論
+
+もちます
+hold, carry
+mochimasu
+持ちます
+
+もたせます
+let hold / give / entrust to
+Motasemasu
+持たせます
+
+けんがくします
+visit some place to study, field trip
+kengaku shimasu
+見学します
+
+きんがく
+amount of money
+kingaku
+金額
+
+りょこうをします
+travel, make a trip
+ryokou o shimasu
+旅行をします
+
+しゅっちょうします
+go on a business trip
+shucchoushimasu
+出張します
+
+うります
+sell
+Urimasu
+売ります
+
+うれます
+sell well / be sold
+Uremasu
+売れます
+
+まぐろ
+tuna
+maguro
+鮪
+
+もぐらせます
+submerge / make dive
+Mogurasemasu
+潜らせます
+
+もぐります
+dive
+Mogurimasu
+潜ります
+
+まげます
+bend / curve
+Magemasu
+曲げます
+
+まがります
+bent / to be curved
+Magarimasu
+曲がります
+
+（みぎへ）まがります
+turn (to the right)
+(migi e) magarimasu
+（右へ）曲がります
+
+しんごうをみぎへまがってください
+Turn to the right at the signal.
+shingou o migi e magatte kudasai
+信号を右へ曲がってください
+
+むしあつけ
+hot and humid
+Mushiatsui
+蒸し暑い
+
+しつどがたかい / ひくい
+humidity (high / low)
+Shitsudo ga takai / hikui
+湿度が高い / 低い
+
+むします
+steam
+Mushimasu
+蒸します
+
+むれます
+be steamed / get stuffy
+Muremasu
+蒸れます
+
+むきます
+peel, pare
+Mukimasu
+剥きます
+
+むけます
+peel off / come off
+Mukemasu
+剥けます
+
+しられます
+be known / become known
+Shiraremasu
+知られます
+
+いそぎます
+hurry
+isogimasu
+急ぎます
+
+いそがせます
+hurry someone / rush
+Isogasemasu
+急がせます
+
+いそがしい
+busy
+isogashii
+忙しい
+
+`;
+
+allUltimateWords["Verbs 01 - Hard"] = ``;
+
+allUltimateWords["Countries and Languages"] = `
+ヨーロッパ
+Europe
+yooroppa
+ヨーロッパ
+
+ベラクルス
+Veracruz
+berakurusu
+ベラクルス
+
+フエ
+Hue
+fue
+フエ
+
+スイス
+Switzerland
+suisu
+スイス
+
+アジア
+Asia
+ajia
+アジア
+
+パリ
+Paris
+pari
+パリ
+
+ベルリン
+Berlin
+berurin
+ベルリン
+
+ホンコン
+Hong Kong
+honkon
+香港
+
+バンコク
+Bangkok
+bankoku
+バンコク
+
+ニューヨーク
+New York
+nyuuyooku
+ニューヨーク
+
+ロンドン
+London
+rondon
+ロンドン
+
+バンドン
+Bandung
+bandon
+バンドン
+
+ジャカルタ
+Jakarta
+jakaruta
+ジャカルタ
+
+フランケン
+Franken
+furanken
+フランケン
+
+マレーシア
+Malaysia
+Mareeshia
+マレーシア
+
+マレーシアじん
+Malaysian
+Mareeshiajin
+マレーシア人
+
+マレーシアご
+Malaysian
+Mareeshiago
+マレーシア語
+
+ベトナム
+Vietnam
+betonamu
+ベトナム
+
+ベトナムじん
+Vietnamese
+Betonamujin
+ベトナム人
+
+ベトナムご
+Vietnamese
+Betonamugo
+ベトナム語
+
+イタリア
+Italy
+itaria
+イタリア
+
+イタリアじん
+Italian
+Itariajin
+イタリア人
+
+イタリアご
+Italian
+Itariago
+イタリア語
+
+スペイン
+Spain
+supein
+スペイン
+
+スペインじん
+Spanish
+Supeinjin
+スペイン人
+
+スペインご
+Spanish
+Supeingo
+スペイン語
+
+アメリカ
+U.S.A.
+amerika
+アメリカ
+
+アメリカじん
+American
+Amerikajin
+アメリカ人
+
+えいご
+English
+Eigo
+英語
+
+インドネシア
+Indonesia
+indoneshia
+インドネシア
+
+インドネシアじん
+Indonesian
+Indoneshiajin
+インドネシア人
+
+インドネシアご
+Indonesian
+Indoneshiago
+インドネシア語
+
+かんこく
+South Korea
+kankoku
+韓国
+
+かんこくじん
+South Korean
+Kankokujin
+韓国人
+
+かんこくご
+Korean
+Kankokugo
+韓国語
+
+タイ
+Thailand
+tai
+タイ
+
+タイじん
+Thai
+Taijin
+タイ人
+
+タイご
+Thai
+Taigo
+タイ語
+
+ちゅうごく
+China
+chuugoku
+中国
+
+ちゅうごくご
+Chinese
+Chuugokugo
+中国語
+
+ちゅうごくじん
+Chinese
+Chuugokujin
+中国人
+
+ドイツ
+Germany
+doitsu
+ドイツ
+
+ドイツじん
+German
+Doitsujin
+ドイツ人
+
+ドイツご
+German
+Doitsugo
+ドイツ語
+
+にほん
+Japan
+nihon
+日本
+
+にほんじん
+Japanese
+Nihonjin
+日本人
+
+にほんご
+Japanese
+Nihongo
+日本語
+
+フランス
+France
+furansu
+フランス
+
+フランスじん
+French
+Furansujin
+フランス人
+
+フランスご
+French
+Furansugo
+フランス語
+
+`;
+
+allUltimateWords["Countries and Languages - Hard"] = `
+ブラジル
+Brazil
+burajiru
+ブラジル
+
+ブラジルじん
+Brazilian
+Burajirujin
+ブラジル人
+
+ポルトガルご
+Portuguese
+Porutogarugo
+ポルトガル語
+
+メキシコ
+Mexico
+Mekishiko
+メキシコ
+
+メキシコじん
+Mexican
+Mekishikojin
+メキシコ人
+
+スペインご
+Spanish
+Supeingo
+スペイン語
+
+イラン
+Iran
+Iran
+※イラン
+
+イランじん
+Iranian
+Iranjin
+イラン人
+
+ペルシアご
+Persian
+Perushiago
+ペルシア語
+
+エジプト
+Egypt
+Ejiputo
+エジプト
+
+エジプトじん
+Egyptian
+Ejiputojin
+エジプト人
+
+アラビアご
+Arabic
+Arabiago
+アラビア語
+
+カナダ
+Canada
+Kanada
+カナダ
+
+カナダじん
+Canadian
+Kanadajin
+カナダ人
+
+えいご・フランスご
+English, French
+Eigo, Furansugo
+英語・フランス語
+
+イギリス
+U.K.
+igirisu
+イギリス
+
+イギリスじん
+British
+Igirisujin
+イギリス人
+
+えいご
+English
+Eigo
+英語
+
+オーストラリア
+Australia
+oosutoraria
+オーストラリア
+
+オーストラリアじん
+Australian
+Oosutorariajin
+オーストラリア人
+
+えいご
+English
+Eigo
+英語
+
+シンガポール
+Singapore
+shingapooru
+シンガポール
+
+シンガポールじん
+Singaporean
+Shingapoorujin
+シンガポール人
+
+えいご
+English
+Eigo
+英語
+
+サウジアラビア
+Saudi Arabia
+Saujiarabia
+サウジアラビア
+
+サウジアラビアじん
+Saudi Arabian
+Saujiarabiajin
+サウジアラビア人
+
+アラビアご
+Arabic
+Arabiago
+アラビア語
+
+フィリピン
+Philippines
+firipin
+フィリピン
+
+フィリピンじん
+Filipino
+Firipinjin
+フィリピン人
+
+フィリピノご
+Filipino
+Firipinogo
+フィリピノ語
+
+ロシア
+Russia
+roshia
+ロシア
+
+ロシアじん
+Russian
+Roshiajin
+ロシア人
+
+ロシアご
+Russian
+Roshiago
+ロシア語
+
+インド
+India
+indo
+インド
+
+インドじん
+Indian
+Indojin
+インド人
+
+ヒンディーご
+Hindi
+Hindiigo
+ヒンディー語
+
+`;
+
+allUltimateWords["All V"] = `
+おこします
+wake (someone) up
+Okoshimasu
+起こします
+
+けします
+turn off / extinguish
+Keshimasu
+消します
+
+だします
+put out, take out, hand in, send, to submit
+Dashimasu
+出します
+
+なくします
+lose
+nakushimasu
+無くします
+
+めざめます
+to wake up, to awaken, to come to one's senses
+Mezamemasu
+目覚めます
+
+めざます
+to awaken, to wake up, to open one's eyes
+Mezamasu
+目覚ます
+
+おきます
+wake up, get up
+Okimasu
+起きます
+
+めがさめます
+wake up
+Me ga samemasu
+目が覚めます
+
+めをさまします
+to wake up, to awaken, to open one's eyes
+Me wo samashimasu
+目を覚まします
+
+つけます
+turn on (light / appliance)
+Tsukemasu
+つけます
+
+[でんきが～] つきます
+[a light] come on
+[denki ga~] Tsukimasu
+[電気が～] つきます
+
+[でんきが～] きえます
+[a light] go off, disappear
+[denki ga~] Kiemasu
+[電気が～] 消えます
+
+[ポケットが～] つきます
+[a pocket] be attached
+[poketto ga~] Tsukimasu
+[ポケットが～] 付きます
+
+つけます
+attach, put on
+Tsukemasu
+付けます
+
+みつけます
+find
+Mitsukemasu
+見つけます
+
+みつかります
+be found
+Mitsukarimasu
+見つかります
+
+[まるを～] つけます
+draw [a circle], mark [with a circle], to draw, to add, to mark
+[maru o~] Tsukemasu
+[丸を～] 付けます
+
+まるがつきます
+to be marked with a circle, to have a circle attached
+Maru ga tsukimasu
+丸が付きます
+
+きを つけます
+pay attention / be careful
+Ki o tsukemasu
+気をつけます
+
+きが つきます
+notice / realize
+Ki ga tsukimasu
+気がつきます
+
+[ドアが～] あきます
+[a door] open
+[doa ga~] Akimasu
+[ドアが～] 開きます
+
+あけます
+open
+akemasu
+空きます
+
+しめます
+close / shut (something)
+Shimemasu
+閉めます
+
+[ドアが～] しまります
+[a door] close, shut
+[doa ga~] Shimarimasu
+[ドアが～] 閉まります
+
+でます
+come out / exit
+Demasu
+出ます
+
+おわります
+finish
+owarimasu
+終わります
+
+おえます
+to finish / to end / to complete
+Oemasu
+終えます
+
+うります
+sell
+Urimasu
+売ります
+
+うれます
+sell well / be sold
+Uremasu
+売れます
+
+[きょうしつを～] ひらきます
+set up [a class], open, hold
+[kyoushitsu o~] Hirakimasu
+[教室を～] 開きます
+
+ねます
+to sleep, go to bed
+nemasu
+ねます
+
+ねむります
+sleep
+Nemurimasu
+眠ります
+
+あさねぼうします
+to oversleep
+Asanebou shimasu
+朝寝坊します
+
+ねむりにつきます
+to fall asleep, to drop off to sleep, to go to sleep
+Nemuri ni tsukimasu
+眠りに就きます
+
+つきます
+arrive, reach
+tsukimasu
+つきます
+
+なります
+become
+narimasu
+なります
+
+けんきゅうします
+to research, to study
+kenkyuu shimasu
+研究します
+
+わかりました
+Ok i understand.
+wakarimashita
+分かりました
+
+しゅうしょくします
+to get a full-time job (at...)
+Shuushokushimasu
+就職します
+
+しょくじします
+have a meal, dine
+shokujishimasu
+食事します
+
+[だいがくに～] にゅうがくします
+enter [a university]
+[daigaku ni~] Nyuugakushimasu
+[大学に～] 入学します
+
+[だいがくを～] そつぎょうします
+graduate [from a university]
+[daigaku o~] Sotsugyoushimasu
+[大学を～] 卒業します
+
+もうしこみます
+apply for, enter for
+Moushikomimasu
+申し込みます
+
+もうします
+say (humble equivalent of iimasu)
+Moushimasu
+申します
+
+（だいがくに）はいります
+enroll, enter (university)
+(daigaku ni) hairimasu
+（大学に）入ります
+
+（だいがくを）でます
+graduate (from university)
+(daigaku o) demasu
+（大学を）出ます
+
+（みせに）はいります
+enter (a shop)
+(mise ni) hairimasu
+（店に）入ります
+
+（みせを）でます
+go out (of a shop)
+(mise o) demasu
+（店を）出ます
+
+でます
+come out
+demasu
+出ます
+
+［おつりが～］でます
+[change] come out
+[otsuri ga ~] demasu
+［お釣りが～］ 出ます
+
+せきが でます
+have a cough
+Seki ga demasu
+せきが 出ます
+
+はなみずが でます
+have a runny nose
+Hanamizu ga demasu
+鼻水が 出ます
+
+ちが でます
+bleed
+Chi ga demasu
+血が 出ます
+
+くも (がでます)
+cloud
+Kumo (ga demasu)
+雲 (が出ます)
+
+にじがでます
+rainbow
+Niji ga demasu
+虹が出ます
+
+[バスが～] でます
+[a bus] leave, depart
+[basu ga~] Demasu
+[バスが～] 出ます
+
+[ほんが～] でます
+[a book] be published
+[hon ga~] Demasu
+[本が～] 出ます
+
+[しあいに～] でます
+participate [in the game]
+[shiai ni~] Demasu
+[試合に～] 出ます
+
+でます
+leave / attend
+demasu
+出ます
+
+[ねつを～] だします
+run [a fever] (lit. bring out fever)
+[netsu o~] Dashimasu
+[熱を～] 出します
+
+（レポートを）だします
+hand in (a report)
+(repooto o) dashimasu
+（レポートを）出します
+
+[ごみを～] だします
+put out [the trash]
+[gomi o~] Dashimasu
+[ごみを～] 出します
+
+けんこう しんだんを うけます
+have health checks
+Kenkou shindan o ukemasu
+健康 診断を 受けます
+
+[しけんを～] うけます
+take [an examination]
+[shiken o~] Ukemasu
+[試験を～] 受けます
+
+きゅうけいします
+take a break, take a rest
+Kyuukeishimasu
+休憩します
+
+[やすみを～] とります
+take [a holiday]
+[yasumi o~] Torimasu
+[休みを～] 取ります
+
+（かいしゃを）やすみます
+take a day off (work)
+(kaisha o) yasumimasu
+（会社を）休みます
+
+[いすに～] やすみます
+sit on [a chair]
+[isu ni~] Yasumimasu
+[椅子に～] 休みます
+
+やすみます
+rest, have rest, have a day off, be absent
+yasumimasu
+休みます
+
+やきゅうをします
+play baseball
+yakyuu o shimasu
+野球をします
+
+せんたくします
+do the laundry, wash
+sentaku shimasu
+洗濯します
+
+ふくをせんたくします
+wash the clothes
+fuku o sentaku shimasu
+服を洗濯します
+
+そうじします
+clean
+souji shimasu
+掃除します
+
+あらいます
+wash
+araimasu
+洗います
+
+あけます
+open, be vacant; be unoccupied
+akimasu
+空きます
+
+あなが あきます
+Have a hole / There is a hole
+Ana ga akimasu
+穴が開きます
+
+とじます
+close
+Tojimasu
+閉じます
+
+けんがくします
+visit some place to study, field trip
+kengaku shimasu
+見学します
+
+りょこうをします
+travel, make a trip
+ryokou o shimasu
+旅行をします
+
+しゅっちょうします
+go on a business trip
+shucchoushimasu
+出張します
+
+もぐる
+dive
+Moguru
+潜る
+
+まげる
+bend
+Mageru
+曲げる
+
+よやくします
+reserve, book
+yoyaku shimasu
+予約します
+
+ほんやくします
+translate
+Honyakushimasu
+翻訳します
+
+ぶつけます
+hit, strike, or throw something against
+Butsukemasu
+ぶつけます
+
+ぶつかります
+bump, collide
+Butsukarimasu
+ぶつかります
+
+いれます
+put in / insert
+Iremasu
+入れます
+
+（ビザが）いります
+need, require (a visa)
+(biza ga) irimasu
+（ビザが）要ります
+
+いれます
+make (coffee tea), brew
+iremasu
+淹れます・入れます
+
+とりかえます
+exchange
+Torikaemasu
+取り替えます
+
+こうかんします
+to exchange
+Koukanshimasu
+交換します
+
+おやすみになります
+sleep, rest (honorific equivalent of ねます)
+Oyasumi ni narimasu
+お休みになります
+
+かくにんします
+confirm
+kakunin shimasu
+確認します
+
+しんじます
+believe, trust
+Shinjimasu
+信じます
+
+[じこが～] おきます
+[an accident] happen
+[jiko ga~] Okimasu
+[事故が～] 起きます
+
+[じこに～] あいます
+encounter [an accident]
+[jiko ni~] Aimasu
+[事故に～] 遭います
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
+[せきを～] はずします
+be away [from one's desk]
+[seki o~] Hazushimasu
+[席を～] 外します
+
+[ボタンが～] はずれます
+[a button] be undone/ miss
+[botan ga~] Hazuremasu
+[ボタンが～] 外れます
+
+まがります
+bent / to be curved
+Magarimasu
+曲がります
+
+まげます
+bend / curve
+Magemasu
+曲げます
+
+もぐらせます
+submerge / make dive
+Mogurasemasu
+潜らせます
+
+もぐります
+dive
+Mogurimasu
+潜ります
+
+むれます
+be steamed / get stuffy
+Muremasu
+蒸れます
+
+むします
+steam
+Mushimasu
+蒸します
+
+むけます
+peel off / come off
+Mukemasu
+剥けます
+
+むきます
+peel, pare
+Mukimasu
+剥きます
+
+いそぎます
+hurry
+isogimasu
+急ぎます
+
+いそがせます
+hurry someone / rush
+Isogasemasu
+急がせます
+
+しられます
+be known / become known
+Shiraremasu
+知られます
+
+しります
+get to know
+shirimasu
+知ります
+
+まちます
+wait
+machimasu
+待ちます
+
+またせます
+keep (someone) waiting
+Matasemasu
+待たせます
+
+もちます
+hold, carry
+mochimasu
+持ちます
+
+もたせます
+let hold / give / entrust to
+Motasemasu
+持たせます
+
+やくにたてます
+put to use / make use of
+Yakunitatemasu
+役に立てます
+
+やくにたちます
+be useful
+yakunitachimasu
+役に立ちます
+
+つかいます
+use
+tsukaimasu
+使えます・使います
+
+つかわれます
+be used / be employed
+Tsukawaremasu
+使われます
+
+つくります
+make, produce
+tsukurimasu
+作ります
+
+つかられます
+be made / be produced
+Tsukaremasu
+作られます / 造られます
+
+やくされます
+be translated / be interpreted
+Yakusaremasu
+訳されます
+
+やくします
+to translate / to interpret
+Yakushimasu
+訳します
+
+わけます
+divide / separate / share
+Wakemasu
+別けます / 分けます
+
+わかれます
+break up / separate / part ways
+Wakaremasu
+別れます / 分かれます
+
+せいかつします
+to live / to lead a life
+Seikatsushimasu
+生活します
+
+`;
+
+allUltimateWords["All V - Hard"] = ``;
+
+allUltimateWords["Gyou Jugyou Eigyou Demasu"] = `
+にんぎょう
+doll
+Ningyou
+人形
+
+しょくぎょう
+Occupations
+shokugyou
+職業
+
+きょうしつ
+classroom
+kyoushitsu
+きょうしつ
+
+～きょうしつ
+~ class
+~kyoushitsu
+～教室
+
+じゅぎょう
+class
+Jugyou
+授業
+
+クラス
+class
+kurasu
+クラス
+
+いけばなスクール
+Flower arrangement class
+Ikebana sukuuru
+生け花スクール
+
+にほんりょうりこうしゅうかい
+Japanese cooking class
+Nihon ryouri koushuukai
+日本料理講習会
+
+えいが
+movie
+eiga
+映画
+
+えいぎょう
+business, sales
+Eigyou
+営業
+
+えいぎょうちゅう
+Open for business
+Eigyouchuu
+営業中
+
+けいえいがく
+business administration
+Keieigaku
+経営学
+
+けいざい
+economy, economics
+keizai
+経済
+
+けいざいがく
+economics
+Keizaigaku
+経済学
+
+けいさん
+Calculation
+Keisan
+計算
+
+けいさんします
+calculate
+Keisanshimasu
+計算します
+
+けいさんき
+calculator
+Keisanki
+計算機
+
+[か] ぎょう
+［か］row
+kagyou
+［か］行
+
+[い] れつ
+［い］column (generally it is row only)
+iretsu
+［い］列
+
+まえから 2れつめ
+The second row from the front
+Mae kara niretsume
+前から 2列目
+
+2ぎょうめ
+The second line
+Nigyoume
+2行目
+
+3ぎょうめ
+The third line
+Sangyoume
+3行目
+
+ようじ
+something to do, errand
+youji
+用事
+
+ねんちゅうぎょうじ
+Annual events
+Nenchuu gyouji
+年中行事
+
+[だいがくに～] にゅうがくします
+enter [a university]
+[daigaku ni~] Nyuugakushimasu
+[大学に～] 入学します
+
+[だいがくを～] そつぎょうします
+graduate [from a university]
+[daigaku o~] Sotsugyoushimasu
+[大学を～] 卒業します
+
+そつぎょういわい
+Graduation gift (money, stationery, book, etc.)
+Sotsugyouiwai
+卒業祝い
+
+もうしこみます
+apply for, enter for
+Moushikomimasu
+申し込みます
+
+もうしこみ
+Application
+Moushikomi
+申し込み
+
+もしかしたら
+possibly, perhaps
+Moshikashitara
+もしかしたら
+
+もうしわけありません
+I'm sorry/Excuse me.
+Moushiwake arimasen
+申し訳ありません
+
+もうします
+say (humble equivalent of iimasu)
+Moushimasu
+申します
+
+（ビザが）いります
+need, require (a visa)
+(biza ga) irimasu
+（ビザが）要ります
+
+いれます
+make (coffee tea), brew
+iremasu
+淹れます・入れます
+
+いれます
+put in / insert
+Iremasu
+入れます
+
+（だいがくに）はいります
+enroll, enter (university)
+(daigaku ni) hairimasu
+（大学に）入ります
+
+（だいがくを）でます
+graduate (from university)
+(daigaku o) demasu
+（大学を）出ます
+
+（みせに）はいります
+enter (a shop)
+(mise ni) hairimasu
+（店に）入ります
+
+（みせを）でます
+go out (of a shop)
+(mise o) demasu
+（店を）出ます
+
+でます
+come out
+demasu
+出ます
+
+［おつりが～］でます
+[change] come out
+[otsuri ga ~] demasu
+［お釣りが～］ 出ます
+
+せきが でます
+have a cough
+Seki ga demasu
+せきが 出ます
+
+はなみずが でます
+have a runny nose
+Hanamizu ga demasu
+鼻水が 出ます
+
+ちが でます
+bleed
+Chi ga demasu
+血が 出ます
+
+くも (がでます)
+cloud
+Kumo (ga demasu)
+雲 (が出ます)
+
+にじがでます
+rainbow
+Niji ga demasu
+虹が出ます
+
+[バスが～] でます
+[a bus] leave, depart
+[basu ga~] Demasu
+[バスが～] 出ます
+
+[ほんが～] でます
+[a book] be published
+[hon ga~] Demasu
+[本が～] 出ます
+
+[しあいに～] でます
+participate [in the game]
+[shiai ni~] Demasu
+[試合に～] 出ます
+
+でます
+leave / attend
+demasu
+出ます
+
+だします
+put out, take out, hand in, send, to submit
+Dashimasu
+出します
+
+でます
+come out / exit
+Demasu
+出ます
+
+[ねつを～] だします
+run [a fever] (lit. bring out fever)
+[netsu o~] Dashimasu
+[熱を～] 出します
+
+（レポートを）だします
+hand in (a report)
+(repooto o) dashimasu
+（レポートを）出します
+
+[ごみを～] だします
+put out [the trash]
+[gomi o~] Dashimasu
+[ごみを～] 出します
+
+にほんごきょうしつ
+Japanese language class
+Nihon-go kyoushitsu
+日本語教室
+
+`;
+
+allUltimateWords["Gyou Jugyou Eigyou Demasu - Hard"] = ``;
+
+allUltimateWords["En Shoku Butsu Seki youhin Mei"] = `
+だいぶつ
+Great Buddha
+Daibutsu
+大仏
+
+どうぶつ
+animal
+doubutsu
+動物
+
+どうぶつえん
+zoo
+Doubutsuen
+動物園
+
+こうえん
+park
+kouen
+公園
+
+えんちょう
+[kindergarten] head teacher, principal
+Enchou
+園長
+
+ほいくえん
+nursery school
+Hoikuen
+保育園
+
+ようちえん
+kindergarten
+Youchien
+幼稚園
+
+ゆうえんち
+amusement park
+Yuuenchi
+遊園地
+
+おくじょう ゆうえんち
+amusement area
+okujou yuuenchi
+屋上遊園地
+
+おくじょう
+rooftop
+Okujou
+屋上
+
+ぼくじょう
+ranch, farm
+bokujou
+牧場
+
+せいかがく
+biochemistry
+Seikagaku
+生化学
+
+せいぶつがく
+biology
+Seibutsu-gaku
+生物学
+
+しょくぶつえん
+botanical garden
+Shokubutsuen
+植物園
+
+ぶつりがく
+physics
+Butsurigaku
+物理学
+
+ぶつけます
+hit, strike, or throw something against
+Butsukemasu
+ぶつけます
+
+ぶつかります
+bump, collide
+Butsukarimasu
+ぶつかります
+
+たんすいかぶつ
+carbohydrates
+Tansuikabutsu
+炭水化物
+
+たんぱくしつ
+protein
+Tanpakushitsu
+たんぱく質
+
+ししつ
+fat, oil
+Shishitsu
+脂質
+
+あぶら
+oil, fat
+Abura
+油
+
+せきゆ
+oil
+Sekiyu
+石油
+
+せき
+seat
+Seki
+席
+
+せき
+cough
+Seki
+せき
+
+せきがでる
+to cough
+Seki Ga Deru
+せきが出る
+
+せきが でます
+have a cough
+Seki ga demasu
+せきが 出ます
+
+よやくせき
+Reserved seat
+Yoyakuseki
+予約席
+
+きんえんせき
+No smoking seat
+Kin'enseki
+禁煙席
+
+しんせき
+relatives
+Shinseki
+親戚
+
+めんせき
+Area
+Menseki
+面積
+
+たいせき
+volume / cubic content
+Taiseki
+体積
+
+ようせき
+capacity / volume (holding capacity)
+Youseki
+容積
+
+せいせき
+performance, score, result, grade (on a test, etc.)
+Seiseki
+成績
+
+[かいぎに～] しゅっせきします
+attend [a meeting]
+[kaigi ni~] Shussekishimasu
+[会議に～] 出席します
+
+てんせきこけをしょうぜず
+A rolling stone gathers no moss.
+Tenseki koke o shouzezu
+転石苔を生ぜず
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
+[せきを～] はずします
+be away [from one's desk]
+[seki o~] Hazushimasu
+[席を～] 外します
+
+[ボタンが～] はずれます
+[a button] be undone/ miss
+[botan ga~] Hazuremasu
+[ボタンが～] 外れます
+
+くだもの
+fruit
+kudamono
+果物
+
+ごはん
+a meal, cooked rice
+gohan
+ご飯
+
+たべもの
+food
+tabemono
+食べ物
+
+しょくひん
+food
+shokuhin
+食品
+
+せいひん
+products, manufactured goods
+seihin
+製品
+
+いんすたんとしょくひん
+instant food / instant food products
+Insutanto shokuhin
+インスタント食品
+
+ていしょく
+set meal
+teishoku
+定食
+
+しょくよく
+appetite
+Shokuyoku
+食欲
+
+せいよく
+sexual desire / libido
+Seiyoku
+性欲
+
+すいみんよく
+desire to sleep / urge to sleep
+Suiminyoku
+睡眠欲
+
+すいみんじゅつ
+sleep hyponis
+Suiminjutsu
+睡眠術
+
+さいみんじゅつ
+hypnosis / hypnotism
+Saiminjutsu
+催眠術
+
+しゅうしょく
+modification
+shuushoku
+修飾
+
+しゅうしょくします
+to get a full-time job (at...)
+Shuushokushimasu
+就職します
+
+しょくじします
+have a meal, dine
+shokujishimasu
+食事します
+
+やくしょくめい
+Positions in society, Job title, Position name
+yakushokumei
+役職名
+
+わしょく
+Japanese dish
+Washoku
+和食
+
+ようしょく
+Western dish
+Youshoku
+洋食
+
+ゆうしょく
+dinner
+Yuushoku
+夕食
+
+ばんごはん
+supper, dinner
+bangohan
+晩ご飯
+
+あさごはん
+breakfast
+asagohan
+朝ご飯
+
+ひるごはん
+lunch
+hirugohan
+昼ご飯
+
+しょくぎょう
+Occupations
+shokugyou
+職業
+
+ゆうめい
+famous
+yuumei
+有名
+
+しめい
+full name / name
+Shimei
+氏名
+
+びょうめい
+name of a disease / illness name
+Byoumei
+病名
+
+えきめい
+station name
+Ekimei
+駅名
+
+ゆうめい（な）
+famous
+yuumei na
+有名（な）
+
+ゆうめいじん
+celebrity
+Yuumeijin
+有名人
+
+かてい でんき せいひん
+Household Electrical appliances
+Katei denki seihin
+家庭 電気 製品
+
+でんかせいひん
+electrical appliances
+denka seihin
+電化製品
+
+ガラス せいひん
+Glass products
+Garasu seihin
+ガラス 製品
+
+プラスチック せいひん
+Plastics / Plastic products
+Purasuchikku seihin
+プラスチック 製品
+
+きんぞくせい だいどころ ようひん
+Metal kitchen utensils
+Kinzokusei daidokoro youhin
+金属製 台所 用品
+
+だいどころようひん
+Cookware & Kitchen Utensils
+Daidokoro youhin
+台所用品
+
+スポーツ ようひん
+sporting goods
+supootsu youhin
+スポーツ用品
+
+りょこう ようひん
+leisure goods / travel goods
+ryokou youhin
+旅行用品
+
+ベビーようひん
+baby goods
+Bebii youhin
+ベビー用品
+
+レジャーようひん
+recreational equipment
+Rejaa youhin
+レジャー用品
+
+じむようひん
+office supplies
+Jimuyouhin
+事務用品
+
+ひじょうようひん
+Emergency medicine / Emergency supplies
+Hijou youhin
+非常用品
+
+のみもの
+drinks
+nomimono
+飲み物
+
+`;
+
+allUltimateWords["En Shoku Butsu Seki youhin Mei - Hard"] = ``;
+
+allUltimateWords["Kaigi Jou"] = `
+かいぎしつ
+meeting room, conference room
+kaigishitsu
+かいぎしつ
+
+ミーティング
+meeting
+Miitingu
+ミーティング
+
+かいぎ
+meeting, conference, business meeting
+kaigi
+会議
+
+こうぎ
+lecture
+Kougi
+講義
+
+こうし
+lecturer
+Koushi
+講師
+
+がいしょくが おおい
+often eat out
+Gaishoku ga oui
+外食が 多い
+
+かいがい
+overseas
+Kaigai
+海外
+
+かいがいりょこう
+trip to a foreign country
+Kaigairyokoo
+海外旅行
+
+がいこく
+foreign country
+gaikoku
+外国
+
+がいこくご
+foreign language
+Gaikokugo
+外国語
+
+がいこく
+foreigner
+gaikokujin
+外国人
+
+がいこうかん
+diplomat, foreign affairs officer
+Gaikoukan
+外交官
+
+りゅうがくせい
+foreign student
+ryuugakusei
+りゅうがくせい
+
+うんどうかい
+athletic meeting
+Undoukai
+運動会
+
+たいかい
+mass meeting, convention
+Taikai
+大会
+
+かいだん
+staircase
+kaidan
+かいだん
+
+かいらん
+circular, sending round
+Kairan
+回覧
+
+かいがん
+seaside, seashore
+Kaigan
+海岸
+
+りく
+land, shore
+Riku
+陸
+
+...じょう
+... mats (tatami mat unit of room area)
+...jou
+...畳
+
+6じょう
+6 mats (tatami)
+Roku-jou
+6畳
+
+いじょうです
+That's all.
+Ijou desu
+以上です
+
+ーーいじょう
+not less than, ~ over (>=)
+-- ijou
+ーー以上
+
+ーーいか
+not more than, ~ under ~ (<=)
+-- ika
+ーー以下
+
+おくじょう
+rooftop
+Okujou
+屋上
+
+スキーじょう
+ski resort, ski ground
+Sukiijou
+スキー場
+
+かいじょう
+meeting place, hall
+Kaijou
+会場
+
+こうじょう
+factory
+Koujou
+工場
+
+こうじちゅう
+Under construction
+Koujichuu
+工事中
+
+こうがく
+engineering
+Kougaku
+工学
+
+ねんがじょう
+New Year's greeting card
+nengajou
+年賀状
+
+`;
+
+allUltimateWords["Kaigi Jou - Hard"] = ``;
+
+allUltimateWords["Kan sho hi Jutsu Jitsu"] = `
+いしゃ
+[medical] doctor
+isha
+医者
+
+はかせ
+doctor
+Hakase
+博士
+
+はくぶつかん
+museum
+Hakubutsukan
+博物館
+
+としょかん
+library
+toshokan
+としょかん
+
+りょかん
+Japanese-style hotel, inn
+Ryokan
+旅館
+
+ろうか
+corridor, hallway, hall
+Rouka
+廊下
+
+だいどころ
+kitchen
+Daidokoro
+台所
+
+ダイニングキッチン
+kitchen with a dining area
+dainingu kicchin
+ダイニングキッチン
+
+げんかん
+front door, porch, entrance hall
+Genkan
+玄関
+
+すいぞくかん
+aquarium
+Suizokukan
+水族館
+
+えいがかん
+movie theater
+Eigakan
+映画館
+
+プレイガイド
+(theater) ticket agency
+pureigaido
+プレイガイド
+
+じはんき
+vending machine
+Jihanki
+自販機
+
+じどうはんばいき
+vending machine
+jidouhanbaiki
+自動販売機
+
+じどうけんばいき
+ticket machine
+Jidou kenbaiki
+自動券売機
+
+ていきけん
+season ticket, commuter pass
+Teikiken
+定期券
+
+ていきゅうび
+Regular holiday
+Teikyuubi
+定休日
+
+ていしょく
+set meal
+teishoku
+定食
+
+けってい
+decision, determination
+Kettei
+決定
+
+こうてい
+affirmative
+koutei
+肯定
+
+ひてい
+negative
+hitei
+否定
+
+よてい
+plan, schedule
+Yotei
+予定
+
+よていひょう
+schedule
+Yoteihyou
+予定表
+
+さっき
+a short while ago
+Sakki
+さっき
+
+さいきん
+recently, these days
+saikin
+最近
+
+このごろ
+these days
+Kono goro
+この頃
+
+しょっき
+tableware / kitchenware
+shokki
+食器
+
+がっき
+musical instrument
+Gakki
+楽器
+
+がっき
+school term / semester
+Gakki
+楽器 / 学期
+
+らいがっき
+next semester
+Raigakki
+来学期
+
+こんがっき
+this semester
+Kongakki
+今学期
+
+しょっけん
+meal ticket
+Shokken
+食券
+
+りょけん
+passport
+Ryoken
+旅券
+
+りょひ
+travel expenses / travel allowance
+Ryohi
+旅費
+
+せいかつひ
+living expenses
+Seikatsuhi
+生活費
+
+がくひ
+tuition / school expenses
+Gakuhi
+学費
+
+しょくひ
+food expenses
+Shokuhi
+食費
+
+かいひ
+membership fee
+Kaihi
+会費
+
+すうがく
+mathematics
+Suugaku
+数学
+
+かいすうけん
+coupon ticket / Multi-ride Ticket
+Kaisuuken
+回数券
+
+じかい
+next time
+Jikai
+次回
+
+こんかい
+this time
+Konkai
+今回
+
+かいさつぐち
+ticket barrier
+Kaisatsuguchi
+改札口
+
+けいさつ
+police; police station
+Keisatsu
+警察
+
+けいさつかん
+policeman
+Keisatsukan
+警察官
+
+こうばん
+police box
+Kouban
+交番
+
+まず
+first of all
+mazu
+先ず
+
+さいしょに
+first of all
+Saisho ni
+最初に
+
+さいこうきおん ど
+the highest temperature
+Saikou kion do
+最高気温 ℃ (ど)
+
+さいていきおん ど
+the lowest temperature
+Saitei kion do
+最低気温 ℃ (ど)
+
+きおん
+temperature (weather)
+Kion
+気温
+
+ばしょ
+place
+Basho
+場所
+
+ところ
+place
+tokoro
+所
+
+けいさつしょ
+police station
+keisatsusho
+警察署
+
+じむしょ
+office
+jimusho
+事務所
+
+しょうぼうしょ
+fire/ambulance station
+shoubousho
+消防署
+
+しょうかき
+fire extinguisher
+Shoukaki
+消火器
+
+ぼうすい
+waterproof / waterproofing
+Bousui
+防水
+
+ぼうすいかこう
+waterproof processing / waterproofing
+Bousui kakou
+防水加工
+
+かこ
+past
+kako
+過去
+
+ひかこ
+non-past
+hikako
+非過去
+
+たいいくかん
+gymnasium
+Taiikukan
+体育館
+
+たいいくのひ
+Health and Sports Day
+taiiku no hi
+体育の日
+
+たいいくがく
+physical education
+Taiikugaku
+体育学
+
+びじゅつかん
+art museum, art gallery
+bijutsukan
+美術館
+
+びじゅつ
+fine arts
+bijutsu
+美術
+
+げいじゅつ
+arts
+Geijutsu
+芸術
+
+ぎじゅつ
+technology, technique
+Gijutsu
+技術
+
+じゅつご
+predicate
+jutsugo
+述語
+
+もくてきご
+object
+mokutekigo
+目的語
+
+しゅご
+subject
+shugo
+主語
+
+せんじつ
+the other day
+Senjitsu
+先日
+
+このあいだ
+the other day
+kono aida
+この間
+
+しょくどう
+dining hall, canteen
+shokudou
+食堂
+
+しゅくだい
+homework
+shukudai
+宿題
+
+しゅくさいじつ
+national holiday
+shukusaijitsu
+祝祭日
+
+げんじつ
+reality / actual status
+Genjitsu
+現実
+
+がんじつ
+New Year's Day
+ganjitsu
+元日
+
+おしょうがつ (1がつ1にち〜3にち)
+New Year's Day (Jan. 1st–3rd)
+Oshougatsu (Ichi-gatsu tachi-ka ~ mik-ka)
+お正月 (1月1日〜3日)
+
+ほんじつきゅうぎょう
+closed today
+Honjitsu kyuugyou
+本日休業
+
+じつは
+as a matter of fact..., actually.., the truth is..
+jitsu wa
+実はこちら・実は
+
+かくじつ
+certain / reliable / definite
+Kakujitsu
+確実
+
+しんじます
+believe, trust
+Shinjimasu
+信じます
+
+しんじつ
+truth / reality
+Shinjitsu
+真実
+
+じじつ
+fact / truth
+Jijitsu
+事実
+
+じつよう
+practical use / utility
+Jitsuyou
+実用
+
+じつりょく
+real ability / actual capacity
+Jitsuryoku
+実力
+
+じっこう
+execution / practice / implementation
+Jikkou
+実行
+
+じこ
+accident / incident
+Jiko
+事故
+
+じけん
+incident / crime / event
+Jiken
+事件
+
+じっけん
+experiment
+Jikken
+実験
+
+じこくひょう
+timetable, chart
+jikokuhyou
+時刻表
+
+じこしょうかいをおねがいします。
+Please introduce yourself. / Self-introduction please.
+jiko shoukai o onegaishimasu
+自己紹介をお願いします。
+
+せいじつ [な]
+sincere
+Seijitsu [na]
+誠実 [な]
+
+すなお [な]
+obedient, gentle
+Sunao [na]
+素直 [な]
+
+ねっしん [な]
+Earnest, Enthusiastic, Passionate, Zealous
+Nesshin [na]
+熱心 [な]
+
+まじめ [な]
+Serious, Diligent, Honest, Reliable, earnest
+Majime [na]
+まじめ [な]
+
+ふまじめ [な]
+frivolous
+Fumajime [na]
+ふまじめ [な]
+
+いしゃ
+doctor
+Isha
+医者
+
+`;
+
+allUltimateWords["Kan sho hi Jutsu Jitsu - Hard"] = ``;
+
+allUltimateWords["Bag Presents"] = `
+にもつ
+luggage, baggage, parcel
+nimotsu
+荷物
+
+かばん
+bag, briefcase
+kaban
+鞄
+
+バッグ
+bag
+Baggu
+バッグ
+
+ふくろ
+bag
+Fukuro
+袋
+
+もちだしぶくろ
+emergency grab bag, disaster evacuation bag
+Mochidashibukuro
+持出袋
+
+のしぶくろ
+Special decorated envelope for money gifts
+Noshibukuro
+熨斗袋
+
+プレゼント
+present
+purezento
+プレゼント
+
+おみやげ
+souvenir, present
+[o]miyage
+お土産
+
+おみまい
+Present given when visiting a sick or injured person (flowers, fruit, etc.)
+[O]mimai
+お見舞い
+
+おくりもの
+gift, present
+Okurimono
+贈り物
+
+おちゅうげん
+Gift for a person whose care you are under (Jul. or Aug.)
+Ochugen
+お中元
+
+おせいぼ
+Gift for a person whose care you are under (Dec.)
+Oseibo
+お歳暮
+
+おこうでん
+Condolence money
+Okouden
+お香典
+
+としだま
+Small gift of money given by parents and relatives to children on New Year’s Day
+Toshidama
+お年玉
+
+おとしだま
+money given as a New Year's gift
+[O]toshidama
+お年玉
+
+おいわい
+celebration, gift
+[O]iwai
+お祝い
+
+しゅっさんいわい
+Gift celebrating a birth (baby clothes, toys, etc.)
+Shussaniwai
+出産祝い
+
+にゅうがくいわい
+Gift celebrating admission to school (money, stationery, book, etc.)
+Nyuugakuiwai
+入学祝い
+
+けっこんいわい
+Wedding gift (money, household goods, etc.)
+Kekkon'iwai
+結婚祝い
+
+`;
+
+allUltimateWords["Bag Presents - Hard"] = ``;
+
+allUltimateWords["G2"] = `
+しんじます
+believe, trust
+Shinjimasu
+信じます
+
+[じこが～] おきます
+[an accident] happen
+[jiko ga~] Okimasu
+[事故が～] 起きます
+
+おきます
+wake up, get up
+Okimasu
+起きます
+
+`;
+
+allUltimateWords["G2 - Hard"] = ``;
+
+allUltimateWords["Family"] = `
+かぞく
+family
+kazoku
+家族
+
+ごかぞく
+your family
+gokazoku
+ご家族
+
+ホストファミリー
+host family
+Hosutofamirii
+ホストファミリー
+
+ちち
+(my) father
+chichi
+父
+
+はは
+(my) mother
+haha
+母
+
+母のひ
+Mother's Day
+haha no hi
+母の日
+
+おとうさん
+(someone else's) father (also used to address one's own father)
+otousan
+お父さん
+
+おかあさん
+(someone else's) mother (also used to address one's own mother)
+okaasan
+お母さん
+
+そふ
+(my) grandfather
+Sofu
+祖父
+
+そぼ
+(my) grandmother
+Sobo
+祖母
+
+そふぼ
+grandparents (my)
+sofubo
+祖父母
+
+おじいさん・おじいちゃん
+grandfather, old man
+ojiisan / ojiichan
+お祖父さん・おじいちゃん
+
+おじいさん
+grandfather (someone else's)
+ojiisan
+おじいさん
+
+おばあさん・おばあちゃん
+grandmother, old woman
+obaasan / obaachan
+お祖母さん・おばあちゃん
+
+おばあさん
+grandmother (someone else's)
+obaasan
+おばあさん
+
+あに
+(my) elder brother
+ani
+兄
+
+あね
+(my) elder sister
+ane
+姉
+
+おにいさん
+(someone else's) elder brother
+oniisan
+お兄さん
+
+おねえさん
+(someone else's) elder sister
+oneesan
+お姉さん
+
+おとうと
+(my) younger brother
+otouto
+弟
+
+いもうと
+(my) younger sister
+imouto
+妹
+
+おとうとさん
+(someone else's) younger brother
+otoutosan
+弟さん
+
+いもうとさん
+(someone else's) younger sister
+imoutosan
+妹さん
+
+きょうだい
+brothers and sisters (my)
+kyoudai
+兄弟
+
+ごきょうだい
+brothers and sisters (someone else's)
+gokyoudai
+ご兄弟
+
+しまい
+sisters
+Shimai
+姉妹
+
+ふたご
+twins
+Futago
+双子
+
+まご
+grandchild
+Mago
+孫
+
+おじ
+(my) uncle
+Oji
+おじ
+
+おば
+(my) aunt
+Oba
+おば
+
+おじさん
+(someone else's) uncle
+Ojisan
+おじさん
+
+おじさん
+uncle; middle-aged man
+Ojisan
+おじさん
+
+おばさん
+aunt; middle-aged woman
+Obasan
+おばさん
+
+おばさん
+(someone else's) aunt
+Obasan
+おばさん
+
+こどものひ
+Children's Day
+Kodomo no Hi
+こどもの日
+
+こども
+children (my)
+kodomo
+子ども
+
+おこさん
+(someone else's) child
+Okosan
+お子さん
+
+おこさん
+(your/their) child (polite)
+Okosan
+お子さん
+
+こどもたち
+children
+Kodomotachi
+子どもたち
+
+この子
+this child
+kono ko
+この子
+
+いいこ
+good child
+Iiko
+いい子
+
+おっと
+(my) husband
+otto
+夫
+
+しゅじん
+(my) husband
+shujin
+主人
+
+つま
+(my) wife
+tsuma
+妻
+
+かない
+(my) wife
+kanai
+家内
+
+ごしゅじん
+(your/her) husband
+Goshujin
+ごしゅじん
+
+おくさん
+(your/his) wife
+Okusan
+奥さん
+
+おくさま
+(your/his) wife (polite)
+Okusama
+奥様
+
+ふうふ
+married couple; husband and wife
+Fuufu
+夫婦
+
+ごふうふ
+married couple (someone else's)
+gofuufu
+ご夫婦
+
+ふたり
+couple
+Futari
+二人
+
+しゅふ
+housewife
+Shufu
+主婦
+
+おとこのひと
+man
+otoko no hito
+男の人
+
+おんなのひと
+woman
+onna no hito
+女の人
+
+おとこのこ
+boy
+otoko no ko
+男の子
+
+おんなのこ
+girl
+onna no ko
+女の子
+
+`;
+
+allUltimateWords["Family - Hard"] = ``;
+
+allUltimateWords["Difficult"] = `
+ポルトガルご
+Portuguese
+Porutogarugo
+ポルトガル語
+
+エジプト
+Egypt
+Ejiputo
+エジプト
+
+ヨーロッパ
+Europe
+yooroppa
+ヨーロッパ
+
+ふくせいとかいちょう
+vice student council president
+Fukuseitokaichou
+副生徒会長
+
+しゅしょう
+prime minister
+shushou
+しゅしょう
+
+たんしんしゃ
+single person / person living alone (away from family)
+Tanshinsha
+単身者
+
+たんんにんのせんせい
+homeroom teacher
+Tannin no sensei
+担任の先生
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
+こうちょう
+[school] head teacher, principal
+Kouchou
+校長
+
+きまつしけん
+final examination
+Kimatsushiken
+期末試験
+
+`;
+
+allUltimateWords["Difficult - Hard"] = ``;
+
+allUltimateWords["Easy 03 Ue"] = `
+うえ
+on, above, over
+ue
+上
+
+した
+under, below, beneath
+shita
+下
+
+みぎ
+right (side)
+migi
+右
+
+ひだり
+left (side)
+hidari
+左
+
+そと
+outside
+soto
+外
+
+なか
+in, inside
+naka
+中
+
+となり
+next, next door, beside
+tonari
+隣
+
+いちばん〜
+best, the number one, the most ~
+ichiban~
+一番〜
+
+ぞう
+elephant
+zou
+象
+
+ほんや
+bookstore
+honya
+本屋
+
+ねこ
+cat
+neko
+猫
+
+いぬ
+dog
+inu
+犬
+
+まど
+window
+mado
+窓
+
+うた
+song
+uta
+歌
+
+もしもし
+hello (used on the phone)
+moshimoshi
+もしもし
+
+おんがく
+music
+ongaku
+音楽
+
+かぶき
+Traditional Japanese musical drama, traditional Japanese theatrical art
+kabuki
+歌舞伎
+
+メール
+e-mail
+meeru
+メール
+
+やま
+mountain
+yama
+山
+
+べんきょう
+study (noun)
+benkyou
+勉強
+
+（お）しごと
+work, business
+(o)shigoto
+（お）仕事
+
+`;
+
+allUltimateWords["Easy 03 Ue - Hard"] = ``;
+
+allUltimateWords["Adjective and Adverbs"] = `
+たいてい
+usually, mostly
+Taitei
+たいてい
+
+よく
+often, nicely
+yoku
+良く
+
+よく
+well, much
+yoku
+良く
+
+ときどき
+sometimes
+tokidoki
+時々
+
+たぶん
+probably, perhaps, maybe
+tabun
+多分
+
+たくさん
+many, much, a lot
+takusan
+沢山
+
+すこし
+a little, a few
+sukoshi
+少し
+
+とても
+very
+totemo
+とても
+
+だいたい
+mostly, roughly
+daitai
+大体
+
+やさしい
+easy, kind, gentle
+yasashii
+易しい・優しい
+
+やすい
+inexpensive; cheap (thing)
+yasui
+安い
+
+やさい
+vegetable
+yasai
+野菜
+
+さむい
+cold (temperature) (weather-not used for objects)
+samui
+寒い
+
+つめたい
+cold (touch)
+tsumetai
+冷たい
+
+ひろい
+wide, spacious
+hiroi
+広い
+
+せまい
+narrow, small (room), not spacious
+semai
+狭い
+
+たかい
+expensive, tall, high
+takai
+高い
+
+せがたかい
+tall (person)
+se ga takai
+背が高い
+
+いい・よい
+good
+ii / yoi
+良い
+
+わるい
+bad
+warui
+悪い
+
+きぶんがいい
+feel well
+Kibun ga ii
+気分がいい
+
+きぶんがわるい
+to feel sick, feel ill
+Kibun ga Warui
+気分が悪い
+
+つごうがいい
+convenient (concerning time)
+Tsugou ga ii
+都合がいい
+
+つごうがわるい
+inconvenient (concerning time), to have a scheduling conflict
+Tsugou ga warui
+都合が悪い
+
+きもちがいい
+pleasant, agreeable
+Kimochi ga ii
+気持ちがいい
+
+きもちがわるい
+unpleasant, disgusting
+Kimochi ga warui
+気持ちが悪い
+
+ちょうしがいい
+be in a good condition
+choushi ga ii
+調子が良い
+
+ちょうしがわるい
+be in a bad condition
+choushi ga warui
+調子が悪い
+
+（コーヒーが）いい
+prefer (coffee)
+(koohii ga) ii
+（コーヒーが）良い
+
+からだにいい
+good for one's body
+karada ni ii
+体に良い
+
+えんぎがわるい
+unlucky, ill-omened
+Engi ga warui
+縁起が悪い
+
+とおい
+far (away)
+Tooi
+遠い
+
+おおい
+there are many...
+Ooi
+多い
+
+（ひとが）おおい
+many (people), much
+(hito ga) ooi
+（人が）多い
+
+すくない
+a little; a few
+Sukunai
+少ない
+
+（ひとが）すくない
+few (people), a little
+(hito ga) sukunai
+（人が）少ない
+
+くらい
+dark
+kurai
+暗い
+
+ちいさい
+small, little
+chiisai
+小さい
+
+ちいさな～
+small ~
+Chiisana~
+小さな～
+
+むずかしい
+difficult
+muzukashii
+難しい
+
+おおきい
+big, large
+ookii
+大きい
+
+あたらしい
+new, fresh
+atarashii
+新しい
+
+おいしい
+delicious, tasty
+oishii
+美味しい
+
+たのしい
+pleasant, enjoyable, fun
+tanoshii
+楽しい
+
+ひくい
+low
+hikui
+低い
+
+はやい
+fast, early
+hayai
+早い・速い
+
+あたたかい
+warm
+atatakai
+温かい・暖かい
+
+あまい
+sweet
+amai
+甘い
+
+さびしい
+lonely
+sabishii
+寂しい
+
+わかい
+young
+wakai
+若い
+
+ながい
+long
+nagai
+長い
+
+あかるい
+bright, light, colorful
+akarui
+明るい
+
+すごい
+awful, great
+sugoi
+凄い
+
+かっこいい
+great-looking
+Kakkooii
+かっこいい
+
+すばらしい
+marvelous, wonderful
+Subarashii
+素晴らしい
+
+うれしい
+glad, happy
+Ureshii
+うれしい
+
+うつくしい
+beautiful
+Utsukushii
+美しい
+
+めずらしい
+rare, uncommon
+Mezurashii
+珍しい
+
+ただしい
+correct, right
+Tadashii
+正しい
+
+かなしい
+sad
+Kanashii
+悲しい
+
+かわいい
+lovely, cute
+Kawaii
+かわいい
+
+きびしい
+strict, hard, severe
+Kibishii
+厳しい
+
+`;
+
+allUltimateWords["Adjective and Adverbs - Hard"] = ``;
+
+allUltimateWords["Box"] = `
+はこ
+box
+hako
+箱
+
+はこびます
+carry, transport, to carry from one place to another
+Hakobimasu
+運びます
+
+ほうこ
+treasury
+Houko
+宝庫
+
+ちょうこく
+engraving, carving, sculpture
+Choukoku
+彫刻
+
+ほります
+engrave, carve
+Horimasu
+彫ります
+
+ほうりつがく
+law
+Houritsugaku
+法律学
+
+ほうりつ
+law
+Houritsu
+法律
+
+きそく
+regulation, rule
+Kisoku
+規則
+
+キトク
+in a critical condition
+Kitoku
+危篤
+
+`;
+
+allUltimateWords["Box - Hard"] = ``;
+
+allUltimateWords["Single Letter"] = `
+き
+tree, wood
+ki
+木
+
+え
+picture, drawing, painting
+e
+絵
+
+じ
+letter, character
+ji
+字
+
+ず
+figure, drawing
+Zu
+図
+
+ひ
+fire, heating
+Hi
+火
+
+`;
+
+allUltimateWords["Single Letter - Hard"] = ``;
+
+allUltimateWords["Temp"] = `
+こと
+thing, matter (intangible)
+koto
+事
+
+りんご
+apple
+ringo
+林檎
+
+あいだ
+between, among
+aida
+間
+
+みかん
+mandarin orange
+mikan
+蜜柑
+
+ナンプラー
+nam pla
+nanpuraa
+ナンプラー
+
+コーナー
+corner, section
+koonaa
+コーナー
+
+いちばん した
+the bottom
+ichiban shita
+一番下
+
+ふゆ
+winter
+fuyu
+冬
+
+はる
+spring
+haru
+春
+
+なつ
+summer
+natsu
+夏
+
+あき
+autumn, fall
+aki
+秋
+
+あめ
+rain, rainy
+ame
+雨
+
+ゆき
+snow, snowy
+yuki
+雪
+
+うみ
+sea, ocean
+umi
+海
+
+せかい
+world
+sekai
+世界
+
+はじめて
+for the first time
+hajimete
+初めて
+
+いけ
+pond
+Ike
+池
+
+いけばな
+flower arrangement
+ikebana
+生け花
+
+いけばなをします
+practice flower arrangement / do ikebana
+Ikebana o shimasu
+生け花をします
+
+もみじ
+maple, red leaves of autumn
+momiji
+紅葉
+
+[お] まつり
+festival
+[o] matsuri
+[お] 祭り
+
+ずっと
+by far, the whole time, all the time, for a long time
+zutto
+ずっと
+
+つかれました
+I'm tired.
+tsukaremashita
+疲れました
+
+レモン
+lemon
+remon
+レモン
+
+ほしい
+to want, want (something)
+hoshii
+欲しい
+
+つり
+fishing
+tsuri
+釣り
+
+とうろく
+registration
+touroku
+登録
+
+かわ
+river
+kawa
+川
+
+べつべつに
+separately, individually
+betsubetsu ni
+別々に
+
+まっすぐ
+straight
+massugu
+真っ直ぐ
+
+しお
+salt
+shio
+塩
+
+ちず
+map
+chizu
+地図
+
+さとう
+sugar
+satou
+砂糖
+
+よみかた
+how to read, way of reading
+yomikata
+読み方
+
+とくに
+especially
+tokuni
+特に
+
+あたま
+head, brain
+atama
+頭
+
+かみ
+hair
+kami
+髪
+
+かお
+face
+kao
+顔
+
+みどり
+green, greenery
+midori
+緑
+
+キャッシュカード
+cash card, ATM Card
+kyasshu kaado
+キャッシュカード
+
+つぎに
+next, as a next step
+tsugi ni
+次に
+
+おなか
+stomach
+onaka
+お腹
+
+おてら
+Buddhist temple
+otera
+お寺
+
+あんしょうばんごう
+personal identification number, PIN
+anshou bangou
+暗証番号
+
+からだ
+body, health
+karada
+体
+
+め
+eye
+me
+目
+
+みみ
+ear
+mimi
+耳
+
+くち
+mouth
+kuchi
+口
+
+は
+tooth
+ha
+歯
+
+あし
+foot, leg
+ashi
+足・脚
+
+じんじゃ
+Shinto shrine
+jinja
+神社
+
+ねつ
+fever
+netsu
+熱
+
+こたえ
+answer
+kotae
+答え
+
+びょうき
+illness, disease
+byouki
+病気
+
+もんだい
+question, problem, trouble, practice question
+mondai
+問題
+
+あぶない
+dangerous
+abunai
+危ない
+
+かぜ
+cold, flu
+kaze
+風邪
+
+くすり
+medicine
+kusuri
+薬
+
+おふろ
+bath
+ofuro
+お風呂
+
+のど
+throat
+nodo
+喉
+
+きんえん
+no smoking
+kinen
+禁煙
+
+うわぎ
+jacket, outerwear
+uwagi
+上着
+
+したぎ
+underwear
+shitagi
+下着
+
+こくさい~
+international~
+kokusai
+国際〜
+
+げんきん
+cash
+genkin
+現金
+
+うま
+horse
+uma
+馬
+
+ひ
+day, date
+hi
+日
+
+さどう
+tea ceremony
+sadou
+茶道
+
+パチンコ
+Japanese pinball game
+pachinko
+パチンコ
+
+いちど
+once, one time
+ichido
+一度
+
+いちども
+not even once, never
+ichidomo
+一度も
+
+なんかいも
+many times
+nankai mo
+何回も
+
+おわり
+the end
+owari
+終わり
+
+きもの
+traditional Japanese attire
+kimono
+着物
+
+はじめ
+the beginning
+hajime
+初め・始め
+
+ぼく
+I (informal used by men)
+boku
+僕
+
+きみ
+you (informal)
+kimi
+君
+
+ことば
+word, language
+kotoba
+言葉
+
+きっと
+surely, no doubt
+kitto
+きっと
+
+ゆめ
+dream
+yume
+夢
+
+てんさい
+genius
+tensai
+天才
+
+しあい
+game, match
+shiai
+試合
+
+アルバイト
+side job, part-time job
+arubaito
+アルバイト
+
+ふとん
+Japanese-style mattress and quilt
+futon
+布団
+
+ぼうし
+hat, cap
+boushi
+帽子
+
+おしいれ
+Japanese-style closet
+oshiire
+押し入れ
+
+しんごう
+traffic light
+shingou
+信号
+
+こしょう
+break down, malfunction
+koshou
+故障
+
+ちゅうしゃじょう
+parking lot, car park
+chuushajou
+駐車場
+
+たてもの
+building
+tatemono
+建物
+
+おと
+sound
+oto
+音
+
+おかし
+sweets, snacks
+okashi
+お菓子
+
+いみ
+meaning
+imi
+意味
+
+ワゴンしゃ
+station wagon, wagon car/vehicle
+wagon sha
+ワゴン車
+
+いなか
+countryside, rural area
+inaka
+田舎
+
+たいしかん
+embassy
+taishikan
+大使館
+
+てんきん
+job transfer / relocation
+tenkin
+転勤
+
+`;
+
+allUltimateWords["Temp - Hard"] = ``;
+
+allUltimateWords["Shitsu"] = `
+わしつ
+Japanese-style room
+washitsu
+和室
+
+しんしつ
+bedroom
+Shinshitsu
+寝室
+
+しんけいしつ [な]
+nervous
+Shinkeishitsu [na]
+神経質 [な]
+
+せいしつ
+nature
+seishitsu
+性質
+
+せいかく
+Personality, character
+Seikaku
+性格
+
+せいかつ
+life; living
+Seikatsu
+生活
+
+にほんのせいかつになれましたか
+Have you got used to the life in Japan?
+nihon no seikatsu ni naremashita ka
+日本の生活に慣れましたか
+
+せいかつします
+to live / to lead a life
+Seikatsushimasu
+生活します
+
+`;
+
+allUltimateWords["Shitsu - Hard"] = ``;
+
+allUltimateWords["Duolingo"] = `
+あこさん
+child
+Akosan
+お子さん
+
+ソウル
+Seoul
+Souru
+ソウル
+
+たいわん
+Taiwan
+Taiwan
+台湾
+
+ができます
+know, can play
+Gadekimasu
+が出来ます
+
+コーチ
+coach
+Koochi
+コーチ
+
+はいますか
+do ... have
+Haimasuka
+は居ますか
+
+がいます
+is, has got, there are
+Gaimasu
+が居ます
+
+そうじき
+vacuum cleaner
+Soujiki
+掃除機
+
+リビング
+living room
+Ribingu
+リビング
+
+キッチン
+kitchen
+Kitchin
+キッチン
+
+があります
+is, there is, there are
+Garimasu
+があります
+
+ひっこします
+am going to move, is going to move, move
+Hikkoshimasu
+引越しします
+
+カフェ
+cafe
+Kafe
+カフェ
+
+コンセント
+outlet
+Konsento
+コンセント
+
+ちか
+underground
+Chika
+地下
+
+エレベーター
+elevator
+Ereboktaa
+エレベーター
+
+ワイファイ
+wifi
+Waifai
+WiFi
+
+のりかえ
+transfer
+Norikae
+乗り換え
+
+はありません
+there isn't, there's no, there won't be
+Haarimasen
+はありません
+
+かいさつ
+ticket gate
+Kaisatsu
+改札
+
+いっかい
+first floor
+Ikkai
+一階
+
+はありますか
+is there
+Haarimasuka
+はありますか
+
+パイ
+pie
+Pai
+パイ
+
+どの
+any, each, which
+Dono
+どの
+
+まっちゃ
+matcha
+Matcha
+抹茶
+
+カップケーキ
+cupcake
+Kappukeeki
+カップケーキ
+
+みどり
+green
+Midori
+緑
+
+ドーナツ
+donut
+Doonatsu
+ドーナツ
+
+チーズケーキ
+cheesecake
+Chiizukeeki
+チーズケーキ
+
+あきます
+opens, open
+Akimasu
+開きます
+
+どうですか
+How about
+Doudesuka
+どうですか
+
+ケーキや
+cake shop
+Keekiya
+ケーキ屋
+
+はすきですか
+do ... like
+Hasukidesuka
+は好きですか
+
+あまい
+sweet
+Amai
+甘い
+
+すこし
+a bit, few, some
+Sukoshi
+少し
+
+アイスコーヒー
+iced coffee
+Aisukoohii
+アイスコーヒー
+
+おおきい
+large, great, considerable
+Ookii
+大きい
+
+じゃあ
+well then, well, see you
+Jaa
+じゃあ
+
+ええと
+um
+Eeto
+ええと
+
+ゆき
+snow
+Yuki
+雪
+
+さむい
+cold
+Samui
+寒い
+
+あめ
+candies, candy, sweets
+Ame
+飴
+
+あき
+autumn
+Aki
+秋
+
+やすみ
+break
+Yasumi
+休み
+
+なつ
+summer
+Natsu
+夏
+
+うみにいきます
+go to the sea, go to the beach, go to the ocean
+Uminiikimasu
+海に行きます
+
+どうが
+video
+Douga
+動画
+
+ふん
+minute, minutes
+Fun
+分
+
+じゅうぶん
+sufficient, enough, adequate
+Juubun
+十分
+
+ぐらい
+approximately
+Gurai
+位
+
+はやい
+fast, early, quick
+Hayai
+早い
+
+つぎの
+next
+Tsuginik
+次の
+
+あさくさ
+Asakusa
+Asakusa
+浅草
+
+しぶや
+Shibuya
+Shibuya
+渋谷
+
+はしります
+runs, run
+Hashirimasu
+走ります
+
+じゅうに
+twelve
+Juuni
+十二
+
+シャワーをあびます
+take a shower
+Shawaaworabimasu
+シャワーを浴びます
+
+メールをよみます
+check emails
+Meeruwoyomimasu
+メールを読みます
+
+ねます
+sleep, go to sleep, will go to sleep
+Nemasu
+寝ます
+
+ヨガ
+yoga
+Yoga
+ヨガ
+
+じゅういち
+eleven
+Juuichi
+十一
+
+ごろ
+around
+Goro
+頃
+
+じゅう
+10, ten, tenth
+Juu
+十
+
+つくります
+make
+Tsukurimasu
+作ります
+
+なんじ
+when, what time
+Nanji
+何時
+
+おきます
+get up, going to wake up, wake up
+Okimasu
+起きます
+
+ゲーム
+game
+Geemu
+ゲーム
+
+コメディ
+comedy
+Komedi
+コメディ
+
+アクション
+action
+Akushon
+アクション
+
+どんな
+what kind of
+Donna
+どんな
+
+アメリカの
+American
+Amerikano
+アメリカの
+
+にほんの
+Japanese
+Nihonno
+日本の
+
+ファンタジー
+fantasy
+Fantazii
+ファンタジー
+
+すき
+like
+Suki
+好き
+
+ケーポップ
+K-pop
+Keepoppu
+Kポップ
+
+かのじょ
+girlfriend
+Kanojo
+彼女
+
+さんは
+Mr./Ms.
+Sanha
+さんは
+
+かれし
+my boyfriend
+Kareshi
+彼氏
+
+たかい
+expensive
+Takai
+高い
+
+みせ
+store
+Mise
+店
+
+ジャケット
+jacket
+Jaketto
+ジャケット
+
+ありがとうございます
+thank you
+Arigatougozaimasu
+ありがとうございます
+
+せん
+thousand, a thousand, one thousand
+Sen
+千
+
+いくら
+how much
+Ikura
+幾ら
+
+やすい
+cheap, inexpensive
+Yasui
+安い
+
+ね
+is it not, sleep, wouldn't you agree
+Ne
+ね
+
+かわいい
+cuter, cute, pretty
+Kawaii
+可愛い
+
+ティーシャツ
+T-shirt
+Tiishatsu
+Tシャツ
+
+が
+softens the tone, indicates the subject, but
+Ga
+が
+
+あたらしい
+new, newer
+Atarashii
+新しい
+
+ほしい
+wants, want, you'd
+Hoshii
+欲しい
+
+はちょっと
+I don't really like, doesn't work very well, kind of
+Hachotto
+はちょっと
+
+ばんごはん
+dinner
+Bangohan
+晩ご飯
+
+パスタ
+pasta
+Pasuta
+パスタ
+
+べんとう
+bento
+Bentou
+弁当
+
+パン
+bread
+Pan
+パン
+
+やきゅう
+baseball
+Yakyuu
+野球
+
+ジェイポップ
+J-pop
+Jeipoppu
+Jポップ
+
+ときどき
+occasionally
+Tokidoki
+時々
+
+ざっし
+magazine
+Zasshi
+雑誌
+
+おんがく
+music
+Ongaku
+音楽
+
+よく
+often, frequently, well
+Yoku
+良く
+
+ロック
+rock
+Rokku
+ロック
+
+を
+through, with, for
+Wo
+を
+
+しずか
+quiet
+Shizuka
+静か
+
+きれい
+beautiful, pretty, clean
+Kirei
+綺麗
+
+まち
+town
+Machi
+町
+
+とても
+very
+Totemo
+とても
+
+とし
+city
+Toshi
+都市
+
+にぎやか
+lively
+Nigiyaka
+賑やか
+
+どう
+how
+Dou
+どう
+
+も
+even, any, also
+Mo
+も
+
+にすんでいます
+live in
+Nisundeimasu
+に住んでいます
+
+わたし
+me, I
+Watashi
+私
+
+トロント
+Toronto
+Toronto
+トロント
+
+しゅっしん
+from, origin, hometown, coming from
+Shusshin
+出身
+
+とうきょう
+Tokyo
+Toukyou
+東京
+
+おなまえは
+What’s your name?
+Onamaeha
+お名前は
+
+スマホ
+smartphone
+Sumaho
+スマホ
+
+はん
+thirty
+Han
+半
+
+いち
+one
+Ichi
+一
+
+あかるい
+bright, cheerful, well-lit
+Akarui
+明るい
+
+の
+for, 's, one
+No
+の
+
+かばん
+bag, bags
+Kaban
+鞄
+
+わたしの
+my, mine
+Watashino
+私の
+
+コート
+court, coat, coats
+Kooto
+コート
+
+だいがく
+university
+Daigaku
+大学
+
+じゃない
+do not, am not, I'm not
+Janai
+じゃない
+
+ここ
+here, this place, over here
+Koko
+ここ
+
+ちいさい
+small
+Chiisai
+小さい
+
+か
+or, is it?, that
+Ka
+か
+
+おいしい
+good, delicious, tasty
+Oishii
+美味しい
+
+は
+is, with, regarding
+Ha
+は
+
+またあした
+see you tomorrow
+Mataashita
+また明日
+
+こんばんは
+good evening
+Konbanha
+こんばんは
+
+さん
+Mr., Miss, Mrs.
+San
+さん
+
+こんにちは
+good afternoon, hi, hello
+Konnichiha
+こんにちは
+
+かっこいい
+cool
+Kakkoii
+格好いい
+
+です
+is, it's, you're
+Desu
+です
+
+ごはん
+rice
+Gohan
+ご飯
+
+ください
+please
+Kudasai
+下さい
+
+`;
+
+allUltimateWords["Duolingo - Hard"] = ``;
+
+allUltimateWords["Temp2"] = `
+しごとをやめます
+retire, stop working
+Shigoto o yamemasu
+仕事をやめます
+
+アクセサリー
+accessories
+akusesarii
+アクセサリー
+
+めがね
+spectacles, glasses
+megane
+眼鏡
+
+でんわばんごうあんない
+directory inquiries
+denwa bangou annai
+電話番号案内
+
+ひょうごけん
+Hyogo Prefecture
+hyougoken
+兵庫県
+
+うみのひ
+Marine Day
+umi no hi
+海の日
+
+しょうわのひ
+Showa Day
+shouwa no hi
+昭和の日
+
+みどりのひ
+Greenery Day
+midori no hi
+みどりの日
+
+やまのひ
+Mountain Day
+yama no hi
+山の日
+
+ゴールデンウィーク
+Golden Week (29th april to 5th may)
+gooruden wiiku
+ゴールデンウィーク
+
+キャベツ
+cabbage
+kyabetsu
+キャベツ
+
+レタス
+lettuce
+retasu
+レタス
+
+もも
+peach
+momo
+もも
+
+ぎゅうにく
+beef
+gyuuniku
+牛肉
+
+とりにく
+chicken
+toriniku
+鶏肉
+
+ソーセージ
+sausage
+sooseeji
+ソーセージ
+
+ねぎ
+spring onion / scallion
+negi
+ねぎ
+
+にんじん
+carrot
+ninjin
+にんじん
+
+いちご
+strawberry
+ichigo
+いちご
+
+すいか
+watermelon
+suika
+すいか
+
+たこ
+octopus
+tako
+たこ
+
+バナナ
+banana
+banana
+バナナ
+
+ハム
+ham
+hamu
+ハム
+
+じゃがいも
+potato
+jagaimo
+じゃがいも
+
+だいこん
+Japanese radish / mooli
+daikon
+大根
+
+むらさき
+purple
+Murasaki
+紫
+
+ピンク
+pink
+Pinku
+ピンク
+
+オレンジ
+orange
+Orenji
+オレンジ
+
+グレー
+gray
+Guree
+グレー
+
+ベージュ
+beige
+Beeju
+ベージュ
+
+しろい
+white (adjective)
+Shiroi
+白い
+
+きいろい
+yellow (adjective)
+Kiiroi
+黄色い
+
+くろい
+black (adjective)
+Kuroi
+黒い
+
+ちゃいろい
+brown (adjective)
+Chairoi
+茶色い
+
+あかい
+red (adjective)
+Akai
+赤い
+
+あおい
+blue (adjective)
+Aoi
+青い
+
+しおからい
+salty
+Shiokarai
+塩辛い
+
+すっぱい
+sour
+Suppai
+酸っぱい
+
+こい
+strong
+Koi
+濃い
+
+うすい
+weak
+Usui
+薄い
+
+エスエフ
+science fiction
+Esuefu
+SF
+
+ラテン
+Latin-American
+Raten
+ラテン
+
+ドキュメンタリー
+documentary
+Dokyumentarii
+ドキュメンタリー
+
+ポップス
+pop
+Poppusu
+ポップス
+
+ロック
+rock
+Rokku
+ロック
+
+オペラ
+opera
+Opera
+オペラ
+
+ホラー
+horror
+Horaa
+ホラー
+
+アニメ
+cartoon, anime
+Anime
+アニメ
+
+ミステリー
+mystery
+Misuterii
+ミステリー
+
+アクション
+action
+Akushon
+アクション
+
+ソフトボール
+softball
+Sofutobooru
+ソフトボール
+
+ラグビー
+rugby
+Ragubii
+ラグビー
+
+すもう
+sumo
+Sumou
+相撲
+
+バレーボール
+volleyball
+Bareebooru
+バレーボール
+
+バスケットボール
+basketball
+Basukettobooru
+バスケットボール
+
+ボウリング
+bowling
+Bouringu
+Bouringu
+
+スケート
+skating
+Sukeeto
+スケート
+
+ピンポン
+ping-pong
+Pinpon
+ピンポン
+
+うちのなか
+Inside the house
+uchi no naka
+うちの中
+
+いま
+living room
+Ima
+居間
+
+ベランダ
+balcony
+Beranda
+ベランダ
+
+やきにく
+grilled meat
+Yakiniku
+焼き肉
+
+ハンバーグ
+hamburg steak
+Hanbaagu
+ハンバーグ
+
+コロッケ
+croquette
+Korokke
+コロッケ
+
+えびフライ
+fried shrimp
+Ebi furai
+えびフライ
+
+スパゲッティ
+spaghetti
+Supagettii
+スパゲッティ
+
+ランチ
+western-style set meal
+Ranchi
+ランチ
+
+カレーライス
+curry with rice
+Kareeraisu
+カレーライス
+
+みそしる
+miso soup
+Misoshiru
+みそ汁
+
+フライドチキン
+fried chicken
+Furaido chikin
+フライドチキン
+
+サラダ
+salad
+Sarada
+サラダ
+
+スープ
+soup
+Suupu
+スープ
+
+ピザ
+pizza
+Piza
+ピザ
+
+トースト
+toast
+Toosuto
+トースト
+
+ココア
+cocoa, hot chocolate
+Kokoa
+ココア
+
+コーラ
+cola
+Koora
+コーラ
+
+ぎゅうどん
+a bowl of rice with beef
+Gyudon
+牛どん
+
+おにぎり
+rice ball
+Onigiri
+おにぎり
+
+ろくおんじ（きんかくじ）きんかく
+Rokuon-ji Temple (Kinkaku-ji Temple)
+Rokuonji (Kinkakuji)
+鹿苑寺（金閣寺）
+
+ひろしま
+Hiroshima
+Hiroshima
+広島
+
+ひめじ
+Himeji
+Himeji
+姫路
+
+おおさか
+Osaka
+Oosaka
+大阪
+
+なら
+Nara
+Nara
+奈良
+
+きょうと
+Kyoto
+Kyouto
+京都
+
+とうきょう
+Tokyo
+Toukyou
+東京
+
+かんだまつり
+Kanda Festival
+Kanda Matsuri
+神田祭
+
+てんじんまつり
+Tenjin Festival
+Tenjin Matsuri
+天神祭
+
+ぎおんまつり
+Gion Festival
+Gion Matsuri
+祇園祭
+
+とうだいじ
+Todai-ji Temple
+Toudaiji
+東大寺
+
+にくや
+butcher's shop
+Nikuya
+肉屋
+
+さかや
+off-licence, liquor store
+Sakaya
+酒屋
+
+モスク
+Mosque
+Mosuku
+モスク
+
+パンや
+bakery
+Pan-ya
+パン屋
+
+さかなや
+fishmonger's, fish store
+Sakanaya
+魚屋
+
+きょうかい
+Christian church
+Kyoukai
+教会
+
+やおや
+greengrocer's, fruit and vegetable store
+Yaoya
+八百屋
+
+きっぷうりば
+ticket office, ticket area
+Kippu uriba
+切符売り場
+
+ちゅうおうぐち
+central exit
+Chuuouguchi
+中央口
+
+タクシーのりば
+taxi rank
+Takushii noriba
+タクシー乗り場
+
+ホーム
+platform
+[Puratto]hoomu
+［プラット］ホーム
+
+［とうきょう］いき
+for [TOKYO]
+[Toukyou] iki
+［東京］行き
+
+えき
+Station
+Eki
+駅
+
+ひがしぐち
+east exit
+Higashiguchi
+東口
+
+にしぐち
+west exit
+Nishiguchi
+西口
+
+みなみぐち
+south exit
+Minamiguchi
+南口
+
+きたぐち
+north exit
+Kitaguchi
+北口
+
+コインロッカー
+coin locker
+Koin rokkaa
+コインロッカー
+
+バスターミナル
+bus terminal
+Basu taaminaru
+バスターミナル
+
+スポーツせんしゅ
+athlete
+Supootsu senshu
+スポーツ選手
+
+せいじか
+politician
+Seijika
+政治家
+
+ゆうびんきょくいん
+postman
+Yuubinkyokuin
+郵便局員
+
+てんいん
+shop assistant
+Tenin
+店員
+
+きょうし
+teacher
+Kyoushi
+教師
+
+デザイナー
+designer
+Dezainaa
+デザイナー
+
+ジャーナリスト
+journalist
+Jaanarisuto
+ジャーナリスト
+
+おひきだし
+withdrawal
+Ohikidashi
+お引き出し
+
+えん
+YEN
+En
+円
+
+インフルエンザ
+flu, influenza
+Infuruenza
+インフルエンザ
+
+せなか
+back
+Senaka
+背中
+
+あたまが いたい
+have a headache
+Atama ga itai
+頭が 痛い
+
+おなかが いたい
+have a stomachache
+Onaka ga itai
+おなかが 痛い
+
+はが いたい
+have a toothache
+Ha ga itai
+歯が 痛い
+
+ねつが あります
+have a temperature, fever
+Netsu ga arimasu
+熱が あります
+
+て
+hand
+Te
+手
+
+うごき
+Actions
+ugoki
+動き
+
+ぶんらく
+Bunraku
+Bunraku
+文楽
+
+まんざい・らくご
+manzai, rakugo
+Manzai, Rakugo
+漫才・落語
+
+ひとのよびかた
+How to address people
+hito no yobikata
+人の呼び方
+
+せんせい
+Teacher / Professor
+Sensei
+先生
+
+おにあいですよ
+It looks good on you / You two look great together
+oniai desu yo
+お似合いですよ
+
+いたいんです
+It hurts (explaining a situation)
+itai ndesu
+痛いんです
+
+マフラー
+scarf, muffler, winter scarf
+Mafuraa
+マフラー
+
+おび
+obi (kimono belt)
+Obi
+帯
+
+ぞうり
+zori (one type slippers)
+Zouri
+ぞうり
+
+たび
+tabi (one type socks)
+Tabi
+たび
+
+（オーバー）コート
+overcoat, coat
+(Oobaa) cooto
+（オーバー）コート
+
+ストッキング
+tights, panty hose
+Sutokkingu
+ストッキング
+
+ワンピース
+one-piece dress
+Wanpiisu
+ワンピース
+
+ブラウス
+blouse
+Burausu
+ブラウス
+
+パンティー
+panties
+Pantii
+パンティー
+
+レインコート
+raincoat
+Reinkooto
+レインコート
+
+ベルト
+belt
+Beruto
+ベルト
+
+ブーツ
+boots
+Buutsu
+ブーツ
+
+ワイシャツ
+[white] shirt
+Waishatsu
+ワイシャツ
+
+ガソリンスタンド
+petrol station, gas station
+Gasorin sutando
+ガソリンスタンド
+
+とまれ
+Stop
+Tomare
+止まれ
+
+がっこうにはいります
+enter school
+Gakkou ni hairimasu
+学校に入ります
+
+こどもがうまれます
+have a child
+Kodomo ga umaremasu
+子どもが生まれます
+
+`;
+
+allUltimateWords["Temp2 - Hard"] = ``;
 
 const appUltimateSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1,
     "はなれた::remote": 1
   },
-  "currentLesson": "Lesson 07",
-  "isHard": true,
+  "currentLesson": "Temp2",
+  "isHard": false,
   "displayMode": "custom",
   "customDisplayConfig": {
     "lineCount": 4,
@@ -26155,10 +24010,11 @@ const appUltimateSettings = {
       "romaji",
       "kanji"
     ],
-    "bigText": "line1"
+    "bigText": "kanji",
+    "fontScale": "1"
   },
   "readingGap": "2",
-  "quizMode": "quiz1",
+  "quizMode": "quiz2",
   "quizOrder": "random",
   "revealRomaji": false,
   "focusedWordIndex": -1,
@@ -26179,39 +24035,30 @@ const appUltimateSettings = {
     "Group II",
     "Group III",
     "Honorifics",
-    "All Patterns",
-    "N5 Extra",
-    "Ni Particle G5",
-    "0 Others G5",
-    "No Particle G5",
-    "To Particle G5",
-    "E Particle G5",
-    "De Particle G5",
-    "O Particle G5",
-    "Ga Particle G5",
-    "V - Nai G5",
-    "V - Te G5",
-    "V - Ta G5",
-    "Adjective G5",
-    "0 General E5",
-    "V - Ra G5",
-    "Extra 00 E5",
-    "Convo E5",
-    "26 Dumps D4",
-    "N4 Rod",
-    "32 Dumps D4",
-    "33 Dumps D4",
+    "Grm Terms",
     "InTransitive Verbs",
-    "All Forms",
-    "Adjective Forms",
-    "New Ones E4",
     "Easy 01",
     "Medium 01",
     "Time Day",
     "Study",
     "Kou",
-    "Easy 02",
-    "Ryou"
+    "All V",
+    "En Shoku Butsu Seki youhin Mei",
+    "Gyou Jugyou Eigyou Demasu",
+    "Kaigi Jou",
+    "Kan sho hi Jutsu Jitsu",
+    "Bag Presents",
+    "G2",
+    "Family",
+    "Difficult",
+    "Easy 03 Ue",
+    "Adjective and Adverbs",
+    "Box",
+    "Single Letter",
+    "Temp",
+    "Shitsu",
+    "Duolingo",
+    "Temp2"
   ],
   "similarWordGroups": [
     {
@@ -26221,9 +24068,244 @@ const appUltimateSettings = {
   "hiddenCategories": [],
   "othersHiddenSourceGroups": [],
   "othersHiddenLevels": [],
-  "lastDestCategory": "Ryou",
-  "activeDbGroup": "Ultimate",
+  "lastDestCategory": "Temp2",
+  "activeDbGroup": "Ultimate Main",
   "showCategoryModeActive": true,
+  "ultimateCategoryPartitions": {
+    "Honorifics": "Dumps",
+    "All Masu Form Verbs": "Dumps",
+    "Group I": "Dumps",
+    "Group II": "Dumps",
+    "Group III": "Dumps",
+    "Half Words": "Dumps",
+    "InTransitive Verbs": "Dumps",
+    "Phrases": "Dumps",
+    "New Ones E4": "Dumps",
+    "Romaji": "Dumps",
+    "Number": "Dumps",
+    "Transitive Verbs": "Dumps",
+    "Transitive and Intransitive Pairs": "Dumps",
+    "Similar Ones": "Dumps",
+    "Food Names": "Main",
+    "Counters": "Dumps",
+    "Ko So Aso": "Dumps",
+    "Na Adjectives": "Dumps",
+    "Kan sho hi": "Main",
+    "Gyou Jugyou Eigyou Demasu": "Main",
+    "Kyuu Train": "Main",
+    "Nemasu": "Main",
+    "Ryou Hair styles": "Main",
+    "Kan sho hi Jutsu Jitsu": "Main",
+    "Tsukemasu Close": "Main",
+    "Shi Yaku": "Main",
+    "En Shoku Butsu Seki youhin Mei": "Main",
+    "Verbs 01": "Main",
+    "Ryou Hair Mitsu": "Main",
+    "Grm Terms": "Main",
+    "Easy 03 Ue": "Main",
+    "Duolingo": "Dumps"
+  },
+  "customCategoryOrders": {
+    "Ultimate Main": [
+      "All V",
+      "G1",
+      "G2",
+      "Pair",
+      "Tadoushi",
+      "Jidoushi",
+      "Difficult",
+      "Countries and Languages",
+      "Connectors",
+      "Questions",
+      "Easy 01",
+      "Easy 02",
+      "Easy 03 Ue",
+      "Leader",
+      "En Shoku Butsu Seki youhin Mei",
+      "Kan sho hi Jutsu Jitsu",
+      "Gyou Jugyou Eigyou Demasu",
+      "Kaigi Jou",
+      "Kou",
+      "Kyuu Train",
+      "Medium 01",
+      "Medium 02",
+      "Bag Presents",
+      "Ryou Hair Mitsu",
+      "Study",
+      "Time Day",
+      "Nemasu",
+      "Tsukemasu Close",
+      "Verbs 01",
+      "Shi Yaku",
+      "Family",
+      "Adjective and Adverbs",
+      "Food Names",
+      "Grm Terms"
+    ],
+    "Ultimate Dumps": [
+      "All Masu Form Verbs",
+      "Counters",
+      "Grm Terms",
+      "Extra 03",
+      "Extra 04",
+      "Extra 05",
+      "Extra 06",
+      "Extra 07",
+      "Extra 08",
+      "Extra 09",
+      "Extra 10",
+      "Extra 11",
+      "Extra 12",
+      "Extra 13",
+      "Extra 14",
+      "Extra 15",
+      "Extra 16",
+      "Extra 17",
+      "Extra 18",
+      "Extra 19",
+      "Extra 20",
+      "Extra 21",
+      "Extra 22",
+      "Extra 23",
+      "Extra 24",
+      "Extra 25",
+      "Extra 26",
+      "Extra 27",
+      "Extra 28",
+      "Extra 29",
+      "Extra 30",
+      "Extra 31",
+      "Extra 32",
+      "Extra 33",
+      "Extra 34",
+      "Extra 35",
+      "Extra 36",
+      "Extra 37",
+      "Extra 38",
+      "Extra 39",
+      "Extra 40",
+      "Extra 41",
+      "Extra 42",
+      "Extra 43",
+      "Extra 44",
+      "Extra 45",
+      "Extra 46",
+      "Extra 47",
+      "Extra 48",
+      "Extra 49",
+      "Extra 50",
+      "Genki 01",
+      "Genki 02",
+      "Genki 03",
+      "Genki 04",
+      "Genki 05",
+      "Genki 06",
+      "Genki 07",
+      "Genki 08",
+      "Genki 09",
+      "Genki 10",
+      "Genki 11",
+      "Genki 12",
+      "Genki 13",
+      "Genki 14",
+      "Genki 15",
+      "Genki 16",
+      "Genki 17",
+      "Genki 18",
+      "Genki 19",
+      "Genki 20",
+      "Genki 21",
+      "Genki 22",
+      "Genki 23",
+      "Group I",
+      "Group II",
+      "Group III",
+      "Half Words",
+      "Honorifics",
+      "InTransitive Verbs",
+      "Ko So Aso",
+      "Lesson 07",
+      "Lesson 08",
+      "Lesson 09",
+      "Lesson 10",
+      "Lesson 11",
+      "Lesson 12",
+      "Lesson 13",
+      "Lesson 14",
+      "Lesson 15",
+      "Lesson 16",
+      "Lesson 17",
+      "Lesson 18",
+      "Lesson 19",
+      "Lesson 20",
+      "Lesson 21",
+      "Lesson 22",
+      "Lesson 23",
+      "Lesson 24",
+      "Lesson 25",
+      "Lesson 26",
+      "Lesson 27",
+      "Lesson 28",
+      "Lesson 29",
+      "Lesson 30",
+      "Lesson 31",
+      "Lesson 32",
+      "Lesson 33",
+      "Lesson 34",
+      "Lesson 35",
+      "Lesson 36",
+      "Lesson 37",
+      "Lesson 38",
+      "Lesson 39",
+      "Lesson 40",
+      "Lesson 41",
+      "Lesson 42",
+      "Lesson 43",
+      "Lesson 44",
+      "Lesson 45",
+      "Lesson 46",
+      "Lesson 47",
+      "Lesson 48",
+      "Lesson 49",
+      "Lesson 50",
+      "Na Adjectives",
+      "Number",
+      "Phrases",
+      "Romaji",
+      "Similar Ones",
+      "Transitive and Intransitive Pairs",
+      "Transitive Verbs"
+    ]
+  },
+  "multiCategoryConfig": {
+    "active": false,
+    "categories": [
+      "Extra 03",
+      "Extra 04",
+      "Extra 05",
+      "Extra 06",
+      "Extra 07",
+      "Extra 08",
+      "Extra 09",
+      "Extra 10",
+      "Extra 11",
+      "Extra 12",
+      "Extra 13",
+      "Extra 14",
+      "Extra 15",
+      "Extra 16",
+      "Extra 17",
+      "Extra 18",
+      "Extra 19",
+      "Extra 20",
+      "Extra 21",
+      "Extra 22",
+      "Extra 23",
+      "Extra 24",
+      "Extra 25"
+    ],
+    "mode": "both"
+  },
   "lastGroupCategories": {
     "N5 Lessons": "Lesson 01",
     "N5 Others": "Similar Ones",
@@ -26264,6 +24346,8 @@ const appUltimateSettings = {
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
     "Others": "Kou",
-    "Ultimate": "Lesson 07"
+    "Ultimate": "Temp2",
+    "Ultimate Main": "Temp2",
+    "Ultimate Dumps": "All Masu Form Verbs"
   }
 };

@@ -29,6 +29,20 @@ dont do anything else, not even single other character to be disturbed
 (dont disturb them)
 
 ------------------------
+Search is special search - 
+when i enter some term give me results that contains words starting with those characters
+when searched for Jit
+then these could be search results, Jitsu wa, Hon jitsu, bon jiti..
+
+when i search for jit w
+then search result should jitsu wa, jitsu hon wa, hon jitsu wa..
+basically, first matched word after alteast one more word should be begin with w
+
+lly for 3 words search term ...
+
+and in the dropdown show results, when i click enter, the automatically select the first option in the dropdown
+-----------------------------------------
+
 move logic:
 if there are 1 to 10 images
 when 2,5,7 are selected and i do move up, then order should become 2,5,7,1,3,4,....

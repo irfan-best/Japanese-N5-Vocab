@@ -447,6 +447,10 @@ html[data-theme="light"] .moon-icon { display: block; }
   box-sizing: border-box;
 }
 
+#btn-multi-category-mobile {
+  display: none !important;
+}
+
 .action-nav-row {
   display: flex;
   align-items: center;
@@ -687,22 +691,25 @@ html[data-theme="light"] .moon-icon { display: block; }
 }
 
 /* Big Line Styling in Custom Mode */
+.vocab-card.mode-custom {
+  font-size: calc(1rem * var(--custom-font-scale, 1));
+}
 .vocab-card.mode-custom .custom-big.card-english {
-  font-size: 1.25rem;
+  font-size: calc(1.25rem * var(--custom-font-scale, 1));
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.15rem;
 }
 .vocab-card.mode-custom .custom-big.card-japanese,
 .vocab-card.mode-custom .custom-big.card-kanji {
-  font-size: 1.4rem;
+  font-size: calc(1.4rem * var(--custom-font-scale, 1));
   font-weight: 700;
   font-family: var(--font-jp);
   color: var(--text-primary);
   margin-bottom: 0.15rem;
 }
 .vocab-card.mode-custom .custom-big.card-romaji {
-  font-size: 1.25rem;
+  font-size: calc(1.25rem * var(--custom-font-scale, 1));
   font-weight: 700;
   font-style: normal;
   color: var(--text-primary);
@@ -711,38 +718,38 @@ html[data-theme="light"] .moon-icon { display: block; }
 
 /* Small Line Styling in Custom Mode */
 .vocab-card.mode-custom .custom-small.card-english {
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--custom-font-scale, 1));
   font-weight: 500;
   color: var(--text-secondary);
 }
 .vocab-card.mode-custom .custom-small.card-japanese,
 .vocab-card.mode-custom .custom-small.card-kanji {
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--custom-font-scale, 1));
   font-weight: 500;
   font-family: var(--font-jp);
   color: var(--text-secondary);
 }
 .vocab-card.mode-custom .custom-small.card-romaji {
-  font-size: 0.85rem;
+  font-size: calc(0.85rem * var(--custom-font-scale, 1));
   font-style: italic;
   color: var(--text-secondary);
 }
 
 /* Equal size styling when Big Text is None */
 .vocab-card.mode-custom.no-big .custom-line.card-english {
-  font-size: 1rem;
+  font-size: calc(1rem * var(--custom-font-scale, 1));
   font-weight: 600;
   color: var(--text-primary);
 }
 .vocab-card.mode-custom.no-big .custom-line.card-japanese,
 .vocab-card.mode-custom.no-big .custom-line.card-kanji {
-  font-size: 1.05rem;
+  font-size: calc(1.05rem * var(--custom-font-scale, 1));
   font-weight: 600;
   font-family: var(--font-jp);
   color: var(--text-primary);
 }
 .vocab-card.mode-custom.no-big .custom-line.card-romaji {
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--custom-font-scale, 1));
   font-style: italic;
   color: var(--text-secondary);
 }
@@ -779,14 +786,7 @@ html[data-theme="light"] .moon-icon { display: block; }
   line-height: 1.2;
 }
 
-/* Active Row Indicator */
-.vocab-card.row-active {
-  border-color: rgba(99, 102, 241, 0.45);
-}
-
-.vocab-card.row-active.focused {
-  border-color: var(--accent);
-}
+/* Active Row Indicator removed */
 
 .vocab-card.no-kanji {
   /* border-color: var(--danger) !important;
@@ -1679,6 +1679,39 @@ html[data-theme="light"] .moon-icon { display: block; }
     display: none !important;
   }
 
+  /* Hide +, edit, delete, partition, reorder, and multi category buttons from category row on mobile */
+  #btn-add-category,
+  #btn-rename-category,
+  #btn-delete-category,
+  #btn-partition-category,
+  #btn-reorder-categories,
+  #btn-multi-category {
+    display: none !important;
+  }
+
+  /* Hide Import button on mobile */
+  #btn-import {
+    display: none !important;
+  }
+
+  /* Show Multi button in place of Import button on mobile */
+  #btn-multi-category-mobile {
+    display: inline-flex !important;
+  }
+
+  /* Hide up and down arrows buttons inside reorder modal on mobile devices */
+  .reorder-cat-actions {
+    display: none !important;
+  }
+
+  /* Full width layout for Remove from other categories on mobile */
+  #btn-remove-from-other-categories {
+    width: 100%;
+    margin-top: 0.35rem;
+    height: 38px;
+    font-size: 0.8rem;
+  }
+
   /* Responsive Help Dialog sections toggler */
   .desktop-help-content {
     display: none !important;
@@ -2013,13 +2046,17 @@ body:not(.selection-mode-active) #btn-copy-to {
   display: none !important;
 }
 
+.lesson-select-wrapper {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 400px) {
   #select-lesson{
     min-width: 120px;
   }
 
   .lesson-select-wrapper{
-    gap: 0.2rem !important;;
+    gap: 0.2rem !important;
   }
 }
 
@@ -2053,9 +2090,10 @@ body:not(.selection-mode-active) #btn-copy-to {
 .card-categories-list {
   margin-top: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 0.3rem;
-  justify-content: center;
+  width: 100%;
 }
 
 .card-category-tag {
@@ -2070,6 +2108,8 @@ body:not(.selection-mode-active) #btn-copy-to {
   gap: 0.25rem;
   position: relative;
   transition: background-color var(--transition-fast), color var(--transition-fast);
+  max-width: 90%;
+  word-break: break-word;
 }
 
 .card-category-tag:hover {
@@ -2195,4 +2235,263 @@ body:not(.selection-mode-active) #btn-copy-to {
 .btn-cat-nav:hover {
   background-color: var(--border-color);
   color: var(--accent);
+}
+
+/* ==========================================================================
+   CATEGORY REORDERING & MULTI-CATEGORY VIEW
+   ========================================================================== */
+
+.reorder-cat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm, 6px);
+  cursor: grab;
+  transition: background var(--transition-fast, 0.15s), border-color var(--transition-fast, 0.15s), box-shadow var(--transition-fast, 0.15s), transform var(--transition-fast, 0.15s);
+  user-select: none;
+  position: relative;
+}
+
+.reorder-cat-item:hover {
+  background: var(--bg-hover, rgba(255, 255, 255, 0.05));
+  border-color: var(--accent);
+}
+
+.reorder-cat-item:active {
+  cursor: grabbing;
+}
+
+.reorder-cat-item.dragging {
+  opacity: 0.35;
+  background: rgba(59, 130, 246, 0.08) !important;
+  border: 2px dashed var(--accent) !important;
+  cursor: grabbing;
+  transform: scale(0.99);
+}
+
+.reorder-cat-item.drag-over-top {
+  border-top: 3px solid var(--accent) !important;
+  box-shadow: 0 -4px 8px -2px rgba(59, 130, 246, 0.4);
+}
+
+.reorder-cat-item.drag-over-bottom {
+  border-bottom: 3px solid var(--accent) !important;
+  box-shadow: 0 4px 8px -2px rgba(59, 130, 246, 0.4);
+}
+
+.reorder-cat-drag-handle {
+  color: var(--text-secondary);
+  cursor: grab;
+  padding: 0.2rem 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast, 0.15s);
+  touch-action: none;
+}
+
+.reorder-cat-drag-handle:hover {
+  color: var(--accent);
+  background: rgba(59, 130, 246, 0.15);
+  border-color: var(--accent);
+}
+
+.reorder-cat-drag-handle:active {
+  cursor: grabbing;
+}
+
+body.reorder-is-dragging {
+  cursor: grabbing !important;
+  user-select: none !important;
+}
+
+body.reorder-is-dragging .reorder-cat-item * {
+  pointer-events: none !important;
+}
+
+body.reorder-is-dragging .reorder-cat-item {
+  pointer-events: auto !important;
+}
+
+.reorder-cat-name {
+  flex: 1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reorder-cat-actions {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.reorder-cat-actions button {
+  padding: 0 0.45rem !important;
+  font-size: 0.72rem !important;
+  min-width: 26px !important;
+  height: 26px !important;
+  line-height: 1 !important;
+  border-radius: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Multi-Category View Modal & Checklist */
+#modal-multi-category {
+  width: 95vw;
+  max-width: 560px;
+}
+
+.multi-cat-checklist-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm, 8px);
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--bg-surface, var(--bg-primary));
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  #modal-multi-category {
+    width: 90vw;
+    max-width: 960px;
+  }
+
+  .multi-cat-checklist-container {
+    max-height: 52vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.45rem;
+    align-content: start;
+  }
+}
+
+/* Multi-Category checklist items */
+.multi-cat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm, 6px);
+  cursor: pointer;
+  transition: background var(--transition-fast, 0.15s), border-color var(--transition-fast, 0.15s), outline var(--transition-fast, 0.15s);
+  user-select: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.multi-cat-item:hover {
+  background: var(--bg-hover, rgba(255, 255, 255, 0.05));
+}
+
+.multi-cat-item.checked {
+  border-color: var(--accent);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.multi-cat-item.active-anchor {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.multi-cat-item input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.multi-cat-name {
+  flex: 1;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.multi-cat-counts {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Card source tag when displaying Multi-Category view */
+.card-multi-source-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  margin-bottom: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-multi-source-tag .source-cat {
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-multi-source-tag .source-mode {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
+.card-multi-source-tag .source-mode.mode-normal {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.card-multi-source-tag .source-mode.mode-hard {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+@media (max-width: 600px) {
+  #btn-multi-category span {
+    display: none;
+  }
+  #btn-multi-category svg {
+    margin-right: 0 !important;
+  }
+}
+
+.custom-big{
+  color: #38BDF8 !important;
 }

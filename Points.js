@@ -298,17 +298,33 @@ Shitsumon vs Mondai:
 
         Nani mo mondai wa arimasen.
         There is no problem at all.
+mazu vs saisho ni:
+    mazu:
+        "First off..." / "To begin with..."
+        Sets the sequence of actions or steps. It introduces what to do right now before moving on to the next step (tsugi ni).
+        Natural, conversational, and direct. Great for spoken Japanese, instructions, recipes, and giving directions.
+        Implies "First, do this, and then we will do something else."
 
-Saikin vs Sakki vs kono goro
+    saisho ni:
+        "At the beginning..." / "At first..."
+        Points to the absolute start of a timeline or list.
+        Slightly more formal, structured, or narrative. Excellent for presentations, speeches, or explaining a structured order of events.
+        Highlights the specific initial point in time ("at the very beginning").
 
-    Kono goro:
-        These days, nowadays 
-        Continuous state or habit (past to present) 
-        cannot be used for single completed events
-        Repeated Habits/Trends: ("These days I've been sleeping early")  
-        Casual / Conversational
+Shoukaki:
+    shou - erase from shoubashou
+    ka - ka youbi (fire)
+    ki - machine
 
-        Habit/State: Konogoro, isogashii desu.
+Sakki vs Saikin vs kono goro
+    Sakki
+        Just now / A moment ago (Very immediate past, typically minutes or an hour ago on the same day)
+
+        Sakki dareka kimashita ka.
+        Did someone come just a moment ago?
+
+        Sakki dewa wo shimashita.
+        I called just a short while ago.
 
     Saikin
         Recently / These days (Broader time frame spanning days, weeks, or months up to the present)
@@ -326,15 +342,14 @@ Saikin vs Sakki vs kono goro
         Saikin kono hon wo yomimashita.
         I read this book recently.
 
+    Kono goro:
+        These days, nowadays 
+        Continuous state or habit (past to present) 
+        cannot be used for single completed events
+        Repeated Habits/Trends: ("These days I've been sleeping early")  
+        Casual / Conversational
 
-    Sakki
-        Just now / A moment ago (Very immediate past, typically minutes or an hour ago on the same day)
-
-        Sakki dareka kimashita ka.
-        Did someone come just a moment ago?
-
-        Sakki dewa wo shimashita.
-        I called just a short while ago.
+        Habit/State: Konogoro, isogashii desu.
 
 Shibaraku
 
@@ -973,6 +988,16 @@ demasu:
     bon ga demasu -> publish the book = submit the book
 
 shokuhin vs tabemono vs gohan
+    gohan
+        A meal / Cooked rice
+        Everyday spoken
+        Daily meals (breakfast/lunch/dinner) or plain rice
+
+    tabemono
+        Food, things to eat
+        Casual / Everyday spoken
+        General conversation about items you eat
+
     shokuhin
         Foodstuffs, food products
         Formal / Written / Commercial
@@ -980,15 +1005,15 @@ shokuhin vs tabemono vs gohan
         Food goods / Food products (shoku = eat/food + hin = product/goods).
         Refers to packaged foods, canned goods, raw ingredients, and food as an industry or merchandise.
 
-    tabemono
-        Food, things to eat
-        Casual / Everyday spoken
-        General conversation about items you eat
+Shokubutsuen vs Hakubutsukan:
+    en:
+        The character en fundamentally means "garden," "park," "farm," or "enclosed area."
+        It is used for outdoor spaces, cultivated lands, public parks, or facilities centered around grounds/nature.
 
-    gohan
-        A meal / Cooked rice
-        Everyday spoken
-        Daily meals (breakfast/lunch/dinner) or plain rice
+    kan:
+        The character kan fundamentally means "building," "hall," "mansion," or "large public facility."
+        It is used for indoor places, institutions, or buildings designed to house specific collections, activities, or lodging
+
 
 yakushokumei:
     yaku - Role / Official Duty / Post
@@ -1006,17 +1031,27 @@ honyaku shimasu vs yakushimasu:
 
 go vs goro vs gurai:
     go:
-        [Duration] + go
+        go-fun go
+        After 5 minutes / In 5 minutes
+        (no concept of around/approximate here)
+
         "After" / "In" (Duration / Elapsed Time)
+        [Duration] + go
         Attached to a length of time (hours, days, years).
         States how much time will pass before an event happens.
 
     goro:
+        Approximate point in time
+        Around 3 o'clock -> points to exact one point of time.
+        
         "About" / "Around" (Point in Time)
         Attached to a specific point on the clock or calendar.
         [Point in time] + goro
         
     Gurai:
+        Approximate quantity, duration, or extent
+        About 3 hours
+
         Duration / Quantity (both gurai and go -> are duration)
         is for a duration or quantity (an amount of time, a period, or a general measure).
         Estimates an approximate amount or length of time.
@@ -1053,9 +1088,44 @@ Koukyou ryoukin furikomi
     
     furikomi: Bank transfer / Payment
 
-Bousui kakou
-    Bousui: Waterproof / Water protection
-    kakou:  Processing / Treatment / Manufacture
+bousui kakou vs bousui:
+    bousui:
+        Property / Standard / Waterproof Feature
+        Refers to the state, standard, or inherent feature of being waterproof or water-resistant itself (e.g., a waterproof watch, waterproof specification, or overall water barrier).
+
+    bousui kakou:
+        Treatment / Coating / Water-Repellent Processing
+        Refers specifically to the process or treatment applied to a material to make it water-resistant (e.g., applying a waterproof coating, spray, or sealant to fabric or electronic components).
+
+Moushimasu:
+    Tanaka to moushimasu
+    I'm am called tanaka
+
+    Tanaka to iimasu.
+
+Kaigai vs gaikoku vs ryuugakusei:
+    Kaigai
+        kaigai means - overseas concept
+
+    gaikoku
+        foreign country concept
+
+    ryuugakusei
+        ryuu - To stay, remain, or reside.
+        Internation / exchange student
+        Lit -> Student Studying Abroad
+
+torikaemasu vs koukanshimasu:
+    torikaemasu:
+        Replacement / Swap Out / Native Verb
+        Replacing an old/broken item with a new/fresh one
+        Focuses on replacing a broken, worn-out, defective, or unwanted item with a new or proper one (e.g., changing a lightbulb, replacing batteries, or exchanging a damaged product for a new one).
+
+    koukanshimasu:
+        Mutual Exchange / Trade / Formal Verb
+        A mutual 2-way swap (or formal commercial exchange)
+        Focuses on exchanging things of equivalent value, trading items, or mutual giving between two parties or categories (e.g., exchanging business cards, trading currency, or mutual gift/item exchanges).
+
 
 Hikinobashi:
     Hiku: to pull
@@ -1087,9 +1157,15 @@ Keiken:
     kei: Pass through, undergo, manage. (think as -> kei of keizai)
     ken: Test, examine, effect.  (think as -> ken of shiken)
 
-Kyuuryou:
-    kyuu: Supply, provide, pay.
-    ryou: Fee, material, compensation.
+Shuunyuu vs Kyuuryou
+    Shunnyuu:
+        nyuu - enter
+        Income = overall earning
+
+    Kyuuryou:
+        Salary = amount received from employer
+        kyuu: Supply, provide, pay.
+        ryou: Fee, material, compensation.
 
 Bangumi:
     Ban: Number, order, turn.
@@ -1266,6 +1342,9 @@ futsuu vs Kyuukou vs Tokkyuu vs Junkyuu vs Kaisoku vs shinkansen
         Medium
 
     Kyuukou
+        It means rapid (or) express, since english speakers take express and rapid as same.
+        Express - is official in japan.
+
         Skips a large number of stations; stops only at major transfer hubs.
         Fast
         kou - ikou (lets go)
@@ -1274,9 +1353,73 @@ futsuu vs Kyuukou vs Tokkyuu vs Junkyuu vs Kaisoku vs shinkansen
         Skips almost all stations; requires a surcharge ticket (Tokkyuu-ken).
         Intercity
 
+        Tokubetsu kyuukou = special express.
+        Limited Express (or) super-express is offical translation.
+
     shinkansen
         Operates on dedicated high-speed tracks between major cities
         Fastest (Maglev / High-Speed Rail)
+
+douyatte vs dou:
+    douyatte:
+        Method / Means / Procedure
+        Asks "how" in terms of the specific procedure, route, step-by-step method, or means used to accomplish an action (e.g., "How do I get to the station?", "How do you make this?").
+
+    dou:
+        Opinion / State / Evaluation
+        Asks "how" regarding a person's thoughts, current status, condition, proposal, or recommendation (e.g., "How is the weather?", "How about some coffee?", "How was the test?").
+
+nan desu ka vs nani:
+    nan desu ka:
+        Polite Inquiry / Prompt / Response to Name
+        A polite phrase meaning "What is it?" or "Yes? (How can I help you?)". Used to politely ask for clarification, or to answer when someone calls your name in a polite or professional environment.
+
+    nani:
+        Question Word / Casual Interjection
+        The basic casual word for "what". Used in direct question constructions (e.g., nani o shimasu ka) or on its own as an informal, casual interjection ("What?") among friends or family.
+
+iryou vs fuku vs ifuku:
+    iryou:
+        Commercial Clothing
+        Retail, industry, or manufacturing term.
+        Usage: Store department names, economic news, trade, and business contexts.
+
+        Industry / Category / Mass Apparel
+        Refers to clothing as an economic sector, commercial category, or merchandise classification (e.g., medical garments, clothing product lines, apparel industry, iryouhin for clothing goods).
+
+    fuku:
+        Everyday / Spoken / General Clothes
+        The primary everyday word for clothes, garments, or outfits. Used in casual and polite conversation when referring to what someone wears (e.g., fuku o kiru to put on clothes, fuku o kae to buy clothes).
+
+    ifuku:
+        Formal / Written / Technical Term
+        A formal, literary, or official term for attire, apparel, or clothing items overall. Common in written Japanese, official regulations, historical contexts, or academic descriptions of garments.
+
+Kakuho:
+    Kaku - Certain
+
+Jitsu:
+    Truth & Reality
+
+han vs hanbun:
+    han:
+        Suffix / Bound Counter / Half Unit
+        Functions as a counter suffix or modifier directly attached to numbers, time, or measure words to indicate "and a half" or a specific half-point (e.g., ichi-ji han for 1:30, san-nen han for 3.5 years, han-nichi for half a day).
+
+    hanbun:
+        Standalone Noun / Portion / Half Quantity
+        Functions as an independent noun meaning "half" or "half of a whole." Used when referring to 50% of an object, amount, group, or total quantity (e.g., hanbun o tabemasu to eat half, hanbun dake for only half).
+
+bobu vs okappa:
+    bobu:
+        Nobara kugisaki
+        Modern / Fashionable / Modern Haircut
+        Loanword from English. Refers to a modern bob haircut style, often associated with current fashion trends, styled cuts, or contemporary hair salon terminology.
+
+    okappa:
+        Mob from mob pyschoo 100
+        Traditional / Classic / Straight Cut with Bangs
+        A classic Japanese term for a traditional straight-cut bob, typically featuring short, straight hair trimmed evenly around the neck with full bangs across the forehead (often reminiscent of traditional pageboy or traditional doll hairstyles).
 
 raku vs kaiteki:
     raku:
@@ -1376,14 +1519,24 @@ Doubutsuen:
     Doubutsuen: Animal + Garden/Park = Zoo
 
 yasumimasu vs yasumi o shimasu vs yasumi o torimasu:
-    yasumi o shimasu -> to take a rest
-    yasumimasu -> to take a rest / take a day off / be absent
-    yasumimasu -> is more often used. (natural)
 
     yasumi o torimasu:
         Formal / Structural 
         ("to secure/take a vacation day").
         Formal request for official leave/vacation time at work.
+        
+        yasumi o shimasu -> to take a rest
+        yasumimasu -> to take a rest / take a day off / be absent
+        yasumimasu -> is more often used. (natural)
+
+araimasu:
+    sentaku shimasu:
+        Laundering / Clothes & Fabrics
+        Refers specifically to washing, cleaning, or laundering clothes, textiles, bedding, or garments. Almost always implies using a washing machine, detergent, or doing laundry as a household task.
+
+    araimasu:
+        General Washing / Cleaning with Water
+        The broad native verb for washing anything using water (e.g., washing hands, face, dishes, vegetables, cars, or hair). Can be used for clothes, but sentaku shimasu is preferred for the act of doing laundry.
 
 hitoride vs Jibun de
     Hitoride
@@ -1478,9 +1631,21 @@ Imo:
     is a general word that means potato, taro, or root vegetable/tuber
 
 abura vs shishitsu vs sekiyu:
-    Shishitsu (脂質) is the scientific term for lipids/fats as a macronutrient, 
-    while Abura (油 / 脂) refers specifically to visible, culinary fats 
-    and oils used in cooking.
+    Shishitsu
+        is the scientific term for lipids/fats as a macronutrient, 
+        while Abura refers specifically to visible, culinary fats 
+        and oils used in cooking.
+
+        Shi - Fat / Oil
+        Shitsu - Quality / Substance / Matter
+    
+    abura:
+        "Oil" / "Fat" / "Grease"
+        A broad category covering all liquids that don't mix with water (cooking oil, animal fat, lubricants).
+        Used for food, cooking, general grease, or as a general word for oil.
+
+        Tenpura o tsukuru no ni abura o tskaimasu.
+        Kono niku wa abura ga ooi desu.
 
     sekiyu:
         "Petroleum" / "Crude oil" / "Kerosene"
@@ -1490,14 +1655,6 @@ abura vs shishitsu vs sekiyu:
         Sekiyu no kakaku ga agaramashita.
         Sekiyu stoobu ni keroshin (sekiyu) o入れます (iremasu).
 
-    abura:
-        "Oil" / "Fat" / "Grease"
-        A broad category covering all liquids that don't mix with water (cooking oil, animal fat, lubricants).
-        Used for food, cooking, general grease, or as a general word for oil.
-
-        Tenpura o tsukuru no ni abura o tskaimasu.
-        Kono niku wa abura ga ooi desu.
-
 Itsutsu no taisetsu na eiyouso to sore o fukumu tabemono:
     Eiyouso - so is element / Component
     fukumu - to include, to contain, to comprise
@@ -1506,10 +1663,6 @@ Tansuikabutsu:
     Tan - Carbon
     Sui - Water / Hydrogen-oxygen
     Kabutsu - Compound
-
-Shishitsu:
-    Shi - Fat / Oil
-    Shitsu - Quality / Substance / Matter
 
 Yofukashi o suru:
     Yo - of yoru
@@ -1966,9 +2119,52 @@ Hanashiaite:
     Hanashi - The noun form/stem form of of hanashimasu
     aite    - aite coming from aimasu
 
-tanshinsha:
-    means "a single person living alone" or "a single-person household."
+houritsu vs houritsugaku:
+    houritsu:
+        Statute / Legislation / The Law
+        Refers to the actual statutes, legal rules, acts, and regulations passed by a governing body (e.g., "to follow the law," "to break the law," "a new law was passed").
 
+    houritsugaku:
+        Academic Field / Jurisprudence / Legal Studies
+        Refers specifically to the academic discipline or major of studying law, legal theory, and jurisprudence (e.g., "studying law at university," "a professor of law").
+
+houritsu vs kisoku:
+    houritsu:
+        Enacted Law / Legal Acts / State Legislation
+        Refers specifically to formal laws and statutes enacted by a government, nation, or legislature. Applies broadly to all citizens and carries strict state-level legal enforcement and penalties.
+
+    kisoku:
+        Rules / Institutional Regulations / Internal Policy
+        Refers to specific regulations, bylaws, or guidelines established within a particular organization, company, school, or facility (e.g., company rules, school regulations, game rules).
+
+tsuma vs kanai:
+    tsuma:
+        Very common
+        Neutral / Objective / Standard Term
+        The standard, objective, and socially accepted term used to refer to your own wife in formal, casual, or public settings. It carries no humble or traditional nuances and is the most common term in modern Japanese.
+
+    kanai:
+        Traditional / Humble / Older Generation Term
+        Literally translates to "inside the house." A traditional, humble term used by men (typically of older generations) to refer to their own wife when speaking to outsiders. It is increasingly seen as dated or traditional in modern usage.
+
+otto vs shujin:
+    otto:
+        Neutral / Objective / Standard Legal Term
+        The formal, objective, and non-hierarchical term for your own husband. Used in official documents, written forms, news, and modern neutral speech when referring to one's husband without traditional role implications.
+
+    shujin:
+        Traditional / Conversational / Humble Term
+        Literally means "master" or "head of household." Commonly used in everyday conversation to refer to your own husband when talking to others. While widely used, some younger generations avoid it due to its traditional hierarchical origin.
+
+basho vs tokoro:
+    basho:
+        Physical Location / Venue / Specific Site
+        Refers specifically to a physical space, site, spot, or venue where an event takes place, something is located, or an activity occurs (e.g., event venue, parking spot, meeting place).
+
+    tokoro:
+        Broad Concept / Physical & Abstract Place / Situation
+        A versatile native word that can refer to physical locations, abstract concepts, parts of a topic, addresses, or even points in time/situations (e.g., "a quiet place", "good point about that idea", "just about to leave").
+        
 taiken:
     means "hands-on experience," "personal experience," or "trial / preview."
 
@@ -2253,8 +2449,58 @@ Seijitsu:
     senjitsu - is other day used in formal setting
     in formal setting we will be sincere.
 
+    Obedient is Willing to comply with orders, rules, instructions, or authority figures (like parents, teachers, bosses, or law enforcement).
+
+Fumajime:
+    describes something or someone that lacks serious purpose, value, or sensible thought.
+
+Hakubutsukan:
+    Haku - is from hakase (extensive knowledge)
+
+Suizokukan:
+    sui - water
+    zoku - family from kazoku
+
+Pureigaido:
+    play guide
+
+Teikiken:
+    Tei - Fix, decide, determine, regular
+    ki - Period, term, time.
+    ken - Ticket, coupon, certificate
+
+Kaisuuken:
+    kai - times
+    suu - from suugaku (count, maths)
+
+ganjitsu vs oshougatsu:
+    ganjitsu:
+        Single Specific Day (January 1st)
+        Refers explicitly to New Year's Day itself—the first day of the calendar year (January 1st). Often specifically implies the morning or start of January 1st (sometimes written as gantan).
+
+    oshougatsu:
+        New Year Holiday Period / Season
+        Refers to the entire New Year holiday season and its associated celebrations, traditions, and festivities. While it typically covers the first three days of January (sannichi), it can broadly extend to the first week or mid-January.
+        
 Kappatsu:   
     remeber as kappa + tsui
+
+keisatsu vs keisatsusho vs keisatsukan:
+    keisatsu:
+        Organization / System / General Concept
+        Refers to the police force as an entire institution, organization, or authority. Can also be used casually to refer to the police as a general entity.
+
+    keisatsusho:
+        Physical Building / Facility
+        Refers specifically to the actual physical police station building or headquarters facility.
+
+    keisatsukan:
+        Individual Person / Profession
+        Refers specifically to an individual police officer or member of the police force (formal title for a policeman/policewoman).
+
+keisatsusho:
+    sho - Official / Government
+        Station, Bureau, Authority
 
 Komakai:
     fine - is not fine money, it is fine like that of "This is fine(good)"
@@ -2492,7 +2738,7 @@ dansei vs otoko:
         Casual / Everyday / General Gender Term
         The standard native Japanese word for a man, male, or boy. Used in casual conversation, literature, and compound words, but can sound direct or blunt if used inappropriately in formal settings.
 
-[oto/koe ga~] shimasu vs kikoemasu:
+koe ga shimasu vs kikoemasu:
     [oto/koe ga~] shimasu:
         Sensory Perception / Noticeable Presence / Spontaneous Sensation
         Focuses on perceiving a sound or voice through the senses, often emphasizing the source, nature, or quality of the sound (e.g., "there is a sound/voice," "it makes a sound," or "I sense/notice a sound").
@@ -2601,10 +2847,8 @@ Hoikuen:
     Care and daily support for children whose parents are working, ill, or otherwise unable to provide care during the day.
 
 Youchien:
-    you - yo
-    chi - kids have cold
-    en - is common for enchou, hoikuen
-        "garden," "institution," or "facility" (often referring to places focused on children or public grounds)
+    you = yo
+    chi = kids have cold
 
 Yuushoku vs Bangohan:
     yuushoku: 
@@ -2646,5 +2890,22 @@ kaitou vs henji:
         Acknowledge / Verbal Reply / Everyday Answer
         Refers to giving a direct personal reply, verbal response, or acknowledgment when spoken to, called, emailed, or sent a message (e.g., replying to a message, answering "yes" when called).
 
+iwai:
+    iwai o shimasu: to celebrate
+
+yume:
+    yume o mimasu
+    have a dream
+
+Kousaten:
+    kou - crossing
+    sa - it's from chisa, omosa, okias..
+    ten - Point, spot, or location.
+
+Koutsu:
+    tsu - Passing through, moving along a route, commuting.
+
+shuuden:
+    den - is from densha
 
     `

@@ -70,6 +70,32 @@
             <button id="btn-delete-category" class="btn btn-danger" title="Delete Current Category" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
             </button>
+            <button id="btn-partition-category" class="btn btn-secondary hidden" title="Move Category to Dumps/Main" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600;">
+              <span id="btn-partition-category-text">To Dump</span>
+            </button>
+            <button id="btn-reorder-categories" class="btn btn-secondary" title="Change Category Order (Drag & Drop)" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="7 15 12 20 17 15"></polyline>
+                <polyline points="7 9 12 4 17 9"></polyline>
+                <line x1="12" y1="4" x2="12" y2="20"></line>
+              </svg>
+            </button>
+            <button id="btn-multi-category" class="btn btn-secondary" title="View Multiple Categories" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 3px;">
+                <path d="M4 6h16M4 12h16M4 18h7"></path>
+                <polyline points="15 15 18 18 21 15"></polyline>
+              </svg>
+              <span>Multi</span>
+            </button>
+            <button id="btn-remove-from-other-categories" class="btn btn-secondary" title="Remove from other categories" style="padding: 0 0.65rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+              <span>Remove from other categories</span>
+            </button>
           </div>
         </div>
 
@@ -158,6 +184,13 @@
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
             Import
           </button>
+          <button id="btn-multi-category-mobile" class="btn btn-secondary" title="View Multiple Categories">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6h16M4 12h16M4 18h7"></path>
+              <polyline points="15 15 18 18 21 15"></polyline>
+            </svg>
+            <span>Multi</span>
+          </button>
         </div>
         <div class="action-nav-row">
           <button id="btn-nav-prev-cat" class="btn btn-secondary btn-cat-nav" title="Previous Category (Ctrl+Left)" aria-label="Previous Category">
@@ -196,6 +229,14 @@
       <div id="stat-selected-item" class="stat-item hidden">
         <span class="stat-label">Selected:</span>
         <span id="stat-selected-count" class="stat-value">0</span>
+      </div>
+      <div id="stat-ultimate-main-item" class="stat-item hidden" title="Total words in Ultimate Main categories">
+        <span class="stat-label">Main Total:</span>
+        <span id="stat-ultimate-main-words" class="stat-value">0</span>
+      </div>
+      <div id="stat-ultimate-dumps-item" class="stat-item hidden" title="Total words in Ultimate Dumps categories">
+        <span class="stat-label">Dumps Total:</span>
+        <span id="stat-ultimate-dumps-words" class="stat-value">0</span>
       </div>
     </div>
 
@@ -251,12 +292,18 @@
   <div id="modal-quiz" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
     <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
       <div style="display: flex; align-items: center; gap: 0.5rem;">
-        <h2 id="quiz-title" style="margin: 0;">Vocabulary Quiz</h2>
+        <h2 id="quiz-title" style="margin: 0;">Quiz</h2>
         <button id="btn-quiz-reload" class="btn btn-icon btn-small" title="Restart Quiz" aria-label="Restart Quiz" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; padding: 0.25rem; color: var(--text-secondary); transition: color var(--transition-fast);">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M23 4v6h-6"></path>
             <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
           </svg>
+        </button>
+        <button id="btn-quiz-quick-random" class="btn btn-icon btn-small hidden" title="Restart in Random Order (R)" aria-label="Restart in Random Order" style="background: none; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0.15rem 0.45rem; font-weight: bold; font-size: 0.85rem; color: var(--accent); transition: all var(--transition-fast);">
+          R
+        </button>
+        <button id="btn-quiz-quick-original" class="btn btn-icon btn-small hidden" title="Restart in Original Order (O)" aria-label="Restart in Original Order" style="background: none; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0.15rem 0.45rem; font-weight: bold; font-size: 0.85rem; color: var(--accent); transition: all var(--transition-fast);">
+          O
         </button>
       </div>
       <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -357,6 +404,10 @@
             <div class="feedback-item reveal-romaji-section">
               <span class="label">Romaji:</span>
               <span id="quiz-reveal-romaji" class="value">--</span>
+            </div>
+            <div class="feedback-item reveal-kanji-section">
+              <span class="label">Kanji:</span>
+              <span id="quiz-reveal-kanji" class="value text-japanese">--</span>
             </div>
           </div>
         </div>
@@ -553,8 +604,12 @@
                 <td>Jump to the Questions category (only in groups ending in "Others").</td>
               </tr>
               <tr>
-                <td><kbd>I</kbd></td>
-                <td>View Notes & Comparison for selected word (or current Quiz word), or open Import modal (when no card is selected).</td>
+                <td><kbd>i</kbd></td>
+                <td>Open Import modal and focus import box (or Quiz word info in Quiz).</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>I</kbd></td>
+                <td>View Notes & Comparison for currently selected word (if info is present).</td>
               </tr>
               <tr>
                 <td><kbd>W</kbd></td>
@@ -738,21 +793,24 @@ kenkyuusha</pre>
           <option value="N3">N3</option>
           <option value="N2">N2</option>
           <option value="N1">N1</option>
+          <option value="Ultimate" id="opt-db-level-ultimate">Ultimate</option>
         </select>
       </div>
       <div class="quiz-option-group" style="margin-bottom: 1.5rem;">
         <label for="select-db-group" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.5rem; display: block;">Database Group</label>
         <select id="select-db-group" class="custom-select" style="width: 100%;">
-          <option value="Lessons">Lessons</option>
-          <option value="Others">Others</option>
-          <option value="Grammer">Grammer</option>
-          <option value="Grammer Others">Grammer Others</option>
-          <option value="Extra">Extra</option>
-          <option value="Listening">Listening</option>
-          <option value="Dumps">Dumps</option>
+          <option value="Lessons" id="opt-db-group-lessons">Lessons</option>
+          <option value="Others" id="opt-db-group-others">Others</option>
+          <option value="Grammer" id="opt-db-group-grammer">Grammer</option>
+          <option value="Grammer Others" id="opt-db-group-grammer-others">Grammer Others</option>
+          <option value="Extra" id="opt-db-group-extra">Extra</option>
+          <option value="Listening" id="opt-db-group-listening">Listening</option>
+          <option value="Dumps" id="opt-db-group-dumps">Dumps</option>
           <option value="Genki" id="opt-db-group-genki">Genki</option>
-          <option value="Kanji">Kanji</option>
+          <option value="Kanji" id="opt-db-group-kanji">Kanji</option>
           <option value="Ultimate" id="opt-db-group-ultimate">Ultimate</option>
+          <option value="Main" id="opt-db-group-main" class="hidden">Main</option>
+          <option value="Dump" id="opt-db-group-dump" class="hidden">Dump</option>
         </select>
       </div>
       <div class="modal-actions" style="margin-top: 1.5rem;">
@@ -788,8 +846,12 @@ kenkyuusha</pre>
     </div>
     <div class="modal-body">
       <div class="quiz-option-group">
+        <label for="input-cat-sel-search">Search Category</label>
+        <input type="text" id="input-cat-sel-search" class="quiz-text-input" placeholder="Search (e.g. 'jit', 'jit w')..." autocomplete="off" style="width: 100%; box-sizing: border-box; margin-bottom: 0.75rem;">
+      </div>
+      <div class="quiz-option-group">
         <label for="select-copy-destination">Destination Category</label>
-        <select id="select-copy-destination" class="custom-select">
+        <select id="select-copy-destination" class="custom-select" style="width: 100%; box-sizing: border-box;">
           <!-- Programmatically populated -->
         </select>
       </div>
@@ -939,6 +1001,18 @@ kenkyuusha</pre>
         </select>
       </div>
 
+      <!-- Font Size Scaling for All Lines -->
+      <div class="quiz-option-group">
+        <label for="custom-disp-font-scale" style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Font Size (All Lines)</label>
+        <select id="custom-disp-font-scale" class="custom-select" style="width: 100%;">
+          <option value="1">Default (100%)</option>
+          <option value="1.15">Medium (+15%)</option>
+          <option value="1.3">Large (+30%)</option>
+          <option value="1.5">Extra Large (+50%)</option>
+          <option value="1.75">Huge (+75%)</option>
+        </select>
+      </div>
+
       <!-- Live Card Preview -->
       <div class="quiz-option-group" style="margin-top: 0.25rem;">
         <label style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Live Preview</label>
@@ -950,6 +1024,90 @@ kenkyuusha</pre>
       <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
         <button id="btn-save-custom-display" class="btn btn-primary btn-large" style="flex: 1;">Save & Apply</button>
         <button id="btn-cancel-custom-display" class="btn btn-secondary btn-large" style="flex: 1;" onclick="closeActiveModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Reorder Categories -->
+  <div id="modal-reorder-categories" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="reorder-categories-title" style="max-width: 520px; width: 95%;">
+    <div class="modal-header">
+      <h2 id="reorder-categories-title" style="margin: 0; font-size: 1.25rem;">Change Category Order (Drag &amp; Drop)</h2>
+      <button class="btn-close-modal" aria-label="Close Reorder Categories Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <div style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.82rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.15rem;">✋</span>
+        <span><strong>Drag &amp; Drop:</strong> Click and drag any category by its <strong>⋮⋮ grip handle</strong> or whole row to rearrange sequence for <strong id="reorder-group-name">Current Group</strong>.</span>
+      </div>
+
+      <!-- Search & Quick Sort Toolbar -->
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <input type="text" id="reorder-cat-filter" class="custom-input" placeholder="Filter categories..." style="flex: 1; padding: 0.45rem 0.65rem; font-size: 0.85rem;">
+        <button id="btn-reorder-sort-az" class="btn btn-secondary" title="Sort Alphabetically A-Z" style="font-size: 0.8rem; padding: 0.45rem 0.65rem; white-space: nowrap;">A → Z</button>
+        <button id="btn-reorder-reset-default" class="btn btn-secondary" title="Reset to Default Order" style="font-size: 0.8rem; padding: 0.45rem 0.65rem; white-space: nowrap;">Reset</button>
+      </div>
+
+      <!-- Categories List -->
+      <div id="reorder-categories-list" class="reorder-list-container" style="max-height: 380px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; padding: 0.4rem; display: flex; flex-direction: column; gap: 0.35rem; background: var(--bg-surface);">
+        <!-- Dynamically rendered reorder items -->
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+        <button id="btn-save-reorder-categories" class="btn btn-primary btn-large" style="flex: 1;">Save & Apply</button>
+        <button id="btn-cancel-reorder-categories" class="btn btn-secondary btn-large" style="flex: 1;" onclick="closeActiveModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Multi-Category View -->
+  <div id="modal-multi-category" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="multi-category-title">
+    <div class="modal-header">
+      <h2 id="multi-category-title" style="margin: 0; font-size: 1.25rem;">View Multiple Categories</h2>
+      <button class="btn-close-modal" aria-label="Close Multi-Category Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">
+        Select multiple categories to display their words together in the main vocabulary grid.
+      </p>
+
+      <!-- Mode Selector (Normal, Hard, Both) -->
+      <div class="quiz-option-group" style="margin-bottom: 0;">
+        <label style="font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 0.35rem; display: block;">Display Mode</label>
+        <div class="segmented-control" style="width: 100%; display: flex;">
+          <input type="radio" id="multi-mode-both" name="multi-category-mode" value="both" checked>
+          <label for="multi-mode-both" style="flex: 1; text-align: center;">Both</label>
+
+          <input type="radio" id="multi-mode-normal" name="multi-category-mode" value="normal">
+          <label for="multi-mode-normal" style="flex: 1; text-align: center;">Nrml</label>
+
+          <input type="radio" id="multi-mode-hard" name="multi-category-mode" value="hard">
+          <label for="multi-mode-hard" style="flex: 1; text-align: center;">Hard</label>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.3rem;">
+          <em>Sequence when "Both" is selected:</em> Cat 1 Nrml → Cat 1 Hard → Cat 2 Nrml → Cat 2 Hard...
+        </div>
+      </div>
+
+      <!-- Categories Filter & Quick Actions -->
+      <div style="display: flex; gap: 0.5rem; align-items: center; justify-content: space-between;">
+        <input type="text" id="multi-cat-search" class="custom-input" placeholder="Search categories..." style="flex: 1; padding: 0.45rem 0.65rem; font-size: 0.85rem;">
+        <button id="btn-multi-cat-select-all" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.45rem 0.65rem; white-space: nowrap;">Select All</button>
+        <button id="btn-multi-cat-clear-all" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.45rem 0.65rem; white-space: nowrap;">Clear</button>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-secondary); padding: 0 0.2rem;">
+        <span>Categories in <strong id="multi-cat-group-name">Current Group</strong>:</span>
+        <span id="multi-cat-selected-count">0 selected</span>
+      </div>
+
+      <!-- Categories Checklist -->
+      <div id="multi-cat-checklist" class="multi-cat-checklist-container">
+        <!-- Dynamically rendered checkboxes -->
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+        <button id="btn-apply-multi-category" class="btn btn-primary btn-large" style="flex: 1;">Apply &amp; View Words</button>
+        <button id="btn-cancel-multi-category" class="btn btn-secondary btn-large" style="flex: 1;" onclick="closeActiveModal()">Cancel</button>
       </div>
     </div>
   </div>
