@@ -755,11 +755,11 @@ html[data-theme="light"] .moon-icon { display: block; }
 }
 
 .btn-custom-disp-gear {
-  transition: opacity var(--transition-fast), color var(--transition-fast);
+  transition: opacity var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 .btn-custom-disp-gear:hover {
   color: var(--accent-hover);
-  text-decoration: underline;
+  transform: rotate(30deg);
 }
 
 /* Card Tags Display */
@@ -1679,13 +1679,14 @@ html[data-theme="light"] .moon-icon { display: block; }
     display: none !important;
   }
 
-  /* Hide +, edit, delete, partition, reorder, and multi category buttons from category row on mobile */
+  /* Hide +, edit, delete, partition, reorder, multi category, and remove from other categories buttons from category row on mobile */
   #btn-add-category,
   #btn-rename-category,
   #btn-delete-category,
   #btn-partition-category,
   #btn-reorder-categories,
-  #btn-multi-category {
+  #btn-multi-category,
+  #btn-remove-from-other-categories {
     display: none !important;
   }
 
@@ -1702,14 +1703,6 @@ html[data-theme="light"] .moon-icon { display: block; }
   /* Hide up and down arrows buttons inside reorder modal on mobile devices */
   .reorder-cat-actions {
     display: none !important;
-  }
-
-  /* Full width layout for Remove from other categories on mobile */
-  #btn-remove-from-other-categories {
-    width: 100%;
-    margin-top: 0.35rem;
-    height: 38px;
-    font-size: 0.8rem;
   }
 
   /* Responsive Help Dialog sections toggler */
@@ -2110,6 +2103,8 @@ body:not(.selection-mode-active) #btn-copy-to {
   transition: background-color var(--transition-fast), color var(--transition-fast);
   max-width: 90%;
   word-break: break-word;
+  cursor: pointer;
+  user-select: none;
 }
 
 .card-category-tag:hover {
@@ -2495,3 +2490,204 @@ body.reorder-is-dragging .reorder-cat-item {
 .custom-big{
   color: #38BDF8 !important;
 }
+
+/* Category Context Popover (3 left and 3 right words sequence) */
+.category-hover-context-popover {
+  position: fixed;
+  z-index: 99999;
+  pointer-events: auto;
+  background: var(--bg-surface, var(--bg-primary, #1e293b));
+  color: var(--text-primary, #f8fafc);
+  border: 1px solid var(--accent, #6366f1);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 0.9rem;
+  max-width: 96vw;
+  box-sizing: border-box;
+  animation: contextFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes contextFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.context-popover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+}
+
+.context-popover-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.context-popover-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.context-popover-catname {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--accent, #38bdf8);
+}
+
+.context-popover-badge-hard {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.context-popover-sub {
+  font-size: 0.72rem;
+  color: var(--text-secondary, #94a3b8);
+  font-style: italic;
+}
+
+.context-popover-counter {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #94a3b8);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.context-popover-close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary, #94a3b8);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  margin-left: 0.3rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.context-popover-close-btn:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.context-popover-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding: 0.2rem 0;
+}
+
+.context-word-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  min-width: 80px;
+  max-width: 140px;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.context-word-side {
+  background: var(--bg-secondary, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  opacity: 0.88;
+}
+
+.context-word-current {
+  background: rgba(99, 102, 241, 0.18);
+  border: 2px solid var(--accent, #6366f1);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.35);
+  transform: scale(1.04);
+  z-index: 1;
+}
+
+.context-chip-tag {
+  font-size: 0.62rem;
+  color: var(--text-secondary, #94a3b8);
+  font-weight: 600;
+}
+
+.context-tag-current {
+  color: var(--accent, #38bdf8);
+  font-weight: 700;
+}
+
+.context-chip-jp {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary, #f8fafc);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.context-jp-current {
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.context-chip-kanji {
+  font-size: 0.72rem;
+  color: var(--text-secondary, #cbd5e1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.context-chip-eng {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #94a3b8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.context-eng-current {
+  color: var(--text-primary, #f8fafc);
+  font-weight: 600;
+}
+
+.context-chip-romaji {
+  font-size: 0.65rem;
+  color: var(--text-secondary, #64748b);
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.context-arrow {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #64748b);
+  flex-shrink: 0;
+  user-select: none;
+}

@@ -149,6 +149,7 @@ function setUltimateCategoryPartition(categoryName, partition) {
   } catch (e) {}
 
   saveSettings();
+  clearAllStateCaches();
 }
 
 function getActiveDb() {
@@ -1484,6 +1485,189 @@ function getCategoriesForActiveGroup() {
   return getLessonsForActiveGroup();
 }
 
+function getOrderedCategoriesForActiveGroup() {
+  const selectLesson = document.getElementById('select-lesson');
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results", "Multi-Category View"];
+  const listFromDom = [];
+  if (selectLesson && selectLesson.options && selectLesson.options.length > 0) {
+    for (let i = 0; i < selectLesson.options.length; i++) {
+      const val = selectLesson.options[i].value;
+      if (val && !reserved.includes(val) && !val.startsWith("Search Results")) {
+        listFromDom.push(val);
+      }
+    }
+  }
+  if (listFromDom.length > 0) {
+    return listFromDom;
+  }
+
+  // Fallback if DOM options are not present:
+  const categories = getLessonsForActiveGroup();
+  const groupOrderKey = getCategoryOrderGroupKey();
+  const customOrder = currentSettings.customCategoryOrders && currentSettings.customCategoryOrders[groupOrderKey];
+  if (customOrder && Array.isArray(customOrder) && customOrder.length > 0) {
+    const orderMap = new Map();
+    customOrder.forEach((cat, idx) => orderMap.set(cat, idx));
+    categories.sort((a, b) => {
+      const idxA = orderMap.has(a) ? orderMap.get(a) : 999999;
+      const idxB = orderMap.has(b) ? orderMap.get(b) : 999999;
+      if (idxA !== idxB) return idxA - idxB;
+      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+    });
+  } else {
+    categories.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  }
+  return categories;
+}
+
+function getOrderedCategoriesForUltimatePartition(partition) {
+  const normPart = (partition === 'Dumps' || partition === 'Ultimate Dumps' || partition === 'Ultimate Dump') ? 'Dumps' : 'Main';
+  const groupKey = normPart === 'Dumps' ? 'Ultimate Dumps' : 'Ultimate Main';
+  const curGroup = currentSettings.activeDbGroup || "Ultimate Main";
+  const curPartition = (curGroup === "Ultimate Dumps" || curGroup === "Ultimate Dump") ? "Dumps" : "Main";
+
+  const selectLesson = document.getElementById('select-lesson');
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results", "Multi-Category View"];
+
+  if (isUltimateMode() && curPartition === normPart && selectLesson && selectLesson.options && selectLesson.options.length > 0) {
+    const listFromDom = [];
+    for (let i = 0; i < selectLesson.options.length; i++) {
+      const val = selectLesson.options[i].value;
+      if (val && !reserved.includes(val) && !val.startsWith("Search Results")) {
+        listFromDom.push(val);
+      }
+    }
+    if (listFromDom.length > 0) {
+      return listFromDom;
+    }
+  }
+
+  const db = (typeof currentUltimateWordsDb !== 'undefined' && currentUltimateWordsDb) ? currentUltimateWordsDb : getActiveDb();
+  const allCats = [];
+  if (db) {
+    Object.keys(db).forEach(k => {
+      if (k.endsWith(" - Hard")) return;
+      if (reserved.includes(k) || k.startsWith("Search Results")) return;
+      if (getUltimateCategoryPartition(k) === normPart) {
+        if (!allCats.includes(k)) allCats.push(k);
+      }
+    });
+  }
+
+  if (currentSettings.customCategories && Array.isArray(currentSettings.customCategories)) {
+    currentSettings.customCategories.forEach(cat => {
+      if (getUltimateCategoryPartition(cat) === normPart && !allCats.includes(cat)) {
+        allCats.push(cat);
+      }
+    });
+  }
+
+  // Base alphabetical sort
+  allCats.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+
+  // Apply customCategoryOrders if configured for this partition
+  const customOrder = currentSettings.customCategoryOrders && currentSettings.customCategoryOrders[groupKey];
+  if (customOrder && Array.isArray(customOrder) && customOrder.length > 0) {
+    const orderMap = new Map();
+    customOrder.forEach((cat, idx) => orderMap.set(cat, idx));
+    allCats.sort((a, b) => {
+      const idxA = orderMap.has(a) ? orderMap.get(a) : 999999;
+      const idxB = orderMap.has(b) ? orderMap.get(b) : 999999;
+      if (idxA !== idxB) return idxA - idxB;
+      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+    });
+  }
+
+  return allCats;
+}
+
+function sortCategoriesInDisplayOrder(categories) {
+  if (!categories || !Array.isArray(categories) || categories.length <= 1) {
+    return categories || [];
+  }
+
+  if (isUltimateMode()) {
+    const mainCats = [];
+    const dumpCats = [];
+
+    categories.forEach(cat => {
+      const part = getUltimateCategoryPartition(cat);
+      if (part === 'Main') {
+        mainCats.push(cat);
+      } else {
+        dumpCats.push(cat);
+      }
+    });
+
+    const sortPartitionCats = (catsList, partitionName) => {
+      if (catsList.length <= 1) return catsList;
+      const ordered = getOrderedCategoriesForUltimatePartition(partitionName);
+      const orderMap = new Map();
+      ordered.forEach((c, idx) => {
+        orderMap.set(c, idx);
+        orderMap.set(cleanCategoryNameForUI(c), idx);
+      });
+      const groupKey = (partitionName === 'Dumps') ? 'Ultimate Dumps' : 'Ultimate Main';
+      const customOrder = currentSettings.customCategoryOrders && currentSettings.customCategoryOrders[groupKey];
+      if (customOrder && Array.isArray(customOrder)) {
+        customOrder.forEach((c, idx) => {
+          if (!orderMap.has(c)) {
+            orderMap.set(c, idx);
+            orderMap.set(cleanCategoryNameForUI(c), idx);
+          }
+        });
+      }
+
+      catsList.sort((a, b) => {
+        const cleanA = cleanCategoryNameForUI(a);
+        const cleanB = cleanCategoryNameForUI(b);
+        const idxA = orderMap.has(a) ? orderMap.get(a) : (orderMap.has(cleanA) ? orderMap.get(cleanA) : 999999);
+        const idxB = orderMap.has(b) ? orderMap.get(b) : (orderMap.has(cleanB) ? orderMap.get(cleanB) : 999999);
+        if (idxA !== idxB) return idxA - idxB;
+        return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+      });
+      return catsList;
+    };
+
+    sortPartitionCats(mainCats, 'Main');
+    sortPartitionCats(dumpCats, 'Dumps');
+
+    return [...mainCats, ...dumpCats];
+  }
+
+  // Non-Ultimate mode: follow active group order
+  const orderedGroup = getOrderedCategoriesForActiveGroup();
+  const orderMap = new Map();
+  if (orderedGroup && Array.isArray(orderedGroup)) {
+    orderedGroup.forEach((cat, idx) => {
+      orderMap.set(cat, idx);
+      orderMap.set(cleanCategoryNameForUI(cat), idx);
+    });
+  }
+  const groupOrderKey = getCategoryOrderGroupKey();
+  const customOrder = currentSettings.customCategoryOrders && currentSettings.customCategoryOrders[groupOrderKey];
+  if (customOrder && Array.isArray(customOrder)) {
+    customOrder.forEach((cat, idx) => {
+      if (!orderMap.has(cat)) {
+        orderMap.set(cat, idx);
+        orderMap.set(cleanCategoryNameForUI(cat), idx);
+      }
+    });
+  }
+
+  const sorted = [...categories];
+  sorted.sort((a, b) => {
+    const cleanA = cleanCategoryNameForUI(a);
+    const cleanB = cleanCategoryNameForUI(b);
+    const idxA = orderMap.has(a) ? orderMap.get(a) : (orderMap.has(cleanA) ? orderMap.get(cleanA) : 999999);
+    const idxB = orderMap.has(b) ? orderMap.get(b) : (orderMap.has(cleanB) ? orderMap.get(cleanB) : 999999);
+    if (idxA !== idxB) return idxA - idxB;
+    return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+  });
+
+  return sorted;
+}
+
 // Get key for currently selected lesson list
 function getActiveLessonKey() {
   let key = currentSettings.currentLesson;
@@ -1673,10 +1857,10 @@ function getAllCategoriesForWord(word) {
     }
   }
 
-  categories.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  const sorted = sortCategoriesInDisplayOrder(categories);
 
-  wordCategoriesCache.set(cacheKey, categories);
-  return categories;
+  wordCategoriesCache.set(cacheKey, sorted);
+  return sorted;
 }
 
 function isWordVisible(word) {
@@ -2265,7 +2449,7 @@ function undoLastWordRemoval() {
 
 function renderWordCategoryTags(container, word) {
   if (currentSettings.showCategoryModeActive === false) return;
-  const cats = getAllCategoriesForWord(word);
+  const cats = sortCategoriesInDisplayOrder(getAllCategoriesForWord(word));
   if (cats.length === 0) return;
 
   const catsDiv = document.createElement('div');
@@ -2292,11 +2476,265 @@ function renderWordCategoryTags(container, word) {
       removeWordFromSpecificCategory(word, c);
     });
 
+    tagSpan.title = `Double-click to view words in ${cleanCategoryNameForUI(c)} (Esc to close)`;
+
+    // Double-click to show surrounding left and right words in this category
+    tagSpan.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      showCategoryContextPopover(tagSpan, word, c);
+    });
+
     tagSpan.appendChild(removeBtn);
     catsDiv.appendChild(tagSpan);
   });
 
   container.appendChild(catsDiv);
+}
+
+let categoryContextHoverTimer = null;
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getCategoryWordsContext(word, categoryName) {
+  if (!word || !categoryName) return null;
+  const db = getActiveDb();
+  if (!db) return null;
+
+  const wordJp = (word.japanese || '').trim();
+  const wordEng = (word.english || '').trim();
+  const cleanCat = cleanCategoryNameForUI(categoryName);
+
+  let targetList = null;
+  let isHard = false;
+  let matchedCatKey = categoryName;
+
+  // 1. If currently in Hard mode, check hard list first if available
+  if (currentSettings.isHard && Array.isArray(db[categoryName + " - Hard"])) {
+    const idx = db[categoryName + " - Hard"].findIndex(w => w && (w.japanese || '').trim() === wordJp && (w.english || '').trim() === wordEng);
+    if (idx !== -1) {
+      targetList = db[categoryName + " - Hard"];
+      isHard = true;
+      matchedCatKey = categoryName + " - Hard";
+    }
+  }
+
+  // 2. Check standard normal list
+  if (!targetList && Array.isArray(db[categoryName])) {
+    const idx = db[categoryName].findIndex(w => w && (w.japanese || '').trim() === wordJp && (w.english || '').trim() === wordEng);
+    if (idx !== -1) {
+      targetList = db[categoryName];
+      isHard = false;
+      matchedCatKey = categoryName;
+    }
+  }
+
+  // 3. Check hard list as fallback if not in normal
+  if (!targetList && Array.isArray(db[categoryName + " - Hard"])) {
+    const idx = db[categoryName + " - Hard"].findIndex(w => w && (w.japanese || '').trim() === wordJp && (w.english || '').trim() === wordEng);
+    if (idx !== -1) {
+      targetList = db[categoryName + " - Hard"];
+      isHard = true;
+      matchedCatKey = categoryName + " - Hard";
+    }
+  }
+
+  if (!targetList) return null;
+
+  const wordIdx = targetList.findIndex(w => w && (w.japanese || '').trim() === wordJp && (w.english || '').trim() === wordEng);
+  if (wordIdx === -1) return null;
+
+  const leftStart = Math.max(0, wordIdx - 3);
+  const leftWords = targetList.slice(leftStart, wordIdx);
+  const targetWord = targetList[wordIdx];
+  const rightEnd = Math.min(targetList.length, wordIdx + 1 + 3);
+  const rightWords = targetList.slice(wordIdx + 1, rightEnd);
+
+  return {
+    categoryName,
+    matchedCatKey,
+    displayName: cleanCat,
+    isHard,
+    totalWords: targetList.length,
+    wordIndex: wordIdx,
+    leftStart,
+    leftWords,
+    targetWord,
+    rightWords
+  };
+}
+
+let lastCategoryContextPopoverOpenTime = 0;
+
+function showCategoryContextPopover(targetEl, word, categoryName) {
+  hideCategoryContextPopover();
+  const context = getCategoryWordsContext(word, categoryName);
+  if (!context) return;
+  lastCategoryContextPopoverOpenTime = Date.now();
+
+  const popover = document.createElement('div');
+  popover.id = 'category-hover-context-popover';
+  popover.className = 'category-hover-context-popover';
+
+  const leftCount = context.leftWords.length;
+  const rightCount = context.rightWords.length;
+  const hardBadgeHtml = context.isHard ? `<span class="context-popover-badge-hard">Hard</span>` : '';
+
+  let stripHtml = '';
+
+  // 1. Left words
+  context.leftWords.forEach((w, i) => {
+    const pos = context.leftStart + i + 1;
+    stripHtml += `
+      <div class="context-word-chip context-word-side">
+        <div class="context-chip-tag">#${pos}</div>
+        <div class="context-chip-jp">${escapeHtml(w.japanese || '')}</div>
+        ${w.kanji && w.kanji !== w.japanese ? `<div class="context-chip-kanji">${escapeHtml(w.kanji)}</div>` : ''}
+        <div class="context-chip-eng">${escapeHtml(w.english || '')}</div>
+        ${w.romaji ? `<div class="context-chip-romaji">${escapeHtml(w.romaji)}</div>` : ''}
+      </div>
+      <div class="context-arrow">&rarr;</div>
+    `;
+  });
+
+  // 2. Current target word
+  const curPos = context.wordIndex + 1;
+  const curWord = context.targetWord;
+  stripHtml += `
+    <div class="context-word-chip context-word-current">
+      <div class="context-chip-tag context-tag-current">&#9733; Current (#${curPos})</div>
+      <div class="context-chip-jp context-jp-current">${escapeHtml(curWord.japanese || '')}</div>
+      ${curWord.kanji && curWord.kanji !== curWord.japanese ? `<div class="context-chip-kanji">${escapeHtml(curWord.kanji)}</div>` : ''}
+      <div class="context-chip-eng context-eng-current">${escapeHtml(curWord.english || '')}</div>
+      ${curWord.romaji ? `<div class="context-chip-romaji">${escapeHtml(curWord.romaji)}</div>` : ''}
+    </div>
+  `;
+
+  // 3. Right words
+  context.rightWords.forEach((w, i) => {
+    const pos = context.wordIndex + 1 + i + 1;
+    stripHtml += `
+      <div class="context-arrow">&rarr;</div>
+      <div class="context-word-chip context-word-side">
+        <div class="context-chip-tag">#${pos}</div>
+        <div class="context-chip-jp">${escapeHtml(w.japanese || '')}</div>
+        ${w.kanji && w.kanji !== w.japanese ? `<div class="context-chip-kanji">${escapeHtml(w.kanji)}</div>` : ''}
+        <div class="context-chip-eng">${escapeHtml(w.english || '')}</div>
+        ${w.romaji ? `<div class="context-chip-romaji">${escapeHtml(w.romaji)}</div>` : ''}
+      </div>
+    `;
+  });
+
+  popover.innerHTML = `
+    <div class="context-popover-header">
+      <div class="context-popover-title-row">
+        <span class="context-popover-icon">&#128194;</span>
+        <span class="context-popover-catname">${escapeHtml(context.displayName)}</span>
+        ${hardBadgeHtml}
+        <span class="context-popover-sub">Category Sequence Preview</span>
+      </div>
+      <div class="context-popover-counter">
+        Word <strong>#${curPos}</strong> of ${context.totalWords} (${leftCount} left &bull; ${rightCount} right)
+        <button type="button" class="context-popover-close-btn" title="Close (Esc)" aria-label="Close (Esc)">&times;</button>
+      </div>
+    </div>
+    <div class="context-popover-strip">
+      ${stripHtml}
+    </div>
+  `;
+
+  document.body.appendChild(popover);
+
+  popover.addEventListener('click', (e) => {
+    if (e && typeof e.stopPropagation === 'function') {
+      e.stopPropagation();
+    }
+  });
+
+  const closeBtn = popover.querySelector('.context-popover-close-btn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      if (e && typeof e.stopPropagation === 'function') e.stopPropagation();
+      if (e && typeof e.preventDefault === 'function') e.preventDefault();
+      hideCategoryContextPopover();
+    });
+  }
+
+  // Position relative to targetEl
+  if (targetEl && typeof targetEl.getBoundingClientRect === 'function') {
+    const rect = targetEl.getBoundingClientRect();
+    const popRect = popover.getBoundingClientRect();
+
+    let left = rect.left + (rect.width / 2) - (popRect.width / 2);
+    left = Math.max(12, Math.min(window.innerWidth - popRect.width - 12, left));
+
+    let top = rect.top - popRect.height - 10;
+    if (top < 10) {
+      top = rect.bottom + 10;
+    }
+    if (typeof window !== 'undefined' && window.innerHeight && top + popRect.height > window.innerHeight - 10) {
+      top = Math.max(10, window.innerHeight - popRect.height - 10);
+    }
+
+    popover.style.left = `${left}px`;
+    popover.style.top = `${top}px`;
+  }
+}
+
+function startCategoryContextHover(targetEl, word, categoryName, delayMs = 4000) {
+  cancelCategoryContextHover();
+  categoryContextHoverTimer = setTimeout(() => {
+    showCategoryContextPopover(targetEl, word, categoryName);
+  }, delayMs);
+}
+
+function cancelCategoryContextHover() {
+  if (categoryContextHoverTimer) {
+    clearTimeout(categoryContextHoverTimer);
+    categoryContextHoverTimer = null;
+  }
+  hideCategoryContextPopover();
+}
+
+function hideCategoryContextPopover() {
+  if (categoryContextHoverTimer) {
+    clearTimeout(categoryContextHoverTimer);
+    categoryContextHoverTimer = null;
+  }
+  const el = document.getElementById('category-hover-context-popover');
+  if (el) el.remove();
+}
+
+if (typeof window !== 'undefined') {
+  // ESC key dismisses the category words popover
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' || e.key === 'Esc') {
+      const pop = document.getElementById('category-hover-context-popover');
+      if (pop) {
+        e.preventDefault();
+        e.stopPropagation();
+        hideCategoryContextPopover();
+      }
+    }
+  }, true);
+
+  // Click outside closes the category words popover
+  window.addEventListener('click', (e) => {
+    const pop = document.getElementById('category-hover-context-popover');
+    if (!pop) return;
+    const isInsidePop = (typeof pop.contains === 'function') ? pop.contains(e.target) : false;
+    if (!isInsidePop) {
+      hideCategoryContextPopover();
+    }
+  });
 }
 
 function updateAppHeaderTitle() {
@@ -3832,9 +4270,8 @@ function toggleDifficultyAndQuiz() {
 }
 
 function startNextLessonQuiz(isNextHardMode = false) {
-  const cats = getCategoriesForActiveGroup();
-  const filteredCats = cats.filter(c => c !== "Show All Words" && c !== "Same Meaning" && c !== "Same Romaji" && c !== "Similar Words");
-  if (filteredCats.length === 0) return;
+  const filteredCats = getOrderedCategoriesForActiveGroup();
+  if (!filteredCats || filteredCats.length === 0) return;
   
   let idx = filteredCats.indexOf(currentSettings.currentLesson);
   if (idx === -1) {
@@ -3845,6 +4282,9 @@ function startNextLessonQuiz(isNextHardMode = false) {
   }
   
   currentSettings.isHard = isNextHardMode;
+  if (currentSettings.multiCategoryConfig) {
+    currentSettings.multiCategoryConfig.active = false;
+  }
   
   const selectLesson = document.getElementById('select-lesson');
   if (selectLesson) selectLesson.value = currentSettings.currentLesson;
@@ -3859,6 +4299,10 @@ function startNextLessonQuiz(isNextHardMode = false) {
   
   currentSettings.focusedWordIndex = -1;
   currentSettings.selectedWordIndices = [];
+  if (!currentSettings.lastGroupCategories) currentSettings.lastGroupCategories = {};
+  currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = currentSettings.currentLesson;
+  recordCategoryNavigation(currentSettings.currentLesson, currentSettings.activeDbGroup, currentSettings.isHard);
+
   saveSettings();
   renderCards();
   
@@ -5172,7 +5616,7 @@ function renameCurrentCategory() {
 
 function deleteCurrentCategory() {
   const currentCat = currentSettings.currentLesson;
-  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results"];
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Search Results", "Multi-Category View"];
   if (reserved.includes(currentCat)) {
     showToast("Cannot delete this view.", "danger");
     return;
@@ -5180,6 +5624,21 @@ function deleteCurrentCategory() {
 
   if (!confirm(`Are you sure you want to delete category "${currentCat}" and all its words?`)) {
     return;
+  }
+
+  // Determine current display order and previous category BEFORE modifying database/settings
+  const currentOrder = getOrderedCategoriesForActiveGroup();
+  const currentIndex = currentOrder.indexOf(currentCat);
+  let nextCat = "Show All Words";
+  if (currentIndex > 0) {
+    // Navigate to previous category in current order
+    nextCat = currentOrder[currentIndex - 1];
+  } else if (currentIndex === 0 && currentOrder.length > 1) {
+    // If the first category is deleted, navigate to the next category in current order
+    nextCat = currentOrder[1];
+  } else if (currentOrder.length > 0) {
+    const remaining = currentOrder.filter(c => c !== currentCat);
+    nextCat = remaining.length > 0 ? remaining[0] : "Show All Words";
   }
 
   const db = getActiveDb();
@@ -5208,11 +5667,19 @@ function deleteCurrentCategory() {
     } catch (e) {}
   }
 
-  const remaining = getLessonsForActiveGroup();
-  const nextCat = remaining.length > 0 ? remaining[0] : "Show All Words";
+  if (currentSettings.multiCategoryConfig && Array.isArray(currentSettings.multiCategoryConfig.categories)) {
+    currentSettings.multiCategoryConfig.categories = currentSettings.multiCategoryConfig.categories.filter(c => c !== currentCat);
+  }
+
+  if (typeof categoryNavHistory !== 'undefined' && Array.isArray(categoryNavHistory)) {
+    categoryNavHistory = categoryNavHistory.filter(entry => entry && entry.lesson !== currentCat);
+    categoryNavHistoryIndex = Math.min(categoryNavHistoryIndex, categoryNavHistory.length - 1);
+  }
+
   currentSettings.currentLesson = nextCat;
   if (!currentSettings.lastGroupCategories) currentSettings.lastGroupCategories = {};
   currentSettings.lastGroupCategories[currentSettings.activeDbGroup] = nextCat;
+  recordCategoryNavigation(nextCat, currentSettings.activeDbGroup, currentSettings.isHard);
 
   saveWords();
   saveSettings();
@@ -5682,7 +6149,9 @@ function saveReorderedCategories() {
     localStorage.setItem('category_custom_orders', JSON.stringify(currentSettings.customCategoryOrders));
   } catch (e) {}
   saveSettings();
+  clearAllStateCaches();
   populateLessonsDropdown();
+  renderCards();
   closeActiveModal();
   showToast(`Saved category order for ${groupKey}`, "success");
 }
@@ -8842,8 +9311,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // ESC to close modals/deselect (handled before standard inputs bypass so it works when inputs are focused)
+    // ESC to close popovers/modals/deselect (handled before standard inputs bypass so it works when inputs are focused)
     if (e.key === 'Escape') {
+      const pop = document.getElementById('category-hover-context-popover');
+      if (pop) {
+        e.preventDefault();
+        hideCategoryContextPopover();
+        return;
+      }
       const activeModalVisible = !document.getElementById('modal-backdrop').classList.contains('hidden');
       if (activeModalVisible) {
         e.preventDefault();

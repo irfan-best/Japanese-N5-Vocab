@@ -96,3 +96,11 @@ copy to (or) move to -> make destination category as search box (search logic ad
 fix - [oto/koe ga~] shimasu (fix on vocab)
 
 colors for each lines of words.
+
+kanji:
+filter only radicals/ only kanji/ both
+play quiz only for selected ones
+give feature when i do ctrl + click -> open wani kani url, instead of our local one.
+
+Vocab:
+set level N4, N5, custom level, and show the vocabs having them

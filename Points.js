@@ -2165,6 +2165,34 @@ basho vs tokoro:
         Broad Concept / Physical & Abstract Place / Situation
         A versatile native word that can refer to physical locations, abstract concepts, parts of a topic, addresses, or even points in time/situations (e.g., "a quiet place", "good point about that idea", "just about to leave").
         
+(o) hanami vs ohanami o shimasu:
+    (o) hanami:
+        Noun / Event / Cherry Blossom Viewing
+        Refers to the activity or event of cherry blossom viewing itself (e.g., "Hanami season", "Going to hanami", "Planning an ohanami"). The honorific prefix "o-" is optional but frequently used.
+
+    ohanami o shimasu:
+        Verb Phrase / Action / To Do Flower Viewing
+        Combines the noun with the verb "shimasu" (to do) and particle "o". Expresses the active execution or plan of holding/participating in a cherry blossom viewing gathering (e.g., "We will view the cherry blossoms on Saturday").
+        
+denki vs kaminari:
+    denki:
+        Electricity / Electric Light / Power
+        Refers to electricity as a utility, power source, or artificial lighting (e.g., turning on the light, paying the electricity bill, or charging an electric device).
+
+    kaminari:
+        Thunder / Lightning / Natural Force
+        Refers to the natural phenomenon of thunder and lightning bolt strikes caused by weather or storms (e.g., sound of thunder, lightning striking, or fear of thunder).
+
+burajiru:
+    Brazil - Portuguese
+    Mexico - Spanish
+    Iran   - Persian
+    Canada - English, French
+    
+    Egypt, Saudi Arabia  - Arabic
+
+    UK, Australia, Shingapore - English
+
 taiken:
     means "hands-on experience," "personal experience," or "trial / preview."
 
@@ -2456,7 +2484,31 @@ Fumajime:
 
 Hakubutsukan:
     Haku - is from hakase (extensive knowledge)
+    butus - items.
 
+keiken vs taiken:
+    keiken:
+        Broad Experience / Cumulative Knowledge / Life History
+        Refers to general, long-term, or overall life experience accumulated over time (e.g., job experience, past career background, or having traveled to a country before).
+
+    taiken:
+        Direct Experience / Hands-On Trial / Firsthand Encounter
+        Refers to a specific, short-term, or hands-on event where one directly tests, feels, or tries something for themselves (e.g., a trial lesson, hands-on workshop, VR demo, or firsthand physical experience).
+
+Chuumon shimasu:
+    chuu - pour
+    even in chuusha - Pouring/injecting liquid via a needle
+    chuui - Directing your mind (i) toward something
+    
+(denwa o) kakemasu vs denwa shimasu:
+    (denwa o) kakemasu:
+        Action of Dialing / Initiating a Call
+        Literally means "to apply/hang a phone call." Focuses on the act of placing, dialing, or making an outgoing call to someone (e.g., "I will place a call to Mr. Tanaka").
+
+    denwa shimasu:
+        General / Verbalizing "To Phone" / Communication
+        Combines the noun "denwa" (phone) with "shimasu" (to do) to form a compound verb. Broadly means "to call" or "to talk over the phone," focusing on the overall act of telephoning rather than the specific act of dialing.
+        
 Suizokukan:
     sui - water
     zoku - family from kazoku
