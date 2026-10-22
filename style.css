@@ -447,7 +447,9 @@ html[data-theme="light"] .moon-icon { display: block; }
   box-sizing: border-box;
 }
 
-#btn-multi-category-mobile {
+#btn-multi-category-mobile,
+#btn-kanji-vocab-filter-mobile,
+#btn-kanji-report-mobile {
   display: none !important;
 }
 
@@ -1686,7 +1688,9 @@ html[data-theme="light"] .moon-icon { display: block; }
   #btn-partition-category,
   #btn-reorder-categories,
   #btn-multi-category,
-  #btn-remove-from-other-categories {
+  #btn-remove-from-other-categories,
+  #btn-kanji-vocab-filter,
+  #btn-kanji-report {
     display: none !important;
   }
 
@@ -1696,7 +1700,9 @@ html[data-theme="light"] .moon-icon { display: block; }
   }
 
   /* Show Multi button in place of Import button on mobile */
-  #btn-multi-category-mobile {
+  #btn-multi-category-mobile,
+  #btn-kanji-vocab-filter-mobile,
+  #btn-kanji-report-mobile {
     display: inline-flex !important;
   }
 

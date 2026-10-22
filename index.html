@@ -96,6 +96,20 @@
               </svg>
               <span>Remove from other categories</span>
             </button>
+            <button id="btn-kanji-vocab-filter" class="btn btn-secondary" title="Filter / Generate Category from Learned Kanjis" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">
+              <span style="font-size: 0.95rem; margin-right: 3px; font-weight: bold; color: var(--accent);">漢</span>
+              <span>Kanji Filter</span>
+            </button>
+            <button id="btn-kanji-report" class="btn btn-secondary" title="Kanji Report: Occurrence Counts for Excel" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Kanji Report</span>
+            </button>
           </div>
         </div>
 
@@ -189,6 +203,19 @@
               <polyline points="15 15 18 18 21 15"></polyline>
             </svg>
             <span>Multi</span>
+          </button>
+          <button id="btn-kanji-vocab-filter-mobile" class="btn btn-secondary" title="Filter / Generate Category from Learned Kanjis">
+            <span style="font-size: 0.95rem; margin-right: 2px; font-weight: bold; color: var(--accent);">漢</span>
+            <span>Kanji</span>
+          </button>
+          <button id="btn-kanji-report-mobile" class="btn btn-secondary" title="Kanji Report: Occurrence Counts for Excel">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 2px;">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span>Report</span>
           </button>
         </div>
         <div class="action-nav-row">
@@ -613,6 +640,14 @@
               <tr>
                 <td><kbd>W</kbd></td>
                 <td>Focus Lesson / Category dropdown.</td>
+              </tr>
+              <tr>
+                <td><kbd>K</kbd></td>
+                <td>Open Learned Kanjis Vocab Filter / Generator.</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>K</kbd></td>
+                <td>Open Kanji Occurrence Report for Excel.</td>
               </tr>
               <tr>
                 <td><kbd>L</kbd></td>
@@ -1107,6 +1142,146 @@ kenkyuusha</pre>
       <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
         <button id="btn-apply-multi-category" class="btn btn-primary btn-large" style="flex: 1;">Apply &amp; View Words</button>
         <button id="btn-cancel-multi-category" class="btn btn-secondary btn-large" style="flex: 1;" onclick="closeActiveModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Filter / Generate Category by Learned Kanjis -->
+  <div id="modal-kanji-vocab-filter" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="kanji-vocab-filter-title" style="max-width: 540px; width: 95%;">
+    <div class="modal-header">
+      <h2 id="kanji-vocab-filter-title" style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: var(--accent); font-weight: bold;">漢</span> Filter / Generate by Learned Kanjis
+      </h2>
+      <button class="btn-close-modal" aria-label="Close Kanji Vocab Filter Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+        Provide the kanjis you have learned so far (e.g. <code>末美</code> or copied using <kbd>L</kbd> in Kanji site). Words are partitioned into:
+      </p>
+      <div style="background: var(--bg-secondary, rgba(255,255,255,0.05)); padding: 0.6rem 0.8rem; border-radius: 6px; font-size: 0.8rem; border: 1px solid var(--border-color, rgba(255,255,255,0.1));">
+        <div><strong>Normal:</strong> Pure kana words (0 kanji) first, followed by words containing <em>only</em> learned kanjis.</div>
+        <div style="margin-top: 0.35rem;"><strong>Hard:</strong> Words containing <em>at least one</em> learned kanji + unlearned kanjis.</div>
+      </div>
+
+      <!-- Learned Kanjis Input -->
+      <div class="input-group" style="margin: 0;">
+        <label for="input-learned-kanjis" style="display: flex; justify-content: space-between; align-items: center;">
+          <span>Learned Kanjis</span>
+          <span id="learned-kanji-detected-count" style="font-size: 0.75rem; color: var(--accent); font-weight: 600;">0 kanjis detected</span>
+        </label>
+        <textarea id="input-learned-kanjis" class="custom-input" rows="3" placeholder="Enter or paste learned kanjis (e.g. 末美 or 一二三四五...)" style="width: 100%; font-family: inherit; font-size: 1rem; padding: 0.5rem; resize: vertical;"></textarea>
+      </div>
+
+      <!-- Scope Selector -->
+      <div class="input-group" style="margin: 0;">
+        <label for="select-learned-kanji-source">Vocabulary Source</label>
+        <select id="select-learned-kanji-source" class="custom-select" style="width: 100%;">
+          <option value="group" selected>Current Database Group (Default)</option>
+          <option value="current">Current Category Only</option>
+          <option value="all_db">All Database Categories</option>
+        </select>
+      </div>
+
+      <!-- Target Category Name -->
+      <div class="input-group" style="margin: 0;">
+        <label for="input-learned-kanji-target-cat">Category Name</label>
+        <input type="text" id="input-learned-kanji-target-cat" class="custom-input" value="Learned Kanjis" style="width: 100%;">
+      </div>
+
+      <!-- Live Match Preview Summary -->
+      <div id="learned-kanji-preview-summary" style="font-size: 0.82rem; color: var(--text-secondary); background: var(--bg-tertiary, rgba(255,255,255,0.03)); padding: 0.5rem 0.75rem; border-radius: 4px; display: none;">
+        <!-- Dynamic preview text -->
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+        <button id="btn-submit-learned-kanji-filter" class="btn btn-primary btn-large" style="flex: 1;">Generate &amp; View Words</button>
+        <button id="btn-kanji-filter-copy-report" class="btn btn-secondary btn-large" style="white-space: nowrap;" title="Copy Kanji Occurrence Report for Excel">📋 Copy Report</button>
+        <button id="btn-cancel-learned-kanji-filter" class="btn btn-secondary btn-large" style="flex: 0 0 auto;" onclick="closeActiveModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Kanji Occurrence Report for Excel -->
+  <div id="modal-kanji-report" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="kanji-report-title" style="max-width: 620px; width: 95%;">
+    <div class="modal-header">
+      <h2 id="kanji-report-title" style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="color: var(--accent); font-weight: bold;">📊</span> Kanji Occurrence Report
+      </h2>
+      <button class="btn-close-modal" aria-label="Close Kanji Report Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+        Input kanjis side-by-side (e.g. <code>末美</code>). The report generates the occurrence count for each kanji and copies it to clipboard formatted with <strong>Kanji</strong> and <strong>Count</strong> headers ready to paste directly into Excel.
+      </p>
+
+      <!-- Kanji Input -->
+      <div class="input-group" style="margin: 0;">
+        <label for="input-kanji-report-kanjis" style="display: flex; justify-content: space-between; align-items: center;">
+          <span>Target Kanjis</span>
+          <span id="kanji-report-detected-count" style="font-size: 0.75rem; color: var(--accent); font-weight: 600;">0 kanjis detected</span>
+        </label>
+        <textarea id="input-kanji-report-kanjis" class="custom-input" rows="3" placeholder="Enter or paste kanjis side by side (e.g. 末美 or 一二三四五...)" style="width: 100%; font-family: inherit; font-size: 1rem; padding: 0.5rem; resize: vertical;"></textarea>
+      </div>
+
+      <!-- Controls Row: Scope & Sorting -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+        <div class="input-group" style="margin: 0;">
+          <label for="select-kanji-report-source">Vocabulary Scope</label>
+          <select id="select-kanji-report-source" class="custom-select" style="width: 100%;">
+            <option value="group" selected>Current Database Group</option>
+            <option value="current">Current Category Only</option>
+            <option value="all_db">All Database Categories</option>
+          </select>
+        </div>
+        <div class="input-group" style="margin: 0;">
+          <label for="select-kanji-report-sort">Order in Report</label>
+          <select id="select-kanji-report-sort" class="custom-select" style="width: 100%;">
+            <option value="input" selected>Input Order (Side-by-Side)</option>
+            <option value="count_desc">Count (Highest First)</option>
+            <option value="count_asc">Count (Lowest First)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Options Row: Delimiter & Dedup -->
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.8rem; color: var(--text-secondary); padding: 0.2rem 0;">
+        <label style="display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+          <input type="checkbox" id="check-kanji-report-dedup" checked>
+          <span>Deduplicate identical words across lessons</span>
+        </label>
+        <label style="display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+          <input type="checkbox" id="check-kanji-report-csv">
+          <span>Use comma delimiter (CSV) instead of tab</span>
+        </label>
+      </div>
+
+      <!-- Live Report Preview Table -->
+      <div id="kanji-report-preview-container" style="border: 1px solid var(--border-color, rgba(255,255,255,0.1)); border-radius: 6px; overflow: hidden; max-height: 220px; overflow-y: auto; background: var(--bg-secondary, rgba(255,255,255,0.03)); display: none;">
+        <table id="kanji-report-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+          <thead>
+            <tr style="background: var(--bg-tertiary, rgba(255,255,255,0.07)); border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.1));">
+              <th style="padding: 0.4rem 0.6rem; width: 40px; text-align: center;">#</th>
+              <th style="padding: 0.4rem 0.6rem; font-weight: 600;">Kanji</th>
+              <th style="padding: 0.4rem 0.6rem; font-weight: 600; text-align: right;">Count</th>
+              <th style="padding: 0.4rem 0.6rem; font-weight: 600;">Sample Words</th>
+            </tr>
+          </thead>
+          <tbody id="kanji-report-tbody">
+            <!-- Dynamically populated rows -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Modal Actions -->
+      <div class="modal-actions" style="margin-top: 0.5rem; display: flex; gap: 0.75rem;">
+        <button id="btn-submit-copy-kanji-report" class="btn btn-primary btn-large" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy Report to Clipboard</span>
+        </button>
+        <button id="btn-cancel-kanji-report" class="btn btn-secondary btn-large" style="flex: 0 0 auto;" onclick="closeActiveModal()">Close</button>
       </div>
     </div>
   </div>

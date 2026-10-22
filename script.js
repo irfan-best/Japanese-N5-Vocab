@@ -6405,6 +6405,561 @@ function applyMultiCategorySelection() {
 }
 
 // --------------------------------------------------------------------------
+// --------------------------------------------------------------------------
+// LEARNED KANJIS VOCABULARY GENERATOR & FILTER CONTROLLER
+// --------------------------------------------------------------------------
+
+const KANJI_CHAR_REGEX = /[\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF]/g;
+
+// Extract array of unique Kanji characters from a string
+function extractKanjis(str) {
+  if (!str || typeof str !== 'string') return [];
+  const matches = str.match(KANJI_CHAR_REGEX);
+  return matches ? Array.from(new Set(matches)) : [];
+}
+
+// Extract array of unique Kanji characters from a vocabulary word object
+function getWordKanjis(word) {
+  if (!word) return [];
+  const text = ((word.kanji && word.kanji.trim()) ? word.kanji : "") + " " + (word.japanese || "");
+  return extractKanjis(text);
+}
+
+// Clean reading string for alphabetical sorting (Japanese kana order)
+function cleanReadingForSorting(str) {
+  if (!str) return "";
+  return str.replace(/[~()\[\]\-～\s]/g, "").trim().toLowerCase();
+}
+
+// Sort word objects by reading (kana), tie-broken by english
+function sortWordsByReading(a, b) {
+  const readingA = cleanReadingForSorting(a.japanese);
+  const readingB = cleanReadingForSorting(b.japanese);
+  const cmp = readingA.localeCompare(readingB, 'ja');
+  if (cmp !== 0) return cmp;
+  return (a.english || "").localeCompare(b.english || "");
+}
+
+// Gather candidate words based on chosen source scope: 'group', 'current', or 'all_db'
+function getCandidateWordsForKanjiFilter(scope = 'group') {
+  const db = getActiveDb();
+  let categories = [];
+
+  if (scope === 'current') {
+    const cur = currentSettings.currentLesson;
+    if (cur && cur !== 'Show All Words' && cur !== 'Multi-Category View' && cur !== 'Similar Words' && cur !== 'Same Meaning' && cur !== 'Same Romaji' && !cur.startsWith('Search Results')) {
+      categories = [cur];
+    } else {
+      categories = getLessonsForActiveGroup();
+    }
+  } else if (scope === 'all_db') {
+    categories = Object.keys(db).filter(k => 
+      !k.endsWith(" - Hard") &&
+      k !== "Search Results" &&
+      k !== "Show All Words" &&
+      k !== "Similar Words" &&
+      k !== "Same Meaning" &&
+      k !== "Same Romaji" &&
+      k !== "Multi-Category View"
+    );
+  } else {
+    // 'group' (default)
+    categories = getLessonsForActiveGroup().filter(k => 
+      k !== "Show All Words" &&
+      k !== "Similar Words" &&
+      k !== "Same Meaning" &&
+      k !== "Same Romaji" &&
+      k !== "Multi-Category View" &&
+      !k.startsWith("Search Results")
+    );
+  }
+
+  const uniqueMap = new Map();
+  categories.forEach(cat => {
+    const norm = db[cat] || [];
+    const hard = db[cat + " - Hard"] || [];
+    [...norm, ...hard].forEach(w => {
+      if (!w || !w.japanese) return;
+      const key = `${w.japanese.trim()}|${(w.kanji || '').trim()}|${(w.english || '').trim()}`;
+      if (!uniqueMap.has(key)) {
+        uniqueMap.set(key, w);
+      }
+    });
+  });
+
+  return Array.from(uniqueMap.values());
+}
+
+// Partition candidate words according to learned kanji string into Normal and Hard lists
+function partitionWordsByLearnedKanjis(candidateWords, learnedKanjiString) {
+  const learnedKanjis = extractKanjis(learnedKanjiString);
+  const learnedSet = new Set(learnedKanjis);
+
+  const normalNoKanjiWords = [];
+  const normalLearnedWords = [];
+  const hardWords = [];
+  const excludedWords = [];
+
+  (candidateWords || []).forEach(w => {
+    if (!w || !w.japanese) return;
+    const wordKanjis = getWordKanjis(w);
+
+    if (wordKanjis.length === 0) {
+      // 1. Pure kana word (0 kanji): goes to Normal (first group)
+      normalNoKanjiWords.push(w);
+    } else {
+      const allLearned = wordKanjis.every(k => learnedSet.has(k));
+      if (allLearned) {
+        // 2. Contains ONLY so-far learned kanjis: goes to Normal (second group)
+        normalLearnedWords.push(w);
+      } else {
+        const hasAtLeastOne = wordKanjis.some(k => learnedSet.has(k));
+        if (hasAtLeastOne) {
+          // 3. Not in normal, but has at least one learned kanji: goes to Hard
+          hardWords.push(w);
+        } else {
+          // 4. None of its kanjis are learned: excluded
+          excludedWords.push(w);
+        }
+      }
+    }
+  });
+
+  // Sort each partition by reading
+  normalNoKanjiWords.sort(sortWordsByReading);
+  normalLearnedWords.sort(sortWordsByReading);
+  hardWords.sort(sortWordsByReading);
+
+  const normalWords = [...normalNoKanjiWords, ...normalLearnedWords];
+
+  return {
+    learnedKanjis,
+    learnedSet,
+    normalWords,
+    normalNoKanjiWords,
+    normalLearnedWords,
+    hardWords,
+    excludedWords
+  };
+}
+
+// Open Learned Kanjis Filter / Generator Modal
+function openKanjiVocabFilterModal() {
+  const inputEl = document.getElementById('input-learned-kanjis');
+  const targetCatEl = document.getElementById('input-learned-kanji-target-cat');
+  const sourceEl = document.getElementById('select-learned-kanji-source');
+
+  // Load remembered learned kanjis from localStorage
+  const savedKanjis = localStorage.getItem('n5_learned_kanjis') || '';
+  if (inputEl) {
+    inputEl.value = savedKanjis;
+  }
+
+  // Pre-fill target category name
+  if (targetCatEl) {
+    const curCat = currentSettings.currentLesson;
+    if (curCat && curCat.toLowerCase().includes('learned')) {
+      targetCatEl.value = curCat;
+    } else {
+      targetCatEl.value = "Learned Kanjis";
+    }
+  }
+
+  // Pre-select default source
+  if (sourceEl) {
+    sourceEl.value = 'group';
+  }
+
+  updateKanjiFilterLivePreview();
+  openModal('modal-kanji-vocab-filter');
+
+  if (inputEl) {
+    setTimeout(() => {
+      inputEl.focus();
+      if (inputEl.value) inputEl.select();
+    }, 100);
+  }
+}
+
+// Update live match preview and detected kanji badge as user types
+function updateKanjiFilterLivePreview() {
+  const inputEl = document.getElementById('input-learned-kanjis');
+  const countEl = document.getElementById('learned-kanji-detected-count');
+  const summaryEl = document.getElementById('learned-kanji-preview-summary');
+  const sourceEl = document.getElementById('select-learned-kanji-source');
+
+  if (!inputEl || !countEl) return;
+
+  const rawText = inputEl.value || '';
+  const kanjis = extractKanjis(rawText);
+  const count = kanjis.length;
+
+  countEl.textContent = count === 0 ? "0 kanjis detected" : `${count} kanji${count === 1 ? '' : 's'} detected: ${kanjis.slice(0, 15).join(' ')}${count > 15 ? '...' : ''}`;
+
+  if (count === 0) {
+    if (summaryEl) {
+      summaryEl.style.display = 'none';
+      summaryEl.textContent = '';
+    }
+    return;
+  }
+
+  const scope = sourceEl ? sourceEl.value : 'group';
+  const candidateWords = getCandidateWordsForKanjiFilter(scope);
+  const result = partitionWordsByLearnedKanjis(candidateWords, rawText);
+
+  if (summaryEl) {
+    summaryEl.style.display = 'block';
+    summaryEl.innerHTML = `<strong>Preview:</strong> ${result.normalWords.length} Normal (${result.normalNoKanjiWords.length} no kanji + ${result.normalLearnedWords.length} learned kanji), ${result.hardWords.length} Hard, ${result.excludedWords.length} Excluded (out of ${candidateWords.length} words)`;
+  }
+}
+
+// Submit generation of category from learned kanjis
+function submitLearnedKanjiFilter() {
+  const inputEl = document.getElementById('input-learned-kanjis');
+  const targetCatEl = document.getElementById('input-learned-kanji-target-cat');
+  const sourceEl = document.getElementById('select-learned-kanji-source');
+
+  const rawText = inputEl ? inputEl.value : '';
+  const kanjis = extractKanjis(rawText);
+
+  if (kanjis.length === 0) {
+    showToast("Please enter at least one learned kanji character (e.g. 末美).", "danger");
+    if (inputEl) inputEl.focus();
+    return;
+  }
+
+  let targetCat = (targetCatEl ? targetCatEl.value : "").trim();
+  if (!targetCat) {
+    targetCat = "Learned Kanjis";
+  }
+
+  const reserved = ["Show All Words", "Similar Words", "Same Meaning", "Same Romaji", "Multi-Category View", "Search Results"];
+  if (reserved.includes(targetCat)) {
+    showToast("This category name is reserved. Please choose another name.", "danger");
+    if (targetCatEl) targetCatEl.focus();
+    return;
+  }
+
+  const scope = sourceEl ? sourceEl.value : 'group';
+  const candidateWords = getCandidateWordsForKanjiFilter(scope);
+  const result = partitionWordsByLearnedKanjis(candidateWords, rawText);
+
+  const db = getActiveDb();
+
+  // Save partitioned lists in active database
+  db[targetCat] = result.normalWords;
+  db[targetCat + " - Hard"] = result.hardWords;
+
+  // Persist learned kanjis input
+  localStorage.setItem('n5_learned_kanjis', rawText);
+
+  // Manage custom categories list and partitions
+  if (isUltimateMode()) {
+    if (!currentSettings.ultimateCategoryPartitions) currentSettings.ultimateCategoryPartitions = {};
+    if (!currentSettings.ultimateCategoryPartitions[targetCat]) {
+      const activePart = (currentSettings.activeDbGroup === "Ultimate Dumps" || currentSettings.activeDbGroup === "Ultimate Dump") ? "Dumps" : "Main";
+      currentSettings.ultimateCategoryPartitions[targetCat] = activePart;
+    }
+  } else {
+    if (!currentSettings.customCategories) currentSettings.customCategories = [];
+    if (!currentSettings.customCategories.includes(targetCat)) {
+      currentSettings.customCategories.push(targetCat);
+    }
+
+    // Switch activeDbGroup to Others if currently in standard Lessons or Sentences group so custom category is visible
+    let activeGroup = currentSettings.activeDbGroup || "N5 Lessons";
+    if (activeGroup.endsWith("Lessons") || activeGroup.endsWith("Sentences") || activeGroup === "Kanji") {
+      const level = activeGroup.split(" ")[0];
+      currentSettings.activeDbGroup = `${level} Others`;
+      syncSettingsDropdownsFromActiveGroup();
+    }
+  }
+
+  // Deactivate Multi-Category view if active
+  if (currentSettings.multiCategoryConfig) {
+    currentSettings.multiCategoryConfig.active = false;
+  }
+
+  saveWords();
+
+  // Select target category and reset to Normal view
+  currentSettings.currentLesson = targetCat;
+  currentSettings.isHard = false;
+  currentSettings.focusedWordIndex = -1;
+  currentSettings.selectedWordIndices = [];
+
+  saveSettings();
+  populateLessonsDropdown();
+
+  const selectLesson = document.getElementById('select-lesson');
+  if (selectLesson) selectLesson.value = targetCat;
+
+  closeActiveModal();
+  renderCards();
+
+  showToast(`Generated "${targetCat}": ${result.normalWords.length} Normal (${result.normalNoKanjiWords.length} no kanji, ${result.normalLearnedWords.length} learned kanji), ${result.hardWords.length} Hard`, "success");
+}
+
+// --------------------------------------------------------------------------
+// KANJI REPORT GENERATOR & CLIPBOARD CONTROLLER
+// --------------------------------------------------------------------------
+
+// Generate occurrence report data for specified kanjis string
+function generateKanjiReportData(kanjiString, options = {}) {
+  const scope = options.scope || 'group';
+  const sortMode = options.sortMode || 'input';
+  const dedup = options.dedup !== false;
+
+  const targetKanjis = extractKanjis(kanjiString);
+  if (targetKanjis.length === 0) {
+    return { kanjis: [], rows: [], textTsv: '', textCsv: '', totalWordsScanned: 0 };
+  }
+
+  // Gather candidate words
+  let candidateWords = getCandidateWordsForKanjiFilter(scope);
+  if (!dedup) {
+    const db = getActiveDb();
+    let categories = [];
+    if (scope === 'current') {
+      const cur = currentSettings.currentLesson;
+      if (cur && cur !== 'Show All Words' && cur !== 'Multi-Category View' && !cur.startsWith('Search Results')) {
+        categories = [cur];
+      } else {
+        categories = getLessonsForActiveGroup();
+      }
+    } else if (scope === 'all_db') {
+      categories = Object.keys(db).filter(k => !k.endsWith(" - Hard") && !k.startsWith("Search Results") && k !== "Show All Words" && k !== "Multi-Category View");
+    } else {
+      categories = getLessonsForActiveGroup().filter(k => !k.startsWith("Search Results") && k !== "Show All Words" && k !== "Multi-Category View");
+    }
+    const nonDedupList = [];
+    categories.forEach(cat => {
+      nonDedupList.push(...(db[cat] || []), ...(db[cat + " - Hard"] || []));
+    });
+    candidateWords = nonDedupList;
+  }
+
+  // Pre-calculate search text for each word to maximize performance
+  const wordSearchList = candidateWords.map(w => {
+    const text = (w.kanji && w.kanji.trim()) ? w.kanji : (w.japanese || '');
+    return {
+      text: text,
+      word: w
+    };
+  });
+
+  // Calculate occurrences and sample words for each kanji
+  const rows = targetKanjis.map((k, index) => {
+    let count = 0;
+    const sampleWords = [];
+
+    wordSearchList.forEach(item => {
+      if (item.text.includes(k)) {
+        count++;
+        if (sampleWords.length < 5) {
+          sampleWords.push(item.text);
+        }
+      }
+    });
+
+    return {
+      index: index + 1,
+      kanji: k,
+      count: count,
+      sampleWords: sampleWords
+    };
+  });
+
+  // Apply sorting
+  if (sortMode === 'count_desc') {
+    rows.sort((a, b) => b.count - a.count || a.index - b.index);
+  } else if (sortMode === 'count_asc') {
+    rows.sort((a, b) => a.count - b.count || a.index - b.index);
+  } else if (sortMode === 'kanji') {
+    rows.sort((a, b) => a.kanji.localeCompare(b.kanji, 'ja'));
+  }
+  // 'input' mode preserves targetKanjis sequence exactly
+
+  // Format TSV (standard for pasting into Excel)
+  let tsv = "Kanji\tCount\r\n";
+  rows.forEach(r => {
+    tsv += `${r.kanji}\t${r.count}\r\n`;
+  });
+
+  // Format CSV
+  let csv = "Kanji,Count\r\n";
+  rows.forEach(r => {
+    csv += `${r.kanji},${r.count}\r\n`;
+  });
+
+  return {
+    kanjis: targetKanjis,
+    rows: rows,
+    textTsv: tsv,
+    textCsv: csv,
+    totalWordsScanned: candidateWords.length
+  };
+}
+
+// Open Kanji Report Modal
+function openKanjiReportModal() {
+  const inputEl = document.getElementById('input-kanji-report-kanjis');
+  const sourceEl = document.getElementById('select-kanji-report-source');
+  const sortEl = document.getElementById('select-kanji-report-sort');
+
+  // Load remembered learned kanjis from localStorage if empty
+  const savedKanjis = localStorage.getItem('n5_learned_kanjis') || '';
+  if (inputEl) {
+    inputEl.value = savedKanjis;
+  }
+
+  if (sourceEl) sourceEl.value = 'group';
+  if (sortEl) sortEl.value = 'input';
+
+  updateKanjiReportLivePreview();
+  openModal('modal-kanji-report');
+
+  if (inputEl) {
+    setTimeout(() => {
+      inputEl.focus();
+      if (inputEl.value) inputEl.select();
+    }, 100);
+  }
+}
+
+// Update live preview table in Kanji Report modal
+function updateKanjiReportLivePreview() {
+  const inputEl = document.getElementById('input-kanji-report-kanjis');
+  const countEl = document.getElementById('kanji-report-detected-count');
+  const containerEl = document.getElementById('kanji-report-preview-container');
+  const tbodyEl = document.getElementById('kanji-report-tbody');
+  const sourceEl = document.getElementById('select-kanji-report-source');
+  const sortEl = document.getElementById('select-kanji-report-sort');
+  const dedupEl = document.getElementById('check-kanji-report-dedup');
+
+  if (!inputEl || !countEl) return;
+
+  const rawText = inputEl.value || '';
+  const kanjis = extractKanjis(rawText);
+  const count = kanjis.length;
+
+  countEl.textContent = count === 0 ? "0 kanjis detected" : `${count} kanji${count === 1 ? '' : 's'} detected: ${kanjis.slice(0, 15).join(' ')}${count > 15 ? '...' : ''}`;
+
+  if (count === 0) {
+    if (containerEl) containerEl.style.display = 'none';
+    if (tbodyEl) tbodyEl.innerHTML = '';
+    return;
+  }
+
+  const scope = sourceEl ? sourceEl.value : 'group';
+  const sortMode = sortEl ? sortEl.value : 'input';
+  const dedup = dedupEl ? dedupEl.checked : true;
+
+  const report = generateKanjiReportData(rawText, { scope, sortMode, dedup });
+
+  if (containerEl && tbodyEl) {
+    containerEl.style.display = 'block';
+    let html = '';
+    report.rows.forEach(r => {
+      const sampleText = r.sampleWords.length > 0 ? r.sampleWords.join(', ') : '<em style="color:var(--text-muted, #888); font-size: 0.75rem;">None</em>';
+      html += `<tr style="border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.06));">
+        <td style="padding: 0.35rem 0.6rem; text-align: center; color: var(--text-secondary); font-size: 0.75rem;">${r.index}</td>
+        <td style="padding: 0.35rem 0.6rem; font-weight: bold; font-size: 1.1rem; color: var(--accent);">${r.kanji}</td>
+        <td style="padding: 0.35rem 0.6rem; text-align: right; font-weight: 700; font-size: 0.95rem;">${r.count}</td>
+        <td style="padding: 0.35rem 0.6rem; font-size: 0.8rem; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;" title="${r.sampleWords.join(', ')}">${sampleText}</td>
+      </tr>`;
+    });
+    tbodyEl.innerHTML = html;
+  }
+}
+
+// Copy Kanji Report data to clipboard for Excel analysis
+function copyKanjiReportToClipboard(options = {}) {
+  let rawText = '';
+  let scope = 'group';
+
+  if (options.sourceFromFilter) {
+    const inputEl = document.getElementById('input-learned-kanjis');
+    const sourceEl = document.getElementById('select-learned-kanji-source');
+    rawText = inputEl ? inputEl.value : '';
+    scope = sourceEl ? sourceEl.value : 'group';
+  } else {
+    const inputEl = document.getElementById('input-kanji-report-kanjis') || document.getElementById('input-learned-kanjis');
+    const sourceEl = document.getElementById('select-kanji-report-source');
+    rawText = inputEl ? inputEl.value : '';
+    scope = sourceEl ? sourceEl.value : 'group';
+  }
+
+  if (!rawText.trim()) {
+    rawText = localStorage.getItem('n5_learned_kanjis') || '';
+  }
+
+  const kanjis = extractKanjis(rawText);
+  if (kanjis.length === 0) {
+    showToast("Please enter at least one kanji character (e.g. 末美).", "danger");
+    const inputEl = document.getElementById('input-kanji-report-kanjis') || document.getElementById('input-learned-kanjis');
+    if (inputEl) inputEl.focus();
+    return false;
+  }
+
+  const sortEl = document.getElementById('select-kanji-report-sort');
+  const dedupEl = document.getElementById('check-kanji-report-dedup');
+  const csvEl = document.getElementById('check-kanji-report-csv');
+
+  const sortMode = options.sortMode || (sortEl ? sortEl.value : 'input');
+  const dedup = dedupEl ? dedupEl.checked : true;
+  const useCsv = options.format === 'csv' || (csvEl ? csvEl.checked : false);
+
+  const report = generateKanjiReportData(rawText, {
+    scope: options.scope || scope,
+    sortMode: sortMode,
+    dedup: dedup
+  });
+
+  const textToCopy = useCsv ? report.textCsv : report.textTsv;
+  const formatName = useCsv ? "CSV" : "Excel format (Tab-separated)";
+  const successMsg = `Copied Kanji Report (${report.rows.length} kanjis) to clipboard in ${formatName}!`;
+
+  // Write to clipboard with fallback
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        showToast(successMsg, "success");
+      })
+      .catch(() => {
+        fallbackCopyReportToClipboard(textToCopy, successMsg);
+      });
+  } else {
+    fallbackCopyReportToClipboard(textToCopy, successMsg);
+  }
+
+  // Persist input to localStorage
+  localStorage.setItem('n5_learned_kanjis', rawText);
+
+  return true;
+}
+
+function fallbackCopyReportToClipboard(text, successMsg) {
+  try {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.select();
+    const successful = document.execCommand('copy');
+    document.body.removeChild(textArea);
+    if (successful) {
+      showToast(successMsg, "success");
+    } else {
+      showToast("Could not access clipboard automatically. Please copy manually.", "danger");
+    }
+  } catch (err) {
+    showToast("Failed to copy report to clipboard.", "danger");
+  }
+}
+
 // CUSTOM DISPLAY MODE ENGINE & MODAL CONTROLLER
 // --------------------------------------------------------------------------
 
@@ -8715,6 +9270,83 @@ document.addEventListener('DOMContentLoaded', () => {
     multiCatSearch.addEventListener('input', renderMultiCategoryChecklist);
   }
 
+  // Learned Kanjis Filter listeners
+  const btnKanjiFilter = document.getElementById('btn-kanji-vocab-filter');
+  if (btnKanjiFilter) {
+    btnKanjiFilter.addEventListener('click', openKanjiVocabFilterModal);
+  }
+  const btnKanjiFilterMobile = document.getElementById('btn-kanji-vocab-filter-mobile');
+  if (btnKanjiFilterMobile) {
+    btnKanjiFilterMobile.addEventListener('click', openKanjiVocabFilterModal);
+  }
+  const btnSubmitKanjiFilter = document.getElementById('btn-submit-learned-kanji-filter');
+  if (btnSubmitKanjiFilter) {
+    btnSubmitKanjiFilter.addEventListener('click', submitLearnedKanjiFilter);
+  }
+  const inputLearnedKanjis = document.getElementById('input-learned-kanjis');
+  if (inputLearnedKanjis) {
+    inputLearnedKanjis.addEventListener('input', updateKanjiFilterLivePreview);
+    inputLearnedKanjis.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        submitLearnedKanjiFilter();
+      }
+    });
+  }
+  const inputTargetCat = document.getElementById('input-learned-kanji-target-cat');
+  if (inputTargetCat) {
+    inputTargetCat.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        submitLearnedKanjiFilter();
+      }
+    });
+  }
+  const selectKanjiSource = document.getElementById('select-learned-kanji-source');
+  if (selectKanjiSource) {
+    selectKanjiSource.addEventListener('change', updateKanjiFilterLivePreview);
+  }
+
+  // Kanji Report listeners
+  const btnKanjiReport = document.getElementById('btn-kanji-report');
+  if (btnKanjiReport) {
+    btnKanjiReport.addEventListener('click', openKanjiReportModal);
+  }
+  const btnKanjiReportMobile = document.getElementById('btn-kanji-report-mobile');
+  if (btnKanjiReportMobile) {
+    btnKanjiReportMobile.addEventListener('click', openKanjiReportModal);
+  }
+  const btnSubmitCopyReport = document.getElementById('btn-submit-copy-kanji-report');
+  if (btnSubmitCopyReport) {
+    btnSubmitCopyReport.addEventListener('click', () => copyKanjiReportToClipboard());
+  }
+  const btnFilterCopyReport = document.getElementById('btn-kanji-filter-copy-report');
+  if (btnFilterCopyReport) {
+    btnFilterCopyReport.addEventListener('click', () => copyKanjiReportToClipboard({ sourceFromFilter: true }));
+  }
+  const inputReportKanjis = document.getElementById('input-kanji-report-kanjis');
+  if (inputReportKanjis) {
+    inputReportKanjis.addEventListener('input', updateKanjiReportLivePreview);
+    inputReportKanjis.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        copyKanjiReportToClipboard();
+      }
+    });
+  }
+  const selectReportSource = document.getElementById('select-kanji-report-source');
+  if (selectReportSource) {
+    selectReportSource.addEventListener('change', updateKanjiReportLivePreview);
+  }
+  const selectReportSort = document.getElementById('select-kanji-report-sort');
+  if (selectReportSort) {
+    selectReportSort.addEventListener('change', updateKanjiReportLivePreview);
+  }
+  const checkReportDedup = document.getElementById('check-kanji-report-dedup');
+  if (checkReportDedup) {
+    checkReportDedup.addEventListener('change', updateKanjiReportLivePreview);
+  }
+
   // Modal actions confirmations
   const btnConfirmCopy = document.getElementById('btn-confirm-copy');
   if (btnConfirmCopy) {
@@ -9853,6 +10485,17 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const btnFlagged = document.getElementById('btn-flagged');
         if (btnFlagged) btnFlagged.click();
+        break;
+      case 'k':
+      case 'K':
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        if (e.shiftKey) {
+          e.preventDefault();
+          openKanjiReportModal();
+          break;
+        }
+        e.preventDefault();
+        openKanjiVocabFilterModal();
         break;
     }
   });
