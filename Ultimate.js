@@ -74,7 +74,7 @@ nanika
 なんでも
 anything
 Nandemo
-なんでも
+何でも
 
 どこか
 somewhere, some place
@@ -99,12 +99,12 @@ Itsudemo
 だれか
 somebody
 Dareka
-だれか
+誰か
 
 だれでも
 anybody
 Daredemo
-だれでも
+誰でも
 
 なんぷん
 what minute
@@ -975,9 +975,9 @@ Nayami
 悩み
 
 なります
-ring
-Narimasu
-鳴ります
+become
+narimasu
+成ります
 
 たのしみに しています
 be looking forward to, be expecting
@@ -4603,8 +4603,8 @@ Zenzen + negative
 全然
 
 ちょっと
-a little
-Chotto
+a little while, a little bit
+chotto
 ちょっと
 
 そうですね
@@ -10531,7 +10531,7 @@ allUltimateWords["Connectors"] = `
 どのぐらい
 how much; how long
 Donogurai
-どのぐらい
+どの位
 
 〜ぐらい
 about (period of time), about (approximate measurement)
@@ -11179,12 +11179,12 @@ kasa
 傘
 
 えいご
-the English language
+English
 eigo
 英語
 
 にほんご
-the Japanese language
+Japanese
 nihongo
 日本語
 
@@ -12096,7 +12096,7 @@ encounter [an accident]
 ねます
 to sleep, go to bed
 nemasu
-ねます
+寝ます
 
 ねむります
 sleep
@@ -12271,7 +12271,7 @@ allUltimateWords["Jidoushi"] = `
 ねます
 to sleep, go to bed
 nemasu
-ねます
+寝ます
 
 ねむります
 sleep
@@ -12291,12 +12291,12 @@ Nemuri ni tsukimasu
 つきます
 arrive, reach
 tsukimasu
-つきます
+着きます
 
 なります
 become
 narimasu
-なります
+成ります
 
 [だいがくを～] そつぎょうします
 graduate [from a university]
@@ -12356,7 +12356,7 @@ Seikatsushimasu
 ケータイ
 mobile phone, cell phone
 keetai
-ケータイ
+携帯
 
 [じかんに～] まにあいます
 be in time [for an appointment, etc.]
@@ -12816,7 +12816,7 @@ Maru ga tsukimasu
 つきます
 arrive, reach
 tsukimasu
-つきます
+着きます
 
 みつけます
 find
@@ -12906,7 +12906,7 @@ Shachou
 しゅしょう
 prime minister
 shushou
-しゅしょう
+首相
 
 ないかく そうり だいじん
 prime minister
@@ -12916,7 +12916,7 @@ Naikaku souri daijin
 だいとうりょう
 president (of an country)
 daitouryou
-だいとうりょう
+大統領
 
 せいとかいちょう
 student council president
@@ -13541,7 +13541,7 @@ pan
 ちょっと
 a little while, a little bit
 chotto
-一寸
+ちょっと
 
 じゃ、また [あした]
 well then See you [tomorrow]
@@ -13591,7 +13591,7 @@ isshoni
 まだ
 not yet
 mada
-未だ
+まだ
 
 かみ
 paper
@@ -13621,7 +13621,7 @@ Mizutama
 おたま
 ladle
 Otama
-おたま
+お玉
 
 しゃもじ
 rice paddle
@@ -13656,7 +13656,7 @@ Juudou
 [じかんを～] みます
 check [time]
 [jikan o~] Mimasu
-[時間を～] 見ます、診ます
+[時間を～] 見ます
 
 ～べん
 ~ dialect
@@ -14115,7 +14115,7 @@ bankoku
 
 スウェーデン
 Sweden
-Sueeden
+sueeden
 スウェーデン
 
 ロンドン
@@ -14145,17 +14145,17 @@ furanken
 
 マレーシア
 Malaysia
-Mareeshia
+mareeshia
 マレーシア
 
 マレーシアじん
 Malaysian
-Mareeshiajin
+mareeshiajin
 マレーシア人
 
 マレーシアご
 Malaysian
-Mareeshiago
+mareeshiago
 マレーシア語
 
 ベトナム
@@ -14165,12 +14165,12 @@ betonamu
 
 ベトナムじん
 Vietnamese
-Betonamujin
+betonamujin
 ベトナム人
 
 ベトナムご
 Vietnamese
-Betonamugo
+betonamugo
 ベトナム語
 
 イタリア
@@ -14180,12 +14180,12 @@ itaria
 
 イタリアじん
 Italian
-Itariajin
+itariajin
 イタリア人
 
 イタリアご
 Italian
-Itariago
+itariago
 イタリア語
 
 スペイン
@@ -14195,12 +14195,12 @@ supein
 
 スペインじん
 Spanish
-Supeinjin
+supeinjin
 スペイン人
 
 スペインご
 Spanish
-Supeingo
+supeingo
 スペイン語
 
 アメリカ
@@ -14210,12 +14210,12 @@ amerika
 
 アメリカじん
 American
-Amerikajin
+amerikajin
 アメリカ人
 
 えいご
 English
-Eigo
+eigo
 英語
 
 インドネシア
@@ -14225,12 +14225,12 @@ indoneshia
 
 インドネシアじん
 Indonesian
-Indoneshiajin
+indoneshiajin
 インドネシア人
 
 インドネシアご
 Indonesian
-Indoneshiago
+indoneshiago
 インドネシア語
 
 かんこく
@@ -14240,12 +14240,12 @@ kankoku
 
 かんこくじん
 South Korean
-Kankokujin
+kankokujin
 韓国人
 
 かんこくご
 Korean
-Kankokugo
+kankokugo
 韓国語
 
 タイ
@@ -14255,12 +14255,12 @@ tai
 
 タイじん
 Thai
-Taijin
+taijin
 タイ人
 
 タイご
 Thai
-Taigo
+taigo
 タイ語
 
 ちゅうごく
@@ -14270,12 +14270,12 @@ chuugoku
 
 ちゅうごくご
 Chinese
-Chuugokugo
+chuugokugo
 中国語
 
 ちゅうごくじん
 Chinese
-Chuugokujin
+chuugokujin
 中国人
 
 ドイツ
@@ -14285,12 +14285,12 @@ doitsu
 
 ドイツじん
 German
-Doitsujin
+doitsujin
 ドイツ人
 
 ドイツご
 German
-Doitsugo
+doitsugo
 ドイツ語
 
 にほん
@@ -14300,12 +14300,12 @@ nihon
 
 にほんじん
 Japanese
-Nihonjin
+nihonjin
 日本人
 
 にほんご
 Japanese
-Nihongo
+nihongo
 日本語
 
 フランス
@@ -14315,12 +14315,12 @@ furansu
 
 フランスじん
 French
-Furansujin
+furansujin
 フランス人
 
 フランスご
 French
-Furansugo
+furansugo
 フランス語
 
 `;
@@ -14333,72 +14333,72 @@ burajiru
 
 ブラジルじん
 Brazilian
-Burajirujin
+burajirujin
 ブラジル人
 
 ポルトガルご
 Portuguese
-Porutogarugo
+porutogarugo
 ポルトガル語
 
 メキシコ
 Mexico
-Mekishiko
+mekishiko
 メキシコ
 
 メキシコじん
 Mexican
-Mekishikojin
+mekishikojin
 メキシコ人
 
 スペインご
 Spanish
-Supeingo
+supeingo
 スペイン語
 
 イラン
 Iran
-Iran
-※イラン
+iran
+イラン
 
 イランじん
 Iranian
-Iranjin
+iranjin
 イラン人
 
 ペルシアご
 Persian
-Perushiago
+perushiago
 ペルシア語
 
 エジプト
 Egypt
-Ejiputo
+ejiputo
 エジプト
 
 エジプトじん
 Egyptian
-Ejiputojin
+ejiputojin
 エジプト人
 
 アラビアご
 Arabic
-Arabiago
+arabiago
 アラビア語
 
 カナダ
 Canada
-Kanada
+kanada
 カナダ
 
 カナダじん
 Canadian
-Kanadajin
+kanadajin
 カナダ人
 
 えいご・フランスご
 English, French
-Eigo, Furansugo
+eigo, furansugo
 英語・フランス語
 
 イギリス
@@ -14408,12 +14408,12 @@ igirisu
 
 イギリスじん
 British
-Igirisujin
+igirisujin
 イギリス人
 
 えいご
 English
-Eigo
+eigo
 英語
 
 オーストラリア
@@ -14423,12 +14423,12 @@ oosutoraria
 
 オーストラリアじん
 Australian
-Oosutorariajin
+oosutorariajin
 オーストラリア人
 
 えいご
 English
-Eigo
+eigo
 英語
 
 シンガポール
@@ -14438,27 +14438,27 @@ shingapooru
 
 シンガポールじん
 Singaporean
-Shingapoorujin
+shingapoorujin
 シンガポール人
 
 えいご
 English
-Eigo
+eigo
 英語
 
 サウジアラビア
 Saudi Arabia
-Saujiarabia
+saujiarabia
 サウジアラビア
 
 サウジアラビアじん
 Saudi Arabian
-Saujiarabiajin
+saujiarabiajin
 サウジアラビア人
 
 アラビアご
 Arabic
-Arabiago
+arabiago
 アラビア語
 
 フィリピン
@@ -14468,12 +14468,12 @@ firipin
 
 フィリピンじん
 Filipino
-Firipinjin
+firipinjin
 フィリピン人
 
 フィリピノご
 Filipino
-Firipinogo
+firipinogo
 フィリピノ語
 
 ロシア
@@ -14483,12 +14483,12 @@ roshia
 
 ロシアじん
 Russian
-Roshiajin
+roshiajin
 ロシア人
 
 ロシアご
 Russian
-Roshiago
+roshiago
 ロシア語
 
 インド
@@ -14498,12 +14498,12 @@ indo
 
 インドじん
 Indian
-Indojin
+indojin
 インド人
 
 ヒンディーご
 Hindi
-Hindiigo
+hindiigo
 ヒンディー語
 
 `;
@@ -14662,7 +14662,7 @@ set up [a class], open, hold
 ねます
 to sleep, go to bed
 nemasu
-ねます
+寝ます
 
 ねむります
 sleep
@@ -14682,12 +14682,12 @@ Nemuri ni tsukimasu
 つきます
 arrive, reach
 tsukimasu
-つきます
+着きます
 
 なります
 become
 narimasu
-なります
+成ります
 
 けんきゅうします
 to research, to study
@@ -15232,7 +15232,7 @@ shokugyou
 きょうしつ
 classroom
 kyoushitsu
-きょうしつ
+教室
 
 ～きょうしつ
 ~ class
@@ -15977,7 +15977,7 @@ allUltimateWords["Kaigi Jou"] = `
 かいぎしつ
 meeting room, conference room
 kaigishitsu
-かいぎしつ
+会議室
 
 ミーティング
 meeting
@@ -16037,7 +16037,7 @@ Gaikoukan
 りゅうがくせい
 foreign student
 ryuugakusei
-りゅうがくせい
+留学生
 
 りゅうがくします
 study abroad
@@ -16067,7 +16067,7 @@ Taikai
 かいだん
 staircase
 kaidan
-かいだん
+階段
 
 かいらん
 circular, sending round
@@ -16227,7 +16227,7 @@ Hakubutsukan
 としょかん
 library
 toshokan
-としょかん
+図書館
 
 りょかん
 Japanese-style hotel, inn
@@ -16352,7 +16352,7 @@ Gakki
 がっき
 school term / semester
 Gakki
-楽器 / 学期
+学期
 
 らいがっき
 next semester
@@ -16405,7 +16405,7 @@ Suugaku
 数学
 
 かいすうけん
-coupon ticket / Multi-ride Ticket
+coupon ticket / Multiride Ticket
 Kaisuuken
 回数券
 
@@ -16447,7 +16447,7 @@ Kouban
 まず
 first of all
 mazu
-先ず
+まず
 
 さいしょに
 first of all
@@ -16617,7 +16617,7 @@ Honjitsu kyuugyou
 じつは
 as a matter of fact..., actually.., the truth is..
 jitsu wa
-実はこちら・実は
+実は
 
 かくじつ
 certain / reliable / definite
@@ -17161,12 +17161,12 @@ allUltimateWords["Family - Hard"] = ``;
 allUltimateWords["Difficult"] = `
 ポルトガルご
 Portuguese
-Porutogarugo
+porutogarugo
 ポルトガル語
 
 エジプト
 Egypt
-Ejiputo
+ejiputo
 エジプト
 
 ヨーロッパ
@@ -17182,7 +17182,7 @@ Fukuseitokaichou
 しゅしょう
 prime minister
 shushou
-しゅしょう
+首相
 
 たんしんしゃ
 single person / person living alone (away from family)
@@ -18528,11 +18528,6 @@ Juuni
 take a shower
 Shawaaworabimasu
 シャワーを浴びます
-
-ねます
-sleep, go to sleep, will go to sleep
-Nemasu
-寝ます
 
 ヨガ
 yoga
@@ -20357,12 +20352,12 @@ allUltimateWords["Just Names"] = `
 エドヤストア
 fictitious store
 Edoyasutora
-※エドヤストア
+エドヤストア
 
 どい たかお
 Japanese astronaut (1955- )
 Doi Takao
-※土井 隆雄
+土井 隆雄
 
 エヌエイチケー
 Nippon Hoso Kyokai (broadcasting company)
@@ -21280,8 +21275,8 @@ Hikidashi
 引き出し
 
 まだ
-still
-Mada
+not yet
+mada
 まだ
 
 ミュージカル
@@ -23103,12 +23098,7993 @@ Chuushakinshi
 
 allUltimateWords["Chuu - Hard"] = ``;
 
+allUltimateWords["Learned Kanjis"] = `
+〜でございます
+polite form of "desu"
+-de gozaimasu
+〜でございます
+
+（オーバー）コート
+overcoat, coat
+(Oobaa) cooto
+（オーバー）コート
+
+ーーキロ
+-- kilograms, -- kilometers
+-- kiro
+ーーキロ
+
+ーーグラム
+-- grams
+-- guramu
+ーーグラム
+
+ーーセンチ
+-- centimeters
+-- senchi
+ーーセンチ
+
+ーーミリ
+-- millimeters
+-- miri
+ーーミリ
+
+ーグラム
+ー gram
+-guramu
+ーグラム
+
+ＪＬ
+Japan Airlines
+Jeeru
+ＪＬ
+
+[あ、] いけない。
+Oops!/ Oh, no! (used when one has made a mistake)
+[A,] ikenai.
+[あ、] いけない。
+
+[ああ、] よかった。
+Thank goodness! (used to express a feeling of relief)
+[Aa,] Yokatta.
+[ああ、] よかった。
+
+あきらめます
+give up
+Akiramemasu
+あきらめます
+
+アクション
+action
+Akushon
+アクション
+
+アクセサリー
+accessories
+akusesarii
+アクセサリー
+
+アクセス
+access
+Akusesu
+アクセス
+
+アクセント
+accent
+akusento
+アクセント
+
+あじ
+horse mackerel
+aji
+あじ
+
+アジア
+Asia
+ajia
+アジア
+
+あと～
+~ left
+Ato ~
+あと～
+
+アニメ
+cartoon, anime
+Anime
+アニメ
+
+アフリカ
+Africa
+Afurika
+※アフリカ
+
+アメリカ
+U.S.A.
+amerika
+アメリカ
+
+ありがとうございます
+Thank you.
+arigatou gozaimasu
+ありがとうございます。
+
+ある～
+one ~, a certain ~
+Aru~
+ある～
+
+アルバイト
+side job, part-time job
+arubaito
+アルバイト
+
+いいえ
+no
+iie
+いいえ
+
+いいえ、わかりません
+No, I don't.
+iie, wakarimasen
+いいえ、わかりません。
+
+いいです
+That's fine.
+ii desu
+いいです。
+
+いか
+cuttlefish / squid
+ika
+いか
+
+イギリス
+U.K.
+igirisu
+イギリス
+
+イタリア
+Italy
+itaria
+イタリア
+
+いちご
+strawberry
+ichigo
+いちご
+
+いつか
+someday, sometime
+Itsuka
+いつか
+
+いつでも
+any time
+Itsudemo
+いつでも
+
+いらっしゃいます
+come (respectful equivalent of きます)
+Irasshaimasu
+いらっしゃいます
+
+イラン
+Iran
+iran
+イラン
+
+いわし
+sardine
+iwashi
+いわし
+
+インド
+India
+indo
+インド
+
+イントネーション
+intonation
+intoneeshon
+イントネーション
+
+インドネシア
+Indonesia
+indoneshia
+インドネシア
+
+インフルエンザ
+flu, influenza
+Infuruenza
+インフルエンザ
+
+ウィルバー・ライト
+Wilbur Wright (1867-1912)
+Wirubaa Raito
+ウィルバー・ライト
+
+うーん
+ummm...
+uun
+うーん
+
+ううん
+no (informal)
+uun
+ううん
+
+うそ
+lie, fib
+Uso
+うそ
+
+うどん
+Japanese noodles made from wheat flour
+Udon
+うどん
+
+うれしい
+glad, happy
+Ureshii
+うれしい
+
+うわさします
+gossip
+Uwasa shimasu
+うわさします
+
+うん
+yes (informal)
+un
+うん
+
+ええ
+yes
+ee
+ええ
+
+エジプト
+Egypt
+ejiputo
+エジプト
+
+エスエフ
+science fiction
+Esuefu
+SF
+
+エドヤストア
+fictitious store
+Edoyasutora
+エドヤストア
+
+エヌエイチケー
+Nippon Hoso Kyokai (broadcasting company)
+NHK (Enueichikei)
+NHK
+
+えび
+lobster / shrimp
+ebi
+えび
+
+えびフライ
+fried shrimp
+Ebi furai
+えびフライ
+
+エンジン
+engine
+Enjin
+エンジン
+
+オーヴィル・ライト
+Orville Wright (1871-1948)
+Ooviru Raito
+オーヴィル・ライト
+
+オーストラリア
+Australia
+oosutoraria
+オーストラリア
+
+オートバイ
+motorcycle
+Ootobai
+オートバイ
+
+おかっぱ
+bobbed hair
+Okappa
+おかっぱ
+
+おじ
+(my) uncle
+Oji
+おじ
+
+おじいさん
+grandfather (someone else's)
+ojiisan
+おじいさん
+
+おじさん
+(someone else's) uncle
+Ojisan
+おじさん
+
+おじさん
+uncle; middle-aged man
+Ojisan
+おじさん
+
+おしゃべりします
+chat
+Oshaberishimasu
+おしゃべりします
+
+おたま
+ladle
+Otama
+お玉
+
+おにぎり
+rice ball
+Onigiri
+おにぎり
+
+おば
+(my) aunt
+Oba
+おば
+
+おばあさん
+grandmother (someone else's)
+obaasan
+おばあさん
+
+おばさん
+(someone else's) aunt
+Obasan
+おばさん
+
+おばさん
+aunt; middle-aged woman
+Obasan
+おばさん
+
+おはようございます
+Good morning.
+ohayou gozaimasu
+おはようございます。
+
+オペラ
+opera
+Opera
+オペラ
+
+オリンピック
+Olympic Games
+Orinpikku
+※オリンピック
+
+オレンジ
+orange
+Orenji
+オレンジ
+
+～か～
+~ or ~
+~ka~
+～か～
+
+が
+but
+ga
+が
+
+カーテン
+curtain
+Kaaten
+カーテン
+
+かい
+shellfish
+kai
+かい
+
+かいぎしつ
+meeting room, conference room
+kaigishitsu
+会議室
+
+かいだん
+staircase
+kaidan
+階段
+
+かき
+persimmon
+kaki
+かき
+
+かしこまりました
+Certainly (sir, madam)
+kashikomarimashita
+かしこまりました
+
+ガス
+gas
+Gasu
+ガス
+
+ガソリンスタンド
+petrol station, gas station
+Gasorin sutando
+ガソリンスタンド
+
+がっかりします
+be disappointed
+Gakkari shimasu
+がっかりします
+
+かっこいい
+great-looking
+Kakkooii
+かっこいい
+
+カナダ
+Canada
+kanada
+カナダ
+
+かなり
+fairly
+Kanari
+かなり
+
+かに
+crab
+kani
+かに
+
+ガム
+chewing gum
+Gamu
+ガム
+
+かゆい
+itchy
+Kayui
+かゆい
+
+ガラス
+glass (material)
+Garasu
+ガラス
+
+カレー
+curry
+Karee
+カレー
+
+カレー[ライス]
+curry (and rice)
+karee [raisu]
+カレー[ライス]
+
+カレーライス
+curry with rice
+Kareeraisu
+カレーライス
+
+カレンダー
+calendar
+Karendaa
+カレンダー
+
+かわいい
+lovely, cute
+Kawaii
+かわいい
+
+かんきり
+can opener
+Kankiri
+かんきり
+
+キー
+key
+Kii
+キー
+
+きた
+north
+Kita
+きた
+
+きちんと
+neatly, tidily
+Kichinto
+きちんと
+
+きっと
+surely, no doubt
+kitto
+きっと
+
+キャッシュカード
+cash card, ATM Card
+kyasshu kaado
+キャッシュカード
+
+キャベツ
+cabbage
+kyabetsu
+キャベツ
+
+きゅうり
+cucumber
+kyuuri
+きゅうり
+
+きょうしつ
+classroom
+kyoushitsu
+教室
+
+クラス
+class
+kurasu
+クラス
+
+グラハム・ベル
+Alexander Graham Bell, American inventor (1847-1922)
+Gurahamu Beru
+グラハム・ベル
+
+クリーニング
+[dry] cleaning, laundry
+Kuriiningu
+クリーニング
+
+グレー
+gray
+Guree
+グレー
+
+ケータイ
+mobile phone, cell phone
+keetai
+携帯
+
+けが
+injury (~ を します : get injured)
+Kega
+けが
+
+けがを します
+get injured
+Kega wo shimasu
+けがを します
+
+ける
+kick
+Keru
+ける
+
+けんかします
+quarrel, fight
+Kenka shimasu
+けんかします
+
+コインロッカー
+coin locker
+Koin rokkaa
+コインロッカー
+
+こうこう
+senior high school
+koukou
+こうこう
+
+コーナー
+corner, section
+koonaa
+コーナー
+
+コーラ
+cola
+Koora
+コーラ
+
+ゴールデンウィーク
+Golden Week (29th april to 5th may)
+gooruden wiiku
+ゴールデンウィーク
+
+ココア
+cocoa, hot chocolate
+Kokoa
+ココア
+
+ごしゅじん
+(your/her) husband
+Goshujin
+ごしゅじん
+
+コップ
+tumbler, glass (vessel)
+Koppu
+コップ
+
+ゴッホ
+Vincent van Gogh, Dutch painter (1853-90)
+Goho
+ゴッホ
+
+ことわざ
+proverb
+Kotowaza
+ことわざ
+
+ごみ
+garbage, trash, dust
+Gomi
+ごみ
+
+ゴム
+rubber
+Gomu
+ゴム
+
+これでいいですか。
+Is this all right?
+Kore de ii desu ka.
+これでいいですか。
+
+コロッケ
+croquette
+Korokke
+コロッケ
+
+コンテスト
+contest
+Kontesto
+コンテスト
+
+こんにちは
+Hello.
+konnichiwa
+こんにちは。
+
+こんばんは
+Good evening.
+konbanwa
+こんばんは
+
+さあ
+I am not sure...., well let me see (used when unsure of something)
+Saa
+さあ
+
+サウジアラビア
+Saudi Arabia
+saujiarabia
+サウジアラビア
+
+さけ
+salmon
+sake
+さけ
+
+さっき
+a short while ago
+Sakki
+さっき
+
+さば
+mackerel
+saba
+さば
+
+さようなら
+Goodbye.
+sayounara
+さようなら。
+
+サラダ
+salad
+Sarada
+サラダ
+
+さん
+Mr./Ms./Mrs.
+-san
+さん
+
+さんま
+mackerel pike
+sanma
+さんま
+
+シートベルト
+seat belt
+Shiitoberuto
+シートベルト
+
+～しか
+only ~ (used with negatives)
+~shika
+～しか
+
+しばらく
+a little while
+Shibaraku
+しばらく
+
+しまいます
+put things in their proper place
+Shimaimasu
+しまいます
+
+ジャーナリスト
+journalist
+Jaanarisuto
+ジャーナリスト
+
+じゃがいも
+potato
+jagaimo
+じゃがいも
+
+ジャカルタ
+Jakarta
+jakaruta
+ジャカルタ
+
+しゃもじ
+rice paddle
+Shamoji
+しゃもじ
+
+しゅしょう
+prime minister
+shushou
+首相
+
+しょうゆ
+soy, soy sauce
+Shouyu
+しょうゆ
+
+シンガポール
+Singapore
+shingapooru
+シンガポール
+
+すいか
+watermelon
+suika
+すいか
+
+スイス
+Switzerland
+suisu
+スイス
+
+スウェーデン
+Sweden
+sueeden
+スウェーデン
+
+スープ
+soup
+Suupu
+スープ
+
+スケート
+skating
+Sukeeto
+スケート
+
+～ずつ
+~ (some amount) per (some suit)
+~zutsu
+～ずつ
+
+ずっと
+by far, the whole time, all the time, for a long time
+zutto
+ずっと
+
+ストッキング
+tights, panty hose
+Sutokkingu
+ストッキング
+
+ストレス
+stress
+Sutoresu
+ストレス
+
+スパゲッティ
+spaghetti
+Supagettii
+スパゲッティ
+
+すばらしさ
+goodness, virtue
+Subarashisa
+すばらしさ
+
+スペイン
+Spain
+supein
+スペイン
+
+スポーツクラブ
+sports club
+Supootsu kurabu
+スポーツクラブ
+
+ズボン
+trousers
+Zubon
+ズボン
+
+すみません
+Excuse me./Sorry.
+sumimasen
+すみません。
+
+せき
+cough
+Seki
+せき
+
+せっけん
+soap
+Sekken
+せっけん
+
+せつび
+equipment, facilities
+Setsubi
+せつび
+
+せんぬき
+cap opener, bottle opener
+Sennuki
+せんぬき
+
+ぞうり
+zori (one type slippers)
+Zouri
+ぞうり
+
+ソース
+sauce, Worcestershire sauce
+Soosu
+ソース
+
+ソーセージ
+sausage
+sooseeji
+ソーセージ
+
+その [ほう] が ～
+That is more ~
+Sono [hou] ga ~
+その [ほう] が ～
+
+そのままに します
+leave things as they are
+Sonomama ni shimasu
+そのままに します
+
+そば
+Japanese noodles made from buckwheat flour, soba
+Soba
+そば
+
+ソバージュ
+shaggy perm
+Sobaaju
+ソバージュ
+
+ソフトボール
+softball
+Sofutobooru
+ソフトボール
+
+そりゃあ
+well
+Soryaa
+そりゃあ
+
+それは いいですね。
+That's a good idea./That sounds nice.
+Sore wa ii desu ne.
+それは いいですね。
+
+それはいけませんね
+That's too bad.
+Sore wa ikemasen ne
+それはいけませんね
+
+たい
+sea bream
+tai
+たい
+
+タイ
+Thailand
+tai
+タイ
+
+たいてい
+usually, mostly
+Taitei
+たいてい
+
+だいとうりょう
+president (of an country)
+daitouryou
+大統領
+
+ダイニングキッチン
+kitchen with a dining area
+dainingu kicchin
+ダイニングキッチン
+
+タオル
+towel
+Taoru
+タオル
+
+たこ
+octopus
+tako
+たこ
+
+たび
+tabi (one type socks)
+Tabi
+たび
+
+たまねぎ
+onion
+Tamanegi
+たまねぎ
+
+だめ[な]
+no good, not permitted, impossible
+Dame[na]
+だめ[な]
+
+たら
+cod
+tara
+たら
+
+だれか
+somebody
+Dareka
+誰か
+
+だれでも
+anybody
+Daredemo
+誰でも
+
+タンゴ
+tango
+Tango
+タンゴ
+
+チーム
+team
+Chiimu
+チーム
+
+チケット
+ticket
+chiketto
+チケット
+
+チャレンジします
+challenge
+Charenjishimasu
+チャレンジします
+
+ちゃん
+suffix added to a child's name
+-chan
+ちゃん
+
+ちょうど
+just, exactly
+Choudo
+ちょうど
+
+ちょうどいい
+proper, just right
+Choudo ii
+ちょうどいい
+
+つきます
+arrive, reach
+tsukimasu
+着きます
+
+つけます
+turn on (light / appliance)
+Tsukemasu
+つけます
+
+つまみ
+knob, handle
+tsumami
+つまみ
+
+できるだけ
+as much as possible
+Dekirudake
+できるだけ
+
+デザイナー
+designer
+Dezainaa
+デザイナー
+
+テスト
+test, examination
+Tesuto
+テスト
+
+ドイツ
+Germany
+doitsu
+ドイツ
+
+トイレ
+toilet, rest room
+toire
+トイレ
+
+どう
+how (is it?)
+dou
+どう
+
+どういう～
+what kind of ~
+Dou iu ~
+どういう～
+
+どうでしょうか。
+How is ~? (polite way of saying どうですか)
+Dou deshou ka.
+どうでしょうか。
+
+どうやって
+how, in what way
+douyatte
+どうやって
+
+トースト
+toast
+Toosuto
+トースト
+
+～とか、～とか
+~, ~, and so on
+~toka, ~toka
+～とか、～とか
+
+ドキュメンタリー
+documentary
+Dokyumentarii
+ドキュメンタリー
+
+とけい
+watch, clock
+tokei
+とけい
+
+どこか
+somewhere, some place
+dokoka
+どこか
+
+どこでも
+anywhere
+Dokodemo
+どこでも
+
+ところで
+by the way
+Tokorode
+ところで
+
+としょかん
+library
+toshokan
+図書館
+
+とても
+very
+totemo
+とても
+
+どのぐらい
+how much; how long
+Donogurai
+どの位
+
+ドミニカ
+Dominica
+Dominika
+ドミニカ
+
+ドライクリーニング
+Dry clean only (on clothes tag)
+Dorai kuriiningu
+ドライクリーニング
+
+ドライクリーニング
+Dry cleaning
+Dorai kuriiningu
+ドライクリーニング
+
+ドラえもん
+name of a cartoon character
+Doraemon
+ドラえもん
+
+トラック
+truck, lorry
+Torakku
+トラック
+
+ドラマ
+drama
+Dorama
+ドラマ
+
+とります
+rob, steal
+Torimasu
+とります
+
+どんな〜
+what kind of ~
+donna~
+どんな〜
+
+どんぶり
+ceramic bowl
+Donburi
+どんぶり
+
+なかなか
+not easily
+nakanaka
+なかなか
+
+なし
+Japanese pear
+nashi
+なし
+
+なす
+egg plant / aubergine
+nasu
+なす
+
+なべ
+pan, pot
+Nabe
+なべ
+
+なります
+become
+narimasu
+成ります
+
+なんでも
+anything
+Nandemo
+何でも
+
+ナンプラー
+nam pla
+nanpuraa
+ナンプラー
+
+ニューヨーク
+New York
+nyuuyooku
+ニューヨーク
+
+～によって
+by ~
+~ni yotte
+～によって
+
+にんじん
+carrot
+ninjin
+にんじん
+
+ねぎ
+spring onion / scallion
+negi
+ねぎ
+
+[ネクタイを～] します
+put on, wear [a tie]
+[nekutai o~] Shimasu
+[ネクタイを～] します
+
+ねずみ
+mouse
+Nezumi
+ねずみ
+
+ねます
+to sleep, go to bed
+nemasu
+寝ます
+
+ねむい
+sleepy
+nemui
+ねむい
+
+ねんざ
+sprain
+Nenza
+ねんざ
+
+パーティールーム
+party room
+Paatiiruumu
+パーティールーム
+
+はい
+yes
+hai
+はい
+
+ハイキング
+hiking
+Haikingu
+ハイキング
+
+はじめに
+first
+Hajime ni
+はじめに
+
+バスケットボール
+basketball
+Basukettobooru
+バスケットボール
+
+バスターミナル
+bus terminal
+Basu taaminaru
+バスターミナル
+
+パチンコ
+Japanese pinball game
+pachinko
+パチンコ
+
+はっきり
+clearly
+Hakkiri
+はっきり
+
+バッグ
+bag
+Baggu
+バッグ
+
+バナナ
+banana
+banana
+バナナ
+
+はねます
+hit
+Hanemasu
+はねます
+
+ハム
+ham
+hamu
+ハム
+
+パリ
+Paris
+pari
+パリ
+
+はります
+put up, post, paste
+Harimasu
+はります
+
+バレーボール
+volleyball
+Bareebooru
+バレーボール
+
+パン
+bread
+pan
+パン
+
+バンコク
+Bangkok
+bankoku
+バンコク
+
+パンティー
+panties
+Pantii
+パンティー
+
+バンドン
+Bandung
+bandon
+バンドン
+
+ハンバーグ
+hamburg steak
+Hanbaagu
+ハンバーグ
+
+ピカソ
+Pablo Picasso, Spanish painter (1881-1973)
+Pikaso
+ピカソ
+
+ひきます
+run over
+Hikimasu
+ひきます
+
+ピザ
+pizza
+Piza
+ピザ
+
+ビジネス
+business
+Bijinesu
+ビジネス
+
+びっくりします
+be surprised
+Bikkuri shimasu
+びっくりします
+
+ぴったり
+exactly, just right
+Pittari
+ぴったり
+
+ひも
+string (used for tying)
+Himo
+ひも
+
+ピンク
+pink
+Pinku
+ピンク
+
+ピンポン
+ping-pong
+Pinpon
+ピンポン
+
+ファイト
+fight
+Faito
+ファイト
+
+フィリピン
+Philippines
+firipin
+フィリピン
+
+ブーツ
+boots
+Buutsu
+ブーツ
+
+フエ
+Hue
+fue
+フエ
+
+フォーム
+form
+foomu
+フォーム
+
+ふた
+lid, cover, cap
+Futa
+ふた
+
+ぶつかります
+bump, collide
+Butsukarimasu
+ぶつかります
+
+ぶつけます
+hit, strike, or throw something against
+Butsukemasu
+ぶつけます
+
+ぶどう
+grape
+budou
+ぶどう
+
+ふまじめ [な]
+frivolous
+Fumajime [na]
+ふまじめ [な]
+
+フライドチキン
+fried chicken
+Furaido chikin
+フライドチキン
+
+ブラウス
+blouse
+Burausu
+ブラウス
+
+ブラジル
+Brazil
+burajiru
+ブラジル
+
+フランケン
+Franken
+furanken
+フランケン
+
+フランス
+France
+furansu
+フランス
+
+プレイガイド
+(theater) ticket agency
+pureigaido
+プレイガイド
+
+プレゼント
+present
+purezento
+プレゼント
+
+ブロードウェイ
+Broadway
+Buroodowei
+※ブロードウェイ
+
+フロント
+front desk, reception desk
+Furonto
+フロント
+
+ベージュ
+beige
+Beeju
+ベージュ
+
+ペット
+pet
+Petto
+ペット
+
+ベトナム
+Vietnam
+betonamu
+ベトナム
+
+ベラクルス
+Veracruz
+berakurusu
+ベラクルス
+
+ベランダ
+balcony
+Beranda
+ベランダ
+
+ベルト
+belt
+Beruto
+ベルト
+
+ベルリン
+Berlin
+berurin
+ベルリン
+
+ボウリング
+bowling
+Bouringu
+Bouringu
+
+ほうれんそう
+spinach
+hourensou
+ほうれんそう
+
+ボーナス
+bonus
+Boonasu
+ボーナス
+
+ホーム
+platform
+[Puratto]hoomu
+［プラット］ホーム
+
+ボール
+ball
+Booru
+ボール
+
+ほかの
+other
+Hoka no
+ほかの
+
+ポケット
+pocket
+Poketto
+ポケット
+
+ポスター
+poster
+Posutaa
+ポスター
+
+ホストファミリー
+host family
+Hosutofamirii
+ホストファミリー
+
+ホッチキス
+stapler
+hocchikisu
+ホッチキス
+
+ポップス
+pop
+Poppusu
+ポップス
+
+ほとんど
+almost all (in affirmative sentences), hardly, scarcely (in negative sentences)
+Hotondo
+ほとんど
+
+ポニーテール
+ponytail
+Poniitēru
+ポニーテール
+
+ボブ
+bob
+Bobu
+ボブ
+
+ホラー
+horror
+Horaa
+ホラー
+
+ボランティア
+volunteer
+Borantia
+ボランティア
+
+ほんとう
+truth, fact
+Hontou
+ほんとう
+
+マーク
+mark
+Maaku
+マーク
+
+まじめ [な]
+Serious, Diligent, Honest, Reliable, earnest
+Majime [na]
+まじめ [な]
+
+また
+and
+Mata
+また
+
+まだ
+not yet
+mada
+まだ
+
+まちがい
+mistake
+Machigai
+まちがい
+
+まちがえます
+make a mistake
+Machigaemasu
+まちがえます
+
+まとめます
+put ~ together, put ~ in shape, sum up
+Matomemasu
+まとめます
+
+マフラー
+scarf, muffler, winter scarf
+Mafuraa
+マフラー
+
+まめ
+beans / peas
+mame
+まめ
+
+マラソン
+marathon
+Marason
+マラソン
+
+マレーシア
+Malaysia
+mareeshia
+マレーシア
+
+マンション
+multistory apartment; condominium (reinforced concrete), condominium, apartment house
+Manshon
+マンション
+
+ミーティング
+meeting
+Miitingu
+ミーティング
+
+ミステリー
+mystery
+Misuterii
+ミステリー
+
+ミュージカル
+musical
+Myuujikaru
+ミュージカル
+
+みるく
+milk
+Miruku
+ミルク
+
+メール
+e-mail
+meeru
+メール
+
+メキシコ
+Mexico
+mekishiko
+メキシコ
+
+めまいが します
+feel dizzy
+Memai ga shimasu
+めまいが します
+
+メモします
+take a memo
+Memoshimasu
+メモします
+
+もう
+(not) any longer (used with negatives)
+Mou
+もう
+
+もう
+already
+mou
+もう
+
+もうすぐ
+very soon
+mou sugu
+もうすぐ
+
+もしかしたら
+possibly, perhaps
+Moshikashitara
+もしかしたら
+
+もしもし
+hello (used on the phone)
+moshimoshi
+もしもし
+
+モスク
+Mosque
+Mosuku
+モスク
+
+もっと
+more
+Motto
+もっと
+
+もも
+peach
+momo
+もも
+
+やけど
+burning (~ を します : get burned)
+Yakedo
+やけど
+
+やけどを します
+get burnt
+Yakedo wo shimasu
+やけどを します
+
+やさしい
+easy (problem); kind (person)
+Yasashii
+やさしい
+
+やせます
+get slim, lose weight
+Yasemasu
+やせます
+
+やっと
+finally
+Yatto
+やっと
+
+ゆっくり
+slowly; leisurely; unhurriedly
+Yukkuri
+ゆっくり
+
+ゆっくりします
+take one's time
+Yukkurishimasu
+ゆっくりします
+
+ヨーロッパ
+Europe
+yooroppa
+ヨーロッパ
+
+よかったですね。
+That's lucky, isn't it?
+Yokatta desu ne.
+よかったですね。
+
+ラーメン
+Chinese noodles in soup with meat and vegetables
+Raamen
+ラーメン
+
+ラグビー
+rugby
+Ragubii
+ラグビー
+
+ラテン
+Latin-American
+Raten
+ラテン
+
+ランチ
+western-style set meal
+Ranchi
+ランチ
+
+リーゼント
+ducktail
+Riizento
+リーゼント
+
+りゅうがくせい
+foreign student
+ryuugakusei
+留学生
+
+レイヤーカット
+layered cut
+Reiyaa katto
+レイヤーカット
+
+レインコート
+raincoat
+Reinkooto
+レインコート
+
+レタス
+lettuce
+retasu
+レタス
+
+レモン
+lemon
+remon
+レモン
+
+ロサンゼルス
+Los Angeles
+rosanzerusu
+ロサンゼルス
+
+ロシア
+Russia
+roshia
+ロシア
+
+ロック
+rock
+Rokku
+ロック
+
+ロボット
+robot
+Robotto
+ロボット
+
+ロンドン
+London
+rondon
+ロンドン
+
+ワイシャツ
+[white] shirt
+Waishatsu
+ワイシャツ
+
+ワンピース
+one-piece dress
+Wanpiisu
+ワンピース
+
+〜かた
+how to ~, way of ~ing
+~kata
+〜方
+
+〜ぐらい
+about (period of time), about (approximate measurement)
+~gurai
+〜位
+
+〜ご
+~language
+~go
+〜語
+
+〜じん
+...people
+...jin
+〜人
+
+〜ねんせい
+...year student
+...nensee
+〜年生
+
+〜ばん
+number ~
+~ban
+〜番
+
+〜や
+person of ~ shop, ~shop, ~store
+~ya
+〜屋
+
+（かいしゃを）やすみます
+take a day off (work)
+(kaisha o) yasumimasu
+（会社を）休みます
+
+（コーヒーが）いい
+prefer (coffee)
+(koohii ga) ii
+（コーヒーが）良い
+
+（だいがくに）はいります
+enroll, enter (university)
+(daigaku ni) hairimasu
+（大学に）入ります
+
+（だいがくを）でます
+graduate (from university)
+(daigaku o) demasu
+（大学を）出ます
+
+（ひとが）おおい
+many (people), much
+(hito ga) ooi
+（人が）多い
+
+（ひとが）すくない
+few (people), a little
+(hito ga) sukunai
+（人が）少ない
+
+（みぎへ）まがります
+turn (to the right)
+(migi e) magarimasu
+（右へ）曲がります
+
+（みせに）はいります
+enter (a shop)
+(mise ni) hairimasu
+（店に）入ります
+
+（みせを）でます
+go out (of a shop)
+(mise o) demasu
+（店を）出ます
+
+（レポートを）だします
+hand in (a report)
+(repooto o) dashimasu
+（レポートを）出します
+
+［とうきょう］いき
+for [TOKYO]
+[Toukyou] iki
+［東京］行き
+
+※ひだりじんごろう
+famous Japanese sculptor of the Edo Period (1594-1651)
+Hidari Jingorou
+※左甚五郎
+
+ーーごう
+train number, typhoon number, etc.
+-- gou
+ーー号
+
+ーーさつ
+(counter for books, etc.)
+--satsu
+ーー冊
+
+ーーほん (ーーぽん、ーーぼん)
+(counter for long objects)
+-- hon (-- pon, -- bon)
+ーー本 (ーーぽん、ーーぼん)
+
+2ぎょうめ
+The second line
+Nigyoume
+2行目
+
+3ぎょうめ
+The third line
+Sangyoume
+3行目
+
+5ねんせい
+fifth grade, fifth year, 5th grader
+5-nensei
+5年生
+
+あいだ
+between, among
+aida
+間
+
+あいます
+fit, suit
+Aimasu
+合います
+
+あお
+blue (noun)
+Ao
+青
+
+あおい
+blue (adjective)
+Aoi
+青い
+
+あか
+red (noun)
+Aka
+赤
+
+あかい
+red (adjective)
+Akai
+赤い
+
+あかちゃん
+baby
+Akachan
+赤ちゃん
+
+あかるい
+bright, light, colorful
+akarui
+明るい
+
+あけます
+open
+akemasu
+空きます
+
+あけます
+open, be vacant; be unoccupied
+akimasu
+空きます
+
+あげます
+raise, lift up
+Agemasu
+上げます
+
+あさ
+morning
+asa
+朝
+
+あさごはん
+breakfast
+asagohan
+朝ご飯
+
+あさって
+the day after tomorrow
+asatte
+明後日
+
+あした
+tomorrow
+ashita
+明日
+
+あしもと
+at one's feet / step / underfoot
+Ashimoto
+足元 / 足下
+
+あす
+tomorrow
+Asu
+明日
+
+あたらしい
+new, fresh
+atarashii
+新しい
+
+あとで
+later, later on
+atode
+後で
+
+あなた
+you
+anata
+貴方
+
+あに
+(my) elder brother
+ani
+兄
+
+あのかた
+that person (more polite)
+anokata
+あの方
+
+あのひと
+that person
+anohito
+あの人
+
+あまい
+sweet
+amai
+甘い
+
+あめ
+rain, rainy
+ame
+雨
+
+[あめが～] やみます
+[rain] stop
+[ame ga~] Yamimasu
+[雨が～] やみます
+
+アメリカじん
+American
+amerikajin
+アメリカ人
+
+あらいます
+wash
+araimasu
+洗います
+
+アラビアご
+Arabic
+arabiago
+アラビア語
+
+あるいて
+on foot
+aruite
+歩いて
+
+あんしんします
+be relieved
+Anshin shimasu
+安心します
+
+あんぜん [な]
+safe
+Anzen [na]
+安全 [な]
+
+いい・よい
+good
+ii / yoi
+良い
+
+いいこ
+good child
+Iiko
+いい子
+
+イギリスじん
+British
+igirisujin
+イギリス人
+
+いけばな
+flower arrangement
+ikebana
+生け花
+
+いけばなスクール
+Flower arrangement class
+Ikebana sukuuru
+生け花スクール
+
+いけばなをします
+practice flower arrangement / do ikebana
+Ikebana o shimasu
+生け花をします
+
+いけん
+opinion, comment
+iken
+意見
+
+いこうけい
+volitional
+Ikoukei
+意向形
+
+イタリアご
+Italian
+itariago
+イタリア語
+
+イタリアじん
+Italian
+itariajin
+イタリア人
+
+いちど
+once, one time
+ichido
+一度
+
+いちども
+not even once, never
+ichidomo
+一度も
+
+いちばん〜
+best, the number one, the most ~
+ichiban~
+一番〜
+
+いちばん した
+the bottom
+ichiban shita
+一番下
+
+いつ
+when
+itsu
+何時
+
+いっぴきもいません。
+There is not a single (mouse).
+Ippiki mo imasen.
+一匹もいません。
+
+いなか
+countryside, rural area
+inaka
+田舎
+
+いぬ
+dog
+inu
+犬
+
+いま
+now
+ima
+今
+
+いまでは
+now
+Ima de wa
+今では
+
+いまでも
+even now
+Ima demo
+今でも
+
+いまの でんしゃ
+the train which has just left
+Ima no densha
+今の電車
+
+イランじん
+Iranian
+iranjin
+イラン人
+
+いりぐち
+entrance
+Iriguchi
+入口
+
+いれます
+put in / insert
+Iremasu
+入れます
+
+いろ
+color
+Iro
+色
+
+いんすたんとしょくひん
+instant food / instant food products
+Insutanto shokuhin
+インスタント食品
+
+インドじん
+Indian
+indojin
+インド人
+
+インドネシアご
+Indonesian
+indoneshiago
+インドネシア語
+
+インドネシアじん
+Indonesian
+indoneshiajin
+インドネシア人
+
+うえ
+on, above, over
+ue
+上
+
+うけつけ
+reception desk
+uketsuke
+受付
+
+うけみけい
+passive
+Ukemikei
+受身形
+
+うちのなか
+Inside the house
+uchi no naka
+うちの中
+
+うつくしい
+beautiful
+Utsukushii
+美しい
+
+うま
+horse
+uma
+馬
+
+うります
+sell
+Urimasu
+売ります
+
+うれます
+sell well / be sold
+Uremasu
+売れます
+
+うわぎ
+jacket, outerwear
+uwagi
+上着
+
+うんてんしゅ
+driver
+Untenshu
+運転手
+
+えいご
+English
+eigo
+英語
+
+えいご
+English
+eigo
+英語
+
+えいご・フランスご
+English, French
+eigo, furansugo
+英語・フランス語
+
+えき
+Station
+Eki
+駅
+
+えきいん
+station employee
+Ekiin
+駅員
+
+えきちょう
+stationmaster
+Ekichou
+駅長
+
+えきまえ
+the area in front of a station
+Ekimae
+駅前
+
+えきめい
+station name
+Ekimei
+駅名
+
+エジプトじん
+Egyptian
+ejiputojin
+エジプト人
+
+[エレベーターが～] とまります
+[an elevator] stop
+[erebeetaa ga~] Tomarimasu
+[エレベーターが～] 止まります
+
+えん
+YEN
+En
+円
+
+おおい
+there are many...
+Ooi
+多い
+
+おおきい
+big, large
+ookii
+大きい
+
+おおきさ
+size, scale
+Ookisa
+大きさ
+
+おおきな～
+large ~
+Ookina~
+大きな～
+
+オーストラリアじん
+Australian
+oosutorariajin
+オーストラリア人
+
+おかあさん
+(someone else's) mother (also used to address one's own mother)
+okaasan
+お母さん
+
+おかね
+money
+okane
+お金
+
+おかねもち
+rich person
+[O]kanemochi
+[お]金持ち
+
+おきゃく[さん]
+visitor, guest, customer, client
+Okyaku[san]
+お客[さん]
+
+おくじょう
+rooftop
+Okujou
+屋上
+
+おこさん
+(someone else's) child
+Okosan
+お子さん
+
+おこさん
+(your/their) child (polite)
+Okosan
+お子さん
+
+おこないます
+hold, carry out, practice
+Okonaimasu
+行います
+
+おさきに [しつれいします]。
+Excuse me (for leaving before you).
+Osaki ni [shitsurei shimasu].
+お先に [失礼します]。
+
+おさきに どうぞ。
+After you./Go ahead, please.
+Osaki ni douzo.
+お先に どうぞ。
+
+[お]さら
+plate, dish
+[O]sara
+[お]皿
+
+おじいさん・おじいちゃん
+grandfather, old man
+ojiisan / ojiichan
+お祖父さん・おじいちゃん
+
+おしょうがつ (1がつ1にち〜3にち)
+New Year's Day (Jan. 1st–3rd)
+Oshougatsu (Ichi-gatsu tachi-ka ~ mik-ka)
+お正月 (1月1日〜3日)
+
+おしらせ
+notice
+Oshirase
+お知らせ
+
+おちゅうげん
+Gift for a person whose care you are under (Jul. or Aug.)
+Ochugen
+お中元
+
+おっと
+(my) husband
+otto
+夫
+
+おてあらい
+toilet, rest room (polite)
+otearai
+お手洗い
+
+おてら
+Buddhist temple
+otera
+お寺
+
+おと
+sound
+oto
+音
+
+おとうさん
+(someone else's) father (also used to address one's own father)
+otousan
+お父さん
+
+おとうと
+(my) younger brother
+otouto
+弟
+
+おとうとさん
+(someone else's) younger brother
+otoutosan
+弟さん
+
+[おとが～] きこえます
+[a sound] can be heard
+[oto ga~] Kikoemasu
+[音が～] 聞こえます
+
+おとこのこ
+boy
+otoko no ko
+男の子
+
+おとこのひと
+man
+otoko no hito
+男の人
+
+おとしだま
+money given as a New Year's gift
+[O]toshidama
+お年玉
+
+おとな
+adult
+Otona
+大人
+
+おなじ
+same
+Onaji
+同じ
+
+おなまえは
+May i have your name?
+onamae wa
+お名前は
+
+おにいさん
+(someone else's) elder brother
+oniisan
+お兄さん
+
+おねがいします
+Please.
+onegaishimasu
+お願いします。
+
+おばあさん・おばあちゃん
+grandmother, old woman
+obaasan / obaachan
+お祖母さん・おばあちゃん
+
+おび
+obi (kimono belt)
+Obi
+帯
+
+おひきだし
+withdrawal
+Ohikidashi
+お引き出し
+
+おふろ
+bath
+ofuro
+お風呂
+
+[お] まつり
+festival
+[o] matsuri
+[お] 祭り
+
+おみあい
+interview with a view to marriage
+[O] miai
+[お]見合い
+
+おもさ
+weight
+Omosa
+重さ
+
+おやすみなさい
+Good night.
+oyasuminasai
+お休みなさい。
+
+おやすみになります
+sleep, rest (honorific equivalent of ねます)
+Oyasumi ni narimasu
+お休みになります
+
+おんがく
+music
+ongaku
+音楽
+
+おんなのこ
+girl
+onna no ko
+女の子
+
+おんなのひと
+woman
+onna no hito
+女の人
+
+かいぎ
+meeting, conference, business meeting
+kaigi
+会議
+
+[かいぎに～] しゅっせきします
+attend [a meeting]
+[kaigi ni~] Shussekishimasu
+[会議に～] 出席します
+
+がいこく
+foreign country
+gaikoku
+外国
+
+がいこく
+foreigner
+gaikokujin
+外国人
+
+がいこくご
+foreign language
+Gaikokugo
+外国語
+
+かいしゃ
+company
+Kaisha
+会社
+
+～がいしゃ
+~ company
+~gaisha
+～会社
+
+かいしゃいん
+company employee/ office worker
+kaishain
+会社員
+
+がいしょくが おおい
+often eat out
+Gaishoku ga oui
+外食が 多い
+
+かいちょう
+chairman
+Kaichou
+会長
+
+かいます
+buy
+kaimasu
+買います
+
+かいわ
+conversation
+Kaiwa
+会話
+
+[か] ぎょう
+［か］row
+kagyou
+［か］行
+
+がくせい
+student
+gakusei
+学生
+
+がくちょう
+[university] president
+Gakuchou
+学長
+
+かさ
+umbrella
+kasa
+傘
+
+[かさを～] さします
+put up [an umbrella]
+[kasa o~] Sashimasu
+[傘を～] さします
+
+かぜ
+wind
+Kaze
+風
+
+[かぜを～] ひきます
+catch [a cold]
+[kaze o~] Hikimasu
+[風を~] ひきます
+
+かぞく
+family
+kazoku
+家族
+
+かた
+person (respectful equivalent of ひと)
+Kata
+方
+
+かたち
+form, shape, shapes
+Katachi
+形
+
+かたづきます
+be tidied up / be put in order
+Katadukimasu
+片付きます
+
+かたづけます
+put things in order, tidy up
+Katadukemasu
+片づけます
+
+かたづけます
+tidy up / put in order
+Katadukemasu
+片付けます
+
+かたみち
+one way
+Katamichi
+片道
+
+がっこう
+school
+gakkou
+学校
+
+がっこうにはいります
+enter school
+Gakkou ni hairimasu
+学校に入ります
+
+かない
+(my) wife
+kanai
+家内
+
+カナダじん
+Canadian
+kanadajin
+カナダ人
+
+かならず
+without fail, by all means
+Kanarazu
+必ず
+
+かのうけい
+potential
+Kanoukei
+可能形
+
+かみ
+paper
+kami
+紙
+
+からだ
+body, health
+karada
+体
+
+からだが だるい
+feel weary
+Karada ga darui
+体が だるい
+
+からだにいい
+good for one's body
+karada ni ii
+体に良い
+
+かわ
+river
+kawa
+川
+
+かん
+can
+Kan
+缶
+
+がんじつ
+New Year's Day
+ganjitsu
+元日
+
+かんりょう
+perfective
+kanryou
+完了
+
+き
+tree, wood
+ki
+木
+
+きいろ
+yellow (noun)
+Kiiro
+黄色
+
+きいろい
+yellow (adjective)
+Kiiroi
+黄色い
+
+きが つきます
+notice / realize
+Ki ga tsukimasu
+気がつきます
+
+きたぐち
+north exit
+Kitaguchi
+北口
+
+きぶんがいい
+feel well
+Kibun ga ii
+気分がいい
+
+きみ
+you (informal)
+kimi
+君
+
+きもち
+feelings, feeling, enthusiasm
+Kimochi
+気持ち
+
+きもちがいい
+pleasant, agreeable
+Kimochi ga ii
+気持ちがいい
+
+きもの
+traditional Japanese attire
+kimono
+着物
+
+ぎゅうどん
+a bowl of rice with beef
+Gyudon
+牛どん
+
+ぎゅうにく
+beef
+gyuuniku
+牛肉
+
+きょう
+today
+kyou
+今日
+
+きょうだい
+brothers and sisters (my)
+kyoudai
+兄弟
+
+きょく
+a piece of music
+Kyoku
+曲
+
+きょくせん
+curved line
+Kyokusen
+曲線
+
+きょねん
+last year
+kyonen
+去年
+
+きを つけます
+pay attention / be careful
+Ki o tsukemasu
+気をつけます
+
+ぎんこう
+bank
+ginkou
+銀行
+
+ぎんこういん
+bank employee
+ginkouin
+銀行員
+
+きんじょ
+neighborhood, vicinity
+Kinjo
+近所
+
+く
+phrase
+ku
+句
+
+くうき
+air
+Kuuki
+空気
+
+くうこう
+airport
+kuukou
+空港
+
+[くうこうが～] できます
+[an airport] be made, be completed, come into existence
+[kuukou ga~] Dekimasu
+[空港が～] できます
+
+くだもの
+fruit
+kudamono
+果物
+
+くち
+mouth
+kuchi
+口
+
+くび
+neck
+Kubi
+首
+
+クリーニングや
+Laundry shop / Dry cleaner's
+Kuriiningu-ya
+クリーニング屋
+
+くるま
+car, vehicle, wheel
+kuruma
+車
+
+[くるまに～] ちゅういします
+be careful [of the cars], to give warning, advise
+[kuruma ni~] Chuuishimasu
+[車に～] 注意します
+
+くろ
+black (noun)
+Kuro
+黒
+
+くろい
+black (adjective)
+Kuroi
+黒い
+
+くん
+suffix added to a boy's name, Mr. (informal of ~san)
+-kun
+君
+
+～けい
+～ form
+～kei
+～形
+
+けさ
+this morning
+kesa
+今朝
+
+げつ・すい・きん
+Monday, Wednesday and Friday
+Getsu・Sui・Kin
+月・水・金
+
+けん
+prefecture
+ken
+県
+
+けんがくします
+visit some place to study, field trip
+kengaku shimasu
+見学します
+
+げんかん
+front door, porch, entrance hall
+Genkan
+玄関
+
+げんき
+vigor
+Genki
+元気
+
+げんじものがたり
+"The Tale of Genji" (Japanese novel)
+Genji monogatari
+源氏物語
+
+けんどう
+kendo (Japanese style fencing)
+Kendou
+剣道
+
+～ご
+~ after (duration of time)
+~go
+～後
+
+ごう
+apartment number
+gou
+号
+
+こうがく
+engineering
+Kougaku
+工学
+
+こうこうせい
+high school student
+Koukousei
+高校生
+
+こうちょう
+[school] head teacher, principal
+Kouchou
+校長
+
+ごかぞく
+your family
+gokazoku
+ご家族
+
+ごきょうだい
+brothers and sisters (someone else's)
+gokyoudai
+ご兄弟
+
+こくさい~
+international~
+kokusai
+国際〜
+
+こくさいでんわ
+international call
+Kokusaidenwa
+国際電話
+
+ごご
+p.m., afternoon
+gogo
+午後
+
+ごぜん
+a.m., morning
+gozen
+午前
+
+ことし
+this year
+kotoshi
+今年
+
+ことば
+word, language
+kotoba
+言葉
+
+こども
+children (my)
+kodomo
+子ども
+
+こどもがうまれます
+have a child
+Kodomo ga umaremasu
+子どもが生まれます
+
+こどもたち
+children
+Kodomotachi
+子どもたち
+
+こどものひ
+Children's Day
+Kodomo no Hi
+こどもの日
+
+このあいだ
+the other day
+kono aida
+この間
+
+このへん
+this neighborhood, around here
+Kono hen
+この辺
+
+この子
+this child
+kono ko
+この子
+
+ごはん
+a meal, cooked rice
+gohan
+ご飯
+
+ごふうふ
+married couple (someone else's)
+gofuufu
+ご夫婦
+
+[ごみを～] だします
+put out [the trash]
+[gomi o~] Dashimasu
+[ごみを～] 出します
+
+こめ
+rice
+Kome
+米
+
+こんかい
+this time
+Konkai
+今回
+
+こんげつ
+this month
+kongetsu
+今月
+
+こんしゅう
+this week
+konshuu
+今週
+
+こんど
+next time, another time
+Kondo
+今度
+
+こんや
+tonight, this evening
+konya
+今夜
+
+さいきん
+recently, these days
+saikin
+最近
+
+サウジアラビアじん
+Saudi Arabian
+saujiarabiajin
+サウジアラビア人
+
+さかな
+fish
+sakana
+魚
+
+さかなや
+fishmonger's, fish store
+Sakanaya
+魚屋
+
+さきに
+first (when doing something before something else)
+Saki ni
+先に
+
+さくひん
+work (of art, etc.)
+Sakuhin
+作品
+
+さくぶん
+essay, composition
+Sakubun
+作文
+
+さげます
+lower, pull down
+Sagemasu
+下げます
+
+さら
+plate; dish
+Sara
+皿
+
+し
+city
+Shi
+市
+
+じ
+letter, character
+ji
+字
+
+しいん
+consonant
+shiin
+子音
+
+じかい
+next time
+Jikai
+次回
+
+じかんがたちます
+time pass by
+Jikan ga tachimasu
+時間がたちます
+
+[じかんに～] まにあいます
+be in time [for an appointment, etc.]
+[jikan ni~] Maniaimasu
+[時間に～] 間に合います
+
+しぜん
+nature
+Shizen
+自然
+
+した
+under, below, beneath
+shita
+下
+
+したぎ
+underwear
+shitagi
+下着
+
+しちょう
+city mayor
+Shichou
+市長
+
+しっています
+know
+shitteimasu
+知っています
+
+してん
+branch office
+Shiten
+支店
+
+じてんしゃ
+bicycle
+jitensha
+自転車
+
+してんちょう
+branch manager
+Shitenchou
+支店長
+
+しなもの
+goods
+Shinamono
+品物
+
+じぶん
+oneself
+Jibun
+自分
+
+じぶんで
+(do something) oneself
+Jibun de
+自分で
+
+しめい
+full name / name
+Shimei
+氏名
+
+じもと
+local / hometown / local area
+Jimoto
+地元
+
+じゃ、また [あした]
+well then See you [tomorrow]
+ja mata [ashita]
+じゃ、また [明日]
+
+~しゃいん
+employee of ～ company
+shain
+〜社員
+
+しゃちょう
+President of an company
+Shachou
+社長
+
+しゃどう
+road
+Shadou
+車道
+
+～じゅう
+all over ~
+~juu
+～中
+
+じゅうしょ
+address
+juusho
+住所
+
+じゆうに
+freely
+Jiyuu ni
+自由に
+
+じゅうぶん[な]
+enough, sufficient
+Juubun[na]
+十分[な]
+
+しゅうまつ
+weekend
+shuumatsu
+週末
+
+しゅご
+subject
+shugo
+主語
+
+しゅじん
+(my) husband
+shujin
+主人
+
+しゅじんこう
+hero, heroine
+Shujinkou
+主人公
+
+しゅふ
+housewife
+Shufu
+主婦
+
+しゅんぶんのひ
+Vernal Equinox Day
+shunbun no hi
+春分の日
+
+しょうがくせい
+elementary school children
+shougakusei
+小学生
+
+しょうがっこう
+elementary school
+shougakkou
+小学校
+
+じょうずに
+well, skillfully
+Jouzu ni
+上手に
+
+しょうらい
+future
+Shourai
+将来
+
+しょくひん
+food
+shokuhin
+食品
+
+しょどう
+calligraphy
+Shodou
+書道
+
+しらせます
+inform
+Shirasemasu
+知らせます
+
+しられます
+be known / become known
+Shiraremasu
+知られます
+
+しります
+get to know
+shirimasu
+知ります
+
+しろ
+white (noun)
+Shiro
+白
+
+しろい
+white (adjective)
+Shiroi
+白い
+
+じん
+a nationality of-
+-jin
+人
+
+シンガポールじん
+Singaporean
+shingapoorujin
+シンガポール人
+
+しんかんせん
+bullet train
+shinkansen
+新幹線
+
+じんこう
+population
+jinkou
+人口
+
+しんねんかい
+New Year's party
+Shinnenkai
+新年会
+
+しんぶん
+newspaper
+shinbun
+新聞
+
+しんぶんしゃ
+newspaper publishing company, newspaper
+Shinbunsha
+新聞社
+
+ず
+figure, drawing
+Zu
+図
+
+すいぞくかん
+aquarium
+Suizokukan
+水族館
+
+すいどう
+faucet, tap, water supply
+Suidou
+水道
+
+すぐ
+immediately, right away
+sugu
+直ぐ
+
+すくない
+a little; a few
+Sukunai
+少ない
+
+すこし
+a little, a few
+sukoshi
+少し
+
+スペインご
+Spanish
+supeingo
+スペイン語
+
+スペインじん
+Spanish
+supeinjin
+スペイン人
+
+スポーツ ようひん
+sporting goods
+supootsu youhin
+スポーツ用品
+
+すみます
+to live, to reside
+sumimasu
+住みます
+
+すんでいます
+live, reside
+sundeimasu
+住んでいます
+
+せいかがく
+biochemistry
+Seikagaku
+生化学
+
+せいじんのひ
+Coming-of-Age Day
+seijin no hi
+成人の日
+
+せいねん
+youth
+Seinen
+青年
+
+せいぶつがく
+biology
+Seibutsu-gaku
+生物学
+
+せいようかします
+be Westernized
+Seiyoukashimasu
+西洋化します
+
+せかい
+world
+sekai
+世界
+
+せかいじゅう
+all over the world
+Sekaijuu
+世界中
+
+せき
+seat
+Seki
+席
+
+せきが でます
+have a cough
+Seki ga demasu
+せきが 出ます
+
+[せきを～] はずします
+be away [from one's desk]
+[seki o~] Hazushimasu
+[席を～] 外します
+
+せわをします
+take care
+Sewa o shimasu
+世話をします
+
+せんげつ
+last month
+sengetsu
+先月
+
+せんじつ
+the other day
+Senjitsu
+先日
+
+せんしゅう
+last week
+senshuu
+先週
+
+せんせい
+doctor (used to address medical doctor)
+sensei
+先生
+
+せんせい
+Teacher / Professor
+Sensei
+先生
+
+せんせい
+teacher, instructor (not used when referring to one's own job)
+sensei
+先生
+
+せんたくします
+do the laundry, wash
+sentaku shimasu
+洗濯します
+
+せんたくもの
+washing, laundry
+Sentakumono
+洗濯物
+
+せんめんじょ
+washroom
+Senmenjo
+洗面所
+
+せんもん
+major, specialty, field of study, Fields of study
+senmon
+専門
+
+せんもんがっこう
+technical college, professional school
+Senmongakkou
+専門学校
+
+ぞう
+elephant
+zou
+象
+
+そと
+outside
+soto
+外
+
+そふ
+(my) grandfather
+Sofu
+祖父
+
+そふぼ
+grandparents (my)
+sofubo
+祖父母
+
+そぼ
+(my) grandmother
+Sobo
+祖母
+
+そら
+sky
+Sora
+空
+
+そんちょう
+village headman, chief of the village
+Sonchou
+村長
+
+～だい
+charge, fare, fee
+~dai
+～代
+
+たいかい
+mass meeting, convention
+Taikai
+大会
+
+だいがく
+university; college
+daigaku
+大学
+
+だいがくせい
+university student
+daigakusei
+大学生
+
+[だいがくに～] にゅうがくします
+enter [a university]
+[daigaku ni~] Nyuugakushimasu
+[大学に～] 入学します
+
+タイご
+Thai
+taigo
+タイ語
+
+だいこん
+Japanese radish / mooli
+daikon
+大根
+
+タイじん
+Thai
+taijin
+タイ人
+
+たいせつ（な）
+important, precious
+taisetsu na
+大切（な）
+
+だいたい
+mostly, roughly
+daitai
+大体
+
+だいどころ
+kitchen
+Daidokoro
+台所
+
+だいどころようひん
+Cookware & Kitchen Utensils
+Daidokoro youhin
+台所用品
+
+たいふう
+typhoon
+Taifuu
+台風
+
+たかい
+expensive, tall, high
+takai
+高い
+
+たかさ
+height
+Takasa
+高さ
+
+たからくじ
+lottery
+Takarakuji
+宝くじ
+
+[たからくじが～] あたります
+win [a lottery]
+[takarakuji ga~] Atarimasu
+[宝くじが～] 当たります
+
+だします
+put out, take out, hand in, send, to submit
+Dashimasu
+出します
+
+ただしい
+correct, right
+Tadashii
+正しい
+
+たのしい
+pleasant, enjoyable, fun
+tanoshii
+楽しい
+
+たのしみ
+pleasure, enjoyment, expectation
+Tanoshimi
+楽しみ
+
+たぶん
+probably, perhaps, maybe
+tabun
+多分
+
+たべもの
+food
+tabemono
+食べ物
+
+たまご
+egg
+tamago
+卵
+
+たんご（ご）
+word
+tango (go)
+単語（語）
+
+たんじょうび
+birthday
+tanjoubi
+誕生日
+
+たんしんしゃ
+single person / person living alone (away from family)
+Tanshinsha
+単身者
+
+ちいさい
+small, little
+chiisai
+小さい
+
+ちいさな～
+small ~
+Chiisana~
+小さな～
+
+ちかてつ
+subway, underground train
+chikatetsu
+地下鉄
+
+ちが でます
+bleed
+Chi ga demasu
+血が 出ます
+
+ちから
+power
+Chikara
+力
+
+ちじん
+acquaintance
+Chijin
+知人
+
+ちず
+map
+chizu
+地図
+
+ちち
+(my) father
+chichi
+父
+
+～ちゃく
+arriving at ～
+～chaku
+～着
+
+～ちゅう
+~ing
+~chuu
+～中
+
+ちゅうおうく
+Chuo Ward
+chuuouku
+中央区
+
+ちゅうおうぐち
+central exit
+Chuuouguchi
+中央口
+
+ちゅうおうせん
+Central Line
+Chuuou-sen
+中央線
+
+ちゅうがくせい
+junior high school student
+chuugakusei
+中学生
+
+ちゅうがっこう
+junior high school, lower secondary (junior high) school
+chuugakkou
+中学校
+
+ちゅうごく
+China
+chuugoku
+中国
+
+ちゅうごくご
+Chinese
+chuugokugo
+中国語
+
+ちゅうごくじん
+Chinese
+chuugokujin
+中国人
+
+ちゅうし
+calling off, cancelling, suspension
+Chuushi
+中止
+
+ちゅうねん
+middle age
+Chuunen
+中年
+
+ちゅうもくします
+pay attention to, notice, focus on
+Chuumoku shimasu
+注目します
+
+ちゅうもんします
+place an order, order
+Chuumon shimasu
+注文します
+
+ちょくせん
+straight line
+Chokusen
+直線
+
+ちょっと
+a little while, a little bit
+chotto
+ちょっと
+
+つき
+moon
+Tsuki
+月
+
+つぎ
+next
+tsugi
+次
+
+つきに
+per month
+Tsuki ni
+月に
+
+つぎに
+next, as a next step
+tsugi ni
+次に
+
+つぎの でんしゃ
+next train
+tsugino densha
+次の電車
+
+つくります
+make, produce
+tsukurimasu
+作ります
+
+つけます
+attach, put on
+Tsukemasu
+付けます
+
+つたえます
+convey (a message)
+Tsutaemasu
+伝えます
+
+つま
+(my) wife
+tsuma
+妻
+
+つめ
+nail
+Tsume
+爪
+
+て
+hand
+Te
+手
+
+て
+hand, arm
+te
+手
+
+てがみ
+letter
+tegami
+手紙
+
+でぐち
+exit
+Deguchi
+出口
+
+でます
+(1) to appear; (2) to attend (2) to exit
+Demasu
+出ます
+
+でます
+come out
+demasu
+出ます
+
+でます
+come out / exit
+Demasu
+出ます
+
+でます
+leave / attend
+demasu
+出ます
+
+てんいん
+shop assistant
+Tenin
+店員
+
+てんき
+weather
+tenki
+天気
+
+でんき
+electricity, light
+denki
+電気
+
+[でんきが～] つきます
+[a light] come on
+[denki ga~] Tsukimasu
+[電気が～] つきます
+
+でんきこうがく
+electrical engineering
+Denki kougaku
+電気工学
+
+でんきや
+electrician, electronics/appliance store
+denkiya
+電気屋
+
+[でんげんを～] いれます
+turn on [the power switch]
+[dengen o~] Iremasu
+[電源を～] 入れます
+
+[でんげんを～] きります
+turn off [the power switch]
+[dengen o~] Kirimasu
+[電源を～] 切ります
+
+てんさい
+genius
+tensai
+天才
+
+でんし～
+electronic ~
+Denshi~
+電子～
+
+でんしオーブンレンジ
+microwave oven
+Denshi oubun renji
+電子オーブンレンジ
+
+でんしこうがく
+electronics
+Denshi kougaku
+電子工学
+
+でんしメール
+electronic mail, e-mail
+Denshi meeru
+電子メール
+
+でんしゃ
+train
+densha
+電車
+
+でんしレンジ
+microwave oven
+Denshirenji
+電子レンジ
+
+てんどん
+a bowl of rice with fried seafood and vegetables
+Tendon
+天どん
+
+てんぷら
+seafood and vegetables deep fried in batter
+tempura
+天ぷら
+
+でんわ
+telephone handset, telephone call
+denwa
+電話
+
+[でんわが～] かかります
+get through [on the telephone], have [a phone call]
+[denwa ga~] Kakarimasu
+[電話が～] かかります
+
+でんわだい
+telephone charge
+Denwadai
+電話代
+
+ど
+Saturday
+Do
+土
+
+～というほん
+the book titled ~
+~ to iu hon
+～という本
+
+ドイツご
+German
+doitsugo
+ドイツ語
+
+ドイツじん
+German
+doitsujin
+ドイツ人
+
+とうきょう
+Tokyo
+Toukyou
+東京
+
+とうだいじ
+Todai-ji Temple
+Toudaiji
+東大寺
+
+どうろ
+Roads / Streets
+douro
+道路
+
+ときどき
+sometimes
+tokidoki
+時々
+
+とくに
+especially
+tokuni
+特に
+
+とこや
+barber's
+Tokoya
+床屋
+
+ところ
+place
+tokoro
+所
+
+としだま
+Small gift of money given by parents and relatives to children on New Year’s Day
+Toshidama
+お年玉
+
+とち
+land
+Tochi
+土地
+
+どなた
+who (polite)
+donata
+何方
+
+どのぐらい
+how long
+donokurai
+どの位
+
+とまれ
+Stop
+Tomare
+止まれ
+
+とり
+bird
+Tori
+鳥
+
+なか
+in, inside
+naka
+中
+
+ながい
+long
+nagai
+長い
+
+ながさ
+length
+Nagasa
+長さ
+
+なかま
+colleague, friend
+Nakama
+仲間
+
+なかよくします
+be on good terms with
+Nakayokushimasu
+仲よくします
+
+なくします
+lose
+nakushimasu
+無くします
+
+なくなります
+pass away (euphemistic expression for しにます (L. 39))
+Nakunarimasu
+亡くなります
+
+なくなります
+pass away, die
+Nakunarimasu
+亡くなります
+
+なに
+what
+nani
+何
+
+なにか
+something
+nanika
+何か
+
+なみ
+wave
+Nami
+波
+
+なん~
+what~, how many~
+nan
+何~
+
+なんかいも
+many times
+nankai mo
+何回も
+
+なんがつ
+what month
+nangatsu
+何月
+
+なんじ
+what time
+nanji
+何時
+
+なんですか
+Yes? (lit: What is it?)
+nan desu ka
+何ですか
+
+なんにち
+which day of the month, how many days
+nannichi
+何日
+
+なんねん
+what year
+nannen
+何年
+
+なんばん
+what number
+nanban
+何番
+
+なんぷん
+what minute
+nanpun
+何分
+
+なんようび
+what day of the week
+nanyoubi
+何曜日
+
+にえます
+be cooked, be boiled
+Niemasu
+煮えます
+
+にく
+meat
+niku
+肉
+
+にくや
+butcher's shop
+Nikuya
+肉屋
+
+にし
+west
+Nishi
+西
+
+にじかい
+second party
+Nijikai
+二次会
+
+にしぐち
+west exit
+Nishiguchi
+西口
+
+にちようだいく
+Sunday carpenter
+Nichiyoudaiku
+日曜大工
+
+にほん
+Japan
+nihon
+日本
+
+にほんご
+Japanese
+nihongo
+日本語
+
+にほんご
+Japanese
+nihongo
+日本語
+
+にほんじん
+Japanese
+nihonjin
+日本人
+
+にわかあめ
+sudden rain
+Niwakaame
+にわか雨
+
+にんき
+popularity (be popular [with students])
+Ninki
+人気
+
+にんぎょう
+doll
+Ningyou
+人形
+
+のう
+Noh
+Nou
+能
+
+～のほう
+place toward ~, direction of ~
+~no hou
+～の方
+
+のみもの
+drinks
+nomimono
+飲み物
+
+は
+leaf
+Ha
+葉
+
+は
+tooth
+ha
+歯
+
+ばいてん
+kiosk
+Baiten
+売店
+
+はがき
+post card
+hagaki
+葉書
+
+はこびます
+carry, transport, to carry from one place to another
+Hakobimasu
+運びます
+
+はしります
+runs, run
+Hashirimasu
+走ります
+
+[バスが～] でます
+[a bus] leave, depart
+[basu ga~] Demasu
+[バスが～] 出ます
+
+～はつ
+departing ～
+～hatsu
+～発
+
+はっけんします
+discover
+Hakkenshimasu
+発見します
+
+はつめいします
+invent
+Hatsumeishimasu
+発明します
+
+はなび
+fireworks
+Hanabi
+花火
+
+はは
+(my) mother
+haha
+母
+
+はる
+spring
+haru
+春
+
+はん
+half
+han
+半
+
+ばんごう
+number
+bangou
+番号
+
+はんとし
+half a year
+Hantoshi
+半年
+
+はんぶん
+half
+Hanbun
+半分
+
+パンや
+bakery
+Pan-ya
+パン屋
+
+ひ
+day, date
+hi
+日
+
+ひ
+fire, heating
+Hi
+火
+
+ひがし
+east
+Higashi
+東
+
+ひがしぐち
+east exit
+Higashiguchi
+東口
+
+ひきだし
+drawer
+Hikidashi
+引き出し
+
+ひだり
+left (side)
+hidari
+左
+
+ひと
+person, people
+hito
+人
+
+ひとのいっしょう
+Life / A person's lifetime
+hito no isshou
+人の一生
+
+ひとのよびかた
+How to address people
+hito no yobikata
+人の呼び方
+
+ひとびと
+people
+Hitobito
+人々
+
+ひとりで
+alone, by oneself
+hitoride
+一人で
+
+ひにかけます
+put on the stove
+Hi ni kakemasu
+火にかけます
+
+ひにち
+date / Fixed Day
+Hinichi
+日にち
+
+ひる
+daytime, noon
+hiru
+昼
+
+ひるごはん
+lunch
+hirugohan
+昼ご飯
+
+ひるま
+daytime
+Hiruma
+昼間
+
+ひるやすみ
+lunchtime
+hiruyasumi
+昼休み
+
+ひろい
+wide, spacious
+hiroi
+広い
+
+ヒンディーご
+Hindi
+hindiigo
+ヒンディー語
+
+フィリピノご
+Filipino
+firipinogo
+フィリピノ語
+
+フィリピンじん
+Filipino
+firipinjin
+フィリピン人
+
+ふうふ
+married couple; husband and wife
+Fuufu
+夫婦
+
+ふたご
+twins
+Futago
+双子
+
+ぶたにく
+pork
+butaniku
+豚肉
+
+ふたり
+couple
+Futari
+二人
+
+ふとい
+thick (of large diameter)
+Futoi
+太い
+
+ふとります
+get fat, Fat / To be overweight
+Futorimasu
+太ります
+
+ふゆ
+winter
+fuyu
+冬
+
+ブラジルじん
+Brazilian
+burajirujin
+ブラジル人
+
+フランスご
+French
+furansugo
+フランス語
+
+フランスじん
+French
+furansujin
+フランス人
+
+ふるしんぶん
+Newspaper / Old newspaper
+Furushinbun
+古新聞
+
+ぶん
+sentence
+bun
+文
+
+ぶんかのひ
+Culture Day
+bunka no hi
+文化の日
+
+ぶんらく
+Bunraku
+Bunraku
+文楽
+
+ペキン
+Beijing
+pekin
+北京
+
+ベトナムご
+Vietnamese
+betonamugo
+ベトナム語
+
+ベトナムじん
+Vietnamese
+betonamujin
+ベトナム人
+
+ベビーようひん
+baby goods
+Bebii youhin
+ベビー用品
+
+[～へ] むかいます
+head for
+[~ e] Mukaimasu
+[～へ] 向かいます
+
+ペルシアご
+Persian
+perushiago
+ペルシア語
+
+～へん
+the place around ~
+~hen
+～辺
+
+ぼいん
+vowel
+boin
+母音
+
+ほう
+direction
+Hou
+方
+
+ほうこ
+treasury
+Houko
+宝庫
+
+ぼく
+I (informal used by men)
+boku
+僕
+
+[ポケットが～] つきます
+[a pocket] be attached
+[poketto ga~] Tsukimasu
+[ポケットが～] 付きます
+
+[ボタンが～] はずれます
+[a button] be undone/ miss
+[botan ga~] Hazuremasu
+[ボタンが～] 外れます
+
+ほどう
+pavement, sidewalk
+Hodou
+歩道
+
+ほね
+bone
+Hone
+骨
+
+ポルトガルご
+Portuguese
+porutogarugo
+ポルトガル語
+
+ほん
+book
+hon
+本
+
+[ほんが～] でます
+[a book] be published
+[hon ga~] Demasu
+[本が～] 出ます
+
+ほんじつきゅうぎょう
+closed today
+Honjitsu kyuugyou
+本日休業
+
+ほんしゃ
+head office
+Honsha
+本社
+
+(ほんの) そば
+Beside, next to (the book)
+(Hon no) soba
+(本の) そば
+
+ほんや
+bookstore
+honya
+本屋
+
+まいあさ
+every morning
+maiasa
+毎朝
+
+まいしゅう
+every week
+Maishuu
+毎週
+
+まいつき
+every month
+Maitsuki
+毎月
+
+まいとし
+every year
+Maitoshi
+毎年
+
+まいにち
+every day
+mainichi
+毎日
+
+まいねん
+every year
+Mainen
+毎年
+
+まえ
+front, before, a time in the past, before
+Mae
+前
+
+まがります
+bent / to be curved
+Magarimasu
+曲がります
+
+まげます
+bend / curve
+Magemasu
+曲げます
+
+まげる
+bend
+Mageru
+曲げる
+
+まず
+first of all
+mazu
+まず
+
+また
+again
+mata
+又
+
+まだ
+not yet
+mada
+まだ
+
+まっすぐ
+straight
+massugu
+真っ直ぐ
+
+まつりとめいしょ
+Festivals and places of note
+matsuri to meisho
+祭りと名所
+
+まもります
+keep, follow, obey, protect, defend
+Mamorimasu
+守ります
+
+まるい
+round
+Marui
+丸い
+
+まるがつきます
+to be marked with a circle, to have a circle attached
+Maru ga tsukimasu
+丸が付きます
+
+[まるを～] つけます
+draw [a circle], mark [with a circle], to draw, to add, to mark
+[maru o~] Tsukemasu
+[丸を～] 付けます
+
+マレーシアご
+Malaysian
+mareeshiago
+マレーシア語
+
+マレーシアじん
+Malaysian
+mareeshiajin
+マレーシア人
+
+まわり
+round, around
+Mawari
+周り
+
+まんなか
+center
+Mannaka
+真ん中
+
+みかんりょう
+imperfective
+mikanryou
+未完了
+
+みぎ
+right (side)
+migi
+右
+
+みず
+water
+mizu
+水
+
+みずたま
+polka-dot
+Mizutama
+水玉
+
+みせ
+store, shop
+mise
+店
+
+みち
+road, way
+michi
+道
+
+[みちを～]   ハしります
+run, drive [along a road]
+[michi o~] Hashirimasu
+[道を～] 走ります
+
+みつかります
+be found
+Mitsukarimasu
+見つかります
+
+みつけます
+find
+Mitsukemasu
+見つけます
+
+みどりのひ
+Greenery Day
+midori no hi
+みどりの日
+
+みなと
+port, harbor
+Minato
+港
+
+みなみ
+south
+Minami
+南
+
+みなみぐち
+south exit
+Minamiguchi
+南口
+
+みみ
+ear
+mimi
+耳
+
+むかし
+old days, ancient times, past
+Mukashi
+昔
+
+むぎ
+barley, wheat
+Mugi
+麦
+
+むこう
+over there, the other side
+Mukou
+向こう
+
+むら
+village
+Mura
+村
+
+め
+eye
+me
+目
+
+メキシコじん
+Mexican
+mekishikojin
+メキシコ人
+
+もういちど［おねがいします］
+Once more [please].
+mou ichido [onegaishimasu]
+もう一度［お願いします］。
+
+もうします
+say (humble equivalent of iimasu)
+Moushimasu
+申します
+
+もうすこし
+a little more
+mou sukoshi
+もう少し
+
+もくじ
+contents
+mokuji
+目次
+
+もたせます
+let hold / give / entrust to
+Motasemasu
+持たせます
+
+もちます
+hold, carry
+mochimasu
+持ちます
+
+もとの ところ
+original place
+Moto no tokoro
+元の所
+
+もともと
+originally / from the start / naturally
+Motomoto
+元々 / 元元
+
+やおや
+greengrocer's, fruit and vegetable store
+Yaoya
+八百屋
+
+やこうバス
+night bus
+Yakou basu
+夜行バス
+
+やすい
+inexpensive; cheap (thing)
+yasui
+安い
+
+やすみ
+holiday, vacation, day off, absence
+yasumi
+休み
+
+やすみます
+rest, have rest, have a day off, be absent
+yasumimasu
+休みます
+
+やま
+mountain
+yama
+山
+
+[やまが～] みえます
+[a mountain] can be seen
+[yama ga~] Miemasu
+[山が～] 見えます
+
+やまのひ
+Mountain Day
+yama no hi
+山の日
+
+ゆうがた
+late afternoon
+Yuugata
+夕方
+
+ゆうしょく
+dinner
+Yuushoku
+夕食
+
+ゆうじん
+friend
+Yuujin
+友人
+
+ゆうだち
+evening shower
+Yuudachi
+夕立
+
+ゆうべ
+last night
+Yuube
+夕べ
+
+ゆうめい
+famous
+yuumei
+有名
+
+ゆうめい（な）
+famous
+yuumei na
+有名（な）
+
+ゆうめいじん
+celebrity
+Yuumeijin
+有名人
+
+ようしょく
+Western dish
+Youshoku
+洋食
+
+よく
+often, nicely
+yoku
+良く
+
+よく
+well, much
+yoku
+良く
+
+よみかた
+how to read, way of reading
+yomikata
+読み方
+
+よみます
+read
+yomimasu
+読みます
+
+よみもの
+text
+yomimono
+読み物
+
+よる
+night
+yoru
+夜
+
+よんぶんのいち
+one fourth
+Yonbun no ichi
+4分の1
+
+らいげつ
+next month
+raigetsu
+来月
+
+らいしゅう
+next week
+raishuu
+来週
+
+ライトきょうだい
+Wright brothers, American pioneers in aviation
+Raito kyoudai
+ライト兄弟
+
+らいねん
+next year
+rainen
+来年
+
+らく[な]
+comfortable, easy
+Raku[na]
+楽[な]
+
+ラッシュ [じ]
+rush hour
+rasshu [ji]
+ラッシュ [時]
+
+りようします
+use
+Riyoushimasu
+利用します
+
+レジャーようひん
+recreational equipment
+Rejaa youhin
+レジャー用品
+
+ロシアご
+Russian
+roshiago
+ロシア語
+
+ロシアじん
+Russian
+roshiajin
+ロシア人
+
+ワゴンしゃ
+station wagon, wagon car/vehicle
+wagon sha
+ワゴン車
+
+わたし
+I
+watashi
+私
+
+わたします
+hand over, pass across
+Watashimasu
+渡します
+
+わたります
+cross
+watarimasu
+渡ります
+
+母のひ
+Mother's Day
+haha no hi
+母の日
+
+`;
+
+allUltimateWords["Learned Kanjis - Hard"] = `
+（けんこう）ほけんしょう
+(health) insurance card
+(kenkou) hokenshou
+（健康）保険証
+
+［おつりが～］でます
+[change] come out
+[otsuri ga ~] demasu
+［お釣りが～］ 出ます
+
+ーーいか
+not more than, ~ under ~ (<=)
+-- ika
+ーー以下
+
+ーーいじょう
+not less than, ~ over (>=)
+-- ijou
+ーー以上
+
+ーーごうしつ
+room number --
+-- goushitsu
+ーー号室
+
+[7じを～] すぎます
+pass [7 o'clock]
+[7-ji o~] Sugimasu
+[7時を～] 過ぎます
+
+あきはばら
+name of a shopping district in Tokyo with many electrical stores
+Akihabara
+秋葉原
+
+あさねぼうします
+to oversleep
+Asanebou shimasu
+朝寝坊します
+
+あし
+foot, leg
+ashi
+足・脚
+
+あなが あきます
+Have a hole / There is a hole
+Ana ga akimasu
+穴が開きます
+
+あんしょうばんごう
+personal identification number, PIN
+anshou bangou
+暗証番号
+
+あんないします
+show around, show(lead) the way
+annai shimasu
+案内します
+
+あんないしょ
+guide book
+Annaisho
+案内書
+
+いいんちょう
+class leader
+Iinchou
+委員長
+
+いけいようし
+い-adjective
+ikeiyoushi
+い形容詞
+
+いご・しょうぎ
+go, shogi
+Igo, Shougi
+囲碁・将棋
+
+いしゃ
+[medical] doctor
+isha
+医者
+
+いじょうです
+That's all.
+Ijou desu
+以上です
+
+いす
+chair
+isu
+椅子
+
+いず
+peninsula in Shizuoka Prefecture
+Izu
+伊豆
+
+[いすが～] こわれます
+[a chair] break
+[isu ga~] Kowaremasu
+[椅子が～] 壊れます
+
+[いすに～] やすみます
+sit on [a chair]
+[isu ni~] Yasumimasu
+[椅子に～] 休みます
+
+いちがつのだいにげつようび
+2nd Monday of January
+ichigatsu no dai-ni getsuyoubi
+1月の第2月曜日
+
+いっしょうけんめい
+with all one's effort
+Isshoukenmei
+一生懸命
+
+いっしょに
+together
+isshoni
+一緒に
+
+いっぽうつうこう
+One Way
+Ippoutsuukou
+一方通行
+
+いでんしこうがく
+genetic engineering
+Idenshi kougaku
+遺伝子工学
+
+～いない
+within ~
+~inai
+～以内
+
+いふく
+Clothes
+ifuku
+衣服
+
+いま
+living room
+Ima
+居間
+
+いみ
+meaning
+imi
+意味
+
+いりょう
+clothes
+Iryou
+衣料
+
+いれます
+make (coffee tea), brew
+iremasu
+淹れます・入れます
+
+[いろが～] かわります
+[the color] change
+[iro ga~] Kawarimasu
+[色が～] 変わります
+
+いんちょう
+[hospital] director
+Inchou
+院長
+
+うせつきんし
+No Right Turn
+Usetsukinshi
+右折禁止
+
+うちゅうじん
+space alien
+Uchuujin
+宇宙人
+
+うちゅうひこうし
+astronaut
+Uchuuhikoushi
+宇宙飛行士
+
+うみのひ
+Marine Day
+umi no hi
+海の日
+
+うめたてます
+reclaim
+Umetatemasu
+埋め立てます
+
+うりば
+department, counter (in a shop)
+uriba
+売り場
+
+うんてんしょしんしゃちゅうい
+Beginner driver
+Unten shoshinsha chuui
+運転初心者注意
+
+うんどうかい
+athletic meeting
+Undoukai
+運動会
+
+うんどうぐつ
+trainers, sneakers
+Undougutsu
+運動靴
+
+うんどうします
+take exercise
+Undoushimasu
+運動します
+
+えいがかん
+movie theater
+Eigakan
+映画館
+
+えいぎょう
+business, sales
+Eigyou
+営業
+
+えいぎょうちゅう
+Open for business
+Eigyouchuu
+営業中
+
+えどじだい
+Edo Period (1603-1868)
+Edo jidai
+江戸時代
+
+えんちょう
+[kindergarten] head teacher, principal
+Enchou
+園長
+
+おあずけいれ
+deposit
+Oazukeire
+お預け入れ
+
+おいしい
+delicious, tasty
+oishii
+美味しい
+
+おうしざ
+Taurus
+Oushiza
+牡牛座
+
+おうだん  ほどう
+pedestrian crossing
+Oudan hodou
+横断歩道
+
+おおさか
+Osaka
+Oosaka
+大阪
+
+おおぜい
+a great number of people
+Oozei
+大勢
+
+おおぜいの ～
+many (people)
+Oozei no ~
+大勢の ～
+
+おかし
+sweets, snacks
+okashi
+お菓子
+
+おきゃくさま
+Mr./Ms. Customer, guest
+Okyakusama
+お客様
+
+おくじょう ゆうえんち
+amusement area
+okujou yuuenchi
+屋上遊園地
+
+おくりもの
+gift, present
+Okurimono
+贈り物
+
+おしいれ
+Japanese-style closet
+oshiire
+押し入れ
+
+おしごと
+work, business, job, occupation
+(o)shigoto
+（お）仕事
+
+おといあわせのばんごう
+the number being inquired about
+otoiawase no bangou
+お問い合わせの番号
+
+おととい
+the day before yesterday
+ototoi
+一瞬間・一昨日
+
+おととし
+the year before last
+Ototoshi
+一瞬間・一昨年
+
+おにあいですよ
+It looks good on you / You two look great together
+oniai desu yo
+お似合いですよ
+
+おふりかえ
+transfer
+Ofurikae
+お振り替え
+
+おふりこみ
+payment
+Ofurikomi
+お振り込み
+
+おみまい
+Present given when visiting a sick or injured person (flowers, fruit, etc.)
+[O]mimai
+お見舞い
+
+おみやげ
+souvenir, present
+[o]miyage
+お土産
+
+おやこどん
+a bowl of rice with chicken and egg
+Oyakodon
+親子どん
+
+おやこどんぶり
+a bowl of cooked rice with chicken and egg
+Oyakodonburi
+親子どんぶり
+
+おんせん
+hot spring, spa
+Onsen
+温泉
+
+かいがい
+overseas
+Kaigai
+海外
+
+かいがいりょこう
+trip to a foreign country
+Kaigairyokoo
+海外旅行
+
+がいこうかん
+diplomat, foreign affairs officer
+Gaikoukan
+外交官
+
+がいこくじんとうろくしょう
+alien registration card
+gaikokujin tourokushou
+外国人登録証
+
+かいさつ
+ticket gate
+Kaisatsu
+改札
+
+かいさつぐち
+ticket barrier
+Kaisatsuguchi
+改札口
+
+かいじょう
+meeting place, hall
+Kaijou
+会場
+
+かいすうけん
+coupon ticket / Multiride Ticket
+Kaisuuken
+回数券
+
+かいひ
+membership fee
+Kaihi
+会費
+
+かいらん
+circular, sending round
+Kairan
+回覧
+
+がか
+painter
+Gaka
+画家
+
+かがくしゃ
+scientist
+Kagakusha
+科学者
+
+[かぎが～] みつかります
+[a key] be found
+[kagi ga~] Mitsukarimasu
+[かぎ发～] 見つかります
+
+かきとめ
+registered mail
+kakitome
+書留
+
+かぐ
+furniture
+Kagu
+家具
+
+がくひ
+tuition / school expenses
+Gakuhi
+学費
+
+かくほ
+securing / reservation / arrest
+Kakuho
+確保
+
+かこ
+past
+kako
+過去
+
+かじ
+fire
+Kaji
+火事
+
+かじ
+household matters
+Kaji
+家事
+
+かしゅ
+singer
+Kashu
+歌手
+
+かぜ
+cold, flu
+kaze
+風邪
+
+[かぜが～] ふきます
+[wind] blow
+[kaze ga~] Fukimasu
+[風が～] 吹きます
+
+かちょう
+section head
+Kachou
+課長
+
+がっき
+school term / semester
+Gakki
+学期
+
+がっき
+school term / semester
+Gakki
+学期
+
+かっぱつ [な]
+active
+Kappatsu [na]
+活発 [な]
+
+かつよう
+inflection, conjugation
+katsuyou
+活用
+
+かてい でんき せいひん
+Household Electrical appliances
+Katei denki seihin
+家庭 電気 製品
+
+かのじょ
+she, her, girlfriend
+kanojo
+彼女
+
+かびん
+vase
+Kabin
+花瓶
+
+[かみが～] やぶれます
+[the paper] tear
+[kami ga~] Yaburemasu
+[紙が～] 破れます
+
+ガラス せいひん
+Glass products
+Garasu seihin
+ガラス 製品
+
+かんきせん
+ventilation fan
+Kankisen
+換気扇
+
+かんこく
+South Korea
+kankoku
+韓国
+
+かんこくご
+Korean
+kankokugo
+韓国語
+
+かんこくじん
+South Korean
+kankokujin
+韓国人
+
+かんごしちょう
+head nurse
+Kangoshichou
+看護師長
+
+かんだまつり
+Kanda Festival
+Kanda Matsuri
+神田祭
+
+かんりにん
+janitor / caretaker
+Kanrinin
+管理人
+
+きおん
+temperature (weather)
+Kion
+気温
+
+ぎおんまつり
+Gion Festival
+Gion Matsuri
+祇園祭
+
+きかい
+chance, opportunity
+Kikai
+機会
+
+[きが～] おれます
+[a tree] break, snap
+[ki ga~] Oremasu
+[木が～] 折れます
+
+きげき
+comedy
+Kigeki
+喜劇
+
+きしゃ
+locomotive
+Kisha
+汽車
+
+きっさてん
+coffee shop, cafe
+kissaten
+喫茶店
+
+きっぷ
+ticket
+kippu
+切符
+
+きっぷうりば
+ticket office, ticket area
+Kippu uriba
+切符売り場
+
+きのう
+yesterday
+kinou
+昨日
+
+きぶんがわるい
+to feel sick, feel ill
+Kibun ga Warui
+気分が悪い
+
+きまつしけん
+final examination
+Kimatsushiken
+期末試験
+
+きもちがわるい
+unpleasant, disgusting
+Kimochi ga warui
+気持ちが悪い
+
+ぎもんし
+interrogative
+gimonshi
+疑問詞
+
+きゅうきゅうしゃ
+ambulance
+Kyuukyuusha
+救急車
+
+きゅうけいします
+take a break, take a rest
+Kyuukeishimasu
+休憩します
+
+きゅうこう
+express train
+Kyuukou
+急行
+
+きゅうこう
+Rapid
+kyuukou
+急行
+
+ぎゅうどん
+bowl of rice topped with beef
+gyuudon
+牛丼
+
+ぎゅうにゅう
+milk
+Gyuunyuu
+牛乳
+
+きゅうよう
+urgent business
+Kyuuyou
+急用
+
+きょうかい
+Christian church
+Kyoukai
+教会
+
+きょうと
+Kyoto
+Kyouto
+京都
+
+きょか
+permission
+Kyoka
+許可
+
+きんえんせき
+No smoking seat
+Kin'enseki
+禁煙席
+
+きんがく
+amount of money
+kingaku
+金額
+
+きんしけい
+prohibitive
+Kinshikei
+禁止形
+
+きんぞくせい だいどころ ようひん
+Metal kitchen utensils
+Kinzokusei daidokoro youhin
+金属製 台所 用品
+
+きんろうかんしゃのひ
+Labour Thanksgiving Day
+kinrou kansha no hi
+勤労感謝の日
+
+くみたてます
+assemble
+Kumitatemasu
+組み立てます
+
+くも (がでます)
+cloud
+Kumo (ga demasu)
+雲 (が出ます)
+
+けいえいがく
+business administration
+Keieigaku
+経営学
+
+けいかくをたてる
+to make a plan
+Keikaku o Tateru
+計画を立てる
+
+けいざいがく
+economics
+Keizaigaku
+経済学
+
+けいたい～
+portable ~
+Keitai~
+携帯～
+
+けいたいでんわ
+cellular phones
+Keitai denwa
+携帯電話
+
+けいようし
+adjective
+keiyoushi
+形容詞
+
+けいようしぶん
+adjective (predicate) sentence
+keiyoushibun
+形容詞文
+
+けいろうのひ
+Respect-for-the-Aged Day
+keirou no hi
+敬老の日
+
+けしき
+scenery, view
+Keshiki
+景色
+
+けしょう
+makeup
+Keshou
+化粧
+
+けしょうしつ
+Toilet / Restroom
+Keshoushitsu
+化粧室
+
+けしょうひん
+cosmetics
+Keshouhin
+化粧品
+
+げりを します
+have diarrhoea
+Geri wo shimasu
+下痢を します
+
+けんきゅうしゃ
+researcher, scholar, research worker
+kenkyuusha
+研究者
+
+げんきん
+cash
+genkin
+現金
+
+けんこう しんだんを うけます
+have health checks
+Kenkou shindan o ukemasu
+健康 診断を 受けます
+
+けんこくきねんのひ
+National Foundation Day
+kenkoku kinen no hi
+建国記念の日
+
+けんじょうご
+humble
+Kenjougo
+謙譲語
+
+けんちくか
+architect
+Kenchikuka
+建築家
+
+げんばくドーム
+Atomic Bomb Dome, dome commemorating the atomic bombing of Hiroshima
+Genbaku doomu
+原爆ドーム
+
+けんぽうきねんび
+Constitution Memorial Day
+kenpou kinenbi
+憲法記念日
+
+げんりょう
+raw material
+Genryou
+原料
+
+こいびと
+sweetheart, boyfriend, girlfriend
+Koibito
+恋人
+
+こうえん
+park
+kouen
+公園
+
+ごうか [な]
+gorgeous
+Gouka [na]
+豪華 [な]
+
+こうぎ
+lecture
+Kougi
+講義
+
+こうきょう りょうきん ふりこみ
+Payment of utility charges
+Koukyou ryoukin furikomi
+公共 料金 振り込み
+
+こうじちゅう
+Under construction
+Koujichuu
+工事中
+
+こうじょう
+factory
+Koujou
+工場
+
+こうそくどうろ
+motorway, expressway
+Kousokudouro
+高速道路
+
+こうとうがっこう
+upper secondary (senior high) school
+Koutougakkou
+高等学校
+
+こうとうがっこうせいと
+high school student
+Koutougakkou seito
+高等学校生徒
+
+こうばん
+police box
+Kouban
+交番
+
+こうべし
+Kobe City
+koubeshi
+神戸市
+
+こくさいかんけい
+international relations
+Kokusaikankei
+国際関係
+
+こくさいかんけいがく
+international relations
+Kokusai kankeigaku
+国際関係学
+
+こっせつ
+bone fracture
+Kossetsu
+骨折
+
+こどもふく
+children's clothes
+kodomofuku
+子ども服
+
+ごりょうしん
+parents (someone else's)
+goryoushin
+ご両親
+
+こんがっき
+this semester
+Kongakki
+今学期
+
+こんばん
+this evening, tonight
+konban
+今晩
+
+さいこうきおん ど
+the highest temperature
+Saikou kion do
+最高気温 ℃ (ど)
+
+さいしょに
+first of all
+Saisho ni
+最初に
+
+さいていきおん ど
+the lowest temperature
+Saitei kion do
+最低気温 ℃ (ど)
+
+さかや
+off-licence, liquor store
+Sakaya
+酒屋
+
+さくいん
+index
+sakuin
+索引
+
+さしだしにん
+Sender's
+Sashidashinin
+差出人
+
+さしみ
+sliced raw fish
+sashimi
+刺身
+
+さどう
+tea ceremony
+sadou
+茶道
+
+さむけが します
+feel a chill
+Samuke ga shimasu
+寒気が します
+
+さらいしゅう
+the week after next
+Saraishuu
+再来週
+
+ざんだかしょうかい
+balance inquiry
+Zandakashoukai
+残高照会
+
+しあい
+game, match
+shiai
+試合
+
+[しあいに～] でます
+participate [in the game]
+[shiai ni~] Demasu
+[試合に～] 出ます
+
+しえきけい
+causative
+Shiekikei
+使役形
+
+しおからい
+salty
+Shiokarai
+塩辛い
+
+[じかんに～] おくれます
+be late [for an appointment, etc.]
+[jikan ni~] Okuremasu
+[時間に～] 遅れます
+
+[じかんを～] みます
+check [time]
+[jikan o~] Mimasu
+[時間を～] 見ます
+
+[しけんに～] ごうかくします
+pass [an examination]
+[shiken ni~] Goukakushimasu
+[試験に～] 合格します
+
+[しけんに～] しっぱいします
+fail [an examination]
+[shiken ni~] Shippaishimasu
+[試験に～] 失敗します
+
+[しけんを～] うけます
+take [an examination]
+[shiken o~] Ukemasu
+[試験を～] 受けます
+
+じこくひょう
+timetable, chart
+jikokuhyou
+時刻表
+
+じこしょうかいをおねがいします。
+Please introduce yourself. / Self-introduction please.
+jiko shoukai o onegaishimasu
+自己紹介をお願いします。
+
+しごとをやめます
+retire, stop working
+Shigoto o yamemasu
+仕事をやめます
+
+じしょ
+dictionary
+jisho
+辞書
+
+じしん
+earthquake
+Jishin
+地震
+
+じっこう
+execution / practice / implementation
+Jikkou
+実行
+
+しつどがたかい / ひくい
+humidity (high / low)
+Shitsudo ga takai / hikui
+湿度が高い / 低い
+
+じつよう
+practical use / utility
+Jitsuyou
+実用
+
+じつりょく
+real ability / actual capacity
+Jitsuryoku
+実力
+
+じどうけんばいき
+ticket machine
+Jidou kenbaiki
+自動券売機
+
+じどうし
+intransitive verb
+Jidoushi
+自動詞
+
+じどうしゃ
+automobile, motor vehicle
+jidousha
+自動車
+
+じどうはんばいき
+vending machine
+jidouhanbaiki
+自動販売機
+
+じはんき
+vending machine
+Jihanki
+自販機
+
+じほう
+time signal
+jihou
+時報
+
+じむしょ
+office
+jimusho
+事務所
+
+じむようひん
+office supplies
+Jimuyouhin
+事務用品
+
+しやくしょ
+town hall, city hall, municipal office
+shiyakusho
+市役所
+
+しゃしん
+photograph
+shashin
+写真
+
+しゅうでん
+last train
+Shuuden
+終電
+
+じゅうどう
+judo
+Juudou
+柔道
+
+しゅうにゅう
+income
+Shuunyuu
+収入
+
+しゅうぶんのひ
+Autumnal Equinox Day
+shuubun no hi
+秋分の日
+
+じゅうやく
+director
+Juuyaku
+重役
+
+じゅぎょう
+class
+Jugyou
+授業
+
+じゅぎょうちゅう  に
+in class; during the class
+Jugyouchuu  ni
+授業中に
+
+しゅくさいじつ
+national holiday
+shukusaijitsu
+祝祭日
+
+しゅだい
+topic
+shudai
+主題
+
+じゅつご
+predicate
+jutsugo
+述語
+
+しゅっさんいわい
+Gift celebrating a birth (baby clothes, toys, etc.)
+Shussaniwai
+出産祝い
+
+しゅっちょうします
+go on a business trip
+shucchoushimasu
+出張します
+
+じゅんかいいん
+associate member / semi-regular member
+Jun-kaiin
+準会員
+
+じゅんびちゅう
+In preparation
+Junbichuu
+準備中
+
+しょうかいします
+introduce
+shoukai shimasu
+紹介します
+
+しょうかき
+fire extinguisher
+Shoukaki
+消火器
+
+じょうぎ (ものさし)
+ruler
+Jougi (Monosashi)
+定規 (物差し)
+
+しようきんし
+Do not use.
+Shiyoukinshi
+使用禁止
+
+じょうけんけい
+conditional
+Joukenkei
+条件形
+
+しょうせつ
+novel
+Shousetsu
+小説
+
+しょうせつか
+novelist
+Shousetsuka
+小説家
+
+しようちゅう
+in use
+Shiyouchuu
+使用中
+
+しょうわのひ
+Showa Day
+shouwa no hi
+昭和の日
+
+しょくぎょう
+Occupations
+shokugyou
+職業
+
+しょくじします
+have a meal, dine
+shokujishimasu
+食事します
+
+しょくどう
+dining hall, canteen
+shokudou
+食堂
+
+しょくひ
+food expenses
+Shokuhi
+食費
+
+しょくぶつえん
+botanical garden
+Shokubutsuen
+植物園
+
+しょくよく
+appetite
+Shokuyoku
+食欲
+
+しょちょう
+officer in charge
+Shochou
+署長
+
+しょっき
+tableware / kitchenware
+shokki
+食器
+
+しょっけん
+meal ticket
+Shokken
+食券
+
+しょるい
+document, papers
+Shorui
+書類
+
+しんごう
+traffic light
+shingou
+信号
+
+しんごうをみぎへまがってください
+Turn to the right at the signal.
+shingou o migi e magatte kudasai
+信号を右へ曲がってください
+
+しんじつ
+truth / reality
+Shinjitsu
+真実
+
+しんしふく
+men's wear
+shinshifuku
+紳士服
+
+じんじゃ
+Shinto shrine
+jinja
+神社
+
+しんせつ（な）
+helpful, kind, considerate (not used about one's own family members)
+shinsetsu na
+親切（な）
+
+しんせつにします
+be kind to
+Shinsetsu ni shimasu
+親切にします
+
+しんにゅうきんし
+No Entry
+Shinnyuukinshi
+進入禁止
+
+すいえい
+swimming
+Suiei
+水泳
+
+ずいぶん
+pretty, very
+Zuibun
+随分
+
+すうがく
+mathematics
+Suugaku
+数学
+
+すし
+rice with vinegar topped with raw fish
+sushi
+寿司
+
+すなお [な]
+obedient, gentle
+Sunao [na]
+素直 [な]
+
+すばやく
+quickly / swiftly / nimbly
+Subayaku
+素早く
+
+スポーツせんしゅ
+athlete
+Supootsu senshu
+スポーツ選手
+
+せいかく
+Personality, character
+Seikaku
+性格
+
+せいかつ
+life; living
+Seikatsu
+生活
+
+せいかつします
+to live / to lead a life
+Seikatsushimasu
+生活します
+
+せいかつひ
+living expenses
+Seikatsuhi
+生活費
+
+せいこうします
+succeed
+Seikoushimasu
+成功します
+
+せいじか
+politician
+Seijika
+政治家
+
+せいしつ
+nature
+seishitsu
+性質
+
+せいじんしき
+coming-of-age celebration
+Seijinshiki
+成人式
+
+せいせき
+performance, score, result, grade (on a test, etc.)
+Seiseki
+成績
+
+せいとかいちょう
+student council president
+Seitokaichou
+生徒会長
+
+せいひん
+products, manufactured goods
+seihin
+製品
+
+せいよく
+sexual desire / libido
+Seiyoku
+性欲
+
+せがたかい
+tall (person)
+se ga takai
+背が高い
+
+せきにんを もちます
+take responsibility / hold responsibility
+Sekinin o mochimasu
+責任を 持ちます
+
+せきゆ
+oil
+Sekiyu
+石油
+
+せつめいします
+explain
+setsumei shimasu
+説明します
+
+せつめいしょ
+explanatory pamphlet, instruction book
+Setsumeisho
+説明書
+
+せなか
+back
+Senaka
+背中
+
+ぜひ
+by all means, please
+zehi
+是非
+
+せんたくき
+washing machine
+Sentakuki
+洗濯機
+
+ぜんぶ
+all
+zenbu
+全部
+
+ぜんぶで
+in total
+zenbude
+全部で
+
+そうおん
+noise
+Souon
+騒音
+
+そうだんします
+consult, discuss
+Soudanshimasu
+相談します
+
+そくど
+speed / velocity
+Sokudo
+速度
+
+そつぎょういわい
+Graduation gift (money, stationery, book, etc.)
+Sotsugyouiwai
+卒業祝い
+
+そんけいご
+respectful
+Sonkeigo
+尊敬語
+
+たいいくがく
+physical education
+Taiikugaku
+体育学
+
+たいいくかん
+gymnasium
+Taiikukan
+体育館
+
+たいいくのひ
+Health and Sports Day
+taiiku no hi
+体育の日
+
+だいがくいん
+postgraduate course, graduate school
+Daigakuin
+大学院
+
+だいがくいんせい
+graduate student
+Daigakuinsee
+大学院生
+
+[だいがくに～] かよいます
+go to and from [university]
+[daigaku ni~] Kayoimasu
+[大学に～] 通います
+
+[だいがくを～] そつぎょうします
+graduate [from a university]
+[daigaku o~] Sotsugyoushimasu
+[大学を～] 卒業します
+
+たいけん
+experience
+Taiken
+体験
+
+たいしかん
+embassy
+taishikan
+大使館
+
+たいせき
+volume / cubic content
+Taiseki
+体積
+
+だいぶつ
+Great Buddha
+Daibutsu
+大仏
+
+たいよう
+sun
+Taiyou
+太陽
+
+たくさん
+many, much, a lot
+takusan
+沢山
+
+たちいりきんし
+Keep out.
+Tachiirikinshi
+立入禁止
+
+たてもの
+building
+tatemono
+建物
+
+たんすいかぶつ
+carbohydrates
+Tansuikabutsu
+炭水化物
+
+たんだい
+junior college
+Tandai
+短大
+
+たんんにんのせんせい
+homeroom teacher
+Tannin no sensei
+担任の先生
+
+ちきゅう
+earth
+Chikyuu
+地球
+
+ちじ
+governor
+Chiji
+知事
+
+ちゃいろ
+brown (noun)
+Chairo
+茶色
+
+ちゃいろい
+brown (adjective)
+Chairoi
+茶色い
+
+ちゅうしゃ
+injection
+Chuusha
+注射
+
+ちゅうしゃいはん
+parking violation
+Chuushaihan
+駐車違反
+
+ちゅうしゃきんし
+No Parking
+Chuushakinshi
+駐車禁止
+
+ちゅうしゃじょう
+parking lot, car park
+chuushajou
+駐車場
+
+ちょうし
+condition, state of health
+choushi
+調子
+
+ちょうしがいい
+be in a good condition
+choushi ga ii
+調子が良い
+
+ちょうしがわるい
+be in a bad condition
+choushi ga warui
+調子が悪い
+
+ちょうちょう
+town mayor
+Chouchou
+町長
+
+ちょうはつ
+long hair
+Chouhatsu
+長髪
+
+ちょきんします
+save money
+Chokinshimasu
+貯金します
+
+ちょくせつ
+directly
+Chokusetsu
+直接
+
+つうがく
+commuting to school / attending school
+Tsuugaku
+通学
+
+つうしんはんばい
+mail order, mail-order sales
+Tsuushinhanbai
+通信販売
+
+つうち
+notice / notification / report
+Tsuuchi
+通知
+
+つうちょうきにゅう
+updating your passbook
+Tsuuchoukinyuu
+通帳記入
+
+つかられます
+be made / be produced
+Tsukaremasu
+作られます / 造られます
+
+つけもの
+pickles
+Tsukemono
+漬物
+
+つごうがいい
+convenient (concerning time)
+Tsugou ga ii
+都合がいい
+
+つごうがわるい
+inconvenient (concerning time), to have a scheduling conflict
+Tsugou ga warui
+都合が悪い
+
+ていきゅうび
+Regular holiday
+Teikyuubi
+定休日
+
+ていしょく
+set meal
+teishoku
+定食
+
+ていねいたい
+polite style of speech
+teineitai
+丁寧体
+
+てきとう [な]
+suitable, proper
+Tekitou [na]
+適当 [な]
+
+てちょう
+personal organiser, pocket notebook, dairy
+techou
+手帳
+
+でんかせいひん
+electrical appliances
+denka seihin
+電化製品
+
+[でんきが～] きえます
+[a light] go off, disappear
+[denki ga~] Kiemasu
+[電気が～] 消えます
+
+てんきん
+job transfer / relocation
+tenkin
+転勤
+
+でんしじしょ
+electronic dictionary
+densha jisho
+電子辞書
+
+てんじんまつり
+Tenjin Festival
+Tenjin Matsuri
+天神祭
+
+てんせきこけをしょうぜず
+A rolling stone gathers no moss.
+Tenseki koke o shouzezu
+転石苔を生ぜず
+
+てんせん
+dotted line
+Tensen
+点線
+
+でんち
+battery
+denchi
+電池
+
+でんとうぶんか・ごらく
+Traditional culture and entertainment
+dentou bunka / goraku
+伝統文化・娯楽
+
+てんのうたんじょうび
+The Emperor's Birthday
+tennou tanjoubi
+天皇誕生日
+
+でんぽうだい
+telegram charge
+Denpoudai
+電報代
+
+[でんぽうを～] うちます
+send [a telegram]
+[denpou o~] Uchimasu
+[電報を～] 打ちます
+
+でんわばんごうあんない
+directory inquiries
+denwa bangou annai
+電話番号案内
+
+どい たかお
+Japanese astronaut (1955- )
+Doi Takao
+土井 隆雄
+
+どうぐ
+tool, instrument, equipment, implements
+Dougu
+道具
+
+どうして
+why
+doushite
+如何して
+
+どうしぶん
+verb (predicate) sentence
+doushibun
+動詞文
+
+とうしょうぐう
+Toshogu Shrine, shrine dedicated to Tokugawa Ieyasu in Nikko, Tochigi Prefecture
+Toushouguu
+東照宮
+
+とうちゃくします
+arrive
+Touchakushimasu
+到着します
+
+どうぶつ
+animal
+doubutsu
+動物
+
+どうぶつえん
+zoo
+Doubutsuen
+動物園
+
+とかい
+city
+Tokai
+都会
+
+とくべつ [な]
+special
+Tokubetsu [na]
+特別 [な]
+
+とちゅうで
+on the way, in the midst of
+Tochuu de
+途中で
+
+とっきゅう
+Express
+tokkyuu
+特急
+
+とっきゅう
+super-express train / limitted express
+Tokkyuu
+特急
+
+とどうふけん
+prefecture (all 47 prefectures)
+Todoufuken
+都道府県
+
+ともだち
+friend
+tomodachi
+友達
+
+とりにく
+chicken
+toriniku
+鶏肉
+
+ないかく そうり だいじん
+prime minister
+Naikaku souri daijin
+内閣総理大臣
+
+なけいようし
+な-adjective
+nakeiyoushi
+な形容詞
+
+なら
+Nara
+Nara
+奈良
+
+なんかい
+what floor
+nankai
+何階
+
+なんか ごきぼうが ありますか。
+Do you have any requests?
+Nanka gokibou ga arimasu ka.
+何かご希望がありますか。
+
+なんさい
+how old
+nansai
+何歳
+
+[にくが～] やけます
+[meat] be roasted, be grilled
+[niku ga~] Yakemasu
+[肉が～] 焼けます
+
+にじがでます
+rainbow
+Niji ga demasu
+虹が出ます
+
+にっき
+diary, journal
+nikki
+日記
+
+にほんのせいかつになれましたか
+Have you got used to the life in Japan?
+nihon no seikatsu ni naremashita ka
+日本の生活に慣れましたか
+
+にほんりょうりこうしゅうかい
+Japanese cooking class
+Nihon ryouri koushuukai
+日本料理講習会
+
+にもつ
+luggage, baggage, parcel
+nimotsu
+荷物
+
+[にもつが] かたづきます
+[boxes] be put in order
+[nimotsu ga~] Katadukimasu (or) Katazukimasu
+[荷物が～] 片づきます
+
+[にもつが～] とどきます
+[parcels] be delivered
+[nimotsu ga~] Todokimasu
+[荷物が～] 届きます
+
+にゅういんします
+enter hospital
+Nyuuinshimasu
+入院します
+
+にゅうがくいわい
+Gift celebrating admission to school (money, stationery, book, etc.)
+Nyuugakuiwai
+入学祝い
+
+にゅうこくかんりきょく
+immigration bureau
+Nyuukokukanrikyoku
+入国管理局
+
+ねっしん [な]
+Earnest, Enthusiastic, Passionate, Zealous
+Nesshin [na]
+熱心 [な]
+
+[ねつを～] だします
+run [a fever] (lit. bring out fever)
+[netsu o~] Dashimasu
+[熱を～] 出します
+
+ねんがじょう
+New Year's greeting card
+nengajou
+年賀状
+
+ねんちゅうぎょうじ
+Annual events
+Nenchuu gyouji
+年中行事
+
+のしぶくろ
+Special decorated envelope for money gifts
+Noshibukuro
+熨斗袋
+
+のりもの
+vehicle, means of transportation
+Norimono
+乗り物
+
+はいしゃ
+dentist, dentist's
+haisha
+歯医者
+
+はが いたい
+have a toothache
+Ha ga itai
+歯が 痛い
+
+はかせ
+doctor
+Hakase
+博士
+
+はきけが します
+feel sick, nauseous
+Hakike ga shimasu
+吐き気が します
+
+はくさい
+Chinese cabbage
+hakusai
+白菜
+
+はくぶつかん
+museum
+Hakubutsukan
+博物館
+
+ばしょ
+place
+Basho
+場所
+
+ばっきん
+fine / penalty fee
+Bakkin
+罰金
+
+はなみずが でます
+have a runny nose
+Hanamizu ga demasu
+鼻水が 出ます
+
+はやい
+fast, early
+hayai
+早い・速い
+
+はやく
+early, quickly, fast
+hayaku
+早く・速く
+
+[ハを～] みがきます
+brush [one's teeth], polish
+[ha o~] Migakimasu
+[歯を～] 磨きます
+
+ばんぐみ
+program, broadcast program
+Bangumi
+番組
+
+ばんごはん
+supper, dinner
+bangohan
+晩ご飯
+
+はんにん
+suspect, criminal
+Hannin
+犯人
+
+ばんりのちょうじょう
+the Great Wall of China
+banri no choujou
+万里の長城
+
+ひかこ
+non-past
+hikako
+非過去
+
+ひこうき
+airplane
+hikouki
+飛行機
+
+びじゅつ
+fine arts
+bijutsu
+美術
+
+びじゅつかん
+art museum, art gallery
+bijutsukan
+美術館
+
+ひじょうぐち
+emergency exit
+Hijouguchi
+非常口
+
+ひじょうの ばあい
+Emergency
+Hijou no baai
+非常の場合
+
+ひじょうようひん
+Emergency medicine / Emergency supplies
+Hijou youhin
+非常用品
+
+ひつよう[な]
+necessary, essential
+Hitsuyou[na]
+必要[な]
+
+ひめじ
+Himeji
+Himeji
+姫路
+
+ひめじじょう
+Himeji Castle
+Himejijou
+姫路城
+
+びよういん
+Beauty parlor
+Biyouin
+美容院
+
+びょうき
+illness, disease
+byouki
+病気
+
+ひょうごけん
+Hyogo Prefecture
+hyougoken
+兵庫県
+
+びようし
+beautician
+Biyoushi
+美容師
+
+びょうめい
+name of a disease / illness name
+Byoumei
+病名
+
+ひろしま
+Hiroshima
+Hiroshima
+広島
+
+ふくいんちょう
+vice class leader
+Fukuinchou
+副委員長
+
+ふくせいとかいちょう
+vice student council president
+Fukuseitokaichou
+副生徒会長
+
+ふくをせんたくします
+wash the clothes
+fuku o sentaku shimasu
+服を洗濯します
+
+ふじんふく
+ladies' wear
+fujinfuku
+婦人服
+
+ぶちょう
+club president
+Buchou
+部長
+
+ぶちょう
+department head
+Buchou
+部長
+
+ふつうたい
+plain style of speech
+futsuutai
+普通体
+
+ぶっか
+commodity prices, (consumer) prices
+bukka
+物価
+
+ぶつりがく
+physics
+Butsurigaku
+物理学
+
+ふみきり
+railway crossing
+Fumikiri
+踏切
+
+プラスチック せいひん
+Plastics / Plastic products
+Purasuchikku seihin
+プラスチック 製品
+
+ぶんけい
+sentence pattern
+bunkei
+文型
+
+ぶんげい
+film based on a classic work
+Bungei
+文芸
+
+ぶんぼうぐ
+stationery
+bunbougu
+文房具
+
+へや
+room
+heya
+部屋
+
+ほいくえん
+nursery school
+Hoikuen
+保育園
+
+ぼうし
+hat, cap
+boushi
+帽子
+
+ぼうすい
+waterproof / waterproofing
+Bousui
+防水
+
+ぼうすいかこう
+waterproof processing / waterproofing
+Bousui kakou
+防水加工
+
+ほうそう
+announcement, broadcast
+Housou
+放送
+
+ぼうねんかい
+year-end party
+Bounenkai
+忘年会
+
+ほうほう
+method
+Houhou
+方法
+
+ほうりつがく
+law
+Houritsugaku
+法律学
+
+ほしうらない
+horoscope
+Hoshiuranai
+星占い
+
+ほしょうしょ
+guarantee
+Hoshousho
+保証書
+
+ほどうきょう
+pedestrian bridge
+Hodoukyou
+歩道橋
+
+ホンコン
+Hong Kong
+honkon
+香港
+
+ほんだな
+bookshelf
+Hondana
+本棚
+
+まいばん
+every night
+maiban
+毎晩
+
+まえから 2れつめ
+The second row from the front
+Mae kara niretsume
+前から 2列目
+
+まるがり
+close-cropped cut
+Marugari
+丸刈り
+
+まんざい・らくご
+manzai, rakugo
+Manzai, Rakugo
+漫才・落語
+
+[みちを～] とおります
+pass [along a street]
+[michi o~] Toorimasu
+[道を～] 通ります
+
+みつあみ
+braids
+Mitsuami
+三つ編み
+
+みんよう
+folk
+Minyou
+民謡
+
+むりょう
+free of charge
+Muryou
+無料
+
+むりをする [むりをします]
+work more than one's capacity
+Muri o suru [muri o shimasu]
+無理をする [無理をします]
+
+めいし
+business card
+meishi
+名刺
+
+めいし
+noun
+meishi
+名詞
+
+めいしぶん
+noun (predicate) sentence
+meishibun
+名詞文
+
+めいれいけい
+imperative
+Meireikei
+命令形
+
+めがさめます
+wake up
+Me ga samemasu
+目が覚めます
+
+めざまし どけい / めざまし
+alarm clock
+Mezamashi dokei / Mezamashi
+目覚まし 時計 / 目覚まし
+
+めざます
+to awaken, to wake up, to open one's eyes
+Mezamasu
+目覚ます
+
+めざめます
+to wake up, to awaken, to come to one's senses
+Mezamemasu
+目覚めます
+
+めをさまします
+to wake up, to awaken, to open one's eyes
+Me wo samashimasu
+目を覚まします
+
+めんせき
+Area
+Menseki
+面積
+
+めんせつ
+interview
+Mensetsu
+面接
+
+もうしこみ
+Application
+Moushikomi
+申し込み
+
+もうしこみます
+apply for, enter for
+Moushikomimasu
+申し込みます
+
+もうしわけありません
+I'm sorry/Excuse me.
+Moushiwake arimasen
+申し訳ありません
+
+もくてきご
+object
+mokutekigo
+目的語
+
+もちだしぶくろ
+emergency grab bag, disaster evacuation bag
+Mochidashibukuro
+持出袋
+
+もちろん
+of course
+mochiron
+勿論
+
+もとかの
+ex-girlfriend
+Motokano
+元彼女 / 元カノ
+
+もとかれ
+ex-boyfriend
+Motokare
+元彼 / 元カレ
+
+もみじ
+maple, red leaves of autumn
+momiji
+紅葉
+
+もよおしもの かいじょう
+event hall
+moyooshimono kaijou
+催し物会場
+
+やきにく
+grilled meat
+Yakiniku
+焼き肉
+
+やくがく
+pharmacology
+Yakugaku
+薬学
+
+やくしょくめい
+Positions in society, Job title, Position name
+yakushokumei
+役職名
+
+やくそく
+appointment, promise
+yakusoku
+約束
+
+やくにたちます
+be useful
+yakunitachimasu
+役に立ちます
+
+やくにたてます
+put to use / make use of
+Yakunitatemasu
+役に立てます
+
+やさしい
+easy, kind, gentle
+yasashii
+易しい・優しい
+
+やじるし
+arrow (sign)
+Yajirushi
+矢印
+
+[やすみを～] とります
+take [a holiday]
+[yasumi o~] Torimasu
+[休みを～] 取ります
+
+やまのぼり
+mountain climbing
+Yamanobori
+山登り
+
+ゆうえんち
+amusement park
+Yuuenchi
+遊園地
+
+ゆうびんきょくいん
+postman
+Yuubinkyokuin
+郵便局員
+
+ゆきまつり
+Snow Festival in Sapporo
+Yuki-matsuri
+雪祭り
+
+ゆしゅつします
+export
+Yushutsushimasu
+輸出します
+
+ゆにゅうします
+import
+Yunyuushimasu
+輸入します
+
+ようじ
+something to do, errand
+youji
+用事
+
+ようす
+situation, condition, appearance
+Yousu
+様子
+
+ようせき
+capacity / volume (holding capacity)
+Youseki
+容積
+
+ようふく
+Western clothes
+Youfuku
+洋服
+
+よしゅうします
+prepare one's lesson
+Yoshuushimasu
+予習します
+
+よてい
+plan, schedule
+Yotei
+予定
+
+よていひょう
+schedule
+Yoteihyou
+予定表
+
+よやく
+reservation
+Yoyaku
+予約
+
+よやくします
+reserve, book
+yoyaku shimasu
+予約します
+
+よやくせき
+Reserved seat
+Yoyakuseki
+予約席
+
+らいがっき
+next semester
+Raigakki
+来学期
+
+りハつてん
+Barber shop
+Rihatsuten
+理髪店
+
+りゆう
+reason
+Riyuu
+理由
+
+りゅうがくします
+study abroad
+ryuugaku shimasu
+留学します
+
+りようし
+barber
+Riyoushi
+理容師
+
+りょうしゅうしょ
+receipt
+Ryoushuusho
+領収書
+
+りょうしん
+parents (my)
+ryoushin
+両親
+
+りょかん
+Japanese-style hotel, inn
+Ryokan
+旅館
+
+りょこうがいしゃ
+travel agency
+Ryokougaisha
+旅行会社
+
+りょこう ようひん
+leisure goods / travel goods
+ryokou youhin
+旅行用品
+
+りょこうをします
+travel, make a trip
+ryokou o shimasu
+旅行をします
+
+りんご
+apple
+ringo
+林檎
+
+るすばん
+looking after a house during the owner's absence
+Rusuban
+留守番
+
+れいがい
+exception
+reigai
+例外
+
+れいぞうこ
+refrigerator
+reizouko
+冷蔵庫
+
+れいぶん
+example sentence
+reibun
+例文
+
+れきし
+history
+Rekishi
+歴史
+
+れんきゅう
+consecutive holidays
+Renkyuu
+連休
+
+ろうか
+corridor, hallway, hall
+Rouka
+廊下
+
+ろうじん
+old age, old person
+Roujin
+老人
+
+ろくおんじ（きんかくじ）きんかく
+Rokuon-ji Temple (Kinkaku-ji Temple)
+Rokuonji (Kinkakuji)
+鹿苑寺（金閣寺）
+
+わかれます
+break up / separate / part ways
+Wakaremasu
+別れます / 分かれます
+
+わけます
+divide / separate / share
+Wakemasu
+別けます / 分けます
+
+わしょく
+Japanese dish
+Washoku
+和食
+
+わすれもの
+things left behind, lost property
+Wasuremono
+忘れ物
+
+わたしたち
+we
+watashitachi
+私達
+
+わるぐちをいいます
+talk behind someone's back, speak ill of
+Waruguchi o iimasu
+悪口を言います
+
+われものちゅうい
+Fragile
+Waremono chuui
+割れ物注意
+
+閉店
+Closed
+Heiten
+閉店
+
+`;
+
 const appUltimateSettings = {
   "flagCounts": {
     "ほうそう::announcement, broadcast": 1,
     "はなれた::remote": 1
   },
-  "currentLesson": "Chuu",
+  "currentLesson": "Kaigi Jou",
   "isHard": false,
   "displayMode": "custom",
   "customDisplayConfig": {
@@ -23223,7 +31199,8 @@ const appUltimateSettings = {
     "Easy 03 Ue": "Main",
     "Duolingo": "Dumps",
     "Easy 03": "Main",
-    "Jidoushi Sentakuki": "Main"
+    "Jidoushi Sentakuki": "Main",
+    "Learned Kanjis": "Main"
   },
   "customCategoryOrders": {
     "Ultimate Main": [
@@ -23425,7 +31402,7 @@ const appUltimateSettings = {
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
     "Others": "Kou",
-    "Ultimate": "Chuu",
+    "Ultimate": "Kaigi Jou",
     "Ultimate Main": "Jidoushi",
     "Ultimate Dumps": "Multi-Category View"
   }

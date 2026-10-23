@@ -6960,6 +6960,401 @@ function fallbackCopyReportToClipboard(text, successMsg) {
   }
 }
 
+// ==========================================================================
+// LESSON BULK VOCABULARY COPY & UPDATE SYSTEM (CL & ICL)
+// ==========================================================================
+
+// Serialize single word object to 4-line block (or 5 lines if tags exist)
+function serializeCLWord(w) {
+  if (!w) return "";
+  const jp = (w.japanese || '').trim();
+  const eng = (w.english || '').trim();
+  const romaji = (w.romaji || '').trim();
+  const kanji = (w.kanji && w.kanji.trim()) ? w.kanji.trim() : jp;
+  const hasTags = Array.isArray(w.tags) && w.tags.length > 0;
+  if (hasTags) {
+    const tagsStr = w.tags.map(t => t.trim()).filter(Boolean).join(', ');
+    return `${jp}\n${eng}\n${romaji}\n${kanji}\n${tagsStr}`;
+  }
+  return `${jp}\n${eng}\n${romaji}\n${kanji}`;
+}
+
+// Serialize entire lesson (both Normal and Hard) into CL format
+function serializeLessonCL(categoryName) {
+  const cat = categoryName || currentSettings.currentLesson;
+  if (!cat || cat === 'Show All Words' || cat === 'Multi-Category View' || cat === 'Same Meaning' || cat === 'Same Romaji' || cat === 'Search Results' || cat === 'Similar Words') {
+    return null;
+  }
+  const db = getActiveDb();
+  const normalWords = Array.isArray(db[cat]) ? db[cat] : [];
+  const hardKey = cat + " - Hard";
+  const hardWords = Array.isArray(db[hardKey]) ? db[hardKey] : [];
+
+  const normalBlocks = normalWords.map(serializeCLWord).filter(Boolean).join('\n\n');
+  const hardBlocks = hardWords.map(serializeCLWord).filter(Boolean).join('\n\n');
+
+  let result = "";
+  if (normalBlocks && hardBlocks) {
+    result = `${normalBlocks}\n\n--- hard ---\n\n${hardBlocks}\n`;
+  } else if (normalBlocks && !hardBlocks) {
+    result = `${normalBlocks}\n\n--- hard ---\n`;
+  } else if (!normalBlocks && hardBlocks) {
+    result = `--- hard ---\n\n${hardBlocks}\n`;
+  } else {
+    result = `--- hard ---\n`;
+  }
+
+  return {
+    text: result,
+    normalCount: normalWords.length,
+    hardCount: hardWords.length,
+    categoryName: cat
+  };
+}
+
+// Copy Current Lesson to Clipboard (CL button)
+function copyCurrentLessonCL() {
+  const currentCat = currentSettings.currentLesson;
+  if (!currentCat || currentCat === 'Show All Words' || currentCat === 'Multi-Category View' || currentCat === 'Same Meaning' || currentCat === 'Same Romaji' || currentCat === 'Search Results' || currentCat === 'Similar Words') {
+    showToast("Please select a specific lesson/category to copy (CL).", "warning");
+    return;
+  }
+
+  const res = serializeLessonCL(currentCat);
+  if (!res) {
+    showToast("No words found in current lesson to copy.", "warning");
+    return;
+  }
+
+  const textToCopy = res.text;
+  const totalCount = res.normalCount + res.hardCount;
+  const cleanName = cleanCategoryNameForUI(currentCat);
+  const successMsg = `Copied ${totalCount} vocab words (${res.normalCount} Normal, ${res.hardCount} Hard) from "${cleanName}" to clipboard!`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        showToast(successMsg, "success");
+      })
+      .catch(() => {
+        fallbackCopyReportToClipboard(textToCopy, successMsg);
+      });
+  } else {
+    fallbackCopyReportToClipboard(textToCopy, successMsg);
+  }
+}
+
+// Parse ICL input text containing optional `--- hard ---` divider
+function parseICLText(text) {
+  if (!text || typeof text !== 'string' || !text.trim()) {
+    return { normalWords: [], hardWords: [], hasDivider: false };
+  }
+  const dividerRegex = /^\s*-{3,}\s*hard\s*-{3,}\s*$/mi;
+  const match = text.match(dividerRegex);
+  if (match) {
+    const idx = match.index;
+    const normalPart = text.substring(0, idx).trim();
+    const hardPart = text.substring(idx + match[0].length).trim();
+    return {
+      normalWords: parseWords(normalPart),
+      hardWords: parseWords(hardPart),
+      hasDivider: true
+    };
+  } else {
+    return {
+      normalWords: parseWords(text.trim()),
+      hardWords: [],
+      hasDivider: false
+    };
+  }
+}
+
+// Check if a word was modified between old and new blocks
+function isWordChanged(oldW, newW) {
+  if (!oldW || !newW) return false;
+  
+  const oldJp = (oldW.japanese || '').trim();
+  const newJp = (newW.japanese || '').trim();
+  if (oldJp !== newJp) return true;
+
+  const oldEng = (oldW.english || '').trim();
+  const newEng = (newW.english || '').trim();
+  if (oldEng !== newEng) return true;
+
+  const oldRom = (oldW.romaji || '').trim();
+  const newRom = (newW.romaji || '').trim();
+  if (oldRom !== newRom) return true;
+
+  const oldKanjiEff = (oldW.kanji && oldW.kanji.trim()) ? oldW.kanji.trim() : oldJp;
+  const newKanjiEff = (newW.kanji && newW.kanji.trim()) ? newW.kanji.trim() : newJp;
+  if (oldKanjiEff !== newKanjiEff) return true;
+
+  const oldTags = (Array.isArray(oldW.tags) ? oldW.tags : []).map(t => t.trim()).filter(Boolean).sort().join(',');
+  const newTags = (Array.isArray(newW.tags) ? newW.tags : []).map(t => t.trim()).filter(Boolean).sort().join(',');
+  if (oldTags !== newTags) return true;
+
+  return false;
+}
+
+// Identify which words were changed when replacing word lists
+function findChangedWords(oldWordsList, newWordsList) {
+  const changes = [];
+  if (!Array.isArray(oldWordsList) || !Array.isArray(newWordsList)) return changes;
+
+  const usedNewIndices = new Set();
+  
+  // 1. Match by exact (japanese + english)
+  for (let i = 0; i < oldWordsList.length; i++) {
+    const oldW = oldWordsList[i];
+    const oldJp = (oldW.japanese || '').trim().toLowerCase();
+    const oldEng = (oldW.english || '').trim().toLowerCase();
+    
+    // Check same index first if it matches
+    if (i < newWordsList.length && !usedNewIndices.has(i)) {
+      const newW = newWordsList[i];
+      const newJp = (newW.japanese || '').trim().toLowerCase();
+      const newEng = (newW.english || '').trim().toLowerCase();
+      if (oldJp === newJp && oldEng === newEng) {
+        usedNewIndices.add(i);
+        if (isWordChanged(oldW, newW)) {
+          changes.push({ oldW, newW });
+        }
+        continue;
+      }
+    }
+    
+    // Look across all newWords for matching (japanese + english)
+    let found = false;
+    for (let j = 0; j < newWordsList.length; j++) {
+      if (usedNewIndices.has(j)) continue;
+      const newW = newWordsList[j];
+      const newJp = (newW.japanese || '').trim().toLowerCase();
+      const newEng = (newW.english || '').trim().toLowerCase();
+      if (oldJp === newJp && oldEng === newEng) {
+        usedNewIndices.add(j);
+        found = true;
+        if (isWordChanged(oldW, newW)) {
+          changes.push({ oldW, newW });
+        }
+        break;
+      }
+    }
+    if (found) continue;
+    
+    // 2. Match by exact japanese (reading unchanged, english might have minor edit)
+    for (let j = 0; j < newWordsList.length; j++) {
+      if (usedNewIndices.has(j)) continue;
+      const newW = newWordsList[j];
+      const newJp = (newW.japanese || '').trim().toLowerCase();
+      if (oldJp === newJp) {
+        usedNewIndices.add(j);
+        found = true;
+        if (isWordChanged(oldW, newW)) {
+          changes.push({ oldW, newW });
+        }
+        break;
+      }
+    }
+    if (found) continue;
+
+    // 3. Match by exact english (reading might have minor typo fix)
+    for (let j = 0; j < newWordsList.length; j++) {
+      if (usedNewIndices.has(j)) continue;
+      const newW = newWordsList[j];
+      const newEng = (newW.english || '').trim().toLowerCase();
+      if (oldEng === newEng) {
+        usedNewIndices.add(j);
+        found = true;
+        if (isWordChanged(oldW, newW)) {
+          changes.push({ oldW, newW });
+        }
+        break;
+      }
+    }
+  }
+  
+  return changes;
+}
+
+// Open ICL Modal
+function openImportLessonICLModal() {
+  const currentCat = currentSettings.currentLesson;
+  if (!currentCat || currentCat === 'Show All Words' || currentCat === 'Multi-Category View' || currentCat === 'Same Meaning' || currentCat === 'Same Romaji' || currentCat === 'Search Results' || currentCat === 'Similar Words') {
+    showToast("Please select a specific lesson/category to update (ICL).", "warning");
+    return;
+  }
+
+  const titleCat = document.getElementById('icl-target-cat-name');
+  if (titleCat) {
+    titleCat.textContent = cleanCategoryNameForUI(currentCat);
+  }
+
+  const inputEl = document.getElementById('input-import-lesson-icl');
+  if (inputEl) {
+    inputEl.value = '';
+  }
+
+  updateICLLivePreview();
+  openModal('modal-import-lesson-icl');
+
+  if (inputEl) {
+    setTimeout(() => {
+      inputEl.focus();
+    }, 100);
+  }
+}
+
+// Load current lesson's words into ICL editor
+function loadCurrentWordsIntoICL() {
+  const currentCat = currentSettings.currentLesson;
+  const res = serializeLessonCL(currentCat);
+  const inputEl = document.getElementById('input-import-lesson-icl');
+  if (res && inputEl) {
+    inputEl.value = res.text;
+    updateICLLivePreview();
+    showToast(`Loaded ${res.normalCount + res.hardCount} words into editor.`, "info");
+  }
+}
+
+// Update live badge and preview inside ICL modal
+function updateICLLivePreview() {
+  const inputEl = document.getElementById('input-import-lesson-icl');
+  const badgeEl = document.getElementById('icl-detected-badge');
+  const summaryEl = document.getElementById('icl-preview-summary');
+  if (!inputEl) return;
+
+  const rawText = inputEl.value || '';
+  if (!rawText.trim()) {
+    if (badgeEl) badgeEl.textContent = '0 Normal, 0 Hard';
+    if (summaryEl) summaryEl.innerHTML = 'Paste updated vocabulary blocks in 4-line format. Words before <code>--- hard ---</code> become Normal; words after become Hard.';
+    return;
+  }
+
+  const { normalWords, hardWords, hasDivider } = parseICLText(rawText);
+  if (badgeEl) {
+    badgeEl.textContent = `${normalWords.length} Normal, ${hardWords.length} Hard${hasDivider ? '' : ' (no divider)'}`;
+  }
+  if (summaryEl) {
+    summaryEl.innerHTML = `Detected <strong>${normalWords.length} Normal</strong> word${normalWords.length === 1 ? '' : 's'} and <strong>${hardWords.length} Hard</strong> word${hardWords.length === 1 ? '' : 's'}. Click <strong>Update Lesson Words</strong> to apply changes.`;
+  }
+}
+
+// Submit ICL: replace words in current lesson and synchronize across Ultimate
+function submitImportLessonICL() {
+  const currentCat = currentSettings.currentLesson;
+  if (!currentCat || currentCat === 'Show All Words' || currentCat === 'Multi-Category View' || currentCat === 'Same Meaning' || currentCat === 'Same Romaji' || currentCat === 'Search Results' || currentCat === 'Similar Words') {
+    showToast("Please select a specific lesson/category to update (ICL).", "warning");
+    return false;
+  }
+
+  const inputEl = document.getElementById('input-import-lesson-icl');
+  if (!inputEl) return false;
+
+  const rawText = inputEl.value || '';
+  if (!rawText.trim()) {
+    showToast("Please paste vocabulary words to update.", "danger");
+    inputEl.focus();
+    return false;
+  }
+
+  const { normalWords, hardWords } = parseICLText(rawText);
+  if (normalWords.length === 0 && hardWords.length === 0) {
+    showToast("No valid vocabulary words detected. Each block needs at least 3 or 4 lines.", "danger");
+    return false;
+  }
+
+  const db = getActiveDb();
+  const oldNormalWords = Array.isArray(db[currentCat]) ? [...db[currentCat]] : [];
+  const hardKey = currentCat + " - Hard";
+  const oldHardWords = Array.isArray(db[hardKey]) ? [...db[hardKey]] : [];
+
+  // Identify changed words between previous and updated blocks
+  const normalChanges = findChangedWords(oldNormalWords, normalWords);
+  const hardChanges = findChangedWords(oldHardWords, hardWords);
+  const allChanges = [...normalChanges, ...hardChanges];
+
+  // Update current lesson in active db
+  db[currentCat] = normalWords;
+  db[hardKey] = hardWords;
+
+  // Propagate to other categories if in Ultimate mode
+  let propagatedCount = 0;
+  const affectedCategories = new Set();
+
+  if (isUltimateMode() && allChanges.length > 0) {
+    for (const catKey in currentUltimateWordsDb) {
+      if (catKey === currentCat || catKey === hardKey) continue;
+      if (catKey === "Search Results" || catKey === "Search Results - Hard") continue;
+
+      const catWords = currentUltimateWordsDb[catKey];
+      if (!Array.isArray(catWords)) continue;
+
+      catWords.forEach(targetW => {
+        for (const { oldW, newW } of allChanges) {
+          const targetJp = (targetW.japanese || '').trim().toLowerCase();
+          const targetEng = (targetW.english || '').trim().toLowerCase();
+          const oldJp = (oldW.japanese || '').trim().toLowerCase();
+          const oldEng = (oldW.english || '').trim().toLowerCase();
+
+          // Match by japanese + english, or japanese + romaji
+          const isMatch = (targetJp === oldJp && targetEng === oldEng) ||
+                          (targetJp === oldJp && (targetW.romaji || '').trim().toLowerCase() === (oldW.romaji || '').trim().toLowerCase());
+
+          if (isMatch) {
+            let wordChanged = false;
+            if (targetW.kanji !== newW.kanji) {
+              targetW.kanji = newW.kanji;
+              wordChanged = true;
+            }
+            if (targetW.japanese !== newW.japanese) {
+              targetW.japanese = newW.japanese;
+              wordChanged = true;
+            }
+            if (targetW.english !== newW.english) {
+              targetW.english = newW.english;
+              wordChanged = true;
+            }
+            if (targetW.romaji !== newW.romaji) {
+              targetW.romaji = newW.romaji;
+              wordChanged = true;
+            }
+            if (Array.isArray(newW.tags) && newW.tags.length > 0) {
+              const existingTags = Array.isArray(targetW.tags) ? targetW.tags : [];
+              const merged = Array.from(new Set([...existingTags, ...newW.tags]));
+              if (merged.join(',') !== existingTags.join(',')) {
+                targetW.tags = merged;
+                wordChanged = true;
+              }
+            }
+            if (wordChanged) {
+              propagatedCount++;
+              affectedCategories.add(catKey);
+            }
+            break;
+          }
+        }
+      });
+    }
+  }
+
+  // Persist and refresh
+  saveWords();
+  clearAllStateCaches();
+  renderCards();
+  if (typeof updateStatsPanel === 'function') {
+    updateStatsPanel();
+  }
+  closeActiveModal();
+
+  const cleanName = cleanCategoryNameForUI(currentCat);
+  let feedback = `Updated "${cleanName}": ${normalWords.length} Normal, ${hardWords.length} Hard words.`;
+  if (propagatedCount > 0) {
+    feedback += ` Propagated ${propagatedCount} update${propagatedCount === 1 ? '' : 's'} across ${affectedCategories.size} other category/list${affectedCategories.size === 1 ? '' : 's'} in Ultimate.`;
+  }
+  showToast(feedback, "success");
+  return true;
+}
+
 // CUSTOM DISPLAY MODE ENGINE & MODAL CONTROLLER
 // --------------------------------------------------------------------------
 
@@ -9347,6 +9742,46 @@ document.addEventListener('DOMContentLoaded', () => {
     checkReportDedup.addEventListener('change', updateKanjiReportLivePreview);
   }
 
+  // Lesson Bulk Vocabulary Copy & Update (CL & ICL) listeners
+  const btnCopyLessonCL = document.getElementById('btn-copy-lesson-cl');
+  if (btnCopyLessonCL) {
+    btnCopyLessonCL.addEventListener('click', copyCurrentLessonCL);
+  }
+  const btnCopyLessonCLMobile = document.getElementById('btn-copy-lesson-cl-mobile');
+  if (btnCopyLessonCLMobile) {
+    btnCopyLessonCLMobile.addEventListener('click', copyCurrentLessonCL);
+  }
+
+  const btnImportLessonICL = document.getElementById('btn-import-lesson-icl');
+  if (btnImportLessonICL) {
+    btnImportLessonICL.addEventListener('click', openImportLessonICLModal);
+  }
+  const btnImportLessonICLMobile = document.getElementById('btn-import-lesson-icl-mobile');
+  if (btnImportLessonICLMobile) {
+    btnImportLessonICLMobile.addEventListener('click', openImportLessonICLModal);
+  }
+
+  const btnIclLoadCurrent = document.getElementById('btn-icl-load-current');
+  if (btnIclLoadCurrent) {
+    btnIclLoadCurrent.addEventListener('click', loadCurrentWordsIntoICL);
+  }
+
+  const btnSubmitImportICL = document.getElementById('btn-submit-import-lesson-icl');
+  if (btnSubmitImportICL) {
+    btnSubmitImportICL.addEventListener('click', submitImportLessonICL);
+  }
+
+  const inputImportICL = document.getElementById('input-import-lesson-icl');
+  if (inputImportICL) {
+    inputImportICL.addEventListener('input', updateICLLivePreview);
+    inputImportICL.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        submitImportLessonICL();
+      }
+    });
+  }
+
   // Modal actions confirmations
   const btnConfirmCopy = document.getElementById('btn-confirm-copy');
   if (btnConfirmCopy) {
@@ -10427,6 +10862,12 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
       case 'c':
       case 'C':
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        if (e.shiftKey) {
+          e.preventDefault();
+          copyCurrentLessonCL();
+          break;
+        }
         if (e.ctrlKey || e.altKey || e.metaKey || e.shiftKey) return;
         e.preventDefault();
         if (currentSettings.isSelectionModeActive) {
@@ -10435,6 +10876,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           const btnClipboard = document.getElementById('btn-clipboard');
           if (btnClipboard) btnClipboard.click();
+        }
+        break;
+      case 'v':
+      case 'V':
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
+        if (e.shiftKey) {
+          e.preventDefault();
+          openImportLessonICLModal();
+          break;
         }
         break;
       case 's':

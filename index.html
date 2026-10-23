@@ -110,6 +110,21 @@
               </svg>
               <span>Kanji Report</span>
             </button>
+            <button id="btn-copy-lesson-cl" class="btn btn-secondary" title="Copy all vocabulary of current lesson (both Normal and Hard) - CL" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; white-space: nowrap;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 3px;">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>CL</span>
+            </button>
+            <button id="btn-import-lesson-icl" class="btn btn-secondary" title="Update vocabulary of current lesson - ICL" style="padding: 0 0.55rem; height: 42px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; white-space: nowrap;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 3px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>ICL</span>
+            </button>
           </div>
         </div>
 
@@ -216,6 +231,21 @@
               <line x1="16" y1="17" x2="8" y2="17"></line>
             </svg>
             <span>Report</span>
+          </button>
+          <button id="btn-copy-lesson-cl-mobile" class="btn btn-secondary" title="Copy Current Lesson (CL)">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 2px;">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>CL</span>
+          </button>
+          <button id="btn-import-lesson-icl-mobile" class="btn btn-secondary" title="Update Current Lesson (ICL)">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 2px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <span>ICL</span>
           </button>
         </div>
         <div class="action-nav-row">
@@ -648,6 +678,14 @@
               <tr>
                 <td><kbd>Shift</kbd> + <kbd>K</kbd></td>
                 <td>Open Kanji Occurrence Report for Excel.</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>C</kbd></td>
+                <td>Copy all vocabulary of current lesson (Normal & Hard) to clipboard (CL).</td>
+              </tr>
+              <tr>
+                <td><kbd>Shift</kbd> + <kbd>V</kbd></td>
+                <td>Open Update Vocabulary (ICL) modal for current lesson.</td>
               </tr>
               <tr>
                 <td><kbd>L</kbd></td>
@@ -1282,6 +1320,53 @@ kenkyuusha</pre>
           <span>Copy Report to Clipboard</span>
         </button>
         <button id="btn-cancel-kanji-report" class="btn btn-secondary btn-large" style="flex: 0 0 auto;" onclick="closeActiveModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Import / Update Current Lesson Vocabulary (ICL) -->
+  <div id="modal-import-lesson-icl" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="icl-title" style="max-width: 650px; width: 95%;">
+    <div class="modal-header">
+      <h2 id="icl-title" style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+        <span>Update Vocabulary (ICL)</span>
+      </h2>
+      <button class="btn-close-modal" aria-label="Close ICL Modal">&times;</button>
+    </div>
+    <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.85rem; padding: 1rem 1.25rem;">
+      <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">
+        Update vocabulary words for <strong id="icl-target-cat-name" style="color: var(--accent);">Current Lesson</strong>.
+        Paste vocabulary blocks below. Format matches <strong>CL</strong> (Normal words, followed by <code style="background: var(--bg-tertiary); padding: 2px 5px; border-radius: 4px;">--- hard ---</code>, followed by Hard words).
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+        <label for="input-import-lesson-icl" style="font-size: 0.82rem; font-weight: 600; color: var(--text-secondary);">Vocabulary Data:</label>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button id="btn-icl-load-current" class="btn btn-secondary" type="button" style="padding: 0.25rem 0.55rem; font-size: 0.75rem;" title="Load current words into editor">
+            Load Current Words
+          </button>
+          <span id="icl-detected-badge" style="font-size: 0.75rem; padding: 0.25rem 0.55rem; border-radius: 4px; background: var(--bg-tertiary); color: var(--accent); font-weight: 600;">0 Normal, 0 Hard</span>
+        </div>
+      </div>
+
+      <textarea id="input-import-lesson-icl" rows="12" placeholder="よる&#10;night&#10;yoru&#10;夜&#10;&#10;--- hard ---&#10;&#10;こんや&#10;tonight, this evening&#10;konya&#10;今夜" style="width: 100%; box-sizing: border-box; font-family: monospace; font-size: 0.88rem; padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-input, var(--bg-secondary)); color: var(--text-primary); resize: vertical;"></textarea>
+
+      <div id="icl-preview-summary" style="font-size: 0.8rem; color: var(--text-secondary); background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.5rem 0.75rem; line-height: 1.4;">
+        Enter or paste words in 4-line format. Press <strong>Update Lesson Words</strong> to apply changes.
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.35rem; display: flex; gap: 0.75rem;">
+        <button id="btn-submit-import-lesson-icl" class="btn btn-primary btn-large" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>Update Lesson Words</span>
+        </button>
+        <button id="btn-cancel-import-lesson-icl" class="btn btn-secondary btn-large" style="flex: 0 0 auto;" onclick="closeActiveModal()">Cancel</button>
       </div>
     </div>
   </div>
