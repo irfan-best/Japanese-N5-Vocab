@@ -165,10 +165,6 @@ nanban
 
 allUltimateWords["Questions - Hard"] = ``;
 
-allUltimateWords["Lesson 27"] = ``;
-
-allUltimateWords["Lesson 27 - Hard"] = ``;
-
 allUltimateWords["Lesson 28"] = `
 むすこ
 (my) son
@@ -218,12 +214,12 @@ Saifu
 よつや
 name of a station in Tokyo
 Yotsuya
-※四ツ谷
+四ツ谷
 
 さんのみや
 name of a place in Kobe
 Sannomiya
-※三宮
+三宮
 
 `;
 
@@ -292,12 +288,12 @@ Ryokousha
 くさつ
 Kusatsu (resort in Gunma Prefecture)
 Kusatsu
-※草津
+草津
 
 しがこうげん
 Shiga Kogen (national park in Nagano Prefecture)
 Shiga kougen
-※志賀高原
+志賀高原
 
 はこね
 resort in Kanagawa Prefecture
@@ -307,12 +303,12 @@ Hakone
 にっこう
 tourist spot in Tochigi Prefecture
 Nikkou
-※日光
+日光
 
 はくば
 resort in Nagano Prefecture
 Hakuba
-※白馬
+白馬
 
 `;
 
@@ -324,10 +320,10 @@ be doing (respectful equivalent of しています)
 Shite irasshaimasu
 していらっしゃいます
 
-※ショパン
+ショパン
 Chopin, Polish musician (1810-49)
 Shopan
-※ショパン
+ショパン
 
 `;
 
@@ -375,11 +371,6 @@ give (to a younger person or subordinate)
 Yarimasu
 やります
 
-いただきます
-receive (humble equivalent of もらいます)
-Itadakimasu
-いただきます
-
 くださいます
 give (respectful equivalent of くれます)
 Kudasaimasu
@@ -398,7 +389,7 @@ Hankachi
 きょうみ [コンピューターに きょうみ があります]
 interest (be interested in computers)
 Kyoumi [konpyuutaa ni kyoumi ga arimasu]
-興味 [コンピューターに きょうみ があります]
+興味 [コンピューターに 興味 があります]
 
 さる
 ape, monkey
@@ -423,7 +414,7 @@ Ohimesama
 かめ
 turtle, tortoise
 Kame
-かめ
+亀
 
 ぶんぽう
 grammar
@@ -514,7 +505,7 @@ in place of ~, instead of ~
 エリーゼのために
 Für Elise
 Eriize no tame ni
-※エリーゼのために
+エリーゼのために
 
 まぜます
 mix
@@ -614,12 +605,12 @@ Deeta
 ベートーベン
 Ludwig van Beethoven, German composer (1770-1827)
 Beetooben
-※ベートーベン
+ベートーベン
 
 ポーランド
 Poland
 Poorando
-※ポーランド
+ポーランド
 
 セット
 set
@@ -652,12 +643,12 @@ Ronbun
 そろばん
 abacus
 Soroban
-そろばん
+算盤
 
 ふろしき
 wrapping cloth used to carry things
 Furoshiki
-ふろしき
+風呂敷
 
 つつみます
 wrap
@@ -687,7 +678,7 @@ Ishi
 こくれん
 United Nations
 Kokuren
-※国連
+国連
 
 `;
 
@@ -695,7 +686,7 @@ allUltimateWords["Lesson 43"] = `
 うまい
 tasty, good at
 Umai
-うまい
+美味い・旨い
 
 つまらない
 boring, uninteresting
@@ -803,7 +794,7 @@ Nenrei
 ばら
 rose
 Bara
-ばら
+薔薇
 
 かいいん
 member
@@ -919,7 +910,7 @@ allUltimateWords["Lesson 44 - Hard"] = `
 たんす
 chest of drawers
 Tansu
-たんす
+箪笥
 
 すべります
 slip
@@ -977,7 +968,7 @@ Nayami
 なります
 become
 narimasu
-成ります
+成ります・なります
 
 たのしみに しています
 be looking forward to, be expecting
@@ -1254,7 +1245,7 @@ Tenki yohou
 におい
 smell
 Nioi
-におい
+匂い・におい
 
 かがく
 science, chemistry
@@ -1274,7 +1265,7 @@ Bungaku
 バリ
 Bali (island) (in Indonesia)
 Bari
-※バリ
+バリ
 
 カリフォルニア
 California (in U.S.A.)
@@ -1284,7 +1275,7 @@ Kariforunia
 グアム
 Guam
 Guamu
-※グアム
+グアム
 
 ホルモン
 hormone
@@ -1340,7 +1331,7 @@ allUltimateWords["Lesson 48"] = `
 かまいません
 It's all right./It doesn't matter.
 Kamaimasen
-かまいません
+構いません・かまいません
 
 ～にとって
 for ~
@@ -1385,7 +1376,7 @@ Sore made ni
 たのしめます
 enjoy oneself
 Tanoshimemasu
-楽しめます I
+楽しめます
 
 スケジュール
 schedule
@@ -1453,26 +1444,11 @@ Gei
 とらえます
 catch
 Toraemasu
-とらえます
+捉えます・とらえます
 
 `;
 
 allUltimateWords["Lesson 49"] = `
-[かいしゃに～] つとめます
-work [for a company]
-[kaisha ni~] Tsutomemasu
-[会社に～] 勤めます
-
-すごします
-spend [time], pass [time]
-Sugoshimasu
-過ごします
-
-[ぎんこうに～] よります
-drop into [a bank]
-[ginkou ni~] Yorimasu
-[銀行に～] 寄ります
-
 いらっしゃいます
 be, go, come (respectful equivalent of います, いきます and きます)
 Irasshaimasu
@@ -1498,15 +1474,45 @@ see, look at (respectful equivalent of みます)
 Goran ni narimasu
 ご覧になります
 
-じゅしょうします
-be awarded a prize
-Jushou shimasu
-受賞します
-
 ごぞんじです
 know (respectful equivalent of しっています)
 Gozonji desu
 ご存じです
+
+でいらっしゃいます
+be (respectful equivalent of です)
+De irasshaimasu
+でいらっしゃいます
+
+おもちです
+have (respectful way of saying もっています)
+Omochi desu
+お持ちです
+
+しつれいいたします。
+Good-bye. (humble equivalent of しつれいします)
+Shitsurei itashimasu。
+失礼いたします。
+
+[かいしゃに～] つとめます
+work [for a company]
+[kaisha ni~] Tsutomemasu
+[会社に～] 勤めます
+
+すごします
+spend [time], pass [time]
+Sugoshimasu
+過ごします
+
+[ぎんこうに～] よります
+drop into [a bank]
+[ginkou ni~] Yorimasu
+[銀行に～] 寄ります
+
+じゅしょうします
+be awarded a prize
+Jushou shimasu
+受賞します
 
 あいさつ
 greeting, address (~ o shimasu: greet, give an address)
@@ -1563,15 +1569,10 @@ Give my best regards./Please say hello.
 Yoroshiku otsutae kudasai。
 よろしくお伝えください。
 
-しつれいいたします。
-Good-bye. (humble equivalent of しつれいします)
-Shitsurei itashimasu。
-失礼いたします。
-
 ひまわりしょうがっこう
 fictitious elementary school
 Himawari shougakkou
-※ひまわり小学校
+ひまわり小学校
 
 おおくの～
 many ~, much ~
@@ -1593,11 +1594,6 @@ novelist, writer
 Sakka
 作家
 
-でいらっしゃいます I
-be (respectful equivalent of です)
-De irasshaimasu
-でいらっしゃいます
-
 ちょうなん
 one's eldest son
 Chounan
@@ -1607,11 +1603,6 @@ Chounan
 handicap, defect
 Shougai
 障害
-
-おもちです
-have (respectful way of saying もっています)
-Omochi desu
-お持ちです
 
 さっきょく
 composition (music)
@@ -1631,12 +1622,12 @@ Soredeha
 おおえ けんざぶろう
 Japanese novelist (1935–2023)
 Ooe Kenzaburou
-※大江 健三郎
+大江 健三郎
 
 ノーベルぶんがくしょう
 Nobel Prize for literature
 Nooberu bungakushou
-※ノーベル文学賞
+ノーベル文学賞
 
 `;
 
@@ -1654,9 +1645,9 @@ Orimasu
 おります
 
 いただきます
-eat, drink, receive (humble equivalent of たべます、のみます and もらいます)
+receive (humble equivalent of もらいます)
 Itadakimasu
-いただきます
+頂きます
 
 いたします
 do (humble equivalent of します)
@@ -1682,6 +1673,21 @@ Ukagaimasu
 meet (humble equivalent of あいます)
 Ome ni kakarimasu
 お目にかかります
+
+わたくし
+I (humble equivalent of わたし)
+Watakushi
+私
+
+ございます
+be (polite equivalent of あります)
+Gozaimasu
+ございます
+
+～でございます
+be (polite equivalent of です)
+~ de gozaimasu
+～でございます
 
 きんちょうします
 become tense, be strained
@@ -1723,21 +1729,6 @@ make good use of
 Ikashimasu
 生かします
 
-ございます
-be (polite equivalent of あります)
-Gozaimasu
-ございます
-
-～でございます
-be (polite equivalent of です)
-~ de gozaimasu
-～でございます
-
-わたくし
-I (humble equivalent of わたし)
-Watakushi
-私
-
 ガイド
 guide
 Gaido
@@ -1774,9 +1765,9 @@ Saigo ni
 最後に
 
 ただいま
-now
-Tadaima
-ただ今
+I'm home.
+tadaima
+只今・ただいま
 
 しょうきん
 prize money
@@ -1786,12 +1777,12 @@ Shoukin
 きりん
 giraffe
 Kirin
-きりん
+麒麟・きりん
 
 ころ
-times, days
+time of...; when...
 Koro
-ころ
+頃
 
 ひとことよろしいでしょうか。
 May I say one word?
@@ -1826,7 +1817,7 @@ Keigu
 ミュンヘン
 Munich (in Germany)
 Myunhen
-※ミュンヘン
+ミュンヘン
 
 `;
 
@@ -2012,11 +2003,6 @@ rice bowl
 plate, dish
 [O]sara
 [お]皿
-
-さら
-plate; dish
-Sara
-皿
 
 `;
 
@@ -2242,9 +2228,9 @@ shiin
 子音
 
 はく
-mora
-haku
-拍
+to put on (items below your waist)
+Haku
+穿く
 
 ていねいたい
 polite style of speech
@@ -2281,7 +2267,7 @@ question
 shitsumon
 質問
 
-だい  -か
+だい -か
 Lesson - (Ex: Lesson 1)
 dai...ka
 第...課
@@ -2444,6 +2430,971 @@ Suraido
 Service size
 Saabisu saizu
 サービスサイズ
+
+はがき、きっての はんばい
+Sale of postcards and stamps
+Hagaki, kitte no hanbai
+はがき、切手の 販売
+
+コンサート チケットの はんばい
+Sale of concert tickets
+Konsaato chiketto no hanbai
+コンサート チケットの 販売
+
+ちかくの みせ
+Shops found locally
+Chikaku no mise
+近くの 店
+
+しゃしんや
+Camera shop
+Shashinya
+写真屋
+
+ネガ
+Negative
+Nega
+ネガ
+
+パノラマサイズ
+Panoramic size
+Panorama saizu
+パノラマサイズ
+
+しゃしん げんぞう
+Photo developing
+Shashin genzou
+写真 現像
+
+コピー、ファクス
+Photocopy, fax
+Kopii, fakusu
+コピー、ファクス
+
+プリント
+Printing
+Purinto
+プリント
+
+スライド
+Slide
+Suraido
+スライド
+
+サービスサイズ
+Service size
+Saabisu saizu
+サービスサイズ
+
+たくハいびんの うけつけ
+Delivery service reception
+Takuhaibin no uketsuke
+宅配便の 受付
+
+やきまし
+Extra print
+Yakimashi
+焼き増し
+
+しみぬき
+Stain removal
+Shiminuki
+染み抜き
+
+ひきのばし
+Enlargement
+Hikinobashi
+引き伸ばし
+
+サイズ なおし
+Alterations / Size adjustment
+Saizu naoshi
+サイズ 直し
+
+みずあらい
+Laundering / Washing in water
+Mizuarai
+水洗い
+
+げんぞう
+Developing (film)
+Genzou
+現像
+
+2エルディーキー
+2LDK
+Ni ERU-Dii-Kii
+2LDK
+
+いま・しょくどう・だいどころ (エルディーキー)
+Living/dining room with kitchen (LDK)
+Ima, shokudou, daidokoro (LDK)
+居間・食堂・台所 (LDK)
+
+やちん
+house rent, Rental fee / Rent
+Yachin
+家賃
+
+6,000えん
+6,000 yen
+Roku-sen en
+6,000円
+
+やすい ふどうさん
+Yasui Real Estate
+Yasui Fudousan
+やすい 不動産
+
+にしおぎくぼえき
+Nishi-Ogikubo Station
+Nishi-Ogikubo-eki
+西荻窪駅
+
+しききん
+Deposit money
+Shikikin
+敷金
+
+れいきん
+Gift money (key money paid to owner)
+Reikin
+礼金
+
+かんりひ
+Maintenance fee
+Kanrihi
+管理費
+
+みなみむき
+Facing south
+Minamimuki
+南向き
+
+もよりえき
+Nearest station
+Moyori eki
+最寄り駅
+
+とほ
+Walk / Walking distance (on foot)
+Toho
+徒歩
+
+とほ 5ふん
+5-minute walk
+Toho go-fun
+徒歩 5分
+
+ふどうさんや
+Real estate agent/ Real estate agency
+Fudousan-ya
+不動産屋
+
+いっこだて
+Detached house, single house
+Ikkodate
+一戸建て
+
+...かいだての...かい
+...th floor of ...-story building
+...kaidate no...kai
+...階建ての...階
+
+10かいだての 8かい
+8th floor of a 10-story building
+Jukkai-date no hachi-kai
+10階建ての 8階
+
+ろせん
+Train line
+Rosen
+路線
+
+ちく...ねん
+... years old (years since construction)
+Chiku...nen
+築...年
+
+ちく 3ねん
+3 years old (built 3 years ago)
+Chiku san-nen
+築 3年
+
+2かげつぶん
+2 months' worth
+Ni-kagetsu-bun
+2か月分
+
+じょうたい
+State
+Joutai
+状態
+
+やせます
+get slim, lose weight
+Yasemasu
+痩せます
+
+ふくらみます
+Bulging / To be swollen
+Fukuramimasu
+膨らみます
+
+ゆがみます
+Distorted / To be warped
+Yugamimasu
+歪みます
+
+へこみます
+Dented / To be sunken
+Hekomimasu
+凹みます
+
+ねじれます
+Twisted / To be twisted
+Nejiremasu
+ねじれます
+
+かけます
+Chipped / To be chipped
+Kakemasu
+欠けます
+
+ひびが はいります
+Cracked / Has a crack
+Hibi ga hairimasu
+ひびが入ります
+
+くさります
+Rotten / To be spoiled
+Kusarimasu
+腐ります
+
+こおります
+Frozen / To be frozen
+Koorimasu
+凍ります
+
+かわきます
+Dry / To be dry
+Kawakimasu
+乾きます
+
+ぬれます
+get wet, Wet / To be wet
+Nuremasu
+濡れます
+
+てまえ
+This side / Front
+Temae
+手前
+
+いち
+Location / Position
+Ichi
+位置
+
+ななめまえ
+Diagonally ahead / Diagonally in front
+Naname mae
+斜め前
+
+うえから 2だんめ
+The second from the top
+Ue kara nidanme
+上から 2段目
+
+(つくえの) まわり
+Around (the desk)
+(Tsukue no) mawari
+(机の) 周り
+
+(テレビの) よこ
+Beside (the TV) / Next to (the TV)
+(Terebi no) yoko
+(テレビの) 横
+
+まんなか / (きょうしつの) まんなか
+Center / Center (of the classroom)
+Mannaka / (Kyoushitsu no) mannaka
+真ん中 / (教室の) 真ん中
+
+4ページ
+Page 4
+Yon pēji
+4ページ
+
+すみ
+Corner (interior)
+Sumi
+隅
+
+ななめうしろ
+Diagonally behind
+Naname ushiro
+斜め後ろ
+
+しゃかいがく
+sociology
+Shakaigaku
+社会学
+
+せいじがく
+politics
+Seijigaku
+政治学
+
+じんるいがく
+anthropology
+Jinruigaku
+人類学
+
+てんもんがく
+astronomy
+Tenmongaku
+天文学
+
+げんごがく
+linguistics
+Gengogaku
+言語学
+
+しゅうきょうがく
+theology
+Shuukyougaku
+宗教学
+
+かんきょうかがく
+environmental science
+Kankyou kagaku
+環境科学
+
+しんりがく
+psychology
+Shinrigaku
+心理学
+
+てつがく
+philosophy
+Tetsugaku
+哲学
+
+きょういくがく
+education
+Kyouikugaku
+教育学
+
+のうがく
+agriculture
+Nougaku
+農学
+
+ちがく
+geology
+Chigaku
+地学
+
+ちりがく
+geography
+Chirigaku
+地理学
+
+どぼくこうがく
+civil engineering
+Doboku kougaku
+土木工学
+
+きかいこうがく
+mechanical engineering
+Kikai kougaku
+機械工学
+
+けんちくがく
+architecture
+Kenchikugaku
+建築学
+
+コンピューターこうがく
+computer science
+Konpyuutaa kougaku
+コンピューター工学
+
+ゆきがふります
+snow
+Yuki ga furimasu
+雪が降ります
+
+とうほくちほう
+Tohoku area
+Touhoku chihou
+東北地方
+
+かんとうちほう
+Kanto area
+Kantou chihou
+関東地方
+
+ちゅうぶちほう
+Chubu area
+Chuubu chihou
+中部地方
+
+きんきちほう
+Kinki area
+Kinki chihou
+近畿地方
+
+ちゅうごくちほう
+Chugoku area
+Chuugoku chihou
+中国地方
+
+しこくちほう
+Shikoku area
+Shikoku chihou
+四国地方
+
+きゅうしゅうちほう
+Kyushu area
+Kyuushuu chihou
+九州地方
+
+くもりときどき (いちじ) あめになります
+cloudy, occasionally rain
+Kumori tokidoki (ichiji) ame ni narimasu
+曇り時々 (一時) 雨になります
+
+くもりところによってあめ
+cloudy, partly rain
+Kumori tokoro ni yotte ame
+曇り所によって雨
+
+はれのちくもりになります
+fine, cloudy later
+Hare nochi kumori ni narimasu
+晴れのち曇りになります
+
+こうすいかくりつ パーセント
+probability of rain
+Kousui kakuritsu paasento
+降水確率 % (パーセント)
+
+さわやか [な]
+refreshing
+Sawayaka [na]
+さわやか [な]
+
+ほっかいどうちほう
+Hokkaido area
+Hokkaidou chihou
+北海道地方
+
+かみなりがなります
+thunder
+Kaminari ga narimasu
+雷が鳴ります
+
+ひょうしき
+Signs (traffic signs)
+Hyoushiki
+標識
+
+かきげんきん
+Flammable / Keep away from fire
+Kaki genkin
+火気厳禁
+
+てあらい 30ど
+Wash by hand (30°C)
+Tearai sanjuu-do
+手洗い 30℃
+
+アイロン (ていおん)
+Iron at a low temperature
+Airon teion
+アイロン (低温)
+
+ゆでる
+boil
+Yuderu
+茹でる
+
+にる
+boil, cook
+Niru
+煮る
+
+やく
+boil, bake, roast, grill
+Yaku
+焼く
+
+あげます / あげる
+deep fry
+Agemasu / Ageru
+揚げます / 揚げる
+
+ソース
+Worcestershire sauce
+Sousu
+ソース
+
+マヨネーズ
+mayonnaise
+Mayonēzu
+マヨネーズ
+
+ケチャップ
+ketchup
+Kechappu
+ケチャップ
+
+フライパン
+frying pan
+Furaipan
+フライパン
+
+みそ
+miso
+Miso
+味噌
+
+ざる
+colander
+Zaru
+ざる
+
+ポット
+thermos bottle
+Potto
+ポット
+
+ながし [だい]
+sink
+Nagashi [dai]
+流し [台]
+
+かんきせん
+ventilation fan
+Kankisen
+換気扇
+
+からし (マスタード)
+mustard
+Karashi (Masutaado)
+からし (マスタード)
+
+とうがらし
+red pepper
+Tougarashi
+唐辛子
+
+こしょう
+pepper
+Koshou
+胡椒
+
+しょうが
+ginger
+Shouga
+生姜
+
+わさび
+Japanese horseradish
+Wasabi
+山葵
+
+まないた
+cutting board
+Manaita
+まな板
+
+ふきん
+kitchen towel
+Fukin
+布巾
+
+すいはんき
+rice cooker
+Suihanki
+炊飯器
+
+ガスだい (ガスコンロ)
+gas stove
+Gasudai (Gasukonro)
+ガス台 (ガスコンロ)
+
+カレーこ
+curry powder
+Karē-ko
+カレー粉
+
+す
+vinegar
+Su
+酢
+
+すめばみやこ
+Wherever you live, once you get used to living there, it becomes home.
+Sumeba miyako
+住めば都
+
+さんにんよればもんじゅのちえ
+Two heads are better than one.
+Sannin yoreba Monju no chie
+三人寄れば文殊の知恵
+
+たてばしゃくやく、すわればぼたん、あるくすがたはゆりのはな
+She is very beautiful. (A standing figure is like a tree peony, a sitting figure is like a tree peony, and a walking figure is like a lily.)
+Tateba shakuyaku, suwareba botan, aruku sugata wa yuri no hana
+立てば芍薬、座れば牡丹、歩く姿は百合の花
+
+ちりもつもればやまとなる
+Many a little makes a mickle. (Even though it is small like dust, it becomes big like a mountain when piled up.)
+Chiri mo tsumoreba yama to naru
+ちりも積もれば山となる
+
+はなよりだんご
+Cake before flowers. (Substance rather than appearance.)
+Hana yori dango
+花より団子
+
+うわさをすればかげ
+Speak of the devil and he is sure to appear.
+Uwasa o sureba kage
+噂をすれば影
+
+いいださん
+Good Person (Good Habits)
+Iida-san
+いいださん
+
+きそく  ただしい   せいかつ  を  する
+lead a well-regulated life
+Kisoku tadashii seikatsu o suru
+規則正しい 生活をする
+
+よく あるく
+walk a lot
+Yoku aruku
+よく 歩く
+
+すき きらいが ない
+have no particular likes and dislikes
+Suki kirai ga nai
+好き嫌いが ない
+
+だめださん
+Bad Person (Unhealthy Habits)
+Dameda-san
+だめださん
+
+すききらいが ある
+have many likes and dislikes
+Sukikirai ga aru
+好き嫌いが ある
+
+ビタミン
+vitamins
+Bitamin
+ビタミン
+
+カルシウム
+calcium
+Karushiumu
+カルシウム
+
+よく おさけを のむ
+drink a lot
+Yoku osake o nomu
+よく お酒を 飲む
+
+とうふ
+tofu
+Toufu
+豆腐
+
+よふかしを する
+sit up late
+Yofukashi o suru
+夜更かしを する
+
+のり
+glue
+Nori
+糊
+
+かいそう
+seaweed
+Kaisou
+海草
+
+いも
+potato
+Imo
+芋
+
+いつつの たいせつな えいようそと それを ふくむ たべもの
+Five Important Nutrients and Foods Containing Them
+Itsutsu no taisetsu na eiyouso to sore o fukumu tabemono
+5つの 大切な 栄養素と それを 含む 食べ物
+
+はやね はやおきをする
+keep early hours
+Hayane hayaoki o suru
+早寝 早起きをする
+
+えいようの バランスを かんがえて たべる
+have a balanced diet
+Eiyou no baransu o kangaete taberu
+栄養の バランスを 考えて 食べる
+
+うちます
+shoot
+Uchimasu
+撃ちます
+
+ぬすみます
+steal
+Nusumimasu
+盗みます
+
+ころします
+kill
+Koroshimasu
+殺します
+
+ハイジャックします
+hijack
+Haijakku shimasu
+ハイジャックします
+
+ばくはつします
+explode
+Bakuhatsu shimasu
+爆発します
+
+ちんぼつします
+sink
+Chinbotsu shimasu
+沈没します
+
+ゆうかいします
+kidnap
+Yuukai shimasu
+誘拐します
+
+おつきみ (9がつ15にちごろ)
+Moon Viewing (around Sept. 15th)
+Otsukimi (Ku-gatsu juugo-nichi goro)
+お月見 (9月15日ごろ)
+
+ひなまつり (3がつ3にち)
+The Doll's Festival (Mar. 3rd)
+Hinamatsuri (San-gatsu mik-ka)
+ひな祭り (3月3日)
+
+おぼん (8がつ13にち〜15にち)
+The Bon Festival (Aug. 13th–15th)
+Obon (Hachi-gatsu juusan-nichi ~ juugo-nichi)
+お盆 (8月13日〜15日)
+
+たなばた (7がつ7にち)
+The Star Festival (July 7th)
+Tanabata (Shichi-gatsu nano-ka)
+七夕 (7月7日)
+
+おおみそか (12がつ31にち)
+New Year's Eve (Dec. 31st)
+oumisoka (Juuni-gatsu sanjuuichi-nichi)
+大みそか (12月31日)
+
+わくわくする
+be excited
+Wakuwaku suru
+わくわくする
+
+どきどきする
+be scared / heart pounding
+Dokidoki suru
+どきどきする
+
+おもしろい
+amusing, interesting
+Omoshiroi
+面白い
+
+がっかりする
+be disappointed
+Gakkari suru
+がっかりする
+
+なつかしい
+dear, longed for
+Natsukashii
+懐かしい
+
+うっとりする
+be enchanted
+Uttori suru
+うっとりする
+
+いらいらする
+be irritated
+Iraira suru
+いらいらする
+
+はらはらする
+feel uneasy
+Harahara suru
+はらはらする
+
+さんかく [けい]
+triangle
+Sankaku [kei]
+三角 [形]
+
+しかく [けい]
+square
+Shikaku [kei]
+四角 [形]
+
+えん [まる]
+circle
+En [Maru]
+円 [丸]
+
+リットル
+liter
+Rittoru
+リットル
+
+へいほうメートル
+square meter
+Heihou mētoru
+平方メートル
+
+へいほうキロメートル
+square kilometer
+Heihou kiromētoru
+平方キロメートル
+
+りっぽうメートル
+cubic meter
+Rippou mētoru
+立方メートル
+
+ミリリットル
+milliliter
+Miririttoru
+ミリリットル
+
+シーシー
+cc
+Shii-shii
+シーシー
+
+ミリ [メートル]
+millimeter
+Miri [mētoru]
+ミリ [メートル]
+
+センチ [メートル]
+centimeter
+Senchi [mētoru]
+センチ [メートル]
+
+メートル
+meter
+Mētoru
+メートル
+
+キロ [メートル]
+kilometer
+Kiro [mētoru]
+キロ [メートル]
+
+ミリグラム
+milligram
+Miriguramu
+ミリグラム
+
+トン
+ton
+Ton
+トン
+
+チェック
+check
+Chekku
+チェック
+
+キロ [グラム]
+kilogram
+Kiro [guramu]
+キロ [グラム]
+
+たんい・せん・かたち・もよう
+Measurement, shapes & patterns
+Tan'i, sen, katachi, moyou
+単位・線・形・模様
+
+へいほうセンチメートル
+square centimeter
+Heihou senchimētoru
+平方センチメートル
+
+りっぽうセンチメートル
+cubic centimeter
+Rippou senchimētoru
+立方センチメートル
+
+たす
+plus
+Tasu
+足す
+
+ひく
+minus
+Hiku
+引く
+
+かける
+to sit down
+Kakeru
+掛ける
+
+わる
+divide
+Waru
+割る
+
+は (イコール)
+equal
+Wa (Ikouru)
+は (イコール)
+
+もよう
+Patterns
+Moyou
+模様
+
+たてじま
+vertical stripes
+Tatejima
+縦じま
+
+はながら
+floral print
+Hanagara
+花柄
+
+むじ
+plain
+Muji
+無地
 
 `;
 
@@ -2615,9 +3566,9 @@ Joutai
 状態
 
 やせます
-Thin / To be skinny
+get slim, lose weight
 Yasemasu
-やせます
+痩せます
 
 ふくらみます
 Bulging / To be swollen
@@ -3144,9 +4095,9 @@ Yofukashi o suru
 夜更かしを する
 
 のり
-laver / Dried seaweed sheets
+glue
 Nori
-のり
+糊
 
 かいそう
 seaweed
@@ -3408,9 +4359,9 @@ Hiku
 ひく
 
 かける
-multiply
+to sit down
 Kakeru
-かける
+掛ける
 
 わる
 divide
@@ -3463,11 +4414,11 @@ Benri-ya / Nan demo shimasu!!
 ぜんが できます
 zen meditation
 Zen ga dekimasu
-膳ができます
+禅ができます
 
 とまりませんか
 Come and stay with us.
-Tomarimansen ka
+Tomarimasen ka
 泊まりませんか
 
 あかちゃん、こどもの せわ
@@ -3523,10 +4474,10 @@ companion service
 Hanashiaite
 話し相手
 
-たくハいびんから、ペンギんびん！
+たくはいびんから、ペンギンびん！
 If it's a home delivery, Call Penguin!
 Takuhaibin kara, Pengin-bin!
-宅配便から、ペンギん便！
+宅配便から、ペンギン便！
 
 `;
 
@@ -3549,12 +4500,12 @@ Gamutēpu
 とじます
 staple
 Tojimasu
-とじます
+綴じます
 
 とめます
-pin / tack
+stop / park (something)
 Tomemasu
-留めます
+止めます・留めます
 
 はさむ
 pinch, hold between
@@ -3627,12 +4578,12 @@ Kanazuchi
 のこぎり
 saw
 Nokogiri
-のこぎり
+鋸
 
 のり
 glue
 Nori
-のり
+糊
 
 がびょう (おしピン)
 thumbtack
@@ -4038,7 +4989,7 @@ Zukku
 ピロード
 velvet
 Piroudo
-ピロード
+ビロード
 
 チョッキ
 vest, waistcoat
@@ -4073,7 +5024,7 @@ Kasutera
 カルタ
 card
 Karuta
-カルタ
+かるた
 
 マカロニ
 macaroni
@@ -4131,7 +5082,7 @@ Hoemasu
 ワンワン (ほえる)
 bowwow
 Wanwan (hoeru)
-ワンワン (ほえる)
+ワンワン (吠える)
 
 げらげら (わらう)
 guffaw
@@ -4507,7 +5458,7 @@ allUltimateWords["Genki 02 - Hard"] = `
 とんかつ
 pork cutlet
 Tonkatsu
-とんかつ
+豚カツ
 
 `;
 
@@ -4600,7 +5551,7 @@ Amari + negative
 ぜんぜん + negative
 not at all
 Zenzen + negative
-全然
+全然 + negative
 
 ちょっと
 a little while, a little bit
@@ -4656,7 +5607,7 @@ Au
 ある
 there is ...
 Aru
-ある
+有る / ある
 
 まつ
 to wait
@@ -4666,12 +5617,12 @@ Matsu
 わかる
 to understand
 Wakaru
-わかる
+分かる
 
 いる
 (a person) is in ...; stays at ...
 Iru
-いる
+居る / いる
 
 ごめんなさい
 I'm sorry.
@@ -4727,7 +5678,7 @@ Furui
 ひま（な）
 free time, not busy, to have a lot of free time
 Hima (na)
-暇
+暇（な）
 
 およぐ
 to swim
@@ -4752,12 +5703,12 @@ Noru
 やさしい
 easy (problem); kind (person)
 Yasashii
-やさしい
+優しい / 易しい
 
 だいきらい（な）
 to hate
 Daikirai (na)
-大嫌い
+大嫌い（な）
 
 `;
 
@@ -4868,7 +5819,7 @@ Kariru
 つける
 to turn on
 Tsukeru
-つける
+付ける
 
 でんわをかける
 to make a phone call
@@ -4944,7 +5895,7 @@ Mijikai
 かぶる
 to put on (a hat)
 Kaburu
-かぶる
+被る
 
 しる
 to get to know
@@ -4961,7 +5912,7 @@ I do not know
 Shirimasen
 知りません
 
-すむ
+すみ
 to live
 Sumu
 住む
@@ -4969,12 +5920,12 @@ Sumu
 はく
 to put on (items below your waist)
 Haku
-はく
+穿く
 
 めがねをかける
 to put on glasses
 Megane O Kakeru
-めがねをかける
+眼鏡をかける
 
 けっこんする
 to get married
@@ -4997,12 +5948,12 @@ Futotteimasu
 やせる
 to lose weight
 Yaseru
-やせる
+痩せる
 
 やせています
 to be thin
 Yaseteimasu
-やせています
+痩せています
 
 くに
 nation, country; place of origin
@@ -5035,12 +5986,12 @@ Baabekyuu
 じょうず
 skillful; good at...
 Joozu
-上手
+上手（な）
 
 へた
 clumsy; poor at...
 Heta
-下手
+下手（な）
 
 あめがふる
 it rains
@@ -5075,7 +6026,7 @@ Tsukuru
 もっていく
 to take (something)
 Motteiku
-持っていく
+持って行く
 
 はじめる
 to begin
@@ -5156,7 +6107,7 @@ Byooki
 もらう
 to get (from somebody)
 Morau
-もらう
+貰う
 
 おぼえる
 to memorize
@@ -5194,7 +6145,7 @@ Kondo
 いじわる
 mean-spirited
 Ijiwaru
-意地悪
+意地悪（な）
 
 `;
 
@@ -5237,12 +6188,12 @@ Tsumetai
 かんたん
 easy; simple
 Kantan
-簡単
+簡単（な）
 
 かかる
 to take (amount of time / money)
 Kakaru
-かかる
+掛かる / かかる
 
 とまる
 to stay (at a hotel, etc.)
@@ -5252,7 +6203,7 @@ Tomaru
 なる
 to become
 Naru
-なる
+成る / なる
 
 はらう
 to pay
@@ -5333,7 +6284,7 @@ Tsukareru
 やめる
 to quit
 Yameru
-やめる
+辞める / 止める
 
 しょうかいする
 to introduce
@@ -5356,7 +6307,7 @@ Mizuumi
 うそをつく
 to tell a lie
 Uso O Tsuku
-うそをつく
+嘘をつく
 
 おそくなる
 to be late (for ...)
@@ -5371,7 +6322,7 @@ Saboru
 けんかする
 to have a fight; to quarrel
 Kenkasuru
-けんかする
+喧嘩する
 
 かう
 to own (a pet)
@@ -5386,7 +6337,7 @@ Toru
 すごく
 very
 Sugoku
-すごく
+凄く
 
 まあまあ
 okay; so-so
@@ -5441,10 +6392,10 @@ hurt; painful
 Itai
 痛い
 
-すてき
+すてき [な]
 fantastic
-Suteki
-素敵
+Suteki [na]
+素敵 [な]
 
 なくす
 to lose
@@ -5537,15 +6488,15 @@ close; near
 Chikai
 近い
 
-いろいろ
+いろいろ [な]
 various; different kinds of
-Iroiro
-いろいろ
+Iroiro [na]
+いろいろ [な]
 
-だめ
+だめ [な]
 no good
-Dame
-だめ
+Dame [na]
+だめ [な]
 
 かす
 to lend; to rent
@@ -5605,10 +6556,10 @@ to be moved/touched (by ...)
 Kandoosuru
 感動する
 
-しあわせ
+しあわせ [な]
 happy (lasting happiness)
-Shiawase
-幸せ
+Shiawase [na]
+幸せ [な]
 
 `;
 
@@ -5633,11 +6584,6 @@ club; student society
 Kurabu
 クラブ
 
-さら
-plate; dish
-Sara
-皿
-
 バレンタインデー
 St. Valentine's Day
 Barentaindee
@@ -5653,10 +6599,10 @@ resume
 Rirekisho
 履歴書
 
-けち
+けち [な]
 stingy; cheap
-Kechi
-けち
+Kechi [na]
+けち [な]
 
 にあう
 to look good (on somebody)
@@ -5666,7 +6612,7 @@ Niau
 あきらめる
 to give up
 Akirameru
-あきらめる
+諦める
 
 あげる
 to give (to others)
@@ -5771,7 +6717,7 @@ Orosu
 かく
 to draw; to paint
 Kaku
-かく
+描く
 
 さがす
 to look for
@@ -5861,7 +6807,7 @@ Michi
 おごる
 to treat (someone) to a meal
 Ogoru
-おごる
+奢る
 
 おちこむ
 to get depressed
@@ -5881,7 +6827,7 @@ Dasu
 つれていく
 to take (someone) to (a place)
 Tsureteiku
-連れていく
+連れて行く
 
 なおす
 to correct; to fix
@@ -5981,12 +6927,12 @@ Chigai
 ひげ
 beard
 Hige
-ひげ
+髭
 
 うらやましい
 envious
 Urayamashii
-うらやましい
+羨ましい
 
 えらぶ
 to choose; to select
@@ -5996,7 +6942,7 @@ Erabu
 かみをとかす
 to comb one's hair
 Kami o Tokasu
-髪をとかす
+髪を溶かす・髪を梳かす
 
 おゆをわかす
 to boil water
@@ -6006,22 +6952,22 @@ Oyu o Wakasu
 こむ
 to get crowded
 Komu
-込む
+混む
 
 ひげをそる
 to shave one's beard
 Hige o Soru
-ひげをそる
+髭を剃る
 
 いれる
 to make tea, coffee, etc.
 Ireru
-いれる
+淹れる
 
 かぎをかける
 to lock
 Kagi o Kakeru
-かぎをかける
+鍵をかける
 
 たりる
 to be sufficient; to be enough
@@ -6051,7 +6997,7 @@ Omedetoo Gozaimasu
 ずいぶん
 very
 Zuibun
-ずいぶん
+随分
 
 そうか
 I see. (casual)
@@ -6086,7 +7032,7 @@ Sukaato
 しょうゆ
 soy sauce
 Shooyu
-しょう油
+醤油
 
 ポップコーン
 popcorn
@@ -6111,7 +7057,7 @@ Rusubandenwa
 ろうそく
 candle
 Roosoku
-ろうそく
+蝋燭
 
 はずかしい
 embarrassing; to feel embarrassed, ashamed
@@ -6273,10 +7219,10 @@ be on good/close terms; to get along well
 Naka ga Ii
 仲がいい
 
-まじめ
+まじめ [な]
 serious; sober; diligent
-Majime
-まじめ
+Majime [na]
+まじめ [な]
 
 いらっしゃる
 honorific expression for いく, くる, and いる
@@ -6351,7 +7297,7 @@ Yoru
 かける
 to sit down
 Kakeru
-かける
+掛ける
 
 はれる
 to become sunny
@@ -6361,7 +7307,7 @@ Hareru
 もてる
 to be popular (in terms of romantic interest)
 Moteru
-もてる
+持てる
 
 えんりょする
 to hold back for the time being; to refrain from
@@ -6536,7 +7482,7 @@ Oya
 〜かい
 ...th floor
 ...kai
-一階
+〜階
 
 しつれいしました
 I'm very sorry
@@ -6596,7 +7542,7 @@ Seifu
 ちかん
 sexual offender; lascivious man
 Chikan
-ちかん
+痴漢
 
 どろぼう
 burglar
@@ -6623,10 +7569,10 @@ absence; not at home
 Rusu
 留守
 
-めちゃくちゃ
+めちゃくちゃ [な]
 messy; disorganized
-Mechakucha
-めちゃくちゃ
+Mechakucha [na]
+めちゃくちゃ [な]
 
 おく
 to put; to lay; to place
@@ -6681,7 +7627,7 @@ Fumu
 ふる
 to turn down (somebody); to reject; to jilt
 Furu
-ふる
+振る
 
 やる
 to give (to pets, plants, younger siblings, etc.)
@@ -6701,17 +7647,17 @@ Kigaeru
 ためる
 to save money
 Tameru
-ためる
+貯める
 
 つづける
 to continue
 Tsuzukeru
-つづける
+続ける
 
 ほめる
 to praise; to say nice things
 Homeru
-ほめる
+褒める
 
 まちがえる
 to make a mistake
@@ -6726,7 +7672,7 @@ Junbisuru
 ばかにする
 to insult; to make a fool of ...
 Baka ni Suru
-ばかにする
+馬鹿にする
 
 びっくりする
 to be surprised
@@ -6746,7 +7692,7 @@ while...
 ころ
 time of...; when...
 Koro
-ころ
+頃
 
 とにかく
 anyhow; anyway
@@ -6816,27 +7762,27 @@ Menkyo
 うるさい
 noisy; annoying
 Urusai
-うるさい
+煩い
 
-しんぱい
+しんぱい [な]
 worried about
-Shinpai
-心配
+Shinpai [na]
+心配 [な]
 
-びんぼう
+びんぼう [な]
 poor
-Binboo
-貧乏
+Binboo [na]
+貧乏 [な]
 
-ペラペラ
+ペラペラ [な]
 fluent
-Perapera
-ペラペラ
+Perapera [na]
+ペラペラ [な]
 
-へん
+へん [な]
 strange; unusual
-Hen
-変
+Hen [na]
+変 [な]
 
 かつ
 to win
@@ -6863,10 +7809,10 @@ to leave (someone/something) alone; to neglect
 Hootteoku
 放っておく
 
-まにあう
+まニアう
 to be in time for
 Maniau
-まにあう
+間に合う
 
 むかえにいく
 to go to pick up (someone)
@@ -6966,7 +7912,7 @@ Taiya
 ただ
 free of charge
 Tada
-ただ
+無料・ただ
 
 べっそう
 villa; vacation home
@@ -6986,7 +7932,7 @@ Risoo
 まずい
 not tasty, (food is) terrible
 Mazui
-まずい
+不味い
 
 あめがやむ
 the rain stops
@@ -6996,7 +7942,7 @@ Ame ga Yamu
 いなくなる
 (someone) is gone; to disappear
 Inaku Naru
-いなくなる
+居なくなる
 
 おせわになる
 to be in someone's care
@@ -7006,7 +7952,7 @@ Osewa ni Naru
 おなかをこわす
 to have a stomachache
 Onaka o Kowasu
-おなかをこわす
+お腹を壊す
 
 ちがう
 to be different; wrong
@@ -7016,7 +7962,7 @@ Chigau
 なくなる
 to be lost; to disappear
 Nakunaru
-なくなる
+無くなる
 
 うける
 to take (an examination, interview, etc.)
@@ -7086,7 +8032,7 @@ Sorosoro
 ものすごく
 extremely
 Monosugoku
-ものすごく
+物凄く
 
 `;
 
@@ -7146,7 +8092,7 @@ itte kimasu
 ただいま
 I'm home.
 tadaima
-只今
+只今・ただいま
 
 おかえりなさい
 Welcome home.
@@ -7176,7 +8122,7 @@ sou desu ne
 いいですよ
 Sure. Certainly.
 ii desu yo
-良いですよ
+いいですよ・良いですよ
 
 〜すてきですね
 What a nice ~!
@@ -7186,7 +8132,7 @@ What a nice ~!
 すごいですね
 That's amazing.
 sugoi desu ne
-凄いですね
+すごいですね・凄いですね
 
 そうしましょう
 Let's do that
@@ -7201,7 +8147,7 @@ sore wa omoshiroi desu ne
 いいですね
 that's good
 ii desu ne
-良いですね
+いいですね・良いですね
 
 おげんきですか
 How are you?
@@ -7226,7 +8172,7 @@ dou suru no
 よかったら…
 if you like..., if it's okay
 yokattara...
-良かったら…
+よかったら…・解ったら…
 
 くにへかえるの
 Are you going back to your country?
@@ -7296,7 +8242,7 @@ zannen desu ne
 だめですか
 So you cannot (come)?
 dame desu ka
-ダメですか
+ダメですか・駄目ですか
 
 またこんどおねがいします
 Please ask me again some other time. (used when refusing an invitation indirectly, considering someone's feelings)
@@ -7306,11 +8252,12 @@ mata kondo onegaishimasu
 〜はちょっと…
 ~ is a bit difficult. (used to decline an invitation)
 〜はちょっと…
+〜はちょっと…
 
 いいてんきですね
 Nice weather isn't it?
 ii tenki desu ne
-良い天気ですね
+いい天気ですね・良い天気ですね
 
 おでかけですか
 Are you going out?
@@ -7370,7 +8317,7 @@ okagesama de
 しかたがありません
 There is no other choice. / It can't be helped.
 shikata ga arimasen
-仕方があリません
+仕方があリません・仕方がない
 
 しばらくですね
 It's been a long time. / Long time no see.
@@ -7428,8 +8375,8 @@ dou itashimashite
 どういたしまして
 
 いただきます
-Thank you./I accept. (said before starting to eat or drink)
-itadakimasu
+receive (humble equivalent of もらいます)
+Itadakimasu
 頂きます
 
 〜はいかがですか
@@ -7685,7 +8632,7 @@ wain
 タバコ
 tobacco, cigarette
 tabako
-タバコ
+タバコ・煙草
 
 〜えん
 -yen
@@ -7785,7 +8732,7 @@ karaoke
 カタカナ
 katakana script
 katakana
-カタカナ
+片仮名・カタカナ
 
 ローマじ
 Roman alphabet
@@ -7974,7 +8921,7 @@ kurisumasu
 
 エアメール・こうくうびん
 airmail
-eameeru
+eameeru  koukuubin
 エアメール・航空便
 
 パソコン
@@ -9101,7 +10048,7 @@ Okashii
 ふしぎ [な]
 fantastic, mysterious
 Fushigi [na]
-不思議 [な]
+不思議 [na]・不思議 [な]
 
 伝言
 message
@@ -9698,7 +10645,7 @@ go
 ikimasu
 行きます
 
-生きます
+いきます
 live
 ikimasu
 生きます
@@ -9798,12 +10745,12 @@ give
 agemasu
 上げます・与えます
 
-上げます
+あげます
 raise
 agemasu
 上げます
 
-上がります
+あがります
 go up; rise
 agarimasu
 上がります
@@ -9876,7 +10823,7 @@ stay, be (in Japan)
 おもいます
 think
 omoimasu
-思いますが・思います
+思います
 
 おもいだします
 remember, recollect
@@ -9914,9 +10861,9 @@ change (or) transfer (trains)
 （電車に）乗り換えます
 
 とめます
-stop, park
-tomemasu
-止めます
+stop / park (something)
+Tomemasu
+止めます・留めます
 
 とまります
 stay
@@ -9924,14 +10871,14 @@ tomarimasu
 泊まります
 
 とります
-take, pass
-torimasu
+rob, steal
+Torimasu
 取ります
 
 とります
-take (a photo)
-torimasu
-撮ります
+rob, steal
+Torimasu
+取ります
 
 たります
 be enough, be sufficient
@@ -9958,12 +10905,12 @@ write, draw, paint
 kakimasu
 書きます・描きます
 
-下げます
+さげます
 lower; get down
 sagemasu
 下げます
 
-下がります
+さがります
 go down
 sagarimasu
 下がります
@@ -9999,9 +10946,9 @@ take (a bath)
 （お風呂に）入ります
 
 なくします
-lose
-nakushimasu
-無くします
+lose (something)
+Nakushimasu
+無くします・なくします
 
 まけます
 lose, be defeated
@@ -10083,7 +11030,7 @@ see, look at, watch
 mimasu
 見ます
 
-学びます
+まなびます
 learn; study
 manabimasu
 学びます
@@ -10203,22 +11150,22 @@ walk
 arukimasu
 歩きます
 
-入学します
+にゅうがくします
 enter a school
 nyuugakushimasu
 入学します
 
-出発します
+しゅっぱつします
 leave; depart
 shuppatsushimasu
 出発します
 
-見えます
+みえます
 be visible
 miemasu
 見えます
 
-聞こえます
+きこえます
 be audible
 kikoemasu
 聞こえます
@@ -10288,7 +11235,7 @@ study abroad
 ryuugaku shimasu
 留学します
 
-てんきん  します
+てんきんします
 be transferred to another office
 tenkin shimasu
 転勤します
@@ -10298,7 +11245,7 @@ prepare
 junbi shimau
 準備します
 
-安心します
+あんしんします
 feel relieved
 anshin-shimasu
 安心します
@@ -10348,7 +11295,7 @@ play golf
 gorufu o shimasu
 ゴルフをします
 
-ダイエット  を します
+ダイエットをします
 go on a diet
 daietto o shimasu
 ダイエットをします
@@ -10378,14 +11325,14 @@ pray
 oinori o shimasu
 お祈りをします
 
-おはなみ をします
+おはなみをします
 view the cherry blossoms
 ohanami o shimasu
 お花見をします
 
 すもう
 sumo wrestling (～を します：wrestle)
-すもう
+sumou
 相撲
 
 がんばります
@@ -10431,7 +11378,7 @@ Sakadachishimasu
 はいます
 crawl
 Haimasu
-賠います / 這います
+這います
 
 ふります
 wave
@@ -10679,9 +11626,9 @@ allUltimateWords["Group I - Hard"] = ``;
 
 allUltimateWords["Group II"] = `
 とじます
-close
+staple
 Tojimasu
-閉じます
+綴じます
 
 にます
 cook, boil
@@ -10841,12 +11788,12 @@ allUltimateWords["Transitive and Intransitive Pairs"] = `
 なくします
 lose (something)
 Nakushimasu
-無くします
+無くします・なくします
 
 なくなります
 be lost / disappear
 Nakunarimasu
-無くなります
+無くなります・なくなります
 
 かえます
 change (something)
@@ -10866,7 +11813,7 @@ Naoshimasu
 なおります
 get repaired / recover
 Naorimasu
-直ります
+治ります・直ります
 
 おとします
 drop / lose
@@ -10909,8 +11856,8 @@ Yogoremasu
 汚れます
 
 あけます
-open (something)
-Akemasu
+open
+akemasu
 開けます
 
 きります
@@ -10926,7 +11873,7 @@ Kiremasu
 とめます
 stop / park (something)
 Tomemasu
-止めます
+止めます・留めます
 
 とまります
 stop / come to a stop
@@ -11013,7 +11960,7 @@ fall / drop / go down
 Sagarimasu
 下がります
 
-おりま゙す
+おります
 break / fold
 Orimasu
 折ります
@@ -11719,7 +12666,7 @@ Juubun[na]
 十分[な]
 
 ずいぶん
-pretty, very
+very
 Zuibun
 随分
 
@@ -11821,12 +12768,12 @@ kesa
 おととし
 the year before last
 Ototoshi
-一瞬間・一昨年
+一昨年
 
 おととい
 the day before yesterday
 ototoi
-一瞬間・一昨日
+一昨日
 
 きのう
 yesterday
@@ -11991,7 +12938,7 @@ Koutougakkou seito
 こうこう
 senior high school
 koukou
-こうこう
+高校
 
 こうこうせい
 high school student
@@ -12041,7 +12988,7 @@ allUltimateWords["Nemasu"] = `
 とけい
 watch, clock
 tokei
-とけい
+時計
 
 めざまし どけい / めざまし
 alarm clock
@@ -12121,7 +13068,7 @@ Nemuri-neko
 ねむい
 sleepy
 nemui
-ねむい
+眠い
 
 おやすみになります
 sleep, rest (honorific equivalent of ねます)
@@ -12296,7 +13243,7 @@ tsukimasu
 なります
 become
 narimasu
-成ります
+成ります・なります
 
 [だいがくを～] そつぎょうします
 graduate [from a university]
@@ -12481,7 +13428,7 @@ Ki ga tsukimasu
 あけます
 open
 akemasu
-空きます
+開けます
 
 しめます
 close / shut (something)
@@ -12734,9 +13681,9 @@ Dashimasu
 出します
 
 なくします
-lose
-nakushimasu
-無くします
+lose (something)
+Nakushimasu
+無くします・なくします
 
 おきます
 put
@@ -12836,14 +13783,14 @@ set up [a class], open, hold
 あけます
 open
 akemasu
-空きます
+開けます
 
 [ドアが～] あきます
 [a door] open
 [doa ga~] Akimasu
 [ドアが～] 開きます
 
-あけます
+あきます
 open, be vacant; be unoccupied
 akimasu
 空きます
@@ -12864,9 +13811,9 @@ Shimemasu
 [ドアが～] 閉まります
 
 とじます
-close
+staple
 Tojimasu
-閉じます
+綴じます
 
 さがします
 look for, search
@@ -13073,7 +14020,7 @@ director
 Juuyaku
 重役
 
-よやくせき
+よ予約せき
 Reserved seat
 Yoyakuseki
 予約席
@@ -13251,7 +14198,7 @@ yasumi
 おやすみなさい
 Good night.
 oyasuminasai
-お休みなさい。
+お休みなさい
 
 おやすみになります
 sleep, rest (honorific equivalent of ねます)
@@ -13896,7 +14843,7 @@ Mitsukarimasu
 [かぎが～] みつかります
 [a key] be found
 [kagi ga~] Mitsukarimasu
-[かぎ发～] 見つかります
+[かぎが～] 見つかります
 
 〜ねんせい
 ...year student
@@ -14525,9 +15472,9 @@ Dashimasu
 出します
 
 なくします
-lose
-nakushimasu
-無くします
+lose (something)
+Nakushimasu
+無くします・なくします
 
 めざめます
 to wake up, to awaken, to come to one's senses
@@ -14617,7 +15564,7 @@ Ki ga tsukimasu
 あけます
 open
 akemasu
-空きます
+開けます
 
 しめます
 close / shut (something)
@@ -14687,7 +15634,7 @@ tsukimasu
 なります
 become
 narimasu
-成ります
+成ります・なります
 
 けんきゅうします
 to research, to study
@@ -14874,7 +15821,7 @@ wash
 araimasu
 洗います
 
-あけます
+あきます
 open, be vacant; be unoccupied
 akimasu
 空きます
@@ -14885,9 +15832,9 @@ Ana ga akimasu
 穴が開きます
 
 とじます
-close
+staple
 Tojimasu
-閉じます
+綴じます
 
 けんがくします
 visit some place to study, field trip
@@ -15639,7 +16586,7 @@ have a cough
 Seki ga demasu
 せきが 出ます
 
-よやくせき
+よ予約せき
 Reserved seat
 Yoyakuseki
 予約席
@@ -17310,14 +18257,14 @@ Taitei
 たいてい
 
 よく
-often, nicely
-yoku
-良く
+often, frequently, well
+Yoku
+良く・よく
 
 よく
-well, much
-yoku
-良く
+often, frequently, well
+Yoku
+良く・よく
 
 ときどき
 sometimes
@@ -17350,9 +18297,9 @@ daitai
 大体
 
 やさしい
-easy, kind, gentle
-yasashii
-易しい・優しい
+easy (problem); kind (person)
+Yasashii
+優しい / 易しい
 
 やすい
 inexpensive; cheap (thing)
@@ -17530,8 +18477,8 @@ hikui
 低い
 
 はやい
-fast, early
-hayai
+fast, early, quick
+Hayai
 早い・速い
 
 あたたかい
@@ -17637,7 +18584,7 @@ dandan
 やさしい
 easy (problem); kind (person)
 Yasashii
-やさしい
+優しい / 易しい
 
 おそい
 slow; late
@@ -18317,7 +19264,7 @@ Garimasu
 ひっこします
 am going to move, is going to move, move
 Hikkoshimasu
-引越しします
+引越しします・引っ越します
 
 カフェ
 cafe
@@ -18502,12 +19449,12 @@ Juubun
 ぐらい
 approximately
 Gurai
-位
+位・ぐらい
 
 はやい
 fast, early, quick
 Hayai
-早い
+早い・速い
 
 つぎの
 next
@@ -18542,7 +19489,7 @@ Juuichi
 ごろ
 around
 Goro
-頃
+頃・ごろ
 
 じゅう
 10, ten, tenth
@@ -18637,7 +19584,7 @@ Jaketto
 ありがとうございます
 thank you
 Arigatougozaimasu
-ありがとうございます
+ありがとうございます・有難うございます
 
 せん
 thousand, a thousand, one thousand
@@ -18697,7 +19644,7 @@ Pasuta
 べんとう
 bento
 Bentou
-弁当
+弁当・お弁当
 
 ジェイポップ
 J-pop
@@ -18717,22 +19664,22 @@ Zasshi
 よく
 often, frequently, well
 Yoku
-良く
+良く・よく
 
 を
 through, with, for
 Wo
 を
 
-しずか
+しずか [な]
 quiet
-Shizuka
-静か
+Shizuka [na]
+静か [な]
 
-きれい
+きれい [な]
 beautiful, pretty, clean
-Kirei
-綺麗
+Kirei [na]
+綺麗 [な]
 
 まち
 town
@@ -18749,10 +19696,10 @@ city
 Toshi
 都市
 
-にぎやか
+にぎやか [な]
 lively
-Nigiyaka
-賑やか
+Nigiyaka [na]
+賑やか [な]
 
 どう
 how
@@ -18902,7 +19849,7 @@ Gohan
 ください
 please
 Kudasai
-下さい
+下さい・ください
 
 `;
 
@@ -18967,7 +19914,7 @@ retasu
 もも
 peach
 momo
-もも
+桃
 
 ぎゅうにく
 beef
@@ -18987,27 +19934,27 @@ sooseeji
 ねぎ
 spring onion / scallion
 negi
-ねぎ
+葱
 
 にんじん
 carrot
 ninjin
-にんじん
+人参
 
 いちご
 strawberry
 ichigo
-いちご
+草苺
 
 すいか
 watermelon
 suika
-すいか
+西瓜
 
 たこ
 octopus
 tako
-たこ
+蛸
 
 バナナ
 banana
@@ -19022,7 +19969,7 @@ hamu
 じゃがいも
 potato
 jagaimo
-じゃがいも
+馬鈴薯
 
 だいこん
 Japanese radish / mooli
@@ -19182,7 +20129,7 @@ Basukettobooru
 ボウリング
 bowling
 Bouringu
-Bouringu
+ボウリング
 
 スケート
 skating
@@ -19287,7 +20234,7 @@ Koora
 ぎゅうどん
 a bowl of rice with beef
 Gyudon
-牛どん
+牛丼
 
 おにぎり
 rice ball
@@ -19397,7 +20344,7 @@ Takushii noriba
 ホーム
 platform
 [Puratto]hoomu
-［プラット］ホーム
+ホーム
 
 ［とうきょう］いき
 for [TOKYO]
@@ -19502,7 +20449,7 @@ Atama ga itai
 おなかが いたい
 have a stomachache
 Onaka ga itai
-おなかが 痛い
+お腹が 痛い
 
 はが いたい
 have a toothache
@@ -19567,12 +20514,12 @@ Obi
 ぞうり
 zori (one type slippers)
 Zouri
-ぞうり
+草履
 
 たび
 tabi (one type socks)
 Tabi
-たび
+足袋
 
 （オーバー）コート
 overcoat, coat
@@ -19737,7 +20684,7 @@ bunka no hi
 さけ
 salmon
 sake
-さけ
+鮭
 
 はくさい
 Chinese cabbage
@@ -19747,77 +20694,77 @@ hakusai
 ほうれんそう
 spinach
 hourensou
-ほうれんそう
+ほうれん草
 
 ぶどう
 grape
 budou
-ぶどう
+葡萄
 
 なし
 Japanese pear
 nashi
-なし
+梨
 
 かき
 persimmon
 kaki
-かき
+柿
 
 いわし
 sardine
 iwashi
-いわし
+鰯
 
 さば
 mackerel
 saba
-さば
+鯖
 
 さんま
 mackerel pike
 sanma
-さんま
+秋刀魚
 
 たい
 sea bream
 tai
-たい
+鯛
 
 たら
 cod
 tara
-たら
+鱈
 
 えび
 lobster / shrimp
 ebi
-えび
+海老
 
 かに
 crab
 kani
-かに
+蟹
 
 いか
 cuttlefish / squid
 ika
-いか
+烏賊
 
 かい
 shellfish
 kai
-かい
+貝
 
 なす
 egg plant / aubergine
 nasu
-なす
+茄子
 
 まめ
 beans / peas
 mame
-まめ
+豆
 
 みんよう
 folk
@@ -19842,7 +20789,7 @@ Enka
 ふろば
 bathroom
 Furoba
-ふろ場
+お風呂場
 
 せんめんじょ
 washroom
@@ -19852,7 +20799,7 @@ Senmenjo
 やさいいため
 sautéed vegetables
 Yasai itame
-野菜いため
+野菜炒め
 
 つけもの
 pickles
@@ -19942,7 +20889,7 @@ Oazukeire
 おふりかえ
 transfer
 Ofurikae
-お振り替え
+お振替
 
 もうちょう
 appendicitis
@@ -20002,12 +20949,12 @@ Karada ga darui
 かゆい
 itchy
 Kayui
-かゆい
+痒い
 
 ねんざ
 sprain
 Nenza
-ねんざ
+捻挫
 
 こし
 waist, lower back
@@ -20072,7 +21019,7 @@ Ago
 ける
 kick
 Keru
-ける
+蹴る
 
 いご・しょうぎ
 go, shogi
@@ -20532,7 +21479,7 @@ Kan
 かんきり
 can opener
 Kankiri
-かんきり
+缶切り
 
 かんきせん
 ventilation fan
@@ -20542,7 +21489,7 @@ Kankisen
 せんぬき
 cap opener, bottle opener
 Sennuki
-せんぬき
+栓抜き
 
 のりば
 a fixed place to catch taxis, trains, etc.
@@ -20772,7 +21719,7 @@ Aji
 あじ
 horse mackerel
 aji
-あじ
+鰺
 
 かじ
 fire
@@ -20869,7 +21816,7 @@ exactly, just right
 Pittari
 ぴったり
 
-[みちを～]   ハしります
+[みちを～] ハしります
 run, drive [along a road]
 [michi o~] Hashirimasu
 [道を～] 走ります
@@ -21092,7 +22039,7 @@ Kashu
 まちがえます
 make a mistake
 Machigaemasu
-まちがえます
+間違えます
 
 コップ
 tumbler, glass (vessel)
@@ -21292,7 +22239,7 @@ Sore wa ii desu ne.
 ブロードウェイ
 Broadway
 Buroodowei
-※ブロードウェイ
+ブロードウェイ
 
 よしゅうします
 prepare one's lesson
@@ -21347,7 +22294,7 @@ Sekaijuu
 すばらしさ
 goodness, virtue
 Subarashisa
-すばらしさ
+素晴らしさ
 
 けっこんしき
 wedding, wedding ceremony
@@ -21402,7 +22349,7 @@ pass [an examination]
 [かぜを～] ひきます
 catch [a cold]
 [kaze o~] Hikimasu
-[風を~] ひきます
+[風を~] 引きます
 
 すいどう
 faucet, tap, water supply
@@ -21477,7 +22424,7 @@ Kaze
 きた
 north
 Kita
-きた
+北
 
 みなみ
 south
@@ -21507,7 +22454,7 @@ Sore wa ikemasen ne
 オリンピック
 Olympic Games
 Orinpikku
-※オリンピック
+オリンピック
 
 ストレス
 stress
@@ -21572,7 +22519,7 @@ Sawagimasu
 あきらめます
 give up
 Akiramemasu
-あきらめます
+諦めます
 
 まもります
 keep, follow, obey, protect, defend
@@ -21580,9 +22527,9 @@ Mamorimasu
 守ります
 
 なくなります
-pass away, die
+be lost / disappear
 Nakunarimasu
-亡くなります
+無くなります・なくなります
 
 あげます
 raise, lift up
@@ -21597,7 +22544,7 @@ Sagemasu
 だめ[な]
 no good, not permitted, impossible
 Dame[na]
-だめ[な]
+駄目[な]
 
 ファイト
 fight
@@ -21717,12 +22664,12 @@ Kon
 しょうゆ
 soy, soy sauce
 Shouyu
-しょうゆ
+醤油
 
 おちゃをたてます
 make green tea
 Ocha o tatemasu
-お茶をたてます
+お茶を点てます
 
 ふとい
 thick (of large diameter)
@@ -21832,7 +22779,7 @@ Nigai
 たまねぎ
 onion
 Tamanegi
-たまねぎ
+玉ねぎ
 
 よんぶんのいち
 one fourth
@@ -21842,7 +22789,7 @@ Yonbun no ichi
 なべ
 pan, pot
 Nabe
-なべ
+鍋
 
 ほそい
 thin (of small diameter)
@@ -21887,7 +22834,7 @@ Kuwashii
 せつび
 equipment, facilities
 Setsubi
-せつび
+設備
 
 なかよくします
 be on good terms with
@@ -21947,7 +22894,7 @@ Kinjo
 ふた
 lid, cover, cap
 Futa
-ふた
+蓋
 
 はじめに
 first
@@ -21972,7 +22919,7 @@ Motto
 アフリカ
 Africa
 Afurika
-※アフリカ
+アフリカ
 
 ことわざ
 proverb
@@ -21982,7 +22929,7 @@ Kotowaza
 ひも
 string (used for tying)
 Himo
-ひも
+紐
 
 ひろいます
 pick up
@@ -22097,7 +23044,7 @@ Futorimasu
 やせます
 get slim, lose weight
 Yasemasu
-やせます
+痩せます
 
 ライトきょうだい
 Wright brothers, American pioneers in aviation
@@ -22217,12 +23164,12 @@ Tanomimasu
 とります
 rob, steal
 Torimasu
-とります
+取ります
 
 ねずみ
 mouse
 Nezumi
-ねずみ
+鼠
 
 どろぼう
 thief, robber
@@ -22289,10 +23236,10 @@ Toshogu Shrine, shrine dedicated to Tokugawa Ieyasu in Nikko, Tochigi Prefecture
 Toushouguu
 東照宮
 
-※ひだりじんごろう
+ひだりじんごろう
 famous Japanese sculptor of the Edo Period (1594-1651)
 Hidari Jingorou
-※左甚五郎
+左甚五郎
 
 ゆしゅつします
 export
@@ -22392,7 +23339,7 @@ Osaki ni [shitsurei shimasu].
 けんかします
 quarrel, fight
 Kenka shimasu
-けんかします
+喧嘩します
 
 [かぎを～] かけます
 lock
@@ -22415,9 +23362,9 @@ Ookina~
 大きな～
 
 なくなります
-pass away (euphemistic expression for しにます (L. 39))
+be lost / disappear
 Nakunarimasu
-亡くなります
+無くなります・なくなります
 
 あかちゃん
 baby
@@ -22427,7 +23374,7 @@ Akachan
 うそ
 lie, fib
 Uso
-うそ
+嘘
 
 そだてます
 breed, bring up, raise
@@ -22552,7 +23499,7 @@ room number --
 せっけん
 soap
 Sekken
-せっけん
+石鹸
 
 あんしんします
 be relieved
@@ -22697,7 +23644,7 @@ Irasshaimasu
 うわさします
 gossip
 Uwasa shimasu
-うわさします
+噂します
 
 ーーキロ
 -- kilograms, -- kilometers
@@ -22727,7 +23674,7 @@ Yuki-matsuri
 ほんとう
 truth, fact
 Hontou
-ほんとう
+本当
 
 ようす
 situation, condition, appearance
@@ -22757,7 +23704,7 @@ ga
 まちがい
 mistake
 Machigai
-まちがい
+間違い
 
 ゴッホ
 Vincent van Gogh, Dutch painter (1853-90)
@@ -22792,7 +23739,7 @@ Yoimasu
 きけん [な]
 dangerous
 Kiken [na]
-危険 [な]
+危険 [na]
 
 ぼうねんかい
 year-end party
@@ -22859,7 +23806,7 @@ train number, typhoon number, etc.
 allUltimateWords["Temp 3 - Hard"] = ``;
 
 allUltimateWords["Setsu"] = `
-おうだん  ほどう
+おうだん ほどう
 pedestrian crossing
 Oudan hodou
 横断歩道
@@ -23069,9 +24016,9 @@ In preparation
 Junbichuu
 準備中
 
-じゅぎょうちゅう  に
+じゅぎょうちゅう に
 in class; during the class
-Jugyouchuu  ni
+Jugyouchuu ni
 授業中に
 
 しようちゅう
@@ -23152,7 +24099,7 @@ Thank goodness! (used to express a feeling of relief)
 あきらめます
 give up
 Akiramemasu
-あきらめます
+諦めます
 
 アクション
 action
@@ -23177,7 +24124,7 @@ akusento
 あじ
 horse mackerel
 aji
-あじ
+鰺
 
 アジア
 Asia
@@ -23197,7 +24144,7 @@ Anime
 アフリカ
 Africa
 Afurika
-※アフリカ
+アフリカ
 
 アメリカ
 U.S.A.
@@ -23237,7 +24184,7 @@ ii desu
 いか
 cuttlefish / squid
 ika
-いか
+烏賊
 
 イギリス
 U.K.
@@ -23252,7 +24199,7 @@ itaria
 いちご
 strawberry
 ichigo
-いちご
+草苺
 
 いつか
 someday, sometime
@@ -23277,7 +24224,7 @@ iran
 いわし
 sardine
 iwashi
-いわし
+鰯
 
 インド
 India
@@ -23317,7 +24264,7 @@ uun
 うそ
 lie, fib
 Uso
-うそ
+嘘
 
 うどん
 Japanese noodles made from wheat flour
@@ -23332,7 +24279,7 @@ Ureshii
 うわさします
 gossip
 Uwasa shimasu
-うわさします
+噂します
 
 うん
 yes (informal)
@@ -23367,7 +24314,7 @@ NHK
 えび
 lobster / shrimp
 ebi
-えび
+海老
 
 えびフライ
 fried shrimp
@@ -23467,7 +24414,7 @@ Opera
 オリンピック
 Olympic Games
 Orinpikku
-※オリンピック
+オリンピック
 
 オレンジ
 orange
@@ -23492,7 +24439,7 @@ Kaaten
 かい
 shellfish
 kai
-かい
+貝
 
 かいぎしつ
 meeting room, conference room
@@ -23507,7 +24454,7 @@ kaidan
 かき
 persimmon
 kaki
-かき
+柿
 
 かしこまりました
 Certainly (sir, madam)
@@ -23547,7 +24494,7 @@ Kanari
 かに
 crab
 kani
-かに
+蟹
 
 ガム
 chewing gum
@@ -23557,7 +24504,7 @@ Gamu
 かゆい
 itchy
 Kayui
-かゆい
+痒い
 
 ガラス
 glass (material)
@@ -23592,7 +24539,7 @@ Kawaii
 かんきり
 can opener
 Kankiri
-かんきり
+缶切り
 
 キー
 key
@@ -23602,7 +24549,7 @@ Kii
 きた
 north
 Kita
-きた
+北
 
 きちんと
 neatly, tidily
@@ -23672,12 +24619,12 @@ Kega wo shimasu
 ける
 kick
 Keru
-ける
+蹴る
 
 けんかします
 quarrel, fight
 Kenka shimasu
-けんかします
+喧嘩します
 
 コインロッカー
 coin locker
@@ -23687,7 +24634,7 @@ Koin rokkaa
 こうこう
 senior high school
 koukou
-こうこう
+高校
 
 コーナー
 corner, section
@@ -23777,7 +24724,7 @@ saujiarabia
 さけ
 salmon
 sake
-さけ
+鮭
 
 さっき
 a short while ago
@@ -23787,7 +24734,7 @@ Sakki
 さば
 mackerel
 saba
-さば
+鯖
 
 さようなら
 Goodbye.
@@ -23807,7 +24754,7 @@ Mr./Ms./Mrs.
 さんま
 mackerel pike
 sanma
-さんま
+秋刀魚
 
 シートベルト
 seat belt
@@ -23837,7 +24784,7 @@ Jaanarisuto
 じゃがいも
 potato
 jagaimo
-じゃがいも
+馬鈴薯
 
 ジャカルタ
 Jakarta
@@ -23857,7 +24804,7 @@ shushou
 しょうゆ
 soy, soy sauce
 Shouyu
-しょうゆ
+醤油
 
 シンガポール
 Singapore
@@ -23867,7 +24814,7 @@ shingapooru
 すいか
 watermelon
 suika
-すいか
+西瓜
 
 スイス
 Switzerland
@@ -23917,7 +24864,7 @@ Supagettii
 すばらしさ
 goodness, virtue
 Subarashisa
-すばらしさ
+素晴らしさ
 
 スペイン
 Spain
@@ -23947,22 +24894,22 @@ Seki
 せっけん
 soap
 Sekken
-せっけん
+石鹸
 
 せつび
 equipment, facilities
 Setsubi
-せつび
+設備
 
 せんぬき
 cap opener, bottle opener
 Sennuki
-せんぬき
+栓抜き
 
 ぞうり
 zori (one type slippers)
 Zouri
-ぞうり
+草履
 
 ソース
 sauce, Worcestershire sauce
@@ -24017,7 +24964,7 @@ Sore wa ikemasen ne
 たい
 sea bream
 tai
-たい
+鯛
 
 タイ
 Thailand
@@ -24047,27 +24994,27 @@ Taoru
 たこ
 octopus
 tako
-たこ
+蛸
 
 たび
 tabi (one type socks)
 Tabi
-たび
+足袋
 
 たまねぎ
 onion
 Tamanegi
-たまねぎ
+玉ねぎ
 
 だめ[な]
 no good, not permitted, impossible
 Dame[na]
-だめ[な]
+駄目[な]
 
 たら
 cod
 tara
-たら
+鱈
 
 だれか
 somebody
@@ -24192,7 +25139,7 @@ Dokyumentarii
 とけい
 watch, clock
 tokei
-とけい
+時計
 
 どこか
 somewhere, some place
@@ -24257,7 +25204,7 @@ Dorama
 とります
 rob, steal
 Torimasu
-とります
+取ります
 
 どんな〜
 what kind of ~
@@ -24277,22 +25224,22 @@ nakanaka
 なし
 Japanese pear
 nashi
-なし
+梨
 
 なす
 egg plant / aubergine
 nasu
-なす
+茄子
 
 なべ
 pan, pot
 Nabe
-なべ
+鍋
 
 なります
 become
 narimasu
-成ります
+成ります・なります
 
 なんでも
 anything
@@ -24317,12 +25264,12 @@ by ~
 にんじん
 carrot
 ninjin
-にんじん
+人参
 
 ねぎ
 spring onion / scallion
 negi
-ねぎ
+葱
 
 [ネクタイを～] します
 put on, wear [a tie]
@@ -24332,7 +25279,7 @@ put on, wear [a tie]
 ねずみ
 mouse
 Nezumi
-ねずみ
+鼠
 
 ねます
 to sleep, go to bed
@@ -24342,12 +25289,12 @@ nemasu
 ねむい
 sleepy
 nemui
-ねむい
+眠い
 
 ねんざ
 sprain
 Nenza
-ねんざ
+捻挫
 
 パーティールーム
 party room
@@ -24482,7 +25429,7 @@ Pittari
 ひも
 string (used for tying)
 Himo
-ひも
+紐
 
 ピンク
 pink
@@ -24522,7 +25469,7 @@ foomu
 ふた
 lid, cover, cap
 Futa
-ふた
+蓋
 
 ぶつかります
 bump, collide
@@ -24537,7 +25484,7 @@ Butsukemasu
 ぶどう
 grape
 budou
-ぶどう
+葡萄
 
 ふまじめ [な]
 frivolous
@@ -24582,7 +25529,7 @@ purezento
 ブロードウェイ
 Broadway
 Buroodowei
-※ブロードウェイ
+ブロードウェイ
 
 フロント
 front desk, reception desk
@@ -24627,12 +25574,12 @@ berurin
 ボウリング
 bowling
 Bouringu
-Bouringu
+ボウリング
 
 ほうれんそう
 spinach
 hourensou
-ほうれんそう
+ほうれん草
 
 ボーナス
 bonus
@@ -24642,7 +25589,7 @@ Boonasu
 ホーム
 platform
 [Puratto]hoomu
-［プラット］ホーム
+ホーム
 
 ボール
 ball
@@ -24707,7 +25654,7 @@ Borantia
 ほんとう
 truth, fact
 Hontou
-ほんとう
+本当
 
 マーク
 mark
@@ -24732,12 +25679,12 @@ mada
 まちがい
 mistake
 Machigai
-まちがい
+間違い
 
 まちがえます
 make a mistake
 Machigaemasu
-まちがえます
+間違えます
 
 まとめます
 put ~ together, put ~ in shape, sum up
@@ -24752,7 +25699,7 @@ Mafuraa
 まめ
 beans / peas
 mame
-まめ
+豆
 
 マラソン
 marathon
@@ -24847,7 +25794,7 @@ Motto
 もも
 peach
 momo
-もも
+桃
 
 やけど
 burning (~ を します : get burned)
@@ -24862,12 +25809,12 @@ Yakedo wo shimasu
 やさしい
 easy (problem); kind (person)
 Yasashii
-やさしい
+優しい / 易しい
 
 やせます
 get slim, lose weight
 Yasemasu
-やせます
+痩せます
 
 やっと
 finally
@@ -25069,10 +26016,10 @@ for [TOKYO]
 [Toukyou] iki
 ［東京］行き
 
-※ひだりじんごろう
+ひだりじんごろう
 famous Japanese sculptor of the Edo Period (1594-1651)
 Hidari Jingorou
-※左甚五郎
+左甚五郎
 
 ーーごう
 train number, typhoon number, etc.
@@ -25147,9 +26094,9 @@ akarui
 あけます
 open
 akemasu
-空きます
+開けます
 
-あけます
+あきます
 open, be vacant; be unoccupied
 akimasu
 空きます
@@ -25737,7 +26684,7 @@ Omosa
 おやすみなさい
 Good night.
 oyasuminasai
-お休みなさい。
+お休みなさい
 
 おやすみになります
 sleep, rest (honorific equivalent of ねます)
@@ -25852,7 +26799,7 @@ Kaze
 [かぜを～] ひきます
 catch [a cold]
 [kaze o~] Hikimasu
-[風を~] ひきます
+[風を~] 引きます
 
 かぞく
 family
@@ -26012,7 +26959,7 @@ kimono
 ぎゅうどん
 a bowl of rice with beef
 Gyudon
-牛どん
+牛丼
 
 ぎゅうにく
 beef
@@ -26358,11 +27305,6 @@ Sakubun
 lower, pull down
 Sagemasu
 下げます
-
-さら
-plate; dish
-Sara
-皿
 
 し
 city
@@ -27375,19 +28317,19 @@ Nakayokushimasu
 仲よくします
 
 なくします
-lose
-nakushimasu
-無くします
+lose (something)
+Nakushimasu
+無くします・なくします
 
 なくなります
-pass away (euphemistic expression for しにます (L. 39))
+be lost / disappear
 Nakunarimasu
-亡くなります
+無くなります・なくなります
 
 なくなります
-pass away, die
+be lost / disappear
 Nakunarimasu
-亡くなります
+無くなります・なくなります
 
 なに
 what
@@ -28059,7 +29001,7 @@ road, way
 michi
 道
 
-[みちを～]   ハしります
+[みちを～] ハしります
 run, drive [along a road]
 [michi o~] Hashirimasu
 [道を～] 走ります
@@ -28255,14 +29197,14 @@ Youshoku
 洋食
 
 よく
-often, nicely
-yoku
-良く
+often, frequently, well
+Yoku
+良く・よく
 
 よく
-well, much
-yoku
-良く
+often, frequently, well
+Yoku
+良く・よく
 
 よみかた
 how to read, way of reading
@@ -28632,7 +29574,7 @@ Taurus
 Oushiza
 牡牛座
 
-おうだん  ほどう
+おうだん ほどう
 pedestrian crossing
 Oudan hodou
 横断歩道
@@ -28690,12 +29632,12 @@ otoiawase no bangou
 おととい
 the day before yesterday
 ototoi
-一瞬間・一昨日
+一昨日
 
 おととし
 the year before last
 Ototoshi
-一瞬間・一昨年
+一昨年
 
 おにあいですよ
 It looks good on you / You two look great together
@@ -28705,7 +29647,7 @@ oniai desu yo
 おふりかえ
 transfer
 Ofurikae
-お振り替え
+お振替
 
 おふりこみ
 payment
@@ -28800,7 +29742,7 @@ Kagakusha
 [かぎが～] みつかります
 [a key] be found
 [kagi ga~] Mitsukarimasu
-[かぎ发～] 見つかります
+[かぎが～] 見つかります
 
 かきとめ
 registered mail
@@ -29522,9 +30464,9 @@ class
 Jugyou
 授業
 
-じゅぎょうちゅう  に
+じゅぎょうちゅう に
 in class; during the class
-Jugyouchuu  ni
+Jugyouchuu ni
 授業中に
 
 しゅくさいじつ
@@ -29703,7 +30645,7 @@ Suiei
 水泳
 
 ずいぶん
-pretty, very
+very
 Zuibun
 随分
 
@@ -30403,8 +31345,8 @@ Hanamizu ga demasu
 鼻水が 出ます
 
 はやい
-fast, early
-hayai
+fast, early, quick
+Hayai
 早い・速い
 
 はやく
@@ -30838,9 +31780,9 @@ Yakunitatemasu
 役に立てます
 
 やさしい
-easy, kind, gentle
-yasashii
-易しい・優しい
+easy (problem); kind (person)
+Yasashii
+優しい / 易しい
 
 やじるし
 arrow (sign)
@@ -30927,7 +31869,7 @@ reserve, book
 yoyaku shimasu
 予約します
 
-よやくせき
+よ予約せき
 Reserved seat
 Yoyakuseki
 予約席
@@ -31084,7 +32026,7 @@ const appUltimateSettings = {
     "ほうそう::announcement, broadcast": 1,
     "はなれた::remote": 1
   },
-  "currentLesson": "Kaigi Jou",
+  "currentLesson": "Lesson 50",
   "isHard": false,
   "displayMode": "custom",
   "customDisplayConfig": {
@@ -31163,7 +32105,7 @@ const appUltimateSettings = {
   "othersHiddenSourceGroups": [],
   "othersHiddenLevels": [],
   "lastDestCategory": "All V",
-  "activeDbGroup": "Ultimate",
+  "activeDbGroup": "Ultimate Dumps",
   "showCategoryModeActive": true,
   "ultimateCategoryPartitions": {
     "Honorifics": "Dumps",
@@ -31309,7 +32251,6 @@ const appUltimateSettings = {
       "Honorifics",
       "InTransitive Verbs",
       "Ko So Aso",
-      "Lesson 27",
       "Lesson 28",
       "Lesson 29",
       "Lesson 30",
@@ -31345,7 +32286,6 @@ const appUltimateSettings = {
   "multiCategoryConfig": {
     "active": false,
     "categories": [
-      "Lesson 27",
       "Lesson 28",
       "Lesson 29",
       "Lesson 30",
@@ -31363,7 +32303,7 @@ const appUltimateSettings = {
     "mode": "both"
   },
   "lastGroupCategories": {
-    "N5 Lessons": "Lesson 01",
+    "N5 Lessons": "Lesson 11",
     "N5 Others": "Similar Ones",
     "N4 Lessons": "Lesson 47",
     "N4 Others": "Extra 42",
@@ -31402,8 +32342,9 @@ const appUltimateSettings = {
     "N5 Genki": "Genki 09",
     "N4 Genki": "Genki 13",
     "Others": "Kou",
-    "Ultimate": "Kaigi Jou",
-    "Ultimate Main": "Jidoushi",
-    "Ultimate Dumps": "Multi-Category View"
-  }
+    "Ultimate": "Lesson 49",
+    "Ultimate Main": "Romaji",
+    "Ultimate Dumps": "Lesson 50"
+  },
+  "clCategoryCount": 5
 };

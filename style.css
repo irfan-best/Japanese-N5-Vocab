@@ -451,7 +451,8 @@ html[data-theme="light"] .moon-icon { display: block; }
 #btn-kanji-vocab-filter-mobile,
 #btn-kanji-report-mobile,
 #btn-copy-lesson-cl-mobile,
-#btn-import-lesson-icl-mobile {
+#btn-import-lesson-icl-mobile,
+#cl-count-control-mobile {
   display: none !important;
 }
 
@@ -1694,7 +1695,8 @@ html[data-theme="light"] .moon-icon { display: block; }
   #btn-kanji-vocab-filter,
   #btn-kanji-report,
   #btn-copy-lesson-cl,
-  #btn-import-lesson-icl {
+  #btn-import-lesson-icl,
+  #cl-count-control {
     display: none !important;
   }
 
@@ -1708,7 +1710,8 @@ html[data-theme="light"] .moon-icon { display: block; }
   #btn-kanji-vocab-filter-mobile,
   #btn-kanji-report-mobile,
 #btn-copy-lesson-cl-mobile,
-#btn-import-lesson-icl-mobile {
+#btn-import-lesson-icl-mobile,
+#cl-count-control-mobile {
     display: inline-flex !important;
   }
 

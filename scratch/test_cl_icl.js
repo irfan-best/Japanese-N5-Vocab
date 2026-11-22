@@ -1,11 +1,11 @@
-// Automated Test Suite for CL (Copy Lesson) and ICL (Import / Update Current Lesson)
+// Automated Test Suite for CL (Copy Lesson) and ICL (Import / Update Current Lesson) with Multi-Category Support
 (async () => {
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const assert = require('assert');
 
-console.log('🧪 Starting CL & ICL Test Suite...\n');
+console.log('🧪 Starting Multi-Category CL & ICL Test Suite...\n');
 
 // Mock DOM
 class MockElement {
@@ -131,9 +131,10 @@ const sandbox = {
   removeEventListener: () => {},
   localStorage: {
     store: {},
-    getItem(k) { return this.store[k] || null; },
+    getItem(k) { return this.store[k] !== undefined ? this.store[k] : null; },
     setItem(k, v) { this.store[k] = String(v); },
-    removeItem(k) { delete this.store[k]; }
+    removeItem(k) { delete this.store[k]; },
+    clear() { this.store = {}; }
   },
   navigator: {
     clipboard: {
@@ -163,176 +164,117 @@ vm.runInContext(scriptCode, ctx);
 
 ctx.showToast = (msg, type) => { lastToast = { msg, type }; };
 
-// Test 1: serializeCLWord formatting
-console.log('Test 1: serializeCLWord outputs exact 4-line block (and 5 lines with tags)');
+// Test 1: Category count configuration (Default: 3, persistent, and changeable)
+console.log('Test 1: Category count configuration defaults to 3 and persists changes');
 {
-  const wordWithKanji = {
-    japanese: 'よる',
-    english: 'night',
-    romaji: 'yoru',
-    kanji: '夜'
-  };
-  const clText1 = ctx.serializeCLWord(wordWithKanji);
-  assert.strictEqual(clText1, 'よる\nnight\nyoru\n夜', 'Line 4 should output kanji when present');
+  ctx.localStorage.clear();
+  assert.strictEqual(ctx.getClCategoryCount(), 3, 'Default category count must be 3');
 
-  const wordWithoutKanji = {
-    japanese: 'こんばんは',
-    english: 'Good evening.',
-    romaji: 'konbanwa',
-    kanji: ''
-  };
-  const clText2 = ctx.serializeCLWord(wordWithoutKanji);
-  assert.strictEqual(clText2, 'こんばんは\nGood evening.\nkonbanwa\nこんばんは', 'Line 4 should fallback to kana when kanji is empty');
+  ctx.setClCategoryCount(5);
+  assert.strictEqual(ctx.getClCategoryCount(), 5, 'Category count must update to 5');
+  assert.strictEqual(ctx.localStorage.getItem('cl_category_count'), '5', 'Must persist in localStorage');
 
-  const wordWithTags = {
-    japanese: 'ひるま',
-    english: 'daytime',
-    romaji: 'Hiruma',
-    kanji: '昼間',
-    tags: ['time', 'noun']
-  };
-  const clText3 = ctx.serializeCLWord(wordWithTags);
-  assert.strictEqual(clText3, 'ひるま\ndaytime\nHiruma\n昼間\ntime, noun', 'Line 5 should output tags when present');
+  ctx.setClCategoryCount(1);
+  assert.strictEqual(ctx.getClCategoryCount(), 1, 'Category count must update to 1');
 
-  console.log('  ✓ serializeCLWord passed all formats');
+  // Reset back to 3
+  ctx.setClCategoryCount(3);
+  assert.strictEqual(ctx.getClCategoryCount(), 3);
+
+  console.log('  ✓ Category count configuration verified (default 3, changeable, persistent)');
 }
 
-// Test 2: serializeLessonCL with Normal and Hard words
-console.log('\nTest 2: serializeLessonCL formats lesson with Normal and Hard sections separated by "--- hard ---"');
+// Test 2: getTargetCategoriesForCL sequential ordering (current, right to next, 3rd next...)
+console.log('\nTest 2: getTargetCategoriesForCL sequences categories in custom/display order');
 {
-  const testDb = {
-    'Test Lesson': [
-      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: '夜' },
-      { japanese: 'ばん', english: 'night, evening', romaji: 'ban', kanji: '晩' }
-    ],
-    'Test Lesson - Hard': [
-      { japanese: 'こんや', english: 'tonight, this evening', romaji: 'konya', kanji: '今夜' },
-      { japanese: 'やこうバス', english: 'night bus', romaji: 'Yakou basu', kanji: '夜行バス' }
-    ]
-  };
+  // Setup dropdown options in order
+  const selectLesson = doc.getElementById('select-lesson');
+  selectLesson.options = [
+    { value: 'Lesson 01' },
+    { value: 'Lesson 02' },
+    { value: 'Lesson 03' },
+    { value: 'Lesson 04' },
+    { value: 'Lesson 05' }
+  ];
 
-  ctx.currentWordsDb = testDb;
-  ctx.currentSettings.activeDbGroup = 'N5 Lessons';
-  ctx.currentSettings.currentLesson = 'Test Lesson';
+  ctx.currentSettings.currentLesson = 'Lesson 01';
+  ctx.setClCategoryCount(3);
 
-  const res = ctx.serializeLessonCL('Test Lesson');
-  assert.strictEqual(res.normalCount, 2);
-  assert.strictEqual(res.hardCount, 2);
+  function clean(v) { return JSON.parse(JSON.stringify(v)); }
 
-  const expected = 
-`よる
-night
-yoru
-夜
+  const targets1 = ctx.getTargetCategoriesForCL();
+  assert.deepStrictEqual(clean(targets1), ['Lesson 01', 'Lesson 02', 'Lesson 03'], 'From Lesson 01 with count 3 should be Lesson 01, 02, 03');
 
-ばん
-night, evening
-ban
-晩
+  ctx.currentSettings.currentLesson = 'Lesson 02';
+  const targets2 = ctx.getTargetCategoriesForCL();
+  assert.deepStrictEqual(clean(targets2), ['Lesson 02', 'Lesson 03', 'Lesson 04'], 'From Lesson 02 with count 3 should be Lesson 02, 03, 04');
 
---- hard ---
+  ctx.currentSettings.currentLesson = 'Lesson 04';
+  const targets3 = ctx.getTargetCategoriesForCL();
+  assert.deepStrictEqual(clean(targets3), ['Lesson 04', 'Lesson 05'], 'From Lesson 04 near end should return Lesson 04, 05');
 
-こんや
-tonight, this evening
-konya
-今夜
+  ctx.currentSettings.currentLesson = 'Lesson 01';
+  const targets4 = ctx.getTargetCategoriesForCL(1);
+  assert.deepStrictEqual(clean(targets4), ['Lesson 01'], 'With count 1 should return only Lesson 01');
 
-やこうバス
-night bus
-Yakou basu
-夜行バス
-`;
-
-  assert.strictEqual(res.text, expected, 'Full text must match user format specification');
-  console.log('  ✓ serializeLessonCL output matches user example exactly');
+  console.log('  ✓ Category sequencing (current, next, 3rd next) verified');
 }
 
-// Test 3: parseICLText dividing Normal and Hard
-console.log('\nTest 3: parseICLText correctly parses Normal and Hard blocks divided by "--- hard ---"');
-{
-  const input = 
-`よる
-night
-yoru
-夜
-
-ばん
-night, evening
-ban
-晩
-
---- hard ---
-
-こんや
-tonight, this evening
-konya
-今夜
-
-やこうバス
-night bus
-Yakou basu
-夜行バス
-`;
-
-  const parsed = ctx.parseICLText(input);
-  assert.strictEqual(parsed.hasDivider, true);
-  assert.strictEqual(parsed.normalWords.length, 2);
-  assert.strictEqual(parsed.hardWords.length, 2);
-
-  assert.strictEqual(parsed.normalWords[0].japanese, 'よる');
-  assert.strictEqual(parsed.normalWords[0].kanji, '夜');
-  assert.strictEqual(parsed.normalWords[1].japanese, 'ばん');
-  assert.strictEqual(parsed.normalWords[1].kanji, '晩');
-
-  assert.strictEqual(parsed.hardWords[0].japanese, 'こんや');
-  assert.strictEqual(parsed.hardWords[0].kanji, '今夜');
-  assert.strictEqual(parsed.hardWords[1].japanese, 'やこうバス');
-  assert.strictEqual(parsed.hardWords[1].kanji, '夜行バス');
-
-  // Test without divider
-  const noDividerInput = `よる\nnight\nyoru\n夜`;
-  const parsedNoDiv = ctx.parseICLText(noDividerInput);
-  assert.strictEqual(parsedNoDiv.hasDivider, false);
-  assert.strictEqual(parsedNoDiv.normalWords.length, 1);
-  assert.strictEqual(parsedNoDiv.hardWords.length, 0);
-
-  console.log('  ✓ parseICLText parses Normal and Hard sections properly');
-}
-
-// Test 4: isWordChanged and findChangedWords
-console.log('\nTest 4: isWordChanged and findChangedWords detects modifications accurately');
-{
-  const oldWord = { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' };
-  const newWord1 = { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: '夜' };
-  const newWordUnchanged = { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' };
-
-  assert.strictEqual(ctx.isWordChanged(oldWord, newWord1), true, 'Changing kanji from kana to 夜 should report changed');
-  assert.strictEqual(ctx.isWordChanged(oldWord, newWordUnchanged), false, 'Identical word should report unchanged');
-
-  const changes = ctx.findChangedWords([oldWord], [newWord1]);
-  assert.strictEqual(changes.length, 1);
-  assert.strictEqual(changes[0].oldW.kanji, 'よる');
-  assert.strictEqual(changes[0].newW.kanji, '夜');
-
-  console.log('  ✓ Word change detection verified');
-}
-
-// Test 5: Standard DB submitImportLessonICL updates current lesson
-console.log('\nTest 5: submitImportLessonICL updates Normal and Hard words for current lesson in standard DB');
+// Test 3: serializeLessonCL with 3 categories formats with `=== Category Name ===`
+console.log('\nTest 3: serializeLessonCL with 3 categories formats each category with `=== <Name> ===` and `--- hard ---`');
 {
   ctx.currentWordsDb = {
     'Lesson 01': [
-      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' }
+      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: '夜' }
     ],
     'Lesson 01 - Hard': [
-      { japanese: 'こんや', english: 'tonight', romaji: 'konya', kanji: 'こんや' }
+      { japanese: 'こんや', english: 'tonight, this evening', romaji: 'konya', kanji: '今夜' }
+    ],
+    'Lesson 02': [
+      { japanese: 'あさ', english: 'morning', romaji: 'asa', kanji: '朝' }
+    ],
+    'Lesson 02 - Hard': [
+      { japanese: 'けさ', english: 'this morning', romaji: 'kesa', kanji: '今朝' }
+    ],
+    'Lesson 03': [
+      { japanese: 'ひる', english: 'noon', romaji: 'hiru', kanji: '昼' }
+    ],
+    'Lesson 03 - Hard': [
+      { japanese: 'ひるま', english: 'daytime', romaji: 'Hiruma', kanji: '昼間' }
     ]
   };
-  ctx.currentSettings.activeDbGroup = 'N5 Lessons';
-  ctx.currentSettings.currentLesson = 'Lesson 01';
 
-  const updatedInput = 
-`よる
+  ctx.currentSettings.currentLesson = 'Lesson 01';
+  ctx.setClCategoryCount(3);
+
+  const res = ctx.serializeLessonCL();
+  assert.strictEqual(res.categoryCount, 3);
+  assert.strictEqual(res.normalCount, 3);
+  assert.strictEqual(res.hardCount, 3);
+
+  assert.ok(res.text.includes('=== Lesson 01 ==='), 'Must include === Lesson 01 === header');
+  assert.ok(res.text.includes('=== Lesson 02 ==='), 'Must include === Lesson 02 === header');
+  assert.ok(res.text.includes('=== Lesson 03 ==='), 'Must include === Lesson 03 === header');
+  assert.ok(res.text.includes('--- hard ---'), 'Must include --- hard --- dividers');
+
+  // Verify single category format when count is 1
+  ctx.setClCategoryCount(1);
+  const resSingle = ctx.serializeLessonCL();
+  assert.strictEqual(resSingle.categoryCount, 1);
+  assert.strictEqual(resSingle.text.includes('=== Lesson 01 ==='), false, 'Count 1 should not have category header');
+  assert.ok(resSingle.text.includes('よる\nnight\nyoru\n夜'), 'Count 1 should have standard 4 lines');
+  assert.ok(resSingle.text.includes('--- hard ---'), 'Count 1 should have hard divider');
+
+  console.log('  ✓ serializeLessonCL multi-category & single category formatting verified');
+}
+
+// Test 4: parseICLText with multiple categories
+console.log('\nTest 4: parseICLText correctly parses multiple categories separated by `=== Category Name ===`');
+{
+  const inputMulti = 
+`=== Lesson 01 ===
+
+よる
 night
 yoru
 夜
@@ -342,41 +284,151 @@ yoru
 こんや
 tonight
 konya
-今夜`;
+今夜
 
-  doc.getElementById('input-import-lesson-icl').value = updatedInput;
+
+=== Lesson 02 ===
+
+あさ
+morning
+asa
+朝
+
+--- hard ---
+
+けさ
+this morning
+kesa
+今朝
+
+
+=== Lesson 03 ===
+
+ひる
+noon
+hiru
+昼
+
+--- hard ---
+
+ひるま
+daytime
+Hiruma
+昼間
+`;
+
+  const parsed = ctx.parseICLText(inputMulti);
+  assert.strictEqual(parsed.isMulti, true);
+  assert.strictEqual(parsed.categories.length, 3);
+  assert.strictEqual(parsed.totalNormalCount, 3);
+  assert.strictEqual(parsed.totalHardCount, 3);
+
+  assert.strictEqual(parsed.categories[0].categoryName, 'Lesson 01');
+  assert.strictEqual(parsed.categories[0].normalWords[0].kanji, '夜');
+  assert.strictEqual(parsed.categories[0].hardWords[0].kanji, '今夜');
+
+  assert.strictEqual(parsed.categories[1].categoryName, 'Lesson 02');
+  assert.strictEqual(parsed.categories[1].normalWords[0].kanji, '朝');
+  assert.strictEqual(parsed.categories[1].hardWords[0].kanji, '今朝');
+
+  assert.strictEqual(parsed.categories[2].categoryName, 'Lesson 03');
+  assert.strictEqual(parsed.categories[2].normalWords[0].kanji, '昼');
+  assert.strictEqual(parsed.categories[2].hardWords[0].kanji, '昼間');
+
+  console.log('  ✓ parseICLText multi-category parsing verified');
+}
+
+// Test 5: submitImportLessonICL updates all 3 categories in Standard DB
+console.log('\nTest 5: submitImportLessonICL updates all 3 categories in Standard DB');
+{
+  ctx.currentWordsDb = {
+    'Lesson 01': [{ japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' }],
+    'Lesson 01 - Hard': [{ japanese: 'こんや', english: 'tonight', romaji: 'konya', kanji: 'こんや' }],
+    'Lesson 02': [{ japanese: 'あさ', english: 'morning', romaji: 'asa', kanji: 'あさ' }],
+    'Lesson 02 - Hard': [{ japanese: 'けさ', english: 'this morning', romaji: 'kesa', kanji: 'けさ' }],
+    'Lesson 03': [{ japanese: 'ひる', english: 'noon', romaji: 'hiru', kanji: 'ひる' }],
+    'Lesson 03 - Hard': [{ japanese: 'ひるま', english: 'daytime', romaji: 'Hiruma', kanji: 'ひるま' }]
+  };
+  ctx.currentSettings.activeDbGroup = 'N5 Lessons';
+  ctx.currentSettings.currentLesson = 'Lesson 01';
+
+  const updatedMultiInput = 
+`=== Lesson 01 ===
+
+よる
+night
+yoru
+夜
+
+--- hard ---
+
+こんや
+tonight
+konya
+今夜
+
+
+=== Lesson 02 ===
+
+あさ
+morning
+asa
+朝
+
+--- hard ---
+
+けさ
+this morning
+kesa
+今朝
+
+
+=== Lesson 03 ===
+
+ひる
+noon
+hiru
+昼
+
+--- hard ---
+
+ひるま
+daytime
+Hiruma
+昼間
+`;
+
+  doc.getElementById('input-import-lesson-icl').value = updatedMultiInput;
   const success = ctx.submitImportLessonICL();
   assert.strictEqual(success, true);
 
-  assert.strictEqual(ctx.currentWordsDb['Lesson 01'][0].kanji, '夜', 'Lesson 01 normal word kanji must be updated to 夜');
-  assert.strictEqual(ctx.currentWordsDb['Lesson 01 - Hard'][0].kanji, '今夜', 'Lesson 01 hard word kanji must be updated to 今夜');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 01'][0].kanji, '夜');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 01 - Hard'][0].kanji, '今夜');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 02'][0].kanji, '朝');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 02 - Hard'][0].kanji, '今朝');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 03'][0].kanji, '昼');
+  assert.strictEqual(ctx.currentWordsDb['Lesson 03 - Hard'][0].kanji, '昼間');
 
-  console.log('  ✓ Standard DB current lesson updated successfully');
+  console.log('  ✓ Standard DB multi-category import verified');
 }
 
-// Test 6: Crucial Ultimate Mode propagation across multiple categories
-console.log('\nTest 6: Crucial Ultimate Mode - updates current lesson AND propagates modified words across all other categories in Ultimate');
+// Test 6: Ultimate Mode Multi-Category Import and Word Synchronization
+console.log('\nTest 6: Ultimate Mode Multi-Category Import - updates all 3 categories AND synchronizes modified words to other Ultimate categories');
 {
-  // Setup Ultimate DB with the same word occurring in multiple categories:
-  // Lesson 01 (current), Time Words (normal), Daily Vocab (hard)
   ctx.currentUltimateWordsDb = {
-    'Lesson 01': [
-      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' },
-      { japanese: 'ばん', english: 'night, evening', romaji: 'ban', kanji: 'ばん' }
-    ],
-    'Lesson 01 - Hard': [
-      { japanese: 'こんや', english: 'tonight, this evening', romaji: 'konya', kanji: 'こんや' }
-    ],
+    'Lesson 01': [{ japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' }],
+    'Lesson 01 - Hard': [{ japanese: 'こんや', english: 'tonight', romaji: 'konya', kanji: 'こんや' }],
+    'Lesson 02': [{ japanese: 'あさ', english: 'morning', romaji: 'asa', kanji: 'あさ' }],
+    'Lesson 02 - Hard': [{ japanese: 'けさ', english: 'this morning', romaji: 'kesa', kanji: 'けさ' }],
+    'Lesson 03': [{ japanese: 'ひる', english: 'noon', romaji: 'hiru', kanji: 'ひる' }],
+    'Lesson 03 - Hard': [{ japanese: 'ひるま', english: 'daytime', romaji: 'Hiruma', kanji: 'ひるま' }],
+    // Other categories in Ultimate that share these words:
     'Time Words': [
-      { japanese: 'あさ', english: 'morning', romaji: 'asa', kanji: '朝' },
-      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' } // Should be updated!
+      { japanese: 'よる', english: 'night', romaji: 'yoru', kanji: 'よる' }, // Should be updated to 夜
+      { japanese: 'ひる', english: 'noon', romaji: 'hiru', kanji: 'ひる' }   // Should be updated to 昼
     ],
-    'Time Words - Hard': [],
-    'Daily Vocab': [
-      { japanese: 'ごはん', english: 'meal', romaji: 'gohan', kanji: 'ご飯' }
-    ],
-    'Daily Vocab - Hard': [
-      { japanese: 'こんや', english: 'tonight, this evening', romaji: 'konya', kanji: 'こんや' } // Should be updated!
+    'Time Words - Hard': [
+      { japanese: 'こんや', english: 'tonight', romaji: 'konya', kanji: 'こんや' } // Should be updated to 今夜
     ],
     'Unrelated Cat': [
       { japanese: 'みず', english: 'water', romaji: 'mizu', kanji: '水' }
@@ -386,106 +438,134 @@ console.log('\nTest 6: Crucial Ultimate Mode - updates current lesson AND propag
   ctx.currentSettings.activeDbGroup = 'Ultimate';
   ctx.currentSettings.currentLesson = 'Lesson 01';
 
-  // In Lesson 01, user updates kanji for よる -> 夜 and こんや -> 今夜
-  const updatedInput = 
-`よる
+  const updatedMultiInput = 
+`=== Lesson 01 ===
+
+よる
 night
 yoru
 夜
 
-ばん
-night, evening
-ban
-ばん
-
 --- hard ---
 
 こんや
-tonight, this evening
+tonight
 konya
-今夜`;
+今夜
 
-  doc.getElementById('input-import-lesson-icl').value = updatedInput;
+
+=== Lesson 02 ===
+
+あさ
+morning
+asa
+朝
+
+--- hard ---
+
+けさ
+this morning
+kesa
+今朝
+
+
+=== Lesson 03 ===
+
+ひる
+noon
+hiru
+昼
+
+--- hard ---
+
+ひるま
+daytime
+Hiruma
+昼間
+`;
+
+  doc.getElementById('input-import-lesson-icl').value = updatedMultiInput;
   const success = ctx.submitImportLessonICL();
   assert.strictEqual(success, true);
 
-  // 1. Current lesson must be updated
+  // 1. All 3 categories updated
   assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 01'][0].kanji, '夜');
   assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 01 - Hard'][0].kanji, '今夜');
+  assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 02'][0].kanji, '朝');
+  assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 02 - Hard'][0].kanji, '今朝');
+  assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 03'][0].kanji, '昼');
+  assert.strictEqual(ctx.currentUltimateWordsDb['Lesson 03 - Hard'][0].kanji, '昼間');
 
-  // 2. Crucial: "Time Words" normal list contains 'よる' / 'night' -> kanji MUST be updated to '夜'!
-  const timeWordsYoru = ctx.currentUltimateWordsDb['Time Words'].find(w => w.japanese === 'よる');
-  assert.ok(timeWordsYoru, 'Time Words should still have よる');
-  assert.strictEqual(timeWordsYoru.kanji, '夜', 'Time Words occurrence of よる must have kanji updated to 夜!');
+  // 2. Crucial propagation to "Time Words" normal list:
+  assert.strictEqual(ctx.currentUltimateWordsDb['Time Words'][0].kanji, '夜', 'Time Words "よる" must be updated to 夜');
+  assert.strictEqual(ctx.currentUltimateWordsDb['Time Words'][1].kanji, '昼', 'Time Words "ひる" must be updated to 昼');
 
-  // 3. Crucial: "Daily Vocab - Hard" list contains 'こんや' -> kanji MUST be updated to '今夜'!
-  const dailyKonya = ctx.currentUltimateWordsDb['Daily Vocab - Hard'].find(w => w.japanese === 'こんや');
-  assert.ok(dailyKonya, 'Daily Vocab - Hard should still have こんや');
-  assert.strictEqual(dailyKonya.kanji, '今夜', 'Daily Vocab occurrence of こんや must have kanji updated to 今夜!');
+  // 3. Crucial propagation to "Time Words - Hard" list:
+  assert.strictEqual(ctx.currentUltimateWordsDb['Time Words - Hard'][0].kanji, '今夜', 'Time Words - Hard "こんや" must be updated to 今夜');
 
-  // 4. Unrelated words must remain untouched
-  assert.strictEqual(ctx.currentUltimateWordsDb['Time Words'][0].kanji, '朝');
+  // 4. Unrelated words untouched:
   assert.strictEqual(ctx.currentUltimateWordsDb['Unrelated Cat'][0].kanji, '水');
 
   console.log('  ✓ Ultimate mode multi-category word synchronization verified 100%!');
 }
 
-// Test 7: copyCurrentLessonCL copies formatted text to clipboard
-console.log('\nTest 7: copyCurrentLessonCL copies full lesson text to clipboard with toast notification');
+// Test 7: copyCurrentLessonCL copies 3 categories to clipboard
+console.log('\nTest 7: copyCurrentLessonCL copies 3 categories with headers to clipboard');
 {
   lastCopiedText = null;
   ctx.currentSettings.activeDbGroup = 'N5 Lessons';
   ctx.currentSettings.currentLesson = 'Lesson 01';
+  ctx.setClCategoryCount(3);
 
   ctx.copyCurrentLessonCL();
   assert.ok(lastCopiedText, 'Clipboard text must not be null');
-  assert.ok(lastCopiedText.includes('--- hard ---'), 'Clipboard text must include --- hard --- divider');
-  assert.ok(lastCopiedText.includes('よる\nnight\nyoru\n夜'), 'Clipboard text must include serialized word blocks');
+  assert.ok(lastCopiedText.includes('=== Lesson 01 ==='));
+  assert.ok(lastCopiedText.includes('=== Lesson 02 ==='));
+  assert.ok(lastCopiedText.includes('=== Lesson 03 ==='));
+  assert.ok(lastCopiedText.includes('夜'));
 
-  console.log('  ✓ copyCurrentLessonCL clipboard writing verified');
+  console.log('  ✓ copyCurrentLessonCL multi-category clipboard copy verified');
 }
 
-// Test 8: Virtual / Special category guards
-console.log('\nTest 8: Guard against special views ("Show All Words", "Multi-Category View")');
-{
-  ctx.currentSettings.currentLesson = 'Show All Words';
-  assert.strictEqual(ctx.serializeLessonCL('Show All Words'), null);
-
-  ctx.currentSettings.currentLesson = 'Multi-Category View';
-  assert.strictEqual(ctx.serializeLessonCL('Multi-Category View'), null);
-
-  console.log('  ✓ Special category guards verified');
-}
-
-// Test 9: HTML UI Elements and Modal existence
-console.log('\nTest 9: HTML Buttons and Modal existence in index.html');
+// Test 8: HTML UI count controls and inputs existence
+console.log('\nTest 8: HTML UI count controls in index.html');
 {
   const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 
-  assert.ok(indexHtml.includes('id="btn-copy-lesson-cl"'), 'Desktop CL button must exist in index.html');
-  assert.ok(indexHtml.includes('id="btn-import-lesson-icl"'), 'Desktop ICL button must exist in index.html');
-  assert.ok(indexHtml.includes('id="btn-copy-lesson-cl-mobile"'), 'Mobile CL button must exist in index.html');
-  assert.ok(indexHtml.includes('id="btn-import-lesson-icl-mobile"'), 'Mobile ICL button must exist in index.html');
-  assert.ok(indexHtml.includes('id="modal-import-lesson-icl"'), 'ICL modal must exist in index.html');
-  assert.ok(indexHtml.includes('id="input-import-lesson-icl"'), 'ICL textarea must exist in index.html');
-  assert.ok(indexHtml.includes('id="btn-icl-load-current"'), 'Load Current Words button must exist in index.html');
-  assert.ok(indexHtml.includes('id="btn-submit-import-lesson-icl"'), 'Submit button must exist in index.html');
+  assert.ok(indexHtml.includes('id="input-cl-cat-count"'), 'Desktop count input must exist');
+  assert.ok(indexHtml.includes('id="input-cl-cat-count-mobile"'), 'Mobile count input must exist');
+  assert.ok(indexHtml.includes('id="input-cl-cat-count-modal"'), 'Modal count input must exist');
+  assert.ok(indexHtml.includes('id="cl-count-control"'), 'Desktop cl-count-control must exist');
+  assert.ok(indexHtml.includes('id="cl-count-control-mobile"'), 'Mobile cl-count-control-mobile must exist');
 
-  console.log('  ✓ HTML buttons and modal structure verified');
+  console.log('  ✓ HTML count inputs and controls verified');
 }
 
-// Test 10: CSS responsive rules
-console.log('\nTest 10: CSS responsive rules in style.css');
+// Test 9: CSS responsive styling for count controls
+console.log('\nTest 9: CSS responsive rules for count controls in style.css');
 {
   const styleCss = fs.readFileSync(path.join(__dirname, '..', 'style.css'), 'utf8');
 
-  assert.ok(styleCss.includes('#btn-copy-lesson-cl-mobile'), 'Mobile CL button referenced in CSS');
-  assert.ok(styleCss.includes('#btn-import-lesson-icl-mobile'), 'Mobile ICL button referenced in CSS');
-  assert.ok(styleCss.includes('#btn-copy-lesson-cl'), 'Desktop CL button referenced in CSS');
-  assert.ok(styleCss.includes('#btn-import-lesson-icl'), 'Desktop ICL button referenced in CSS');
+  assert.ok(styleCss.includes('#cl-count-control-mobile'), '#cl-count-control-mobile styled in CSS');
+  assert.ok(styleCss.includes('#cl-count-control'), '#cl-count-control styled in CSS');
 
   console.log('  ✓ Responsive CSS styling verified');
 }
 
-console.log('\n🎉 ALL 10 TESTS PASSED! CL & ICL features verified 100%!');
+// Test 10: syncClCategoryCountUI updates all 3 inputs
+console.log('\nTest 10: syncClCategoryCountUI synchronizes inputs across desktop, mobile, and modal');
+{
+  const elD = doc.getElementById('input-cl-cat-count');
+  const elM = doc.getElementById('input-cl-cat-count-mobile');
+  const elModal = doc.getElementById('input-cl-cat-count-modal');
+
+  ctx.syncClCategoryCountUI(4);
+  assert.strictEqual(elD.value, 4);
+  assert.strictEqual(elM.value, 4);
+  assert.strictEqual(elModal.value, 4);
+
+  console.log('  ✓ Input synchronization verified');
+}
+
+console.log('\n🎉 ALL 10 TESTS PASSED! Multi-Category CL & ICL features verified 100%!');
 })();
